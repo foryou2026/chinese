@@ -1,4 +1,4 @@
-# Skills 框架 · README
+# 01 · G00 Skills 框架 · README
 
 > 一套面向 AI 协同开发的、从「需求」到「上线增长」全链路的标准化提示词模板集。
 >
@@ -36,10 +36,6 @@
 | S10 · H | HTML 原型 | `docs/S10-prototype/` |
 | S11 · V | 开发前一致性校验 + Story 拆分 + 编码上下文包 | `docs/S11-validation/<feature>/` |
 | S12 · E | SEO + GEO 营销优化方案 | `docs/S12-marketing/` |
-
-> V 阶段产出三份文件（V01 一致性校验 / V02 Story 拆分 / V03 编码上下文包），它们是同一阶段的三个产物，不计为独立阶段。
->
-> E 阶段是真正的第 12 阶段，承接「上线 / 增长」诉求，把上游所有规范沉淀转成 SEO + GEO 营销执行包，覆盖关键词、技术 SEO、Schema、llms.txt、AI 引擎、被引平台、UGC、监测、90 天计划。
 
 ---
 
@@ -92,7 +88,7 @@
 
 | 阶段 | docs 落盘根 |
 |------|-------------|
-| 框架层 | `docs/S00-meta/`（澄清问答、变更记录、术语表） |
+| 框架层 | `docs/S00-meta/`|
 | S01 · R | `docs/S01-requirements/` |
 | S02 · A | `docs/S02-architecture/` |
 | S03 · P | `docs/S03-permissions/` |
