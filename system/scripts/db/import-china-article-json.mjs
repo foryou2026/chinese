@@ -202,8 +202,8 @@ function validateDoc(filePath, doc, errors) {
   validateI18n(doc.article.title_i18n, 1, 80, 'article.title_i18n', push);
   if (!Array.isArray(doc.sentences)) return;
   if (doc.sentences.length < 1 || doc.sentences.length > 120) push('sentences.length', 'must be 1..120');
-  if ((doc.content_policy?.phase === 'phase1' || doc.doc_version?.includes('phase1')) && doc.sentences.length !== 120) {
-    push('sentences.length', 'phase1 articles must contain exactly 120 sentences');
+  if ((doc.content_policy?.phase === 'phase1' || doc.doc_version?.includes('phase1')) && (doc.sentences.length < 24 || doc.sentences.length > 40)) {
+    push('sentences.length', 'phase1 articles must contain 24..40 sentences (recommended 32)');
   }
   if (Array.isArray(doc.source_story_zh)) {
     if (doc.source_story_zh.length !== doc.sentences.length) push('source_story_zh.length', 'must match sentences.length');
