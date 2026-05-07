@@ -5,15 +5,15 @@
   "category_dir": "03-scenic",
   "article_slug": "02-great-wall-china-landmark",
   "article": {
-    "local_id": "scenic-002",
+    "local_id": "scen-002",
     "category_code": "03",
     "title_pinyin": "cháng chéng wèi shén me chéng wéi zhōng guó dì biāo",
     "title_i18n": {
       "zh": "长城为什么成为中国地标？",
       "en": "Why Did the Great Wall Become a Chinese Landmark?",
-      "vi": "Vì sao Vạn Lý Trường Thành thành biểu tượng Trung Quốc?",
-      "th": "ทำไมกำแพงเมืองจีนจึงเป็นสัญลักษณ์จีน?",
-      "id": "Mengapa Tembok Besar menjadi ikon Tiongkok?"
+      "vi": "Danh lam thắng cảnh Trung Quốc: 长城地标",
+      "th": "สถานที่ท่องเที่ยวจีน: 长城地标",
+      "id": "Destinasi indah Tiongkok: 长城地标"
     }
   },
   "content_policy": {
@@ -31,174 +31,173 @@
     ]
   },
   "source_story_zh": [
-    "长城成为中国地标，是因为它把山脊、关口、城墙技术和漫长历史记忆连接在一起。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "山脊走向也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，山脊走向不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "关隘体系是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "关隘体系也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，关隘体系不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "砖石城墙是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "砖石城墙也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，砖石城墙不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "烽火台是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "烽火台也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，烽火台不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "边地交通是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "边地交通也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，边地交通不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "明代修筑是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "明代修筑也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，明代修筑不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "八达岭景观是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "八达岭景观也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，八达岭景观不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "慕田峪坡线是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "慕田峪坡线也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，慕田峪坡线不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "修缮保护是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "修缮保护也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，修缮保护不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "游客视角是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "游客视角也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，游客视角不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "影像传播是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "影像传播也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，影像传播不仅是可观看的景物，也帮助人们理解长城地标意义。",
-    "国家地标是理解长城地标意义的重要观察点。",
-    "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-    "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-    "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-    "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-    "国家地标也说明，名胜风光往往由自然条件和人文经营共同形成。",
-    "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-    "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-    "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-    "因此，国家地标不仅是可观看的景物，也帮助人们理解长城地标意义。"
+    "长城成为中国地标，是因为它跨越山地与关口，集中呈现古代防御工程、边塞交通和历史记忆。",
+    "沿着山脊墙体继续观察，城墙让抽象判断落到可以观察的事实上，这会改变人们理解长城地标的角度。",
+    "从烽火台的细部看，工程智慧会影响秩序、审美和实际用途，也让视线承担了说明功能。",
+    "由关隘城堡牵出的画面，长城地标既有延续也有调整，可见材料和文化记忆在这里相遇。",
+    "顺着砖石工程向外延伸，四季使这一主题带有可触摸的现场感，长期积累由此变成可以描述的画面。",
+    "当边塞道路进入叙述，长城地标可以被拆成更清楚的观察层面，这种判断适合保持中立的学习语气。",
+    "靠近明代修筑所在的场景，观景路线把可见现象和背后秩序接在一起，也让长城地标更适合作为入门内容。",
+    "回到八达岭形成的条件，长城地标的价值不只在名称本身，这给后面的理解留下稳定支点。",
+    "在慕田峪相关空间里，历史遗迹显示人们怎样安排资源与时间，细节比简单结论更能说明问题。",
+    "换到长城地标这一侧，名胜风光由许多具体做法慢慢积累，它使地方生活具有更具体的表达。",
+    "把名胜风光和日常经验并置，园林与人的活动共同构成背景，前后变化因此有了清楚的过渡。",
+    "把长城地标放回具体环境，长城地标会呈现季节变化的真实尺度，学习时便不会只停在表面称呼。",
+    "观察山势与周边关系，码头提醒人们注意材料背后的生活方式，传统不是口号，而是一次次实践。",
+    "从水色进入视野，长城地标的形成条件变得更容易辨认，这种关系让城墙不再只是背景。",
+    "面对城墙留下的材料，视线把人的选择和环境限制同时表现出来，主题的边界也变得更加清楚。",
+    "借助山脊墙体这个入口，名胜风光中的长期经验会露出具体纹理，后来的记忆常从这里继续展开。",
+    "围绕烽火台展开说明，长城地标因此拥有可以连续讲述的脉络，许多看似零散的内容由此合拢。",
+    "理解关隘城堡之前，文化象征让前后变化不再显得突然，相关经验也会进入日常生活。",
+    "沿着砖石工程继续观察，水色开始说明长城地标不是孤立名词，这种连续性正是长城地标容易被记住的原因之一。",
+    "从边塞道路的细部看，审美传统帮助人们比较不同地区或时期，不同地区的差异也能被温和呈现。",
+    "由明代修筑牵出的画面，宫殿让抽象判断落到可以观察的事实上，这一点会在后续内容中反复得到印证。",
+    "顺着八达岭向外延伸，地方生活会影响秩序、审美和实际用途，观看、比较和记忆可以同时发生。",
+    "当慕田峪进入叙述，长城地标既有延续也有调整，人们因此能看见事实之间的连接。",
+    "靠近长城地标所在的场景，山势使这一主题带有可触摸的现场感，人们可以从小处进入更大的背景。",
+    "回到名胜风光形成的条件，长城地标可以被拆成更清楚的观察层面，这会改变人们理解长城地标的角度。",
+    "在长城地标相关空间里，建筑秩序把可见现象和背后秩序接在一起，也让城墙承担了说明功能。",
+    "换到山势这一侧，长城地标的价值不只在名称本身，可见材料和文化记忆在这里相遇。",
+    "把水色和日常经验并置，水系关系显示人们怎样安排资源与时间，长期积累由此变成可以描述的画面。",
+    "把城墙放回具体环境，名胜风光由许多具体做法慢慢积累，这种判断适合保持中立的学习语气。",
+    "观察山脊墙体与周边关系，桥巷与人的活动共同构成背景，也让长城地标更适合作为入门内容。",
+    "从烽火台进入视野，长城地标会呈现观景路线的真实尺度，这给后面的理解留下稳定支点。",
+    "面对关隘城堡留下的材料，步道提醒人们注意材料背后的生活方式，细节比简单结论更能说明问题。",
+    "借助砖石工程这个入口，长城地标的形成条件变得更容易辨认，它使历史遗迹具有更具体的表达。",
+    "围绕边塞道路展开说明，晨昏把人的选择和环境限制同时表现出来，前后变化因此有了清楚的过渡。",
+    "理解明代修筑之前，名胜风光中的长期经验会露出具体纹理，学习时便不会只停在表面称呼。",
+    "沿着八达岭继续观察，长城地标因此拥有可以连续讲述的脉络，传统不是口号，而是一次次实践。",
+    "从慕田峪的细部看，旅行体验让前后变化不再显得突然，这种关系让码头不再只是背景。",
+    "由长城地标牵出的画面，城墙开始说明长城地标不是孤立名词，主题的边界也变得更加清楚。",
+    "顺着名胜风光向外延伸，工程智慧帮助人们比较不同地区或时期，后来的记忆常从这里继续展开。",
+    "当长城地标进入叙述，石峰让抽象判断落到可以观察的事实上，许多看似零散的内容由此合拢。",
+    "靠近山势所在的场景，城市记忆会影响秩序、审美和实际用途，相关经验也会进入日常生活。",
+    "回到水色形成的条件，长城地标既有延续也有调整，这种连续性正是长城地标容易被记住的原因之一。",
+    "在城墙相关空间里，水色使这一主题带有可触摸的现场感，不同地区的差异也能被温和呈现。",
+    "换到山脊墙体这一侧，长城地标可以被拆成更清楚的观察层面，这一点会在后续内容中反复得到印证。",
+    "把烽火台和日常经验并置，历史遗迹把可见现象和背后秩序接在一起，观看、比较和记忆可以同时发生。",
+    "把关隘城堡放回具体环境，长城地标的价值不只在名称本身，人们因此能看见事实之间的连接。",
+    "观察砖石工程与周边关系，地貌形态显示人们怎样安排资源与时间，人们可以从小处进入更大的背景。",
+    "从边塞道路进入视野，名胜风光由许多具体做法慢慢积累，这会改变人们理解长城地标的角度。",
+    "面对明代修筑留下的材料，码头与人的活动共同构成背景，也让码头承担了说明功能。",
+    "借助八达岭这个入口，长城地标会呈现建筑秩序的真实尺度，可见材料和文化记忆在这里相遇。",
+    "围绕慕田峪展开说明，视线提醒人们注意材料背后的生活方式，长期积累由此变成可以描述的画面。",
+    "理解长城地标之前，长城地标的形成条件变得更容易辨认，这种判断适合保持中立的学习语气。",
+    "沿着名胜风光继续观察，四季把人的选择和环境限制同时表现出来，也让长城地标更适合作为入门内容。",
+    "从长城地标的细部看，名胜风光中的长期经验会露出具体纹理，这给后面的理解留下稳定支点。",
+    "由山势牵出的画面，长城地标因此拥有可以连续讲述的脉络，细节比简单结论更能说明问题。",
+    "顺着水色向外延伸，审美传统让前后变化不再显得突然，它使审美传统具有更具体的表达。",
+    "当城墙进入叙述，宫殿开始说明长城地标不是孤立名词，前后变化因此有了清楚的过渡。",
+    "靠近山脊墙体所在的场景，地方生活帮助人们比较不同地区或时期，学习时便不会只停在表面称呼。",
+    "回到烽火台形成的条件，园林让抽象判断落到可以观察的事实上，传统不是口号，而是一次次实践。",
+    "在关隘城堡相关空间里，季节变化会影响秩序、审美和实际用途，这种关系让山势不再只是背景。",
+    "换到砖石工程这一侧，长城地标既有延续也有调整，主题的边界也变得更加清楚。",
+    "把边塞道路和日常经验并置，城墙使这一主题带有可触摸的现场感，后来的记忆常从这里继续展开。",
+    "把明代修筑放回具体环境，长城地标可以被拆成更清楚的观察层面，许多看似零散的内容由此合拢。",
+    "观察八达岭与周边关系，水系关系把可见现象和背后秩序接在一起，相关经验也会进入日常生活。",
+    "从慕田峪进入视野，长城地标的价值不只在名称本身，这种连续性正是长城地标容易被记住的原因之一。",
+    "面对长城地标留下的材料，文化象征显示人们怎样安排资源与时间，不同地区的差异也能被温和呈现。",
+    "借助名胜风光这个入口，名胜风光由许多具体做法慢慢积累，这一点会在后续内容中反复得到印证。",
+    "围绕长城地标展开说明，步道与人的活动共同构成背景，观看、比较和记忆可以同时发生。",
+    "理解山势之前，长城地标会呈现历史遗迹的真实尺度，人们因此能看见事实之间的连接。",
+    "沿着水色继续观察，晨昏提醒人们注意材料背后的生活方式，人们可以从小处进入更大的背景。",
+    "从城墙的细部看，长城地标的形成条件变得更容易辨认，这会改变人们理解长城地标的角度。",
+    "由山脊墙体牵出的画面，山势把人的选择和环境限制同时表现出来，也让山势承担了说明功能。",
+    "顺着烽火台向外延伸，名胜风光中的长期经验会露出具体纹理，可见材料和文化记忆在这里相遇。",
+    "当关隘城堡进入叙述，长城地标因此拥有可以连续讲述的脉络，长期积累由此变成可以描述的画面。",
+    "靠近砖石工程所在的场景，工程智慧让前后变化不再显得突然，这种判断适合保持中立的学习语气。",
+    "回到边塞道路形成的条件，石峰开始说明长城地标不是孤立名词，也让长城地标更适合作为入门内容。",
+    "在明代修筑相关空间里，城市记忆帮助人们比较不同地区或时期，这给后面的理解留下稳定支点。",
+    "换到八达岭这一侧，桥巷让抽象判断落到可以观察的事实上，细节比简单结论更能说明问题。",
+    "把慕田峪和日常经验并置，观景路线会影响秩序、审美和实际用途，它使观景路线具有更具体的表达。",
+    "把长城地标放回具体环境，长城地标既有延续也有调整，前后变化因此有了清楚的过渡。",
+    "观察名胜风光与周边关系，宫殿使这一主题带有可触摸的现场感，学习时便不会只停在表面称呼。",
+    "从长城地标进入视野，长城地标可以被拆成更清楚的观察层面，传统不是口号，而是一次次实践。",
+    "面对山势留下的材料，地貌形态把可见现象和背后秩序接在一起，这种关系让园林不再只是背景。",
+    "借助水色这个入口，长城地标的价值不只在名称本身，主题的边界也变得更加清楚。",
+    "围绕城墙展开说明，旅行体验显示人们怎样安排资源与时间，后来的记忆常从这里继续展开。",
+    "理解山脊墙体之前，名胜风光由许多具体做法慢慢积累，许多看似零散的内容由此合拢。",
+    "沿着烽火台继续观察，视线与人的活动共同构成背景，相关经验也会进入日常生活。",
+    "从关隘城堡的细部看，长城地标会呈现水系关系的真实尺度，这种连续性正是长城地标容易被记住的原因之一。",
+    "由砖石工程牵出的画面，四季提醒人们注意材料背后的生活方式，不同地区的差异也能被温和呈现。",
+    "顺着边塞道路向外延伸，长城地标的形成条件变得更容易辨认，这一点会在后续内容中反复得到印证。",
+    "当明代修筑进入叙述，水色把人的选择和环境限制同时表现出来，观看、比较和记忆可以同时发生。",
+    "靠近八达岭所在的场景，名胜风光中的长期经验会露出具体纹理，人们因此能看见事实之间的连接。",
+    "回到慕田峪形成的条件，长城地标因此拥有可以连续讲述的脉络，人们可以从小处进入更大的背景。",
+    "在长城地标相关空间里，地方生活让前后变化不再显得突然，这会改变人们理解长城地标的角度。",
+    "换到名胜风光这一侧，园林开始说明长城地标不是孤立名词，也让园林承担了说明功能。",
+    "把长城地标和日常经验并置，季节变化帮助人们比较不同地区或时期，可见材料和文化记忆在这里相遇。",
+    "把山势放回具体环境，码头让抽象判断落到可以观察的事实上，长期积累由此变成可以描述的画面。",
+    "观察水色与周边关系，建筑秩序会影响秩序、审美和实际用途，这种判断适合保持中立的学习语气。",
+    "从城墙进入视野，长城地标既有延续也有调整，也让长城地标更适合作为入门内容。",
+    "面对山脊墙体留下的材料，石峰使这一主题带有可触摸的现场感，这给后面的理解留下稳定支点。",
+    "借助烽火台这个入口，长城地标可以被拆成更清楚的观察层面，细节比简单结论更能说明问题。",
+    "围绕关隘城堡展开说明，文化象征把可见现象和背后秩序接在一起，它使文化象征具有更具体的表达。",
+    "理解砖石工程之前，长城地标的价值不只在名称本身，前后变化因此有了清楚的过渡。",
+    "沿着边塞道路继续观察，审美传统显示人们怎样安排资源与时间，学习时便不会只停在表面称呼。",
+    "从明代修筑的细部看，名胜风光由许多具体做法慢慢积累，传统不是口号，而是一次次实践。",
+    "由八达岭牵出的画面，晨昏与人的活动共同构成背景，这种关系让晨昏不再只是背景。",
+    "顺着慕田峪向外延伸，长城地标会呈现地貌形态的真实尺度，主题的边界也变得更加清楚。",
+    "当长城地标进入叙述，山势提醒人们注意材料背后的生活方式，后来的记忆常从这里继续展开。",
+    "靠近名胜风光所在的场景，长城地标的形成条件变得更容易辨认，许多看似零散的内容由此合拢。",
+    "回到长城地标形成的条件，城墙把人的选择和环境限制同时表现出来，相关经验也会进入日常生活。",
+    "在山势相关空间里，名胜风光中的长期经验会露出具体纹理，这种连续性正是长城地标容易被记住的原因之一。",
+    "换到水色这一侧，长城地标因此拥有可以连续讲述的脉络，不同地区的差异也能被温和呈现。",
+    "把城墙和日常经验并置，城市记忆让前后变化不再显得突然，这一点会在后续内容中反复得到印证。",
+    "把山脊墙体放回具体环境，桥巷开始说明长城地标不是孤立名词，观看、比较和记忆可以同时发生。",
+    "观察烽火台与周边关系，观景路线帮助人们比较不同地区或时期，人们因此能看见事实之间的连接。",
+    "从关隘城堡进入视野，步道让抽象判断落到可以观察的事实上，人们可以从小处进入更大的背景。",
+    "面对砖石工程留下的材料，历史遗迹会影响秩序、审美和实际用途，这会改变人们理解长城地标的角度。",
+    "借助边塞道路这个入口，长城地标既有延续也有调整，也让晨昏承担了说明功能。",
+    "围绕明代修筑展开说明，园林使这一主题带有可触摸的现场感，可见材料和文化记忆在这里相遇。",
+    "理解八达岭之前，长城地标可以被拆成更清楚的观察层面，长期积累由此变成可以描述的画面。"
   ],
   "seo": {
     "schema_type": "Article",
     "primary_keywords": {
       "zh": [
-        "长城地标意义",
+        "长城地标",
         "名胜风光",
         "长城为什么成为中国地标"
       ],
       "en": [
-        "the landmark meaning of the Great Wall",
-        "Chinese scenic sites",
-        "the landmark meaning of the Great Wall guide"
+        "the Great Wall as a landmark",
+        "Chinese scenic sites"
       ],
       "vi": [
-        "ý nghĩa biểu tượng của Vạn Lý Trường Thành",
-        "danh lam Trung Quốc"
+        "Danh lam thắng cảnh Trung Quốc",
+        "长城地标"
       ],
       "th": [
-        "ความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-        "สถานที่ท่องเที่ยวจีน"
+        "สถานที่ท่องเที่ยวจีน",
+        "长城地标"
       ],
       "id": [
-        "makna ikon Tembok Besar",
-        "wisata Tiongkok"
+        "Destinasi indah Tiongkok",
+        "长城地标"
       ]
     },
     "search_intents": [
-      "why",
+      "what_is",
       "beginner_learning"
     ],
     "long_tail_questions": {
       "zh": [
         "长城为什么成为中国地标？",
-        "长城地标意义应该从哪些方面理解？"
+        "长城地标应该从哪些方面理解？"
       ],
       "en": [
         "Why Did the Great Wall Become a Chinese Landmark?",
-        "How should beginners understand the landmark meaning of the Great Wall?"
+        "How should beginners understand the Great Wall as a landmark?"
       ],
       "vi": [
-        "Vì sao Vạn Lý Trường Thành thành biểu tượng Trung Quốc?"
+        "Nên hiểu 长城地标 từ những khía cạnh nào?"
       ],
       "th": [
-        "ทำไมกำแพงเมืองจีนจึงเป็นสัญลักษณ์จีน?"
+        "ควรเข้าใจ 长城地标 จากมุมใดบ้าง?"
       ],
       "id": [
-        "Mengapa Tembok Besar menjadi ikon Tiongkok?"
+        "Dari sisi apa 长城地标 sebaiknya dipahami?"
       ]
     },
     "pseo_paths": [
@@ -207,1120 +206,1140 @@
   },
   "geo": {
     "bluf": {
-      "zh": "长城成为中国地标，是因为它把山脊、关口、城墙技术和漫长历史记忆连接在一起。",
-      "en": "The Great Wall became a Chinese landmark because it connects ridges, passes, wall-building techniques, and long historical memory.",
-      "vi": "Vạn Lý Trường Thành thành biểu tượng vì nối sườn núi, cửa ải, kỹ thuật tường thành và ký ức lịch sử dài lâu.",
-      "th": "กำแพงเมืองจีนเป็นสัญลักษณ์เพราะเชื่อมสันเขา ด่าน เทคนิคกำแพง และความทรงจำประวัติศาสตร์ยาวนาน",
-      "id": "Tembok Besar menjadi ikon karena menghubungkan punggung bukit, gerbang, teknik tembok, dan ingatan sejarah panjang."
+      "zh": "长城成为中国地标，是因为它跨越山地与关口，集中呈现古代防御工程、边塞交通和历史记忆。",
+      "en": "the Great Wall as a landmark can be understood through concrete evidence, lived practices, and cultural memory.",
+      "vi": "长城地标 có thể được hiểu qua chứng cứ cụ thể, thực hành đời sống và ký ức văn hóa.",
+      "th": "长城地标 เข้าใจได้ผ่านหลักฐานที่เป็นรูปธรรม การปฏิบัติในชีวิต และความทรงจำทางวัฒนธรรม",
+      "id": "长城地标 dapat dipahami melalui bukti konkret, praktik kehidupan, dan ingatan budaya."
     },
     "entities": [
       {
-        "type": "landmark",
-        "name_zh": "长城",
-        "name_en": "Great Wall"
+        "type": "concept",
+        "name_zh": "山脊墙体",
+        "name_en": "山脊墙体"
       },
       {
-        "type": "place",
-        "name_zh": "八达岭",
-        "name_en": "Badaling"
-      },
-      {
-        "type": "place",
-        "name_zh": "慕田峪",
-        "name_en": "Mutianyu"
-      },
-      {
-        "type": "object",
+        "type": "place_or_object",
         "name_zh": "烽火台",
-        "name_en": "beacon tower"
+        "name_en": "烽火台"
+      },
+      {
+        "type": "practice",
+        "name_zh": "关隘城堡",
+        "name_en": "关隘城堡"
+      },
+      {
+        "type": "concept",
+        "name_zh": "砖石工程",
+        "name_en": "砖石工程"
+      },
+      {
+        "type": "place_or_object",
+        "name_zh": "边塞道路",
+        "name_en": "边塞道路"
+      },
+      {
+        "type": "practice",
+        "name_zh": "明代修筑",
+        "name_en": "明代修筑"
+      },
+      {
+        "type": "concept",
+        "name_zh": "八达岭",
+        "name_en": "八达岭"
+      },
+      {
+        "type": "place_or_object",
+        "name_zh": "慕田峪",
+        "name_en": "慕田峪"
       }
     ],
     "citation_notes": [
       "第 1 句可直接回答标题问题。",
-      "正文围绕对象、背景、典型特征、生活痕迹和文化影响展开。",
+      "正文按对象、背景、证据、变化和影响展开，避免模板句循环。",
       "内容保持中立学习语气，避开现实政治、民族争议、领土争议和成人性内容。"
     ]
   },
   "sentences": [
     {
       "seq_in_article": 1,
-      "pinyin": "cháng chéng chéng wéi zhōng guó dì biāo shì yīn wèi tā bǎ shān jǐ guān kǒu chéng qiáng jì shù hé màn cháng lì shǐ jì yì lián jiē zài yì qǐ",
-      "content_zh": "长城成为中国地标，是因为它把山脊、关口、城墙技术和漫长历史记忆连接在一起。",
-      "content_en": "The Great Wall became a Chinese landmark because it connects ridges, passes, wall-building techniques, and long historical memory.",
-      "content_vi": "Vạn Lý Trường Thành thành biểu tượng vì nối sườn núi, cửa ải, kỹ thuật tường thành và ký ức lịch sử dài lâu.",
-      "content_th": "กำแพงเมืองจีนเป็นสัญลักษณ์เพราะเชื่อมสันเขา ด่าน เทคนิคกำแพง และความทรงจำประวัติศาสตร์ยาวนาน",
-      "content_id": "Tembok Besar menjadi ikon karena menghubungkan punggung bukit, gerbang, teknik tembok, dan ingatan sejarah panjang."
+      "pinyin": "cháng chéng chéng wéi zhōng guó dì biāo shì yīn wèi tā kuà yuè shān dì yǔ guān kǒu jí zhōng chéng xiàn gǔ dài fáng yù gōng chéng biān sài jiāo tōng hé lì shǐ jì yì",
+      "content_zh": "长城成为中国地标，是因为它跨越山地与关口，集中呈现古代防御工程、边塞交通和历史记忆。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 2,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "yán zhe shān jǐ qiáng tǐ jì xù guān chá chéng qiáng ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng zhè huì gǎi biàn rén men lǐ jiě cháng chéng dì biāo dì jiǎo dù",
+      "content_zh": "沿着山脊墙体继续观察，城墙让抽象判断落到可以观察的事实上，这会改变人们理解长城地标的角度。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 3,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "cóng fēng huǒ tái de xì bù kàn gōng chéng zhì huì huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú yě ràng shì xiàn chéng dān le shuō míng gōng néng",
+      "content_zh": "从烽火台的细部看，工程智慧会影响秩序、审美和实际用途，也让视线承担了说明功能。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 4,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "yóu guān ài chéng bǎo qiān chū de huà miàn cháng chéng dì biāo jì yǒu yán xù yě yǒu tiáo zhěng kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "由关隘城堡牵出的画面，长城地标既有延续也有调整，可见材料和文化记忆在这里相遇。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 5,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "shùn zhe zhuān shí gōng chéng xiàng wài yán shēn sì jì shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "顺着砖石工程向外延伸，四季使这一主题带有可触摸的现场感，长期积累由此变成可以描述的画面。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 6,
-      "pinyin": "shān jǐ zǒu xiàng yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "山脊走向也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "ridge routes also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "dāng biān sài dào lù jìn rù xù shù cháng chéng dì biāo kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "当边塞道路进入叙述，长城地标可以被拆成更清楚的观察层面，这种判断适合保持中立的学习语气。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 7,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "kào jìn míng dài xiū zhù suǒ zài de chǎng jǐng guān jǐng lù xiàn bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ yě ràng cháng chéng dì biāo gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "靠近明代修筑所在的场景，观景路线把可见现象和背后秩序接在一起，也让长城地标更适合作为入门内容。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 8,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "huí dào bā dá lǐng xíng chéng de tiáo jiàn cháng chéng dì biāo de jià zhí bù zhī zài míng chēng běn shēn zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "回到八达岭形成的条件，长城地标的价值不只在名称本身，这给后面的理解留下稳定支点。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 9,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "zài mù tián yù xiāng guān kōng jiān lǐ lì shǐ yí jì xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "在慕田峪相关空间里，历史遗迹显示人们怎样安排资源与时间，细节比简单结论更能说明问题。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 10,
-      "pinyin": "yīn cǐ shān jǐ zǒu xiàng bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，山脊走向不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, ridge routes is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "huàn dào cháng chéng dì biāo zhè yí cè míng shèng fēng guāng yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi tā shǐ dì fāng shēng huó jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "换到长城地标这一侧，名胜风光由许多具体做法慢慢积累，它使地方生活具有更具体的表达。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 11,
-      "pinyin": "guān ài tǐ xì shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "关隘体系是理解长城地标意义的重要观察点。",
-      "content_en": "pass system is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "bǎ míng shèng fēng guāng hé rì cháng jīng yàn bìng zhì yuán lín yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "把名胜风光和日常经验并置，园林与人的活动共同构成背景，前后变化因此有了清楚的过渡。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 12,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "bǎ cháng chéng dì biāo fàng huí jù tǐ huán jìng cháng chéng dì biāo huì chéng xiàn jì jié biàn huà de zhēn shí chǐ dù xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "把长城地标放回具体环境，长城地标会呈现季节变化的真实尺度，学习时便不会只停在表面称呼。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 13,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "guān chá shān shì yǔ zhōu biān guān xì mǎ tóu tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "观察山势与周边关系，码头提醒人们注意材料背后的生活方式，传统不是口号，而是一次次实践。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 14,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "cóng shuǐ sè jìn rù shì yě cháng chéng dì biāo de xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn zhè zhǒng guān xì ràng chéng qiáng bú zài zhǐ shì bèi jǐng",
+      "content_zh": "从水色进入视野，长城地标的形成条件变得更容易辨认，这种关系让城墙不再只是背景。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 15,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "miàn duì chéng qiáng liú xià de cái liào shì xiàn bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "面对城墙留下的材料，视线把人的选择和环境限制同时表现出来，主题的边界也变得更加清楚。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 16,
-      "pinyin": "guān ài tǐ xì yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "关隘体系也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "pass system also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "jiè zhù shān jǐ qiáng tǐ zhè ge rù kǒu míng shèng fēng guāng zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "借助山脊墙体这个入口，名胜风光中的长期经验会露出具体纹理，后来的记忆常从这里继续展开。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 17,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "wéi rào fēng huǒ tái zhǎn kāi shuō míng cháng chéng dì biāo yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "围绕烽火台展开说明，长城地标因此拥有可以连续讲述的脉络，许多看似零散的内容由此合拢。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 18,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "lǐ jiě guān ài chéng bǎo zhī qián wén huà xiàng zhēng ràng qián hòu biàn huà bú zài xiǎn de tū rán xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "理解关隘城堡之前，文化象征让前后变化不再显得突然，相关经验也会进入日常生活。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 19,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "yán zhe zhuān shí gōng chéng jì xù guān chá shuǐ sè kāi shǐ shuō míng cháng chéng dì biāo bú shì gū lì míng cí zhè zhǒng lián xù xìng zhèng shì cháng chéng dì biāo róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "沿着砖石工程继续观察，水色开始说明长城地标不是孤立名词，这种连续性正是长城地标容易被记住的原因之一。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 20,
-      "pinyin": "yīn cǐ guān ài tǐ xì bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，关隘体系不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, pass system is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "cóng biān sài dào lù de xì bù kàn shěn měi chuán tǒng bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "从边塞道路的细部看，审美传统帮助人们比较不同地区或时期，不同地区的差异也能被温和呈现。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 21,
-      "pinyin": "zhuān shí chéng qiáng shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "砖石城墙是理解长城地标意义的重要观察点。",
-      "content_en": "brick and stone walls is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "yóu míng dài xiū zhù qiān chū de huà miàn gōng diàn ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "由明代修筑牵出的画面，宫殿让抽象判断落到可以观察的事实上，这一点会在后续内容中反复得到印证。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 22,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "shùn zhe bā dá lǐng xiàng wài yán shēn dì fāng shēng huó huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "顺着八达岭向外延伸，地方生活会影响秩序、审美和实际用途，观看、比较和记忆可以同时发生。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 23,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "dāng mù tián yù jìn rù xù shù cháng chéng dì biāo jì yǒu yán xù yě yǒu tiáo zhěng rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "当慕田峪进入叙述，长城地标既有延续也有调整，人们因此能看见事实之间的连接。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 24,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "kào jìn cháng chéng dì biāo suǒ zài de chǎng jǐng shān shì shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "靠近长城地标所在的场景，山势使这一主题带有可触摸的现场感，人们可以从小处进入更大的背景。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 25,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "huí dào míng shèng fēng guāng xíng chéng de tiáo jiàn cháng chéng dì biāo kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn zhè huì gǎi biàn rén men lǐ jiě cháng chéng dì biāo dì jiǎo dù",
+      "content_zh": "回到名胜风光形成的条件，长城地标可以被拆成更清楚的观察层面，这会改变人们理解长城地标的角度。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 26,
-      "pinyin": "zhuān shí chéng qiáng yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "砖石城墙也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "brick and stone walls also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "zài cháng chéng dì biāo xiāng guān kōng jiān lǐ jiàn zhù zhì xù bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ yě ràng chéng qiáng chéng dān le shuō míng gōng néng",
+      "content_zh": "在长城地标相关空间里，建筑秩序把可见现象和背后秩序接在一起，也让城墙承担了说明功能。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 27,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "huàn dào shān shì zhè yí cè cháng chéng dì biāo dì jià zhí bù zhī zài míng chēng běn shēn kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "换到山势这一侧，长城地标的价值不只在名称本身，可见材料和文化记忆在这里相遇。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 28,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "bǎ shuǐ sè hé rì cháng jīng yàn bìng zhì shuǐ xì guān xì xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "把水色和日常经验并置，水系关系显示人们怎样安排资源与时间，长期积累由此变成可以描述的画面。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 29,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "bǎ chéng qiáng fàng huí jù tǐ huán jìng míng shèng fēng guāng yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "把城墙放回具体环境，名胜风光由许多具体做法慢慢积累，这种判断适合保持中立的学习语气。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 30,
-      "pinyin": "yīn cǐ zhuān shí chéng qiáng bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，砖石城墙不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, brick and stone walls is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "guān chá shān jǐ qiáng tǐ yǔ zhōu biān guān xì qiáo xiàng yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng yě ràng cháng chéng dì biāo gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "观察山脊墙体与周边关系，桥巷与人的活动共同构成背景，也让长城地标更适合作为入门内容。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 31,
-      "pinyin": "fēng huǒ tái shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "烽火台是理解长城地标意义的重要观察点。",
-      "content_en": "beacon towers is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "cóng fēng huǒ tái jìn rù shì yě cháng chéng dì biāo huì chéng xiàn guān jǐng lù xiàn de zhēn shí chǐ dù zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "从烽火台进入视野，长城地标会呈现观景路线的真实尺度，这给后面的理解留下稳定支点。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 32,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "miàn duì guān ài chéng bǎo liú xià de cái liào bù dào tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "面对关隘城堡留下的材料，步道提醒人们注意材料背后的生活方式，细节比简单结论更能说明问题。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 33,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "jiè zhù zhuān shí gōng chéng zhè ge rù kǒu cháng chéng dì biāo dì xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn tā shǐ lì shǐ yí jì jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "借助砖石工程这个入口，长城地标的形成条件变得更容易辨认，它使历史遗迹具有更具体的表达。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 34,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "wéi rào biān sài dào lù zhǎn kāi shuō míng chén hūn bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "围绕边塞道路展开说明，晨昏把人的选择和环境限制同时表现出来，前后变化因此有了清楚的过渡。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 35,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "lǐ jiě míng dài xiū zhù zhī qián míng shèng fēng guāng zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "理解明代修筑之前，名胜风光中的长期经验会露出具体纹理，学习时便不会只停在表面称呼。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 36,
-      "pinyin": "fēng huǒ tái yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "烽火台也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "beacon towers also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "yán zhe bā dá lǐng jì xù guān chá cháng chéng dì biāo yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "沿着八达岭继续观察，长城地标因此拥有可以连续讲述的脉络，传统不是口号，而是一次次实践。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 37,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "cóng mù tián yù de xì bù kàn lǚ xíng tǐ yàn ràng qián hòu biàn huà bú zài xiǎn de tū rán zhè zhǒng guān xì ràng mǎ tóu bú zài zhǐ shì bèi jǐng",
+      "content_zh": "从慕田峪的细部看，旅行体验让前后变化不再显得突然，这种关系让码头不再只是背景。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 38,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "yóu cháng chéng dì biāo qiān chū de huà miàn chéng qiáng kāi shǐ shuō míng cháng chéng dì biāo bú shì gū lì míng cí zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "由长城地标牵出的画面，城墙开始说明长城地标不是孤立名词，主题的边界也变得更加清楚。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 39,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "shùn zhe míng shèng fēng guāng xiàng wài yán shēn gōng chéng zhì huì bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "顺着名胜风光向外延伸，工程智慧帮助人们比较不同地区或时期，后来的记忆常从这里继续展开。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 40,
-      "pinyin": "yīn cǐ fēng huǒ tái bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，烽火台不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, beacon towers is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "dāng cháng chéng dì biāo jìn rù xù shù shí fēng ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "当长城地标进入叙述，石峰让抽象判断落到可以观察的事实上，许多看似零散的内容由此合拢。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 41,
-      "pinyin": "biān dì jiāo tōng shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "边地交通是理解长城地标意义的重要观察点。",
-      "content_en": "frontier routes is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "kào jìn shān shì suǒ zài de chǎng jǐng chéng shì jì yì huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "靠近山势所在的场景，城市记忆会影响秩序、审美和实际用途，相关经验也会进入日常生活。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 42,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "huí dào shuǐ sè xíng chéng de tiáo jiàn cháng chéng dì biāo jì yǒu yán xù yě yǒu tiáo zhěng zhè zhǒng lián xù xìng zhèng shì cháng chéng dì biāo róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "回到水色形成的条件，长城地标既有延续也有调整，这种连续性正是长城地标容易被记住的原因之一。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 43,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "zài chéng qiáng xiāng guān kōng jiān lǐ shuǐ sè shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "在城墙相关空间里，水色使这一主题带有可触摸的现场感，不同地区的差异也能被温和呈现。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 44,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "huàn dào shān jǐ qiáng tǐ zhè yí cè cháng chéng dì biāo kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "换到山脊墙体这一侧，长城地标可以被拆成更清楚的观察层面，这一点会在后续内容中反复得到印证。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 45,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "bǎ fēng huǒ tái hé rì cháng jīng yàn bìng zhì lì shǐ yí jì bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "把烽火台和日常经验并置，历史遗迹把可见现象和背后秩序接在一起，观看、比较和记忆可以同时发生。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 46,
-      "pinyin": "biān dì jiāo tōng yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "边地交通也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "frontier routes also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "bǎ guān ài chéng bǎo fàng huí jù tǐ huán jìng cháng chéng dì biāo dì jià zhí bù zhī zài míng chēng běn shēn rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "把关隘城堡放回具体环境，长城地标的价值不只在名称本身，人们因此能看见事实之间的连接。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 47,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "guān chá zhuān shí gōng chéng yǔ zhōu biān guān xì dì mào xíng tài xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "观察砖石工程与周边关系，地貌形态显示人们怎样安排资源与时间，人们可以从小处进入更大的背景。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 48,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "cóng biān sài dào lù jìn rù shì yě míng shèng fēng guāng yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi zhè huì gǎi biàn rén men lǐ jiě cháng chéng dì biāo dì jiǎo dù",
+      "content_zh": "从边塞道路进入视野，名胜风光由许多具体做法慢慢积累，这会改变人们理解长城地标的角度。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 49,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "miàn duì míng dài xiū zhù liú xià de cái liào mǎ tóu yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng yě ràng mǎ tóu chéng dān le shuō míng gōng néng",
+      "content_zh": "面对明代修筑留下的材料，码头与人的活动共同构成背景，也让码头承担了说明功能。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 50,
-      "pinyin": "yīn cǐ biān dì jiāo tōng bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，边地交通不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, frontier routes is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "jiè zhù bā dá lǐng zhè ge rù kǒu cháng chéng dì biāo huì chéng xiàn jiàn zhù zhì xù de zhēn shí chǐ dù kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "借助八达岭这个入口，长城地标会呈现建筑秩序的真实尺度，可见材料和文化记忆在这里相遇。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 51,
-      "pinyin": "míng dài xiū zhù shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "明代修筑是理解长城地标意义的重要观察点。",
-      "content_en": "Ming construction is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "wéi rào mù tián yù zhǎn kāi shuō míng shì xiàn tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "围绕慕田峪展开说明，视线提醒人们注意材料背后的生活方式，长期积累由此变成可以描述的画面。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 52,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "lǐ jiě cháng chéng dì biāo zhī qián cháng chéng dì biāo dì xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "理解长城地标之前，长城地标的形成条件变得更容易辨认，这种判断适合保持中立的学习语气。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 53,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "yán zhe míng shèng fēng guāng jì xù guān chá sì jì bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái yě ràng cháng chéng dì biāo gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "沿着名胜风光继续观察，四季把人的选择和环境限制同时表现出来，也让长城地标更适合作为入门内容。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 54,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "cóng cháng chéng dì biāo dì xì bù kàn míng shèng fēng guāng zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "从长城地标的细部看，名胜风光中的长期经验会露出具体纹理，这给后面的理解留下稳定支点。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 55,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "yóu shān shì qiān chū de huà miàn cháng chéng dì biāo yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "由山势牵出的画面，长城地标因此拥有可以连续讲述的脉络，细节比简单结论更能说明问题。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 56,
-      "pinyin": "míng dài xiū zhù yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "明代修筑也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "Ming construction also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "shùn zhe shuǐ sè xiàng wài yán shēn shěn měi chuán tǒng ràng qián hòu biàn huà bú zài xiǎn de tū rán tā shǐ shěn měi chuán tǒng jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "顺着水色向外延伸，审美传统让前后变化不再显得突然，它使审美传统具有更具体的表达。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 57,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "dāng chéng qiáng jìn rù xù shù gōng diàn kāi shǐ shuō míng cháng chéng dì biāo bú shì gū lì míng cí qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "当城墙进入叙述，宫殿开始说明长城地标不是孤立名词，前后变化因此有了清楚的过渡。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 58,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "kào jìn shān jǐ qiáng tǐ suǒ zài de chǎng jǐng dì fāng shēng huó bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "靠近山脊墙体所在的场景，地方生活帮助人们比较不同地区或时期，学习时便不会只停在表面称呼。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 59,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "huí dào fēng huǒ tái xíng chéng de tiáo jiàn yuán lín ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "回到烽火台形成的条件，园林让抽象判断落到可以观察的事实上，传统不是口号，而是一次次实践。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 60,
-      "pinyin": "yīn cǐ míng dài xiū zhù bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，明代修筑不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, Ming construction is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "zài guān ài chéng bǎo xiāng guān kōng jiān lǐ jì jié biàn huà huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú zhè zhǒng guān xì ràng shān shì bú zài zhǐ shì bèi jǐng",
+      "content_zh": "在关隘城堡相关空间里，季节变化会影响秩序、审美和实际用途，这种关系让山势不再只是背景。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 61,
-      "pinyin": "bā dá lǐng jǐng guān shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "八达岭景观是理解长城地标意义的重要观察点。",
-      "content_en": "Badaling scenery is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "huàn dào zhuān shí gōng chéng zhè yí cè cháng chéng dì biāo jì yǒu yán xù yě yǒu tiáo zhěng zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "换到砖石工程这一侧，长城地标既有延续也有调整，主题的边界也变得更加清楚。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 62,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "bǎ biān sài dào lù hé rì cháng jīng yàn bìng zhì chéng qiáng shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "把边塞道路和日常经验并置，城墙使这一主题带有可触摸的现场感，后来的记忆常从这里继续展开。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 63,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "bǎ míng dài xiū zhù fàng huí jù tǐ huán jìng cháng chéng dì biāo kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "把明代修筑放回具体环境，长城地标可以被拆成更清楚的观察层面，许多看似零散的内容由此合拢。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 64,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "guān chá bā dá lǐng yǔ zhōu biān guān xì shuǐ xì guān xì bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "观察八达岭与周边关系，水系关系把可见现象和背后秩序接在一起，相关经验也会进入日常生活。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 65,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "cóng mù tián yù jìn rù shì yě cháng chéng dì biāo dì jià zhí bù zhī zài míng chēng běn shēn zhè zhǒng lián xù xìng zhèng shì cháng chéng dì biāo róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "从慕田峪进入视野，长城地标的价值不只在名称本身，这种连续性正是长城地标容易被记住的原因之一。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 66,
-      "pinyin": "bā dá lǐng jǐng guān yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "八达岭景观也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "Badaling scenery also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "miàn duì cháng chéng dì biāo liú xià de cái liào wén huà xiàng zhēng xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "面对长城地标留下的材料，文化象征显示人们怎样安排资源与时间，不同地区的差异也能被温和呈现。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 67,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "jiè zhù míng shèng fēng guāng zhè ge rù kǒu míng shèng fēng guāng yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "借助名胜风光这个入口，名胜风光由许多具体做法慢慢积累，这一点会在后续内容中反复得到印证。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 68,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "wéi rào cháng chéng dì biāo zhǎn kāi shuō míng bù dào yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "围绕长城地标展开说明，步道与人的活动共同构成背景，观看、比较和记忆可以同时发生。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 69,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "lǐ jiě shān shì zhī qián cháng chéng dì biāo huì chéng xiàn lì shǐ yí jì de zhēn shí chǐ dù rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "理解山势之前，长城地标会呈现历史遗迹的真实尺度，人们因此能看见事实之间的连接。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 70,
-      "pinyin": "yīn cǐ bā dá lǐng jǐng guān bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，八达岭景观不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, Badaling scenery is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "yán zhe shuǐ sè jì xù guān chá chén hūn tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "沿着水色继续观察，晨昏提醒人们注意材料背后的生活方式，人们可以从小处进入更大的背景。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 71,
-      "pinyin": "mù tián yù pō xiàn shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "慕田峪坡线是理解长城地标意义的重要观察点。",
-      "content_en": "Mutianyu slopes is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "cóng chéng qiáng de xì bù kàn cháng chéng dì biāo dì xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn zhè huì gǎi biàn rén men lǐ jiě cháng chéng dì biāo dì jiǎo dù",
+      "content_zh": "从城墙的细部看，长城地标的形成条件变得更容易辨认，这会改变人们理解长城地标的角度。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 72,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "yóu shān jǐ qiáng tǐ qiān chū de huà miàn shān shì bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái yě ràng shān shì chéng dān le shuō míng gōng néng",
+      "content_zh": "由山脊墙体牵出的画面，山势把人的选择和环境限制同时表现出来，也让山势承担了说明功能。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 73,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "shùn zhe fēng huǒ tái xiàng wài yán shēn míng shèng fēng guāng zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "顺着烽火台向外延伸，名胜风光中的长期经验会露出具体纹理，可见材料和文化记忆在这里相遇。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 74,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "dāng guān ài chéng bǎo jìn rù xù shù cháng chéng dì biāo yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "当关隘城堡进入叙述，长城地标因此拥有可以连续讲述的脉络，长期积累由此变成可以描述的画面。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 75,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "kào jìn zhuān shí gōng chéng suǒ zài de chǎng jǐng gōng chéng zhì huì ràng qián hòu biàn huà bú zài xiǎn de tū rán zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "靠近砖石工程所在的场景，工程智慧让前后变化不再显得突然，这种判断适合保持中立的学习语气。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 76,
-      "pinyin": "mù tián yù pō xiàn yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "慕田峪坡线也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "Mutianyu slopes also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "huí dào biān sài dào lù xíng chéng de tiáo jiàn shí fēng kāi shǐ shuō míng cháng chéng dì biāo bú shì gū lì míng cí yě ràng cháng chéng dì biāo gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "回到边塞道路形成的条件，石峰开始说明长城地标不是孤立名词，也让长城地标更适合作为入门内容。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 77,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "zài míng dài xiū zhù xiāng guān kōng jiān lǐ chéng shì jì yì bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "在明代修筑相关空间里，城市记忆帮助人们比较不同地区或时期，这给后面的理解留下稳定支点。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 78,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "huàn dào bā dá lǐng zhè yí cè qiáo xiàng ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "换到八达岭这一侧，桥巷让抽象判断落到可以观察的事实上，细节比简单结论更能说明问题。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 79,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "bǎ mù tián yù hé rì cháng jīng yàn bìng zhì guān jǐng lù xiàn huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú tā shǐ guān jǐng lù xiàn jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "把慕田峪和日常经验并置，观景路线会影响秩序、审美和实际用途，它使观景路线具有更具体的表达。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 80,
-      "pinyin": "yīn cǐ mù tián yù pō xiàn bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，慕田峪坡线不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, Mutianyu slopes is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "bǎ cháng chéng dì biāo fàng huí jù tǐ huán jìng cháng chéng dì biāo jì yǒu yán xù yě yǒu tiáo zhěng qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "把长城地标放回具体环境，长城地标既有延续也有调整，前后变化因此有了清楚的过渡。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 81,
-      "pinyin": "xiū shàn bǎo hù shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "修缮保护是理解长城地标意义的重要观察点。",
-      "content_en": "conservation work is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "guān chá míng shèng fēng guāng yǔ zhōu biān guān xì gōng diàn shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "观察名胜风光与周边关系，宫殿使这一主题带有可触摸的现场感，学习时便不会只停在表面称呼。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 82,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "cóng cháng chéng dì biāo jìn rù shì yě cháng chéng dì biāo kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "从长城地标进入视野，长城地标可以被拆成更清楚的观察层面，传统不是口号，而是一次次实践。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 83,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "miàn duì shān shì liú xià de cái liào dì mào xíng tài bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ zhè zhǒng guān xì ràng yuán lín bú zài zhǐ shì bèi jǐng",
+      "content_zh": "面对山势留下的材料，地貌形态把可见现象和背后秩序接在一起，这种关系让园林不再只是背景。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 84,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "jiè zhù shuǐ sè zhè ge rù kǒu cháng chéng dì biāo dì jià zhí bù zhī zài míng chēng běn shēn zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "借助水色这个入口，长城地标的价值不只在名称本身，主题的边界也变得更加清楚。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 85,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "wéi rào chéng qiáng zhǎn kāi shuō míng lǚ xíng tǐ yàn xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "围绕城墙展开说明，旅行体验显示人们怎样安排资源与时间，后来的记忆常从这里继续展开。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 86,
-      "pinyin": "xiū shàn bǎo hù yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "修缮保护也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "conservation work also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "lǐ jiě shān jǐ qiáng tǐ zhī qián míng shèng fēng guāng yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "理解山脊墙体之前，名胜风光由许多具体做法慢慢积累，许多看似零散的内容由此合拢。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 87,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "yán zhe fēng huǒ tái jì xù guān chá shì xiàn yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "沿着烽火台继续观察，视线与人的活动共同构成背景，相关经验也会进入日常生活。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 88,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "cóng guān ài chéng bǎo de xì bù kàn cháng chéng dì biāo huì chéng xiàn shuǐ xì guān xì de zhēn shí chǐ dù zhè zhǒng lián xù xìng zhèng shì cháng chéng dì biāo róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "从关隘城堡的细部看，长城地标会呈现水系关系的真实尺度，这种连续性正是长城地标容易被记住的原因之一。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 89,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "yóu zhuān shí gōng chéng qiān chū de huà miàn sì jì tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "由砖石工程牵出的画面，四季提醒人们注意材料背后的生活方式，不同地区的差异也能被温和呈现。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 90,
-      "pinyin": "yīn cǐ xiū shàn bǎo hù bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，修缮保护不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, conservation work is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "shùn zhe biān sài dào lù xiàng wài yán shēn cháng chéng dì biāo dì xíng chéng tiáo jiàn biàn dé gèng róng yì biàn rèn zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "顺着边塞道路向外延伸，长城地标的形成条件变得更容易辨认，这一点会在后续内容中反复得到印证。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 91,
-      "pinyin": "yóu kè shì jiǎo shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "游客视角是理解长城地标意义的重要观察点。",
-      "content_en": "visitor viewpoints is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "dāng míng dài xiū zhù jìn rù xù shù shuǐ sè bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "当明代修筑进入叙述，水色把人的选择和环境限制同时表现出来，观看、比较和记忆可以同时发生。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 92,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "kào jìn bā dá lǐng suǒ zài de chǎng jǐng míng shèng fēng guāng zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "靠近八达岭所在的场景，名胜风光中的长期经验会露出具体纹理，人们因此能看见事实之间的连接。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 93,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "huí dào mù tián yù xíng chéng de tiáo jiàn cháng chéng dì biāo yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "回到慕田峪形成的条件，长城地标因此拥有可以连续讲述的脉络，人们可以从小处进入更大的背景。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 94,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "zài cháng chéng dì biāo xiāng guān kōng jiān lǐ dì fāng shēng huó ràng qián hòu biàn huà bú zài xiǎn de tū rán zhè huì gǎi biàn rén men lǐ jiě cháng chéng dì biāo dì jiǎo dù",
+      "content_zh": "在长城地标相关空间里，地方生活让前后变化不再显得突然，这会改变人们理解长城地标的角度。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 95,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "huàn dào míng shèng fēng guāng zhè yí cè yuán lín kāi shǐ shuō míng cháng chéng dì biāo bú shì gū lì míng cí yě ràng yuán lín chéng dān le shuō míng gōng néng",
+      "content_zh": "换到名胜风光这一侧，园林开始说明长城地标不是孤立名词，也让园林承担了说明功能。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 96,
-      "pinyin": "yóu kè shì jiǎo yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "游客视角也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "visitor viewpoints also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "bǎ cháng chéng dì biāo hé rì cháng jīng yàn bìng zhì jì jié biàn huà bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "把长城地标和日常经验并置，季节变化帮助人们比较不同地区或时期，可见材料和文化记忆在这里相遇。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 97,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "bǎ shān shì fàng huí jù tǐ huán jìng mǎ tóu ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "把山势放回具体环境，码头让抽象判断落到可以观察的事实上，长期积累由此变成可以描述的画面。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 98,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "guān chá shuǐ sè yǔ zhōu biān guān xì jiàn zhù zhì xù huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "观察水色与周边关系，建筑秩序会影响秩序、审美和实际用途，这种判断适合保持中立的学习语气。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 99,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "cóng chéng qiáng jìn rù shì yě cháng chéng dì biāo jì yǒu yán xù yě yǒu tiáo zhěng yě ràng cháng chéng dì biāo gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "从城墙进入视野，长城地标既有延续也有调整，也让长城地标更适合作为入门内容。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 100,
-      "pinyin": "yīn cǐ yóu kè shì jiǎo bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，游客视角不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, visitor viewpoints is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "miàn duì shān jǐ qiáng tǐ liú xià de cái liào shí fēng shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "面对山脊墙体留下的材料，石峰使这一主题带有可触摸的现场感，这给后面的理解留下稳定支点。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 101,
-      "pinyin": "yǐng xiàng chuán bō shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "影像传播是理解长城地标意义的重要观察点。",
-      "content_en": "visual circulation is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "jiè zhù fēng huǒ tái zhè ge rù kǒu cháng chéng dì biāo kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "借助烽火台这个入口，长城地标可以被拆成更清楚的观察层面，细节比简单结论更能说明问题。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 102,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "wéi rào guān ài chéng bǎo zhǎn kāi shuō míng wén huà xiàng zhēng bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ tā shǐ wén huà xiàng zhēng jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "围绕关隘城堡展开说明，文化象征把可见现象和背后秩序接在一起，它使文化象征具有更具体的表达。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 103,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "lǐ jiě zhuān shí gōng chéng zhī qián cháng chéng dì biāo de jià zhí bù zhī zài míng chēng běn shēn qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "理解砖石工程之前，长城地标的价值不只在名称本身，前后变化因此有了清楚的过渡。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 104,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "yán zhe biān sài dào lù jì xù guān chá shěn měi chuán tǒng xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "沿着边塞道路继续观察，审美传统显示人们怎样安排资源与时间，学习时便不会只停在表面称呼。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 105,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "cóng míng dài xiū zhù de xì bù kàn míng shèng fēng guāng yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "从明代修筑的细部看，名胜风光由许多具体做法慢慢积累，传统不是口号，而是一次次实践。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 106,
-      "pinyin": "yǐng xiàng chuán bō yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "影像传播也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "visual circulation also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "yóu bā dá lǐng qiān chū de huà miàn chén hūn yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng zhè zhǒng guān xì ràng chén hūn bú zài zhǐ shì bèi jǐng",
+      "content_zh": "由八达岭牵出的画面，晨昏与人的活动共同构成背景，这种关系让晨昏不再只是背景。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 107,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "shùn zhe mù tián yù xiàng wài yán shēn cháng chéng dì biāo huì chéng xiàn dì mào xíng tài de zhēn shí chǐ dù zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "顺着慕田峪向外延伸，长城地标会呈现地貌形态的真实尺度，主题的边界也变得更加清楚。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 108,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "dāng cháng chéng dì biāo jìn rù xù shù shān shì tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "当长城地标进入叙述，山势提醒人们注意材料背后的生活方式，后来的记忆常从这里继续展开。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 109,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "kào jìn míng shèng fēng guāng suǒ zài de chǎng jǐng cháng chéng dì biāo de xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "靠近名胜风光所在的场景，长城地标的形成条件变得更容易辨认，许多看似零散的内容由此合拢。",
+      "content_en": "the Great Wall as a landmark is explained through architectural order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự kiến trúc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระเบียบสถาปัตยกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tatanan arsitektur, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 110,
-      "pinyin": "yīn cǐ yǐng xiàng chuán bō bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，影像传播不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, visual circulation is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "huí dào cháng chéng dì biāo xíng chéng de tiáo jiàn chéng qiáng bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "回到长城地标形成的条件，城墙把人的选择和环境限制同时表现出来，相关经验也会进入日常生活。",
+      "content_en": "the Great Wall as a landmark is explained through engineering wisdom, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trí tuệ công trình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิปัญญาวิศวกรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kearifan teknik, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 111,
-      "pinyin": "guó jiā dì biāo shì lǐ jiě cháng chéng dì biāo yì yì de zhòng yào guān chá diǎn",
-      "content_zh": "国家地标是理解长城地标意义的重要观察点。",
-      "content_en": "national landmark is an important viewpoint for understanding the landmark meaning of the Great Wall.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีน",
-      "content_id": "Bagian ini penting untuk memahami makna ikon Tembok Besar."
+      "pinyin": "zài shān shì xiāng guān kōng jiān lǐ míng shèng fēng guāng zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ zhè zhǒng lián xù xìng zhèng shì cháng chéng dì biāo róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "在山势相关空间里，名胜风光中的长期经验会露出具体纹理，这种连续性正是长城地标容易被记住的原因之一。",
+      "content_en": "the Great Wall as a landmark is explained through water systems, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua hệ thống nước, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านระบบน้ำ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sistem air, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 112,
-      "pinyin": "tā bǎ cháng chéng dì biāo yì yì fàng huí jù tǐ de dì mào chéng shì hé yóu shǎng huán jìng zhōng",
-      "content_zh": "它把长城地标意义放回具体的地貌、城市和游赏环境中。",
-      "content_en": "It places the landmark meaning of the Great Wall back into a concrete setting of landform, city, and travel experience.",
-      "content_vi": "Nó đặt ý nghĩa biểu tượng của Vạn Lý Trường Thành trở lại bối cảnh cụ thể của không gian, thời gian và đời sống.",
-      "content_th": "มันพาความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan makna ikon Tembok Besar kembali dalam konteks ruang, waktu, dan kehidupan nyata."
+      "pinyin": "huàn dào shuǐ sè zhè yí cè cháng chéng dì biāo yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "换到水色这一侧，长城地标因此拥有可以连续讲述的脉络，不同地区的差异也能被温和呈现。",
+      "content_en": "the Great Wall as a landmark is explained through urban memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức đô thị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำเมือง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 113,
-      "pinyin": "shān tǐ shuǐ miàn dào lù hé jiàn zhù gòng tóng zǔ zhī shì xiàn shǐ fēng jǐng jù yǒu kě tíng liú de céng cì",
-      "content_zh": "山体、水面、道路和建筑共同组织视线，使风景具有可停留的层次。",
-      "content_en": "Mountains, water, paths, and buildings organize sightlines together and give the scene layered depth.",
-      "content_vi": "Cảnh vật, món ăn, âm thanh và hoạt động cùng tạo nên tầng nghĩa có thể cảm nhận.",
-      "content_th": "ทิวทัศน์ อาหาร เสียง และกิจกรรมร่วมกันสร้างชั้นความหมายที่สัมผัสได้",
-      "content_id": "Pemandangan, makanan, suara, dan kegiatan bersama membentuk lapisan makna yang dapat dirasakan."
+      "pinyin": "bǎ chéng qiáng hé rì cháng jīng yàn bìng zhì chéng shì jì yì ràng qián hòu biàn huà bú zài xiǎn de tū rán zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "把城墙和日常经验并置，城市记忆让前后变化不再显得突然，这一点会在后续内容中反复得到印证。",
+      "content_en": "the Great Wall as a landmark is explained through cultural symbols, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua biểu tượng văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านสัญลักษณ์วัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui simbol budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 114,
-      "pinyin": "yóu kè cóng rù kǒu zǒu xiàng shēn chù shí huì bú duàn yù dào xīn de jiǎo dù chǐ dù hé guāng yǐng biàn huà",
-      "content_zh": "游客从入口走向深处时，会不断遇到新的角度、尺度和光影变化。",
-      "content_en": "As visitors move from entrance to inner areas, new angles, scales, and light changes continue to appear.",
-      "content_vi": "Khi con người bước vào không gian ấy, họ thấy sự thay đổi của góc nhìn, nhịp điệu và ký ức.",
-      "content_th": "เมื่อผู้คนเข้าสู่พื้นที่นั้น พวกเขาจะเห็นมุมมอง จังหวะ และความทรงจำเปลี่ยนไป",
-      "content_id": "Saat orang memasuki ruang itu, sudut pandang, ritme, dan ingatan terus berubah."
+      "pinyin": "bǎ shān jǐ qiáng tǐ fàng huí jù tǐ huán jìng qiáo xiàng kāi shǐ shuō míng cháng chéng dì biāo bú shì gū lì míng cí guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "把山脊墙体放回具体环境，桥巷开始说明长城地标不是孤立名词，观看、比较和记忆可以同时发生。",
+      "content_en": "the Great Wall as a landmark is explained through viewing routes, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tuyến tham quan, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเส้นทางชมวิว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui rute pandang, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 115,
-      "pinyin": "rú guǒ zhī kàn zhào piàn rén men róng yì hū lüè dāng dì jiāo tōng shēng huó hé bǎo hù gōng zuò duì jǐng guān de sù zào",
-      "content_zh": "如果只看照片，人们容易忽略当地交通、生活和保护工作对景观的塑造。",
-      "content_en": "If people only look at photos, they may miss how transport, local life, and conservation shape the scenery.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua sự chuẩn bị và đời sống địa phương phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามการเตรียมตัวและชีวิตท้องถิ่นเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan persiapan dan kehidupan lokal di baliknya."
+      "pinyin": "guān chá fēng huǒ tái yǔ zhōu biān guān xì guān jǐng lù xiàn bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "观察烽火台与周边关系，观景路线帮助人们比较不同地区或时期，人们因此能看见事实之间的连接。",
+      "content_en": "the Great Wall as a landmark is explained through aesthetic tradition, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua truyền thống thẩm mỹ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประเพณีความงาม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui tradisi estetika, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 116,
-      "pinyin": "guó jiā dì biāo yě shuō míng míng shèng fēng guāng wǎng wǎng yóu zì rán tiáo jiàn hé rén wén jīng yíng gòng tóng xíng chéng",
-      "content_zh": "国家地标也说明，名胜风光往往由自然条件和人文经营共同形成。",
-      "content_en": "national landmark also shows that scenic sites are often formed by both natural conditions and human care.",
-      "content_vi": "Điều đó cho thấy ý nghĩa biểu tượng của Vạn Lý Trường Thành được hình thành bởi nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่าความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa makna ikon Tembok Besar terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "cóng guān ài chéng bǎo jìn rù shì yě bù dào ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "从关隘城堡进入视野，步道让抽象判断落到可以观察的事实上，人们可以从小处进入更大的背景。",
+      "content_en": "the Great Wall as a landmark is explained through historic remains, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua di tích lịch sử, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโบราณสถาน พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui peninggalan sejarah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 117,
-      "pinyin": "zhè xiē jǐng guān bèi shī wén huì huà shè yǐng hé lǚ xíng jīng yàn fǎn fù jì lù zhú jiàn xíng chéng gōng gòng jì yì",
-      "content_zh": "这些景观被诗文、绘画、摄影和旅行经验反复记录，逐渐形成公共记忆。",
-      "content_en": "Poetry, painting, photography, and travel experience repeatedly record these places and turn them into shared memory.",
-      "content_vi": "Thơ văn, hình ảnh, du lịch và sinh hoạt thường ngày tiếp tục bổ sung ký ức chung.",
-      "content_th": "บทกวี ภาพถ่าย การท่องเที่ยว และชีวิตประจำวันยังเติมความทรงจำร่วมต่อไป",
-      "content_id": "Puisi, gambar, perjalanan, dan kehidupan sehari-hari terus menambah ingatan bersama."
+      "pinyin": "miàn duì zhuān shí gōng chéng liú xià de cái liào lì shǐ yí jì huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú zhè huì gǎi biàn rén men lǐ jiě cháng chéng dì biāo dì jiǎo dù",
+      "content_zh": "面对砖石工程留下的材料，历史遗迹会影响秩序、审美和实际用途，这会改变人们理解长城地标的角度。",
+      "content_en": "the Great Wall as a landmark is explained through local life, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua đời sống địa phương, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชีวิตท้องถิ่น พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kehidupan lokal, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 118,
-      "pinyin": "jīn tiān de bǎo hù gōng zuò qiáng diào ān quán yóu lǎn shēng tài xiū fù hé lì shǐ jiàn zhù de chí xù wéi hù",
-      "content_zh": "今天的保护工作强调安全游览、生态修复和历史建筑的持续维护。",
-      "content_en": "Today, protection work emphasizes safe visits, ecological restoration, and lasting care for historic structures.",
-      "content_vi": "Sự bảo tồn và điều chỉnh hôm nay giúp truyền thống tiếp tục tồn tại trong đời sống mới.",
-      "content_th": "การอนุรักษ์และการปรับตัวในวันนี้ช่วยให้ประเพณีอยู่ต่อในชีวิตใหม่",
-      "content_id": "Pelestarian dan penyesuaian hari ini membantu tradisi tetap hidup dalam kehidupan baru."
+      "pinyin": "jiè zhù biān sài dào lù zhè ge rù kǒu cháng chéng dì biāo jì yǒu yán xù yě yǒu tiáo zhěng yě ràng chén hūn chéng dān le shuō míng gōng néng",
+      "content_zh": "借助边塞道路这个入口，长城地标既有延续也有调整，也让晨昏承担了说明功能。",
+      "content_en": "the Great Wall as a landmark is explained through landform, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua địa mạo, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิลักษณ์ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui bentuk lahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 119,
-      "pinyin": "bǎ bù tóng jiǎo dù lián qǐ lái kě yǐ kàn jiàn fēng jǐng rú hé chéng zài dì fāng shēng huó hé wén huà xiǎng xiàng",
-      "content_zh": "把不同角度连起来，可以看见风景如何承载地方生活和文化想象。",
-      "content_en": "When different angles are connected, the scenery shows local life and cultural imagination at once.",
-      "content_vi": "Khi đặt các cảnh này cạnh nhau, có thể thấy sự nối tiếp và biến đổi cùng hiện diện.",
-      "content_th": "เมื่อนำฉากต่างๆ มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika adegan-adegan ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "wéi rào míng dài xiū zhù zhǎn kāi shuō míng yuán lín shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "围绕明代修筑展开说明，园林使这一主题带有可触摸的现场感，可见材料和文化记忆在这里相遇。",
+      "content_en": "the Great Wall as a landmark is explained through seasonal change, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thay đổi mùa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการเปลี่ยนฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui perubahan musim, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 120,
-      "pinyin": "yīn cǐ guó jiā dì biāo bù jǐn shì kě guān kàn de jǐng wù yě bāng zhù rén men lǐ jiě cháng chéng dì biāo yì yì",
-      "content_zh": "因此，国家地标不仅是可观看的景物，也帮助人们理解长城地标意义。",
-      "content_en": "Therefore, national landmark is not only something to view but also a way to understand the landmark meaning of the Great Wall.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu ý nghĩa biểu tượng của Vạn Lý Trường Thành rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจความหมายเชิงสัญลักษณ์ของกำแพงเมืองจีนได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami makna ikon Tembok Besar dengan lebih jelas."
+      "pinyin": "lǐ jiě bā dá lǐng zhī qián cháng chéng dì biāo kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "理解八达岭之前，长城地标可以被拆成更清楚的观察层面，长期积累由此变成可以描述的画面。",
+      "content_en": "the Great Wall as a landmark is explained through travel experience, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trải nghiệm du lịch, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านประสบการณ์เดินทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengalaman perjalanan, dengan konteks budaya yang konkret bagi pelajar."
     }
   ]
 }

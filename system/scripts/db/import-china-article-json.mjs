@@ -202,15 +202,34 @@ function validateDoc(filePath, doc, errors) {
   validateI18n(doc.article.title_i18n, 1, 80, 'article.title_i18n', push);
   if (!Array.isArray(doc.sentences)) return;
   if (doc.sentences.length < 1 || doc.sentences.length > 120) push('sentences.length', 'must be 1..120');
+  if ((doc.content_policy?.phase === 'phase1' || doc.doc_version?.includes('phase1')) && doc.sentences.length !== 120) {
+    push('sentences.length', 'phase1 articles must contain exactly 120 sentences');
+  }
   if (Array.isArray(doc.source_story_zh)) {
     if (doc.source_story_zh.length !== doc.sentences.length) push('source_story_zh.length', 'must match sentences.length');
+    const sourceSeen = new Map();
+    doc.source_story_zh.forEach((sentence, index) => {
+      if (sourceSeen.has(sentence)) {
+        push(`source_story_zh[${index}]`, `duplicate of source_story_zh[${sourceSeen.get(sentence)}]`);
+      } else {
+        sourceSeen.set(sentence, index);
+      }
+    });
   }
   const seen = new Set();
+  const contentZhSeen = new Map();
   doc.sentences.forEach((row, index) => {
     const expected = index + 1;
     if (row.seq_in_article !== expected) push(`sentences[${index}].seq_in_article`, `expected ${expected}`);
     if (seen.has(row.seq_in_article)) push(`sentences[${index}].seq_in_article`, 'duplicate');
     seen.add(row.seq_in_article);
+    if (typeof row.content_zh === 'string') {
+      if (contentZhSeen.has(row.content_zh)) {
+        push(`sentences[${index}].content_zh`, `duplicate of sentences[${contentZhSeen.get(row.content_zh)}].content_zh`);
+      } else {
+        contentZhSeen.set(row.content_zh, index);
+      }
+    }
     validateText(row.pinyin, 1, 600, `sentences[${index}].pinyin`, push);
     if (/\b[a-zA-Z]+[1-5]\b/.test(row.pinyin ?? '')) push(`sentences[${index}].pinyin`, 'contains numeric tone');
     validateText(row.content_zh, 1, 400, `sentences[${index}].content_zh`, push);

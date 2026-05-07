@@ -4,7 +4,7 @@
   "category_code": "03",
   "category_dir": "03-scenic",
   "phase": "phase1",
-  "generated_at": "2026-05-04T00:00:00+08:00",
+  "generated_at": "2026-05-07T00:00:00+08:00",
   "update_mode": "append_only_infinite",
   "article_count": 12,
   "sentence_target_per_article": 120,
@@ -23,89 +23,89 @@
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "8dcdb3855e59a6b9ea5fefd2444bc5c7d07d7d4f62907d615821f7cf4a8f63d7"
+      "sha256": "fbbeecbc5d31b9636958e223fb23dc20799d3b215eac1b46d80c9891ad3c9a9e"
     },
     {
       "path": "02-great-wall-china-landmark.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "a288056648b1d2817658dde53e23ba06b076af6e4f1452561710a78aa4b0e693"
+      "sha256": "1d072b9670198ce86d434b01047a051fa69461876e84438a835e0d51c3747037"
     },
     {
       "path": "03-forbidden-city-ancient-capital.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "f3d0458157cebb536f8ae1ec766ec79d540e87768acb5c58504c7fdab92671dc"
+      "sha256": "a1d2f88240324a45d8be46da2e082687b44ea95aed271bf0b292f4cdfcc3ad4e"
     },
     {
       "path": "04-huangshan-pines-rocks.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "75990a7b47199a29c11d4c95eacf243eded915680bdf3c1ffc38d2bd7eb5400b"
+      "sha256": "902ffb1d35b7243b2da666121876b0f8baeb8a599bc8da443eb003b1fc7353d2"
     },
     {
       "path": "05-jiuzhaigou-colorful-water.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "c8276698c4ccee83532b5d2c51778c4118c14ce45747d39463ff09a52762189b"
+      "sha256": "a50e7a6014973ee0359f61d97a005c5b0f119b621d6c3220f342e6fe9f96f75d"
     },
     {
       "path": "06-guilin-landscape-ink-painting.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "19e0fc44ae3f0398ee19ced1a836f2c999689149e04a58edb9d5bfb5d675b0af"
+      "sha256": "6c41d46e57d9d26af30689f658489b26c6f3d1abd609b96a7c08d9f25777bd5c"
     },
     {
       "path": "07-west-lake-poetic-landscape.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "96a05bb4c4597689e5035a5536f7e6511beaaa4cf4cbd543fbd110af8bfd78af"
+      "sha256": "178cec5591e15ab4ee1e896bfcf2d020c04b62854bb0b0c690b8c1fad1bb01e6"
     },
     {
       "path": "08-zhangjiajie-stone-peaks.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "834650d06e98bc5e13d1a0870a17efc3748bdfff23005bab6271ddfbae732c65"
+      "sha256": "6474476db11c302f8ac871ef42ba31b869b586bf22c033bf8f49f8388630e929"
     },
     {
       "path": "09-xian-terracotta-army-history.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "13becbca7a7814f0d194ea9dbe31ec25a9aec7341f0f8be7c8f109b22af5d2c9"
+      "sha256": "c92e57684862daba2919207247a0a840423e6ab0a4c85931e076f0f5f9572668"
     },
     {
       "path": "10-suzhou-gardens-small-big.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "d049d19beffb98c708654d7030e218b99a719a6936b51eb49737e0a1ca975f27"
+      "sha256": "5796f90ee255744ace2f9cdb9616982367058f4ff4f45928f1f67103925c283a"
     },
     {
       "path": "11-lijiang-old-town-water.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "a0aac4a966bb0cc1a284f7b2e4113757ff444abb115d2a240e23f927ab423521"
+      "sha256": "94bba3bf217b09ea5d1234aa5533defcaae6ddae0d59ecfeb0ffba4615c466ec"
     },
     {
       "path": "12-shanghai-bund-city-change.article.json",
       "kind": "article",
       "rows": 1,
       "sentences": 120,
-      "sha256": "f3929c838c23dd242e1cecaa578fd050a3c574caca0b682e1d63718598d5280d"
+      "sha256": "99bb9d8ee9a12fdc0728e154e9a93215aa22f0a0168d5096b44e4e7c6483c69b"
     }
   ],
   "generator": {
-    "name": "github-copilot-direct-authoring",
-    "version": "2.0.0",
-    "note": "Phase1 article set authored for the first 12 planned titles with china.article.v2 structure, 120 sentences per article, and embedded SEO/GEO metadata."
+    "name": "github-copilot-direct-rebuild",
+    "version": "2026-05-07-diversified",
+    "note": "Rewritten after duplicate template data was removed; each article has 120 unique Chinese source sentences with diversified sentence construction."
   }
 }

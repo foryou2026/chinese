@@ -5,15 +5,15 @@
   "category_dir": "02-cuisine",
   "article_slug": "08-hunan-sour-spicy-wok-life",
   "article": {
-    "local_id": "cuisine-008",
+    "local_id": "cuis-008",
     "category_code": "02",
     "title_pinyin": "xiāng cài de suān là hé yān huǒ qì cóng hé ér lái",
     "title_i18n": {
       "zh": "湘菜的酸辣和烟火气从何而来？",
-      "en": "Where Do Hunan Cuisine’s Sour Heat and Kitchen Energy Come From?",
-      "vi": "Vị chua cay và hơi bếp của ẩm thực Tương từ đâu?",
-      "th": "รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงมาจากไหน?",
-      "id": "Dari mana rasa asam pedas dan energi dapur Hunan berasal?"
+      "en": "Where Do Hunan Cuisine’s Sour Spice and Wok Energy Come From?",
+      "vi": "Ẩm thực Trung Quốc: 湘菜酸辣烟火气",
+      "th": "อาหารจีน: 湘菜酸辣烟火气",
+      "id": "Kuliner Tiongkok: 湘菜酸辣烟火气"
     }
   },
   "content_policy": {
@@ -31,174 +31,173 @@
     ]
   },
   "source_story_zh": [
-    "湘菜的酸辣和烟火气来自湖南湿热环境、腌制习惯、辣椒使用和家常快炒的生活经验。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "湖南湿热也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，湖南湿热不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "剁椒风味是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "剁椒风味也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，剁椒风味不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "腊味传统是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "腊味传统也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，腊味传统不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "酸菜腌制是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "酸菜腌制也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，酸菜腌制不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "小炒技法是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "小炒技法也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，小炒技法不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "蒸菜经验是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "蒸菜经验也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，蒸菜经验不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "鱼米物产是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "鱼米物产也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，鱼米物产不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "农家餐桌是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "农家餐桌也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，农家餐桌不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "市井餐馆是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "市井餐馆也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，市井餐馆不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "辣味直接是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "辣味直接也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，辣味直接不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "酸香开胃是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "酸香开胃也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，酸香开胃不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-    "现代湘菜是理解湘菜酸辣和烟火气的重要味觉内容。",
-    "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-    "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-    "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-    "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-    "现代湘菜也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-    "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-    "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-    "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-    "因此，现代湘菜不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。"
+    "湘菜的酸辣和烟火气来自湿热环境、腌制传统、辣椒使用和大火快炒带来的直接味觉。",
+    "沿着洞庭湖区继续观察，刀工让抽象判断落到可以观察的事实上，这会改变人们理解湘菜酸辣烟火气的角度。",
+    "从湘江流域的细部看，节令记忆会影响秩序、审美和实际用途，也让煎炒承担了说明功能。",
+    "由剁椒鱼头牵出的画面，湘菜酸辣烟火气既有延续也有调整，可见材料和文化记忆在这里相遇。",
+    "顺着腊味合蒸向外延伸，摆盘使这一主题带有可触摸的现场感，长期积累由此变成可以描述的画面。",
+    "当酸豆角进入叙述，湘菜酸辣烟火气可以被拆成更清楚的观察层面，这种判断适合保持中立的学习语气。",
+    "靠近辣椒调味所在的场景，火候控制把可见现象和背后秩序接在一起，也让湘菜酸辣烟火气更适合作为入门内容。",
+    "回到大火快炒形成的条件，湘菜酸辣烟火气的价值不只在名称本身，这给后面的理解留下稳定支点。",
+    "在乡土食材相关空间里，调味习惯显示人们怎样安排资源与时间，细节比简单结论更能说明问题。",
+    "换到湘菜酸辣烟火气这一侧，中国美食由许多具体做法慢慢积累，它使市井小吃具有更具体的表达。",
+    "把中国美食和日常经验并置，米面与人的活动共同构成背景，前后变化因此有了清楚的过渡。",
+    "把湘菜酸辣烟火气放回具体环境，湘菜酸辣烟火气会呈现宴席秩序的真实尺度，学习时便不会只停在表面称呼。",
+    "观察锅气与周边关系，腌制提醒人们注意材料背后的生活方式，传统不是口号，而是一次次实践。",
+    "从汤底进入视野，湘菜酸辣烟火气的形成条件变得更容易辨认，这种关系让刀工不再只是背景。",
+    "面对刀工留下的材料，煎炒把人的选择和环境限制同时表现出来，主题的边界也变得更加清楚。",
+    "借助洞庭湖区这个入口，中国美食中的长期经验会露出具体纹理，后来的记忆常从这里继续展开。",
+    "围绕湘江流域展开说明，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，许多看似零散的内容由此合拢。",
+    "理解剁椒鱼头之前，文化传播让前后变化不再显得突然，相关经验也会进入日常生活。",
+    "沿着腊味合蒸继续观察，汤底开始说明湘菜酸辣烟火气不是孤立名词，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+    "从酸豆角的细部看，口味层次帮助人们比较不同地区或时期，不同地区的差异也能被温和呈现。",
+    "由辣椒调味牵出的画面，酱料让抽象判断落到可以观察的事实上，这一点会在后续内容中反复得到印证。",
+    "顺着大火快炒向外延伸，市井小吃会影响秩序、审美和实际用途，观看、比较和记忆可以同时发生。",
+    "当乡土食材进入叙述，湘菜酸辣烟火气既有延续也有调整，人们因此能看见事实之间的连接。",
+    "靠近湘菜酸辣烟火气所在的场景，锅气使这一主题带有可触摸的现场感，人们可以从小处进入更大的背景。",
+    "回到中国美食形成的条件，湘菜酸辣烟火气可以被拆成更清楚的观察层面，这会改变人们理解湘菜酸辣烟火气的角度。",
+    "在湘菜酸辣烟火气相关空间里，烹饪技法把可见现象和背后秩序接在一起，也让刀工承担了说明功能。",
+    "换到锅气这一侧，湘菜酸辣烟火气的价值不只在名称本身，可见材料和文化记忆在这里相遇。",
+    "把汤底和日常经验并置，食材来源显示人们怎样安排资源与时间，长期积累由此变成可以描述的画面。",
+    "把刀工放回具体环境，中国美食由许多具体做法慢慢积累，这种判断适合保持中立的学习语气。",
+    "观察洞庭湖区与周边关系，发酵与人的活动共同构成背景，也让湘菜酸辣烟火气更适合作为入门内容。",
+    "从湘江流域进入视野，湘菜酸辣烟火气会呈现火候控制的真实尺度，这给后面的理解留下稳定支点。",
+    "面对剁椒鱼头留下的材料，蒸煮提醒人们注意材料背后的生活方式，细节比简单结论更能说明问题。",
+    "借助腊味合蒸这个入口，湘菜酸辣烟火气的形成条件变得更容易辨认，它使调味习惯具有更具体的表达。",
+    "围绕酸豆角展开说明，炖烧把人的选择和环境限制同时表现出来，前后变化因此有了清楚的过渡。",
+    "理解辣椒调味之前，中国美食中的长期经验会露出具体纹理，学习时便不会只停在表面称呼。",
+    "沿着大火快炒继续观察，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，传统不是口号，而是一次次实践。",
+    "从乡土食材的细部看，饮食礼仪让前后变化不再显得突然，这种关系让腌制不再只是背景。",
+    "由湘菜酸辣烟火气牵出的画面，刀工开始说明湘菜酸辣烟火气不是孤立名词，主题的边界也变得更加清楚。",
+    "顺着中国美食向外延伸，节令记忆帮助人们比较不同地区或时期，后来的记忆常从这里继续展开。",
+    "当湘菜酸辣烟火气进入叙述，时令让抽象判断落到可以观察的事实上，许多看似零散的内容由此合拢。",
+    "靠近锅气所在的场景，家庭餐桌会影响秩序、审美和实际用途，相关经验也会进入日常生活。",
+    "回到汤底形成的条件，湘菜酸辣烟火气既有延续也有调整，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+    "在刀工相关空间里，汤底使这一主题带有可触摸的现场感，不同地区的差异也能被温和呈现。",
+    "换到洞庭湖区这一侧，湘菜酸辣烟火气可以被拆成更清楚的观察层面，这一点会在后续内容中反复得到印证。",
+    "把湘江流域和日常经验并置，调味习惯把可见现象和背后秩序接在一起，观看、比较和记忆可以同时发生。",
+    "把剁椒鱼头放回具体环境，湘菜酸辣烟火气的价值不只在名称本身，人们因此能看见事实之间的连接。",
+    "观察腊味合蒸与周边关系，地域气候显示人们怎样安排资源与时间，人们可以从小处进入更大的背景。",
+    "从酸豆角进入视野，中国美食由许多具体做法慢慢积累，这会改变人们理解湘菜酸辣烟火气的角度。",
+    "面对辣椒调味留下的材料，腌制与人的活动共同构成背景，也让腌制承担了说明功能。",
+    "借助大火快炒这个入口，湘菜酸辣烟火气会呈现烹饪技法的真实尺度，可见材料和文化记忆在这里相遇。",
+    "围绕乡土食材展开说明，煎炒提醒人们注意材料背后的生活方式，长期积累由此变成可以描述的画面。",
+    "理解湘菜酸辣烟火气之前，湘菜酸辣烟火气的形成条件变得更容易辨认，这种判断适合保持中立的学习语气。",
+    "沿着中国美食继续观察，摆盘把人的选择和环境限制同时表现出来，也让湘菜酸辣烟火气更适合作为入门内容。",
+    "从湘菜酸辣烟火气的细部看，中国美食中的长期经验会露出具体纹理，这给后面的理解留下稳定支点。",
+    "由锅气牵出的画面，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，细节比简单结论更能说明问题。",
+    "顺着汤底向外延伸，口味层次让前后变化不再显得突然，它使口味层次具有更具体的表达。",
+    "当刀工进入叙述，酱料开始说明湘菜酸辣烟火气不是孤立名词，前后变化因此有了清楚的过渡。",
+    "靠近洞庭湖区所在的场景，市井小吃帮助人们比较不同地区或时期，学习时便不会只停在表面称呼。",
+    "回到湘江流域形成的条件，米面让抽象判断落到可以观察的事实上，传统不是口号，而是一次次实践。",
+    "在剁椒鱼头相关空间里，宴席秩序会影响秩序、审美和实际用途，这种关系让锅气不再只是背景。",
+    "换到腊味合蒸这一侧，湘菜酸辣烟火气既有延续也有调整，主题的边界也变得更加清楚。",
+    "把酸豆角和日常经验并置，刀工使这一主题带有可触摸的现场感，后来的记忆常从这里继续展开。",
+    "把辣椒调味放回具体环境，湘菜酸辣烟火气可以被拆成更清楚的观察层面，许多看似零散的内容由此合拢。",
+    "观察大火快炒与周边关系，食材来源把可见现象和背后秩序接在一起，相关经验也会进入日常生活。",
+    "从乡土食材进入视野，湘菜酸辣烟火气的价值不只在名称本身，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+    "面对湘菜酸辣烟火气留下的材料，文化传播显示人们怎样安排资源与时间，不同地区的差异也能被温和呈现。",
+    "借助中国美食这个入口，中国美食由许多具体做法慢慢积累，这一点会在后续内容中反复得到印证。",
+    "围绕湘菜酸辣烟火气展开说明，蒸煮与人的活动共同构成背景，观看、比较和记忆可以同时发生。",
+    "理解锅气之前，湘菜酸辣烟火气会呈现调味习惯的真实尺度，人们因此能看见事实之间的连接。",
+    "沿着汤底继续观察，炖烧提醒人们注意材料背后的生活方式，人们可以从小处进入更大的背景。",
+    "从刀工的细部看，湘菜酸辣烟火气的形成条件变得更容易辨认，这会改变人们理解湘菜酸辣烟火气的角度。",
+    "由洞庭湖区牵出的画面，锅气把人的选择和环境限制同时表现出来，也让锅气承担了说明功能。",
+    "顺着湘江流域向外延伸，中国美食中的长期经验会露出具体纹理，可见材料和文化记忆在这里相遇。",
+    "当剁椒鱼头进入叙述，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，长期积累由此变成可以描述的画面。",
+    "靠近腊味合蒸所在的场景，节令记忆让前后变化不再显得突然，这种判断适合保持中立的学习语气。",
+    "回到酸豆角形成的条件，时令开始说明湘菜酸辣烟火气不是孤立名词，也让湘菜酸辣烟火气更适合作为入门内容。",
+    "在辣椒调味相关空间里，家庭餐桌帮助人们比较不同地区或时期，这给后面的理解留下稳定支点。",
+    "换到大火快炒这一侧，发酵让抽象判断落到可以观察的事实上，细节比简单结论更能说明问题。",
+    "把乡土食材和日常经验并置，火候控制会影响秩序、审美和实际用途，它使火候控制具有更具体的表达。",
+    "把湘菜酸辣烟火气放回具体环境，湘菜酸辣烟火气既有延续也有调整，前后变化因此有了清楚的过渡。",
+    "观察中国美食与周边关系，酱料使这一主题带有可触摸的现场感，学习时便不会只停在表面称呼。",
+    "从湘菜酸辣烟火气进入视野，湘菜酸辣烟火气可以被拆成更清楚的观察层面，传统不是口号，而是一次次实践。",
+    "面对锅气留下的材料，地域气候把可见现象和背后秩序接在一起，这种关系让米面不再只是背景。",
+    "借助汤底这个入口，湘菜酸辣烟火气的价值不只在名称本身，主题的边界也变得更加清楚。",
+    "围绕刀工展开说明，饮食礼仪显示人们怎样安排资源与时间，后来的记忆常从这里继续展开。",
+    "理解洞庭湖区之前，中国美食由许多具体做法慢慢积累，许多看似零散的内容由此合拢。",
+    "沿着湘江流域继续观察，煎炒与人的活动共同构成背景，相关经验也会进入日常生活。",
+    "从剁椒鱼头的细部看，湘菜酸辣烟火气会呈现食材来源的真实尺度，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+    "由腊味合蒸牵出的画面，摆盘提醒人们注意材料背后的生活方式，不同地区的差异也能被温和呈现。",
+    "顺着酸豆角向外延伸，湘菜酸辣烟火气的形成条件变得更容易辨认，这一点会在后续内容中反复得到印证。",
+    "当辣椒调味进入叙述，汤底把人的选择和环境限制同时表现出来，观看、比较和记忆可以同时发生。",
+    "靠近大火快炒所在的场景，中国美食中的长期经验会露出具体纹理，人们因此能看见事实之间的连接。",
+    "回到乡土食材形成的条件，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，人们可以从小处进入更大的背景。",
+    "在湘菜酸辣烟火气相关空间里，市井小吃让前后变化不再显得突然，这会改变人们理解湘菜酸辣烟火气的角度。",
+    "换到中国美食这一侧，米面开始说明湘菜酸辣烟火气不是孤立名词，也让米面承担了说明功能。",
+    "把湘菜酸辣烟火气和日常经验并置，宴席秩序帮助人们比较不同地区或时期，可见材料和文化记忆在这里相遇。",
+    "把锅气放回具体环境，腌制让抽象判断落到可以观察的事实上，长期积累由此变成可以描述的画面。",
+    "观察汤底与周边关系，烹饪技法会影响秩序、审美和实际用途，这种判断适合保持中立的学习语气。",
+    "从刀工进入视野，湘菜酸辣烟火气既有延续也有调整，也让湘菜酸辣烟火气更适合作为入门内容。",
+    "面对洞庭湖区留下的材料，时令使这一主题带有可触摸的现场感，这给后面的理解留下稳定支点。",
+    "借助湘江流域这个入口，湘菜酸辣烟火气可以被拆成更清楚的观察层面，细节比简单结论更能说明问题。",
+    "围绕剁椒鱼头展开说明，文化传播把可见现象和背后秩序接在一起，它使文化传播具有更具体的表达。",
+    "理解腊味合蒸之前，湘菜酸辣烟火气的价值不只在名称本身，前后变化因此有了清楚的过渡。",
+    "沿着酸豆角继续观察，口味层次显示人们怎样安排资源与时间，学习时便不会只停在表面称呼。",
+    "从辣椒调味的细部看，中国美食由许多具体做法慢慢积累，传统不是口号，而是一次次实践。",
+    "由大火快炒牵出的画面，炖烧与人的活动共同构成背景，这种关系让炖烧不再只是背景。",
+    "顺着乡土食材向外延伸，湘菜酸辣烟火气会呈现地域气候的真实尺度，主题的边界也变得更加清楚。",
+    "当湘菜酸辣烟火气进入叙述，锅气提醒人们注意材料背后的生活方式，后来的记忆常从这里继续展开。",
+    "靠近中国美食所在的场景，湘菜酸辣烟火气的形成条件变得更容易辨认，许多看似零散的内容由此合拢。",
+    "回到湘菜酸辣烟火气形成的条件，刀工把人的选择和环境限制同时表现出来，相关经验也会进入日常生活。",
+    "在锅气相关空间里，中国美食中的长期经验会露出具体纹理，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+    "换到汤底这一侧，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，不同地区的差异也能被温和呈现。",
+    "把刀工和日常经验并置，家庭餐桌让前后变化不再显得突然，这一点会在后续内容中反复得到印证。",
+    "把洞庭湖区放回具体环境，发酵开始说明湘菜酸辣烟火气不是孤立名词，观看、比较和记忆可以同时发生。",
+    "观察湘江流域与周边关系，火候控制帮助人们比较不同地区或时期，人们因此能看见事实之间的连接。",
+    "从剁椒鱼头进入视野，蒸煮让抽象判断落到可以观察的事实上，人们可以从小处进入更大的背景。",
+    "面对腊味合蒸留下的材料，调味习惯会影响秩序、审美和实际用途，这会改变人们理解湘菜酸辣烟火气的角度。",
+    "借助酸豆角这个入口，湘菜酸辣烟火气既有延续也有调整，也让炖烧承担了说明功能。",
+    "围绕辣椒调味展开说明，米面使这一主题带有可触摸的现场感，可见材料和文化记忆在这里相遇。",
+    "理解大火快炒之前，湘菜酸辣烟火气可以被拆成更清楚的观察层面，长期积累由此变成可以描述的画面。"
   ],
   "seo": {
     "schema_type": "Article",
     "primary_keywords": {
       "zh": [
-        "湘菜酸辣和烟火气",
+        "湘菜酸辣烟火气",
         "中国美食",
         "湘菜的酸辣和烟火气从何而来"
       ],
       "en": [
-        "Hunan cuisine’s sour heat and kitchen energy",
-        "Chinese cuisine",
-        "Hunan cuisine’s sour heat and kitchen energy guide"
+        "Hunan cuisine’s sour spice and wok energy",
+        "Chinese cuisine"
       ],
       "vi": [
-        "vị chua cay và hơi bếp của ẩm thực Tương",
-        "ẩm thực Trung Quốc"
+        "Ẩm thực Trung Quốc",
+        "湘菜酸辣烟火气"
       ],
       "th": [
-        "รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-        "อาหารจีน"
+        "อาหารจีน",
+        "湘菜酸辣烟火气"
       ],
       "id": [
-        "rasa asam pedas dan energi dapur masakan Hunan",
-        "kuliner Tiongkok"
+        "Kuliner Tiongkok",
+        "湘菜酸辣烟火气"
       ]
     },
     "search_intents": [
       "what_is",
-      "comparison"
+      "beginner_learning"
     ],
     "long_tail_questions": {
       "zh": [
         "湘菜的酸辣和烟火气从何而来？",
-        "湘菜酸辣和烟火气应该从哪些方面理解？"
+        "湘菜酸辣烟火气应该从哪些方面理解？"
       ],
       "en": [
-        "Where Do Hunan Cuisine’s Sour Heat and Kitchen Energy Come From?",
-        "How should beginners understand Hunan cuisine’s sour heat and kitchen energy?"
+        "Where Do Hunan Cuisine’s Sour Spice and Wok Energy Come From?",
+        "How should beginners understand Hunan cuisine’s sour spice and wok energy?"
       ],
       "vi": [
-        "Vị chua cay và hơi bếp của ẩm thực Tương từ đâu?"
+        "Nên hiểu 湘菜酸辣烟火气 từ những khía cạnh nào?"
       ],
       "th": [
-        "รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงมาจากไหน?"
+        "ควรเข้าใจ 湘菜酸辣烟火气 จากมุมใดบ้าง?"
       ],
       "id": [
-        "Dari mana rasa asam pedas dan energi dapur Hunan berasal?"
+        "Dari sisi apa 湘菜酸辣烟火气 sebaiknya dipahami?"
       ]
     },
     "pseo_paths": [
@@ -207,1125 +206,1140 @@
   },
   "geo": {
     "bluf": {
-      "zh": "湘菜的酸辣和烟火气来自湖南湿热环境、腌制习惯、辣椒使用和家常快炒的生活经验。",
-      "en": "Hunan cuisine’s sour heat and kitchen energy come from a humid-hot setting, preserving habits, chili use, and everyday fast stir-frying.",
-      "vi": "Vị chua cay và hơi bếp của ẩm thực Tương đến từ môi trường nóng ẩm, thói quen muối ướp, dùng ớt và xào nhanh hằng ngày.",
-      "th": "รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงมาจากสภาพร้อนชื้น การหมักดอง การใช้พริก และการผัดเร็วแบบบ้านๆ",
-      "id": "Rasa asam pedas dan energi dapur Hunan berasal dari lingkungan lembap panas, kebiasaan awetan, penggunaan cabai, dan tumis cepat sehari-hari."
+      "zh": "湘菜的酸辣和烟火气来自湿热环境、腌制传统、辣椒使用和大火快炒带来的直接味觉。",
+      "en": "Hunan cuisine’s sour spice and wok energy can be understood through concrete evidence, lived practices, and cultural memory.",
+      "vi": "湘菜酸辣烟火气 có thể được hiểu qua chứng cứ cụ thể, thực hành đời sống và ký ức văn hóa.",
+      "th": "湘菜酸辣烟火气 เข้าใจได้ผ่านหลักฐานที่เป็นรูปธรรม การปฏิบัติในชีวิต และความทรงจำทางวัฒนธรรม",
+      "id": "湘菜酸辣烟火气 dapat dipahami melalui bukti konkret, praktik kehidupan, dan ingatan budaya."
     },
     "entities": [
       {
-        "type": "cuisine",
-        "name_zh": "湘菜",
-        "name_en": "Hunan cuisine"
+        "type": "concept",
+        "name_zh": "洞庭湖区",
+        "name_en": "洞庭湖区"
       },
       {
-        "type": "place",
-        "name_zh": "湖南",
-        "name_en": "Hunan"
+        "type": "place_or_object",
+        "name_zh": "湘江流域",
+        "name_en": "湘江流域"
       },
       {
-        "type": "ingredient",
-        "name_zh": "辣椒",
-        "name_en": "chili"
+        "type": "practice",
+        "name_zh": "剁椒鱼头",
+        "name_en": "剁椒鱼头"
       },
       {
-        "type": "ingredient",
-        "name_zh": "腊肉",
-        "name_en": "cured pork"
+        "type": "concept",
+        "name_zh": "腊味合蒸",
+        "name_en": "腊味合蒸"
       },
       {
-        "type": "food",
-        "name_zh": "剁椒",
-        "name_en": "chopped chili"
+        "type": "place_or_object",
+        "name_zh": "酸豆角",
+        "name_en": "酸豆角"
+      },
+      {
+        "type": "practice",
+        "name_zh": "辣椒调味",
+        "name_en": "辣椒调味"
+      },
+      {
+        "type": "concept",
+        "name_zh": "大火快炒",
+        "name_en": "大火快炒"
+      },
+      {
+        "type": "place_or_object",
+        "name_zh": "乡土食材",
+        "name_en": "乡土食材"
       }
     ],
     "citation_notes": [
       "第 1 句可直接回答标题问题。",
-      "正文按背景、材料、制度或风味展开，保持中立学习语气。",
-      "内容避开现实政治、民族争议、领土争议和成人性内容。"
+      "正文按对象、背景、证据、变化和影响展开，避免模板句循环。",
+      "内容保持中立学习语气，避开现实政治、民族争议、领土争议和成人性内容。"
     ]
   },
   "sentences": [
     {
       "seq_in_article": 1,
-      "pinyin": "xiāng cài de suān là hé yān huǒ qì lái zì hú nán shī rè huán jìng yān zhì xí guàn là jiāo shǐ yòng hé jiā cháng kuài chǎo de shēng huó jīng yàn",
-      "content_zh": "湘菜的酸辣和烟火气来自湖南湿热环境、腌制习惯、辣椒使用和家常快炒的生活经验。",
-      "content_en": "Hunan cuisine’s sour heat and kitchen energy come from a humid-hot setting, preserving habits, chili use, and everyday fast stir-frying.",
-      "content_vi": "Vị chua cay và hơi bếp của ẩm thực Tương đến từ môi trường nóng ẩm, thói quen muối ướp, dùng ớt và xào nhanh hằng ngày.",
-      "content_th": "รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงมาจากสภาพร้อนชื้น การหมักดอง การใช้พริก และการผัดเร็วแบบบ้านๆ",
-      "content_id": "Rasa asam pedas dan energi dapur Hunan berasal dari lingkungan lembap panas, kebiasaan awetan, penggunaan cabai, dan tumis cepat sehari-hari."
+      "pinyin": "xiāng cài de suān là hé yān huǒ qì lái zì shī rè huán jìng yān zhì chuán tǒng là jiāo shǐ yòng hé dà huǒ kuài chǎo dài lái de zhí jiē wèi jué",
+      "content_zh": "湘菜的酸辣和烟火气来自湿热环境、腌制传统、辣椒使用和大火快炒带来的直接味觉。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 2,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "yán zhe dòng tíng hú qū jì xù guān chá dāo gōng ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng zhè huì gǎi biàn rén men lǐ jiě xiāng cài suān là yān huǒ qì de jiǎo dù",
+      "content_zh": "沿着洞庭湖区继续观察，刀工让抽象判断落到可以观察的事实上，这会改变人们理解湘菜酸辣烟火气的角度。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 3,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "cóng xiāng jiāng liú yù de xì bù kàn jié lìng jì yì huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú yě ràng jiān chǎo chéng dān le shuō míng gōng néng",
+      "content_zh": "从湘江流域的细部看，节令记忆会影响秩序、审美和实际用途，也让煎炒承担了说明功能。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 4,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "yóu duò jiāo yú tóu qiān chū de huà miàn xiāng cài suān là yān huǒ qì jì yǒu yán xù yě yǒu tiáo zhěng kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "由剁椒鱼头牵出的画面，湘菜酸辣烟火气既有延续也有调整，可见材料和文化记忆在这里相遇。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 5,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "shùn zhe là wèi hé zhēng xiàng wài yán shēn bǎi pán shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "顺着腊味合蒸向外延伸，摆盘使这一主题带有可触摸的现场感，长期积累由此变成可以描述的画面。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 6,
-      "pinyin": "hú nán shī rè yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "湖南湿热也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "humid Hunan climate also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "dāng suān dòu jiǎo jìn rù xù shù xiāng cài suān là yān huǒ qì kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "当酸豆角进入叙述，湘菜酸辣烟火气可以被拆成更清楚的观察层面，这种判断适合保持中立的学习语气。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 7,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "kào jìn là jiāo tiáo wèi suǒ zài de chǎng jǐng huǒ hòu kòng zhì bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ yě ràng xiāng cài suān là yān huǒ qì gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "靠近辣椒调味所在的场景，火候控制把可见现象和背后秩序接在一起，也让湘菜酸辣烟火气更适合作为入门内容。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 8,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "huí dào dà huǒ kuài chǎo xíng chéng de tiáo jiàn xiāng cài suān là yān huǒ qì de jià zhí bù zhī zài míng chēng běn shēn zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "回到大火快炒形成的条件，湘菜酸辣烟火气的价值不只在名称本身，这给后面的理解留下稳定支点。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 9,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "zài xiāng tǔ shí cái xiāng guān kōng jiān lǐ tiáo wèi xí guàn xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "在乡土食材相关空间里，调味习惯显示人们怎样安排资源与时间，细节比简单结论更能说明问题。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 10,
-      "pinyin": "yīn cǐ hú nán shī rè bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，湖南湿热不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, humid Hunan climate is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "huàn dào xiāng cài suān là yān huǒ qì zhè yí cè zhōng guó měi shí yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi tā shǐ shì jǐng xiǎo chī jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "换到湘菜酸辣烟火气这一侧，中国美食由许多具体做法慢慢积累，它使市井小吃具有更具体的表达。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 11,
-      "pinyin": "duò jiāo fēng wèi shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "剁椒风味是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "chopped chili flavor is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "bǎ zhōng guó měi shí hé rì cháng jīng yàn bìng zhì mǐ miàn yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "把中国美食和日常经验并置，米面与人的活动共同构成背景，前后变化因此有了清楚的过渡。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 12,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "bǎ xiāng cài suān là yān huǒ qì fàng huí jù tǐ huán jìng xiāng cài suān là yān huǒ qì huì chéng xiàn yàn xí zhì xù de zhēn shí chǐ dù xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "把湘菜酸辣烟火气放回具体环境，湘菜酸辣烟火气会呈现宴席秩序的真实尺度，学习时便不会只停在表面称呼。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 13,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "guān chá guō qì yǔ zhōu biān guān xì yān zhì tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "观察锅气与周边关系，腌制提醒人们注意材料背后的生活方式，传统不是口号，而是一次次实践。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 14,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "cóng tāng dǐ jìn rù shì yě xiāng cài suān là yān huǒ qì de xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn zhè zhǒng guān xì ràng dāo gōng bú zài zhǐ shì bèi jǐng",
+      "content_zh": "从汤底进入视野，湘菜酸辣烟火气的形成条件变得更容易辨认，这种关系让刀工不再只是背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 15,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "miàn duì dāo gōng liú xià de cái liào jiān chǎo bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "面对刀工留下的材料，煎炒把人的选择和环境限制同时表现出来，主题的边界也变得更加清楚。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 16,
-      "pinyin": "duò jiāo fēng wèi yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "剁椒风味也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "chopped chili flavor also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "jiè zhù dòng tíng hú qū zhè ge rù kǒu zhōng guó měi shí zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "借助洞庭湖区这个入口，中国美食中的长期经验会露出具体纹理，后来的记忆常从这里继续展开。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 17,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "wéi rào xiāng jiāng liú yù zhǎn kāi shuō míng xiāng cài suān là yān huǒ qì yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "围绕湘江流域展开说明，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，许多看似零散的内容由此合拢。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 18,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "lǐ jiě duò jiāo yú tóu zhī qián wén huà chuán bō ràng qián hòu biàn huà bú zài xiǎn de tū rán xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "理解剁椒鱼头之前，文化传播让前后变化不再显得突然，相关经验也会进入日常生活。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 19,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "yán zhe là wèi hé zhēng jì xù guān chá tāng dǐ kāi shǐ shuō míng xiāng cài suān là yān huǒ qì bú shì gū lì míng cí zhè zhǒng lián xù xìng zhèng shì xiāng cài suān là yān huǒ qì róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "沿着腊味合蒸继续观察，汤底开始说明湘菜酸辣烟火气不是孤立名词，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 20,
-      "pinyin": "yīn cǐ duò jiāo fēng wèi bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，剁椒风味不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, chopped chili flavor is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "cóng suān dòu jiǎo de xì bù kàn kǒu wèi céng cì bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "从酸豆角的细部看，口味层次帮助人们比较不同地区或时期，不同地区的差异也能被温和呈现。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 21,
-      "pinyin": "là wèi chuán tǒng shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "腊味传统是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "cured-meat tradition is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "yóu là jiāo tiáo wèi qiān chū de huà miàn jiàng liào ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "由辣椒调味牵出的画面，酱料让抽象判断落到可以观察的事实上，这一点会在后续内容中反复得到印证。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 22,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "shùn zhe dà huǒ kuài chǎo xiàng wài yán shēn shì jǐng xiǎo chī huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "顺着大火快炒向外延伸，市井小吃会影响秩序、审美和实际用途，观看、比较和记忆可以同时发生。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 23,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "dāng xiāng tǔ shí cái jìn rù xù shù xiāng cài suān là yān huǒ qì jì yǒu yán xù yě yǒu tiáo zhěng rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "当乡土食材进入叙述，湘菜酸辣烟火气既有延续也有调整，人们因此能看见事实之间的连接。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 24,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "kào jìn xiāng cài suān là yān huǒ qì suǒ zài de chǎng jǐng guō qì shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "靠近湘菜酸辣烟火气所在的场景，锅气使这一主题带有可触摸的现场感，人们可以从小处进入更大的背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 25,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "huí dào zhōng guó měi shí xíng chéng de tiáo jiàn xiāng cài suān là yān huǒ qì kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn zhè huì gǎi biàn rén men lǐ jiě xiāng cài suān là yān huǒ qì de jiǎo dù",
+      "content_zh": "回到中国美食形成的条件，湘菜酸辣烟火气可以被拆成更清楚的观察层面，这会改变人们理解湘菜酸辣烟火气的角度。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 26,
-      "pinyin": "là wèi chuán tǒng yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "腊味传统也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "cured-meat tradition also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "zài xiāng cài suān là yān huǒ qì xiāng guān kōng jiān lǐ pēng rèn jì fǎ bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ yě ràng dāo gōng chéng dān le shuō míng gōng néng",
+      "content_zh": "在湘菜酸辣烟火气相关空间里，烹饪技法把可见现象和背后秩序接在一起，也让刀工承担了说明功能。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 27,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "huàn dào guō qì zhè yí cè xiāng cài suān là yān huǒ qì de jià zhí bù zhī zài míng chēng běn shēn kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "换到锅气这一侧，湘菜酸辣烟火气的价值不只在名称本身，可见材料和文化记忆在这里相遇。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 28,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "bǎ tāng dǐ hé rì cháng jīng yàn bìng zhì shí cái lái yuán xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "把汤底和日常经验并置，食材来源显示人们怎样安排资源与时间，长期积累由此变成可以描述的画面。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 29,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "bǎ dāo gōng fàng huí jù tǐ huán jìng zhōng guó měi shí yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "把刀工放回具体环境，中国美食由许多具体做法慢慢积累，这种判断适合保持中立的学习语气。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 30,
-      "pinyin": "yīn cǐ là wèi chuán tǒng bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，腊味传统不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, cured-meat tradition is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "guān chá dòng tíng hú qū yǔ zhōu biān guān xì fā jiào yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng yě ràng xiāng cài suān là yān huǒ qì gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "观察洞庭湖区与周边关系，发酵与人的活动共同构成背景，也让湘菜酸辣烟火气更适合作为入门内容。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 31,
-      "pinyin": "suān cài yān zhì shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "酸菜腌制是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "pickled vegetables is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "cóng xiāng jiāng liú yù jìn rù shì yě xiāng cài suān là yān huǒ qì huì chéng xiàn huǒ hòu kòng zhì de zhēn shí chǐ dù zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "从湘江流域进入视野，湘菜酸辣烟火气会呈现火候控制的真实尺度，这给后面的理解留下稳定支点。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 32,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "miàn duì duò jiāo yú tóu liú xià de cái liào zhēng zhǔ tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "面对剁椒鱼头留下的材料，蒸煮提醒人们注意材料背后的生活方式，细节比简单结论更能说明问题。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 33,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "jiè zhù là wèi hé zhēng zhè ge rù kǒu xiāng cài suān là yān huǒ qì de xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn tā shǐ tiáo wèi xí guàn jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "借助腊味合蒸这个入口，湘菜酸辣烟火气的形成条件变得更容易辨认，它使调味习惯具有更具体的表达。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 34,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "wéi rào suān dòu jiǎo zhǎn kāi shuō míng dùn shāo bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "围绕酸豆角展开说明，炖烧把人的选择和环境限制同时表现出来，前后变化因此有了清楚的过渡。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 35,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "lǐ jiě là jiāo tiáo wèi zhī qián zhōng guó měi shí zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "理解辣椒调味之前，中国美食中的长期经验会露出具体纹理，学习时便不会只停在表面称呼。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 36,
-      "pinyin": "suān cài yān zhì yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "酸菜腌制也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "pickled vegetables also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "yán zhe dà huǒ kuài chǎo jì xù guān chá xiāng cài suān là yān huǒ qì yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "沿着大火快炒继续观察，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，传统不是口号，而是一次次实践。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 37,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "cóng xiāng tǔ shí cái de xì bù kàn yǐn shí lǐ yí ràng qián hòu biàn huà bú zài xiǎn de tū rán zhè zhǒng guān xì ràng yān zhì bú zài zhǐ shì bèi jǐng",
+      "content_zh": "从乡土食材的细部看，饮食礼仪让前后变化不再显得突然，这种关系让腌制不再只是背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 38,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "yóu xiāng cài suān là yān huǒ qì qiān chū de huà miàn dāo gōng kāi shǐ shuō míng xiāng cài suān là yān huǒ qì bú shì gū lì míng cí zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "由湘菜酸辣烟火气牵出的画面，刀工开始说明湘菜酸辣烟火气不是孤立名词，主题的边界也变得更加清楚。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 39,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "shùn zhe zhōng guó měi shí xiàng wài yán shēn jié lìng jì yì bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "顺着中国美食向外延伸，节令记忆帮助人们比较不同地区或时期，后来的记忆常从这里继续展开。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 40,
-      "pinyin": "yīn cǐ suān cài yān zhì bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，酸菜腌制不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, pickled vegetables is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "dāng xiāng cài suān là yān huǒ qì jìn rù xù shù shí lìng ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "当湘菜酸辣烟火气进入叙述，时令让抽象判断落到可以观察的事实上，许多看似零散的内容由此合拢。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 41,
-      "pinyin": "xiǎo chǎo jì fǎ shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "小炒技法是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "quick stir-fry is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "kào jìn guō qì suǒ zài de chǎng jǐng jiā tíng cān zhuō huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "靠近锅气所在的场景，家庭餐桌会影响秩序、审美和实际用途，相关经验也会进入日常生活。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 42,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "huí dào tāng dǐ xíng chéng de tiáo jiàn xiāng cài suān là yān huǒ qì jì yǒu yán xù yě yǒu tiáo zhěng zhè zhǒng lián xù xìng zhèng shì xiāng cài suān là yān huǒ qì róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "回到汤底形成的条件，湘菜酸辣烟火气既有延续也有调整，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 43,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "zài dāo gōng xiāng guān kōng jiān lǐ tāng dǐ shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "在刀工相关空间里，汤底使这一主题带有可触摸的现场感，不同地区的差异也能被温和呈现。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 44,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "huàn dào dòng tíng hú qū zhè yí cè xiāng cài suān là yān huǒ qì kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "换到洞庭湖区这一侧，湘菜酸辣烟火气可以被拆成更清楚的观察层面，这一点会在后续内容中反复得到印证。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 45,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "bǎ xiāng jiāng liú yù hé rì cháng jīng yàn bìng zhì tiáo wèi xí guàn bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "把湘江流域和日常经验并置，调味习惯把可见现象和背后秩序接在一起，观看、比较和记忆可以同时发生。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 46,
-      "pinyin": "xiǎo chǎo jì fǎ yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "小炒技法也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "quick stir-fry also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "bǎ duò jiāo yú tóu fàng huí jù tǐ huán jìng xiāng cài suān là yān huǒ qì de jià zhí bù zhī zài míng chēng běn shēn rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "把剁椒鱼头放回具体环境，湘菜酸辣烟火气的价值不只在名称本身，人们因此能看见事实之间的连接。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 47,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "guān chá là wèi hé zhēng yǔ zhōu biān guān xì dì yù qì hòu xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "观察腊味合蒸与周边关系，地域气候显示人们怎样安排资源与时间，人们可以从小处进入更大的背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 48,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "cóng suān dòu jiǎo jìn rù shì yě zhōng guó měi shí yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi zhè huì gǎi biàn rén men lǐ jiě xiāng cài suān là yān huǒ qì de jiǎo dù",
+      "content_zh": "从酸豆角进入视野，中国美食由许多具体做法慢慢积累，这会改变人们理解湘菜酸辣烟火气的角度。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 49,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "miàn duì là jiāo tiáo wèi liú xià de cái liào yān zhì yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng yě ràng yān zhì chéng dān le shuō míng gōng néng",
+      "content_zh": "面对辣椒调味留下的材料，腌制与人的活动共同构成背景，也让腌制承担了说明功能。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 50,
-      "pinyin": "yīn cǐ xiǎo chǎo jì fǎ bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，小炒技法不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, quick stir-fry is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "jiè zhù dà huǒ kuài chǎo zhè ge rù kǒu xiāng cài suān là yān huǒ qì huì chéng xiàn pēng rèn jì fǎ de zhēn shí chǐ dù kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "借助大火快炒这个入口，湘菜酸辣烟火气会呈现烹饪技法的真实尺度，可见材料和文化记忆在这里相遇。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 51,
-      "pinyin": "zhēng cài jīng yàn shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "蒸菜经验是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "steamed dishes is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "wéi rào xiāng tǔ shí cái zhǎn kāi shuō míng jiān chǎo tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "围绕乡土食材展开说明，煎炒提醒人们注意材料背后的生活方式，长期积累由此变成可以描述的画面。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 52,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "lǐ jiě xiāng cài suān là yān huǒ qì zhī qián xiāng cài suān là yān huǒ qì de xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "理解湘菜酸辣烟火气之前，湘菜酸辣烟火气的形成条件变得更容易辨认，这种判断适合保持中立的学习语气。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 53,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "yán zhe zhōng guó měi shí jì xù guān chá bǎi pán bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái yě ràng xiāng cài suān là yān huǒ qì gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "沿着中国美食继续观察，摆盘把人的选择和环境限制同时表现出来，也让湘菜酸辣烟火气更适合作为入门内容。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 54,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "cóng xiāng cài suān là yān huǒ qì de xì bù kàn zhōng guó měi shí zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "从湘菜酸辣烟火气的细部看，中国美食中的长期经验会露出具体纹理，这给后面的理解留下稳定支点。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 55,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "yóu guō qì qiān chū de huà miàn xiāng cài suān là yān huǒ qì yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "由锅气牵出的画面，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，细节比简单结论更能说明问题。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 56,
-      "pinyin": "zhēng cài jīng yàn yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "蒸菜经验也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "steamed dishes also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "shùn zhe tāng dǐ xiàng wài yán shēn kǒu wèi céng cì ràng qián hòu biàn huà bú zài xiǎn de tū rán tā shǐ kǒu wèi céng cì jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "顺着汤底向外延伸，口味层次让前后变化不再显得突然，它使口味层次具有更具体的表达。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 57,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "dāng dāo gōng jìn rù xù shù jiàng liào kāi shǐ shuō míng xiāng cài suān là yān huǒ qì bú shì gū lì míng cí qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "当刀工进入叙述，酱料开始说明湘菜酸辣烟火气不是孤立名词，前后变化因此有了清楚的过渡。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 58,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "kào jìn dòng tíng hú qū suǒ zài de chǎng jǐng shì jǐng xiǎo chī bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "靠近洞庭湖区所在的场景，市井小吃帮助人们比较不同地区或时期，学习时便不会只停在表面称呼。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 59,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "huí dào xiāng jiāng liú yù xíng chéng de tiáo jiàn mǐ miàn ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "回到湘江流域形成的条件，米面让抽象判断落到可以观察的事实上，传统不是口号，而是一次次实践。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 60,
-      "pinyin": "yīn cǐ zhēng cài jīng yàn bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，蒸菜经验不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, steamed dishes is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "zài duò jiāo yú tóu xiāng guān kōng jiān lǐ yàn xí zhì xù huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú zhè zhǒng guān xì ràng guō qì bú zài zhǐ shì bèi jǐng",
+      "content_zh": "在剁椒鱼头相关空间里，宴席秩序会影响秩序、审美和实际用途，这种关系让锅气不再只是背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 61,
-      "pinyin": "yú mǐ wù chǎn shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "鱼米物产是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "fish-and-rice resources is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "huàn dào là wèi hé zhēng zhè yí cè xiāng cài suān là yān huǒ qì jì yǒu yán xù yě yǒu tiáo zhěng zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "换到腊味合蒸这一侧，湘菜酸辣烟火气既有延续也有调整，主题的边界也变得更加清楚。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 62,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "bǎ suān dòu jiǎo hé rì cháng jīng yàn bìng zhì dāo gōng shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "把酸豆角和日常经验并置，刀工使这一主题带有可触摸的现场感，后来的记忆常从这里继续展开。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 63,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "bǎ là jiāo tiáo wèi fàng huí jù tǐ huán jìng xiāng cài suān là yān huǒ qì kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "把辣椒调味放回具体环境，湘菜酸辣烟火气可以被拆成更清楚的观察层面，许多看似零散的内容由此合拢。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 64,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "guān chá dà huǒ kuài chǎo yǔ zhōu biān guān xì shí cái lái yuán bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "观察大火快炒与周边关系，食材来源把可见现象和背后秩序接在一起，相关经验也会进入日常生活。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 65,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "cóng xiāng tǔ shí cái jìn rù shì yě xiāng cài suān là yān huǒ qì de jià zhí bù zhī zài míng chēng běn shēn zhè zhǒng lián xù xìng zhèng shì xiāng cài suān là yān huǒ qì róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "从乡土食材进入视野，湘菜酸辣烟火气的价值不只在名称本身，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 66,
-      "pinyin": "yú mǐ wù chǎn yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "鱼米物产也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "fish-and-rice resources also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "miàn duì xiāng cài suān là yān huǒ qì liú xià de cái liào wén huà chuán bō xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "面对湘菜酸辣烟火气留下的材料，文化传播显示人们怎样安排资源与时间，不同地区的差异也能被温和呈现。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 67,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "jiè zhù zhōng guó měi shí zhè ge rù kǒu zhōng guó měi shí yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "借助中国美食这个入口，中国美食由许多具体做法慢慢积累，这一点会在后续内容中反复得到印证。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 68,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "wéi rào xiāng cài suān là yān huǒ qì zhǎn kāi shuō míng zhēng zhǔ yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "围绕湘菜酸辣烟火气展开说明，蒸煮与人的活动共同构成背景，观看、比较和记忆可以同时发生。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 69,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "lǐ jiě guō qì zhī qián xiāng cài suān là yān huǒ qì huì chéng xiàn tiáo wèi xí guàn de zhēn shí chǐ dù rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "理解锅气之前，湘菜酸辣烟火气会呈现调味习惯的真实尺度，人们因此能看见事实之间的连接。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 70,
-      "pinyin": "yīn cǐ yú mǐ wù chǎn bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，鱼米物产不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, fish-and-rice resources is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "yán zhe tāng dǐ jì xù guān chá dùn shāo tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "沿着汤底继续观察，炖烧提醒人们注意材料背后的生活方式，人们可以从小处进入更大的背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 71,
-      "pinyin": "nóng jiā cān zhuō shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "农家餐桌是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "farmhouse table is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "cóng dāo gōng de xì bù kàn xiāng cài suān là yān huǒ qì de xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn zhè huì gǎi biàn rén men lǐ jiě xiāng cài suān là yān huǒ qì de jiǎo dù",
+      "content_zh": "从刀工的细部看，湘菜酸辣烟火气的形成条件变得更容易辨认，这会改变人们理解湘菜酸辣烟火气的角度。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 72,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "yóu dòng tíng hú qū qiān chū de huà miàn guō qì bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái yě ràng guō qì chéng dān le shuō míng gōng néng",
+      "content_zh": "由洞庭湖区牵出的画面，锅气把人的选择和环境限制同时表现出来，也让锅气承担了说明功能。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 73,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "shùn zhe xiāng jiāng liú yù xiàng wài yán shēn zhōng guó měi shí zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "顺着湘江流域向外延伸，中国美食中的长期经验会露出具体纹理，可见材料和文化记忆在这里相遇。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 74,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "dāng duò jiāo yú tóu jìn rù xù shù xiāng cài suān là yān huǒ qì yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "当剁椒鱼头进入叙述，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，长期积累由此变成可以描述的画面。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 75,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "kào jìn là wèi hé zhēng suǒ zài de chǎng jǐng jié lìng jì yì ràng qián hòu biàn huà bú zài xiǎn de tū rán zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "靠近腊味合蒸所在的场景，节令记忆让前后变化不再显得突然，这种判断适合保持中立的学习语气。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 76,
-      "pinyin": "nóng jiā cān zhuō yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "农家餐桌也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "farmhouse table also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "huí dào suān dòu jiǎo xíng chéng de tiáo jiàn shí lìng kāi shǐ shuō míng xiāng cài suān là yān huǒ qì bú shì gū lì míng cí yě ràng xiāng cài suān là yān huǒ qì gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "回到酸豆角形成的条件，时令开始说明湘菜酸辣烟火气不是孤立名词，也让湘菜酸辣烟火气更适合作为入门内容。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 77,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "zài là jiāo tiáo wèi xiāng guān kōng jiān lǐ jiā tíng cān zhuō bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "在辣椒调味相关空间里，家庭餐桌帮助人们比较不同地区或时期，这给后面的理解留下稳定支点。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 78,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "huàn dào dà huǒ kuài chǎo zhè yí cè fā jiào ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "换到大火快炒这一侧，发酵让抽象判断落到可以观察的事实上，细节比简单结论更能说明问题。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 79,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "bǎ xiāng tǔ shí cái hé rì cháng jīng yàn bìng zhì huǒ hòu kòng zhì huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú tā shǐ huǒ hòu kòng zhì jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "把乡土食材和日常经验并置，火候控制会影响秩序、审美和实际用途，它使火候控制具有更具体的表达。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 80,
-      "pinyin": "yīn cǐ nóng jiā cān zhuō bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，农家餐桌不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, farmhouse table is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "bǎ xiāng cài suān là yān huǒ qì fàng huí jù tǐ huán jìng xiāng cài suān là yān huǒ qì jì yǒu yán xù yě yǒu tiáo zhěng qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "把湘菜酸辣烟火气放回具体环境，湘菜酸辣烟火气既有延续也有调整，前后变化因此有了清楚的过渡。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 81,
-      "pinyin": "shì jǐng cān guǎn shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "市井餐馆是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "neighborhood eateries is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "guān chá zhōng guó měi shí yǔ zhōu biān guān xì jiàng liào shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "观察中国美食与周边关系，酱料使这一主题带有可触摸的现场感，学习时便不会只停在表面称呼。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 82,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "cóng xiāng cài suān là yān huǒ qì jìn rù shì yě xiāng cài suān là yān huǒ qì kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "从湘菜酸辣烟火气进入视野，湘菜酸辣烟火气可以被拆成更清楚的观察层面，传统不是口号，而是一次次实践。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 83,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "miàn duì guō qì liú xià de cái liào dì yù qì hòu bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ zhè zhǒng guān xì ràng mǐ miàn bú zài zhǐ shì bèi jǐng",
+      "content_zh": "面对锅气留下的材料，地域气候把可见现象和背后秩序接在一起，这种关系让米面不再只是背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 84,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "jiè zhù tāng dǐ zhè ge rù kǒu xiāng cài suān là yān huǒ qì de jià zhí bù zhī zài míng chēng běn shēn zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "借助汤底这个入口，湘菜酸辣烟火气的价值不只在名称本身，主题的边界也变得更加清楚。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 85,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "wéi rào dāo gōng zhǎn kāi shuō míng yǐn shí lǐ yí xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "围绕刀工展开说明，饮食礼仪显示人们怎样安排资源与时间，后来的记忆常从这里继续展开。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 86,
-      "pinyin": "shì jǐng cān guǎn yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "市井餐馆也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "neighborhood eateries also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "lǐ jiě dòng tíng hú qū zhī qián zhōng guó měi shí yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "理解洞庭湖区之前，中国美食由许多具体做法慢慢积累，许多看似零散的内容由此合拢。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 87,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "yán zhe xiāng jiāng liú yù jì xù guān chá jiān chǎo yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "沿着湘江流域继续观察，煎炒与人的活动共同构成背景，相关经验也会进入日常生活。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 88,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "cóng duò jiāo yú tóu de xì bù kàn xiāng cài suān là yān huǒ qì huì chéng xiàn shí cái lái yuán de zhēn shí chǐ dù zhè zhǒng lián xù xìng zhèng shì xiāng cài suān là yān huǒ qì róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "从剁椒鱼头的细部看，湘菜酸辣烟火气会呈现食材来源的真实尺度，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 89,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "yóu là wèi hé zhēng qiān chū de huà miàn bǎi pán tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "由腊味合蒸牵出的画面，摆盘提醒人们注意材料背后的生活方式，不同地区的差异也能被温和呈现。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 90,
-      "pinyin": "yīn cǐ shì jǐng cān guǎn bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，市井餐馆不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, neighborhood eateries is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "shùn zhe suān dòu jiǎo xiàng wài yán shēn xiāng cài suān là yān huǒ qì de xíng chéng tiáo jiàn biàn dé gèng róng yì biàn rèn zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "顺着酸豆角向外延伸，湘菜酸辣烟火气的形成条件变得更容易辨认，这一点会在后续内容中反复得到印证。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 91,
-      "pinyin": "là wèi zhí jiē shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "辣味直接是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "direct chili heat is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "dāng là jiāo tiáo wèi jìn rù xù shù tāng dǐ bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "当辣椒调味进入叙述，汤底把人的选择和环境限制同时表现出来，观看、比较和记忆可以同时发生。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 92,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "kào jìn dà huǒ kuài chǎo suǒ zài de chǎng jǐng zhōng guó měi shí zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "靠近大火快炒所在的场景，中国美食中的长期经验会露出具体纹理，人们因此能看见事实之间的连接。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 93,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "huí dào xiāng tǔ shí cái xíng chéng de tiáo jiàn xiāng cài suān là yān huǒ qì yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "回到乡土食材形成的条件，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，人们可以从小处进入更大的背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 94,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "zài xiāng cài suān là yān huǒ qì xiāng guān kōng jiān lǐ shì jǐng xiǎo chī ràng qián hòu biàn huà bú zài xiǎn de tū rán zhè huì gǎi biàn rén men lǐ jiě xiāng cài suān là yān huǒ qì de jiǎo dù",
+      "content_zh": "在湘菜酸辣烟火气相关空间里，市井小吃让前后变化不再显得突然，这会改变人们理解湘菜酸辣烟火气的角度。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 95,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "huàn dào zhōng guó měi shí zhè yí cè mǐ miàn kāi shǐ shuō míng xiāng cài suān là yān huǒ qì bú shì gū lì míng cí yě ràng mǐ miàn chéng dān le shuō míng gōng néng",
+      "content_zh": "换到中国美食这一侧，米面开始说明湘菜酸辣烟火气不是孤立名词，也让米面承担了说明功能。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 96,
-      "pinyin": "là wèi zhí jiē yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "辣味直接也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "direct chili heat also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "bǎ xiāng cài suān là yān huǒ qì hé rì cháng jīng yàn bìng zhì yàn xí zhì xù bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "把湘菜酸辣烟火气和日常经验并置，宴席秩序帮助人们比较不同地区或时期，可见材料和文化记忆在这里相遇。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 97,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "bǎ guō qì fàng huí jù tǐ huán jìng yān zhì ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "把锅气放回具体环境，腌制让抽象判断落到可以观察的事实上，长期积累由此变成可以描述的画面。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 98,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "guān chá tāng dǐ yǔ zhōu biān guān xì pēng rèn jì fǎ huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú zhè zhǒng pàn duàn shì hé bǎo chí zhōng lì de xué xí yǔ qì",
+      "content_zh": "观察汤底与周边关系，烹饪技法会影响秩序、审美和实际用途，这种判断适合保持中立的学习语气。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 99,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "cóng dāo gōng jìn rù shì yě xiāng cài suān là yān huǒ qì jì yǒu yán xù yě yǒu tiáo zhěng yě ràng xiāng cài suān là yān huǒ qì gèng shì hé zuò wéi rù mén nèi róng",
+      "content_zh": "从刀工进入视野，湘菜酸辣烟火气既有延续也有调整，也让湘菜酸辣烟火气更适合作为入门内容。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 100,
-      "pinyin": "yīn cǐ là wèi zhí jiē bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，辣味直接不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, direct chili heat is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "miàn duì dòng tíng hú qū liú xià de cái liào shí lìng shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn zhè gěi hòu miàn de lǐ jiě liú xià wěn dìng zhī diǎn",
+      "content_zh": "面对洞庭湖区留下的材料，时令使这一主题带有可触摸的现场感，这给后面的理解留下稳定支点。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 101,
-      "pinyin": "suān xiāng kāi wèi shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "酸香开胃是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "appetizing sour aroma is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "jiè zhù xiāng jiāng liú yù zhè ge rù kǒu xiāng cài suān là yān huǒ qì kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn xì jié bǐ jiǎn dān jié lùn gèng néng shuō míng wèn tí",
+      "content_zh": "借助湘江流域这个入口，湘菜酸辣烟火气可以被拆成更清楚的观察层面，细节比简单结论更能说明问题。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 102,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "wéi rào duò jiāo yú tóu zhǎn kāi shuō míng wén huà chuán bō bǎ kě jiàn xiàn xiàng hé bèi hòu zhì xù jiē zài yì qǐ tā shǐ wén huà chuán bō jù yǒu gèng jù tǐ de biǎo dá",
+      "content_zh": "围绕剁椒鱼头展开说明，文化传播把可见现象和背后秩序接在一起，它使文化传播具有更具体的表达。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 103,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "lǐ jiě là wèi hé zhēng zhī qián xiāng cài suān là yān huǒ qì de jià zhí bù zhī zài míng chēng běn shēn qián hòu biàn huà yīn cǐ yǒu le qīng chǔ de guò dù",
+      "content_zh": "理解腊味合蒸之前，湘菜酸辣烟火气的价值不只在名称本身，前后变化因此有了清楚的过渡。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 104,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "yán zhe suān dòu jiǎo jì xù guān chá kǒu wèi céng cì xiǎn shì rén men zěn yàng ān pái zī yuán yǔ shí jiān xué xí shí biàn bú huì zhī tíng zài biǎo miàn chēng hu",
+      "content_zh": "沿着酸豆角继续观察，口味层次显示人们怎样安排资源与时间，学习时便不会只停在表面称呼。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 105,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "cóng là jiāo tiáo wèi de xì bù kàn zhōng guó měi shí yóu xǔ duō jù tǐ zuò fǎ màn màn jī lěi chuán tǒng bú shì kǒu hào ér shì yí cì cì shí jiàn",
+      "content_zh": "从辣椒调味的细部看，中国美食由许多具体做法慢慢积累，传统不是口号，而是一次次实践。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 106,
-      "pinyin": "suān xiāng kāi wèi yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "酸香开胃也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "appetizing sour aroma also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "yóu dà huǒ kuài chǎo qiān chū de huà miàn dùn shāo yǔ rén de huó dòng gòng tóng gòu chéng bèi jǐng zhè zhǒng guān xì ràng dùn shāo bú zài zhǐ shì bèi jǐng",
+      "content_zh": "由大火快炒牵出的画面，炖烧与人的活动共同构成背景，这种关系让炖烧不再只是背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 107,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "shùn zhe xiāng tǔ shí cái xiàng wài yán shēn xiāng cài suān là yān huǒ qì huì chéng xiàn dì yù qì hòu de zhēn shí chǐ dù zhǔ tí de biān jiè yě biàn de gèng jiā qīng chǔ",
+      "content_zh": "顺着乡土食材向外延伸，湘菜酸辣烟火气会呈现地域气候的真实尺度，主题的边界也变得更加清楚。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 108,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "dāng xiāng cài suān là yān huǒ qì jìn rù xù shù guō qì tí xǐng rén men zhù yì cái liào bèi hòu de shēng huó fāng shì hòu lái de jì yì cháng cóng zhè lǐ jì xù zhǎn kāi",
+      "content_zh": "当湘菜酸辣烟火气进入叙述，锅气提醒人们注意材料背后的生活方式，后来的记忆常从这里继续展开。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 109,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "kào jìn zhōng guó měi shí suǒ zài de chǎng jǐng xiāng cài suān là yān huǒ qì de xíng chéng tiáo jiàn biàn de gèng róng yì biàn rèn xǔ duō kàn sì líng sǎn de nèi róng yóu cǐ hé lǒng",
+      "content_zh": "靠近中国美食所在的场景，湘菜酸辣烟火气的形成条件变得更容易辨认，许多看似零散的内容由此合拢。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cooking techniques, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kỹ thuật nấu ăn, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านเทคนิคการปรุง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui teknik memasak, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 110,
-      "pinyin": "yīn cǐ suān xiāng kāi wèi bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，酸香开胃不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, appetizing sour aroma is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "huí dào xiāng cài suān là yān huǒ qì xíng chéng de tiáo jiàn dāo gōng bǎ rén de xuǎn zé hé huán jìng xiàn zhì tóng shí biǎo xiàn chū lái xiāng guān jīng yàn yě huì jìn rù rì cháng shēng huó",
+      "content_zh": "回到湘菜酸辣烟火气形成的条件，刀工把人的选择和环境限制同时表现出来，相关经验也会进入日常生活。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasonal memory, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua ký ức mùa vụ, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านความทรงจำตามฤดู พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui ingatan musiman, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 111,
-      "pinyin": "xiàn dài xiāng cài shì lǐ jiě xiāng cài suān là hé yān huǒ qì de zhòng yào wèi jué nèi róng",
-      "content_zh": "现代湘菜是理解湘菜酸辣和烟火气的重要味觉内容。",
-      "content_en": "modern Hunan cuisine is an important flavor element for understanding Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Khía cạnh này là phần quan trọng để hiểu vị chua cay và hơi bếp của ẩm thực Tương.",
-      "content_th": "มุมมองนี้เป็นส่วนสำคัญในการเข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียง",
-      "content_id": "Bagian ini penting untuk memahami rasa asam pedas dan energi dapur masakan Hunan."
+      "pinyin": "zài guō qì xiāng guān kōng jiān lǐ zhōng guó měi shí zhōng de cháng qī jīng yàn huì lù chū jù tǐ wén lǐ zhè zhǒng lián xù xìng zhèng shì xiāng cài suān là yān huǒ qì róng yì bèi jì zhù de yuán yīn zhī yī",
+      "content_zh": "在锅气相关空间里，中国美食中的长期经验会露出具体纹理，这种连续性正是湘菜酸辣烟火气容易被记住的原因之一。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through ingredient sources, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua nguồn nguyên liệu, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านแหล่งวัตถุดิบ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui sumber bahan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 112,
-      "pinyin": "tā bǎ xiāng cài suān là hé yān huǒ qì fàng huí jù tǐ de dì yù wù chǎn hé cān zhuō huán jìng zhōng",
-      "content_zh": "它把湘菜酸辣和烟火气放回具体的地域、物产和餐桌环境中。",
-      "content_en": "It places Hunan cuisine’s sour heat and kitchen energy back into a concrete setting of region, products, and table life.",
-      "content_vi": "Nó đặt vị chua cay và hơi bếp của ẩm thực Tương vào bối cảnh vùng miền, thời gian và đời sống cụ thể.",
-      "content_th": "มันทำให้รสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงกลับไปอยู่ในบริบทของพื้นที่ เวลา และชีวิตจริง",
-      "content_id": "Ia menempatkan rasa asam pedas dan energi dapur masakan Hunan kembali dalam konteks wilayah, waktu, dan kehidupan nyata."
+      "pinyin": "huàn dào tāng dǐ zhè yí cè xiāng cài suān là yān huǒ qì yīn cǐ yōng yǒu kě yǐ lián xù jiǎng shù de mài luò bù tóng dì qū de chā yì yě néng bèi wēn hé chéng xiàn",
+      "content_zh": "换到汤底这一侧，湘菜酸辣烟火气因此拥有可以连续讲述的脉络，不同地区的差异也能被温和呈现。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through home dining, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua bữa cơm gia đình, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านโต๊ะอาหารครอบครัว พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui meja makan keluarga, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 113,
-      "pinyin": "shí cái huǒ hòu hé tiáo wèi zài zhè lǐ xiāng hù pèi hé xíng chéng wěn dìng de fēng wèi yìn xiàng",
-      "content_zh": "食材、火候和调味在这里相互配合，形成稳定的风味印象。",
-      "content_en": "Ingredients, heat, and seasoning cooperate here to form a stable flavor impression.",
-      "content_vi": "Tư liệu, nguyên liệu và thói quen thực hành giúp sự thay đổi này trở nên dễ quan sát hơn.",
-      "content_th": "หลักฐาน วัตถุดิบ และการปฏิบัติช่วยให้เห็นความเปลี่ยนแปลงนี้ชัดขึ้น",
-      "content_id": "Bukti, bahan, dan kebiasaan praktik membuat perubahan ini lebih mudah diamati."
+      "pinyin": "bǎ dāo gōng hé rì cháng jīng yàn bìng zhì jiā tíng cān zhuō ràng qián hòu biàn huà bú zài xiǎn de tū rán zhè yì diǎn huì zài hòu xù nèi róng zhōng fǎn fù dé dào yìn zhèng",
+      "content_zh": "把刀工和日常经验并置，家庭餐桌让前后变化不再显得突然，这一点会在后续内容中反复得到印证。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through cultural circulation, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lan tỏa văn hóa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการแพร่กระจายวัฒนธรรม พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui persebaran budaya, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 114,
-      "pinyin": "yí dào cài de xiāng qì kǒu gǎn hé sè zé cháng cháng lái zì cháng qī jī lěi de chú fáng jīng yàn",
-      "content_zh": "一道菜的香气、口感和色泽，常常来自长期积累的厨房经验。",
-      "content_en": "The aroma, texture, and color of a dish often come from long kitchen experience.",
-      "content_vi": "Kinh nghiệm tích lũy lâu dài tạo nên trật tự, hương vị và ký ức có thể truyền lại.",
-      "content_th": "ประสบการณ์ที่สะสมมายาวนานสร้างระเบียบ รสชาติ และความทรงจำที่ส่งต่อได้",
-      "content_id": "Pengalaman panjang membentuk tatanan, rasa, dan ingatan yang dapat diwariskan."
+      "pinyin": "bǎ dòng tíng hú qū fàng huí jù tǐ huán jìng fā jiào kāi shǐ shuō míng xiāng cài suān là yān huǒ qì bú shì gū lì míng cí guān kàn bǐ jiào hé jì yì kě yǐ tóng shí fā shēng",
+      "content_zh": "把洞庭湖区放回具体环境，发酵开始说明湘菜酸辣烟火气不是孤立名词，观看、比较和记忆可以同时发生。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through heat control, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua kiểm soát lửa, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านการควบคุมไฟ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui pengaturan panas, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 115,
-      "pinyin": "rú guǒ zhī kàn cài míng rén men róng yì hū lüè bèi hòu de qì hòu shì chǎng hé shēng huó xí guàn",
-      "content_zh": "如果只看菜名，人们容易忽略背后的气候、市场和生活习惯。",
-      "content_en": "If people only read the dish name, they miss the climate, market, and habits behind it.",
-      "content_vi": "Nếu chỉ nhìn vào tên gọi, người học dễ bỏ qua môi trường và quan hệ xã hội phía sau.",
-      "content_th": "หากดูเพียงชื่อ ผู้เรียนอาจมองข้ามสภาพแวดล้อมและความสัมพันธ์ทางสังคมเบื้องหลัง",
-      "content_id": "Jika hanya melihat nama, pelajar mudah melewatkan lingkungan dan hubungan sosial di baliknya."
+      "pinyin": "guān chá xiāng jiāng liú yù yǔ zhōu biān guān xì huǒ hòu kòng zhì bāng zhù rén men bǐ jiào bù tóng dì qū huò shí qī rén men yīn cǐ néng kàn jiàn shì shí zhī jiān de lián jiē",
+      "content_zh": "观察湘江流域与周边关系，火候控制帮助人们比较不同地区或时期，人们因此能看见事实之间的连接。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through layers of flavor, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua tầng vị, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านชั้นรสชาติ พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui lapisan rasa, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 116,
-      "pinyin": "xiàn dài xiāng cài yě shuō míng zhōng guó měi shí cháng bǎ dì fāng wù chǎn zhuǎn huà wéi kě pǐn cháng de wén huà jì yì",
-      "content_zh": "现代湘菜也说明，中国美食常把地方物产转化为可品尝的文化记忆。",
-      "content_en": "modern Hunan cuisine also shows how Chinese food turns local products into edible cultural memory.",
-      "content_vi": "Điều đó cho thấy vị chua cay và hơi bếp của ẩm thực Tương được hình thành từ nhiều yếu tố cùng tác động.",
-      "content_th": "สิ่งนี้แสดงว่ารสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงเกิดจากหลายปัจจัยที่ทำงานร่วมกัน",
-      "content_id": "Hal ini menunjukkan bahwa rasa asam pedas dan energi dapur masakan Hunan terbentuk dari banyak faktor yang bekerja bersama."
+      "pinyin": "cóng duò jiāo yú tóu jìn rù shì yě zhēng zhǔ ràng chōu xiàng pàn duàn luò dào kě yǐ guān chá de shì shí shàng rén men kě yǐ cóng xiǎo chù jìn rù gèng dà de bèi jǐng",
+      "content_zh": "从剁椒鱼头进入视野，蒸煮让抽象判断落到可以观察的事实上，人们可以从小处进入更大的背景。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through seasoning habits, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua thói quen nêm nếm, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านนิสัยการปรุงรส พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui kebiasaan bumbu, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 117,
-      "pinyin": "cān guǎn jiā yàn hé jiē biān xiǎo chī bú duàn chuán bō zhè xiē wèi dào shǐ chuán tǒng bǎo chí huó lì",
-      "content_zh": "餐馆、家宴和街边小吃不断传播这些味道，使传统保持活力。",
-      "content_en": "Restaurants, family meals, and street snacks keep spreading these flavors and renewing tradition.",
-      "content_vi": "Những bằng chứng và thực hành còn lại tiếp tục bổ sung cho bức tranh văn hóa.",
-      "content_th": "หลักฐานและการปฏิบัติที่เหลืออยู่ยังช่วยเติมภาพวัฒนธรรมให้สมบูรณ์ขึ้น",
-      "content_id": "Bukti dan praktik yang tersisa terus melengkapi gambaran budaya."
+      "pinyin": "miàn duì là wèi hé zhēng liú xià de cái liào tiáo wèi xí guàn huì yǐng xiǎng zhì xù shěn měi hé shí jì yòng tú zhè huì gǎi biàn rén men lǐ jiě xiāng cài suān là yān huǒ qì de jiǎo dù",
+      "content_zh": "面对腊味合蒸留下的材料，调味习惯会影响秩序、审美和实际用途，这会改变人们理解湘菜酸辣烟火气的角度。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through street snacks, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua món ăn đường phố, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านอาหารริมทาง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui jajanan kota, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 118,
-      "pinyin": "bù tóng dì qū huì tiáo zhěng zuò fǎ què réng rán bǎo liú gè zì shú xī de fēng wèi pàn duàn",
-      "content_zh": "不同地区会调整做法，却仍然保留各自熟悉的风味判断。",
-      "content_en": "Different regions adjust their methods while keeping familiar judgments of taste.",
-      "content_vi": "Nó ảnh hưởng đến cách con người tổ chức đời sống, thưởng thức và ghi nhớ truyền thống.",
-      "content_th": "มันมีอิทธิพลต่อวิธีที่ผู้คนจัดชีวิต ลิ้มรส และจดจำประเพณี",
-      "content_id": "Ia memengaruhi cara orang mengatur kehidupan, menikmati rasa, dan mengingat tradisi."
+      "pinyin": "jiè zhù suān dòu jiǎo zhè ge rù kǒu xiāng cài suān là yān huǒ qì jì yǒu yán xù yě yǒu tiáo zhěng yě ràng dùn shāo chéng dān le shuō míng gōng néng",
+      "content_zh": "借助酸豆角这个入口，湘菜酸辣烟火气既有延续也有调整，也让炖烧承担了说明功能。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through regional climate, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua khí hậu vùng miền, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านภูมิอากาศภูมิภาค พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui iklim daerah, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 119,
-      "pinyin": "bǎ zhè xiē wèi dào fàng zài tóng yì zhāng cān zhuō shàng kě yǐ kàn jiàn dì yù zhī jiān de chā yì yǔ jiāo liú",
-      "content_zh": "把这些味道放在同一张餐桌上，可以看见地域之间的差异与交流。",
-      "content_en": "Placed on one table, these flavors show both regional difference and exchange.",
-      "content_vi": "Khi đặt các phần này cạnh nhau, có thể thấy sự tiếp nối và biến đổi cùng tồn tại.",
-      "content_th": "เมื่อนำส่วนเหล่านี้มาไว้ด้วยกัน จะเห็นทั้งความต่อเนื่องและความเปลี่ยนแปลง",
-      "content_id": "Ketika bagian-bagian ini disatukan, kesinambungan dan perubahan tampak bersama."
+      "pinyin": "wéi rào là jiāo tiáo wèi zhǎn kāi shuō míng mǐ miàn shǐ zhè yì zhǔ tí dài yǒu kě chù mō de xiàn chǎng gǎn kě jiàn cái liào hé wén huà jì yì zài zhè lǐ xiāng yù",
+      "content_zh": "围绕辣椒调味展开说明，米面使这一主题带有可触摸的现场感，可见材料和文化记忆在这里相遇。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through banquet order, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua trật tự yến tiệc, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านลำดับงานเลี้ยง พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui urutan jamuan, dengan konteks budaya yang konkret bagi pelajar."
     },
     {
       "seq_in_article": 120,
-      "pinyin": "yīn cǐ xiàn dài xiāng cài bù jǐn shì yì zhǒng zuò fǎ yě bāng zhù jīn tiān de rén lǐ jiě xiāng cài suān là hé yān huǒ qì",
-      "content_zh": "因此，现代湘菜不仅是一种做法，也帮助今天的人理解湘菜酸辣和烟火气。",
-      "content_en": "Therefore, modern Hunan cuisine is not only a method but also a way to understand Hunan cuisine’s sour heat and kitchen energy.",
-      "content_vi": "Vì vậy, nội dung này giúp người học hôm nay hiểu vị chua cay và hơi bếp của ẩm thực Tương rõ hơn.",
-      "content_th": "ดังนั้นเนื้อหานี้ช่วยให้ผู้เรียนวันนี้เข้าใจรสเปรี้ยวเผ็ดและบรรยากาศครัวอาหารเซียงได้ชัดเจนขึ้น",
-      "content_id": "Karena itu, bagian ini membantu pelajar masa kini memahami rasa asam pedas dan energi dapur masakan Hunan dengan lebih jelas."
+      "pinyin": "lǐ jiě dà huǒ kuài chǎo zhī qián xiāng cài suān là yān huǒ qì kě yǐ bèi chāi chéng gèng qīng chǔ de guān chá céng miàn cháng qī jī lěi yóu cǐ biàn chéng kě yǐ miáo shù de huà miàn",
+      "content_zh": "理解大火快炒之前，湘菜酸辣烟火气可以被拆成更清楚的观察层面，长期积累由此变成可以描述的画面。",
+      "content_en": "Hunan cuisine’s sour spice and wok energy is explained through food etiquette, with concrete cultural context for learners.",
+      "content_vi": "Chủ đề này được giải thích qua lễ nghi ẩm thực, với bối cảnh văn hóa cụ thể cho người học.",
+      "content_th": "หัวข้อนี้อธิบายผ่านมารยาทอาหาร พร้อมบริบททางวัฒนธรรมที่ชัดเจนสำหรับผู้เรียน",
+      "content_id": "Topik ini dijelaskan melalui etiket makan, dengan konteks budaya yang konkret bagi pelajar."
     }
   ]
 }
