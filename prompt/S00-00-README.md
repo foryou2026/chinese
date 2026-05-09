@@ -35,7 +35,7 @@
 | S09 · N | 页面交互（按页面） | `docs/S09-pages/<feature>/` |
 | S10 · H | HTML 原型 | `docs/S10-prototype/` |
 | S11 · V | 开发前一致性校验 + Story 拆分 + 编码上下文包 | `docs/S11-validation/<feature>/` |
-| S12 · E | SEO + GEO 营销优化方案 | `docs/S12-marketing/` |
+| S12 · E | 产品需求文档（PRD） | `docs/S12-prd/` |
 
 ---
 
@@ -80,7 +80,7 @@
 | S09 · N | [S09-N01](./S09-N01-用户输入-页面描述.md) | [S09-N02](./S09-N02-AI澄清-交互提问.md) | [S09-N03](./S09-N03-AI输出-页面交互规范.md) |
 | S10 · H | [S10-H01](./S10-H01-用户输入-原型反馈.md) | — | [S10-H02](./S10-H02-AI输出-HTML原型规范.md) |
 | S11 · V | — | — | [S11-V01](./S11-V01-AI输出-一致性校验.md) · [S11-V02](./S11-V02-AI输出-Story拆分.md) · [S11-V03](./S11-V03-AI输出-编码上下文包.md) |
-| S12 · E | [S12-E01](./S12-E01-用户输入-营销目标.md) | [S12-E02](./S12-E02-AI澄清-营销提问.md) | [S12-E03](./S12-E03-AI输出-SEO+GEO方案.md) |
+| S12 · E | [S12-E01](./S12-E01-用户输入-产品背景.md) | [S12-E02](./S12-E02-AI澄清-PRD提问.md) | [S12-E03](./S12-E03-AI输出-产品需求文档.md) |
 
 ---
 
@@ -100,6 +100,6 @@
 | S09 · N | `docs/S09-pages/<feature>/` |
 | S10 · H | `docs/S10-prototype/` |
 | S11 · V | `docs/S11-validation/<feature>/` |
-| S12 · E | `docs/S12-marketing/` |
+| S12 · E | `docs/S12-prd/` |
 
 详见 [S00-04-文档目录规划](./S00-04-文档目录规划.md)。
