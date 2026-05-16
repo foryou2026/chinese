@@ -45,7 +45,7 @@
 | **B04 · S** | 设计系统 + 原型样式包 | UI 设计师 | `docs/B04-design/` | 产出 `design-system/`（规范）+ `prototype-style/`（可运行 CSS/JS 资产） |
 
 > **顺序**：A → P 必须先于 C 循环（C 阶段会引用架构与权限规范）；X → S 必须先于 C03/C04（页面交互与原型直接消费设计 Token）。
-> **B04 双产出**：`docs/B04-design/design-system/` 是给前端工程实现 React 组件的 markdown 规范；`docs/B04-design/prototype-style/` 是 C04 HTML 原型直接 vendor 引用的可运行 CSS / JS 资产，两者共享同一套 token，确保「原型一个样、上线一个样」。
+> **B04 双产出**：`docs/B04-design/design-system/` 是给前端工程实现 React 组件的 markdown 规范；`docs/B04-design/prototype-style/` 是可运行 CSS / JS 资产，C04 HTML 原型 **通过相对路径引用**（不拷贝），两者共享同一套 token，确保「原型一个样、上线一个样」。
 
 ---
 

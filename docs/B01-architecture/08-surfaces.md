@@ -104,24 +104,22 @@
 
 ---
 
-## 6. 单文件夹原型 vendor 资产
+## 6. 单文件夹原型资产引用
 
-按多端约定，**每个 surface 在 C04 阶段独立持有 vendor**：
+按多端约定，**每个 surface 在 C04 阶段拥有独立目录**；运行时 CSS / JS 资产**统一通过相对路径直接引用 [`docs/B04-design/prototype-style/`](../B04-design/prototype-style/)**（严禁在 feature 目录下拷贝）：
 
 ```
 docs/C04-prototype/<feature>/
 ├── _input/prototype-direction.md
 ├── app/
-│   ├── index.html
-│   ├── vendor/proto-style/ (拷自 docs/B04-design/prototype-style/)
-│   └── pages/, states/, mock-data.js, ...
+│   ├── index.html        ← 引用 ../../../B04-design/prototype-style/X
+│   └── pages/, states/, mock-data.js, feature.css, feature.js
 └── admin/
     ├── index.html
-    ├── vendor/proto-style/
-    └── ...
+    └── pages/, states/, ...   ← pages/*.html 引用 ../../../../B04-design/prototype-style/X
 ```
 
-体积换隔离，可控。
+例外：feature 若在 `/function/<feature>/ai/F4-AI-原型设计/` 存在上游 AI 原型（如 `course`），则改为引用上游 `_assets/`（同样不得拷贝）。
 
 ---
 

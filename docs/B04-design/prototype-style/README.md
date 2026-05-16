@@ -25,26 +25,34 @@
 
 ## 2. C04 使用约定
 
-C04 阶段产物每个 feature 目录下必须有 `vendor/proto-style/`,**字节级**全量拷自本目录:
+> **铁律**:C04 原型 **严禁** 在 feature 目录下拷贝本目录任何文件(`vendor/`、`assets/styles.css`、`assets/app.css` 等皆禁)。所有 HTML 通过相对路径**直接引用**本目录,保证全仓单一来源、修改即时生效。详见 [/prompt/C-product/C04-H03-AI输出-HTML原型规范.md](../../../prompt/C-product/C04-H03-AI输出-HTML原型规范.md) §0 / §硬约束。
 
-```bash
-cp -R docs/B04-design/prototype-style/{tokens.css,themes.css,app.css,app.js} \
-      docs/C04-prototype/<feature-id>/vendor/proto-style/
-```
-
-页面以相对路径引入:
+### 2.1 surface/pages/*.html(深度 = 4 层至 docs/)
 
 ```html
-<link rel="stylesheet" href="../vendor/proto-style/tokens.css">
-<link rel="stylesheet" href="../vendor/proto-style/themes.css">
-<link rel="stylesheet" href="../vendor/proto-style/app.css">
+<link rel="stylesheet" href="../../../../B04-design/prototype-style/tokens.css">
+<link rel="stylesheet" href="../../../../B04-design/prototype-style/themes.css">
+<link rel="stylesheet" href="../../../../B04-design/prototype-style/app.css">
 <link rel="stylesheet" href="../feature.css">
-<script defer src="../vendor/proto-style/app.js"></script>
+<script defer src="../../../../B04-design/prototype-style/app.js"></script>
 <script defer src="../mock-data.js"></script>
 <script defer src="../feature.js"></script>
 ```
 
+### 2.2 surface/index.html(深度 = 3 层至 docs/)
+
+```html
+<link rel="stylesheet" href="../../../B04-design/prototype-style/tokens.css">
+<link rel="stylesheet" href="../../../B04-design/prototype-style/themes.css">
+<link rel="stylesheet" href="../../../B04-design/prototype-style/app.css">
+<script defer src="../../../B04-design/prototype-style/app.js"></script>
+```
+
 并在 `<body>` 末尾:`<script>proto.bootstrap();</script>`
+
+### 2.3 例外(F4 上游)
+
+若 feature 在 `/function/<feature>/ai/F4-AI-原型设计/` 已有上游 AI 原型(如 `course`),C04 应改为引用上游 `_assets/`(pages 用 `../../../../../function/<feature>/ai/F4-AI-原型设计/_assets/X`),同样**不得拷贝**。
 
 ---
 
@@ -66,4 +74,4 @@ cp -R docs/B04-design/prototype-style/{tokens.css,themes.css,app.css,app.js} \
 
 - 一旦填充后,所有 C04 / 业务原型必须**只**使用本目录提供的 class / variable;不允许在单个原型 HTML 内重新定义 token / 自创组件 class。
 - 本目录与 `system/packages/ui-kit/src/tokens/` 必须**保持一致**;任一侧修改必须同步另一侧并更新 [`docs/A00-meta/changelog.md`](../../A00-meta/changelog.md)。
-- 各 feature 的 `vendor/proto-style/` 内文件**禁止**编辑;只能从本目录重拷。
+- C04 feature 目录下**禁止**出现本目录文件的副本(`vendor/`、`assets/styles.css` 等);如需调整全局样式必须直接改本目录,所有 feature 引用立即生效。
