@@ -32,4 +32,4 @@
 
 - 主流程：[`../flows/app-main-flow.md`](../flows/app-main-flow.md)
 - 异常流：[`../flows/app-exception-flow.md`](../flows/app-exception-flow.md)
-- C02 app：[`../../C02-ia/auth/app/`](../../C02-ia/auth/app/)
+- C02 app：[`../../C03-ia/auth/app/`](../../C03-ia/auth/app/)

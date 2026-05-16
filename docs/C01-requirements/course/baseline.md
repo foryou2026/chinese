@@ -99,7 +99,7 @@
 
 ## 4. 边界与不变量
 
-- **5 语 locale 集合**:`zh/en/vi/th/id`(与 [`B02-permissions/03-authz-mechanism.md §4`](../../B02-permissions/03-authz-mechanism.md) / discover-china C01 §4 全局对齐);多语字段统一形如 `title_i18n: { zh, en, vi, th, id }`,前端按 `users.ui_lang` 取值,缺失回退 `zh`;
+- **5 语 locale 集合**:`zh/en/vi/th/id`(与 [`C02-permissions/03-authz-mechanism.md §4`](../../C02-permissions/03-authz-mechanism.md) / discover-china C01 §4 全局对齐);多语字段统一形如 `title_i18n: { zh, en, vi, th, id }`,前端按 `users.ui_lang` 取值,缺失回退 `zh`;
 - **5 主题码**:写死 `share / ec / fc / hsk / dl`,不接受业务方扩展;
 - **节 code 格式**:`{track}-{stage}-{chapter}-{lesson}`(示例 `ec-2-3-1` / `share-0-1-1`);UNIQUE,迁移友好;
 - **KP code 格式**:`kp_{track}_{type_initial}_{seq5}`(示例 `kp_ec_w_00231`,type_initial = p/h/w/ph/g/s/d);UNIQUE;

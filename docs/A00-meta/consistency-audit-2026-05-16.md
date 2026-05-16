@@ -24,7 +24,7 @@
 ### 2.1 DB schema 命名
 
 - **事实**：`backup/system/supabase/migrations/*` 全部使用 `zhiyu.<table>` schema。
-- **修订**：`docs/B02-permissions/04-data-model.md` 中所有 `public.profiles / user_sessions / audit_logs / auth_login_attempts` → `zhiyu.<table>`。
+- **修订**：`docs/C02-permissions/04-data-model.md` 中所有 `public.profiles / user_sessions / audit_logs / auth_login_attempts` → `zhiyu.<table>`。
 
 ### 2.2 `profiles` 表字段
 
@@ -43,7 +43,7 @@
   - `02-auth-flow.md`：禁用判定 `is_disabled=true` → `is_active=false`，删 `disabled_reason/by/at` 相关 SQL；
   - `03-authz-mechanism.md`：缓存检查列 → `is_active`；
   - `00-index.md`：表述同步；
-  - `B03-ux/04-voice-tone.md`：错误文案不再含 `{reason}`；
+  - `B02-ux/04-voice-tone.md`：错误文案不再含 `{reason}`；
   - `C01-requirements/auth/flows/*.md`：Mermaid 节点 `is_disabled=true` → `is_active=false`。
 - **保留**：错误码 `AUTH_ACCOUNT_DISABLED`（语义合理，前端文案沿用"账号已被停用"）。
 
@@ -59,7 +59,7 @@
 - **修订**：
   - `04-data-model.md` 重写表定义；
   - `02-auth-flow.md`：会话注册插入字段更新；
-  - `C05-prd/auth/app/02-glossary.md`：术语 `refresh_token_hash` → `refresh_jti`；`device_info` → `device_id/device_name`。
+  - `C06-prd/auth/app/02-glossary.md`：术语 `refresh_token_hash` → `refresh_jti`；`device_info` → `device_id/device_name`。
 - **业务语义对齐**：同一用户同一 `device_id` 唯一；多设备硬上限 3 仍生效（用 `user_id` count 判定）。
 
 ### 2.4 `auth_login_attempts` 表字段
@@ -87,8 +87,8 @@
 
 - **事实**：`backup/function/02-course/prd/01-课程目录骨架.md` + `docs/C01-requirements/course/baseline.md` = **5 主题**（`share` 为共享预备主题，外加 `ec/fc/hsk/dl`）。
 - **修订**：
-  - `C05-prd/course/app/11-roadmap.md` "4 主题骨架" / "4 主题全量发布" → "5 主题"；
-  - `C05-prd/course/admin/11-roadmap.md` 同步。
+  - `C06-prd/course/app/11-roadmap.md` "4 主题骨架" / "4 主题全量发布" → "5 主题"；
+  - `C06-prd/course/admin/11-roadmap.md` 同步。
 
 ### 2.9 `profiles.role` CHECK 约束顺序
 
@@ -121,7 +121,7 @@
 
 1. **如需启用禁用原因审计**：增补 migration `0008_profiles_disabled_extras.sql` 加 `disabled_reason/disabled_at/disabled_by` 列后，再回填 docs 文案 `{reason}` 插值。
 2. **支付落地时**：若决定改用微信支付（已有凭证），再启动一轮 B01→C01 修订，把 Paddle 全部替换为 wechat-pay。
-3. **`user_sessions.device_id` 生成规则**：建议落地一份 `docs/B02-permissions/05-auth-feature-guideline.md` 章节，明确 device_id 由前端 fingerprint（`navigator.userAgent + screen` hash）生成，避免不同浏览器重复占用 3 槽。
+3. **`user_sessions.device_id` 生成规则**：建议落地一份 `docs/C02-permissions/05-auth-feature-guideline.md` 章节，明确 device_id 由前端 fingerprint（`navigator.userAgent + screen` hash）生成，避免不同浏览器重复占用 3 槽。
 
 ---
 
@@ -129,17 +129,17 @@
 
 | 文件 | 改动类型 |
 |------|---------|
-| `docs/B02-permissions/04-data-model.md` | 全表重写（schema + 字段） |
-| `docs/B02-permissions/02-auth-flow.md` | 字段名 / SQL 改写 |
-| `docs/B02-permissions/03-authz-mechanism.md` | 字段名 / SQL 改写 |
-| `docs/B02-permissions/00-index.md` | 摘要表述同步 |
-| `docs/B03-ux/04-voice-tone.md` | 错误文案去 `{reason}` |
+| `docs/C02-permissions/04-data-model.md` | 全表重写（schema + 字段） |
+| `docs/C02-permissions/02-auth-flow.md` | 字段名 / SQL 改写 |
+| `docs/C02-permissions/03-authz-mechanism.md` | 字段名 / SQL 改写 |
+| `docs/C02-permissions/00-index.md` | 摘要表述同步 |
+| `docs/B02-ux/04-voice-tone.md` | 错误文案去 `{reason}` |
 | `docs/C01-requirements/auth/flows/app-exception-flow.md` | Mermaid 节点 |
 | `docs/C01-requirements/auth/flows/app-main-flow.md` | Mermaid 节点 |
 | `docs/C01-requirements/auth/flows/admin-exception-flow.md` | Mermaid 节点 |
-| `docs/C05-prd/auth/app/02-glossary.md` | 术语 |
-| `docs/C05-prd/course/app/11-roadmap.md` | 4 → 5 主题 |
-| `docs/C05-prd/course/admin/11-roadmap.md` | 4 → 5 主题 |
+| `docs/C06-prd/auth/app/02-glossary.md` | 术语 |
+| `docs/C06-prd/course/app/11-roadmap.md` | 4 → 5 主题 |
+| `docs/C06-prd/course/admin/11-roadmap.md` | 4 → 5 主题 |
 | `docs/A00-meta/consistency-audit-2026-05-16.md` | 本文档（新增）|
 
 > 完成时间：2026-05-16

@@ -2,8 +2,8 @@
 
 # A00 · 项目术语表（global）
 
-> 全项目共享术语。C 阶段 feature 局部术语放各 feature 的 `docs/C05-prd/<feature>/02-glossary.md`；
-> 跨 feature 共享的术语沉淀到本文件 + `docs/C05-prd/_glossary.md`（二者同义，前者偏框架/工程，后者偏产品）。
+> 全项目共享术语。C 阶段 feature 局部术语放各 feature 的 `docs/C06-prd/<feature>/02-glossary.md`；
+> 跨 feature 共享的术语沉淀到本文件 + `docs/C06-prd/_glossary.md`（二者同义，前者偏框架/工程，后者偏产品）。
 
 | 术语 | 英文 / 缩写 | 释义 |
 |------|------------|------|

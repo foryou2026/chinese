@@ -5,8 +5,8 @@
 > **阶段**：C01-R · **feature**：`auth` · **surface**：`app` + `admin`（多端单 feature）
 > **上游**：
 > - 输入草案：[`_input/app-draft.md`](./_input/app-draft.md)、[`_input/admin-draft.md`](./_input/admin-draft.md)
-> - B02 规范：[`05-auth-feature-guideline.md`](../../B02-permissions/05-auth-feature-guideline.md)、[`02-auth-flow.md`](../../B02-permissions/02-auth-flow.md)、[`03-authz-mechanism.md`](../../B02-permissions/03-authz-mechanism.md)、[`04-data-model.md`](../../B02-permissions/04-data-model.md)
-> - B03 语气：[`04-voice-tone.md`](../../B03-ux/04-voice-tone.md)
+> - B02 规范：[`05-auth-feature-guideline.md`](../../C02-permissions/05-auth-feature-guideline.md)、[`02-auth-flow.md`](../../C02-permissions/02-auth-flow.md)、[`03-authz-mechanism.md`](../../C02-permissions/03-authz-mechanism.md)、[`04-data-model.md`](../../C02-permissions/04-data-model.md)
+> - B03 语气：[`04-voice-tone.md`](../../B02-ux/04-voice-tone.md)
 > **下游**：本 feature 全部 C02 / C03 / C04 / C05 产物；未来 D 阶段路由必须覆盖全部 R-ID。
 > **冻结状态**：已冻结 · 2026-05-16（合并 app-auth+admin-auth 双 feature 重构 · 2026-05-17）
 
@@ -20,8 +20,8 @@
   - [`admin/notes.md`](./admin/notes.md)：admin 端补充说明
 - 共 25 条 R-ID（app 范围 17 条 / admin 范围 10 条 / 两端共有 8 条）。
 - C02 流程：
-  - 共享/跨端：[`_shared/state-machines.md`](../../C02-ia/auth/_shared/state-machines.md)、[`_shared/flows-shared.md`](../../C02-ia/auth/_shared/flows-shared.md)
-  - per-surface：[`app/02-flows.md`](../../C02-ia/auth/app/02-flows.md)、[`admin/02-flows.md`](../../C02-ia/auth/admin/02-flows.md)
+  - 共享/跨端：[`_shared/state-machines.md`](../../C03-ia/auth/_shared/state-machines.md)、[`_shared/flows-shared.md`](../../C03-ia/auth/_shared/flows-shared.md)
+  - per-surface：[`app/02-flows.md`](../../C03-ia/auth/app/02-flows.md)、[`admin/02-flows.md`](../../C03-ia/auth/admin/02-flows.md)
 
 ---
 
@@ -57,7 +57,7 @@
 
 > **占位说明**（R-auth-016 ~ R-auth-024）：原 admin-auth feature 的 R-001..009 在合并后语义上已被 R-auth-003/004/005/006/007/008/009/010 的 admin 分支收编；为防止历史 C02/C05 文件中 9 处占位链接出现 404，先以"占位 + 指向"形式保留，待 C02 覆盖矩阵 Round 8 一次性清理后再回收 ID 段。
 >
-> 后续 C02/C03 任何 page-id 或接口必须能被至少一个 R-ID 覆盖，反之每条 **有效** R-ID 必须能被至少一个 page-id 或接口覆盖（详见 [`C02 §06 覆盖矩阵`](../../C02-ia/auth/app/06-coverage-matrix.md) / [`admin/06-coverage-matrix.md`](../../C02-ia/auth/admin/06-coverage-matrix.md)）。
+> 后续 C02/C03 任何 page-id 或接口必须能被至少一个 R-ID 覆盖，反之每条 **有效** R-ID 必须能被至少一个 page-id 或接口覆盖（详见 [`C02 §06 覆盖矩阵`](../../C03-ia/auth/app/06-coverage-matrix.md) / [`admin/06-coverage-matrix.md`](../../C03-ia/auth/admin/06-coverage-matrix.md)）。
 
 ---
 
@@ -105,12 +105,12 @@
 
 - app 端 9 个页面（`P-app-auth-001`..`009`）全部具有 idle / loading / error / 4 态以上；
 - admin 端 4 个页面（`P-admin-auth-001`..`004`）同样满足态覆盖；
-- 所有错误码在 [`03-authz-mechanism §4`](../../B02-permissions/03-authz-mechanism.md) 清单内；
+- 所有错误码在 [`03-authz-mechanism §4`](../../C02-permissions/03-authz-mechanism.md) 清单内；
 - 所有路由可被未来 `D02-api/auth/{app,admin}/01-routes-delta.md` 覆盖；
 - 非 `super_admin` 用 user 账号尝试登录 `/admin/auth/login` → 立即 signOut + Toast「请使用用户入口登录」；
 - 任意管理员密码改成功 → 立即在另一个浏览器收到 401 → 跳回 `/admin/auth/login`；
 - 管理员尝试登录第 4 设备 → 第 1 设备 10 秒内被踢（轮询 `session-status`）；
-- D 阶段未新增本 feature 独占表（沿用 [B02-04](../../B02-permissions/04-data-model.md) 5 张表）。
+- D 阶段未新增本 feature 独占表（沿用 [B02-04](../../C02-permissions/04-data-model.md) 5 张表）。
 
 ---
 
@@ -133,4 +133,4 @@
 
 ## 6. 待确认问题
 
-详见 [`99-open-questions.md`](./99-open-questions.md) 与 [`B02 §99`](../../B02-permissions/99-open-questions.md)（`AUTH_USE_USER_ENTRY` 文案归口）。
+详见 [`99-open-questions.md`](./99-open-questions.md) 与 [`B02 §99`](../../C02-permissions/99-open-questions.md)（`AUTH_USE_USER_ENTRY` 文案归口）。

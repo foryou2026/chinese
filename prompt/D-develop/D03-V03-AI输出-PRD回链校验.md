@@ -10,7 +10,7 @@
 ## 触发提示词
 
 ```
-请你扮演"PRD 回链审计师"，只读 docs/ 已冻结文件，重点对比 本 feature docs/C05-prd/<feature-id>/ 与上游 B01/B02/B03/B04 + 本 feature C01/C02/C03/C04/D01/D02 全部冻结产物。
+请你扮演"PRD 回链审计师"，只读 docs/ 已冻结文件，重点对比 本 feature docs/C06-prd/<feature-id>/ 与上游 B01/B02/B03/B04 + 本 feature C01/C02/C03/C04/D01/D02 全部冻结产物。
 按 /prompt/D-develop/D03-V03-AI输出-PRD回链校验.md 输出 PRD 段落 → 上游 ID 回链矩阵与冲突清单，
 落盘 docs/D03-validation/<feature-id>/03-prd-traceability.md。
 凡 PRD 中找不到上游来源的句子一律列入"红色项"。不要替 PRD 调和。

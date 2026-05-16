@@ -7,7 +7,7 @@
 > **feature**：全局  
 > **上游依赖**：`_input/preferences.md`、`A-questions-round1-resolved.md Q5`  
 > **冻结状态**：已冻结 · 2026-04-28  
-> **下游影响**：B02 角色×surface 矩阵、所有 feature 的 C/D 目录形态、`docs/C05-prd/_global-index.md`
+> **下游影响**：B02 角色×surface 矩阵、所有 feature 的 C/D 目录形态、`docs/C06-prd/_global-index.md`
 
 ---
 
@@ -40,10 +40,10 @@
 | 共享层文件 | 含义 |
 |-----------|------|
 | `docs/C01-requirements/<feature>/baseline.md` | feature 级业务意图整体（**仍单份**，不拆 surface）|
-| `docs/C02-ia/<feature>/_shared/state-machines.md` | 状态机集中（跨端必须一致）|
-| `docs/C02-ia/<feature>/_shared/flows-shared.md` | 跨端共享业务流程（如 admin 改价 → app 看到改价）|
-| `docs/C05-prd/<feature>/_shared/business-rules.md` | 跨端业务规则 |
-| `docs/C05-prd/<feature>/_shared/glossary.md` | feature 局部术语（跨端用）|
+| `docs/C03-ia/<feature>/_shared/state-machines.md` | 状态机集中（跨端必须一致）|
+| `docs/C03-ia/<feature>/_shared/flows-shared.md` | 跨端共享业务流程（如 admin 改价 → app 看到改价）|
+| `docs/C06-prd/<feature>/_shared/business-rules.md` | 跨端业务规则 |
+| `docs/C06-prd/<feature>/_shared/glossary.md` | feature 局部术语（跨端用）|
 | `docs/D01-data/<feature>/*` | 数据模型是单一真相，**全量共享**，不拆 surface |
 
 ### 2.2 端特定 → `<surface>/` 子目录
@@ -52,14 +52,14 @@
 
 | 端特定文件 | 含义 |
 |-----------|------|
-| `docs/C02-ia/<feature>/<surface>/01-feature-catalog.md` | 端内功能清单 |
-| `docs/C02-ia/<feature>/<surface>/02-flows.md` | 端特定流程图 |
-| `docs/C02-ia/<feature>/<surface>/04-pages.md` | 端内页面清单 |
-| `docs/C02-ia/<feature>/<surface>/05-navigation.md` | 端导航 |
-| `docs/C02-ia/<feature>/<surface>/06-coverage-matrix.md` | R-ID × 页面覆盖矩阵 |
-| `docs/C03-pages/<feature>/<surface>/<page-id>.md` | 单页交互（含 4 态 + 角色可见性）|
-| `docs/C04-prototype/<feature>/<surface>/...` | 原型（每端独立 index.html + vendor）|
-| `docs/C05-prd/<feature>/<surface>/...` | 端 PRD（overview + page-specs + design-summary）|
+| `docs/C03-ia/<feature>/<surface>/01-feature-catalog.md` | 端内功能清单 |
+| `docs/C03-ia/<feature>/<surface>/02-flows.md` | 端特定流程图 |
+| `docs/C03-ia/<feature>/<surface>/04-pages.md` | 端内页面清单 |
+| `docs/C03-ia/<feature>/<surface>/05-navigation.md` | 端导航 |
+| `docs/C03-ia/<feature>/<surface>/06-coverage-matrix.md` | R-ID × 页面覆盖矩阵 |
+| `docs/C04-pages/<feature>/<surface>/<page-id>.md` | 单页交互（含 4 态 + 角色可见性）|
+| `docs/C05-prototype/<feature>/<surface>/...` | 原型（每端独立 index.html + vendor）|
+| `docs/C06-prd/<feature>/<surface>/...` | 端 PRD（overview + page-specs + design-summary）|
 | `docs/D02-api/<feature>/<surface>/...` | 端路由 + 接口（强制 `/api/<surface>/*` 前缀）|
 
 ### 2.3 跨端联动
@@ -95,7 +95,7 @@
 - **B02 不定**任何登录 / 注册 / 找回密码 / 邮箱验证流程。
 - 鉴权按 **单一 feature 多端形态** 组织（遵循 `prompt/A-framework/A00-04 §四.5`）：
   - feature ID：`auth`
-  - 目录形态：`C01-requirements/auth/{baseline.md, app/notes.md, admin/notes.md, flows/, ...}` · `C02-ia/auth/{_shared/, app/, admin/}` · 其余 C03/C04/C05 同样按 `auth/<surface>/` 拆分
+  - 目录形态：`C01-requirements/auth/{baseline.md, app/notes.md, admin/notes.md, flows/, ...}` · `C03-ia/auth/{_shared/, app/, admin/}` · 其余 C03/C04/C05 同样按 `auth/<surface>/` 拆分
   - 业务范围：
     - `auth` (surface=`app`) → 学员账号体系（邮箱 + 密码 + Google OAuth；本期 mock SMTP）
     - `auth` (surface=`admin`) → 后台账号体系（仅邮密；邀请制，超管 seed）
@@ -106,14 +106,14 @@
 
 ## 6. 单文件夹原型资产引用
 
-按多端约定，**每个 surface 在 C04 阶段拥有独立目录**；C04 极简平铺(一个页面 = 一个默认态 HTML，平铺在 `<surface>/` 根下)；运行时 CSS / JS 资产**统一通过相对路径直接引用 [`docs/B04-design/prototype-style/`](../B04-design/prototype-style/)**（严禁在 feature 目录下拷贝）：
+按多端约定，**每个 surface 在 C04 阶段拥有独立目录**；C04 极简平铺(一个页面 = 一个默认态 HTML，平铺在 `<surface>/` 根下)；运行时 CSS / JS 资产**统一通过相对路径直接引用 [`docs/B03-design/prototype-style/`](../B03-design/prototype-style/)**（严禁在 feature 目录下拷贝）：
 
 ```
-docs/C04-prototype/<feature>/
+docs/C05-prototype/<feature>/
 ├── _input/prototype-direction.md
 ├── index.html             ← feature 级入口 (双端列卡)
 ├── app/
-│   ├── index.html         ← surface 入口；引用 ../../../B04-design/prototype-style/X
+│   ├── index.html         ← surface 入口；引用 ../../../B03-design/prototype-style/X
 │   └── P-*.html           ← 默认态原型 (同样 3 ups)；空/加载/错/无权限态由 C05 文字描述
 └── admin/
     ├── index.html
@@ -121,7 +121,7 @@ docs/C04-prototype/<feature>/
 ```
 
 > **硬约束**：surface 目录下**只能**有 `index.html` + `P-*.html`；严禁 `pages/` / `states/` / `assets/` / `vendor/` / `feature.css` / `feature.js` / `mock-data.js`。
-> feature 沿用专属视觉结构时，允许在 `docs/B04-design/prototype-style/<feature>/` 下放置 `styles.css` / `prototype.js`，HTML 引用路径 `../../../B04-design/prototype-style/<feature>/X`（仍然 3 ups，只引用不拷贝）。
+> feature 沿用专属视觉结构时，允许在 `docs/B03-design/prototype-style/<feature>/` 下放置 `styles.css` / `prototype.js`，HTML 引用路径 `../../../B03-design/prototype-style/<feature>/X`（仍然 3 ups，只引用不拷贝）。
 
 ---
 

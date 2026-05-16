@@ -3,7 +3,7 @@
 # R01 用户输入 · `auth` 需求初稿
 
 > 由 PM 反向整理 · 2026-05-16
-> 来源:`B02-permissions/05-auth-feature-guideline.md` / `B01-architecture/08-surfaces.md`
+> 来源:`C02-permissions/05-auth-feature-guideline.md` / `B01-architecture/08-surfaces.md`
 
 ---
 

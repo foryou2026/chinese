@@ -33,4 +33,4 @@
 
 - 主流程：[`../flows/admin-main-flow.md`](../flows/admin-main-flow.md)
 - 异常流：[`../flows/admin-exception-flow.md`](../flows/admin-exception-flow.md)
-- C02 admin：[`../../C02-ia/auth/admin/`](../../C02-ia/auth/admin/)
+- C02 admin：[`../../C03-ia/auth/admin/`](../../C03-ia/auth/admin/)

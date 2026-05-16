@@ -107,4 +107,4 @@ flowchart TD
     E --> F[登录成功后读 redirect 参数跳回]
 ```
 
-> 详细守卫实现见 [`B02-permissions/03-authz-mechanism §2.1`](../../B02-permissions/03-authz-mechanism.md)。
+> 详细守卫实现见 [`C02-permissions/03-authz-mechanism §2.1`](../../C02-permissions/03-authz-mechanism.md)。
