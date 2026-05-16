@@ -19,7 +19,7 @@
 |------|------------|
 | `R-auth-003` | **强制** `super_admin` 角色守卫：非超管立即 `signOut()` 并回 `AUTH_USE_USER_ENTRY` 错误码 |
 | `R-auth-005` | `user_sessions.surface='admin'` 维度独立计数（与 app 互不影响）|
-| `R-auth-006` | 同 app；运维可手工 `is_disabled=true` disable 异常管理员 |
+| `R-auth-006` | 同 app；运维可手工 `is_active=false` disable 异常管理员 |
 | `R-auth-007` | 路径走 `/admin/auth/forgot` → `/admin/auth/reset-password` |
 | `R-auth-008` | 复用 `POST /api/admin/me/password`（与 app 同密码规则：8+ 字母 + 数字）|
 | `R-auth-010` | 守卫跳 `/admin/auth/login?redirect=...`；非超管 → `/admin/auth/login?error=not_admin` |

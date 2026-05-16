@@ -26,7 +26,7 @@
 ```
 1. /auth/login 提交 { email, password }
 2. 前置：POST /api/auth/login-attempt-record { email, ip } —— 命中 5/15min 锁定立即返 429 AUTH_LOGIN_RATE_LIMITED
-3. 前置：查 profiles where email=? 若 is_disabled=true → 401 AUTH_ACCOUNT_DISABLED
+3. 前置：查 zhiyu.profiles where email=? 若 is_active=false → 401 AUTH_ACCOUNT_DISABLED
 4. supabase.auth.signInWithPassword({ email, password })
 5. 成功：
    - cookieStorage adapter 拦截 session，调 POST /api/auth/cookie/set
@@ -67,7 +67,7 @@
 | Cookie 适配器 | supabase-js `auth.storage` 自定义实现，读写都走同域 `POST /api/auth/cookie/get|set|clear`（详见 [03-authz-mechanism §2.4](./03-authz-mechanism.md)）|
 | 携带方式 | 同域请求浏览器自动携带；Hono 中间件优先从 `c.req.cookie('zhiyu-at')` 读，兼容 `Authorization: Bearer` Header（服务间调用）|
 | CSRF | 同时下发非 HttpOnly `zhiyu-csrf` (32B 随机)；POST/PUT/PATCH/DELETE 必须在 `X-CSRF-Token` Header 回传一致 |
-| 后端验签 | `jose.jwtVerify`，校 `exp` + `signature` + `profiles.is_disabled`（30s LRU 缓存）|
+| 后端验签 | `jose.jwtVerify`，校 `exp` + `signature` + `zhiyu.profiles.is_active`（30s LRU 缓存）|
 | 自动刷新 | supabase-js 在 access 到期前 60s 触发；连续失败 3 次 → 全局登出 |
 | Token 黑名单 | 不做。撚销通过 Supabase Admin API revoke refresh 实现；access 自然过期内（最长 1h）仍有效，接受风险 |
 
@@ -101,16 +101,19 @@ JWT payload 关键字段：`sub` (user.id, UUID) / `email` / `app_metadata.role`
 
 ```
 POST /api/auth/session-register
-  body: { device:'web'|'mobile-web', ua: navigator.userAgent }
+  body: { deviceId, deviceName, ua: navigator.userAgent }
   Cookie: zhiyu-at（自动）
 
 后端：
 1. authRequired 解 user_id
-2. 通过 service_role 查 auth.refresh_tokens where user_id=?
-3. 在 user_sessions 插入 { user_id, refresh_token_hash, device, ua, ip, created_at, last_seen_at }
-4. count > 3 → 取 created_at 最早 oldest
-   - supabase.auth.admin.signOut(oldest.refresh_token)  ← revoke
-   - delete from user_sessions where id = oldest.id
+2. 通过 service_role 从 refresh token payload 提取 jti
+3. upsert zhiyu.user_sessions on conflict (user_id, device_id)
+     values { user_id, device_id, device_name, user_agent, ip, refresh_jti, last_seen_at=now() }
+   → 同设备复登仅更新 refresh_jti / last_seen_at，不挤占额度
+4. select count(*) from zhiyu.user_sessions where user_id=? → > 3
+   取 last_seen_at 最早 oldest
+   - supabase.auth.admin.signOut(oldest.user_id) + revoke 对应 refresh
+   - delete from zhiyu.user_sessions where id = oldest.id
 5. 返回 { sessionId }
 ```
 
@@ -122,7 +125,7 @@ POST /api/auth/session-register
 
 ### 4.4 不提供"我的设备"页
 
-- `user_sessions` 仅用于（1）登录时检查会话数；（2）禁用账号时一次性 revoke + 删除。
+- `zhiyu.user_sessions` 仅用于（1）登录时检查会话数；（2）禁用账号时一次性 revoke + 删除。
 - 不上心跳接口；`last_seen_at` 仅在调需鉴权接口时顺手更新。
 
 ---
@@ -134,7 +137,7 @@ POST /api/auth/session-register
 | 存储 | bcrypt cost=10（GoTrue 默认）|
 | 规则 | ≥ 8 位、含字母 + 数字；前端 zod 校验 + GoTrue 服务端再校 |
 | 强度提示 | 弱 / 中 / 强（长度 + 字符多样性）；纯前端，不阻塞 |
-| 登录失败限制 | 同 `email + ip` 5 次 / 15 min → 锁定到窗口结束（表 `auth_login_attempts`）|
+| 登录失败限制 | 同 `email + ip` 5 次 / 15 min → 锁定到窗口结束（表 `zhiyu.auth_login_attempts`，success=false 计数）|
 | 解锁 | 自动到期；管理端可手动清除 |
 | 防爆破补充 | 本期不接第三方验证码；仅靠节流（锁定 + 忘密 60s/1h + 注册 IP 1h ≤ 5）|
 
@@ -144,26 +147,28 @@ POST /api/auth/session-register
 
 ### 6.1 标记 & 联合效果
 
-`profiles.is_disabled boolean default false` + `disabled_reason text` + `disabled_by uuid` + `disabled_at timestamptz`。
+`zhiyu.profiles.is_active boolean default true`；**禁用 = `is_active=false`**。v1 schema 不单独存 `disabled_reason / disabled_by / disabled_at` 列，上下文一律入 `zhiyu.audit_logs.meta`。
 
 管理端「禁用」动作：
 
-1. `update profiles set is_disabled=true, disabled_reason=?, disabled_by=?, disabled_at=now() where id=?`
+1. `update zhiyu.profiles set is_active=false, updated_at=now() where id=?`
 2. `supabase.auth.admin.signOut(userId, { scope:'global' })` — 全 refresh revoke
-3. `delete from user_sessions where user_id=?`
+3. `delete from zhiyu.user_sessions where user_id=?`
 4. `disabledCache.delete(userId)` 让其他 Hono 进程立即感知
-5. 写 `audit_logs` `action='user.disable'`
+5. 写 `zhiyu.audit_logs` `event='user.disable'`，`meta = { reason, disabled_by: superAdminId }`
 
-「启用」：`update profiles set is_disabled=false, disabled_reason=null where id=?` + 清缓存 + `audit_logs` `action='user.enable'`。
+「启用」：`update zhiyu.profiles set is_active=true, updated_at=now() where id=?` + 清缓存 + `zhiyu.audit_logs` `event='user.enable'`。
 
 ### 6.2 拦截位置
 
-- **登录前置**：`POST /api/auth/login-attempt-record` 查 profiles → `is_disabled=true` 直接 401 `AUTH_ACCOUNT_DISABLED`，前端不再调 supabase；
-- **每次请求**：`authRequired` 30s LRU 缓存内查 `profiles.is_disabled`；命中 `true` → 401 + 强制登出。
+- **登录前置**：`POST /api/auth/login-attempt-record` 查 `zhiyu.profiles` → `is_active=false` 直接 401 `AUTH_ACCOUNT_DISABLED`，前端不再调 supabase；
+- **每次请求**：`authRequired` 30s LRU 缓存内查 `zhiyu.profiles.is_active`；命中 `false` → 401 + 强制登出。
 
 ### 6.3 前端展示
 
-登录页 Toast：**"账号已被停用，原因：{disabled_reason}。如有疑问请通过客服工单联系我们。"**（含跳转 `/help/contact`）。已登录用户被禁 → 下次 API 调用 `AUTH_ACCOUNT_DISABLED` → 全局登出 → 同上提示页。
+登录页 Toast：**"账号已被停用，如有疑问请通过客服工单联系我们。"**（含跳转 `/help/contact`）。已登录用户被禁 → 下次 API 调用 `AUTH_ACCOUNT_DISABLED` → 全局登出 → 同上提示页。
+
+> 原因记录仅限后台审计使用（查 `audit_logs.meta->>'reason'`）；如后期需给用户展示原因，再加 migration 扩列。
 
 ---
 

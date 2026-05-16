@@ -4,17 +4,19 @@
 
 > **阶段**：B02-P  
 > **上游**：`B01-architecture/03-database.md`、`01-roles.md`、`02-auth-flow.md`  
-> **下游**：`supabase/migrations/0001_auth_baseline.sql`、所有需要引用 `profiles` 的 D01 D 阶段产物  
+> **下游**：`system/supabase/migrations/0002_profiles_sessions_audits.sql`、所有需要引用 `profiles` 的 D01 D 阶段产物  
 > **冻结状态**：已冻结 · 2026-04-28
 
 ---
 
 ## 0. 摘要
 
-- 5 张表：`auth.users`（Supabase 内置）+ `public.profiles` + `public.user_sessions` + `public.auth_login_attempts` + `public.audit_logs`。
-- 所有 `id` UUID v7（与 `B01-architecture/03-database.md` 一致）；所有时间戳 `timestamptz`。
-- 全表强制 RLS；Hono 后端用 service_role 绕 RLS（前置 `authRequired` 校验）。
+- 5 张表：`auth.users`（Supabase 内置）+ `zhiyu.profiles` + `zhiyu.user_sessions` + `zhiyu.auth_login_attempts` + `zhiyu.audit_logs`。
+- 业务 schema = **`zhiyu`**（与 `B01-architecture/03-database.md` 一致）。
+- 所有业务表 `id`：profiles/auth.users 引用 `auth.users.id`；user_sessions 用 `uuid_generate_v4()`；其他业务表用 `gen_random_uuid()`。时间戳统一 `timestamptz`。
+- `profiles` 与 `user_sessions` 启用 RLS；登录尝试 / 审计日志仅 service_role 可写。Hono 后端用 service_role 绕 RLS（前置 `authRequired` 校验）。
 - 角色字段权威位置 = `auth.users.raw_app_meta_data->>'role'`；`profiles.role` 仅作冗余索引。
+- **来源对齐**：本文档字段定义与 `system/supabase/migrations/0002_profiles_sessions_audits.sql` 完全一致。
 
 ---
 
@@ -36,39 +38,37 @@ JWT 中映射：`app_metadata.role` ← `raw_app_meta_data->>'role'`。
 
 ---
 
-## 2. `public.profiles`（业务用户档案）
+## 2. `zhiyu.profiles`（业务用户档案）
 
 ```sql
-create table public.profiles (
-  id              uuid primary key references auth.users(id) on delete cascade,
-  email           text not null,
-  role            text not null default 'user' check (role in ('user', 'super_admin')),
-                                                  -- 冗余索引；权威值来自 auth.users.raw_app_meta_data
-  display_name    text,
-  avatar_url      text,
-  locale          text not null default 'zh' check (locale in ('zh','en','vi','th','id')),
-  is_disabled     boolean not null default false,
-  disabled_reason text,
-  disabled_at     timestamptz,
-  disabled_by     uuid references auth.users(id),
-  created_at      timestamptz not null default now(),
-  updated_at      timestamptz not null default now()
+create table zhiyu.profiles (
+  id                uuid primary key references auth.users(id) on delete cascade,
+  email             text not null unique,
+  role              text not null default 'user' check (role in ('super_admin','user')),
+                                                   -- 冗余索引；权威值来自 auth.users.raw_app_meta_data
+  display_name      text,
+  avatar_url        text,
+  locale            text not null default 'zh' check (locale in ('zh','en','vi','th','id')),
+  is_active         boolean not null default true,    -- 账号是否启用；false = 已停用
+  email_verified_at timestamptz,
+  created_at        timestamptz not null default now(),
+  updated_at        timestamptz not null default now()
 );
 
-create index profiles_email_idx       on public.profiles (email);
-create index profiles_role_idx        on public.profiles (role);
-create index profiles_is_disabled_idx on public.profiles (is_disabled) where is_disabled = true;
+create index profiles_role_idx on zhiyu.profiles (role);
 ```
+
+> **关于"禁用"语义**：v1 schema 仅一个布尔位 `is_active`，无 `disabled_reason / disabled_at / disabled_by` 列。审计原因记录于 `zhiyu.audit_logs.meta` jsonb（`event='user.disable'`），错误码继续使用 `AUTH_ACCOUNT_DISABLED`（语义不变）。若后续要在用户端展示禁用原因，再加 migration 扩列。
 
 ### 2.1 自动创建 Trigger
 
 ```sql
-create function public.handle_new_user()
+create or replace function zhiyu.handle_new_user()
 returns trigger language plpgsql security definer as $$
 declare
   inj_role text := coalesce(new.raw_app_meta_data->>'role', 'user');
 begin
-  insert into public.profiles (id, email, role, display_name, avatar_url, locale)
+  insert into zhiyu.profiles (id, email, role, display_name, avatar_url, locale)
   values (
     new.id,
     new.email,
@@ -92,109 +92,106 @@ end $$;
 
 create trigger on_auth_user_created
 after insert on auth.users
-for each row execute function public.handle_new_user();
+for each row execute function zhiyu.handle_new_user();
 ```
 
 ### 2.2 RLS
 
 ```sql
-alter table public.profiles enable row level security;
+alter table zhiyu.profiles enable row level security;
 
-create policy profiles_self_read on public.profiles
-  for select using (auth.uid() = id);
+create policy profiles_self_read on zhiyu.profiles
+  for select using (id = auth.uid());
 
-create policy profiles_self_update on public.profiles
-  for update using (auth.uid() = id)
-  with check (
-    auth.uid() = id
-    and is_disabled = (select is_disabled from public.profiles where id = auth.uid())
-    and role = (select role from public.profiles where id = auth.uid())
-  );
--- 防止用户自改 is_disabled / role
+create policy profiles_self_update on zhiyu.profiles
+  for update using (id = auth.uid());
+-- 业务层（Hono）禁止用户自改 is_active / role / email；service_role 绕 RLS 执行管理动作。
 ```
 
 > service_role（Hono）绕 RLS。
 
 ---
 
-## 3. `public.user_sessions`（多设备会话追踪）
+## 3. `zhiyu.user_sessions`（多设备会话追踪）
 
 ```sql
-create table public.user_sessions (
-  id                  uuid primary key default gen_random_uuid(),
-  user_id             uuid not null references auth.users(id) on delete cascade,
-  refresh_token_hash  text not null,     -- sha256(refresh_token) 16 进制，不存明文
-  device              text not null,      -- 'web' / 'mobile-web'
-  user_agent          text,
-  ip                  inet,
-  created_at          timestamptz not null default now(),
-  last_seen_at        timestamptz not null default now()
+create table zhiyu.user_sessions (
+  id            uuid primary key default uuid_generate_v4(),
+  user_id       uuid not null references auth.users(id) on delete cascade,
+  device_id     text not null,                 -- 前端 fingerprint（UA+screen hash）
+  device_name   text,                          -- 友好名，如 "Chrome on macOS"
+  user_agent    text,
+  ip            text,
+  refresh_jti   text,                          -- 当前 refresh token 的 jti 声明
+  last_seen_at  timestamptz not null default now(),
+  created_at    timestamptz not null default now(),
+  unique (user_id, device_id)
 );
 
-create index user_sessions_user_idx     on public.user_sessions (user_id, created_at);
-create unique index user_sessions_refresh_idx on public.user_sessions (refresh_token_hash);
+create index user_sessions_user_idx on zhiyu.user_sessions (user_id, last_seen_at desc);
 ```
 
 ### 3.1 业务规则
 
-- 登录写 + 检查 count > 3 → 撚销最早 1 条（详见 [02-auth-flow §4](./02-auth-flow.md)）；
+- 登录写：以 `(user_id, device_id)` upsert（同一设备复登 → 更新 `refresh_jti / last_seen_at`，不挤占额度）；
+- 多设备硬上限 3：upsert 后 `select count(*) from zhiyu.user_sessions where user_id=?` > 3 → 取 `last_seen_at` 最早行做撚销 + delete（详见 [02-auth-flow §4](./02-auth-flow.md)）；
 - 登出删自己那条；过期清理由 cron 每日清 `last_seen_at < now() - interval '40 days'`；
 - RLS：
 
 ```sql
-alter table public.user_sessions enable row level security;
-create policy sessions_self_read   on public.user_sessions for select using (auth.uid() = user_id);
-create policy sessions_self_delete on public.user_sessions for delete using (auth.uid() = user_id);
+alter table zhiyu.user_sessions enable row level security;
+create policy user_sessions_self_read on zhiyu.user_sessions
+  for select using (user_id = auth.uid());
+-- 删除走 service_role；不开 user delete policy。
 ```
 
 ---
 
-## 4. `public.auth_login_attempts`（登录失败计数）
+## 4. `zhiyu.auth_login_attempts`（登录失败计数）
 
 ```sql
-create table public.auth_login_attempts (
-  id           bigserial primary key,
-  email        text not null,
-  ip           inet not null,
-  succeeded    boolean not null,
-  attempted_at timestamptz not null default now()
-);
-
-create index login_attempts_email_time_idx on public.auth_login_attempts (email, attempted_at desc);
-create index login_attempts_ip_time_idx    on public.auth_login_attempts (ip, attempted_at desc);
-```
-
-- 锁定判定：当前 15 min 内 `email + ip` 失败次数 ≥ 5 → 锁到窗口结束；
-- cron 每日清 `attempted_at < now() - interval '7 days'`；
-- RLS：仅 service_role 可访问。
-
----
-
-## 5. `public.audit_logs`（管理端关键操作审计）
-
-```sql
-create table public.audit_logs (
+create table zhiyu.auth_login_attempts (
   id          bigserial primary key,
-  actor_id    uuid references auth.users(id),
-  actor_role  text not null,           -- 'super_admin' / 'system'
-  action      text not null,           -- 'user.disable' / 'auth.signin_success' / ...
-  target_type text,                    -- 'user' / 'course' / ...
-  target_id   text,
-  payload     jsonb,                   -- 变更前后 diff 或参数
-  ip          inet,
+  email       text not null,
+  ip          text,
   user_agent  text,
+  success     boolean not null,
+  reason      text,                            -- 失败原因码（如 'invalid_password' / 'account_disabled'）
   created_at  timestamptz not null default now()
 );
 
-create index audit_logs_actor_idx  on public.audit_logs (actor_id, created_at desc);
-create index audit_logs_target_idx on public.audit_logs (target_type, target_id, created_at desc);
+create index auth_login_attempts_email_time_idx on zhiyu.auth_login_attempts (email, created_at desc);
 ```
 
-**与 B02 相关的最小事件集**：
+- 锁定判定：当前 15 min 内 `email + ip` 命中 `success=false` 次数 ≥ 5 → 锁到窗口结束；
+- cron 每日清 `created_at < now() - interval '7 days'`；
+- RLS：未启用，仅 service_role 可访问（不暴露给 anon / authenticated）。
+
+---
+
+## 5. `zhiyu.audit_logs`（管理端关键操作审计）
+
+```sql
+create table zhiyu.audit_logs (
+  id          bigserial primary key,
+  actor_id    uuid,                            -- nullable：系统事件可空
+  actor_role  text,                            -- 'super_admin' / 'user' / 'system'
+  event       text not null,                   -- 'user.disable' / 'auth.signin_success' / ...
+  target_type text,                            -- 'user' / 'course' / ...
+  target_id   text,
+  meta        jsonb,                           -- 变更前后 diff、原因（如 { reason: '违规' }）等
+  ip          text,
+  created_at  timestamptz not null default now()
+);
+
+create index audit_logs_event_time_idx on zhiyu.audit_logs (event, created_at desc);
+```
+
+**与 B02 相关的最小事件集**（写入 `event` 列）：
 
 - `auth.signin_success` / `auth.signin_failed` / `auth.signout`
 - `auth.session_kicked`
-- `user.disable` / `user.enable`
+- `user.disable` / `user.enable`（`meta` 记 `{ reason, disabled_by }`）
 - `user.password_reset`
 - `super_admin.self_delete_blocked`
 - `super_admin.self_disable_blocked`
@@ -224,9 +221,11 @@ export type AuthUser = z.infer<typeof AuthUserSchema>;
 export const UserSessionSchema = z.object({
   id: z.string().uuid(),
   userId: z.string().uuid(),
-  device: z.enum(['web', 'mobile-web']),
+  deviceId: z.string(),
+  deviceName: z.string().optional(),
   userAgent: z.string().optional(),
   ip: z.string().optional(),
+  refreshJti: z.string().optional(),
   createdAt: z.string(),
   lastSeenAt: z.string(),
   isCurrent: z.boolean().optional(),

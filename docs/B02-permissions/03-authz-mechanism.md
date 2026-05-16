@@ -116,7 +116,7 @@ Zustand 实现，挂在 `packages/shared-utils/src/auth/useAuth.ts`，应用端 
 
 | 中间件 | 作用 | 失败响应 |
 |--------|------|---------|
-| `authRequired` | 从 `zhiyu-at` Cookie（优先）或 `Authorization: Bearer` Header 读 JWT；校签名 + exp + `profiles.is_disabled`；写 `c.set('user', {...})` | 401 `AUTH_TOKEN_MISSING` / `AUTH_TOKEN_EXPIRED` / `AUTH_TOKEN_INVALID` / `AUTH_ACCOUNT_DISABLED` |
+| `authRequired` | 从 `zhiyu-at` Cookie（优先）或 `Authorization: Bearer` Header 读 JWT；校签名 + exp + `zhiyu.profiles.is_active`；写 `c.set('user', {...})` | 401 `AUTH_TOKEN_MISSING` / `AUTH_TOKEN_EXPIRED` / `AUTH_TOKEN_INVALID` / `AUTH_ACCOUNT_DISABLED` |
 | `adminRequired` | 在 `authRequired` 之后；要求 `user.role === 'super_admin'` | 403 `AUTH_FORBIDDEN`（前端按 reason 文案显示 `AUTH_NOT_ADMIN`）|
 | `csrfRequired` | POST / PUT / PATCH / DELETE 必加；比对 `X-CSRF-Token` Header 与 `zhiyu-csrf` Cookie | 403 `AUTH_CSRF_INVALID` |
 | `optionalAuth` | 解析 JWT 但不强制；用于"未登录可浏览"路由 | 不报错；`c.get('user')` 可能为 null |
@@ -158,8 +158,9 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
   let disabled = disabledCache.get(userId);
   if (disabled === undefined) {
     const { data } = await supabaseAdmin
-      .from('profiles').select('is_disabled').eq('id', userId).single();
-    disabled = !!data?.is_disabled;
+      .schema('zhiyu')
+      .from('profiles').select('is_active').eq('id', userId).single();
+    disabled = data?.is_active === false;
     disabledCache.set(userId, disabled);
   }
   if (disabled) return jsonError(c, 401, 'AUTH_ACCOUNT_DISABLED');
@@ -226,7 +227,7 @@ supabase-js 在 `signInWithPassword` / `exchangeCodeForSession` / `refreshSessio
 | `AUTH_TOKEN_EXPIRED` | 401 | JWT exp 过期 | 登录已过期，请重新登录 |
 | `AUTH_INVALID_CREDENTIALS` | 401 | 邮箱 / 密码错 | 邮箱或密码错误 |
 | `AUTH_EMAIL_NOT_VERIFIED` | 401 | 注册后未点验证邮件 | 请先验证邮箱 |
-| `AUTH_ACCOUNT_DISABLED` | 401 | profiles.is_disabled=true | 账号已被停用，原因：{reason}。请联系客服 |
+| `AUTH_ACCOUNT_DISABLED` | 401 | profiles.is_active=false | 账号已被停用，请联系客服 |
 | `AUTH_NOT_ADMIN` | 403 | 非 super_admin 进管理端 | 该账号无管理员权限 |
 | `AUTH_FORBIDDEN` | 403 | 角色不足 / 资源所有权不符 | 没有访问权限 |
 | `AUTH_OAUTH_FAILED` | 400 | Google OAuth 异常 | Google 登录失败：{provider_error} |

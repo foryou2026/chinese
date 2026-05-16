@@ -12,7 +12,7 @@
 ## 0. 摘要
 
 - 全系统**仅 2 个角色**：`super_admin`（管理端）+ `user`（应用端）。
-- 角色字段位置：JWT `app_metadata.role`；DB `auth.users.raw_app_meta_data->>'role'`，trigger 同步到 `public.profiles.role` 仅作冗余索引。
+- 角色字段位置：JWT `app_metadata.role`；DB `auth.users.raw_app_meta_data->>'role'`，trigger 同步到 `zhiyu.profiles.role` 仅作冗余索引。
 - **超管自保**：不能删 / 禁用自己；不出现在任何"用户管理"列表中；UI 无创建入口。
 
 ---

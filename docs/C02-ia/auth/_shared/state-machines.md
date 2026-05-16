@@ -14,7 +14,7 @@
 | `SM-auth-shared-01` | session 生命周期（cookie 颁发 / 续签 / 撤销） | app + admin | 本文件 §2 |
 | `SM-auth-shared-02` | CSRF token（双提交） | app + admin | 本文件 §3 |
 | `SM-auth-shared-03` | 设备名册（3 设备硬上限） | app + admin（按 `user_sessions.surface` 独立计数） | 本文件 §4 |
-| `SM-auth-shared-04` | 锁定 / 禁用（5 错锁 15min / `profiles.is_disabled`） | app + admin | 本文件 §5 |
+| `SM-auth-shared-04` | 锁定 / 禁用（5 错锁 15min / `zhiyu.profiles.is_active=false`） | app + admin | 本文件 §5 |
 
 > 端独有状态机（`SM-auth-app-NN` / `SM-auth-admin-NN`）查询各自端的 `03-state-machines.md`。
 
@@ -63,8 +63,8 @@ device_count(user_id, surface) ≤ 3
 ```text
 失败次数(user_id, ip, 15min窗口) ≥ 5 --> [locked 15min]
 [locked] --15min超时--> [normal]
-profiles.is_disabled = true --> [globally revoked]
-[globally revoked] --管理员清 is_disabled--> [normal]
+profiles.is_active = false --> [globally revoked]
+[globally revoked] --管理员置 is_active=true--> [normal]
 ```
 
 - 计数表：`auth_failed_attempts(user_id, ip, ts)`，TTL 60min

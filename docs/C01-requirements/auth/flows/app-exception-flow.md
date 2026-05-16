@@ -46,18 +46,18 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[admin 在 admin-users 点禁用] --> B[update profiles set is_disabled=true ...]
+    A[admin 在 admin-users 点禁用] --> B[update zhiyu.profiles set is_active=false ...]
     B --> C[supabase.auth.admin.signOut user, scope='global']
-    C --> D[delete user_sessions where user_id=?]
+    C --> D[delete zhiyu.user_sessions where user_id=?]
     D --> E[disabledCache.delete user_id]
 
-    F[该用户已登录另一设备] -->|下一次 API 调用| G[authRequired 30s LRU miss → 查 profiles]
-    G --> H[is_disabled=true → 401 AUTH_ACCOUNT_DISABLED]
+    F[该用户已登录另一设备] -->|下一次 API 调用| G[authRequired 30s LRU miss → 查 zhiyu.profiles]
+    G --> H[is_active=false → 401 AUTH_ACCOUNT_DISABLED]
     H --> I[全局登出 + 跳登录页]
-    I --> J[Toast 含 disabled_reason + 客服入口 /help/contact]
+    I --> J[Toast 账号已停用 + 客服入口 /help/contact]
 
     K[该用户尝试新登录] --> L[POST /v1/auth/login-attempt-record]
-    L --> M[查 profiles is_disabled=true → 直接 401 AUTH_ACCOUNT_DISABLED]
+    L --> M[查 zhiyu.profiles is_active=false → 直接 401 AUTH_ACCOUNT_DISABLED]
 ```
 
 ## 4. OAuth 失败 / 取消

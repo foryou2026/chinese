@@ -28,7 +28,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  A[运维 SQL 把 profiles.is_disabled=true] --> B[管理员尝试登录]
+  A[运维 SQL 把 zhiyu.profiles.is_active=false] --> B[管理员尝试登录]
   B --> C[login-attempt-record 查 disabledCache]
   C --> D[AUTH_ACCOUNT_DISABLED]
   D --> E[页面 error 态 + Toast 请联系超级管理员]

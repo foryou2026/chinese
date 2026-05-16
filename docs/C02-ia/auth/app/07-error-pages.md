@@ -12,7 +12,7 @@
 | 邮件 / 重置链接过期 | **不**独立成路由，作为 `P-004` 与 `P-006` 的子状态 `token-invalid` | SM-auth-app-04 |
 | OAuth provider 异常 | `P-004` 的 `failed` 子状态 + 「重试 / 用邮箱登录」 | SM-auth-app-04 |
 | 多设备被踢 | `P-001` 的 `kicked-back` 子状态 + Toast | SM-auth-app-03 reason=kicked |
-| 账号已禁用 | `P-001` 的 `error` 子状态 + Toast 含 disabled_reason + 客服入口 | SM-auth-app-03 reason=disabled |
+| 账号已禁用 | `P-001` 的 `error` 子状态 + Toast 提示账号已停用 + 客服入口 | SM-auth-app-03 reason=disabled |
 | 网络 / 5xx | 顶部全局 Toast「服务异常」，表单值保留 | SM-auth-app-01 idle_error |
 
 > 维护本 feature 时**不新增**新的全局兜底页。

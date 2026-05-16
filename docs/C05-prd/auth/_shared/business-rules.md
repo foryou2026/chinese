@@ -19,7 +19,7 @@
 | 触发 | 行为 | 解除 |
 |------|------|------|
 | 同 (user_id, ip) 15min 内错密 ≥ 5 | 该账号锁定 15min（两端通锁） | 15min 自动 |
-| `profiles.is_disabled = true` | 全设备全端立即撤销 + 拒登 | super_admin 改回 false |
+| `zhiyu.profiles.is_active = false` | 全设备全端立即撤销 + 拒登 | super_admin 改回 true |
 
 ## BR-auth-shared-03 · session 颁发与续签
 
@@ -57,9 +57,9 @@
 
 ## BR-auth-shared-08 · 数据清单（共享列）
 
-- `profiles`：`id`(=auth.user_id) / `role` / `is_disabled` / `display_name` / `avatar_url` / `preferred_locale`
-- `user_sessions`：`id` / `user_id` / `surface` / `device_label` / `created_at` / `last_seen_at` / `revoked_at` / `kicked_reason`
-- `auth_failed_attempts`：`user_id` / `ip` / `ts`（TTL 60min 由 cron 清）
+- `profiles`：`id`(=auth.user_id) / `role` / `is_active` / `display_name` / `avatar_url` / `locale` / `email_verified_at`
+- `user_sessions`：`id` / `user_id` / `device_id` / `device_name` / `user_agent` / `ip` / `refresh_jti` / `created_at` / `last_seen_at`
+- `auth_login_attempts`：`email` / `ip` / `user_agent` / `success` / `reason` / `created_at`（cron 清7天外）
 
 ---
 

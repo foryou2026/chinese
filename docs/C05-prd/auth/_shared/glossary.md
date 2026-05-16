@@ -15,4 +15,4 @@
 | **节流双层** | "60s 倒计时 + 1h 内最多 3 次" 同时生效；任一触顶即拒绝 |
 | **csrf 双提交** | header `X-CSRF-Token` 与 cookie `csrf` 字节级相等才放行；仅状态变更接口校验 |
 | **3 设备硬上限** | `app` 与 `admin` 各自最多 3 设备，跨端不共享名额（不是 6 设备） |
-| **profile 子集** | `profiles` 表中由用户可写的列：`display_name` / `avatar_url` / `preferred_locale`；`role` / `is_disabled` 仅 super_admin 后台脚本可改 |
+| **profile 子集** | `profiles` 表中由用户可写的列：`display_name` / `avatar_url` / `locale`；`role` / `is_active` 仅 super_admin 后台脚本可改 |

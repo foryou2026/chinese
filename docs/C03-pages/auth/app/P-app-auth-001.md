@@ -49,7 +49,7 @@ GlassCard
 | `kicked-back` | `?reason=kicked` | 顶部 Toast「您的账号在其他设备登录，已被退出」+ 进入 idle |
 | `locked` | `login-attempt-record` 返 429 | 按钮替换为「mm:ss 后可重试」灰色禁用；倒计时实时刷新；倒计时到 0 回 idle |
 
-> `?reason=disabled` 在 `error` 态下展示 `disabled_reason` + 客服入口；`?reason=expired` Toast「登录已过期，请重新登录」；`?reason=signout` 不弹 Toast。
+> `?reason=disabled` 在 `error` 态下展示“账号已停用” + 客服入口；`?reason=expired` Toast「登录已过期，请重新登录」；`?reason=signout` 不弹 Toast。
 
 ## 5. 关键交互
 

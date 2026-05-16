@@ -34,7 +34,7 @@
 | **R-auth-003** | both | 邮箱 + 密码登录；登录前置节流 + 禁用检查（admin 端额外要求 `super_admin` 角色，非超管立即 signOut 并报 `AUTH_USE_USER_ENTRY`） | app: `P-app-auth-001`<br>admin: `P-admin-auth-001` | `login-attempt-record` / `signInWithPassword` |
 | **R-auth-004** | both | 登录态 HttpOnly Cookie（`zhiyu-at`/`zhiyu-rt`）；30 天 refresh；CSRF Double-Submit（写请求必须带 `X-CSRF-Token`） | 跨页（不可见） | `cookie/get` / `set` / `clear` |
 | **R-auth-005** | both | 多设备活跃会话 ≤ 3，第 4 台踢最早；`user_sessions.surface` 按端独立计数 | app: 跨页 + `P-app-auth-001` "kicked"<br>admin: 跨页 + `P-admin-auth-001` "kicked" | `session-register` / `session-status` |
-| **R-auth-006** | both | 5/15min 错密 → 自动锁定 15min；`profiles.is_disabled=true` → 全设备登出 + 拒登 | app: `P-app-auth-001` "error"<br>admin: `P-admin-auth-001` "error" | `login-attempt-record` |
+| **R-auth-006** | both | 5/15min 错密 → 自动锁定 15min；`zhiyu.profiles.is_active=false` → 全设备登出 + 拒登 | app: `P-app-auth-001` "error"<br>admin: `P-admin-auth-001` "error" | `login-attempt-record` |
 | **R-auth-007** | both | 忘记密码 → 邮件链接 → 设新密码 → 自动登入并踢其它设备；链接 15min 一次性 | app: `P-app-auth-005` / `006`<br>admin: `P-admin-auth-002` / `003` | `forgot-password-throttle` / `resetPasswordForEmail` / `updateUser` |
 | **R-auth-008** | both | 已登录用户可修改密码（先验旧密）+ 选「全部设备退出」 | app: `P-app-auth-008`<br>admin: `P-admin-auth-004` | `POST /api/<surface>/me/password` |
 | **R-auth-009** | both | 用户可随时「本设备退出」或「全部设备退出」 | app: `P-app-auth-008` + 顶栏头像<br>admin: `P-admin-auth-004` | `cookie/clear` / `session-revoke` / `admin.signOut('global')` |
