@@ -7,6 +7,43 @@
 
 ---
 
+## 2026-05-16 · 批次 8 · `course` D-phase 完整冻结
+
+> 反向回写"课程学习引擎"全部 D-phase(D01..D03)。信息源:[`function/02-course/ai/F1-AI-数据模型规范/`](../../function/02-course/ai/F1-AI-数据模型规范/)(13 文件,2545 行) + [`function/02-course/ai/F2-AI-接口规范/`](../../function/02-course/ai/F2-AI-接口规范/)(13 文件,2473 行)。
+
+### D01 数据规范(13 文件)
+- [`docs/D01-data/course/`](../D01-data/course/00-index.md):00-index、01-er-diagram(15 表 mermaid)、02-entities/ × 5(catalog / kp-question / exam / progress / import-media-audit,共 15 表)、03-business-rules(40 条 DBR-ID)、04-validations(正则/枚举/长度/jsonb/跨字段)、05-calculations(SRS / 评分 / 分区 / cron)、06-indexes(UNIQUE/B-tree/GIN)、07-volume-growth(月分区策略)、08-seed-data(5 主题 + 25 阶段 + 媒资占位)、99-open-questions、_input。
+- 关键决策:
+  - schema 统一 `zhiyu`(表名前缀 `course_*`),不另建 `zhiyu_course`(已同步修正 [C05 PRD §13](../C05-prd/course/PRD.md));
+  - 35 个 KP sequence + 5 个 Question sequence(7 KP 类型 × 5 主题 / 5 主题);
+  - `course_user_answers` `pg_partman` 月分区;0–6m 在线,7–24m 索引精简,>24m P2 归档对象存储;
+  - `mv_course_user_daily` 5 分钟 CONCURRENTLY 刷新;`mv_course_track_stats` 10 分钟。
+
+### D02 接口规范(15 文件)
+- [`docs/D02-api/course/`](../D02-api/course/00-index.md):00-index、01-routes-delta、02-overview、03-endpoints/ × 10(app 3 文件 / admin 6 文件 / internal 1 文件)、04-error-codes(55 个 `COURSE_*`)、05-concurrency(乐观锁 + 行锁 + UPSERT + Idempotency)、06-events(pg_notify + 5 cron)、99-open-questions、_input。
+- 关键决策:
+  - 学员 19 endpoint + 管理 24 endpoint + 内部 3 endpoint,共 46 个 OP-ID;
+  - 鉴权三层:`/api/v1/course/*` Supabase JWT;`/admin/v1/course/*` JWT + 中间件 + `tracks_scope`,DB 走 service_role;`/internal/v1/course/*` `X-Internal-Token`;
+  - 限流:`POST /answers` 600/分;`POST /kps/:id/audio` 20/分;`GET /admin/search` 30/分;
+  - 题目修订 `version += 1`,旧 attempt 不追溯改分(BR-RP04);
+  - 节末小测 `quiz_id` Redis TTL 10 分钟,不入 attempt 表;
+  - 考试超期由 cron 每分钟扫 + 提交侧行锁串行(`fn_submit_exam`)。
+
+### D03 校验(3 文件,全 PASS)
+- [`docs/D03-validation/course/01-upstream-chain.md`](../D03-validation/course/01-upstream-chain.md):30 R-ID / 40 BR / 17 P-ID / 7 SM 全闭环;
+- [`docs/D03-validation/course/02-module-closure.md`](../D03-validation/course/02-module-closure.md):15 表 CRUD / 55 错误码 / 状态机 / RLS / cron 闭环;
+- [`docs/D03-validation/course/03-prd-traceability.md`](../D03-validation/course/03-prd-traceability.md):40 BR × 15 表 × 46 OP 矩阵 + 11 项副作用契约 + 12 项不变量。
+
+### 同步修订
+- [`docs/C05-prd/course/PRD.md` §13](../C05-prd/course/PRD.md):schema 名从 `zhiyu_course` 改回 `zhiyu`(course_* 前缀);表数 18 → 15;OP 数细化为 19+24+3;错误码 ~40 → 55。
+
+### 后续(P2)
+- `course_user_answers` 24 个月以上分区归档对象存储;
+- 管理端全文搜索 GIN 表达式索引按使用阈值动态加;
+- TTS 实景适配器替换 mock。
+
+---
+
 ## 2026-05-16 · 批次 7 · `course` C-phase 完整冻结
 
 > 反向回写"课程学习引擎"全部 C-phase(C01..C05)。信息源:[`function/02-course/prd/`](../../function/02-course/prd/)(8 文件,含 07 已封板决策段) + [`function/02-course/ai/F3-AI-页面交互规范/`](../../function/02-course/ai/F3-AI-页面交互规范/)(14 文件) + [`function/02-course/ai/F4-AI-原型设计/`](../../function/02-course/ai/F4-AI-原型设计/)(17 HTML)。Feature 命名 = `course`(与 F3 §"功能名称"课程学习引擎 一致,目录简短化)。

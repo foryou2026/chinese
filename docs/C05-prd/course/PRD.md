@@ -210,7 +210,7 @@
 
 ## 13. 下游交付
 
-- D01 数据规范:18 张表 DDL + 索引 + 视图(基于 [`function/02-course/prd/03-数据库schema.md`](../../../function/02-course/prd/03-数据库schema.md))
-- D02 接口规范:OP-ID 清单(应用端 ~30 + 管理端 ~50)+ 错误码 `COURSE_*` ~40
-- D03 校验:上游链 / 模块闭环 / PRD 回链(三段 PASS)
-- 实现 schema:`zhiyu_course`
+- D01 数据规范:15 张表 DDL + 索引 + 视图(基于 [`function/02-course/prd/03-数据库schema.md`](../../../function/02-course/prd/03-数据库schema.md);F1 最终落地见 [docs/D01-data/course/](../../D01-data/course/00-index.md))
+- D02 接口规范:OP-ID 清单(应用端 19 + 管理端 24 + 内部 3)+ 错误码 `COURSE_*` 55(详见 [docs/D02-api/course/](../../D02-api/course/00-index.md))
+- D03 校验:上游链 / 模块闭环 / PRD 回链(三段 PASS,见 [docs/D03-validation/course/](../../D03-validation/course/))
+- 实现 schema:`zhiyu`(表名前缀 `course_*`,与 discover-china 共用同一 schema;与 F1 源约定一致)
