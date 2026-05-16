@@ -25,7 +25,7 @@
   function isAdminZhOnly(){
     try {
       var path = decodeURIComponent(window.location.pathname || '');
-      if(/\/P-A-\d+-/.test(path) || /^P-A-\d+/.test(document.title || '')) return true;
+      if(/\/P-admin-course-\d+/.test(path) || /^P-admin-course-\d+/.test(document.title || '')) return true;
       var brand = document.querySelector('.zy-topnav-brand');
       return !!(brand && brand.textContent.indexOf('管理后台') !== -1);
     } catch(e){ return false; }
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function(){
     try {
       if(window.zyIsAdminZhOnly) return window.zyIsAdminZhOnly();
       var path = decodeURIComponent(window.location.pathname || '');
-      return /\/P-A-\d+-/.test(path) || /^P-A-\d+/.test(document.title || '');
+      return /\/P-admin-course-\d+/.test(path) || /^P-admin-course-\d+/.test(document.title || '');
     } catch(e){ return false; }
   }
   var Z = {

@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/auth/admin/06-page-specs/P-auth-002.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/admin/06-page-specs/P-admin-auth-002.md -->
 
-# Page Spec · P-auth-002 · 修改密码(自助)
+# Page Spec · P-admin-auth-002 · 修改密码(自助)
 
 > PRD 视角单页规格 · auth / `admin` 端。来源真相见各 C 阶段文档,本文件只做汇总与索引。
 
@@ -8,7 +8,7 @@
 
 | 字段 | 值 |
 |------|----|
-| P-ID | `P-auth-002` |
+| P-ID | `P-admin-auth-002` |
 | 标题 | 修改密码(自助) |
 | feature | `auth` |
 | surface | `admin` |
@@ -19,8 +19,8 @@
 
 | 维度 | 文档 |
 |------|------|
-| 交互规范(N) | [`C03-pages/auth/admin/P-auth-002.md`](../../../../C03-pages/auth/admin/P-auth-002.md) |
-| 场景脚本(N) | [`C03-pages/auth/admin/P-auth-002.scenarios.md`](../../../../C03-pages/auth/admin/P-auth-002.scenarios.md)(若存在) |
+| 交互规范(N) | [`C03-pages/auth/admin/P-admin-auth-002.md`](../../../../C03-pages/auth/admin/P-admin-auth-002.md) |
+| 场景脚本(N) | [`C03-pages/auth/admin/P-admin-auth-002.scenarios.md`](../../../../C03-pages/auth/admin/P-admin-auth-002.scenarios.md)(若存在) |
 | HTML 原型(H) | [`C04-prototype/auth/admin/`](../../../../C04-prototype/auth/admin/) |
 | 关联 M-ID | [`C02-ia/auth/admin/01-feature-catalog.md`](../../../../C02-ia/auth/admin/01-feature-catalog.md) |
 | 关联 R-ID | [`07-business-rules.md`](../07-business-rules.md) |
@@ -48,7 +48,7 @@
 
 ## 7. 视觉 / 组件(↑ B04)
 
-- 主要组件:见 [`C03-pages/auth/admin/P-auth-002.md` §视觉与组件](../../../../C03-pages/auth/admin/P-auth-002.md)。
+- 主要组件:见 [`C03-pages/auth/admin/P-admin-auth-002.md` §视觉与组件](../../../../C03-pages/auth/admin/P-admin-auth-002.md)。
 - 组件契约:[`B04-design/design-system/05-components/`](../../../../B04-design/design-system/05-components/)(Round 4 已实质化)。
 
 ## 8. 状态文字描述

@@ -2,7 +2,7 @@
 
 # P-admin-course-004 · KP 列表 + Drawer
 
-> F3 源:`P-A-4` · 路由 `/admin/course/kp` · R-016/022
+> F3 源:`P-admin-course-004` · 路由 `/admin/course/kp` · R-016/022
 
 ## 1. 进入条件
 - admin。

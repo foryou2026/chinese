@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-009.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-app-auth-009.md -->
 
-# `P-auth-009` · 编辑资料
+# `P-app-auth-009` · 编辑资料
 
 > **path**：`/me/profile` · **角色可见**：用户  
 > **R 覆盖**：R-008  

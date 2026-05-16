@@ -2,7 +2,7 @@
 
 # P-admin-course-006 · 学员举报处理
 
-> F3 源:`P-A-6` · 路由 `/admin/course/report` · R-018/024
+> F3 源:`P-admin-course-006` · 路由 `/admin/course/report` · R-018/024
 
 ## 1. 进入条件
 - `content_admin / super`(`readonly` 只读)。

@@ -2,7 +2,7 @@
 
 # P-admin-course-009 · 全局搜索
 
-> F3 源:`P-A-9` · 路由 `/admin/course/search?q=` · 快捷键 `Ctrl/Cmd + K` · R-021
+> F3 源:`P-admin-course-009` · 路由 `/admin/course/search?q=` · 快捷键 `Ctrl/Cmd + K` · R-021
 
 ## 1. 进入条件
 - admin。

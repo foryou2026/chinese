@@ -2,7 +2,7 @@
 
 # P-admin-course-008 · 考试中心管理(分层)
 
-> F3 源:`P-A-8` · 路由 `/admin/course/exam` · R-020/025
+> F3 源:`P-admin-course-008` · 路由 `/admin/course/exam` · R-020/025
 
 ## 1. 进入条件
 - admin。

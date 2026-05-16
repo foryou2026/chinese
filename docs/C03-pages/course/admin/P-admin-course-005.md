@@ -2,7 +2,7 @@
 
 # P-admin-course-005 · 题目列表 + 双开预览
 
-> F3 源:`P-A-5` · 路由 `/admin/course/question` · R-017/022/024
+> F3 源:`P-admin-course-005` · 路由 `/admin/course/question` · R-017/022/024
 
 ## 1. 进入条件
 - admin。

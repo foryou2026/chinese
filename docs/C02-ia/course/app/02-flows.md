@@ -7,7 +7,7 @@
 ## F-app-course-1 · 注册到首次学习(冷启动)
 
 ```
-landing → P-auth-002(注册) → 验证邮件 → P-auth-001(登录)
+landing → P-app-auth-002(注册) → 验证邮件 → P-app-auth-001(登录)
        → P-app-course-001(首页:无轨道)→ 选择轨道(M-onboarding)
        → P-app-course-001(首页:进入轨道地图)
        → P-app-course-002(节)→ P-app-course-003(答题)→ 完成

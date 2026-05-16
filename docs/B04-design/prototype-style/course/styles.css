@@ -451,7 +451,7 @@ em.hl { background: #fff3a8; color: inherit; font-style: normal; font-weight: 60
 }
 .zy-lang-pill:hover { border-color: var(--zy-brand); color: var(--zy-brand); }
 
-/* 移动端：表格转卡片式（适配 P-A-5/P-C-8 等长宽列表） */
+/* 移动端：表格转卡片式（适配 P-admin-course-005/P-app-course-008 等长宽列表） */
 .proto-frame.mobile .zy-table-stack thead { display: none; }
 .proto-frame.mobile .zy-table-stack tr {
   display: block; border: 1px solid var(--zy-border); border-radius: 12px;
@@ -564,7 +564,7 @@ html[data-ui-lang="zh"] .kp-card .ex .text .tr { display: none; }
 /* zy-pills 顶部容器在移动端可横向滚动 */
 .proto-frame.mobile .zy-pills { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
-/* 旧版 .zy-tabs（P-A-9 全局搜索使用）补样式 */
+/* 旧版 .zy-tabs（P-admin-course-009 全局搜索使用）补样式 */
 .zy-tabs { display: inline-flex; gap: 4px; padding: 4px; background: var(--zy-bg-elev); border-radius: 10px; border: 1px solid var(--zy-border); flex-wrap: wrap; margin-bottom: 12px; }
 .zy-tab { padding: 6px 14px; height: 32px; border: 0; border-radius: 6px; background: transparent; color: var(--zy-fg-soft); cursor: pointer; font-weight: 500; font-size: 13px; line-height: 1; }
 .zy-tab.active { background: var(--zy-bg); color: var(--zy-fg); box-shadow: 0 1px 2px rgba(0,0,0,0.06); }

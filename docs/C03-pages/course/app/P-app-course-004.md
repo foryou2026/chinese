@@ -2,7 +2,7 @@
 
 # P-app-course-004 · SRS 今日复习
 
-> F3 源:`P-C-4` · 路由 `/review` · R-009/026
+> F3 源:`P-app-course-004` · 路由 `/review` · R-009/026
 
 ## 1. 进入条件
 - 已登录;

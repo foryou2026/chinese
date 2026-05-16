@@ -23,7 +23,7 @@
 - **5 语**内容字段(`zh/en/vi/th/id`);UI 应用端 5 语切换、管理端固定中文;
 - **多端登录 + 进度服务端为准**;弱网答题先写本地队列;
 - **媒资统一资产表** + hash 去重 + 引用拦截;
-- **学员举报闭环**(P-A-6 处理 + 历史成绩不追溯);
+- **学员举报闭环**(P-admin-course-006 处理 + 历史成绩不追溯);
 - **版本号管理**:KP / Question 编辑 `version+1`,旧版本归档;
 - **管理员双角色**:`super` / `content_admin` / `readonly`,行级 `tracks_scope` 控制。
 
@@ -62,15 +62,15 @@
 
 | R-ID | 标题 | 角色 | 验收要点 |
 |------|------|------|---------|
-| **R-course-013** | 课程目录总览(P-A-1) | editor+ | 5 主题卡片 + 全局缺口统计 + 进入主题 |
-| **R-course-014** | 主题-阶段-章-节四级列表(P-A-2) | editor+ | 树形 + 拖拽排序 + 行内[发布][下架];章下架级联节;节下架不级联 KP |
-| **R-course-015** | 节编辑(P-A-3) | editor+ | 节基本信息 + KP 绑定列表(`lesson_kp` 多对多)+ 调序 Drawer + 发布 / 下架;节测配置在 P-A-8 |
-| **R-course-016** | KP 列表 + 编辑 Drawer(P-A-4) | editor+ | 列表筛选(主题/类型/难度/状态/批次)+ 行内发布;Drawer Tab[基础/内容/翻译/媒资/题目] |
-| **R-course-017** | 题目列表 + 双开布局(P-A-5) | editor+ | 左列表右预览(1:1 用户端渲染)+ 解析编辑;批量发布 / 下架 / 删除 |
-| **R-course-018** | 学员举报处理(P-A-6) | content_admin+ | 按 question_id 聚合;≥3 举报自动置顶;采纳跳目标编辑抽屉;采纳/忽略不自动改发布 |
-| **R-course-019** | 媒资库(P-A-7) | editor+ | 列表 + 命中统计 + 软删 + CDN;按 hash 去重;有引用时禁止删 |
-| **R-course-020** | 考试中心管理(P-A-8) | editor+ | 主题→阶段考/章测/节测/HSK 模考分层配置;blueprint JSON;试抽预览(**不**写 attempt);发布后应用端可见 |
-| **R-course-021** | 全局搜索(P-A-9) | editor+ | KP / Question / Lesson 三段聚合命中 + 高亮 + 跳目标编辑 |
+| **R-course-013** | 课程目录总览(P-admin-course-001) | editor+ | 5 主题卡片 + 全局缺口统计 + 进入主题 |
+| **R-course-014** | 主题-阶段-章-节四级列表(P-admin-course-002) | editor+ | 树形 + 拖拽排序 + 行内[发布][下架];章下架级联节;节下架不级联 KP |
+| **R-course-015** | 节编辑(P-admin-course-003) | editor+ | 节基本信息 + KP 绑定列表(`lesson_kp` 多对多)+ 调序 Drawer + 发布 / 下架;节测配置在 P-admin-course-008 |
+| **R-course-016** | KP 列表 + 编辑 Drawer(P-admin-course-004) | editor+ | 列表筛选(主题/类型/难度/状态/批次)+ 行内发布;Drawer Tab[基础/内容/翻译/媒资/题目] |
+| **R-course-017** | 题目列表 + 双开布局(P-admin-course-005) | editor+ | 左列表右预览(1:1 用户端渲染)+ 解析编辑;批量发布 / 下架 / 删除 |
+| **R-course-018** | 学员举报处理(P-admin-course-006) | content_admin+ | 按 question_id 聚合;≥3 举报自动置顶;采纳跳目标编辑抽屉;采纳/忽略不自动改发布 |
+| **R-course-019** | 媒资库(P-admin-course-007) | editor+ | 列表 + 命中统计 + 软删 + CDN;按 hash 去重;有引用时禁止删 |
+| **R-course-020** | 考试中心管理(P-admin-course-008) | editor+ | 主题→阶段考/章测/节测/HSK 模考分层配置;blueprint JSON;试抽预览(**不**写 attempt);发布后应用端可见 |
+| **R-course-021** | 全局搜索(P-admin-course-009) | editor+ | KP / Question / Lesson 三段聚合命中 + 高亮 + 跳目标编辑 |
 | **R-course-022** | 批量导入 CSV/JSON | editor+ | KP / Question 批量导入弹窗(D-15);预览错误行 + payload hash 幂等;落 `import_batches` |
 | **R-course-023** | 发布层级级联 | editor+ | 章发布默认级联节 + KP + 题;节发布级联 KP + 题;下架不级联;返回 `cascade_summary` |
 | **R-course-024** | 学员举报历史成绩不追溯 | 系统 | 修正后 `version+1`;`user_answers` 保持原始,不改分 |
@@ -92,8 +92,8 @@
 
 - **US-1**(越南零基础)·"我打开 App,选越语 → 注册手机号 → 选'电商'主题 → 5 题听写定到 Stage 0;系统强制让我先学拼音章。完成 Stage 0 后 4 个业务主题入口全部解锁,我进入电商 Stage 1 第一节'打招呼',12 张 KP 卡看完 + 6 题节末小测做完,得分 80%,通过,解锁下一节。"
 - **US-2**(学员日常)·"我已经学到 ec-2-3-1,今天再打开 App 首页显示'继续学习 60%'和'今日复习 18 个词到期';我先做复习(10 题一组),错的词回到 SRS box 1;然后继续 ec-2-3-1 从第 7 个 KP 开始;遇到一道翻译错的题点🚩举报,管理端会处理。"
-- **US-3**(运营 content_admin)·"我登入管理端,P-A-1 看到电商主题缺口 4 节;点缺口直接到 P-A-2,在 ec-1-1-2 节里点[导入 KP] D-15 上传 10 条 CSV;预览 0 错误后导入,这 10 条 KP 写入 `is_published=false`;我去 P-A-4 选筛选'电商 / word / 待发布' 批量发布;再去 P-A-8 给 ec-1-1-2 配节测 blueprint,试抽 6 题预览通过,点发布;学员端立即可见。"
-- **US-4**(学员举报闭环)·"上周有学员举报题目 q_ec_00012345 答案错;P-A-6 显示 5 人举报置顶;我在 D-7 看举报详情,点[跳目标编辑]到 P-A-5 题目 Drawer,改了答案保存 `version=2`,Toast 提示;旧 `user_answers` 不动,新作答取 v2;回到 P-A-6 点[采纳]关闭举报。"
+- **US-3**(运营 content_admin)·"我登入管理端,P-admin-course-001 看到电商主题缺口 4 节;点缺口直接到 P-admin-course-002,在 ec-1-1-2 节里点[导入 KP] D-15 上传 10 条 CSV;预览 0 错误后导入,这 10 条 KP 写入 `is_published=false`;我去 P-admin-course-004 选筛选'电商 / word / 待发布' 批量发布;再去 P-admin-course-008 给 ec-1-1-2 配节测 blueprint,试抽 6 题预览通过,点发布;学员端立即可见。"
+- **US-4**(学员举报闭环)·"上周有学员举报题目 q_ec_00012345 答案错;P-admin-course-006 显示 5 人举报置顶;我在 D-7 看举报详情,点[跳目标编辑]到 P-admin-course-005 题目 Drawer,改了答案保存 `version=2`,Toast 提示;旧 `user_answers` 不动,新作答取 v2;回到 P-admin-course-006 点[采纳]关闭举报。"
 
 ---
 
@@ -112,7 +112,7 @@
 - **阶段考**:50 题均衡抽;通过线 70% 解锁下阶段;**默认不可重考**(决策 H5);
 - **HSK 模考**:按官方题型比例,**HSK 主题独享**;
 - **SRS 间隔表**:box 1→1 天;2→3 天;3→7 天;4→14 天;5→30 天;答对升一盒、答错回 box 1;
-- **试抽**:`P-A-8` Drawer 内预览,不写 `user_exam_attempts`,不算 attempt;
+- **试抽**:`P-admin-course-008` Drawer 内预览,不写 `user_exam_attempts`,不算 attempt;
 - **题目下架动态均分**:试卷满分恒 100,单题分 = 100 / 当前有效已发布题数;已存 attempt snapshot 不变;
 - **发布层级级联**:章发布默认级联节 + KP + Q;节发布级联 KP + Q;**下架不级联**(章下架只切章本身可见性,节级状态保留);
 - **`is_published`二态**:`true`=已发布、`false`=待发布(含未发布 + 下架);无第三态;

@@ -14,7 +14,7 @@
 |------|------|
 | [01-feature-catalog.md](./01-feature-catalog.md) | 10 个 M 模块 |
 | [02-flows.md](./02-flows.md) | 13 个 Flow-ID(6 主 + 7 异) |
-| [03-state-machines.md](./03-state-machines.md) | 7 个 SM(节进度 / 内容发布 / 答题 / SRS 盒 / 考试 attempt / 表单脏 / 离线队列) |
+| [_shared/state-machines.md](./_shared/state-machines.md) | 7 个 SM(节进度 / 内容发布 / 答题 / SRS 盒 / 考试 attempt / 表单脏 / 离线队列) |
 | [04-pages.md](./04-pages.md) | 17 个 page-id(8 应用端 + 9 管理端) |
 | [05-navigation.md](./05-navigation.md) | 应用端 5 Tab + 管理端 9 大模块菜单 |
 | [06-coverage-matrix.md](./06-coverage-matrix.md) | R×M×Page / Flow×Page / SM×Page |

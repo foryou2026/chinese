@@ -2,7 +2,7 @@
 
 # P-app-course-003 · KP 详情 / 卡片浏览
 
-> F3 源:`P-C-3` · 路由 `/lesson/{code}/kp/{kpId}` · R-005/007
+> F3 源:`P-app-course-003` · 路由 `/lesson/{code}/kp/{kpId}` · R-005/007
 
 ## 1. 进入条件
 - 已登录;父节 `is_published=true` 且父链全发布;

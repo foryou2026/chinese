@@ -8,10 +8,10 @@
 
 | P-ID | 标题 | 源文档 |
 |------|------|--------|
-| [P-auth-001](P-auth-001.md) | 后台登录(邮箱密码 + 2FA) | [C03 详细](../../../../C03-pages/auth/admin/P-auth-001.md) · [C04 HTML](../../../../C04-prototype/auth/admin/) |
-| [P-auth-002](P-auth-002.md) | 修改密码(自助) | [C03 详细](../../../../C03-pages/auth/admin/P-auth-002.md) · [C04 HTML](../../../../C04-prototype/auth/admin/) |
-| [P-auth-003](P-auth-003.md) | 我的资料(admin) | [C03 详细](../../../../C03-pages/auth/admin/P-auth-003.md) · [C04 HTML](../../../../C04-prototype/auth/admin/) |
-| [P-auth-004](P-auth-004.md) | 管理员列表 / 邀请(super) | [C03 详细](../../../../C03-pages/auth/admin/P-auth-004.md) · [C04 HTML](../../../../C04-prototype/auth/admin/) |
+| [P-admin-auth-001](P-admin-auth-001.md) | 后台登录(邮箱密码 + 2FA) | [C03 详细](../../../../C03-pages/auth/admin/P-admin-auth-001.md) · [C04 HTML](../../../../C04-prototype/auth/admin/) |
+| [P-admin-auth-002](P-admin-auth-002.md) | 修改密码(自助) | [C03 详细](../../../../C03-pages/auth/admin/P-admin-auth-002.md) · [C04 HTML](../../../../C04-prototype/auth/admin/) |
+| [P-admin-auth-003](P-admin-auth-003.md) | 我的资料(admin) | [C03 详细](../../../../C03-pages/auth/admin/P-admin-auth-003.md) · [C04 HTML](../../../../C04-prototype/auth/admin/) |
+| [P-admin-auth-004](P-admin-auth-004.md) | 管理员列表 / 邀请(super) | [C03 详细](../../../../C03-pages/auth/admin/P-admin-auth-004.md) · [C04 HTML](../../../../C04-prototype/auth/admin/) |
 
 ## 维护原则
 

@@ -14,7 +14,7 @@
 |------|------|
 | [01-feature-catalog.md](./01-feature-catalog.md) | 5 个 M 模块 |
 | [02-flows.md](./02-flows.md) | 13 个 Flow-ID(6 主 + 7 异) |
-| [03-state-machines.md](./03-state-machines.md) | 4 个 SM(文章发布 / 音频生成 / 表单脏 / TTS 播放器) |
+| [_shared/state-machines.md](./_shared/state-machines.md) | 4 个 SM(文章发布 / 音频生成 / 表单脏 / TTS 播放器) |
 | [04-pages.md](./04-pages.md) | 7 个 page-id |
 | [05-navigation.md](./05-navigation.md) | 应用端 Tab + 面包屑;管理端侧栏 + 面包屑 |
 | [06-coverage-matrix.md](./06-coverage-matrix.md) | R × M × Page;Flow × Page;SM × Page |

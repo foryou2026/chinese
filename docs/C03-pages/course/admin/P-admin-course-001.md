@@ -2,7 +2,7 @@
 
 # P-admin-course-001 · 课程目录总览
 
-> F3 源:`P-A-1` · 路由 `/admin/course` · R-013
+> F3 源:`P-admin-course-001` · 路由 `/admin/course` · R-013
 
 ## 1. 进入条件
 - 已登录 admin(`super / content_admin / readonly` 任一)。

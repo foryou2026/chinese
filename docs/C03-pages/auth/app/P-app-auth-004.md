@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-004.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-app-auth-004.md -->
 
-# `P-auth-004` · OAuth / 邮箱验证回调
+# `P-app-auth-004` · OAuth / 邮箱验证回调
 
 > **path**：`/auth/callback` · **角色可见**：任意  
 > **R 覆盖**：R-002 / R-011 / R-012  

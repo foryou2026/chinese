@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>P-admin-course-004 KP 列表 · C04 原型</title>
+<link rel="stylesheet" href="../../../B04-design/prototype-style/course/styles.css" />
+</head><body>
+<div class="proto-bar">
+  <div class="proto-bar-title"><span class="pid">P-admin-course-004</span>管理端 · KP 列表（/admin/course/kps）</div>
+  <div class="proto-bar-actions">
+    <a href="../index.html">← 索引</a>
+    <span class="dev-toggle"><button data-device="desktop" class="active">🖥 桌面</button><button data-device="mobile">📱 移动</button></span>
+    <button id="themeBtn" class="theme-toggle">🌙 暗色</button>
+  </div>
+</div>
+
+<div class="proto-stage"><div class="proto-frame desktop" id="protoFrame">
+
+<header class="zy-topnav">
+  <div class="zy-topnav-brand">⚙ 智语 · 管理后台</div>
+  <nav class="zy-topnav-links"><a class="zy-topnav-link active">课程</a><a class="zy-topnav-link">用户</a><a class="zy-topnav-link">系统</a></nav>
+  <div class="zy-topnav-actions"><input class="zy-input" placeholder="🔍 全局搜索…" data-nav="/admin/course/search" readonly style="cursor:pointer;" /><span class="zy-avatar">A</span></div>
+</header>
+
+<div class="zy-container">
+  <div class="zy-bread"><span data-nav="/admin/course">课程</span><span class="sep">›</span><span class="cur">KP 列表</span></div>
+
+  <div class="zy-row" style="justify-content: space-between; margin-bottom: 12px;">
+    <div><h1 class="zy-page-title">📚 KP 列表</h1><p class="zy-page-sub">3,872 个 · 含 i18n / 例句 / 媒资；KP 可在列表直接发布或下架</p></div>
+    <div class="zy-row">
+      <button class="zy-btn zy-btn-ghost" data-open-modal="mImport">📥 批量导入</button>
+      <button class="zy-btn zy-btn-ghost" data-toast="导出当前筛选结果（json）">⬇ 导出</button>
+      <button class="zy-btn zy-btn-primary" data-open-drawer="dKPNew">➕ 新建 KP</button>
+    </div>
+  </div>
+
+  <!-- 筛选 -->
+  <div class="zy-card" style="margin-bottom: 16px;">
+    <div class="zy-row">
+      <input class="zy-input" placeholder="🔍 搜索主词 / 拼音 / 编码 / 翻译" style="flex:1; min-width: 240px;" />
+      <select class="zy-select" style="width: 130px;" id="selTheme"><option>全部主题</option><option>SH 基础</option><option selected>EC</option><option>FC</option><option>HSK</option><option>DL</option></select>
+      <select class="zy-select" style="width: 130px;"><option>全部类型</option><option>词</option><option>词组</option><option>句型</option><option>语法点</option></select>
+      <select class="zy-select" style="width: 130px;"><option>全部状态</option><option>已发布</option><option>待发布</option></select>
+      <select class="zy-select" style="width: 130px;" id="selHsk" disabled title="HSK 等级仅在主题=HSK 下使用，且按「阶段」划分，不作为 KP 字段"><option>···</option></select>
+      <button class="zy-btn zy-btn-ghost" data-toast="筛选已应用">应用</button>
+      <button class="zy-btn zy-btn-ghost" data-toast="重置筛选">重置</button>
+    </div>
+    <div class="zy-helper" style="margin-top:8px;">ℹ KP 不携带 HSK 等级字段；HSK 等级仅在主题 = HSK 下按 6 个「阶段」划分（阶段 1..6 对应 HSK 1..6）。</div></div>
+  </div>
+
+  <!-- 批量操作栏 -->
+  <div class="zy-row" style="margin-bottom: 8px; padding: 8px 12px; background: var(--zy-bg-elev); border-radius: 8px;">
+    <span style="font-size: 13px;">已选 <strong>3</strong> 项</span>
+    <div class="zy-row-end" style="margin-left: auto;">
+      <button class="zy-btn zy-btn-sm zy-btn-ghost" data-open-modal="mBulkPub">✅ 批量发布</button>
+      <button class="zy-btn zy-btn-sm zy-btn-ghost" data-toast="3 个 KP 已下架" data-toast-type="info">批量下架</button>
+      <button class="zy-btn zy-btn-sm zy-btn-danger" data-open-modal="mBulkDel">🗑 批量删除</button>
+    </div>
+  </div>
+
+  <div class="zy-table-wrap">
+    <table class="zy-table zy-table-stack">
+      <thead><tr><th style="width:40px;"><input type="checkbox" class="zy-check" /></th><th>编码</th><th>主词</th><th>拼音</th><th>类型<span class="zy-i18n-badge" title="应用端需按语言显示友好名称"></span></th><th>主题</th><th>音频</th><th data-i18n="common.status">状态</th><th>引用</th><th style="width:230px;" data-i18n="common.action">操作</th></tr></thead>
+      <tbody>
+        <tr><td data-label="选"><input type="checkbox" class="zy-check" checked /></td><td data-label="编码"><code>kp-zaoshang</code></td><td data-label="主词">早上</td><td data-label="拼音">zǎo shang</td><td data-label="类型"><span class="zy-tag">词</span></td><td data-label="主题">EC</td><td data-label="音频"><span data-icon="speaker"></span> 已缓存</td><td data-label="状态"><span class="zy-tag zy-tag-success">已发布</span></td><td data-label="引用">1 节 / 5 题</td><td data-label="操作"><button class="zy-btn zy-btn-sm zy-btn-ghost" data-open-drawer="dKPEdit" data-i18n="btn.edit">编辑</button><button class="zy-btn zy-btn-sm zy-btn-danger" data-toast="KP 已下架，可单独再发布" data-toast-type="info">下架</button><button class="zy-btn zy-btn-sm zy-btn-danger" data-open-modal="mDel" data-i18n="btn.delete">删除</button></td></tr>
+        <tr><td data-label="选"><input type="checkbox" class="zy-check" checked /></td><td data-label="编码"><code>kp-hao</code></td><td data-label="主词">好</td><td data-label="拼音">hǎo</td><td data-label="类型"><span class="zy-tag">词</span></td><td data-label="主题">SH</td><td data-label="音频"><span data-icon="speaker"></span> 已缓存</td><td data-label="状态"><span class="zy-tag zy-tag-success">已发布</span></td><td data-label="引用">23 节 / 142 题</td><td data-label="操作"><button class="zy-btn zy-btn-sm zy-btn-ghost" data-open-drawer="dKPEdit" data-i18n="btn.edit">编辑</button><button class="zy-btn zy-btn-sm zy-btn-danger" data-toast="KP 已下架，可单独再发布" data-toast-type="info">下架</button><button class="zy-btn zy-btn-sm zy-btn-danger" data-open-modal="mDel" data-i18n="btn.delete">删除</button></td></tr>
+        <tr><td data-label="选"><input type="checkbox" class="zy-check" checked /></td><td data-label="编码"><code>kp-zaoshanghao</code></td><td data-label="主词">早上好</td><td data-label="拼音">zǎo shang hǎo</td><td data-label="类型"><span class="zy-tag zy-tag-info">词组</span></td><td data-label="主题">EC</td><td data-label="音频"><span data-icon="speaker"></span> 已缓存</td><td data-label="状态"><span class="zy-tag zy-tag-success">已发布</span></td><td data-label="引用">1 节</td><td data-label="操作"><button class="zy-btn zy-btn-sm zy-btn-ghost" data-open-drawer="dKPEdit" data-i18n="btn.edit">编辑</button><button class="zy-btn zy-btn-sm zy-btn-danger" data-toast="KP 已下架，可单独再发布" data-toast-type="info">下架</button><button class="zy-btn zy-btn-sm zy-btn-danger" data-open-modal="mDel" data-i18n="btn.delete">删除</button></td></tr>
+        <tr><td data-label="选"><input type="checkbox" class="zy-check"/></td><td data-label="编码"><code>kp-xiexie</code></td><td data-label="主词">谢谢</td><td data-label="拼音">xiè xie</td><td data-label="类型"><span class="zy-tag">词</span></td><td data-label="主题">SH</td><td data-label="音频"><span data-icon="speaker"></span> 已缓存</td><td data-label="状态"><span class="zy-tag zy-tag-success">已发布</span></td><td data-label="引用">18 节 / 89 题</td><td data-label="操作"><button class="zy-btn zy-btn-sm zy-btn-ghost" data-open-drawer="dKPEdit" data-i18n="btn.edit">编辑</button><button class="zy-btn zy-btn-sm zy-btn-danger" data-toast="KP 已下架，可单独再发布" data-toast-type="info">下架</button><button class="zy-btn zy-btn-sm zy-btn-danger" data-open-modal="mDel" data-i18n="btn.delete">删除</button></td></tr>
+        <tr><td data-label="选"><input type="checkbox" class="zy-check"/></td><td data-label="编码"><code>kp-laoban</code></td><td data-label="主词">老板</td><td data-label="拼音">lǎo bǎn</td><td data-label="类型"><span class="zy-tag">词</span></td><td data-label="主题">EC</td><td data-label="音频"><span style="opacity:.4" data-icon="speaker"></span> 未生成</td><td data-label="状态"><span class="zy-tag zy-tag-warn">待发布</span></td><td data-label="引用">0</td><td data-label="操作"><button class="zy-btn zy-btn-sm zy-btn-ghost" data-open-drawer="dKPEdit" data-i18n="btn.edit">编辑</button><button class="zy-btn zy-btn-sm zy-btn-primary" data-toast="KP 已发布，可被学员端展示和测试抽取" data-toast-type="success">发布</button><button class="zy-btn zy-btn-sm zy-btn-danger" data-open-modal="mDel" data-i18n="btn.delete">删除</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 分页 -->
+  <div class="zy-pagination">
+    <button class="zy-page-btn">«</button>
+    <button class="zy-page-btn">‹</button>
+    <button class="zy-page-btn zy-page-current">1</button>
+    <button class="zy-page-btn">2</button>
+    <button class="zy-page-btn">3</button>
+    <button class="zy-page-btn">…</button>
+    <button class="zy-page-btn">194</button>
+    <button class="zy-page-btn">›</button>
+    <button class="zy-page-btn">»</button>
+    <span style="margin-left: 12px; font-size: 13px; color: var(--zy-fg-mute);">共 3,872 条 · 20 / 页</span>
+  </div>
+</div>
+
+</div></div>
+
+<!-- D-3 KP 编辑（720 大抽屉） -->
+<div class="zy-drawer-mask" id="dKPEdit">
+  <aside class="zy-drawer">
+    <div class="zy-drawer-head"><div class="zy-drawer-title">编辑 KP · kp-zaoshang</div><div class="zy-row"><span class="zy-tag zy-tag-success">已发布</span><button class="zy-modal-close" data-close-modal>×</button></div></div>
+    <div class="zy-drawer-body">
+      <h3 style="margin: 0 0 8px;">基本信息</h3>
+      <div class="zy-grid cols-md-2">
+        <div class="zy-field"><label class="zy-label zy-required">编码</label><input class="zy-input" value="kp-zaoshang" /></div>
+        <div class="zy-field"><label class="zy-label zy-required" data-i18n="common.type">类型</label><select class="zy-select"><option selected>词</option><option>词组</option><option>句型</option><option>语法点</option></select></div>
+        <div class="zy-field"><label class="zy-label">所属主题</label><select class="zy-select"><option>SH share</option><option selected>EC</option><option>FC</option><option>HSK</option><option>DL</option></select></div>
+        <div class="zy-field"><label class="zy-label">难度</label><select class="zy-select"><option selected>1</option><option>2</option><option>3</option></select></div>
+        <div class="zy-field"><label class="zy-label">词性</label><select class="zy-select"><option>名词 N</option></select></div>
+      </div>
+      <div class="zy-divider"></div>
+      <h3 style="margin: 0 0 8px;">i18n 翻译（5 语言）</h3>
+      <div class="zy-i18n-grid" style="margin-bottom:12px;">
+        <div class="zy-field"><label class="zy-label">中文</label><input class="zy-input" value="早上" /></div>
+        <div class="zy-field"><label class="zy-label">英文</label><input class="zy-input" value="morning" /></div>
+        <div class="zy-field"><label class="zy-label">越南语</label><input class="zy-input" value="buổi sáng" /></div>
+        <div class="zy-field"><label class="zy-label">泰语</label><input class="zy-input" value="ตอนเช้า" /></div>
+        <div class="zy-field"><label class="zy-label">印尼语</label><input class="zy-input" value="pagi" /></div>
+      </div>
+      <div class="zy-field"><label class="zy-label zy-required">拼音</label><input class="zy-input" value="zǎo shang" /></div>
+      <div class="zy-divider"></div>
+      <h3 style="margin: 0 0 8px;">媒资</h3>
+      <div class="zy-grid cols-md-2">
+        <div class="zy-field"><label class="zy-label">主音频（用户端缓存回显）</label><div class="zy-row"><input class="zy-input" value="cdn://media/zaoshang.mp3" readonly /><button class="zy-play-btn" data-toast="试听"><span data-icon="speaker"></span>试听</button></div></div>
+        <div class="zy-field"><label class="zy-label">配图</label><div class="zy-row"><input class="zy-input" placeholder="cdn://images/…" /><button class="zy-btn zy-btn-ghost" data-open-modal="mPickImg">选择</button></div></div>
+      </div>
+      <div class="zy-divider"></div>
+      <h3 style="margin: 0 0 8px;">例句（2 / 3）</h3>
+      <div class="zy-stack">
+        <div class="zy-card" style="padding: 12px; background: var(--zy-bg);">
+          <div style="font-size: 14px;">早上好，老板！</div>
+          <div style="font-size: 12px; color: var(--zy-fg-mute);">zǎo shang hǎo, lǎo bǎn! / Good morning, boss!</div>
+          <div class="zy-row" style="margin-top: 6px;"><button class="zy-btn zy-btn-sm zy-btn-ghost" data-i18n="btn.edit">编辑</button><button class="zy-btn zy-btn-sm zy-btn-danger">删除</button></div>
+        </div>
+        <div class="zy-card" style="padding: 12px; background: var(--zy-bg);">
+          <div style="font-size: 14px;">每天早上我喝茶。</div>
+          <div style="font-size: 12px; color: var(--zy-fg-mute);">měi tiān zǎo shang wǒ hē chá. / I drink tea every morning.</div>
+          <div class="zy-row" style="margin-top: 6px;"><button class="zy-btn zy-btn-sm zy-btn-ghost" data-i18n="btn.edit">编辑</button><button class="zy-btn zy-btn-sm zy-btn-danger">删除</button></div>
+        </div>
+        <button class="zy-btn zy-btn-ghost" data-toast="新增例句行">➕ 增加例句</button>
+      </div>
+      <div class="zy-divider"></div>
+      <div class="zy-helper">最近修订：2025-11-22 10:31 by admin@local · 版本 v3</div>
+    </div>
+    <div class="zy-drawer-foot"><button class="zy-btn zy-btn-ghost" data-close-modal data-i18n="btn.cancel">取消</button><button class="zy-btn zy-btn-ghost" data-close-modal data-toast="KP 已保存，发布状态不变" data-toast-type="info">保存</button><button class="zy-btn zy-btn-danger" data-close-modal data-toast="KP 已下架，管理端显示待发布" data-toast-type="info">下架</button><button class="zy-btn zy-btn-primary" data-close-modal data-toast="KP 已发布" data-toast-type="success">发布</button></div>
+  </aside>
+</div>
+
+<!-- 新建 KP -->
+<div class="zy-drawer-mask" id="dKPNew">
+  <aside class="zy-drawer size-md">
+    <div class="zy-drawer-head"><div class="zy-drawer-title">新建 KP</div><button class="zy-modal-close" data-close-modal>×</button></div>
+    <div class="zy-drawer-body">
+      <div class="zy-field"><label class="zy-label zy-required">编码（kp-xxx）</label><input class="zy-input" placeholder="自动建议：kp-wanan" /></div>
+      <div class="zy-field"><label class="zy-label zy-required" data-i18n="common.type">类型</label><select class="zy-select"><option>词</option><option>词组</option><option>句型</option><option>语法点</option></select></div>
+      <div class="zy-field"><label class="zy-label zy-required">主词（zh）</label><input class="zy-input" placeholder="如：晚安" /></div>
+      <div class="zy-field"><label class="zy-label">拼音</label><input class="zy-input" placeholder="wǎn ān" /></div>
+      <div class="zy-helper">创建后可在编辑抽屉中补全 i18n / 例句 / 媒资。</div>
+    </div>
+    <div class="zy-drawer-foot"><button class="zy-btn zy-btn-ghost" data-close-modal data-i18n="btn.cancel">取消</button><button class="zy-btn zy-btn-primary" data-close-modal data-toast="KP 已创建" data-toast-type="success">创建</button></div>
+  </aside>
+</div>
+
+<!-- D-15 导入 -->
+<div class="zy-modal-mask" id="mImport">
+  <div class="zy-modal size-md">
+    <div class="zy-modal-head"><div class="zy-modal-title">批量导入 KP（json）</div><button class="zy-modal-close" data-close-modal>×</button></div>
+    <div class="zy-modal-body">
+      <div class="zy-field"><label class="zy-label zy-required">文件</label><div style="border: 2px dashed var(--zy-border); border-radius: 12px; padding: 32px; text-align: center;">📁 拖入 .json / .csv（≤ 50MB）</div></div>
+      <div class="zy-field"><label class="zy-label">冲突策略</label><select class="zy-select"><option>跳过</option><option>覆盖</option></select></div>
+    </div>
+    <div class="zy-modal-foot"><button class="zy-btn zy-btn-ghost" data-close-modal data-i18n="btn.cancel">取消</button><button class="zy-btn zy-btn-primary" data-close-modal data-toast="导入任务已提交" data-toast-type="success">导入</button></div>
+  </div>
+</div>
+
+<!-- 选图 -->
+<div class="zy-modal-mask" id="mPickImg">
+  <div class="zy-modal size-lg">
+    <div class="zy-modal-head"><div class="zy-modal-title">选择配图</div><button class="zy-modal-close" data-close-modal>×</button></div>
+    <div class="zy-modal-body">
+      <input class="zy-input" placeholder="🔍 搜索图片标签 / 文件名" />
+      <div class="zy-grid cols-md-2 cols-lg-3" style="margin-top: 12px;">
+        <div class="zy-card" style="padding: 8px; cursor: pointer;" data-toast="已选择 sunrise.jpg" data-toast-type="success" data-close-modal><div style="height: 100px; background: linear-gradient(135deg,#ffd58a,#ff7b54); border-radius: 8px;"></div><div style="font-size: 12px; margin-top: 4px;">sunrise.jpg</div></div>
+        <div class="zy-card" style="padding: 8px; cursor: pointer;" data-toast="已选择 morning.jpg" data-toast-type="success" data-close-modal><div style="height: 100px; background: linear-gradient(135deg,#a3d8ff,#5fa8d3); border-radius: 8px;"></div><div style="font-size: 12px; margin-top: 4px;">morning.jpg</div></div>
+        <div class="zy-card" style="padding: 8px; cursor: pointer;" data-toast="已选择 tea.jpg" data-toast-type="success" data-close-modal><div style="height: 100px; background: linear-gradient(135deg,#cdeac0,#8db580); border-radius: 8px;"></div><div style="font-size: 12px; margin-top: 4px;">tea.jpg</div></div>
+      </div>
+    </div>
+    <div class="zy-modal-foot"><button class="zy-btn zy-btn-ghost" data-close-modal data-i18n="btn.cancel">取消</button><button class="zy-btn zy-btn-ghost" data-toast="跳到 P-admin-course-007 媒资库管理">去媒资库</button></div>
+  </div>
+</div>
+
+<!-- 批量重生 -->
+<div class="zy-modal-mask" id="mBulkRegen">
+  <div class="zy-modal size-sm">
+    <div class="zy-modal-head"><div class="zy-modal-title">批量重生 TTS（3 项）</div><button class="zy-modal-close" data-close-modal>×</button></div>
+    <div class="zy-modal-body">将为已选 3 个 KP 重新生成主音频，旧音频保留 30 天。</div>
+    <div class="zy-modal-foot"><button class="zy-btn zy-btn-ghost" data-close-modal data-i18n="btn.cancel">取消</button><button class="zy-btn zy-btn-primary" data-close-modal data-toast="3 个语音合成任务已入队" data-toast-type="success" data-i18n="btn.submit">提交</button></div>
+  </div>
+</div>
+<div class="zy-modal-mask" id="mBulkPub">
+  <div class="zy-modal size-sm">
+    <div class="zy-modal-head"><div class="zy-modal-title">批量发布（3 项）</div><button class="zy-modal-close" data-close-modal>×</button></div>
+    <div class="zy-modal-body">发布后这些 KP 可被学员端展示和测试抽取；未发布或下架内容统一显示为「待发布」。</div>
+    <div class="zy-modal-foot"><button class="zy-btn zy-btn-ghost" data-close-modal data-i18n="btn.cancel">取消</button><button class="zy-btn zy-btn-primary" data-close-modal data-toast="3 项已发布" data-toast-type="success" data-i18n="btn.submit">发布</button></div>
+  </div>
+</div>
+<div class="zy-modal-mask" id="mBulkDel">
+  <div class="zy-modal size-sm">
+    <div class="zy-modal-head"><div class="zy-modal-title">批量删除（3 项）</div><button class="zy-modal-close" data-close-modal>×</button></div>
+    <div class="zy-modal-body">将软删除 3 个 KP；引用次数 > 0 的会先解绑。可在 7 天内恢复。</div>
+    <div class="zy-modal-foot"><button class="zy-btn zy-btn-ghost" data-close-modal data-i18n="btn.cancel">取消</button><button class="zy-btn zy-btn-danger" data-close-modal data-toast="已删除 3 项，移入回收站保留 7 天" data-toast-type="info" data-i18n="btn.delete">删除</button></div>
+  </div>
+</div>
+<div class="zy-modal-mask" id="mDel">
+  <div class="zy-modal size-sm">
+    <div class="zy-modal-head"><div class="zy-modal-title">删除 KP？</div><button class="zy-modal-close" data-close-modal>×</button></div>
+    <div class="zy-modal-body">该 KP 仍被 23 节 / 142 题引用，删除前会自动解绑。可在 7 天内恢复。</div>
+    <div class="zy-modal-foot"><button class="zy-btn zy-btn-ghost" data-close-modal data-i18n="btn.cancel">取消</button><button class="zy-btn zy-btn-danger" data-close-modal data-toast="已移入回收站，保留 7 天" data-toast-type="info" data-i18n="btn.delete">删除</button></div>
+  </div>
+</div>
+
+<script src="../../../B04-design/prototype-style/course/prototype.js"></script>
+</body></html>

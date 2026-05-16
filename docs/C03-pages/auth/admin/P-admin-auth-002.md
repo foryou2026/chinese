@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/auth/admin/P-auth-002.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/admin/P-admin-auth-002.md -->
 
-# P-auth-002 · 忘记密码
+# P-admin-auth-002 · 忘记密码
 
 > 路径 `/admin/auth/forgot` · 公开 · 覆盖 R-006
 

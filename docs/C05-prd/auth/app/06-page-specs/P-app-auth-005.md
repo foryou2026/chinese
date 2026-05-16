@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/auth/app/06-page-specs/P-auth-005.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/06-page-specs/P-app-auth-005.md -->
 
-# Page Spec · P-auth-005 · 我的资料
+# Page Spec · P-app-auth-005 · 我的资料
 
 > PRD 视角单页规格 · auth / `app` 端。来源真相见各 C 阶段文档,本文件只做汇总与索引。
 
@@ -8,7 +8,7 @@
 
 | 字段 | 值 |
 |------|----|
-| P-ID | `P-auth-005` |
+| P-ID | `P-app-auth-005` |
 | 标题 | 我的资料 |
 | feature | `auth` |
 | surface | `app` |
@@ -19,8 +19,8 @@
 
 | 维度 | 文档 |
 |------|------|
-| 交互规范(N) | [`C03-pages/auth/app/P-auth-005.md`](../../../../C03-pages/auth/app/P-auth-005.md) |
-| 场景脚本(N) | [`C03-pages/auth/app/P-auth-005.scenarios.md`](../../../../C03-pages/auth/app/P-auth-005.scenarios.md)(若存在) |
+| 交互规范(N) | [`C03-pages/auth/app/P-app-auth-005.md`](../../../../C03-pages/auth/app/P-app-auth-005.md) |
+| 场景脚本(N) | [`C03-pages/auth/app/P-app-auth-005.scenarios.md`](../../../../C03-pages/auth/app/P-app-auth-005.scenarios.md)(若存在) |
 | HTML 原型(H) | [`C04-prototype/auth/app/`](../../../../C04-prototype/auth/app/) |
 | 关联 M-ID | [`C02-ia/auth/app/01-feature-catalog.md`](../../../../C02-ia/auth/app/01-feature-catalog.md) |
 | 关联 R-ID | [`07-business-rules.md`](../07-business-rules.md) |
@@ -48,7 +48,7 @@
 
 ## 7. 视觉 / 组件(↑ B04)
 
-- 主要组件:见 [`C03-pages/auth/app/P-auth-005.md` §视觉与组件](../../../../C03-pages/auth/app/P-auth-005.md)。
+- 主要组件:见 [`C03-pages/auth/app/P-app-auth-005.md` §视觉与组件](../../../../C03-pages/auth/app/P-app-auth-005.md)。
 - 组件契约:[`B04-design/design-system/05-components/`](../../../../B04-design/design-system/05-components/)(Round 4 已实质化)。
 
 ## 8. 状态文字描述

@@ -2,7 +2,7 @@
 
 # P-app-course-005 · 错题本
 
-> F3 源:`P-C-5` · 路由 `/wrong` · R-010
+> F3 源:`P-app-course-005` · 路由 `/wrong` · R-010
 
 ## 1. 进入条件
 - 已登录。

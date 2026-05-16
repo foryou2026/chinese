@@ -8,13 +8,13 @@
 
 ```mermaid
 flowchart LR
-  A[运营线下生成<br/>JSON/CSV] --> B[P-A-4/P-A-5<br/>批量导入 D-15]
+  A[运营线下生成<br/>JSON/CSV] --> B[P-admin-course-004/P-admin-course-005<br/>批量导入 D-15]
   B --> C{字段校验 + hash 去重}
   C -- 错误 --> D[导出错误行]
   C -- 通过 --> E[写 KP/Q<br/>is_published=false]
-  E --> F[P-A-4/P-A-5<br/>人工点检 + 编辑]
-  F --> G[P-A-4/P-A-5<br/>批量发布 / 行内发布]
-  G --> H[P-A-8 配节测 / 章测 /<br/>阶段考 blueprint + 试抽]
+  E --> F[P-admin-course-004/P-admin-course-005<br/>人工点检 + 编辑]
+  F --> G[P-admin-course-004/P-admin-course-005<br/>批量发布 / 行内发布]
+  G --> H[P-admin-course-008 配节测 / 章测 /<br/>阶段考 blueprint + 试抽]
   H --> I[exam.is_published=true]
   I --> J[CDN 同步 + 学员端可见]
 ```
@@ -74,9 +74,9 @@ flowchart TD
 flowchart LR
   A[答题反馈页 🚩举报<br/>D-14] --> B[POST /app/feedback]
   B --> C[content_action_log<br/>action=report]
-  C --> D[P-A-6 按 question_id 聚合<br/>≥3 自动置顶]
+  C --> D[P-admin-course-006 按 question_id 聚合<br/>≥3 自动置顶]
   D --> E[admin 点 D-7 详情]
-  E -- 跳目标编辑 --> F[P-A-5 题目 Drawer<br/>修正 + version+1]
+  E -- 跳目标编辑 --> F[P-admin-course-005 题目 Drawer<br/>修正 + version+1]
   E -- 采纳 --> G[D-8 标记 adopted]
   E -- 忽略 --> H[D-8 标记 dismissed]
   F --> I[新作答取 v2<br/>历史 user_answers 不动]

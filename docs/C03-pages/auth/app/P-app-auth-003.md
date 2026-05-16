@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-003.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-app-auth-003.md -->
 
-# `P-auth-003` · 验证邮件已发送
+# `P-app-auth-003` · 验证邮件已发送
 
 > **path**：`/auth/verify-email-sent` · **角色可见**：未登录  
 > **R 覆盖**：R-001 / R-015  

@@ -19,7 +19,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  A[P-A-8 配置 exam blueprint] --> B[D-9 试抽预览]
+  A[P-admin-course-008 配置 exam blueprint] --> B[D-9 试抽预览]
   B --> C{抽题成功?}
   C -- 否(题量不足) --> D[Toast: 当前有效题数 < blueprint count]
   D --> E[发布按钮置灰]
@@ -31,7 +31,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  A[P-A-5 行内下架题] --> B[questions.is_published=false]
+  A[P-admin-course-005 行内下架题] --> B[questions.is_published=false]
   B --> C[新发卷抽题池排除]
   C --> D[已存 user_exam_attempts.snapshot<br/>保持原 q_ids]
   D --> E[历史回看可看,新 attempt 不抽]
@@ -41,7 +41,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  A[P-A-7 点删媒资] --> B{反查引用<br/>media_assets.ref_kp_id<br/>ref_q_id}
+  A[P-admin-course-007 点删媒资] --> B{反查引用<br/>media_assets.ref_kp_id<br/>ref_q_id}
   B -- 有引用 --> C[D-1 拦截弹窗<br/>列出 N 处引用]
   B -- 无引用 --> D[D-1 二次确认]
   D --> E[软删媒资]
@@ -51,7 +51,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  A[用户进 P-C-6 列表] --> B{该阶段考<br/>user_exam_attempts.passed?}
+  A[用户进 P-app-course-006 列表] --> B{该阶段考<br/>user_exam_attempts.passed?}
   B -- 是 --> C[按钮置灰 + Toast:阶段考通过后不可重考]
   B -- 否 --> D[正常进考]
 ```
@@ -60,7 +60,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  A[进 P-C-2 节学习页] --> B[尝试整节预下载<br/>KP+题+音频]
+  A[进 P-app-course-002 节学习页] --> B[尝试整节预下载<br/>KP+题+音频]
   B -- 成功 --> C[正常进卡片流]
   B -- 部分失败 --> D[Toast: 部分音频未缓存,可继续]
   D --> E[播放音频时再次按需拉]

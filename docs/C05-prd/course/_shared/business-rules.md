@@ -70,7 +70,7 @@
 | BR-ID | 规则 | 关联 R |
 |-------|------|--------|
 | BR-RP01 | 学员通过答题反馈页 D-14 举报 → `content_action_log { action: 'report', target_q_id, reason }` | R-018 |
-| BR-RP02 | P-A-6 按 `question_id` 聚合;`report_count ≥ 3` 自动置顶 | R-018 |
+| BR-RP02 | P-admin-course-006 按 `question_id` 聚合;`report_count ≥ 3` 自动置顶 | R-018 |
 | BR-RP03 | 采纳 / 忽略不自动改 `questions.is_published`;改与不改由 admin 显式操作 | R-018 |
 | BR-RP04 | 修正题目后 `version+1`;`user_answers` 历史不动,新作答取新 version | R-024 |
 

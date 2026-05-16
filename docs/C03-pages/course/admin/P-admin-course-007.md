@@ -2,7 +2,7 @@
 
 # P-admin-course-007 · 媒资库
 
-> F3 源:`P-A-7` · 路由 `/admin/course/media` · R-019
+> F3 源:`P-admin-course-007` · 路由 `/admin/course/media` · R-019
 
 ## 1. 进入条件
 - admin。

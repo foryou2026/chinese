@@ -2,7 +2,7 @@
 
 # P-admin-course-002 · 主题-阶段-章-节四级列表
 
-> F3 源:`P-A-2` · 路由 `/admin/course/tree?track={track}` · R-014/023
+> F3 源:`P-admin-course-002` · 路由 `/admin/course/tree?track={track}` · R-014/023
 
 ## 1. 进入条件
 - admin + `track ∈ tracks_scope`。

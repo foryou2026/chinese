@@ -2,7 +2,7 @@
 
 # P-admin-course-003 · 节编辑
 
-> F3 源:`P-A-3` · 路由 `/admin/course/lesson/{code}` · R-015
+> F3 源:`P-admin-course-003` · 路由 `/admin/course/lesson/{code}` · R-015
 
 ## 1. 进入条件
 - admin + 节所属 `track ∈ tracks_scope`。

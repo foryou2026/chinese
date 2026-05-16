@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-007.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-app-auth-007.md -->
 
-# `P-auth-007` · 个人中心首页
+# `P-app-auth-007` · 个人中心首页
 
 > **path**：`/me` · **角色可见**：用户（登录守卫）  
 > **R 覆盖**：R-008  

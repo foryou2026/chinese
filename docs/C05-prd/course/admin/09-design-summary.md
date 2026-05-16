@@ -33,7 +33,7 @@
 ## 9.4 响应式
 
 - admin 仅支持桌面浏览器(≥ 1280 px);移动设备访问显示"建议在桌面访问";
-- 不做暗色 / 亮色随系统;由用户在 [P-auth-003](../../../auth/admin/06-page-specs/P-auth-003.md) 手动切。
+- 不做暗色 / 亮色随系统;由用户在 [P-admin-auth-003](../../../auth/admin/06-page-specs/P-admin-auth-003.md) 手动切。
 
 ## 9.5 录入态约束
 

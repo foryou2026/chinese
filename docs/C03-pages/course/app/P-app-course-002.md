@@ -2,7 +2,7 @@
 
 # P-app-course-002 · 学习地图 + 节内学习
 
-> F3 源:`P-C-2` · 路由 `/learn` (地图) / `/learn/{track}/{stage}/{chapter}/{lesson}` (节内) · R-004..008
+> F3 源:`P-app-course-002` · 路由 `/learn` (地图) / `/learn/{track}/{stage}/{chapter}/{lesson}` (节内) · R-004..008
 
 ## 1. 进入条件
 - 已登录 + 已订阅当前主题(否则触发 D-12);

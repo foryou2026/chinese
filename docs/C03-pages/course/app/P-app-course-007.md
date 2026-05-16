@@ -2,7 +2,7 @@
 
 # P-app-course-007 · 考试答题 / 倒计时
 
-> F3 源:`P-C-7` · 路由 `/exam/{attemptId}` · R-011
+> F3 源:`P-app-course-007` · 路由 `/exam/{attemptId}` · R-011
 
 ## 1. 进入条件
 - `attempt.status=in_progress`;
