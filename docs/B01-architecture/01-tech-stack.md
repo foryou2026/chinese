@@ -7,7 +7,7 @@
 > **feature**：全局  
 > **上游依赖**：`_input/preferences.md`、`A-questions-round1-resolved.md`  
 > **冻结状态**：已冻结 · 2026-04-28 · 签字: PM  
-> **下游影响**：B04 设计系统（前端栈）、所有 D 阶段、`docker/compose.yaml`、`system/package.json`
+> **下游影响**：B03 设计系统（前端栈）、所有 D 阶段、`docker/compose.yaml`、`system/package.json`
 
 ---
 

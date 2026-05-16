@@ -25,7 +25,7 @@
 | 11 | 趣味汉字 | 汉字演变、数字密码、网络用语 |
 | 12 | 神话传说 | 创世神话、神仙体系、民间传说 |
 
-> 类目数量固定为 12,**不可** 新增 / 删除;名称 5 语录入(`zh/en/vi/th/id`),由 admin 端 [P-admin-discover-china-001](../../../discover-china/admin/06-page-specs/P-admin-discover-china-001.md) 维护。
+> 类目数量固定为 12,**不可** 新增 / 删除;名称 5 语录入(`zh/en/vi/th/id`),由 admin 端 [P-admin-discover-china-001](../../discover-china/admin/06-page-specs/P-admin-discover-china-001.md) 维护。
 
 ## 1.3 app 端 3 大页
 

@@ -7,7 +7,7 @@
 > **feature**：全局  
 > **上游依赖**：`01-tech-stack.md`、`08-surfaces.md`  
 > **冻结状态**：已冻结 · 2026-04-28  
-> **下游影响**：B04 设计系统、所有 C03 / C04 / C05、`packages/shared-i18n/`
+> **下游影响**：B03 设计系统、所有 C03 / C04 / C05、`packages/shared-i18n/`
 
 ---
 

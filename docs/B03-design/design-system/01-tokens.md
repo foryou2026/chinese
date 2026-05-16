@@ -2,7 +2,7 @@
 
 # 01 · 设计 Token
 
-> **阶段**：B04-S  
+> **阶段**：B03-S  
 > **上游**：`B02-ux/05-moodboard.md`、`_input/visual-input.md`  
 > **下游**：`system/packages/ui-kit/src/tokens/{tokens.css, tokens.ts, theme.css}`、所有 C 阶段产物  
 > **冻结状态**：已冻结 · 2026-04-28
@@ -51,7 +51,7 @@
 | `--brand-soft-strong` | `rgba(255,36,66,0.18)` | `rgba(255,59,92,0.22)` | hover 浅底 |
 | `--brand-on` | `#FFFFFF` | `#FFFFFF` | 红底上文字 |
 
-> 用户可在「设置 → 显示 → 主题色」覆盖全套品牌色变量；详见 [06-responsive-dark §5](./06-responsive-dark.md)。
+> 用户可在「设置 → 显示 → 主题色」覆盖全套品牌色变量；详见 [06-responsive-dark §5](./07-responsive-dark.md)。
 
 ### 1.3 语义色（不破坏黑白红基调）
 
@@ -177,7 +177,7 @@
 2. **不允许 `background: white/black` 的卡片**：必须使用 `.glass-*` 系列。
 3. **降级**：浏览器不支持 `backdrop-filter` → 落 `--bg-surface-strong` + `shadow-md`。
 4. **不嵌套**：毛玻璃面板内禁止再嵌套毛玻璃；如需层次用 `--bg-hover` / `--bg-active`。
-5. **性能**：低端设备 / 用户主动选「省电模式」→ 切伪毛玻璃。详见 [06 §4](./06-responsive-dark.md)。
+5. **性能**：低端设备 / 用户主动选「省电模式」→ 切伪毛玻璃。详见 [06 §4](./07-responsive-dark.md)。
 
 ---
 

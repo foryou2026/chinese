@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C03-ia/auth/admin/07-error-pages.md -->
 
-# C02 · 错误页 · `auth`
+# C03 · 错误页 · `auth`
 
 | 错误 | 处理 |
 |------|------|
@@ -9,6 +9,6 @@
 | 重置链接过期 | P-003 token-invalid 内嵌态 (不另开页) |
 | 锁定 | P-001 locked 内嵌态 |
 | 禁用账号 | P-001 error + Toast |
-| 服务器 5xx | 全局 Toast (复用 B04-05),不另开页 |
+| 服务器 5xx | 全局 Toast (复用 B03-06),不另开页 |
 | 路由 404 | 全局 `/admin/404` (不归本 feature) |
 | 403 | 全局 `/admin/403` (不归本 feature) |

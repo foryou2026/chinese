@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/auth/admin/11-roadmap.md -->
 
-# C05 · 11 演进 · `auth`
+# C06 · 11 演进 · `auth`
 
 ## v1 (本期)
 

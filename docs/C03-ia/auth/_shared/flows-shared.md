@@ -54,7 +54,7 @@
 
 ## 99. 上游引用
 
-- [C02-permissions/02-auth-flow.md](../../../C02-permissions/02-auth-flow.md)
-- [C02-permissions/05-auth-feature-guideline.md](../../../C02-permissions/05-auth-feature-guideline.md)
+- [C02-permissions/02-authz-mechanism.md](../../../C02-permissions/02-authz-mechanism.md)
+- [C02-permissions/02-authz-mechanism.md](../../../C02-permissions/02-authz-mechanism.md)
 - [_shared/state-machines.md](./state-machines.md)
 - [C01-requirements/auth/baseline.md](../../../C01-requirements/auth/baseline.md) R-auth-003 / 005 / 007 / 008 / 009

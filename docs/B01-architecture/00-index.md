@@ -7,7 +7,7 @@
 > **feature**：全局（一次性定调，所有 feature 共用）  
 > **上游依赖**：`_input/preferences.md`、`docs/A00-meta/questions/A-questions-round1-resolved.md`  
 > **冻结状态**：已冻结 · 2026-04-28 · 签字: PM  
-> **下游影响**：B02 权限（沿用 Supabase Auth + RBAC）、B04 设计系统（沿用前端栈与响应式断点）、所有 feature 的 C03/C04/D01/D02/D03
+> **下游影响**：B02 权限（沿用 Supabase Auth + RBAC）、B03 设计系统（沿用前端栈与响应式断点）、所有 feature 的 C03/C04/D01/D02/D03
 
 ---
 
@@ -28,13 +28,13 @@
 
 | 序号 | 文件 | 职责 | 谁会引用 |
 |------|------|------|---------|
-| 01 | [01-tech-stack.md](./01-tech-stack.md) | 前 / 后 / DB / AI / 部署的选型与精确版本 | 所有 D 阶段、B04 |
+| 01 | [01-tech-stack.md](./01-tech-stack.md) | 前 / 后 / DB / AI / 部署的选型与精确版本 | 所有 D 阶段、B03 |
 | 02 | [02-project-structure.md](./02-project-structure.md) | monorepo 目录布局、模块边界 | 所有 D 阶段、CI |
 | 03 | [03-database.md](./03-database.md) | 命名、通用字段、软删除、迁移、RLS、jsonb | 所有 D01 |
 | 04 | [04-api-conventions.md](./04-api-conventions.md) | URL/响应/错误码/分页/筛选 | 所有 D02 |
 | 05 | [05-coding-standards.md](./05-coding-standards.md) | 前后端代码风格、分层、错误处理、日志 | 实现阶段 |
 | 06 | [06-deploy-env.md](./06-deploy-env.md) | Docker、端口、环境变量、Key 管理 | 部署、测试 |
-| 07 | [07-i18n-responsive.md](./07-i18n-responsive.md) | i18n、断点、移动适配、字体 | B04、C03 |
+| 07 | [07-i18n-responsive.md](./07-i18n-responsive.md) | i18n、断点、移动适配、字体 | B03、C03 |
 | 08 | [08-surfaces.md](./08-surfaces.md) | surface 清单、跨端隔离策略、路由前缀 | 所有 C/D 阶段 |
 | 09 | [09-auth-infra.md](./09-auth-infra.md) | 鉴权基础设施（Token / 密码 / OAuth / 会话）| B02、未来 `auth` feature（多端单 feature） |
 | 99 | [99-open-questions.md](./99-open-questions.md) | 待确认项（已清空）| — |

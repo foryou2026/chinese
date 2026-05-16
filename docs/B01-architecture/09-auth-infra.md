@@ -5,7 +5,7 @@
 > **阶段**：B01-A 架构  
 > **角色**：架构师  
 > **feature**：全局  
-> **上游依赖**：`01-tech-stack.md`、`08-surfaces.md`、[`C02-permissions/02-auth-flow.md`](../C02-permissions/02-auth-flow.md)  
+> **上游依赖**：`01-tech-stack.md`、`08-surfaces.md`、[`C02-permissions/02-authz-mechanism.md`](../C02-permissions/02-authz-mechanism.md)  
 > **冻结状态**：已冻结 · 2026-04-28  
 > **下游影响**：B02 权限规范、未来 `auth` / `auth` feature 的 C/D 全阶段
 
@@ -69,12 +69,12 @@
 5. **角色守卫**：`api-admin` 在 `middlewares/rbac.ts` 强制 `role === 'super_admin'`。
 
 ```ts
-// 示例（详细行为以 C02-permissions/02-auth-flow.md 为准）
+// 示例（详细行为以 C02-permissions/02-authz-mechanism.md 为准）
 app.use('*', requireAuth({ optional: false }))
 app.use('/admin/*', requireRole('super_admin'))
 ```
 
-> 与 [`C02-permissions/02-auth-flow.md`](../C02-permissions/02-auth-flow.md) 的「Cookie + CSRF」流程一致；任何冲突以 B02 为准。
+> 与 [`C02-permissions/02-authz-mechanism.md`](../C02-permissions/02-authz-mechanism.md) 的「Cookie + CSRF」流程一致；任何冲突以 B02 为准。
 
 ---
 
@@ -106,7 +106,7 @@ app.use('/admin/*', requireRole('super_admin'))
 - 前端登出：调 `POST /v1/auth/logout` → 后端清 `zhiyu-at` / `zhiyu-rt` / `zhiyu-csrf` 三只 Cookie（`Max-Age=0`）→ 同时 `supabase.auth.signOut()` 清前端 session 缓存 → 跳登录页。
 - **不向 localStorage / sessionStorage 写任何 token**（HttpOnly Cookie 是唯一存储）。
 - 后端登出 `/v1/auth/logout`：服务端落 Cookie 过期 Header + 调 `auth.admin.signOut(user_id)` revoke refresh token + 落 `auth_audit_log`。
-- 强制下线（管理后台 → 学员）：`api-admin` 调 `supabase.auth.admin.signOut(user_id)` + 落审计日志；详见 [`C02-permissions/02-auth-flow.md §7`](../C02-permissions/02-auth-flow.md) 与多设备 3 上限策略。
+- 强制下线（管理后台 → 学员）：`api-admin` 调 `supabase.auth.admin.signOut(user_id)` + 落审计日志；详见 [`C02-permissions/02-authz-mechanism.md §7`](../C02-permissions/02-authz-mechanism.md) 与多设备 3 上限策略。
 
 ---
 

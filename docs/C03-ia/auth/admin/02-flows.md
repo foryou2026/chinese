@@ -1,15 +1,15 @@
 <!-- TARGET-PATH: docs/C03-ia/auth/admin/02-flows.md -->
 
-# C02 · 流程清单 · `auth`
+# C03 · 流程清单 · `auth`
 
 ## 主流程 (FL-01..04)
 
 | Flow-ID | 标题 | mermaid 源 |
 |---------|------|-----------|
-| FL-auth-admin-01 | 邮密登录 | [`main-flow §1`](../../C01-requirements/auth/flows/main-flow.md#1-邮密登录-r-001--r-002--r-004) |
-| FL-auth-admin-02 | 忘密 → 重置 | [`main-flow §2`](../../C01-requirements/auth/flows/main-flow.md#2-忘记密码--重置-r-006) |
-| FL-auth-admin-03 | 改密 | [`main-flow §3`](../../C01-requirements/auth/flows/main-flow.md#3-改密-r-007) |
-| FL-auth-admin-04 | 退出 | [`main-flow §4`](../../C01-requirements/auth/flows/main-flow.md#4-退出-r-008) |
+| FL-auth-admin-01 | 邮密登录 | [`main-flow §1`](../../../C01-requirements/auth/flows/admin-main-flow.md#1-邮密登录-r-001--r-002--r-004) |
+| FL-auth-admin-02 | 忘密 → 重置 | [`main-flow §2`](../../../C01-requirements/auth/flows/admin-main-flow.md#2-忘记密码--重置-r-006) |
+| FL-auth-admin-03 | 改密 | [`main-flow §3`](../../../C01-requirements/auth/flows/admin-main-flow.md#3-改密-r-007) |
+| FL-auth-admin-04 | 退出 | [`main-flow §4`](../../../C01-requirements/auth/flows/admin-main-flow.md#4-退出-r-008) |
 
 ## 异常流程 (FL-05..11)
 
@@ -23,4 +23,4 @@
 | FL-auth-admin-10 | 守卫拦截 + redirect |
 | FL-auth-admin-11 | 5xx 兜底 |
 
-> 全部 mermaid 源见 [`exception-flow.md`](../../C01-requirements/auth/flows/exception-flow.md)。
+> 全部 mermaid 源见 [`exception-flow.md`](../../../C01-requirements/auth/flows/admin-exception-flow.md)。

@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/auth/admin/05-user-journeys.md -->
 
-# C05 · 05 用户旅程 · `auth`
+# C06 · 05 用户旅程 · `auth`
 
 ## J1 · 新管理员首次登录
 

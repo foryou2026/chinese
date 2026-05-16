@@ -2,7 +2,7 @@
 
 # 04 · 状态色与基础组件
 
-> **阶段**：B04-S  
+> **阶段**：B03-S  
 > **上游**：`01-tokens.md`、`B02-ux/04-voice-tone.md`、`B02-ux/06-experience-principles.md`  
 > **下游**：`system/packages/ui-kit/src/components/`、所有 C03 4 态文案承载  
 > **冻结状态**：已冻结 · 2026-04-28
@@ -45,7 +45,7 @@
 | `ghost` | 表格内操作 | 透明 | `--text-primary` | 无 | 28 | `radius-sm` | hover 加 `--bg-hover` |
 | `link` | 表单内跳转 | 透明 | `--brand` | 无 | 行内 | — | hover 下划线 |
 | 禁用 | — | `--bg-active` | `--text-disabled` | `--border-subtle` | 同 | 同 | `cursor: not-allowed`；禁止 hover 变化 |
-| Loading | — | 同原态 + 左侧 14px Spinner | 文字保持 | — | 同 | — | 自动禁用点击；见 [05 §1](./05-interactions.md) |
+| Loading | — | 同原态 + 左侧 14px Spinner | 文字保持 | — | 同 | — | 自动禁用点击；见 [05 §1](./06-interactions.md) |
 
 - 默认 `md`；移动端默认 `lg`（更易触控）；
 - **每个区段 / 弹窗只允许 1 个 primary**（B03 克制原则）；
@@ -150,7 +150,7 @@
 | 信息 | 左 `info` `--text-secondary` + 文字 `--text-primary` |
 | 关闭 | 右侧 X 图标（hover 时显示）|
 
-> Toast **只用于"不可恢复错误（5xx / 网络）/ 信息确认"**；表单字段错误一律内联（[05 §8](./05-interactions.md)）。
+> Toast **只用于"不可恢复错误（5xx / 网络）/ 信息确认"**；表单字段错误一律内联（[05 §8](./06-interactions.md)）。
 
 ---
 

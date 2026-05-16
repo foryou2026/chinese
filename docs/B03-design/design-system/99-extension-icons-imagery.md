@@ -1,10 +1,10 @@
 <!-- TARGET-PATH: docs/B03-design/design-system/99-extension-icons-imagery.md -->
 
-# 07 · 图标 / 插画 / 图片 / 头像
+# 99 · 扩展 · 图标 / 插画 / 图片 / 头像（非规范）
 
-> **阶段**：B04-S  
+> **阶段**：B03-S  
 > **上游**：`B02-ux/05-moodboard.md`、`_input/visual-input.md`  
-> **下游**：所有 C04 H 原型、所有 C03 N 视觉资产规范  
+> **下游**：所有 C05 H 原型、所有 C03 N 视觉资产规范  
 > **冻结状态**：已冻结 · 2026-04-28
 
 ---

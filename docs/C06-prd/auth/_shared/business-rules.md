@@ -65,8 +65,8 @@
 
 ## 99. 上游引用
 
-- [C02-permissions/04-data-model.md](../../../C02-permissions/04-data-model.md)
-- [C02-permissions/05-auth-feature-guideline.md](../../../C02-permissions/05-auth-feature-guideline.md)
+- [C02-permissions/03-data-model.md](../../../C02-permissions/03-data-model.md)
+- [C02-permissions/02-authz-mechanism.md](../../../C02-permissions/02-authz-mechanism.md)
 - [C03-ia/auth/_shared/state-machines.md](../../../C03-ia/auth/_shared/state-machines.md)
 - [C03-ia/auth/_shared/flows-shared.md](../../../C03-ia/auth/_shared/flows-shared.md)
 - [glossary.md](./glossary.md)

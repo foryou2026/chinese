@@ -2,7 +2,7 @@
 
 # 09 · 设计要点
 
-视觉规范全文见 [`B03-design/design-system/`](../../B03-design/design-system/00-index.md)；本节仅汇总本 feature 用到的关键点：
+视觉规范全文见 [`B03-design/design-system/`](../../../B03-design/design-system/00-index.md)；本节仅汇总本 feature 用到的关键点：
 
 - **卡片化**：`<GlassCard>` 是所有 auth + me 页的核心容器；
 - **居中布局**：auth 页全屏居中；me 页 `.page` 标准宽度，左对齐；

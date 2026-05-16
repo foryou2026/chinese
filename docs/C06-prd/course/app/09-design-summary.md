@@ -8,19 +8,19 @@
 
 | 维度 | app 端选择 |
 |------|----------|
-| 主色 | 沿用 B04 主色 token;学习态强调专注 |
+| 主色 | 沿用 B03 主色 token;学习态强调专注 |
 | 暗色模式 | 必须支持(夜间学习场景) |
 | 字号基线 | 中文 16px+;汉字优先级最高;拼音 12-14px;翻译同字号 |
 | 信息密度 | 中低密度;卡片式;单屏一个主任务 |
 
-## 9.2 关键组件(↑ [B04 05-components](../../../B03-design/design-system/05-components/))
+## 9.2 关键组件(↑ [B03 05-components](../../../B03-design/design-system/05-components/))
 
 | app 端高频组件 | 来源 |
 |---------------|------|
-| `Card` | [B04 05-04-card.md](../../../B03-design/design-system/05-components/04-card.md) |
-| `Button` | [B04 05-02-button.md](../../../B03-design/design-system/05-components/02-button.md) |
-| `Tabs` | [B04 05-09-tabs.md](../../../B03-design/design-system/05-components/09-tabs.md) |
-| `AudioPlayer` | [B04 05-12-audio-player.md](../../../B03-design/design-system/05-components/12-audio-player.md)(节内 KP 音频) |
+| `Card` | [B03 05-04-card.md](../../../B03-design/design-system/05-components/11-cards-glass.md) |
+| `Button` | [B03 05-02-button.md](../../../B03-design/design-system/05-components/01-buttons.md) |
+| `Tabs` | [B03 05-09-tabs.md](../../../B03-design/design-system/05-components/10-tabs-accordion.md) |
+| `AudioPlayer` | [B03 05-12-audio-player.md](../../../B03-design/design-system/05-components/00-index.md)(节内 KP 音频) |
 
 ## 9.3 交互模式
 

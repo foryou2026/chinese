@@ -2,9 +2,9 @@
 
 # 05 · 通用交互
 
-> **阶段**：B04-S  
-> **上游**：`04-status-components.md`、`B02-ux/06-experience-principles.md`  
-> **下游**：所有 C03 N 4 态实现、所有 D02 L 错误响应位置  
+> **阶段**：B03-S  
+> **上游**：`04-status-colors.md`、`B02-ux/06-experience-principles.md`  
+> **下游**：所有 C04 N 4 态实现、所有 D02 L 错误响应位置  
 > **冻结状态**：已冻结 · 2026-04-28
 
 ---

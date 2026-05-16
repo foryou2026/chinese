@@ -2,7 +2,7 @@
 
 # 07 · 业务规则 · course / **app**
 
-> R-ID 来源 [C01 PRD baseline](../../../C01-prd-baseline/baseline.md)。本文件仅列出在 app 端生效或可观察的规则。
+> R-ID 来源 [C01 PRD baseline](../../../C01-requirements/course/baseline.md)。本文件仅列出在 app 端生效或可观察的规则。
 
 ## 学习与 SRS
 

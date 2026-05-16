@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/auth/admin/00-index.md -->
 
-# C05 · PRD 索引 · `auth`
+# C06 · PRD 索引 · `auth`
 
 | 文件 | 内容 |
 |------|------|

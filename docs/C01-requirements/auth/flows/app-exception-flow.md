@@ -3,7 +3,7 @@
 # `auth` · 异常流程
 
 > **阶段**：C01-R · **feature**：`auth`  
-> **上游**：[`../baseline.md`](../baseline.md) · [`main-flow.md`](./main-flow.md)  
+> **上游**：[`../baseline.md`](../baseline.md) · [`main-flow.md`](./app-main-flow.md)  
 > **冻结状态**：已冻结 · 2026-05-16
 
 ---
@@ -107,4 +107,4 @@ flowchart TD
     E --> F[登录成功后读 redirect 参数跳回]
 ```
 
-> 详细守卫实现见 [`C02-permissions/03-authz-mechanism §2.1`](../../C02-permissions/03-authz-mechanism.md)。
+> 详细守卫实现见 [`C02-permissions/03-authz-mechanism §2.1`](../../../C02-permissions/02-authz-mechanism.md)。

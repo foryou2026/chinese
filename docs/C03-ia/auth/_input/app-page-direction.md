@@ -12,7 +12,7 @@
 - 个人中心统一前缀 `/me/*`，必须登录；
 - `/auth/callback` 为 OAuth + magic link 通用回调；
 - 全部页面**复用顶部 GlassNav**（未登录顶栏右上角显「登录 / 注册」文字按钮）；
-- 全部页面**禁止侧边栏**（B04 §02 红线）；
+- 全部页面**禁止侧边栏**（B03 §02 红线）；
 - 内容居中区按"卡片 + 表单"模式：单卡片宽度 桌面 480px / 移动 100% - 32px。
 
 ## 2. 表单一致性
@@ -21,7 +21,7 @@
 - 字段间距 `space-4`；
 - 主按钮在右下，宽度 = 100% 在移动；
 - 副按钮（如「Google 继续」/「忘记密码」）放在表单顶部 + 底部，移动端折叠到顶部；
-- 错误内联在字段下方，4xx 不弹 Toast；5xx 才弹 Toast（按 [B04 §05](../../B03-design/design-system/05-interactions.md)）。
+- 错误内联在字段下方，4xx 不弹 Toast；5xx 才弹 Toast（按 [B03 §05](../../B03-design/design-system/05-interactions.md)）。
 
 ## 3. 4 态约定
 
@@ -47,5 +47,5 @@
 
 ## 6. 错误页
 
-- `/401`、`/403`、`/404` 见 [B04 §02](../../B03-design/design-system/02-layout.md)，本 feature 不重新设计；
+- `/401`、`/403`、`/404` 见 [B03 §02](../../B03-design/design-system/02-layout.md)，本 feature 不重新设计；
 - `/auth/link-expired` **不**独立成路由，而是作为 `/auth/callback` 与 `/auth/reset-password` 的子状态展示。

@@ -3,7 +3,7 @@
 # `auth` · 页面清单
 
 > **冻结状态**：已冻结 · 2026-05-16  
-> 路径见 [`D02-api/auth/app/01-routes-delta.md`](../../D02-api/auth/app/01-routes-delta.md)（本文件按框架约定**不**含 URL，只列 page-id 与归属 module）。
+> 路径见 [`D02-api/auth/app/01-routes-delta.md`](../../../D02-api/auth/app/01-routes-delta.md)（本文件按框架约定**不**含 URL，只列 page-id 与归属 module）。
 
 | page-id | 名称 | 类型 | 角色 | 模块 M | 关联 R-ID | 主要 4 态 |
 |---------|------|------|------|--------|-----------|----------|

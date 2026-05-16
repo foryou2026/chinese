@@ -2,7 +2,7 @@
 
 # C01 · 主流程 · `auth`
 
-> 4 条主路径 mermaid 图。详细异常分支见 [`exception-flow.md`](./exception-flow.md)。
+> 4 条主路径 mermaid 图。详细异常分支见 [`exception-flow.md`](./admin-exception-flow.md)。
 
 ---
 

@@ -8,20 +8,20 @@
 
 | 维度 | admin 端选择 |
 |------|------------|
-| 主色 | 沿用 B04 主色;减饱和度(工具感) |
+| 主色 | 沿用 B03 主色;减饱和度(工具感) |
 | 暗色模式 | 必须支持(夜间编辑场景) |
 | 字号基线 | 中文 14px(默认),数据密度高 |
 | 信息密度 | 高;表格 + 侧栏 + toolbar |
 
-## 9.2 关键组件(↑ [B04 05-components](../../../B03-design/design-system/05-components/))
+## 9.2 关键组件(↑ [B03 05-components](../../../B03-design/design-system/05-components/))
 
 | 高频组件 | 来源 |
 |---------|------|
-| `Table` | [B04 05-08-table.md](../../../B03-design/design-system/05-components/08-table.md) |
-| `Form` | [B04 05-07-form.md](../../../B03-design/design-system/05-components/07-form.md) |
-| `Modal` | [B04 05-06-modal.md](../../../B03-design/design-system/05-components/06-modal.md) |
-| `Tabs` | [B04 05-09-tabs.md](../../../B03-design/design-system/05-components/09-tabs.md) |
-| `Toast` | [B04 05-10-toast.md](../../../B03-design/design-system/05-components/10-toast.md) |
+| `Table` | [B03 05-08-table.md](../../../B03-design/design-system/05-components/03-tables.md) |
+| `Form` | [B03 05-07-form.md](../../../B03-design/design-system/05-components/02-forms.md) |
+| `Modal` | [B03 05-06-modal.md](../../../B03-design/design-system/05-components/04-modals.md) |
+| `Tabs` | [B03 05-09-tabs.md](../../../B03-design/design-system/05-components/10-tabs-accordion.md) |
+| `Toast` | [B03 05-10-toast.md](../../../B03-design/design-system/05-components/06-toasts-alerts.md) |
 
 ## 9.3 交互模式
 
@@ -33,7 +33,7 @@
 ## 9.4 响应式
 
 - admin 仅支持桌面浏览器(≥ 1280 px);移动设备访问显示"建议在桌面访问";
-- 不做暗色 / 亮色随系统;由用户在 [P-admin-auth-003](../../../auth/admin/06-page-specs/P-admin-auth-003.md) 手动切。
+- 不做暗色 / 亮色随系统;由用户在 [P-admin-auth-003](../../auth/admin/06-page-specs/P-admin-auth-003.md) 手动切。
 
 ## 9.5 录入态约束
 

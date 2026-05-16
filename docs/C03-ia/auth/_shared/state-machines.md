@@ -74,6 +74,6 @@ profiles.is_active = false --> [globally revoked]
 
 ## 99. 上游引用
 
-- [C02-permissions/02-auth-flow.md](../../../C02-permissions/02-auth-flow.md)
+- [C02-permissions/02-authz-mechanism.md](../../../C02-permissions/02-authz-mechanism.md)
 - [B01-architecture/09-auth-infra.md](../../../B01-architecture/09-auth-infra.md)
 - [C01-requirements/auth/baseline.md](../../../C01-requirements/auth/baseline.md) R-auth-003 ~ R-auth-010

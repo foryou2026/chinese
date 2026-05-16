@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/auth/admin/10-known-issues.md -->
 
-# C05 · 10 已知问题 · `auth`
+# C06 · 10 已知问题 · `auth`
 
 | K-ID | 问题 | 影响 | 缓解 / 处置 |
 |------|------|------|-----------|

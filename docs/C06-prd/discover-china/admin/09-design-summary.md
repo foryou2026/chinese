@@ -4,14 +4,14 @@
 
 > 视觉与 course/admin 同源;特有部分:句子编辑表 + TTS 批量上传交互。
 
-## 9.1 关键组件(↑ [B04 05-components](../../../B03-design/design-system/05-components/))
+## 9.1 关键组件(↑ [B03 05-components](../../../B03-design/design-system/05-components/))
 
 | 组件 | 来源 |
 |------|------|
-| `Table`(文章 / 句子) | [B04 05-08-table.md](../../../B03-design/design-system/05-components/08-table.md) |
-| `Form`(5 语 Tab) | [B04 05-07-form.md](../../../B03-design/design-system/05-components/07-form.md) |
+| `Table`(文章 / 句子) | [B03 05-08-table.md](../../../B03-design/design-system/05-components/03-tables.md) |
+| `Form`(5 语 Tab) | [B03 05-07-form.md](../../../B03-design/design-system/05-components/02-forms.md) |
 | `Upload`(TTS 批量) | 复用 course/admin/media 同款 |
-| `Modal`(发布二次确认) | [B04 05-06-modal.md](../../../B03-design/design-system/05-components/06-modal.md) |
+| `Modal`(发布二次确认) | [B03 05-06-modal.md](../../../B03-design/design-system/05-components/04-modals.md) |
 
 ## 9.2 编辑器特有
 

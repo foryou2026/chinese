@@ -1,9 +1,9 @@
 <!-- TARGET-PATH: docs/C03-ia/auth/app/00-index.md -->
 
-# C02 · `auth` 信息架构
+# C03 · `auth` 信息架构
 
-> **阶段**：C02-I · **feature**：`auth`  
-> **上游**：[`C01-requirements/auth/app/notes.md`](../../C01-requirements/auth/app/notes.md)、[`_input/page-direction.md`](./_input/page-direction.md)、[`C02-permissions/05-auth-feature-guideline.md`](../../C02-permissions/05-auth-feature-guideline.md)  
+> **阶段**：C03-I · **feature**：`auth`  
+> **上游**：[`C01-requirements/auth/app/notes.md`](../../../C01-requirements/auth/app/notes.md)、[`_input/app-page-direction.md`](../_input/app-page-direction.md)、[`C02-permissions/02-authz-mechanism.md`](../../../C02-permissions/02-authz-mechanism.md)  
 > **下游**：本 feature C03 / C04 / C05 / D02 全部产物  
 > **冻结状态**：已冻结 · 2026-05-16
 
@@ -12,7 +12,7 @@
 ## 0. 摘要
 
 - 1 个 feature 拆 3 个 module：`account-entry`（登录 / 注册 / OAuth 入口）、`account-recovery`（找回 / 重置密码）、`account-profile`（个人中心 3 页）。
-- 9 个 page-id 全部已在 [B02-05 §2.1](../../C02-permissions/05-auth-feature-guideline.md) 列出；本目录将其细化为完整的 4 态 + 状态机定义。
+- 9 个 page-id 全部已在 [`C02-permissions/02-authz-mechanism.md §2.1`](../../../C02-permissions/02-authz-mechanism.md) 列出；本目录将其细化为完整的 4 态 + 状态机定义。
 - 主流程 5 条：注册 / 登录 / OAuth / 找回密码 / 改资料；异常分支 7 类。
 
 ---
@@ -21,7 +21,7 @@
 
 | 序号 | 文件 | 职责 |
 |------|------|------|
-| _input | [`_input/page-direction.md`](./_input/page-direction.md) | PM 模拟信息架构方向 |
+| _input | [`../_input/app-page-direction.md`](../_input/app-page-direction.md) | PM 模拟信息架构方向 |
 | 00 | 00-index.md（本文）| 索引 + 边界 |
 | 01 | [01-feature-catalog.md](./01-feature-catalog.md) | M-ID 功能模块清单 |
 | 02 | [02-flows.md](./02-flows.md) | 主流程 + 异常流程图集中 |
@@ -38,4 +38,4 @@
 
 - 不涉及 admin 端；admin 端的对应 feature 是独立的 `auth`，将在批次 4 落地。
 - 不涉及 onboarding 表单（学习语言 / HSK 起点）—— 那是 `user-account` feature 的职责，本 feature 只负责"注册成功后 redirect 到 `/onboarding` 路径"这件事本身。
-- 顶栏与全局菜单结构沿用 [B04 §03](../../B03-design/design-system/03-navigation.md)，本 feature 仅约定"未登录态在哪展示登录入口"。
+- 顶栏与全局菜单结构沿用 [B03 §03](../../../B03-design/design-system/03-navigation.md)，本 feature 仅约定"未登录态在哪展示登录入口"。

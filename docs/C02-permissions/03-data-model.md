@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C02-permissions/04-data-model.md -->
+<!-- TARGET-PATH: docs/C02-permissions/03-data-model.md -->
 
 # 04 · 数据结构
 
@@ -134,7 +134,7 @@ create index user_sessions_user_idx on zhiyu.user_sessions (user_id, last_seen_a
 ### 3.1 业务规则
 
 - 登录写：以 `(user_id, device_id)` upsert（同一设备复登 → 更新 `refresh_jti / last_seen_at`，不挤占额度）；
-- 多设备硬上限 3：upsert 后 `select count(*) from zhiyu.user_sessions where user_id=?` > 3 → 取 `last_seen_at` 最早行做撚销 + delete（详见 [02-auth-flow §4](./02-auth-flow.md)）；
+- 多设备硬上限 3：upsert 后 `select count(*) from zhiyu.user_sessions where user_id=?` > 3 → 取 `last_seen_at` 最早行做撚销 + delete（详见 [02-auth-flow §4](./02-authz-mechanism.md)）；
 - 登出删自己那条；过期清理由 cron 每日清 `last_seen_at < now() - interval '40 days'`；
 - RLS：
 

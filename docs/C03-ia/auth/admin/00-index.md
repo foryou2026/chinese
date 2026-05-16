@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C03-ia/auth/admin/00-index.md -->
 
-# C02 · IA 索引 · `auth`
+# C03 · IA 索引 · `auth`
 
 | 文件 | 内容 |
 |------|------|

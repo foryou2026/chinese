@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/B03-design/prototype-style/README.md -->
 
-# B04 · 原型样式 prototype-style
+# B03 · 原型样式 prototype-style
 
 > **冻结状态**:**v1.0 已填充** · 2026-05-16(随批次 3/4 C04 补登)
 
@@ -17,9 +17,9 @@
 | 文件 | 职责 | 来源 |
 |------|------|------|
 | [`tokens.css`](./tokens.css) | CSS 变量(颜色 / 字体 / 间距 / 圆角 / 阴影 / 毛玻璃 / 动效)| [`design-system/01-tokens.md`](../design-system/01-tokens.md) |
-| [`themes.css`](./themes.css) | `[data-theme="dark"]` 覆盖 + `prefers-reduced-motion` | [`design-system/06-responsive-dark.md`](../design-system/06-responsive-dark.md) |
-| [`app.css`](./app.css) | 全局 reset + `.glass-*` / `.btn-*` / `.input` / `.toast` / `.skeleton` / `.proto-switcher` / `.env-badge` 等组件类 | [`design-system/02-layout.md`](../design-system/02-layout.md) + [`04-status-components.md`](../design-system/04-status-components.md) |
-| [`app.js`](./app.js) | `window.proto.*` 全局 API:`bootstrap` / `setTheme` / `toggleTheme` / `toast` / `cooldown` / `devtools.mountStateSwitcher` | [`design-system/05-interactions.md`](../design-system/05-interactions.md) |
+| [`themes.css`](./themes.css) | `[data-theme="dark"]` 覆盖 + `prefers-reduced-motion` | [`design-system/07-responsive-dark.md`](../design-system/07-responsive-dark.md) |
+| [`app.css`](./app.css) | 全局 reset + `.glass-*` / `.btn-*` / `.input` / `.toast` / `.skeleton` / `.proto-switcher` / `.env-badge` 等组件类 | [`design-system/02-layout.md`](../design-system/02-layout.md) + [`04-status-colors.md`](../design-system/04-status-colors.md) |
+| [`app.js`](./app.js) | `window.proto.*` 全局 API:`bootstrap` / `setTheme` / `toggleTheme` / `toast` / `cooldown` / `devtools.mountStateSwitcher` | [`design-system/06-interactions.md`](../design-system/06-interactions.md) |
 
 ---
 

@@ -5,8 +5,9 @@
 > **阶段**：C01-R · **feature**：`auth` · **surface**：`app` + `admin`（多端单 feature）
 > **上游**：
 > - 输入草案：[`_input/app-draft.md`](./_input/app-draft.md)、[`_input/admin-draft.md`](./_input/admin-draft.md)
-> - B02 规范：[`05-auth-feature-guideline.md`](../../C02-permissions/05-auth-feature-guideline.md)、[`02-auth-flow.md`](../../C02-permissions/02-auth-flow.md)、[`03-authz-mechanism.md`](../../C02-permissions/03-authz-mechanism.md)、[`04-data-model.md`](../../C02-permissions/04-data-model.md)
-> - B03 语气：[`04-voice-tone.md`](../../B02-ux/04-voice-tone.md)
+> - B01 鉴权基础设施：[`09-auth-infra.md`](../../B01-architecture/09-auth-infra.md)
+> - C02 权限规范：[`01-roles.md`](../../C02-permissions/01-roles.md)、[`02-authz-mechanism.md`](../../C02-permissions/02-authz-mechanism.md)、[`03-data-model.md`](../../C02-permissions/03-data-model.md)
+> - B02 语气：[`04-voice-tone.md`](../../B02-ux/04-voice-tone.md)
 > **下游**：本 feature 全部 C02 / C03 / C04 / C05 产物；未来 D 阶段路由必须覆盖全部 R-ID。
 > **冻结状态**：已冻结 · 2026-05-16（合并 app-auth+admin-auth 双 feature 重构 · 2026-05-17）
 
@@ -105,12 +106,12 @@
 
 - app 端 9 个页面（`P-app-auth-001`..`009`）全部具有 idle / loading / error / 4 态以上；
 - admin 端 4 个页面（`P-admin-auth-001`..`004`）同样满足态覆盖；
-- 所有错误码在 [`03-authz-mechanism §4`](../../C02-permissions/03-authz-mechanism.md) 清单内；
+- 所有错误码在 [`03-authz-mechanism §4`](../../C02-permissions/02-authz-mechanism.md) 清单内；
 - 所有路由可被未来 `D02-api/auth/{app,admin}/01-routes-delta.md` 覆盖；
 - 非 `super_admin` 用 user 账号尝试登录 `/admin/auth/login` → 立即 signOut + Toast「请使用用户入口登录」；
 - 任意管理员密码改成功 → 立即在另一个浏览器收到 401 → 跳回 `/admin/auth/login`；
 - 管理员尝试登录第 4 设备 → 第 1 设备 10 秒内被踢（轮询 `session-status`）；
-- D 阶段未新增本 feature 独占表（沿用 [B02-04](../../C02-permissions/04-data-model.md) 5 张表）。
+- D 阶段未新增本 feature 独占表（沿用 [B02-04](../../C02-permissions/03-data-model.md) 5 张表）。
 
 ---
 

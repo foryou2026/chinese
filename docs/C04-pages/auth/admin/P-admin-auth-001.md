@@ -48,7 +48,7 @@
 | `AUTH_LOGIN_RATE_LIMITED` | locked 态 |
 | `AUTH_ACCOUNT_DISABLED` | banner 红字 + 联系超管文案 |
 | `AUTH_USE_USER_ENTRY` | not-admin 态 |
-| 5xx | 全局 Toast (B04-05) |
+| 5xx | 全局 Toast (B03-06) |
 
 ## 6. i18n key
 

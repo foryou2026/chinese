@@ -7,8 +7,8 @@
 | 兜底情况 | 承载方式 | 入口 |
 |---------|---------|------|
 | 401 未登录访问受保护页 | **不**渲染独立兜底页：守卫直接 redirect 到 `P-app-auth-001`（带 `redirect=<full-url>`）| TanStack Router `_auth/` loader |
-| 403 已登录但访问 admin 入口 | 复用全局 `/403` 毛玻璃页（B04 §02）| api-app 中间件返 `AUTH_FORBIDDEN` |
-| 404 路径不存在 | 复用全局 `/404` 毛玻璃页（B04 §02）| router fallback |
+| 403 已登录但访问 admin 入口 | 复用全局 `/403` 毛玻璃页（B03 §02）| api-app 中间件返 `AUTH_FORBIDDEN` |
+| 404 路径不存在 | 复用全局 `/404` 毛玻璃页（B03 §02）| router fallback |
 | 邮件 / 重置链接过期 | **不**独立成路由，作为 `P-004` 与 `P-006` 的子状态 `token-invalid` | SM-auth-app-04 |
 | OAuth provider 异常 | `P-004` 的 `failed` 子状态 + 「重试 / 用邮箱登录」 | SM-auth-app-04 |
 | 多设备被踢 | `P-001` 的 `kicked-back` 子状态 + Toast | SM-auth-app-03 reason=kicked |

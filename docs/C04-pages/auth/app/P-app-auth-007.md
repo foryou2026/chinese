@@ -8,9 +8,9 @@
 
 ## 1. 布局
 
-- 全屏宽度 `.page`（B04 §02）；
+- 全屏宽度 `.page`（B03 §02）；
 - `<PageHeader title="个人中心" subtitle={maskedEmail} />`；
-- `<PageContent>` 内 12 列 Grid，6 张 `<GlassCard>`（同 [05-navigation §4](../../C03-ia/auth/app/05-navigation.md)）。
+- `<PageContent>` 内 12 列 Grid，6 张 `<GlassCard>`（同 [05-navigation §4](../../../C03-ia/auth/app/05-navigation.md)）。
 
 ## 2. 卡片清单
 
@@ -28,7 +28,7 @@
 `GET /v1/me` → 返回 `{ id, email, display_name, avatar_url, locale, role, created_at }`；用于：
 
 - 顶部头像与显示名；
-- 邮箱脱敏：前 3 字符 + `***@<domain>`（按 [B02-05 §4-7](../../C02-permissions/05-auth-feature-guideline.md)）；
+- 邮箱脱敏：前 3 字符 + `***@<domain>`（按 [B02-05 §4-7](../../../C02-permissions/02-authz-mechanism.md)）；
 - 把数据写入全局 `authStore`（已存在则用本次刷新覆盖）。
 
 ## 4. 4 态

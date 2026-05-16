@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/auth/admin/01-overview.md -->
 
-# C05 · 01 总览 · `auth`
+# C06 · 01 总览 · `auth`
 
 ## 1. 一句话
 

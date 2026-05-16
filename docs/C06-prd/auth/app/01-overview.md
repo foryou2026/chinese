@@ -16,7 +16,7 @@
 
 ## 3. 不在范围
 
-详 [C01 §3 范围外](../../C01-requirements/auth/app/notes.md)。
+详 [C01 §3 范围外](../../../C01-requirements/auth/app/notes.md)。
 
 ## 4. 关键指标
 

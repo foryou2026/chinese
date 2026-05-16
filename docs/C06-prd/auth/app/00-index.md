@@ -1,8 +1,8 @@
 <!-- TARGET-PATH: docs/C06-prd/auth/app/00-index.md -->
 
-# C05 · `auth` PRD
+# C06 · `auth` PRD
 
-> **阶段**：C05-E · **feature**：`auth`  
+> **阶段**：C06-E · **feature**：`auth`  
 > **上游**：C01 / C02 / C03 / B0* 全部基础规范  
 > **冻结状态**：已冻结 · 2026-05-16
 

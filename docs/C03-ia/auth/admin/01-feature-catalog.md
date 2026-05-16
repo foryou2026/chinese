@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C03-ia/auth/admin/01-feature-catalog.md -->
 
-# C02 · 模块清单 · `auth`
+# C03 · 模块清单 · `auth`
 
 | M-ID | slug | 说明 | 覆盖 R-ID |
 |------|------|------|-----------|

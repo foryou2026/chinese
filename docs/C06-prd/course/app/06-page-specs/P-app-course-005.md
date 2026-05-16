@@ -46,7 +46,7 @@
 
 > 本字段在 D 阶段产出后再回填;当前仅占位。前端编码可直接从 C03 + C04 HTML 静态片段推导。
 
-## 7. 视觉 / 组件(↑ B04)
+## 7. 视觉 / 组件(↑ B03)
 
 - 主要组件:见 [`C04-pages/course/app/P-app-course-005.md` §视觉与组件](../../../../C04-pages/course/app/P-app-course-005.md)。
 - 组件契约:[`B03-design/design-system/05-components/`](../../../../B03-design/design-system/05-components/)(Round 4 已实质化)。

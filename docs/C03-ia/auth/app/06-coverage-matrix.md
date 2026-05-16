@@ -5,7 +5,7 @@
 > **冻结状态**：已冻结 · 2026-05-16  
 > 此表是 D03 V01 上游链一致性校验的输入。
 >
-> **ID 缩写约定**:本文件内 `R-NNN` = `R-auth-NNN`;`P-NNN` = `P-app-auth-NNN`;`M-NN` = `M-auth-app-NN`;`FL-NN` = `FL-auth-app-NN`;`SM-NN` = `SM-auth-app-NN`。完整 ID 见 [`C01/baseline.md`](../../C01-requirements/auth/app/notes.md) 与 [`04-pages.md`](./04-pages.md)。
+> **ID 缩写约定**:本文件内 `R-NNN` = `R-auth-NNN`;`P-NNN` = `P-app-auth-NNN`;`M-NN` = `M-auth-app-NN`;`FL-NN` = `FL-auth-app-NN`;`SM-NN` = `SM-auth-app-NN`。完整 ID 见 [`C01 baseline`](../../../C01-requirements/auth/baseline.md) / [`C01 app/notes`](../../../C01-requirements/auth/app/notes.md) 与 [`04-pages.md`](./04-pages.md)。
 
 | R-ID | M | Flow | SM | page-id |
 |------|---|------|----|---------|

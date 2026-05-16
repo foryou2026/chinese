@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C02-permissions/03-authz-mechanism.md -->
+<!-- TARGET-PATH: docs/C02-permissions/02-authz-mechanism.md -->
 
 # 03 · 权限校验机制
 

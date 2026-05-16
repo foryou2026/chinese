@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C03-ia/auth/admin/03-state-machines.md -->
 
-# C02 · 状态机清单 · `auth`
+# C03 · 状态机清单 · `auth`
 
 | SM-ID | 标题 | 状态 | 转移 |
 |-------|------|------|------|
