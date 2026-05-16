@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-app-course-008.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/app/P-app-course-008.md -->
 
 # P-app-course-008 · 我的(统计 / 账单 / 设置)
 

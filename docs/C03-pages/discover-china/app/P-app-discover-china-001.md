@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/discover-china/P-app-discover-china-001.md -->
+<!-- TARGET-PATH: docs/C03-pages/discover-china/app/P-app-discover-china-001.md -->
 
 # `P-app-discover-china-001` · 12 类目卡片页
 

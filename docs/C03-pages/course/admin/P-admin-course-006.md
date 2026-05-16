@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-admin-course-006.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/admin/P-admin-course-006.md -->
 
 # P-admin-course-006 · 学员举报处理
 

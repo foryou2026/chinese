@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-admin-course-001.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/admin/P-admin-course-001.md -->
 
 # P-admin-course-001 · 课程目录总览
 

@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/discover-china/P-admin-discover-china-004.md -->
+<!-- TARGET-PATH: docs/C03-pages/discover-china/admin/P-admin-discover-china-004.md -->
 
 # `P-admin-discover-china-004` · 全局搜索结果聚合
 

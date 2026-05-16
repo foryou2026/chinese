@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-admin-course-004.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/admin/P-admin-course-004.md -->
 
 # P-admin-course-004 · KP 列表 + Drawer
 

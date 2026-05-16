@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-app-course-004.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/app/P-app-course-004.md -->
 
 # P-app-course-004 · SRS 今日复习
 

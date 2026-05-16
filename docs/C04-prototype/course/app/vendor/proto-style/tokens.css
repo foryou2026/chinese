@@ -1,0 +1,66 @@
+/* TARGET-PATH: docs/B04-design/prototype-style/tokens.css
+ * 翻译自 docs/B04-design/design-system/01-tokens.md
+ * 同步源 system/packages/ui-kit/src/tokens/tokens.css
+ */
+:root {
+  /* Fonts */
+  --font-sans: "Inter","Be Vietnam Pro","Noto Sans Thai Looped","Noto Sans SC",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-serif: "Noto Serif SC","Source Han Serif SC",Georgia,serif;
+  --font-mono: "JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  /* Text scale */
+  --text-display: 36px; --text-h1: 28px; --text-h2: 22px; --text-h3: 18px;
+  --text-body: 14px; --text-body-lg: 16px; --text-caption: 12px;
+  --text-table: 14px; --text-button: 14px; --text-tag: 12px;
+  /* Space (4px grid) */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px;
+  --space-page-x-mobile: 16px; --space-page-x-desktop: 32px; --space-page-y: 24px;
+  /* Radius */
+  --radius-sm: 6px; --radius-md: 12px; --radius-lg: 18px; --radius-pill: 9999px;
+  /* Motion */
+  --motion-fast: 120ms cubic-bezier(0.2,0.8,0.2,1);
+  --motion-base: 200ms cubic-bezier(0.2,0.8,0.2,1);
+  --motion-slow: 320ms cubic-bezier(0.16,1,0.3,1);
+  /* Glass */
+  --glass-blur-sm: blur(10px) saturate(140%);
+  --glass-blur-md: blur(18px) saturate(150%);
+  --glass-blur-lg: blur(28px) saturate(160%);
+  --glass-noise-opacity: 0.025;
+}
+
+/* Light mode (default) */
+:root, :root[data-theme="light"] {
+  color-scheme: light;
+  --bg-app: #FFFFFF;
+  --bg-app-tint: #F6F6F7;
+  --bg-surface: rgba(255,255,255,0.62);
+  --bg-surface-strong: rgba(255,255,255,0.82);
+  --bg-overlay: rgba(0,0,0,0.32);
+  --bg-hover: rgba(0,0,0,0.04);
+  --bg-active: rgba(0,0,0,0.08);
+  --text-primary: #0E0E11;
+  --text-secondary: #52525B;
+  --text-tertiary: #9A9AA3;
+  --text-disabled: #C7C7CC;
+  --text-on-brand: #FFFFFF;
+  --border-subtle: rgba(15,15,20,0.08);
+  --border-strong: rgba(15,15,20,0.18);
+  --ring: rgba(255,36,66,0.45);
+  --brand: #FF2442;
+  --brand-hover: #E61E3B;
+  --brand-active: #CC1A34;
+  --brand-soft: rgba(255,36,66,0.10);
+  --brand-soft-strong: rgba(255,36,66,0.18);
+  --brand-on: #FFFFFF;
+  --success: #16A34A; --success-soft: rgba(22,163,74,0.10);
+  --warning: #D97706; --warning-soft: rgba(217,119,6,0.10);
+  --danger: var(--brand); --danger-soft: var(--brand-soft);
+  --info: var(--text-secondary);
+  --glass-bg: var(--bg-surface);
+  --glass-bg-strong: var(--bg-surface-strong);
+  --glass-border: 1px solid var(--border-subtle);
+  --glass-edge: inset 0 1px 0 rgba(255,255,255,0.40);
+  --shadow-sm: 0 1px 2px rgba(15,15,20,0.04), 0 1px 1px rgba(15,15,20,0.03);
+  --shadow-md: 0 6px 18px rgba(15,15,20,0.08);
+  --shadow-lg: 0 18px 48px rgba(15,15,20,0.14);
+}

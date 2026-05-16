@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-admin-course-002.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/admin/P-admin-course-002.md -->
 
 # P-admin-course-002 · 主题-阶段-章-节四级列表
 

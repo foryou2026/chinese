@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-app-course-002.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/app/P-app-course-002.md -->
 
 # P-app-course-002 · 学习地图 + 节内学习
 

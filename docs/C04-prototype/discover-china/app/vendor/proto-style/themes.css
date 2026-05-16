@@ -1,0 +1,40 @@
+/* TARGET-PATH: docs/B04-design/prototype-style/themes.css
+ * Dark theme override + reduced-motion
+ */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-app: #0A0A0B;
+  --bg-app-tint: #111114;
+  --bg-surface: rgba(18,18,22,0.55);
+  --bg-surface-strong: rgba(20,20,24,0.78);
+  --bg-overlay: rgba(0,0,0,0.55);
+  --bg-hover: rgba(255,255,255,0.06);
+  --bg-active: rgba(255,255,255,0.10);
+  --text-primary: #F4F4F5;
+  --text-secondary: #A1A1AA;
+  --text-tertiary: #6B6B73;
+  --text-disabled: #4A4A52;
+  --border-subtle: rgba(255,255,255,0.10);
+  --border-strong: rgba(255,255,255,0.22);
+  --ring: rgba(255,59,92,0.55);
+  --brand: #FF3B5C;
+  --brand-hover: #FF5470;
+  --brand-active: #E62945;
+  --brand-soft: rgba(255,59,92,0.14);
+  --brand-soft-strong: rgba(255,59,92,0.22);
+  --success: #22C55E; --success-soft: rgba(34,197,94,0.16);
+  --warning: #F59E0B; --warning-soft: rgba(245,158,11,0.16);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.50);
+  --shadow-md: 0 6px 18px rgba(0,0,0,0.55);
+  --shadow-lg: 0 18px 48px rgba(0,0,0,0.65);
+  --glass-edge: inset 0 1px 0 rgba(255,255,255,0.06);
+  --glass-noise-opacity: 0.04;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

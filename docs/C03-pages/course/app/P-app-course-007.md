@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-app-course-007.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/app/P-app-course-007.md -->
 
 # P-app-course-007 · 考试答题 / 倒计时
 

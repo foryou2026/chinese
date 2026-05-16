@@ -7,6 +7,54 @@
 
 ---
 
+## 2026-05-16 · 批次 9 · 多 surface 结构合规修正(Round 1 + Round 2)
+
+> **背景**:用户审计指出 `discover-china` 与 `course` 两个 feature 未按 [`prompt/A-framework/A00-04-文档目录规划.md §四.5`](../../prompt/A-framework/A00-04-文档目录规划.md) 的多 surface 变体规则拆分(仅 `*-auth` 已正确按 `app-auth` / `admin-auth` 拆),违反 [`docs/B01-architecture/08-surfaces.md`](../B01-architecture/08-surfaces.md) 中"app + admin 双端独立"的架构定调。本次执行结构性修正,**不允许任何分期或延后**。
+
+### Round 1 · 物理迁移(目录/文件搬运 + TARGET-PATH 修正)
+
+| 范围 | 操作 | 数量 |
+| ---- | ---- | ---- |
+| `C02-ia/{course,discover-china}/` | 新建 `_shared/`,迁入 `state-machines.md`(原 03-)与 `flows-shared.md`(02-flows 副本);新建 `{app,admin}/` 骨架 | 4 _shared 文件 + 4 surface 目录 |
+| `C03-pages/{course,discover-china}/` | 新建 `{app,admin}/`,按 `P-app-*` / `P-admin-*` 命名分发 | 24 文件迁移(course 8+9,discover-china 3+4) |
+| `C04-prototype/course/` | 新建 `{app,admin}/{vendor/proto-style,pages,states,assets}/`,从 [`function/02-course/ai/F4-AI-原型设计/`](../../function/02-course/ai/F4-AI-原型设计/) 拷贝 17 HTML(P-A-* → admin,P-C-* → app),vendor 从 [`docs/B04-design/prototype-style/`](../B04-design/prototype-style/) 拷,补 `index.html` / `feature.css` / `feature.js` / `mock-data.js` / `README.md` / `changelog.md` | 每 surface 一套 |
+| `C04-prototype/discover-china/` | 把原平铺 `pages/` / `states/` / `vendor/` / `index.html` 按 surface 拆到 `{app,admin}/` 各自独立目录 | 7 HTML 拆 + 25 states 拆 + 2 套 vendor |
+| `C05-prd/{course,discover-china}/` | 新建 `_shared/` 与 `{app,admin}/06-page-specs/` 骨架 | 12 目录 |
+| `D02-api/{course,discover-china}/03-endpoints/` | 拆到 `{app,admin,internal}/03-endpoints/`,按 OP-ID 前缀分发 | 16 endpoint 文件迁移(course 10,discover-china 6) |
+| `D03-validation/{course,discover-china}/` | 新建 `{app,admin}/` 骨架 | 4 目录 |
+| 全量 `TARGET-PATH` 注释 | Python 脚本批量精确替换被迁文件的 HTML 注释头 | 50 文件修正 |
+
+### Round 2 · 内容拆分(根级 → surface,删除根级)
+
+| 范围 | 操作 | 数量 |
+| ---- | ---- | ---- |
+| `C02-ia/{course,discover-china}/{01-feature-catalog,02-flows,04-pages,05-navigation,06-coverage-matrix}.md` | 拷到 `{app,admin}/` 各一份(初版相同,Round 3+ 按端过滤),`TARGET-PATH` 更新,根级删除,加 surface banner | 20 文件 |
+| `D02-api/{course,discover-china}/{01-routes-delta,02-overview}.md` | 拷到 `{app,admin}/` 各一份,根级删除 | 8 文件 |
+| `D03-validation/{course,discover-china}/{01,02,03}.md` | 拷到 `{app,admin}/` 各一份,根级删除 | 12 文件 |
+| `C05-prd/{course,discover-china}/PRD.md` | **大爆炸**:按第 1..12 章拆成 12 文件 × 2 surface(00-index / 01-overview / 02-glossary / 03-personas / 04-feature-catalog / 05-user-journeys / 06-page-specs/00-index / 07-business-rules / 08-roles-permissions / 09-design-summary / 10-known-issues / 11-roadmap / 12-changelog),`_shared/` 同步 `glossary.md`(第 2 章)与 `business-rules.md`(第 7 章),根 PRD.md 删除 | 60 surface 文件 + 4 _shared 文件 |
+| `B04-design/design-system/` | 文件重命名以对齐 [`prompt/A-framework/A00-04-文档目录规划.md §四`](../../prompt/A-framework/A00-04-文档目录规划.md):`04-status-components.md` → `04-status-colors.md`、`05-interactions.md` → `06-interactions.md`、`06-responsive-dark.md` → `07-responsive-dark.md`、`07-icons-imagery.md` → `99-extension-icons-imagery.md`(标记为非规范扩展) | 4 文件重命名 + TARGET-PATH 修 |
+| `B04-design/design-system/05-components/` | 新建 13 文件骨架(00-index + 01-buttons / 02-forms / 03-tables / 04-modals / 05-drawers / 06-toasts-alerts / 07-empty-loading / 08-popovers-tooltips / 09-avatars-badges-tags / 10-tabs-accordion / 11-cards-glass / 12-decorations) | 13 文件 |
+
+### 影响与回链
+- **F 层(B04-design 重命名)触发**:已开工 feature(`app-auth` / `admin-auth` / `course` / `discover-china`)的 D03 V 链路需在 Round 3 重跑校验交叉引用是否仍命中(组件引用现需指向 `05-components/<file>` 而非旧 `04-status-components.md`)。
+- **多 surface 修正不破坏 D01**(数据模型按 feature 共享,本身就是 single,无需拆 surface)。
+- **C04-prototype** 每 surface 独立 `vendor/proto-style/` 已就位,但 `index.html` / `feature.css` / `feature.js` / `mock-data.js` 当前是占位/原版拷贝,Round 4 将按各 surface 真实 page-id 重写。
+
+### 后续 Round 3+ 待办(已记入待办列表)
+1. C02-ia / C05-prd / D02-api 各 surface 文件按端过滤实质内容(剔除对端独有的 page / endpoint / 业务规则);
+2. C05-prd 各 surface 的 `06-page-specs/` 按 page-id 展开单页 spec 文件;
+3. D03-validation 各 surface 重写校验链路(`01-upstream-chain` / `02-module-closure` / `03-prd-traceability`)以反映 surface 拆分;
+4. B04 `05-components/` 13 文件由骨架填实质内容(源:`grules/G2-视觉与交互风格/04-状态与组件.md`);
+5. C04-prototype 各 surface 的 `feature.css` / `feature.js` / `mock-data.js` 按 OP-ID 实质化;
+6. 全量 `D03-V` 重跑(F 层变更影响)。
+
+### 反思 / 教训
+- 初次"全面检查"声明 PASS 是错误的,未对照 [`A00-04 §四.5`](../../prompt/A-framework/A00-04-文档目录规划.md) 的多 surface 变体规则。
+- 复审应优先检查"多 surface feature 是否物理拆 app/admin/_shared",而非只看"文件命名是否含 page-id"。
+- 后续每次冻结前,V 链路必须强制对照 A00-04 §四(单 surface)与 §四.5(多 surface)的 21 条 + 12 条结构契约。
+
+---
+
 ## 2026-05-16 · 批次 8 · `course` D-phase 完整冻结
 
 > 反向回写"课程学习引擎"全部 D-phase(D01..D03)。信息源:[`function/02-course/ai/F1-AI-数据模型规范/`](../../function/02-course/ai/F1-AI-数据模型规范/)(13 文件,2545 行) + [`function/02-course/ai/F2-AI-接口规范/`](../../function/02-course/ai/F2-AI-接口规范/)(13 文件,2473 行)。

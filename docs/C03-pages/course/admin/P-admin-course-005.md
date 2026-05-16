@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-admin-course-005.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/admin/P-admin-course-005.md -->
 
 # P-admin-course-005 · 题目列表 + 双开预览
 

@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-app-course-001.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/app/P-app-course-001.md -->
 
 # P-app-course-001 · 首页 / 主题切换 / 引导入口
 

@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/discover-china/P-admin-discover-china-001.md -->
+<!-- TARGET-PATH: docs/C03-pages/discover-china/admin/P-admin-discover-china-001.md -->
 
 # `P-admin-discover-china-001` · 管理端 12 类目卡片
 

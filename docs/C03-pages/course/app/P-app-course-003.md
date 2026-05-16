@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-app-course-003.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/app/P-app-course-003.md -->
 
 # P-app-course-003 · KP 详情 / 卡片浏览
 

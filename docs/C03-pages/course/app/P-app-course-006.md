@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-app-course-006.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/app/P-app-course-006.md -->
 
 # P-app-course-006 · 考试中心入口 + 列表
 

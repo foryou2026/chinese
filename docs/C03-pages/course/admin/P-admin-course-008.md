@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-admin-course-008.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/admin/P-admin-course-008.md -->
 
 # P-admin-course-008 · 考试中心管理(分层)
 

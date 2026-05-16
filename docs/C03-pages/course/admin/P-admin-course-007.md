@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/course/P-admin-course-007.md -->
+<!-- TARGET-PATH: docs/C03-pages/course/admin/P-admin-course-007.md -->
 
 # P-admin-course-007 · 媒资库
 

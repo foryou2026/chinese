@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/discover-china/P-app-discover-china-003.md -->
+<!-- TARGET-PATH: docs/C03-pages/discover-china/app/P-app-discover-china-003.md -->
 
 # `P-app-discover-china-003` · 文章逐句详情 + TTS
 
