@@ -1,0 +1,422 @@
+file	D1	D2	D3	D4	D5	D6	D7	D8	D9	D10	D11	D12	D13	D14	D15	D16	D17	count
+docs/A00-meta/changelog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/A00-meta/consistency-audit-2026-05-16-round2.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/A00-meta/consistency-audit-2026-05-16-round3.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/A00-meta/consistency-audit-2026-05-16-round5.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/A00-meta/consistency-audit-2026-05-16.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/A00-meta/glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/A00-meta/questions/A-questions-round1-resolved.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/01-tech-stack.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/02-project-structure.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/03-database.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/04-api-conventions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/05-coding-standards.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/06-deploy-env.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/07-i18n-responsive.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/08-surfaces.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/09-auth-infra.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B01-architecture/_input/preferences.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B02-ux/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B02-ux/01-direction.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B02-ux/02-references.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B02-ux/03-anti-examples.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B02-ux/04-voice-tone.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B02-ux/05-moodboard.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B02-ux/06-experience-principles.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B02-ux/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B02-ux/_input/style-input.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/_input/visual-input.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/01-tokens.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/02-layout.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/03-navigation.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/04-status-colors.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/01-buttons.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/02-forms.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/03-tables.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/04-modals.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/05-drawers.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/06-toasts-alerts.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/07-empty-loading.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/08-popovers-tooltips.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/09-avatars-badges-tags.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/10-tabs-accordion.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/11-cards-glass.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/05-components/12-decorations.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/06-interactions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/07-responsive-dark.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/design-system/99-extension-icons-imagery.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/B03-design/prototype-style/README.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/_input/admin-draft.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/_input/app-draft.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/admin/notes.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/app/notes.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/baseline.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/flows/admin-exception-flow.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/flows/admin-main-flow.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/flows/app-exception-flow.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/auth/flows/app-main-flow.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/course/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/course/_input/draft.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/course/baseline.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/course/flows/exception-flow.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/course/flows/main-flow.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/discover-china/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/discover-china/_input/draft.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/discover-china/baseline.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/discover-china/flows/exception-flow.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C01-requirements/discover-china/flows/main-flow.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C02-permissions/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C02-permissions/01-roles.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C02-permissions/02-authz-mechanism.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C02-permissions/03-data-model.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C02-permissions/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C02-permissions/_input/roles-input.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/_input/admin-page-direction.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/_input/app-page-direction.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/_shared/flows-shared.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/_shared/state-machines.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/admin/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/admin/01-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/admin/02-flows.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/admin/03-state-machines.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/admin/04-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/admin/05-navigation.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/admin/06-coverage-matrix.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/admin/07-error-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/admin/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/app/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/app/01-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/app/02-flows.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/app/03-state-machines.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/app/04-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/app/05-navigation.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/app/06-coverage-matrix.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/app/07-error-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/auth/app/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/07-error-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/_input/draft.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/_shared/flows-shared.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/_shared/state-machines.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/admin/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/admin/01-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/admin/02-flows.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/admin/04-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/admin/05-navigation.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/admin/06-coverage-matrix.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/admin/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/app/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/app/01-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/app/02-flows.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/app/04-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/app/05-navigation.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/app/06-coverage-matrix.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/course/app/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/07-error-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/_input/page-direction.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/_shared/flows-shared.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/_shared/state-machines.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/admin/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/admin/01-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/admin/02-flows.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/admin/04-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/admin/05-navigation.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/admin/06-coverage-matrix.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/admin/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/app/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/app/01-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/app/02-flows.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/app/04-pages.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/app/05-navigation.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/app/06-coverage-matrix.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C03-ia/discover-china/app/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/_input/P-admin-auth-001-desc.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/_input/P-app-auth-001-desc.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/admin/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/admin/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/admin/P-admin-auth-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/admin/P-admin-auth-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/admin/P-admin-auth-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/admin/P-admin-auth-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-001.scenarios.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-005.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-006.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-007.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-008.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/auth/app/P-app-auth-009.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/_input/draft.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/P-admin-course-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/P-admin-course-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/P-admin-course-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/P-admin-course-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/P-admin-course-005.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/P-admin-course-006.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/P-admin-course-007.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/P-admin-course-008.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/admin/P-admin-course-009.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/P-app-course-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/P-app-course-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/P-app-course-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/P-app-course-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/P-app-course-005.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/P-app-course-006.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/P-app-course-007.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/course/app/P-app-course-008.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/_input/desc.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/admin/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/admin/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/admin/P-admin-discover-china-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/admin/P-admin-discover-china-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/admin/P-admin-discover-china-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/admin/P-admin-discover-china-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/app/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/app/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/app/P-app-discover-china-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/app/P-app-discover-china-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C04-pages/discover-china/app/P-app-discover-china-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C05-prototype/auth/_input/admin-prototype-direction.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C05-prototype/auth/_input/app-prototype-direction.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C05-prototype/course/_input/draft.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C05-prototype/discover-china/_input/prototype-direction.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/_global-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/_glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/_input/admin-prd-context.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/_input/app-prd-context.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/_shared/business-rules.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/_shared/glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/01-overview.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/02-glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/03-personas.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/04-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/05-user-journeys.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/06-page-specs/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/06-page-specs/P-admin-auth-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/06-page-specs/P-admin-auth-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/06-page-specs/P-admin-auth-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/06-page-specs/P-admin-auth-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/07-business-rules.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/08-roles-permissions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/09-design-summary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/10-known-issues.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/11-changelog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/admin/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/01-overview.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/02-glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/03-personas.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/04-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/05-user-journeys.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/P-app-auth-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/P-app-auth-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/P-app-auth-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/P-app-auth-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/P-app-auth-005.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/P-app-auth-006.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/P-app-auth-007.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/P-app-auth-008.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/06-page-specs/P-app-auth-009.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/07-business-rules.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/08-roles-permissions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/09-design-summary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/10-known-issues.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/11-changelog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/auth/app/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/_input/draft.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/_shared/business-rules.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/_shared/glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/01-overview.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/02-glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/03-personas.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/04-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/05-user-journeys.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/P-admin-course-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/P-admin-course-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/P-admin-course-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/P-admin-course-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/P-admin-course-005.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/P-admin-course-006.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/P-admin-course-007.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/P-admin-course-008.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/06-page-specs/P-admin-course-009.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/07-business-rules.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/08-roles-permissions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/09-design-summary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/10-known-issues.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/11-changelog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/admin/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/01-overview.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/02-glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/03-personas.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/04-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/05-user-journeys.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/06-page-specs/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/06-page-specs/P-app-course-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/06-page-specs/P-app-course-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/06-page-specs/P-app-course-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/06-page-specs/P-app-course-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/06-page-specs/P-app-course-005.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/06-page-specs/P-app-course-006.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/06-page-specs/P-app-course-007.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/06-page-specs/P-app-course-008.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/07-business-rules.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/08-roles-permissions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/09-design-summary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/10-known-issues.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/11-changelog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/course/app/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/_input/background.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/_shared/business-rules.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/_shared/glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/01-overview.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/02-glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/03-personas.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/04-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/05-user-journeys.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/06-page-specs/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/06-page-specs/P-admin-discover-china-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/06-page-specs/P-admin-discover-china-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/06-page-specs/P-admin-discover-china-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/06-page-specs/P-admin-discover-china-004.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/07-business-rules.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/08-roles-permissions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/09-design-summary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/10-known-issues.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/11-changelog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/admin/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/01-overview.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/02-glossary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/03-personas.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/04-feature-catalog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/05-user-journeys.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/06-page-specs/00-index.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/06-page-specs/P-app-discover-china-001.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/06-page-specs/P-app-discover-china-002.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/06-page-specs/P-app-discover-china-003.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/07-business-rules.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/08-roles-permissions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/09-design-summary.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/10-known-issues.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/11-changelog.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C06-prd/discover-china/app/99-open-questions.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/A-framework/A00-00-README.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/A-framework/A00-01-框架总览.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/A-framework/A00-02-端到端工作流.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/A-framework/A00-03-通用约定.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/A-framework/A00-04-文档目录规划.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/B-foundation/B01-A01-用户输入-技术偏好.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/B-foundation/B01-A02-AI澄清-架构提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/B-foundation/B01-A03-AI输出-架构规范.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/B-foundation/B02-X01-用户输入-体验风格.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/B-foundation/B02-X02-AI澄清-体验提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/B-foundation/B02-X03-AI输出-体验定调.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/B-foundation/B03-S01-用户输入-视觉偏好.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/B-foundation/B03-S02-AI澄清-视觉提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/B-foundation/B03-S03-AI输出-设计系统.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C01-R01-用户输入-需求初稿.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C01-R02-AI澄清-需求提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C01-R03-AI输出-需求基线.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C02-P01-用户输入-角色描述.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C02-P02-AI澄清-权限提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C02-P03-AI输出-权限规范.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C03-I01-用户输入-信息架构方向.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C03-I02-AI澄清-信息架构提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C03-I03-AI输出-信息架构.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C04-N01-用户输入-页面描述.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C04-N02-AI澄清-交互提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C04-N03-AI输出-页面交互规范.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C05-H01-用户输入-原型方向.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C05-H02-AI澄清-原型提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C05-H03-AI输出-HTML原型规范.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C06-E01-用户输入-产品背景.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C06-E02-AI澄清-PRD提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/C-product/C06-E03-AI输出-产品需求文档.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/D-develop/D01-D01-用户输入-数据规则.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/D-develop/D01-D02-AI澄清-数据提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/D-develop/D01-D03-AI输出-数据规范.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/D-develop/D02-L01-用户输入-操作逻辑.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/D-develop/D02-L02-AI澄清-接口提问.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/D-develop/D02-L03-AI输出-接口规范.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/D-develop/D03-V01-AI输出-上游链一致性.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/D-develop/D03-V02-AI输出-模块内闭环.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+prompt/D-develop/D03-V03-AI输出-PRD回链校验.md	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	✓	—	✓	✓	✓	0
+docs/C05-prototype/auth/admin/P-admin-auth-001.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/admin/P-admin-auth-002.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/admin/P-admin-auth-003.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/admin/P-admin-auth-004.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/admin/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/P-app-auth-001.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/P-app-auth-002.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/P-app-auth-003.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/P-app-auth-004.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/P-app-auth-005.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/P-app-auth-006.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/P-app-auth-007.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/P-app-auth-008.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/P-app-auth-009.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/app/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/auth/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/P-admin-course-001.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/P-admin-course-002.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/P-admin-course-003.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/P-admin-course-004.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/P-admin-course-005.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/P-admin-course-006.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/P-admin-course-007.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/P-admin-course-008.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/P-admin-course-009.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/admin/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/app/P-app-course-001.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/app/P-app-course-002.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/app/P-app-course-003.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/app/P-app-course-004.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/app/P-app-course-005.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/app/P-app-course-006.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/app/P-app-course-007.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/app/P-app-course-008.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/app/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/course/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/admin/P-admin-discover-china-001.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/admin/P-admin-discover-china-002.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/admin/P-admin-discover-china-003.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/admin/P-admin-discover-china-004.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/admin/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/app/P-app-discover-china-001.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/app/P-app-discover-china-002.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/app/P-app-discover-china-003.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/app/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/discover-china/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0
+docs/C05-prototype/index.html	—	—	—	—	—	—	—	—	—	—	—	—	—	—	✓	✓	—	0

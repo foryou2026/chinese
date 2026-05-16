@@ -19,7 +19,7 @@ Table {
   Header[ 编码 / 拼音 / 中文标题 / 状态 / 句子数 / 更新时间 / 操作 ]
   Row ×N {
     code, pinyin, title_zh, StatusTag(draft|published), sentence_count, 更新时间,
-    Actions[ 编辑(→P-admin-003) / 发布或下架(R-013) / 删除(D-5 确认) ]
+    Actions[ 编辑(→P-admin-discover-china-003) / 发布或下架(R-013) / 删除(D-5 确认) ]
   }
 }
 Pagination
@@ -42,7 +42,7 @@ Pagination
 | error | Retry |
 
 ## 5. 交互
-- **新建文章**:点 → D-1 Modal,字段 `拼音 / 5 语标题`;提交后跳 P-admin-003 编辑;
+- **新建文章**:点 → D-1 Modal,字段 `拼音 / 5 语标题`;提交后跳 P-admin-discover-china-003 编辑;
 - **发布**:`PATCH status=published` → 行刷新 → Toast 成功;
 - **下架**:同上;**且后端清空所有用户该文章进度(R-013)**;UI 弹 D-5 确认"下架将清空所有用户阅读进度,确认?";
 - **删除**:D-5 确认 → 软删 → 行消失;

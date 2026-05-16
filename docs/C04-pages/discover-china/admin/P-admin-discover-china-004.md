@@ -36,7 +36,7 @@ Pagination(双栏各一)
 ## 5. 交互
 - 搜索提交 Enter / 点按钮;
 - scope 切换实时联动后端;
-- 命中行点击 → 跳对应 P-admin-002 或 P-admin-003 + anchor 到句子。
+- 命中行点击 → 跳对应 P-admin-discover-china-002 或 P-admin-discover-china-003 + anchor 到句子。
 
 ## 6. 错误码
 - 422 q 过短(< 2 字)→ 字段内联;
