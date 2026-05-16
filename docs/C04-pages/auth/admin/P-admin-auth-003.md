@@ -20,7 +20,7 @@
 | exchanging | "正在验证链接..." (整页 loading) |
 | idle | 表单可填 |
 | submitting | 按钮 loading |
-| success | 卡片切换为 "密码已重置,即将跳转登录页..." + 3s 自动跳 `/admin/auth/login?email=...` |
+| success | 卡片切换为 "密码已重置,即将跳转登录页..." + 3s 自动跳 管理端登录页（含回跳参数） |
 | token-invalid | 红字 "链接已失效或被使用过" + 按钮 "重新申请" → `/admin/auth/forgot` |
 
 ## 4. 数据流

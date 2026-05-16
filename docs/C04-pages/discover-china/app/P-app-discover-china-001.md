@@ -34,7 +34,7 @@ Grid(.card-grid) {
 
 ## 3. 数据
 
-- `GET china/categories` → `[{ code, name_i18n, description_i18n, needs_login }]`(在 D02 定义)
+- `GET china/categories` → `[{ code, 多语名称字段, description_i18n, needs_login }]`(在 D02 定义)
 - 显示语言由 i18n hook 决定。
 
 ## 4. 状态
@@ -78,6 +78,6 @@ Grid(.card-grid) {
 
 ## 10. 多语言
 
-- 卡片标题:`name_i18n[currentLang]` || `name_i18n.en` 兜底;
+- 卡片标题:多语名称字段[currentLang]` || 多语名称字段.en` 兜底;
 - 介绍同上;
 - 中文用户仅显示中文标题(隐藏 h3 本地语)。

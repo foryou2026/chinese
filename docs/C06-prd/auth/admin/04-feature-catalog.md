@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/auth/admin/04-feature-catalog.md -->
 
-# 04 · 功能模块(MoSCoW)· auth / **admin**
+# 04 · 功能模块()· auth / **admin**
 
 > 单 surface 退化形态。与 auth 完全隔离的 Auth 项目。
 

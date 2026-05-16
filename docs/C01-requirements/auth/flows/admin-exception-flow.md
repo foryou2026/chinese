@@ -1,75 +1,39 @@
-<!-- TARGET-PATH: docs/C01-requirements/auth/flows/exception-flow.md -->
+<!-- TARGET-PATH: docs/C01-requirements/auth/flows/admin-exception-flow.md -->
 
-# C01 · 异常流程 · `auth`
+# `auth` · admin 端 · 异常流程（业务叙述）
+
+> 流程图与详细状态机详见 [../../../C03-ia/auth/](../../../C03-ia/auth/)。本文仅以业务语言描述用户场景。
+
+> **覆盖 R-ID**：R-auth-003 · 006 · 007 · 010
 
 ---
 
-## 1. 非 super_admin 角色登录 (R-001/002)
+## 1. 普通用户在 admin 入口登入
 
-```mermaid
-flowchart TD
-  A[user 账号 尝试 /admin/auth/login] --> B[signInWithPassword ok]
-  B --> C{role==='super_admin'?}
-  C -->|no| D[立即 signOut]
-  D --> E[Toast AUTH_USE_USER_ENTRY · 红字: 请使用用户入口登录]
-  E --> F[clear cookies + 留在登录页 not-admin 态]
-```
+1. 普通用户在 admin 登录页输入正确账号密码并提交。
+2. 系统密码校验通过后立即识别"非管理员身份"。
+3. 系统强制登出该会话并提示"请使用用户入口登录"。
+4. 该尝试被记入审计。
 
-## 2. 锁定 (R-005)
+## 2. 管理员连续输错密码
 
-```mermaid
-flowchart TD
-  A[连续 5 次密码错误 15min 内] --> B[POST login-attempt-record]
-  B --> C[AUTH_LOGIN_RATE_LIMITED with retryAfter]
-  C --> D[页面 locked 态 + 显示剩余分钟数]
-```
+1. 管理员在短时间内多次输错密码。
+2. 系统触发自锁并在登录页明确剩余时间。
+3. 自锁期间所有该账号的登入请求被拒。
 
-## 3. 禁用账号 (R-005)
+## 3. 找回密码链接失效
 
-```mermaid
-flowchart TD
-  A[运维 SQL 把 zhiyu.profiles.is_active=false] --> B[管理员尝试登录]
-  B --> C[login-attempt-record 查 disabledCache]
-  C --> D[AUTH_ACCOUNT_DISABLED]
-  D --> E[页面 error 态 + Toast 请联系超级管理员]
-```
+1. 管理员点击的找回链接已过期或已被使用过。
+2. 系统跳到"链接已过期"页并给出重新发起入口。
 
-## 4. 第 4 设备 → 踢最早 (R-004)
+## 4. 未登录访问受守卫页
 
-```mermaid
-flowchart TD
-  A[管理员 已在 3 个 admin 设备登录] --> B[第 4 处登录成功]
-  B --> C[session-register: SELECT FOR UPDATE SKIP LOCKED]
-  C --> D[DELETE oldest user_sessions where surface='admin']
-  D --> E[落 audit: admin.session_kicked]
-  E -. 被踢端 10s 轮询 .-> F[session-status: 401]
-  F --> G[跳 /admin/auth/login?kicked=1]
-```
+1. 管理员（或非管理员）直接访问 admin 受守卫页。
+2. 守卫层将其跳回 admin 登录页并保留回跳目标。
+3. 若登入后身份校验不通过，则按 §1 处理。
 
-## 5. 重置链接过期 (R-006)
+## 5. 账号被禁用
 
-```mermaid
-flowchart TD
-  A([/admin/auth/reset-password?token=expired]) --> B[exchangeCodeForSession]
-  B --> C[AUTH_TOKEN_INVALID]
-  C --> D[token-invalid 态: 链接已过期 + 重新申请按钮]
-  D --> E[跳 /admin/auth/forgot]
-```
-
-## 6. 守卫拦截 (R-009)
-
-```mermaid
-flowchart TD
-  A[未登录访问 /admin/users] --> B[_admin loader assertSession]
-  B --> C[AUTH_NOT_AUTHED]
-  C --> D[跳 /admin/auth/login?redirect=%2Fadmin%2Fusers]
-  D --> E[登录成功后 redirect 回 /admin/users]
-```
-
-## 7. 5xx 兜底
-
-```mermaid
-flowchart TD
-  A[任意 admin 接口 5xx] --> B[Toast 系统繁忙 · trace_id]
-  B --> C[按钮回到可点状态 + 保留输入]
-```
+1. 已禁用账号尝试登入被系统拒绝。
+2. 该账号下所有活跃会话同时失效。
+3. 审计记录禁用拒登事件。

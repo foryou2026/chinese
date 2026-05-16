@@ -1,3 +1,7 @@
-## C01 auth feature · 待确认问题
+<!-- TARGET-PATH: docs/C01-requirements/auth/99-open-questions.md -->
 
-（合并自 app-auth / admin-auth 旧目录；当前均为空）
+# `auth` · 待确认问题
+
+> 本节为空 → 可冻结。非空 → 必须回到澄清协议补答。
+
+（当前无未决问题。）

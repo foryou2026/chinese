@@ -16,7 +16,7 @@
 
 ## 媒资
 
-| R-019 | 上传按 sha256 去重；命中显示原始上传者（`super_admin` 可查）|
+| R-019 | 上传按 sha256 去重；命中显示原始上传者（`admin` 可查）|
 
 ## 审核
 
@@ -25,10 +25,10 @@
 
 ## 发布 / 回滚
 
-| R-030 | 已发布资源由 `super_admin` 二次确认后 unpublish，不设时间阈值 |
-| R-021 | 全局搜索范围 = 全量（`super_admin` 一肃挑，无 scope 划分）|
+| R-030 | 已发布资源由 `admin` 二次确认后 unpublish，不设时间阈值 |
+| R-021 | 全局搜索范围 = 全量（`admin` 一肃挑，无 scope 划分）|
 
 ## 权限
 
-| R-028 | `/api/admin/course/*` 全量要求 `role === 'super_admin'`；其他角色返 403 |
+| R-028 | `/api/admin/course/*` 全量要求 `role === 'admin'`；其他角色返 403 |
 | R-029 | DB 走 service_role 跳 RLS；路由进入前中间件已鉴权 |

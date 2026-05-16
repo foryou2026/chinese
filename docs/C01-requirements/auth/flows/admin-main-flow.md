@@ -1,65 +1,38 @@
-<!-- TARGET-PATH: docs/C01-requirements/auth/flows/main-flow.md -->
+<!-- TARGET-PATH: docs/C01-requirements/auth/flows/admin-main-flow.md -->
 
-# C01 · 主流程 · `auth`
+# `auth` · admin 端 · 主流程（业务叙述）
 
-> 4 条主路径 mermaid 图。详细异常分支见 [`exception-flow.md`](./admin-exception-flow.md)。
+> 流程图与详细状态机详见 [../../../C03-ia/auth/](../../../C03-ia/auth/)。本文仅以业务语言描述用户场景。
+
+> **覆盖 R-ID**：R-auth-003 · 004 · 005 · 007 · 008 · 009 · 010 · 016
 
 ---
 
-## 1. 邮密登录 (R-001 + R-002 + R-004)
+## 1. 管理员登录
 
-```mermaid
-flowchart TD
-  Start([/admin/auth/login]) --> Input[输入邮箱+密码]
-  Input --> Pre[POST /admin/v1/auth/login-attempt-record]
-  Pre -->|locked / disabled| ErrLock[展示锁定/禁用文案]
-  Pre -->|ok| Sb[supabase.auth.signInWithPassword]
-  Sb -->|invalid| ErrCred[AUTH_INVALID_CREDENTIALS 内联]
-  Sb -->|ok| RoleCheck{app_metadata.role==='super_admin'?}
-  RoleCheck -->|no| ForceOut[supabase.auth.signOut + Toast AUTH_USE_USER_ENTRY]
-  RoleCheck -->|yes| Reg[POST /admin/v1/auth/session-register]
-  Reg -->|>3 设备| Kick[Toast 已踢最早设备]
-  Reg --> Redirect[跳 redirect 或 /admin]
-```
+1. 管理员打开 admin 登录页输入邮箱与密码并提交。
+2. 系统先做节流与禁用检查；通过后校验密码。
+3. 密码校验通过后系统立即校验"管理员身份"：是管理员则进入工作台并写入审计；非管理员立即登出并提示"请使用用户入口登录"。
 
-## 2. 忘记密码 → 重置 (R-006)
+## 2. 管理员找回密码
 
-```mermaid
-flowchart TD
-  A([/admin/auth/forgot]) --> B[输入邮箱]
-  B --> C[POST /admin/v1/auth/forgot-password-throttle]
-  C -->|throttled| ErrT[内联节流提示]
-  C -->|ok| D[supabase.auth.resetPasswordForEmail]
-  D --> E[展示 sent 态]
-  E -. 邮件链接 .-> F([/admin/auth/reset-password?token=...])
-  F --> G[exchangeCodeForSession]
-  G -->|expired/invalid| ErrTok[token-invalid 态]
-  G -->|ok| H[updateUser password]
-  H --> I[revoke 其他设备 refresh + Toast 成功]
-  I --> J[跳 /admin/auth/login]
-```
+1. 管理员在登录页点击"忘记密码"，输入邮箱并提交。
+2. 邮件链接 15 分钟一次性有效。
+3. 设置新密码后自动登入，所有其它设备同步登出。
 
-## 3. 改密 (R-007)
+## 3. 管理员修改密码 / 退出
 
-```mermaid
-flowchart TD
-  A([/admin/me]) --> B[输入旧密+新密+重复]
-  B --> C[POST /admin/v1/auth/password]
-  C -->|old wrong| E1[AUTH_INVALID_OLD_PASSWORD 内联]
-  C -->|same as old| E2[AUTH_SAME_AS_OLD_PASSWORD 内联]
-  C -->|weak| E3[AUTH_WEAK_PASSWORD 内联]
-  C -->|ok| D[updateUser + revoke 其他设备]
-  D --> F[Toast 成功 + 留在当前会话]
-```
+1. 管理员在工作台进入"账号设置"修改密码。
+2. 修改成功后系统记录审计；若勾选"全部设备退出"，所有设备 30 秒内被踢回登录页。
+3. 管理员也可在头像菜单直接"本设备退出"或"全部设备退出"。
 
-## 4. 退出 (R-008)
+## 4. 多设备会话与守卫
 
-```mermaid
-flowchart TD
-  A[管理员点 顶栏退出 / 全部退出] --> B{scope?}
-  B -->|local| L1[POST /admin/v1/auth/session-revoke + cookie/clear]
-  B -->|global| G1[POST /admin/v1/auth/logout-global]
-  G1 --> G2[supabase.auth.admin.signOut user_id global + revoke 全部 refresh]
-  L1 --> End([跳 /admin/auth/login])
-  G2 --> End
-```
+1. 管理员每次成功登入都会被计入 admin 端设备数；上限为 3 台。
+2. 第 4 台登入时，最早设备 10 秒内被踢回登录页。
+3. 未登录访问受守卫页时跳回 admin 登录页并保留回跳目标。
+
+## 5. 管理员账号 seed
+
+1. 运维通过约定 seed 流程创建管理员账号；本流程不在产品 UI 内呈现。
+2. 创建完成后管理员按"管理员登录"流程登入。

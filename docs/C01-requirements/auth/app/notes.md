@@ -2,34 +2,34 @@
 
 # `auth` · app 端补充说明
 
-> **阶段**：C01-R · **feature**：`auth` · **surface**：`app`
-> **作用**：仅承载 app 端独有补充；统一基线见 [`../baseline.md`](../baseline.md)。
+> 本文件记录 app surface 在 `auth` feature 上相对 admin 的差异。不重复 `baseline.md`，只列差异。
 
 ---
 
-## 1. app 端专属 R-ID
+## 1. 自助注册可用
 
-| R-ID | 重点 |
-|------|------|
-| `R-auth-001` | 邮箱 + 密码注册 → 邮箱验证 → 首次登入 |
-| `R-auth-002` | Google OAuth 一键注册即登录 |
-| `R-auth-011` | profile 编辑（头像/显示名/偏好语言）|
-| `R-auth-012` | OAuth 回调失败/取消 → 静默回登录页 |
-| `R-auth-013` | 验证 / 重置链接过期 → 「链接已过期」页 |
-| `R-auth-014` | 注册撞已存在邮箱 → 友好提示；找回密码不暴露邮箱存在性 |
-| `R-auth-015` | 「重新发送验证邮件」60s 倒计时 + 60s/1h 双层节流 |
+- app 端支持邮箱注册与 Google 一键登录两种入口。
+- 邮箱注册必须经过邮件验证后才能首次登入；Google 一键不再走邮件验证。
 
-## 2. app 端共有 R-ID 的差异
+## 2. 个人资料维护
 
-| R-ID | app 行为 |
-|------|----------|
-| `R-auth-003` | 不做角色守卫（任何 `profiles.role` 均可登录）|
-| `R-auth-005` | `user_sessions.surface='app'` 维度独立计数 |
-| `R-auth-010` | 守卫跳 `/auth/login?redirect=...`；无角色校验 |
-| `R-auth-008` / `009` | 走 `POST /api/app/me/password` 与 `POST /api/app/me/sign-out` |
+- app 端提供 profile 维护（头像、显示名、偏好语言）。
+- 偏好语言变更后影响应用端默认 UI 语言（5 语之一）。
 
-## 3. 流程文件
+## 3. 移动端优先
 
-- 主流程：[`../flows/app-main-flow.md`](../flows/app-main-flow.md)
-- 异常流：[`../flows/app-exception-flow.md`](../flows/app-exception-flow.md)
-- C02 app：[`../../../C03-ia/auth/app/`](../../../C03-ia/auth/app/)
+- 登录 / 注册 / 找回 / 改密 / 个人中心默认移动端体验优先；横屏 / 大屏只做最小适配。
+
+## 4. 5 语 i18n 覆盖
+
+- 全部错误码 / 提示文案需覆盖 zh / en / vi / th / id。
+- 不通过文案差异让外部判断邮箱是否存在。
+
+## 5. 设备上限独立
+
+- app 端的活跃会话上限 3 台与 admin 端独立计数；互不影响。
+
+## 6. 第三方登录回调
+
+- Google 回调失败 / 用户取消静默回登录页。
+- 回调身份异常给出一次性提示并强制登出。

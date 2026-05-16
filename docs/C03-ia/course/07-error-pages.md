@@ -8,9 +8,9 @@
 |------|---------|------|----------|
 | `empty` | SRS 今日 0 条 / 错题本 0 条 / 节内无 KP | Empty 组件 + 引导按钮 | P-app-course-004/005 · P-admin-course-002 |
 | `403-no-subscription` | 访问非订阅主题 | 强制订阅引导页 + 试学 1 章入口 | P-app-course-002 |
-| `403-no-track-scope` | content_admin 访问 scope 外主题 | 友好拦截 + 申请权限链接 | P-admin-course-002..005 |
+| `403-no-track-scope` | admin 访问 scope 外主题 | 友好拦截 + 申请权限链接 | P-admin-course-002..005 |
 | `404` | 节 code / KP id / 题 id 不存在 | 404 + 返回上一级 | 所有详情类 |
-| `410-unpublished` | 用户端直链访问 `is_published=false` 节 | 410 + "内容已下架" + 回首页 | P-app-course-002, 007 |
+| `410-unpublished` | 用户端直链访问 发布态=false` 节 | 410 + "内容已下架" + 回首页 | P-app-course-002, 007 |
 | `429` | 接口限流(答题接口 ≥ 60 次/分)| Toast + 退避 | P-app-course-002/004/007 |
 | `5xx` | 服务端异常 | 通用错误页 + 重试 | 全部 |
 | `offline` | navigator.onLine=false 持续 >5s | 顶部红条 + 本地队列计数 | P-app-course-002/004/007 |

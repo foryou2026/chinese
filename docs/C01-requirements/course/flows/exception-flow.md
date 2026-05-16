@@ -1,80 +1,57 @@
 <!-- TARGET-PATH: docs/C01-requirements/course/flows/exception-flow.md -->
 
-# 异常流程 · course
+# `course` · 异常流程（业务叙述）
 
-## FX-course-01 · 答题弱网
+> 流程图与详细状态机详见 [../../../C03-ia/course/](../../../C03-ia/course/)。本文仅以业务语言描述用户场景。
 
-```mermaid
-flowchart LR
-  A[POST /app/answer] --> B{网络可用?}
-  B -- 否 --> C[写本地队列<br/>localforage]
-  C --> D[UI 继续渲染下一题]
-  D --> E[回网检测 navigator.onLine]
-  E --> F[批量 POST /app/answer:batch]
-  F -- 成功 --> G[清本地队列]
-  F -- 部分失败 --> H[保留失败项重试]
-```
+> **覆盖 R-ID**：R-course-006 · 008 · 011 · 014 · 018 · 023 · 024 · 025 · 027
 
-## FX-course-02 · 试抽失败 → exam 发布拦截
+---
 
-```mermaid
-flowchart TD
-  A[P-admin-course-008 配置 exam blueprint] --> B[D-9 试抽预览]
-  B --> C{抽题成功?}
-  C -- 否(题量不足) --> D[Toast: 当前有效题数 < blueprint count]
-  D --> E[发布按钮置灰]
-  C -- 是 --> F[预览渲染]
-  F --> G[发布按钮可点]
-```
+## 1. 节末小测被跳过
 
-## FX-course-03 · 题目下架 → 已存 attempt 不变
+1. 学员在节末弹层选择"跳过测验"。
+2. 系统保留该节状态为"未通过测验"但仍解锁下一节。
+3. 复习队列按已学过的知识点正常调度。
 
-```mermaid
-flowchart LR
-  A[P-admin-course-005 行内下架题] --> B[questions.is_published=false]
-  B --> C[新发卷抽题池排除]
-  C --> D[已存 user_exam_attempts.snapshot<br/>保持原 q_ids]
-  D --> E[历史回看可看,新 attempt 不抽]
-```
+## 2. 弱网下答题
 
-## FX-course-04 · 媒资引用拦截
+1. 学员在弱网环境下答题，前端先写入本地缓冲队列。
+2. 连接恢复后队列自动上送服务端。
+3. 服务端持久化后为最终态；前端缓存与服务端冲突时以服务端为准。
 
-```mermaid
-flowchart LR
-  A[P-admin-course-007 点删媒资] --> B{反查引用<br/>media_assets.ref_kp_id<br/>ref_q_id}
-  B -- 有引用 --> C[D-1 拦截弹窗<br/>列出 N 处引用]
-  B -- 无引用 --> D[D-1 二次确认]
-  D --> E[软删媒资]
-```
+## 3. 考试中途退出
 
-## FX-course-05 · 阶段考已通过不可重考
+1. 学员在考试进行中刷新或关页。
+2. 系统按零分计为已交卷。
+3. 学员可按该考试的重考规则决定后续（阶段考默认不可重考）。
 
-```mermaid
-flowchart LR
-  A[用户进 P-app-course-006 列表] --> B{该阶段考<br/>user_exam_attempts.passed?}
-  B -- 是 --> C[按钮置灰 + Toast:阶段考通过后不可重考]
-  B -- 否 --> D[正常进考]
-```
+## 4. 章节下架（不级联）
 
-## FX-course-06 · 离线进节包预下载失败
+1. 运营对某章执行"下架"。
+2. 学员端立刻看不到该章，但该章下属节 / 知识点 / 题目的发布态保持不变。
+3. 若该章再次发布，原下属内容按其各自发布态恢复可见。
 
-```mermaid
-flowchart TD
-  A[进 P-app-course-002 节学习页] --> B[尝试整节预下载<br/>KP+题+音频]
-  B -- 成功 --> C[正常进卡片流]
-  B -- 部分失败 --> D[Toast: 部分音频未缓存,可继续]
-  D --> E[播放音频时再次按需拉]
-  E -- 仍失败 --> F[图标显示 ⚠ + 学员可跳过]
-```
+## 5. 题目修订后
 
-## FX-course-07 · 多管理员并发编辑 KP
+1. 运营修订一道题目，题目版本号升级。
+2. 已有 attempt 中的旧版本快照不变，分数不重算。
+3. 新作答按新版本评判。
 
-```mermaid
-flowchart LR
-  A[admin1 打开 KP Drawer<br/>记录 loaded_updated_at] --> B[admin2 同时打开同 KP]
-  B --> C[admin2 先保存<br/>updated_at=t2]
-  C --> D[admin1 保存请求]
-  D --> E{服务端比对<br/>req.loaded_updated_at < t2?}
-  E -- 是 --> F[LWW 覆盖<br/>Toast: 该内容已被 admin2 修改并被你覆盖]
-  E -- 否 --> G[正常保存]
-```
+## 6. 题目下架后试卷重算
+
+1. 题目被下架后，该试卷有效题数减少。
+2. 新生成的试卷按"100 / 当前有效题数"重新均分。
+3. 已存 attempt 的总分快照不变。
+
+## 7. 媒资被引用时禁止删
+
+1. 运营尝试删除一条媒资。
+2. 系统检测到媒资仍被引用。
+3. 删除被拒绝并给出明确提示。
+
+## 8. 学员举报后处理
+
+1. 同一题目的举报数累计达阈值自动置顶。
+2. 运营采纳后跳目标编辑面板；采纳 / 忽略均不自动改发布态。
+3. 已经发卷的历史成绩不受影响。

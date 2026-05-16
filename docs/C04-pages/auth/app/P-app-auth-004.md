@@ -35,7 +35,7 @@
    - 失败 (otp_expired / token_used) → token-invalid
    - 其他失败 → failed
 4. 成功后角色判定：
-   - role === 'super_admin' → 立即登出 + 跳 /auth/login?reason=use_admin_entry
+   - role === 'admin' → 立即登出 + 跳 /auth/login?reason=use_admin_entry
    - role === 'user' → 跳 redirect 参数 ?? (first sign-in ? '/onboarding' : '/')
 ```
 
@@ -56,4 +56,4 @@
 | S3 | OAuth provider_error | failed 子态 + 重试按钮 |
 | S4 | signup 链接过期 | token-invalid signup 子态 |
 | S5 | 直接打开本路径无 query | failed 子态 + 用邮箱登录 |
-| S6 | OAuth 但拿到 super_admin role | signOut + 跳 /auth/login?reason=use_admin_entry |
+| S6 | OAuth 但拿到 admin role | signOut + 跳 /auth/login?reason=use_admin_entry |

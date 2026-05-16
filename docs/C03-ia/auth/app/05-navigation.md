@@ -31,10 +31,10 @@
 | 顺序 | 文案 (i18n) | 跳转 page-id | 归属 feature |
 |------|------------|-------------|-------------|
 | 1 | 我的资料 | `P-app-auth-007` | **auth** |
-| 2 | 我的钱包 | `P-app-wallet-001` | wallet（v2）|
-| 3 | 订单与会员 | `P-app-orders-001` | orders（v2）|
-| 4 | 邀请好友 | `P-app-referral-001` | referral（v2）|
-| 5 | 设置（语言/主题）| `P-app-settings-001` | settings（v2）|
+| 2 | 我的钱包 | `P-app-wallet-001` | wallet（暂不支持）|
+| 3 | 订单与会员 | `P-app-orders-001` | orders（暂不支持）|
+| 4 | 邀请好友 | `P-app-referral-001` | referral（暂不支持）|
+| 5 | 设置（语言/主题）| `P-app-settings-001` | settings（暂不支持）|
 | - 分割线 - |
 | 6 | 退出登录 | 触发 SM-03 `signOut`，跳 `P-app-auth-001` | **auth** |
 
@@ -46,6 +46,6 @@
 |------|-------------|
 | 资料 | `P-app-auth-009` |
 | 账号与安全 | `P-app-auth-008` |
-| 钱包（v2）| `P-app-wallet-001`（禁用展示）|
-| 订单与会员（v2）| `P-app-orders-001`（禁用展示）|
-| 邀请好友（v2）| `P-app-referral-001`（禁用展示）|
+| 钱包（暂不支持）| `P-app-wallet-001`（禁用展示）|
+| 订单与会员（暂不支持）| `P-app-orders-001`（禁用展示）|
+| 邀请好友（暂不支持）| `P-app-referral-001`（禁用展示）|

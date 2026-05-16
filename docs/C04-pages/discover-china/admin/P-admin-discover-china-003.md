@@ -24,7 +24,7 @@ ArticleInfoArea(D-2) {
 SentenceListToolbar { TotalBadge "共 N 句", SearchBox(本文章), AddBtn[在开头 / 结尾], ReorderBtn(D-7) }
 SentenceList {
   SentenceCard ×N {
-    SeqBadge {seq_no}
+    SeqBadge {句子顺序号}
     pinyin (preview, 当前 Tab 显示)
     chinese (preview)
     local (preview, 当前 Tab 语言)
@@ -37,9 +37,9 @@ Pagination
 ## 3. 数据
 - `GET admin/china/articles/:id` + `GET admin/china/articles/:id/sentences?page&pageSize&q`;
 - `PUT admin/china/articles/:id`(标题 5 语 + 拼音 + 状态);
-- `POST admin/china/articles/:id/sentences { after_seq_no? | position: "head"|"tail" }`;
+- `POST admin/china/articles/:id/sentences { after_句子顺序号? | position: "head"|"tail" }`;
 - `PUT admin/china/sentences/:id`;
-- `DELETE admin/china/sentences/:id`(自动重排 seq_no + 缓存键失效);
+- `DELETE admin/china/sentences/:id`(自动重排 句子顺序号 + 缓存键失效);
 - `POST admin/china/articles/:id/sentences/reorder { order: [id...] }`。
 
 ## 4. 状态
@@ -55,13 +55,13 @@ Pagination
 
 ## 5. 交互
 - **D-2 切 Tab**:同字段切换,字段 onChange 标 dirty;
-- **保存**:`PUT` 全量;若 `updated_at(本地) < server` → 后写覆盖 + Toast(R-017);
+- **保存**:`PUT` 全量;若 更新时间(本地) < server` → 后写覆盖 + Toast(R-017);
 - **发布**:先客户端校验所有句子 5 语齐;否则弹错误 Modal;
 - **下架**:D-5 二次确认 + 说明"将清空所有用户进度";
 - **句子编辑 D-3**:Drawer 600px,5 Tab + 拼音 + 中文校对;保存归列表;
 - **句子新建 D-4**:同 D-3,带"插入位置:开头 / 结尾 / 在第 N 句后";
-- **句子删除**:D-5 确认;删除后所有 > 当前 seq_no 的 -1,音频缓存键随之失效(R-012);
-- **句子重排 D-7**:Drawer 拖拽 → 保存触发批量 seq_no 重写;
+- **句子删除**:D-5 确认;删除后所有 > 当前 句子顺序号 的 -1,音频缓存键随之失效(R-012);
+- **句子重排 D-7**:Drawer 拖拽 → 保存触发批量 句子顺序号 重写;
 - **未保存离开拦截**:任意 dirty → 路由切换 / 关闭 → 弹 D-6(R-015)。
 
 ## 6. 错误码

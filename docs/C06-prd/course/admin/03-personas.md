@@ -2,11 +2,11 @@
 
 # 03 · 画像与场景 · course / **admin**
 
-> 角色定义以 [docs/C02-permissions/01-roles.md](../../../C02-permissions/01-roles.md) 为唯一真相：全站仅 `super_admin` + `user` 两角色。course 后台不设角色梯度，所有内容运营/点检/发布/撤回能力由 `super_admin` 一肃挑。
+> 角色定义以 [docs/C02-permissions/01-roles.md](../../../C02-permissions/01-roles.md) 为唯一真相：全站仅 `admin` + `user` 两角色。course 后台不设角色梯度，所有内容运营/点检/发布/撤回能力由 `admin` 一肃挑。
 
 ## 3.1 主画像
 
-### 超管（`super_admin`）
+### 超管（`admin`）
 | 维度 | 设定 |
 |------|------|
 | 角色 | 项目核心成员 + 内容运营团队；全部后台能力同人 |
@@ -22,7 +22,7 @@
 
 ## 3.2 角色 × 模块矩阵
 
-| 模块 | super_admin | user |
+| 模块 | admin | user |
 |------|:--:|:--:|
 | 骨架 P-001 ~ P-003 | 改 | — |
 | 节 / KP P-004 | 改 | — |

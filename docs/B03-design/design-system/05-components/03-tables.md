@@ -29,3 +29,32 @@
 ## 五、可访问性
 - `<th scope="col">` + `aria-sort`,排序状态同步给屏幕阅读器。
 - 行选择列 checkbox 必须 `aria-label`。
+
+## Anatomy（结构组成）
+- 容器：`<GlassCard>` → `<table>`。
+- 表头：`<thead>` 一行 `<th scope="col">`；含排序图标的列可点击。
+- 表体：`<tbody>` 行 `<tr>`，单元 `<td>`；hover 行 `--bg-hover`。
+- 操作列：固定右侧，`ghost` 文字按钮组。
+- 表尾：分页器（详见 [`06-interactions.md §5`](../06-interactions.md)）。
+
+## 反例（禁止形态）
+- 用 `<div>` 网格模拟表格（屏幕阅读器不识别）。
+- 启用斑马纹（与毛玻璃叠加产生脏底）。
+- 行 hover 时整行变色 + 鼠标指针不改 `cursor: pointer`（误导可点）。
+- 跨页选中（容易丢失上下文）。
+- 操作列写图标不带 `aria-label`。
+
+## 可访问性（a11y 强化）
+- `<th scope="col">` + `aria-sort="ascending|descending|none"` 与排序状态同步。
+- 行选择 checkbox 必须 `aria-label`（例：“选择行：{rowKey}”）。
+- 行可键盘聚焦（`tabindex=0`）；操作列按钮 Tab 顺序紧随其后。
+- 表头 `sticky` 时背景不可透明，避免文字与表体重叠不可读。
+
+## 空态
+- 空数据：`<EmptyState>`，48×48 插画 + i18n `empty.{scene}.title` + 可选 `New` 主按钮。
+- 已加载完成但筛选无结果：显示 “未找到匹配项” + “清空筛选” 文字按钮。
+
+## 错误态
+- 加载错误：表体替换为单元格通栏文案 `error.list.fail` + “重试”文字按钮；表头保留。
+- 行级操作错误走 Toast（5xx）或行内 inline（4xx，例：删除冲突）。
+

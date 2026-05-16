@@ -22,8 +22,7 @@
 | 角色与权限 | [08-roles-permissions.md](./08-roles-permissions.md) |
 | 设计要点 | [09-design-summary.md](./09-design-summary.md) |
 | 已知问题 | [10-known-issues.md](./10-known-issues.md) |
-| 路线图 | [11-roadmap.md](./11-roadmap.md) |
-| 变更日志 | [12-changelog.md](./12-changelog.md) |
+| 变更日志 | [11-changelog.md](./11-changelog.md) |
 | 待确认问题 | [99-open-questions.md](./99-open-questions.md) |
 
 > PRD 各节大量交叉引用 C01/C02/C03/B0*；本目录是 D03 V03 PRD 回链校验的输入。

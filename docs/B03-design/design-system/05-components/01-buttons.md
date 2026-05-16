@@ -30,3 +30,31 @@
 - 每个区段 / 弹窗内**全局只允许 1 个 `primary`**(主按钮唯一原则)。
 - 按钮组间距:**8px**(`--space-2`)。
 - 文案使用动词原型,5 语言 key 走 `shared-i18n`,无内联字面量。
+
+## Anatomy（结构组成）
+- 容器：`<button>`（不可用 `<div>`）；类名 `glass-button` + `data-variant`。
+- 左插槽（可选）：14px 图标 / `Spinner`；
+- 文字插槽：`<span class="btn-label">`；
+- 右插槽（可选）：14px 图标 / 下拉箭头；
+- focus-visible 时整体 2px ring `--ring`。
+
+## 反例（禁止形态）
+- 用 `<a class="btn-primary">` 代替 `<button>`（破坏语义、键盘体验）。
+- 一个区段出现 2 个 `primary`（违反主按钮唯一原则）。
+- loading 时只切图标不 disabled（用户可重复点击触发重复请求）。
+- 把删除按钮做成 `primary` 红色实色（应使用 `danger` 变体的弱实/边框样式）。
+- 文字内联字面量（应走 `shared-i18n`）。
+
+## 可访问性（a11y 强化）
+- `<button type="button|submit|reset">` 必填；图标按钮必须 `aria-label`。
+- 禁用态使用 `disabled` 原生属性（**不要**仅靠样式），并保持 4.5:1 文本对比度。
+- loading 时配 `aria-busy="true"` 与 `aria-live="polite"` 文本（屏幕阅读器朗读“处理中”）。
+- focus ring 必须在毛玻璃面板上仍可见（2px `--ring`）。
+
+## 空态
+- 空态不适用（按钮总是渲染文案 / 图标）；若无文案 → 必为图标按钮且带 `aria-label`。
+
+## 错误态
+- 按钮自身无错误态；其触发的操作错误由 [Toast](06-toasts-alerts.md) / 表单内联反馈承接。
+- `useAsyncAction` 异常自动恢复 disabled，并以 Toast 朗读错误码对应文案（详见 [`06-interactions.md §1`](../06-interactions.md)）。
+

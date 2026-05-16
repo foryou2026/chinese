@@ -6,7 +6,7 @@
 
 | 角色 | 可见 P-ID | 可写 |
 |------|-----------|------|
-| `super_admin` | P-001..009 全 | 全写 + 发布 / 撤回 / 媒资上传 / 举报处置 |
+| `admin` | P-001..009 全 | 全写 + 发布 / 撤回 / 媒资上传 / 举报处置 |
 | `user` | —（不出现在 admin 路由，访问返 403）| — |
 
-> 服务端：中间件在 `/api/admin/course/*` 统一校验 `role === 'super_admin'`；RLS 以 `auth.uid()` 设备隔离。不再存在 `tracks_scope` 过滤与 `COURSE_SCOPE_FORBIDDEN`。
+> 服务端：中间件在 `/api/admin/course/*` 统一校验 `role === 'admin'`；RLS 以 `auth.uid()` 设备隔离。不再存在 主题范围 过滤与 `COURSE_SCOPE_FORBIDDEN`。

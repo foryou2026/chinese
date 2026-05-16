@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/B03-design/design-system/_input/visual-input.md -->
+<!-- TARGET-PATH: docs/B03-design/_input/visual-input.md -->
 
 # 视觉输入（B03-S01）
 

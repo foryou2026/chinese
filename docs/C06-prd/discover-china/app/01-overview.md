@@ -37,16 +37,16 @@
 
 ## 1.4 内容模型(app 端可见)
 
-- **文章**:`(article_code 12 位, title_pinyin, title 5 语 ≤ 40, sentences[])`
+- **文章**:`(文章编码 12 位, title_pinyin, title 5 语 ≤ 40, sentences[])`
 - **句子**:`(sentence_code 4 位 0001 起, 中文 ≤ 400 字, pinyin, 5 语翻译, audio_url(MP3 CDN))`
 
 ## 1.5 性能基线
 
 | 接口 | 目标 |
 |------|------|
-| `GET /api/app/v1/discover/categories`(12 类目 静态) | 强缓存 24h |
-| `GET /api/app/v1/discover/articles?cat=NN` | P95 ≤ 250 ms |
-| `GET /api/app/v1/discover/article/{code}` | P95 ≤ 300 ms;含全部句子 |
+| 业务接口(12 类目 静态) | 强缓存 24h |
+| 业务接口 | P95 ≤ 250 ms |
+| 业务接口{code}` | P95 ≤ 300 ms;含全部句子 |
 | 句子音频 | CDN 强缓存,单句 ≤ 200 KB |
 
 ## 1.6 与 course 的隔离

@@ -10,7 +10,7 @@
 ## 2. 初始数据
 - 顶部搜索框 + 3 段命中(`Lesson / KP / Question`)分别 `LIMIT 20`;
 - `GET /admin/course/search?q=&scope=lesson,kp,question&track={scope}`;
-- 默认按 `tracks_scope` 过滤。
+- 默认按 主题范围 过滤。
 
 ## 3. 主要交互
 - 输入 → 300ms 防抖触发;
@@ -33,4 +33,4 @@
 - 三段命中区:≥1024px 横排;<1024px 纵排折叠。
 
 ## 7. 不变量回链
-R-021 三段聚合 + 高亮、行级 `tracks_scope` 过滤、跳目标编辑保持 LWW。
+R-021 三段聚合 + 高亮、行级 主题范围 过滤、跳目标编辑保持 LWW。

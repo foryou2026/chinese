@@ -42,7 +42,7 @@ export const Route = createFileRoute('/_admin')({
   beforeLoad: ({ context }) => {
     const { user } = context.auth;
     if (!user) throw redirect({ to: '/admin/auth/login' });
-    if (user.role !== 'super_admin') {
+    if (user.role !== 'admin') {
       throw redirect({ to: '/admin/auth/login', search: { reason: 'not_admin' } });
     }
   },
@@ -64,7 +64,7 @@ type MenuItem = {
   path: string;
   icon: LucideIconName;
   requireAuth?: boolean;
-  requireRole?: 'super_admin';
+  requireRole?: 'admin';
 };
 ```
 
@@ -79,7 +79,7 @@ type MenuItem = {
 ### 1.4 Token 过期处理
 
 ```
-supabase-js auto refresh 失败
+鉴权与数据底座-js auto refresh 失败
   → onAuthStateChange('SIGNED_OUT')
   → authStore.reset()
   → 全局 fetch 拦截器收到 401 / AUTH_TOKEN_EXPIRED
@@ -98,10 +98,10 @@ queryClient.setDefaultOptions({
 
 ```ts
 type AuthState = {
-  user: { id: string; email: string; role: 'user' | 'super_admin'; avatar?: string } | null;
+  user: { id: string; email: string; role: 'user' | 'admin'; avatar?: string } | null;
   loading: boolean;
   signIn: (email: string, password: string) => Promise<void>;
-  signInWithGoogle: () => Promise<void>;   // 仅应用端有效
+  loginWithGoogle: () => Promise<void>;   // 仅应用端有效
   signOut: () => Promise<void>;
 };
 ```
@@ -116,8 +116,8 @@ Zustand 实现，挂在 `packages/shared-utils/src/auth/useAuth.ts`，应用端 
 
 | 中间件 | 作用 | 失败响应 |
 |--------|------|---------|
-| `authRequired` | 从 `zhiyu-at` Cookie（优先）或 `Authorization: Bearer` Header 读 JWT；校签名 + exp + `zhiyu.profiles.is_active`；写 `c.set('user', {...})` | 401 `AUTH_TOKEN_MISSING` / `AUTH_TOKEN_EXPIRED` / `AUTH_TOKEN_INVALID` / `AUTH_ACCOUNT_DISABLED` |
-| `adminRequired` | 在 `authRequired` 之后；要求 `user.role === 'super_admin'` | 403 `AUTH_FORBIDDEN`（前端按 reason 文案显示 `AUTH_NOT_ADMIN`）|
+| `authRequired` | 从 `zhiyu-at` Cookie（优先）或 `Authorization: Bearer` Header 读 JWT；校签名 + exp + 用户档案`；写 `c.set('user', {...})` | 401 `AUTH_TOKEN_MISSING` / `AUTH_TOKEN_EXPIRED` / `AUTH_TOKEN_INVALID` / `AUTH_ACCOUNT_DISABLED` |
+| `adminRequired` | 在 `authRequired` 之后；要求 `user.role === 'admin'` | 403 `AUTH_FORBIDDEN`（前端按 reason 文案显示 `AUTH_NOT_ADMIN`）|
 | `csrfRequired` | POST / PUT / PATCH / DELETE 必加；比对 `X-CSRF-Token` Header 与 `zhiyu-csrf` Cookie | 403 `AUTH_CSRF_INVALID` |
 | `optionalAuth` | 解析 JWT 但不强制；用于"未登录可浏览"路由 | 不报错；`c.get('user')` 可能为 null |
 
@@ -125,9 +125,9 @@ Zustand 实现，挂在 `packages/shared-utils/src/auth/useAuth.ts`，应用端 
 
 ```ts
 const app = new Hono();
-app.use('/admin/v1/*', authRequired, adminRequired);
-app.use('/api/v1/me/*', authRequired);
-app.use('/api/v1/discover/*', optionalAuth);
+app.use('/admin/首版/*', authRequired, adminRequired);
+app.use('/api/首版/me/*', authRequired);
+app.use('/api/首版/discover/*', optionalAuth);
 app.use('*', csrfRequired);  // 仅写方法生效，路由内部按需 opt-out
 ```
 
@@ -137,7 +137,7 @@ app.use('*', csrfRequired);  // 仅写方法生效，路由内部按需 opt-out
 import { jwtVerify } from 'jose';
 import { getCookie } from 'hono/cookie';
 
-const KEY = new TextEncoder().encode(process.env.SUPABASE_JWT_SECRET!);
+const KEY = new TextEncoder().encode(process.env.AUTH_JWT_SECRET!);
 const disabledCache = new LRU<string, boolean>({ max: 5_000, ttl: 30_000 });
 
 export const authRequired: MiddlewareHandler = async (c, next) => {
@@ -157,10 +157,10 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
   const userId = payload.sub as string;
   let disabled = disabledCache.get(userId);
   if (disabled === undefined) {
-    const { data } = await supabaseAdmin
+    const { data } = await 鉴权与数据底座Admin
       .schema('zhiyu')
-      .from('profiles').select('is_active').eq('id', userId).single();
-    disabled = data?.is_active === false;
+      .from('profiles').select('启用态').eq('id', userId).single();
+    disabled = data?.启用态 === false;
     disabledCache.set(userId, disabled);
   }
   if (disabled) return jsonError(c, 401, 'AUTH_ACCOUNT_DISABLED');
@@ -168,7 +168,7 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
   c.set('user', {
     id: userId,
     email: payload.email,
-    role: payload.app_metadata?.role ?? 'user',
+    role: payload.账号元数据?.role ?? 'user',
   });
   await next();
 };
@@ -179,14 +179,14 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
 
 ### 2.3 RLS（行级安全）兜底
 
-- Supabase 表默认开 RLS；`profiles` / `user_sessions` / 业务表均按 `auth.uid()` 限制读写；
-- Hono 后端使用 `service_role` key（绕 RLS）；**仅在通过 `authRequired` 校验后**调 `supabaseAdmin`；
-- **不**直接转发用户 access_token 给 Supabase（避免双重校验开销 + 防止 token 经服务器中转）；
-- 公网直连 Supabase（前端 anon key）：本期暂不开放，所有业务走 Hono。
+- 鉴权与数据底座 表默认开 RLS；用户档案 / 会话记录 / 业务表均按 `auth.uid()` 限制读写；
+- Hono 后端使用 `service_role` key（绕 RLS）；**仅在通过 `authRequired` 校验后**调 `鉴权与数据底座Admin`；
+- **不**直接转发用户 access_token 给 鉴权与数据底座（避免双重校验开销 + 防止 token 经服务器中转）；
+- 公网直连 鉴权与数据底座（前端 anon key）：当前暂不开放，所有业务走 Hono。
 
-### 2.4 Cookie 代理接口（supabase-js 适配器配套）
+### 2.4 Cookie 代理接口（鉴权与数据底座-js 适配器配套）
 
-前端 supabase-js 初始化时传入自定义 `auth.storage`，**不读写 localStorage**；所有 read/write 转发到同域：
+前端 鉴权与数据底座-js 初始化时传入自定义 `auth.storage`，**不读写 localStorage**；所有 read/write 转发到同域：
 
 | 接口 | 方法 | 行为 |
 |------|------|------|
@@ -194,7 +194,7 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
 | `/api/auth/cookie/set` | POST | body `{ access_token, refresh_token }` → Set-Cookie：`zhiyu-at` (HttpOnly 3600s) + `zhiyu-rt` (HttpOnly 2592000s) + `zhiyu-csrf` (非 HttpOnly 32B 随机) |
 | `/api/auth/cookie/clear` | POST | 三个 Cookie 全部 `Max-Age=0` |
 
-supabase-js 在 `signInWithPassword` / `exchangeCodeForSession` / `refreshSession` 后由适配器拦截，转调 `cookie/set` 同步到后端。
+鉴权与数据底座-js 在 登录调用 / 回调换会话调用 / `refreshSession` 后由适配器拦截，转调 `cookie/set` 同步到后端。
 
 ---
 
@@ -227,9 +227,9 @@ supabase-js 在 `signInWithPassword` / `exchangeCodeForSession` / `refreshSessio
 | `AUTH_TOKEN_EXPIRED` | 401 | JWT exp 过期 | 登录已过期，请重新登录 |
 | `AUTH_INVALID_CREDENTIALS` | 401 | 邮箱 / 密码错 | 邮箱或密码错误 |
 | `AUTH_EMAIL_NOT_VERIFIED` | 401 | 注册后未点验证邮件 | 请先验证邮箱 |
-| `AUTH_ACCOUNT_DISABLED` | 401 | profiles.is_active=false | 账号已被停用，请联系客服 |
-| `AUTH_NOT_ADMIN` | 403 | 后端鉴权 `adminRequired` 检测到非 super_admin（一般场景）| 该账号无管理员权限 |
-| `AUTH_USE_USER_ENTRY` | 403 | admin 登录页填用户凭证但角色不是 super_admin（主动 signOut + 指引用户去 app 端登录）| 该账号不是管理员，请使用用户入口登录 |
+| `AUTH_ACCOUNT_DISABLED` | 401 | profiles.启用态=false | 账号已被停用，请联系客服 |
+| `AUTH_NOT_ADMIN` | 403 | 后端鉴权 `adminRequired` 检测到非 admin（一般场景）| 该账号无管理员权限 |
+| `AUTH_USE_USER_ENTRY` | 403 | admin 登录页填用户凭证但角色不是 admin（主动 signOut + 指引用户去 app 端登录）| 该账号不是管理员，请使用用户入口登录 |
 | `AUTH_FORBIDDEN` | 403 | 角色不足 / 资源所有权不符 | 没有访问权限 |
 | `AUTH_OAUTH_FAILED` | 400 | Google OAuth 异常 | Google 登录失败：{provider_error} |
 | `AUTH_RESET_TOKEN_INVALID` | 400 | 重置链接过期 / 已用 | 链接已失效，请重新申请 |
@@ -241,8 +241,8 @@ supabase-js 在 `signInWithPassword` / `exchangeCodeForSession` / `refreshSessio
 | `AUTH_EMAIL_TAKEN` | 400 | 注册时邮箱已存在 | 该邮箱已注册，请直接登录或找回密码 |
 | `AUTH_WEAK_PASSWORD` | 400 | 密码不符合规则 | 密码不符合规则，请重新输入 |
 | `AUTH_CSRF_INVALID` | 403 | CSRF Header 与 Cookie 不一致 | 页面已过期，请刷新重试 |
-| `AUTH_EMAIL_BLOCKED` | 400 | GoTrue Hook 邮箱黑名单 | 该邮箱不允许注册 |
-| `AUTH_IP_BLOCKED` | 400 | GoTrue Hook IP 黑名单 | 当前网络环境不允许注册 |
+| `AUTH_EMAIL_BLOCKED` | 400 | 鉴权服务 Hook 邮箱黑名单 | 该邮箱不允许注册 |
+| `AUTH_IP_BLOCKED` | 400 | 鉴权服务 Hook IP 黑名单 | 当前网络环境不允许注册 |
 | `AUTH_INVITE_INVALID` | 400 | 邀请码无效（仅 `INVITE_ONLY=true` 时）| 邀请码无效或已使用 |
 
 > 所有 code 必须 5 语 i18n（zh / en / vi / th / id）；登记位置 `packages/shared-i18n/src/<locale>/auth.json`。
@@ -253,7 +253,7 @@ supabase-js 在 `signInWithPassword` / `exchangeCodeForSession` / `refreshSessio
 
 - 30s LRU 缓存被禁用状态；
 - 多实例切 Redis pubsub（key=`auth:disabled:{userId}` TTL 30s）；
-- Token 撚销依赖 Supabase 自带机制；不维护单独黑名单。
+- Token 撚销依赖 鉴权与数据底座 自带机制；不维护单独黑名单。
 
 ---
 

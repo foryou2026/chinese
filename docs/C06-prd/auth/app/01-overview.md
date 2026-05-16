@@ -6,7 +6,7 @@
 
 让"知语"东南亚汉语学习平台具备完整的"账号生命周期"基础能力：注册、登入、保活、找回、改密码、改资料、退出。
 
-## 2. 范围（v1）
+## 2. 范围
 
 - 注册：邮箱 + 密码 / Google OAuth
 - 登入：邮箱 + 密码 / Google OAuth / refresh 续期
@@ -30,7 +30,7 @@
 
 ## 5. 依赖
 
-- 自托管 Supabase Auth（GoTrue v2.130+）
+- 鉴权服务（鉴权服务）
 - 自建 Hook：`/internal/auth-hook`（before_user_created）
-- 邮件：dev mock / prod SMTP（v2 接）
+- 邮件：dev mock / prod SMTP（暂不支持 接）
 - Redis：节流计数（kv 后端）

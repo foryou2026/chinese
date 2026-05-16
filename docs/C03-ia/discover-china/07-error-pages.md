@@ -13,7 +13,7 @@
 
 ## 2. 应用端登录引导
 
-`D-8` 登录提示 Modal,触发于 04-12 类目卡片点击;主按钮跳 `/auth/login?redirect=<当前页 url 编码>`。
+`D-8` 登录提示 Modal,触发于 04-12 类目卡片点击;主按钮跳 登录页（含回跳参数）。
 
 ## 3. 管理端
 
@@ -27,7 +27,7 @@
 
 ## 4. 守卫错误
 
-- super_admin 不通过 → 跳 `/admin/auth/login`(由 auth feature 守卫产生);
+- admin 不通过 → 跳 `/admin/auth/login`(由 auth feature 守卫产生);
 - 应用端用户访问管理端 → 跳应用端首页 + Toast "无权访问"。
 
 ## 5. 通用错误码呈现

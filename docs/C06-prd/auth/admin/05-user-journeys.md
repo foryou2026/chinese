@@ -44,6 +44,6 @@
 
 ```
 超管 在 Mac/Win/手机 已 3 登录 → 在新平板登录 ok
-  → user_sessions 删 Mac 那条 (最早)
+  → 会话记录 删 Mac 那条 (最早)
   → Mac 端 10s 内 session-status 401 → 跳 /admin/auth/login?kicked=1 (kicked-back 态)
 ```

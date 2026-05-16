@@ -38,9 +38,9 @@
 
 | 接口 / 操作 | 目标 |
 |------------|------|
-| `GET /api/app/v1/lesson/{code}`(单节聚合,gzip) | 响应体 ≤ 200 KB,P95 ≤ 300 ms |
-| `GET /api/app/v1/srs/today`(单用户单次 LIMIT 50) | P95 ≤ 200 ms |
-| `POST /api/app/v1/answer`(单题判分写入) | P95 ≤ 150 ms,限流 60 次/分/用户(超出 429) |
-| `POST /api/app/v1/exam/{attempt}/submit`(批量判分 50 题) | P95 ≤ 800 ms |
+| 业务接口{code}`(单节聚合,gzip) | 响应体 ≤ 200 KB,P95 ≤ 300 ms |
+| 业务接口(单用户单次 LIMIT 50) | P95 ≤ 200 ms |
+| 业务接口(单题判分写入) | P95 ≤ 150 ms,限流 60 次/分/用户(超出 429) |
+| 业务接口{attempt}/submit`(批量判分 50 题) | P95 ≤ 800 ms |
 
-> 路由别名:`/api/v1/* ≡ /api/app/v1/*`,见 [_glossary.md §E](../../_glossary.md)。
+> 路由别名:`/api/首版/* ≡ /api/app/首版/*`,见 [_glossary.md §E](../../_glossary.md)。

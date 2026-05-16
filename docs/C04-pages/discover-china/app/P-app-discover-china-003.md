@@ -17,19 +17,19 @@ Breadcrumb
 ArticleHeader { pinyin, h1 中文, h3 本地语, meta }
 PlayerBar (sticky) { 播放/暂停 · 当前句号 · 全文按钮 }
 SentenceList {
-  SentenceCard ×N (id=s-{seq_no}, data-block="Sentence") {
+  SentenceCard ×N (id=s-{句子顺序号}, data-block="Sentence") {
     PlayButton (data-op="OP-tts-play", aria-label="朗读")
     pinyin (text-caption)
     chinese (text-body-lg)
     local (text-body, 中文用户隐藏)
-    SeqBadge {seq_no}
+    SeqBadge {句子顺序号}
   }
 }
 EndCard { 上一篇 / 下一篇 / 返回类目 }
 ```
 
 ## 3. 数据
-- `GET china/articles/:code` → `{ article, sentences: [{ seq_no, content_i18n, pinyin, audio_url? }] }`;
+- `GET china/articles/:code` → `{ article, sentences: [{ 句子顺序号, content_i18n, pinyin, audio_url? }] }`;
 - `POST china/tts/synthesize?sentence_key` → `{ audio_url }`(详 D02);
 - `GET / PUT china/articles/:code/progress`(登录用户)/ `localStorage`(访客)。
 

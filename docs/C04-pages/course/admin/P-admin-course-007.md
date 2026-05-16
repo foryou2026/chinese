@@ -14,7 +14,7 @@
 - 顶部上传:接受文件 → 计算 hash → 命中已存在 → 直接复用;新文件 → 写表 + 上传 CDN;
 - 行点击 → 详情抽屉(预览 + 引用清单 + [软删]);
 - [软删] → 若 `ref_count>0` 弹 D-5 拦截;否则 D-1 二次确认 → `DELETE soft` 写 `is_deleted=true`;
-- 物理清理由后台 cron 每天扫 `is_deleted=true AND deleted_at > 30 天前` 执行,本页不操作。
+- 物理清理由后台 cron 每天扫 `is_deleted=true AND 软删时间 > 30 天前` 执行,本页不操作。
 
 ## 4. 弹窗
 - D-1 软删确认 · D-5 引用拦截 · 详情抽屉(自定义)

@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C06-prd/discover-china/admin/12-changelog.md -->
+<!-- TARGET-PATH: docs/C06-prd/discover-china/admin/11-changelog.md -->
 
 # 12 · 变更日志 · discover-china / **admin**
 

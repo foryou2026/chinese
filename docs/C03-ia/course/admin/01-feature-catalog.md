@@ -13,13 +13,13 @@
 | **M-course-report** | 学员举报审核闭环 | R-018, 024 | P-admin-course-006 |
 | **M-course-exam-admin** | 考试编辑与预览 | R-011, 020, 025, 027 | P-admin-course-008 |
 | **M-course-search** | 全局搜索 + 统计概览 | R-021 | P-admin-course-009 |
-| **M-course-i18n-perm-admin** | 5 语校验 + `tracks_scope` 列级权限 + 行级审计 | R-028, 029, 030 | 横切 9 页 |
+| **M-course-i18n-perm-admin** | 5 语校验 + 主题范围 列级权限 + 行级审计 | R-028, 029, 030 | 横切 9 页 |
 
 > **不在 admin 端**(纯 app):M-course-learning / M-course-srs / M-course-exam(参考侧) / M-course-onboarding / M-course-profile。
 
 ## 2. 上下游
 
-- 上游:[D01-data](../../../D01-data/data-model.md);[B02 角色](../../../C02-permissions/01-roles.md)`content_admin.tracks_scope`。
+- 上游:[D01-data](../../../D01-data/data-model.md);[B02 角色](../../../C02-permissions/01-roles.md)`admin.主题范围。
 - 下游:[D02-api/course/admin](../../../D02-api/course/admin/01-routes-delta.md)(24 endpoint)、[C04-pages/course/admin/](../../../C04-pages/course/admin/)、[C05-prototype/course/admin/](../../../C05-prototype/course/admin/)。
 
 ## 3. 模块边界

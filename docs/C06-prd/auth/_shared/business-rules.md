@@ -19,7 +19,7 @@
 | 触发 | 行为 | 解除 |
 |------|------|------|
 | 同 (user_id, ip) 15min 内错密 ≥ 5 | 该账号锁定 15min（两端通锁） | 15min 自动 |
-| `zhiyu.profiles.is_active = false` | 全设备全端立即撤销 + 拒登 | super_admin 改回 true |
+| 用户档案 = false` | 全设备全端立即撤销 + 拒登 | admin 改回 true |
 
 ## BR-auth-shared-03 · session 颁发与续签
 
@@ -53,13 +53,13 @@
 - 注册：邮箱已存在 → 同样返回 `{ok: true}`，提示「若该邮箱未注册，验证邮件已发出」
 - 忘记密码：同样固定返回 `{ok: true}`
 - 登入失败：不区分「邮箱不存在」与「密码错」，统一 `INVALID_CREDENTIALS`
-- 例外：admin 端「非 super_admin 登入」**主动** 返回 `AUTH_USE_USER_ENTRY` —— 该提示属合规白名单，不视为暴露
+- 例外：admin 端「非 admin 登入」**主动** 返回 `AUTH_USE_USER_ENTRY` —— 该提示属合规白名单，不视为暴露
 
 ## BR-auth-shared-08 · 数据清单（共享列）
 
-- `profiles`：`id`(=auth.user_id) / `role` / `is_active` / `display_name` / `avatar_url` / `locale` / `email_verified_at`
-- `user_sessions`：`id` / `user_id` / `device_id` / `device_name` / `user_agent` / `ip` / `refresh_jti` / `created_at` / `last_seen_at`
-- `auth_login_attempts`：`email` / `ip` / `user_agent` / `success` / `reason` / `created_at`（cron 清7天外）
+- 用户档案：`id`(=auth.user_id) / `role` / 启用态 / `display_name` / `avatar_url` / `locale` / `email_verified_at`
+- 会话记录：`id` / `user_id` / `device_id` / `device_name` / `user_agent` / `ip` / `refresh_jti` / `created_at` / `last_seen_at`
+- 登录尝试记录：`email` / `ip` / `user_agent` / `success` / `reason` / `created_at`（cron 清7天外）
 
 ---
 

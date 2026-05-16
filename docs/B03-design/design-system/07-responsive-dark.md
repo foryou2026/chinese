@@ -13,9 +13,9 @@
 
 - 6 断点 xs / sm / md / lg / xl / 2xl；应用端 mobile-first，管理端 desktop-first。
 - 全屏宽度（不在中间居中），`2xl` 下仍占满视口。
-- 暗黑：用户优先 → 系统偏好 → 默认亮。无 FOUC（内联脚本提前设 `data-theme` + `--brand`）。
+- 暗黑：用户优先 → 系统偏好 → 默认亮。无 FOUC（内联脚本提前设 `data-theme`）。
 - 毛玻璃降级：浏览器不支持 / 用户选省电模式 / 运行时低 FPS → 切伪毛玻璃。
-- 主题色自定义：6 预设 + HEX 自定义；仅覆盖 brand 系列 token；不做节日皮肤。
+- v1 仅黑白主题（亮 / 暗）+ 品牌红，不提供主题色自定义；节日皮肤 v1 同样不实现。
 
 ---
 
@@ -61,8 +61,6 @@
     var t = localStorage.getItem('theme');
     if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', t);
-    var c = localStorage.getItem('brand-color');
-    if (c) document.documentElement.style.setProperty('--brand', c);
   })();
 </script>
 ```
@@ -97,37 +95,13 @@
 
 ---
 
-## 5. 主题色自定义（皮肤系统）
+## 5. 主题色策略（v1）
 
-> 本期**仅提供主题色自定义**；节日皮肤（圣诞 / 春节等）本期不上。
+- v1 仅亮 / 暗两个主题，品牌红固定 `--brand` = `#FF2442`（亮）/ `#FF3B5C`（暗）；
+- **不开放主题色自定义**，不提供颜色选择器，不写 `localStorage.brand-color`；
+- 状态色（`--success` / `--warning`）不跟随主题色；`--danger` 始终复用 `--brand`。
 
-### 5.1 能力范围
-
-- 用户在「设置 → 显示 → 主题色」可选：
-  - **6 个预设**：小红书红 `#FF2442` / Reddit 橙红 `#FF4500` / 珊瑚 `#FF6B6B` / 薰衣草 `#A855F7` / 深海蓝 `#3B82F6` / 森林绿 `#22C55E`；
-  - **自定义 HEX**：`react-colorful` 调色盘，仅 6 位 HEX，不允许 alpha；
-- 选定后预览顶栏 / 主按钮 / Tag 实时变色；
-- 仅覆盖下列 token，黑白中性色不变：
-  - `--brand` = 用户选色；
-  - `--brand-hover` = HSL `L × 0.92`；
-  - `--brand-active` = HSL `L × 0.84`；
-  - `--brand-soft` = alpha 0.10 / 0.14；
-  - `--brand-soft-strong` = alpha 0.18 / 0.22；
-  - `--ring` = alpha 0.45 / 0.55；
-  - `--brand-on` = WCAG AA 自动反推黑 / 白字（`relative-luminance > 0.5` → 黑字）。
-
-### 5.2 存储与同步
-
-- 本地：`localStorage.brand-color`（仅 HEX 7 字节，防注入）；
-- 帐号：同步 Supabase user metadata `display.brand_color`，多端一致；
-- FOUC：首屏内联脚本（§3.1）同时读取并设置。
-
-### 5.3 约束
-
-- 主题色变化后**重新计算** `--brand-on` 保证 WCAG AA；不达标时调色盘提示"对比度偏低"但不阻止保存；
-- 状态色（`--success / --warning`）**不**跟随主题色；
-- `--danger` 始终复用 `--brand`（保持语义一致）；
-- Storybook 提供「主题色预览」装饰器。
+> 主题色自定义 / 节日皮肤均列入 v2+ 评审，不在本文档范围内。
 
 ---
 

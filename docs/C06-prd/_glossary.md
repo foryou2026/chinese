@@ -11,17 +11,17 @@
 | **surface(端)** | 部署独立的前端 + 后端组合,本项目两端:`app`(`apps/web-app` + `apps/api-app`)、`admin`(`apps/web-admin` + `apps/api-admin`) |
 | **feature** | C 阶段产出的最小业务单元;一个 feature 可横跨多 surface |
 | **多端单 feature** | 同一 feature 同时在多个 surface 出产物;目录形如 `<feature>/{baseline.md,_shared/,app/,admin/}`(A00-04 §四.5);`course`、`discover-china`、`auth` 均属此类 |
-| **monorepo** | `pnpm-workspace.yaml` 管理的 `system/{apps,packages,scripts,supabase}` 结构 |
-| **Supabase 自托管** | 通过 `system/docker/compose.yaml` 拉起 PG16 + GoTrue + Realtime + Storage + PostgREST |
+| **monorepo** | `pnpm-workspace.yaml` 管理的 `system/{apps,packages,scripts,鉴权与数据底座}` 结构 |
+| **鉴权与数据底座 自托管** | 通过 `system/docker/compose.yaml` 拉起 PG16 + 鉴权服务 + Realtime + Storage + PostgREST |
 
 ## B. 角色（↑ [C02-permissions/01-roles.md](../C02-permissions/01-roles.md)）
 
 | 角色 | 端 | 说明 |
 |------|---|------|
-| `super_admin` | admin | 全站唯一管理员角色，全权 |
+| `admin` | admin | 全站唯一管理员角色，全权 |
 | `user` | app | 学员 / 终端用户，注册即获 |
 
-> 仅此 2 角色，全系硬约束。不存在 `readonly` / `content_admin` / `super` 等子角色。匿名访问者由路由层处理（重定向到登录），不视为角色。
+> 仅此 2 角色，全系硬约束。不存在 `admin` / `admin` / `admin` 等子角色。匿名访问者由路由层处理（重定向到登录），不视为角色。
 
 ## C. 标识符约定
 
@@ -40,9 +40,9 @@
 
 ## E. 路由前缀(项目级约定)
 
-- C 端:`/api/app/v1/*`(规范) ≡ `/api/v1/*`(短路径别名)
-- 后台:`/api/admin/v1/*`(规范) ≡ `/admin/v1/*`(短路径别名)
-- 内部:`/internal/v1/*`(走 `X-Internal-Token`,不出公网)
+- C 端:`/api/app/首版/*`(规范) ≡ `/api/首版/*`(短路径别名)
+- 后台:`/api/admin/首版/*`(规范) ≡ `/admin/首版/*`(短路径别名)
+- 内部:`/internal/首版/*`(走 `X-Internal-Token`,不出公网)
 
 ## F. 主要业务术语
 

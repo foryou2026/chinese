@@ -23,10 +23,10 @@
 ## 2. `FL-auth-shared-01` 登入成功
 
 1. POST `/api/<surface>/auth/login` body `{email, password, captcha?}`，header `X-CSRF-Token`
-2. 服务端：`signInWithPassword` → 拿到 supabase session
-3. **admin 端额外**：查 `profiles.role`；非 `super_admin` 立即 `signOut` + 返回 `AUTH_USE_USER_ENTRY`
-4. 查 `user_sessions where user_id=? and surface=? and revoked_at is null`：≥ 3 → 撤销最旧
-5. INSERT `user_sessions(...)`，写 cookie，返回 `{me, devices}`
+2. 服务端：登录调用 → 拿到 鉴权与数据底座 session
+3. **admin 端额外**：查 用户角色字段`；非 `admin` 立即 `signOut` + 返回 `AUTH_USE_USER_ENTRY`
+4. 查 会话记录 where user_id=? and surface=? and revoked_at is null`：≥ 3 → 撤销最旧
+5. INSERT 会话记录(...)`，写 cookie，返回 `{me, devices}`
 
 ## 3. `FL-auth-shared-02` 登出
 
@@ -38,8 +38,8 @@
 ## 4. `FL-auth-shared-03` 密码修改（已登录态）
 
 1. POST `/api/<surface>/me/password` body `{old, new, revokeOthers: bool}`
-2. 服务端：`signInWithPassword` 复核旧密 → 失败即 `INVALID_OLD_PASSWORD`
-3. `updateUser({password: new})`
+2. 服务端：登录调用 复核旧密 → 失败即 `INVALID_OLD_PASSWORD`
+3. 更新用户调用`
 4. `revokeOthers=true` → revoke 同端其余 session（不影响另一端）
 
 ## 5. `FL-auth-shared-04` 忘记密码
@@ -48,7 +48,7 @@
 2. 服务端响应固定 `{ok: true}`（不暴露邮箱是否存在）
 3. 邮件包含 `?token=...&surface=<app|admin>` 一次性链接（15min TTL）
 4. GET `<surface>/auth/reset-password?token=...` → 校验 → 设新密
-5. 成功 → 自动 `signInWithPassword(new)` + revoke `user_id+surface` 其它 session
+5. 成功 → 自动 登录调用` + revoke `user_id+surface` 其它 session
 
 ---
 

@@ -7,8 +7,8 @@
 
 ## 1. 角色 & 守卫
 
-- 公开 (已登录 super_admin 访问 → redirect 到 `/admin` 或 query.redirect)
-- 已登录非 super_admin → 立即 signOut 并停在本页 not-admin 态
+- 公开 (已登录 admin 访问 → redirect 到 `/admin` 或 query.redirect)
+- 已登录非 admin → 立即 signOut 并停在本页 not-admin 态
 
 ## 2. 布局
 
@@ -32,7 +32,7 @@
 
 ```
 点登录
-  → 发起 admin 登录调用（含节流检查、凭证校验、角色校验==='super_admin'、会话登记；实现接口在 D02-api/auth/admin/login 定义）
+  → 发起 admin 登录调用（含节流检查、凭证校验、角色校验==='admin'、会话登记；实现接口在 D02-api/auth/admin/login 定义）
   → 角色校验失败 → 立即登出 + 停在本页 not-admin 态
   → 成功 → navigate(query.redirect || '/admin')
 ```
@@ -56,7 +56,7 @@
 
 ## 7. 埋点
 
-无 (analytics feature v2)
+无 (analytics feature 暂不支持)
 
 ## 8. 验收
 

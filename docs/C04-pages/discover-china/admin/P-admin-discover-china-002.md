@@ -18,7 +18,7 @@ Toolbar { Btn 新建 (data-op="OP-new"), SearchBox, StatusFilter, TotalBadge "�
 Table {
   Header[ 编码 / 拼音 / 中文标题 / 状态 / 句子数 / 更新时间 / 操作 ]
   Row ×N {
-    code, pinyin, title_zh, StatusTag(draft|published), sentence_count, updated_at,
+    code, pinyin, title_zh, StatusTag(draft|published), sentence_count, 更新时间,
     Actions[ 编辑(→P-admin-003) / 发布或下架(R-013) / 删除(D-5 确认) ]
   }
 }

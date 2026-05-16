@@ -15,7 +15,7 @@
 | 序 | 项 | 跳转 |
 |---|----|------|
 | 1 | 账号与安全 | `/admin/me` |
-| 2 | 退出登录 | 调 `POST /admin/v1/auth/session-revoke` 后跳 `/admin/auth/login` |
+| 2 | 退出登录 | 调 管理端接口 后跳 `/admin/auth/login` |
 
 > 不展示「邀请管理员」「我的设备」「订单」等;admin 端账号面板**极简**。
 
@@ -25,6 +25,6 @@
 /admin/auth/login                   公开
 /admin/auth/forgot                  公开
 /admin/auth/reset-password          公开
-/admin/me                           super_admin
-/admin/*                            super_admin (其它业务路径)
+/admin/me                           admin
+/admin/*                            admin (其它业务路径)
 ```

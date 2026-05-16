@@ -5,7 +5,7 @@
 ## 5.1 主旅程
 
 ### J-admin-disc-1 · 新文章上架闭环
-1. `super` 登录(2FA)→ 进入 [P-002](06-page-specs/P-admin-discover-china-002.md)
+1. `admin` 登录(2FA)→ 进入 [P-002](06-page-specs/P-admin-discover-china-002.md)
 2. "新增" → [P-003](06-page-specs/P-admin-discover-china-003.md)
 3. 选类目 → 填标题(5 语)+ 标题拼音 → 加句子(中文 → 自动拼音建议 → 校对 → 5 语翻译)
 4. 上传句级 TTS(批量 ZIP 解包 或 单句拖入)

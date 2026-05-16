@@ -2,35 +2,37 @@
 
 # `auth` · admin 端补充说明
 
-> **阶段**：C01-R · **feature**：`auth` · **surface**：`admin`
-> **作用**：仅承载 admin 端独有补充；统一基线见 [`../baseline.md`](../baseline.md)。
+> 本文件记录 admin surface 在 `auth` feature 上相对 app 的差异。不重复 `baseline.md`，只列差异。
 
 ---
 
-## 1. admin 端专属 R-ID
+## 1. 无自助注册
 
-| R-ID | 重点 |
-|------|------|
-| `R-auth-025` | 管理员账号 seed 创建（无 UI；运维脚本）|
+- admin 端不开放注册入口；账号统一由运维通过 seed 流程创建。
 
-## 2. admin 端对共有 R-ID 的强化
+## 2. 登录身份双重校验
 
-| R-ID | admin 行为 |
-|------|------------|
-| `R-auth-003` | **强制** `super_admin` 角色守卫：非超管立即 `signOut()` 并回 `AUTH_USE_USER_ENTRY` 错误码 |
-| `R-auth-005` | `user_sessions.surface='admin'` 维度独立计数（与 app 互不影响）|
-| `R-auth-006` | 同 app；运维可手工 `is_active=false` disable 异常管理员 |
-| `R-auth-007` | 路径走 `/admin/auth/forgot` → `/admin/auth/reset-password` |
-| `R-auth-008` | 复用 `POST /api/admin/me/password`（与 app 同密码规则：8+ 字母 + 数字）|
-| `R-auth-010` | 守卫跳 `/admin/auth/login?redirect=...`；非超管 → `/admin/auth/login?error=not_admin` |
+- 在密码校验通过后立即校验"管理员身份"；非管理员被立即登出并提示"请使用用户入口登录"。
+- 该判定失败动作必须进入审计。
 
-## 3. admin 不做（在基线已声明，再次提示运维注意）
+## 3. 关键动作 100% 审计
 
-- 无注册页 / 无 Google OAuth / 无邮箱验证页 / 无头像 / 无 self-delete / 无改邮箱 UI
-- 自助邀请 UI、管理员列表、改他人密码：均属未来 `admin-users` feature
+- 登录成功 / 登录失败、改密、退出（本设备 / 全部设备）必须全部进入审计记录。
+- 审计禁止记录明文密码、长效令牌等敏感内容。
 
-## 4. 流程文件
+## 4. 不开放 OAuth
 
-- 主流程：[`../flows/admin-main-flow.md`](../flows/admin-main-flow.md)
-- 异常流：[`../flows/admin-exception-flow.md`](../flows/admin-exception-flow.md)
-- C02 admin：[`../../../C03-ia/auth/admin/`](../../../C03-ia/auth/admin/)
+- admin 端只走邮箱 + 密码，不接入 Google 等第三方登录。
+
+## 5. 设备上限独立
+
+- admin 端的活跃会话上限 3 台与 app 端独立计数；互不影响。
+
+## 6. 无个人资料维护
+
+- admin 端不展示头像 / 显示名编辑入口；仅含"修改密码 / 退出"。
+
+## 7. 浏览器存储规范
+
+- 严禁在 `localStorage` / `sessionStorage` 等本地存储中保留任何长效凭据。
+- 长效凭据只通过 HttpOnly Cookie 维持。

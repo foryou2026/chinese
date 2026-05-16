@@ -4,7 +4,7 @@
 
 > Round 5 按端过滤。app 端学员流程见 [../app/02-flows.md](../app/02-flows.md)。
 
-## F-admin-course-1 · 新建一个轨道(content_admin / super)
+## F-admin-course-1 · 新建一个轨道(admin / super)
 
 ```
 P-admin-course-001(轨道列表)→ 新建按钮 → 弹窗填轨道码 + 5 语标题

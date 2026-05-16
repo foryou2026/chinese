@@ -8,7 +8,7 @@
 - admin。
 
 ## 2. 初始数据
-- `GET /admin/course/question?filters=...&cursor=&limit=50` → 列表;字段:`code / type / kp_code / difficulty / report_count / is_published / version / updated_at`;
+- `GET /admin/course/question?filters=...&cursor=&limit=50` → 列表;字段:`code / type / kp_code / difficulty / report_count / 发布态 / version / 更新时间;
 - 顶部筛选:主题 / 题型(12 种)/ KP / 难度 / 状态 / 举报数 ≥ N。
 
 ## 3. 主要交互

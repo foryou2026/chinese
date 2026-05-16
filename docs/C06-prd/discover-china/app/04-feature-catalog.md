@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/discover-china/app/04-feature-catalog.md -->
 
-# 04 · 功能模块(MoSCoW)· discover-china / **app**
+# 04 · 功能模块()· discover-china / **app**
 
 ## Must-Have
 

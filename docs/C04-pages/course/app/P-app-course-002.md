@@ -15,8 +15,8 @@
 ## 3. 主要交互
 - 地图视图:阶段卡片点击展开章/节列表;节图标 🔒/⚪/🟡/🟢;
 - 节内:顶部进度条(`current_idx / 12`),KP 讲解卡 → 滑下一张;每 3-4 个 KP 插入随堂练 2-4 题;
-- 答题:点选即提交,反馈 ✅/❌ + 解析卡;`POST /app/answer` 写 `user_answers` + 触发 SRS;
-- 退出节学习时 `POST /app/lesson/{code}/checkpoint` 保存 `last_kp_id`;
+- 答题:点选即提交,反馈 ✅/❌ + 解析卡;`POST /app/answer` 写 答题记录 + 触发 SRS;
+- 退出节学习时 `POST /app/lesson/{code}/checkpoint` 保存 最后学习位置;
 - 学完 12 KP 弹 D-13(做小测 / 跳过);
 - 节末小测:6 题统一提交 `POST /app/lesson/{code}/finish`,展示结算页(得分 + 通过与否 + 错题列表)。
 

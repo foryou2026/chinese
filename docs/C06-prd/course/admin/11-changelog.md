@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C06-prd/course/admin/12-changelog.md -->
+<!-- TARGET-PATH: docs/C06-prd/course/admin/11-changelog.md -->
 
 # 12 · 变更日志 · course / **admin**
 

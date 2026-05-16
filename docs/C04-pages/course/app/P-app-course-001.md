@@ -11,15 +11,15 @@
 ## 2. 初始数据(1 次请求)
 - `GET /app/home/summary?track={current_track}` → 返回:
   - `user`(头像 / 昵称 / 母语 / UI 语言);
-  - `continue_lesson`(节 code + 进度 % + last_kp_id);
+  - `continue_lesson`(节 code + 进度 % + 最后学习位置);
   - `srs_due_count`(今日到期 KP 数);
   - `next_unlock`(即将解锁的节);
   - `recommend`(推荐节列表);
   - `streak_days`(连续打卡天数)。
 
 ## 3. 主要交互
-- 顶部主题徽章 → 点开 D-11 主题 Sheet(只列已订阅主题)→ 切换写 `users.current_track` 并刷新 summary;
-- "继续学习"卡片 → 跳 P-app-course-002(节学习)`/learn/{lesson_code}` 续传 `last_kp_id`;
+- 顶部主题徽章 → 点开 D-11 主题 Sheet(只列已订阅主题)→ 切换写 用户当前主题 并刷新 summary;
+- "继续学习"卡片 → 跳 P-app-course-002(节学习)`/learn/{lesson_code}` 续传 最后学习位置;
 - "今日复习 N"卡片 → 跳 P-app-course-004;
 - "推荐"卡片 → 跳 P-app-course-002 该节;
 - 底部 Tab 切换 → 不刷新 summary(本地缓存 10 分钟)。

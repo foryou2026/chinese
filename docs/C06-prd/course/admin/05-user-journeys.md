@@ -7,7 +7,7 @@
 ## 5.1 主旅程
 
 ### J-admin-course-1 · 新章上架闭环
-1. `super_admin` 登录（2FA）→ 进入后台
+1. `admin` 登录（2FA）→ 进入后台
 2. [P-001](06-page-specs/P-admin-course-001.md) → 进入主题 → [P-002](06-page-specs/P-admin-course-002.md) 选阶段
 3. [P-003](06-page-specs/P-admin-course-003.md) 拖拽排序章 → [P-004](06-page-specs/P-admin-course-004.md) 配置节 + KP 绑定
 4. [P-005](06-page-specs/P-admin-course-005.md) 批量导入题目（JSON）→ 抽检 ≥ 10 题 / 节
@@ -22,7 +22,7 @@
 5. 超 7 天未处理 → [P-009](06-page-specs/P-admin-course-009.md) 看板高亮呆滞项
 
 ### J-admin-course-3 · 撤回
-1. `super_admin` 在任一资源页发起撤回 → 二次确认
+1. `admin` 在任一资源页发起撤回 → 二次确认
 2. 生效后学员侧节失效 + 自动跳转
 
 ### J-admin-course-4 · 全局搜索 / 统计

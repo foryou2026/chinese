@@ -5,5 +5,5 @@
 | 角色 | categories_scope | 写 | 索引重建 |
 |------|------------------|-----|---------|
 | readonly | 任意 | ✗ | ✗ |
-| content_admin | 受限 | scope 内 | ✗ |
+| admin | 受限 | scope 内 | ✗ |
 | super | 全部 | 全 | ✓ |

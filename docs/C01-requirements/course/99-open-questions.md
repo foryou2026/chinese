@@ -1,5 +1,7 @@
 <!-- TARGET-PATH: docs/C01-requirements/course/99-open-questions.md -->
 
-# 99 · C01 待确认问题 · course
+# `course` · 待确认问题
 
-> 已清空。所有 PM 决策见 〔历史素材〕 已封板段。
+> 本节为空 → 可冻结。非空 → 必须回到澄清协议补答。
+
+（当前无未决问题。）

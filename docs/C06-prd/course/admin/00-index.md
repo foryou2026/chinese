@@ -13,8 +13,7 @@
 - [08-roles-permissions.md](08-roles-permissions.md)
 - [09-design-summary.md](09-design-summary.md)
 - [10-known-issues.md](10-known-issues.md)
-- [11-roadmap.md](11-roadmap.md)
-- [12-changelog.md](12-changelog.md)
+- [11-changelog.md](11-changelog.md)
 - [06-page-specs/00-index.md](06-page-specs/00-index.md)
 
 ## 参考

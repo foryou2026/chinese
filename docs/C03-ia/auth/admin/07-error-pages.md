@@ -4,8 +4,8 @@
 
 | 错误 | 处理 |
 |------|------|
-| 未登录 / token 失效 | 守卫跳 `/admin/auth/login?redirect=...` |
-| 非 super_admin (含 user 角色) | 立即 signOut + 跳 `/admin/auth/login?error=not_admin` (P-001 not-admin 态) |
+| 未登录 / token 失效 | 守卫跳 管理端登录页（含回跳参数） |
+| 非 admin (含 user 角色) | 立即 signOut + 跳 管理端登录页（含回跳参数） (P-001 not-admin 态) |
 | 重置链接过期 | P-003 token-invalid 内嵌态 (不另开页) |
 | 锁定 | P-001 locked 内嵌态 |
 | 禁用账号 | P-001 error + Toast |

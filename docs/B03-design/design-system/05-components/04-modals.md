@@ -32,3 +32,28 @@
 ## 五、可访问性
 - `role="dialog"` + `aria-modal="true"` + `aria-labelledby` 指向标题。
 - focus trap;关闭后焦点回到触发元素。
+
+## Anatomy（结构组成）
+- 遮罩 `--bg-overlay` → 容器 `glass-modal`。
+- 容器：标题区（`text-h3` + X 按钮）→ 内容区（24px 内边距）→ 底部按钮区（右对齐：取消左 / 确认右）。
+- focus trap 边界：进入聚焦第一个可交互元素，ESC 关闭。
+
+## 反例（禁止形态）
+- 用 Modal 承载长表单或可独立成页的复杂流程（应改成抽屉或独立页）。
+- 多个 Modal 堆叠（应改为分步向导或拆流程）。
+- 关闭按钮放底部（违反约定，关闭应在右上角 X）。
+- 危险弹窗允许点遮罩关闭（应禁用）。
+- 把成功提示做成 Modal（应用 Toast）。
+
+## 可访问性（a11y 强化）
+- `role="dialog"` + `aria-modal="true"` + `aria-labelledby="<title-id>"`。
+- focus trap：Tab/Shift+Tab 在 Modal 内闭环；关闭后焦点回到触发元素。
+- ESC 关闭支持；`prefers-reduced-motion` 时关闭进出缩放动效。
+
+## 空态
+- Modal 内的列表若空，使用与 [07-empty-loading.md](07-empty-loading.md) 一致的 `EmptyState`，缩小留白至 `space-4`。
+
+## 错误态
+- Modal 内操作错误：内联在表单字段，不弹 Toast 遮挡 Modal；5xx 时关闭 Modal 后再 Toast。
+- 加载失败：Modal 内容区替换为错误占位 + “重试”，标题与按钮区保留。
+

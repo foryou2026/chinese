@@ -15,7 +15,7 @@
 
 ## 3. 主要交互
 - 卡片点击 → 详情页(规则说明 + 历史成绩 + [开始考试]);
-- [开始考试] → `POST /exam/{id}/start` 写 `user_exam_attempts` 返 `attempt_id` → 跳 P-app-course-007;
+- [开始考试] → `POST /exam/{id}/start` 写 考试记录 返 `attempt_id` → 跳 P-app-course-007;
 - 阶段考已通过显示"已通过 ✓"灰色按钮 + Tooltip "阶段考通过后不可重考"(FX-course-05)。
 
 ## 4. 弹窗

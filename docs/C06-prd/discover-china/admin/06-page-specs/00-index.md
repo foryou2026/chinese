@@ -16,5 +16,5 @@
 ## 维护原则
 
 - **不复制** C03 的交互流程细节(只放摘要 + 链接);C03 是真相。
-- **截图**:由 C04 HTML 原型生成,放 `assets/screenshots/<page-id>.png`(本期暂用占位)。
+- **截图**:由 C04 HTML 原型生成,放 `assets/screenshots/<page-id>.png`(当前暂用占位)。
 - **变更**:任一页 spec 变化必须同步本目录 00-index.md。

@@ -32,7 +32,7 @@
 
 - `course` 的"学员举报"流向 `course/admin/M-report`,无外部 feature 依赖。
 - `discover-china/app` 的 `/me/progress` 已废弃,**不** 再调用 `course/srs`。
-- `auth` 是所有其它 feature 的鉴权前置;app + admin 共享一份 Supabase project,但 `user_sessions.surface` 上独立计数,3-设备硬上限按端隔离。
+- `auth` 是所有其它 feature 的鉴权前置;app + admin 共享一份 鉴权与数据底座 project,但 会话记录` 上独立计数,3-设备硬上限按端隔离。
 
 ## 5. 全局术语
 

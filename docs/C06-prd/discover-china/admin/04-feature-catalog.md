@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/discover-china/admin/04-feature-catalog.md -->
 
-# 04 · 功能模块(MoSCoW)· discover-china / **admin**
+# 04 · 功能模块()· discover-china / **admin**
 
 ## Must-Have
 

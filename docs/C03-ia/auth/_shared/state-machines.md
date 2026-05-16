@@ -13,8 +13,8 @@
 |----------|------|----|---------|
 | `SM-auth-shared-01` | session 生命周期（cookie 颁发 / 续签 / 撤销） | app + admin | 本文件 §2 |
 | `SM-auth-shared-02` | CSRF token（双提交） | app + admin | 本文件 §3 |
-| `SM-auth-shared-03` | 设备名册（3 设备硬上限） | app + admin（按 `user_sessions.surface` 独立计数） | 本文件 §4 |
-| `SM-auth-shared-04` | 锁定 / 禁用（5 错锁 15min / `zhiyu.profiles.is_active=false`） | app + admin | 本文件 §5 |
+| `SM-auth-shared-03` | 设备名册（3 设备硬上限） | app + admin（按 会话记录` 独立计数） | 本文件 §4 |
+| `SM-auth-shared-04` | 锁定 / 禁用（5 错锁 15min / 用户档案=false`） | app + admin | 本文件 §5 |
 
 > 端独有状态机（`SM-auth-app-NN` / `SM-auth-admin-NN`）查询各自端的 `03-state-machines.md`。
 
@@ -34,7 +34,7 @@
 
 - cookie：`access_token`（30min jwt）+ `refresh_token`（7d，rotation）
 - 存储：cookies = `HttpOnly; Secure; SameSite=Lax; Path=/`
-- 服务端登记：`user_sessions(id, user_id, surface, device_label, created_at, last_seen_at, revoked_at)`
+- 服务端登记：会话记录(id, user_id, surface, device_label, created_at, last_seen_at, revoked_at)`
 - 跨端不共享 cookie name（app 用 `sb-access`、admin 用 `sb-admin-access`）
 
 ## 3. `SM-auth-shared-02` · CSRF 双提交
@@ -47,7 +47,7 @@
 
 - header 必须与 cookie `csrf` 值字节级相等
 - 仅状态变更接口（POST/PUT/PATCH/DELETE）校验
-- OAuth callback / supabase webhook 走签名校验，**不**走 CSRF
+- OAuth callback / 鉴权与数据底座 webhook 走签名校验，**不**走 CSRF
 
 ## 4. `SM-auth-shared-03` · 设备名册（按端独立计数）
 
@@ -63,8 +63,8 @@ device_count(user_id, surface) ≤ 3
 ```text
 失败次数(user_id, ip, 15min窗口) ≥ 5 --> [locked 15min]
 [locked] --15min超时--> [normal]
-profiles.is_active = false --> [globally revoked]
-[globally revoked] --管理员置 is_active=true--> [normal]
+profiles.启用态 = false --> [globally revoked]
+[globally revoked] --管理员置 启用态=true--> [normal]
 ```
 
 - 计数表：`auth_failed_attempts(user_id, ip, ts)`，TTL 60min

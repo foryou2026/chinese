@@ -5,14 +5,14 @@
 > F3 源:`P-admin-course-002` · 路由 `/admin/course/tree?track={track}` · R-014/023
 
 ## 1. 进入条件
-- admin + `track ∈ tracks_scope`。
+- admin + `track ∈ 主题范围。
 
 ## 2. 初始数据
-- `GET /admin/course/tree?track={track}&depth=4` → 阶段[6] → 章[6] → 节[6] 树形;每节字段 `code / title_i18n.zh / is_published / kp_count / question_count`;
+- `GET /admin/course/tree?track={track}&depth=4` → 阶段[6] → 章[6] → 节[6] 树形;每节字段 `code / 多语标题字段.zh / 发布态 / kp_count / question_count`;
 - 节点 lazy expand(章/节默认折叠首屏只渲染阶段)。
 
 ## 3. 主要交互
-- 拖拽排序:阶段 / 章 / 节内同级拖动 → `PATCH /admin/course/{level}/reorder` 写 `seq_no`;
+- 拖拽排序:阶段 / 章 / 节内同级拖动 → `PATCH /admin/course/{level}/reorder` 写 句子顺序号;
 - 行内操作:[发布] / [下架] / [进入编辑];
 - 章发布 → D-4 级联确认("将级联发布 N 个节、N 个 KP、N 个题")→ `POST /admin/course/chapter/{id}/publish?cascade=true`;
 - 节发布 → 类似 D-4(级联 KP+题);
@@ -34,4 +34,4 @@
 - <1024px:仅树,点击节点跳详情。
 
 ## 7. 不变量回链
-R-023 级联规则(章→节→KP+题、节→KP+题、下架不级联)、§4 节 code 格式、`is_published` 二态。
+R-023 级联规则(章→节→KP+题、节→KP+题、下架不级联)、§4 节 code 格式、发布态 二态。

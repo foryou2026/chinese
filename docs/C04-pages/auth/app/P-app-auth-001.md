@@ -87,7 +87,7 @@ GlassCard
 ## 9. 性能 / 埋点
 
 - 首屏不调任何接口；
-- 提交开始 `analytics.track('auth.signin_attempt')`；成功 / 失败追加各自事件（事件 schema 见 `analytics` feature，v2）。
+- 提交开始 `analytics.track('auth.signin_attempt')`；成功 / 失败追加各自事件（事件 schema 见 `analytics` feature，暂不支持）。
 
 ## 10. 场景验证
 

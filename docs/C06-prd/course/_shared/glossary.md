@@ -16,4 +16,4 @@
 | 章测 / 阶段考 / HSK 模考 | 见 §7 BR-EXAM 段 |
 | SRS | Leitner 5 盒,间隔 1 / 3 / 7 / 14 / 30 天 |
 | 5 语 | `zh / en / vi / th / id`,与 discover-china 等其他 feature 全局对齐 |
-| Admin 角色 | 仅 `super_admin`（全局唯一管理员角色，遵从 [C02-permissions/01-roles.md](../../../C02-permissions/01-roles.md)）；course admin 端不再设 scope/readonly 等子角色 |
+| Admin 角色 | 仅 `admin`（全局唯一管理员角色，遵从 [C02-permissions/01-roles.md](../../../C02-permissions/01-roles.md)）；course admin 端不再设 scope/readonly 等子角色 |

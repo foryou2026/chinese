@@ -15,7 +15,7 @@
 
 | Flow-ID | 标题 |
 |---------|------|
-| FL-auth-admin-05 | 非 super_admin 登录拦截 |
+| FL-auth-admin-05 | 非 admin 登录拦截 |
 | FL-auth-admin-06 | 锁定 |
 | FL-auth-admin-07 | 禁用账号 |
 | FL-auth-admin-08 | 第 4 设备踢最早 |

@@ -22,7 +22,7 @@ GlassCard
   │    ├─ field password (含强度条 weak/medium/strong)
   │    │     hint「至少 8 位，含字母 + 数字」
   │    └─ button.primary [注册]
-  ├─ p.tos 「点击注册即表示同意《用户协议》《隐私政策》」(超链接) ← 静态页，v2 评估
+  ├─ p.tos 「点击注册即表示同意《用户协议》《隐私政策》」(超链接) ← 静态页，暂不支持
   └─ p.footer 「已有账号？」 link 「立即登录」 → /auth/login
 ```
 

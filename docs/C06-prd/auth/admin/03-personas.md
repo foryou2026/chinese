@@ -2,18 +2,18 @@
 
 # C06 · 03 角色画像 · `auth`
 
-## P1 · 超级管理员 (super_admin)
+##  · 超级管理员 (admin)
 
-- 数量 v1:1~3 名
+- 数量 首版:1~3 名
 - 设备:Mac/Windows 笔记本 + 偶尔手机查看;主用浏览器 Chrome/Edge
 - 关注:登录稳定 / 密码可改 / 被踢能感知 / 误操作有提示
 - 不关注:头像 / 个性化
 
-## P2 · 运维 (DevOps,非产品用户)
+##  · 运维 (DevOps,非产品用户)
 
 - 通过 SSH / 容器命令调 `seed-super-admin.sh` 创建新超管
-- 通过 SQL 把异常超管 `is_active=false`
-- 不登录管理后台,但所有变更进 `audit_logs.actor_role='system'`
+- 通过 SQL 把异常超管 启用态=false`
+- 不登录管理后台,但所有变更进 审计记录.actor_role='system'`
 
 ## P3 · 攻击者 (假想)
 

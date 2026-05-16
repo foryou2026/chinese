@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/auth/app/04-feature-catalog.md -->
 
-# 04 · 功能模块(MoSCoW)· auth / **app**
+# 04 · 功能模块()· auth / **app**
 
 > 单 surface 退化形态。
 
@@ -19,4 +19,4 @@
 ## Won't-Have
 
 - 短信验证码(成本敏感)
-- 2FA(本期仅 admin 端有)
+- 2FA(当前仅 admin 端有)

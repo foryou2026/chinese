@@ -28,3 +28,28 @@
 - 装饰元素**禁止**承载任何交互(无 click / hover 反馈)。
 - 装饰元素**不进入** `tabindex`(无障碍隔离)。
 - 装饰元素**禁止**使用品牌主色实色,只能用淡化版本(`*-soft` / 光晕)。
+
+## Anatomy（结构组成）
+- Divider：`<hr>` 或 `<div role="separator">`。
+- Glow：`<div aria-hidden="true">` 配径向渐变。
+- Pattern：`<div aria-hidden="true">` 配 SVG/CSS 底纹。
+- Icon：`<svg aria-hidden="true">`，仅作视觉补充。
+
+## 反例（禁止形态）
+- 给装饰元素绑 onClick / 监听 hover 改变业务状态（违反“装饰不交互”约束）。
+- 装饰元素使用品牌主色实色（应仅用 `*-soft` / 光晕淡化版本）。
+- 同屏放置 > 2 处 Glow（性能 + 视觉污染）。
+- 移动端不关闭 Glow（造成滚动卡顿）。
+- 装饰元素带文字而无对应 `aria-label`（屏幕阅读器念出无意义内容）。
+
+## 可访问性（a11y 强化）
+- 所有装饰元素 `aria-hidden="true"`，不进入 `tabindex` 序列。
+- Divider 若承载语义分组，使用 `<hr>` 或 `role="separator"` 配 `aria-orientation`。
+- 与文字组合的装饰，确保对比度仍满足 WCAG AA。
+
+## 空态
+- 不适用（装饰无数据态）。
+
+## 错误态
+- 不适用（装饰无错误态）。
+

@@ -16,7 +16,7 @@
 GlassCard
   ├─ form
   │    ├─ avatar block：头像预览（96×96 圆形）+ field avatar_url (text input)
-  │    │     hint「v1 仅支持 URL 输入；Google 注册的头像会自动填充。」
+  │    │     hint「首版 仅支持 URL 输入；Google 注册的头像会自动填充。」
   │    ├─ field display_name (max 32)
   │    ├─ field locale (Select: zh / en / vi / th / id)
   │    └─ buttons.row：
