@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- TARGET-PATH: docs/C04-prototype/discover-china/pages/P-app-discover-china-003.html -->
+<!-- page-id: P-app-discover-china-003 · state: default · feature: discover-china -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="proto:page-id" content="P-app-discover-china-003">
+<meta name="proto:state" content="default">
+<meta name="proto:states" content="default,loading,empty,error">
+<title>P-app-discover-china-003 · default · discover-china</title>
+<link rel="stylesheet" href="../vendor/proto-style/tokens.css">
+<link rel="stylesheet" href="../vendor/proto-style/themes.css">
+<link rel="stylesheet" href="../vendor/proto-style/app.css">
+<link rel="stylesheet" href="../feature.css">
+<script defer src="../vendor/proto-style/app.js"></script>
+<script defer src="../mock-data.js"></script>
+<script defer src="../feature.js"></script>
+</head>
+<body>
+<header class="topnav glass-nav" data-block="Topnav">
+  <span class="brand">知语</span>
+  <span class="spacer"></span>
+  <nav class="nav-actions">
+    <button class="btn btn-ghost" data-action="toggle-theme" aria-label="切换主题">◐</button>
+    <a class="btn btn-ghost" href="../index.html">原型首页</a>
+  </nav>
+</header>
+<main class="page">
+  <section style="max-width:760px;margin:0 auto;padding:16px 0">
+    <nav class="help" style="margin-bottom:16px"><a href="P-app-discover-china-001.html">发现中国</a> › <a href="P-app-discover-china-002.html">中国美食</a> › 故宫的一天</nav>
+    <header style="margin-bottom:16px">
+      <div class="help" style="font-size:13px">Gù gōng de yī tiān</div>
+      <h1>故宫的一天</h1>
+      <p class="help">A Day at the Forbidden City</p>
+    </header>
+    <div class="glass-panel" data-block="PlayerBar" style="position:sticky;top:64px;padding:12px 16px;display:flex;gap:12px;align-items:center;margin-bottom:16px">
+      <button class="btn btn-primary" data-op="OP-fulltext-play" onclick="proto.toast({type:'info',msg:'全文朗读中(mock)'})">▶ 全文朗读</button>
+      <span class="help">当前 句 3 / 24</span>
+      <span class="spacer" style="flex:1"></span>
+      <button class="btn btn-ghost" onclick="proto.toast({type:'info',msg:'已跳到上次阅读(mock)'})">⤴ 上次阅读</button>
+    </div>
+    <ul data-block="SentenceList" style="list-style:none;padding:0;margin:0;display:grid;gap:12px">
+      <li class="glass-card" id="s-0001" data-block="Sentence" style="padding:16px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+          <div style="flex:1">
+            <div class="help" style="font-size:13px;letter-spacing:0.04em">Qīng chén liù diǎn,gù gōng dà mén qián yǐ jīng pái qǐ le cháng duì。</div>
+            <p style="font-size:18px;margin-top:6px;font-family:var(--font-serif)">清晨六点,故宫大门前已经排起了长队。</p>
+            <p class="help" style="margin-top:6px">At 6 a.m., long lines have already formed in front of the Forbidden City gate.</p>
+          </div>
+          <button class="btn btn-secondary" data-op="OP-tts-play" aria-label="朗读" style="width:40px;height:40px;padding:0" onclick="proto.toast({type:'success',msg:'播放(mock)'})">▶</button>
+        </div>
+        <div style="margin-top:8px"><span class="tag">0001</span></div>
+      </li>
+      <li class="glass-card" id="s-0002" data-block="Sentence" style="padding:16px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+          <div style="flex:1">
+            <div class="help" style="font-size:13px;letter-spacing:0.04em">Yóu kè men dài zhe qī dài,zhǔn bèi tàn suǒ zhè zuò gǔ lǎo huáng gōng。</div>
+            <p style="font-size:18px;margin-top:6px;font-family:var(--font-serif)">游客们带着期待,准备探索这座古老皇宫。</p>
+            <p class="help" style="margin-top:6px">Visitors arrive with anticipation, ready to explore this ancient palace.</p>
+          </div>
+          <button class="btn btn-secondary" data-op="OP-tts-play" aria-label="朗读" style="width:40px;height:40px;padding:0" onclick="proto.toast({type:'success',msg:'播放(mock)'})">▶</button>
+        </div>
+        <div style="margin-top:8px"><span class="tag">0002</span></div>
+      </li>
+      <li class="glass-card" id="s-0003" data-block="Sentence" style="padding:16px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+          <div style="flex:1">
+            <div class="help" style="font-size:13px;letter-spacing:0.04em">Wǔ men dǎ kāi shí,rén qún yǒng rù。</div>
+            <p style="font-size:18px;margin-top:6px;font-family:var(--font-serif)">午门打开时,人群涌入。</p>
+            <p class="help" style="margin-top:6px">When the Meridian Gate opens, the crowd surges in.</p>
+          </div>
+          <button class="btn btn-secondary" data-op="OP-tts-play" aria-label="朗读" style="width:40px;height:40px;padding:0" onclick="proto.toast({type:'success',msg:'播放(mock)'})">▶</button>
+        </div>
+        <div style="margin-top:8px"><span class="tag">0003</span></div>
+      </li>
+    </ul>
+    <div class="state-block" style="margin-top:32px">
+      <a class="btn btn-secondary" href="P-app-discover-china-002.html">返回类目</a>
+    </div>
+  </section>
+</main><script>proto.bootstrap();</script></body></html>

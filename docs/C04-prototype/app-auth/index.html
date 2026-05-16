@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- TARGET-PATH: docs/C04-prototype/app-auth/index.html -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>app-auth · 用户认证原型</title>
+<link rel="stylesheet" href="vendor/proto-style/tokens.css">
+<link rel="stylesheet" href="vendor/proto-style/themes.css">
+<link rel="stylesheet" href="vendor/proto-style/app.css">
+<link rel="stylesheet" href="feature.css">
+<script defer src="vendor/proto-style/app.js"></script>
+</head>
+<body>
+<header class="topnav glass-nav">
+  <span class="brand">知语 · 原型</span>
+  <span class="spacer"></span>
+  <button class="btn btn-ghost" data-action="toggle-theme">◐ 主题</button>
+</header>
+<main class="page">
+  <section class="glass-card" style="max-width:960px;margin:0 auto;padding:24px">
+    <h1>app-auth · 用户认证原型</h1>
+    <p class="help" style="margin-top:8px">所有 page-id 一次性出齐;P0 页面 4 状态齐;权限页含 forbidden 态。</p>
+    <table style="width:100%;border-collapse:collapse;margin-top:16px;font-size:14px">
+      <thead><tr style="text-align:left;border-bottom:1px solid var(--border-subtle)">
+        <th style="padding:8px">page-id</th><th>默认</th><th>加载</th><th>空</th><th>错误</th><th>无权限</th>
+      </tr></thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--border-subtle)"><td style="padding:8px"><code>P-app-app-auth-001</code> · 登录</td><td><a href="pages/P-app-app-auth-001.html">↗</a></td><td><a href="states/P-app-app-auth-001.loading.html">↗</a></td><td><a href="states/P-app-app-auth-001.empty.html">↗</a></td><td><a href="states/P-app-app-auth-001.error.html">↗</a></td><td>—</td></tr>
+        <tr style="border-bottom:1px solid var(--border-subtle)"><td style="padding:8px"><code>P-app-app-auth-002</code> · 注册</td><td><a href="pages/P-app-app-auth-002.html">↗</a></td><td><a href="states/P-app-app-auth-002.loading.html">↗</a></td><td><a href="states/P-app-app-auth-002.empty.html">↗</a></td><td><a href="states/P-app-app-auth-002.error.html">↗</a></td><td>—</td></tr>
+        <tr style="border-bottom:1px solid var(--border-subtle)"><td style="padding:8px"><code>P-app-app-auth-003</code> · 验证邮件已发送</td><td><a href="pages/P-app-app-auth-003.html">↗</a></td><td><a href="states/P-app-app-auth-003.loading.html">↗</a></td><td><a href="states/P-app-app-auth-003.empty.html">↗</a></td><td><a href="states/P-app-app-auth-003.error.html">↗</a></td><td>—</td></tr>
+        <tr style="border-bottom:1px solid var(--border-subtle)"><td style="padding:8px"><code>P-app-app-auth-004</code> · OAuth 回调</td><td><a href="pages/P-app-app-auth-004.html">↗</a></td><td><a href="states/P-app-app-auth-004.loading.html">↗</a></td><td><a href="states/P-app-app-auth-004.empty.html">↗</a></td><td><a href="states/P-app-app-auth-004.error.html">↗</a></td><td>—</td></tr>
+        <tr style="border-bottom:1px solid var(--border-subtle)"><td style="padding:8px"><code>P-app-app-auth-005</code> · 忘记密码</td><td><a href="pages/P-app-app-auth-005.html">↗</a></td><td><a href="states/P-app-app-auth-005.loading.html">↗</a></td><td><a href="states/P-app-app-auth-005.empty.html">↗</a></td><td><a href="states/P-app-app-auth-005.error.html">↗</a></td><td>—</td></tr>
+        <tr style="border-bottom:1px solid var(--border-subtle)"><td style="padding:8px"><code>P-app-app-auth-006</code> · 重置密码</td><td><a href="pages/P-app-app-auth-006.html">↗</a></td><td><a href="states/P-app-app-auth-006.loading.html">↗</a></td><td><a href="states/P-app-app-auth-006.empty.html">↗</a></td><td><a href="states/P-app-app-auth-006.error.html">↗</a></td><td>—</td></tr>
+        <tr style="border-bottom:1px solid var(--border-subtle)"><td style="padding:8px"><code>P-app-app-auth-007</code> · 个人中心首页</td><td><a href="pages/P-app-app-auth-007.html">↗</a></td><td><a href="states/P-app-app-auth-007.loading.html">↗</a></td><td><a href="states/P-app-app-auth-007.empty.html">↗</a></td><td><a href="states/P-app-app-auth-007.error.html">↗</a></td><td><a href="states/P-app-app-auth-007.forbidden.html">↗</a></td></tr>
+        <tr style="border-bottom:1px solid var(--border-subtle)"><td style="padding:8px"><code>P-app-app-auth-008</code> · 账号与安全</td><td><a href="pages/P-app-app-auth-008.html">↗</a></td><td><a href="states/P-app-app-auth-008.loading.html">↗</a></td><td><a href="states/P-app-app-auth-008.empty.html">↗</a></td><td><a href="states/P-app-app-auth-008.error.html">↗</a></td><td><a href="states/P-app-app-auth-008.forbidden.html">↗</a></td></tr>
+        <tr style="border-bottom:1px solid var(--border-subtle)"><td style="padding:8px"><code>P-app-app-auth-009</code> · 编辑资料</td><td><a href="pages/P-app-app-auth-009.html">↗</a></td><td><a href="states/P-app-app-auth-009.loading.html">↗</a></td><td><a href="states/P-app-app-auth-009.empty.html">↗</a></td><td><a href="states/P-app-app-auth-009.error.html">↗</a></td><td><a href="states/P-app-app-auth-009.forbidden.html">↗</a></td></tr>
+      </tbody>
+    </table>
+    <p class="help" style="margin-top:24px">变更记录见 <a href="changelog.md">changelog.md</a>;全局样式来源:
+      <a href="../../B04-design/prototype-style/README.md">B04 prototype-style</a>。</p>
+  </section>
+</main>
+<script>proto.bootstrap();</script>
+</body>
+</html>

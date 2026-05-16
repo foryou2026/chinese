@@ -7,6 +7,72 @@
 
 ---
 
+## 2026-05-16 · 批次 5 · `discover-china` C-phase 完整冻结
+
+> 反向回写"发现中国"全部 C-phase(C01..C05)。信息源:[`function/01-china/prd/`](../../function/01-china/prd/) + [`function/01-china/ai/F3-AI-页面交互规范/`](../../function/01-china/ai/F3-AI-页面交互规范/)。
+
+### C01 需求基线
+- [`docs/C01-requirements/discover-china/baseline.md`](../C01-requirements/discover-china/baseline.md):**20 个 R-ID** R-discover-china-001..020,3 US 用户故事,边界 / 不变量(5 语并齐、TTS 缓存键、软删 30 天);
+- 6 个主流程 + 7 个异常流程(mermaid)详 `flows/`。
+
+### C02 信息架构
+- 5 M-ID / 13 Flow-ID / 4 SM(文章发布、TTS 音频生成、表单脏、应用端 TTS 播放器);
+- 7 page-id(应用端 3 + 管理端 4);8 D-ID 弹窗 / Drawer;
+- 覆盖矩阵 20 R 全部至少 1 page-id ✅。
+
+### C03 页面规格
+- 7 个 page-id 一文件一规格,含 DOM 骨架 + 状态 + 交互 + 错误码 + 移动端 + a11y + 埋点;
+- 复杂页 `P-admin-discover-china-003` 含 sticky 顶栏 / 5 语 Tab / 句子卡片 + 重排 + 任意位置插入 + 后写覆盖。
+
+### C04 HTML 原型(共 43 文件)
+- vendor/proto-style/ 4 文件由 B04-design/prototype-style/ v1.0 拷贝;
+- pages/ 7 默认态;states/ 7×3 + 4 forbidden = 25;
+- feature.css / feature.js / mock-data.js / index.html / README.md / changelog.md / _input/prototype-direction.md;
+- 弹窗 D-1..D-8 在 mock 中以 toast 简化代演(结构详见 C03 / PRD)。
+
+### C05 PRD
+- [`docs/C05-prd/discover-china/PRD.md`](../C05-prd/discover-china/PRD.md):13 章完整 PRD,12 条 BR 业务规则,角色权限矩阵,路线图 v1.0..v2.0。
+
+### 自检
+- ✅ R / M / Flow / SM / page / D ID 全部命名空间唯一;
+- ✅ 20 R-ID 全覆盖至少 1 page-id;
+- ✅ 7 page-id 全部 P0 出齐 default + loading + empty + error;管理端 + forbidden;
+- ✅ vendor/proto-style/ 与 B04 v1.0 字节一致(cp);
+- ✅ 99-open-questions 全空;
+- ⏳ 待批次 6 跑 D01/D02 + D03 校验。
+
+---
+
+## 2026-05-16 · 批次 3+4 补登 · C04 HTML 原型 + B04 prototype-style 实化
+
+> 修正批次 3/4 当时将 C04 标注为"暂缓占位"违反框架"一次性出齐"硬约束;本次按 [`prompt/C-product/C04-H03-AI输出-HTML原型规范.md`](../../prompt/C-product/C04-H03-AI输出-HTML原型规范.md) 补齐全部原型产物。
+
+### B04 实化(v1.0)
+- [`docs/B04-design/prototype-style/tokens.css`](../B04-design/prototype-style/tokens.css):全套 CSS 变量(颜色/字体/间距/圆角/阴影/毛玻璃/动效),亮模式默认 + 暗模式覆盖在 themes.css;
+- [`docs/B04-design/prototype-style/themes.css`](../B04-design/prototype-style/themes.css):`[data-theme="dark"]` 完整覆盖 + `prefers-reduced-motion` 兜底;
+- [`docs/B04-design/prototype-style/app.css`](../B04-design/prototype-style/app.css):reset + 远景红光晕 + `.glass-*` / `.btn-*` / `.input` / `.toast` / `.skeleton` / `.proto-switcher` / `.env-badge`,响应式 768/375 双断点;
+- [`docs/B04-design/prototype-style/app.js`](../B04-design/prototype-style/app.js):`window.proto.{bootstrap,setTheme,toggleTheme,toast,cooldown,devtools.mountStateSwitcher,on}` 全局 API,FOUC 内联主题恢复;
+- 状态从「占位」→「v1.0 已填充」。
+
+### C04 `app-auth` 全套(50 文件)
+- 9 page-id × (1 default + 3 必出状态) + 3 权限页 forbidden 态 = pages/ 9 + states/ 30;
+- vendor/proto-style/ 4 文件字节级拷自 B04;
+- index.html / feature.css / feature.js / mock-data.js(OP-ID 键,业务语言字段)/ changelog.md(v1.0)/ README.md / `_input/prototype-direction.md`;
+- [入口](../C04-prototype/app-auth/index.html)。
+
+### C04 `admin-auth` 全套(28 文件)
+- 4 page-id × (1 default + 3 必出状态) + 1 权限页 forbidden 态 = pages/ 4 + states/ 13;
+- 其余资产同上;
+- [入口](../C04-prototype/admin-auth/index.html)。
+
+### 自检
+- 无 CDN / 无打包器 / 无真实网络请求;
+- feature.css 未重定义任何 token;
+- 全部跳转用 `<page-id>.html` 文件锚(无真实路由路径);
+- 浏览器直接双击 `index.html` 可跑。
+
+---
+
 ## 2026-05-16 · 批次 4 · `admin-auth` feature 全套反向回写
 
 > 后台超管的「登录 / 找回 / 改密 / 退出」最小集;邀请制 = 运维 SQL seed,无产品 UI。

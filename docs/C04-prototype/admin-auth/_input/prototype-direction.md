@@ -1,9 +1,19 @@
 <!-- TARGET-PATH: docs/C04-prototype/admin-auth/_input/prototype-direction.md -->
 
-# H01 · 原型方向 · `admin-auth`
+# H01 · 原型方向(admin-auth)
 
-- admin 暗色主题:背景 #0F1419 / 卡片 #1A2128 / 字 #E6EAF0;按钮主色复用 brand red 但降饱和 10%
-- 4 页等高:max-w-420 居中卡片 (登录/忘密/重置);`/admin/me` 嵌入 admin 主框架
-- 不要 Google 按钮 / 装饰插画;企业级简洁
-- 字段间距比 app 端紧 20%;字体 14px (app 端 16px)
-- 暂缓产出,与 `B04-design/prototype-style/` 共同 deferred
+> **冻结状态**:v1.0 · 2026-05-16
+
+## 目的
+- 反向回写期补登:把 [`C03-pages/admin-auth/`](../../../C03-pages/admin-auth/) 既有 DOM 骨架直译为可双击打开的 HTML;
+- 演示 [`B04-design/design-system`](../../../B04-design/design-system/) 设计 token + 毛玻璃 + 红色品牌色在登录/账号场景的真实效果。
+
+## 范围
+- 全部 page-id 一次性出齐(见 index.html);
+- 每个 P0 页面 4 状态齐(default/loading/empty/error);
+- 权限页加 forbidden 态。
+
+## 不在此期内的能力(由 vendor proto.* / 后续 H 阶段补)
+- 真实接口请求(全部 mock-data.js);
+- 主题色拾色器 UI(仅亮/暗切换);
+- 多语言切换 UI(仅顶栏占位)。

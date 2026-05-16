@@ -1,0 +1,4 @@
+/* TARGET-PATH: docs/C04-prototype/discover-china/feature.css */
+/* feature 级别样式覆盖。token 全部继承自 vendor。*/
+.help a { color: var(--brand); }
+table th { font-weight: 600; color: var(--text-secondary); }
