@@ -1,5 +1,5 @@
 /* TARGET-PATH: docs/B03-design/prototype-style/app.js
- * 翻译自 docs/B03-design/design-system/05-interactions.md
+ * 翻译自 docs/B03-design/design-system/06-interactions.md
  * 全局 proto.* API：bootstrap / theme / toast / modal / cooldown / devtools
  */
 (function () {

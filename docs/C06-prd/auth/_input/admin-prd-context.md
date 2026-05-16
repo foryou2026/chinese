@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C06-prd/auth/admin/_input/prd-context.md -->
+<!-- TARGET-PATH: docs/C06-prd/auth/_input/admin-prd-context.md -->
 
 # E01 · PRD 背景 · `auth`
 

@@ -162,6 +162,8 @@
 4. **C06-prd `_input/` 文件命名**：`auth` 用 `app-prd-context.md` / `admin-prd-context.md`（双 surface 双文件），其他 feature 用 `prd-context.md`。可在 [`prompt/A-framework/A00-04`](../../prompt/A-framework/A00-04-文档目录规划.md) 显式增补「多 surface 时按 surface 拆 _input」的约定，或反过来强制单文件 + 章节拆分。
 5. **`B03-design/design-system/99-extension-icons-imagery.md`** 与正文 `05-components/12-decorations.md` 都涉及视觉装饰元素，命名重叠风险；建议合并入 `05-components/12-decorations.md` 一节，但当前已有内部交叉引用，先保留并在两文件互链。
 
+> 补充说明：上表 1（C04 D 层内容）的处置详见本报告 §2.8（在§6 后追加记录）。
+
 ---
 
 ## 2.8 C04 页面交互层 D 层内容剥离（本轮新增追加）

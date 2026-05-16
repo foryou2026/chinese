@@ -23,7 +23,7 @@
 - `hover`:`primary` → `--brand-hover`;`secondary` / `ghost` 叠加 `--bg-hover`;`danger` → 实色 `--brand` + 白字。
 - `active`:`primary` → `--brand-active`。
 - `disabled`:背景 `--bg-active`,文字 `--text-disabled`,边框 `--border-subtle`,`cursor: not-allowed`,**禁止 hover 变化**。
-- `loading`:左侧加 14px Spinner,文字保持,自动 `disabled`;详见 [`05-通用交互.md §一`](../06-interactions.md)。
+- `loading`:左侧加 14px Spinner,文字保持,自动 `disabled`;详见 [`06-interactions §1`](../06-interactions.md)。
 - `focus-visible`:2px ring `--ring`。
 
 ## 四、约束

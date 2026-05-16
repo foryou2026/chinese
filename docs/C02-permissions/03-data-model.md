@@ -1,8 +1,8 @@
 <!-- TARGET-PATH: docs/C02-permissions/03-data-model.md -->
 
-# 04 · 数据结构
+# 03 · 数据结构
 
-> **阶段**：B02-P  
+> **阶段**：C02-P  
 > **上游**：`B01-architecture/03-database.md`、`01-roles.md`、`02-auth-flow.md`  
 > **下游**：`system/supabase/migrations/0002_profiles_sessions_audits.sql`、所有需要引用 `profiles` 的 D01 D 阶段产物  
 > **冻结状态**：已冻结 · 2026-04-28

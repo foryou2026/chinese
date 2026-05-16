@@ -2,8 +2,9 @@
 
 # 99 · C02 待确认问题
 
-## Q-2026-05-16-01 · 错误码补登 `AUTH_USE_USER_ENTRY`
+## Q-2026-05-16-01 · 错误码补登 `AUTH_USE_USER_ENTRY` · ✅ 已处置
 
+- **状态**：已处置 · 2026-05-16（已在 [`02-authz-mechanism.md §4`](./02-authz-mechanism.md) 错误码表中补入 `AUTH_USE_USER_ENTRY` 与 `AUTH_NOT_ADMIN` 两行，语义区分明确）
 - **来源**:批次 4 `auth` D03 V01 校验
 - **问题**:本期新增错误码 `AUTH_USE_USER_ENTRY` (403,管理端登录检测到非 super_admin 角色) 需补入 [`02-authz-mechanism.md §4`](./02-authz-mechanism.md) 全局错误码清单;D02 路由阶段建立时再同步落到 `D02-api/auth/admin/04-error-codes.md`(目前 D 阶段尚未启动)
 - **处置**:下一次 C02 修订时,在 [`02-authz-mechanism.md §4`](./02-authz-mechanism.md) 错误码表新增一行;不阻断当前 feature 冻结

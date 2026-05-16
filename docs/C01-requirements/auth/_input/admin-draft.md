@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C01-requirements/auth/_input/draft.md -->
+<!-- TARGET-PATH: docs/C01-requirements/auth/_input/admin-draft.md -->
 
 # R01 用户输入 · `auth` 需求初稿
 

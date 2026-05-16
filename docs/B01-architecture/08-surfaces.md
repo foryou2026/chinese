@@ -16,7 +16,7 @@
 - **本项目 = 多端项目**：surface 数 = **2**（`app` + `admin`）。
 - 所有 feature 的 C03 / C04 / C05 / D02 阶段产物**必须**按 `<surface>/` 拆子目录；C01 R baseline、C02 I `_shared/state-machines.md`、D01 D 表结构跨端共享。
 - 路由前缀强制：`/api/app/*`（应用端，对外别名 `/api/v1`）、`/api/admin/*`（后台，对外别名 `/admin/v1`）。
-- 鉴权基础设施共享（详见 [09-auth-infra.md](./09-auth-infra.md)）；登录 / 注册 / 找回密码等具体流程留给未来的 `auth` / `auth` feature。
+- 鉴权基础设施共享（详见 [09-auth-infra.md](./09-auth-infra.md)）；登录 / 注册 / 找回密码等具体流程留给未来的 `auth` feature。
 
 ---
 

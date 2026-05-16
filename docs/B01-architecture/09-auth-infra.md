@@ -5,9 +5,9 @@
 > **阶段**：B01-A 架构  
 > **角色**：架构师  
 > **feature**：全局  
-> **上游依赖**：`01-tech-stack.md`、`08-surfaces.md`、[`C02-permissions/02-authz-mechanism.md`](../C02-permissions/02-authz-mechanism.md)  
+> **上游依赖**：`01-tech-stack.md`、`08-surfaces.md`  
 > **冻结状态**：已冻结 · 2026-04-28  
-> **下游影响**：B02 权限规范、未来 `auth` / `auth` feature 的 C/D 全阶段
+> **下游影响**：C02 权限规范、未来 `auth` feature 的 C/D 全阶段
 
 ---
 
@@ -21,7 +21,7 @@
 - 会话：access 1h，refresh 30d，supabase-js 自动续期；密码重置 / 账号禁用立即撚销全部 refresh。
 - 多设备硬上限 = **3 个活跃会话**，第 4 次登录踢最早。
 - **角色仅两种**：`user`（应用端）/ `super_admin`（管理端唯一管理员，技术上允许多个，但本期无 UI 创建入口，按需手工 seed）。
-- **不在 B 阶段输出**：登录页 / 注册页 / 找回密码页的具体交互——这些落到 `<surface>-auth` feature 的 C 循环。
+- **不在 B 阶段输出**：登录页 / 注册页 / 找回密码页的具体交互——这些落到 `auth` feature 的 C 循环。
 - **本期不上 TOTP / 2FA**；防爆破靠后端节流（5 次 / 15 min 锁定 + IP 1h ≤ 5 次注册）。
 
 ---
@@ -53,7 +53,7 @@
 | CSRF | 登录后下发非-HttpOnly `zhiyu-csrf`（32 字节随机）；写请求必须 `X-CSRF-Token` 回传一致 |
 | 刷新 | 前端 supabase-js 自定义 `cookieStorage` adapter，调同域代理 `POST /api/auth/cookie/set` 让 Hono Set-Cookie；access 到期前 60s 自动 refresh |
 
-> **不自管账号**：业务表不存密码 / hash；账号 / 邮箱 / 密码哈希全部归 Supabase Auth 表（`auth.users`）管理。项目业务表 `public.users` 仅存 profile（昵称 / 头像 / 偏好），通过 `id` 1:1 关联 `auth.users.id`。
+> **不自管账号**：业务表不存密码 / hash；账号 / 邮箱 / 密码哈希全部归 Supabase Auth 表（`auth.users`）管理。项目业务表 `zhiyu.profiles` 仅存 profile（昵称 / 头像 / 偏好），通过 `id` 1:1 关联 `auth.users.id`。
 
 ---
 
@@ -74,7 +74,7 @@ app.use('*', requireAuth({ optional: false }))
 app.use('/admin/*', requireRole('super_admin'))
 ```
 
-> 与 [`C02-permissions/02-authz-mechanism.md`](../C02-permissions/02-authz-mechanism.md) 的「Cookie + CSRF」流程一致；任何冲突以 B02 为准。
+> 与 [`C02-permissions/02-authz-mechanism.md`](../C02-permissions/02-authz-mechanism.md) 的「Cookie + CSRF」流程一致；任何冲突以本文件（B01）为准，C02 下游跟进。
 
 ---
 
@@ -103,9 +103,9 @@ app.use('/admin/*', requireRole('super_admin'))
 
 ## 6. 会话与登出
 
-- 前端登出：调 `POST /v1/auth/logout` → 后端清 `zhiyu-at` / `zhiyu-rt` / `zhiyu-csrf` 三只 Cookie（`Max-Age=0`）→ 同时 `supabase.auth.signOut()` 清前端 session 缓存 → 跳登录页。
+- 前端登出：调 `POST /api/v1/auth/logout` → 后端清 `zhiyu-at` / `zhiyu-rt` / `zhiyu-csrf` 三只 Cookie（`Max-Age=0`）→ 同时 `supabase.auth.signOut()` 清前端 session 缓存 → 跳登录页。
 - **不向 localStorage / sessionStorage 写任何 token**（HttpOnly Cookie 是唯一存储）。
-- 后端登出 `/v1/auth/logout`：服务端落 Cookie 过期 Header + 调 `auth.admin.signOut(user_id)` revoke refresh token + 落 `auth_audit_log`。
+- 后端登出 `/api/v1/auth/logout`：服务端落 Cookie 过期 Header + 调 `auth.admin.signOut(user_id)` revoke refresh token + 落审计。
 - 强制下线（管理后台 → 学员）：`api-admin` 调 `supabase.auth.admin.signOut(user_id)` + 落审计日志；详见 [`C02-permissions/02-authz-mechanism.md §7`](../C02-permissions/02-authz-mechanism.md) 与多设备 3 上限策略。
 
 ---
@@ -121,23 +121,24 @@ app.use('/admin/*', requireRole('super_admin'))
 
 ## 8. 审计
 
-- 所有登录 / 登出 / 失败尝试都落 `audit_logs` 表（B02 数据结构）：
-  - `action`：`auth.signup` / `auth.signin` / `auth.signin_failed` / `auth.signout` / `auth.password_reset`
-  - `target_user_id`：被操作账号
-  - `actor_user_id`：操作者（管理员强制下线时 ≠ target）
-  - `ip` / `user_agent` / `surface`
+- 所有登录 / 登出 / 失败尝试都落 `audit_logs` 表（表结构详见 [`C02-permissions/03-data-model.md`](../C02-permissions/03-data-model.md)）：
+  - `event`：`auth.signup` / `auth.signin_success` / `auth.signin_failed` / `auth.signout` / `auth.password_reset`
+  - `target_id`：被操作账号 user_id
+  - `actor_id`：操作者（管理员强制下线时 ≠ target_id）
+  - `actor_role`：`'user' | 'super_admin'`
+  - `ip` / `meta.user_agent` / `meta.surface`
 - 失败登录连续 5 次 / IP / 10min → 触发 IP 临时封禁（中间件层，落 Redis）。
 
 ---
 
-## 9. 未来 `<surface>-auth` feature 边界（**不在 B 阶段输出，但在此预告**）
+## 9. 未来 `auth` feature 边界（**不在 B 阶段输出，但在此预告**）
 
-| feature | C/D 阶段需输出 |
-|---------|---------------|个人中心（账户信息 / 修改密码 / 修改邮箱 / 头像 / 显示名 / 偏好语言 / 登出）|
-| `auth` | 仅邮箱密码登录页（无 Google 按钮）/ 忘密 / 安全设置；**不提供注册入口**（超管由 seed 脚本写入或手工 SQL 逆生）|
+| feature · surface | C/D 阶段需输出 |
+|------------------|---------------|
+| `auth` (surface=`app`) | 注册页（邮箱 + 密码）、登录页（邮箱 + Google）、忘密页、验证邮箱、个人中心（账户信息 / 修改密码 / 修改邮箱 / 头像 / 显示名 / 偏好语言 / 登出）|
+| `auth` (surface=`admin`) | 仅邮箱密码登录页（无 Google 按钮）/ 忘密 / 安全设置；**不提供注册入口**（超管由 seed 脚本写入或手工 SQL 逆生）|
 
-每个 auth feature 在自己的 `<surface>/` 子目录下出页面 / 路由 / 接口；公用本文件定义的 Token 规格、Provider 接入、密码策略、Cookie / CSRF 
-每个 auth feature 在自己的 `<surface>/` 子目录下出页面 / 路由 / 接口；公用本文件定义的 Token 规格、Provider 接入、密码策略。
+每个 surface 在 `auth/<surface>/` 子目录下出页面 / 路由 / 接口；公用本文件定义的 Token 规格、Provider 接入、密码策略、Cookie / CSRF。
 
 ---
 

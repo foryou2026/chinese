@@ -7,7 +7,7 @@
 > **feature**：全局（一次性定调，所有 feature 共用）  
 > **上游依赖**：`_input/preferences.md`、`docs/A00-meta/questions/A-questions-round1-resolved.md`  
 > **冻结状态**：已冻结 · 2026-04-28 · 签字: PM  
-> **下游影响**：B02 权限（沿用 Supabase Auth + RBAC）、B03 设计系统（沿用前端栈与响应式断点）、所有 feature 的 C03/C04/D01/D02/D03
+> **下游影响**：B02 体验定调（沿用 surface 边界与平台心智）、B03 设计系统（沿用前端栈与响应式断点）、C02 权限（沿用 09-auth-infra.md 的 Token / 密码 / OAuth 决策与 RBAC 表结构）、所有 feature 的 C03/C04/D01/D02/D03
 
 ---
 

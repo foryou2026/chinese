@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/B03-design/design-system/06-interactions.md -->
 
-# 05 · 通用交互
+# 06 · 通用交互
 
 > **阶段**：B03-S  
 > **上游**：`04-status-colors.md`、`B02-ux/06-experience-principles.md`  
@@ -137,7 +137,7 @@
 
 ---
 
-## 10. 学习场景的额外公约（汉语学习专属，源自 [B03 §4](../../B02-ux/06-experience-principles.md)）
+## 10. 学习场景的额外公约（汉语学习专属，源自 [B02 §4](../../B02-ux/06-experience-principles.md)）
 
 1. 学错不羞辱（先承认难 → 给提示 → 给答案）；
 2. 学对不夸张（朴素肯定，不放彩带）；

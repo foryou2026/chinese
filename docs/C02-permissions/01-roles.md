@@ -2,7 +2,7 @@
 
 # 01 · 角色定义
 
-> **阶段**：B02-P  
+> **阶段**：C02-P  
 > **上游**：`_input/roles-input.md`、`B01-architecture/08-surfaces.md`  
 > **下游**：`B03-design/design-system/03-navigation.md`、所有 D02 L、`auth` / `auth` feature  
 > **冻结状态**：已冻结 · 2026-04-28

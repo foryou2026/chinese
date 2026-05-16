@@ -5,10 +5,9 @@
 > **阶段**：C01-R · **feature**：`auth` · **surface**：`app` + `admin`（多端单 feature）
 > **上游**：
 > - 输入草案：[`_input/app-draft.md`](./_input/app-draft.md)、[`_input/admin-draft.md`](./_input/admin-draft.md)
-> - B01 鉴权基础设施：[`09-auth-infra.md`](../../B01-architecture/09-auth-infra.md)
-> - C02 权限规范：[`01-roles.md`](../../C02-permissions/01-roles.md)、[`02-authz-mechanism.md`](../../C02-permissions/02-authz-mechanism.md)、[`03-data-model.md`](../../C02-permissions/03-data-model.md)
-> - B02 语气：[`04-voice-tone.md`](../../B02-ux/04-voice-tone.md)
-> **下游**：本 feature 全部 C02 / C03 / C04 / C05 产物；未来 D 阶段路由必须覆盖全部 R-ID。
+> **下游**：
+> - 同 feature 全部 C02 / C03 / C04 / C05 / C06 / D 阶段产物都会引用本文件
+> - 跨 feature 参考：B01-architecture/09-auth-infra.md（鉴权基础）、B02-ux/04-voice-tone.md（语气）仅侜同步使用，不作为 R 阶段上游输入
 > **冻结状态**：已冻结 · 2026-05-16（合并 app-auth+admin-auth 双 feature 重构 · 2026-05-17）
 
 ---
@@ -20,7 +19,7 @@
   - [`app/notes.md`](./app/notes.md)：app 端补充说明
   - [`admin/notes.md`](./admin/notes.md)：admin 端补充说明
 - 共 25 条 R-ID（app 范围 17 条 / admin 范围 10 条 / 两端共有 8 条）。
-- C02 流程：
+- C03 信息架构流程（下游）：
   - 共享/跨端：[`_shared/state-machines.md`](../../C03-ia/auth/_shared/state-machines.md)、[`_shared/flows-shared.md`](../../C03-ia/auth/_shared/flows-shared.md)
   - per-surface：[`app/02-flows.md`](../../C03-ia/auth/app/02-flows.md)、[`admin/02-flows.md`](../../C03-ia/auth/admin/02-flows.md)
 
@@ -134,4 +133,4 @@
 
 ## 6. 待确认问题
 
-详见 [`99-open-questions.md`](./99-open-questions.md) 与 [`B02 §99`](../../C02-permissions/99-open-questions.md)（`AUTH_USE_USER_ENTRY` 文案归口）。
+详见 [`99-open-questions.md`](./99-open-questions.md) 与 [`C02 §99`](../../C02-permissions/99-open-questions.md)（`AUTH_USE_USER_ENTRY` 文案归口）。

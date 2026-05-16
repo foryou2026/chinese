@@ -1,8 +1,8 @@
 <!-- TARGET-PATH: docs/C02-permissions/02-authz-mechanism.md -->
 
-# 03 · 权限校验机制
+# 02 · 权限校验机制
 
-> **阶段**：B02-P  
+> **阶段**：C02-P  
 > **上游**：`01-roles.md`、`02-auth-flow.md`、`B01-architecture/04-api-conventions.md`  
 > **下游**：所有 D02 L 接口、`packages/shared-config/src/auth.ts`  
 > **冻结状态**：已冻结 · 2026-04-28
@@ -228,7 +228,8 @@ supabase-js 在 `signInWithPassword` / `exchangeCodeForSession` / `refreshSessio
 | `AUTH_INVALID_CREDENTIALS` | 401 | 邮箱 / 密码错 | 邮箱或密码错误 |
 | `AUTH_EMAIL_NOT_VERIFIED` | 401 | 注册后未点验证邮件 | 请先验证邮箱 |
 | `AUTH_ACCOUNT_DISABLED` | 401 | profiles.is_active=false | 账号已被停用，请联系客服 |
-| `AUTH_NOT_ADMIN` | 403 | 非 super_admin 进管理端 | 该账号无管理员权限 |
+| `AUTH_NOT_ADMIN` | 403 | 后端鉴权 `adminRequired` 检测到非 super_admin（一般场景）| 该账号无管理员权限 |
+| `AUTH_USE_USER_ENTRY` | 403 | admin 登录页填用户凭证但角色不是 super_admin（主动 signOut + 指引用户去 app 端登录）| 该账号不是管理员，请使用用户入口登录 |
 | `AUTH_FORBIDDEN` | 403 | 角色不足 / 资源所有权不符 | 没有访问权限 |
 | `AUTH_OAUTH_FAILED` | 400 | Google OAuth 异常 | Google 登录失败：{provider_error} |
 | `AUTH_RESET_TOKEN_INVALID` | 400 | 重置链接过期 / 已用 | 链接已失效，请重新申请 |
