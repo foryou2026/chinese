@@ -30,7 +30,7 @@
 
 ## 5. 依赖
 
-- 鉴权服务（鉴权服务）
+- 鉴权后端（鉴权后端）
 - 自建 Hook：`/internal/auth-hook`（before_user_created）
 - 邮件：dev mock / prod SMTP（暂不支持 接）
 - Redis：节流计数（kv 后端）

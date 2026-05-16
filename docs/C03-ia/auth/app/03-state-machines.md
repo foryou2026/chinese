@@ -21,10 +21,10 @@
 
 > 文案：`重新发送 (NNs)`，倒计时实时刷新；按钮 disabled 期间禁止点击。
 
-## SM-auth-app-03 · 用户会话（前端 鉴权与数据底座-js + cookieStorage）
+## SM-auth-app-03 · 用户会话（前端 鉴权 SDK + Cookie 存储适配）
 
 
-- 转 `anon` 时统一动作：清 cookieStorage + clear Zustand authStore + 跳 `/auth/login?reason=<kicked|disabled|expired|signout>`；
+- 转 `anon` 时统一动作：清 Cookie 存储适配 + clear Zustand authStore + 跳 `/auth/login?reason=<kicked|disabled|expired|signout>`；
 - `reason=signout` 不弹 Toast；其他 reason 在登录页根据 query 弹 Toast。
 
 ## SM-auth-app-04 · 验证邮件 / 重置链接 token 校验

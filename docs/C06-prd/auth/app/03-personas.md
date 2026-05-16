@@ -28,5 +28,5 @@
 |------|---------------------|
 | 撞库 | login-attempt-record 节流 + 5/15 锁定 |
 | 注册轰炸 | register-throttle 节流（email+IP）|
-| OAuth 回调伪造 | 回调换会话 state 校验（鉴权与数据底座 内置）|
+| OAuth 回调伪造 | 回调换会话 state 校验（鉴权后端内置）|
 | 被禁账号刷接口 | disabledCache + 401 立返 |

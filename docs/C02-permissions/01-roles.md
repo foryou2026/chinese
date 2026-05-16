@@ -97,7 +97,7 @@
 
 ## 6. 变更约束
 
-- 新增 / 修改角色 → 必须写迁移 `鉴权与数据底座/migrations/xxxx_xxx.sql`，**不允许只改 TS 常量**；
+- 新增 / 修改角色 → 必须写迁移 `supabase/migrations/xxxx_xxx.sql`，**不允许只改 TS 常量**；
 - 修改菜单暴露 → 必须先改 [`B03-design/design-system/03-navigation.md`](../B03-design/design-system/03-navigation.md) + 本文件 §2 → 再改代码；
 - 任何"管理员可以管理管理员"的新需求，一律拒绝，走 SQL 直改 + 变更评审单。
 

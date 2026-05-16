@@ -79,7 +79,7 @@ type MenuItem = {
 ### 1.4 Token 过期处理
 
 ```
-鉴权与数据底座-js auto refresh 失败
+supabase-js auto refresh 失败
   → onAuthStateChange('SIGNED_OUT')
   → authStore.reset()
   → 全局 fetch 拦截器收到 401 / AUTH_TOKEN_EXPIRED
@@ -101,7 +101,7 @@ type AuthState = {
   user: { id: string; email: string; role: 'user' | 'admin'; avatar?: string } | null;
   loading: boolean;
   signIn: (email: string, password: string) => Promise<void>;
-  loginWithGoogle: () => Promise<void>;   // 仅应用端有效
+  signInWithGoogle: () => Promise<void>;   // 仅应用端有效
   signOut: () => Promise<void>;
 };
 ```
@@ -125,9 +125,9 @@ Zustand 实现，挂在 `packages/shared-utils/src/auth/useAuth.ts`，应用端 
 
 ```ts
 const app = new Hono();
-app.use('/admin/首版/*', authRequired, adminRequired);
-app.use('/api/首版/me/*', authRequired);
-app.use('/api/首版/discover/*', optionalAuth);
+app.use('/admin/v1/*', authRequired, adminRequired);
+app.use('/api/v1/me/*', authRequired);
+app.use('/api/v1/discover/*', optionalAuth);
 app.use('*', csrfRequired);  // 仅写方法生效，路由内部按需 opt-out
 ```
 
@@ -137,7 +137,7 @@ app.use('*', csrfRequired);  // 仅写方法生效，路由内部按需 opt-out
 import { jwtVerify } from 'jose';
 import { getCookie } from 'hono/cookie';
 
-const KEY = new TextEncoder().encode(process.env.AUTH_JWT_SECRET!);
+const KEY = new TextEncoder().encode(process.env.SUPABASE_JWT_SECRET!);
 const disabledCache = new LRU<string, boolean>({ max: 5_000, ttl: 30_000 });
 
 export const authRequired: MiddlewareHandler = async (c, next) => {
@@ -157,7 +157,7 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
   const userId = payload.sub as string;
   let disabled = disabledCache.get(userId);
   if (disabled === undefined) {
-    const { data } = await 鉴权与数据底座Admin
+    const { data } = await supabaseAdmin
       .schema('zhiyu')
       .from('profiles').select('启用态').eq('id', userId).single();
     disabled = data?.启用态 === false;
@@ -179,14 +179,14 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
 
 ### 2.3 RLS（行级安全）兜底
 
-- 鉴权与数据底座 表默认开 RLS；用户档案 / 会话记录 / 业务表均按 `auth.uid()` 限制读写；
-- Hono 后端使用 `service_role` key（绕 RLS）；**仅在通过 `authRequired` 校验后**调 `鉴权与数据底座Admin`；
-- **不**直接转发用户 access_token 给 鉴权与数据底座（避免双重校验开销 + 防止 token 经服务器中转）；
-- 公网直连 鉴权与数据底座（前端 anon key）：当前暂不开放，所有业务走 Hono。
+- Supabase 表默认开 RLS；用户档案 / 会话记录 / 业务表均按 `auth.uid()` 限制读写；
+- Hono 后端使用 `service_role` key（绕 RLS）；**仅在通过 `authRequired` 校验后**调 `supabaseAdmin`；
+- **不**直接转发用户 access_token 给 Supabase（避免双重校验开销 + 防止 token 经服务器中转）；
+- 公网直连 Supabase（前端 anon key）：当前暂不开放，所有业务走 Hono。
 
-### 2.4 Cookie 代理接口（鉴权与数据底座-js 适配器配套）
+### 2.4 Cookie 代理接口（supabase-js 适配器配套）
 
-前端 鉴权与数据底座-js 初始化时传入自定义 `auth.storage`，**不读写 localStorage**；所有 read/write 转发到同域：
+前端 supabase-js 初始化时传入自定义 `auth.storage`，**不读写 localStorage**；所有 read/write 转发到同域：
 
 | 接口 | 方法 | 行为 |
 |------|------|------|
@@ -194,7 +194,7 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
 | `/api/auth/cookie/set` | POST | body `{ access_token, refresh_token }` → Set-Cookie：`zhiyu-at` (HttpOnly 3600s) + `zhiyu-rt` (HttpOnly 2592000s) + `zhiyu-csrf` (非 HttpOnly 32B 随机) |
 | `/api/auth/cookie/clear` | POST | 三个 Cookie 全部 `Max-Age=0` |
 
-鉴权与数据底座-js 在 登录调用 / 回调换会话调用 / `refreshSession` 后由适配器拦截，转调 `cookie/set` 同步到后端。
+supabase-js 在 signInWithPassword / exchangeCodeForSession / `refreshSession` 后由适配器拦截，转调 `cookie/set` 同步到后端。
 
 ---
 
@@ -241,8 +241,8 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
 | `AUTH_EMAIL_TAKEN` | 400 | 注册时邮箱已存在 | 该邮箱已注册，请直接登录或找回密码 |
 | `AUTH_WEAK_PASSWORD` | 400 | 密码不符合规则 | 密码不符合规则，请重新输入 |
 | `AUTH_CSRF_INVALID` | 403 | CSRF Header 与 Cookie 不一致 | 页面已过期，请刷新重试 |
-| `AUTH_EMAIL_BLOCKED` | 400 | 鉴权服务 Hook 邮箱黑名单 | 该邮箱不允许注册 |
-| `AUTH_IP_BLOCKED` | 400 | 鉴权服务 Hook IP 黑名单 | 当前网络环境不允许注册 |
+| `AUTH_EMAIL_BLOCKED` | 400 | Supabase Auth Hook 邮箱黑名单 | 该邮箱不允许注册 |
+| `AUTH_IP_BLOCKED` | 400 | Supabase Auth Hook IP 黑名单 | 当前网络环境不允许注册 |
 | `AUTH_INVITE_INVALID` | 400 | 邀请码无效（仅 `INVITE_ONLY=true` 时）| 邀请码无效或已使用 |
 
 > 所有 code 必须 5 语 i18n（zh / en / vi / th / id）；登记位置 `packages/shared-i18n/src/<locale>/auth.json`。
@@ -253,7 +253,7 @@ export const authRequired: MiddlewareHandler = async (c, next) => {
 
 - 30s LRU 缓存被禁用状态；
 - 多实例切 Redis pubsub（key=`auth:disabled:{userId}` TTL 30s）；
-- Token 撚销依赖 鉴权与数据底座 自带机制；不维护单独黑名单。
+- Token 撚销依赖 Supabase 自带机制；不维护单独黑名单。
 
 ---
 

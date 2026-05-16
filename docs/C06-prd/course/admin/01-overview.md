@@ -47,4 +47,4 @@
 | 媒资上传(单文件 ≤ 50 MB) | 走预签名 URL 直传对象存储 |
 | 全量发布单主题 | 异步任务,< 30 s 完成 |
 
-> admin 路由:`/api/admin/首版/*` ≡ 短路径 `/admin/首版/*`。
+> admin 路由:`/api/admin/api/*` ≡ 短路径 `/admin/api/*`。

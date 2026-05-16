@@ -11,8 +11,8 @@
 | **surface(端)** | 部署独立的前端 + 后端组合,本项目两端:`app`(`apps/web-app` + `apps/api-app`)、`admin`(`apps/web-admin` + `apps/api-admin`) |
 | **feature** | C 阶段产出的最小业务单元;一个 feature 可横跨多 surface |
 | **多端单 feature** | 同一 feature 同时在多个 surface 出产物;目录形如 `<feature>/{baseline.md,_shared/,app/,admin/}`(A00-04 §四.5);`course`、`discover-china`、`auth` 均属此类 |
-| **monorepo** | `pnpm-workspace.yaml` 管理的 `system/{apps,packages,scripts,鉴权与数据底座}` 结构 |
-| **鉴权与数据底座 自托管** | 通过 `system/docker/compose.yaml` 拉起 PG16 + 鉴权服务 + Realtime + Storage + PostgREST |
+| **monorepo** | `pnpm-workspace.yaml` 管理的 `system/{apps,packages,scripts,db}` 结构 |
+| **鉴权后端** | 通过 `system/docker/compose.yaml` 拉起 PG16 + 鉴权后端 + Realtime + Storage + PostgREST |
 
 ## B. 角色（↑ [C02-permissions/01-roles.md](../C02-permissions/01-roles.md)）
 
@@ -40,9 +40,9 @@
 
 ## E. 路由前缀(项目级约定)
 
-- C 端:`/api/app/首版/*`(规范) ≡ `/api/首版/*`(短路径别名)
-- 后台:`/api/admin/首版/*`(规范) ≡ `/admin/首版/*`(短路径别名)
-- 内部:`/internal/首版/*`(走 `X-Internal-Token`,不出公网)
+- C 端:`/api/app/api/*`(规范) ≡ `/api/api/*`(短路径别名)
+- 后台:`/api/admin/api/*`(规范) ≡ `/admin/api/*`(短路径别名)
+- 内部:`/internal/api/*`(走 `X-Internal-Token`,不出公网)
 
 ## F. 主要业务术语
 

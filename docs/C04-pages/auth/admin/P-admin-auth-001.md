@@ -32,7 +32,7 @@
 
 ```
 点登录
-  → 发起 admin 登录调用（含节流检查、凭证校验、角色校验==='admin'、会话登记；实现接口在 D02-api/auth/admin/login 定义）
+  → 发起 admin 登录（含节流检查、凭证校验、角色校验==='admin'、会话登记；实现接口在 D02-api/auth/admin/login 定义）
   → 角色校验失败 → 立即登出 + 停在本页 not-admin 态
   → 成功 → navigate(query.redirect || '/admin')
 ```

@@ -45,7 +45,7 @@ GlassCard
 
 ## 5. 交互
 
-点击「注册」 → 进入 `submitting` 态 → 发起 auth 服务注册调用（含节流检查，具体接口在 D02-api/auth/app/register 定义）：
+点击「注册」 → 进入 `submitting` 态 → 发起 auth 服务注册（含节流检查，具体接口在 D02-api/auth/app/register 定义）：
 
 - 429 节流命中 → Toast `AUTH_REGISTER_RATE_LIMITED`。
 - 成功 → 跳 `P-003` `/auth/verify-email-sent?email=<email>`。

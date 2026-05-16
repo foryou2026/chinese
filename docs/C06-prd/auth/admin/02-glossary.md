@@ -10,4 +10,4 @@
 | not-admin 态 | 登录页子态;user 角色登录尝试被立即 signOut 后展示 |
 | kicked-back 态 | 登录页子态;被其它设备踢后跳回带 `?kicked=1` |
 | admin Cookie | `zhiyu-at`/`zhiyu-rt`/`zhiyu-csrf`,与 app 共用;Path=`/`,SameSite=Lax |
-| 全局退出 | `鉴权服务调用` 撤销该用户**所有 surface** 的全部 refresh |
+| 全局退出 | `鉴权后端调用` 撤销该用户**所有 surface** 的全部 refresh |

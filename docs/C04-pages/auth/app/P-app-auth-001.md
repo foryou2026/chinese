@@ -55,7 +55,7 @@ GlassCard
 
 ## 5. 关键交互
 
-- **提交**：点击“登录” → 进入 `submitting` 态 → 发起邀请 `auth` 服务的登录调用（节流检查 + 凭证校验 + 会话登记，具体接口在 D02-api/auth/app/login 定义）→ 成功后跳 `redirect ?? '/'`。
+- **提交**：点击“登录” → 进入 `submitting` 态 → 发起邀请 `auth` 服务的登录（节流检查 + 凭证校验 + 会话登记，具体接口在 D02-api/auth/app/login 定义）→ 成功后跳 `redirect ?? '/'`。
 - **Google**：点击 “Google 继续” → 发起 OAuth 跳转（跳回 `/auth/callback`，详见 P-app-auth-004）；本页不做预校验。
 - **redirect**：query 中带 `redirect=<encoded url>`；登录成功优先跳此；缺省跳 `/`。
 - **守卫**：已登录访问本页时，路由 root loader 自动 navigate 走（实现细节与auth 路由守卫一同在 D02 定义）。

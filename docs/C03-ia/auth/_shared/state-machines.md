@@ -47,7 +47,7 @@
 
 - header 必须与 cookie `csrf` 值字节级相等
 - 仅状态变更接口（POST/PUT/PATCH/DELETE）校验
-- OAuth callback / 鉴权与数据底座 webhook 走签名校验，**不**走 CSRF
+- OAuth callback / 鉴权后端回调 走签名校验，**不**走 CSRF
 
 ## 4. `SM-auth-shared-03` · 设备名册（按端独立计数）
 

@@ -15,7 +15,7 @@
 
 - **角色**：当前仅 2 个 — `admin`、`user`。新增角色须经 C02-P 走澄清流程。
 - **登录方式**：应用端 = 邮箱 + Google；管理端 = 仅邮箱。
-- **Token**：鉴权与数据底座 JWT（HS256），**HttpOnly Cookie** 存储 + CSRF Double-Submit。
+- **Token**：Supabase JWT（HS256），**HttpOnly Cookie** 存储 + CSRF Double-Submit。
 - **多设备**：硬上限 3，第 4 次踢最早；不提供「我的设备」页。
 - **不上 2FA**；防爆破靠后端节流。
 - **超管 seed**：`.env` 注入 + 部署脚本写入；UI 无创建入口；丢密码走手工 SQL 逆生（[03 §3.4](./03-data-model.md)）。
@@ -37,7 +37,7 @@
 
 ## 2. 核心原则（不可违反）
 
-1. **认证后端 = 鉴权服务（鉴权服务）**。Hono API 不自建 JWT 签发器。
+1. **认证后端 = Supabase Auth（Supabase Auth）**。Hono API 不自建 JWT 签发器。
 2. **角色枚举单点**：所有角色定义集中于 [01-roles.md](./01-roles.md)，新增角色经 C02-P 走澄清。
 3. **登录方式**：应用端 = 邮箱密码 + Google OAuth；管理端 = 仅邮箱密码。
 4. **Token = HS256 JWT**；access 1h / refresh 30d 滚动。
@@ -61,7 +61,7 @@ C02 **只**定义「全局角色 + 权限机制 + 数据结构」；具体的页
 | 角色枚举、Token 规格、Cookie 策略 | 登录页 / 注册页 / 找回密码 / 邮箱验证 / 个人中心 / 安全设置 等具体页面与交互 |
 | 中间件分层、错误码清单 | 表单字段 / 验证规则 / 文案 / 跳转链 |
 | 用户档案 / 会话记录 / 登录尝试记录 / 审计记录 表结构 | feature 自有的偏好 / 通知 / 实名 等附加表 |
-| 鉴权服务 Hook + DB Trigger（注册侧风控与默认 role 注入）| Onboarding 流程 / 头像上传 / 修改邮箱 / 修改密码具体接口 |
+| Supabase Auth Hook + DB Trigger（注册侧风控与默认 role 注入）| Onboarding 流程 / 头像上传 / 修改邮箱 / 修改密码具体接口 |
 
 > 其他业务 feature（如 `course`、`discover-china`）的 C02-P 仅向本目录**增量并入**自己的「新增角色 / 权限粒度 / 数据可见范围」，**不**再各自维护一份权限文档。
 

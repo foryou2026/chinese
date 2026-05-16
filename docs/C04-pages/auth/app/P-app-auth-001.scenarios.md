@@ -9,7 +9,7 @@
 | S3 | 错密 1~4 次 | 错 password | 字段下「邮箱或密码不正确」；按钮恢复 idle |
 | S4 | 错密第 5 次 → 锁定 | 错 password | 整页 locked + 15:00 倒计时；按钮 disabled |
 | S5 | 锁定期间再提交 | 任意 | 前置 `login-attempt-record` 直接返 429，重置倒计时显示 |
-| S6 | 已禁用账号登录 | 禁用账号 | Toast「账号已被停用，原因：…」+ 客服入口；不进入后续登录调用 |
+| S6 | 已禁用账号登录 | 禁用账号 | Toast「账号已被停用，原因：…」+ 客服入口；不进入后续登录 |
 | S7 | 未验证邮箱登录 | 未点验证链接的账号 | Toast「邮箱未验证」+「重发验证邮件」按钮 |
 | S8 | Google 一键 | 点 Google | 跳 Google → `/auth/callback` → 跳 `/` |
 | S9 | Google 取消 | Google 同意页点取消 | 静默回 `/auth/login`，不弹 Toast |

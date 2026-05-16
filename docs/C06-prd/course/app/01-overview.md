@@ -43,4 +43,4 @@
 | 业务接口(单题判分写入) | P95 ≤ 150 ms,限流 60 次/分/用户(超出 429) |
 | 业务接口{attempt}/submit`(批量判分 50 题) | P95 ≤ 800 ms |
 
-> 路由别名:`/api/首版/* ≡ /api/app/首版/*`,见 [_glossary.md §E](../../_glossary.md)。
+> 路由别名:`/api/api/* ≡ /api/app/api/*`,见 [_glossary.md §E](../../_glossary.md)。

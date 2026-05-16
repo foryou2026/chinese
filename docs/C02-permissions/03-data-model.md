@@ -4,25 +4,25 @@
 
 > **阶段**：C02-P  
 > **上游**：`B01-architecture/03-database.md`、`01-roles.md`、`02-auth-flow.md`  
-> **下游**：`system/鉴权与数据底座/migrations/0002_profiles_sessions_audits.sql`、所有需要引用 用户档案 的 D01 D 阶段产物  
+> **下游**：`system/supabase/migrations/0002_profiles_sessions_audits.sql`、所有需要引用 用户档案 的 D01 D 阶段产物  
 > **冻结状态**：已冻结 · 2026-04-28
 
 ---
 
 ## 0. 摘要
 
-- 5 张表：用户账号（鉴权与数据底座 内置）+ 用户档案 + `zhiyu.会话记录 + `zhiyu.登录尝试记录 + `zhiyu.审计记录。
+- 5 张表：用户账号（Supabase 内置）+ 用户档案 + `zhiyu.会话记录 + `zhiyu.登录尝试记录 + `zhiyu.审计记录。
 - 业务 schema = **`zhiyu`**（与 `B01-architecture/03-database.md` 一致）。
 - 所有业务表 `id`：profiles/用户账号 引用 用户账号`；会话记录 用 `uuid_generate_v4()`；其他业务表用 `gen_random_uuid()`。时间戳统一 `timestamptz`。
 - 用户档案 与 会话记录 启用 RLS；登录尝试 / 审计日志仅 service_role 可写。Hono 后端用 service_role 绕 RLS（前置 `authRequired` 校验）。
 - 角色字段权威位置 = 用户账号->>'role'`；用户角色字段` 仅作冗余索引。
-- **来源对齐**：本文档字段定义与 `system/鉴权与数据底座/migrations/0002_profiles_sessions_audits.sql` 完全一致。
+- **来源对齐**：本文档字段定义与 `system/supabase/migrations/0002_profiles_sessions_audits.sql` 完全一致。
 
 ---
 
-## 1. 用户账号（鉴权服务 内置，约定）
+## 1. 用户账号（Supabase Auth 内置，约定）
 
-> 由 鉴权服务 维护，**严禁**业务侧 INSERT / UPDATE / DELETE；统一走 鉴权与数据底座-js Auth API。
+> 由 Supabase Auth 维护，**严禁**业务侧 INSERT / UPDATE / DELETE；统一走 supabase-js Auth API。
 
 | 字段 | 类型 | 业务约定 |
 |------|------|---------|
@@ -32,7 +32,7 @@
 | 邮箱验证时间 | timestamptz | Google 注册自动填；邮箱注册需点验证邮件后填 |
 | `raw_app_meta_data` | jsonb | **业务约定**：`{ "role": "user"\|"admin", "provider": "email"\|"google" }` |
 | `raw_user_meta_data` | jsonb | 用户可改的元数据（display.brand_color 等，由设计系统皮肤使用）|
-| `last_sign_in_at` | timestamptz | 鉴权与数据底座 自动维护 |
+| `last_sign_in_at` | timestamptz | Supabase 自动维护 |
 
 JWT 中映射：账号元数据.role` ← `raw_app_meta_data->>'role'`。
 
@@ -58,7 +58,7 @@ create table 用户档案 (
 create index profiles_role_idx on 用户档案 (role);
 ```
 
-> **关于"禁用"语义**：首版 schema 仅一个布尔位 启用态，无 `disabled_reason / disabled_at / disabled_by` 列。审计原因记录于 `zhiyu.审计记录.meta` jsonb（`event='user.disable'`），错误码继续使用 `AUTH_ACCOUNT_DISABLED`（语义不变）。若后续要在用户端展示禁用原因，再加 migration 扩列。
+> **关于"禁用"语义**：v1 schema 仅一个布尔位 启用态，无 `disabled_reason / disabled_at / disabled_by` 列。审计原因记录于 `zhiyu.审计记录.meta` jsonb（`event='user.disable'`），错误码继续使用 `AUTH_ACCOUNT_DISABLED`（语义不变）。若后续要在用户端展示禁用原因，再加 migration 扩列。
 
 ### 2.1 自动创建 Trigger
 
@@ -78,7 +78,7 @@ begin
     coalesce(new.raw_user_meta_data->>'locale', 'zh')
   );
 
-  -- 兜底注入 role + provider（鉴权服务 hook 已注入则跳过）
+  -- 兜底注入 role + provider（Supabase Auth hook 已注入则跳过）
   if new.raw_app_meta_data->>'role' is null then
     update 用户账号
     set raw_app_meta_data = coalesce(raw_app_meta_data, '{}'::jsonb)
