@@ -7,7 +7,51 @@
 
 ---
 
-## 2026-05-17 · 批次 15 · Round 8 · /prompt 模板去 auth 特殊化 + 去分期化（推翻批次 14 的 auth 决策）
+## 2026-05-17 · 批次 17 · Round 10 · /prompt C04 改「拷贝→引用」+ C04 原型乱码修复 + 全量交叉链接修复
+
+> **触发原因**：用户在浏览器打开 `docs/C04-prototype/course/admin/pages/*.html` 看到样式乱码——根因：course 页面 `href="_assets/styles.css"` 但页面在 `pages/` 子目录而资产目录名为 `assets/`（无下划线），且整套 C04 把 B04 拷贝到 `<surface>/vendor/proto-style/` + `course/<surface>/assets/` 是 469~1119 行的样式重复脏数据。用户明令：「不要怕工作量，统一给我按引用的模式改！改 prompt 得复制为引用」+「系统课程的内容，你要与 function/02-course/ai/F4-AI-原型设计完全一致」。
+
+### 17-1 · /prompt C04-H01/H03 改「拷贝→引用」
+
+- [prompt/C-product/C04-H03-AI输出-HTML原型规范.md](../../prompt/C-product/C04-H03-AI输出-HTML原型规范.md)
+  - 触发提示词【运行时资产】块：把「全量拷贝到 `<surface>/vendor/proto-style/`」改为「**禁止**在 feature 目录下任何位置复制 B04，HTML 必须通过相对路径引用 `docs/B04-design/prototype-style/`」；pages 用 `../../../../B04-design/prototype-style/X`，index 用 `../../../B04-design/prototype-style/X`
+  - **F4 例外条款**：feature 在 `function/<x>/ai/F4-AI-原型设计/` 有上游 AI 原型时（如 course），HTML 改为引用 `function/<feature>/ai/F4-AI-原型设计/_assets/X`（pages: `../../../../../function/.../F4-.../_assets/X`）
+  - 输出目录树：移除 `vendor/`（标 `vendor/` 已废弃），明确 `assets/styles.css`/`assets/app.css` 等 B04 拷贝皆为脏数据，仅 `assets/images/` 业务占位图可保留；单端 feature 可退化为 `<feature>/index.html + pages/ + states/`
+  - 硬约束 §0：列出 forbidden 拷贝位置（`vendor/`、`assets/styles.css`、`assets/app.css`）+ F4 例外
+  - `pages/`、`states/`、`feature.js`、changelog 模板、token 漂移规则、输出自检——共 8 处旧 vendor 表述全部改为「B04 prototype-style」引用模型
+- [prompt/C-product/C04-H01-用户输入-原型方向.md](../../prompt/C-product/C04-H01-用户输入-原型方向.md)
+  - 产物表行：`vendor/proto-style/ 全量拷自 B04` → 「HTML 通过相对路径引用 `docs/B04-design/prototype-style/`（不拷贝）」+ 在「本阶段不做」列写明禁止任何 B04 拷贝
+  - 弹窗组件来源、token 漂移规则、输出自检 3 处 vendor 表述改为 B04 引用模型
+
+### 17-2 · docs/C04-prototype 全量重构（拷贝→引用）
+
+- **删除**：所有 `<feature>/<surface>/vendor/proto-style/`（6 处，每处 469 行 B04 拷贝） + `course/{app,admin}/assets/`（2 处，每处 1119 行 F4 拷贝） + 2 个空的 `discover-china/{app,admin}/assets/` 残留
+- **重写 HTML 引用**（auth + discover-china 共 88 个 HTML）：
+  - pages/states：`"../vendor/proto-style/X"` → `"../../../../B04-design/prototype-style/X"`
+  - surface/index.html：`"vendor/proto-style/X"` → `"../../../B04-design/prototype-style/X"`
+- **重写课程引用 + 还原 F4 文件名**（course 共 17 页 + 2 index）：
+  - admin 9 页 `P-admin-course-001..009.html` → 还原 F4 原名 `P-A-1-课程目录总览.html` ~ `P-A-9-全局搜索.html`
+  - app 8 页 `P-app-course-001..008.html` → 还原 F4 原名 `P-C-1-学习地图.html` ~ `P-C-8-个人统计.html`
+  - pages：`"_assets/X"` → `"../../../../../function/02-course/ai/F4-AI-原型设计/_assets/X"`；`href="index.html"` → `href="../index.html"`
+  - course/{admin,app}/index.html 从 F4 原版 index.html 派生（资产改引用 + 行内 P-A-*/P-C-* 链接前缀 `pages/` 或跨端 `../<sibling>/pages/`）
+- **修复旧批次遗留 page-id 误链**：
+  - auth/app/index.html + auth/app/pages,states `P-auth-` → `P-app-auth-`（共改 9 页 / 30 状态 / 1 index 内的链接）
+  - auth/admin 同理 `P-auth-` → `P-admin-auth-`
+  - discover-china/app/index.html `P-admin-discover-china-` → `P-app-discover-china-` + 删除 4 行 stale admin-rows（line 27-30）
+  - discover-china/admin/index.html `P-app-discover-china-` → `P-admin-discover-china-`
+  - discover-china forbidden states 跨 feature 链接 `../../auth/pages/P-auth-` → `../../../auth/app/pages/P-app-auth-`
+  - auth/{app,admin}/index.html footer `../../B04-design/prototype-style/README.md` → `../../../B04-design/prototype-style/README.md`（路径深度修正）
+  - auth/admin/pages/P-admin-auth-001.html 内 `../../auth/pages/P-admin-auth-001.html` 自指 → 改为 `P-admin-auth-001.html`
+- **新增 feature 入口 + 全局入口**：
+  - `docs/C04-prototype/index.html`（全局 3 feature × 2 surface 卡片）
+  - `docs/C04-prototype/{auth,course,discover-china}/index.html`（feature 级 app/admin 双卡）
+- **附属文档同步**：6 surface 的 `feature.css/js`、`README.md`、`00-index.md`、`changelog.md` 共 18 文件，vendor 表述统一改为「B04 prototype-style 引用」/ 「F4 _assets 引用」
+
+### 17-3 · 验证
+
+- 全量交叉链接扫描：`docs/C04-prototype/**/*.html` 共 142 个文件，所有 `href`/`src` 相对路径全部 resolve 通过（0 broken）
+
+
 
 > **触发原因**：用户指出 [prompt/A-framework/A00-04-文档目录规划.md](../../prompt/A-framework/A00-04-文档目录规划.md) 与 [prompt/A-framework/A00-01-框架总览.md](../../prompt/A-framework/A00-01-框架总览.md) 把 auth 强行规定为「每个 surface 必须独立 `<surface>-auth` feature」是错误的——auth 与「商品」「订单」「发现中国」一样只是一个普通 feature，**很多软件根本不需要登录**；多端规则应统一为 `<feature>/<surface>/`，不允许任何 feature 被特殊命名。同时用户拒绝模板里出现「本期 / 二期 / 分期 / P0 / P1 / P2 / 显式排除」——「所有出现的内容都是要做的，不要搞任何分期」。模板是给陌生人通用复用的，必须彻底通用化。
 

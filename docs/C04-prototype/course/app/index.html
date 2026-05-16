@@ -1,39 +1,57 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
 <head>
 <meta charset="utf-8" />
-<title>课程 · app · 原型评审</title>
-<link rel="stylesheet" href="vendor/proto-style/tokens.css" />
-<link rel="stylesheet" href="vendor/proto-style/themes.css" />
-<link rel="stylesheet" href="vendor/proto-style/app.css" />
-<link rel="stylesheet" href="feature.css" />
-<style>
-  body{font-family:system-ui;margin:0;display:flex;height:100vh}
-  nav{width:260px;border-right:1px solid #e5e7eb;overflow:auto;padding:1rem}
-  nav h3{margin:0 0 .5rem 0;font-size:14px}
-  nav ul{list-style:none;padding:0;margin:0;font-size:13px}
-  nav li{padding:.3rem 0}
-  nav a{color:#2563eb;text-decoration:none}
-  iframe{flex:1;border:0}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>F4 · 课程引擎原型 · 索引</title>
+<link rel="stylesheet" href="../../../../function/02-course/ai/F4-AI-原型设计/_assets/styles.css" />
 </head>
 <body>
-<nav>
-  <h3>course / app · 原型清单(F4 源)</h3>
-  <ul>
-    <li><a href="pages/P-app-course-001.html" target="preview">P-app-course-001.html</a></li>
-    <li><a href="pages/P-app-course-002.html" target="preview">P-app-course-002.html</a></li>
-    <li><a href="pages/P-app-course-003.html" target="preview">P-app-course-003.html</a></li>
-    <li><a href="pages/P-app-course-004.html" target="preview">P-app-course-004.html</a></li>
-    <li><a href="pages/P-app-course-005.html" target="preview">P-app-course-005.html</a></li>
-    <li><a href="pages/P-app-course-006.html" target="preview">P-app-course-006.html</a></li>
-    <li><a href="pages/P-app-course-007.html" target="preview">P-app-course-007.html</a></li>
-    <li><a href="pages/P-app-course-008.html" target="preview">P-app-course-008.html</a></li>
-  </ul>
-</nav>
-<iframe name="preview" src="pages/P-app-course-001.html"></iframe>
-<script src="vendor/proto-style/app.js"></script>
-<script src="mock-data.js"></script>
-<script src="feature.js"></script>
+<div class="proto-bar">
+  <div class="proto-bar-title"><span class="pid">F4 · 索引</span>课程学习引擎 · 原型设计</div>
+  <div class="proto-bar-actions">
+    <a href="../../../../function/02-course/ai/F3-AI-页面交互规范/00-index.md" target="_blank">F3 规范</a>
+  </div>
+</div>
+
+<div style="max-width: 1180px; margin: 0 auto; padding: 32px 20px 80px;">
+  <h1 style="font-size: 28px; margin: 0 0 8px;">课程学习引擎 · 静态原型</h1>
+  <p style="color: var(--zy-fg-mute); margin: 0 0 8px;">
+    依据 <a href="../../../../function/02-course/ai/F3-AI-页面交互规范/00-index.md" target="_blank" style="color: var(--zy-brand);">F3 页面交互规范</a> 与
+    <a href="../../../../function/02-course/ai/F1-AI-数据模型规范/" target="_blank" style="color: var(--zy-brand);">F1 数据模型</a>、
+    <a href="../../../../function/02-course/ai/F2-AI-接口规范/" target="_blank" style="color: var(--zy-brand);">F2 接口</a> 生成。
+    视觉风格参考 <code>system/apps/web-app/src/pages/china/</code>（小红书红 + 毛玻璃 + 黑白）。
+  </p>
+  <p style="color: var(--zy-fg-mute); margin: 0 0 32px;">
+    每个原型页面顶部均带 <strong>桌面 / 移动</strong> 设备切换 与 <strong>浅色 / 暗色</strong> 主题切换；按钮交互（新建 / 删除 / 编辑 / 提交 等）均带演示弹窗，跳转链接以 toast 提示，便于走查 IA 与每一处操作反馈。
+  </p>
+
+  <h2 style="font-size: 18px; margin: 32px 0 12px;">应用端（学员侧）</h2>
+  <div class="zy-grid cols-md-2 cols-lg-3">
+    <a class="zy-card" href="pages/P-C-1-学习地图.html"><div style="font-weight:600;">P-C-1 学习地图</div><div class="zy-helper" style="margin-top:6px;">/learn · 5 主题 Tab + 卡片瀑布流 + 章展开</div></a>
+    <a class="zy-card" href="pages/P-C-2-节学习页.html"><div style="font-weight:600;">P-C-2 节学习页</div><div class="zy-helper" style="margin-top:6px;">/learn/lessons/:code · KP 卡片轮播 + 听音 + 收藏</div></a>
+    <a class="zy-card" href="pages/P-C-3-节末小测.html"><div style="font-weight:600;">P-C-3 节末小测</div><div class="zy-helper" style="margin-top:6px;">/learn/lessons/:code/quiz · 6 题（可改答）+ 即时反馈 + 结果</div></a>
+    <a class="zy-card" href="pages/P-C-4-SRS复习.html"><div style="font-weight:600;">P-C-4 SRS 复习</div><div class="zy-helper" style="margin-top:6px;">/learn/srs · 今日队列 ≤ 50 + 升降盒</div></a>
+    <a class="zy-card" href="pages/P-C-5-错题本.html"><div style="font-weight:600;">P-C-5 错题本</div><div class="zy-helper" style="margin-top:6px;">/learn/wrong · 90 天列表 + 筛选</div></a>
+    <a class="zy-card" href="pages/P-C-6-考试中心.html"><div style="font-weight:600;">P-C-6 考试中心</div><div class="zy-helper" style="margin-top:6px;">/learn/exams · 章测 / 阶段考 / HSK 模考</div></a>
+    <a class="zy-card" href="pages/P-C-7-考试进行.html"><div style="font-weight:600;">P-C-7 考试进行</div><div class="zy-helper" style="margin-top:6px;">/learn/exams/:id · 倒计时 + 题号 Drawer + 自动保存</div></a>
+    <a class="zy-card" href="pages/P-C-8-个人统计.html"><div style="font-weight:600;">P-C-8 个人统计</div><div class="zy-helper" style="margin-top:6px;">/learn/me · 7 天折线 + 30 天热力图 + 最近考试</div></a>
+  </div>
+
+  <h2 style="font-size: 18px; margin: 32px 0 12px;">管理端</h2>
+  <div class="zy-grid cols-md-2 cols-lg-3">
+    <a class="zy-card" href="../admin/pages/P-A-1-课程目录总览.html"><div style="font-weight:600;">P-A-1 课程目录总览</div><div class="zy-helper" style="margin-top:6px;">/admin/course · 5 主题卡片 + 全局统计</div></a>
+    <a class="zy-card" href="../admin/pages/P-A-2-主题-阶段-章列表.html"><div style="font-weight:600;">P-A-2 主题详情</div><div class="zy-helper" style="margin-top:6px;">/admin/course/themes/:code · 阶段 / 章 / 节列表 + 发布 / 下架</div></a>
+    <a class="zy-card" href="../admin/pages/P-A-3-节编辑.html"><div style="font-weight:600;">P-A-3 节编辑</div><div class="zy-helper" style="margin-top:6px;">/admin/course/lessons/:id · 基本信息 + KP 12 项</div></a>
+    <a class="zy-card" href="../admin/pages/P-A-4-KP列表.html"><div style="font-weight:600;">P-A-4 KP 列表</div><div class="zy-helper" style="margin-top:6px;">/admin/course/kps · 列表 + D-3 编辑 Drawer + 导入</div></a>
+    <a class="zy-card" href="../admin/pages/P-A-5-题目列表.html"><div style="font-weight:600;">P-A-5 题目列表</div><div class="zy-helper" style="margin-top:6px;">/admin/course/questions · 列表 + D-4 编辑 Drawer</div></a>
+    <a class="zy-card" href="../admin/pages/P-A-6-举报处理.html"><div style="font-weight:600;">P-A-6 举报处理</div><div class="zy-helper" style="margin-top:6px;">/admin/course/reports · 列表 + 详情 + 调整 + 采纳/忽略 + 全局开关</div></a>
+    <a class="zy-card" href="../admin/pages/P-A-7-媒资库.html"><div style="font-weight:600;">P-A-7 媒资库</div><div class="zy-helper" style="margin-top:6px;">/admin/course/media · TTS / 图片 / 替换 / 软删</div></a>
+    <a class="zy-card" href="../admin/pages/P-A-8-考试中心管理.html"><div style="font-weight:600;">P-A-8 考试中心管理</div><div class="zy-helper" style="margin-top:6px;">/admin/course/exams · 主题 → 阶段考 → 章测 → 节测 + 发布/下架</div></a>
+    <a class="zy-card" href="../admin/pages/P-A-9-全局搜索.html"><div style="font-weight:600;">P-A-9 全局搜索</div><div class="zy-helper" style="margin-top:6px;">/admin/course/search · KP / 题目 / 节 三段聚合 + 高亮</div></a>
+  </div>
+</div>
+
+<script src="../../../../function/02-course/ai/F4-AI-原型设计/_assets/prototype.js"></script>
 </body>
 </html>

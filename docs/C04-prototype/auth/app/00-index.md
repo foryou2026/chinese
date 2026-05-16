@@ -11,7 +11,7 @@
 | `index.html` | 原型评审入口 |
 | `pages/` | 逐页 HTML |
 | `states/` | 空/错/加载/无权状态 |
-| `vendor/proto-style/` | 从 B04 拷贝的 vendor 资产 |
+| `docs/B04-design/prototype-style/(引用)` | HTML 通过相对路径直接引用 B04 prototype-style，feature 目录不再保留拷贝 |
 | `feature.css` | 本 feature 页面级样式 |
 | `feature.js` | 本 feature 页面级交互 |
 | `mock-data.js` | 假数据(以 OP-ID 为键) |

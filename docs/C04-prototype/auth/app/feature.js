@@ -1,4 +1,4 @@
-/* TARGET-PATH placeholder, see vendor/proto-style/app.js for global API. */
+/* TARGET-PATH placeholder, see B04 prototype-style/app.js for global API. */
 (function () {
   'use strict';
   // 仅本 feature 的页面级 mock 调度。

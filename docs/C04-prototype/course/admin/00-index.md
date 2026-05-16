@@ -11,7 +11,7 @@
 | `index.html` | 原型评审入口 |
 | `pages/` | 逐页 HTML |
 | `states/` | 空/错/加载/无权状态 |
-| `vendor/proto-style/` | 从 B04 拷贝的 vendor 资产 |
+| `function/02-course/ai/F4-AI-原型设计/_assets/(引用)` | 从 B04 拷贝的 vendor 资产 |
 | `feature.css` | 本 feature 页面级样式 |
 | `feature.js` | 本 feature 页面级交互 |
 | `mock-data.js` | 假数据(以 OP-ID 为键) |

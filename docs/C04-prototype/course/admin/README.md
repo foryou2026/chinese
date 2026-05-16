@@ -6,7 +6,7 @@
 
 ## 文件
 - index.html
-- vendor/proto-style/{app.css,app.js,tokens.css,themes.css}
+- function/02-course/ai/F4-AI-原型设计/_assets/(引用){app.css,app.js,tokens.css,themes.css}
 - pages/(共 9 个 HTML,来源 function/02-course/ai/F4-AI-原型设计/)
 - feature.css / feature.js / mock-data.js(本 feature 页面级,Round 2 填充)
 - states/(下轮按 page-spec 补)
