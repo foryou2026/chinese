@@ -1,7 +1,50 @@
 <!-- TARGET-PATH: docs/C05-prd/course/admin/01-overview.md -->
 
-> **本文件为 surface=`admin` 视角的 PRD 章节(Round 2 从 PRD.md 第 1 章拆出初版,后续按端过滤实质内容)。** 跨端通用术语见 [_shared/glossary.md](../_shared/glossary.md),跨端业务规则见 [_shared/business-rules.md](../_shared/business-rules.md)。
+# 01 · 总览 · course / **admin**
 
-## 1. 产品概述
+> 跨端共享真相在 [`../_shared/`](../_shared/);本文件聚焦 admin 端独有视角。
 
-`course` 是知语主战场:面向东南亚学习者的中文学习引擎,以 **5 主题 × 25 阶段 × 148 章 × 888 节 × ~1.2 万 KP × ~5 万题** 的结构化课程为骨架,以 **7 类 KP + 12 种题型 + SRS Leitner 5 盒 + 4 类考试** 为学习与评估闭环,以 **管理端 9 大页 + 离线生成 / 导入 / 点检 / 发布** 为内容运营闭环。所有 UI 文本与内容字段 5 语(`zh/en/vi/th/id`)齐备,管理端 UI 固定中文。
+## 1.1 admin 端定位
+
+`course` admin 端是 **内容运营 + 内容点检 + 发布管控** 三位一体的后台,服务 `content_admin`(受 `tracks_scope` 限制) 与 `super`(全权 + 高危)。**不是** 学员侧产品的镜像,而是"线下批量生成 → 导入 → 人工点检 → 上架"流水线的可视化与控制面。来源:[`function/02-course/prd/04-管理端模块设计.md`](../../../../function/02-course/prd/04-管理端模块设计.md)。
+
+## 1.2 admin 端 9 大模块(对齐 [04-管理端模块设计.md](../../../../function/02-course/prd/04-管理端模块设计.md))
+
+| # | 模块 | 主页面 |
+|---|------|--------|
+| 1 | 主题/阶段/章/节骨架 | [P-001](06-page-specs/P-admin-course-001.md) + [P-002](06-page-specs/P-admin-course-002.md) + [P-003](06-page-specs/P-admin-course-003.md) |
+| 2 | 节 + KP 绑定 | [P-004](06-page-specs/P-admin-course-004.md) |
+| 3 | 题库(7 类 KP × 12 题型) | [P-005](06-page-specs/P-admin-course-005.md) |
+| 4 | 学员举报审核 | [P-006](06-page-specs/P-admin-course-006.md) |
+| 5 | 媒资库(音/图) | [P-007](06-page-specs/P-admin-course-007.md) |
+| 6 | 考试中心(节/章/阶段) | [P-008](06-page-specs/P-admin-course-008.md) |
+| 7 | 全局搜索 + 统计 | [P-009](06-page-specs/P-admin-course-009.md) |
+| 8 | 批量导入/导出 | 在 P-001~P-008 各自 toolbar 内 |
+| 9 | 发布 / 撤回 / 灰度 | 在 P-001~P-008 各页发布按钮 + super 审批 |
+
+> 2025-11 变更:**删除** "系统内生成工作台"模块(原为题目自动生成 UI);题目改为完全线下批量生成 + 导入。
+
+## 1.3 admin 端关键运营闭环
+
+1. **生产**:线下 AI 批量出题 → 平台导入(JSON / Excel)→ 自动校验格式
+2. **点检**:[P-005](06-page-specs/P-admin-course-005.md) 抽检 + 全检流;管理员可批注 / 退回
+3. **发布**:[P-001~P-008](06-page-specs/) 各模块 publish/unpublish;**unpublish > 30 天** 需 `super` 二次确认
+4. **运营**:[P-006](06-page-specs/P-admin-course-006.md) 举报循环 7 天结案
+
+## 1.4 admin 端非目标
+
+- **不** 提供学员侧学习状态查看(隐私 + 性能);仅汇总统计;
+- **不** 提供 AI 实时生成(2025-11 已撤);
+- **不** 提供 5 语自动翻译(必须人工填齐 5 key)。
+
+## 1.5 性能基线(admin 端)
+
+| 操作 | 目标 |
+|------|------|
+| 章节拖拽排序保存 | P95 ≤ 400 ms |
+| 节 + KP 绑定批量保存 ≤ 100 条 | P95 ≤ 800 ms |
+| 题目搜索 / 翻页 100 行 | P95 ≤ 500 ms |
+| 媒资上传(单文件 ≤ 50 MB) | 走预签名 URL 直传对象存储 |
+| 全量发布单主题 | 异步任务,< 30 s 完成 |
+
+> admin 路由:`/api/admin/v1/*` ≡ 短路径 `/admin/v1/*`。

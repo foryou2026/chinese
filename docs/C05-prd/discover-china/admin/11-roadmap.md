@@ -1,10 +1,23 @@
 <!-- TARGET-PATH: docs/C05-prd/discover-china/admin/11-roadmap.md -->
 
-> **本文件为 surface=`admin` 视角的 PRD 章节(Round 2 从 PRD.md 第 11 章拆出初版,后续按端过滤实质内容)。** 跨端通用术语见 [_shared/glossary.md](../_shared/glossary.md),跨端业务规则见 [_shared/business-rules.md](../_shared/business-rules.md)。
+# 11 · 路线图 · discover-china / **admin**
 
-## 11. 路线图
+## 11.1 已发布
 
-- v1.0(本):核心 CRUD + 5 语 + 阅读 + TTS + 进度;
-- v1.1:句子级翻译比对反馈 / 用户收藏文章;
-- v1.2:文章历史版本(undo);
-- v2.0:开放部分 PGC 投稿 + 审核流水线。
+| 版本 | 时间 | 主要变更 |
+|------|------|---------|
+| v0.1 | 2025-11 | 4 大页 + TTS 上传 + 发布 |
+
+## 11.2 Round 7+
+
+| 版本 | 计划 | 主要变更 |
+|------|------|---------|
+| **v0.2** | Round 7-8 | 5 语校验加强;TTS 文件名匹配高亮;搜索运维进度条(KI-004) |
+| v0.3 | Round 9 | 句子虚拟滚动(KI-001);TTS 分片(KI-002);拼音多音字词表(KI-003) |
+| v1.0 | Round 10+ | 12 类目内容铺满(每类 ≥ 30 篇) + 5 语全齐 |
+
+## 11.3 范围外
+
+- 类目增删;
+- AI 自动拼音校对(可辅助,不替代人工);
+- 内容生成 AI 入后台(线下产出)。

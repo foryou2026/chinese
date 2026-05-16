@@ -1,19 +1,16 @@
 <!-- TARGET-PATH: docs/C05-prd/course/app/02-glossary.md -->
 
-> **本文件为 surface=`app` 视角的 PRD 章节(Round 2 从 PRD.md 第 2 章拆出初版,后续按端过滤实质内容)。** 跨端通用术语见 [_shared/glossary.md](../_shared/glossary.md),跨端业务规则见 [_shared/business-rules.md](../_shared/business-rules.md)。
+# 02 · 术语(app 端局部)
 
-## 2. 术语表
+> 项目级术语见 [`../../_glossary.md`](../../_glossary.md);feature 跨端术语见 [`../_shared/glossary.md`](../_shared/glossary.md);本文件仅列 **app 端独有 / 易混淆** 的术语。
 
-| 术语 | 说明 |
-|------|------|
-| 主题(Track)| 5 个固定主题码 `share / ec / fc / hsk / dl` |
-| 阶段(Stage)| 主题下 6 级阶段(Stage 0..6);`share` 提供共享 Stage 0 一次性预备 |
-| 章(Chapter)| 每阶段 6 章 |
-| 节(Lesson)| 每章 6 节;节 code 格式 `{track}-{stage}-{chapter}-{lesson}` |
-| KP(Knowledge Point)| 7 类:pinyin / hanzi / word / phrase / grammar / sentence / dialog;code 格式 `kp_{track}_{type_initial}_{seq5}` |
-| 题目(Question)| 12 种:mcq_meaning / mcq_zh / listen_pick / listen_pinyin / tone_pick / match_pairs / sort_words / fill_blank_choice / type_pinyin / type_zh_ime / image_pick / dialog_cloze;code 格式 `q_{track}_{seq8}` |
-| 节末小测 | 节学习后 6 题统一交卷,可跳过(`is_quiz_required=false`),通过线 60% |
-| 章测 / 阶段考 / HSK 模考 | 见 §7 BR-EXAM 段 |
-| SRS | Leitner 5 盒,间隔 1 / 3 / 7 / 14 / 30 天 |
-| 5 语 | `zh / en / vi / th / id`,与 discover-china 等其他 feature 全局对齐 |
-| Admin 角色 | `super / content_admin / readonly`,行级 `admins.tracks_scope[]` 过滤可见主题 |
+| 术语 | app 端定义 |
+|------|-----------|
+| **节(lesson)** | 学员视角的最小学习单位,对应一次连续 15-30 分钟学习活动 |
+| **节卡片** | [P-002](06-page-specs/P-app-course-002.md) 主区域显示的 KP 切换式卡片堆 |
+| **静默题型** | app 端唯一可见题型集合(12 种):无麦克风、无手写 |
+| **SRS 复习队列** | `/api/app/v1/srs/today` 返回的当日待复习 KP 集合,上限 50 |
+| **错题本** | 答错过且尚未 3 次连续答对的题目集合,不进 SRS |
+| **考试(exam)** | 包含节测 / 章测 / 阶段考三类;**学员端不可见**"系统内生成工作台"(2025-11 已撤) |
+| **试抽(trial draw)** | 阶段考开始前的题目卡片预览(2025-11 新增) |
+| **当前进度** | 学员当前所处的 `track/stage/chapter/lesson` 四级游标,登录态本地缓存 + 服务端同步 |

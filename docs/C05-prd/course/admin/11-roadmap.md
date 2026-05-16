@@ -1,8 +1,24 @@
 <!-- TARGET-PATH: docs/C05-prd/course/admin/11-roadmap.md -->
 
-> **本文件为 surface=`admin` 视角的 PRD 章节(Round 2 从 PRD.md 第 11 章拆出初版,后续按端过滤实质内容)。** 跨端通用术语见 [_shared/glossary.md](../_shared/glossary.md),跨端业务规则见 [_shared/business-rules.md](../_shared/business-rules.md)。
+# 11 · 路线图 · course / **admin**
 
-## 11. 与其它 feature 的边界
+## 11.1 已发布
 
-- 与 [`discover-china`](../../C05-prd/discover-china/PRD.md) 共享:5 语 locale、媒资库技术栈、Admin 角色与 LWW 模式;不共享:类目编码 / 文章结构 / TTS 缓存键命名;
-- 与未来 `payments`(订阅)feature:`users.subscription` 字段对接,本期 BR-P03 视订阅状态拦截;支付流走 mock 适配(docker-policy)。
+| 版本 | 时间 | 主要变更 |
+|------|------|---------|
+| v0.1 (alpha) | 2025-11 | 9 模块骨架 + 导入 + 抽检 + 发布;2025-11 撤回"系统内生成工作台" |
+
+## 11.2 Round 7+
+
+| 版本 | 计划 | 主要变更 |
+|------|------|---------|
+| **v0.2** | Round 7-8 | 全部 9 模块 CRUD 闭环;举报 7 天 SLA 看板;撤回 > 30 天 super 审批 UI |
+| v0.3 | Round 9 | 5 语录入光标修复(KI-001);拖拽 Firefox 修(KI-002);分片导入(KI-003) |
+| v1.0 | Round 10+ | 4 主题全量发布支持 + scope 细粒度审计 + 全量统计可导出 |
+| v1.1+ | 待定 | 灰度发布;A/B 内容测试(评估中) |
+
+## 11.3 范围外
+
+- AI 自动生成题目 / 媒资(2025-11 已撤);
+- 5 语机器翻译;
+- 学员侧个人详情查看(隐私)。

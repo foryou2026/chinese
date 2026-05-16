@@ -7,6 +7,40 @@
 
 ---
 
+## 2026-05-16 · 批次 14 · Round 7 · auth 命名澄清 + C05 非 auth feature 8 文件实质化
+
+### 7-0 · auth 命名澄清(无文件改动)
+
+用户提出"为什么是 `app-auth/admin-auth`,不应该是 `auth/{app,admin}` 吗?",经核 [prompt/A-framework/A00-04-文档目录规划.md §四 "auth feature 在多端项目里的形态"](../../prompt/A-framework/A00-04-文档目录规划.md):
+
+> 每个 surface 必须有自己的 `<surface>-auth` feature ... auth feature 的 `<surface>` 子目录通常等于 feature 名前缀(`app-auth` 只在 `app/` 下出产物),属于退化的"单端形态"。
+
+prompt **明确规定** app-auth 与 admin-auth 是两个独立 feature(各退化为单 surface),原因是两者鉴权链路完全不共享(cookie 域 / Supabase project / session 各自隔离,见 [`_glossary.md §B/E`](../C05-prd/_glossary.md))。**当前 [docs/C05-prd/app-auth/](../C05-prd/app-auth/) + [docs/C05-prd/admin-auth/](../C05-prd/admin-auth/) 结构完全合规,不修改;prompt 也不需要改。**
+
+### 7-1 · course + discover-china 4 surface × 8 = 32 文件实质化
+
+将 [course/{app,admin}](../C05-prd/course/) + [discover-china/{app,admin}](../C05-prd/discover-china/) 的 `01-overview` / `02-glossary` / `03-personas` / `05-user-journeys` / `09-design-summary` / `10-known-issues` / `11-roadmap` / `12-changelog` 共 32 文件从 Round 2 的 7-19 行骨架 **重写为 30-80 行实质内容**,严格对齐数据源:
+
+| Feature/surface | 主要数据源 | 实质化要点 |
+|----------------|-----------|----------|
+| `course/app` | [`function/02-course/prd/00-总览与设计原则.md`](../../function/02-course/prd/00-总览与设计原则.md) | 4 业务主题(EC/FC/HSK/DL)+ share 共享层;7 类 KP × 12 题型;SM-2 Leitner;不练口语发音;2025-11 撤"系统内生成工作台"+ 试抽 |
+| `course/admin` | [`function/02-course/prd/04-管理端模块设计.md`](../../function/02-course/prd/04-管理端模块设计.md) | 9 模块清单;`content_admin/super/readonly` × 9 模块矩阵;5L 完整发布闸门;> 30 天撤回 super 审批;不做 AI 翻译/自动生成 |
+| `discover-china/app` | [`function/01-china/prd/F1-用户-数据与业务规则.md`](../../function/01-china/prd/F1-用户-数据与业务规则.md) | **12 个固定类目明细列出**(编码 01~12,5 语命名);文章 12 位 / 句子 4 位 0001 起;三层对照(汉字 + 拼音 + 5 语);句级 TTS,不连播 |
+| `discover-china/admin` | [`function/01-china/prd/F1`](../../function/01-china/prd/F1-用户-数据与业务规则.md) + `F2` | 4 大页;`super` 全权(无 `content_admin` 分权);类目数 12 永不增删;5L 完整闸门;TTS 文件名 `NNNN.mp3` 匹配规则;索引重建禁与发布并发 |
+
+### 7-1 · auth 4 surface(app-auth/app, admin-auth/admin)状态
+
+Round 3 已实质化(36-52 行);本轮 **不重写**,只在 Round 7 changelog 中确认状态不变。auth feature 8 文件实质化达标。
+
+### Round 8+ 规划
+
+- C04 `feature.css` / `feature.js` / `mock-data.js` 真正写入(目前仅框架;mock-data 以 C03 数据契约展开)
+- C03 与 [`system/apps/api-*/src/routes/`](../../system/apps/) 既有路由对齐抽查
+- C05 业务规则与 [`function/02-course/prd/01-04`](../../function/02-course/prd/) 字字对齐抽查
+- 国际化字符 / 暗色模式在各 page-spec 截图占位补真实截图(依赖 C04 prototype 跑起来)
+
+---
+
 ## 2026-05-16 · 批次 13 · 删除 D 阶段 + C 阶段合规对齐 + Round 6 主体(C05 page-spec 展开)
 
 > 用户明确指令:文档体系仅保留到 C 阶段;先确保 C 阶段完全符合 [prompt/A-framework/A00-04-文档目录规划.md](../../prompt/A-framework/A00-04-文档目录规划.md),完全符合 [function/](../../function/) 与 [system/](../../system/) 既有事实,然后继续 Round 6。

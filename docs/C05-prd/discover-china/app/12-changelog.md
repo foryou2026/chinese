@@ -1,9 +1,10 @@
 <!-- TARGET-PATH: docs/C05-prd/discover-china/app/12-changelog.md -->
 
-> **本文件为 surface=`app` 视角的 PRD 章节(Round 2 从 PRD.md 第 12 章拆出初版,后续按端过滤实质内容)。** 跨端通用术语见 [_shared/glossary.md](../_shared/glossary.md),跨端业务规则见 [_shared/business-rules.md](../_shared/business-rules.md)。
+# 12 · 变更日志 · discover-china / **app**
 
-## 12. Changelog
-
-| 版本 | 日期 | 备注 |
-|------|------|------|
-| v1.0 | 2026-05-16 | 反向回写期产出首版,冻结 |
+| 日期 | 内容 |
+|------|------|
+| 2026-05-16 | **Round 7**:8 文件从骨架实质化;12 类目明细对齐 [`function/01-china/prd/F1-用户-数据与业务规则.md`](../../../../function/01-china/prd/F1-用户-数据与业务规则.md);文章 / 句子编码格式对齐(12 位 / 4 位)。 |
+| 2026-05-16 | Round 6:3 page-spec 创建 |
+| 2026-05-16 | Round 5:04/07/08 按端过滤 |
+| 2026-05-16 | Round 2:8 文件骨架 |

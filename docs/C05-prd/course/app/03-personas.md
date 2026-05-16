@@ -1,12 +1,32 @@
 <!-- TARGET-PATH: docs/C05-prd/course/app/03-personas.md -->
 
-> **本文件为 surface=`app` 视角的 PRD 章节(Round 2 从 PRD.md 第 3 章拆出初版,后续按端过滤实质内容)。** 跨端通用术语见 [_shared/glossary.md](../_shared/glossary.md),跨端业务规则见 [_shared/business-rules.md](../_shared/business-rules.md)。
+# 03 · 画像与场景 · course / **app**
 
-## 3. 角色 / 用户故事
+> 项目角色定义见 [G3-01](../../../../grules/G3-权限与认证规范/01-角色定义.md);app 端唯一角色 `learner`。
 
-- **应用学员(C 端)**:5 语 UI 切换 → 引导定级 → 学节 → 节末小测 → SRS 复习 → 章测 / 阶段考 / HSK 模考;
-- **content_admin(B 端)**:线下生成内容 → 批量导入 → 人工点检 → 发布 → 处理学员举报 → 管考试中心;
-- **super**:全权限 + 管理员账号 / 主题 scope 配置;
-- **readonly**:只读全部。
+## 3.1 主画像 · 越南 / 泰国 / 印尼成人初学者
 
-详见 [`C01/baseline.md §3`](../../C01-requirements/course/baseline.md)。
+| 维度 | 设定 |
+|------|------|
+| 年龄 | 22 ~ 45 |
+| 中文基础 | 零基础 ~ HSK4 |
+| 设备 | 中端 Android 手机为主;少量 iPhone;PC 浏览器作为复习场景 |
+| 网络 | 4G 为主,弱网(< 1 Mbps)可学;视频/音频走 CDN |
+| 学习场景 | 通勤(15-20 min)、午休(10 min)、睡前(30 min) |
+| 付费意愿 | 试学 1-2 章后决定;按主题或全主题订阅 |
+| **明确不做** | 实时 AI 对话、AI 发音评测、AI 写作批改、千人千面路径 |
+
+## 3.2 角色 / 场景矩阵
+
+| 角色 | 场景 | 主要页面 |
+|------|------|---------|
+| `anonymous` | 试学引导(2025-11 后默认入口前限,需先注册) | [P-app-app-auth-002](../../../app-auth/app/06-page-specs/P-app-app-auth-002.md) |
+| `learner` | 主路径:**学 → 练 → 复 → 考** | P-001 → P-002 → P-003 → P-004 → P-006/007 |
+| `learner` | 弱网/通勤:仅复习 + 错题本 | [P-004](06-page-specs/P-app-course-004.md) + [P-005](06-page-specs/P-app-course-005.md) |
+| `learner` | 评估自学进度 | [P-008](06-page-specs/P-app-course-008.md)(考试报告 / 个人统计) |
+
+## 3.3 反角色 / 不服务
+
+- 母语为中文者(本平台不针对汉语母语回流);
+- 想练发音 / 语音对话者(明确不做);
+- 期望 AI 个性化路径者(明确不做)。

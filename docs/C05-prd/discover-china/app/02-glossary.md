@@ -1,14 +1,12 @@
 <!-- TARGET-PATH: docs/C05-prd/discover-china/app/02-glossary.md -->
 
-> **本文件为 surface=`app` 视角的 PRD 章节(Round 2 从 PRD.md 第 2 章拆出初版,后续按端过滤实质内容)。** 跨端通用术语见 [_shared/glossary.md](../_shared/glossary.md),跨端业务规则见 [_shared/business-rules.md](../_shared/business-rules.md)。
+# 02 · 术语 · discover-china / **app**
 
-## 2. 术语表
-
-| 术语 | 说明 |
+| 术语 | 定义 |
 |------|------|
-| 类目(Category)| 12 个固定文化主题,编码 `01..12` |
-| 文章(Article)| 类目下的文本,12 位编码 `{类目 2}{自增 10}` |
-| 句子(Sentence)| 文章内可单独编辑 / 朗读的最小单元,带 4 位 seq_no |
-| 5 语 | 简体中文 / 英 / 越南 / 泰 / 印尼 |
-| TTS | 中文文本转语音,全局缓存,键 `{article_code}-{seq_no}` |
-| super_admin | 管理端唯一角色 |
+| **类目(category)** | 12 个固定中国文化分类,编码 01~12 |
+| **文章(article)** | 一个 12 位 code 标识的内容单元;含标题 + 标题拼音 + 句子序列 |
+| **句子(sentence)** | 文章内最小播放单元;4 位 code(0001 起);中文 ≤ 400 字 + 拼音 + 5 语翻译 + 独立 TTS |
+| **三层对照** | 句子展示时同时给"汉字 + 拼音 + 用户当前 UI 语种翻译" |
+| **逐句 TTS** | 每句 1 个独立音频文件(MP3,CDN),点击行播放;不支持整文连续播放 |
+| **上次读到** | 文章详情页本地记录"句子序号";下次进同文章时定位到该句 |

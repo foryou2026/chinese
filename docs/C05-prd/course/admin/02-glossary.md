@@ -1,19 +1,16 @@
 <!-- TARGET-PATH: docs/C05-prd/course/admin/02-glossary.md -->
 
-> **本文件为 surface=`admin` 视角的 PRD 章节(Round 2 从 PRD.md 第 2 章拆出初版,后续按端过滤实质内容)。** 跨端通用术语见 [_shared/glossary.md](../_shared/glossary.md),跨端业务规则见 [_shared/business-rules.md](../_shared/business-rules.md)。
+# 02 · 术语(admin 端局部)
 
-## 2. 术语表
+> 项目级术语见 [`../../_glossary.md`](../../_glossary.md);跨端术语见 [`../_shared/glossary.md`](../_shared/glossary.md)。本文件仅列 admin 端运营术语。
 
-| 术语 | 说明 |
-|------|------|
-| 主题(Track)| 5 个固定主题码 `share / ec / fc / hsk / dl` |
-| 阶段(Stage)| 主题下 6 级阶段(Stage 0..6);`share` 提供共享 Stage 0 一次性预备 |
-| 章(Chapter)| 每阶段 6 章 |
-| 节(Lesson)| 每章 6 节;节 code 格式 `{track}-{stage}-{chapter}-{lesson}` |
-| KP(Knowledge Point)| 7 类:pinyin / hanzi / word / phrase / grammar / sentence / dialog;code 格式 `kp_{track}_{type_initial}_{seq5}` |
-| 题目(Question)| 12 种:mcq_meaning / mcq_zh / listen_pick / listen_pinyin / tone_pick / match_pairs / sort_words / fill_blank_choice / type_pinyin / type_zh_ime / image_pick / dialog_cloze;code 格式 `q_{track}_{seq8}` |
-| 节末小测 | 节学习后 6 题统一交卷,可跳过(`is_quiz_required=false`),通过线 60% |
-| 章测 / 阶段考 / HSK 模考 | 见 §7 BR-EXAM 段 |
-| SRS | Leitner 5 盒,间隔 1 / 3 / 7 / 14 / 30 天 |
-| 5 语 | `zh / en / vi / th / id`,与 discover-china 等其他 feature 全局对齐 |
-| Admin 角色 | `super / content_admin / readonly`,行级 `admins.tracks_scope[]` 过滤可见主题 |
+| 术语 | admin 端定义 |
+|------|-------------|
+| **scope(权限范围)** | `content_admin` 角色绑定的 `tracks_scope` 列表(JSON array of track_code);所有列表 / 详情接口自动按 scope 过滤 |
+| **批次(batch)** | 一次性导入的 KP / 题目集合,带 `batch_id` + `source_file_hash`,可整体回滚 |
+| **点检(QC)** | 发布前的人工 / 抽检流程;P-005 提供抽检 UI |
+| **试抽(trial draw)** | 阶段考的题目卡片预览功能(2025-11 新增) |
+| **撤回(unpublish)** | 内容从学员侧下架;> 30 天需 super 二次确认;影响学员当前游标节时回滚到上一个 published 版本 |
+| **灰度** | 仅对部分订阅用户可见;v1.0 不做,Round 10+ 评估 |
+| **媒资(asset)** | 音频 / 图片;独立表 + 引用计数;>= 1 引用不可删 |
+| **scope 越权** | `content_admin` 操作非自己 `tracks_scope` 时:UI 隐藏 + 服务端 403;写入 `audit_logs` |

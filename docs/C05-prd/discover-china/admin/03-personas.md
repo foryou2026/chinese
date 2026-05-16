@@ -1,10 +1,27 @@
 <!-- TARGET-PATH: docs/C05-prd/discover-china/admin/03-personas.md -->
 
-> **本文件为 surface=`admin` 视角的 PRD 章节(Round 2 从 PRD.md 第 3 章拆出初版,后续按端过滤实质内容)。** 跨端通用术语见 [_shared/glossary.md](../_shared/glossary.md),跨端业务规则见 [_shared/business-rules.md](../_shared/business-rules.md)。
+# 03 · 画像与场景 · discover-china / **admin**
 
-## 3. 角色 / 用户故事
+## 3.1 主画像 · `super`
 
-- **访客 / 应用用户**:浏览类目 → 选文章 → 逐句阅读 + 朗读 + 记忆进度;
-- **super_admin**:管理类目下文章 / 句子 / 多语版本 + 发布状态 + 全局搜索。
+| 维度 | 设定 |
+|------|------|
+| 角色 | 项目核心 / 内容主理人;1-2 人 |
+| 工作量 | 每周新增 5-10 篇文章;批量 TTS 重传 1-2 次 |
+| 工作设备 | 桌面浏览器 |
+| 主要任务 | 文章撰写 + 5 语校对 + TTS 上传 + 发布 |
 
-详见 [`C01/baseline.md §3`](../../C01-requirements/discover-china/baseline.md)。
+## 3.2 `readonly`
+
+- 可看类目 / 文章 / 句子;不可改;主要给项目外审计 / 顾问。
+
+## 3.3 角色 × 模块矩阵
+
+| 模块 | readonly | super |
+|------|:--:|:--:|
+| 分类 P-001 | 看 | 改名(5 语) |
+| 文章列表 P-002 | 看 | 改 / 发布 / 撤回 |
+| 文章编辑 P-003 | 看 | 改 / 上传 TTS |
+| 搜索运维 P-004 | 看 | 触发重建 |
+
+> 本 feature 无 `content_admin`;`super` 全权。
