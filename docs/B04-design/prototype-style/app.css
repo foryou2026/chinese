@@ -1,0 +1,33 @@
+/* TARGET-PATH: docs/B04-design/prototype-style/app.css
+ *
+ * 占位文件 · 2026-04-28
+ * 待 C04 第一次原型时填充。
+ *
+ * 内容应翻译自 docs/B04-design/design-system/{02-layout, 04-status-components}.md：
+ *
+ * 1. 全局：reset / *,*::before,*::after { box-sizing: border-box } / body 字体 / color-scheme
+ *
+ * 2. 毛玻璃组件类（与 ui-kit Tailwind utility 同名以便迁移）：
+ *    .glass-panel / .glass-nav / .glass-card / .glass-modal / .glass-drawer /
+ *    .glass-button / .glass-tab / .glass-toast
+ *
+ * 3. 布局：
+ *    .page / .page-header / .page-content
+ *    顶栏 .topnav (sticky / safe-area-inset-top / is-scrolled 阴影)
+ *
+ * 4. 按钮：
+ *    .btn / .btn-primary / .btn-secondary / .btn-danger / .btn-ghost / .btn-link /
+ *    [disabled] / .is-loading（含 spinner 旋转动画）
+ *
+ * 5. 表单：.input / .label / .help / .error / .form-row（标签上方）
+ *
+ * 6. 表格：.table / 行高 / hover / selected / .pagination
+ *
+ * 7. Toast：.toast / .toast-success / .toast-error / .toast-warning / .toast-info
+ *
+ * 8. 状态标签：.tag / .tag-draft / .tag-active / .tag-done / .tag-warning / .tag-failed
+ *
+ * 9. 空状态：.empty / 96px svg 插画占位
+ *
+ * 10. 响应式：6 个断点的 .page padding + 顶栏高度切换
+ */

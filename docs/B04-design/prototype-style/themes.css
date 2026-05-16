@@ -1,0 +1,15 @@
+/* TARGET-PATH: docs/B04-design/prototype-style/themes.css
+ *
+ * 占位文件 · 2026-04-28
+ * 待 C04 第一次原型时填充。
+ *
+ * 内容应翻译自 docs/B04-design/design-system/06-responsive-dark.md：
+ * - :root[data-theme="light"] { ... 亮模式中性 / brand / soft 全套 ... }
+ * - :root[data-theme="dark"]  { ... 暗模式 同上 ... }
+ * - body::before 远景层（红色径向光晕 × 2 + --bg-app-tint）
+ * - body::after  噪点纹理（opacity: var(--glass-noise-opacity)）
+ * - prefers-reduced-motion → 所有 --motion-* 退化 0ms
+ * - prefers-color-scheme: dark → 在用户未显式选时启用 dark token
+ *
+ * 同步源：system/packages/ui-kit/src/tokens/theme.css（@theme 块）
+ */

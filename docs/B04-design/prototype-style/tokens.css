@@ -1,0 +1,14 @@
+/* TARGET-PATH: docs/B04-design/prototype-style/tokens.css
+ *
+ * 占位文件 · 2026-04-28
+ * 待 C04 第一次原型时填充。
+ *
+ * 内容应翻译自 docs/B04-design/design-system/01-tokens.md：
+ * - :root 下定义全部 --bg-* / --text-* / --border-* / --ring / --brand* / --success* /
+ *   --warning* / --danger* / --info* / --glass-* / --shadow-* / --motion-* / --space-* /
+ *   --radius-* / --font-* / 全部 text-* 字号映射
+ * - 默认使用亮模式赋值；暗模式由 themes.css 通过 [data-theme="dark"] 覆盖
+ *
+ * 同步源：system/packages/ui-kit/src/tokens/tokens.css
+ * 任一侧修改必须在 PR 中同步另一侧，并更新 docs/A00-meta/changelog.md。
+ */
