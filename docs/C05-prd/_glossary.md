@@ -48,9 +48,9 @@
 
 | 术语 | 定义 | 来源 |
 |------|------|------|
-| **轨道(track)** | course 顶层学习路径 | [function/02-course/prd/01-课程目录骨架.md](../../function/02-course/prd/01-课程目录骨架.md) |
+| **轨道(track)** | course 顶层学习路径 | 〔历史素材〕 |
 | **阶段(stage) / 章节(chapter) / 节(lesson)** | 轨道下的 3 层骨架 | 同上 |
-| **KP(知识点)** | 与"节"多对多关联的最小知识单元 | [function/02-course/prd/02-知识点与题型内容模板.md](../../function/02-course/prd/02-知识点与题型内容模板.md) |
+| **KP(知识点)** | 与"节"多对多关联的最小知识单元 | 〔历史素材〕 |
 | **SRS** | 间隔重复(Spaced Repetition System);本项目用简化 SM-2 | 同上 |
-| **句子(sentence)** | discover-china 文章的最小播放单元;每句独立 TTS 缓存 | [function/01-china/prd/F1-用户-数据与业务规则.md](../../function/01-china/prd/F1-用户-数据与业务规则.md) |
+| **句子(sentence)** | discover-china 文章的最小播放单元;每句独立 TTS 缓存 | 〔历史素材〕 |
 | **分类树(category)** | discover-china 文章分类,最多 3 层 | 同上 |

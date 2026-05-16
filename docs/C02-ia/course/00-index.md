@@ -23,7 +23,7 @@
 
 ## 命名约定
 
-- page-id:`P-<surface>-course-<seq3>`(app 8 + admin 9 = 17,与 [`function/02-course/ai/F3-AI-页面交互规范/00-index.md`](../../../../function/02-course/ai/F3-AI-页面交互规范/00-index.md) `P-C-*` / `P-A-*` 一一映射,见 [04-pages.md](./04-pages.md))
+- page-id:`P-<surface>-course-<seq3>`(app 8 + admin 9 = 17,与 〔历史素材〕 `P-C-*` / `P-A-*` 一一映射,见 [04-pages.md](./04-pages.md))
 - M-ID:`M-course-<功能区>`
 - Flow-ID:`FL-course-<seq2>` / 异常 `FX-course-<seq2>`
 - SM-ID:`SM-course-<域>`

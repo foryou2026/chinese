@@ -4,16 +4,16 @@
 
 > 信息源(均为线上已冻结产物,反向回写):
 >
-> - [`function/02-course/prd/00-总览与设计原则.md`](../../../../function/02-course/prd/00-总览与设计原则.md)
-> - [`function/02-course/prd/01-课程目录骨架.md`](../../../../function/02-course/prd/01-课程目录骨架.md)
-> - [`function/02-course/prd/02-知识点与题型内容模板.md`](../../../../function/02-course/prd/02-知识点与题型内容模板.md)
-> - [`function/02-course/prd/03-数据库schema.md`](../../../../function/02-course/prd/03-数据库schema.md)
-> - [`function/02-course/prd/04-管理端模块设计.md`](../../../../function/02-course/prd/04-管理端模块设计.md)
-> - [`function/02-course/prd/05-用户端模块设计.md`](../../../../function/02-course/prd/05-用户端模块设计.md)
-> - [`function/02-course/prd/06-关键业务流程.md`](../../../../function/02-course/prd/06-关键业务流程.md)
-> - [`function/02-course/prd/07-待确认问题清单.md`](../../../../function/02-course/prd/07-待确认问题清单.md)(已封板决策)
-> - [`function/02-course/ai/F3-AI-页面交互规范/`](../../../../function/02-course/ai/F3-AI-页面交互规范/) 14 个子文件
-> - [`function/02-course/ai/F4-AI-原型设计/`](../../../../function/02-course/ai/F4-AI-原型设计/) 17 个 HTML 页面
+> - 〔历史素材〕
+> - 〔历史素材〕
+> - 〔历史素材〕
+> - 〔历史素材〕
+> - 〔历史素材〕
+> - 〔历史素材〕
+> - 〔历史素材〕
+> - 〔历史素材〕(已封板决策)
+> - 〔历史素材〕 14 个子文件
+> - 〔历史素材〕 17 个 HTML 页面
 
 ## 业务边界要点(给 C01 baseline 反推)
 

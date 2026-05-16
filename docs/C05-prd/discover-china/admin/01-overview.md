@@ -6,7 +6,7 @@
 
 ## 1.1 admin 端定位
 
-`discover-china` admin 端由 **`super` 独立维护**(无 `content_admin` 分权;feature 体量小,集中管控),负责 **12 类目命名维护 + 文章 + 句子 + TTS 音频上传 + 发布管控**。来源:[`function/01-china/prd/F2-用户-操作与业务逻辑.md`](../../../../function/01-china/prd/F2-用户-操作与业务逻辑.md)。
+`discover-china` admin 端由 **`super` 独立维护**(无 `content_admin` 分权;feature 体量小,集中管控),负责 **12 类目命名维护 + 文章 + 句子 + TTS 音频上传 + 发布管控**。来源:〔历史素材〕。
 
 ## 1.2 admin 端 4 大页
 

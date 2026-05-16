@@ -5,7 +5,7 @@
 > **落盘**：`docs/C04-prototype/<feature-id>/`
 > **目的**：把本 feature 已冻结的 R / I / N 实化为可点开看的纯 HTML，零依赖、本地双击 `index.html` 就能跑。原型只承担"看一眼默认态、走通跳转"，**不**承担状态穷举（空 / 加载 / 错误 / 无权限由 C05 文字描述承担），更不承担生产工程化。
 
-> **参照范例**：[`function/02-course/ai/F4-AI-原型设计/`](../../function/02-course/ai/F4-AI-原型设计/)——17 个 P-*.html + `index.html` + `_assets/` 平铺于一目录。C04 就照这个模式做，区别仅在于按 surface 拆进 `<surface>/`。
+> **样式依赖**：运行时 CSS / JS 资产统一从 [`docs/B04-design/prototype-style/`](../../docs/B04-design/prototype-style/) 相对路径引用（允许 feature 专属包放在 `prototype-style/<feature>/`），永远不拷贝、不依赖任何 `/function/` 下游。
 
 ---
 
@@ -29,7 +29,7 @@
   <script defer src="../../../B04-design/prototype-style/app.js"></script>
   <script>proto.bootstrap();</script>
 
-**例外（上游 AI 原型来源）**：若本 feature 在 `/function/<feature>/ai/F4-AI-原型设计/` 已有上游 AI 生成的成品原型（如 `function/02-course/ai/F4-AI-原型设计/`），HTML **改为引用该上游来源的 `_assets/`** 而非 B04；按其类名与结构在 C04 mirror 文件（仅改 P-ID、不改样式与类名），确保与上游字节等价。路径写 `../../../../function/<feature>/ai/F4-AI-原型设计/_assets/styles.css`（surface 深度 → 4 ups → docs 根 → function/...）。
+**可选的 feature 专属样式包**：若本 feature 沿用一套专属视觉结构（类名 / 主题），允许在 `docs/B04-design/prototype-style/<feature>/` 下放置 `styles.css` / `prototype.js`，HTML 引用路径仍为 `../../../B04-design/prototype-style/<feature>/X`（3 ups，只引用、不拷贝）。**绝不**引用 `/function/` 下任何路径。
 
 H01 §3 表里所有 page-id 一次性出齐——每个 page-id 出 1 个默认态 HTML。**禁止**以"分期 / 二期 / 暂不做 / 优先级不高"为由跳过。
 本阶段属于产品设计阶段，**严禁**引用、读取或假设任何后续开发阶段产物（架构 / 数据规范 / 接口规范 / 校验规范），也禁止出现真实接口路径、SQL、表名、列名、真实路由路径。
@@ -74,8 +74,8 @@ docs/C04-prototype/<feature-id>/
 
 ## 硬约束
 
-0. **运行时资产唯一来源**：必须**通过相对路径**直接引用 `docs/B04-design/prototype-style/` 内的 `app.css` / `themes.css` / `tokens.css` / `app.js`，**禁止**在 feature 目录下任何位置复制 B04 文件。任何 token / 组件 CSS / 全局交互 JS 的调整都必须直接改 B04 源；因 B04 与该 feature 共用，所有 feature 立即同步生效。
-   - 例外：若 feature 在 `/function/<feature>/ai/F4-AI-原型设计/` 有上游 AI 原型，则改引用该上游 `_assets/`；仍不得拷贝。
+0. **运行时资产唯一来源**：必须**通过相对路径**直接引用 `docs/B04-design/prototype-style/` 内的 `app.css` / `themes.css` / `tokens.css` / `app.js`，**禁止**在 feature 目录下任何位置复制 B04 文件，**禁止**引用 `/function/` 下任何资产。任何 token / 组件 CSS / 全局交互 JS 的调整都必须直接改 B04 源；因 B04 与该 feature 共用，所有 feature 立即同步生效。
+   - 允许：feature 专属样式包放在 `docs/B04-design/prototype-style/<feature>/` 下，引用路径同为 3 ups。
 0.1 **极简平铺**：一个页面 = 一个 HTML，只出默认态。不产出 `pages/` / `states/` / `assets/` 子目录，不产出 `*.empty.html` / `*.loading.html` / `*.error.html` / `*.forbidden.html`。
 0.2 **surface 目录只能出 HTML**：不产出任何 `feature.css` / `feature.js` / `mock-data.js`（页面级微调一律内联在对应 HTML 的 `<style>` / `<script>`）；不产出任何 `README.md` / `00-index.md` / `changelog.md` / `99-open-questions.md`（阶段说明与变更记录由 docs/C05-prd/ 与 docs/A00-meta/changelog.md 统一承担）。
 1. **零外部依赖**：不引 CDN、不用框架、不用打包器。仅原生 HTML + CSS + vanilla JS（通过相对路径引用 B04 本地资产，不算外部依赖）。
@@ -114,7 +114,7 @@ docs/C04-prototype/<feature-id>/
 
 - 顶部 HTML 注释列出：page-id、对应 R-ID、对应 OP-ID（本页交互点）、最后更新时间
 - 引入 `../../../B04-design/prototype-style/{tokens,themes,app}.css` + `../../../B04-design/prototype-style/app.js`；`<body>` 末尾调 `proto.bootstrap()`
-  - 例外：feature 有 F4 上游资产时，改为 `../../../../function/<feature>/ai/F4-AI-原型设计/_assets/styles.css` 等等价路径
+  - 允许：feature 专属样式包放在 `docs/B04-design/prototype-style/<feature>/` 下，HTML 引用同样 3 ups。
 - DOM 结构按 `docs/C03-pages/<feature-id>/<page-id>.md` §3 区块清单
 - 每个 Block 加 `data-block="Block-1"` 便于反馈定位
 - 每个操作按钮加 `data-op="OP-1"` 便于反馈定位
@@ -152,7 +152,7 @@ docs/C04-prototype/<feature-id>/
 - [ ] `<surface>/` 下**只**有 `index.html` + `P-*.html`？无任何 `pages/` / `states/` / `assets/` / `vendor/` 子目录？
 - [ ] **无任何** `*.empty.html` / `*.loading.html` / `*.error.html` / `*.forbidden.html`？
 - [ ] **无任何** `feature.css` / `feature.js` / `mock-data.js` / `README.md` / `00-index.md` / `changelog.md` / `99-open-questions.md`？页面级微调均已内联在对应 HTML 中？
-- [ ] 所有 HTML 均通过相对路径引用 `docs/B04-design/prototype-style/`（或 feature 有 F4 上游时引用 `function/<feature>/ai/F4-AI-原型设计/_assets/`）？无任何 B04 副本？
+- [ ] 所有 HTML 均通过相对路径引用 `docs/B04-design/prototype-style/`（包含可选 feature 子目录）？无任何 B04 副本？无任何 `/function/` 路径引用？
 - [ ] HTML 内联 `<style>` 中无任何 token 重定义、无任何 hex / px 硬编码？
 - [ ] 双击 `index.html` 在浏览器能跑，无 404、无控制台报错？
 - [ ] 所有 page-id 与 `docs/C02-ia/<feature-id>/04-pages.md` 一致？

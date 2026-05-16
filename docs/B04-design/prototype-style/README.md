@@ -40,9 +40,9 @@
 
 页面级微调样式 / 微交互一律内联在该 HTML 的 `<style>` / `<script>` 中;页面示例数据直接写在 HTML 静态片段(业务语言),**不**产出 `mock-data.js` / `feature.css` / `feature.js`。
 
-### 2.2 例外(F4 上游)
+### 2.2 feature 专属样式包(按需)
 
-若 feature 在 `/function/<feature>/ai/F4-AI-原型设计/` 已有上游 AI 原型(如 `course`),C04 应改为引用上游 `_assets/`(路径 `../../../../function/<feature>/ai/F4-AI-原型设计/_assets/X`,surface 深度 → 4 ups → docs 根 → function/...),同样**不得拷贝**。
+若 feature 沿用一套已成型的视觉结构(类名 / 主题),允许在 `docs/B04-design/prototype-style/<feature>/` 下放置该 feature 专属的 `styles.css` / `prototype.js`,HTML 引用路径与通用包同样为 `../../../B04-design/prototype-style/<feature>/X`(3 ups)。仍然**只引用、不拷贝**。
 
 ---
 

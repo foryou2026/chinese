@@ -16,8 +16,8 @@
 
 | feature | 数据源(`/function/`) | PRD 主要参考 |
 |---------|---------------------|-------------|
-| `course` | [`function/02-course/`](../../function/02-course/) | `prd/00..07-*.md` + `ai/F1..F4-*` |
-| `discover-china` | [`function/01-china/`](../../function/01-china/) | `prd/F1..F3-*.md` + `ai/F1..F3-*` |
+| `course` | 〔历史素材〕 | `prd/00..07-*.md` + `ai/F1..F4-*` |
+| `discover-china` | 〔历史素材〕 | `prd/F1..F3-*.md` + `ai/F1..F3-*` |
 | `auth` | 规范派生(无 `/function/` 入口) | [G3-权限与认证规范](../../grules/G3-权限与认证规范/) + [B02-permissions/](../B02-permissions/) |
 
 ## 3. 进度速览

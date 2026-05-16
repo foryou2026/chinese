@@ -121,7 +121,7 @@ docs/C04-prototype/<feature>/
 ```
 
 > **硬约束**：surface 目录下**只能**有 `index.html` + `P-*.html`；严禁 `pages/` / `states/` / `assets/` / `vendor/` / `feature.css` / `feature.js` / `mock-data.js`。
-> 例外：feature 若在 `/function/<feature>/ai/F4-AI-原型设计/` 存在上游 AI 原型（如 `course`），则改为引用上游 `_assets/`（路径 `../../../../function/<feature>/ai/F4-AI-原型设计/_assets/X`），同样不得拷贝。
+> feature 沿用专属视觉结构时，允许在 `docs/B04-design/prototype-style/<feature>/` 下放置 `styles.css` / `prototype.js`，HTML 引用路径 `../../../B04-design/prototype-style/<feature>/X`（仍然 3 ups，只引用不拷贝）。
 
 ---
 

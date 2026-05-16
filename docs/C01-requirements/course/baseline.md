@@ -3,7 +3,7 @@
 # C01 · 需求基线 · course
 
 > **阶段**:C01-R · **feature**:`course` · **冻结状态**:已冻结 · 2026-05-16
-> **上游**:[`_input/draft.md`](./_input/draft.md) + 遗留素材 [`function/02-course/`](../../../function/02-course/)
+> **上游**:[`_input/draft.md`](./_input/draft.md) + 遗留素材 〔历史素材〕
 > **下游**:C02 IA / C03 页面 / C04 原型 / C05 PRD / D01 数据 / D02 接口
 
 ---
