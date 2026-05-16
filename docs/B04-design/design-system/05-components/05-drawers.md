@@ -2,7 +2,7 @@
 
 # 05.05 · 抽屉 Drawer
 
-> 上游:[`grules/G2-视觉与交互风格/04-状态与组件.md §六`](../../../grules/G2-视觉与交互风格/04-状态与组件.md)。
+> 上游:[`04-status-colors.md §六`](../04-status-colors.md)。
 > ui-kit 导出:`GlassDrawer`。
 
 | 属性 | 值 |

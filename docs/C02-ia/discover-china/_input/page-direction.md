@@ -2,7 +2,7 @@
 
 # I01 · 信息架构方向 · discover-china
 
-> 反向回写自 〔历史素材〕
+> 〔历史素材〕
 
 ## 双 surface 三层一致
 - 应用端:`/china` → `/china/categories/:code` → `/china/articles/:code`(3 层逐层下钻);

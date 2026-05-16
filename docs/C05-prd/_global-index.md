@@ -12,13 +12,13 @@
 | `discover-china` | 发现中国(文章/句子) | app + admin | [discover-china/](discover-china/) · [app](discover-china/app/00-index.md) · [admin](discover-china/admin/00-index.md) | 进行中(Round 6) | 2026-05-16 |
 | `auth` | 鉴权(单 feature 多端 = app + admin) | app + admin | [auth/](auth/) · [app](auth/app/00-index.md) · [admin](auth/admin/00-index.md) | 进行中(Round 7;双 feature 合并 2026-05-17) | 2026-05-17 |
 
-## 2. 业务域映射(数据源)
+## 2. 业务域映射
 
-| feature | 数据源(`/function/`) | PRD 主要参考 |
-|---------|---------------------|-------------|
-| `course` | 〔历史素材〕 | `prd/00..07-*.md` + `ai/F1..F4-*` |
-| `discover-china` | 〔历史素材〕 | `prd/F1..F3-*.md` + `ai/F1..F3-*` |
-| `auth` | 规范派生(无 `/function/` 入口) | [G3-权限与认证规范](../../grules/G3-权限与认证规范/) + [B02-permissions/](../B02-permissions/) |
+| feature | 来源 | PRD 主要参考 |
+|---------|------|-------------|
+| `course` | 0→1 PRD | C05-prd/course/{app,admin}/ |
+| `discover-china` | 0→1 PRD | C05-prd/discover-china/{app,admin}/ |
+| `auth` | 规范派生 | [B02-permissions/](../B02-permissions/) |
 
 ## 3. 进度速览
 

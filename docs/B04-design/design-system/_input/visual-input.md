@@ -1,9 +1,9 @@
 <!-- TARGET-PATH: docs/B04-design/design-system/_input/visual-input.md -->
 
-# 视觉输入（模拟还原 · 反向工程）
+# 视觉输入（B04-S01）
 
-> 真实背景：B 阶段开工时 grules/G2 已存在；本文按"如果当时正向走 S01 用户输入"的方式还原。
-> 反推确认 by PM · 2026-04-28
+> 阶段：B04-S 设计系统 · 用户输入  
+> 确认 by PM · 2026-04-28
 
 ---
 

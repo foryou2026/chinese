@@ -2,7 +2,7 @@
 
 # 05.06 · Toast / 确认弹窗
 
-> 上游:[`grules/G2-视觉与交互风格/04-状态与组件.md §七 / §八`](../../../grules/G2-视觉与交互风格/04-状态与组件.md)。
+> 上游:[`04-status-colors.md §七 / §八`](../04-status-colors.md)。
 > ui-kit 导出:`GlassToast`(全局单例)+ `Confirm`(危险确认)。
 
 ## 一、Toast

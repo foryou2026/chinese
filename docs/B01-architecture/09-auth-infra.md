@@ -5,7 +5,7 @@
 > **阶段**：B01-A 架构  
 > **角色**：架构师  
 > **feature**：全局  
-> **上游依赖**：`01-tech-stack.md`、`08-surfaces.md`、`grules/G3-权限与认证规范/02-认证流程.md`（既有素材）  
+> **上游依赖**：`01-tech-stack.md`、`08-surfaces.md`、[`B02-permissions/02-auth-flow.md`](../B02-permissions/02-auth-flow.md)  
 > **冻结状态**：已冻结 · 2026-04-28  
 > **下游影响**：B02 权限规范、未来 `auth` / `auth` feature 的 C/D 全阶段
 

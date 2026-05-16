@@ -5,7 +5,7 @@
 > 实现库:**shadcn/ui** + Radix Primitives,主题层在 `system/packages/ui-kit/`。
 > 所有业务可见组件**必须毛玻璃化**(`glass-button` / `glass-modal` / `glass-toast` / `glass-panel`),禁止裸用 shadcn 原始组件。
 > Token 唯一来源 [01-tokens.md](../01-tokens.md);状态色映射详见 [04-status-colors.md](../04-status-colors.md)。
-> 上游规范:[`grules/G2-视觉与交互风格/04-状态与组件.md`](../../../grules/G2-视觉与交互风格/04-状态与组件.md)。
+> 上游规范:[`04-status-colors.md`](../04-status-colors.md)。
 
 ## 组件清单
 

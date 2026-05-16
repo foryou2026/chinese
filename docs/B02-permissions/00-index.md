@@ -37,7 +37,7 @@
 
 ---
 
-## 2. 核心原则（不可违反 · 与 grules/G3 §一 完全一致）
+## 2. 核心原则（不可违反）
 
 1. **认证后端 = 自托管 Supabase Auth（GoTrue）**。Hono API 不自建 JWT 签发器。
 2. **角色仅 2 种**：`super_admin` + `user`。

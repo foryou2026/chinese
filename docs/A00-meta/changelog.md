@@ -7,6 +7,47 @@
 
 ---
 
+## 2026-05-19 · 批次 21 · 全局清剿"反向工程"痕迹 · /docs 改为纯 /prompt 派生
+
+> **触发原因**：用户明令"docs 就是完全按照 prompt 做出来的，有任何违背此规则的，都不行！因为 backup 是临时文件，我马上删除了！"——批次 20 仅清掉 /function 显式引用，本批次进一步剔除所有暴露反推阶段来源的 meta 措辞、grules/env.md 死链，使 /docs 任意文件都读起来像首次按 /prompt 0→1 跑出来的。
+
+### 死链 / 死引用清除
+- **`grules/Gx` 链接（22 处）**：B04-design/design-system/ 19 个文件 + 3 个 C 层 PRD 文件中所有指向 `grules/G2-视觉与交互风格/` / `grules/G3-权限与认证规范/` 的链接全部改写：
+  - `grules/G3-权限与认证规范/01-角色定义.md` → [`docs/B02-permissions/01-roles.md`](../B02-permissions/01-roles.md)
+  - `grules/G3-.../02-认证流程.md` → [`docs/B02-permissions/02-auth-flow.md`](../B02-permissions/02-auth-flow.md)
+  - `grules/G2-.../04-状态与组件.md` → [`docs/B04-design/design-system/04-status-colors.md`](../B04-design/design-system/04-status-colors.md)
+  - 设计系统 top 文件 `上游` 列里残留的 `、grules/G2-...md` 后缀整体删除（B04 本身已是当前唯一真相，无需再标"上游 grules"）
+- **`env.md` 文件引用（8 处）**：所有指向项目顶层 `env.md` 的引用一律删除或改指 [docs/B01-architecture/06-deploy-env.md](../B01-architecture/06-deploy-env.md)；保留 `06-deploy-env.md` 作为正常 doc 文件名。涉及：04-api-conventions.md §9、06-deploy-env.md §0/§1/§9、01-tech-stack.md AI key 表、02-project-structure.md §0/§1、_input/preferences.md、A-questions D3。
+- **课程原型 `prototype.js`**：注释里 `key 见 grules/F3-AI-页面交互规范/14-i18n规范.md` → `key 见 D01-data i18n 规范`。
+
+### 反推阶段 meta 措辞清剿（21 处）
+- **B 层 _input 文件**（3 处）：B01/preferences.md、B02/roles-input.md、B03/style-input.md、B04/visual-input.md 标题里的"模拟还原 · 反向工程"全部删除，导语统一改为"阶段：BXX · 用户输入 / 确认 by PM · 日期"。
+- **A00-meta**：glossary.md 删除"反向工程文档"术语条；A-questions-round1-resolved.md 删除"本文件是反向工程产物：既有 grules/G1 与 system/ 工程结构 = PM 实际决策结果"导语。
+- **C 层 _input 文件**（11 处）：所有"反向回写 / 反推确认 by PM / 真实背景：B02-permissions 已成型时本 feature 才反向重打包 / 反向回写期补登 / 反向回写期直接采纳"措辞全部正向化或删除——文件读起来像首次按 /prompt 走 C01-R01..C04-H01 用户输入跑出。涉及 auth、course、discover-china 三个 feature 的 C01/C02/C03/C04/C05 _input。
+- **B 层规范导语**（3 处）：B01-09-auth-infra.md 上游列里 `grules/G3...（既有素材）` 删除；B02-99-open-questions.md 历史回顾"与 grules/G3 决策完全一致"删除；B02-00-index.md §2 标题"与 grules/G3 §一 完全一致"删除；B03-99-open-questions.md / B04-99-open-questions.md 中 grules 一致性描述全部删除。
+- **HTML 原型注释**（1 处）：P-A-2-主题-阶段-章列表.html 中"参考 system/web-app china 模块的 pickI18n 逻辑" → "pickI18n 规则见 D01-data"。
+
+### Docker .dockerignore 清理
+- [06-deploy-env.md](../B01-architecture/06-deploy-env.md) §三镜像构建段 "严禁复制" 列表中删除 `grules/`、`backup/`、`template/` 三项（这些目录在删除 /backup 后不再存在；仅保留 `.github/` `.agents` `.claude` `_bmad` `prompt/` `docs/` 与本地 `.env`）。
+
+### 保留项（合法）
+- 全部 `system/apps/...` `system/packages/...` `system/docker/...` `system/supabase/...` `system/.dev/mailbox/` `/opt/projects/zhiyu/system/` 引用——这些是 [B01-02 项目结构](../B01-architecture/02-project-structure.md) 规定的目标 monorepo 结构，是 /prompt B01-A03 派生的正向架构规范，不是 /backup/system 历史引用。
+- `supabase/functions/...` 路径——Supabase Edge Functions 框架概念，与 /backup/function 无关。
+- changelog.md（本文）保留批次 1–20 历史措辞作为审计追溯，不再当作活引用。
+
+### 终态验证（grep 全部 0 命中，排除 changelog.md）
+- ✅ 无 `\bgrules\b`、`\bbackup/`、`function/(01-china|02-course)`
+- ✅ 无 bare `env.md`（仅保留 `06-deploy-env.md` 作 doc 文件名）
+- ✅ 无 `反向工程 / 反向回写 / 反推确认 / 模拟还原 / 反向打包 / 既有素材` 等反推阶段措辞
+- ✅ 无 `F4 上游 / 上游 AI 原型 / F4-AI-原型设计`
+
+### 影响范围
+- /docs 任意文件读起来都像首次按 /prompt 模板 0→1 跑出来的纯净产物。
+- /backup 现可彻底删除，删后 /docs + /prompt 无任何死链 / 死引用 / 暴露历史的 meta 措辞。
+- 后续新建任何 feature 严格按 /prompt 流程走，不再有"反向工程"特例。
+
+---
+
 ## 2026-05-19 · 批次 20 · 全局清剿"F4 上游"概念 + course 资产迁入 B04
 
 > **触发原因**：用户准备删除 /backup（含 /system /function /grules /env.md）；review 时发现 /docs 与 /prompt 多处仍写有"feature 若在 /function/<feature>/ai/F4-AI-原型设计/ 有上游 AI 原型，则改为引用上游 _assets/"这类例外条款，且 [docs/C04-prototype/course/](../C04-prototype/course/) 20 个 HTML 实际硬依赖 `function/02-course/ai/F4-AI-原型设计/_assets/`。用户原话："哪有什么上游文件啊！所有的都是统一的！以后所有都是 0-1 生成，之前的反推是因为软件已经做了一部分了是特殊情况！"——明令删除全部"F4 上游"措辞、迁移 course 资产至 docs/B04、把所有反推阶段对 `/function/` 的引用统一中性化为〔历史素材〕。

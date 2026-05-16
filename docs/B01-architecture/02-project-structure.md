@@ -13,7 +13,7 @@
 
 ## 0. 摘要
 
-- **代码根硬约束**：所有可运行 / 可构建代码位于 `/opt/projects/zhiyu/system/`；顶层 `/opt/projects/zhiyu/` 只放文档与素材（`docs/`、`prompt/`、`env.md`）。
+- **代码根硬约束**：所有可运行 / 可构建代码位于 `/opt/projects/zhiyu/system/`；顶层 `/opt/projects/zhiyu/` 只放文档与素材（`docs/`、`prompt/`）。
 - monorepo 用 **pnpm workspaces**。
 - 4 个应用：`web-app` / `web-admin` / `api-app` / `api-admin`。
 - 7 个共享包：`shared-schemas` / `shared-config` / `shared-utils` / `shared-i18n` / `ui-kit` / `supabase-client` / `ai-adapters`。
@@ -26,7 +26,6 @@
 /opt/projects/zhiyu/
 ├── docs/                       ← 本框架所有 AI 产出物（B/C/D 阶段）
 ├── prompt/                     ← /prompt 框架模板（A/B/C/D 四子目录）
-├── env.md                      ← 凭证 / 端口 / 基础设施现状
 │
 └── system/                     ← ★ 唯一开发根（pnpm workspace 根）
     ├── apps/                   ← 可独立部署的应用

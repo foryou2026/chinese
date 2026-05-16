@@ -5,7 +5,7 @@
 > **阶段**：B01-A 架构  
 > **角色**：架构师  
 > **feature**：全局  
-> **上游依赖**：`01-tech-stack.md`、`02-project-structure.md`、`08-surfaces.md`、`../../env.md`  
+> **上游依赖**：`01-tech-stack.md`、`02-project-structure.md`、`08-surfaces.md`  
 > **冻结状态**：已冻结 · 2026-04-28  
 > **下游影响**：`system/docker/compose.yaml`、`system/docker/env/.env.example`、CI
 
@@ -58,7 +58,7 @@
 | Postgres | 5432 | 仅 host 调试用 |
 | Redis | 6379 | — |
 
-> **与 `env.md` 既有项目（ideas / foryou 占用 3100-3400 / 8100-8400）共存策略**：本项目 dev 当 ideas/foryou 同时启动时，会和 ideas dev 的 fe=3100 / be=8100 冲突；`scripts/dev/free-ports.sh` 在 `docker compose up` 前自动 `kill` 占用 `3100/4100/8100/9100/6379` 的进程。CI / dev 强制启用，不询问。
+> **与同主机其它项目共存策略**：dev 启动前若 `3100/4100/8100/9100/6379` 已被占用，`scripts/dev/free-ports.sh` 在 `docker compose up` 前自动 `kill` 占用进程。CI / dev 强制启用，不询问。
 
 ### 1.2 启动命令
 
@@ -89,7 +89,7 @@ pnpm supabase gen types typescript --local > packages/supabase-client/src/types/
 | `api-app-worker` | 同 `api-app`，仅 entrypoint 不同 | — |
 | Supabase 全套 | 官方 `supabase/*` 镜像 | 直接拉取 |
 
-> 镜像内**严禁**复制：`.github/`、`.agents`、`.claude`、`_bmad`、`grules/`、`prompt/`、`backup/`、`template/`、`docs/`、本地 `.env`。
+> 镜像内**严禁**复制：`.github/`、`.agents`、`.claude`、`_bmad`、`prompt/`、`docs/`、本地 `.env`。
 > `.dockerignore` 必须显式列出上述目录（user memory `zhiyu-docker-policy.md`）。
 
 ---
@@ -203,7 +203,7 @@ pnpm supabase gen types typescript --local > packages/supabase-client/src/types/
 
 ## 9. 生产部署（备注 · 非本仓库交付）
 
-- 反向代理：用户指定 **Nginx**；HTTPS 证书与多域名拆分由用户自行维护（参考 `env.md`）。
+- 反向代理：用户指定 **Nginx**；HTTPS 证书与多域名拆分由用户自行维护。
 - dev 镜像与生产镜像构建参数一致，仅 `.env.local` 不同。
 - 前端无需 SSR 服务，Nginx 直接 `try_files $uri /index.html` 承载 SPA。
 

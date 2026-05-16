@@ -201,7 +201,7 @@ HTTP 状态码与 `code` 一并使用；客户端**优先按 `code` 判定业务
 
 - 路径：`/api/v1/webhooks/<provider>`，如 `/api/v1/webhooks/paddle`。
 - 必须 1s 内返回 200；耗时操作丢入 BullMQ。
-- 必须验签；缺 Key 时按 `env.md` 走 mock 验签直接放行（仅 dev）。
+- 必须验签；缺 Key 时按 [`06-deploy-env.md`](./06-deploy-env.md) 走 mock 验签直接放行（仅 dev）。
 
 ---
 

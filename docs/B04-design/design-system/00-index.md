@@ -8,7 +8,7 @@
 > **上游依赖**：`B03-ux/01-direction.md`、`B03-ux/05-moodboard.md`、`B03-ux/06-experience-principles.md`、`_input/visual-input.md`  
 > **冻结状态**：已冻结 · 2026-04-28  
 > **下游影响**：`system/packages/ui-kit/`、所有 C04 H 原型、所有 C03 N 4 态文案承载组件、所有 D02 L 错误反馈位置  
-> **关联**：与 `grules/G2-视觉与交互风格/` 双向同步——grules 是历史源、本目录是当前唯一真相
+> **关联**：本目录即设计系统当前唯一真相
 
 ---
 
@@ -43,7 +43,7 @@
 - B04 **只**定义"长什么样 / 怎么响应"；不写业务规则、不定义 PRD 字段、不写接口。
 - 凡数值（hex / px / ms / cubic-bezier）必须存在于 [01-tokens.md](./01-tokens.md)；本目录其他文件可援引但不可"另行定义"。
 - 与 B03 关系：B03 给"感觉关键词"，B04 给"具体值与规则"。一句 B04 规则必须援引 B03 至少一个关键词作为依据。
-- 与 grules/G2 关系：grules 是历史源；本目录是当前唯一真相。两者出现分歧时**以 B04 为准**，并在 `A00-meta/changelog.md` 写一条同步记录。
+- 本目录是设计系统的唯一真相。任何变更均需在 `A00-meta/changelog.md` 同步记录。
 
 ---
 

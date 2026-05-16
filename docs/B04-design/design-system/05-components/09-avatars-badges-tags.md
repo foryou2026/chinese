@@ -2,7 +2,7 @@
 
 # 05.09 · 头像 / 徽章 / 状态标签
 
-> 状态标签上游:[`grules/G2-视觉与交互风格/04-状态与组件.md §一`](../../../grules/G2-视觉与交互风格/04-状态与组件.md) → 同步至 [04-status-colors.md](../04-status-colors.md)。
+> 状态标签上游:[`04-status-colors.md §一`](../04-status-colors.md) → 同步至 [04-status-colors.md](../04-status-colors.md)。
 > ui-kit 导出:`StatusTag` / `Avatar` / `Badge`。
 
 ## 一、状态标签 `StatusTag`

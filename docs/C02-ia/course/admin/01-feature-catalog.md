@@ -19,7 +19,7 @@
 
 ## 2. 上下游
 
-- 上游:[D01-data](../../../D01-data/data-model.md);[G3 角色](../../../../grules/G3-权限与认证规范/01-角色定义.md)`content_admin.tracks_scope`。
+- 上游:[D01-data](../../../D01-data/data-model.md);[B02 角色](../../../B02-permissions/01-roles.md)`content_admin.tracks_scope`。
 - 下游:[D02-api/course/admin](../../../D02-api/course/admin/01-routes-delta.md)(24 endpoint)、[C03-pages/course/admin/](../../../C03-pages/course/admin/)、[C04-prototype/course/admin/](../../../C04-prototype/course/admin/)。
 
 ## 3. 模块边界

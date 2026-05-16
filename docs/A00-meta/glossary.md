@@ -23,4 +23,3 @@
 | 全栈 TS | full-stack TypeScript | 前端 / 后端 / 共享包 / 脚本 / Edge Functions 全部 `.ts`，禁止 `.js` / `.mjs` / JSDoc |
 | Docker-only | Docker-only dev | 唯一 dev 环境运行在 Docker 容器内，禁止裸机；自动化测试也在容器内 |
 | 反爬虫纯 CSR | CSR / SPA only | 前端禁止 SSR/SSG/数据预注入；HTML 仅空壳 |
-| 反向工程文档 | reverse-engineered doc | 本项目 docs/ 下大多数文件由既有 grules/ + function/ 反向打包而成，非首次从 prompt 跑出 |

@@ -3,7 +3,7 @@
 # 01 · 设计 Token
 
 > **阶段**：B04-S  
-> **上游**：`B03-ux/05-moodboard.md`、`_input/visual-input.md`、`grules/G2-视觉与交互风格/01-设计Token.md`  
+> **上游**：`B03-ux/05-moodboard.md`、`_input/visual-input.md`  
 > **下游**：`system/packages/ui-kit/src/tokens/{tokens.css, tokens.ts, theme.css}`、所有 C 阶段产物  
 > **冻结状态**：已冻结 · 2026-04-28
 

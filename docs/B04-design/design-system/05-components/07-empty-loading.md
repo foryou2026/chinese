@@ -2,7 +2,7 @@
 
 # 05.07 · 空状态 / 加载 / Spinner
 
-> 上游:[`grules/G2-视觉与交互风格/04-状态与组件.md §三.1 / §三.2`](../../../grules/G2-视觉与交互风格/04-状态与组件.md) + [`05-通用交互.md`](../06-interactions.md)。
+> 上游:[`04-status-colors.md §三.1 / §三.2`](../04-status-colors.md) + [`05-通用交互.md`](../06-interactions.md)。
 > ui-kit 导出:`EmptyState` + `Skeleton`。
 
 ## 一、空状态 `EmptyState`

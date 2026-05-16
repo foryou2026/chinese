@@ -2,7 +2,7 @@
 
 # 05.04 · 弹窗 Modal
 
-> 上游:[`grules/G2-视觉与交互风格/04-状态与组件.md §五`](../../../grules/G2-视觉与交互风格/04-状态与组件.md)。
+> 上游:[`04-status-colors.md §五`](../04-status-colors.md)。
 > ui-kit 导出:`GlassModal`。
 
 ## 一、尺寸

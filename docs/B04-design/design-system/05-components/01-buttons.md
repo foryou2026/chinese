@@ -2,7 +2,7 @@
 
 # 05.01 · 按钮 Buttons
 
-> 上游:[`grules/G2-视觉与交互风格/04-状态与组件.md §二`](../../../grules/G2-视觉与交互风格/04-状态与组件.md)。
+> 上游:[`04-status-colors.md §二`](../04-status-colors.md)。
 > ui-kit 导出:`GlassButton`,变体 prop `variant: "primary" | "secondary" | "danger" | "ghost" | "link"`。
 
 ## 一、变体矩阵

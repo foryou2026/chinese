@@ -3,7 +3,7 @@
 # 04 · 状态色与基础组件
 
 > **阶段**：B04-S  
-> **上游**：`01-tokens.md`、`B03-ux/04-voice-tone.md`、`B03-ux/06-experience-principles.md`、`grules/G2-视觉与交互风格/04-状态与组件.md`  
+> **上游**：`01-tokens.md`、`B03-ux/04-voice-tone.md`、`B03-ux/06-experience-principles.md`  
 > **下游**：`system/packages/ui-kit/src/components/`、所有 C03 4 态文案承载  
 > **冻结状态**：已冻结 · 2026-04-28
 

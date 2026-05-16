@@ -3,7 +3,7 @@
 # 02 · 全局布局
 
 > **阶段**：B04-S  
-> **上游**：`01-tokens.md`、`B03-ux/05-moodboard.md`、`B03-ux/06-experience-principles.md`、`grules/G2-视觉与交互风格/02-全局布局.md`  
+> **上游**：`01-tokens.md`、`B03-ux/05-moodboard.md`、`B03-ux/06-experience-principles.md`  
 > **下游**：所有 C04 H 原型、所有 C03 N 页面骨架  
 > **冻结状态**：已冻结 · 2026-04-28
 

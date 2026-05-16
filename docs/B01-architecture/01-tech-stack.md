@@ -128,11 +128,11 @@
 | 简单 LLM 调用 / 流式 | **Vercel AI SDK** | 纯 prompt → 单次/流式 |
 | 向量数据库 | Supabase pgvector | 仅 AI 向量场景按需启用 |
 | Adapter 层 | `LLMAdapter` / `WorkflowAdapter` / `EmbeddingAdapter` / `TTSAdapter` / `ASRAdapter` | 缺 Key 自动 fallback 到 fixture |
-| 主创作模型 | Anthropic Claude Sonnet（待 Key）| `env.md` 缺 → mock |
+| 主创作模型 | Anthropic Claude Sonnet（待 Key）| 缺 → mock |
 | 副创作模型 | DeepSeek V3（待 Key）| 缺 → mock |
 | 评估 | LangSmith（可选）| v1 不强制 |
 
-> **禁用**：Dify、NocoBase、OpenClaw（`env.md` 已标注停用）。
+> **禁用**：Dify、NocoBase、OpenClaw。
 
 ---
 

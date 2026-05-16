@@ -2,7 +2,8 @@
 
 # B01 · A 用户输入 · 技术偏好
 
-> 本文件是反向工程产物：基于 `env.md`、`system/` 既有工程结构、用户口述偏好，重写为 B01-A01 用户输入模板的填表结果。
+> 阶段：B01-A 架构 · 用户输入  
+> 确认 by PM · 2026-04-28
 
 ---
 
@@ -44,7 +45,7 @@
 
 - 任何 ORM（Drizzle/Prisma/Kysely/TypeORM）
 - 任何 SSR / SSG 方案（Next.js / Remix / Vite SSR plugin）
-- 任何低代码平台（Dify / NocoBase / OpenClaw 已在 `env.md` 标注停用）
+- 任何低代码平台（Dify / NocoBase / OpenClaw）
 - 任何 GitHub Actions / 第三方 SaaS CI（user memory `zhiyu-docker-policy.md`）
 - 任何 PG enum 类型（用 `text` + `CHECK` 替代）
 - 任何 `.mjs` 文件

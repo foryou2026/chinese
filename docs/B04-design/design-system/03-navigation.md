@@ -3,7 +3,7 @@
 # 03 · 导航菜单
 
 > **阶段**：B04-S  
-> **上游**：`02-layout.md`、`B02-permissions/01-roles.md`、`grules/G2-视觉与交互风格/03-导航菜单.md`  
+> **上游**：`02-layout.md`、`B02-permissions/01-roles.md`  
 > **下游**：`system/packages/shared-config/src/menus.ts`、`<TopNav />` 组件、所有 C03 N 顶栏部分  
 > **冻结状态**：已冻结 · 2026-04-28
 

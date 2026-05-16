@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 /* ============== 全局 i18n（应用端）==============
- * 5 语言：zh / en / vi / th / id（key 见 grules/F3-AI-页面交互规范/14-i18n规范.md）。
+ * 5 语言：zh / en / vi / th / id（key 见 D01-data i18n 规范）。
  * 用法：
  *   - 文本：<span data-i18n="btn.adopt">采纳</span>
  *   - 属性：<input data-i18n-attr="placeholder:search.placeholder" />

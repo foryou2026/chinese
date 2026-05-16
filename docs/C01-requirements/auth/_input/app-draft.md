@@ -1,9 +1,8 @@
 <!-- TARGET-PATH: docs/C01-requirements/auth/_input/draft.md -->
 
-# `auth` · R01 用户输入（反向回写）
+# `auth` · R01 用户输入
 
-> 真实背景：B02-permissions 已成型时本 feature 才反向重打包；本文按"如果当时正向走 R01"模拟 PM 的需求初稿。
-> 反推确认 by PM · 2026-05-16
+> 确认 by PM · 2026-05-16
 
 ---
 
