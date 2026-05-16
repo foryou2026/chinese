@@ -8,15 +8,15 @@
 
 | P-ID | 标题 | 源文档 |
 |------|------|--------|
-| [P-admin-course-001](P-admin-course-001.md) | 轨道列表 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-001.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
-| [P-admin-course-002](P-admin-course-002.md) | 阶段编辑 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-002.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
-| [P-admin-course-003](P-admin-course-003.md) | 章节编辑(拖拽排序) | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-003.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
-| [P-admin-course-004](P-admin-course-004.md) | 节编辑 + KP 绑定 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-004.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
-| [P-admin-course-005](P-admin-course-005.md) | 题目 / 知识点 CRUD | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-005.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
-| [P-admin-course-006](P-admin-course-006.md) | 学员举报审核 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-006.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
-| [P-admin-course-007](P-admin-course-007.md) | 媒资库 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-007.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
-| [P-admin-course-008](P-admin-course-008.md) | 考试编辑与预览 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-008.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
-| [P-admin-course-009](P-admin-course-009.md) | 全局搜索 + 统计 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-009.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
+| [P-admin-course-001](P-admin-course-001.md) | 轨道列表 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-001.md) · [C04 HTML](../../../../C04-prototype/course/admin/) |
+| [P-admin-course-002](P-admin-course-002.md) | 阶段编辑 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-002.md) · [C04 HTML](../../../../C04-prototype/course/admin/) |
+| [P-admin-course-003](P-admin-course-003.md) | 章节编辑(拖拽排序) | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-003.md) · [C04 HTML](../../../../C04-prototype/course/admin/) |
+| [P-admin-course-004](P-admin-course-004.md) | 节编辑 + KP 绑定 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-004.md) · [C04 HTML](../../../../C04-prototype/course/admin/) |
+| [P-admin-course-005](P-admin-course-005.md) | 题目 / 知识点 CRUD | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-005.md) · [C04 HTML](../../../../C04-prototype/course/admin/) |
+| [P-admin-course-006](P-admin-course-006.md) | 学员举报审核 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-006.md) · [C04 HTML](../../../../C04-prototype/course/admin/) |
+| [P-admin-course-007](P-admin-course-007.md) | 媒资库 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-007.md) · [C04 HTML](../../../../C04-prototype/course/admin/) |
+| [P-admin-course-008](P-admin-course-008.md) | 考试编辑与预览 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-008.md) · [C04 HTML](../../../../C04-prototype/course/admin/) |
+| [P-admin-course-009](P-admin-course-009.md) | 全局搜索 + 统计 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-009.md) · [C04 HTML](../../../../C04-prototype/course/admin/) |
 
 ## 维护原则
 

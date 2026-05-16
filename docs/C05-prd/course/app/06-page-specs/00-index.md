@@ -8,14 +8,14 @@
 
 | P-ID | 标题 | 源文档 |
 |------|------|--------|
-| [P-app-course-001](P-app-course-001.md) | 首页 / 轨道选择 | [C03 详细](../../../../C03-pages/course/app/P-app-course-001.md) · [C04 HTML](../../../../C04-prototype/course/app/pages/) |
-| [P-app-course-002](P-app-course-002.md) | 节(lesson) | [C03 详细](../../../../C03-pages/course/app/P-app-course-002.md) · [C04 HTML](../../../../C04-prototype/course/app/pages/) |
-| [P-app-course-003](P-app-course-003.md) | 答题(quiz) | [C03 详细](../../../../C03-pages/course/app/P-app-course-003.md) · [C04 HTML](../../../../C04-prototype/course/app/pages/) |
-| [P-app-course-004](P-app-course-004.md) | SRS 复习队列 | [C03 详细](../../../../C03-pages/course/app/P-app-course-004.md) · [C04 HTML](../../../../C04-prototype/course/app/pages/) |
-| [P-app-course-005](P-app-course-005.md) | 错题本 | [C03 详细](../../../../C03-pages/course/app/P-app-course-005.md) · [C04 HTML](../../../../C04-prototype/course/app/pages/) |
-| [P-app-course-006](P-app-course-006.md) | 考试列表 | [C03 详细](../../../../C03-pages/course/app/P-app-course-006.md) · [C04 HTML](../../../../C04-prototype/course/app/pages/) |
-| [P-app-course-007](P-app-course-007.md) | 考试进行 | [C03 详细](../../../../C03-pages/course/app/P-app-course-007.md) · [C04 HTML](../../../../C04-prototype/course/app/pages/) |
-| [P-app-course-008](P-app-course-008.md) | 考试报告 / 个人统计 | [C03 详细](../../../../C03-pages/course/app/P-app-course-008.md) · [C04 HTML](../../../../C04-prototype/course/app/pages/) |
+| [P-app-course-001](P-app-course-001.md) | 首页 / 轨道选择 | [C03 详细](../../../../C03-pages/course/app/P-app-course-001.md) · [C04 HTML](../../../../C04-prototype/course/app/) |
+| [P-app-course-002](P-app-course-002.md) | 节(lesson) | [C03 详细](../../../../C03-pages/course/app/P-app-course-002.md) · [C04 HTML](../../../../C04-prototype/course/app/) |
+| [P-app-course-003](P-app-course-003.md) | 答题(quiz) | [C03 详细](../../../../C03-pages/course/app/P-app-course-003.md) · [C04 HTML](../../../../C04-prototype/course/app/) |
+| [P-app-course-004](P-app-course-004.md) | SRS 复习队列 | [C03 详细](../../../../C03-pages/course/app/P-app-course-004.md) · [C04 HTML](../../../../C04-prototype/course/app/) |
+| [P-app-course-005](P-app-course-005.md) | 错题本 | [C03 详细](../../../../C03-pages/course/app/P-app-course-005.md) · [C04 HTML](../../../../C04-prototype/course/app/) |
+| [P-app-course-006](P-app-course-006.md) | 考试列表 | [C03 详细](../../../../C03-pages/course/app/P-app-course-006.md) · [C04 HTML](../../../../C04-prototype/course/app/) |
+| [P-app-course-007](P-app-course-007.md) | 考试进行 | [C03 详细](../../../../C03-pages/course/app/P-app-course-007.md) · [C04 HTML](../../../../C04-prototype/course/app/) |
+| [P-app-course-008](P-app-course-008.md) | 考试报告 / 个人统计 | [C03 详细](../../../../C03-pages/course/app/P-app-course-008.md) · [C04 HTML](../../../../C04-prototype/course/app/) |
 
 ## 维护原则
 

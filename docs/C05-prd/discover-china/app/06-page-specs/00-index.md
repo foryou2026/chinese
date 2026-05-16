@@ -8,9 +8,9 @@
 
 | P-ID | 标题 | 源文档 |
 |------|------|--------|
-| [P-app-discover-china-001](P-app-discover-china-001.md) | 分类首页 + 搜索 | [C03 详细](../../../../C03-pages/discover-china/app/P-app-discover-china-001.md) · [C04 HTML](../../../../C04-prototype/discover-china/app/pages/) |
-| [P-app-discover-china-002](P-app-discover-china-002.md) | 分类下文章列表 | [C03 详细](../../../../C03-pages/discover-china/app/P-app-discover-china-002.md) · [C04 HTML](../../../../C04-prototype/discover-china/app/pages/) |
-| [P-app-discover-china-003](P-app-discover-china-003.md) | 文章详情 + 句子 TTS | [C03 详细](../../../../C03-pages/discover-china/app/P-app-discover-china-003.md) · [C04 HTML](../../../../C04-prototype/discover-china/app/pages/) |
+| [P-app-discover-china-001](P-app-discover-china-001.md) | 分类首页 + 搜索 | [C03 详细](../../../../C03-pages/discover-china/app/P-app-discover-china-001.md) · [C04 HTML](../../../../C04-prototype/discover-china/app/) |
+| [P-app-discover-china-002](P-app-discover-china-002.md) | 分类下文章列表 | [C03 详细](../../../../C03-pages/discover-china/app/P-app-discover-china-002.md) · [C04 HTML](../../../../C04-prototype/discover-china/app/) |
+| [P-app-discover-china-003](P-app-discover-china-003.md) | 文章详情 + 句子 TTS | [C03 详细](../../../../C03-pages/discover-china/app/P-app-discover-china-003.md) · [C04 HTML](../../../../C04-prototype/discover-china/app/) |
 
 ## 维护原则
 

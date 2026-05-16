@@ -106,20 +106,22 @@
 
 ## 6. 单文件夹原型资产引用
 
-按多端约定，**每个 surface 在 C04 阶段拥有独立目录**；运行时 CSS / JS 资产**统一通过相对路径直接引用 [`docs/B04-design/prototype-style/`](../B04-design/prototype-style/)**（严禁在 feature 目录下拷贝）：
+按多端约定，**每个 surface 在 C04 阶段拥有独立目录**；C04 极简平铺(一个页面 = 一个默认态 HTML，平铺在 `<surface>/` 根下)；运行时 CSS / JS 资产**统一通过相对路径直接引用 [`docs/B04-design/prototype-style/`](../B04-design/prototype-style/)**（严禁在 feature 目录下拷贝）：
 
 ```
 docs/C04-prototype/<feature>/
 ├── _input/prototype-direction.md
+├── index.html             ← feature 级入口 (双端列卡)
 ├── app/
-│   ├── index.html        ← 引用 ../../../B04-design/prototype-style/X
-│   └── pages/, states/, mock-data.js, feature.css, feature.js
+│   ├── index.html         ← surface 入口；引用 ../../../B04-design/prototype-style/X
+│   └── P-*.html           ← 默认态原型 (同样 3 ups)；空/加载/错/无权限态由 C05 文字描述
 └── admin/
     ├── index.html
-    └── pages/, states/, ...   ← pages/*.html 引用 ../../../../B04-design/prototype-style/X
+    └── P-*.html
 ```
 
-例外：feature 若在 `/function/<feature>/ai/F4-AI-原型设计/` 存在上游 AI 原型（如 `course`），则改为引用上游 `_assets/`（同样不得拷贝）。
+> **硬约束**：surface 目录下**只能**有 `index.html` + `P-*.html`；严禁 `pages/` / `states/` / `assets/` / `vendor/` / `feature.css` / `feature.js` / `mock-data.js`。
+> 例外：feature 若在 `/function/<feature>/ai/F4-AI-原型设计/` 存在上游 AI 原型（如 `course`），则改为引用上游 `_assets/`（路径 `../../../../function/<feature>/ai/F4-AI-原型设计/_assets/X`），同样不得拷贝。
 
 ---
 

@@ -8,10 +8,10 @@
 
 | P-ID | 标题 | 源文档 |
 |------|------|--------|
-| [P-admin-discover-china-001](P-admin-discover-china-001.md) | 分类管理 | [C03 详细](../../../../C03-pages/discover-china/admin/P-admin-discover-china-001.md) · [C04 HTML](../../../../C04-prototype/discover-china/admin/pages/) |
-| [P-admin-discover-china-002](P-admin-discover-china-002.md) | 文章列表 + 发布 | [C03 详细](../../../../C03-pages/discover-china/admin/P-admin-discover-china-002.md) · [C04 HTML](../../../../C04-prototype/discover-china/admin/pages/) |
-| [P-admin-discover-china-003](P-admin-discover-china-003.md) | 文章编辑 + 句子 / TTS | [C03 详细](../../../../C03-pages/discover-china/admin/P-admin-discover-china-003.md) · [C04 HTML](../../../../C04-prototype/discover-china/admin/pages/) |
-| [P-admin-discover-china-004](P-admin-discover-china-004.md) | 搜索运维(索引重建) | [C03 详细](../../../../C03-pages/discover-china/admin/P-admin-discover-china-004.md) · [C04 HTML](../../../../C04-prototype/discover-china/admin/pages/) |
+| [P-admin-discover-china-001](P-admin-discover-china-001.md) | 分类管理 | [C03 详细](../../../../C03-pages/discover-china/admin/P-admin-discover-china-001.md) · [C04 HTML](../../../../C04-prototype/discover-china/admin/) |
+| [P-admin-discover-china-002](P-admin-discover-china-002.md) | 文章列表 + 发布 | [C03 详细](../../../../C03-pages/discover-china/admin/P-admin-discover-china-002.md) · [C04 HTML](../../../../C04-prototype/discover-china/admin/) |
+| [P-admin-discover-china-003](P-admin-discover-china-003.md) | 文章编辑 + 句子 / TTS | [C03 详细](../../../../C03-pages/discover-china/admin/P-admin-discover-china-003.md) · [C04 HTML](../../../../C04-prototype/discover-china/admin/) |
+| [P-admin-discover-china-004](P-admin-discover-china-004.md) | 搜索运维(索引重建) | [C03 详细](../../../../C03-pages/discover-china/admin/P-admin-discover-china-004.md) · [C04 HTML](../../../../C04-prototype/discover-china/admin/) |
 
 ## 维护原则
 

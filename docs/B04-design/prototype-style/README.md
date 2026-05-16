@@ -25,21 +25,9 @@
 
 ## 2. C04 使用约定
 
-> **铁律**:C04 原型 **严禁** 在 feature 目录下拷贝本目录任何文件(`vendor/`、`assets/styles.css`、`assets/app.css` 等皆禁)。所有 HTML 通过相对路径**直接引用**本目录,保证全仓单一来源、修改即时生效。详见 [/prompt/C-product/C04-H03-AI输出-HTML原型规范.md](../../../prompt/C-product/C04-H03-AI输出-HTML原型规范.md) §0 / §硬约束。
+> **铁律**:C04 原型**极简平铺**(一个页面 = 一个默认态 HTML,平铺在 `<surface>/` 根下),且**严禁**在 feature 目录下拷贝本目录任何文件(`vendor/`、`assets/styles.css`、`assets/app.css`、`feature.css`、`feature.js`、`mock-data.js` 等皆禁)。所有 HTML 通过相对路径**直接引用**本目录,保证全仓单一来源、修改即时生效。详见 [/prompt/C-product/C04-H03-AI输出-HTML原型规范.md](../../../prompt/C-product/C04-H03-AI输出-HTML原型规范.md) §0 / §硬约束。
 
-### 2.1 surface/pages/*.html(深度 = 4 层至 docs/)
-
-```html
-<link rel="stylesheet" href="../../../../B04-design/prototype-style/tokens.css">
-<link rel="stylesheet" href="../../../../B04-design/prototype-style/themes.css">
-<link rel="stylesheet" href="../../../../B04-design/prototype-style/app.css">
-<link rel="stylesheet" href="../feature.css">
-<script defer src="../../../../B04-design/prototype-style/app.js"></script>
-<script defer src="../mock-data.js"></script>
-<script defer src="../feature.js"></script>
-```
-
-### 2.2 surface/index.html(深度 = 3 层至 docs/)
+### 2.1 统一深度:`<surface>/index.html` 与 `<surface>/<page-id>.html` 均位于 docs/ 下 3 层
 
 ```html
 <link rel="stylesheet" href="../../../B04-design/prototype-style/tokens.css">
@@ -50,9 +38,11 @@
 
 并在 `<body>` 末尾:`<script>proto.bootstrap();</script>`
 
-### 2.3 例外(F4 上游)
+页面级微调样式 / 微交互一律内联在该 HTML 的 `<style>` / `<script>` 中;页面示例数据直接写在 HTML 静态片段(业务语言),**不**产出 `mock-data.js` / `feature.css` / `feature.js`。
 
-若 feature 在 `/function/<feature>/ai/F4-AI-原型设计/` 已有上游 AI 原型(如 `course`),C04 应改为引用上游 `_assets/`(pages 用 `../../../../../function/<feature>/ai/F4-AI-原型设计/_assets/X`),同样**不得拷贝**。
+### 2.2 例外(F4 上游)
+
+若 feature 在 `/function/<feature>/ai/F4-AI-原型设计/` 已有上游 AI 原型(如 `course`),C04 应改为引用上游 `_assets/`(路径 `../../../../function/<feature>/ai/F4-AI-原型设计/_assets/X`,surface 深度 → 4 ups → docs 根 → function/...),同样**不得拷贝**。
 
 ---
 

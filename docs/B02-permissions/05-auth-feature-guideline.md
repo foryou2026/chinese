@@ -134,7 +134,7 @@
 | C01 R | `docs/C01-requirements/auth/baseline.md` + `flows/` + `app/notes.md` + `admin/notes.md` | 基线单份 + 流程 + 端补充 |
 | C02 I | `docs/C02-ia/auth/{_shared/{state-machines.md,flows-shared.md}, app/{00..07,99}.md, admin/{00..07,99}.md}` | _shared + per-surface |
 | C03 N | `docs/C03-pages/auth/{app/P-app-auth-NNN.md, admin/P-admin-auth-NNN.md}` | per-surface |
-| C04 H | `docs/C04-prototype/auth/{app,admin}/{index.html, pages/, states/, ...}` | per-surface |
+| C04 H | `docs/C04-prototype/auth/{index.html, app/{index.html, P-*.html}, admin/{index.html, P-*.html}}` | per-surface 平铺 |
 | C05 E | `docs/C05-prd/auth/{_shared/{glossary.md,business-rules.md}, app/, admin/}` | _shared + per-surface |
 | D01 D | （未生成）`docs/D01-data/auth/01-tables.md` | 数据模型单份 |
 | D02 L | （未生成）`docs/D02-api/auth/{app,admin}/01-routes-delta.md` | per-surface |
