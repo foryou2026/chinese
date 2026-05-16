@@ -2,6 +2,8 @@
 
 # C02 · 覆盖矩阵 · `admin-auth`
 
+> **ID 缩写约定**:本文件内 `R-NNN` = `R-admin-auth-NNN`;`P-NNN` = `P-admin-admin-auth-NNN`;`M-NN` = `M-admin-auth-NN`;`FL-NN` = `FL-admin-auth-NN`;`SM-NN` = `SM-admin-auth-NN`。完整 ID 见 [`C01/baseline.md`](../../C01-requirements/admin-auth/baseline.md) 与 [`04-pages.md`](./04-pages.md)。
+
 ## R × M × Page
 
 | R-ID | M-ID | page-id |

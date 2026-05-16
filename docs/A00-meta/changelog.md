@@ -7,6 +7,45 @@
 
 ---
 
+## 2026-05-16 · 批次 6 · `discover-china` D-phase 完整冻结
+
+> 反向回写"发现中国"全部 D-phase(D01..D03)。信息源:[`function/01-china/ai/F1-AI-数据模型规范/`](../../function/01-china/ai/F1-AI-数据模型规范/)(10 文件) + [`function/01-china/ai/F2-AI-接口规范/`](../../function/01-china/ai/F2-AI-接口规范/)(11 文件) + [`function/01-china/prd/F2-用户-操作与业务逻辑.md`](../../function/01-china/prd/F2-用户-操作与业务逻辑.md)。
+
+### D01 数据规范(13 文件)
+- [`docs/D01-data/discover-china/`](../D01-data/discover-china/):3 张表(`china_categories` / `china_articles` / `china_sentences`),全部 RLS + 多列 CHECK + 软删 + 5 语 jsonb;
+- 10 RPC:`fn_gen_article_code` / `fn_next_sentence_seq` / `fn_resequence_sentences`(+100000 偏移避免唯一冲突) / `fn_publish_article` / `fn_unpublish_article` / `fn_insert_sentence_at` / `fn_delete_sentence` / `fn_reorder_sentences` / `fn_bulk_insert_sentences` / **跨域 `fn_clear_progress_by_article`**(SECURITY DEFINER);
+- 软删策略:`china_articles` + `china_sentences` 30 天窗口,**不提供恢复 UI**,cron `cron_china_purge_soft_deleted` 每日 03:00 物理清理;`china_categories` 字典表不软删;
+- 12 类目种子 SQL(5 语 ON CONFLICT upsert)落地于 [`08-seed-data.md`](../D01-data/discover-china/08-seed-data.md)。
+
+### D02 接口规范(16 文件)
+- [`docs/D02-api/discover-china/`](../D02-api/discover-china/):**25 个 OP-ID**(应用端 7 + 管理端 15 + 内部 2 + AUX 1),含 **OP-C6 / C7 已下线**(2026-04 评审取消阅读进度,路由不挂载、文件保留、跨域清进度副作用保留);
+- 错误码区段 `45000-45999` 全量登记(共 31 条 `CHINA_*`),覆盖校验 / 资源 / 状态 / 上游 / 系统五类;
+- 并发策略:LWW(A5 / A12) + 行锁 FOR UPDATE(A11 / A13 / A14) + `Idempotency-Key`(可选,C4);
+- 限流:默认 IP 60 / min + 用户 120 / min;OP-C4 单独 IP 20 / min(缓存命中不计);OP-A15 单独用户 30 / min(防拖库);
+- 事件:`pg_notify` 五个 channel(`china_article_published` / `_unpublished` / `_deleted` / `china_sentence_changed` / `china_tts_ready`)用于应用层缓存 invalidate;
+- TTS:用户触发 + 全平台共享永久缓存 + 失败不限重试;dev / 未配密钥环境走 `packages/ai-adapters/tts/mock.ts`(对齐 `zhiyu-docker-policy`)。
+
+### D03 验证(3 文件)
+- [`docs/D03-validation/discover-china/01-upstream-chain.md`](../D03-validation/discover-china/01-upstream-chain.md):上游链 **PASS**(20 R-ID / 12 BR / 7 P-ID / 4 SM 全部映射);
+- [`02-module-closure.md`](../D03-validation/discover-china/02-module-closure.md):模块内闭环 **PASS**(3 表 CRUD 闭环 / 25 端点数据落点 / 31 错误码与校验规则一一对应 / RLS 与权限层一致);
+- [`03-prd-traceability.md`](../D03-validation/discover-china/03-prd-traceability.md):PRD 回链 **PASS**(20 R-ID × C05 BR × D01 实体 × D02 OP-ID 全矩阵贯通;跨域副作用契约完整;无反向漂移)。
+
+### 已知保留项
+- `AUTH_USE_USER_ENTRY`:继续按 [`B02-permissions/99-open-questions.md Q-2026-05-16-01`](../B02-permissions/99-open-questions.md) 留待 F 层修订;不阻断批次 7 / 8;
+- 阅读进度功能下线:本批仅记录契约 + 跨域副作用契约;模型 / 代码层的清理动作不在 D-phase 文档范围。
+
+---
+
+## 2026-05-16 · 批次 1-5 审计补强
+
+> 反向回写审计后,对若干局部一致性问题做最小修复,不影响已冻结产物语义。
+
+- [`docs/C01-requirements/discover-china/baseline.md`](../C01-requirements/discover-china/baseline.md) §4:补 5 语 locale key 集合(`zh/en/vi/th/id`)与 [`B02-permissions §4`](../B02-permissions/03-authz-mechanism.md) 对齐;新增文章编码与 seq_no 格式正式规约 → D01 schema 输入完备;
+- [`docs/C02-ia/{app-auth,admin-auth,discover-china}/06-coverage-matrix.md`](../C02-ia/):在文件头添加 "ID 缩写约定" 说明,明确短形与完整形的映射,避免 D03 V01 跨文件追溯歧义;
+- 维持决策:`AUTH_USE_USER_ENTRY` 仍按 [`B02-permissions/99-open-questions.md Q-2026-05-16-01`](../B02-permissions/99-open-questions.md) 留待下次 F 层修订统一补登,不阻断批次 6。
+
+---
+
 ## 2026-05-16 · 批次 5 · `discover-china` C-phase 完整冻结
 
 > 反向回写"发现中国"全部 C-phase(C01..C05)。信息源:[`function/01-china/prd/`](../../function/01-china/prd/) + [`function/01-china/ai/F3-AI-页面交互规范/`](../../function/01-china/ai/F3-AI-页面交互规范/)。

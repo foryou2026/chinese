@@ -2,6 +2,8 @@
 
 # 06 · 覆盖矩阵
 
+> **ID 缩写约定**:本文件内 `R-NNN` = `R-discover-china-NNN`;`P-app-NNN` / `P-admin-NNN` = `P-app-discover-china-NNN` / `P-admin-discover-china-NNN`;`FL-NN` = `FL-discover-china-NN`;`SM-NN` = `SM-discover-china-NN`。完整 ID 见 [`C01/baseline.md`](../../C01-requirements/discover-china/baseline.md) 与本目录 [`02-flows.md`](./02-flows.md) / [`03-state-machines.md`](./03-state-machines.md) / [`04-pages.md`](./04-pages.md)。
+
 ## R × Page
 
 | R-ID | P-app-001 | P-app-002 | P-app-003 | P-admin-001 | P-admin-002 | P-admin-003 | P-admin-004 |

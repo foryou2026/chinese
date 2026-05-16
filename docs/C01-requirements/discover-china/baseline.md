@@ -67,7 +67,10 @@
 ## 4. 边界与不变量
 
 - **多语言一致性**:任何"对用户可见"的文本必须 5 语齐备;管理端保存校验 5 语全填(可空保存为草稿但发布前校验);
-- **TTS 缓存键**:`{article_code}-{sentence_seq_no}`;重排后键随 seq_no 更新,旧键 GC;
+- **5 语 locale key 集合**:`zh`(简中) / `en`(英) / `vi`(越) / `th`(泰) / `id`(印尼),与 [`B02-permissions/03-authz-mechanism.md §4`](../../B02-permissions/03-authz-mechanism.md) 全局规约对齐;多语字段统一形如 `name_i18n: { zh, en, vi, th, id }`;前端按当前 locale 取值,zh 兜底;
+- **文章编码格式**:固定 12 位 `{类目编码 2}{自增序号 10}`,类目编码 `01..12`,序号在所属类目内自增 + 左补零至 10 位;UI / API 一律使用字符串,不做数值运算;
+- **句子 seq_no 格式**:4 位整数,字符串呈现时左补零(`0001`);删除 / 重排自动连续重写;
+- **TTS 缓存键**:`{article_code}-{sentence_seq_no}` (示例 `020000000001-0003`);重排后键随 seq_no 更新,旧键 GC;
 - **进度键**:`(user_id?, article_code)`;访客存 `localStorage`;
 - **守卫层**:类目 04-12 未登录拦截发生在前端路由层 + 后端 RLS 双保险;
 - **TTS 失败**:不阻塞 UI,Toast 提示,后台按 op-id 自动重试不限次。
