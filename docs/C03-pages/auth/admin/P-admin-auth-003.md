@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/admin-auth/admin/P-admin-admin-auth-003.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/admin/P-auth-003.md -->
 
-# P-admin-admin-auth-003 · 重置密码
+# P-auth-003 · 重置密码
 
 > 路径 `/admin/auth/reset-password?token=...` · 公开 · 覆盖 R-006
 

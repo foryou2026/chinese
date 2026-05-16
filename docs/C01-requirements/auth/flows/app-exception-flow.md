@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C01-requirements/app-auth/flows/exception-flow.md -->
+<!-- TARGET-PATH: docs/C01-requirements/auth/flows/exception-flow.md -->
 
-# `app-auth` · 异常流程
+# `auth` · 异常流程
 
-> **阶段**：C01-R · **feature**：`app-auth`  
+> **阶段**：C01-R · **feature**：`auth`  
 > **上游**：[`../baseline.md`](../baseline.md) · [`main-flow.md`](./main-flow.md)  
 > **冻结状态**：已冻结 · 2026-05-16
 

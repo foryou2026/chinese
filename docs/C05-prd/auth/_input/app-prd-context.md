@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/_input/prd-context.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/_input/prd-context.md -->
 
-# `app-auth` · E01 产品背景
+# `auth` · E01 产品背景
 
 - 立项时间 · 2024 Q4
 - 产品形态 · Web 单仓 monorepo（apps/web-app + apps/api-app）

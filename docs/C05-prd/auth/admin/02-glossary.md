@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/admin-auth/admin/02-glossary.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/admin/02-glossary.md -->
 
-# C05 · 02 术语 · `admin-auth`
+# C05 · 02 术语 · `auth`
 
 | 术语 | 释义 |
 |------|------|

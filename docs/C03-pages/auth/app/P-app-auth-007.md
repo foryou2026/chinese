@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/app/P-app-app-auth-007.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-007.md -->
 
-# `P-app-app-auth-007` · 个人中心首页
+# `P-auth-007` · 个人中心首页
 
 > **path**：`/me` · **角色可见**：用户（登录守卫）  
 > **R 覆盖**：R-008  
@@ -10,7 +10,7 @@
 
 - 全屏宽度 `.page`（B04 §02）；
 - `<PageHeader title="个人中心" subtitle={maskedEmail} />`；
-- `<PageContent>` 内 12 列 Grid，6 张 `<GlassCard>`（同 [05-navigation §4](../../C02-ia/app-auth/05-navigation.md)）。
+- `<PageContent>` 内 12 列 Grid，6 张 `<GlassCard>`（同 [05-navigation §4](../../C02-ia/auth/app/05-navigation.md)）。
 
 ## 2. 卡片清单
 

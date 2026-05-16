@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/app/P-app-app-auth-005.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-005.md -->
 
-# `P-app-app-auth-005` · 忘记密码
+# `P-auth-005` · 忘记密码
 
 > **path**：`/auth/forgot` · **角色可见**：未登录  
 > **R 覆盖**：R-007  

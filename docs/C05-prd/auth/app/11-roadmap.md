@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/11-roadmap.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/11-roadmap.md -->
 
 # 11 · 路线图
 

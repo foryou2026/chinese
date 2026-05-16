@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C02-ia/app-auth/_input/page-direction.md -->
+<!-- TARGET-PATH: docs/C02-ia/auth/app/_input/page-direction.md -->
 
-# `app-auth` · I01 页面方向（反向回写）
+# `auth` · I01 页面方向（反向回写）
 
 > 反推确认 by PM · 2026-05-16
 

@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/02-glossary.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/02-glossary.md -->
 
 # 02 · 术语表
 

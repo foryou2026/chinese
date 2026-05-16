@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/app/P-app-app-auth-003.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-003.md -->
 
-# `P-app-app-auth-003` · 验证邮件已发送
+# `P-auth-003` · 验证邮件已发送
 
 > **path**：`/auth/verify-email-sent` · **角色可见**：未登录  
 > **R 覆盖**：R-001 / R-015  
@@ -18,7 +18,7 @@ GlassCard
   ├─ h1 「检查你的邮箱」
   ├─ p  「我们刚刚向 <strong>{email}</strong> 发送了验证链接。点击链接完成注册。」
   ├─ p.muted 「没收到？检查垃圾邮件文件夹，或……」
-  ├─ button.secondary [重新发送 ({{cd}}s)]   ← SM-app-auth-02 cooldown
+  ├─ button.secondary [重新发送 ({{cd}}s)]   ← SM-auth-app-02 cooldown
   └─ p.footer 「邮箱填错了？」 link 「重新注册」 → /auth/register
 ```
 

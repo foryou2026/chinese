@@ -36,7 +36,7 @@
 | 06 | [06-deploy-env.md](./06-deploy-env.md) | Docker、端口、环境变量、Key 管理 | 部署、测试 |
 | 07 | [07-i18n-responsive.md](./07-i18n-responsive.md) | i18n、断点、移动适配、字体 | B04、C03 |
 | 08 | [08-surfaces.md](./08-surfaces.md) | surface 清单、跨端隔离策略、路由前缀 | 所有 C/D 阶段 |
-| 09 | [09-auth-infra.md](./09-auth-infra.md) | 鉴权基础设施（Token / 密码 / OAuth / 会话）| B02、未来 `<surface>-auth` feature |
+| 09 | [09-auth-infra.md](./09-auth-infra.md) | 鉴权基础设施（Token / 密码 / OAuth / 会话）| B02、未来 `auth` feature（多端单 feature） |
 | 99 | [99-open-questions.md](./99-open-questions.md) | 待确认项（已清空）| — |
 
 ---
@@ -71,7 +71,7 @@ flowchart LR
   IDX --> S08[08-surfaces]
   IDX --> S09[09-auth-infra]
   S08 --> CC[全部 C/D feature]
-  S09 --> AUTH[未来 app-auth / admin-auth feature]
+  S09 --> AUTH[未来 `auth` feature（多端：app + admin）]
   S03 --> D01[D01-data/*]
   S04 --> D02[D02-api/*]
 ```

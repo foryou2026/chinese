@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C02-ia/admin-auth/_input/page-direction.md -->
+<!-- TARGET-PATH: docs/C02-ia/auth/admin/_input/page-direction.md -->
 
-# I01 · 页面方向 · `admin-auth`
+# I01 · 页面方向 · `auth`
 
 - surface = `admin` · 路径前缀 `/admin/auth/*` 与 `/admin/me`
 - 4 页极简:不需要侧边栏 / 不需要复杂导航;登录/忘密/重置共用居中卡片布局,`/admin/me` 复用 admin 全局 layout (左侧导航 + 右上头像)

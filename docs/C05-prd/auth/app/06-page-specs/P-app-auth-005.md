@@ -1,29 +1,29 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/06-page-specs/P-app-app-auth-005.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/06-page-specs/P-auth-005.md -->
 
-# Page Spec · P-app-app-auth-005 · 我的资料
+# Page Spec · P-auth-005 · 我的资料
 
-> PRD 视角单页规格 · app-auth / `app` 端。来源真相见各 C 阶段文档,本文件只做汇总与索引。
+> PRD 视角单页规格 · auth / `app` 端。来源真相见各 C 阶段文档,本文件只做汇总与索引。
 
 ## 1. 标识
 
 | 字段 | 值 |
 |------|----|
-| P-ID | `P-app-app-auth-005` |
+| P-ID | `P-auth-005` |
 | 标题 | 我的资料 |
-| feature | `app-auth` |
+| feature | `auth` |
 | surface | `app` |
-| 路由(规范) | 见 [C02 05-navigation.md](../../../../C02-ia/app-auth/app/05-navigation.md) |
+| 路由(规范) | 见 [C02 05-navigation.md](../../../../C02-ia/auth/app/05-navigation.md) |
 | 角色可见 | 见 [C05 08-roles-permissions.md](../08-roles-permissions.md) |
 
 ## 2. 上游来源
 
 | 维度 | 文档 |
 |------|------|
-| 交互规范(N) | [`C03-pages/app-auth/app/P-app-app-auth-005.md`](../../../../C03-pages/app-auth/app/P-app-app-auth-005.md) |
-| 场景脚本(N) | [`C03-pages/app-auth/app/P-app-app-auth-005.scenarios.md`](../../../../C03-pages/app-auth/app/P-app-app-auth-005.scenarios.md)(若存在) |
-| HTML 原型(H) | [`C04-prototype/app-auth/app/pages/`](../../../../C04-prototype/app-auth/app/pages/) |
-| 状态原型 | [`C04-prototype/app-auth/app/states/`](../../../../C04-prototype/app-auth/app/states/) |
-| 关联 M-ID | [`C02-ia/app-auth/app/01-feature-catalog.md`](../../../../C02-ia/app-auth/app/01-feature-catalog.md) |
+| 交互规范(N) | [`C03-pages/auth/app/P-auth-005.md`](../../../../C03-pages/auth/app/P-auth-005.md) |
+| 场景脚本(N) | [`C03-pages/auth/app/P-auth-005.scenarios.md`](../../../../C03-pages/auth/app/P-auth-005.scenarios.md)(若存在) |
+| HTML 原型(H) | [`C04-prototype/auth/app/pages/`](../../../../C04-prototype/auth/app/pages/) |
+| 状态原型 | [`C04-prototype/auth/app/states/`](../../../../C04-prototype/auth/app/states/) |
+| 关联 M-ID | [`C02-ia/auth/app/01-feature-catalog.md`](../../../../C02-ia/auth/app/01-feature-catalog.md) |
 | 关联 R-ID | [`07-business-rules.md`](../07-business-rules.md) |
 
 ## 3. 一句话价值
@@ -37,7 +37,7 @@
 1. 用户进入本页 → 加载初始数据(见上方 C03 文档第 §2 节)。
 2. 主操作 → 详细见 C03 §3。
 3. 异常 / 边界 → 见 C03 §5。
-4. 离开 / 跳转 → 见 [`C02 02-flows.md`](../../../../C02-ia/app-auth/app/02-flows.md)。
+4. 离开 / 跳转 → 见 [`C02 02-flows.md`](../../../../C02-ia/auth/app/02-flows.md)。
 
 ## 5. 关键业务规则(仅本页相关 R-ID)
 
@@ -49,15 +49,15 @@
 
 ## 7. 视觉 / 组件(↑ B04)
 
-- 主要组件:见 [`C03-pages/app-auth/app/P-app-app-auth-005.md` §视觉与组件](../../../../C03-pages/app-auth/app/P-app-app-auth-005.md)。
+- 主要组件:见 [`C03-pages/auth/app/P-auth-005.md` §视觉与组件](../../../../C03-pages/auth/app/P-auth-005.md)。
 - 组件契约:[`B04-design/design-system/05-components/`](../../../../B04-design/design-system/05-components/)(Round 4 已实质化)。
 
 ## 8. 截图
 
 | 状态 | 路径 |
 |------|------|
-| 正常态 | `assets/screenshots/P-app-app-auth-005.png`(占位) |
-| 空态 | 见 [`C04 states/`](../../../../C04-prototype/app-auth/app/states/) |
+| 正常态 | `assets/screenshots/P-auth-005.png`(占位) |
+| 空态 | 见 [`C04 states/`](../../../../C04-prototype/auth/app/states/) |
 | 错误态 | 同上 |
 | 加载态 | 同上 |
 | 无权 | 同上 |

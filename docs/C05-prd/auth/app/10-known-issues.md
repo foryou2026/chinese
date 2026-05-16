@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/10-known-issues.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/10-known-issues.md -->
 
 # 10 · 已知问题
 

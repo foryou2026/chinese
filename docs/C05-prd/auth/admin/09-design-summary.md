@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/admin-auth/admin/09-design-summary.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/admin/09-design-summary.md -->
 
-# C05 · 09 设计摘要 · `admin-auth`
+# C05 · 09 设计摘要 · `auth`
 
 - 主题:admin 暗色 (B04-06 暗色 token)
 - 4 页布局:max-w-420 居中 GlassCard (深色变体);`/admin/me` 嵌入 admin 主框架

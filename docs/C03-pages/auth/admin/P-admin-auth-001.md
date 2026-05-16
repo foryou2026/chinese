@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/admin-auth/admin/P-admin-admin-auth-001.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/admin/P-auth-001.md -->
 
-# P-admin-admin-auth-001 · admin 登录
+# P-auth-001 · admin 登录
 
 > surface=`admin` · 路径 `/admin/auth/login` · 公开
 > 覆盖 R-001/002/004/005/009

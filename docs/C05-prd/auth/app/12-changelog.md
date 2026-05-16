@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/12-changelog.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/12-changelog.md -->
 
 # 12 · 变更日志
 

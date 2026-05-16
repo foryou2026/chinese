@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C02-ia/admin-auth/admin/05-navigation.md -->
+<!-- TARGET-PATH: docs/C02-ia/auth/admin/05-navigation.md -->
 
-# C02 · 导航 · `admin-auth`
+# C02 · 导航 · `auth`
 
 ## 1. 顶栏 (admin 主框架右上)
 

@@ -4,8 +4,8 @@
 
 ## Q-2026-05-16-01 · 错误码补登 `AUTH_USE_USER_ENTRY`
 
-- **来源**:批次 4 `admin-auth` D03 V01 校验
-- **问题**:本期新增错误码 `AUTH_USE_USER_ENTRY` (403,管理端登录检测到非 super_admin 角色) 已在 [`D02-api/admin-auth/04-error-codes.md §1`](../D02-api/admin-auth/04-error-codes.md) 完整声明并落地,但尚未补入 B02-03 §4 全局错误码清单
+- **来源**:批次 4 `auth` D03 V01 校验
+- **问题**:本期新增错误码 `AUTH_USE_USER_ENTRY` (403,管理端登录检测到非 super_admin 角色) 已在 [`D02-api/auth/admin/04-error-codes.md §1`](../D02-api/auth/admin/04-error-codes.md) 完整声明并落地,但尚未补入 B02-03 §4 全局错误码清单
 - **处置**:下一次 F 层修订时,在 [`03-authz-mechanism.md §4`](./03-authz-mechanism.md) 错误码表新增一行;不阻断当前 feature 冻结
 - **责任**:F 层维护者
 

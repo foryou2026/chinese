@@ -1,11 +1,11 @@
-<!-- TARGET-PATH: docs/C04-prototype/admin-auth/_input/prototype-direction.md -->
+<!-- TARGET-PATH: docs/C04-prototype/auth/admin/_input/prototype-direction.md -->
 
-# H01 · 原型方向(admin-auth)
+# H01 · 原型方向(auth)
 
 > **冻结状态**:v1.0 · 2026-05-16
 
 ## 目的
-- 反向回写期补登:把 [`C03-pages/admin-auth/`](../../../C03-pages/admin-auth/) 既有 DOM 骨架直译为可双击打开的 HTML;
+- 反向回写期补登:把 [`C03-pages/auth/admin/`](../../../C03-pages/auth/admin/) 既有 DOM 骨架直译为可双击打开的 HTML;
 - 演示 [`B04-design/design-system`](../../../B04-design/design-system/) 设计 token + 毛玻璃 + 红色品牌色在登录/账号场景的真实效果。
 
 ## 范围

@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/admin-auth/admin/P-admin-admin-auth-004.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/admin/P-auth-004.md -->
 
-# P-admin-admin-auth-004 · 账号与安全
+# P-auth-004 · 账号与安全
 
 > 路径 `/admin/me` · 守卫:super_admin · 覆盖 R-003/007/008
 

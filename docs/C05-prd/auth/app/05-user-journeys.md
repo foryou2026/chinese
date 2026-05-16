@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/05-user-journeys.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/05-user-journeys.md -->
 
 # 05 · 用户旅程
 
-> 与 [`C01-requirements/app-auth/flows/main-flow.md`](../../C01-requirements/app-auth/flows/main-flow.md) 同源；本节用"故事"语言重述，给非技术干系人看。
+> 与 [`C01-requirements/auth/flows/main-flow.md`](../../C01-requirements/auth/flows/main-flow.md) 同源；本节用"故事"语言重述，给非技术干系人看。
 
 ## 旅程 1：首次注册
 

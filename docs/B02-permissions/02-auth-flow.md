@@ -4,7 +4,7 @@
 
 > **阶段**：B02-P  
 > **上游**：`B01-architecture/09-auth-infra.md`、`01-roles.md`  
-> **下游**：`app-auth` / `admin-auth` feature 的 C/D 阶段、所有 D02 L 中的 `/api/auth/*` 路由实现  
+> **下游**：`auth` / `auth` feature 的 C/D 阶段、所有 D02 L 中的 `/api/auth/*` 路由实现  
 > **冻结状态**：已冻结 · 2026-04-28
 
 ---

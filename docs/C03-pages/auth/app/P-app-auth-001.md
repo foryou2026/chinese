@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/app/P-app-app-auth-001.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-001.md -->
 
-# `P-app-app-auth-001` · 登录
+# `P-auth-001` · 登录
 
-> **阶段**：C03-N · **feature**：`app-auth` · **surface**：`app`  
+> **阶段**：C03-N · **feature**：`auth` · **surface**：`app`  
 > **path**：`/auth/login`  
 > **角色可见**：未登录（已登录访问自动跳 `/`）  
 > **R 覆盖**：R-003 / 004 / 005 / 006 / 011 / 013  
@@ -89,4 +89,4 @@ GlassCard
 
 ## 10. 场景验证
 
-详见 [`P-app-app-auth-001.scenarios.md`](./P-app-app-auth-001.scenarios.md)。
+详见 [`P-auth-001.scenarios.md`](./P-auth-001.scenarios.md)。

@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C03-pages/admin-auth/admin/00-index.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/admin/00-index.md -->
 
-# 00 · 索引 · admin-auth / **admin**
+# 00 · 索引 · auth / **admin**
 
-> 页面交互规范(Pages) · admin-auth feature · `admin` 端。
+> 页面交互规范(Pages) · auth feature · `admin` 端。
 
 ## 本目录文件
 
@@ -13,10 +13,10 @@
 ## 上下游
 
 - **上游**:
-  - [`C01-requirements/admin-auth/baseline.md`](../../../C01-requirements/admin-auth/baseline.md)(需求基线)
+  - [`C01-requirements/auth/admin/notes.md`](../../../C01-requirements/auth/admin/notes.md)(需求基线)
   - 本 feature 退化为单 surface,无 `_shared/`
 - **下游**:
-  - [`C05-prd/admin-auth/admin/`](../../../C05-prd/admin-auth/admin/)
+  - [`C05-prd/auth/admin/`](../../../C05-prd/auth/admin/)
 
 ## 状态
 

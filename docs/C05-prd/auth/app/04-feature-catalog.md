@@ -1,15 +1,15 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/04-feature-catalog.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/04-feature-catalog.md -->
 
-# 04 · 功能模块(MoSCoW)· app-auth / **app**
+# 04 · 功能模块(MoSCoW)· auth / **app**
 
 > 单 surface 退化形态。
 
 ## Must-Have
 
-- M-app-auth-session(注册/登录/会话/全局登出)
-- M-app-auth-cookie(Edge 之间 cookie 交换)
-- M-app-auth-throttle(防刷:注册/找回/登录失败)
-- M-app-auth-me(资料 / 密码)
+- M-auth-app-session(注册/登录/会话/全局登出)
+- M-auth-app-cookie(Edge 之间 cookie 交换)
+- M-auth-app-throttle(防刷:注册/找回/登录失败)
+- M-auth-app-me(资料 / 密码)
 
 ## Should-Have
 

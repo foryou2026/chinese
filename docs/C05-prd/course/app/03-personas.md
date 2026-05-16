@@ -20,7 +20,7 @@
 
 | 角色 | 场景 | 主要页面 |
 |------|------|---------|
-| `anonymous` | 试学引导(2025-11 后默认入口前限,需先注册) | [P-app-app-auth-002](../../../app-auth/app/06-page-specs/P-app-app-auth-002.md) |
+| `anonymous` | 试学引导(2025-11 后默认入口前限,需先注册) | [P-auth-002](../../../auth/app/06-page-specs/P-auth-002.md) |
 | `learner` | 主路径:**学 → 练 → 复 → 考** | P-001 → P-002 → P-003 → P-004 → P-006/007 |
 | `learner` | 弱网/通勤:仅复习 + 错题本 | [P-004](06-page-specs/P-app-course-004.md) + [P-005](06-page-specs/P-app-course-005.md) |
 | `learner` | 评估自学进度 | [P-008](06-page-specs/P-app-course-008.md)(考试报告 / 个人统计) |

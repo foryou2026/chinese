@@ -1,13 +1,13 @@
-<!-- TARGET-PATH: docs/C04-prototype/app-auth/app/99-open-questions.md -->
+<!-- TARGET-PATH: docs/C04-prototype/auth/app/99-open-questions.md -->
 
-# 99 · 未决问题 · app-auth / **app** · HTML 原型(Prototype)
+# 99 · 未决问题 · auth / **app** · HTML 原型(Prototype)
 
 > 本文件仅记录该端在 HTML 原型(Prototype) 阶段悬而未决 / 等待跨方决策的问题。已澄清问题须迁出本表并落到对应文档中。
 
 ## 模板
 
 ```
-### Q-c04-app-auth-app-001 · <一句话>
+### Q-c04-auth-app-001 · <一句话>
 - **背景**: ...
 - **影响**: <哪个 M-ID / P-ID / OP-ID>
 - **可选方案**: 1) ... 2) ...

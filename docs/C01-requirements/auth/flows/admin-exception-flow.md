@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C01-requirements/admin-auth/flows/exception-flow.md -->
+<!-- TARGET-PATH: docs/C01-requirements/auth/flows/exception-flow.md -->
 
-# C01 · 异常流程 · `admin-auth`
+# C01 · 异常流程 · `auth`
 
 ---
 

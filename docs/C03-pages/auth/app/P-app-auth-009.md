@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/app/P-app-app-auth-009.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-009.md -->
 
-# `P-app-app-auth-009` · 编辑资料
+# `P-auth-009` · 编辑资料
 
 > **path**：`/me/profile` · **角色可见**：用户  
 > **R 覆盖**：R-008  
@@ -58,7 +58,7 @@ GlassCard
 ## 6. 表单离开保护
 
 - editing 态触发 `useFormGuard`：dirty 且未保存 → 同站跳转弹「未保存的更改将丢失，确认离开吗？」`<Confirm>`；
-- 30s 自动存 `localStorage` key=`app-auth:profile:<user_id>`；保存成功立即清。
+- 30s 自动存 `localStorage` key=`auth:profile:<user_id>`；保存成功立即清。
 
 ## 7. 场景
 

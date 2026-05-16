@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C01-requirements/app-auth/_input/draft.md -->
+<!-- TARGET-PATH: docs/C01-requirements/auth/_input/draft.md -->
 
-# `app-auth` · R01 用户输入（反向回写）
+# `auth` · R01 用户输入（反向回写）
 
 > 真实背景：B02-permissions 已成型时本 feature 才反向重打包；本文按"如果当时正向走 R01"模拟 PM 的需求初稿。
 > 反推确认 by PM · 2026-05-16
@@ -49,4 +49,4 @@
 
 - onboarding（选学习语言 / HSK 起点）→ **不**属于本 feature，归 `user-account`（v2 再开）；
 - 钱包 / 订单 / 邀请 / 学习进度 → 不属于本 feature；
-- 管理端的注册 / 邀请 / 用户列表 / 启用禁用 → 不属于本 feature（归 `admin-auth` + `admin-users`）。
+- 管理端的注册 / 邀请 / 用户列表 / 启用禁用 → 不属于本 feature（归 `auth` + `admin-users`）。

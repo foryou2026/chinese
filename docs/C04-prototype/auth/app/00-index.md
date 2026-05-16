@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C04-prototype/app-auth/app/00-index.md -->
+<!-- TARGET-PATH: docs/C04-prototype/auth/app/00-index.md -->
 
-# 00 · 索引 · app-auth / **app**
+# 00 · 索引 · auth / **app**
 
-> HTML 原型(Prototype) · app-auth feature · `app` 端。
+> HTML 原型(Prototype) · auth feature · `app` 端。
 
 ## 本目录文件
 
@@ -19,10 +19,10 @@
 ## 上下游
 
 - **上游**:
-  - [`C01-requirements/app-auth/baseline.md`](../../../C01-requirements/app-auth/baseline.md)(需求基线)
+  - [`C01-requirements/auth/app/notes.md`](../../../C01-requirements/auth/app/notes.md)(需求基线)
   - 本 feature 退化为单 surface,无 `_shared/`
 - **下游**:
-  - [`C05-prd/app-auth/app/`](../../../C05-prd/app-auth/app/)
+  - [`C05-prd/auth/app/`](../../../C05-prd/auth/app/)
 
 ## 状态
 

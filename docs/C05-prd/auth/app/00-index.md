@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/00-index.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/00-index.md -->
 
-# C05 · `app-auth` PRD
+# C05 · `auth` PRD
 
-> **阶段**：C05-E · **feature**：`app-auth`  
+> **阶段**：C05-E · **feature**：`auth`  
 > **上游**：C01 / C02 / C03 / B0* 全部基础规范  
 > **冻结状态**：已冻结 · 2026-05-16
 

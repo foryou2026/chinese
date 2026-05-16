@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C02-ia/admin-auth/admin/07-error-pages.md -->
+<!-- TARGET-PATH: docs/C02-ia/auth/admin/07-error-pages.md -->
 
-# C02 · 错误页 · `admin-auth`
+# C02 · 错误页 · `auth`
 
 | 错误 | 处理 |
 |------|------|

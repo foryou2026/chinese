@@ -4,7 +4,7 @@
 
 > **阶段**：B02-P  
 > **上游**：`_input/roles-input.md`、`B01-architecture/08-surfaces.md`  
-> **下游**：`B04-design/design-system/03-navigation.md`、所有 D02 L、`app-auth` / `admin-auth` feature  
+> **下游**：`B04-design/design-system/03-navigation.md`、所有 D02 L、`auth` / `auth` feature  
 > **冻结状态**：已冻结 · 2026-04-28
 
 ---
@@ -38,7 +38,7 @@
 | 系统课程 | `/courses` | `course` | ✅（点击跳登录）|
 | 游戏专区 | `/games` | `games`（未来）| ✅（点击跳登录）|
 | 小说专区 | `/novels` | `novels`（未来）| ✅（点击跳登录）|
-| 个人中心 | `/me` | `app-auth` + `user-account`（未来）| 替换为「登录 / 注册」入口 |
+| 个人中心 | `/me` | `auth` + `user-account`（未来）| 替换为「登录 / 注册」入口 |
 
 ### 2.2 管理端（surface=`admin`，角色 `super_admin` 可见）
 
@@ -82,8 +82,8 @@
 |-----------|--------------|---------------------|
 | `discover-china` | ✅ 浏览（未登录限前 3 主题）| ✅ 内容审核 / 上下架 |
 | `course` | ✅ 学习 | ✅ 课程管理 |
-| `app-auth`（未来）| ✅ 自有登录 / 注册 / 找回密码 / 个人中心 | ❌ |
-| `admin-auth`（未来）| ❌ | ✅ 仅邮箱密码登录 |
+| `auth`（未来）| ✅ 自有登录 / 注册 / 找回密码 / 个人中心 | ❌ |
+| `auth`（未来）| ❌ | ✅ 仅邮箱密码登录 |
 | `user-management`（未来）| ❌ | ✅ 列 / 禁用 / 启用 `role='user'` |
 | `games`（未来）| ✅ | ❌ |
 | `novels`（未来）| ✅ | ✅ 审核 / 章节管理 |

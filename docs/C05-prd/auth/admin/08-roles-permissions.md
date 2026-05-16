@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/admin-auth/admin/08-roles-permissions.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/admin/08-roles-permissions.md -->
 
-# 08 · 角色 · admin-auth / **admin**
+# 08 · 角色 · auth / **admin**
 
 | 角色 | 自身权限 |
 |------|---------|

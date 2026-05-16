@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/admin-auth/_input/prd-context.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/admin/_input/prd-context.md -->
 
-# E01 · PRD 背景 · `admin-auth`
+# E01 · PRD 背景 · `auth`
 
 - 内部产品 · 仅供运营/超管使用
 - 目标:让超管能登录、改密、退出;边界外的所有自助功能 (邀请/删除/改邮箱) 均走运维 SQL

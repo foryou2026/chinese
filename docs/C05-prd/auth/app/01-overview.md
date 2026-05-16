@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/01-overview.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/01-overview.md -->
 
 # 01 · 概述
 
@@ -16,7 +16,7 @@
 
 ## 3. 不在范围
 
-详 [C01 §3 范围外](../../C01-requirements/app-auth/baseline.md)。
+详 [C01 §3 范围外](../../C01-requirements/auth/app/notes.md)。
 
 ## 4. 关键指标
 

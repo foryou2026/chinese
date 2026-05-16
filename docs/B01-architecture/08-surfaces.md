@@ -16,7 +16,7 @@
 - **本项目 = 多端项目**：surface 数 = **2**（`app` + `admin`）。
 - 所有 feature 的 C03 / C04 / C05 / D02 阶段产物**必须**按 `<surface>/` 拆子目录；C01 R baseline、C02 I `_shared/state-machines.md`、D01 D 表结构跨端共享。
 - 路由前缀强制：`/api/app/*`（应用端，对外别名 `/api/v1`）、`/api/admin/*`（后台，对外别名 `/admin/v1`）。
-- 鉴权基础设施共享（详见 [09-auth-infra.md](./09-auth-infra.md)）；登录 / 注册 / 找回密码等具体流程留给未来的 `app-auth` / `admin-auth` feature。
+- 鉴权基础设施共享（详见 [09-auth-infra.md](./09-auth-infra.md)）；登录 / 注册 / 找回密码等具体流程留给未来的 `auth` / `auth` feature。
 
 ---
 
@@ -93,10 +93,14 @@
 ## 5. 鉴权与 auth feature 提示
 
 - **B02 不定**任何登录 / 注册 / 找回密码 / 邮箱验证流程。
-- 每个 surface 都有自己的 auth feature，按常规 C 循环交付：
-  - `app-auth` → 学员账号体系（邮箱 + Google OAuth，本期 mock）
-  - `admin-auth` → 后台账号体系（仅内部账号，邀请制）
-- 共享的鉴权基础设施（Token 规格、密码策略、会话管理、OAuth provider 接入位）由 [09-auth-infra.md](./09-auth-infra.md) 定义。
+- 鉴权按 **单一 feature 多端形态** 组织（遵循 `prompt/A-framework/A00-04 §四.5`）：
+  - feature ID：`auth`
+  - 目录形态：`C01-requirements/auth/{baseline.md, app/notes.md, admin/notes.md, flows/, ...}` · `C02-ia/auth/{_shared/, app/, admin/}` · 其余 C03/C04/C05 同样按 `auth/<surface>/` 拆分
+  - 业务范围：
+    - `auth` (surface=`app`) → 学员账号体系（邮箱 + 密码 + Google OAuth；本期 mock SMTP）
+    - `auth` (surface=`admin`) → 后台账号体系（仅邮密；邀请制，超管 seed）
+- 共享的鉴权基础设施（Token 规格、密码策略、会话管理、OAuth provider 接入位）由 [09-auth-infra.md](./09-auth-infra.md) 定义；后续 C 阶段全部从此处取「基线行为」，差异由各 surface 的 `notes.md` 收敛。
+- 上下层 surface 在 `user_sessions.surface` 维度独立计数（3-设备硬上限按端隔离）。
 
 ---
 

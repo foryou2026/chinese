@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C01-requirements/app-auth/flows/main-flow.md -->
+<!-- TARGET-PATH: docs/C01-requirements/auth/flows/main-flow.md -->
 
-# `app-auth` · 主流程
+# `auth` · 主流程
 
-> **阶段**：C01-R · **feature**：`app-auth`  
+> **阶段**：C01-R · **feature**：`auth`  
 > **上游**：[`../baseline.md`](../baseline.md)  
 > **冻结状态**：已冻结 · 2026-05-16
 
@@ -35,7 +35,7 @@ flowchart TD
     classDef start fill:#FF2442,color:#fff,stroke:#FF2442;
 ```
 
-> **R 覆盖**：R-app-auth-001 / 002 / 014 / 015。
+> **R 覆盖**：R-auth-001 / 002 / 014 / 015。
 
 ## 2. 登录主流程
 
@@ -56,7 +56,7 @@ flowchart TD
     L -->|super_admin 误进 app| N[signOut + Toast AUTH_USE_ADMIN_ENTRY]
 ```
 
-> **R 覆盖**：R-app-auth-003 / 004 / 005 / 006 / 011 / 013。
+> **R 覆盖**：R-auth-003 / 004 / 005 / 006 / 011 / 013。
 
 ## 3. 个人中心 - 修改资料主流程
 
@@ -71,7 +71,7 @@ flowchart TD
     F -->|200| H[Toast「已保存」+ 写本地缓存 + 顶栏头像热更新]
 ```
 
-> **R 覆盖**：R-app-auth-008。
+> **R 覆盖**：R-auth-008。
 
 ## 4. 修改密码 + 全设备登出主流程
 
@@ -93,4 +93,4 @@ flowchart TD
     L --> M
 ```
 
-> **R 覆盖**：R-app-auth-009 / 010。
+> **R 覆盖**：R-auth-009 / 010。

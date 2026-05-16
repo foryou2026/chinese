@@ -27,7 +27,7 @@
 
 ## 4. 守卫错误
 
-- super_admin 不通过 → 跳 `/admin/auth/login`(由 admin-auth feature 守卫产生);
+- super_admin 不通过 → 跳 `/admin/auth/login`(由 auth feature 守卫产生);
 - 应用端用户访问管理端 → 跳应用端首页 + Toast "无权访问"。
 
 ## 5. 通用错误码呈现

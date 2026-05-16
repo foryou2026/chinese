@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/07-business-rules.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/07-business-rules.md -->
 
-# 07 · 业务规则 · app-auth / **app**
+# 07 · 业务规则 · auth / **app**
 
 | R-ID | 规则 |
 |------|------|

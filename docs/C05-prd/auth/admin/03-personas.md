@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/admin-auth/admin/03-personas.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/admin/03-personas.md -->
 
-# C05 · 03 角色画像 · `admin-auth`
+# C05 · 03 角色画像 · `auth`
 
 ## P1 · 超级管理员 (super_admin)
 

@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/admin-auth/admin/12-changelog.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/admin/12-changelog.md -->
 
-# C05 · 12 变更日志 · `admin-auth`
+# C05 · 12 变更日志 · `auth`
 
 | 版本 | 日期 | 内容 |
 |------|------|------|

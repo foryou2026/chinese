@@ -118,7 +118,7 @@
 | `common.confirm.unsaved.body` | 未保存的更改将丢失，确认离开吗？ |
 | `nav.logout` | 退出登录 |
 
-> 完整 50+ 条由 `app-auth` / `user-account` 等 feature 的 D02 阶段补全，并归集到 `packages/shared-i18n/<locale>/common.json`。
+> 完整 50+ 条由 `auth` / `user-account` 等 feature 的 D02 阶段补全，并归集到 `packages/shared-i18n/<locale>/common.json`。
 
 ---
 

@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/app/P-app-app-auth-006.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-006.md -->
 
-# `P-app-app-auth-006` · 重置密码
+# `P-auth-006` · 重置密码
 
 > **path**：`/auth/reset-password` · **角色可见**：未登录（recovery session）  
 > **R 覆盖**：R-007 / R-012  

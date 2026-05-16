@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C01-requirements/admin-auth/flows/main-flow.md -->
+<!-- TARGET-PATH: docs/C01-requirements/auth/flows/main-flow.md -->
 
-# C01 · 主流程 · `admin-auth`
+# C01 · 主流程 · `auth`
 
 > 4 条主路径 mermaid 图。详细异常分支见 [`exception-flow.md`](./exception-flow.md)。
 

@@ -30,7 +30,7 @@
 
 ## 1.4 5 语策略(app 端)
 
-- UI / 讲解 / 翻译适配 `zh / en / vi / th / id`,学员可在 [P-app-app-auth-005](../../../app-auth/app/06-page-specs/P-app-app-auth-005.md) 切换;
+- UI / 讲解 / 翻译适配 `zh / en / vi / th / id`,学员可在 [P-auth-005](../../../auth/app/06-page-specs/P-auth-005.md) 切换;
 - 中文教学目标本体(汉字 + 拼音 + 音频)**只一套**,不翻译;
 - 选择哪种"对照语言显示在中文上方/下方",随学员 UI 语种联动。
 

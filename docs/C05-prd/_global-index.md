@@ -10,8 +10,7 @@
 |------------|-------|-------------|----------|------|---------|
 | `course` | 课程学习 | app + admin | [course/](course/) · [app](course/app/00-index.md) · [admin](course/admin/00-index.md) | 进行中(Round 6) | 2026-05-16 |
 | `discover-china` | 发现中国(文章/句子) | app + admin | [discover-china/](discover-china/) · [app](discover-china/app/00-index.md) · [admin](discover-china/admin/00-index.md) | 进行中(Round 6) | 2026-05-16 |
-| `app-auth` | C 端鉴权(退化单 surface) | app | [app-auth/app/](app-auth/app/00-index.md) | 进行中(Round 6) | 2026-05-16 |
-| `admin-auth` | admin 端鉴权(退化单 surface) | admin | [admin-auth/admin/](admin-auth/admin/00-index.md) | 进行中(Round 6) | 2026-05-16 |
+| `auth` | 鉴权(单 feature 多端 = app + admin) | app + admin | [auth/](auth/) · [app](auth/app/00-index.md) · [admin](auth/admin/00-index.md) | 进行中(Round 7;双 feature 合并 2026-05-17) | 2026-05-17 |
 
 ## 2. 业务域映射(数据源)
 
@@ -19,7 +18,7 @@
 |---------|---------------------|-------------|
 | `course` | [`function/02-course/`](../../function/02-course/) | `prd/00..07-*.md` + `ai/F1..F4-*` |
 | `discover-china` | [`function/01-china/`](../../function/01-china/) | `prd/F1..F3-*.md` + `ai/F1..F3-*` |
-| `app-auth` / `admin-auth` | 规范派生(无 `/function/` 入口) | [G3-权限与认证规范](../../grules/G3-权限与认证规范/) + [B02-permissions/](../B02-permissions/) |
+| `auth` | 规范派生(无 `/function/` 入口) | [G3-权限与认证规范](../../grules/G3-权限与认证规范/) + [B02-permissions/](../B02-permissions/) |
 
 ## 3. 进度速览
 
@@ -27,14 +26,13 @@
 |---------|:-:|:-:|:-:|:-:|:-:|
 | course | ✓ | ✓ | ✓ | ✓ | 进行中(Round 6 展开 page-specs) |
 | discover-china | ✓ | ✓ | ✓ | ✓ | 进行中 |
-| app-auth | ✓ | ✓ | ✓ | ✓ | 进行中 |
-| admin-auth | ✓ | ✓ | ✓ | ✓ | 进行中 |
+| auth | ✓ | ✓ | ✓ | ✓ | 进行中(已并 app+admin 为单 feature 多端) |
 
 ## 4. 跨 feature 依赖
 
 - `course` 的"学员举报"流向 `course/admin/M-report`,无外部 feature 依赖。
 - `discover-china/app` 的 `/me/progress` 已废弃,**不** 再调用 `course/srs`。
-- `app-auth` / `admin-auth` 是所有其它 feature 的鉴权前置;两者**不共享** session / cookie / Supabase project。
+- `auth` 是所有其它 feature 的鉴权前置;app + admin 共享一份 Supabase project,但 `user_sessions.surface` 上独立计数,3-设备硬上限按端隔离。
 
 ## 5. 全局术语
 

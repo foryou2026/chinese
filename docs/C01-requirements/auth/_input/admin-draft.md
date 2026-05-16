@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C01-requirements/admin-auth/_input/draft.md -->
+<!-- TARGET-PATH: docs/C01-requirements/auth/_input/draft.md -->
 
-# R01 用户输入 · `admin-auth` 需求初稿
+# R01 用户输入 · `auth` 需求初稿
 
 > 由 PM 反向整理 · 2026-05-16
 > 来源:`B02-permissions/05-auth-feature-guideline.md` / `B01-architecture/08-surfaces.md`
@@ -19,7 +19,7 @@
 | ❌ out | 注册页 / Google OAuth / 邮箱验证 (seed 时已 `email_confirmed_at`) / 头像 / 显示名编辑 / 自助删除 / 自助邀请 / 管理员列表页 / 2FA |
 | 🔜 v2+ | admin 自助邀请 UI · TOTP · IP 白名单 · SSO (Workspace) |
 
-## 3. 与 app-auth 的关系
+## 3. 与 auth 的关系
 
 - **后端 service 100% 复用**:所有 `/v1/auth/*` handler 同时在 `/admin/v1/auth/*` 同构暴露,只多套一道 `requireRole('super_admin')`;
 - **前端独立**:`web-admin` 自带 4 页登录态界面,设计语言/i18n 与 app 端区分 (深色为主、信息密度更高);

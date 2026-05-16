@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/app/P-app-app-auth-001.scenarios.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-001.scenarios.md -->
 
-# `P-app-app-auth-001` · 场景验证脚本
+# `P-auth-001` · 场景验证脚本
 
 | # | 场景 | 输入 | 期望结果 |
 |---|------|------|---------|

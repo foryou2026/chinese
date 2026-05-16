@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/03-personas.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/03-personas.md -->
 
 # 03 · 角色与画像
 
-> 详细角色定义见 [`B02-permissions/01-roles.md`](../../B02-permissions/01-roles.md)，本节只摘录与 `app-auth` 相关部分。
+> 详细角色定义见 [`B02-permissions/01-roles.md`](../../B02-permissions/01-roles.md)，本节只摘录与 `auth` 相关部分。
 
 ## 1. 未登录访客（anonymous）
 
@@ -20,7 +20,7 @@
 ## 3. 超级管理员（role=`super_admin`）
 
 - 不应进入应用端登录页；若误入，本 feature 必须把它"礼貌赶走"
-- 走 [`admin-auth` feature](../../C05-prd/admin-auth/00-index.md) (批次 4)
+- 走 [`auth` feature](../../C05-prd/auth/admin/00-index.md) (批次 4)
 
 ## 4. 反例 / 攻击者
 

@@ -7,7 +7,7 @@
 > **feature**：全局  
 > **上游依赖**：`01-tech-stack.md`、`08-surfaces.md`、`grules/G3-权限与认证规范/02-认证流程.md`（既有素材）  
 > **冻结状态**：已冻结 · 2026-04-28  
-> **下游影响**：B02 权限规范、未来 `app-auth` / `admin-auth` feature 的 C/D 全阶段
+> **下游影响**：B02 权限规范、未来 `auth` / `auth` feature 的 C/D 全阶段
 
 ---
 
@@ -134,7 +134,7 @@ app.use('/admin/*', requireRole('super_admin'))
 
 | feature | C/D 阶段需输出 |
 |---------|---------------|个人中心（账户信息 / 修改密码 / 修改邮箱 / 头像 / 显示名 / 偏好语言 / 登出）|
-| `admin-auth` | 仅邮箱密码登录页（无 Google 按钮）/ 忘密 / 安全设置；**不提供注册入口**（超管由 seed 脚本写入或手工 SQL 逆生）|
+| `auth` | 仅邮箱密码登录页（无 Google 按钮）/ 忘密 / 安全设置；**不提供注册入口**（超管由 seed 脚本写入或手工 SQL 逆生）|
 
 每个 auth feature 在自己的 `<surface>/` 子目录下出页面 / 路由 / 接口；公用本文件定义的 Token 规格、Provider 接入、密码策略、Cookie / CSRF 
 每个 auth feature 在自己的 `<surface>/` 子目录下出页面 / 路由 / 接口；公用本文件定义的 Token 规格、Provider 接入、密码策略。

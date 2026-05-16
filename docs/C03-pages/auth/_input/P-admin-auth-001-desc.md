@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-pages/admin-auth/_input/P-admin-admin-auth-001-desc.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/admin/_input/P-auth-001-desc.md -->
 
 # N01 · 页面描述 · admin 登录页
 

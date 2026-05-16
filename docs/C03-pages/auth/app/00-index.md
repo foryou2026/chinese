@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/app/00-index.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/00-index.md -->
 
-# 00 · 索引 · app-auth / **app**
+# 00 · 索引 · auth / **app**
 
-> 页面交互规范(Pages) · app-auth feature · `app` 端。
+> 页面交互规范(Pages) · auth feature · `app` 端。
 
 ## 本目录文件
 
@@ -13,10 +13,10 @@
 ## 上下游
 
 - **上游**:
-  - [`C01-requirements/app-auth/baseline.md`](../../../C01-requirements/app-auth/baseline.md)(需求基线)
+  - [`C01-requirements/auth/app/notes.md`](../../../C01-requirements/auth/app/notes.md)(需求基线)
   - 本 feature 退化为单 surface,无 `_shared/`
 - **下游**:
-  - [`C05-prd/app-auth/app/`](../../../C05-prd/app-auth/app/)
+  - [`C05-prd/auth/app/`](../../../C05-prd/auth/app/)
 
 ## 状态
 

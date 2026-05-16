@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C04-prototype/admin-auth/admin/changelog.md -->
+<!-- TARGET-PATH: docs/C04-prototype/auth/admin/changelog.md -->
 
 # 原型变更日志
 

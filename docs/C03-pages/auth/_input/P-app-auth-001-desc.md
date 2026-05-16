@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/_input/P-app-app-auth-001-desc.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/_input/P-auth-001-desc.md -->
 
-# 登录页（P-app-app-auth-001）· N01 用户输入
+# 登录页（P-auth-001）· N01 用户输入
 
 > 反推回写 · 2026-05-16
 

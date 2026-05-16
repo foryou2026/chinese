@@ -7,7 +7,7 @@
 > **feature**：全局  
 > **上游依赖**：`B01-architecture/09-auth-infra.md`、`_input/roles-input.md`、`A00-meta/questions/A-questions-round1-resolved.md`  
 > **冻结状态**：已冻结 · 2026-04-28  
-> **下游影响**：所有 D02 L 必须使用本目录定义的中间件与错误码；`app-auth` / `admin-auth` 两个 feature 的 C/D 阶段全部产物
+> **下游影响**：所有 D02 L 必须使用本目录定义的中间件与错误码；`auth` / `auth` 两个 feature 的 C/D 阶段全部产物
 
 ---
 
@@ -32,7 +32,7 @@
 | 02 | [02-auth-flow.md](./02-auth-flow.md) | 登录 / 登出 / Token / 会话 / 密码 / 忘密 / 邮件 | 实现 `<surface>-auth` 任何流程 |
 | 03 | [03-authz-mechanism.md](./03-authz-mechanism.md) | 前端路由守卫 / 菜单过滤 / 按钮可见；后端 Hono 中间件（`authRequired` / `adminRequired` / `csrfRequired` / `optionalAuth`） | 任何路由 / 接口落地前 |
 | 04 | [04-data-model.md](./04-data-model.md) | `auth.users` 字段约定、`profiles` / `user_sessions` / `auth_login_attempts` / `audit_logs` 表结构、RLS 策略 | D01 D 阶段引用本表；不重复定义 |
-| 05 | [05-auth-feature-guideline.md](./05-auth-feature-guideline.md) | 给 `app-auth` / `admin-auth` 两 feature 的 C/D 阶段使用指南：哪些页面要建、命名、必须遵守的接口/字段/错误码 | 启动 `<surface>-auth` C 阶段时 |
+| 05 | [05-auth-feature-guideline.md](./05-auth-feature-guideline.md) | 给 `auth` / `auth` 两 feature 的 C/D 阶段使用指南：哪些页面要建、命名、必须遵守的接口/字段/错误码 | 启动 `<surface>-auth` C 阶段时 |
 | 99 | [99-open-questions.md](./99-open-questions.md) | 待 PM 拍板项 | 评审 |
 
 ---
@@ -58,7 +58,7 @@
 
 B02 **只**定义"基础设施 + 规则 + 数据结构"；具体的页面交互、表单字段、跳转链路、文案、错误展示位置、按钮顺序等，留给 feature 的 C 阶段：
 
-| 留给 B02 | 留给 `app-auth` / `admin-auth` |
+| 留给 B02 | 留给 `auth` / `auth` |
 |---------|------------------------------|
 | 角色枚举、Token 规格、Cookie 策略 | 登录页 / 注册页 / 找回密码 / 邮箱验证 / 个人中心 / 安全设置 等具体页面与交互 |
 | 中间件分层、错误码清单 | 表单字段 / 验证规则 / 文案 / 跳转链 |

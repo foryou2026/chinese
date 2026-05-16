@@ -1,9 +1,9 @@
-<!-- TARGET-PATH: docs/C02-ia/app-auth/app/00-index.md -->
+<!-- TARGET-PATH: docs/C02-ia/auth/app/00-index.md -->
 
-# C02 · `app-auth` 信息架构
+# C02 · `auth` 信息架构
 
-> **阶段**：C02-I · **feature**：`app-auth`  
-> **上游**：[`C01-requirements/app-auth/baseline.md`](../../C01-requirements/app-auth/baseline.md)、[`_input/page-direction.md`](./_input/page-direction.md)、[`B02-permissions/05-auth-feature-guideline.md`](../../B02-permissions/05-auth-feature-guideline.md)  
+> **阶段**：C02-I · **feature**：`auth`  
+> **上游**：[`C01-requirements/auth/app/notes.md`](../../C01-requirements/auth/app/notes.md)、[`_input/page-direction.md`](./_input/page-direction.md)、[`B02-permissions/05-auth-feature-guideline.md`](../../B02-permissions/05-auth-feature-guideline.md)  
 > **下游**：本 feature C03 / C04 / C05 / D02 全部产物  
 > **冻结状态**：已冻结 · 2026-05-16
 
@@ -36,6 +36,6 @@
 
 ## 2. 边界
 
-- 不涉及 admin 端；admin 端的对应 feature 是独立的 `admin-auth`，将在批次 4 落地。
+- 不涉及 admin 端；admin 端的对应 feature 是独立的 `auth`，将在批次 4 落地。
 - 不涉及 onboarding 表单（学习语言 / HSK 起点）—— 那是 `user-account` feature 的职责，本 feature 只负责"注册成功后 redirect 到 `/onboarding` 路径"这件事本身。
 - 顶栏与全局菜单结构沿用 [B04 §03](../../B04-design/design-system/03-navigation.md)，本 feature 仅约定"未登录态在哪展示登录入口"。

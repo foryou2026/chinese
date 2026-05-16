@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/09-design-summary.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/09-design-summary.md -->
 
 # 09 · 设计要点
 

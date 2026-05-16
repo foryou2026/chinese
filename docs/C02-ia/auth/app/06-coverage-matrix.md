@@ -1,11 +1,11 @@
-<!-- TARGET-PATH: docs/C02-ia/app-auth/app/06-coverage-matrix.md -->
+<!-- TARGET-PATH: docs/C02-ia/auth/app/06-coverage-matrix.md -->
 
-# `app-auth` · 覆盖矩阵
+# `auth` · 覆盖矩阵
 
 > **冻结状态**：已冻结 · 2026-05-16  
 > 此表是 D03 V01 上游链一致性校验的输入。
 >
-> **ID 缩写约定**:本文件内 `R-NNN` = `R-app-auth-NNN`;`P-NNN` = `P-app-app-auth-NNN`;`M-NN` = `M-app-auth-NN`;`FL-NN` = `FL-app-auth-NN`;`SM-NN` = `SM-app-auth-NN`。完整 ID 见 [`C01/baseline.md`](../../C01-requirements/app-auth/baseline.md) 与 [`04-pages.md`](./04-pages.md)。
+> **ID 缩写约定**:本文件内 `R-NNN` = `R-auth-NNN`;`P-NNN` = `P-auth-NNN`;`M-NN` = `M-auth-app-NN`;`FL-NN` = `FL-auth-app-NN`;`SM-NN` = `SM-auth-app-NN`。完整 ID 见 [`C01/baseline.md`](../../C01-requirements/auth/app/notes.md) 与 [`04-pages.md`](./04-pages.md)。
 
 | R-ID | M | Flow | SM | page-id |
 |------|---|------|----|---------|

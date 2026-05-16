@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/admin-auth/admin/01-overview.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/admin/01-overview.md -->
 
-# C05 · 01 总览 · `admin-auth`
+# C05 · 01 总览 · `auth`
 
 ## 1. 一句话
 
@@ -25,7 +25,7 @@
 
 | 关系 | feature |
 |------|---------|
-| 复用 backend service | `app-auth` (handler 100% 同源) |
+| 复用 backend service | `auth` (handler 100% 同源) |
 | 共享数据表 | B02-04 全部 5 表 |
 | 不依赖 | `user-account`(无 onboarding) · `discover-china` / `course` (内容) |
 | 守卫消费者 | `admin-users` / `admin-discover` / `admin-courses` / `admin-novels` (全部 admin 业务 feature) |

@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C05-prd/app-auth/app/08-roles-permissions.md -->
+<!-- TARGET-PATH: docs/C05-prd/auth/app/08-roles-permissions.md -->
 
-# 08 · 角色 · app-auth / **app**
+# 08 · 角色 · auth / **app**
 
 | 角色 | 说明 |
 |------|------|

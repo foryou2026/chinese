@@ -1,8 +1,8 @@
-<!-- TARGET-PATH: docs/C02-ia/admin-auth/admin/06-coverage-matrix.md -->
+<!-- TARGET-PATH: docs/C02-ia/auth/admin/06-coverage-matrix.md -->
 
-# C02 · 覆盖矩阵 · `admin-auth`
+# C02 · 覆盖矩阵 · `auth`
 
-> **ID 缩写约定**:本文件内 `R-NNN` = `R-admin-auth-NNN`;`P-NNN` = `P-admin-admin-auth-NNN`;`M-NN` = `M-admin-auth-NN`;`FL-NN` = `FL-admin-auth-NN`;`SM-NN` = `SM-admin-auth-NN`。完整 ID 见 [`C01/baseline.md`](../../C01-requirements/admin-auth/baseline.md) 与 [`04-pages.md`](./04-pages.md)。
+> **ID 缩写约定**:本文件内 `R-NNN` = `R-auth-NNN`;`P-NNN` = `P-auth-NNN`;`M-NN` = `M-auth-admin-NN`;`FL-NN` = `FL-auth-admin-NN`;`SM-NN` = `SM-auth-admin-NN`。完整 ID 见 [`C01/baseline.md`](../../C01-requirements/auth/admin/notes.md) 与 [`04-pages.md`](./04-pages.md)。
 
 ## R × M × Page
 

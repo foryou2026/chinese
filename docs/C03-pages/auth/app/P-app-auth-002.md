@@ -1,6 +1,6 @@
-<!-- TARGET-PATH: docs/C03-pages/app-auth/app/P-app-app-auth-002.md -->
+<!-- TARGET-PATH: docs/C03-pages/auth/app/P-auth-002.md -->
 
-# `P-app-app-auth-002` · 注册
+# `P-auth-002` · 注册
 
 > **path**：`/auth/register` · **角色可见**：未登录  
 > **R 覆盖**：R-001 / 002 / 014  

@@ -9,8 +9,8 @@
 | 术语 | 定义 |
 |------|------|
 | **surface(端)** | 部署独立的前端 + 后端组合,本项目两端:`app`(`apps/web-app` + `apps/api-app`)、`admin`(`apps/web-admin` + `apps/api-admin`) |
-| **feature** | C 阶段产出的最小业务单元;一个 feature 可横跨多 surface;auth 退化为单 surface |
-| **退化形态** | feature 仅在 1 个 surface 出产物(目录仍按 `<feature>/<surface>/`);`app-auth` 与 `admin-auth` 属此类 |
+| **feature** | C 阶段产出的最小业务单元;一个 feature 可横跨多 surface |
+| **多端单 feature** | 同一 feature 同时在多个 surface 出产物;目录形如 `<feature>/{baseline.md,_shared/,app/,admin/}`(A00-04 §四.5);`course`、`discover-china`、`auth` 均属此类 |
 | **monorepo** | `pnpm-workspace.yaml` 管理的 `system/{apps,packages,scripts,supabase}` 结构 |
 | **Supabase 自托管** | 通过 `system/docker/compose.yaml` 拉起 PG16 + GoTrue + Realtime + Storage + PostgREST |
 
