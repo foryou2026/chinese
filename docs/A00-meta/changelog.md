@@ -7,6 +7,27 @@
 
 ---
 
+## 2026-05-16 · 批次 3 · `app-auth` feature 全套反向回写
+
+> 用户应用端「账号生命周期」feature 完整入坑：注册 / 登入 / OAuth / 找回 / 改密 / 改资料 / 退出 / 多设备 / 节流 / 禁用 / 链接过期。
+
+| 阶段 | 产物 | 数量 | 状态 |
+|------|------|------|------|
+| C01 R | `docs/C01-requirements/app-auth/{_input, baseline, flows/main-flow, flows/exception-flow, 99-open-questions}` | 5 | 已冻结 |
+| C02 I | `docs/C02-ia/app-auth/*` (00..07 + 99 + _input) | 10 | 已冻结 |
+| C03 N | `docs/C03-pages/app-auth/P-app-app-auth-001..009 + P-001.scenarios + 99 + _input` | 12 | 已冻结 |
+| C04 H | `docs/C04-prototype/app-auth/{README, _input}` | 2 | **占位** (与 B04-design/prototype-style 一致 deferred) |
+| C05 E | `docs/C05-prd/app-auth/*` (00..12 + 99 + 06-page-specs/00-index + _input) | 17 | 已冻结 |
+| D01 D | `docs/D01-data/app-auth/*` (00..08 + 99 + 02-entities×5 + _input) | 15 | 已冻结（无新增表，复用 B02-04 5 表）|
+| D02 L | `docs/D02-api/app-auth/*` (00..06 + 99 + 03-endpoints×15 + _input) + `docs/D02-api/_global-routes.md`（首建）| 25 | 已冻结 |
+| D03 V | `docs/D03-validation/app-auth/{01-upstream-chain, 02-module-closure, 03-prd-traceability}` | 3 | V01/V02/V03 全绿 |
+
+**关键数字**：15 R-ID / 3 M 模块 / 11 Flow / 4 SM / 9 page-id / 15 接口 / 21 错误码 / 11 审计事件。
+**关键边界**：本 feature **不**新增任何 PG 表；不涉及 admin 端（admin-auth 批次 4 落）；不涉及 onboarding（user-account v2）；C04 原型与 B04 prototype-style 同步 deferred。
+**受影响 feature**：无（首次落 app-auth，不触发其它 feature 的 D03 重跑）。
+
+---
+
 ## 2026-04-28 · F 层批量冻结（项目反向初始化）
 
 > 本项目存量代码与 `grules/`、`function/` 既有规范已先于 `/prompt` 框架落地。
