@@ -29,8 +29,6 @@
 | **F · Foundation** | `B01~B03` | 3 | 项目级，**一次性** | 项目启动后跑一次，输出全局规范，所有 feature 共用 |
 | **C · Cycle** | `C01~D03` | 9 | feature 级，**每个 feature 跑一遍** | F 全部冻结后开始；同一 feature 顺序走完 C01→D03；多 feature 可并行 |
 
-> **为什么 P（角色权限）放到 C 层而非 F 层？** 角色与权限是「跟着功能长出来的」——每新增一个 feature，可能引入新角色、新数据可见范围、新审计需求。因此 P 阶段在每个 feature 的 C 循环里执行一次，将该 feature 的角色/权限增量并入全局 `docs/C02-permissions/`。F 层只负责认证基础设施（已合并入 `B01-architecture/09-auth-infra.md`）。
-
 > 只有「F 全部 ✅」之后才能开始任何 feature 的 C 循环；
 > 只有「某 feature 的 C01~D02 全部 ✅」之后才能跑该 feature 的 D03（一致性校验）；
 > 只有 D03 全绿才能进入开发实现。
@@ -41,7 +39,7 @@
 
 | 阶段码 | 名称 | 角色 | 输出落盘 | 备注 |
 |--------|------|------|---------|------|
-| **B01 · A** | 技术架构 | 架构师 | `docs/B01-architecture/` | 选栈、目录、DB/API/编码规范、**认证基础设施** |
+| **B01 · A** | 技术架构 | 架构师 | `docs/B01-architecture/` | 选栈、目录、DB/API/编码规范、surface 清单、**鉴权基础设施**（如项目有登录类需求） |
 | **B02 · X** | 体验定调（UX 调性）| 体验总监 | `docs/B02-ux/` | — |
 | **B03 · S** | 设计系统 + 原型样式包 | UI 设计师 | `docs/B03-design/` | 产出 `design-system/`（规范）+ `prototype-style/`（可运行 CSS/JS 资产） |
 
