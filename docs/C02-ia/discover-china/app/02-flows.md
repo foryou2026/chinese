@@ -1,22 +1,26 @@
 <!-- TARGET-PATH: docs/C02-ia/discover-china/app/02-flows.md -->
 
-> **本文件为 surface=`app` 的视角拷贝(Round 1 物理拆分初版,Round 3+ 将按端过滤实质内容)。** 跨端通用部分见 [_shared/flows-shared.md](../_shared/flows-shared.md) 与 [_shared/state-machines.md](../_shared/state-machines.md)。
+# 02 · 关键流程 · discover-china / **app**
 
+## F-app-disc-1 · 浏览到播放
 
-# 02 · Flow 一览
+```
+P-app-discover-china-001(分类首页) → 选分类 → P-002(文章列表,cursor 翻页)
+                                  → 选文章 → P-003(文章详情 + 句子) → 点句子 → TTS 播放
+```
 
-| Flow-ID | 名称 | 类型 | 上游 page | 下游 page | 来源 |
-|---------|------|------|----------|----------|------|
-| FL-discover-china-01 | 访客 12 类目浏览 → 公开类目下钻 | 主 | — | P-app-001 → P-app-002 → P-app-003 | C01 main ① |
-| FL-discover-china-02 | 全文朗读 | 主 | P-app-003 | P-app-003 | C01 main ② |
-| FL-discover-china-03 | 进度记忆同步 | 主 | P-app-003 | P-app-003 | C01 main ③ |
-| FL-discover-china-04 | 管理员新建文章 | 主 | P-admin-002 | P-admin-003 | C01 main ④ |
-| FL-discover-china-05 | 句子编辑 / 插入 / 重排 | 主 | P-admin-003 | P-admin-003 | C01 main ⑤ |
-| FL-discover-china-06 | 管理端三级搜索 | 主 | P-admin-001..003 | P-admin-004 | C01 main ⑥ |
-| FL-discover-china-07 | 04-12 类目登录引导 | 异 | P-app-001 | `/auth/login` | C01 exc E1 |
-| FL-discover-china-08 | TTS 失败 + 后台重试 | 异 | P-app-003 | P-app-003 | C01 exc E2 |
-| FL-discover-china-09 | 阅读中文章被下架 | 异 | P-app-003 | P-app-002 | C01 exc E3 |
-| FL-discover-china-10 | 管理端后写覆盖 + 提示 | 异 | P-admin-003 | P-admin-003 | C01 exc E4 |
-| FL-discover-china-11 | 未保存离开拦截 | 异 | P-admin-003 | * | C01 exc E5 |
-| FL-discover-china-12 | 类目删除尝试拒绝 | 异 | P-admin-001 | P-admin-001 | C01 exc E6 |
-| FL-discover-china-13 | 5 语未齐发布拦截 | 异 | P-admin-003 | P-admin-003 | C01 exc E7 |
+OP:`GET /categories` · `GET /articles?category=...&cursor=` · `GET /articles/:slug` · `GET /sentences/:id/tts`。
+
+## F-app-disc-2 · 搜索
+
+```
+P-001 顶部搜索框 → q → GET /search?q= → 结果列表 → 命中文章 → P-003
+```
+
+## F-app-disc-3 · 离线降级
+
+```
+TTS 失败(网络/上游) → 仅显示文本 + 重试按钮 + toast "音频暂不可用"
+```
+
+> 已废弃 `/me/progress`(原 R-006/007),不在本流程中。

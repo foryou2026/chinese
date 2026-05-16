@@ -1,16 +1,30 @@
 <!-- TARGET-PATH: docs/B04-design/design-system/05-components/10-tabs-accordion.md -->
 
-# 标签页 / 折叠
+# 05.10 · Tab / 折叠
 
-> **骨架占位(Round 2 创建,Round 3+ 按 grules/G2-视觉与交互风格/04-状态与组件.md 与 B04-design/design-system/04-status-colors.md 拆填实质内容)。**
+> ui-kit 导出:`GlassTabs` / `Accordion`(基于 Radix)。
 
-## 待办
-- [ ] 形态(尺寸 / 形变)
-- [ ] 状态(default / hover / active / disabled / loading / focus-visible)
-- [ ] Token 引用(仅引 01-tokens.md)
-- [ ] 暗黑模式适配(7-responsive-dark.md)
-- [ ] 5 语言文案约束(zh/en/vi/th/id)
-- [ ] 无障碍要点(WCAG AA)
+## 一、Tab `GlassTabs`
+| 属性 | 值 |
+| ---- | ---- |
+| 容器 | `glass-panel` 底 + 横向排布 |
+| 高度 | 桌面 40px / 移动 44px |
+| 选中态 | 文字 `--brand` + 底部 2px `--brand` 下划线 + 1.5x 字重 |
+| 未选中 | 文字 `--text-secondary` |
+| hover | `--bg-hover` |
+| 间距 | tab 之间 24px;首尾 padding 16px |
+| 切换动效 | 下划线滑动,`--motion-base` |
 
-## 来源
-- `/opt/projects/zhiyu/grules/G2-视觉与交互风格/04-状态与组件.md`
+### 变体
+- `pills`:无下划线,选中态为 `--brand-soft` 底 + `--brand` 字 + `radius-pill`。
+- `vertical`:左侧导航形态;选中态为左侧 2px `--brand` 竖线 + `--bg-active` 底。
+
+## 二、折叠 `Accordion`
+| 属性 | 值 |
+| ---- | ---- |
+| 容器 | `<GlassCard>` 包裹 |
+| 行高(收起态) | 56px |
+| 展开动效 | 高度 0 → auto,`--motion-base` |
+| 图标 | 右侧 `chevron-down` 16px,展开时旋转 180° |
+| 多开 | 默认允许多 panel 同时展开;可通过 `singleOpen` prop 限单开 |
+| 分隔 | panel 间 1px `--border-subtle` |

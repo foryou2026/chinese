@@ -1,19 +1,28 @@
 <!-- TARGET-PATH: docs/C02-ia/course/admin/01-feature-catalog.md -->
 
-> **本文件为 surface=`admin` 的视角拷贝(Round 1 物理拆分初版,Round 3+ 将按端过滤实质内容)。** 跨端通用部分见 [_shared/flows-shared.md](../_shared/flows-shared.md) 与 [_shared/state-machines.md](../_shared/state-machines.md)。
+# 01 · 功能模块清单(M-ID) · course / **admin**
 
+> Round 5 按端过滤。app 端镜像见 [../app/01-feature-catalog.md](../app/01-feature-catalog.md)。
 
-# 01 · 功能模块清单(M-ID) · course
+## 1. admin 端模块清单
 
-| M-ID | 名称 | 涵盖 R-ID | 关联 P-ID |
-|------|------|----------|-----------|
-| **M-course-content** | 内容骨架与编辑 | R-013, 014, 015, 016, 017, 022, 023 | P-admin-course-001..005 |
-| **M-course-learning** | 节内学习与首页 | R-001, 003, 004, 005, 006, 007, 008 | P-app-course-001..003 |
-| **M-course-srs** | SRS 复习与错题本 | R-008, 009, 010, 026 | P-app-course-004, 005 |
-| **M-course-exam** | 考试中心(4 类)| R-011, 020, 025, 027 | P-app-course-006, 007, 008 · P-admin-course-008 |
-| **M-course-onboarding** | 引导 / 定级 / 订阅 | R-002, 028 | P-app-course-001(子流)|
+| M-ID | 名称 | 涵盖 R-ID | 关联 P-ID(本端) |
+|------|------|----------|----------------|
+| **M-course-content** | 内容骨架与编辑(轨道/阶段/章节/节/KP/题) | R-013, 014, 015, 016, 017, 022, 023 | P-admin-course-001, 002, 003, 004, 005 |
 | **M-course-media** | 媒资库与去重 | R-019 | P-admin-course-007 |
-| **M-course-report** | 学员举报闭环 | R-018, 024 | P-admin-course-006 · 答题反馈弹窗 D-14 |
-| **M-course-search** | 全局搜索 | R-021 | P-admin-course-009 |
-| **M-course-profile** | 个人统计 / 设置 | R-001, 012 | P-app-course-008 |
-| **M-course-i18n-perm** | 5 语 + 主题访问控制 + 行级权限 | R-028, 029, 030;§4 全部不变量 | 横切所有页面 |
+| **M-course-report** | 学员举报审核闭环 | R-018, 024 | P-admin-course-006 |
+| **M-course-exam-admin** | 考试编辑与预览 | R-011, 020, 025, 027 | P-admin-course-008 |
+| **M-course-search** | 全局搜索 + 统计概览 | R-021 | P-admin-course-009 |
+| **M-course-i18n-perm-admin** | 5 语校验 + `tracks_scope` 列级权限 + 行级审计 | R-028, 029, 030 | 横切 9 页 |
+
+> **不在 admin 端**(纯 app):M-course-learning / M-course-srs / M-course-exam(参考侧) / M-course-onboarding / M-course-profile。
+
+## 2. 上下游
+
+- 上游:[D01-data](../../../D01-data/data-model.md);[G3 角色](../../../../grules/G3-权限与认证规范/01-角色定义.md)`content_admin.tracks_scope`。
+- 下游:[D02-api/course/admin](../../../D02-api/course/admin/01-routes-delta.md)(24 endpoint)、[C03-pages/course/admin/](../../../C03-pages/course/admin/)、[C04-prototype/course/admin/](../../../C04-prototype/course/admin/)。
+
+## 3. 模块边界
+
+- **M-course-content** vs **M-course-media**:内容编辑器内嵌资源选择器调用媒资 endpoint,不重复上传管理。
+- **M-course-report**(审核)与 app 端 `M-course-report-app`(举报入口)通过 `course_reports` 表协作:app insert,admin list + 处置;状态机见 [_shared/state-machines.md](../_shared/state-machines.md#course-report)。

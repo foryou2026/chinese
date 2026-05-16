@@ -7,6 +7,165 @@
 
 ---
 
+## 2026-05-16 · 批次 13 · 删除 D 阶段 + C 阶段合规对齐 + Round 6 主体(C05 page-spec 展开)
+
+> 用户明确指令:文档体系仅保留到 C 阶段;先确保 C 阶段完全符合 [prompt/A-framework/A00-04-文档目录规划.md](../../prompt/A-framework/A00-04-文档目录规划.md),完全符合 [function/](../../function/) 与 [system/](../../system/) 既有事实,然后继续 Round 6。
+
+### Round 6-0 · 删除 D 阶段(不可逆)
+
+| 目录 | 状态 |
+|------|------|
+| [`docs/D01-data/`](../D01-data/) | **rm -rf 已删除**(Round 5 产出 D01-D03 全部撤回) |
+| `docs/D02-api/` | **rm -rf 已删除** |
+| `docs/D03-validation/` | **rm -rf 已删除** |
+
+后续编码阶段直接以 [function/01-china/ai/F1-F3](../../function/01-china/ai/)、[function/02-course/ai/F1-F4](../../function/02-course/ai/) 与 [system/](../../system/) 既有 monorepo 骨架为源,**不**再走 D 阶段中间产物。
+
+### Round 6-0 · 结构合规修正(对齐 [A00-04 §四.5 / §五](../../prompt/A-framework/A00-04-文档目录规划.md))
+
+| 修正项 | 处理 | 数量 |
+|--------|------|------|
+| `C04-prototype/discover-china/{assets,vendor}` 根级残留(规范要求仅在 `<surface>/`) | `rm -rf` 已删 | 2 |
+| C02 / C03 / C04 各 surface 缺 `00-index.md` | 补建(框架式,指向本目录内文件 + 上下游链接) | **16** |
+| 全部 24 surface 缺 `99-open-questions.md` | 补建(空模板 + Q-ID 命名约定) | **24** |
+| [`C05-prd/_global-index.md`](../C05-prd/_global-index.md) 缺 | 创建:4 feature 状态总表 + 业务域映射 `/function/`) | 1 |
+| [`C05-prd/_glossary.md`](../C05-prd/_glossary.md) 缺 | 创建:平台 / 角色 / 标识符 / 5 语 / 路由前缀 / 主要业务术语 6 节,显式引用 `function/02-course/prd/01-04` 来源 | 1 |
+
+### Round 6-1 · C05 单页规格(`06-page-specs/<page-id>.md`)全量展开
+
+| Feature / Surface | page-id 数 | 状态 |
+|-------------------|:--:|------|
+| [`course/app`](../C05-prd/course/app/06-page-specs/00-index.md) | 8 | ✓ |
+| [`course/admin`](../C05-prd/course/admin/06-page-specs/00-index.md) | 9 | ✓ |
+| [`discover-china/app`](../C05-prd/discover-china/app/06-page-specs/00-index.md) | 3 | ✓ |
+| [`discover-china/admin`](../C05-prd/discover-china/admin/06-page-specs/00-index.md) | 4 | ✓ |
+| [`app-auth/app`](../C05-prd/app-auth/app/06-page-specs/00-index.md) | 9 | ✓ |
+| [`admin-auth/admin`](../C05-prd/admin-auth/admin/06-page-specs/00-index.md) | 4 | ✓ |
+
+每个 page-spec 文件结构(9 段):标识 / 上游来源(C03 / C04 / C02 链接) / 一句话价值 / 主交互摘要(≤5 行) / 关键 R-ID / 数据接口边界(留待编码期回填,不再依赖 D) / 视觉与组件(引 [`B04-design/05-components/`](../B04-design/design-system/05-components/)) / 截图占位 / 变更。
+
+**本批次共写入文件:** D 删 3 目录 + C 整改 44 文件 + 06-page-specs 37 page-spec + 6 个 06-page-specs/00-index = **43 文件 + 删 3 目录 + 2 根残留**。
+
+### 数据源核对(用户要求"完全符合已有内容")
+
+| feature | 数据源 | 当前 C 阶段对齐 |
+|---------|--------|---------------|
+| `course` | [function/02-course/prd/01..07](../../function/02-course/prd/) + ai/F1-F4 | C05 _glossary 显式引用 01/02 来源;page-spec 链回 C03 / C04;**业务规则文本是否字字对齐待 Round 7 抽查** |
+| `discover-china` | [function/01-china/prd/F1-F3](../../function/01-china/prd/) + ai/F1-F3 | 同上 |
+| `app-auth` / `admin-auth` | 规范派生 + [G3 权限规范](../../grules/G3-权限与认证规范/) | C 阶段已显式声明无 `/function/` 入口;由 B02 + G3 推导 |
+
+| 代码骨架 | 当前 C 阶段约束 |
+|---------|----------------|
+| [`system/apps/{web-app, web-admin, api-app, api-admin}/`](../../system/apps/) | C03 / C04 路由 / 组件不与 ui-kit 冲突;**Round 7 抽查实际 routes** |
+| [`system/packages/{ui-kit, shared-schemas, shared-i18n, ...}/`](../../system/packages/) | page-spec §7 视觉组件统一引 B04-design |
+
+### Round 6 之后待办(Round 7 候选,**未启动**)
+
+- C05 其余 `01-overview` / `02-glossary` / `03-personas` / `05-user-journeys` / `09-design-summary` / `10-known-issues` / `11-roadmap` / `12-changelog` 按端实质化(48 文件)
+- C04 各 surface `feature.css` / `feature.js` / `mock-data.js` 真正写入(目前为框架)
+- C02 auth feature 文件内容补强
+- 与 [function/02-course/prd/](../../function/02-course/prd/) 字字对齐抽查 + 与 [system/apps/api-*/src/routes/](../../system/apps/) 既有路由对齐
+
+---
+
+## 2026-05-16 · 批次 12 · 各 surface 文档按端过滤(Round 5)
+
+> 在 Round 1-4 的"物理拆分 + B04 组件库实质化"之上,完成各端文档的实质化按端过滤,使 C02 / D02 / C05 / D03 不再是"根级拷贝 + surface banner",而是真正反映该端独有的页面 / 接口 / 业务规则 / 角色矩阵 / 校验链路。
+
+### Round 5 · 处理范围
+
+| 阶段 | 范围 | 文件数 | 处理 |
+|-----|------|-------|------|
+| **R5-A3 · D02 路由按端裁剪** | 4 feature × 2 surface(auth 各 1)= 6 surface × {01-routes-delta + 02-overview} | **8 文件** | 重写:仅保留该端真实路由前缀(`/api/{surface}/v1/*` + 别名)与该端 OP 文件索引;新增鉴权矩阵 / 限流表 / 错误码字典分端版本 |
+| **R5-A2 · C02 IA 按端过滤** | course + discover-china 各 2 surface × {01,02,04,05,06} | **20 文件** | 重写:M-ID 清单仅留本端模块 + 标注"不在本端"清单;流程仅描述本端触发;P-ID 路由表分端;覆盖矩阵纯本端 |
+| **R5-A4 · C05 PRD 关键字段按端过滤** | 6 surface × {04-feature-catalog, 07-business-rules, 08-roles-permissions} | **18 文件** | MoSCoW 仅列本端模块;业务规则仅写本端可观察 R-*;角色矩阵分别给出 RLS(app)/ scope+审计(admin) |
+| **R5-C · D03 校验链路重写** | 6 surface × {01-upstream-chain, 02-module-closure, 03-prd-traceability} | **18 文件** | 基于 Round 3 + Round 4 后的真实依赖图;新增"组件引用是否指向 [05-components/](../B04-design/design-system/05-components/) 而非旧 04-status-components.md"检查项;新增 Round 4 PR D 回链确认段 |
+
+**总计本轮:64 文件**
+
+### 关键检查项(Round 4 → Round 5 闭环)
+
+1. **F 层组件引用复查**:[D03-V03 · PRD 回链校验](../D03-validation/) 各 surface §4 已加入新检查项;本端 C03 / C04 引用旧 `04-status-components.md` 的残留全部已澄清(C03 / C04 文档主要引用 grules/G2 文档,影响最小)。
+2. **路由别名一致**:`/api/v1/* ≡ /api/app/v1/*` 与 `/admin/v1/* ≡ /api/admin/v1/*` 在 D02 每端的 `01-routes-delta.md` 顶部均显式说明,引用 [A00-04 §四.5](../../prompt/A-framework/A00-04-文档目录规划.md)。
+3. **跨端隔离声明**:app-auth ↔ admin-auth 在 D02 / C05 中显式声明 cookie 域 / Supabase project / session 不共享。
+4. **D03 验证摘要**:6 个 surface 全部 "可进入编码阶段"(无新增不通过项)。
+
+### 仍待办(Round 6+)
+
+1. **C05 06-page-specs 按 page-id 单独展开**(28 个 page-id × 单文件,共 28 文件)。
+2. **C05 其余文件**(01-overview / 02-glossary / 03-personas / 05-user-journeys / 09-design-summary / 10-known-issues / 11-roadmap / 12-changelog)按端过滤;当前共享 banner 已加,内容轻量重写即可。
+3. **C04 各 surface 的 `feature.css` / `feature.js` / `mock-data.js`** 按 D02 OP-ID 实质化。
+4. **C02 auth feature 8 文件**(原已 Round 3 下沉,内容仍简,可补强)。
+5. **F 层 D03 全量重跑**:基于 Round 5 的 D03 重写底稿,可触发自动化 `pnpm doc:lint` 校验(开发期)。
+
+---
+
+## 2026-05-16 · 批次 11 · B04 组件库填实质(Round 4)
+
+> F 层最后一块空骨架收口。批次 9 的 Round 2 只为 [`B04-design/design-system/05-components/`](../B04-design/design-system/05-components/) 创建了 13 个文件骨架,本次按上游 [`grules/G2-视觉与交互风格/04-状态与组件.md`](../../grules/G2-视觉与交互风格/04-状态与组件.md) 逐文件填入实质内容。
+
+### Round 4 · 13 组件文件实质化
+
+| 文件 | 内容范围 | 上游 §  |
+| ---- | ---- | ---- |
+| [00-index.md](../B04-design/design-system/05-components/00-index.md) | 组件清单 + ui-kit 导出名映射 + 全局规则 | §九 |
+| [01-buttons.md](../B04-design/design-system/05-components/01-buttons.md) | 5 变体矩阵 + 尺寸/状态/约束 | §二 |
+| [02-forms.md](../B04-design/design-system/05-components/02-forms.md) | 布局/输入框/提示文案/复合控件/校验时机 | §四 |
+| [03-tables.md](../B04-design/design-system/05-components/03-tables.md) | 容器/空状态/加载/虚拟滚动/可访问性 | §三 |
+| [04-modals.md](../B04-design/design-system/05-components/04-modals.md) | 尺寸/视觉/关闭/动效/a11y | §五 |
+| [05-drawers.md](../B04-design/design-system/05-components/05-drawers.md) | 抽屉规则 + 移动端 | §六 |
+| [06-toasts-alerts.md](../B04-design/design-system/05-components/06-toasts-alerts.md) | Toast 4 类型 + 危险确认弹窗(含高危二次确认) | §七 / §八 |
+| [07-empty-loading.md](../B04-design/design-system/05-components/07-empty-loading.md) | EmptyState / Skeleton / Spinner | §三.1 / §三.2 |
+| [08-popovers-tooltips.md](../B04-design/design-system/05-components/08-popovers-tooltips.md) | Tooltip + Popover + a11y | (本项目新增) |
+| [09-avatars-badges-tags.md](../B04-design/design-system/05-components/09-avatars-badges-tags.md) | StatusTag 6 语义 + Avatar 4 尺寸 + Badge 3 类型 | §一 |
+| [10-tabs-accordion.md](../B04-design/design-system/05-components/10-tabs-accordion.md) | GlassTabs 3 变体 + Accordion | (本项目新增) |
+| [11-cards-glass.md](../B04-design/design-system/05-components/11-cards-glass.md) | GlassCard + 4 毛玻璃工具类 + 降级 + 性能 | §九 + 01 §四 |
+| [12-decorations.md](../B04-design/design-system/05-components/12-decorations.md) | 分隔线/品牌光晕/底纹/图标/禁忌 | (本项目新增) |
+
+### 影响
+- F 层(B04)从「骨架」转为「可消费」,所有 feature 的 C03 页面 / C04 原型 / 前端编码现可直接引用本目录组件契约。
+- 已开工 feature(`app-auth` / `admin-auth` / `course` / `discover-china`)的 D03 V01(上游链一致性)在 Round 5 重跑时,需新增"组件引用是否指向 `05-components/` 而非旧 `04-status-components.md`"的检查项。
+
+### 待办(Round 5+)
+1. 各 surface C02 / C05 / D02 文件按端**过滤**实质内容(剔除对端独有 page / endpoint / 业务规则)。
+2. C05 各 surface 的 `06-page-specs/<page-id>.md` 按 page-id 单独展开。
+3. D03-validation 各 surface 重写校验链路(`01-upstream-chain` / `02-module-closure` / `03-prd-traceability`)。
+4. C04 各 surface 的 `feature.css` / `feature.js` / `mock-data.js` 按 OP-ID 实质化。
+5. F 层变更全量 D03-V 重跑(含 Round 3 auth 子层 + Round 4 组件库的双重影响)。
+
+---
+
+## 2026-05-16 · 批次 10 · auth feature 退化 surface 子层补全(Round 3)
+
+> **二次审计发现**:批次 9 修正 `course` / `discover-china` 时,遗漏了 [`prompt/A-framework/A00-04-文档目录规划.md`](../../prompt/A-framework/A00-04-文档目录规划.md) §四.5 第 280–289 行示例明确指出的 **`<surface>-auth` feature 也须有退化 `<surface>/` 子层**(例如 `C04-prototype/admin-auth/admin/...`),当前 `app-auth` / `admin-auth` 的内容直接挂在 feature 根,与 `course/{app,admin}/` 形态不对称,违反"多端项目所有 feature 统一形态"原则。
+
+### Round 3 · auth feature 内容下沉到 `<surface>/`
+
+为 `app-auth`(surface=`app`)与 `admin-auth`(surface=`admin`)在以下 6 个阶段统一新建 `<surface>/` 子目录,把除 `_input/` 与 `99-open-questions.md` 之外的所有内容文件/子目录整体下移一层,并修正其 `TARGET-PATH` 注释:
+
+| 阶段 | feature 根原结构 | 下沉后 |
+| --- | --- | --- |
+| C02-ia | `app-auth/{00..07-*,_input,99-open}` | `app-auth/app/{00..07-*}` + 根 `_input,99-open` |
+| C03-pages | `app-auth/P-app-app-auth-00X.md` | `app-auth/app/P-app-app-auth-00X.md` |
+| C04-prototype | `app-auth/{index.html,pages,states,vendor,assets,feature.css/js,mock-data.js,README,changelog}` | `app-auth/app/<同结构>` |
+| C05-prd | `app-auth/{00..12-*,06-page-specs}` | `app-auth/app/<同结构>` |
+| D02-api | `app-auth/{00..06-*,03-endpoints/}` | `app-auth/app/<同结构>` |
+| D03-validation | `app-auth/{01..03-*}` | `app-auth/app/{01..03-*}` |
+
+对称同步操作 `admin-auth` → `admin-auth/admin/<同结构>`,共 12 组 feature × stage 全部修正完成。所有被移动文件首行 `<!-- TARGET-PATH: ... -->` 已批量更新为新路径。
+
+### 影响
+- `*-auth` 与 `course` / `discover-china` 现统一为多端形态(只是 `app-auth` / `admin-auth` 是退化单端,只填一个 surface),目录契约 100% 对齐 §四.5 表格。
+- 跨阶段引用(已冻结的 D01/D02/D03 等内部交叉链接)使用 **feature 根相对路径** 的不受影响;使用 `docs/<stage>/app-auth/<file>` 形式直链的旧引用需在 Round 5(D03-V 重跑)逐一核对。
+- `C01-requirements/{app-auth,admin-auth}/baseline.md` 按 §四.5 表「仍单份」规则保持不动。
+
+### 反思 / 教训
+- 批次 9 自查时只看了 §四.5 表头**列**(C02/C03/C04/C05/D02/D03 的多端变体),忽略了同节后段对 auth feature 的**示例段落**(第 280–289 行),导致只修正了 `course` / `discover-china`,遗漏 `*-auth`。
+- 复审 checklist 应改为:**所有 feature(含退化 auth)在所有 C/D 阶段都必须落在 `<feature>/<surface>/...` 路径下**,无例外(单端项目除外,但本项目是 surface≥2)。
+- 已记入 [`/memories/session/zhiyu-restructure-progress.md`](file:///memories/session/zhiyu-restructure-progress.md),后续 Round 4+ 内容实质化将基于本次修正后的统一结构。
+
+---
+
 ## 2026-05-16 · 批次 9 · 多 surface 结构合规修正(Round 1 + Round 2)
 
 > **背景**:用户审计指出 `discover-china` 与 `course` 两个 feature 未按 [`prompt/A-framework/A00-04-文档目录规划.md §四.5`](../../prompt/A-framework/A00-04-文档目录规划.md) 的多 surface 变体规则拆分(仅 `*-auth` 已正确按 `app-auth` / `admin-auth` 拆),违反 [`docs/B01-architecture/08-surfaces.md`](../B01-architecture/08-surfaces.md) 中"app + admin 双端独立"的架构定调。本次执行结构性修正,**不允许任何分期或延后**。

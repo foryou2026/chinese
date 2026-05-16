@@ -1,20 +1,19 @@
 <!-- TARGET-PATH: docs/C05-prd/discover-china/app/06-page-specs/00-index.md -->
 
-> **本文件为 surface=`app` 视角的页面规格索引(Round 2 从 PRD.md 第 6 章拆出初版,后续 Round 4+ 将按 page-id 展开单页 spec 文件)。**
+# 06 · 单页规格索引 · discover-china / **app**
 
-## 6. 页面清单与原型
+> PRD 视角的"单页规格"集合;每份 spec 复述 [C02 IA](../../../../C02-ia/discover-china/app/04-pages.md)、[C03 单页交互](../../../../C03-pages/discover-china/app/)、[C04 HTML 原型](../../../../C04-prototype/discover-china/app/) 三方,并指向各自的源文档(避免重复维护)。
 
-| page-id | 路由 | 规格 | 原型 |
-|---------|------|------|------|
-| P-app-discover-china-001 | `/china` | [规格](../../C03-pages/discover-china/P-app-discover-china-001.md) | [原型](../../C04-prototype/discover-china/pages/P-app-discover-china-001.html) |
-| P-app-discover-china-002 | `/china/categories/:code` | [规格](../../C03-pages/discover-china/P-app-discover-china-002.md) | [原型](../../C04-prototype/discover-china/pages/P-app-discover-china-002.html) |
-| P-app-discover-china-003 | `/china/articles/:code` | [规格](../../C03-pages/discover-china/P-app-discover-china-003.md) | [原型](../../C04-prototype/discover-china/pages/P-app-discover-china-003.html) |
-| P-admin-discover-china-001 | `/admin/china` | [规格](../../C03-pages/discover-china/P-admin-discover-china-001.md) | [原型](../../C04-prototype/discover-china/pages/P-admin-discover-china-001.html) |
-| P-admin-discover-china-002 | `/admin/china/categories/:code` | [规格](../../C03-pages/discover-china/P-admin-discover-china-002.md) | [原型](../../C04-prototype/discover-china/pages/P-admin-discover-china-002.html) |
-| P-admin-discover-china-003 | `/admin/china/articles/:id` | [规格](../../C03-pages/discover-china/P-admin-discover-china-003.md) | [原型](../../C04-prototype/discover-china/pages/P-admin-discover-china-003.html) |
-| P-admin-discover-china-004 | `/admin/china/search` | [规格](../../C03-pages/discover-china/P-admin-discover-china-004.md) | [原型](../../C04-prototype/discover-china/pages/P-admin-discover-china-004.html) |
+## 页面清单(3 页)
 
-弹窗 D-1..D-8 详 [`C02/07-error-pages.md §6`](../../C02-ia/discover-china/07-error-pages.md)。
+| P-ID | 标题 | 源文档 |
+|------|------|--------|
+| [P-app-discover-china-001](P-app-discover-china-001.md) | 分类首页 + 搜索 | [C03 详细](../../../../C03-pages/discover-china/app/P-app-discover-china-001.md) · [C04 HTML](../../../../C04-prototype/discover-china/app/pages/) |
+| [P-app-discover-china-002](P-app-discover-china-002.md) | 分类下文章列表 | [C03 详细](../../../../C03-pages/discover-china/app/P-app-discover-china-002.md) · [C04 HTML](../../../../C04-prototype/discover-china/app/pages/) |
+| [P-app-discover-china-003](P-app-discover-china-003.md) | 文章详情 + 句子 TTS | [C03 详细](../../../../C03-pages/discover-china/app/P-app-discover-china-003.md) · [C04 HTML](../../../../C04-prototype/discover-china/app/pages/) |
 
-## 待办
-- [ ] Round 4: 按 page-id 创建 `06-page-specs/<page-id>.md`,每页对齐 C03-pages/discover-china/app/{page-id}.md
+## 维护原则
+
+- **不复制** C03 的交互流程细节(只放摘要 + 链接);C03 是真相。
+- **截图**:由 C04 HTML 原型生成,放 `assets/screenshots/<page-id>.png`(本期暂用占位)。
+- **变更**:任一页 spec 变化必须同步本目录 00-index.md。

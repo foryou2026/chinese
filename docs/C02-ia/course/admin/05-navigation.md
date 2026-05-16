@@ -1,30 +1,46 @@
 <!-- TARGET-PATH: docs/C02-ia/course/admin/05-navigation.md -->
 
-> **本文件为 surface=`admin` 的视角拷贝(Round 1 物理拆分初版,Round 3+ 将按端过滤实质内容)。** 跨端通用部分见 [_shared/flows-shared.md](../_shared/flows-shared.md) 与 [_shared/state-machines.md](../_shared/state-machines.md)。
+# 05 · 导航与信息层级 · course / **admin**
 
+> Round 5 按端过滤。
 
-# 05 · 导航 · course
+## 顶层导航(左侧栏)
 
-## 应用端
+```
+课程
+├─ 轨道(P-001)
+├─ 题目 / 知识点(P-005)
+├─ 媒资(P-007)
+├─ 考试(P-008)
+├─ 学员举报(P-006)
+└─ 搜索 / 统计(P-009)
+```
 
-- 底部 5 Tab(固定顺序):`首页 / 学习 / 复习 / 考试 / 我的` → 分别 `P-app-course-001/002/004/006/008`;
-- 主题切换:顶部当前主题徽章 → 点开主题选择 Sheet(只展示已订阅主题);
-- 节学习内置面包屑:`主题 › 阶段 › 章 › 节 › KP n/12`;
-- 考试中心进考:全屏沉浸,顶部 only 倒计时 + 题号,无返回键(中途退出 = 零分);
-- 错题本入口:P-app-course-005 由 P-app-course-008(我的)或 P-app-course-004(复习)二级跳转。
+- 进入轨道后右栏出现二级:阶段(P-002)/ 章节(P-003)/ 节(P-004),面包屑 4 级。
+- 路由前缀 `/admin/course/*`。
 
-## 管理端
+## 编辑器内层级
 
-- 顶部水平 Tabs(主菜单)与 P-A-1..9 一一映射;
-- 二级导航在 P-admin-course-002 内置主题选择器(行级 `tracks_scope` 过滤);
-- 全部页面共享面包屑组件:`课程 › <主题> › <阶段> › <章> › <节>`;
-- 编辑 Drawer 内 Tab:基础 / 内容 / 翻译 / 媒资 / 题目(KP)/ 选项 / 解析(Question);
-- 全局搜索 `Ctrl/Cmd + K` 触发 → 飞入 P-admin-course-009。
+P-005 知识点 / 题目共用一个编辑器,左侧树 + 右侧表单 + 顶部 tab(`KP` / `Q`)。
 
-## 与权限联动
+## 模态层
 
-| 角色 | 可见页面 |
-|------|---------|
-| `super` | 全部 9 个 P-admin |
-| `content_admin` | 全部 9 个,但只能编辑 `tracks_scope` 内主题 |
-| `readonly` | 可见全部,所有写入按钮置灰 |
+| 触发 | 类型 | 关键约束 |
+|------|------|---------|
+| 删除轨道 / 章节 | 危险确认 modal | 二次输入轨道码确认(`super`) |
+| 批量导入 | drawer(右) | 预览态 → 提交,过程中不可关闭 |
+| 媒资替换 | modal | 显示影响 KP 数,确认才替换 |
+
+## 深链 / 路由表
+
+| Path | P-ID |
+|------|------|
+| `/admin/course/tracks` | P-001 |
+| `/admin/course/tracks/:t/stages` | P-002 |
+| `/admin/course/stages/:s/chapters` | P-003 |
+| `/admin/course/chapters/:c/lessons` | P-004 |
+| `/admin/course/questions` · `/kps` | P-005 |
+| `/admin/course/reports` | P-006 |
+| `/admin/course/media` | P-007 |
+| `/admin/course/exams` | P-008 |
+| `/admin/course/search` · `/stats` | P-009 |

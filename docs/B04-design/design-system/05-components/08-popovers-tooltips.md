@@ -1,16 +1,30 @@
 <!-- TARGET-PATH: docs/B04-design/design-system/05-components/08-popovers-tooltips.md -->
 
-# 气泡 / 提示
+# 05.08 · 气泡 / 工具提示
 
-> **骨架占位(Round 2 创建,Round 3+ 按 grules/G2-视觉与交互风格/04-状态与组件.md 与 B04-design/design-system/04-status-colors.md 拆填实质内容)。**
+> Radix Primitives `Popover` / `Tooltip` 包装,主题层叠加 `glass-panel`。
 
-## 待办
-- [ ] 形态(尺寸 / 形变)
-- [ ] 状态(default / hover / active / disabled / loading / focus-visible)
-- [ ] Token 引用(仅引 01-tokens.md)
-- [ ] 暗黑模式适配(7-responsive-dark.md)
-- [ ] 5 语言文案约束(zh/en/vi/th/id)
-- [ ] 无障碍要点(WCAG AA)
+## 一、Tooltip
+| 属性 | 值 |
+| ---- | ---- |
+| 触发 | hover 600ms 延迟 / focus 立即 |
+| 容器 | `--bg-elevated` + `--border-subtle` + `radius-sm` + `shadow-sm` |
+| 字号 | `text-caption` |
+| 最大宽度 | 240px;超长自动换行 |
+| 位置 | 默认 `top`,自动翻转避免溢出 |
+| 箭头 | 8px 三角,跟随主体色 |
+| 动效 | 透明度 + 4px 位移,`--motion-fast` |
 
-## 来源
-- `/opt/projects/zhiyu/grules/G2-视觉与交互风格/04-状态与组件.md`
+## 二、Popover
+| 属性 | 值 |
+| ---- | ---- |
+| 触发 | click |
+| 容器 | `glass-panel`(`--glass-blur-md`) + `radius-md` + `shadow-md` |
+| 内边距 | 16px |
+| 最大宽度 | 360px |
+| 关闭 | 点击外部 / ESC / 内部 close trigger |
+| 箭头 | 可选,默认关闭(简化视觉) |
+
+## 三、可访问性
+- Tooltip 走 `aria-describedby`,**禁止承载交互**(只读信息)。
+- Popover 走 `aria-haspopup` + focus 管理;弹层内 Tab 顺序闭环。

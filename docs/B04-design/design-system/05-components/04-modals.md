@@ -1,16 +1,34 @@
 <!-- TARGET-PATH: docs/B04-design/design-system/05-components/04-modals.md -->
 
-# 模态框 Modals
+# 05.04 · 弹窗 Modal
 
-> **骨架占位(Round 2 创建,Round 3+ 按 grules/G2-视觉与交互风格/04-状态与组件.md 与 B04-design/design-system/04-status-colors.md 拆填实质内容)。**
+> 上游:[`grules/G2-视觉与交互风格/04-状态与组件.md §五`](../../../grules/G2-视觉与交互风格/04-状态与组件.md)。
+> ui-kit 导出:`GlassModal`。
 
-## 待办
-- [ ] 形态(尺寸 / 形变)
-- [ ] 状态(default / hover / active / disabled / loading / focus-visible)
-- [ ] Token 引用(仅引 01-tokens.md)
-- [ ] 暗黑模式适配(7-responsive-dark.md)
-- [ ] 5 语言文案约束(zh/en/vi/th/id)
-- [ ] 无障碍要点(WCAG AA)
+## 一、尺寸
+| 类型 | 宽度 |
+| ---- | ---- |
+| 默认 | 480px |
+| 大弹窗 | 720px |
+| 全屏(< 640px) | 宽度 = `100vw - 16px`,高度 = `90vh`,从底部弹起 |
 
-## 来源
-- `/opt/projects/zhiyu/grules/G2-视觉与交互风格/04-状态与组件.md`
+## 二、视觉
+| 属性 | 值 |
+| ---- | ---- |
+| 遮罩层 | `--bg-overlay` |
+| 容器 | `glass-modal`(高强度毛玻璃 + `radius-lg`) |
+| 标题字号 / 字重 | `text-h3` / 600 |
+| 内容区内边距 | 24px |
+| 底部按钮对齐 | **右对齐**:取消(`secondary`)在左、确认(`primary`)在右 |
+
+## 三、关闭方式
+- 右上角 X 图标按钮 + ESC + 点遮罩。
+- **危险弹窗禁用点遮罩关闭**(见 [06-toasts-alerts.md §确认弹窗](06-toasts-alerts.md))。
+
+## 四、动效
+- 进入:透明度 0→1 + 缩放 0.96→1,`--motion-slow`。
+- 退出:逆向同步。
+
+## 五、可访问性
+- `role="dialog"` + `aria-modal="true"` + `aria-labelledby` 指向标题。
+- focus trap;关闭后焦点回到触发元素。

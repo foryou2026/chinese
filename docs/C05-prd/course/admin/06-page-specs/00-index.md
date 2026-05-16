@@ -1,30 +1,25 @@
 <!-- TARGET-PATH: docs/C05-prd/course/admin/06-page-specs/00-index.md -->
 
-> **本文件为 surface=`admin` 视角的页面规格索引(Round 2 从 PRD.md 第 6 章拆出初版,后续 Round 4+ 将按 page-id 展开单页 spec 文件)。**
+# 06 · 单页规格索引 · course / **admin**
 
-## 6. 页面清单与原型
+> PRD 视角的"单页规格"集合;每份 spec 复述 [C02 IA](../../../../C02-ia/course/admin/04-pages.md)、[C03 单页交互](../../../../C03-pages/course/admin/)、[C04 HTML 原型](../../../../C04-prototype/course/admin/) 三方,并指向各自的源文档(避免重复维护)。
 
-| page-id | 路由 | 规格 | 原型(F4 源)|
-|---------|------|------|------|
-| P-app-course-001 | `/` 或 `/home` | [规格](../../C03-pages/course/P-app-course-001.md) | F4 `_assets/` + P-C-1 顶部 |
-| P-app-course-002 | `/learn/...` | [规格](../../C03-pages/course/P-app-course-002.md) | [F4 P-C-1](../../../function/02-course/ai/F4-AI-原型设计/P-C-1-学习地图.html) + [F4 P-C-2](../../../function/02-course/ai/F4-AI-原型设计/P-C-2-节学习页.html) |
-| P-app-course-003 | `/lesson/{code}/kp/{id}` | [规格](../../C03-pages/course/P-app-course-003.md) | F4 P-C-2 节学习页内卡片 |
-| P-app-course-004 | `/review` | [规格](../../C03-pages/course/P-app-course-004.md) | [F4 P-C-4](../../../function/02-course/ai/F4-AI-原型设计/P-C-4-SRS复习.html) |
-| P-app-course-005 | `/wrong` | [规格](../../C03-pages/course/P-app-course-005.md) | [F4 P-C-5](../../../function/02-course/ai/F4-AI-原型设计/P-C-5-错题本.html) |
-| P-app-course-006 | `/exam` | [规格](../../C03-pages/course/P-app-course-006.md) | [F4 P-C-6](../../../function/02-course/ai/F4-AI-原型设计/P-C-6-考试中心.html) |
-| P-app-course-007 | `/exam/{attemptId}` | [规格](../../C03-pages/course/P-app-course-007.md) | [F4 P-C-7](../../../function/02-course/ai/F4-AI-原型设计/P-C-7-考试进行.html) |
-| P-app-course-008 | `/me` | [规格](../../C03-pages/course/P-app-course-008.md) | [F4 P-C-8](../../../function/02-course/ai/F4-AI-原型设计/P-C-8-个人统计.html) |
-| P-admin-course-001 | `/admin/course` | [规格](../../C03-pages/course/P-admin-course-001.md) | [F4 P-A-1](../../../function/02-course/ai/F4-AI-原型设计/P-A-1-课程目录总览.html) |
-| P-admin-course-002 | `/admin/course/tree` | [规格](../../C03-pages/course/P-admin-course-002.md) | [F4 P-A-2](../../../function/02-course/ai/F4-AI-原型设计/P-A-2-主题-阶段-章列表.html) |
-| P-admin-course-003 | `/admin/course/lesson/{code}` | [规格](../../C03-pages/course/P-admin-course-003.md) | [F4 P-A-3](../../../function/02-course/ai/F4-AI-原型设计/P-A-3-节编辑.html) |
-| P-admin-course-004 | `/admin/course/kp` | [规格](../../C03-pages/course/P-admin-course-004.md) | [F4 P-A-4](../../../function/02-course/ai/F4-AI-原型设计/P-A-4-KP列表.html) |
-| P-admin-course-005 | `/admin/course/question` | [规格](../../C03-pages/course/P-admin-course-005.md) | [F4 P-A-5](../../../function/02-course/ai/F4-AI-原型设计/P-A-5-题目列表.html) |
-| P-admin-course-006 | `/admin/course/report` | [规格](../../C03-pages/course/P-admin-course-006.md) | [F4 P-A-6](../../../function/02-course/ai/F4-AI-原型设计/P-A-6-举报处理.html) |
-| P-admin-course-007 | `/admin/course/media` | [规格](../../C03-pages/course/P-admin-course-007.md) | [F4 P-A-7](../../../function/02-course/ai/F4-AI-原型设计/P-A-7-媒资库.html) |
-| P-admin-course-008 | `/admin/course/exam` | [规格](../../C03-pages/course/P-admin-course-008.md) | [F4 P-A-8](../../../function/02-course/ai/F4-AI-原型设计/P-A-8-考试中心管理.html) |
-| P-admin-course-009 | `/admin/course/search` | [规格](../../C03-pages/course/P-admin-course-009.md) | [F4 P-A-9](../../../function/02-course/ai/F4-AI-原型设计/P-A-9-全局搜索.html) |
+## 页面清单(9 页)
 
-弹窗 D-1..D-18 详 [`C02/07-error-pages.md §2`](../../C02-ia/course/07-error-pages.md)。
+| P-ID | 标题 | 源文档 |
+|------|------|--------|
+| [P-admin-course-001](P-admin-course-001.md) | 轨道列表 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-001.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
+| [P-admin-course-002](P-admin-course-002.md) | 阶段编辑 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-002.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
+| [P-admin-course-003](P-admin-course-003.md) | 章节编辑(拖拽排序) | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-003.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
+| [P-admin-course-004](P-admin-course-004.md) | 节编辑 + KP 绑定 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-004.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
+| [P-admin-course-005](P-admin-course-005.md) | 题目 / 知识点 CRUD | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-005.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
+| [P-admin-course-006](P-admin-course-006.md) | 学员举报审核 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-006.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
+| [P-admin-course-007](P-admin-course-007.md) | 媒资库 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-007.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
+| [P-admin-course-008](P-admin-course-008.md) | 考试编辑与预览 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-008.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
+| [P-admin-course-009](P-admin-course-009.md) | 全局搜索 + 统计 | [C03 详细](../../../../C03-pages/course/admin/P-admin-course-009.md) · [C04 HTML](../../../../C04-prototype/course/admin/pages/) |
 
-## 待办
-- [ ] Round 4: 按 page-id 创建 `06-page-specs/<page-id>.md`,每页对齐 C03-pages/course/admin/{page-id}.md
+## 维护原则
+
+- **不复制** C03 的交互流程细节(只放摘要 + 链接);C03 是真相。
+- **截图**:由 C04 HTML 原型生成,放 `assets/screenshots/<page-id>.png`(本期暂用占位)。
+- **变更**:任一页 spec 变化必须同步本目录 00-index.md。

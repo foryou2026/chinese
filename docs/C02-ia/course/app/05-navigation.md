@@ -1,30 +1,43 @@
 <!-- TARGET-PATH: docs/C02-ia/course/app/05-navigation.md -->
 
-> **本文件为 surface=`app` 的视角拷贝(Round 1 物理拆分初版,Round 3+ 将按端过滤实质内容)。** 跨端通用部分见 [_shared/flows-shared.md](../_shared/flows-shared.md) 与 [_shared/state-machines.md](../_shared/state-machines.md)。
+# 05 · 导航与信息层级 · course / **app**
 
+> Round 5 按端过滤。
 
-# 05 · 导航 · course
+## 顶层导航(底部 tab)
 
-## 应用端
+```
+[ 学习 ]  [ 复习 ]  [ 考试 ]  [ 我的 ]
+   ↓        ↓        ↓        ↓
+P-001    P-004    P-006   P-008
+```
 
-- 底部 5 Tab(固定顺序):`首页 / 学习 / 复习 / 考试 / 我的` → 分别 `P-app-course-001/002/004/006/008`;
-- 主题切换:顶部当前主题徽章 → 点开主题选择 Sheet(只展示已订阅主题);
-- 节学习内置面包屑:`主题 › 阶段 › 章 › 节 › KP n/12`;
-- 考试中心进考:全屏沉浸,顶部 only 倒计时 + 题号,无返回键(中途退出 = 零分);
-- 错题本入口:P-app-course-005 由 P-app-course-008(我的)或 P-app-course-004(复习)二级跳转。
+- 一级 4 tab + 二级页面;层级最多 3 级(tab → 列表 → 详情)。
+- 路由前缀 `/learn`;`/me/*` 独立路径但 tab 视觉归"我的"。
 
-## 管理端
+## 面包屑
 
-- 顶部水平 Tabs(主菜单)与 P-A-1..9 一一映射;
-- 二级导航在 P-admin-course-002 内置主题选择器(行级 `tracks_scope` 过滤);
-- 全部页面共享面包屑组件:`课程 › <主题> › <阶段> › <章> › <节>`;
-- 编辑 Drawer 内 Tab:基础 / 内容 / 翻译 / 媒资 / 题目(KP)/ 选项 / 解析(Question);
-- 全局搜索 `Ctrl/Cmd + K` 触发 → 飞入 P-admin-course-009。
+- 答题页(P-003)左上返回 = 弹窗"放弃当前题",已答案不丢。
+- 考试中(P-007)禁用浏览器返回(beforeunload 拦截)。
 
-## 与权限联动
+## 模态层
 
-| 角色 | 可见页面 |
-|------|---------|
-| `super` | 全部 9 个 P-admin |
-| `content_admin` | 全部 9 个,但只能编辑 `tracks_scope` 内主题 |
-| `readonly` | 可见全部,所有写入按钮置灰 |
+| 触发 | 类型 | 关闭策略 |
+|------|------|---------|
+| 选择轨道(首启) | drawer | 必须选择,无关闭 |
+| 答题反馈 D-14 | bottom-sheet | 上滑或点 × |
+| 订阅/付费 | modal | 仅可后退一次,二次后退强制提示 |
+
+## 深链 / 路由表
+
+| Path | P-ID |
+|------|------|
+| `/learn` | P-001 |
+| `/learn/lessons/:id` | P-002 |
+| `/learn/lessons/:id/quiz` | P-003 |
+| `/learn/srs` | P-004 |
+| `/learn/wrong` | P-005 |
+| `/learn/exams` | P-006 |
+| `/learn/exams/:id/attempt/:aid` | P-007 |
+| `/learn/exams/:aid/report` | P-008(报告 view) |
+| `/me/stats` | P-008(统计 view) |
