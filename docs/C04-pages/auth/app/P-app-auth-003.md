@@ -36,7 +36,7 @@ GlassCard
 
 ## 5. 交互
 
-- 重发：`POST /v1/auth/register-throttle { email }` → `POST /v1/auth/resend-verify { email }`（内部调 supabase.auth.admin `inviteUserByEmail` 或 `resend` API）；
+- 重发：点击 “重新发送” → 进入节流检查 → 重发验证邮件（实现接口 `resend-verify` 与节流 `register-throttle` 在 D02-api/auth 定义；邮件内容与事件见 D 阶段）。
 - 控制台 dev 下额外打印验证链接（mock 邮件）。
 
 ## 6. 邮件 mock（dev）

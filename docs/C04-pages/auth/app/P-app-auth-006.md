@@ -8,9 +8,9 @@
 
 ## 1. 入参 / 前置
 
-- URL 必含 `?code=...&type=recovery`（来自 Supabase 邮件链接）；
-- 进入页 first effect 即 `exchangeCodeForSession(code)`；
-- 成功后处于"recovery-only"会话（**禁止**用此 session 调其他业务接口；本页处理完即真正登入）。
+- URL 必含 `?code=...&type=recovery`（来自邮件重置链接）；
+- 进入页 first effect 调用 recovery 交换接口（在 D02-api/auth 定义）；
+- 成功后处于“recovery-only”会话（**禁止**用此会话调其他业务接口；本页处理完即真正登入）。
 
 ## 2. DOM（idle 子态）
 
@@ -36,20 +36,22 @@ GlassCard
 
 ## 4. 字段
 
-| key | zod | |
-|-----|-----|--|
-| new_password | `min(8).regex(/[A-Za-z]/).regex(/\d/)` | 强度条同 P-002 |
-| confirm_password | `eq(new_password)` | 不一致内联红字 |
+| key | 约束（展示用） | |
+|-----|----------------|--|
+| new_password | ≥ 8，含字母与数字 | 强度条同 P-002 |
+| confirm_password | 与 new_password 一致 | 不一致内联红字 |
+
+> 完整校验 schema（含服务端二次校验）在 D01-data 定义。
 
 ## 5. 流程
 
 ```
-1. exchangeCodeForSession(code)
+1. 调用 recovery 交换接口（在 D02-api/auth 定义）
    - 失败 → token-invalid
-2. zod 校验通过 → submit → supabase.auth.updateUser({ password })
+2. 字段校验通过 → submit → 调用重置密码接口
 3. 成功：
-   - 本会话变正式登入会话（access + refresh 已经在 cookie 里）
-   - 后台触发 POST /v1/auth/logout-others（admin.signOut user_id scope='others' + delete user_sessions where user_id=? and id<>current）
+   - 本会话变正式登入会话
+   - 后台触发「退出其他设备」逻辑（具体接口与会话表操作在 D02 定义）
    - 切 `success` 态 + 2s 后跳 /me
 4. 失败：
    - same_password → confirm 字段下「新密码不能与旧密码相同」

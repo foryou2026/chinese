@@ -25,7 +25,7 @@
 
 ## 3. 数据
 
-`GET /v1/me` → 返回 `{ id, email, display_name, avatar_url, locale, role, created_at }`；用于：
+进页加载当前用户资料（字段 `id / email / display_name / avatar_url / locale / role / created_at`；具体接口在 D02-api/auth/app/me 定义），用于：
 
 - 顶部头像与显示名；
 - 邮箱脱敏：前 3 字符 + `***@<domain>`（按 [B02-05 §4-7](../../../C02-permissions/02-authz-mechanism.md)）；

@@ -26,11 +26,13 @@ GlassCard
 
 ## 3. 字段
 
-| key | zod |
-|-----|-----|
-| display_name | `min(1).max(32)` |
-| avatar_url | `union(url(), literal(''))`（允许清空）|
-| locale | `enum(['zh','en','vi','th','id'])` |
+| key | 约束（展示用） |
+|-----|----------------|
+| display_name | 长度 1–32 |
+| avatar_url | 有效 URL 或空（允许清空） |
+| locale | 枚举：zh / en / vi / th / id |
+
+> 完整校验 schema（含服务端二次校验）在 D01-data 定义。
 
 ## 4. 4 态
 
@@ -45,9 +47,9 @@ GlassCard
 ## 5. 流程
 
 ```
-1. mount → GET /v1/me 写入表单
+1. mount → 加载资料接口 → 写入表单（接口在 D02-api/auth/app/me 定义）
 2. 点「编辑」 → 进 editing
-3. 点「保存」 → PATCH /v1/me { display_name, avatar_url, locale }
+3. 点「保存」 → 提交资料更新接口 (display_name / avatar_url / locale)
    - 200 → Toast「已保存」+ 回 view 态；写入 authStore；顶栏头像 / 显示名热更新；
            若 locale 变更 → 立刻切 i18n + reload 当前路由（保持页面）
    - 400 validation → 字段下内联

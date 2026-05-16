@@ -150,10 +150,49 @@
 
 下列项不属于"机械错引用"，而是**架构内容质量问题**，需 PM/owner 决定后续动作：
 
-1. **C04 页面交互文件含 Zod schema / Supabase 调用代码**：根据 [`prompt/A-framework/A00-04 §三 6`](../../prompt/A-framework/A00-04-文档目录规划.md)，C04 仅描述「交互/布局/4 态」，字段验证应在 D01/D02。当前 37 个 C04 文件混入 D 层内容，属于"层越界"。建议在进入 D 阶段时把这些代码迁出。**本轮未自动剥离**（信息损失风险高）。
-2. **M-ID 命名两种风格并存**：`course` 用 `M-course-content` 等语义化；`auth` / `discover-china` 用 `M-auth-001` / `M-discover-001` 等数字。建议统一为语义化，但属于改动量极大的非阻断项。
-3. **C06-prd `_input/` 文件命名**：`auth` 用 `app-prd-context.md` / `admin-prd-context.md`（双 surface 双文件），其他 feature 用 `prd-context.md`。可在 [`prompt/A-framework/A00-04`](../../prompt/A-framework/A00-04-文档目录规划.md) 显式增补「多 surface 时按 surface 拆 _input」的约定，或反过来强制单文件 + 章节拆分。
-4. **`B03-design/design-system/99-extension-icons-imagery.md`** 与正文 `05-components/12-decorations.md` 都涉及视觉装饰元素，命名重叠风险；建议合并入 `05-components/12-decorations.md` 一节，但当前已有内部交叉引用，先保留并在两文件互链。
+1. **C04 页面交互文件含 Zod schema / Supabase 调用代码**：根据 [`prompt/A-framework/A00-04 §三 6`](../../prompt/A-framework/A00-04-文档目录规划.md)，C04 仅描述「交互/布局/4 态」，字段验证应在 D01/D02。**已在本轮 §2.8 完成剥离**（详见下方）。
+2. **C01 / C03 / C06 残留 D 层指代**：
+   - `C01-requirements/auth/baseline.md` "关联接口/适配器" 列与 NFR 中提到 `signInWithPassword` / Supabase 等具体 SDK；
+   - `C01-requirements/auth/flows/*.md` 4 份 mermaid 含 `supabase.auth.*` 节点；
+   - `C03-ia/auth/{_shared,app,admin}/03-state-machines.md` / `flows-shared.md` 在状态转移注释中引用 SDK 方法名；
+   - `C06-prd/auth/**` 术语表 / overview / personas 多处提及 Supabase；
+   - `C01-requirements/auth/{app,admin}/notes.md` 提到表名 `user_sessions`。
+   按 `prompt/C-product/C01-R03 / C03-I03 / C06-E03` 严格规则，这些都属于"读了 B01/D 层"。本轮未机械剥离，原因：mermaid 节点替换易破坏图形语义、需逐图人工改写；改动面大（27 文件、上百节点）。建议在 PRD 冻结评审时与 PM 一同决策一次性重写或保留为"传承注释"。
+3. **M-ID 命名两种风格并存**：`course` 用 `M-course-content` 等语义化；`auth` / `discover-china` 用 `M-auth-001` / `M-discover-001` 等数字。建议统一为语义化，但属于改动量极大的非阻断项。
+4. **C06-prd `_input/` 文件命名**：`auth` 用 `app-prd-context.md` / `admin-prd-context.md`（双 surface 双文件），其他 feature 用 `prd-context.md`。可在 [`prompt/A-framework/A00-04`](../../prompt/A-framework/A00-04-文档目录规划.md) 显式增补「多 surface 时按 surface 拆 _input」的约定，或反过来强制单文件 + 章节拆分。
+5. **`B03-design/design-system/99-extension-icons-imagery.md`** 与正文 `05-components/12-decorations.md` 都涉及视觉装饰元素，命名重叠风险；建议合并入 `05-components/12-decorations.md` 一节，但当前已有内部交叉引用，先保留并在两文件互链。
+
+---
+
+## 2.8 C04 页面交互层 D 层内容剥离（本轮新增追加）
+
+**问题**：C04（页面交互规范）应只描述布局 / DOM / 4-状态 / 交互行为；字段精确校验属于 D01-data，接口签名属于 D02-api。但 `docs/C04-pages/auth/` 下 12 份页面文件早期产出时混入了：
+- 字段表 `zod` 列与 `z.string().email()` / `z.string().min(8).regex(...)` 等 Zod 表达式；
+- 流程描述里的 `supabase.auth.signInWithPassword(...)` / `signInWithOAuth(...)` / `signUp(...)` / `exchangeCodeForSession(...)` / `resetPasswordForEmail(...)` / `updateUser(...)` / `admin.signOut(...)` 等 SDK 调用；
+- `cookieStorage.set/clear` / `delete from user_sessions ...` 等存储与 SQL 操作；
+- `POST /v1/auth/...` / `GET /admin/v1/auth/...` 等具体路由路径。
+
+**处置**（本轮手工逐文件改写，14 个 C04 文件）：
+- 字段表 `zod` 列 → 替换为「约束（展示用）」自然语言描述，并补一句「完整校验 schema 在 D01-data 定义」；
+- SDK 调用 → 替换为业务动词 + 「具体接口在 D02-api/<feature>/<surface>/<route> 定义」；
+- API 路径 → 替换为抽象动词（"加载用户资料接口" / "更新密码接口" 等）；
+- 存储 / SQL 操作 → 替换为业务动词或注「具体实现见 D 阶段」；
+- 强度条注释中的「（zod 才是阻塞校验）」→「（强度条仅展示用，阻塞性校验为 D01-data 定义的 schema）」。
+
+**验证脚本**：
+```
+grep -nE "supabase|\bzod\b|\bz\.[a-z]|createClient|drizzle|cookieStorage|admin\.signOut|signInWith|exchangeCodeFor|updateUser\(|resetPasswordForEmail|user_sessions|app_metadata|auth\.users|\bSELECT \b|\bINSERT INTO\b|\bDELETE FROM\b|GET /v[0-9]|POST /v[0-9]|PATCH /v[0-9]|DELETE /v[0-9]|/admin/v[0-9]" docs/C04-pages -r --include="*.md"
+```
+本次剥离后 → **0 命中**。
+
+**影响文件**（14 个）：
+- `docs/C04-pages/auth/app/P-app-auth-001.md` / `.scenarios.md`
+- `docs/C04-pages/auth/app/P-app-auth-002.md` ~ `P-app-auth-009.md`（其中 002–006、008、009 含字段表或 SDK 调用；007 仅含一处接口路径）
+- `docs/C04-pages/auth/admin/P-admin-auth-001.md` ~ `P-admin-auth-004.md`
+
+`course` / `discover-china` feature 的 C04 文件**不含**任何 D 层内容，无需修改。
+
+
 
 ---
 

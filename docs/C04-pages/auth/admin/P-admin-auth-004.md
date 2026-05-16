@@ -22,17 +22,14 @@
 ## 3. 数据流
 
 ```
-进入 → GET /admin/v1/auth/me (邮箱脱敏 + sessionsCount + lastSignInAt)
+进入 → 获取管理员账号信息（邮箱脱敏、会话计数、上次登录时间；接口在 D02-api/auth/admin/me 定义）
 
-改密 → POST /admin/v1/auth/password { old, new, repeat }
-       → 校验旧密 → updateUser → revoke 其他 admin refresh
-       → 当前 session 保留 + Toast
+改密 → 提交修改密码请求（验旧密 + 更新密码 + 吊销其他 admin 会话，接口在 D02-api/auth/admin/password 定义）
+     → 当前会话保留 + Toast
 
-本设备退出 → POST /admin/v1/auth/session-revoke → cookie/clear → 跳 /admin/auth/login
+本设备退出 → 当前会话退出接口 → 跳 /admin/auth/login
 
-全部设备退出 → POST /admin/v1/auth/logout-global
-            → supabase.auth.admin.signOut(uid, { scope:'global' })
-            → cookie/clear → 跳 /admin/auth/login
+全部设备退出 → 全局退出接口（服务端吊销该用户所有 admin 会话）→ 跳 /admin/auth/login
 ```
 
 ## 4. 错误码

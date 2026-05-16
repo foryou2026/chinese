@@ -32,11 +32,9 @@
 
 ```
 点登录
-  → POST /admin/v1/auth/login-attempt-record { email }
-  → supabase.auth.signInWithPassword({ email, password })
-  → 校验 user.app_metadata.role==='super_admin' 否则 signOut
-  → POST /admin/v1/auth/session-register { fingerprint, surface:'admin' }
-  → navigate(query.redirect || '/admin')
+  → 发起 admin 登录调用（含节流检查、凭证校验、角色校验==='super_admin'、会话登记；实现接口在 D02-api/auth/admin/login 定义）
+  → 角色校验失败 → 立即登出 + 停在本页 not-admin 态
+  → 成功 → navigate(query.redirect || '/admin')
 ```
 
 ## 5. 错误码映射

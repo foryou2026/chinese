@@ -27,23 +27,20 @@ GlassCard
 
 ### 2.2 字段
 
-| key | zod |
-|-----|-----|
-| old_password | `min(8)` |
-| new_password | `min(8).regex(/[A-Za-z]/).regex(/\d/)`，且 `!= old_password` |
-| confirm_password | `eq(new_password)` |
+| key | 约束（展示用） |
+|-----|----------------|
+| old_password | ≥ 8 |
+| new_password | ≥ 8，含字母与数字，且与旧密码不同 |
+| confirm_password | 与 new_password 一致 |
+
+> 完整校验 schema（含服务端二次校验）在 D01-data 定义。
 
 ### 2.3 流程
 
 ```
-1. submit → POST /v1/me/password { old, new }
-2. 后端：
-   - signInWithPassword(email, old) 验证旧密
-   - admin.updateUserById(id, { password:new })
-   - admin.signOut(user_id, { scope:'others' })
-   - delete from user_sessions where user_id=? and id<>current_session_id
-3. 成功 → Toast「密码已修改」+ form reset
-4. 失败：
+1. submit → 提交修改密码请求（接口与后端逻辑在 D02-api/auth 定义：验证旧密、更新密码、并退出其他设备会话）
+2. 成功 → Toast「密码已修改」+ form reset
+3. 失败：
    - 401 invalid_old_password → old 字段下「旧密码不正确」
    - 400 weak_password → new 字段下「强度不足」
    - 400 same_as_old → new 字段下「不能与旧密码相同」
@@ -65,14 +62,13 @@ GlassCard
 ### 3.2 流程
 
 - 本设备退出：
-  1. `supabase.auth.signOut({ scope:'local' })`
-  2. cookieStorage 内自动 `POST /v1/auth/cookie/clear`
-  3. `POST /v1/auth/session-revoke { sessionId }` 删 user_sessions 行
-  4. 跳 `/auth/login?reason=signout`
+  1. 点击 → 调用当前会话退出接口（在 D02-api/auth 定义）
+  2. 清理本地会话上下文与 cookie
+  3. 跳 `/auth/login?reason=signout`
 - 全部设备退出：
   1. **二次确认弹窗** `<Confirm>` 标题「全部设备退出？」+ danger 按钮「确认退出全部」；
-  2. `POST /v1/auth/logout-global` → 后端 `admin.signOut(user_id, { scope:'global' })` + `delete from user_sessions where user_id=?`；
-  3. cookieStorage clear；
+  2. 调用全局退出接口（在 D02-api/auth 定义，服务端会退出该用户所有会话）；
+  3. 本地会话 clear；
   4. 跳 `/auth/login?reason=signout`。
 
 ## 4. 场景

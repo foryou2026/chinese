@@ -13,6 +13,7 @@
 - 详见 [`consistency-audit-2026-05-16-round2.md`](./consistency-audit-2026-05-16-round2.md)。
 - 阶段编码、设计系统文件名、C02 权限文件名、跨目录路径深度、Auth surface 拆分、C03 索引指向 全部对齐当前框架。
 - 残留 78 条断链全部归类为「可接受预期遗留」（D 层未建 / 历史快照 / scenarios.md 待补 / system 实现路径待建）。
+- **追加（同日）**：剥离 C04 auth 页面交互 14 份文件中混入的 D 层内容（Zod schema、Supabase SDK 调用、`/v1/...` 路由、`user_sessions` SQL），全部替换为业务动词 + "见 D01-data / D02-api"指针。验证脚本对 `docs/C04-pages` 命中归零。详见 audit 报告 §2.8。
 - **不触发 D03 V 重跑**（本次仅文档命名与引用对齐，不改业务规则与 PRD 内容）。
 
 ---

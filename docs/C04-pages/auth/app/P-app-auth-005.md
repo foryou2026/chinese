@@ -32,12 +32,11 @@ GlassCard
 ## 3. 流程
 
 ```
-1. submit
-2. POST /v1/auth/forgot-password-throttle { email }
-   - 429 → 显字段下「请稍后再试，{{retryAfter}}s」
-3. supabase.auth.resetPasswordForEmail(email, { redirectTo: '<origin>/auth/reset-password' })
-4. 不论返回真实是否存在，统一切 `sent` 态
-5. cooldown 按 60s（与后端节流一致）
+1. submit → 进入 submitting
+2. 发起忘密接口（含节流检查，接口与邮件发送逻辑在 D02-api/auth 定义）
+   - 429 → 字段下「请稍后再试，{{retryAfter}}s」
+3. 不论该邮箱是否存在，服务端统一返回成功 → UI 切 `sent` 态
+4. cooldown 60s（与后端节流一致）
 ```
 
 ## 4. 场景

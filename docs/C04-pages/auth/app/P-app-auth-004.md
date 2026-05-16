@@ -30,12 +30,12 @@
 ```
 1. mount → 提取 query (code / access_token / type / error)
 2. 若 query.error → failed + 显示 error_description
-3. supabase.auth.exchangeCodeForSession(code)
-   - 成功 → cookieStorage.set 自动写 cookie → 调 POST /v1/auth/session-register
+3. 调用 callback 交换接口（具体接口与会话登记在 D02-api/auth 定义）
+   - 成功 → 会话建立完成（cookie 与 session-register 由服务端处理）
    - 失败 (otp_expired / token_used) → token-invalid
    - 其他失败 → failed
 4. 成功后角色判定：
-   - role === 'super_admin' → signOut + 跳 /auth/login?reason=use_admin_entry
+   - role === 'super_admin' → 立即登出 + 跳 /auth/login?reason=use_admin_entry
    - role === 'user' → 跳 redirect 参数 ?? (first sign-in ? '/onboarding' : '/')
 ```
 

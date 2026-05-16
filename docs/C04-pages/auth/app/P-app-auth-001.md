@@ -34,10 +34,12 @@ GlassCard
 
 ## 3. 字段
 
-| key | 类型 | zod | 错误提示 i18n |
-|-----|------|-----|--------------|
-| email | string | `z.string().email()` | `auth.login.field.email.invalid` |
-| password | string | `z.string().min(8)` | `auth.login.field.password.tooShort` |
+| key | 类型 | 约束（展示用） | 错误提示 i18n |
+|-----|------|----------------|--------------|
+| email | string | 邮箱格式 | `auth.login.field.email.invalid` |
+| password | string | 长度 ≥ 8 | `auth.login.field.password.tooShort` |
+
+> 字段语义仅用于客户端表单交互提示；完整校验 schema（含服务端二次校验）在 **D01-data 开始定义**。
 
 ## 4. 4 + 1 态
 
@@ -53,10 +55,10 @@ GlassCard
 
 ## 5. 关键交互
 
-- **提交**：`useAsyncAction(submitLogin)`，全程：`login-attempt-record` → `signInWithPassword` → `cookie/set` (cookieStorage 内自动) → `session-register` → router.navigate(redirect ?? '/')。
-- **Google**：`supabase.auth.signInWithOAuth({ provider:'google', options:{ redirectTo: '/auth/callback' }})`；不预校验。
+- **提交**：点击“登录” → 进入 `submitting` 态 → 发起邀请 `auth` 服务的登录调用（节流检查 + 凭证校验 + 会话登记，具体接口在 D02-api/auth/app/login 定义）→ 成功后跳 `redirect ?? '/'`。
+- **Google**：点击 “Google 继续” → 发起 OAuth 跳转（跳回 `/auth/callback`，详见 P-app-auth-004）；本页不做预校验。
 - **redirect**：query 中带 `redirect=<encoded url>`；登录成功优先跳此；缺省跳 `/`。
-- **守卫**：已登录访问本页时 `router._auth root loader` 自动 navigate 走。
+- **守卫**：已登录访问本页时，路由 root loader 自动 navigate 走（实现细节与auth 路由守卫一同在 D02 定义）。
 
 ## 6. 错误码映射
 

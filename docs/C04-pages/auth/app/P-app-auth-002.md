@@ -28,10 +28,12 @@ GlassCard
 
 ## 3. 字段
 
-| key | zod | 错误 |
-|-----|-----|------|
-| email | `z.string().email()` | `auth.register.field.email.invalid` |
-| password | `z.string().min(8).regex(/[A-Za-z]/).regex(/\d/)` | `auth.register.field.password.weak` |
+| key | 约束（展示用） | 错误 |
+|-----|----------------|------|
+| email | 邮箱格式 | `auth.register.field.email.invalid` |
+| password | ≥ 8 位，含字母与数字 | `auth.register.field.password.weak` |
+
+> 完整校验 schema 交由 D01-data 定义。
 
 ## 4. 态
 
@@ -43,11 +45,12 @@ GlassCard
 
 ## 5. 交互
 
-`useAsyncAction(submitRegister)`：
-1. `POST /v1/auth/register-throttle { email }` 命中 → 429 → Toast `AUTH_REGISTER_RATE_LIMITED`；
-2. `supabase.auth.signUp({ email, password, options:{ data:{ locale: i18n.current }}})`；
-3. 成功 → 跳 `P-003` `/auth/verify-email-sent?email=<email>`；
-4. 失败映射：`email_exists` → 邮箱字段下内联「该邮箱已注册」+ 同行右侧「去登录 / 找回密码」两个 link button；`weak_password` → 密码字段下「密码强度不足」。
+点击「注册」 → 进入 `submitting` 态 → 发起 auth 服务注册调用（含节流检查，具体接口在 D02-api/auth/app/register 定义）：
+
+- 429 节流命中 → Toast `AUTH_REGISTER_RATE_LIMITED`。
+- 成功 → 跳 `P-003` `/auth/verify-email-sent?email=<email>`。
+- `email_exists` → 邮箱字段下内联「该邮箱已注册」+ 同行右侧「去登录 / 找回密码」两个 link button。
+- `weak_password` → 密码字段下「密码强度不足」。
 
 ## 6. Google
 
@@ -58,7 +61,7 @@ GlassCard
 - 弱：长度 < 8 或仅字母 或仅数字 — 灰色 1/3 条 + 文字「弱」
 - 中：≥ 8 + 字母 + 数字 + 长度 ≥ 8 < 12 — 红色 2/3 条 + 文字「可用」
 - 强：≥ 12 + 字母 + 数字 + 含特殊字符 — 红色满条 + 文字「强」
-- 仅显示用，不阻塞提交（zod 才是阻塞校验）。
+- 仅显示用，不阻塞提交（阻塞性校验为 D01-data 定义的 schema）。
 
 ## 8. 场景
 

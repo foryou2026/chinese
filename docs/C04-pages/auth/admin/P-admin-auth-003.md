@@ -6,7 +6,7 @@
 
 ## 1. 入口
 
-- 仅由邮件链接进入;首次进入页面立即调 `supabase.auth.exchangeCodeForSession(code)`
+- 仅由邮件链接进入；首次进入页面立即调用 recovery 交换接口（在 D02-api/auth 定义）
 - 若 token 无效/过期 → 切换为 token-invalid 态
 
 ## 2. 布局
@@ -26,13 +26,12 @@
 ## 4. 数据流
 
 ```
-进入页 → exchangeCodeForSession(code)
+进入页 → recovery 交换接口
   ok → idle
   失败 → token-invalid
 
-提交 → 客户端 zod (≥8+字母+数字+两次相同)
-     → supabase.auth.updateUser({ password })
-     → revoke 其他 admin refresh
+提交 → 客户端展示性校验 (≥8+字母+数字+两次相同；完整 schema 在 D01-data 定义)
+     → 调用重置密码接口（并吊销其他 admin 会话，接口在 D02-api/auth 定义）
      → 跳 /admin/auth/login?email=<masked>
 ```
 

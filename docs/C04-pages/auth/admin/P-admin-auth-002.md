@@ -20,8 +20,7 @@
 ## 3. 数据流
 
 ```
-POST /admin/v1/auth/forgot-password-throttle { email }
-  → 通过 → supabase.auth.resetPasswordForEmail(email, { redirectTo: '/admin/auth/reset-password' })
+发起 admin 忘密接口（含节流检查与重置链接邮件发送，接口在 D02-api/auth/admin/forgot 定义，重置链接跳回 `/admin/auth/reset-password`）
   → UI = sent
 ```
 
