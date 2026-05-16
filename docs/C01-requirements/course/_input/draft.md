@@ -1,0 +1,27 @@
+<!-- TARGET-PATH: docs/C01-requirements/course/_input/draft.md -->
+
+# C01 · 需求输入 · course
+
+> 信息源(均为线上已冻结产物,反向回写):
+>
+> - [`function/02-course/prd/00-总览与设计原则.md`](../../../../function/02-course/prd/00-总览与设计原则.md)
+> - [`function/02-course/prd/01-课程目录骨架.md`](../../../../function/02-course/prd/01-课程目录骨架.md)
+> - [`function/02-course/prd/02-知识点与题型内容模板.md`](../../../../function/02-course/prd/02-知识点与题型内容模板.md)
+> - [`function/02-course/prd/03-数据库schema.md`](../../../../function/02-course/prd/03-数据库schema.md)
+> - [`function/02-course/prd/04-管理端模块设计.md`](../../../../function/02-course/prd/04-管理端模块设计.md)
+> - [`function/02-course/prd/05-用户端模块设计.md`](../../../../function/02-course/prd/05-用户端模块设计.md)
+> - [`function/02-course/prd/06-关键业务流程.md`](../../../../function/02-course/prd/06-关键业务流程.md)
+> - [`function/02-course/prd/07-待确认问题清单.md`](../../../../function/02-course/prd/07-待确认问题清单.md)(已封板决策)
+> - [`function/02-course/ai/F3-AI-页面交互规范/`](../../../../function/02-course/ai/F3-AI-页面交互规范/) 14 个子文件
+> - [`function/02-course/ai/F4-AI-原型设计/`](../../../../function/02-course/ai/F4-AI-原型设计/) 17 个 HTML 页面
+
+## 业务边界要点(给 C01 baseline 反推)
+
+1. 课程目录骨架:5 主题(`share / ec / fc / hsk / dl`)× 25 阶段(含共享 Stage 0)× 148 章 × 888 节 × ~12 000 KP × ~5 万题;
+2. 7 类 KP × 12 种题型;**纯静默学习**(无麦/无手写);
+3. 内容生产 = **线下批量生成 → 导入 → 人工点检 → 发布**;系统内不设生成工作台(2025-11 变更);
+4. 应用端 5 语 UI(`zh/en/vi/th/id`),管理端 UI 保持中文(内容编辑字段支持 5 语录入);
+5. SRS Leitner 5 盒;考试 = 节末小测(6 题)/ 章测 / 阶段考 / HSK 模考;
+6. 内容仅按 `is_published` 二态可见;发布 / 下架按层级级联(章→节→KP+题;节→KP+题);
+7. 学员举报独立处理流(P-A-6),采纳 / 忽略不自动改变内容发布;
+8. 试抽只做预览,不创建 attempt;阶段考通过后默认不可重考。

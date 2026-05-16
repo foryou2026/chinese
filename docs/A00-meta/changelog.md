@@ -7,6 +7,40 @@
 
 ---
 
+## 2026-05-16 · 批次 7 · `course` C-phase 完整冻结
+
+> 反向回写"课程学习引擎"全部 C-phase(C01..C05)。信息源:[`function/02-course/prd/`](../../function/02-course/prd/)(8 文件,含 07 已封板决策段) + [`function/02-course/ai/F3-AI-页面交互规范/`](../../function/02-course/ai/F3-AI-页面交互规范/)(14 文件) + [`function/02-course/ai/F4-AI-原型设计/`](../../function/02-course/ai/F4-AI-原型设计/)(17 HTML)。Feature 命名 = `course`(与 F3 §"功能名称"课程学习引擎 一致,目录简短化)。
+
+### C01 需求基线(5 文件)
+- [`docs/C01-requirements/course/`](../C01-requirements/course/):baseline.md(30 个 R-ID:R-course-001..030,分 应用学习 / 管理 9 页 / 跨域副作用 三段)+ flows/main-flow.md(6 主流程 FL-course-01..06)+ flows/exception-flow.md(7 异常 FX-course-01..07)+ _input + 99-open-questions(已清空)
+- §4 不变量:5 主题码 `share/ec/fc/hsk/dl` 白名单 / Stage 0 共享一次性 / 节固定 12 KP + 节末 6 题 / 节 code `<track>-<stage>-<chapter>-<lesson>` / KP code `kp_{track}_{type_initial}_{seq5}` / Question code `q_{track}_{seq8}` / SRS Leitner 5 盒 1·3·7·14·30 / 满分 100 动态均分 / `is_published` 二态 / 章发布级联 节+KP+题 节发布级联 KP+题 下架不级联
+
+### C02 IA(10 文件)
+- [`docs/C02-ia/course/`](../C02-ia/course/):00-index.md / 01-feature-catalog.md(10 个 M-ID)/ 02-flows.md(13 Flow-ID,主 6 + 异 7)/ 03-state-machines.md(7 SM:lesson-progress/content-publish/answer/srs/exam-attempt/form-dirty/offline-queue)/ 04-pages.md(17 P-ID,8 app + 9 admin,与 F3 P-C-*/P-A-* 一一映射)/ 05-navigation.md(应用端 5 Tab + 管理端 9 Tab + 行级 tracks_scope 联动)/ 06-coverage-matrix.md(R×M / R×Page / Flow×Page / SM×Page 四矩阵 + ID 缩写说明)/ 07-error-pages.md(7 通用错误态 + D-1..D-18 弹窗对照表)/ 99-open-questions / _input
+
+### C03 页面规格(19 文件)
+- [`docs/C03-pages/course/`](../C03-pages/course/):每 P-ID 一文件
+  - 应用端 8:P-app-course-001(首页主题切换)/ 002(学习地图+节内)/ 003(KP 卡片)/ 004(SRS 复习)/ 005(错题本)/ 006(考试中心入口)/ 007(考试答题倒计时)/ 008(我的)
+  - 管理端 9:P-admin-course-001(目录总览)/ 002(主题-阶段-章-节四级)/ 003(节编辑)/ 004(KP 列表+Drawer)/ 005(题目列表+双开预览)/ 006(学员举报处理)/ 007(媒资库)/ 008(考试中心管理)/ 009(全局搜索)
+  - 每文件:进入条件 / 初始数据 / 主要交互 / 弹窗 / 状态 / 响应式 / 不变量回链
+  - 99-open-questions / _input
+
+### C04 原型契约(2 文件)
+- [`docs/C04-prototype/course/README.md`](../C04-prototype/course/README.md):17 HTML 原型 → 17 P-ID 映射 + 12 组件清单(`<KpCard>` 7 变体 / `<QuestionRenderer>` 12 种 / `<CountdownTimer>` / `<ProgressMap>` 等)+ 6 状态契约 + Design Token 契约(`--track-color-*` / `--lesson-*` / `--answer-*`)+ 多语对齐(`course.*` key 前缀)
+- 原则:不复制 HTML 资产,实现端按本契约 + F3 + B04 token 三方对齐还原;原型与契约冲突时以 F3 + 契约为准
+
+### C05 PRD(3 文件)
+- [`docs/C05-prd/course/PRD.md`](../C05-prd/course/PRD.md):§7 业务规则 **40 条 BR-ID**,分 7 段:BR-STRUCTURE(S01..S07 骨架 / 命名)/ BR-CONTENT(C01..C10 生命周期 / 5 语完整性 / 版本治理 / LWW)/ BR-LEARNING(L01..L07 节内 / 答题副作用 / 离线队列 / 多端同步)/ BR-SRS(R01..R04 Leitner 间隔 / 题型轮换)/ BR-EXAM(E01..E08 4 类考试 / 动态均分 / 阶段考解锁 / 不可重考 / 试抽不写 attempt)/ BR-REPORT(RP01..RP04 举报聚合 / 历史不追溯)/ BR-AUTH-PERM(P01..P06 多语 / 订阅控制 / 行级 tracks_scope)/ BR-SYS(Y01..Y04 系统副作用)
+- §9 性能基线:节聚合 ≤200KB P95 ≤300ms / 答题 P95 ≤150ms / 交卷 50 题 P95 ≤800ms / `/app/answer` 限流 60 次/分;§12 决策封板段引用 prd/07 全部 A/B/C/H 段
+- 99-open-questions / _input
+
+### 全局影响
+- 触发下游:`course` 的 D-phase(批次 8)将基于本 C-phase 产出 D01(18 张表 schema)+ D02(~80 OP-ID + ~40 错误码 `COURSE_*`)+ D03(三段 PASS 验证);实现 schema = `zhiyu_course`
+- 与 `discover-china` 共享:5 语 locale `zh/en/vi/th/id` 全局对齐、媒资库技术栈、Admin 角色与 LWW 模式、软删 30 天 + cron 清理策略
+- 不变量与 B02 / discover-china 一致:`AUTH_USE_USER_ENTRY` 仍 deferred(B02 99-open-questions Q-2026-05-16-01),`auth.users` 直引模式继续生效
+
+---
+
 ## 2026-05-16 · 批次 6 · `discover-china` D-phase 完整冻结
 
 > 反向回写"发现中国"全部 D-phase(D01..D03)。信息源:[`function/01-china/ai/F1-AI-数据模型规范/`](../../function/01-china/ai/F1-AI-数据模型规范/)(10 文件) + [`function/01-china/ai/F2-AI-接口规范/`](../../function/01-china/ai/F2-AI-接口规范/)(11 文件) + [`function/01-china/prd/F2-用户-操作与业务逻辑.md`](../../function/01-china/prd/F2-用户-操作与业务逻辑.md)。
