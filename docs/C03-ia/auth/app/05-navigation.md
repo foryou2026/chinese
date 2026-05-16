@@ -35,7 +35,7 @@
 | 3 | 订单与会员 | `P-app-orders-001` | orders（暂不支持）|
 | 4 | 邀请好友 | `P-app-referral-001` | referral（暂不支持）|
 | 5 | 设置（语言/主题）| `P-app-settings-001` | settings（暂不支持）|
-| - 分割线 - |
+| — | — 分割线 — | — | — |
 | 6 | 退出登录 | 触发 SM-03 `signOut`，跳 `P-app-auth-001` | **auth** |
 
 > 本 feature **拥有**第 1 项与第 6 项；其它项在对应 feature 落地之前**显示为禁用**（hover 提示「即将推出」）。

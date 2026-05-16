@@ -1,5 +1,7 @@
 <!-- TARGET-PATH: docs/C06-prd/discover-china/_shared/glossary.md -->
 
+# discover-china feature · 共享术语表
+
 > **跨 surface 共享术语表(Round 2 从 PRD.md 第 2 章迁出)。** app/admin 双端均引用本文件。
 
 ## 2. 术语表

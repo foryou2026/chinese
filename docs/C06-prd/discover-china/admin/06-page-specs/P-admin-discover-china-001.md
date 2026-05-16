@@ -20,7 +20,7 @@
 | 维度 | 文档 |
 |------|------|
 | 交互规范(N) | [`C04-pages/discover-china/admin/P-admin-discover-china-001.md`](../../../../C04-pages/discover-china/admin/P-admin-discover-china-001.md) |
-| 场景脚本(N) | [`C04-pages/discover-china/admin/P-admin-discover-china-001.scenarios.md`](../../../../C04-pages/discover-china/admin/P-admin-discover-china-001.scenarios.md)(若存在) |
+| 场景脚本(N) | `C04-pages/discover-china/admin/P-admin-discover-china-001.scenarios.md`(若存在) |
 | HTML 原型(H) | [`C05-prototype/discover-china/admin/`](../../../../C05-prototype/discover-china/admin/) |
 | 关联 M-ID | [`C03-ia/discover-china/admin/01-feature-catalog.md`](../../../../C03-ia/discover-china/admin/01-feature-catalog.md) |
 | 关联 R-ID | [`07-business-rules.md`](../07-business-rules.md) |

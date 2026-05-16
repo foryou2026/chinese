@@ -25,7 +25,7 @@
 
 | 序号 | 文件 | 职责 |
 |------|------|------|
-| _input | [`_input/visual-input.md`](./_input/visual-input.md) | PM 模拟视觉输入回写 |
+| _input | [`_input/visual-input.md`](../_input/visual-input.md) | PM 模拟视觉输入回写 |
 | 00 | 00-index.md（本文件）| 索引 + 边界约定 |
 | 01 | [01-tokens.md](./01-tokens.md) | 颜色 / 字体 / 间距 / 圆角 / 阴影 / 毛玻璃 / 动效全部 token |
 | 02 | [02-layout.md](./02-layout.md) | 顶栏、远景层、内容区 .page、空状态、加载策略 |
@@ -35,7 +35,7 @@
 | 06 | [06-interactions.md](./06-interactions.md) | 防重复提交 / 搜索 / 列表刷新 / 表单离开保护 / 分页 / 键盘 / 复制下载 / 错误反馈 / 动效 |
 | 07 | [07-responsive-dark.md](./07-responsive-dark.md) | 6 断点 / 移动端细则 / 暗黑模式切换 / 毛玻璃降级 / 主题色自定义 |
 | 99-扩展 | [99-extension-icons-imagery.md](./99-extension-icons-imagery.md) | 图标 / 插画 / 图片 / 头像 / 字符占位（非规范扩展，C04 视情况引用）|
-| 99 | [99-open-questions.md](./99-open-questions.md) | 待 PM 拍板项（含图形 Logo 待定）|
+| 99 | [99-open-questions.md](../99-open-questions.md) | 待 PM 拍板项（含图形 Logo 待定）|
 
 ---
 
@@ -70,4 +70,4 @@
 ---
 
 ## 99. 待确认问题
-- 图形版 Logo 形态（v1 暂用文字 + 色块）。详见 [99-open-questions.md](./99-open-questions.md)。
+- 图形版 Logo 形态（v1 暂用文字 + 色块）。详见 [99-open-questions.md](../99-open-questions.md)。

@@ -144,7 +144,7 @@
 ## 5. Logo
 
 - **v1 形态**：文字 + 色块（`知语 · Zhiyu`，前缀 24×24 红色方块含"语"字简化图形）；
-- 图形版 Logo 待定（[99-open-questions.md](./99-open-questions.md) Q1）；
+- 图形版 Logo 待定（[99-open-questions.md](../99-open-questions.md) Q1）；
 - Logo 文件存放：`system/packages/ui-kit/src/brand/logo.tsx`（仅一个；亮 / 暗自动适配 `currentColor`）。
 
 ---

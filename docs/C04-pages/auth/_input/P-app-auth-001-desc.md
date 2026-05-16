@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C04-pages/auth/app/_input/P-auth-001-desc.md -->
+<!-- TARGET-PATH: docs/C04-pages/auth/_input/P-app-auth-001-desc.md -->
 
 # 登录页（P-auth-001）· N01 用户输入
 

@@ -71,7 +71,7 @@
 
 - 文字版：`知语 · Zhiyu`，`text-h2`，前缀色块 24×24（`--brand` `radius-sm`，内含白色"语"字简化图形）；
 - 点击 Logo 总返回各端首页（应用端 `/`，管理端 `/admin`）；
-- v1 暂用文字 + 色块，图形 Logo 待定（见 [99](./99-open-questions.md) Q1）。
+- v1 暂用文字 + 色块，图形 Logo 待定（见 [99](../99-open-questions.md) Q1）。
 
 ---
 
@@ -152,4 +152,4 @@ body::after { /* 1px 微噪 PNG 平铺, opacity: var(--glass-noise-opacity) */ }
 ---
 
 ## 99. 待确认问题
-（无 · 图形 Logo 在 [99-open-questions.md](./99-open-questions.md) Q1）
+（无 · 图形 Logo 在 [99-open-questions.md](../99-open-questions.md) Q1）

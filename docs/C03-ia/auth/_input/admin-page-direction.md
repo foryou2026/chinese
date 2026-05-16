@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C03-ia/auth/admin/_input/page-direction.md -->
+<!-- TARGET-PATH: docs/C03-ia/auth/_input/admin-page-direction.md -->
 
 # I01 · 页面方向 · `auth`
 

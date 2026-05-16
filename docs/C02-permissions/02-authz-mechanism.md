@@ -116,7 +116,7 @@ Zustand 实现，挂在 `packages/shared-utils/src/auth/useAuth.ts`，应用端 
 
 | 中间件 | 作用 | 失败响应 |
 |--------|------|---------|
-| `authRequired` | 从 `zhiyu-at` Cookie（优先）或 `Authorization: Bearer` Header 读 JWT；校签名 + exp + 用户档案`；写 `c.set('user', {...})` | 401 `AUTH_TOKEN_MISSING` / `AUTH_TOKEN_EXPIRED` / `AUTH_TOKEN_INVALID` / `AUTH_ACCOUNT_DISABLED` |
+| `authRequired` | 从 `zhiyu-at` Cookie（优先）或 `Authorization: Bearer` Header 读 JWT；校签名 + exp + 用户档案`；写 `c.set('user', {...})` | 401 `AUTH_TOKEN_MISSING` / `AUTH_TOKEN_EXPIRED` / `AUTH_TOKEN_INVALID` / ``AUTH_ACCOUNT_DISABLED` |
 | `adminRequired` | 在 `authRequired` 之后；要求 `user.role === 'admin'` | 403 `AUTH_FORBIDDEN`（前端按 reason 文案显示 `AUTH_NOT_ADMIN`）|
 | `csrfRequired` | POST / PUT / PATCH / DELETE 必加；比对 `X-CSRF-Token` Header 与 `zhiyu-csrf` Cookie | 403 `AUTH_CSRF_INVALID` |
 | `optionalAuth` | 解析 JWT 但不强制；用于"未登录可浏览"路由 | 不报错；`c.get('user')` 可能为 null |

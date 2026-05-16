@@ -1,5 +1,7 @@
 <!-- TARGET-PATH: docs/C06-prd/discover-china/_shared/business-rules.md -->
 
+# discover-china feature · 共享业务规则
+
 > **跨 surface 共享业务规则(Round 2 从 PRD.md 第 7 章迁出)。** 端特定补充见各 surface 下的 07-business-rules.md。
 
 ## 7. 业务规则(全量,标 BR-ID)

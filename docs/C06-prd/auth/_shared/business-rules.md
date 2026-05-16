@@ -19,7 +19,7 @@
 | 触发 | 行为 | 解除 |
 |------|------|------|
 | 同 (user_id, ip) 15min 内错密 ≥ 5 | 该账号锁定 15min（两端通锁） | 15min 自动 |
-| 用户档案 = false` | 全设备全端立即撤销 + 拒登 | admin 改回 true |
+| 用户档案 = `false` | 全设备全端立即撤销 + 拒登 | admin 改回 true |
 
 ## BR-auth-shared-03 · session 颁发与续签
 

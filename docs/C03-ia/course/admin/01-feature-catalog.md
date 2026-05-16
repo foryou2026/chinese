@@ -19,7 +19,7 @@
 
 ## 2. 上下游
 
-- 上游:[D01-data](../../../D01-data/data-model.md);[B02 角色](../../../C02-permissions/01-roles.md)`admin.主题范围。
+- 上游:[D01-data](../../../D01-data/data-model.md);[B02 角色](../../../C02-permissions/01-roles.md) `admin.主题范围`。
 - 下游:[D02-api/course/admin](../../../D02-api/course/admin/01-routes-delta.md)(24 endpoint)、[C04-pages/course/admin/](../../../C04-pages/course/admin/)、[C05-prototype/course/admin/](../../../C05-prototype/course/admin/)。
 
 ## 3. 模块边界

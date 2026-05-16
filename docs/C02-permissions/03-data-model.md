@@ -11,9 +11,9 @@
 
 ## 0. 摘要
 
-- 5 张表：用户账号（Supabase 内置）+ 用户档案 + `zhiyu.会话记录 + `zhiyu.登录尝试记录 + `zhiyu.审计记录。
+- 5 张表：`用户账号`（Supabase 内置）+ `用户档案` + `zhiyu.会话记录` + `zhiyu.登录尝试记录` + `zhiyu.审计记录`。
 - 业务 schema = **`zhiyu`**（与 `B01-architecture/03-database.md` 一致）。
-- 所有业务表 `id`：profiles/用户账号 引用 用户账号`；会话记录 用 `uuid_generate_v4()`；其他业务表用 `gen_random_uuid()`。时间戳统一 `timestamptz`。
+- 所有业务表 `id`：profiles/用户账号 引用 `用户账号`；会话记录 用 `uuid_generate_v4()`；其他业务表用 `gen_random_uuid()`。时间戳统一 `timestamptz`。
 - 用户档案 与 会话记录 启用 RLS；登录尝试 / 审计日志仅 service_role 可写。Hono 后端用 service_role 绕 RLS（前置 `authRequired` 校验）。
 - 角色字段权威位置 = 用户账号->>'role'`；用户角色字段` 仅作冗余索引。
 - **来源对齐**：本文档字段定义与 `system/supabase/migrations/0002_profiles_sessions_audits.sql` 完全一致。
@@ -34,7 +34,7 @@
 | `raw_user_meta_data` | jsonb | 用户可改的元数据（display.brand_color 等，由设计系统皮肤使用）|
 | `last_sign_in_at` | timestamptz | Supabase 自动维护 |
 
-JWT 中映射：账号元数据.role` ← `raw_app_meta_data->>'role'`。
+JWT 中映射：`账号元数据.role` ← `raw_app_meta_data->>'role'`。
 
 ---
 
@@ -112,7 +112,7 @@ create policy profiles_self_update on 用户档案
 
 ---
 
-## 3. `zhiyu.会话记录（多设备会话追踪）
+## 3. `zhiyu.会话记录`（多设备会话追踪）
 
 ```sql
 create table zhiyu.会话记录 (
@@ -147,7 +147,7 @@ create policy 会话记录_self_read on zhiyu.会话记录
 
 ---
 
-## 4. `zhiyu.登录尝试记录（登录失败计数）
+## 4. `zhiyu.登录尝试记录`（登录失败计数）
 
 ```sql
 create table zhiyu.登录尝试记录 (
@@ -169,7 +169,7 @@ create index 登录尝试记录_email_time_idx on zhiyu.登录尝试记录 (emai
 
 ---
 
-## 5. `zhiyu.审计记录（管理端关键操作审计）
+## 5. `zhiyu.审计记录`（管理端关键操作审计）
 
 ```sql
 create table zhiyu.审计记录 (

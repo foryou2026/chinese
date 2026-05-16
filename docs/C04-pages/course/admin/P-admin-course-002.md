@@ -5,7 +5,7 @@
 > F3 源:`P-admin-course-002` · 路由 `/admin/course/tree?track={track}` · R-014/023
 
 ## 1. 进入条件
-- admin + `track ∈ 主题范围。
+- admin + `track ∈ 主题范围`。
 
 ## 2. 初始数据
 - `GET /admin/course/tree?track={track}&depth=4` → 阶段[6] → 章[6] → 节[6] 树形;每节字段 `code / 多语标题字段.zh / 发布态 / kp_count / question_count`;

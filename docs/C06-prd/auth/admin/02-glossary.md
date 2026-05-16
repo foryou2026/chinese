@@ -5,7 +5,7 @@
 | 术语 | 释义 |
 |------|------|
 | admin | 唯一管理端角色;用户账号.role='admin'` + 用户角色字段='admin'` |
-| surface=`admin` | 路径前缀 `/admin/*`;会话记录` 字段值;3 设备上限按 surface 独立计数 |
+| surface=`admin` | 路径前缀 `/admin/*`;`会话记录` 字段值;3 设备上限按 surface 独立计数 |
 | seed 流程 | 运维通过 `scripts/db/seed-super-admin.sh` 注入新管理员;详见 [`B01-09 §1`](../../../B01-architecture/09-auth-infra.md#1-auth-provider-矩阵) |
 | not-admin 态 | 登录页子态;user 角色登录尝试被立即 signOut 后展示 |
 | kicked-back 态 | 登录页子态;被其它设备踢后跳回带 `?kicked=1` |

@@ -5,15 +5,15 @@
 > F3 源:`P-admin-course-003` · 路由 `/admin/course/lesson/{code}` · R-015
 
 ## 1. 进入条件
-- admin + 节所属 `track ∈ 主题范围。
+- admin + 节所属 `track ∈ 主题范围`。
 
 ## 2. 初始数据
-- `GET /admin/course/lesson/{code}` → 节基本信息(`code / 多语标题字段 / objective_i18n / 句子顺序号 / is_quiz_required / 发布态)+ 节-知识点关联 关联 KP 列表(按 `seq` 排序)+ 与节绑定的节末小测 blueprint 引用。
+- `GET /admin/course/lesson/{code}` → 节基本信息(`code / 多语标题字段 / objective_i18n / 句子顺序号 / is_quiz_required / 发布态)+ 节-知识点关联 关联 KP 列表(按 ``seq` 排序)+ 与节绑定的节末小测 blueprint 引用。
 
 ## 3. 主要交互
-- 顶部基本信息表单(5 语 Tab 填 多语标题字段 / objective_i18n`)+ [保存];
+- 顶部基本信息表单(5 语 Tab 填 多语标题字段 / `objective_i18n`)+ [保存];
 - KP 绑定列表:[+ 关联已有 KP] 弹搜索 Modal(可选已存在 KP)/ [+ 新建 KP] 跳 P-admin-course-004 Drawer;
-- 调序 Drawer:拖拽 → 保存重写 节-知识点关联.seq`;
+- 调序 Drawer:拖拽 → 保存重写 `节-知识点关联.seq`;
 - [发布] / [下架] 行级按钮 → D-4 级联确认(发布)/ D-3 确认(下架);
 - 节末小测配置入口跳 P-admin-course-008(同节绑定);
 - 表单脏 + 切换 → D-2 离开拦截;

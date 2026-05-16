@@ -46,7 +46,7 @@
 7. **超级管理员**：seed 写入；不能删/禁用自己；忘密走 SQL 逆生。
 8. **被禁用账号**：返回 `AUTH_ACCOUNT_DISABLED` + 撤销全部 refresh + 删 会话记录。
 9. **凭证存储 = HttpOnly Cookie**（PM 决策：安全优先）+ CSRF Double-Submit。
-10. **角色来源**：JWT 账号元数据.role`，不再查库。
+10. **角色来源**：JWT `账号元数据.role`，不再查库。
 11. **防爆破**：不依赖第三方验证码；仅后端节流。
 12. **i18n 全 5 语**：所有 `AUTH_*` 错误提示 + 邮件模板 zh/en/vi/th/id。
 

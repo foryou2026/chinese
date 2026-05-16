@@ -12,8 +12,8 @@
 ##  · 运维 (DevOps,非产品用户)
 
 - 通过 SSH / 容器命令调 `seed-super-admin.sh` 创建新超管
-- 通过 SQL 把异常超管 启用态=false`
-- 不登录管理后台,但所有变更进 审计记录.actor_role='system'`
+- 通过 SQL 把异常超管 启用态=`false`
+- 不登录管理后台,但所有变更进 审计记录.actor_role='system'
 
 ## P3 · 攻击者 (假想)
 

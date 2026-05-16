@@ -3,7 +3,7 @@
 # 03 · 状态机(SM-ID) · course
 
 ## SM-course-lesson-progress
-学员视角节状态(数据源 学习进度.status`)
+学员视角节状态(数据源 `学习进度.status`)
 
 ```
 locked  ──unlock_prev_passed──▶  unlocked
@@ -38,7 +38,7 @@ shown ─submit─▶ judging ─correct─▶ scored_pass
 不可中途撤回,提交即终态(节末小测 / 章测 / 阶段考"统一交卷"除外:统一交卷后批量判分)。
 
 ## SM-course-srs
-SRS Leitner 5 盒(复习队列.box`)
+SRS Leitner 5 盒(`复习队列.box`)
 
 ```
 box1 ─correct─▶ box2 ─correct─▶ box3 ─correct─▶ box4 ─correct─▶ box5

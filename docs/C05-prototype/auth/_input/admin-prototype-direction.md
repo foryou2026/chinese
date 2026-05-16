@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C05-prototype/auth/admin/_input/prototype-direction.md -->
+<!-- TARGET-PATH: docs/C05-prototype/auth/_input/admin-prototype-direction.md -->
 
 # H01 · 原型方向(auth)
 

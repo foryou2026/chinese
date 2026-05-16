@@ -20,7 +20,7 @@
 | 维度 | 文档 |
 |------|------|
 | 交互规范(N) | [`C04-pages/auth/app/P-app-auth-002.md`](../../../../C04-pages/auth/app/P-app-auth-002.md) |
-| 场景脚本(N) | [`C04-pages/auth/app/P-app-auth-002.scenarios.md`](../../../../C04-pages/auth/app/P-app-auth-002.scenarios.md)(若存在) |
+| 场景脚本(N) | `C04-pages/auth/app/P-app-auth-002.scenarios.md`(若存在) |
 | HTML 原型(H) | [`C05-prototype/auth/app/`](../../../../C05-prototype/auth/app/) |
 | 关联 M-ID | [`C03-ia/auth/app/01-feature-catalog.md`](../../../../C03-ia/auth/app/01-feature-catalog.md) |
 | 关联 R-ID | [`07-business-rules.md`](../07-business-rules.md) |
