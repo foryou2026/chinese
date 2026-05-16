@@ -7,6 +7,34 @@
 
 ---
 
+## 2026-05-16 · 批次 4 · `admin-auth` feature 全套反向回写
+
+> 后台超管的「登录 / 找回 / 改密 / 退出」最小集;邀请制 = 运维 SQL seed,无产品 UI。
+
+| 阶段 | 产物 | 数量 | 状态 |
+|------|------|------|------|
+| C01 R | `docs/C01-requirements/admin-auth/*` (_input + baseline + flows×2 + 99) | 5 | 已冻结 |
+| C02 I | `docs/C02-ia/admin-auth/*` (00..07 + 99 + _input) | 10 | 已冻结 |
+| C03 N | `docs/C03-pages/admin-auth/P-001..004 + 99 + _input` | 6 | 已冻结 |
+| C04 H | `docs/C04-prototype/admin-auth/{README,_input}` | 2 | **占位** (与 B04 prototype-style 同步 deferred) |
+| C05 E | `docs/C05-prd/admin-auth/*` (00..12 + 99 + 06/00-index + _input) | 15 | 已冻结 |
+| D01 D | `docs/D01-data/admin-auth/*` (00..03 + 99 + _input) — **delta-only,0 新增表** | 6 | 已冻结 |
+| D02 L | `docs/D02-api/admin-auth/*` (00..06 + 99 + 03-endpoints×10 + _input) | 19 | 已冻结 |
+| D03 V | `docs/D03-validation/admin-auth/{01,02,03}` | 3 | V02/V03 全绿,V01 含 1 项轻度警告 (见下) |
+
+**关键数字**:10 R-ID / 2 M 模块 / 11 Flow / 3 SM / 4 page-id / 10 endpoint / 21 错误码 (20 复用 + 1 新增) / 10 审计事件。
+
+**关键边界**:
+- 0 新增 PG 表 (全部复用 B02-04 5 表);
+- 0 新增 service (后端 100% 复用 app-auth 同名 service,handler 仅做 surface 透传 + role 守卫);
+- 4 页全部极简;不暴露任何"创建管理员 / 改他人密 / 删账号"功能。
+
+**V01 轻度警告**:`AUTH_USE_USER_ENTRY` 错误码尚未列入 [`B02-03 §4`](../B02-permissions/03-authz-mechanism.md);已记入 [`B02-permissions/99-open-questions.md`](../B02-permissions/99-open-questions.md),下一轮 F 层修订时补入;不阻断本 feature 冻结。
+
+**受影响 feature**:无 (首次落 admin-auth,不触发其它 feature 的 D03 重跑;`app-auth` 共享的 service 描述未变,无需重跑)。
+
+---
+
 ## 2026-05-16 · 批次 3 · `app-auth` feature 全套反向回写
 
 > 用户应用端「账号生命周期」feature 完整入坑：注册 / 登入 / OAuth / 找回 / 改密 / 改资料 / 退出 / 多设备 / 节流 / 禁用 / 链接过期。
