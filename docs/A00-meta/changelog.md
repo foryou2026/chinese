@@ -7,6 +7,40 @@
 
 ---
 
+## 2026-05-18 · 批次 19 · Round 12 · C04-prototype 极简平铺重构（对齐 F4-AI-原型设计）
+
+> **触发原因**：用户 review C04 现状时强烈反对 `<surface>/{pages,states}/<page-id>.{empty,loading,error,forbidden}.html` 的"工程化"目录，明确指令"极度简化，不要搞状态什么"、"就是一列 HTML 像 function/02-course/ai/F4-AI-原型设计 一样"。所有状态（空 / 加载 / 错 / 无权限）从此由 docs/C05-prd/<feature>/ 文字描述承担，不在原型出图。
+
+### 19-1 · docs/C04-prototype 物理结构重构（119 → 51 文件，-57%）
+- 删除全部 6 个 surface 下的 `pages/` / `states/` / `assets/` 子目录
+- 将 37 个 `pages/P-*.html` 上提至 `<surface>/` 根（平铺）
+- 修正所有上提后 HTML 的相对路径：`../../../../B04-design/` → `../../../B04-design/`（auth + discover-china），`../../../../../function/` → `../../../../function/`（course）
+- 修正所有上提后 HTML 顶部 `TARGET-PATH` 注释，回填 `<surface>` 段
+- 6 个 `<surface>/index.html` 全量重写：
+  - auth / discover-china 用 B04 模板：glass-card + 表格（page-id / 名称 / 入口），引用 `../../../B04-design/prototype-style/{tokens,themes,app}.css` + `app.js` + `proto.bootstrap()`
+  - course 用 F4 模板：zy-card 网格，引用 `../../../../function/02-course/ai/F4-AI-原型设计/_assets/{styles.css,prototype.js}`
+
+### 19-2 · /prompt 极简平铺规范同步
+- [prompt/A-framework/A00-04-文档目录规划.md](../../prompt/A-framework/A00-04-文档目录规划.md) §C04-prototype 目录树：删除 `pages/` / `states/` / `assets/` 三行，改为 `<surface>/index.html + <page-id>.html` 平铺；硬约束块加入"极简平铺"+"单端 feature 退化形态"
+- [prompt/C-product/C04-H01-用户输入-原型方向.md](../../prompt/C-product/C04-H01-用户输入-原型方向.md) 整文件重写：§本阶段不做 加入"状态文件由 C05 文字承担"；§3 必出页面表去掉"必盖状态"列改为"按 surface 分组"；§5 数据来源去掉 mock-data.js 改为"HTML 静态片段"；§10 验收加入"无 pages/states/ 子目录、无 *.empty/loading/error/forbidden.html"
+- [prompt/C-product/C04-H02-AI澄清-原型提问.md](../../prompt/C-product/C04-H02-AI澄清-原型提问.md) §B 第 6 条去掉 forbidden 态检查；第 7 条去掉 mock-data.js 改为 HTML 静态片段；第 11 条由"状态四件套"改为"极简平铺自检"
+- [prompt/C-product/C04-H03-AI输出-HTML原型规范.md](../../prompt/C-product/C04-H03-AI输出-HTML原型规范.md) 整文件重写：触发提示词加"极简原则"块；§输出目录改为双端 + 单端两套平铺示例；硬约束 §0.1 新增"极简平铺"、§5 "4 状态必出"整条删除；§states/ 整节删除；§pages/ 改名为 `<surface>/<page-id>.html`；§自检 增"无 pages/states/assets/vendor 子目录"、"无 *.empty/loading/error/forbidden.html"
+- 路径深度统一为 3 ups（B04） / 4 ups（F4），不再有"index 用 3 ups，page 用 4 ups"的两套规则
+
+### 19-3 · 一致性自检（已通过）
+- `find docs/C04-prototype -type f | wc -l` = 51 ✅
+- `grep -r "../../../../B04\|../../../../../function" docs/C04-prototype` = 0 ✅
+- `grep -r "pages/\|states/" docs/C04-prototype/*.html docs/C04-prototype/*/*.html docs/C04-prototype/*/*/*.html` = 0 ✅
+- `grep -r "C04-prototype.*pages/\|states/\|\.empty\.html\|\.loading\.html\|\.error\.html\|\.forbidden\.html" docs/` = 0 ✅（C01/C02/C03/C05 均无 stale 引用）
+- `head -3` 抽样验证 6 个 surface 的 P-*.html TARGET-PATH 注释含 `<surface>` 段 ✅
+
+### 19-4 · 用户显式延后项（不在本批次执行）
+- Q1：function/02-course/ai/F4-AI-原型设计/_assets 是否迁移到 docs/B04 复用 — 用户 declined（手动处理）
+- Q2：grules/ 与 env.md 中的旧术语 / 矩阵清理 — 用户 declined（"不要动，我自己会手动删除"）
+- /system、/function、/grules、env.md 整体：用户将手动删除，仅保留 /docs + /prompt
+
+---
+
 ## 2026-05-17 · 批次 18 · Round 11 · 删除前全局对齐（PG16 + game-engine 下架 + course 2 角色化 + C04 surface 极简化）
 
 > **触发原因**：用户准备手动删除 `/system`、`/function`、`/grules`、`/env.md`，仅保留 `/docs` + `/prompt`。删除前必须把所有跨目录矛盾、未来特性误入正文、surface 噪音文件清干净，且 `/prompt` 与 `/docs` 双向一致。

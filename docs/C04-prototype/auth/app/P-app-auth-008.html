@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- TARGET-PATH: docs/C04-prototype/auth/app/P-app-auth-008.html -->
+<!-- page-id: P-app-auth-008 · state: default · feature: auth -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="proto:page-id" content="P-app-auth-008">
+<meta name="proto:state" content="default">
+<meta name="proto:states" content="default,loading,empty,error,forbidden">
+<title>P-app-auth-008 · default · auth</title>
+<link rel="stylesheet" href="../../../B04-design/prototype-style/tokens.css">
+<link rel="stylesheet" href="../../../B04-design/prototype-style/themes.css">
+<link rel="stylesheet" href="../../../B04-design/prototype-style/app.css">
+<script defer src="../../../B04-design/prototype-style/app.js"></script>
+</head>
+<body>
+<header class="topnav glass-nav" data-block="Topnav">
+  <span class="brand">知语</span>
+  <span class="spacer"></span>
+  <nav class="nav-actions">
+    <button class="btn btn-ghost" data-action="toggle-theme" aria-label="切换主题">◐</button>
+    <a class="btn btn-ghost" href="../index.html">原型首页</a>
+  </nav>
+</header>
+<main class="page page-centered">
+  <section class="glass-card auth-card" data-block="SecurityCard" style="max-width:560px">
+    <h1 style="margin-bottom:8px">账号与安全</h1>
+    <p class="subtitle">管理你的密码、登录设备与账号操作。</p>
+
+    <h3 style="margin-top:24px">修改密码</h3>
+    <form data-mock-op="OP-change-pw" autocomplete="off" style="margin-top:12px">
+      <div class="form-row"><label class="label" for="old">当前密码</label>
+        <input class="input" id="old" name="old" type="password" autocomplete="current-password" required></div>
+      <div class="form-row"><label class="label" for="new">新密码</label>
+        <input class="input" id="new" name="new" type="password" autocomplete="new-password" minlength="8" required></div>
+      <div class="form-row"><label class="label" for="cnf">确认</label>
+        <input class="input" id="cnf" name="cnf" type="password" autocomplete="new-password" required></div>
+      <button class="btn btn-primary" type="submit">提交修改</button>
+    </form>
+
+    <h3 style="margin-top:32px">登录设备</h3>
+    <ul style="list-style:none;padding:0;margin:12px 0 0">
+      <li class="glass-panel" style="padding:12px 16px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center">
+        <div><div>iPhone 15 · Safari</div><div class="help">曼谷 · 当前会话</div></div>
+        <span class="tag tag-success">当前</span>
+      </li>
+      <li class="glass-panel" style="padding:12px 16px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center">
+        <div><div>MacBook · Chrome</div><div class="help">10 分钟前</div></div>
+        <button class="btn btn-ghost" onclick="proto.toast({type:'success',msg:'已踢下线(mock)'})">踢下线</button>
+      </li>
+    </ul>
+    <button class="btn btn-danger" style="margin-top:16px" onclick="proto.toast({type:'success',msg:'已退出所有设备(mock)'})">退出所有设备</button>
+  </section>
+</main>
+<script>proto.bootstrap();</script>
+</body>
+</html>
