@@ -34,7 +34,7 @@
 │  redis             :6379   → 缓存 + BullMQ（zhiyu 专用）               │
 │                                                                      │
 │  ── 复用主机 supabase_default 外部网络（不再自建）──                    │
-│  supabase-db       :5432   → supabase/postgres:15.x（pgvector 内置，  │
+│  supabase-db       :5432   → supabase/postgres:16（pgvector 内置，  │
 │                              默认不启用）                              │
 │  supabase-kong     :8000   → PostgREST / Auth / Storage / Realtime 入口│
 │  supabase-studio   通过 kong                                          │

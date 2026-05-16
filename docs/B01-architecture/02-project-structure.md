@@ -17,7 +17,6 @@
 - monorepo 用 **pnpm workspaces**。
 - 4 个应用：`web-app` / `web-admin` / `api-app` / `api-admin`。
 - 7 个共享包：`shared-schemas` / `shared-config` / `shared-utils` / `shared-i18n` / `ui-kit` / `supabase-client` / `ai-adapters`。
-- 1 个游戏内核：`game-engine`（仅 `web-app` 用）。
 
 ---
 
@@ -55,8 +54,7 @@
     │   ├── shared-i18n/        ← 5 语言文案（zh/en/vi/th/id）
     │   ├── ui-kit/             ← 基于 shadcn/ui 的项目级组件 + 毛玻璃主题
     │   ├── supabase-client/    ← 封装 supabase-js（browser/server/admin）+ MCP
-    │   ├── ai-adapters/        ← LLM / Workflow / TTS / ASR 适配器 + mock fixture
-    │   └── game-engine/        ← PixiJS 共享内核（web-app 用）
+    │   └── ai-adapters/        ← LLM / Workflow / TTS / ASR 适配器 + mock fixture
     │
     ├── docker/                 ← Docker 配置（唯一 dev 环境）
     │   ├── compose.yaml
@@ -135,7 +133,7 @@ system/apps/web-app/
 - `routes/` 全在 `_admin/` 守卫下；
 - `features/` 与 admin PRD 模块一一对齐（discover-china、course、user-mgmt、order-mgmt、content-review、…）；
 - 引入 `TanStack Table` + `Tiptap` + `Recharts`；
-- 不引入 `game-engine` / `framer-motion`（保持轻量）。
+- 不引入 `framer-motion`（保持轻量）。
 
 ---
 
@@ -244,7 +242,7 @@ src/
 
 | 对象 | 规则 | 示例 |
 |------|------|------|
-| 目录 | kebab-case | `web-admin/`、`game-engine/` |
+| 目录 | kebab-case | `web-admin/`、`shared-schemas/` |
 | TS 普通文件 | kebab-case | `course-list.handler.ts` |
 | React 组件文件 | PascalCase | `CourseCard.tsx` |
 | Hook 文件 | camelCase + `use` 前缀 | `useCourseProgress.ts` |

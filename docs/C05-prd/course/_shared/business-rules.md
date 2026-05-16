@@ -82,8 +82,7 @@
 | BR-P02 | 应用端 UI 按 `users.ui_lang` 切换,缺失回退 `zh`;管理端 UI 固定中文 | §4 |
 | BR-P03 | 订阅主题访问控制:无订阅 → 前 1 章试学,试学完强制订阅页 | R-028 |
 | BR-P04 | 用户端 API + 视图层强制 `is_published=true` 且父级全发布;违反返 404 / 410 | R-029 |
-| BR-P05 | admin 行级 `tracks_scope[]` 过滤:列表 / 详情 / 写入全部 SQL 自动 `WHERE track_code = ANY($scope)`;越权 403 | R-013..021 |
-| BR-P06 | `readonly` 角色:全部写入按钮置灰,前端 + 后端双校验 | (横切)|
+| BR-P05 | admin 端中间件统一校验 `role === 'super_admin'`；非该角色访问 `/api/admin/course/*` 返 403 | R-013..021 |
 
 ### 7.8 BR-SYS(系统副作用)
 

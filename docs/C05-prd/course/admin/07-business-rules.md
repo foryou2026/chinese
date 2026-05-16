@@ -16,19 +16,19 @@
 
 ## 媒资
 
-| R-019 | 上传按 sha256 去重;命中显示原始上传者(super 可查)|
+| R-019 | 上传按 sha256 去重；命中显示原始上传者（`super_admin` 可查）|
 
 ## 审核
 
-| R-018 | 举报跨端规则同 app(显示给 admin 处置)|
-| R-024 | 举报处置必须填 reason;72h 未处置升级 super |
+| R-018 | 举报跨端规则同 app（显示给 admin 处置）|
+| R-024 | 举报处置必须填 reason；72h 未处置在 P-009 看板高亮呆滞项 |
 
 ## 发布 / 回滚
 
-| R-030 | 已发布资源 30 天内 super 才能 unpublish;30 天后 content_admin 也可 |
-| R-021 | 全局搜索 admin uid 范围限于 tracks_scope |
+| R-030 | 已发布资源由 `super_admin` 二次确认后 unpublish，不设时间阈值 |
+| R-021 | 全局搜索范围 = 全量（`super_admin` 一肃挑，无 scope 划分）|
 
 ## 权限
 
-| R-028 | tracks_scope = [] 视为无权 |
-| R-029 | DB 走 service_role 跳 RLS;过滤靠 SQL WHERE |
+| R-028 | `/api/admin/course/*` 全量要求 `role === 'super_admin'`；其他角色返 403 |
+| R-029 | DB 走 service_role 跳 RLS；路由进入前中间件已鉴权 |

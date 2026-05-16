@@ -6,9 +6,9 @@
 
 ## 1.1 admin 端定位
 
-`course` admin 端是 **内容运营 + 内容点检 + 发布管控** 三位一体的后台,服务 `content_admin`(受 `tracks_scope` 限制) 与 `super`(全权 + 高危)。**不是** 学员侧产品的镜像,而是"线下批量生成 → 导入 → 人工点检 → 上架"流水线的可视化与控制面。来源:[`function/02-course/prd/04-管理端模块设计.md`](../../../../function/02-course/prd/04-管理端模块设计.md)。
+`course` admin 端是 **内容运营 + 内容点检 + 发布管控** 三位一体的后台，仅服务 `super_admin`（遵从 [docs/B02-permissions/01-roles.md](../../../B02-permissions/01-roles.md) 的 2 角色硬约束）。**不是** 学员侧产品的镜像，而是「线下批量生成 → 导入 → 人工点检 → 上架」流水线的可视化与控制面。
 
-## 1.2 admin 端 9 大模块(对齐 [04-管理端模块设计.md](../../../../function/02-course/prd/04-管理端模块设计.md))
+## 1.2 admin 端 9 大模块
 
 | # | 模块 | 主页面 |
 |---|------|--------|
@@ -20,7 +20,7 @@
 | 6 | 考试中心(节/章/阶段) | [P-008](06-page-specs/P-admin-course-008.md) |
 | 7 | 全局搜索 + 统计 | [P-009](06-page-specs/P-admin-course-009.md) |
 | 8 | 批量导入/导出 | 在 P-001~P-008 各自 toolbar 内 |
-| 9 | 发布 / 撤回 / 灰度 | 在 P-001~P-008 各页发布按钮 + super 审批 |
+| 9 | 发布 / 撤回 / 灰度 | 在 P-001~P-008 各页发布按钮（`super_admin` 同人操作，无打间审批）|
 
 > 2025-11 变更:**删除** "系统内生成工作台"模块(原为题目自动生成 UI);题目改为完全线下批量生成 + 导入。
 
@@ -28,7 +28,7 @@
 
 1. **生产**:线下 AI 批量出题 → 平台导入(JSON / Excel)→ 自动校验格式
 2. **点检**:[P-005](06-page-specs/P-admin-course-005.md) 抽检 + 全检流;管理员可批注 / 退回
-3. **发布**:[P-001~P-008](06-page-specs/) 各模块 publish/unpublish;**unpublish > 30 天** 需 `super` 二次确认
+3. **发布**：[P-001~P-008](06-page-specs/) 各模块 publish/unpublish；unpublish 需二次确认
 4. **运营**:[P-006](06-page-specs/P-admin-course-006.md) 举报循环 7 天结案
 
 ## 1.4 admin 端非目标

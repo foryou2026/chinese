@@ -14,15 +14,14 @@
 | **monorepo** | `pnpm-workspace.yaml` 管理的 `system/{apps,packages,scripts,supabase}` 结构 |
 | **Supabase 自托管** | 通过 `system/docker/compose.yaml` 拉起 PG16 + GoTrue + Realtime + Storage + PostgREST |
 
-## B. 角色(↑ [G3-角色定义](../../grules/G3-权限与认证规范/01-角色定义.md))
+## B. 角色（↑ [B02-permissions/01-roles.md](../B02-permissions/01-roles.md)）
 
 | 角色 | 端 | 说明 |
 |------|---|------|
-| `anonymous` | app / admin | 未登录访问者 |
-| `learner` | app | 注册即获;C 端默认角色 |
-| `readonly` | admin | 只读管理员;不可写 |
-| `content_admin` | admin | 受 `tracks_scope` / `categories_scope` 限制的内容编辑 |
-| `super` | admin | 全权限 + 高危操作(unpublish 30 天+ / 重置密码 / 邀请管理员) |
+| `super_admin` | admin | 全站唯一管理员角色，全权 |
+| `user` | app | 学员 / 终端用户，注册即获 |
+
+> 仅此 2 角色，全系硬约束。不存在 `readonly` / `content_admin` / `super` 等子角色。匿名访问者由路由层处理（重定向到登录），不视为角色。
 
 ## C. 标识符约定
 

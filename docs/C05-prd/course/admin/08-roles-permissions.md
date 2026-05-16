@@ -2,10 +2,11 @@
 
 # 08 · 角色与权限 · course / **admin**
 
-| 角色 | tracks_scope | 可见 P-ID | 可写 |
-|------|-------------|-----------|------|
-| readonly | 任意 | P-001..009(只读)| ✗ |
-| content_admin | 受限于 scope | scope 内 P-001..008 | scope 内全写;不可发布 30 天以上资源 |
-| super | 全部 | P-001..009 全 | 全写 + 跨 scope 转移 + 30 天+ unpublish |
+> 遵从 [docs/B02-permissions/01-roles.md](../../../B02-permissions/01-roles.md) 的 2 角色硬约束。
 
-> RLS 跳过;过滤由 handler `WHERE track_code = ANY($scope)`;违反返 `COURSE_SCOPE_FORBIDDEN`。
+| 角色 | 可见 P-ID | 可写 |
+|------|-----------|------|
+| `super_admin` | P-001..009 全 | 全写 + 发布 / 撤回 / 媒资上传 / 举报处置 |
+| `user` | —（不出现在 admin 路由，访问返 403）| — |
+
+> 服务端：中间件在 `/api/admin/course/*` 统一校验 `role === 'super_admin'`；RLS 以 `auth.uid()` 设备隔离。不再存在 `tracks_scope` 过滤与 `COURSE_SCOPE_FORBIDDEN`。

@@ -1,4 +1,0 @@
-/* TARGET-PATH: docs/C04-prototype/auth/app/feature.css */
-/* feature-级覆盖。所有 token / 组件类继承自 B04 prototype-style/。
-   严禁在此重新定义任何 --color / --space / --radius / --shadow。*/
-.auth-card .subtitle { color: var(--text-secondary); margin-bottom: var(--space-5); }

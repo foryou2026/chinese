@@ -7,6 +7,48 @@
 
 ---
 
+## 2026-05-17 · 批次 18 · Round 11 · 删除前全局对齐（PG16 + game-engine 下架 + course 2 角色化 + C04 surface 极简化）
+
+> **触发原因**：用户准备手动删除 `/system`、`/function`、`/grules`、`/env.md`，仅保留 `/docs` + `/prompt`。删除前必须把所有跨目录矛盾、未来特性误入正文、surface 噪音文件清干净，且 `/prompt` 与 `/docs` 双向一致。
+
+### 18-1 · 全局反模式清扫（vendor 拷贝相关收尾）
+- [prompt/A-framework/A00-00-README.md](../../prompt/A-framework/A00-00-README.md) §B04 输出口径 vendor → reference
+- [prompt/A-framework/A00-01-框架总览.md](../../prompt/A-framework/A00-01-框架总览.md) Mermaid + B04 阶段说明 2 处
+- [prompt/A-framework/A00-02-端到端工作流.md](../../prompt/A-framework/A00-02-端到端工作流.md) H 阶段产物口径
+- [prompt/A-framework/A00-04-文档目录规划.md](../../prompt/A-framework/A00-04-文档目录规划.md) `surface 目录树`全部改为 HTML-only + 显式"硬约束"块
+- [prompt/B-foundation/B04-S03-AI输出-设计系统.md](../../prompt/B-foundation/B04-S03-AI输出-设计系统.md) §9.1 HTML 示例 4 层相对路径
+
+### 18-2 · /docs B 层一致性修复
+- [docs/B01-architecture/02-project-structure.md](../B01-architecture/02-project-structure.md) 移除 `game-engine`（用户：未来手动加入；目前不写进 /docs）
+- [docs/B01-architecture/06-deploy-env.md](../B01-architecture/06-deploy-env.md) `supabase/postgres:15.x` → `:16`（匹配 /system 实际 compose.yaml）
+- [docs/B01-architecture/08-surfaces.md](../B01-architecture/08-surfaces.md) §6 移除 vendor 目录树
+- [docs/B04-design/prototype-style/README.md](../B04-design/prototype-style/README.md) §2/§4 重写为相对路径引用示例
+
+### 18-3 · course 角色三→二收敛（覆盖 /system 实际 roles enum=['super_admin','user']）
+- 删除 `content_admin` / `tracks_readonly` / scope 越权概念
+- [docs/C05-prd/course/admin/01-overview.md, 02-glossary.md, 03-personas.md, 05-user-journeys.md, 07-business-rules.md, 08-roles-permissions.md, 11-roadmap.md](../C05-prd/course/admin/)
+- [docs/C05-prd/course/_shared/glossary.md, business-rules.md](../C05-prd/course/_shared/)
+- [docs/C05-prd/_glossary.md](../C05-prd/_glossary.md) §B「角色」整段重写
+
+### 18-4 · C04-prototype surface 极简化（用户："不是说都引用 B04 然后这里就只有 HTML 文件么"）
+- **HTML 死引用清除**：92 个 HTML 中所有 `<link href="feature.css">` + `<script src="feature.js">` + `<script src="mock-data.js">`（共含 `../` 变体）一并 sed 删除（验证：grep 结果 0）
+- **辅助文件删除**：6 个 surface × {`feature.css`,`feature.js`,`mock-data.js`,`README.md`,`00-index.md`,`changelog.md`,`99-open-questions.md`} + feature 级 `auth/99-open-questions.md`、`course/README.md`、`discover-china/{README.md,changelog.md}` 共 46 个文件
+- **现状**：`docs/C04-prototype/` 仅余 119 个 HTML + `_input/` H01 输入 + course `_assets/`（待处理，见 18-5）
+- **prompt 同步收紧**：
+  - [prompt/A-framework/A00-04-文档目录规划.md](../../prompt/A-framework/A00-04-文档目录规划.md) 新增"★ 硬约束"块明确 surface 只能含 HTML
+  - [prompt/C-product/C04-H03-AI输出-HTML原型规范.md](../../prompt/C-product/C04-H03-AI输出-HTML原型规范.md)：
+    - 触发提示词 + 输出目录树：移除 `feature.css`/`feature.js`/`mock-data.js`/`changelog.md`/`README.md`
+    - 新增 §0.1 硬约束：surface 只能含 HTML，页面级微调一律内联在 `<style>`/`<script>` 中
+    - 移除 §`feature.js`/§`mock-data.js`/§`changelog.md` 三整节，改写为"页面级交互 与 示例数据"+"变更记录写入 docs/A00-meta/changelog.md"
+    - §4 改为"页面静态片段写示例数据"；移除 `pages/*.html` 中 `../feature.css` `../feature.js` 引用
+    - 输出自检 checklist 增加"无任何 feature.css/feature.js/mock-data.js/README.md/changelog.md"检查项
+
+### 18-5 · 已知待用户决策项（不阻塞）
+- `docs/C04-prototype/course/{app,admin}/` 共 20 个 HTML 引用 `function/02-course/ai/F4-AI-原型设计/_assets/styles.css`——`/function` 删除后会断链。建议在删 `/function` 前先 `cp -R function/02-course/ai/F4-AI-原型设计/_assets/ docs/C04-prototype/course/_assets/` 并 sed 改路径；或保留 `/function/02-course/ai/F4-AI-原型设计/_assets/` 不删。
+- F4 例外条款在 prompt（A00-04/C04-H03）仍保留——后续若彻底不依赖 /function，应同步删除此例外。
+
+---
+
 ## 2026-05-17 · 批次 17 · Round 10 · /prompt C04 改「拷贝→引用」+ C04 原型乱码修复 + 全量交叉链接修复
 
 > **触发原因**：用户在浏览器打开 `docs/C04-prototype/course/admin/pages/*.html` 看到样式乱码——根因：course 页面 `href="_assets/styles.css"` 但页面在 `pages/` 子目录而资产目录名为 `assets/`（无下划线），且整套 C04 把 B04 拷贝到 `<surface>/vendor/proto-style/` + `course/<surface>/assets/` 是 469~1119 行的样式重复脏数据。用户明令：「不要怕工作量，统一给我按引用的模式改！改 prompt 得复制为引用」+「系统课程的内容，你要与 function/02-course/ai/F4-AI-原型设计完全一致」。

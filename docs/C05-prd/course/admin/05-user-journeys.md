@@ -7,28 +7,27 @@
 ## 5.1 主旅程
 
 ### J-admin-course-1 · 新章上架闭环
-1. `content_admin` 登录(2FA) → 选所属主题
+1. `super_admin` 登录（2FA）→ 进入后台
 2. [P-001](06-page-specs/P-admin-course-001.md) → 进入主题 → [P-002](06-page-specs/P-admin-course-002.md) 选阶段
 3. [P-003](06-page-specs/P-admin-course-003.md) 拖拽排序章 → [P-004](06-page-specs/P-admin-course-004.md) 配置节 + KP 绑定
-4. [P-005](06-page-specs/P-admin-course-005.md) 批量导入题目(JSON)→ 抽检 ≥ 10 题 / 节
+4. [P-005](06-page-specs/P-admin-course-005.md) 批量导入题目（JSON）→ 抽检 ≥ 10 题 / 节
 5. [P-007](06-page-specs/P-admin-course-007.md) 关联媒资 → 5 语字段补齐
-6. 点击"发布" → 进入 staging → super 审批 → 上架
+6. 点击「发布」→ 直接上架（同人操作，无打间审批）
 
-### J-admin-course-2 · 举报处理闭环(7 天 SLA)
+### J-admin-course-2 · 举报处理闭环（7 天 SLA）
 1. [P-006](06-page-specs/P-admin-course-006.md) → 待处理列表
-2. 查看上下文(自动跳转关联题目)→ 判定(有效 / 无效 / 重复)
+2. 查看上下文（自动跳转关联题目）→ 判定（有效 / 无效 / 重复）
 3. 有效 → 同步修订题目 → 学员侧 SRS 队列自动剔除该题
 4. 无效 → 关闭 + 留言
-5. 超 7 天未处理 → super 看板告警
+5. 超 7 天未处理 → [P-009](06-page-specs/P-admin-course-009.md) 看板高亮呆滞项
 
-### J-admin-course-3 · 长期撤回(>30 天)
-1. `content_admin` 发起撤回 → 系统提示"超 30 天需 super 审批"
-2. super 在 [P-009](06-page-specs/P-admin-course-009.md) 待审池中确认
-3. 通过后撤回生效 → 学员侧节失效 + 自动跳转
+### J-admin-course-3 · 撤回
+1. `super_admin` 在任一资源页发起撤回 → 二次确认
+2. 生效后学员侧节失效 + 自动跳转
 
 ### J-admin-course-4 · 全局搜索 / 统计
 1. [P-009](06-page-specs/P-admin-course-009.md) 全局搜索(题 / KP / 节 / 媒资)
-2. 统计:本主题学员数、节通过率、热门错题(scope 限制)
+2. 统计：本主题学员数、节通过率、热门错题（全量）
 
 ## 5.2 异常旅程
 
