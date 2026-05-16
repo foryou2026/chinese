@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/B03-design/design-system/07-responsive-dark.md -->
 
-# 06 · 响应式与暗黑模式
+# 07 · 响应式与暗黑模式
 
 > **阶段**：B03-S  
 > **上游**：`01-tokens.md`、`B01-architecture/07-i18n-responsive.md`  

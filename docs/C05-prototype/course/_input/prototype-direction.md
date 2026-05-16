@@ -1,4 +1,4 @@
-<!-- TARGET-PATH: docs/C05-prototype/course/_input/draft.md -->
+<!-- TARGET-PATH: docs/C05-prototype/course/_input/prototype-direction.md -->
 
 # C04 · 原型输入 · course
 

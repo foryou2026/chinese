@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/auth/app/04-feature-catalog.md -->
 
-# 04 · 功能模块()· auth / **app**
+# 04 · 功能模块 · auth / **app**
 
 > 单 surface 退化形态。
 

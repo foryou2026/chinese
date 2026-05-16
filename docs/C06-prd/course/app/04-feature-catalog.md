@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/course/app/04-feature-catalog.md -->
 
-# 04 · 功能模块()· course / **app**
+# 04 · 功能模块 · course / **app**
 
 > Round 5 按端过滤。完整全端清单见 [_shared/](../_shared/);admin 端见 [../admin/04-feature-catalog.md](../admin/04-feature-catalog.md)。
 

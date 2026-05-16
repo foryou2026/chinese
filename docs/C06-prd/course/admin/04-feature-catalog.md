@@ -1,6 +1,6 @@
 <!-- TARGET-PATH: docs/C06-prd/course/admin/04-feature-catalog.md -->
 
-# 04 · 功能模块()· course / **admin**
+# 04 · 功能模块 · course / **admin**
 
 ## Must-Have
 

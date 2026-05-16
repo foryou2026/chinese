@@ -2,7 +2,7 @@
 
 # 06 · 单页规格索引 · discover-china / **app**
 
-> PRD 视角的"单页规格"集合;每份 spec 复述 [C02 IA](../../../../C03-ia/discover-china/app/04-pages.md)、[C03 单页交互](../../../../C04-pages/discover-china/app/)、[C04 HTML 原型](../../../../C05-prototype/discover-china/app/) 三方,并指向各自的源文档(避免重复维护)。
+> PRD 视角的"单页规格"集合;每份 spec 复述 [C03 IA](../../../../C03-ia/discover-china/app/04-pages.md)、[C04 单页交互](../../../../C04-pages/discover-china/app/)、[C05 HTML 原型](../../../../C05-prototype/discover-china/app/) 三方,并指向各自的源文档(避免重复维护)。
 
 ## 页面清单(3 页)
 
