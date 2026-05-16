@@ -2,7 +2,7 @@
 
 # `P-app-discover-china-003` · 文章逐句详情 + TTS
 
-> **path**:`/china/articles/:code` · **R 覆盖**:R-003..006
+> **R 覆盖**:R-003..006
 > **冻结状态**:已冻结 · 2026-05-16
 
 ## 1. 布局
@@ -29,9 +29,9 @@ EndCard { 上一篇 / 下一篇 / 返回类目 }
 ```
 
 ## 3. 数据
-- `GET china/articles/:code` → `{ article, sentences: [{ 句子顺序号, content_i18n, pinyin, audio_url? }] }`;
-- `POST china/tts/synthesize?sentence_key` → `{ audio_url }`(详 D02);
-- `GET / PUT china/articles/:code/progress`(登录用户)/ `localStorage`(访客)。
+- → `{ article, sentences: [{ 句子顺序号, content_i18n, pinyin, audio_url? }] }`;
+- → `{ audio_url }`(详 D02);
+- 操作(登录用户)/ `localStorage`(访客)。
 
 ## 4. 状态
 | 态 | 触发 | 表现 |

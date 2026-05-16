@@ -2,7 +2,7 @@
 
 # P-admin-auth-004 · 账号与安全
 
-> 路径 `/admin/me` · 守卫:admin · 覆盖 R-003/007/008
+> 守卫:admin · 覆盖 R-003/007/008
 
 ## 1. 布局
 
@@ -27,7 +27,7 @@
 改密 → 提交修改密码请求（验旧密 + 更新密码 + 吊销其他 admin 会话，接口在 D02-api/auth/admin/password 定义）
      → 当前会话保留 + Toast
 
-本设备退出 → 当前会话退出接口 → 跳 /admin/auth/login
+本设备退出 → 当前会话退出→ 跳 /admin/auth/login
 
 全部设备退出 → 全局退出接口（服务端吊销该用户所有 admin 会话）→ 跳 /admin/auth/login
 ```

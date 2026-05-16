@@ -2,8 +2,8 @@
 
 # `P-app-auth-009` · 编辑资料
 
-> **path**：`/me/profile` · **角色可见**：用户  
-> **R 覆盖**：R-008  
+> **角色可见**：用户
+> **R 覆盖**：R-008
 > **冻结状态**：已冻结 · 2026-05-16
 
 ## 1. 布局
@@ -47,7 +47,7 @@ GlassCard
 ## 5. 流程
 
 ```
-1. mount → 加载资料接口 → 写入表单（接口在 D02-api/auth/app/me 定义）
+1. mount → 加载资料→ 写入表单（接口在 D02-api/auth/app/me 定义）
 2. 点「编辑」 → 进 editing
 3. 点「保存」 → 提交资料更新接口 (display_name / avatar_url / locale)
    - 200 → Toast「已保存」+ 回 view 态；写入 authStore；顶栏头像 / 显示名热更新；

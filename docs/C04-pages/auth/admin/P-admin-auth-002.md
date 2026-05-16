@@ -2,11 +2,11 @@
 
 # P-admin-auth-002 · 忘记密码
 
-> 路径 `/admin/auth/forgot` · 公开 · 覆盖 R-006
+> 公开 · 覆盖 R-006
 
 ## 1. 布局
 
-居中 AdminAuthCard;字段:邮箱;主按钮 "发送重置邮件";底部 text-button "返回登录" → `/admin/auth/login`
+居中 AdminAuthCard;字段:邮箱;主按钮 "发送重置邮件";底部 text-button "返回登录" → 对应页面
 
 ## 2. 状态机 (SM-01 + SM-02)
 
@@ -20,7 +20,7 @@
 ## 3. 数据流
 
 ```
-发起 admin 忘密接口（含节流检查与重置链接邮件发送，接口在 D02-api/auth/admin/forgot 定义，重置链接跳回 `/admin/auth/reset-password`）
+发起 admin 忘密接口（含节流检查与重置链接邮件发送，接口在 D02-api/auth/admin/forgot 定义，重置链接跳回 对应页面）
   → UI = sent
 ```
 

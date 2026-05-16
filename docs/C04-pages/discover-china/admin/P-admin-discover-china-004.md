@@ -2,7 +2,6 @@
 
 # `P-admin-discover-china-004` · 全局搜索结果聚合
 
-> **path**:`/admin/china/search` · **query**:`q, scope=global|category|article, category_code?, article_id?`
 > **R 覆盖**:R-016 · **冻结状态**:已冻结 · 2026-05-16
 
 ## 1. 布局
@@ -23,7 +22,7 @@ Pagination(双栏各一)
 ```
 
 ## 3. 数据
-- `GET admin/china/search?q&scope&category_code&article_id&page&pageSize` → `{ articles, sentences }`(每段独立分页)。
+- → `{ articles, sentences }`(每段独立分页)。
 
 ## 4. 状态
 | 态 | 表现 |

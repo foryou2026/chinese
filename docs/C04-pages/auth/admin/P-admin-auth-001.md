@@ -2,19 +2,19 @@
 
 # P-admin-auth-001 · admin 登录
 
-> surface=`admin` · 路径 `/admin/auth/login` · 公开
+> surface=`admin` · 公开
 > 覆盖 R-001/002/004/005/009
 
 ## 1. 角色 & 守卫
 
-- 公开 (已登录 admin 访问 → redirect 到 `/admin` 或 query.redirect)
+- 公开 (已登录 admin 访问 → redirect 到 对应页面 或 query.redirect)
 - 已登录非 admin → 立即 signOut 并停在本页 not-admin 态
 
 ## 2. 布局
 
 - 全屏暗色背景 (admin theme dark) + 居中 `<AdminAuthCard width=420>`
 - Header:Logo "知语·后台" + tagline "管理后台登录"
-- Body:邮箱 input · 密码 input (带 show/hide) · 主按钮 "登录" · 底部 text-button "忘记密码?" → `/admin/auth/forgot`
+- Body:邮箱 input · 密码 input (带 show/hide) · 主按钮 "登录" · 底部 text-button "忘记密码?" → 对应页面
 - 不展示 "注册" / "Google" / "切换到用户端" 任何链接
 
 ## 3. 状态机 (SM-01 扩展)

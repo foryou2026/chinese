@@ -2,13 +2,13 @@
 
 # P-app-course-005 · 错题本
 
-> F3 源:`P-app-course-005` · 路由 `/wrong` · R-010
+> F3 源:`P-app-course-005` · R-010
 
 ## 1. 进入条件
 - 已登录。
 
 ## 2. 初始数据
-- `GET /app/wrong?cursor=&limit=30` → 当前用户 答题记录 WHERE is_correct=`false` 去重到 question_id,JOIN questions / kp 显示;
+- → 当前用户 答题记录 WHERE is_correct=`false` 去重到 question_id,JOIN questions / kp 显示;
 - 字段:题干 / 我的答案 / 正确答案 / 所属节 / 错误次数 / 最近错时间。
 
 ## 3. 主要交互

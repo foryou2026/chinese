@@ -2,13 +2,10 @@
 
 # `P-app-auth-001` · 登录
 
-> **阶段**：C04-N · **feature**：`auth` · **surface**：`app`  
-> **path**：`/auth/login`  
-> **角色可见**：未登录（已登录访问自动跳 `/`）  
-> **R 覆盖**：R-003 / 004 / 005 / 006 / 011 / 013  
+> **阶段**：C04-N · **feature**：`auth` · **surface**：`app`
+> **角色可见**：未登录（已登录访问自动跳 `/`）
+> **R 覆盖**：R-003 / 004 / 005 / 006 / 011 / 013
 > **冻结状态**：已冻结 · 2026-05-16
-
----
 
 ## 1. 布局
 
@@ -56,7 +53,7 @@ GlassCard
 ## 5. 关键交互
 
 - **提交**：点击“登录” → 进入 `submitting` 态 → 发起邀请 `auth` 服务的登录（节流检查 + 凭证校验 + 会话登记，具体接口在 D02-api/auth/app/login 定义）→ 成功后跳 `redirect ?? '/'`。
-- **Google**：点击 “Google 继续” → 发起 OAuth 跳转（跳回 `/auth/callback`，详见 P-app-auth-004）；本页不做预校验。
+- **Google**：点击 “Google 继续” → 发起 OAuth 跳转（跳回 对应页面，详见 P-app-auth-004）；本页不做预校验。
 - **redirect**：query 中带 `redirect=<encoded url>`；登录成功优先跳此；缺省跳 `/`。
 - **守卫**：已登录访问本页时，路由 root loader 自动 navigate 走（实现细节与auth 路由守卫一同在 D02 定义）。
 
@@ -86,7 +83,7 @@ GlassCard
 
 ## 9. 性能 / 埋点
 
-- 首屏不调任何接口；
+- 首屏不调任何
 - 提交开始 `analytics.track('auth.signin_attempt')`；成功 / 失败追加各自事件（事件 schema 见 `analytics` feature，暂不支持）。
 
 ## 10. 场景验证

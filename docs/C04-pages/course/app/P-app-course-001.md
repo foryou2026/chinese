@@ -2,14 +2,14 @@
 
 # P-app-course-001 · 首页 / 主题切换 / 引导入口
 
-> F3 源:`P-app-course-001` · 路由 `/` 或 `/home` · R-001/002/003
+> F3 源:`P-app-course-001` 或 对应页面 · R-001/002/003
 
 ## 1. 进入条件
-- 已登录(未登录 → 跳 `/auth/login`);
+- 已登录(未登录 → 跳 对应页面);
 - 用户已选 `current_track`(否则触发 D-17 引导多步流)。
 
 ## 2. 初始数据(1 次请求)
-- `GET /app/home/summary?track={current_track}` → 返回:
+- → 返回:
   - `user`(头像 / 昵称 / 母语 / UI 语言);
   - `continue_lesson`(节 code + 进度 % + 最后学习位置);
   - `srs_due_count`(今日到期 KP 数);
@@ -19,7 +19,7 @@
 
 ## 3. 主要交互
 - 顶部主题徽章 → 点开 D-11 主题 Sheet(只列已订阅主题)→ 切换写 用户当前主题 并刷新 summary;
-- "继续学习"卡片 → 跳 P-app-course-002(节学习)`/learn/{lesson_code}` 续传 最后学习位置;
+- "继续学习"卡片 → 跳 P-app-course-002(节学习)对应页面 续传 最后学习位置;
 - "今日复习 N"卡片 → 跳 P-app-course-004;
 - "推荐"卡片 → 跳 P-app-course-002 该节;
 - 底部 Tab 切换 → 不刷新 summary(本地缓存 10 分钟)。

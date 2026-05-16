@@ -2,7 +2,7 @@
 
 # N01 · 页面描述 · admin 登录页
 
-- 路径 `/admin/auth/login`
+- 路径 对应页面
 - 居中卡片 (max-w 420),深色 admin 主题 (B04 暗色 token)
 - 字段:邮箱 / 密码 (无 Google 按钮 / 无 "注册" 链接)
 - 底部小字:`忘记密码?` (text-button)

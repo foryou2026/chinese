@@ -2,18 +2,18 @@
 
 # P-admin-course-007 · 媒资库
 
-> F3 源:`P-admin-course-007` · 路由 `/admin/course/media` · R-019
+> F3 源:`P-admin-course-007` · R-019
 
 ## 1. 进入条件
 - admin。
 
 ## 2. 初始数据
-- `GET /admin/course/media?type=&cursor=` → 媒资列表;字段:`id / hash / kind(audio/image/video)/ size / cdn_url / ref_count / ref_kp_ids / ref_q_ids / uploaded_at / is_deleted`。
+- → 媒资列表;字段:`id / hash / kind(audio/image/video)/ size / cdn_url / ref_count / ref_kp_ids / ref_q_ids / uploaded_at / is_deleted`。
 
 ## 3. 主要交互
 - 顶部上传:接受文件 → 计算 hash → 命中已存在 → 直接复用;新文件 → 写表 + 上传 CDN;
 - 行点击 → 详情抽屉(预览 + 引用清单 + [软删]);
-- [软删] → 若 `ref_count>0` 弹 D-5 拦截;否则 D-1 二次确认 → `DELETE soft` 写 `is_deleted=true`;
+- [软删] → 若 `ref_count>0` 弹 D-5 拦截;否则 D-1 二次确认 → 写`is_deleted=true`;
 - 物理清理由后台 cron 每天扫 `is_deleted=true AND 软删时间 > 30 天前` 执行,本页不操作。
 
 ## 4. 弹窗

@@ -2,7 +2,7 @@
 
 # `P-app-discover-china-002` · 类目下文章列表
 
-> **阶段**:C04-N · **path**:`/china/categories/:code` · **R 覆盖**:R-002, R-007
+> **阶段**:C04-N · **R 覆盖**:R-002, R-007
 > **角色可见**:公开(01-03)/ 登录(04-12) · **冻结状态**:已冻结 · 2026-05-16
 
 ## 1. 布局
@@ -27,7 +27,7 @@ Pagination
 ```
 
 ## 3. 数据
-- `GET china/categories/:code/articles?page&pageSize&q` → `{ items, total }`;
+- → `{ items, total }`;
 - 仅返回 `status=published`。
 
 ## 4. 状态
@@ -41,7 +41,7 @@ Pagination
 | forbidden | 04-12 未登录(理论已被 P-001 拦截) | 跳 login |
 
 ## 5. 交互
-- 行点击 → `/china/articles/{code}`;
+- 行点击 → 对应页面;
 - 搜索 debounce 300ms;
 - 中文用户搜索框仅匹配中文;非中文用户匹配 中文 + 本地语 两列(R-007)。
 

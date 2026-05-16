@@ -2,7 +2,7 @@
 
 # `P-admin-discover-china-001` · 管理端 12 类目卡片
 
-> **path**:`/admin/china` · **R 覆盖**:R-008, R-016, R-018
+> **R 覆盖**:R-008, R-016, R-018
 > **角色可见**:admin · **冻结状态**:已冻结 · 2026-05-16
 
 ## 1. 布局
@@ -25,7 +25,7 @@ Grid {
 ```
 
 ## 3. 数据
-- `GET admin/china/categories?include_stats=1` → `[{ code, 多语名称字段, description_i18n, total, published }]`。
+- → `[{ code, 多语名称字段, description_i18n, total, published }]`。
 
 ## 4. 状态
 | 态 | 表现 |
@@ -36,7 +36,7 @@ Grid {
 | forbidden | 后端 403 → 跳 /admin/auth/login |
 
 ## 5. 交互
-- 卡片点击 → `/admin/china/categories/{code}`;
+- 卡片点击 → 对应页面;
 - 删除按钮永远 disabled + tooltip;
 - 搜索:输入 + 范围"全局" → 跳 `P-admin-discover-china-004?scope=global&q={q}`。
 

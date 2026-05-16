@@ -2,14 +2,14 @@
 
 # P-app-course-007 · 考试答题 / 倒计时
 
-> F3 源:`P-app-course-007` · 路由 `/exam/{attemptId}` · R-011
+> F3 源:`P-app-course-007` · R-011
 
 ## 1. 进入条件
 - `attempt.status=in_progress`;
 - 通过 P-app-course-006 [开始考试] 进入,直链访问校验 `user_id`。
 
 ## 2. 初始数据
-- `GET /app/exam/attempt/{id}` → snapshot 题列表(已按 blueprint 抽好,顺序固定)+ `time_limit_sec` + `time_used_sec`;
+- → snapshot 题列表(已按 blueprint 抽好,顺序固定)+ `time_limit_sec` + `time_used_sec`;
 - 全屏沉浸进入,隐藏底部 Tab;
 - 倒计时 useEffect 启动,每秒减 1,本地 + 服务端同步。
 
@@ -18,7 +18,7 @@
 - 答题不反馈对错(与 P-app-course-002 学习模式不同);
 - 可前后切题 / 标记疑问;
 - 中途无返回按钮;关闭浏览器 / 切应用 → 后端 5 分钟无心跳后 `status=failed score=0`;
-- "交卷" → D-1 二次确认 → `POST /app/exam/attempt/{id}/submit` 批量判分 → 结算 D-18。
+- "交卷" → D-1 二次确认 → 批量判分 → 结算 D-18。
 
 ## 4. 弹窗
 - D-1 交卷确认 · D-18 阶段考结果(显示满分 100 + 动态均分单题分 + 通过 / 失败 + 错题入 SRS 提示)

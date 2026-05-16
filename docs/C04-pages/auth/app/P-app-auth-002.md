@@ -2,8 +2,8 @@
 
 # `P-app-auth-002` · 注册
 
-> **path**：`/auth/register` · **角色可见**：未登录  
-> **R 覆盖**：R-001 / 002 / 014  
+> **角色可见**：未登录
+> **R 覆盖**：R-001 / 002 / 014
 > **冻结状态**：已冻结 · 2026-05-16
 
 ## 1. 布局
@@ -48,7 +48,7 @@ GlassCard
 点击「注册」 → 进入 `submitting` 态 → 发起 auth 服务注册（含节流检查，具体接口在 D02-api/auth/app/register 定义）：
 
 - 429 节流命中 → Toast `AUTH_REGISTER_RATE_LIMITED`。
-- 成功 → 跳 `P-003` `/auth/verify-email-sent?email=<email>`。
+- 成功 → 跳 `P-003` 对应页面。
 - `email_exists` → 邮箱字段下内联「该邮箱已注册」+ 同行右侧「去登录 / 找回密码」两个 link button。
 - `weak_password` → 密码字段下「密码强度不足」。
 
@@ -67,7 +67,7 @@ GlassCard
 
 | # | 场景 | 期望 |
 |---|------|------|
-| S1 | 新邮箱注册成功 | 跳 `/auth/verify-email-sent?email=...` |
+| S1 | 新邮箱注册成功 | 跳 对应页面 |
 | S2 | 邮箱已存在 | 字段下内联「已注册」+ 跳转链接 |
 | S3 | 弱密码（仅字母）| 字段下内联「密码强度不足」 |
 | S4 | 节流命中 | Toast「注册尝试过多」 |

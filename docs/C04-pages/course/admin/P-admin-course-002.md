@@ -2,19 +2,19 @@
 
 # P-admin-course-002 · 主题-阶段-章-节四级列表
 
-> F3 源:`P-admin-course-002` · 路由 `/admin/course/tree?track={track}` · R-014/023
+> F3 源:`P-admin-course-002` · R-014/023
 
 ## 1. 进入条件
 - admin + `track ∈ 主题范围`。
 
 ## 2. 初始数据
-- `GET /admin/course/tree?track={track}&depth=4` → 阶段[6] → 章[6] → 节[6] 树形;每节字段 `code / 多语标题字段.zh / 发布态 / kp_count / question_count`;
+- → 阶段[6] → 章[6] → 节[6] 树形;每节字段 `code / 多语标题字段.zh / 发布态 / kp_count / question_count`;
 - 节点 lazy expand(章/节默认折叠首屏只渲染阶段)。
 
 ## 3. 主要交互
-- 拖拽排序:阶段 / 章 / 节内同级拖动 → `PATCH /admin/course/{level}/reorder` 写 句子顺序号;
+- 拖拽排序:阶段 / 章 / 节内同级拖动 → 写句子顺序号;
 - 行内操作:[发布] / [下架] / [进入编辑];
-- 章发布 → D-4 级联确认("将级联发布 N 个节、N 个 KP、N 个题")→ `POST /admin/course/chapter/{id}/publish?cascade=true`;
+- 章发布 → D-4 级联确认("将级联发布 N 个节、N 个 KP、N 个题")→
 - 节发布 → 类似 D-4(级联 KP+题);
 - 下架:章下架只切自身(D-3 确认),不级联;
 - 节标题点击 → 跳 P-admin-course-003;

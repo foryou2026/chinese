@@ -2,8 +2,8 @@
 
 # `P-app-auth-006` · 重置密码
 
-> **path**：`/auth/reset-password` · **角色可见**：未登录（recovery session）  
-> **R 覆盖**：R-007 / R-012  
+> **角色可见**：未登录（recovery session）
+> **R 覆盖**：R-007 / R-012
 > **冻结状态**：已冻结 · 2026-05-16
 
 ## 1. 入参 / 前置
@@ -31,8 +31,8 @@ GlassCard
 | `exchanging` | 首帧 Spinner + 「正在校验链接…」 |
 | `idle` | 输入新密码 |
 | `submitting` | 按钮 spinner |
-| `success` | icon check 56px (--success) + 「密码已重置，正在登入…」+ 2s 后自动跳 `/me` |
-| `token-invalid` | 警告图标 + 「链接已过期或已使用」+ link 「重新发起忘记密码」 → `/auth/forgot` |
+| `success` | icon check 56px (--success) + 「密码已重置，正在登入…」+ 2s 后自动跳 对应页面 |
+| `token-invalid` | 警告图标 + 「链接已过期或已使用」+ link 「重新发起忘记密码」 → 对应页面 |
 
 ## 4. 字段
 

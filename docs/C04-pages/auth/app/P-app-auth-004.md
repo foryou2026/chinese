@@ -2,14 +2,14 @@
 
 # `P-app-auth-004` · OAuth / 邮箱验证回调
 
-> **path**：`/auth/callback` · **角色可见**：任意  
-> **R 覆盖**：R-002 / R-011 / R-012  
+> **角色可见**：任意
+> **R 覆盖**：R-002 / R-011 / R-012
 > **冻结状态**：已冻结 · 2026-05-16
 
 ## 1. 用途
 
 - Google OAuth `redirectTo` 落地；
-- 邮箱注册验证链接 / 重置密码链接的部分场景（reset 走 `/auth/reset-password` 单独承载，本页不处理 recovery）；
+- 邮箱注册验证链接 / 重置密码链接的部分场景（reset 走 对应页面 单独承载，本页不处理 recovery）；
 - 仅 `type=signup` / `type=invite` / 无 type（OAuth）经过本页。
 
 ## 2. 布局

@@ -2,13 +2,13 @@
 
 # P-admin-course-004 · KP 列表 + Drawer
 
-> F3 源:`P-admin-course-004` · 路由 `/admin/course/kp` · R-016/022
+> F3 源:`P-admin-course-004` · R-016/022
 
 ## 1. 进入条件
 - admin。
 
 ## 2. 初始数据
-- `GET /admin/course/kp?filters=...&cursor=&limit=50` → 列表;字段:`code / type / difficulty / title_zh / lesson_count / question_count / 发布态 / version / 更新时间 / batch_id`;
+- → 列表;字段:`code / type / difficulty / title_zh / lesson_count / question_count / 发布态 / version / 更新时间 / batch_id`;
 - 顶部筛选:主题 / KP 类型(7 类)/ 难度 / 状态 / 导入批次 / 关键词搜索。
 
 ## 3. 主要交互

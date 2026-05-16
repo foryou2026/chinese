@@ -2,14 +2,14 @@
 
 # P-app-course-004 · SRS 今日复习
 
-> F3 源:`P-app-course-004` · 路由 `/review` · R-009/026
+> F3 源:`P-app-course-004` · R-009/026
 
 ## 1. 进入条件
 - 已登录;
 - 无订阅也可复习(已学内容)。
 
 ## 2. 初始数据
-- `GET /app/srs/today?limit=50` → 按 `box ASC, due_at ASC` 拉到期 KP;
+- → 按 `box ASC, due_at ASC` 拉到期 KP;
 - 每 KP 抽一道关联题(`questions WHERE kp_id IN (...) ORDER BY RANDOM()`),题型随机轮换避免背答案;
 - 一组 10 题。
 

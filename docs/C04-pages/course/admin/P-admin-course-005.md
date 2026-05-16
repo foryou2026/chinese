@@ -2,13 +2,13 @@
 
 # P-admin-course-005 · 题目列表 + 双开预览
 
-> F3 源:`P-admin-course-005` · 路由 `/admin/course/question` · R-017/022/024
+> F3 源:`P-admin-course-005` · R-017/022/024
 
 ## 1. 进入条件
 - admin。
 
 ## 2. 初始数据
-- `GET /admin/course/question?filters=...&cursor=&limit=50` → 列表;字段:`code / type / kp_code / difficulty / report_count / 发布态`;发布态 / version / 更新时间;
+- → 列表;字段:`code / type / kp_code / difficulty / report_count / 发布态`;发布态 / version / 更新时间;
 - 顶部筛选:主题 / 题型(12 种)/ KP / 难度 / 状态 / 举报数 ≥ N。
 
 ## 3. 主要交互

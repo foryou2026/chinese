@@ -2,7 +2,7 @@
 
 # `P-admin-discover-china-003` · 文章编辑(基本信息 + 句子)
 
-> **path**:`/admin/china/articles/:id` · **R 覆盖**:R-010..R-015, R-017, R-019
+> **R 覆盖**:R-010..R-015, R-017, R-019
 > **冻结状态**:已冻结 · 2026-05-16
 
 ## 1. 布局
@@ -35,12 +35,8 @@ Pagination
 ```
 
 ## 3. 数据
-- `GET admin/china/articles/:id` + `GET admin/china/articles/:id/sentences?page&pageSize&q`;
-- `PUT admin/china/articles/:id`(标题 5 语 + 拼音 + 状态);
-- `POST admin/china/articles/:id/sentences { after_句子顺序号? | position: "head"|"tail" }`;
-- `PUT admin/china/sentences/:id`;
-- `DELETE admin/china/sentences/:id`(自动重排 句子顺序号 + 缓存键失效);
-- `POST admin/china/articles/:id/sentences/reorder { order: [id...] }`。
+- 操作(标题 5 语 + 拼音 + 状态);
+- 操作(自动重排 句子顺序号 + 缓存键失效);
 
 ## 4. 状态
 | 态 | 表现 |
@@ -55,7 +51,7 @@ Pagination
 
 ## 5. 交互
 - **D-2 切 Tab**:同字段切换,字段 onChange 标 dirty;
-- **保存**:`PUT` 全量;若 更新时间(本地) < `server` → 后写覆盖 + Toast(R-017);
+- **保存**:保存 全量;若 更新时间(本地) < `server` → 后写覆盖 + Toast(R-017);
 - **发布**:先客户端校验所有句子 5 语齐;否则弹错误 Modal;
 - **下架**:D-5 二次确认 + 说明"将清空所有用户进度";
 - **句子编辑 D-3**:Drawer 600px,5 Tab + 拼音 + 中文校对;保存归列表;

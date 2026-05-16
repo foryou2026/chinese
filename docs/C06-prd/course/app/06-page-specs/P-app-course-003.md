@@ -12,8 +12,8 @@
 | 标题 | 答题(quiz) |
 | feature | `course` |
 | surface | `app` |
-| 路由(规范) | 见 [C02 05-navigation.md](../../../../C03-ia/course/app/05-navigation.md) |
-| 角色可见 | 见 [C05 08-roles-permissions.md](../08-roles-permissions.md) |
+| 路由(规范) | 见 [C03 05-navigation.md](../../../../C03-ia/course/app/05-navigation.md) |
+| 角色可见 | 见 [C06 08-roles-permissions.md](../08-roles-permissions.md) |
 
 ## 2. 上游来源
 

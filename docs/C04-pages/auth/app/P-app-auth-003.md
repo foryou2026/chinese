@@ -2,8 +2,8 @@
 
 # `P-app-auth-003` · 验证邮件已发送
 
-> **path**：`/auth/verify-email-sent` · **角色可见**：未登录  
-> **R 覆盖**：R-001 / R-015  
+> **角色可见**：未登录
+> **R 覆盖**：R-001 / R-015
 > **冻结状态**：已冻结 · 2026-05-16
 
 ## 1. 布局
@@ -24,7 +24,7 @@ GlassCard
 
 ## 3. 入参
 
-- query `email`：必传；若缺失 → 跳 `/auth/register`；
+- query `email`：必传；若缺失 → 跳 对应页面；
 - 初次进入按钮处 `cooldown` 60s（与注册成功瞬间一致）。
 
 ## 4. 态
@@ -52,5 +52,5 @@ GlassCard
 | S1 | 注册后进入 | 显「检查你的邮箱」+ 按钮 60s 倒计时 |
 | S2 | 倒计时 0 后点重发 | 按钮再次 60s 倒计时 + Toast「已重新发送」 |
 | S3 | 60s 内强行点 | 按钮 disabled 无响应 |
-| S4 | 缺少 query email | 自动跳 `/auth/register` |
+| S4 | 缺少 query email | 自动跳 对应页面 |
 | S5 | 服务端额外节流命中 | Toast「请稍后再试」+ 按钮倒计时按 retryAfter |

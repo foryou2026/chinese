@@ -2,14 +2,13 @@
 
 # P-admin-course-009 · 全局搜索
 
-> F3 源:`P-admin-course-009` · 路由 `/admin/course/search?q=` · 快捷键 `Ctrl/Cmd + K` · R-021
+> F3 源:`P-admin-course-009` · 快捷键 `Ctrl/Cmd + K` · R-021
 
 ## 1. 进入条件
 - admin。
 
 ## 2. 初始数据
 - 顶部搜索框 + 3 段命中(`Lesson / KP / Question`)分别 `LIMIT 20`;
-- `GET /admin/course/search?q=&scope=lesson,kp,question&track={scope}`;
 - 默认按 主题范围 过滤。
 
 ## 3. 主要交互

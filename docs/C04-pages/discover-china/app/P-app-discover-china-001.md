@@ -3,12 +3,9 @@
 # `P-app-discover-china-001` · 12 类目卡片页
 
 > **阶段**:C04-N · **feature**:`discover-china` · **surface**:`app`
-> **path**:`/china`
 > **角色可见**:任意(04-12 类目卡片点击时弹登录提示)
 > **R 覆盖**:R-001, R-020
 > **冻结状态**:已冻结 · 2026-05-16
-
----
 
 ## 1. 布局
 
@@ -34,7 +31,7 @@ Grid(.card-grid) {
 
 ## 3. 数据
 
-- `GET china/categories` → `[{ code, 多语名称字段, description_i18n, needs_login }]`(在 D02 定义)
+- → `[{ code, 多语名称字段, description_i18n, needs_login }]`(在 D02 定义)
 - 显示语言由 i18n hook 决定。
 
 ## 4. 状态
@@ -48,8 +45,8 @@ Grid(.card-grid) {
 
 ## 5. 交互
 
-- **卡片点击 01-03**:直接跳 `/china/categories/{code}`;
-- **卡片点击 04-12 + 未登录**:弹 D-8(详见 [C02-07-error-pages §6](../../../C03-ia/discover-china/07-error-pages.md));
+- **卡片点击 01-03**:直接跳 对应页面;
+- **卡片点击 04-12 + 未登录**:弹 D-8(详见 [C03-07-error-pages §6](../../../C03-ia/discover-china/07-error-pages.md));
 - **卡片点击 04-12 + 已登录**:直接跳;
 - **悬停**:卡片 lift + 玻璃罩亮度 +5%。
 

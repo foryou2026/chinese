@@ -2,14 +2,14 @@
 
 # P-admin-course-001 · 课程目录总览
 
-> F3 源:`P-admin-course-001` · 路由 `/admin/course` · R-013
+> F3 源:`P-admin-course-001` · R-013
 
 ## 1. 进入条件
 - 已登录 admin(`super / admin / readonly` 任一)。
 
 ## 2. 初始数据
-- `GET /admin/course/overview` → 5 主题(按 `admin.主题范围` 过滤)+ 每主题已发布章节统计 + 缺口数;
-- `GET /admin/course/gaps` → 缺口看板(待发布 KP 数 / 待发布题数 / 媒资引用断链 / 节末测未配置)。
+- → 5 主题(按 `admin.主题范围` 过滤)+ 每主题已发布章节统计 + 缺口数;
+- → 缺口看板(待发布 KP 数 / 待发布题数 / 媒资引用断链 / 节末测未配置)。
 
 ## 3. 主要交互
 - 5 张主题卡片点击 → 跳 P-admin-course-002 主题树;

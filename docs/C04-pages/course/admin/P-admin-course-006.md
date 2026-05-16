@@ -2,13 +2,13 @@
 
 # P-admin-course-006 · 学员举报处理
 
-> F3 源:`P-admin-course-006` · 路由 `/admin/course/report` · R-018/024
+> F3 源:`P-admin-course-006` · R-018/024
 
 ## 1. 进入条件
 - `admin / super`(`admin` 只读)。
 
 ## 2. 初始数据
-- `GET /admin/course/report?status=open&cursor=` → 按 `question_id` 聚合,`report_count` 倒序;`≥3 自动置顶`;
+- → 按 `question_id` 聚合,`report_count` 倒序;`≥3 自动置顶`;
 - 字段:`question_code / question_title_zh / kp_code / track / report_count / latest_report_at / status`。
 
 ## 3. 主要交互

@@ -2,20 +2,20 @@
 
 # P-admin-course-008 · 考试中心管理(分层)
 
-> F3 源:`P-admin-course-008` · 路由 `/admin/course/exam` · R-020/025
+> F3 源:`P-admin-course-008` · R-020/025
 
 ## 1. 进入条件
 - admin。
 
 ## 2. 初始数据
-- 顶部主题选择 → `GET /admin/course/exam/list?track={track}` → 按 `scope_type` 分组列出:
+- 顶部主题选择 → → 按 `scope_type` 分组列出:
   - `lesson_quiz`(节末小测)/ `chapter_test`(章测)/ `stage_exam`(阶段考)/ `hsk_mock`(HSK 主题独有);
 - 字段:`code / scope_type / scope_id`(章/节/阶段)/ blueprint JSON / pass_score / time_limit_sec / 发布态。
 
 ## 3. 主要交互
 - 点击考试行 → 进入编辑页;
 - blueprint 编辑器:可视化配置每题型抽题数 + 难度分布 + 来源池(同节 / 同章 / 同阶段);
-- [试抽预览] → D-9 抽屉调 `POST /admin/course/exam/{id}/sample` 返抽题列表 + 1:1 用户端渲染;**不写 attempt**;
+- [试抽预览] → D-9 抽屉调用 返抽题列表 + 1:1 用户端渲染;**不写 attempt**;
 - 试抽失败(题量不足)→ Toast,[发布] 按钮置灰(FX-course-02);
 - [发布] → D-1 确认 → 发布态=`true`;
 - 节末小测节点联动:每节最多 1 条 `lesson_quiz`,与 P-admin-course-003 节关联绑定。
