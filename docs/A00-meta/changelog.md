@@ -7,6 +7,88 @@
 
 ---
 
+## 2026-05-17 · 批次 15 · Round 8 · /prompt 模板去 auth 特殊化 + 去分期化（推翻批次 14 的 auth 决策）
+
+> **触发原因**：用户指出 [prompt/A-framework/A00-04-文档目录规划.md](../../prompt/A-framework/A00-04-文档目录规划.md) 与 [prompt/A-framework/A00-01-框架总览.md](../../prompt/A-framework/A00-01-框架总览.md) 把 auth 强行规定为「每个 surface 必须独立 `<surface>-auth` feature」是错误的——auth 与「商品」「订单」「发现中国」一样只是一个普通 feature，**很多软件根本不需要登录**；多端规则应统一为 `<feature>/<surface>/`，不允许任何 feature 被特殊命名。同时用户拒绝模板里出现「本期 / 二期 / 分期 / P0 / P1 / P2 / 显式排除」——「所有出现的内容都是要做的，不要搞任何分期」。模板是给陌生人通用复用的，必须彻底通用化。
+
+### 15-1 · A 框架去 auth 特殊化
+
+- [prompt/A-framework/A00-04-文档目录规划.md](../../prompt/A-framework/A00-04-文档目录规划.md)
+  - 删除「auth feature 在多端项目里的形态」整段（旧 L278-289 的 `<surface>-auth` 强制命名规则）
+  - 改写为通用「feature 命名通用约定」段：所有 feature kebab-case 业务语义，无任何前缀强制；如有 auth 类需求按 `<feature>/<surface>/` 走多端形态，命名建议 `auth`
+  - 标记 `09-auth-infra.md` 为可选（仅当项目有登录类需求才填实）
+  - 标记 `03-authz-data-model.md` 为可选；新增「不预设登录」原则
+- [prompt/A-framework/A00-01-框架总览.md](../../prompt/A-framework/A00-01-框架总览.md)
+  - 旧「『登录』不是全局事 + 每 surface `<surface>-auth`」段 → 改写为「所有 feature 平等对待」原则：auth 是普通 feature，命名 kebab-case，无前缀强制；不需要登录的项目则该 feature 不存在
+  - B02 责任行去掉 `<surface>-auth` 括号
+- [prompt/A-framework/A00-02-端到端工作流.md](../../prompt/A-framework/A00-02-端到端工作流.md)
+  - 工作流清单删「必须包含各 `<surface>-auth` feature」
+  - 09-auth-infra 标为可选
+- [prompt/A-framework/A00-03-通用约定.md](../../prompt/A-framework/A00-03-通用约定.md)
+  - 命名约定表删除「auth feature ID `<surface>-auth`」整行
+  - feature ID 行加注「所有 feature 平等，无任何前缀强制」
+
+### 15-2 · B01/B02 去 auth 特殊化
+
+- [prompt/B-foundation/B01-A01-用户输入-技术偏好.md](../../prompt/B-foundation/B01-A01-用户输入-技术偏好.md)
+  - surface 表删「是否本期上线」列；删 merchant/open「二期」示例行；加禁令「永不设置『是否本期上线』『二期』之类的列」
+  - `09-auth-infra` 段加「仅当项目有登录类需求时填实」注；feature 例从 `app-auth/admin-auth` 改为 `auth`
+  - 第三方 mock 示例把「本期 mock」改为「当前 mock」
+- [prompt/B-foundation/B01-A03-AI输出-架构规范.md](../../prompt/B-foundation/B01-A03-AI输出-架构规范.md)
+  - 08-surfaces 模板表删「是否本期上线」列；删 merchant 二期行；加禁令
+  - 4「surface × auth feature 矩阵」→ 改为「surface × auth 映射（可选）」，要求统一用 `auth` feature 名，禁造 `<surface>-auth`
+  - 09-auth-infra：加「项目无登录则整文件 N/A」；OAuth 表「本期 mock」列改「接入模式」；§5 「§3 中标记为本期的 provider」→「§3 中列出的所有 provider」
+- [prompt/B-foundation/B02-P01-用户输入-角色描述.md](../../prompt/B-foundation/B02-P01-用户输入-角色描述.md) 重写顶部「登录不是全局事」段：auth 是普通 feature；项目无登录需求时整类不存在
+- [prompt/B-foundation/B02-P02-AI澄清-权限提问.md](../../prompt/B-foundation/B02-P02-AI澄清-权限提问.md) 数据合规问题「本期需要满足的法规」→「项目需要满足的法规」
+- [prompt/B-foundation/B02-P03-AI输出-权限规范.md](../../prompt/B-foundation/B02-P03-AI输出-权限规范.md) 04-auth-feature-guideline 整文件改写：标题去 `<surface>-auth`、明确「**作为一个普通 feature**，推荐 id `auth`，不要造 `<surface>-auth`」；输出位置示例统一 `auth/<surface>/`；校验项的单/多端路由分流；整文件改为「仅当项目存在登录交互时输出」
+
+### 15-3 · C01 去分期 + 删显式排除
+
+- [prompt/C-product/C01-R01-用户输入-需求初稿.md](../../prompt/C-product/C01-R01-用户输入-需求初稿.md)
+  - **删除 §10「显式排除（本期不做的）」整段**（用户直接 quote 的反面教材）
+  - **删除 §12「时间与里程碑（本期硬截止）」整段**
+  - 「本期版本」→「版本号」；§9 mock 改「需 mock 的」；feature ID 例子去掉「auth 形如 app-auth/admin-auth」；§0 type 选项删 auth feature 单选项
+- [prompt/C-product/C01-R03-AI输出-需求基线.md](../../prompt/C-product/C01-R03-AI输出-需求基线.md)
+  - §0 摘要从 5 行改 4 行，删「本期范围 / 不做什么」
+  - **删除原 §2「范围与排除（白名单/黑名单）」整段**，替换为「暗依赖警示」+ 明示「永不出现 P0/P1/P2/本期/二期/MoSCoW」
+  - **R-ID 表删除「优先级」列**；删除 P0/P1/P2 图例
+  - §7 集成表「本期模式」→「接入模式」
+
+### 15-4 · C04 原型去 P0/P1/P2 优先级
+
+- [prompt/C-product/C04-H01-用户输入-原型方向.md](../../prompt/C-product/C04-H01-用户输入-原型方向.md)
+  - §3 表**删除「优先级」列**；所有页面统一「默认+加载+空+错」4 态；警句改为「没有 P0/P1/P2/优先级/待定/二期 这种说法」
+  - §10 验收「P0 页面 4 状态截图齐全」→「所有进表页面 4 状态截图齐全」
+- [prompt/C-product/C04-H02-AI澄清-原型提问.md](../../prompt/C-product/C04-H02-AI澄清-原型提问.md) 禁问列表加「是否分优先级」；维度 11 P0/P1 改「所有进表页面」；自检项同步
+- [prompt/C-product/C04-H03-AI输出-HTML原型规范.md](../../prompt/C-product/C04-H03-AI输出-HTML原型规范.md) 「P0 页面必须出 4 态」→「每个进表页面必须出 4 态」；禁止跳过理由加「优先级低」；changelog 模板去「不分期」括注；自检项同步
+
+### 15-5 · 保留的原则性引用（**不删**）
+
+下列表达虽然出现 P0/P1/P2/本期/二期 字样，但属于「禁止规则」本身，保留以强化原则：
+
+- `prompt/C-product/C04-H01-...md` L78「没有 P0/P1/P2 / 优先级 / 待定 / 二期 这种说法」
+- `prompt/B-foundation/B01-A01-...md` L68「永不设置『是否本期上线』『二期』这种列」
+- `prompt/C-product/C01-R03-...md` L80「永不出现 P0 / P1 / P2 / 本期 / 二期 / MoSCoW」
+- `prompt/C-product/C04-H02-...md` L75 自检「没出现『是否分期 / 本期是否只做一部分 / 二期再做』这类问题」
+- `prompt/C-product/C04-H03-...md` L24/L76 禁跳过理由列表
+- `prompt/B-foundation/B01-A03-...md` L355 同上
+- `prompt/B-foundation/B03-X01-...md` L139「不允许『二期再做』」
+- `prompt/B-foundation/B03-X03-...md` L221-229 P1/P2 是体验原则编号（非分期）—— 保留
+- `prompt/B-foundation/B02-P03-...md` 角色「优先级」列（冲突时取最高，技术机制）—— 保留
+- `prompt/C-product/C03-N02-...md` L22「首屏优先级」（视觉布局优先级）—— 保留
+
+### 15-6 · docs/ 既有结构未动 · 待用户裁决
+
+`docs/C0[1-5]-*` 当前已有 `app-auth/` 与 `admin-auth/` 两个独立 feature 目录（来自 Round 6-7 按旧 prompt 产出）。模板已通用化，建议改为单一 `auth/<surface>/` 结构以匹配新模板，但**未执行**——涉及大量目录重命名 + 跨文件引用更新，待用户明确指示后单独跑一轮迁移。
+
+### 15-7 · 影响范围
+
+- F 层（B01~B04 模板）变更：**所有未来生成的 docs/** 适用；既有 docs/B01-B04 已落盘内容不受影响
+- C01/C04 模板变更：**所有未来生成的 C01-R03 / C04-H01/H02/H03 文件**适用；既有文件不受影响（除非选择批量重生）
+- 既有 `docs/{C01..C05,D01..D03}-*/app-auth/` 与 `admin-auth/` 目录**保持现状**，等用户决策是否迁移
+
+---
+
 ## 2026-05-16 · 批次 14 · Round 7 · auth 命名澄清 + C05 非 auth feature 8 文件实质化
 
 ### 7-0 · auth 命名澄清(无文件改动)

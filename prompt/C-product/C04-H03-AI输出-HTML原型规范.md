@@ -21,8 +21,8 @@
   <script>proto.bootstrap();</script>
 仅写本 feature 专属的 feature.css（贴 vendor 变量，禁止重定义 token）与 feature.js（调 vendor 暴露的 proto.* API）。
 
-H01 §3 表里所有 page-id 一次性出齐——P0 页面必须出 4 份独立状态文件（默认 / 加载 / 空 / 错误）；P1 页面至少出默认态；权限页加 forbidden 态。**禁止**以"分期 / 二期 / 暂不做"为由跳过。
-本期 mock 的接口数据放 mock-data.js（OP-ID 为键，与 docs/C03-pages/<feature-id>/<page-id>.md §4 一致；字段名用业务语言，**不假设**任何后端字段）。
+H01 §3 表里所有 page-id 一次性出齐——**每个进表页面都必须出 4 份独立状态文件**（默认 / 加载 / 空 / 错误）；权限页加 forbidden 态。**禁止**以“分期 / 二期 / 暂不做 / 优先级不高”为由跳过。
+mock 的接口数据放 mock-data.js（OP-ID 为键，与 docs/C03-pages/<feature-id>/<page-id>.md §4 一致；字段名用业务语言，**不假设**任何后端字段）。
 本阶段属于产品设计阶段，**严禁**引用、读取或假设任何后续开发阶段产物（架构 / 数据规范 / 接口规范 / 校验规范），也禁止出现真实接口路径、SQL、表名、列名、真实路由路径。
 完成后写 changelog.md（v1.0 首次产出）。
 ```
@@ -34,7 +34,7 @@ H01 §3 表里所有 page-id 一次性出齐——P0 页面必须出 4 份独立
 ```
 docs/C04-prototype/<feature-id>/
   index.html              # 原型导航首页：列出所有页面 + 状态切换链接
-  changelog.md            # 版本日志（v1.0 起，单一线性版本，不分期）
+  changelog.md            # 版本日志（v1.0 起，单一线性版本）
   README.md               # 给评审/客户看的原型说明（H01 §4 勾选时产出）
   feature.css             # 仅本 feature 的页面级样式（贴 vendor 变量，不重定义 token）
   feature.js              # 仅本 feature 的页面级交互（调 vendor 暴露的 proto.* API）
@@ -69,11 +69,11 @@ docs/C04-prototype/<feature-id>/
 2. **字体自托管**（除非 B04 显式允许 CDN；字体走 vendor/proto-style/ 中的约定）。
 3. **所有颜色/字号/间距/圆角/阴影必须用 CSS 变量**：变量来自 `vendor/proto-style/tokens.css` + `themes.css`，**禁止**在 feature.css 重新定义任何 token。
 4. **不得发起真实网络请求**。所有数据从 `mock-data.js` 取，键为 OP-ID。
-5. **每个 P0 页面必出 4 状态文件**：默认 / 加载 / 空 / 错误。可选状态：`<page-id>.dark.html`、`<page-id>.mobile.html`。涉及权限页面再加 `<page-id>.forbidden.html`。
+5. **每个进表页面必出 4 状态文件**：默认 / 加载 / 空 / 错误。可选状态：`<page-id>.dark.html`、`<page-id>.mobile.html`。涉及权限页面再加 `<page-id>.forbidden.html`。
 6. **响应式**：最少在 375 / 768 / 1280 三档下视觉无破。
 7. **a11y**：每个交互元素 `:focus-visible` 必有焦点环；表单字段必有 `<label for>`。
 8. **页面跳转一律用 `<page-id>.html` 文件锚**，**禁止**使用任何真实 URL 路径（路由属于 D02 阶段）。
-9. **范围一次性出齐**：H01 §3 表里所有 page-id 必须本轮全部产出，**禁止**以"分期 / 二期 / 暂不做" 跳过。如发现某 page-id 在 C03-N 缺规范，应回到澄清提问而非跳过。
+9. **范围一次性出齐**：H01 §3 表里所有 page-id 必须本轮全部产出，**禁止**以“分期 / 二期 / 暂不做 / 优先级低”跳过。如发现某 page-id 在 C03-N 缺规范，应回到澄清提问而非跳过。
 10. **单文件 ≤ 1200 行**。
 
 ---
@@ -149,7 +149,7 @@ window.MOCK = {
 
 ## v1.0 · YYYY-MM-DD
 - 范围：H01 §3 全表 page-id 全部产出（P-001…P-NNN）
-- P0 页面 4 状态齐：<list>
+- 进表页面 4 状态齐：<list>
 - 权限页 forbidden 态：<list>
 - vendor/proto-style/ 来源：docs/B04-design/prototype-style/ @ <commit/version>
 - token 漂移：无 / 已回写 docs/B04-design/design-system/01-tokens.md
@@ -163,12 +163,12 @@ window.MOCK = {
 
 ## 输出质量自检
 
-- [ ] H01 §3 表里所有 page-id 是否一次性全部产出？有无以"分期/暂不做"为由跳过？
+- [ ] H01 §3 表里所有 page-id 是否一次性全部产出？有无以“分期/暂不做/优先级低”为由跳过？
 - [ ] `vendor/proto-style/` 与 `docs/B04-design/prototype-style/` 内容**字节级一致**？
 - [ ] feature.css / feature.js 中无任何 token 重定义、无任何 hex / px 硬编码？
 - [ ] 双击 `index.html` 在浏览器能跑，无 404、无控制台报错？
 - [ ] 所有 page-id 与 `docs/C02-ia/<feature-id>/04-pages.md` 一致？
-- [ ] P0 页面 4 状态齐？权限页 forbidden 态齐？
+- [ ] 进表页面 4 状态齐？权限页 forbidden 态齐？
 - [ ] 颜色 / 字号 / 间距 / 圆角全用 CSS 变量（与 docs/B04-design/design-system/01-tokens.md 一致）？
 - [ ] 全文未出现任何后续开发阶段产物路径 / 真实接口名 / SQL / 表名 / 列名 / 真实路由路径？
 - [ ] 字体自托管（除非 B04 允许 CDN）？
