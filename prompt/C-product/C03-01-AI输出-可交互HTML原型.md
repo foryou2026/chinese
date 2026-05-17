@@ -604,7 +604,7 @@ fetch(PATH_PREFIX + '_shared/proto-nav.html')
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="nav-depth" content="0">
   <title>[module 名] · 功能目录 · 可交互原型</title>
-  <!-- 模块入口距 docs/B02 为 3 层（C03-prototype/<module>/index.html）-->
+  <!-- 模块入口：C03-prototype/<module>/index.html，上溯 2 级到项目根 -->
   <link rel="stylesheet" href="../../docs/B02-experience-design/prototype-style/tokens.css">
   <link rel="stylesheet" href="../../docs/B02-experience-design/prototype-style/themes.css">
   <link rel="stylesheet" href="../../docs/B02-experience-design/prototype-style/app.css">
