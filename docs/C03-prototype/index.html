@@ -56,29 +56,29 @@
   <nav class="crumb"><a href="./index.html">C03 原型</a></nav>
   <header class="hero">
     <h1>C03 原型审阅总览</h1>
-    <p>3 个功能域 · 按<strong>功能 → 模块 → 端</strong>组织。通过 <code>python -m http.server</code> 在项目根运行，所有页面可互相跳转。所有原型共享同一套设计令牌，支持明暗双主题。</p>
-    <div class="meta"><span class="chip">3 功能域</span><span class="chip muted">13 模块</span><span class="chip muted">34 页面</span></div>
+    <p>3 个模块 · 按<strong>模块 → 功能 → 端</strong>组织。通过 <code>python -m http.server</code> 在项目根运行，所有页面可互相跳转。所有原型共享同一套设计令牌，支持明暗双主题。</p>
+    <div class="meta"><span class="chip">3 模块</span><span class="chip muted">13 功能</span><span class="chip muted">34 页面</span></div>
   </header>
   <div class="grid">
     <a class="card" href="./auth/index.html">
-      <div class="eyebrow">功能域</div>
+      <div class="eyebrow">模块</div>
       <h3>鉴权 / Auth</h3>
-      <p>5 模块 · 13 页面 · 账号入口 / 找回 / 个人中心 / 管理登录 / 管理账号</p>
+      <p>5 功能 · 13 页面 · 账号入口 / 找回 / 个人中心 / 管理登录 / 管理账号</p>
     </a>
     <a class="card" href="./course/index.html">
-      <div class="eyebrow">功能域</div>
+      <div class="eyebrow">模块</div>
       <h3>课程 / Course</h3>
-      <p>8 模块 · 17 页面 · 学习 / SRS / 考试 / 内容管理 / 举报 / 媒资 / 考试编辑 / 搜索</p>
+      <p>8 功能 · 17 页面 · 学习 / SRS / 考试 / 内容管理 / 举报 / 媒资 / 考试编辑 / 搜索</p>
     </a>
     <a class="card" href="./discover-china/index.html">
-      <div class="eyebrow">功能域</div>
+      <div class="eyebrow">模块</div>
       <h3>发现中国</h3>
-      <p>4 模块 · 7 页面 · 文章浏览 / 分类管理 / 文章管理 / 搜索运维</p>
+      <p>4 功能 · 7 页面 · 文章浏览 / 分类管理 / 文章管理 / 搜索运维</p>
     </a>
   </div>
   <section class="feature-block" style="margin-top:var(--space-6)">
     <h2>目录结构说明</h2>
-    <p class="sub">本原型按 <code>功能 / 模块 / 端 / page-id.html</code> 四层组织。每功能有独立 <code>_shared/nav.html</code> 共享导航，所有页面通过 JavaScript fetch 动态加载，形成可跳转的连通整体。</p>
+    <p class="sub">本原型按 <code>模块 / 功能 / 端 / page-id.html</code> 四层组织。每功能有独立 <code>_shared/nav.html</code> 共享导航，所有页面通过 JavaScript fetch 动态加载，形成可跳转的连通整体。</p>
   </section>
   <footer>© 知语 · C03 原型审阅版 · 统一明暗主题</footer>
 </main>
