@@ -138,48 +138,18 @@
 
 ## 5. 角色定义
 
-### 5.1 角色枚举
+> **已迁移**：角色枚举、多角色策略、角色×surface 矩阵已集中维护于
+> [`C01-requirements/permissions/roles.md`](../permissions/roles.md)，本文件不再重复定义。
 
-| 角色 ID | DB / JWT 字面量 | 显示名 | 职责（一句话） | 不能做 |
-|--------|---------------|-------|-------------|--------|
-| ROLE-USER | `user` | 学员 | 学 / 练 / 复习 / 测试 / 看个人统计 / 提举报 | 进入运营管理页面 |
-| ROLE-ADMIN | `admin` | 运营管理员 | 维护主题骨架 / 节 / 知识点 / 题目 / 媒资 / 考试中心 / 处理举报 | 修改学员个人资料 / 历史成绩 |
-
-### 5.2 角色 × surface 矩阵
-
-| 角色 ID | `app` | `admin` |
-|---------|-------|---------|
-| ROLE-USER | ✅ 主 | ❌ |
-| ROLE-ADMIN | ❌ | ✅ 主 |
+涉及角色：`ROLE-USER`（学员）、`ROLE-ADMIN`（运营管理员）
 
 ---
 
 ## 6. 权限矩阵
 
-### 6.1 全局权限矩阵（功能点级）
-
-| 资源 / 操作 | ROLE-USER | ROLE-ADMIN |
-|------------|-----------|-----------|
-| 课程浏览（已发布内容） | ✅ | — |
-| 学习 / 复习 / 考试 | ✅ | — |
-| 个人统计 | ✅（仅自己） | — |
-| 提举报 | ✅ | — |
-| 课程目录管理 | — | ✅ |
-| 内容编辑 / 发布 / 下架 | — | ✅ |
-| 媒资库管理 | — | ✅ |
-| 考试中心配置 | — | ✅ |
-| 举报处理 | — | ✅ |
-
-### 6.2 数据可见范围
-
-| 角色 ID | 默认可见范围 | 说明 |
-|---------|-----------|------|
-| ROLE-USER | published-only | 仅已发布内容；自己的成绩 / 进度 |
-| ROLE-ADMIN | global（含草稿）| 全部内容含草稿；无学员个人成绩 |
-
-### 6.3 授权校验
-
-引用 `B01-architecture/09-auth-infra.md` 中定义的 `authRequired` / `adminRequired` 中间件。学员端 SRS / 考试 attempt 所有权按 `row.user_id === req.user.id` 判定，不进入角色系统。
+> **已迁移**：course 功能的权限矩阵行已合并至
+> - [`C01-requirements/permissions/app-matrix.md`](../permissions/app-matrix.md)（学员侧）
+> - [`C01-requirements/permissions/admin-matrix.md`](../permissions/admin-matrix.md)（运营侧）
 
 ---
 

@@ -107,85 +107,18 @@
 
 ## 5. 角色定义
 
-### 5.1 角色枚举
+> **已迁移**：角色枚举、多角色策略、角色×surface 矩阵、系统级硬约束已集中维护于
+> [`C01-requirements/permissions/roles.md`](../permissions/roles.md)，本文件不再重复定义。
 
-全系统**仅 2 个角色**：`ROLE-ADMIN`（管理端）+ `ROLE-USER`（应用端）。
-
-| 角色 ID | DB / JWT 字面量 | 显示名 | 职责（一句话） | 不能做 | 入口 surface |
-|--------|---------------|-------|-------------|--------|-------------|
-| ROLE-USER | `user` | 普通用户 | 注册 / 登录 / 找回密码 / 修改密码 / 维护个人资料 / 进入受守卫的 app 页面 | 进入 admin 受守卫页面 | `app`（`/`） |
-| ROLE-ADMIN | `admin` | 超级管理员 | 登录 / 找回密码 / 修改密码 / 退出 / 访问全部 admin 受守卫页面 | 在管理端自助注册；从管理端编辑普通用户密码 | `admin`（`/admin/*`） |
-
-> **当前严禁引入第三种角色**。运营 / 审核 / 客服 / 内容编辑等诉求一律视为 admin 兼任。
-
-### 5.2 多角色策略
-
-- 一个用户拥有**唯一**角色（`user` 或 `admin`），不支持多角色叠加。
-- 角色字段位置：JWT 元数据 `.role`；DB `users.role`；触发器同步到用户档案（冗余索引）。
-
-### 5.3 角色 × surface 矩阵
-
-| 角色 ID | `app` | `admin` |
-|---------|-------|---------|
-| ROLE-USER | ✅ 主 surface | ❌ 被守卫阻断 |
-| ROLE-ADMIN | ❌ 不适用 | ✅ 主 surface |
-
-### 5.4 超管保护规则
-
-- 不能删 / 禁用自己（`AUTH_SUPER_ADMIN_SELF_DELETE`）。
-- 不出现在任何"用户管理"列表中。
-- UI 无创建管理员账号的入口；管理员仅可由运维 seed 流程创建。
+涉及角色：`ROLE-USER`、`ROLE-ADMIN`
 
 ---
 
 ## 6. 权限矩阵
 
-### 6.1 全局权限矩阵（页面 / 功能点级）
-
-| 资源 / 操作 | ROLE-USER | ROLE-ADMIN |
-|------------|-----------|-----------|
-| app 公开页（落地页 / 营销）| ✅ | ✅ |
-| app 受守卫页（课程 / 个人中心等）| ✅（已登录）| ❌（入口不同）|
-| app 个人资料 | ✅（仅自己）| ❌ |
-| admin 受守卫页（全部）| ❌ | ✅（已登录）|
-| 注册账号 | ✅（邮箱 / Google）| ❌（仅运维 seed）|
-| 登录 | ✅（app 入口）| ✅（admin 入口）|
-| 找回密码 | ✅ | ✅ |
-| 修改密码 | ✅（已登录）| ✅（已登录）|
-| 退出登录 | ✅ | ✅ |
-
-### 6.2 数据可见范围原则
-
-| 角色 ID | 默认可见范围 | 说明 |
-|---------|-----------|------|
-| ROLE-USER | owner-only | 只看自己的会话 / 资料 |
-| ROLE-ADMIN | global（排除其他管理员）| 全平台 `role='user'` 用户；绝不列出 admin |
-
-### 6.3 授权校验机制
-
-> Token / 会话认证基础设施引用 `B01-architecture/09-auth-infra.md`，本节只定义授权层。
-
-**后端（4 个中间件）**：
-
-| 中间件 | 作用 | 挂在哪 |
-|--------|------|--------|
-| `authRequired` | 验证 JWT 有效并注入 `req.user` | app 受保护路由 |
-| `adminRequired` | 在 `authRequired` 基础上校验 `role === 'admin'` | admin 全部路由 |
-| `csrfRequired` | 验证 CSRF 令牌 | 所有写操作 |
-| `optionalAuth` | 尝试解析 JWT，失败不报错 | 公开但需识别身份的路由 |
-
-**前端路由守卫（TanStack Router）**：
-
-- `/_authed/`：未登录 → 跳 `/auth/login?redirect=...`
-- `/_admin/`：未登录 → 跳 `/admin/auth/login`；已登录但非 admin → 跳 `/admin/auth/login?reason=not_admin`
-
-**按钮 / 操作级**：无权按钮直接不渲染（不灰显）；后端必须二次校验，前端不可信。
-
-### 6.4 用户管理硬约束
-
-- 后端 SQL 必须强约束 `WHERE role = 'user'`（不允许靠前端过滤代替）。
-- 接口 / 列表 / 封禁 / 重置密码操作**只对 `role='user'` 生效**。
-- **反例（禁止）**：返回全表给前端，让前端 `.filter(role !== 'admin')`。
+> **已迁移**：auth 功能的权限矩阵行已合并至
+> - [`C01-requirements/permissions/app-matrix.md`](../permissions/app-matrix.md)（app 端）
+> - [`C01-requirements/permissions/admin-matrix.md`](../permissions/admin-matrix.md)（admin 端）
 
 ---
 

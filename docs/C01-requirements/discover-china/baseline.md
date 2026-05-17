@@ -123,48 +123,18 @@
 
 ## 5. 角色定义
 
-### 5.1 角色枚举
+> **已迁移**：角色枚举、多角色策略、角色×surface 矩阵已集中维护于
+> [`C01-requirements/permissions/roles.md`](../permissions/roles.md)，本文件不再重复定义。
 
-| 角色 ID | DB / JWT 字面量 | 显示名 | 职责（一句话） | 不能做 |
-|--------|---------------|-------|-------------|--------|
-| ROLE-USER | `user` | 访客 / 学员 | 浏览 12 类目（01-03 直接进 / 04-12 需登录）；阅读 + 听 TTS + 进度记忆 | 进入运营管理页面 |
-| ROLE-ADMIN | `admin` | 运营管理员 | 类目统计 / 文章 CRUD / 5 语句子编辑 / 发布 / 三级搜索 | 删除类目 |
-
-### 5.2 角色 × surface 矩阵
-
-| 角色 ID | `app` | `admin` |
-|---------|-------|---------|
-| ROLE-USER | ✅ 主 | ❌ |
-| ROLE-ADMIN | ❌ | ✅ 主 |
+涉及角色：`ROLE-USER`（访客 / 学员）、`ROLE-ADMIN`（运营管理员）
 
 ---
 
 ## 6. 权限矩阵
 
-### 6.1 全局权限矩阵（功能点级）
-
-| 资源 / 操作 | ROLE-USER（未登录 / 已登录） | ROLE-ADMIN |
-|------------|--------------------------|-----------|
-| 01-03 类目浏览 | ✅ 未登录即可 | — |
-| 04-12 类目浏览 | ✅ 登录后 | — |
-| 文章阅读 + TTS | ✅（已发布） | — |
-| 阅读进度同步 | ✅（登录后跨设备） | — |
-| 文章 CRUD + 发布 | — | ✅ |
-| 句子编辑 / 重排 | — | ✅ |
-| 类目统计 | — | ✅ |
-| 三级搜索（管理端） | — | ✅ |
-
-### 6.2 数据可见范围
-
-| 角色 ID | 默认可见范围 | 说明 |
-|---------|-----------|------|
-| ROLE-USER（未登录） | published-only，01-03 类目 | 无需 JWT |
-| ROLE-USER（已登录） | published-only，全部 12 类目 | 自己的阅读进度 |
-| ROLE-ADMIN | global（含草稿）| 全类目全文章含未发布 |
-
-### 6.3 授权校验
-
-引用 `B01-architecture/09-auth-infra.md` 中定义的 `authRequired` / `adminRequired` 中间件。04-12 类目的访问在 API 层通过 `authRequired` 中间件拦截；阅读进度读写按 `row.user_id === req.user.id` 判定所有权。
+> **已迁移**：discover-china 功能的权限矩阵行已合并至
+> - [`C01-requirements/permissions/app-matrix.md`](../permissions/app-matrix.md)（访客 / 学员侧）
+> - [`C01-requirements/permissions/admin-matrix.md`](../permissions/admin-matrix.md)（运营侧）
 
 ---
 
