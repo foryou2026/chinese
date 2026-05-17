@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- TARGET-PATH: docs/C03-prototype/auth/admin/P-admin-auth-004.html -->
+<!-- page-id: P-admin-auth-004 · state: default · feature: auth -->
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="proto:page-id" content="P-admin-auth-004">
+<meta name="proto:state" content="default">
+<title>P-admin-auth-004 · default · auth</title>
+<link rel="stylesheet" href="../../../B02-experience-design/prototype-style/tokens.css">
+<link rel="stylesheet" href="../../../B02-experience-design/prototype-style/themes.css">
+<link rel="stylesheet" href="../../../B02-experience-design/prototype-style/app.css">
+<script defer src="../../../B02-experience-design/prototype-style/app.js"></script>
+</head>
+<body>
+<header class="topnav glass-nav" data-block="Topnav">
+  <span class="brand">知语</span>
+  <span class="spacer"></span>
+  <nav class="nav-actions">
+    <button class="btn btn-ghost" data-action="toggle-theme" aria-label="切换主题">◐</button>
+    <a class="btn btn-ghost" href="../index.html">原型首页</a>
+  </nav>
+</header>
+<main class="page page-centered">
+  <section class="glass-card auth-card" data-block="AdminMe" style="max-width:560px">
+    <h1 style="margin-bottom:8px">账号与安全</h1>
+    <p class="subtitle">角色:<span class="tag tag-danger">super_admin</span></p>
+
+    <h3 style="margin-top:24px">基本信息</h3>
+    <ul style="list-style:none;padding:0;margin:12px 0">
+      <li class="glass-panel" style="padding:12px 16px;margin-bottom:8px">邮箱:a***@zhiyu.app</li>
+      <li class="glass-panel" style="padding:12px 16px;margin-bottom:8px">活跃会话:2 / 3</li>
+      <li class="glass-panel" style="padding:12px 16px;margin-bottom:8px">最近登录:2026-05-16 09:23</li>
+    </ul>
+
+    <h3 style="margin-top:24px">修改密码</h3>
+    <form data-mock-op="OP-admin-change-pw" autocomplete="off" style="margin-top:12px">
+      <div class="form-row"><label class="label" for="old">当前密码</label>
+        <input class="input" id="old" name="old" type="password" autocomplete="current-password" required></div>
+      <div class="form-row"><label class="label" for="new">新密码</label>
+        <input class="input" id="new" name="new" type="password" autocomplete="new-password" minlength="12" required></div>
+      <div class="form-row"><label class="label" for="cnf">确认</label>
+        <input class="input" id="cnf" name="cnf" type="password" autocomplete="new-password" required></div>
+      <button class="btn btn-primary" type="submit">提交修改</button>
+    </form>
+
+    <h3 style="margin-top:32px">退出</h3>
+    <button class="btn btn-danger" onclick="proto.toast({type:'success',msg:'已退出所有管理端会话(mock)'})">退出所有设备</button>
+  </section>
+</main>
+<script>proto.bootstrap();</script>
+</body>
+</html>

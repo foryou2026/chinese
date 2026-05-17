@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- TARGET-PATH: docs/C03-prototype/auth/app/P-app-auth-003.html -->
+<!-- page-id: P-app-auth-003 · state: default · feature: auth -->
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="proto:page-id" content="P-app-auth-003">
+<meta name="proto:state" content="default">
+<title>P-app-auth-003 · default · auth</title>
+<link rel="stylesheet" href="../../../B02-experience-design/prototype-style/tokens.css">
+<link rel="stylesheet" href="../../../B02-experience-design/prototype-style/themes.css">
+<link rel="stylesheet" href="../../../B02-experience-design/prototype-style/app.css">
+<script defer src="../../../B02-experience-design/prototype-style/app.js"></script>
+</head>
+<body>
+<header class="topnav glass-nav" data-block="Topnav">
+  <span class="brand">知语</span>
+  <span class="spacer"></span>
+  <nav class="nav-actions">
+    <button class="btn btn-ghost" data-action="toggle-theme" aria-label="切换主题">◐</button>
+    <a class="btn btn-ghost" href="../index.html">原型首页</a>
+  </nav>
+</header>
+<main class="page page-centered">
+  <section class="glass-card auth-card" data-block="VerifySent">
+    <div class="state-block">
+      <div class="state-icon" aria-hidden="true">✉</div>
+      <h2 class="state-title">验证邮件已发送</h2>
+      <p class="state-desc">请前往邮箱点击验证链接以激活账号。链接 30 分钟内有效。</p>
+      <button class="btn btn-secondary" id="resend-btn" data-op="OP-resend">重新发送(60s 内仅一次)</button>
+      <a class="btn btn-link" href="P-app-auth-001.html">返回登录</a>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('resend-btn');
+      btn && btn.addEventListener('click', function () {
+        proto.toast({ type: 'success', msg: '邮件已重发(mock)' });
+        proto.cooldown(btn, 60, '{s} 秒后可重发');
+      });
+    });
+  </script>
+</main>
+<script>proto.bootstrap();</script>
+</body>
+</html>
