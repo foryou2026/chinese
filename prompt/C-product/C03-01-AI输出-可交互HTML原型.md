@@ -325,29 +325,6 @@ fetch(PATH_PREFIX + '_shared/proto-nav.html')
 
 > `nav-depth` 对应当前文件到模块根目录的层数。功能页面 `<module>/<feature>/page.html` = 2 层。
 
-### 多端切换实现规范
-
-```javascript
-const ProtoSurface = {
-  current: sessionStorage.getItem('proto-surface') || 'web',
-  init() {
-    document.documentElement.setAttribute('data-surface', this.current);
-    this._updateLabel();
-  },
-  toggle() {
-    this.current = this.current === 'web' ? 'app' : 'web';
-    sessionStorage.setItem('proto-surface', this.current);
-    document.documentElement.setAttribute('data-surface', this.current);
-    this._updateLabel();
-  },
-  _updateLabel() {
-    const el = document.getElementById('surface-label');
-    if (el) el.textContent = this.current === 'web' ? 'Web' : 'App';
-  }
-};
-ProtoSurface.init();
-```
-
 ---
 
 ## 样式引用规范
@@ -361,14 +338,6 @@ ProtoSurface.init();
 | 项目总览 `C03-prototype/index.html` | `../docs/B02-experience-design/prototype-style/` |
 | 模块入口 `<module>/index.html` | `../../docs/B02-experience-design/prototype-style/` |
 | 功能页面 `<module>/<feature>/page.html` | `../../../docs/B02-experience-design/prototype-style/` |
-
-```html
-<!-- 功能页面（<module>/<feature>/page.html）的样式引用 -->
-<link rel="stylesheet" href="../../../docs/B02-experience-design/prototype-style/tokens.css">
-<link rel="stylesheet" href="../../../docs/B02-experience-design/prototype-style/themes.css">
-<link rel="stylesheet" href="../../../docs/B02-experience-design/prototype-style/app.css">
-<script defer src="../../../docs/B02-experience-design/prototype-style/app.js"></script>
-```
 
 > **绝不拷贝**样式文件到原型目录。所有 token/组件 CSS/JS 引用 B02 单一来源。
 
