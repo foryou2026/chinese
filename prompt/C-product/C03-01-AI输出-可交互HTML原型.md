@@ -479,7 +479,7 @@ function fixNavLinks(container) {
 - [ ] 新增页面不破坏已有页面功能？
 
 ### 样式与约束
-- [ ] 所有 HTML 通过相对路径引用 B03 prototype-style/？无拷贝？
+- [ ] 所有 HTML 通过相对路径引用 B02 prototype-style/？无拷贝？
 - [ ] HTML 中无 hex / px 硬编码？全用 CSS 变量？
 - [ ] 通过 `python -m http.server` 可正常访问所有页面？
 - [ ] 无控制台报错？
