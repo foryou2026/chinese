@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- TARGET-PATH: docs/C03-prototype/auth/account-entry/app/P-app-auth-001.html -->
+<!-- page-id: P-app-auth-001 · state: default · feature: auth -->
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="proto:page-id" content="P-app-auth-001">
+<meta name="proto:state" content="default">
+<title>P-app-auth-001 · default · auth</title>
+<link rel="stylesheet" href="../../../../B02-experience-design/prototype-style/tokens.css">
+<link rel="stylesheet" href="../../../../B02-experience-design/prototype-style/themes.css">
+<link rel="stylesheet" href="../../../../B02-experience-design/prototype-style/app.css">
+<script defer src="../../../../B02-experience-design/prototype-style/app.js"></script>
+</head>
+<body>
+  <!-- 共享导航加载 -->
+  <div id="global-nav"></div>
+  <script>
+  (function(){
+    var depth = 2; // module/surface
+    var prefix = '../'.repeat(depth);
+    fetch(prefix + '_shared/nav.html')
+      .then(function(r){return r.text();})
+      .then(function(html){
+        document.getElementById('global-nav').innerHTML = html;
+        document.querySelectorAll('#global-nav a[data-href]').forEach(function(a){
+          a.href = prefix + a.dataset.href;
+        });
+        var pid = (document.querySelector('meta[name="proto:page-id"]')||{content:''}).content;
+        var cur = document.querySelector('#global-nav [data-page="'+pid+'"]');
+        if(cur) cur.classList.add('nav-active');
+      }).catch(function(){});
+  })();
+  </script>
+<header class="topnav glass-nav" data-block="Topnav">
+  <span class="brand">知语</span>
+  <span class="spacer"></span>
+  <nav class="nav-actions">
+    <button class="btn btn-ghost" data-action="toggle-theme" aria-label="切换主题">◐</button>
+    <a class="btn btn-ghost" href="../../index.html">原型首页</a>
+  </nav>
+</header>
+<main class="page page-centered">
+  <section class="glass-card auth-card" data-block="LoginCard">
+    <h1>欢迎回来</h1>
+    <p class="subtitle">登录账号继续学习</p>
+    <button class="btn btn-secondary btn-block" data-op="OP-google" data-block="GoogleBtn">使用 Google 继续</button>
+    <div class="divider">或</div>
+    <form data-mock-op="OP-login" autocomplete="on">
+      <div class="form-row">
+        <label class="label" for="email">邮箱</label>
+        <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required autofocus>
+      </div>
+      <div class="form-row">
+        <div class="label-row">
+          <label class="label" for="password">密码</label>
+          <a class="btn-link" href="../../account-recovery/app/P-app-auth-005.html">忘记密码？</a>
+        </div>
+        <input class="input" id="password" name="password" type="password" autocomplete="current-password" minlength="8" required>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit" data-op="OP-submit">登录</button>
+    </form>
+    <p class="help" style="text-align:center;margin-top:16px">
+      还没有账号？<a class="btn-link" href="./P-app-auth-002.html">立即注册</a>
+    </p>
+  </section>
+</main>
+<script>proto.bootstrap();</script>
+</body>
+</html>

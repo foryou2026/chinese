@@ -56,32 +56,29 @@
   <nav class="crumb"><a href="./index.html">C03 原型</a></nav>
   <header class="hero">
     <h1>C03 原型审阅总览</h1>
-    <p>3 个产品域 × 应用端 / 管理端共 6 个原型入口。点击进入查看每个页面的静态原型与交互演示。所有原型共享同一套设计令牌（tokens / themes / app），支持明暗双主题。</p>
-    <div class="meta"><span class="chip">3 产品域</span><span class="chip muted">6 端入口</span><span class="chip muted">37 页面</span></div>
+    <p>3 个功能域 · 按<strong>功能 → 模块 → 端</strong>组织。通过 <code>python -m http.server</code> 在项目根运行，所有页面可互相跳转。所有原型共享同一套设计令牌，支持明暗双主题。</p>
+    <div class="meta"><span class="chip">3 功能域</span><span class="chip muted">13 模块</span><span class="chip muted">34 页面</span></div>
   </header>
-  <section class="feature-block">
-    <h2>鉴权 / Auth</h2>
-    <p class="sub">登录、注册、忘记密码、安全设置等账户体验</p>
-    <div class="grid">
-    <a class="card" href="./auth/app/index.html"><div class="eyebrow">应用端 / App</div><h3>鉴权 / Auth · 应用端</h3><p>9 个页面</p></a>
-    <a class="card" href="./auth/admin/index.html"><div class="eyebrow">管理端 / Admin</div><h3>鉴权 / Auth · 管理端</h3><p>4 个页面</p></a>
-    </div>
-  </section>
-  <section class="feature-block">
-    <h2>课程 / Course</h2>
-    <p class="sub">学习地图、节学习、SRS 复习、考试、错题与统计</p>
-    <div class="grid">
-    <a class="card" href="./course/app/index.html"><div class="eyebrow">应用端 / App</div><h3>课程 / Course · 应用端</h3><p>8 个页面</p></a>
-    <a class="card" href="./course/admin/index.html"><div class="eyebrow">管理端 / Admin</div><h3>课程 / Course · 管理端</h3><p>9 个页面</p></a>
-    </div>
-  </section>
-  <section class="feature-block">
-    <h2>发现中国 / Discover China</h2>
-    <p class="sub">首页发现、内容详情、搜索结果与运营审核</p>
-    <div class="grid">
-    <a class="card" href="./discover-china/app/index.html"><div class="eyebrow">应用端 / App</div><h3>发现中国 / Discover China · 应用端</h3><p>3 个页面</p></a>
-    <a class="card" href="./discover-china/admin/index.html"><div class="eyebrow">管理端 / Admin</div><h3>发现中国 / Discover China · 管理端</h3><p>4 个页面</p></a>
-    </div>
+  <div class="grid">
+    <a class="card" href="./auth/index.html">
+      <div class="eyebrow">功能域</div>
+      <h3>鉴权 / Auth</h3>
+      <p>5 模块 · 13 页面 · 账号入口 / 找回 / 个人中心 / 管理登录 / 管理账号</p>
+    </a>
+    <a class="card" href="./course/index.html">
+      <div class="eyebrow">功能域</div>
+      <h3>课程 / Course</h3>
+      <p>8 模块 · 17 页面 · 学习 / SRS / 考试 / 内容管理 / 举报 / 媒资 / 考试编辑 / 搜索</p>
+    </a>
+    <a class="card" href="./discover-china/index.html">
+      <div class="eyebrow">功能域</div>
+      <h3>发现中国</h3>
+      <p>4 模块 · 7 页面 · 文章浏览 / 分类管理 / 文章管理 / 搜索运维</p>
+    </a>
+  </div>
+  <section class="feature-block" style="margin-top:var(--space-6)">
+    <h2>目录结构说明</h2>
+    <p class="sub">本原型按 <code>功能 / 模块 / 端 / page-id.html</code> 四层组织。每功能有独立 <code>_shared/nav.html</code> 共享导航，所有页面通过 JavaScript fetch 动态加载，形成可跳转的连通整体。</p>
   </section>
   <footer>© 知语 · C03 原型审阅版 · 统一明暗主题</footer>
 </main>
