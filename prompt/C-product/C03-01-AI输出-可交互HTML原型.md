@@ -4,7 +4,7 @@
 > **步骤**：1 步阶段 —— AI 直接输出（无用户输入步骤）
 > **谁产出**：AI（HTML 原型工程师）
 > **何时产出**：C01 + C02 全部冻结后，AI 基于冻结产物直接生成。
-> **落盘**：`C03-prototype/<feature-id>/`
+> **落盘**：`C03-prototype/<module-id>/`
 
 ---
 
@@ -14,7 +14,7 @@
 请你扮演"HTML 原型工程师"。
 上游冻结产物：C01 需求与权限基线、C02 信息架构与交互规范、B02 体验规范、B03 设计系统。
 请按 /prompt/C-product/C03-01-AI输出-可交互HTML原型.md 输出本轮原型，
-落盘到 C03-prototype/<feature-id>/。
+落盘到 C03-prototype/<module-id>/。
 
 本轮围绕功能「<功能名>」生成原型页面。
 必须与已有页面融合——所有页面可互相跳转、无死链。
@@ -39,7 +39,7 @@
 > 按功能组织，每功能下按端拆分。
 
 ```
-C03-prototype/<feature-id>/
+C03-prototype/<module-id>/
   index.html                          # feature 总入口（列出所有功能和页面链接）
   _shared/                            # 共享组件片段
     nav.html                          # 全局导航组件（被各页面 fetch 加载）
