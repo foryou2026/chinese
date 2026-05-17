@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light" data-surface="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="nav-depth" content="2">
+  <meta name="page-id" content="P-app-auth-009">
+  <meta name="module-id" content="auth">
+  <meta name="feature-id" content="account-profile">
+  <title>编辑资料 · 知语原型</title>
+  <link rel="stylesheet" href="../../../B02-experience-design/prototype-style/tokens.css">
+  <link rel="stylesheet" href="../../../B02-experience-design/prototype-style/themes.css">
+  <link rel="stylesheet" href="../../../B02-experience-design/prototype-style/app.css">
+  <style>
+.proto-bar{position:sticky;top:0;z-index:900;height:36px;display:flex;align-items:center;padding:0 14px;gap:10px;background:rgba(14,14,17,.90);backdrop-filter:blur(8px);font-size:12px;color:#9a9aa3;border-bottom:1px solid rgba(255,255,255,.06)}
+.proto-bar a{color:#9a9aa3;text-decoration:none}.proto-bar a:hover{color:#fff}
+.proto-bar .pb-brand{color:#ff2442;font-weight:700;font-size:11px;letter-spacing:.04em}
+.proto-bar button{background:none;border:1px solid rgba(255,255,255,.15);color:#9a9aa3;padding:2px 10px;border-radius:99px;cursor:pointer;font-size:11px}
+.proto-bar button:hover{color:#fff;border-color:rgba(255,255,255,.4)}
+.pb-badge{background:#ff2442;color:#fff;padding:2px 8px;border-radius:99px;font-size:10px;font-weight:700;letter-spacing:.06em}
+.admin-wrap{display:flex;min-height:calc(100vh - 92px)}
+.admin-sidebar{width:220px;flex-shrink:0;padding:12px 8px;background:var(--glass-bg);border-right:1px solid var(--border-subtle);overflow-y:auto}
+.admin-sidebar .nsl{font-size:11px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.06em;padding:12px 10px 4px;display:block}
+.admin-sidebar a{display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:6px;color:var(--text-secondary);font-size:13px;text-decoration:none;transition:background .15s,color .15s;margin-bottom:1px}
+.admin-sidebar a:hover{background:var(--bg-hover);color:var(--text-primary)}
+.admin-sidebar a.active{background:var(--brand-soft);color:var(--brand);font-weight:600}
+.admin-main{flex:1;padding:24px;min-width:0}
+.tbl-wrap{border-radius:12px;overflow:hidden;border:1px solid var(--border-subtle);background:var(--glass-bg-strong);backdrop-filter:blur(8px)}
+.data-table{width:100%;border-collapse:collapse;font-size:14px}
+.data-table th,.data-table td{padding:10px 14px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--border-subtle)}
+.data-table thead th{background:var(--bg-hover);font-size:11px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.data-table tbody tr:hover{background:var(--bg-hover)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600;white-space:nowrap}
+.bs{background:#d1fae5;color:#065f46}.bd{background:#fee2e2;color:#991b1b}.bw{background:#fef3c7;color:#92400e}.bm{background:var(--bg-hover);color:var(--text-secondary)}.bb{background:var(--brand-soft);color:var(--brand)}
+[data-theme=dark] .bs{background:rgba(16,185,129,.18);color:#6ee7b7}[data-theme=dark] .bd{background:rgba(239,68,68,.18);color:#fca5a5}[data-theme=dark] .bw{background:rgba(245,158,11,.18);color:#fde68a}
+.proto-toast-stack{position:fixed;top:52px;right:16px;z-index:9999;display:flex;flex-direction:column;gap:8px;pointer-events:none;width:300px}
+.proto-toast{padding:10px 16px;border-radius:8px;font-size:14px;color:#fff;font-weight:500;box-shadow:0 4px 16px rgba(0,0,0,.2);pointer-events:auto;animation:tIn .3s ease;transition:opacity .35s}
+.pt-success{background:#059669}.pt-error{background:#dc2626}.pt-warning{background:#d97706}.pt-info{background:#374151}
+.proto-toast.fade-out{opacity:0}
+@keyframes tIn{from{opacity:0;transform:translateY(-6px) scale(.97)}to{opacity:1;transform:none}}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:1000;align-items:center;justify-content:center;padding:16px}
+.modal-overlay.is-open{display:flex}
+.modal-box{background:var(--bg-surface,#fff);border:1px solid var(--border-subtle);border-radius:14px;padding:24px;max-width:460px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+[data-theme=dark] .modal-box{background:var(--bg-app,#0e0e11);border-color:rgba(255,255,255,.12)}
+.modal-title{font-size:18px;font-weight:700;margin-bottom:8px}.modal-desc{color:var(--text-secondary);font-size:14px;line-height:1.6;margin-bottom:20px}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end}
+@keyframes rowFadeOut{to{opacity:0;transform:translateX(24px)}}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+.select{height:40px;padding:0 12px;font-family:inherit;font-size:14px;color:var(--text-primary);background:var(--bg-surface);border:1px solid var(--border-strong);border-radius:6px;cursor:pointer;outline:none}
+.select:focus{border-color:var(--brand);box-shadow:0 0 0 3px var(--ring)}
+.page-header{margin-bottom:24px}
+.page-title{font-size:24px;font-weight:700;margin-bottom:4px;color:var(--text-primary)}
+.page-subtitle{font-size:14px;color:var(--text-secondary)}
+.crumbs{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--text-tertiary);margin-bottom:16px;flex-wrap:wrap}
+.crumbs a{color:var(--text-secondary);text-decoration:none}.crumbs a:hover{color:var(--brand)}
+.app-frame{flex:1;display:flex;flex-direction:column}
+[data-surface=app] .app-wrap{max-width:390px;margin:0 auto;border-left:1px solid var(--border-subtle);border-right:1px solid var(--border-subtle);min-height:calc(100vh - 36px)}
+.bottom-nav{display:none;position:sticky;bottom:0;background:var(--glass-bg-strong);backdrop-filter:blur(12px);border-top:1px solid var(--border-subtle);justify-content:space-around;padding:6px 0 env(safe-area-inset-bottom,6px);z-index:10}
+[data-surface=app] .bottom-nav{display:flex}
+.bnav-item{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 12px;color:var(--text-tertiary);font-size:10px;text-decoration:none;cursor:pointer;transition:color .15s;min-width:54px}
+.bnav-item.active,.bnav-item:hover{color:var(--brand)}.bnav-icon{font-size:20px}
+.skeleton{background:linear-gradient(90deg,var(--bg-hover) 25%,var(--bg-active,rgba(128,128,128,.1)) 50%,var(--bg-hover) 75%);background-size:200%;animation:skelPulse 1.5s ease infinite;border-radius:4px}
+@keyframes skelPulse{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.glass-card2{background:var(--glass-bg-strong);backdrop-filter:blur(8px);border:1px solid var(--border-subtle);border-radius:12px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-section{margin-bottom:20px}
+.form-section-title{font-size:15px;font-weight:600;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border-subtle)}
+.field-error{color:#dc2626;font-size:12px;margin-top:4px;display:none}
+.field-error.show{display:block}
+textarea.input{height:auto;min-height:96px;padding:10px 12px;resize:vertical}
+.btn-sm{height:34px;padding:0 12px;font-size:13px}
+.btn-xs{height:28px;padding:0 10px;font-size:12px;border-radius:6px}
+.danger-zone{border:1px solid var(--danger,#ff2442);border-radius:10px;padding:16px}
+.danger-zone h4{color:var(--danger,#ff2442);margin:0 0 8px}
+.progress-bar{background:var(--bg-hover);border-radius:99px;height:6px;overflow:hidden}
+.progress-fill{background:var(--brand);height:100%;border-radius:99px;transition:width .3s}
+.toggle-switch{position:relative;display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.toggle-switch input{opacity:0;width:0;height:0;position:absolute}
+.toggle-track{width:40px;height:22px;background:var(--bg-active,rgba(0,0,0,.08));border-radius:99px;transition:background .2s;position:relative}
+.toggle-switch input:checked+.toggle-track{background:var(--brand)}
+.toggle-track::after{content:'';position:absolute;top:3px;left:3px;width:16px;height:16px;background:#fff;border-radius:50%;transition:transform .2s;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.toggle-switch input:checked+.toggle-track::after{transform:translateX(18px)}
+.tab-bar{display:flex;gap:2px;border-bottom:2px solid var(--border-subtle);margin-bottom:16px}
+.tab-item{padding:10px 16px;font-size:14px;font-weight:500;color:var(--text-secondary);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s;background:none;border-left:none;border-right:none;border-top:none}
+.tab-item.active{color:var(--brand);border-bottom-color:var(--brand);font-weight:600}
+.tab-panel{display:none}.tab-panel.active{display:block}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}.dot-green{background:#16a34a}.dot-red{background:#dc2626}.dot-yellow{background:#d97706}.dot-muted{background:var(--text-tertiary)}
+</style>
+</head>
+<body>
+  <div id="proto-nav-bar"></div>
+  
+  <div class="app-wrap">
+    <header class="topnav glass-nav">
+      <a href="./P-app-auth-007.html" class="btn btn-ghost" style="padding:0 8px;height:36px;font-size:18px">←</a>
+      <span style="font-weight:600;font-size:15px">编辑资料</span>
+      <span class="spacer"></span>
+      <button onclick="saveProfile()" class="btn btn-primary btn-sm">保存</button>
+    </header>
+    <main style="padding:20px">
+      <!-- 头像 -->
+      <div class="glass-card2" style="margin-bottom:16px;text-align:center;padding:24px">
+        <div style="position:relative;display:inline-block;margin-bottom:12px">
+          <div id="avatar-display" style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--brand),#ff6b6b);display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700;color:#fff">A</div>
+          <button onclick="changeAvatar()" style="position:absolute;bottom:0;right:0;width:28px;height:28px;border-radius:50%;background:var(--brand);border:2px solid var(--bg-app);color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer">+</button>
+        </div>
+        <div style="font-size:13px;color:var(--text-secondary)">点击更换头像（支持 JPG / PNG，≤ 5MB）</div>
+        <input type="file" id="avatar-file" accept="image/*" style="display:none" onchange="previewAvatar(this)">
+      </div>
+      <!-- 基本信息 -->
+      <div class="glass-card2" style="margin-bottom:16px">
+        <div class="form-section-title">基本信息</div>
+        <div class="form-row">
+          <label class="label" for="edit-name">昵称</label>
+          <input class="input" id="edit-name" type="text" value="Alex Zhang" maxlength="30">
+          <span style="font-size:11px;color:var(--text-tertiary);text-align:right;display:block;margin-top:4px"><span id="name-count">10</span>/30</span>
+        </div>
+        <div class="form-row">
+          <label class="label" for="edit-bio">个人简介</label>
+          <textarea class="input" id="edit-bio" placeholder="简单介绍一下自己..." maxlength="120">中文学习爱好者 🇨🇳 | 目标 HSK4</textarea>
+          <span style="font-size:11px;color:var(--text-tertiary);text-align:right;display:block;margin-top:4px"><span id="bio-count">22</span>/120</span>
+        </div>
+        <div class="form-row">
+          <label class="label" for="edit-lang">界面语言</label>
+          <select class="input select" id="edit-lang">
+            <option value="zh">中文（简体）</option>
+            <option value="en" selected>English</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="th">ภาษาไทย</option>
+            <option value="id">Bahasa Indonesia</option>
+          </select>
+        </div>
+      </div>
+      <!-- 邮箱（只读） -->
+      <div class="glass-card2" style="margin-bottom:16px">
+        <div class="form-section-title">账号信息（只读）</div>
+        <div class="form-row">
+          <label class="label">注册邮箱</label>
+          <input class="input" value="alex.zhang@example.com" readonly style="opacity:.6">
+        </div>
+        <p style="font-size:12px;color:var(--text-tertiary)">如需更改邮箱，请前往 账号与安全 > 关联账号。</p>
+      </div>
+    </main>
+    <nav class="bottom-nav">
+      <a href="../../course/learning/P-app-course-001.html" class="bnav-item"><span class="bnav-icon">📚</span>学习</a>
+      <a href="../../course/srs/P-app-course-004.html" class="bnav-item"><span class="bnav-icon">🔄</span>复习</a>
+      <a href="../../course/exam/P-app-course-006.html" class="bnav-item"><span class="bnav-icon">📝</span>考试</a>
+      <a href="./P-app-auth-007.html" class="bnav-item active"><span class="bnav-icon">👤</span>我的</a>
+    </nav>
+  </div>
+  <div class="modal-overlay" id="modal-delete">
+    <div class="modal-box">
+      <div class="modal-title">确认删除？</div>
+      <div class="modal-desc">此操作无法撤销，相关数据将永久删除。</div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" onclick="ProtoModal.close('modal-delete')">取消</button>
+        <button class="btn btn-danger" onclick="ProtoList.doDelete()">确认删除</button>
+      </div>
+    </div>
+  </div>
+  <script defer src="../../../B02-experience-design/prototype-style/app.js"></script>
+  <script>
+  const NAV_DEPTH=parseInt(document.querySelector('meta[name="nav-depth"]')?.content||'2');
+  const PATH_PREFIX='../'.repeat(NAV_DEPTH);
+  fetch(PATH_PREFIX+'_shared/proto-nav.html').then(r=>r.text()).then(html=>{
+    document.getElementById('proto-nav-bar').innerHTML=html;
+    document.querySelectorAll('#proto-nav-bar [data-href]').forEach(a=>{a.href=PATH_PREFIX+a.dataset.href;});
+    const pid=document.querySelector('meta[name="page-id"]')?.content;
+    const cur=pid&&document.querySelector('#proto-nav-bar [data-page="'+pid+'"]');
+    if(cur)cur.classList.add('nav-active');
+  }).catch(()=>{});
+  const ProtoSurface={
+    current:sessionStorage.getItem('proto-surface')||document.documentElement.getAttribute('data-surface')||'app',
+    init(){document.documentElement.setAttribute('data-surface',this.current);const el=document.getElementById('surface-label');if(el)el.textContent=this.current==='web'?'Web':'App';},
+    toggle(){this.current=this.current==='web'?'app':'web';sessionStorage.setItem('proto-surface',this.current);this.init();}
+  };ProtoSurface.init();
+  const ProtoModal={
+    open(id){const el=document.getElementById(id);if(el){el.classList.add('is-open');document.body.classList.add('has-modal');}},
+    close(id){const el=document.getElementById(id);if(el){el.classList.remove('is-open');document.body.classList.remove('has-modal');}}
+  };
+  document.addEventListener('click',e=>{if(e.target.classList.contains('modal-overlay')){e.target.classList.remove('is-open');document.body.classList.remove('has-modal');}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-overlay.is-open').forEach(m=>{m.classList.remove('is-open');document.body.classList.remove('has-modal');});});
+  const ProtoToast={
+    show(msg,type='success',dur=2500){
+      let stack=document.querySelector('.proto-toast-stack');
+      if(!stack){stack=Object.assign(document.createElement('div'),{className:'proto-toast-stack'});document.body.appendChild(stack);}
+      if(stack.children.length>=3)stack.firstChild.remove();
+      const t=Object.assign(document.createElement('div'),{className:'proto-toast pt-'+type,textContent:msg});
+      stack.appendChild(t);setTimeout(()=>{t.classList.add('fade-out');setTimeout(()=>t.remove(),400);},dur);
+    }
+  };
+  const ProtoList={
+    _p:null,
+    confirmDelete(tbl,rowId,mid='modal-delete'){this._p={tbl,rowId};ProtoModal.open(mid);},
+    doDelete(mid='modal-delete'){
+      if(!this._p)return;
+      const row=document.querySelector('#'+this._p.tbl+' [data-id="'+this._p.rowId+'"]');
+      if(row){row.style.animation='rowFadeOut .25s forwards';setTimeout(()=>{row.remove();const c=document.getElementById('list-count');if(c)c.textContent=parseInt(c.textContent)-1;},260);}
+      ProtoModal.close(mid);ProtoToast.show('已删除');this._p=null;
+    }
+  };
+  if(typeof proto!=='undefined')proto.bootstrap();
+
+  document.getElementById('edit-name').addEventListener('input',function(){
+    document.getElementById('name-count').textContent=this.value.length;
+  });
+  document.getElementById('edit-bio').addEventListener('input',function(){
+    document.getElementById('bio-count').textContent=this.value.length;
+  });
+  function changeAvatar(){document.getElementById('avatar-file').click();}
+  function previewAvatar(input){
+    const file=input.files[0];if(!file)return;
+    const reader=new FileReader();
+    reader.onload=e=>{
+      const d=document.getElementById('avatar-display');
+      d.style.background='none';
+      d.innerHTML='<img src="'+e.target.result+'" style="width:100%;height:100%;object-fit:cover;border-radius:50%">';
+    };
+    reader.readAsDataURL(file);
+  }
+  function saveProfile(){
+    const btn=document.querySelector('[onclick="saveProfile()"]');
+    btn.classList.add('is-loading');btn.disabled=true;
+    setTimeout(()=>{
+      btn.classList.remove('is-loading');btn.disabled=false;
+      ProtoToast.show('资料已保存');
+      setTimeout(()=>location.href='./P-app-auth-007.html',600);
+    },1000);
+  }
+</script>
+</body>
+</html>

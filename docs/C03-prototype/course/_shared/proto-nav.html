@@ -1,0 +1,37 @@
+
+<div class="proto-bar" id="proto-nav-bar-inner">
+  <span class="pb-brand">知语</span>
+  <span class="pb-badge">PROTO</span>
+  <a data-href="../index.html">← Course 目录</a>
+  <div style="position:relative;margin-left:4px">
+    <button onclick="toggleProtoNav()" id="pnav-btn" style="background:none;border:1px solid rgba(255,255,255,.15);color:#9a9aa3;padding:2px 10px;border-radius:99px;cursor:pointer;font-size:11px">全部页面 ▾</button>
+    <div id="pnav-dropdown" style="display:none;position:absolute;left:0;top:30px;background:#1a1a1e;border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:10px 0;min-width:200px;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,.4)">
+      <div style="padding:4px 12px 4px;font-size:10px;color:#555;font-weight:700;text-transform:uppercase;letter-spacing:.06em">学员端</div>
+      <a data-href="learning/P-app-course-001.html" data-page="P-app-course-001" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">学习首页</a>
+      <a data-href="learning/P-app-course-002.html" data-page="P-app-course-002" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">节（Lesson）</a>
+      <a data-href="learning/P-app-course-003.html" data-page="P-app-course-003" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">答题（Quiz）</a>
+      <a data-href="srs/P-app-course-004.html" data-page="P-app-course-004" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">SRS 复习队列</a>
+      <a data-href="srs/P-app-course-005.html" data-page="P-app-course-005" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">错题本</a>
+      <a data-href="exam/P-app-course-006.html" data-page="P-app-course-006" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">考试列表</a>
+      <a data-href="exam/P-app-course-007.html" data-page="P-app-course-007" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">考试进行</a>
+      <a data-href="exam/P-app-course-008.html" data-page="P-app-course-008" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">考试报告</a>
+      <div style="padding:8px 12px 4px;font-size:10px;color:#555;font-weight:700;text-transform:uppercase;letter-spacing:.06em">管理端</div>
+      <a data-href="content/P-admin-course-001.html" data-page="P-admin-course-001" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">轨道列表</a>
+      <a data-href="content/P-admin-course-002.html" data-page="P-admin-course-002" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">阶段编辑</a>
+      <a data-href="content/P-admin-course-003.html" data-page="P-admin-course-003" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">章节编辑</a>
+      <a data-href="content/P-admin-course-004.html" data-page="P-admin-course-004" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">节编辑</a>
+      <a data-href="content/P-admin-course-005.html" data-page="P-admin-course-005" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">题目/知识点 CRUD</a>
+      <a data-href="report/P-admin-course-006.html" data-page="P-admin-course-006" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">学员举报审核</a>
+      <a data-href="media/P-admin-course-007.html" data-page="P-admin-course-007" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">媒资库</a>
+      <a data-href="exam-admin/P-admin-course-008.html" data-page="P-admin-course-008" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">考试编辑</a>
+      <a data-href="search/P-admin-course-009.html" data-page="P-admin-course-009" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">全局搜索/统计</a>
+    </div>
+  </div>
+  <div style="flex:1"></div>
+  <button data-action="toggle-theme" style="background:none;border:1px solid rgba(255,255,255,.15);color:#9a9aa3;padding:2px 10px;border-radius:99px;cursor:pointer;font-size:11px">◐ 明/暗</button>
+</div>
+<style>.nav-active{color:#ff2442!important;font-weight:700!important}</style>
+<script>
+function toggleProtoNav(){const d=document.getElementById('pnav-dropdown');d.style.display=d.style.display==='block'?'none':'block';}
+document.addEventListener('click',e=>{const btn=document.getElementById('pnav-btn');const dd=document.getElementById('pnav-dropdown');if(dd&&btn&&!btn.contains(e.target)&&!dd.contains(e.target))dd.style.display='none';});
+</script>
