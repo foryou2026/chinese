@@ -1,157 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN" data-theme="light">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="nav-depth" content="0" />
-<title>课程 / Course · 原型入口 · 知语原型</title>
-<link rel="stylesheet" href="../../B02-experience-design/prototype-style/tokens.css" />
-<link rel="stylesheet" href="../../B02-experience-design/prototype-style/themes.css" />
-<link rel="stylesheet" href="../../B02-experience-design/prototype-style/app.css" />
-<style>
-  body { background: var(--bg-app-tint); color: var(--text-primary); font-family: var(--font-sans); margin: 0; min-height: 100vh; }
-  .page { max-width: 1180px; margin: 0 auto; padding: var(--space-5) var(--space-page-x-desktop) var(--space-7); }
-  .crumb { font-size: var(--text-caption); color: var(--text-tertiary); margin-bottom: var(--space-3); display: flex; gap: var(--space-2); align-items: center; }
-  .crumb a { color: var(--text-secondary); text-decoration: none; }
-  .crumb a:hover { color: var(--brand); }
-  .hero { margin: var(--space-3) 0 var(--space-6); }
-  .hero h1 { font-size: var(--text-display); font-weight: 800; letter-spacing: -.02em; line-height: 1.1; margin: 0 0 var(--space-2); color: var(--text-primary); }
-  .hero p { color: var(--text-secondary); font-size: var(--text-body-lg); margin: 0; }
-  .chip { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: var(--radius-pill); font-size: var(--text-caption); font-weight: 600; background: var(--brand-soft); color: var(--brand); }
-  .chip.muted { background: var(--bg-hover); color: var(--text-secondary); margin-left: var(--space-2); }
-  .feature-block { margin-top: var(--space-6); }
-  .feature-block h2 { font-size: var(--text-h2); font-weight: 700; margin: 0 0 var(--space-3); color: var(--text-primary); }
-  .table-card { border-radius: var(--radius-lg); overflow: hidden; background: var(--glass-bg-strong); backdrop-filter: var(--glass-blur-md); -webkit-backdrop-filter: var(--glass-blur-md); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm), var(--glass-edge); }
-  table { width: 100%; border-collapse: collapse; font-size: var(--text-table); }
-  th, td { padding: var(--space-3) var(--space-4); text-align: left; vertical-align: middle; }
-  thead th { background: var(--bg-hover); font-weight: 700; font-size: var(--text-caption); color: var(--text-tertiary); text-transform: uppercase; letter-spacing: .06em; }
-  tbody tr { border-top: 1px solid var(--border-subtle); transition: background var(--motion-fast); }
-  tbody tr:hover { background: var(--bg-hover); }
-  td code { font-family: var(--font-mono); font-size: 12px; color: var(--text-secondary); background: var(--bg-hover); padding: 2px 8px; border-radius: var(--radius-sm); }
-  td .name { font-weight: 600; color: var(--text-primary); }
-  .open-btn { display: inline-flex; align-items: center; gap: 4px; padding: 6px 14px; border-radius: var(--radius-pill); background: var(--brand-soft); color: var(--brand); font-size: var(--text-caption); font-weight: 700; text-decoration: none; transition: background var(--motion-fast); }
-  .open-btn:hover { background: var(--brand-soft-strong); }
-  footer { margin-top: var(--space-7); padding: var(--space-4) 0; border-top: 1px solid var(--border-subtle); font-size: var(--text-caption); color: var(--text-tertiary); text-align: center; }
-  .topnav .btn { padding: 6px 12px; border-radius: var(--radius-pill); border: 1px solid var(--border-subtle); background: var(--glass-bg); color: var(--text-secondary); cursor: pointer; font-size: var(--text-caption); transition: all var(--motion-fast); }
-  .topnav .btn:hover { color: var(--brand); border-color: var(--brand); }
-  .topnav .back-link { color: var(--text-secondary); text-decoration: none; font-size: var(--text-caption); display: inline-flex; align-items: center; gap: 4px; padding: 6px 10px; border-radius: var(--radius-pill); transition: all var(--motion-fast); }
-  .topnav .back-link:hover { color: var(--brand); background: var(--brand-soft); }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="nav-depth" content="0">
+  <title>课程 / Course · 功能目录 · 可交互原型</title>
+  <link rel="stylesheet" href="../../B02-experience-design/prototype-style/tokens.css">
+  <link rel="stylesheet" href="../../B02-experience-design/prototype-style/themes.css">
+  <link rel="stylesheet" href="../../B02-experience-design/prototype-style/app.css">
 </head>
 <body>
-<header class="topnav glass-nav">
-  <span class="brand">知语 · 原型</span>
-  <span class="spacer"></span>
-  <a class="back-link" href="../index.html">← C03 总览</a>
-  <button class="btn" data-action="toggle-theme" type="button">◐ 明 / 暗</button>
-</header>
-<main class="page">
-  <nav class="crumb"><a href="../index.html">C03 原型</a> <span>›</span> 课程 / Course</nav>
-  <header class="hero">
-    <h1>课程 / Course</h1>
-    <p>按模块组织的可交互原型，通过 <code>python -m http.server</code> 本地运行。</p>
-    <div style="margin-top:var(--space-3)"><span class="chip">课程 / Course</span><span class="chip muted">17 个页面</span></div>
+  <header class="topnav glass-nav"
+    style="display:flex;align-items:center;gap:var(--space-3);padding:0 var(--space-4);height:56px">
+    <a href="../index.html" class="btn btn--ghost btn--sm">← 项目总览</a>
+    <span style="flex:1;font-weight:600">知语 · 课程 / Course</span>
+    <button data-action="toggle-theme" class="btn btn--ghost btn--sm">明/暗</button>
   </header>
-    <div class="feature-block">
-      <h2>节内学习</h2>
-      <div class="table-card">
-        <table>
-          <thead><tr><th>page-id</th><th>端</th><th>页面名称</th><th>操作</th></tr></thead>
-          <tbody>
-            <tr><td><code>P-app-course-001</code></td><td>app</td><td class="name">首页 / 轨道选择</td><td><a class="open-btn" href="./learning/app/P-app-course-001.html">打开 ↗</a></td></tr>
-            <tr><td><code>P-app-course-002</code></td><td>app</td><td class="name">节（Lesson）</td><td><a class="open-btn" href="./learning/app/P-app-course-002.html">打开 ↗</a></td></tr>
-            <tr><td><code>P-app-course-003</code></td><td>app</td><td class="name">答题（Quiz）</td><td><a class="open-btn" href="./learning/app/P-app-course-003.html">打开 ↗</a></td></tr>
-          </tbody>
-        </table>
+
+  <main style="max-width:900px;margin:0 auto;padding:var(--space-6)">
+    <h1>课程 / Course · 功能目录</h1>
+    <p class="lead" style="color:var(--text-secondary);font-size:var(--text-body-lg);margin-top:var(--space-2)">点击功能卡片进入演示。演示过程中点击右上角「原型导航」可随时返回此页。</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:var(--space-4);margin-top:var(--space-5)">
+
+      <div class="glass-card" style="padding:var(--space-5)">
+        <h3>学习 (learning)</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary)">首页/轨道选择、节学习、答题</p>
+        <ul style="list-style:none;padding:0;margin-top:var(--space-3)">
+          <li><a href="./learning/P-app-course-001.html">首页 / 轨道选择 →</a></li>
+          <li><a href="./learning/P-app-course-002.html">节 (lesson) →</a></li>
+          <li><a href="./learning/P-app-course-003.html">答题 (quiz) →</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="feature-block">
-      <h2>SRS 复习</h2>
-      <div class="table-card">
-        <table>
-          <thead><tr><th>page-id</th><th>端</th><th>页面名称</th><th>操作</th></tr></thead>
-          <tbody>
-            <tr><td><code>P-app-course-004</code></td><td>app</td><td class="name">SRS 复习队列</td><td><a class="open-btn" href="./srs/app/P-app-course-004.html">打开 ↗</a></td></tr>
-            <tr><td><code>P-app-course-005</code></td><td>app</td><td class="name">错题本</td><td><a class="open-btn" href="./srs/app/P-app-course-005.html">打开 ↗</a></td></tr>
-          </tbody>
-        </table>
+
+      <div class="glass-card" style="padding:var(--space-5)">
+        <h3>SRS 复习 (srs)</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary)">SRS 复习队列、错题本</p>
+        <ul style="list-style:none;padding:0;margin-top:var(--space-3)">
+          <li><a href="./srs/P-app-course-004.html">SRS 复习队列 →</a></li>
+          <li><a href="./srs/P-app-course-005.html">错题本 →</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="feature-block">
-      <h2>考试中心</h2>
-      <div class="table-card">
-        <table>
-          <thead><tr><th>page-id</th><th>端</th><th>页面名称</th><th>操作</th></tr></thead>
-          <tbody>
-            <tr><td><code>P-app-course-006</code></td><td>app</td><td class="name">考试列表</td><td><a class="open-btn" href="./exam/app/P-app-course-006.html">打开 ↗</a></td></tr>
-            <tr><td><code>P-app-course-007</code></td><td>app</td><td class="name">考试进行</td><td><a class="open-btn" href="./exam/app/P-app-course-007.html">打开 ↗</a></td></tr>
-            <tr><td><code>P-app-course-008</code></td><td>app</td><td class="name">考试报告 / 个人统计</td><td><a class="open-btn" href="./exam/app/P-app-course-008.html">打开 ↗</a></td></tr>
-          </tbody>
-        </table>
+
+      <div class="glass-card" style="padding:var(--space-5)">
+        <h3>考试 (exam)</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary)">考试列表、考试进行、考试报告</p>
+        <ul style="list-style:none;padding:0;margin-top:var(--space-3)">
+          <li><a href="./exam/P-app-course-006.html">考试列表 →</a></li>
+          <li><a href="./exam/P-app-course-007.html">考试进行 →</a></li>
+          <li><a href="./exam/P-app-course-008.html">考试报告 / 个人统计 →</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="feature-block">
-      <h2>内容管理</h2>
-      <div class="table-card">
-        <table>
-          <thead><tr><th>page-id</th><th>端</th><th>页面名称</th><th>操作</th></tr></thead>
-          <tbody>
-            <tr><td><code>P-admin-course-001</code></td><td>admin</td><td class="name">轨道列表</td><td><a class="open-btn" href="./content/admin/P-admin-course-001.html">打开 ↗</a></td></tr>
-            <tr><td><code>P-admin-course-002</code></td><td>admin</td><td class="name">阶段编辑</td><td><a class="open-btn" href="./content/admin/P-admin-course-002.html">打开 ↗</a></td></tr>
-            <tr><td><code>P-admin-course-003</code></td><td>admin</td><td class="name">章节编辑（拖拽）</td><td><a class="open-btn" href="./content/admin/P-admin-course-003.html">打开 ↗</a></td></tr>
-            <tr><td><code>P-admin-course-004</code></td><td>admin</td><td class="name">节编辑 + KP 绑定</td><td><a class="open-btn" href="./content/admin/P-admin-course-004.html">打开 ↗</a></td></tr>
-            <tr><td><code>P-admin-course-005</code></td><td>admin</td><td class="name">题目 / KP CRUD</td><td><a class="open-btn" href="./content/admin/P-admin-course-005.html">打开 ↗</a></td></tr>
-          </tbody>
-        </table>
+
+      <div class="glass-card" style="padding:var(--space-5)">
+        <h3>内容管理 (content)</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary)">轨道、阶段、章节、节、题目/知识点 CRUD</p>
+        <ul style="list-style:none;padding:0;margin-top:var(--space-3)">
+          <li><a href="./content/P-admin-course-001.html">轨道列表 →</a></li>
+          <li><a href="./content/P-admin-course-002.html">阶段编辑 →</a></li>
+          <li><a href="./content/P-admin-course-003.html">章节编辑 →</a></li>
+          <li><a href="./content/P-admin-course-004.html">节编辑 + KP 绑定 →</a></li>
+          <li><a href="./content/P-admin-course-005.html">题目 / 知识点 CRUD →</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="feature-block">
-      <h2>学员举报</h2>
-      <div class="table-card">
-        <table>
-          <thead><tr><th>page-id</th><th>端</th><th>页面名称</th><th>操作</th></tr></thead>
-          <tbody>
-            <tr><td><code>P-admin-course-006</code></td><td>admin</td><td class="name">举报审核</td><td><a class="open-btn" href="./report/admin/P-admin-course-006.html">打开 ↗</a></td></tr>
-          </tbody>
-        </table>
+
+      <div class="glass-card" style="padding:var(--space-5)">
+        <h3>举报审核 (report)</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary)">学员举报审核闭环</p>
+        <ul style="list-style:none;padding:0;margin-top:var(--space-3)">
+          <li><a href="./report/P-admin-course-006.html">学员举报审核 →</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="feature-block">
-      <h2>媒资库</h2>
-      <div class="table-card">
-        <table>
-          <thead><tr><th>page-id</th><th>端</th><th>页面名称</th><th>操作</th></tr></thead>
-          <tbody>
-            <tr><td><code>P-admin-course-007</code></td><td>admin</td><td class="name">媒资库</td><td><a class="open-btn" href="./media/admin/P-admin-course-007.html">打开 ↗</a></td></tr>
-          </tbody>
-        </table>
+
+      <div class="glass-card" style="padding:var(--space-5)">
+        <h3>媒资库 (media)</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary)">媒资上传、去重与管理</p>
+        <ul style="list-style:none;padding:0;margin-top:var(--space-3)">
+          <li><a href="./media/P-admin-course-007.html">媒资库 →</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="feature-block">
-      <h2>考试编辑</h2>
-      <div class="table-card">
-        <table>
-          <thead><tr><th>page-id</th><th>端</th><th>页面名称</th><th>操作</th></tr></thead>
-          <tbody>
-            <tr><td><code>P-admin-course-008</code></td><td>admin</td><td class="name">考试编辑与预览</td><td><a class="open-btn" href="./exam-admin/admin/P-admin-course-008.html">打开 ↗</a></td></tr>
-          </tbody>
-        </table>
+
+      <div class="glass-card" style="padding:var(--space-5)">
+        <h3>考试编辑 (exam-admin)</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary)">考试创建、编辑与预览</p>
+        <ul style="list-style:none;padding:0;margin-top:var(--space-3)">
+          <li><a href="./exam-admin/P-admin-course-008.html">考试编辑与预览 →</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="feature-block">
-      <h2>全局搜索</h2>
-      <div class="table-card">
-        <table>
-          <thead><tr><th>page-id</th><th>端</th><th>页面名称</th><th>操作</th></tr></thead>
-          <tbody>
-            <tr><td><code>P-admin-course-009</code></td><td>admin</td><td class="name">全局搜索 + 统计</td><td><a class="open-btn" href="./search/admin/P-admin-course-009.html">打开 ↗</a></td></tr>
-          </tbody>
-        </table>
+
+      <div class="glass-card" style="padding:var(--space-5)">
+        <h3>搜索与统计 (search)</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary)">全局搜索、统计概览</p>
+        <ul style="list-style:none;padding:0;margin-top:var(--space-3)">
+          <li><a href="./search/P-admin-course-009.html">全局搜索 + 统计 →</a></li>
+        </ul>
       </div>
+
     </div>
-</main>
-<footer>© 知语 · C03 原型审阅版 · 模块 → 端 结构 · 明暗双主题</footer>
-<script defer src="../../B02-experience-design/prototype-style/app.js"></script>
-<script>window.addEventListener('DOMContentLoaded',function(){if(window.proto)proto.bootstrap();});</script>
+  </main>
+
+  <script defer src="../../B02-experience-design/prototype-style/app.js"></script>
+  <script>if(typeof proto!=='undefined')proto.bootstrap();</script>
 </body>
 </html>

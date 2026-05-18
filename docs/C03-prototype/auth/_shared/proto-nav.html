@@ -1,38 +1,28 @@
+<nav class="topnav glass-nav" role="navigation" aria-label="原型导航"
+  style="display:flex;align-items:center;gap:var(--space-3);padding:0 var(--space-4);height:56px;position:sticky;top:0;z-index:50">
 
-<div class="proto-bar" id="proto-nav-bar-inner">
-  <span class="pb-brand">知语</span>
-  <span class="pb-badge">PROTO</span>
-  <a data-href="../index.html">← Auth 目录</a>
-  <div style="position:relative;margin-left:4px">
-    <button onclick="toggleProtoNav()" id="pnav-btn" style="background:none;border:1px solid rgba(255,255,255,.15);color:#9a9aa3;padding:2px 10px;border-radius:99px;cursor:pointer;font-size:11px">全部页面 ▾</button>
-    <div id="pnav-dropdown" style="display:none;position:absolute;left:0;top:30px;background:#1a1a1e;border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:10px 0;min-width:220px;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,.4)">
-      <div style="padding:4px 12px 4px;font-size:10px;color:#555;font-weight:700;text-transform:uppercase;letter-spacing:.06em">账号入口</div>
-      <a data-href="account-entry/P-app-auth-001.html" data-page="P-app-auth-001" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">登录</a>
-      <a data-href="account-entry/P-app-auth-002.html" data-page="P-app-auth-002" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">注册</a>
-      <a data-href="account-entry/P-app-auth-003.html" data-page="P-app-auth-003" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">验证邮件</a>
-      <a data-href="account-entry/P-app-auth-004.html" data-page="P-app-auth-004" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">OAuth 回调</a>
-      <div style="padding:8px 12px 4px;font-size:10px;color:#555;font-weight:700;text-transform:uppercase;letter-spacing:.06em">账号找回</div>
-      <a data-href="account-recovery/P-app-auth-005.html" data-page="P-app-auth-005" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">忘记密码</a>
-      <a data-href="account-recovery/P-app-auth-006.html" data-page="P-app-auth-006" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">重置密码</a>
-      <div style="padding:8px 12px 4px;font-size:10px;color:#555;font-weight:700;text-transform:uppercase;letter-spacing:.06em">个人中心</div>
-      <a data-href="account-profile/P-app-auth-007.html" data-page="P-app-auth-007" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">个人中心首页</a>
-      <a data-href="account-profile/P-app-auth-008.html" data-page="P-app-auth-008" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">账号与安全</a>
-      <a data-href="account-profile/P-app-auth-009.html" data-page="P-app-auth-009" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">编辑资料</a>
-      <div style="padding:8px 12px 4px;font-size:10px;color:#555;font-weight:700;text-transform:uppercase;letter-spacing:.06em">管理员</div>
-      <a data-href="admin-entry/P-admin-auth-001.html" data-page="P-admin-auth-001" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">管理员登录</a>
-      <a data-href="admin-entry/P-admin-auth-002.html" data-page="P-admin-auth-002" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">管理员忘密</a>
-      <a data-href="admin-entry/P-admin-auth-003.html" data-page="P-admin-auth-003" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">管理员重置</a>
-      <a data-href="admin-account/P-admin-auth-004.html" data-page="P-admin-auth-004" style="display:block;padding:6px 16px;font-size:13px;color:#ccc;text-decoration:none" onmouseover="this.style.background='rgba(255,255,255,.06)'" onmouseout="this.style.background=''">管理员账号安全</a>
-    </div>
+  <ul class="nav-links" role="list" style="display:flex;gap:var(--space-2);list-style:none;margin:0;padding:0;flex:1;flex-wrap:wrap;font-size:var(--text-caption)">
+    <li style="font-size:var(--text-caption);font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.06em;padding-right:var(--space-2)">账号入口</li>
+    <li><a data-href="account-entry/P-app-auth-001.html" data-page="P-app-auth-001" class="nav-link">登录</a></li>
+    <li><a data-href="account-entry/P-app-auth-002.html" data-page="P-app-auth-002" class="nav-link">注册</a></li>
+    <li><a data-href="account-entry/P-app-auth-003.html" data-page="P-app-auth-003" class="nav-link">验证邮件</a></li>
+    <li><a data-href="account-entry/P-app-auth-004.html" data-page="P-app-auth-004" class="nav-link">OAuth 回调</a></li>
+    <li style="font-size:var(--text-caption);font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.06em;padding:0 var(--space-2)">找回</li>
+    <li><a data-href="account-recovery/P-app-auth-005.html" data-page="P-app-auth-005" class="nav-link">忘记密码</a></li>
+    <li><a data-href="account-recovery/P-app-auth-006.html" data-page="P-app-auth-006" class="nav-link">重置密码</a></li>
+    <li style="font-size:var(--text-caption);font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.06em;padding:0 var(--space-2)">个人</li>
+    <li><a data-href="account-profile/P-app-auth-007.html" data-page="P-app-auth-007" class="nav-link">个人中心</a></li>
+    <li><a data-href="account-profile/P-app-auth-008.html" data-page="P-app-auth-008" class="nav-link">账号安全</a></li>
+    <li><a data-href="account-profile/P-app-auth-009.html" data-page="P-app-auth-009" class="nav-link">编辑资料</a></li>
+    <li style="font-size:var(--text-caption);font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.06em;padding:0 var(--space-2)">管理</li>
+    <li><a data-href="admin-entry/P-admin-auth-001.html" data-page="P-admin-auth-001" class="nav-link">管理登录</a></li>
+    <li><a data-href="admin-entry/P-admin-auth-002.html" data-page="P-admin-auth-002" class="nav-link">管理忘密</a></li>
+    <li><a data-href="admin-entry/P-admin-auth-003.html" data-page="P-admin-auth-003" class="nav-link">管理重置</a></li>
+    <li><a data-href="admin-account/P-admin-auth-004.html" data-page="P-admin-auth-004" class="nav-link">管理账号</a></li>
+  </ul>
+
+  <div class="nav-actions" style="display:flex;align-items:center;gap:var(--space-2)">
+    <button data-action="toggle-theme" class="btn btn--ghost btn--sm">明/暗</button>
+    <a data-href="index.html" class="btn btn--primary btn--sm proto-home-btn">原型导航</a>
   </div>
-  <div style="flex:1"></div>
-  <button data-action="toggle-theme" style="background:none;border:1px solid rgba(255,255,255,.15);color:#9a9aa3;padding:2px 10px;border-radius:99px;cursor:pointer;font-size:11px">◐ 明/暗</button>
-</div>
-<style>
-.proto-bar #proto-nav-bar-inner{display:contents}
-.nav-active{color:#ff2442!important;font-weight:700!important}
-</style>
-<script>
-function toggleProtoNav(){const d=document.getElementById('pnav-dropdown');d.style.display=d.style.display==='block'?'none':'block';}
-document.addEventListener('click',e=>{const btn=document.getElementById('pnav-btn');const dd=document.getElementById('pnav-dropdown');if(dd&&btn&&!btn.contains(e.target)&&!dd.contains(e.target))dd.style.display='none';});
-</script>
+</nav>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light" data-surface="web">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="nav-depth" content="2">
+  <meta name="page-id" content="P-admin-discover-china-002">
+  <meta name="module-id" content="discover-china">
+  <meta name="feature-id" content="content">
+  <title>文章列表 + 发布 · 知语原型</title>
+  <link rel="stylesheet" href="../../../B02-experience-design/prototype-style/tokens.css">
+  <link rel="stylesheet" href="../../../B02-experience-design/prototype-style/themes.css">
+  <link rel="stylesheet" href="../../../B02-experience-design/prototype-style/app.css">
+</head>
+<body>
+  <div id="proto-nav-bar"></div>
+
+<main class="page">
+  <section style="max-width:1180px;margin:0 auto">
+    <nav class="help" style="margin-bottom:8px"><a href="../category/P-admin-discover-china-001.html">发现中国</a> › 中国美食</nav>
+    <header style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+      <h1 style="flex:1">中国美食 <span class="tag" style="font-size:14px">共 30 篇</span></h1>
+      <button class="btn btn-primary" data-op="OP-new" onclick="proto.toast({type:'info',msg:'弹出 D-1 新建文章 Modal(mock)'})">+ 新建文章</button>
+    </header>
+    <div style="display:flex;gap:12px;margin-bottom:16px">
+      <input class="input" placeholder="搜索本类目..." style="flex:1">
+      <select class="input" style="width:160px;height:40px"><option>全部</option><option>待发布</option><option>已发布</option></select>
+    </div>
+    <div class="glass-panel" style="padding:0;overflow:hidden">
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead><tr style="background:var(--bg-hover)"><th style="padding:12px;text-align:left">编码</th><th style="text-align:left">拼音</th><th style="text-align:left">中文标题</th><th>状态</th><th>句子数</th><th>更新时间</th><th>操作</th></tr></thead>
+        <tbody>
+          <tr style="border-top:1px solid var(--border-subtle)">
+            <td style="padding:12px"><code>020000000001</code></td>
+            <td>Gù gōng de yī tiān</td>
+            <td><a href="./P-admin-discover-china-003.html">故宫的一天 1</a></td>
+            <td><span class="tag tag-success">已发布</span></td>
+            <td>24</td>
+            <td>2 天前</td>
+            <td>
+              <a class="btn btn-link" href="./P-admin-discover-china-003.html">编辑</a> ·
+              <a class="btn btn-link" href="#" onclick="proto.toast({type:'success',msg:'已下架(mock)'});return false">下架</a> ·
+              <a class="btn btn-link" href="#" style="color:var(--danger)" onclick="proto.toast({type:'success',msg:'已删除(mock)'});return false">删除</a>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid var(--border-subtle)">
+            <td style="padding:12px"><code>020000000002</code></td>
+            <td>Gù gōng de yī tiān</td>
+            <td><a href="./P-admin-discover-china-003.html">故宫的一天 2</a></td>
+            <td><span class="tag tag-success">已发布</span></td>
+            <td>24</td>
+            <td>2 天前</td>
+            <td>
+              <a class="btn btn-link" href="./P-admin-discover-china-003.html">编辑</a> ·
+              <a class="btn btn-link" href="#" onclick="proto.toast({type:'success',msg:'已下架(mock)'});return false">下架</a> ·
+              <a class="btn btn-link" href="#" style="color:var(--danger)" onclick="proto.toast({type:'success',msg:'已删除(mock)'});return false">删除</a>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid var(--border-subtle)">
+            <td style="padding:12px"><code>020000000003</code></td>
+            <td>Gù gōng de yī tiān</td>
+            <td><a href="./P-admin-discover-china-003.html">故宫的一天 3</a></td>
+            <td><span class="tag tag-success">已发布</span></td>
+            <td>24</td>
+            <td>2 天前</td>
+            <td>
+              <a class="btn btn-link" href="./P-admin-discover-china-003.html">编辑</a> ·
+              <a class="btn btn-link" href="#" onclick="proto.toast({type:'success',msg:'已下架(mock)'});return false">下架</a> ·
+              <a class="btn btn-link" href="#" style="color:var(--danger)" onclick="proto.toast({type:'success',msg:'已删除(mock)'});return false">删除</a>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid var(--border-subtle)">
+            <td style="padding:12px"><code>020000000004</code></td>
+            <td>Gù gōng de yī tiān</td>
+            <td><a href="./P-admin-discover-china-003.html">故宫的一天 4</a></td>
+            <td><span class="tag tag-success">已发布</span></td>
+            <td>24</td>
+            <td>2 天前</td>
+            <td>
+              <a class="btn btn-link" href="./P-admin-discover-china-003.html">编辑</a> ·
+              <a class="btn btn-link" href="#" onclick="proto.toast({type:'success',msg:'已下架(mock)'});return false">下架</a> ·
+              <a class="btn btn-link" href="#" style="color:var(--danger)" onclick="proto.toast({type:'success',msg:'已删除(mock)'});return false">删除</a>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid var(--border-subtle)">
+            <td style="padding:12px"><code>020000000005</code></td>
+            <td>Gù gōng de yī tiān</td>
+            <td><a href="./P-admin-discover-china-003.html">故宫的一天 5</a></td>
+            <td><span class="tag tag-success">已发布</span></td>
+            <td>24</td>
+            <td>2 天前</td>
+            <td>
+              <a class="btn btn-link" href="./P-admin-discover-china-003.html">编辑</a> ·
+              <a class="btn btn-link" href="#" onclick="proto.toast({type:'success',msg:'已下架(mock)'});return false">下架</a> ·
+              <a class="btn btn-link" href="#" style="color:var(--danger)" onclick="proto.toast({type:'success',msg:'已删除(mock)'});return false">删除</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:16px;text-align:center" class="help">分页 1 / 6 ·
+      <button class="btn btn-ghost">上一页</button>
+      <button class="btn btn-ghost">下一页</button>
+    </div>
+  </section>
+</main>
+
+  <script defer src="../../../B02-experience-design/prototype-style/app.js"></script>
+  <script>
+    const NAV_DEPTH=parseInt(document.querySelector('meta[name="nav-depth"]')?.content||'2');
+    const PATH_PREFIX='../'.repeat(NAV_DEPTH);
+    fetch(PATH_PREFIX+'_shared/proto-nav.html').then(r=>r.text()).then(html=>{
+      document.getElementById('proto-nav-bar').innerHTML=html;
+      document.querySelectorAll('#proto-nav-bar [data-href]').forEach(a=>{a.href=PATH_PREFIX+a.dataset.href;});
+      const pid=document.querySelector('meta[name="page-id"]')?.content;
+      const cur=pid&&document.querySelector('#proto-nav-bar [data-page="'+pid+'"]');
+      if(cur)cur.classList.add('nav-active');
+    }).catch(()=>{});
+    const ProtoSurface={
+      current:sessionStorage.getItem('proto-surface')||document.documentElement.getAttribute('data-surface')||'app',
+      init(){document.documentElement.setAttribute('data-surface',this.current);const el=document.getElementById('surface-label');if(el)el.textContent=this.current==='web'?'Web':'App';},
+      toggle(){this.current=this.current==='web'?'app':'web';sessionStorage.setItem('proto-surface',this.current);this.init();}
+    };ProtoSurface.init();
+    const ProtoModal={
+      open(id){const el=document.getElementById(id);if(el){el.classList.add('is-open');document.body.classList.add('has-modal');}},
+      close(id){const el=document.getElementById(id);if(el){el.classList.remove('is-open');document.body.classList.remove('has-modal');}}
+    };
+    document.addEventListener('click',e=>{if(e.target.classList.contains('modal-overlay'))e.target.classList.remove('is-open');});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-overlay.is-open').forEach(m=>m.classList.remove('is-open'));});
+    const ProtoToast={
+      show(msg,type='success',dur=2500){
+        let stack=document.querySelector('.proto-toast-stack');
+        if(!stack){stack=Object.assign(document.createElement('div'),{className:'proto-toast-stack'});
+        Object.assign(stack.style,{position:'fixed',top:'60px',right:'16px',zIndex:'9999',display:'flex',flexDirection:'column',gap:'8px',pointerEvents:'none',width:'300px'});
+        document.body.appendChild(stack);}
+        const t=Object.assign(document.createElement('div'),{textContent:msg});
+        Object.assign(t.style,{padding:'10px 16px',borderRadius:'8px',fontSize:'14px',color:'#fff',fontWeight:'500',boxShadow:'0 4px 16px rgba(0,0,0,.2)',pointerEvents:'auto',background:type==='success'?'var(--color-success,#18a058)':'var(--color-danger,#d03050)'});
+        stack.appendChild(t);setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),400);},dur);
+      }
+    };
+    if(typeof proto!=='undefined')proto.bootstrap();
+  </script>
+</body>
+</html>
