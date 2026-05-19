@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>填空题 · 语法 · 语法词填写</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 填空题 · 全部变体</a>
+  <h1>#9 语法词填写</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">填空题 × 语法 × 语法词填写</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>填空题 × 语法 × 语法词填写</strong> — 句子空位填入语法词(了/过/着/把/被/的/得/地等)。与选择题·语法词填选的区别：<strong>无选项提供，纯输入</strong>，考察对语法词的主动运用能力。<br>
+  <span class="field-map">应用端核心元素: <strong>语法点提示(可选)</strong> + <strong>语境句+空位</strong> + <strong>英文翻译</strong> + <strong>语法词输入框</strong> + <strong>可选语法词提示</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 语境句展示 + 填空输入框 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 语法词填写</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>语法填空</h3><span class="progress">Q3/8</span></div>
+          <div class="progress-bar"><div class="fill" style="width:38%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">填入正确的语法词 Fill in the grammar word</div>
+            <div class="highlight-box blue" style="text-align:center;padding:10px">
+              <span class="text-sm" style="color:var(--primary)">📖 考查: 「了/过/着」时态助词</span>
+            </div>
+            <div class="highlight-box gray" style="padding:16px;text-align:center;margin:12px 0">
+              <div style="font-size:20px;line-height:2">
+                我昨天去 <input class="fill-blank" value="了" placeholder="__" style="font-size:20px;width:50px"> 北京。
+              </div>
+              <div class="text-sm text-muted mt-8">I went to Beijing yesterday.</div>
+            </div>
+            <div style="margin:12px 0">
+              <div class="text-sm text-muted mb-8">可用语法词:</div>
+              <div style="display:flex;gap:8px;justify-content:center">
+                <span class="drag-chip" style="font-size:18px;padding:10px 20px">了</span>
+                <span class="drag-chip" style="font-size:18px;padding:10px 20px">过</span>
+                <span class="drag-chip" style="font-size:18px;padding:10px 20px">着</span>
+              </div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+              <div class="mt-8 text-sm">
+                <strong>「了」</strong>用于表示动作已经完成(过去时)。「昨天」是过去时间标志，所以用「了」。<br>
+                <span class="text-muted">"了" indicates completed action. "昨天" (yesterday) signals past tense.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 语法词填写 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>语法词填写</strong>。核心配置：<strong>语法点选择器</strong>、<strong>语法词范围</strong>、<strong>语境句</strong>、<strong>语法解析(必填)</strong>。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="语法" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="语法词填写" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>考查语法点 <span class="hint">对应应用端「📖 考查」提示</span></label>
+          <select class="form-select">
+            <option selected>时态助词(了/过/着)</option>
+            <option>结构助词(的/得/地)</option>
+            <option>介词(把/被/在/从)</option>
+            <option>连词(虽然...但是/因为...所以)</option>
+            <option>量词搭配</option>
+            <option>自定义</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">语法词范围 <span class="hint">对应应用端「可用语法词」区域</span></label>
+          <div class="tag-input">
+            <span class="tag-item">了 <span class="close">×</span></span>
+            <span class="tag-item">过 <span class="close">×</span></span>
+            <span class="tag-item">着 <span class="close">×</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>语境句 <span class="hint">{blank} 标记空位</span></label>
+        <textarea class="form-textarea" style="font-size:16px">我昨天去 {blank} 北京。</textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">英文翻译</label>
+          <input class="form-input" value="I went to Beijing yesterday.">
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>正确语法词</label>
+          <input class="form-input" value="了" style="font-size:18px;text-align:center;width:80px">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">可接受变体</label>
+        <div class="tag-input">
+          <span class="tag-item">了 (主答案) <span class="close">×</span></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">展示语法词提示 <span class="hint">对应应用端「可用语法词」候选</span></label>
+        <div><span class="switch on"></span> <span class="text-sm text-muted">显示可选语法词(降低难度)</span></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">语法点提示卡 <span class="hint">对应应用端顶部蓝色提示</span></label>
+        <div><span class="switch on"></span> <span class="text-sm text-muted">显示考查的语法点类别</span></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>语法解析 <span class="hint" style="color:var(--error)">语法题必填，教学核心</span></label>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「了」用于表示动作已经完成(过去时)。「昨天」是过去时间标志，所以用「了」。
+· 「过」表示曾经的经历(我去过北京)
+· 「着」表示持续状态(他看着书)</textarea></div>
+          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"了" indicates completed action. "昨天" (yesterday) signals past tense.
+· "过" = past experience (I have been to Beijing)
+· "着" = ongoing state (He is reading)</textarea></div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 2</option><option>HSK 3</option><option>HSK 4</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="25"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成语法填空</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

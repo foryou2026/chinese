@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>填空题 · 拼音 · 汉字写全拼</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 填空题 · 全部变体</a>
+  <h1>#1 汉字写全拼</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">填空题 × 拼音 × 汉字写全拼</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>填空题 × 拼音 × 汉字写全拼</strong> — 展示一个汉字/词语，用户输入完整拼音(含声调)。核心测试拼音拼写与声调标注能力。<br>
+  <span class="field-map">应用端核心元素: <strong>大号汉字展示</strong> + <strong>发音按钮</strong> + <strong>拼音输入框</strong> + <strong>声调辅助键盘</strong> → 管理端须逐一配置</span>
+</div>
+<div class="shared-tpl">共用模板: 拼音输入框 + 声调辅助键盘 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 汉字写全拼</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>拼音填空</h3><span class="progress">Q2/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">写出汉字的拼音 Write the pinyin</div>
+            <div style="text-align:center;padding:24px 0">
+              <div style="font-size:80px;font-weight:300;color:#333">谢</div>
+              <div style="margin:8px 0"><span class="audio-btn">🔊 听发音</span></div>
+            </div>
+            <div style="text-align:center;margin:16px 0">
+              <input class="fill-blank wide" value="xiè" placeholder="输入拼音" style="font-size:24px;width:180px">
+            </div>
+            <div style="text-align:center;margin:8px 0">
+              <div class="text-sm text-muted">支持格式: xiè 或 xie4</div>
+              <div style="display:flex;gap:6px;justify-content:center;margin-top:8px;flex-wrap:wrap">
+                <span class="btn btn-sm">ā á ǎ à</span>
+                <span class="btn btn-sm">ē é ě è</span>
+                <span class="btn btn-sm">ī í ǐ ì</span>
+                <span class="btn btn-sm">ū ú ǔ ù</span>
+                <span class="btn btn-sm">ǖ ǘ ǚ ǜ</span>
+              </div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+              <div class="mt-8 text-sm">「谢」读 xiè (第四声)，注意声母 x 不要写成 sh。<br>
+              <span class="text-muted">"谢" is xiè (4th tone). Note: initial is "x", not "sh".</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 汉字写全拼 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>题型=填空题, 知识类型=拼音, 题目类型=<strong>汉字写全拼</strong>。题干为汉字展示，答案为完整拼音字符串，核心配置是<strong>拼音容错规则</strong>和<strong>声调辅助键盘</strong>开关。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="拼音" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="汉字写全拼" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>题干汉字 <span class="hint">应用端以80px大号居中显示</span></label>
+        <input class="form-input lg" value="谢" placeholder="输入单字或词语" style="text-align:center">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>正确拼音</label>
+          <input class="form-input lg" value="xiè">
+        </div>
+        <div class="form-group">
+          <label class="form-label">题干音频 <span class="hint">留空则不显示「🔊」按钮</span></label>
+          <div class="upload-area sm">📁 上传音频</div>
+          <div style="margin-top:6px"><span class="btn btn-sm">🤖 TTS生成</span></div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">拼音容错规则 <span class="hint">对应应用端的「支持格式」提示</span></label>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <label class="text-sm"><input type="checkbox" checked> 接受数字声调 (xie4 = xiè)</label>
+          <label class="text-sm"><input type="checkbox" checked> 忽略大小写</label>
+          <label class="text-sm"><input type="checkbox"> 接受无声调 (xie = xiè) — 降低难度</label>
+          <label class="text-sm"><input type="checkbox" checked> v 替代 ü (lv = lǜ)</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">备选答案 <span class="hint">多音字的其他读音</span></label>
+        <div class="tag-input">
+          <span class="tag-item">xiè (主答案) <span class="close">×</span></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">声调辅助键盘 <span class="hint">对应应用端输入框下的声调按钮行</span></label>
+        <div><span class="switch on"></span> <span class="text-sm text-muted">开启后显示 ā á ǎ à 等快捷按钮</span></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">答案解析</label>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「谢」读 xiè (第四声)，注意声母 x 不要写成 sh。</textarea></div>
+          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"谢" is xiè (4th tone). Note: initial is "x", not "sh".</textarea></div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK等级</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option><option>HSK 4</option><option>HSK 5</option><option>HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

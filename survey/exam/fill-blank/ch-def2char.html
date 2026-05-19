@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>填空题 · 汉字 · 释义写汉字</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 填空题 · 全部变体</a>
+  <h1>#5 释义写汉字</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">填空题 × 汉字 × 释义写汉字</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>填空题 × 汉字 × 释义写汉字</strong> — 展示中英释义(不给拼音提示)，用户输入汉字。与「拼音写汉字」的区别：<strong>无拼音线索，纯义→形转换</strong>，难度更高，测试词汇记忆深度。<br>
+  <span class="field-map">应用端核心元素: <strong>中文释义</strong> + <strong>英文释义</strong> + <strong>汉字输入框</strong> + <strong>输入模式切换</strong> + <strong>可选提示按钮(显示拼音)</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 汉字输入框 + 输入模式切换 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 释义写汉字</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>汉字填空</h3><span class="progress">Q6/12</span></div>
+          <div class="progress-bar"><div class="fill" style="width:50%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">根据释义写出汉字 Write the character from its meaning</div>
+            <div style="text-align:center;padding:20px 0">
+              <div style="font-size:18px;color:#333;line-height:1.8">表示感谢、答谢</div>
+              <div style="font-size:16px;color:rgba(0,0,0,.45);margin-top:4px">to thank; to express gratitude</div>
+            </div>
+            <div style="text-align:center;margin:16px 0">
+              <input class="fill-blank wide" value="" placeholder="写汉字" style="font-size:28px;width:200px">
+            </div>
+            <div style="display:flex;gap:8px;justify-content:center;margin:12px 0">
+              <span class="btn btn-sm" style="background:var(--primary);color:#fff;border-color:var(--primary)">⌨️ 拼音输入</span>
+              <span class="btn btn-sm">✍️ 手写输入</span>
+            </div>
+            <div style="text-align:center;margin:8px 0">
+              <span class="btn btn-sm" style="color:var(--warning);border-color:var(--warning)">💡 提示拼音 (-1分)</span>
+            </div>
+            <div class="highlight-box orange" style="text-align:center;display:none">
+              <span style="font-size:20px;color:#d46b08">xiè</span>
+              <span class="text-sm text-muted" style="margin-left:8px">已扣1分</span>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确答案: 谢</div>
+              <div class="mt-8 text-sm">「谢」(xiè) — 左边言字旁(讠)表示与语言有关，右边「射」表音。<br>
+              <span class="text-muted">"谢" (xiè) — left radical 讠(speech) + right phonetic 射.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 释义写汉字 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>释义写汉字</strong>。与「拼音写汉字」差异：题干为释义(无拼音)，新增<strong>提示按钮</strong>(可选显示拼音，扣分)。难度更高。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="汉字" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="释义写汉字" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>中文释义(题干)</label>
+          <input class="form-input" value="表示感谢、答谢">
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>英文释义(题干)</label>
+          <input class="form-input" value="to thank; to express gratitude">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>正确汉字</label>
+          <input class="form-input lg" value="谢" style="text-align:center">
+        </div>
+        <div class="form-group">
+          <label class="form-label">对应拼音 <span class="hint">用于提示按钮显示</span></label>
+          <input class="form-input" value="xiè">
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">提示按钮(显示拼音) <span class="hint">对应应用端「💡 提示拼音」按钮</span></label>
+        <div><span class="switch on"></span> <span class="text-sm text-muted">允许用户查看拼音提示</span></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">提示扣分 <span class="hint">使用提示后扣减的分值</span></label>
+        <input class="form-input" type="number" value="1" style="width:80px">
+      </div>
+      <div class="form-group">
+        <label class="form-label">输入方式</label>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <label class="text-sm"><input type="checkbox" checked> ⌨️ 拼音键盘输入</label>
+          <label class="text-sm"><input type="checkbox" checked> ✍️ 手写输入</label>
+          <label class="text-sm"><input type="checkbox"> 📋 候选字选择</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">汉字容错</label>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <label class="text-sm"><input type="checkbox" checked> 接受繁体字</label>
+          <label class="text-sm"><input type="checkbox"> 接受同音替代字</label>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">答案解析</label>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「谢」(xiè) — 左边言字旁(讠)表示与语言有关，右边「射」表音。</textarea></div>
+          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"谢" (xiè) — left radical 讠(speech) + right phonetic 射.</textarea></div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="40"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option>中等</option><option selected>困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

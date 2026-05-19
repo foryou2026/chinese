@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>填空题 · 词语 · 语境补词</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 填空题 · 全部变体</a>
+  <h1>#7 语境补词</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">填空题 × 词语 × 语境补词</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>填空题 × 词语 × 语境补词</strong> — 带空位的语境句，用户输入合适词语。答案通过答案池匹配(含近义词)，支持候选提示词和输入联想。<br>
+  <span class="field-map">应用端核心元素: <strong>语境句+空位</strong> + <strong>英文翻译</strong> + <strong>词语输入框(带联想)</strong> + <strong>候选提示词(可选)</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 语境句展示 + 填空输入框 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 语境补词</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>词汇填空</h3><span class="progress">Q6/12</span></div>
+          <div class="progress-bar"><div class="fill" style="width:50%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">在空白处填入合适的词语 Fill in the blank</div>
+            <div class="highlight-box gray" style="padding:16px;text-align:center">
+              <div style="font-size:20px;line-height:2">
+                他每天早上都去公园 <input class="fill-blank wide" placeholder="______" style="font-size:20px"> 。
+              </div>
+              <div class="text-sm text-muted mt-8">He goes to the park every morning to ______.</div>
+            </div>
+            <div style="margin:16px 0">
+              <div class="text-sm text-muted mb-8">💡 候选词:</div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="drag-chip">跑步</span>
+                <span class="drag-chip">游泳</span>
+                <span class="drag-chip">看书</span>
+                <span class="drag-chip">唱歌</span>
+              </div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确答案: 跑步</div>
+              <div class="mt-8 text-sm">也可接受: 锻炼、运动<br><span class="text-muted">Also accepted: 锻炼 (exercise), 运动 (workout)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 语境补词 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>语境补词</strong>。核心配置：<strong>语境句+空位标记</strong>、<strong>多词答案池(含近义词)</strong>、<strong>候选提示词</strong>开关。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="词语" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="语境补词" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>语境句 <span class="hint">{blank} 标记空位</span></label>
+        <textarea class="form-textarea" style="font-size:16px">他每天早上都去公园 {blank} 。</textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label">英文翻译</label>
+        <input class="form-input" value="He goes to the park every morning to ______.">
+      </div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>答案池 <span class="hint">所有可接受的答案，第一个为主答案</span></label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="form-input" value="跑步" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success);white-space:nowrap">主答案</span></div></div>
+          <div class="list-builder-item"><div class="content"><input class="form-input" value="锻炼"></div></div>
+          <div class="list-builder-item"><div class="content"><input class="form-input" value="运动"></div></div>
+          <div class="list-builder-add">+ 添加备选答案</div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">候选提示词 <span class="hint">对应应用端「💡 候选词」区域</span></label>
+        <div><span class="switch on"></span> <span class="text-sm text-muted">开启候选提示(降低难度)</span></div>
+        <div class="tag-input mt-8">
+          <span class="tag-item">跑步 <span class="close">×</span></span>
+          <span class="tag-item">游泳 <span class="close">×</span></span>
+          <span class="tag-item">看书 <span class="close">×</span></span>
+          <span class="tag-item">唱歌 <span class="close">×</span></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">输入联想</label>
+        <div><span class="switch on"></span> <span class="text-sm text-muted">打字时自动联想候选词</span></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">匹配模式</label>
+        <select class="form-select">
+          <option selected>精确匹配答案池</option>
+          <option>宽松匹配(忽略标点空格)</option>
+        </select>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">答案解析</label>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「跑步」是最常见的搭配，「去公园跑步」是固定用法。也可说「锻炼」「运动」。</textarea></div>
+          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"跑步" (jogging) is the most common collocation. "锻炼" and "运动" are also acceptable.</textarea></div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 2</option><option>HSK 3</option><option>HSK 4</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI扩充答案池</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
