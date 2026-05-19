@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>听力题 · 单句 · 听句判断</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 听力题 · 全部变体</a>
+  <h1>#2 听句判断</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">听力题 × 单句 × 听句判断</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>听力题 × 听句判断</strong> — 播放单句音频+配套陈述句，判断陈述是否符合音频内容。<br><span class="field-map">应用端: <strong>音频播放器</strong> + <strong>子题展示</strong> + <strong>作答区域</strong></span></div>
+<div class="shared-tpl">共用模板: 音频播放器 + 播放控制 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听句判断</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>听力题</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听句子，判断陈述是否正确 Listen and judge</div>
+            <div style="text-align:center;padding:16px 0"><div class="audio-btn big">🔊 点击播放</div><div class="text-sm text-muted mt-8">剩余: 2/3次</div></div>
+            <div class="highlight-box gray" style="padding:12px;margin:12px 0"><div style="font-size:15px">陈述: 说话人喜欢喝咖啡。</div><div class="text-sm text-muted">Statement: The speaker likes coffee.</div></div>
+            <div style="display:flex;gap:16px;justify-content:center;margin:20px 0">
+              <div style="width:100px;height:60px;border:2px solid var(--success);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;background:#f6ffed">✓ 对</div>
+              <div style="width:100px;height:60px;border:2px solid var(--border);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">✗ 错</div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 听句判断 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="听力题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="单句" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="听句判断" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>听句判断</strong>。音频+配套陈述句+对/错判断。</div></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>句子音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="form-group"><label class="form-label">音频脚本(内部)</label><input class="form-input" value="我每天早上都喝一杯咖啡。"></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>陈述句</label><div class="form-row"><input class="form-input" value="说话人喜欢喝咖啡。"><input class="form-input" value="The speaker likes coffee."></div></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>正确判断</label><select class="form-select" style="width:120px"><option selected>对 ✓</option><option>错 ✗</option></select></div>
+      <div class="form-group"><label class="form-label">若为错，正确说法</label><input class="form-input" placeholder="仅当答案为"错"时填写"></div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>

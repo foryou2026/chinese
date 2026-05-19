@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>跟读评分 · 单词 · 词语跟读</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 跟读评分 · 全部变体</a>
+  <h1>#2 词语跟读</h1>
+  <span class="badge solid-red">需AI</span><span class="badge orange">~$0.004-0.02/次</span>
+  <span class="subtitle">跟读评分 × 单词 × 词语跟读</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>跟读评分 × 词语跟读</strong> — 范读音频+录音跟读+AI评分。<br><span class="field-map">应用端: <strong>范读播放</strong> + <strong>内容展示</strong> + <strong>录音按钮</strong> + <strong>AI评分反馈</strong></span></div>
+<div class="shared-tpl">共用模板: 音频播放器 + 录音控制器 + AI评分反馈 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 词语跟读</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header pro"><span class="back">←</span><h3>跟读评分</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">先听范读，再跟读录音 Listen then read aloud</div>
+            <div style="text-align:center;padding:8px 0"><span class="audio-btn">🔊 听范读</span></div>
+            <div style="text-align:center;padding:16px 0"><div style="font-size:36px;color:#333">你好</div><div style="font-size:18px;color:var(--primary);margin-top:4px">nǐ hǎo</div></div>
+            <div class="mic-btn recording">🎤</div>
+            <div class="text-sm text-muted" style="text-align:center">录音中... 0:03</div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">提交录音 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green"><div style="font-weight:500;color:var(--success)">AI评分: 85分</div><div class="mt-8 text-sm">声调: 90 · 发音: 82 · </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 词语跟读 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="跟读评分" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="单词" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="词语跟读" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout cost"><span class="icon">💰</span><div>付费题型: 每次录音提交调用AI语音评估。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label"><span class="req">*</span>目标词语</label><input class="form-input lg" value="你好"></div>
+        <div class="form-group"><label class="form-label"><span class="req">*</span>拼音</label><input class="form-input" value="nǐ hǎo"></div>
+        <div class="form-group"><label class="form-label"><span class="req">*</span>范读音频</label><div class="upload-area sm">🎧 上传</div></div>
+      </div>
+      <div class="form-group"><label class="form-label">逐字评分</label><div><span class="switch on"></span> <span class="text-sm text-muted">每个字独立评分反馈</span></div></div>
+      <div class="form-group"><label class="form-label">通过阈值</label><input class="form-input" type="number" value="70" style="width:80px"> <span class="text-xs text-muted">低于此分判为不通过</span></div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option >HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="5"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>

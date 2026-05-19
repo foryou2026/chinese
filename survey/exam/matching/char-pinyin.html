@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>配对题 · 字音 · 汉字↔拼音</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 配对题 · 全部变体</a>
+  <h1>#1 汉字↔拼音</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">配对题 × 字音 × 汉字↔拼音</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>配对题 × 字音 × 汉字↔拼音</strong> — 左列展示汉字，右列展示拼音(含干扰项)，用户点击/拖拽连线匹配。最基础的配对题型，考察音形对应。<br>
+  <span class="field-map">应用端核心元素: <strong>左列汉字(大号)</strong> + <strong>右列拼音</strong> + <strong>连线/拖拽交互</strong> + <strong>匹配正确/错误反馈</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 配对连线交互 + 匹配反馈动画 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 汉字↔拼音</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>配对练习</h3><span class="progress">Q2/5</span></div>
+          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">将汉字与正确的拼音配对 Match characters with pinyin</div>
+            <div class="match-grid" style="margin:16px 0">
+              <div class="match-item matched" style="font-size:28px">学</div>
+              <div class="match-line">——</div>
+              <div class="match-item matched">xué</div>
+
+              <div class="match-item active" style="font-size:28px">书</div>
+              <div class="match-line">——</div>
+              <div class="match-item">huā</div>
+
+              <div class="match-item" style="font-size:28px">花</div>
+              <div class="match-line" style="color:transparent">——</div>
+              <div class="match-item">shū</div>
+
+              <div class="match-item" style="font-size:28px">月</div>
+              <div class="match-line" style="color:transparent">——</div>
+              <div class="match-item">yuè</div>
+
+              <div class="match-item" style="font-size:28px">大</div>
+              <div class="match-line" style="color:transparent">——</div>
+              <div class="match-item">dà</div>
+
+              <div style="grid-column:1/-1"></div>
+              <div style="grid-column:3;text-align:right"><span class="text-xs text-muted">⚠ 多1个干扰项</span></div>
+              <div style="grid-column:1/-1"></div>
+              <div style="grid-column:3"><div class="match-item" style="opacity:.5">rì</div></div>
+            </div>
+            <div class="text-sm text-muted" style="text-align:center">已配对 1/5 · 点击左右两项进行配对</div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">提交全部配对 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 5/5 全部正确！</div>
+              <div class="mt-8 text-sm">学=xué 书=shū 花=huā 月=yuè 大=dà<br>
+              <span class="text-muted">干扰项 rì(日) 未被使用</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 汉字↔拼音 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="配对题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="字音" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="汉字↔拼音" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>汉字↔拼音</strong>。配对对(5-8组汉字-拼音)，可添加未配对的<strong>干扰拼音</strong>增加难度。</div></div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>汉字-拼音配对 <span class="hint">拖拽排序，应用端会自动打乱右列顺序</span></label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="学" style="text-align:center;font-size:18px"><input class="form-input" value="xué"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="书" style="text-align:center;font-size:18px"><input class="form-input" value="shū"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="花" style="text-align:center;font-size:18px"><input class="form-input" value="huā"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="月" style="text-align:center;font-size:18px"><input class="form-input" value="yuè"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="大" style="text-align:center;font-size:18px"><input class="form-input" value="dà"></div></div></div>
+          <div class="list-builder-add">+ 添加配对</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">干扰拼音 <span class="hint">未配对的多余项，增加难度</span></label>
+        <div class="tag-input">
+          <span class="tag-item">rì <span class="close">×</span></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">配对交互方式</label>
+        <select class="form-select">
+          <option selected>点击连线(左右各点一个)</option>
+          <option>拖拽连线(从左拖到右)</option>
+        </select>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option >HSK 2</option><option >HSK 3</option><option >HSK 4</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="5"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option><option >中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

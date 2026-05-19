@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>听力题 · 段落 · 长段落选择</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 听力题 · 全部变体</a>
+  <h1>#5 长段落选择</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">听力题 × 段落 × 长段落选择</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>听力题 × 长段落选择</strong> — 长音频(带进度条/分段)+多道选择题。<br><span class="field-map">应用端: <strong>音频播放器</strong> + <strong>子题展示</strong> + <strong>作答区域</strong></span></div>
+<div class="shared-tpl">共用模板: 音频播放器 + 播放控制 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 长段落选择</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>听力题</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听段落，回答问题 Listen to the passage</div>
+            <div style="text-align:center;padding:16px 0"><div class="audio-btn big">🔊 播放段落</div><div style="margin:8px 16px;height:4px;background:#f0f0f0;border-radius:2px"><div style="width:40%;height:100%;background:var(--primary);border-radius:2px"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:rgba(0,0,0,.45);padding:0 16px"><span>0:24</span><span>1:02</span></div></div>
+            <div class="highlight-box gray" style="padding:12px;margin:8px 0"><div class="text-sm" style="font-weight:500">第2题 / 共3题:</div><div style="margin-top:4px">作者为什么喜欢春天？</div></div>
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span>天气暖和</div>
+              <div class="option-item"><span class="letter">B</span>可以旅行</div>
+              <div class="option-item selected"><span class="letter">C</span>花很多</div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">下一题 →</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 长段落选择 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="听力题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="段落" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="长段落选择" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>长段落选择</strong>。长音频+多道选择题。支持分段标记。</div></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>段落音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="form-group"><label class="form-label">慢速音频</label><div class="upload-area sm">🐢 慢速版</div></div>
+      <div class="form-group"><label class="form-label">完整脚本</label><textarea class="form-textarea" style="min-height:100px">我最喜欢的季节是春天。春天的时候，天气很暖和，到处都有花。我喜欢在公园里散步，看美丽的花。</textarea></div>
+      <div class="form-group"><label class="form-label">最大播放次数</label><input class="form-input" type="number" value="3" style="width:80px"></div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label"><span class="req">*</span>子题列表</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content"><div class="text-sm" style="font-weight:500">子题1: 作者最喜欢什么季节？</div><div class="text-xs text-muted">A.夏天 B.春天✓ C.秋天</div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="text-sm" style="font-weight:500">子题2: 作者为什么喜欢春天？</div><div class="text-xs text-muted">A.天气暖和 B.可以旅行 C.花很多✓</div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="text-sm" style="font-weight:500">子题3: 作者喜欢在哪里散步？</div><div class="text-xs text-muted">A.公园✓ B.街上 C.山上</div></div></div>
+          <div class="list-builder-add">+ 添加子题</div>
+        </div></div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>

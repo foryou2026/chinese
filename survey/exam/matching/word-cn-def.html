@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>配对题 · 词义 · 词语↔中文释义</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 配对题 · 全部变体</a>
+  <h1>#2 词语↔中文释义</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">配对题 × 词义 × 词语↔中文释义</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>配对题 × 词义 × 词语↔中文释义</strong> — 左列展示词语(带拼音)，右列展示中文释义描述，用户连线匹配。测试中文语境下的词义理解。<br>
+  <span class="field-map">应用端核心元素: <strong>左列词语+拼音</strong> + <strong>右列中文释义</strong> + <strong>连线交互</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 配对连线交互 + 匹配反馈 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 词语↔中文释义</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>配对练习</h3><span class="progress">Q2/5</span></div>
+          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">将词语与中文释义配对 Match words with definitions</div>
+            <div class="match-grid" style="margin:16px 0">
+              <div class="match-item"><div style="font-size:18px">勇敢</div><div class="text-xs text-muted">yǒnggǎn</div></div>
+              <div class="match-line">——</div>
+              <div class="match-item" style="font-size:12px;text-align:left;padding:10px">不怕危险，有胆量</div>
+
+              <div class="match-item"><div style="font-size:18px">温柔</div><div class="text-xs text-muted">wēnróu</div></div>
+              <div class="match-line" style="color:transparent">——</div>
+              <div class="match-item" style="font-size:12px;text-align:left;padding:10px">态度温和，不粗暴</div>
+
+              <div class="match-item"><div style="font-size:18px">聪明</div><div class="text-xs text-muted">cōngming</div></div>
+              <div class="match-line" style="color:transparent">——</div>
+              <div class="match-item" style="font-size:12px;text-align:left;padding:10px">脑子灵活，反应快</div>
+
+              <div class="match-item"><div style="font-size:18px">诚实</div><div class="text-xs text-muted">chéngshí</div></div>
+              <div class="match-line" style="color:transparent">——</div>
+              <div class="match-item" style="font-size:12px;text-align:left;padding:10px">说话做事不虚假</div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">提交全部配对 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 词语↔中文释义 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="配对题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="词义" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="词语↔中文释义" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>词语↔中文释义</strong>。每组需配置词语+拼音+中文释义。干扰策略：<strong>近义词释义混淆</strong>。</div></div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>词语-释义配对</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content"><div class="form-row t3"><input class="form-input" value="勇敢"><input class="form-input" value="yǒnggǎn"><input class="form-input" value="不怕危险，有胆量"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row t3"><input class="form-input" value="温柔"><input class="form-input" value="wēnróu"><input class="form-input" value="态度温和，不粗暴"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row t3"><input class="form-input" value="聪明"><input class="form-input" value="cōngming"><input class="form-input" value="脑子灵活，反应快"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row t3"><input class="form-input" value="诚实"><input class="form-input" value="chéngshí"><input class="form-input" value="说话做事不虚假"></div></div></div>
+          <div class="list-builder-add">+ 添加配对</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">干扰释义</label>
+        <div class="tag-input">
+          <span class="tag-item">做事认真，不马虎 <span class="close">×</span></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">左列显示拼音</label>
+        <div><span class="switch on"></span> <span class="text-sm text-muted">词语下方显示拼音辅助</span></div>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option >HSK 2</option><option selected>HSK 3</option><option >HSK 4</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="5"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="90"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>排序题 · 句序 · 对话排序</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 排序题 · 全部变体</a>
+  <h1>#4 对话排序</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">排序题 × 句序 × 对话排序</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>排序题 × 句序 × 对话排序</strong> — 打散的对话气泡(含角色标识A/B)，排列成正确的对话顺序。训练对话逻辑和语境理解。<br><span class="field-map">应用端: <strong>角色气泡(A/B区分)</strong> + <strong>拖拽排列</strong> + <strong>场景说明</strong></span></div>
+<div class="shared-tpl">共用模板: 拖拽排序交互 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 对话排序</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>排序题</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">将对话按正确顺序排列 Arrange the dialog</div>
+            <div class="highlight-box blue" style="padding:8px;text-align:center;margin-bottom:12px"><span class="text-sm">📖 场景: 在餐厅点餐</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;margin:12px 0">
+              <div class="drag-chip" style="width:100%;text-align:left;display:flex;gap:8px;align-items:center"><span style="background:var(--primary);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0">B</span>好的，请稍等。</div>
+              <div class="drag-chip" style="width:100%;text-align:left;display:flex;gap:8px;align-items:center"><span style="background:var(--error);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0">A</span>你好，我要一杯咖啡。</div>
+              <div class="drag-chip" style="width:100%;text-align:left;display:flex;gap:8px;align-items:center"><span style="background:var(--primary);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0">B</span>你好，请问需要什么？</div>
+              <div class="drag-chip" style="width:100%;text-align:left;display:flex;gap:8px;align-items:center"><span style="background:var(--error);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0">A</span>谢谢！</div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 对话排序 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="排序题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="句序" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="对话排序" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>对话排序</strong>。配置正确对话序列和角色信息，系统自动打散。</div></div>
+      <div class="form-group">
+        <label class="form-label">场景说明</label>
+        <input class="form-input" value="在餐厅点餐">
+      </div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>正确对话序列</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="form-select" style="width:60px"><option>A</option><option selected>B</option></select><input class="form-input" value="你好，请问需要什么？"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="form-select" style="width:60px"><option selected>A</option><option>B</option></select><input class="form-input" value="你好，我要一杯咖啡。"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="form-select" style="width:60px"><option>A</option><option selected>B</option></select><input class="form-input" value="好的，请稍等。"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="form-select" style="width:60px"><option selected>A</option><option>B</option></select><input class="form-input" value="谢谢！"></div></div></div>
+          <div class="list-builder-add">+ 添加对话轮</div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">角色A名称</label><input class="form-input" value="顾客"></div>
+        <div class="form-group"><label class="form-label">角色B名称</label><input class="form-input" value="服务员"></div>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>

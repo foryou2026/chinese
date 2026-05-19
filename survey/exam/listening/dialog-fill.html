@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>听力题 · 对话 · 短对话填空</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 听力题 · 全部变体</a>
+  <h1>#4 短对话填空</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">听力题 × 对话 × 短对话填空</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>听力题 × 短对话填空</strong> — 播放对话，填写信息表格(姓名/时间/地点等)。<br><span class="field-map">应用端: <strong>音频播放器</strong> + <strong>子题展示</strong> + <strong>作答区域</strong></span></div>
+<div class="shared-tpl">共用模板: 音频播放器 + 播放控制 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 短对话填空</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>听力题</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听对话，完成信息表格 Listen and fill the form</div>
+            <div style="text-align:center;padding:16px 0"><div class="audio-btn big">🔊 播放对话</div></div>
+            <div style="border:1px solid var(--border);border-radius:8px;overflow:hidden;margin:12px 0">
+              <table class="mini-table">
+                <tr><th style="width:100px">信息项</th><th>答案</th></tr>
+                <tr><td>姓名</td><td><input class="fill-blank wide" placeholder="______" style="font-size:14px"></td></tr>
+                <tr><td>时间</td><td><input class="fill-blank wide" placeholder="______" style="font-size:14px"></td></tr>
+                <tr><td>地点</td><td><input class="fill-blank wide" placeholder="______" style="font-size:14px"></td></tr>
+              </table>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 短对话填空 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="听力题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="对话" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="短对话填空" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>短对话填空</strong>。对话音频+信息表格填空。</div></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>对话音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="form-group"><label class="form-label">对话脚本</label><textarea class="form-textarea">A: 请问您贵姓？
+B: 我姓王。
+A: 王先生，您预约的是几点？
+B: 下午三点，在会议室。</textarea></div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label"><span class="req">*</span>填空字段</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="姓名"><input class="form-input" value="王(先生)" style="border-color:var(--success)"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="时间"><input class="form-input" value="下午三点" style="border-color:var(--success)"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="地点"><input class="form-input" value="会议室" style="border-color:var(--success)"></div></div></div>
+          <div class="list-builder-add">+ 添加字段</div>
+        </div></div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>

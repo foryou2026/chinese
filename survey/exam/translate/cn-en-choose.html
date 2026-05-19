@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>翻译题 · 中→英 · 中英选择</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 翻译题 · 全部变体</a>
+  <h1>#3 中英选择</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">翻译题 × 中→英 × 中英选择</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>翻译题 × 中→英 × 中英选择</strong> — 选择式翻译，从候选中选出正确译文。<br><span class="field-map">应用端: <strong>原句展示</strong> + <strong>选项列表</strong></span></div>
+<div class="shared-tpl">共用模板: 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 中英选择</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>翻译题</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">将中文翻译成English Translate</div>
+            <div class="highlight-box gray" style="padding:16px;margin:16px 0">
+              <div style="font-size:18px;font-weight:500;">今天天气很好。</div>
+            </div>
+            <div class="option-list">
+              <div class="option-item selected"><span class="letter">A</span>The weather is very nice today.</div>
+              <div class="option-item"><span class="letter">B</span>Today is very hot.</div>
+              <div class="option-item"><span class="letter">C</span>It will rain tomorrow.</div>
+              <div class="option-item"><span class="letter">D</span>The weather was bad yesterday.</div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 中英选择 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="翻译题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="中→英" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="中英选择" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>中英选择</strong>。原句+翻译选项。</div></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>中文原句</label><input class="form-input" value="今天天气很好。" style="font-size:16px"></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>英文翻译选项</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="t3" checked><input class="form-input" value="The weather is very nice today." style="border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓</span></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="t3"><input class="form-input" value="Today is very hot."></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="t3"><input class="form-input" value="It will rain tomorrow."></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="t3"><input class="form-input" value="The weather was bad yesterday."></div></div>
+        </div></div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>

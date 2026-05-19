@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>手写识别 · 汉字 · 看拼音写字</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 手写识别 · 全部变体</a>
+  <h1>#1 看拼音写字</h1>
+  <span class="badge solid-red">需AI</span><span class="badge orange">~$0.002-0.01/次</span>
+  <span class="subtitle">手写识别 × 汉字 × 看拼音写字</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>手写识别 × 看拼音写字</strong> — Canvas手写+AI实时识别评分。<br><span class="field-map">应用端: <strong>Canvas手写区</strong> + <strong>AI识别反馈</strong> + <strong>评分详情</strong></span></div>
+<div class="shared-tpl">共用模板: Canvas手写区 + 撤销/清除控制 + AI评分反馈 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 看拼音写字</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header pro"><span class="back">←</span><h3>手写识别</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">根据拼音手写汉字 Write the character by hand</div>
+            <div style="text-align:center;padding:12px 0"><div style="font-size:28px;color:var(--primary)">shuǐ</div><div class="text-sm text-muted">water</div></div>
+            <div style="width:220px;height:220px;border:2px solid var(--border);border-radius:12px;margin:12px auto;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(0,0,0,.02) 10px,rgba(0,0,0,.02) 20px);display:flex;align-items:center;justify-content:center;color:rgba(0,0,0,.15);font-size:120px">水</div>
+            <div style="display:flex;gap:8px;justify-content:center;margin:8px 0"><span class="btn btn-sm">↩ 撤销</span><span class="btn btn-sm">🗑 清除</span></div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">提交手写 ✓</span></div>
+            <div class="highlight-box green" style="margin-top:12px"><div style="font-weight:500;color:var(--success)">✅ AI识别: 水 (置信度 96%)</div><div class="mt-8 text-sm">字形评分: 85分 · 结构: 良好 · 比例: 合理</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 看拼音写字 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="手写识别" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="汉字" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="看拼音写字" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout cost"><span class="icon">💰</span><div>付费题型: 每次提交调用AI手写识别，<strong>~$0.005/次</strong>。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label"><span class="req">*</span>目标汉字</label><input class="form-input lg" value="水" style="text-align:center"></div>
+        <div class="form-group"><label class="form-label"><span class="req">*</span>拼音</label><input class="form-input" value="shuǐ"></div>
+        <div class="form-group"><label class="form-label">释义(EN)</label><input class="form-input" value="water"></div>
+      </div>
+      <div class="form-group"><label class="form-label">识别置信度阈值</label><input class="form-input" type="number" value="80" style="width:80px"> <span class="text-xs text-muted">低于此值判为错误</span></div>
+      <div class="form-group"><label class="form-label">评分维度</label>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <label class="text-sm"><input type="checkbox" checked> 字形准确度(整体形状)</label>
+          <label class="text-sm"><input type="checkbox" checked> 结构(部件位置关系)</label>
+          <label class="text-sm"><input type="checkbox" checked> 比例(大小匀称)</label>
+        </div></div>
+      <div class="form-group"><label class="form-label">Canvas背景</label><select class="form-select"><option selected>淡色参考字(水印)</option><option>米字格</option><option>田字格</option><option>空白</option></select></div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option >HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="5"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>

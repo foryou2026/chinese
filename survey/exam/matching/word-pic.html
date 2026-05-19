@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>配对题 · 图文 · 词语↔图片</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 配对题 · 全部变体</a>
+  <h1>#4 词语↔图片</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">配对题 × 图文 × 词语↔图片</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>配对题 × 图文 × 词语↔图片</strong> — 左列词语，右列图片缩略图，用户连线匹配。与文字配对的区别：<strong>右列为图片</strong>，适合具象名词，强化图义关联。<br>
+  <span class="field-map">应用端核心元素: <strong>左列词语+拼音</strong> + <strong>右列图片缩略图(80×80)</strong> + <strong>连线交互</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 配对连线交互 + 匹配反馈 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 词语↔图片</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>配对练习</h3><span class="progress">Q2/5</span></div>
+          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">将词语与图片配对 Match words with pictures</div>
+            <div class="match-grid" style="margin:16px 0">
+              <div class="match-item"><div style="font-size:18px">苹果</div><div class="text-xs text-muted">píngguǒ</div></div>
+              <div class="match-line">——</div>
+              <div class="match-item" style="padding:8px"><div style="width:60px;height:60px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto">🍎</div></div>
+
+              <div class="match-item"><div style="font-size:18px">猫</div><div class="text-xs text-muted">māo</div></div>
+              <div class="match-line" style="color:transparent">——</div>
+              <div class="match-item" style="padding:8px"><div style="width:60px;height:60px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto">🐱</div></div>
+
+              <div class="match-item"><div style="font-size:18px">电脑</div><div class="text-xs text-muted">diànnǎo</div></div>
+              <div class="match-line" style="color:transparent">——</div>
+              <div class="match-item" style="padding:8px"><div style="width:60px;height:60px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto">💻</div></div>
+
+              <div class="match-item"><div style="font-size:18px">雨伞</div><div class="text-xs text-muted">yǔsǎn</div></div>
+              <div class="match-line" style="color:transparent">——</div>
+              <div class="match-item" style="padding:8px"><div style="width:60px;height:60px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto">☂️</div></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">提交全部配对 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 词语↔图片 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="配对题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="图文" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="词语↔图片" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>词语↔图片</strong>。每组需<strong>上传图片</strong>，适合具象名词(水果/动物/物品)。</div></div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>词语-图片配对</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content"><div class="form-row"><div><input class="form-input" value="苹果" style="margin-bottom:4px"><input class="form-input" value="píngguǒ" style="font-size:12px"></div><div class="upload-area sm" style="min-height:60px">📷 上传图片</div></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><div><input class="form-input" value="猫" style="margin-bottom:4px"><input class="form-input" value="māo" style="font-size:12px"></div><div class="upload-area sm" style="min-height:60px">📷 上传图片</div></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><div><input class="form-input" value="电脑" style="margin-bottom:4px"><input class="form-input" value="diànnǎo" style="font-size:12px"></div><div class="upload-area sm" style="min-height:60px">📷 上传图片</div></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><div><input class="form-input" value="雨伞" style="margin-bottom:4px"><input class="form-input" value="yǔsǎn" style="font-size:12px"></div><div class="upload-area sm" style="min-height:60px">📷 上传图片</div></div></div></div>
+          <div class="list-builder-add">+ 添加配对</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">干扰图片</label>
+        <div class="upload-area sm">📷 上传干扰图(可选)</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">图片尺寸</label>
+        <select class="form-select"><option>60×60 小缩略图</option><option selected>80×80 标准</option><option>120×120 大图</option></select>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option >HSK 2</option><option >HSK 3</option><option >HSK 4</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="5"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option><option >中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

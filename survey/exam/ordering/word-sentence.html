@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>排序题 · 词序 · 词语排句</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 排序题 · 全部变体</a>
+  <h1>#1 词语排句</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">排序题 × 词序 × 词语排句</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>排序题 × 词序 × 词语排句</strong> — 将打散的词语卡片拖拽排列成正确的句子。初级语序训练，考察基本句法结构(SVO等)。<br><span class="field-map">应用端: <strong>打散词语卡片(可拖拽)</strong> + <strong>答案区(放置栏)</strong> + <strong>干扰词(可选)</strong></span></div>
+<div class="shared-tpl">共用模板: 拖拽排序交互 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 词语排句</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>排序题</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">将词语排列成正确的句子 Arrange into a sentence</div>
+            <div style="margin:16px 0">
+              <div class="text-sm text-muted mb-8">拖拽到下方组成句子:</div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+                <span class="drag-chip">喜欢</span>
+                <span class="drag-chip">我</span>
+                <span class="drag-chip">中国菜</span>
+                <span class="drag-chip">很</span>
+                <span class="drag-chip ghost">吃</span>
+              </div>
+            </div>
+            <div class="drag-area" style="min-height:50px;margin:12px 0">
+              <span class="drag-chip placed">我</span>
+              <span class="drag-chip placed">很</span>
+              <span class="drag-chip placed">喜欢</span>
+            </div>
+            <div class="text-sm text-muted" style="text-align:center">He/She really likes Chinese food.</div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！我很喜欢吃中国菜。</div>
+              <div class="mt-8 text-sm">语序: 主语(我) + 程度副词(很) + 动词(喜欢) + 动词(吃) + 宾语(中国菜)<br><span class="text-muted">SVO structure with degree adverb.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 词语排句 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="排序题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="词序" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="词语排句" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>词语排句</strong>。输入正确句子后系统自动打散。可添加<strong>干扰词</strong>增加难度。</div></div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>正确句子</label>
+        <textarea class="form-textarea" style="font-size:16px">我很喜欢吃中国菜。</textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label">英文翻译</label>
+        <input class="form-input" value="I really like eating Chinese food.">
+      </div>
+      <div class="form-group">
+        <label class="form-label">打散粒度</label>
+        <select class="form-select"><option selected>逐词打散</option><option>逐短语打散(保留固定搭配)</option></select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">干扰词 <span class="hint">额外加入的不属于句子的词，增加难度</span></label>
+        <div class="tag-input"><span class="tag-item">在 <span class="close">×</span></span></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">标点处理</label>
+        <select class="form-select"><option selected>自动补全句末标点</option><option>标点也作为卡片参与排序</option></select>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="45"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>

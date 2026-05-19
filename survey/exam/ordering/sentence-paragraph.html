@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>排序题 · 句序 · 句子排段</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 排序题 · 全部变体</a>
+  <h1>#3 句子排段</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">排序题 × 句序 × 句子排段</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>排序题 × 句序 × 句子排段</strong> — 打散的句子卡片，拖拽排列成连贯段落。高级逻辑思维训练，考察语篇衔接能力。<br><span class="field-map">应用端: <strong>打散句子条(拖拽)</strong> + <strong>序号标记</strong> + <strong>段落语境提示(可选)</strong></span></div>
+<div class="shared-tpl">共用模板: 拖拽排序交互 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 句子排段</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>排序题</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">将句子排列成连贯的段落 Arrange into a paragraph</div>
+            <div class="highlight-box blue" style="padding:8px;text-align:center;margin-bottom:12px"><span class="text-sm">📖 主题: 我的一天</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;margin:12px 0">
+              <div class="drag-chip" style="width:100%;text-align:left;cursor:grab;display:flex;gap:8px;align-items:center"><span style="width:20px;text-align:center;color:rgba(0,0,0,.25)">⋮⋮</span>然后我去上班。</div>
+              <div class="drag-chip" style="width:100%;text-align:left;cursor:grab;display:flex;gap:8px;align-items:center"><span style="width:20px;text-align:center;color:rgba(0,0,0,.25)">⋮⋮</span>我每天早上七点起床。</div>
+              <div class="drag-chip" style="width:100%;text-align:left;cursor:grab;display:flex;gap:8px;align-items:center"><span style="width:20px;text-align:center;color:rgba(0,0,0,.25)">⋮⋮</span>晚上我喜欢看书或者看电视。</div>
+              <div class="drag-chip" style="width:100%;text-align:left;cursor:grab;display:flex;gap:8px;align-items:center"><span style="width:20px;text-align:center;color:rgba(0,0,0,.25)">⋮⋮</span>起床以后，先吃早饭。</div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 句子排段 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="排序题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="句序" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="句子排段" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>句子排段</strong>。输入正确段落，系统自动拆句打散。</div></div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>正确段落</label>
+        <textarea class="form-textarea" style="min-height:100px">我每天早上七点起床。起床以后，先吃早饭。然后我去上班。晚上我喜欢看书或者看电视。</textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label">英文翻译</label>
+        <textarea class="form-textarea">I wake up at 7am every day. After waking up, I eat breakfast first. Then I go to work. In the evening, I like reading or watching TV.</textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label">段落语境提示</label>
+        <input class="form-input" value="我的一天" placeholder="主题提示(可选)">
+      </div>
+      <div class="form-group">
+        <label class="form-label">拆句方式</label>
+        <select class="form-select"><option selected>按句号/问号自动拆分</option><option>手动指定拆分点</option></select>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option >HSK 2</option><option selected>HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="5"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="90"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>
