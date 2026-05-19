@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 语法 · 选正确句</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#14 选正确句</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 语法 × 选正确句</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 语法 × 选正确句</strong> — 给出语法点说明，从4个句子中选出语法正确的。错误选项在答题后显示错误标注。<br>
+  <span class="field-map">应用端核心元素: <strong>语法点卡片</strong> + <strong>整句选项(语法词高亮)</strong> + <strong>答题后错误标注</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 标准选项列表(变体:整句+高亮) + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 选正确句</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>语法测试</h3><span class="progress">Q4/12</span></div>
+          <div class="progress-bar"><div class="fill" style="width:33%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">选择语法正确的句子 Select the correct sentence</div>
+            <!-- 语法点卡片 -->
+            <div class="highlight-box blue" style="text-align:center;margin:12px 0">
+              <div style="font-size:13px;color:var(--primary);font-weight:500">📖 考查语法点</div>
+              <div style="font-size:18px;margin-top:4px"><strong>「把」字句</strong></div>
+              <div class="text-sm text-muted">S + 把 + O + V + Complement</div>
+            </div>
+            <!-- 整句选项(语法词高亮) -->
+            <div class="option-list">
+              <div class="option-item selected" style="flex-direction:column;align-items:flex-start">
+                <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">A</span><span style="font-size:15px">我<strong style="color:var(--primary)">把</strong>书放在桌子上了。</span></div>
+              </div>
+              <div class="option-item" style="flex-direction:column;align-items:flex-start">
+                <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">B</span><span style="font-size:15px">我<strong style="color:var(--error)">把</strong>放书在桌子上了。</span></div>
+                <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 语序错误: 动词应在宾语后</div>
+              </div>
+              <div class="option-item" style="flex-direction:column;align-items:flex-start">
+                <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">C</span><span style="font-size:15px">我书<strong style="color:var(--error)">把</strong>放在桌子上了。</span></div>
+                <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 把字位置错误</div>
+              </div>
+              <div class="option-item" style="flex-direction:column;align-items:flex-start">
+                <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">D</span><span style="font-size:15px"><strong style="color:var(--error)">把</strong>我书放在桌子上了。</span></div>
+                <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 主语缺失</div>
+              </div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 选正确句 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>本L3核心：需配置<strong>语法点+说明</strong>、<strong>正确句子+错误句子</strong>、每个错误句的<strong>错误类型+具体说明</strong>(答题后展示)、<strong>高亮关键词+颜色</strong>。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="语法" disabled></div>
+        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="选正确句" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>关联语法点</label>
+        <select class="form-select"><option selected>把字句</option><option>被字句</option><option>比较句(比/没有)</option><option>了/过/着 时态</option><option>量词搭配</option><option>自定义...</option></select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">语法点说明(题干卡片) <span class="hint">应用端蓝色卡片展示</span></label>
+        <div class="form-row">
+          <input class="form-input" value="「把」字句" placeholder="中文名称">
+          <input class="form-input" value="S + 把 + O + V + Complement" placeholder="公式/英文">
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>句子选项 <span class="hint">勾选正确句子；每个错误句必须标注<strong>错误类型+具体说明</strong></span></label>
+        <div class="list-builder">
+          <div class="list-builder-item">
+            <input type="radio" name="gr1" checked style="margin-top:6px">
+            <div class="content">
+              <input class="form-input" value="我把书放在桌子上了。" style="border-color:var(--success);margin-bottom:4px">
+              <span class="text-xs" style="color:var(--success)">✓ 语法正确</span>
+            </div>
+          </div>
+          <div class="list-builder-item">
+            <input type="radio" name="gr1" style="margin-top:6px">
+            <div class="content">
+              <input class="form-input" value="我把放书在桌子上了。" style="margin-bottom:4px">
+              <div class="form-row">
+                <select class="form-select" style="width:120px"><option selected>语序错误</option><option>缺少成分</option><option>多余成分</option><option>搭配错误</option></select>
+                <input class="form-input" value="动词应在宾语后" placeholder="具体错误说明(答题后展示)">
+              </div>
+            </div>
+          </div>
+          <div class="list-builder-item">
+            <input type="radio" name="gr1" style="margin-top:6px">
+            <div class="content">
+              <input class="form-input" value="我书把放在桌子上了。" style="margin-bottom:4px">
+              <div class="form-row">
+                <select class="form-select" style="width:120px"><option selected>语序错误</option></select>
+                <input class="form-input" value="把字位置错误">
+              </div>
+            </div>
+          </div>
+          <div class="list-builder-item">
+            <input type="radio" name="gr1" style="margin-top:6px">
+            <div class="content">
+              <input class="form-input" value="把我书放在桌子上了。" style="margin-bottom:4px">
+              <div class="form-row">
+                <select class="form-select" style="width:120px"><option>语序错误</option><option selected>缺少成分</option></select>
+                <input class="form-input" value="主语缺失">
+              </div>
+            </div>
+          </div>
+          <div class="list-builder-add">+ 添加句子</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">语法词高亮配置 <span class="hint">应用端选项中高亮的关键语法词</span></label>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label text-sm">高亮关键词</label><input class="form-input" value="把" placeholder="在选项中高亮的词"></div>
+          <div class="form-group"><label class="form-label text-sm">高亮颜色</label><div style="display:flex;gap:8px;align-items:center"><input type="color" value="#1677ff" style="width:40px;height:32px"><span class="text-xs text-muted">正确句用主色，错误句用红色</span></div></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">答题后显示错误标注</label>
+        <div><span class="switch on"></span> <span class="text-sm text-muted">开启后在错误选项下方显示❌标注</span></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">把字句结构: 主语+把+宾语+动词+补语。宾语必须放在「把」和动词之间。</textarea><textarea class="form-textarea">把 structure: S+把+O+V+C. The object must be between 把 and the verb.</textarea></div></div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option>HSK 2</option><option selected>HSK 3</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option></select></div>
+      </div>
+      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

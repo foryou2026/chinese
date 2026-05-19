@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 拼音 · 听音选拼音</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#2 听音选拼音</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 拼音 × 听音选拼音</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 拼音 × 听音选拼音</strong> — 播放一段发音音频，从4个拼音选项中选出听到的读音。与「汉字选拼音」的区别：<strong>题干从文字变为音频</strong>，无汉字显示，纯听辨能力测试。<br>
+  <span class="field-map">应用端核心元素: <strong>音频播放器(大号居中)</strong> + <strong>播放次数/慢速控制</strong> + <strong>拼音选项列表</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 音频播放器 + 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听音选拼音</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>拼音测试</h3><span class="progress">Q5/15</span></div>
+          <div class="progress-bar"><div class="fill" style="width:33%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听发音，选择正确的拼音 Listen and select the pinyin</div>
+            <!-- 核心差异: 音频播放器代替汉字展示 -->
+            <div style="text-align:center;padding:24px 0">
+              <div class="audio-btn big">🔊 点击播放</div>
+              <div style="margin-top:8px">
+                <span class="text-sm text-muted">剩余播放次数: 2/3</span>
+              </div>
+              <div style="margin-top:8px;display:flex;gap:8px;justify-content:center">
+                <span class="btn btn-sm">🐢 慢速</span>
+                <span class="btn btn-sm">🔁 重播</span>
+              </div>
+            </div>
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span><span style="font-size:18px">zhī</span></div>
+              <div class="option-item selected"><span class="letter">B</span><span style="font-size:18px">zhí</span></div>
+              <div class="option-item"><span class="letter">C</span><span style="font-size:18px">zhǐ</span></div>
+              <div class="option-item"><span class="letter">D</span><span style="font-size:18px">zhì</span></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+              <div class="mt-8">你听到的是「直」(zhí, 第二声)。注意与「知」(zhī, 第一声) 的声调区别。<br>
+              <span class="text-muted">You heard "zhí" (2nd tone, meaning "straight"). Note the tonal difference from "zhī" (1st tone).</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 听音选拼音 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>听音选拼音</strong>。与「汉字选拼音」的管理端差异：<strong>音频变为必填</strong>，无题干汉字字段，新增播放次数限制和慢速音频配置。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="拼音" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="听音选拼音" disabled></div>
+      </div>
+      <hr class="divider">
+      <!-- 核心差异: 音频为必填，是唯一题干 -->
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>正常语速音频 <span class="hint" style="color:var(--error)">听音题必填，是唯一题干</span></label>
+        <div class="upload-area">🎧 上传音频 MP3/WAV (必填)</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">慢速音频 <span class="hint">供用户降速重听，留空则隐藏「🐢 慢速」按钮</span></label>
+        <div class="upload-area sm">🐢 上传慢速版本</div>
+      </div>
+      <div class="form-row t3">
+        <div class="form-group">
+          <label class="form-label">最大播放次数 <span class="hint">对应应用端「剩余 n/N 次」</span></label>
+          <input class="form-input" type="number" value="3">
+        </div>
+        <div class="form-group">
+          <label class="form-label">自动播放</label>
+          <div style="padding-top:6px"><span class="switch on"></span> <span class="text-xs text-muted">进入题目自动播放一次</span></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">音频内容(内部) <span class="hint">不展示给用户</span></label>
+          <input class="form-input" value="zhí (直)" placeholder="记录音频内容便于管理">
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>拼音选项 <span class="hint">同「汉字选拼音」，勾选正确答案</span></label>
+        <div class="list-builder">
+          <div class="list-builder-item">
+            <input type="radio" name="py2"><div class="content" style="display:flex;gap:8px;align-items:center"><span style="width:20px;font-weight:500">A</span><input class="form-input" value="zhī" style="flex:1"><select class="form-select" style="width:100px"><option selected>声调干扰</option></select></div>
+          </div>
+          <div class="list-builder-item">
+            <input type="radio" name="py2" checked><div class="content" style="display:flex;gap:8px;align-items:center"><span style="width:20px;font-weight:500;color:var(--success)">B</span><input class="form-input" value="zhí" style="flex:1;border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓ 正确</span></div>
+          </div>
+          <div class="list-builder-item">
+            <input type="radio" name="py2"><div class="content" style="display:flex;gap:8px;align-items:center"><span style="width:20px;font-weight:500">C</span><input class="form-input" value="zhǐ" style="flex:1"><select class="form-select" style="width:100px"><option selected>声调干扰</option></select></div>
+          </div>
+          <div class="list-builder-item">
+            <input type="radio" name="py2"><div class="content" style="display:flex;gap:8px;align-items:center"><span style="width:20px;font-weight:500">D</span><input class="form-input" value="zhì" style="flex:1"><select class="form-select" style="width:100px"><option selected>声调干扰</option></select></div>
+          </div>
+          <div class="list-builder-add">+ 添加选项</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">干扰项生成策略</label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <label class="text-sm"><input type="checkbox" checked> 同音异调</label>
+          <label class="text-sm"><input type="checkbox" checked> 近音混淆</label>
+          <label class="text-sm"><input type="checkbox"> 前后鼻音</label>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">答案解析</label>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">你听到的是「直」(zhí, 第二声)。注意与「知」(zhī) 的声调区别。</textarea></div>
+          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">You heard "zhí" (2nd tone). Note the tonal difference from "zhī".</textarea></div>
+        </div>
+      </div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="25"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

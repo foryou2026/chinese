@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 词语 · 词义选择</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#10 词义选择</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 词语 × 词义选择</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 词语 × 词义选择</strong> — 展示一个词语+拼音，从4个释义选项中选出正确含义。方向：词→义。<br>
+  <span class="field-map">应用端核心元素: <strong>大号词语+拼音</strong> + <strong>释义选项(中英)</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 词义选择</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>词汇测试</h3><span class="progress">Q4/15</span></div>
+          <div class="progress-bar"><div class="fill" style="width:27%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">选择这个词语的含义 Choose the meaning</div>
+            <div style="text-align:center;padding:20px 0">
+              <div style="font-size:36px;font-weight:500;color:#333">认真</div>
+              <div style="font-size:16px;color:var(--primary);margin-top:4px">rènzhēn</div>
+              <div style="margin-top:8px"><span class="audio-btn">🔊 听发音</span></div>
+            </div>
+            <div class="option-list">
+              <div class="option-item selected"><span class="letter">A</span><span>serious; earnest; conscientious</span></div>
+              <div class="option-item"><span class="letter">B</span><span>happy; joyful</span></div>
+              <div class="option-item"><span class="letter">C</span><span>careful; cautious</span></div>
+              <div class="option-item"><span class="letter">D</span><span>important; significant</span></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 词义选择 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>方向=<strong>给词选义</strong>。题干为词语+拼音展示，选项为释义文本。干扰以<strong>近义词释义</strong>为主。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="词语" disabled></div>
+        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="词义选择" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label"><span class="req">*</span>目标词语</label><input class="form-input lg" value="认真" style="text-align:center"></div>
+        <div class="form-group"><label class="form-label"><span class="req">*</span>拼音</label><input class="form-input" value="rènzhēn"></div>
+        <div class="form-group"><label class="form-label">音频</label><div class="upload-area sm">📁 上传/TTS</div></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>释义选项 <span class="hint">勾选正确释义，干扰项应为近义词的释义</span></label>
+        <div class="list-builder">
+          <div class="list-builder-item"><input type="radio" name="wm1" checked><div class="content"><input class="form-input" value="serious; earnest; conscientious" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓ 正确</span></div></div>
+          <div class="list-builder-item"><input type="radio" name="wm1"><div class="content"><input class="form-input" value="happy; joyful"><div class="text-xs text-muted">干扰: 无关释义</div></div></div>
+          <div class="list-builder-item"><input type="radio" name="wm1"><div class="content"><input class="form-input" value="careful; cautious"><div class="text-xs text-muted">干扰: 近义词(小心)的释义</div></div></div>
+          <div class="list-builder-item"><input type="radio" name="wm1"><div class="content"><input class="form-input" value="important; significant"><div class="text-xs text-muted">干扰: 近义词(重要)的释义</div></div></div>
+          <div class="list-builder-add">+ 添加</div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">「认真」表示态度严肃、做事用心。与「小心」(小心翼翼)和「重要」(重大)不同。</textarea><textarea class="form-textarea">"认真" means serious/earnest. Different from "小心" (careful) and "重要" (important).</textarea></div></div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option>HSK 1</option><option selected>HSK 2</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="25"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option></select></div>
+      </div>
+      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

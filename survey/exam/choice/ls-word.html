@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 听力理解 · 听词选义</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#20 听词选义</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 听力理解 × 听词选义</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 听力 × 听词选义</strong> — 播放一个词语的发音，从4个含义/翻译选项中选出正确的。最短音频+单一问题。<br>
+  <span class="field-map">应用端核心元素: <strong>短音频播放器</strong> + <strong>含义/翻译选项</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 音频播放器 + 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听词选义</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>听力测试</h3><span class="progress">Q1/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:10%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听发音，选择正确的含义 Listen and choose the meaning</div>
+            <div style="text-align:center;padding:24px 0">
+              <div class="audio-btn big">🔊 点击播放</div>
+              <div style="margin-top:8px"><span class="text-sm text-muted">剩余: 3/3</span></div>
+              <div style="margin-top:6px;display:flex;gap:8px;justify-content:center"><span class="btn btn-sm">🐢 慢速</span></div>
+            </div>
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span><span>teacher</span></div>
+              <div class="option-item selected"><span class="letter">B</span><span>student</span></div>
+              <div class="option-item"><span class="letter">C</span><span>doctor</span></div>
+              <div class="option-item"><span class="letter">D</span><span>friend</span></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+              <div class="mt-8">你听到的是「学生」(xuéshēng) = student<br><span class="text-muted">You heard 学生 (xuéshēng) meaning student.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 听词选义 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>最简单的听力选择：<strong>词级短音频</strong> + <strong>含义/翻译选项</strong>。音频必填，选项为纯文本释义。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="听力理解" disabled></div>
+        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="听词选义" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label"><span class="req">*</span>音频(词级) <span class="hint" style="color:var(--error)">必填</span></label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">慢速音频</label><div class="upload-area sm">🐢 上传</div></div>
+        <div class="form-group"><label class="form-label">播放次数</label><input class="form-input" type="number" value="3"></div>
+        <div class="form-group"><label class="form-label">音频内容(内部)</label><input class="form-input" value="学生 xuéshēng"></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>含义选项</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><input type="radio" name="lw1"><div class="content"><input class="form-input" value="teacher"></div></div>
+          <div class="list-builder-item"><input type="radio" name="lw1" checked><div class="content"><input class="form-input" value="student" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓</span></div></div>
+          <div class="list-builder-item"><input type="radio" name="lw1"><div class="content"><input class="form-input" value="doctor"></div></div>
+          <div class="list-builder-item"><input type="radio" name="lw1"><div class="content"><input class="form-input" value="friend"></div></div>
+          <div class="list-builder-add">+ 添加</div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">「学生」(xuéshēng) = student。</textarea><textarea class="form-textarea">学生 (xuéshēng) = student.</textarea></div></div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option></select></div>
+      </div>
+      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

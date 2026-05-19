@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 汉字 · 拼音选汉字</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#4 拼音选汉字</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 汉字 × 拼音选汉字</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 汉字 × 拼音选汉字</strong> — 展示拼音和释义，从4个汉字选项中选出对应的汉字。测试形近字辨识。<br>
+  <span class="field-map">应用端核心元素: <strong>大号拼音</strong> + <strong>释义提示</strong> + <strong>发音按钮</strong> + <strong>汉字网格选项(2×2大号)</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 汉字网格选项 + 音频播放器(可选) + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 拼音选汉字</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>汉字测试</h3><span class="progress">Q5/15</span></div>
+          <div class="progress-bar"><div class="fill" style="width:33%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">选择正确的汉字 Select the correct character</div>
+            <!-- 题干: 拼音+释义 -->
+            <div style="text-align:center;padding:20px 0">
+              <div style="font-size:32px;color:var(--primary);font-weight:400">mā</div>
+              <div style="font-size:16px;color:rgba(0,0,0,.65);margin-top:4px">母亲 · mother</div>
+              <div style="margin-top:8px"><span class="audio-btn">🔊 听发音</span></div>
+            </div>
+            <!-- 汉字网格选项(2×2) -->
+            <div class="option-grid">
+              <div class="option-item"><span style="font-size:32px">马</span><br><span class="text-xs text-muted">mǎ · horse</span></div>
+              <div class="option-item selected"><span style="font-size:32px">妈</span><br><span class="text-xs text-muted">mā · mother</span></div>
+              <div class="option-item"><span style="font-size:32px">吗</span><br><span class="text-xs text-muted">ma · (particle)</span></div>
+              <div class="option-item"><span style="font-size:32px">骂</span><br><span class="text-xs text-muted">mà · scold</span></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+              <div class="mt-8">「妈」(mā) = 女字旁 + 马，部首「女」提示含义与女性有关。<br>
+              <span class="text-muted">妈 = 女 (woman) + 马 (horse/phonetic).</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 拼音选汉字 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>题干为<strong>拼音+释义</strong>展示，选项为<strong>汉字网格(大号)</strong>。核心干扰维度是<strong>形近字/同音字</strong>。每个干扰汉字需配拼音和释义(用于选项辅助显示)。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="汉字" disabled></div>
+        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="拼音选汉字" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>目标汉字 <span class="hint">正确答案</span></label>
+        <input class="form-input lg" value="妈" style="text-align:center">
+      </div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label"><span class="req">*</span>拼音(题干)</label><input class="form-input" value="mā"></div>
+        <div class="form-group"><label class="form-label"><span class="req">*</span>中文释义</label><input class="form-input" value="母亲"></div>
+        <div class="form-group"><label class="form-label"><span class="req">*</span>英文释义</label><input class="form-input" value="mother"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">题干音频 <span class="hint">对应应用端「🔊 听发音」</span></label>
+        <div class="upload-area sm">📁 上传/TTS</div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>干扰汉字 <span class="hint">应为形近字或同音字，每个需配拼音+释义</span></label>
+        <table class="mini-table">
+          <thead><tr><th>汉字</th><th>拼音</th><th>释义</th><th>干扰类型</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><input class="form-input" value="马" style="width:50px;text-align:center"></td>
+              <td><input class="form-input" value="mǎ" style="width:60px"></td>
+              <td><input class="form-input" value="horse" style="width:80px"></td>
+              <td><select class="form-select" style="width:100px"><option selected>形近字</option><option>同音字</option><option>声调混淆</option></select></td>
+              <td><span class="btn btn-sm">🗑</span></td>
+            </tr>
+            <tr>
+              <td><input class="form-input" value="吗" style="width:50px;text-align:center"></td>
+              <td><input class="form-input" value="ma" style="width:60px"></td>
+              <td><input class="form-input" value="(particle)" style="width:80px"></td>
+              <td><select class="form-select" style="width:100px"><option selected>形近字</option></select></td>
+              <td><span class="btn btn-sm">🗑</span></td>
+            </tr>
+            <tr>
+              <td><input class="form-input" value="骂" style="width:50px;text-align:center"></td>
+              <td><input class="form-input" value="mà" style="width:60px"></td>
+              <td><input class="form-input" value="scold" style="width:80px"></td>
+              <td><select class="form-select" style="width:100px"><option selected>声调混淆</option></select></td>
+              <td><span class="btn btn-sm">🗑</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="text-align:center;padding:8px;color:var(--primary);cursor:pointer;font-size:13px">+ 添加干扰项</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">干扰策略(AI批量生成)</label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <label class="text-sm"><input type="checkbox" checked> 形近字(相似部件)</label>
+          <label class="text-sm"><input type="checkbox" checked> 同音异字</label>
+          <label class="text-sm"><input type="checkbox"> 同部首字</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">选项辅助显示 <span class="hint">控制应用端汉字网格下方是否显示拼音/释义</span></label>
+        <div style="display:flex;gap:12px">
+          <label class="text-sm"><input type="checkbox" checked> 显示拼音</label>
+          <label class="text-sm"><input type="checkbox" checked> 显示释义</label>
+          <label class="text-sm"><input type="checkbox"> 显示笔画数</label>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">答案解析</label>
+        <div class="form-row">
+          <textarea class="form-textarea">「妈」(mā) = 女字旁+马。部首「女」提示含义与女性有关。</textarea>
+          <textarea class="form-textarea">妈 = 女 (woman) + 马 (horse/phonetic).</textarea>
+        </div>
+      </div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

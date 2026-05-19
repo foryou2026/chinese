@@ -211,4 +211,3 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ping
 /* Tab script helper */
 [data-panel] { display: none; }
 [data-panel].active { display: block; }
-</style>

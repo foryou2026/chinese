@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 拼音 · 汉字选拼音</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#1 汉字选拼音</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 拼音 × 汉字选拼音</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 拼音 × 汉字选拼音</strong> — 展示一个汉字/词语，从4个拼音选项中选出正确读音。重点测试声调辨识。<br>
+  <span class="field-map">应用端核心元素: <strong>大号汉字</strong> + <strong>发音按钮(可选)</strong> + <strong>拼音选项列表</strong> → 管理端须逐一配置</span>
+</div>
+<div class="shared-tpl">共用模板: 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <!-- 应用端 -->
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 汉字选拼音</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>拼音测试</h3><span class="progress">Q3/15</span></div>
+          <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
+          <div class="app-content">
+            <!-- 元素1: 指示语 → 管理端: 自动生成,不需配置 -->
+            <div class="q-instruction">选择正确的拼音 Select the correct pinyin</div>
+            <!-- 元素2: 大号汉字题干 → 管理端: 题干汉字输入框 -->
+            <div style="text-align:center;padding:20px 0">
+              <div style="font-size:72px;font-weight:300;color:#333">学</div>
+              <div style="font-size:13px;color:rgba(0,0,0,.45)">character · choose its pinyin</div>
+              <!-- 元素3: 发音按钮 → 管理端: 题干音频上传/TTS -->
+              <div style="margin-top:8px"><span class="audio-btn">🔊 听发音</span></div>
+            </div>
+            <!-- 元素4: 拼音选项列表 → 管理端: 拼音选项配置 -->
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span><span style="font-size:18px">xuē</span></div>
+              <div class="option-item selected"><span class="letter">B</span><span style="font-size:18px">xué</span></div>
+              <div class="option-item"><span class="letter">C</span><span style="font-size:18px">xuě</span></div>
+              <div class="option-item"><span class="letter">D</span><span style="font-size:18px">xuè</span></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <hr class="divider">
+            <!-- 元素5: 答案解析 → 管理端: 答案解析(中英) -->
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+              <div class="mt-8">「学」读 xué (第二声)，注意与「雪」(xuě, 第三声) 区分。<br>
+              <span class="text-muted">"学" is xué (2nd tone). Don't confuse with "雪" (xuě, 3rd tone).</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 管理端 -->
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 汉字选拼音 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>题型=选择题, 知识类型=拼音, 题目类型=<strong>汉字选拼音</strong>。题干为汉字展示，选项为拼音字符串，核心干扰维度是<strong>声调差异</strong>。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="拼音" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="汉字选拼音" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>题干汉字 <span class="hint">展示给用户的目标汉字/词语，应用端以72px大号居中显示</span></label>
+        <input class="form-input lg" value="学" placeholder="输入单字或词语" style="text-align:center">
+      </div>
+      <div class="form-group">
+        <label class="form-label">题干音频 <span class="hint">对应应用端的「🔊 听发音」按钮，留空则不显示该按钮</span></label>
+        <div class="upload-area sm">📁 上传音频 或 点击「TTS生成」自动合成</div>
+        <div style="margin-top:6px"><span class="btn btn-sm">🤖 TTS生成</span></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>拼音选项 <span class="hint">勾选正确答案，干扰项应为同音异调/近音混淆</span></label>
+        <div class="list-builder">
+          <div class="list-builder-item">
+            <input type="radio" name="py1" style="margin-top:6px">
+            <div class="content" style="display:flex;gap:8px;align-items:center">
+              <span style="width:20px;font-weight:500">A</span>
+              <input class="form-input" value="xuē" style="flex:1">
+              <select class="form-select" style="width:100px"><option selected>声调干扰</option><option>近音混淆</option><option>拼写干扰</option></select>
+            </div>
+          </div>
+          <div class="list-builder-item">
+            <input type="radio" name="py1" checked style="margin-top:6px">
+            <div class="content" style="display:flex;gap:8px;align-items:center">
+              <span style="width:20px;font-weight:500;color:var(--success)">B</span>
+              <input class="form-input" value="xué" style="flex:1;border-color:var(--success)">
+              <span class="text-xs" style="color:var(--success)">✓ 正确答案</span>
+            </div>
+          </div>
+          <div class="list-builder-item">
+            <input type="radio" name="py1" style="margin-top:6px">
+            <div class="content" style="display:flex;gap:8px;align-items:center">
+              <span style="width:20px;font-weight:500">C</span>
+              <input class="form-input" value="xuě" style="flex:1">
+              <select class="form-select" style="width:100px"><option selected>声调干扰</option></select>
+            </div>
+          </div>
+          <div class="list-builder-item">
+            <input type="radio" name="py1" style="margin-top:6px">
+            <div class="content" style="display:flex;gap:8px;align-items:center">
+              <span style="width:20px;font-weight:500">D</span>
+              <input class="form-input" value="xuè" style="flex:1">
+              <select class="form-select" style="width:100px"><option selected>声调干扰</option></select>
+            </div>
+          </div>
+          <div class="list-builder-add">+ 添加选项</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">干扰项生成策略 <span class="hint">AI批量出题时使用</span></label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <label class="text-sm"><input type="checkbox" checked> 同音异调(声调替换)</label>
+          <label class="text-sm"><input type="checkbox" checked> 近音混淆(zh/z, sh/s, ch/c)</label>
+          <label class="text-sm"><input type="checkbox"> 前后鼻音(an/ang, en/eng)</label>
+          <label class="text-sm"><input type="checkbox"> ü/u混淆</label>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">答案解析 <span class="hint">对应应用端答题后的解析区域</span></label>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「学」读 xué (第二声)，注意与「雪」(xuě) 区分。</textarea></div>
+          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"学" is xué (2nd tone). Don't confuse with "雪" (xuě).</textarea></div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK等级</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option><option>HSK 4</option><option>HSK 5</option><option>HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

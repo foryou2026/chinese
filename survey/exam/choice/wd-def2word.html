@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 词语 · 释义选词</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#11 释义选词</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 词语 × 释义选词</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 词语 × 释义选词</strong> — 展示中英释义描述，从4个词语选项中选出对应的词。方向：义→词，与「词义选择」互逆。<br>
+  <span class="field-map">应用端核心元素: <strong>释义描述区(中英)</strong> + <strong>词语选项(大号+拼音)</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 释义选词</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>词汇测试</h3><span class="progress">Q6/15</span></div>
+          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">根据释义选择词语 Choose the word by meaning</div>
+            <!-- 差异: 题干是释义而非词语 -->
+            <div style="text-align:center;padding:20px 0">
+              <div style="font-size:18px;color:#333;font-weight:500">表示很高兴、心情好</div>
+              <div style="font-size:14px;color:rgba(0,0,0,.55);margin-top:6px">very happy; in a good mood</div>
+            </div>
+            <!-- 词语选项(带拼音) -->
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span><div><span style="font-size:18px">难过</span><span class="text-xs text-muted" style="margin-left:8px">nánguò</span></div></div>
+              <div class="option-item selected"><span class="letter">B</span><div><span style="font-size:18px">开心</span><span class="text-xs text-muted" style="margin-left:8px">kāixīn</span></div></div>
+              <div class="option-item"><span class="letter">C</span><div><span style="font-size:18px">生气</span><span class="text-xs text-muted" style="margin-left:8px">shēngqì</span></div></div>
+              <div class="option-item"><span class="letter">D</span><div><span style="font-size:18px">紧张</span><span class="text-xs text-muted" style="margin-left:8px">jǐnzhāng</span></div></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 释义选词 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>方向=<strong>给义选词</strong>(与「词义选择」互逆)。题干为释义文本，选项为词语。干扰以<strong>同类情绪词/同主题词</strong>为主。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="词语" disabled></div>
+        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="释义选词" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>中文释义(题干) <span class="hint">应用端18px加粗居中展示</span></label>
+        <input class="form-input" value="表示很高兴、心情好">
+      </div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>英文释义(题干)</label>
+        <input class="form-input" value="very happy; in a good mood">
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>词语选项 <span class="hint">勾选正确词语，每项需配拼音</span></label>
+        <div class="list-builder">
+          <div class="list-builder-item"><input type="radio" name="wd2"><div class="content" style="display:flex;gap:8px"><input class="form-input" value="难过" style="width:70px"><input class="form-input" value="nánguò" style="width:80px"><span class="text-xs text-muted">同类干扰(情绪词)</span></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd2" checked><div class="content" style="display:flex;gap:8px"><input class="form-input" value="开心" style="width:70px;border-color:var(--success)"><input class="form-input" value="kāixīn" style="width:80px"><span class="text-xs" style="color:var(--success)">✓ 正确</span></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd2"><div class="content" style="display:flex;gap:8px"><input class="form-input" value="生气" style="width:70px"><input class="form-input" value="shēngqì" style="width:80px"><span class="text-xs text-muted">同类干扰</span></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd2"><div class="content" style="display:flex;gap:8px"><input class="form-input" value="紧张" style="width:70px"><input class="form-input" value="jǐnzhāng" style="width:80px"><span class="text-xs text-muted">同类干扰</span></div></div>
+          <div class="list-builder-add">+ 添加</div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">「开心」= 高兴、愉快。「难过」是伤心，「生气」是愤怒，「紧张」是焦虑。</textarea><textarea class="form-textarea">"开心" = happy. Others: 难过 (sad), 生气 (angry), 紧张 (nervous).</textarea></div></div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option></select></div>
+      </div>
+      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

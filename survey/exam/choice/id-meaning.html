@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 成语 · 成语选义</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#17 成语选义</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 成语 × 成语选义</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 成语 × 成语选义</strong> — 展示一个四字成语，从4个含义描述中选出正确的。方向：成语→义。<br>
+  <span class="field-map">应用端核心元素: <strong>四字格成语展示(独立字框)</strong> + <strong>拼音</strong> + <strong>含义选项</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 四字格成语 + 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 成语选义</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>成语测试</h3><span class="progress">Q2/10</span></div>
+          <div class="app-content">
+            <div class="q-instruction">选择成语的正确含义 Select the correct meaning</div>
+            <div style="text-align:center;padding:20px 0">
+              <div style="display:flex;justify-content:center;gap:6px">
+                <div style="width:50px;height:50px;border:2px solid var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--primary);background:#e6f4ff">画</div>
+                <div style="width:50px;height:50px;border:2px solid var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--primary);background:#e6f4ff">蛇</div>
+                <div style="width:50px;height:50px;border:2px solid var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--primary);background:#e6f4ff">添</div>
+                <div style="width:50px;height:50px;border:2px solid var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--primary);background:#e6f4ff">足</div>
+              </div>
+              <div style="font-size:14px;color:var(--primary);margin-top:8px">huà shé tiān zú</div>
+              <div style="margin-top:6px"><span class="audio-btn">🔊</span></div>
+            </div>
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span><span>形容画技非常高超</span></div>
+              <div class="option-item selected"><span class="letter">B</span><span>比喻做了多余的事，反而弄巧成拙</span></div>
+              <div class="option-item"><span class="letter">C</span><span>形容做事很快</span></div>
+              <div class="option-item"><span class="letter">D</span><span>比喻互相帮助完成任务</span></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 成语选义 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>题干为<strong>四字格成语+拼音</strong>展示，选项为<strong>含义描述</strong>。可关联已有成语库。干扰以<strong>字面误导/近义成语含义</strong>为主。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="成语" disabled></div>
+        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="成语选义" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>成语 <span class="hint">可从成语库选择或手动输入</span></label>
+        <div style="display:flex;gap:8px"><input class="form-input lg" value="画蛇添足" style="text-align:center;flex:1"><span class="btn">📚 从成语库选</span></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label"><span class="req">*</span>拼音</label><input class="form-input" value="huà shé tiān zú"></div>
+        <div class="form-group"><label class="form-label">音频</label><div class="upload-area sm">📁 上传/TTS</div></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>含义选项 <span class="hint">勾选正确含义，标注干扰类型</span></label>
+        <div class="list-builder">
+          <div class="list-builder-item"><input type="radio" name="id1"><div class="content"><input class="form-input" value="形容画技非常高超"><div class="text-xs text-muted">干扰: 字面理解误导</div></div></div>
+          <div class="list-builder-item"><input type="radio" name="id1" checked><div class="content"><input class="form-input" value="比喻做了多余的事，反而弄巧成拙" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓ 正确</span></div></div>
+          <div class="list-builder-item"><input type="radio" name="id1"><div class="content"><input class="form-input" value="形容做事很快"><div class="text-xs text-muted">干扰: 无关含义</div></div></div>
+          <div class="list-builder-item"><input type="radio" name="id1"><div class="content"><input class="form-input" value="比喻互相帮助完成任务"><div class="text-xs text-muted">干扰: 近义成语含义</div></div></div>
+          <div class="list-builder-add">+ 添加</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">干扰策略</label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <label class="text-sm"><input type="checkbox" checked> 字面理解误导</label>
+          <label class="text-sm"><input type="checkbox" checked> 近义成语混淆</label>
+          <label class="text-sm"><input type="checkbox"> 反义成语</label>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">画蛇添足: 战国时楚国人画蛇比赛，先画完的人给蛇画脚反而输了。比喻多此一举。</textarea><textarea class="form-textarea">Drawing legs on a snake: doing something unnecessary that ruins the result.</textarea></div></div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option>HSK 3</option><option selected>HSK 4</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option></select></div>
+      </div>
+      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

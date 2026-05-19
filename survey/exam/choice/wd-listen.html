@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 词语 · 听音选词</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#13 听音选词</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 词语 × 听音选词</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 词语 × 听音选词</strong> — 播放一个词语的发音，从4个词语选项中选出听到的。纯听觉→词语映射。<br>
+  <span class="field-map">应用端核心元素: <strong>音频播放器</strong> + <strong>播放控制</strong> + <strong>词语选项(拼音+释义可配)</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 音频播放器 + 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听音选词</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>词汇测试</h3><span class="progress">Q12/20</span></div>
+          <div class="progress-bar"><div class="fill" style="width:60%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听发音，选择对应的词语 Listen and choose</div>
+            <div style="text-align:center;padding:20px 0">
+              <div class="audio-btn big">🔊 点击播放</div>
+              <div style="margin-top:8px"><span class="text-sm text-muted">剩余: 2/3</span></div>
+              <div style="margin-top:8px;display:flex;gap:8px;justify-content:center"><span class="btn btn-sm">🐢 慢速</span><span class="btn btn-sm">🔁 重播</span></div>
+            </div>
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span><div><span style="font-size:16px">电话</span><span class="text-xs text-muted" style="margin-left:6px">diànhuà</span></div></div>
+              <div class="option-item selected"><span class="letter">B</span><div><span style="font-size:16px">电脑</span><span class="text-xs text-muted" style="margin-left:6px">diànnǎo</span></div></div>
+              <div class="option-item"><span class="letter">C</span><div><span style="font-size:16px">电视</span><span class="text-xs text-muted" style="margin-left:6px">diànshì</span></div></div>
+              <div class="option-item"><span class="letter">D</span><div><span style="font-size:16px">电影</span><span class="text-xs text-muted" style="margin-left:6px">diànyǐng</span></div></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 听音选词 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>与「语境选词」差异：题干从语境句变为<strong>音频(必填)</strong>。干扰以<strong>同音首字词/同类别词</strong>为主(如都以「电」开头)。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="词语" disabled></div>
+        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="听音选词" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>音频 <span class="hint" style="color:var(--error)">必填</span></label>
+        <div class="upload-area">🎧 上传音频 (必填)</div>
+      </div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">慢速音频</label><div class="upload-area sm">🐢 上传</div></div>
+        <div class="form-group"><label class="form-label">最大播放次数</label><input class="form-input" type="number" value="3"></div>
+        <div class="form-group"><label class="form-label">音频内容(内部)</label><input class="form-input" value="电脑 diànnǎo"></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>词语选项</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><input type="radio" name="wl1"><div class="content" style="display:flex;gap:6px"><input class="form-input" value="电话" style="width:70px"><input class="form-input" value="diànhuà" style="width:80px"><input class="form-input" value="phone" style="flex:1"></div></div>
+          <div class="list-builder-item"><input type="radio" name="wl1" checked><div class="content" style="display:flex;gap:6px"><input class="form-input" value="电脑" style="width:70px;border-color:var(--success)"><input class="form-input" value="diànnǎo" style="width:80px"><input class="form-input" value="computer" style="flex:1"><span class="text-xs" style="color:var(--success)">✓</span></div></div>
+          <div class="list-builder-item"><input type="radio" name="wl1"><div class="content" style="display:flex;gap:6px"><input class="form-input" value="电视" style="width:70px"><input class="form-input" value="diànshì" style="width:80px"><input class="form-input" value="TV" style="flex:1"></div></div>
+          <div class="list-builder-item"><input type="radio" name="wl1"><div class="content" style="display:flex;gap:6px"><input class="form-input" value="电影" style="width:70px"><input class="form-input" value="diànyǐng" style="width:80px"><input class="form-input" value="movie" style="flex:1"></div></div>
+          <div class="list-builder-add">+ 添加</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">选项展示级别</label>
+        <select class="form-select"><option>仅汉字</option><option selected>汉字+拼音</option><option>汉字+拼音+释义</option></select>
+      </div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">你听到的是「电脑」(diànnǎo, computer)。注意听第二个字的声调区分。</textarea><textarea class="form-textarea">You heard "电脑" (computer). Pay attention to the tone of the second character.</textarea></div></div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="25"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option></select></div>
+      </div>
+      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 汉字 · 图片选汉字</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#7 图片选汉字</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 汉字 × 图片选汉字</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 汉字 × 图片选汉字</strong> — 展示一张图片，从4个汉字中选出图片对应的汉字。图→字映射，测试词汇的视觉联想。<br>
+  <span class="field-map">应用端核心元素: <strong>图片展示区(占半屏)</strong> + <strong>汉字网格选项</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 汉字网格选项 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 图片选汉字</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>汉字测试</h3><span class="progress">Q2/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">看图片，选择对应的汉字 Look at the picture and choose</div>
+            <!-- 图片展示区 -->
+            <div style="text-align:center;padding:16px 0">
+              <div style="width:180px;height:130px;background:linear-gradient(135deg,#e6f4ff,#bae0ff);border-radius:12px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:64px">🐱</div>
+              <div style="font-size:12px;color:rgba(0,0,0,.35);margin-top:6px">What character matches this picture?</div>
+            </div>
+            <div class="option-grid">
+              <div class="option-item selected"><span style="font-size:32px">猫</span></div>
+              <div class="option-item"><span style="font-size:32px">狗</span></div>
+              <div class="option-item"><span style="font-size:32px">鸟</span></div>
+              <div class="option-item"><span style="font-size:32px">鱼</span></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 图片选汉字 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>题干从文字/音频变为<strong>图片(必填)</strong>。干扰维度以<strong>同类别词</strong>为主(如同为动物/食物/交通等)。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="汉字" disabled></div>
+        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="图片选汉字" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>题干图片 <span class="hint" style="color:var(--error)">必填，是唯一视觉题干</span></label>
+        <div class="upload-area">🖼 上传图片 JPG/PNG/WebP (必填)<br><span class="text-xs text-muted">建议尺寸: 400×300px，清晰且语义明确</span></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">图片描述(Alt) <span class="hint">无障碍和内部管理用</span></label>
+        <input class="form-input" value="一只橘色的猫" placeholder="描述图片内容">
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>目标汉字(正确答案)</label>
+        <input class="form-input lg" value="猫" style="text-align:center">
+      </div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>干扰汉字 <span class="hint">应为同类别词(如同为动物)增加干扰难度</span></label>
+        <table class="mini-table">
+          <thead><tr><th>汉字</th><th>拼音</th><th>释义</th><th>干扰类型</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><input class="form-input" value="狗" style="width:50px;text-align:center"></td><td><input class="form-input" value="gǒu" style="width:60px"></td><td><input class="form-input" value="dog" style="width:60px"></td><td><select class="form-select" style="width:100px"><option selected>同类别</option></select></td><td><span class="btn btn-sm">🗑</span></td></tr>
+            <tr><td><input class="form-input" value="鸟" style="width:50px;text-align:center"></td><td><input class="form-input" value="niǎo" style="width:60px"></td><td><input class="form-input" value="bird" style="width:60px"></td><td><select class="form-select" style="width:100px"><option selected>同类别</option></select></td><td><span class="btn btn-sm">🗑</span></td></tr>
+            <tr><td><input class="form-input" value="鱼" style="width:50px;text-align:center"></td><td><input class="form-input" value="yú" style="width:60px"></td><td><input class="form-input" value="fish" style="width:60px"></td><td><select class="form-select" style="width:100px"><option selected>同类别</option></select></td><td><span class="btn btn-sm">🗑</span></td></tr>
+          </tbody>
+        </table>
+        <div style="text-align:center;padding:8px;color:var(--primary);cursor:pointer;font-size:13px">+ 添加</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">选项辅助显示</label>
+        <div style="display:flex;gap:12px">
+          <label class="text-sm"><input type="checkbox"> 显示拼音</label>
+          <label class="text-sm"><input type="checkbox"> 显示释义</label>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">图中是一只猫。「猫」(māo), 犭旁表示动物类。</textarea><textarea class="form-textarea">The picture shows a cat. 猫 (māo), with the animal radical 犭.</textarea></div></div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="15"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option></select></div>
+      </div>
+      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 词语 · 语境选词</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#9 语境选词</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 词语 × 语境选词</span>
+</div>
+
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 词语 × 语境选词</strong> — 给出一个带空位的语境句，从4个词语选项中选出最合适的。测试词汇的语境运用。<br>
+  <span class="field-map">应用端核心元素: <strong>语境句+下划线空位(中英)</strong> + <strong>词语选项(拼音+释义可配)</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 语境句+空位 + 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 语境选词</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>词汇测试</h3><span class="progress">Q8/20</span></div>
+          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">选择最合适的词语填入句子 Choose the best word</div>
+            <div class="highlight-box gray" style="padding:16px;margin:12px 0">
+              <div style="font-size:18px;line-height:2;text-align:center">
+                今天天气很好，我们去公园 <span style="border-bottom:2px solid var(--primary);padding:0 12px;color:var(--primary)">______</span> 吧。
+              </div>
+              <div style="text-align:center;font-size:13px;color:rgba(0,0,0,.45);margin-top:4px">
+                The weather is nice today, let's go to the park and ______.
+              </div>
+            </div>
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span><div><div style="font-size:16px">学习</div><div class="text-xs text-muted">xuéxí · study</div></div></div>
+              <div class="option-item selected"><span class="letter">B</span><div><div style="font-size:16px">散步</div><div class="text-xs text-muted">sànbù · take a walk</div></div></div>
+              <div class="option-item"><span class="letter">C</span><div><div style="font-size:16px">睡觉</div><div class="text-xs text-muted">shuìjiào · sleep</div></div></div>
+              <div class="option-item"><span class="letter">D</span><div><div style="font-size:16px">工作</div><div class="text-xs text-muted">gōngzuò · work</div></div></div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 语境选词 · 配置表单</div>
+    <div class="card-body">
+      <div class="callout info"><span class="icon">📌</span><div>本L3核心：需配置<strong>语境句+空位标记</strong>和<strong>带拼音+中英释义的词语选项</strong>。应用端选项的展示级别(是否显示拼音/释义)可控制。</div></div>
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
+        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="词语" disabled></div>
+        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="语境选词" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>语境句 <span class="hint">用 {blank} 标记空位，应用端渲染为下划线</span></label>
+        <textarea class="form-textarea" style="font-size:16px">今天天气很好，我们去公园 {blank} 吧。</textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>英文翻译 <span class="hint">应用端显示在语境句下方</span></label>
+        <input class="form-input" value="The weather is nice today, let's go to the park and ______.">
+      </div>
+      <div class="form-group">
+        <label class="form-label">语境句音频 <span class="hint">可选，留空则不显示播放按钮</span></label>
+        <div class="upload-area sm">📁 上传/TTS</div>
+      </div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label"><span class="req">*</span>词语选项 <span class="hint">每个选项需配拼音+中英释义(对应应用端展示)</span></label>
+        <div class="list-builder">
+          <div class="list-builder-item"><input type="radio" name="wd1" style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="form-input" value="学习" style="width:70px"><input class="form-input" value="xuéxí" style="width:70px"><input class="form-input" value="study" style="flex:1"></div></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd1" checked style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="form-input" value="散步" style="width:70px;border-color:var(--success)"><input class="form-input" value="sànbù" style="width:70px"><input class="form-input" value="take a walk" style="flex:1"><span class="text-xs" style="color:var(--success);white-space:nowrap">✓ 正确</span></div></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd1" style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="form-input" value="睡觉" style="width:70px"><input class="form-input" value="shuìjiào" style="width:70px"><input class="form-input" value="sleep" style="flex:1"></div></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd1" style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="form-input" value="工作" style="width:70px"><input class="form-input" value="gōngzuò" style="width:70px"><input class="form-input" value="work" style="flex:1"></div></div></div>
+          <div class="list-builder-add">+ 添加选项</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">选项展示级别 <span class="hint">控制应用端每个选项显示的信息量</span></label>
+        <select class="form-select">
+          <option>仅汉字(高难度)</option>
+          <option selected>汉字+拼音+释义(标准)</option>
+          <option>汉字+拼音(中难度)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">干扰策略</label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <label class="text-sm"><input type="checkbox" checked> 近义词(意思接近但语境不合)</label>
+          <label class="text-sm"><input type="checkbox" checked> 同主题词(同类但不搭配)</label>
+          <label class="text-sm"><input type="checkbox"> 反义词</label>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">「散步」适合公园场景。「学习」「工作」与公园语境不搭。</textarea><textarea class="form-textarea">"散步" fits the park context. "学习" and "工作" don't match.</textarea></div></div>
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 2</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option></select></div>
+      </div>
+      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
