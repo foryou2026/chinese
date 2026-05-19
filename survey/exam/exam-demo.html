@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中文学习平台 - 考试题型调研原型</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f5f5f5; color: rgba(0,0,0,.88); font-size: 14px; }
+:root { --primary: #1677ff; --success: #52c41a; --warning: #faad14; --error: #ff4d4f; --border: #d9d9d9; --radius: 8px; --shadow: 0 2px 8px rgba(0,0,0,.08); }
+
+.page-header { background: #fff; padding: 16px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px; position: sticky; top: 0; z-index: 100; }
+.page-header h1 { font-size: 20px; font-weight: 600; }
+.page-header .subtitle { color: rgba(0,0,0,.45); font-size: 13px; }
+.badge { background: var(--primary); color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 10px; }
+.badge.ai { background: var(--error); }
+.badge.free { background: var(--success); }
+
+.tabs { display: flex; background: #fff; border-bottom: 1px solid var(--border); padding: 0 24px; overflow-x: auto; position: sticky; top: 60px; z-index: 99; }
+.tab { padding: 12px 16px; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; font-size: 13px; color: rgba(0,0,0,.65); transition: all .2s; display: flex; align-items: center; gap: 4px; }
+.tab:hover { color: var(--primary); }
+.tab.active { color: var(--primary); border-bottom-color: var(--primary); font-weight: 500; }
+.tab .dot { width: 6px; height: 6px; border-radius: 50%; }
+.tab .dot.green { background: var(--success); }
+.tab .dot.red { background: var(--error); }
+
+.content { max-width: 1400px; margin: 0 auto; padding: 24px; }
+.section { display: none; }
+.section.active { display: block; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+@media (max-width: 1000px) { .split { grid-template-columns: 1fr; } }
+
+.card { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.card-header { padding: 16px 20px; border-bottom: 1px solid #f0f0f0; font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+.card-header .tag { font-size: 11px; padding: 1px 6px; border-radius: 4px; font-weight: 400; }
+.card-header .tag.app { background: #e6f4ff; color: var(--primary); border: 1px solid #91caff; }
+.card-header .tag.admin { background: #f6ffed; color: var(--success); border: 1px solid #b7eb8f; }
+.card-body { padding: 20px; }
+
+.phone-frame { width: 375px; max-width: 100%; margin: 0 auto; border: 3px solid #333; border-radius: 32px; overflow: hidden; background: #fff; }
+.phone-frame .status-bar { background: #333; color: #fff; font-size: 12px; padding: 6px 20px; display: flex; justify-content: space-between; }
+.phone-screen { min-height: 550px; overflow-y: auto; }
+
+.app-header { background: var(--primary); color: #fff; padding: 16px; display: flex; align-items: center; gap: 12px; }
+.app-header .back { font-size: 18px; cursor: pointer; }
+.app-header h3 { font-size: 16px; font-weight: 500; flex: 1; }
+.app-header .progress { font-size: 12px; opacity: .8; }
+.app-content { padding: 16px; }
+
+.progress-bar { height: 4px; background: #f0f0f0; border-radius: 2px; overflow: hidden; }
+.progress-bar .fill { height: 100%; background: var(--primary); border-radius: 2px; }
+
+/* Question Components */
+.q-title { font-size: 16px; font-weight: 500; margin-bottom: 16px; line-height: 1.6; }
+.q-instruction { font-size: 13px; color: rgba(0,0,0,.45); margin-bottom: 12px; }
+
+.option-list { display: flex; flex-direction: column; gap: 10px; }
+.option-item { border: 2px solid #f0f0f0; border-radius: 10px; padding: 14px 16px; cursor: pointer; transition: all .2s; display: flex; align-items: center; gap: 12px; }
+.option-item:hover { border-color: var(--primary); background: #f0f9ff; }
+.option-item.selected { border-color: var(--primary); background: #e6f4ff; }
+.option-item.correct { border-color: var(--success); background: #f6ffed; }
+.option-item.wrong { border-color: var(--error); background: #fff2f0; }
+.option-item .letter { width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; }
+.option-item.selected .letter { border-color: var(--primary); color: var(--primary); background: #e6f4ff; }
+.option-item.correct .letter { border-color: var(--success); color: #fff; background: var(--success); }
+.option-item.wrong .letter { border-color: var(--error); color: #fff; background: var(--error); }
+
+.fill-blank { border: none; border-bottom: 2px solid var(--primary); background: transparent; font-size: 18px; width: 100px; text-align: center; outline: none; padding: 4px 8px; }
+
+.drag-area { min-height: 50px; border: 2px dashed var(--border); border-radius: 8px; padding: 8px; display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
+.drag-chip { padding: 8px 14px; background: #e6f4ff; border: 1px solid #91caff; border-radius: 6px; cursor: grab; font-size: 14px; }
+.drag-chip.placed { background: #f6ffed; border-color: #b7eb8f; }
+
+.match-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; }
+.match-item { padding: 10px 14px; border: 2px solid #f0f0f0; border-radius: 8px; text-align: center; cursor: pointer; transition: all .2s; }
+.match-item:hover { border-color: var(--primary); }
+.match-item.matched { border-color: var(--success); background: #f6ffed; }
+.match-line { text-align: center; color: rgba(0,0,0,.25); }
+
+.audio-btn { display: inline-flex; align-items: center; gap: 6px; background: #e6f4ff; color: var(--primary); border: 1px solid #91caff; border-radius: 20px; padding: 8px 16px; cursor: pointer; font-size: 13px; }
+.audio-btn.big { padding: 16px 24px; font-size: 16px; border-radius: 24px; }
+
+.mic-btn { width: 64px; height: 64px; border-radius: 50%; background: var(--error); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 28px; cursor: pointer; margin: 16px auto; box-shadow: 0 4px 12px rgba(255,77,79,.3); }
+.mic-btn.recording { animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(255,77,79,.4); } 50% { box-shadow: 0 0 0 16px rgba(255,77,79,0); } }
+
+.write-canvas { width: 200px; height: 200px; border: 2px dashed var(--border); border-radius: 12px; margin: 12px auto; display: flex; align-items: center; justify-content: center; background: #fafafa; }
+
+.tf-options { display: flex; gap: 12px; }
+.tf-btn { flex: 1; padding: 16px; border: 2px solid #f0f0f0; border-radius: 12px; text-align: center; cursor: pointer; font-size: 18px; transition: all .2s; }
+.tf-btn:hover { border-color: var(--primary); }
+.tf-btn.true-sel { border-color: var(--success); background: #f6ffed; }
+.tf-btn.false-sel { border-color: var(--error); background: #fff2f0; }
+
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 14px; border: 1px solid var(--border); background: #fff; transition: all .2s; }
+.btn:hover { border-color: var(--primary); color: var(--primary); }
+.btn-primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.btn-primary:hover { background: #4096ff; }
+.btn-sm { padding: 4px 12px; font-size: 12px; }
+.btn-group { display: flex; gap: 8px; margin-top: 16px; }
+
+/* Admin Form */
+.form-group { margin-bottom: 20px; }
+.form-label { display: block; font-weight: 500; margin-bottom: 6px; font-size: 13px; }
+.form-label .required { color: var(--error); margin-right: 4px; }
+.form-label .hint { font-weight: 400; color: rgba(0,0,0,.45); font-size: 12px; margin-left: 8px; }
+.form-input { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; outline: none; }
+.form-input:focus { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(22,119,255,.1); }
+.form-textarea { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; outline: none; min-height: 80px; resize: vertical; }
+.form-select { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; outline: none; background: #fff; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-row.triple { grid-template-columns: 1fr 1fr 1fr; }
+.form-row.quad { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.upload-area { border: 2px dashed var(--border); border-radius: 8px; padding: 16px; text-align: center; color: rgba(0,0,0,.45); cursor: pointer; }
+.upload-area:hover { border-color: var(--primary); color: var(--primary); }
+
+.list-builder { border: 1px solid #f0f0f0; border-radius: 8px; }
+.list-builder-item { display: flex; align-items: flex-start; gap: 8px; padding: 10px 12px; border-bottom: 1px solid #f5f5f5; }
+.list-builder-item:last-child { border-bottom: none; }
+.list-builder-item .content { flex: 1; }
+.list-builder-add { padding: 10px; text-align: center; color: var(--primary); cursor: pointer; border-top: 1px dashed #f0f0f0; }
+
+.mini-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.mini-table th { background: #fafafa; padding: 8px; text-align: left; border-bottom: 1px solid #f0f0f0; font-weight: 500; }
+.mini-table td { padding: 8px; border-bottom: 1px solid #f5f5f5; }
+
+.callout { padding: 12px 16px; border-radius: 8px; margin: 12px 0; font-size: 13px; display: flex; gap: 8px; }
+.callout.info { background: #e6f4ff; border: 1px solid #91caff; }
+.callout.warning { background: #fffbe6; border: 1px solid #ffe58f; }
+.callout.cost { background: #fff2f0; border: 1px solid #ffccc7; }
+.callout.free { background: #f6ffed; border: 1px solid #b7eb8f; }
+.callout .icon { font-size: 16px; flex-shrink: 0; }
+
+.type-desc { background: #e6f4ff; border: 1px solid #91caff; border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; font-size: 13px; line-height: 1.8; }
+.type-desc strong { color: var(--primary); }
+
+.divider { border: none; border-top: 1px solid #f0f0f0; margin: 16px 0; }
+
+.switch { position: relative; width: 36px; height: 20px; background: #ccc; border-radius: 10px; cursor: pointer; display: inline-block; vertical-align: middle; }
+.switch.on { background: var(--primary); }
+.switch::after { content: ''; position: absolute; width: 16px; height: 16px; background: #fff; border-radius: 50%; top: 2px; left: 2px; transition: .2s; }
+.switch.on::after { left: 18px; }
+
+.tag-input { display: flex; flex-wrap: wrap; gap: 6px; padding: 6px; border: 1px solid var(--border); border-radius: 6px; min-height: 38px; }
+.tag-item { display: inline-flex; align-items: center; gap: 4px; background: #f5f5f5; border: 1px solid #d9d9d9; border-radius: 4px; padding: 2px 8px; font-size: 12px; }
+.tag-item .close { cursor: pointer; color: rgba(0,0,0,.45); }
+
+/* Cost Legend */
+.cost-legend { display: flex; gap: 20px; padding: 16px 24px; background: #fff; border-bottom: 1px solid var(--border); font-size: 13px; }
+.cost-legend .item { display: flex; align-items: center; gap: 6px; }
+.cost-legend .dot { width: 8px; height: 8px; border-radius: 50%; }
+.cost-legend .dot.green { background: var(--success); }
+.cost-legend .dot.red { background: var(--error); }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>📝 考试题型调研原型</h1>
+  <span class="subtitle">中文学习平台 · 14种核心题型 · 应用端 + 管理端</span>
+  <span class="badge">AntDesign 5.0</span>
+</div>
+
+<div class="cost-legend">
+  <div class="item"><span class="dot green"></span> 固定答案 · 无AI调用 · 无限分发</div>
+  <div class="item"><span class="dot red"></span> 需实时AI · 每次产生接口费用 · 仅高级用户</div>
+</div>
+
+<div class="tabs" id="tabs">
+  <div class="tab active" data-target="mc"><span class="dot green"></span>选择题</div>
+  <div class="tab" data-target="fb"><span class="dot green"></span>填空题</div>
+  <div class="tab" data-target="match"><span class="dot green"></span>配对题</div>
+  <div class="tab" data-target="order"><span class="dot green"></span>排序题</div>
+  <div class="tab" data-target="listen"><span class="dot green"></span>听力题</div>
+  <div class="tab" data-target="tf"><span class="dot green"></span>判断题</div>
+  <div class="tab" data-target="picword"><span class="dot green"></span>看图选词</div>
+  <div class="tab" data-target="trans-select"><span class="dot green"></span>翻译-选择</div>
+  <div class="tab" data-target="trans-type"><span class="dot green"></span>翻译-输入</div>
+  <div class="tab" data-target="dictation"><span class="dot green"></span>听写题</div>
+  <div class="tab" data-target="handwrite"><span class="dot red"></span>手写识别</div>
+  <div class="tab" data-target="speak"><span class="dot red"></span>跟读评分</div>
+  <div class="tab" data-target="freeSpeak"><span class="dot red"></span>口语表达</div>
+  <div class="tab" data-target="freeWrite"><span class="dot red"></span>写作题</div>
+</div>
+
+<div class="content">
+
+<!-- ==================== 1. 选择题 ==================== -->
+<div class="section active" id="mc">
+  <div class="type-desc">
+    <strong>选择题 (Multiple Choice)</strong> — 最基础的题型，适用于所有知识点测试。支持单选和多选。
+    <span class="badge free">无AI调用</span> 固定答案自动判分，一次出题，1亿用户共享。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 选择题界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>HSK1 · 测试</h3>
+              <span class="progress">Q3/20</span>
+            </div>
+            <div class="progress-bar"><div class="fill" style="width:15%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">选择正确答案 Select the correct answer</div>
+              <div class="q-title">"苹果" 的拼音是什么？<br><span style="font-size:13px;color:rgba(0,0,0,.45)">What is the pinyin for "苹果"?</span></div>
+
+              <div class="option-list">
+                <div class="option-item">
+                  <span class="letter">A</span>
+                  <span>pín guǒ</span>
+                </div>
+                <div class="option-item selected">
+                  <span class="letter">B</span>
+                  <span>píng guǒ</span>
+                </div>
+                <div class="option-item">
+                  <span class="letter">C</span>
+                  <span>pǐng guǒ</span>
+                </div>
+                <div class="option-item">
+                  <span class="letter">D</span>
+                  <span>píng guò</span>
+                </div>
+              </div>
+
+              <div style="text-align:center;padding:20px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">确认答案 ✓</span>
+              </div>
+
+              <hr class="divider">
+
+              <div style="font-size:12px;color:rgba(0,0,0,.45)">答题后展示：</div>
+              <div class="option-list" style="margin-top:8px">
+                <div class="option-item correct">
+                  <span class="letter">B</span>
+                  <span>píng guǒ ✓ 正确</span>
+                </div>
+              </div>
+              <div style="background:#f6ffed;border-radius:8px;padding:10px;margin-top:8px;font-size:13px">
+                <strong>解析：</strong>苹果(píngguǒ)，注意"苹"是二声。<br>
+                <span style="color:rgba(0,0,0,.45)">Note: 苹 is 2nd tone.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 选择题配置</div>
+      <div class="card-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="required">*</span>题目类型</label>
+            <select class="form-select"><option selected>单选</option><option>多选</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="required">*</span>关联知识点</label>
+            <select class="form-select"><option>拼音</option><option>汉字</option><option selected>词语</option><option>语法</option></select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>题干(中)</label>
+          <textarea class="form-textarea">"苹果" 的拼音是什么？</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">题干(EN)</label>
+          <input class="form-input" value="What is the pinyin for '苹果'?">
+        </div>
+        <div class="form-group">
+          <label class="form-label">题干音频 <span class="hint">可选，听力类选择题必填</span></label>
+          <div class="upload-area" style="padding:8px"><div>📁 上传</div></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>选项 <span class="hint">勾选正确答案，至少2个选项</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <input type="radio" name="correct" style="margin-top:4px">
+              <div class="content" style="display:flex;gap:8px">
+                <span style="font-weight:500;width:20px">A</span>
+                <input class="form-input" value="pín guǒ" style="flex:1">
+              </div>
+              <span class="btn btn-sm">🗑</span>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="correct" checked style="margin-top:4px">
+              <div class="content" style="display:flex;gap:8px">
+                <span style="font-weight:500;width:20px;color:var(--success)">B</span>
+                <input class="form-input" value="píng guǒ" style="flex:1;border-color:var(--success)">
+                <span style="color:var(--success);font-size:12px;white-space:nowrap">✓ 正确</span>
+              </div>
+              <span class="btn btn-sm">🗑</span>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="correct" style="margin-top:4px">
+              <div class="content" style="display:flex;gap:8px">
+                <span style="font-weight:500;width:20px">C</span>
+                <input class="form-input" value="pǐng guǒ" style="flex:1">
+              </div>
+              <span class="btn btn-sm">🗑</span>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="correct" style="margin-top:4px">
+              <div class="content" style="display:flex;gap:8px">
+                <span style="font-weight:500;width:20px">D</span>
+                <input class="form-input" value="píng guò" style="flex:1">
+              </div>
+              <span class="btn btn-sm">🗑</span>
+            </div>
+            <div class="list-builder-add">+ 添加选项</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">答案解析</label>
+          <div class="form-row">
+            <textarea class="form-textarea" placeholder="中文解析">苹果(píngguǒ)，注意"苹"是二声。</textarea>
+            <textarea class="form-textarea" placeholder="English">Note: 苹 is 2nd tone.</textarea>
+          </div>
+        </div>
+        <div class="form-row triple">
+          <div class="form-group">
+            <label class="form-label">HSK等级</label>
+            <select class="form-select"><option selected>HSK 1</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">分值</label>
+            <input class="form-input" type="number" value="2">
+          </div>
+          <div class="form-group">
+            <label class="form-label">限时(秒)</label>
+            <input class="form-input" type="number" value="30">
+          </div>
+        </div>
+        <div class="callout free"><span class="icon">✅</span><div>此题型为<strong>固定答案</strong>，前端自动判分，无需AI接口调用。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成选择题</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 2. 填空题 ==================== -->
+<div class="section" id="fb">
+  <div class="type-desc">
+    <strong>填空题 (Fill in the Blank)</strong> — 在句子中留空，用户输入正确词语。支持精确匹配和模糊匹配(预设多个正确答案)。
+    <span class="badge free">无AI调用</span> 预设答案池自动匹配。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 填空题界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>填空练习</h3>
+              <span class="progress">Q5/15</span>
+            </div>
+            <div class="progress-bar"><div class="fill" style="width:33%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">填写正确的词语 Fill in the blank</div>
+              <div class="q-title" style="font-size:20px;text-align:center;line-height:2">
+                我 <input class="fill-blank" value="喜欢" style="width:80px"> 吃中国菜。
+              </div>
+              <div style="text-align:center;font-size:13px;color:rgba(0,0,0,.45)">
+                I _____ eating Chinese food.
+              </div>
+
+              <div style="margin:20px 0;text-align:center">
+                <div style="font-size:12px;color:rgba(0,0,0,.45);margin-bottom:8px">提示词 Hint words:</div>
+                <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+                  <span class="drag-chip">喜欢</span>
+                  <span class="drag-chip">想要</span>
+                  <span class="drag-chip">可以</span>
+                  <span class="drag-chip">应该</span>
+                </div>
+              </div>
+
+              <div style="text-align:center;padding:16px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">确认答案 ✓</span>
+              </div>
+
+              <hr class="divider">
+              <div style="font-size:12px;color:rgba(0,0,0,.45)">多空位填空示例：</div>
+              <div class="q-title" style="font-size:18px;text-align:center;line-height:2;margin-top:8px">
+                <input class="fill-blank" style="width:60px" placeholder="___"> 天我去了 <input class="fill-blank" style="width:80px" placeholder="___"> 。
+              </div>
+              <div style="text-align:center;font-size:12px;color:rgba(0,0,0,.45)">___ day I went to ___ .</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 填空题配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>题目模板 <span class="hint">用 {blank} 标记空位</span></label>
+          <textarea class="form-textarea" style="font-size:16px">我 {blank1} 吃中国菜。</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">英文对照</label>
+          <input class="form-input" value="I _____ eating Chinese food.">
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>空位答案配置</label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <div class="content">
+                <div style="font-weight:500;font-size:12px;color:var(--primary);margin-bottom:4px">空位 1 (blank1)</div>
+                <div style="display:flex;gap:8px;margin-bottom:4px">
+                  <label class="form-label" style="margin:0;width:80px;padding-top:8px">正确答案:</label>
+                  <div class="tag-input" style="flex:1">
+                    <span class="tag-item">喜欢 <span class="close">×</span></span>
+                    <span class="tag-item">很喜欢 <span class="close">×</span></span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div>
+                    <label class="form-label" style="font-size:12px">匹配模式</label>
+                    <select class="form-select"><option selected>精确匹配</option><option>包含匹配</option><option>拼音匹配</option></select>
+                  </div>
+                  <div>
+                    <label class="form-label" style="font-size:12px">忽略声调</label>
+                    <div><span class="switch"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-builder-add">+ 添加空位</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">提示词(可选) <span class="hint">显示在题目下方供用户参考</span></label>
+          <div class="tag-input">
+            <span class="tag-item">喜欢 <span class="close">×</span></span>
+            <span class="tag-item">想要 <span class="close">×</span></span>
+            <span class="tag-item">可以 <span class="close">×</span></span>
+            <span class="tag-item">应该 <span class="close">×</span></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">输入方式</label>
+          <select class="form-select">
+            <option selected>键盘输入(支持拼音/汉字)</option>
+            <option>从候选词中选择</option>
+            <option>拖拽填入</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">答案解析</label>
+          <div class="form-row">
+            <textarea class="form-textarea" placeholder="中文解析">"喜欢"表示对某事物有好感。</textarea>
+            <textarea class="form-textarea" placeholder="English">"喜欢" means to like/enjoy.</textarea>
+          </div>
+        </div>
+        <div class="callout free"><span class="icon">✅</span><div>预设答案池 + 匹配模式自动判分，<strong>无需AI</strong>。支持多个正确答案和拼音容错。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 3. 配对题 ==================== -->
+<div class="section" id="match">
+  <div class="type-desc">
+    <strong>配对题 (Matching)</strong> — 左右两列内容配对，适合汉字↔拼音、词语↔释义等。
+    <span class="badge free">无AI调用</span>
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 配对题界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>配对练习</h3>
+              <span class="progress">Q2/10</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">将左边的汉字与右边的拼音配对<br>Match the characters with pinyin</div>
+
+              <div class="match-grid" style="margin:16px 0">
+                <div class="match-item matched">你好</div>
+                <div class="match-line">——</div>
+                <div class="match-item matched">nǐ hǎo</div>
+
+                <div class="match-item" style="border-color:var(--primary);background:#e6f4ff">谢谢</div>
+                <div class="match-line">?</div>
+                <div class="match-item">zàijiàn</div>
+
+                <div class="match-item">再见</div>
+                <div class="match-line">?</div>
+                <div class="match-item" style="border-color:var(--primary);background:#e6f4ff">xièxie</div>
+
+                <div class="match-item">早上好</div>
+                <div class="match-line">?</div>
+                <div class="match-item">zǎoshang hǎo</div>
+              </div>
+
+              <div style="font-size:12px;color:rgba(0,0,0,.45);text-align:center">👆 点击左侧，再点击右侧进行配对</div>
+
+              <div style="text-align:center;padding:20px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">确认答案 ✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 配对题配置</div>
+      <div class="card-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">配对类型</label>
+            <select class="form-select">
+              <option selected>汉字 ↔ 拼音</option>
+              <option>汉字 ↔ 释义(EN)</option>
+              <option>词语 ↔ 图片</option>
+              <option>声母 ↔ 韵母拼读</option>
+              <option>自定义</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">配对数量</label>
+            <input class="form-input" type="number" value="4" min="2" max="8">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>配对项</label>
+          <table class="mini-table">
+            <thead><tr><th style="width:40px">#</th><th>左侧 (A列)</th><th>右侧 (B列)</th><th style="width:40px"></th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td><input class="form-input" value="你好"></td><td><input class="form-input" value="nǐ hǎo"></td><td><span class="btn btn-sm">🗑</span></td></tr>
+              <tr><td>2</td><td><input class="form-input" value="谢谢"></td><td><input class="form-input" value="xièxie"></td><td><span class="btn btn-sm">🗑</span></td></tr>
+              <tr><td>3</td><td><input class="form-input" value="再见"></td><td><input class="form-input" value="zàijiàn"></td><td><span class="btn btn-sm">🗑</span></td></tr>
+              <tr><td>4</td><td><input class="form-input" value="早上好"></td><td><input class="form-input" value="zǎoshang hǎo"></td><td><span class="btn btn-sm">🗑</span></td></tr>
+            </tbody>
+          </table>
+          <div style="text-align:center;padding:8px;color:var(--primary);cursor:pointer;font-size:13px">+ 添加配对项</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">展示选项</label>
+          <div class="form-row">
+            <div><label style="font-size:12px"><input type="checkbox" checked> B列随机打乱</label></div>
+            <div><label style="font-size:12px"><input type="checkbox"> 显示连线动画</label></div>
+          </div>
+        </div>
+        <div class="callout free"><span class="icon">✅</span><div>配对关系固定，前端比对即可判分。<strong>零AI成本</strong>。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 4. 排序题 ==================== -->
+<div class="section" id="order">
+  <div class="type-desc">
+    <strong>排序题 (Sentence Ordering)</strong> — 将打乱的词语拖拽排列成正确句子。训练语序和语感。
+    <span class="badge free">无AI调用</span>
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 排序题界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>组句练习</h3>
+              <span class="progress">Q7/15</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">将下列词语排列成正确的句子<br>Arrange the words into a correct sentence</div>
+              <div style="font-size:14px;color:rgba(0,0,0,.45);margin-bottom:12px">翻译：I want to go to China.</div>
+
+              <div style="font-size:12px;color:rgba(0,0,0,.45);margin-bottom:4px">你的答案：</div>
+              <div class="drag-area" style="min-height:60px">
+                <span class="drag-chip placed">我</span>
+                <span class="drag-chip placed">想</span>
+                <span class="drag-chip placed">去</span>
+              </div>
+
+              <div style="font-size:12px;color:rgba(0,0,0,.45);margin-bottom:4px">可用词语：</div>
+              <div class="drag-area">
+                <span class="drag-chip">中国</span>
+                <span class="drag-chip">。</span>
+              </div>
+
+              <div style="text-align:center;padding:20px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">确认答案 ✓</span>
+              </div>
+
+              <hr class="divider">
+              <div style="background:#f6ffed;border-radius:8px;padding:10px;font-size:13px">
+                <div style="color:var(--success);font-weight:500">✅ 正确答案</div>
+                <div style="font-size:18px;margin-top:4px">我 想 去 中国 。</div>
+                <div style="font-size:13px;color:rgba(0,0,0,.45)">Wǒ xiǎng qù Zhōngguó.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 排序题配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>正确句子</label>
+          <input class="form-input" value="我想去中国。" style="font-size:18px">
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>分词列表 <span class="hint">将句子拆分为拖拽单元</span></label>
+          <div class="tag-input">
+            <span class="tag-item">我 <span class="close">×</span></span>
+            <span class="tag-item">想 <span class="close">×</span></span>
+            <span class="tag-item">去 <span class="close">×</span></span>
+            <span class="tag-item">中国 <span class="close">×</span></span>
+            <span class="tag-item">。 <span class="close">×</span></span>
+          </div>
+          <div style="margin-top:4px"><span class="btn btn-sm">🔄 自动分词</span></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">干扰词(可选) <span class="hint">增加难度的额外词语</span></label>
+          <div class="tag-input">
+            <span class="tag-item">不 <span class="close">×</span></span>
+            <span class="tag-item">很 <span class="close">×</span></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">英文翻译/提示</label>
+          <input class="form-input" value="I want to go to China.">
+        </div>
+        <div class="form-group">
+          <label class="form-label">备选正确答案 <span class="hint">如果有多种正确语序</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <div class="content"><input class="form-input" value="我想去中国。" readonly></div>
+              <span style="font-size:11px;color:var(--success)">主答案</span>
+            </div>
+            <div class="list-builder-add">+ 添加备选答案</div>
+          </div>
+        </div>
+        <div class="callout free"><span class="icon">✅</span><div>比对用户排列与预设答案序列，<strong>无AI调用</strong>。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 5. 听力题 ==================== -->
+<div class="section" id="listen">
+  <div class="type-desc">
+    <strong>听力题 (Listening Comprehension)</strong> — 播放音频，用户根据听到的内容选择/填写答案。
+    <span class="badge free">无AI调用</span> 音频预录，答案固定。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 听力题界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>听力测试</h3>
+              <span class="progress">Q4/10</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">听录音，选择你听到的词语<br>Listen and select the word you hear</div>
+
+              <div style="text-align:center;padding:24px 0">
+                <div class="audio-btn big">🔊 点击播放</div>
+                <div style="font-size:12px;color:rgba(0,0,0,.25);margin-top:8px">可播放 3 次</div>
+              </div>
+
+              <div class="option-list">
+                <div class="option-item"><span class="letter">A</span><span style="font-size:18px">学生 xuéshēng</span></div>
+                <div class="option-item selected"><span class="letter">B</span><span style="font-size:18px">学校 xuéxiào</span></div>
+                <div class="option-item"><span class="letter">C</span><span style="font-size:18px">学习 xuéxí</span></div>
+                <div class="option-item"><span class="letter">D</span><span style="font-size:18px">学问 xuéwèn</span></div>
+              </div>
+
+              <div style="text-align:center;padding:20px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">确认答案 ✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 听力题配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>音频文件</label>
+          <div class="upload-area">
+            <div style="font-size:24px">🎧</div>
+            <div>上传听力音频 MP3/WAV</div>
+            <div style="font-size:12px;color:rgba(0,0,0,.25)">支持 TTS 批量生成</div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">听力类型</label>
+            <select class="form-select">
+              <option selected>听词选词</option>
+              <option>听句选义</option>
+              <option>听对话答题</option>
+              <option>听短文答题</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">可播放次数</label>
+            <input class="form-input" type="number" value="3">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>题目文本 <span class="hint">提示用户做什么</span></label>
+          <div class="form-row">
+            <input class="form-input" value="听录音，选择你听到的词语">
+            <input class="form-input" value="Listen and select the word you hear">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>答题选项 <span class="hint">同选择题配置</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <input type="radio" name="listen_correct">
+              <div class="content"><input class="form-input" value="学生 xuéshēng"></div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="listen_correct" checked>
+              <div class="content"><input class="form-input" value="学校 xuéxiào" style="border-color:var(--success)"></div>
+              <span style="color:var(--success);font-size:11px">✓</span>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="listen_correct">
+              <div class="content"><input class="form-input" value="学习 xuéxí"></div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="listen_correct">
+              <div class="content"><input class="form-input" value="学问 xuéwèn"></div>
+            </div>
+            <div class="list-builder-add">+ 添加选项</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">听力文本(内部记录) <span class="hint">不展示给用户，仅供参考</span></label>
+          <textarea class="form-textarea">音频内容：学校</textarea>
+        </div>
+        <div class="callout free"><span class="icon">✅</span><div>音频预录/TTS预生成 + 固定答案，<strong>零边际成本</strong>。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成听力题</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 6. 判断题 ==================== -->
+<div class="section" id="tf">
+  <div class="type-desc">
+    <strong>判断题 (True/False)</strong> — 判断陈述句的正确性。简洁高效的测试形式。
+    <span class="badge free">无AI调用</span>
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 判断题界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>判断对错</h3>
+              <span class="progress">Q6/15</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">判断以下说法是否正确 True or False?</div>
+              <div style="background:#f5f5f5;border-radius:12px;padding:20px;text-align:center;margin:20px 0">
+                <div style="font-size:22px;line-height:1.8">「大」的拼音是 "dài"。</div>
+                <div style="font-size:14px;color:rgba(0,0,0,.45);margin-top:8px">The pinyin for 「大」 is "dài".</div>
+              </div>
+              <div class="tf-options">
+                <div class="tf-btn">✓<br><span style="font-size:13px">正确 True</span></div>
+                <div class="tf-btn false-sel">✗<br><span style="font-size:13px">错误 False</span></div>
+              </div>
+
+              <hr class="divider">
+              <div style="background:#f6ffed;border-radius:8px;padding:10px;font-size:13px">
+                <strong>✅ 正确！</strong> 「大」的拼音是 "dà" (第四声)，不是 "dài"。<br>
+                <span style="color:rgba(0,0,0,.45)">Correct! 「大」is "dà" (4th tone), not "dài".</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 判断题配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>判断陈述句(中)</label>
+          <textarea class="form-textarea" style="font-size:16px">「大」的拼音是 "dài"。</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">英文对照</label>
+          <input class="form-input" value='The pinyin for「大」is "dài".'>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="required">*</span>正确答案</label>
+            <select class="form-select"><option>正确 (True)</option><option selected>错误 (False)</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">关联知识点</label>
+            <select class="form-select"><option selected>拼音-声调</option><option>汉字</option><option>语法</option></select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">答案解析</label>
+          <div class="form-row">
+            <textarea class="form-textarea">「大」的拼音是 "dà" (第四声)，不是 "dài"。</textarea>
+            <textarea class="form-textarea">「大」is "dà" (4th tone), not "dài".</textarea>
+          </div>
+        </div>
+        <div class="callout free"><span class="icon">✅</span><div>布尔判分，<strong>零AI成本</strong>。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 7. 看图选词 ==================== -->
+<div class="section" id="picword">
+  <div class="type-desc">
+    <strong>看图选词 (Picture-Word Match)</strong> — 展示图片，选择对应的词语。适合初级词汇教学。
+    <span class="badge free">无AI调用</span>
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 看图选词界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>看图识词</h3>
+              <span class="progress">Q3/8</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">看图片，选择正确的词语<br>Look at the picture, select the correct word</div>
+
+              <div style="width:200px;height:200px;background:linear-gradient(135deg,#ffccc7,#ffa39e);border-radius:16px;margin:16px auto;display:flex;align-items:center;justify-content:center;font-size:80px">
+                🍎
+              </div>
+
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0">
+                <div class="option-item" style="justify-content:center;padding:16px"><span style="font-size:20px">香蕉</span></div>
+                <div class="option-item selected" style="justify-content:center;padding:16px"><span style="font-size:20px">苹果</span></div>
+                <div class="option-item" style="justify-content:center;padding:16px"><span style="font-size:20px">西瓜</span></div>
+                <div class="option-item" style="justify-content:center;padding:16px"><span style="font-size:20px">葡萄</span></div>
+              </div>
+
+              <div style="text-align:center;padding:12px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">确认答案 ✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 看图选词配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>图片</label>
+          <div class="upload-area">
+            <div style="font-size:32px">🖼</div>
+            <div>上传题目图片 (PNG/JPG)</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>正确答案</label>
+          <input class="form-input" value="苹果" style="border-color:var(--success)">
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>干扰选项</label>
+          <div class="tag-input">
+            <span class="tag-item">香蕉 <span class="close">×</span></span>
+            <span class="tag-item">西瓜 <span class="close">×</span></span>
+            <span class="tag-item">葡萄 <span class="close">×</span></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">展示布局</label>
+            <select class="form-select"><option selected>2×2 网格</option><option>垂直列表</option><option>横向滑动</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">选项显示</label>
+            <select class="form-select"><option selected>仅汉字</option><option>汉字+拼音</option><option>汉字+释义</option></select>
+          </div>
+        </div>
+        <div class="callout free"><span class="icon">✅</span><div>图片预置 + 固定答案。<strong>零AI成本</strong>。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 8. 翻译-选择 ==================== -->
+<div class="section" id="trans-select">
+  <div class="type-desc">
+    <strong>翻译题-选择式 (Translation - Select)</strong> — 给出英文(或中文)，从选项中选择正确翻译。Duolingo最核心的题型。
+    <span class="badge free">无AI调用</span>
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 翻译选择界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>翻译练习</h3>
+              <span class="progress">Q8/20</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">选择正确的中文翻译 Select the correct Chinese translation</div>
+              <div style="background:#f5f5f5;border-radius:12px;padding:20px;text-align:center;margin:12px 0">
+                <div style="font-size:20px;font-weight:500">I like drinking tea.</div>
+              </div>
+
+              <div class="option-list">
+                <div class="option-item"><span class="letter">A</span><span>我喜欢喝咖啡。</span></div>
+                <div class="option-item selected"><span class="letter">B</span><span>我喜欢喝茶。</span></div>
+                <div class="option-item"><span class="letter">C</span><span>我不喜欢喝茶。</span></div>
+                <div class="option-item"><span class="letter">D</span><span>我想喝茶。</span></div>
+              </div>
+
+              <div style="text-align:center;padding:20px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">确认答案 ✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 翻译选择题配置</div>
+      <div class="card-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="required">*</span>翻译方向</label>
+            <select class="form-select"><option selected>英 → 中</option><option>中 → 英</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">关联知识点</label>
+            <select class="form-select"><option selected>词语-饮品</option><option>语法</option></select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>源句(题干)</label>
+          <input class="form-input" value="I like drinking tea." style="font-size:16px">
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>选项(含正确答案)</label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <input type="radio" name="trans_correct">
+              <div class="content"><input class="form-input" value="我喜欢喝咖啡。"></div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="trans_correct" checked>
+              <div class="content"><input class="form-input" value="我喜欢喝茶。" style="border-color:var(--success)"></div>
+              <span style="color:var(--success);font-size:11px">✓ 正确</span>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="trans_correct">
+              <div class="content"><input class="form-input" value="我不喜欢喝茶。"></div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="trans_correct">
+              <div class="content"><input class="form-input" value="我想喝茶。"></div>
+            </div>
+          </div>
+        </div>
+        <div class="callout free"><span class="icon">✅</span><div>固定答案，<strong>零AI成本</strong>。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 9. 翻译-输入 ==================== -->
+<div class="section" id="trans-type">
+  <div class="type-desc">
+    <strong>翻译题-输入式 (Translation - Type)</strong> — 用户手动输入翻译。通过预设答案池+模糊匹配实现自动判分。
+    <span class="badge free">无AI调用</span> 使用多答案池 + Levenshtein距离容错。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 翻译输入界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>翻译练习</h3>
+              <span class="progress">Q10/20</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">将下面的句子翻译成中文<br>Translate the following sentence into Chinese</div>
+              <div style="background:#f5f5f5;border-radius:12px;padding:20px;text-align:center;margin:12px 0">
+                <div style="font-size:20px;font-weight:500">She is very beautiful.</div>
+              </div>
+
+              <div style="margin:16px 0">
+                <textarea style="width:100%;padding:12px;border:2px solid var(--primary);border-radius:10px;font-size:18px;min-height:80px;outline:none;resize:none" placeholder="在这里输入中文翻译...">她很漂亮。</textarea>
+              </div>
+
+              <div style="display:flex;gap:8px;font-size:12px;color:rgba(0,0,0,.45);margin-bottom:12px">
+                <span style="padding:4px 8px;background:#f5f5f5;border-radius:4px">💡 可输入拼音自动转汉字</span>
+              </div>
+
+              <div style="text-align:center;padding:12px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">提交 ✓</span>
+              </div>
+
+              <hr class="divider">
+              <div style="background:#f6ffed;border-radius:8px;padding:10px;font-size:13px">
+                <div style="color:var(--success);font-weight:500">✅ 正确！</div>
+                <div style="margin-top:4px">你的答案：她很漂亮。</div>
+                <div style="color:rgba(0,0,0,.45)">参考答案：她很漂亮。/ 她非常漂亮。/ 她长得很好看。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 翻译输入题配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>源句(题干)</label>
+          <input class="form-input" value="She is very beautiful." style="font-size:16px">
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>正确答案池 <span class="hint">越多越好，覆盖常见表达</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <div class="content"><input class="form-input" value="她很漂亮。"></div>
+              <span style="font-size:11px;color:var(--success)">主答案</span>
+            </div>
+            <div class="list-builder-item">
+              <div class="content"><input class="form-input" value="她非常漂亮。"></div>
+            </div>
+            <div class="list-builder-item">
+              <div class="content"><input class="form-input" value="她长得很好看。"></div>
+            </div>
+            <div class="list-builder-item">
+              <div class="content"><input class="form-input" value="她很美。"></div>
+            </div>
+            <div class="list-builder-add">+ 添加备选答案</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">匹配策略</label>
+          <div class="form-row">
+            <div>
+              <label class="form-label" style="font-size:12px">容错模式</label>
+              <select class="form-select">
+                <option>严格匹配(完全一致)</option>
+                <option selected>宽松匹配(忽略标点/空格)</option>
+                <option>模糊匹配(Levenshtein≤2)</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label" style="font-size:12px">标点容错</label>
+              <div style="padding-top:4px">
+                <label style="font-size:12px"><input type="checkbox" checked> 忽略末尾句号</label><br>
+                <label style="font-size:12px"><input type="checkbox" checked> 中英标点互通</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="callout info"><span class="icon">💡</span><div>策略：用AI预生成20+种合理翻译存入答案池，运行时用字符串匹配判分。AI成本在<strong>出题时一次性产生</strong>，答题时零成本。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI扩充答案池</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 10. 听写题 ==================== -->
+<div class="section" id="dictation">
+  <div class="type-desc">
+    <strong>听写题 (Dictation)</strong> — 听音频写出对应汉字/拼音。检验听力+书写综合能力。
+    <span class="badge free">无AI调用</span> 音频预录，答案固定匹配。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 听写题界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="back">←</span>
+              <h3>听写练习</h3>
+              <span class="progress">Q2/10</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">听录音，写出你听到的内容<br>Listen and write what you hear</div>
+
+              <div style="text-align:center;padding:24px 0">
+                <div class="audio-btn big">🔊 点击播放</div>
+                <div style="display:flex;gap:12px;justify-content:center;margin-top:12px">
+                  <span class="btn btn-sm">🐢 慢速</span>
+                  <span class="btn btn-sm">🔁 再听一次</span>
+                </div>
+              </div>
+
+              <div style="margin:16px 0">
+                <div style="font-size:12px;color:rgba(0,0,0,.45);margin-bottom:4px">输入模式：<span style="color:var(--primary)">汉字</span> | 拼音</div>
+                <textarea style="width:100%;padding:12px;border:2px solid var(--primary);border-radius:10px;font-size:20px;min-height:70px;outline:none;resize:none;text-align:center" placeholder="写出你听到的...">你好</textarea>
+              </div>
+
+              <div style="text-align:center;padding:12px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">提交 ✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 听写题配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>音频</label>
+          <div class="upload-area" style="padding:12px"><div>🎧 上传或 TTS 生成</div></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">听写类型</label>
+            <select class="form-select"><option selected>单词听写</option><option>短句听写</option><option>段落听写</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">答题模式</label>
+            <select class="form-select"><option selected>输入汉字</option><option>输入拼音</option><option>汉字或拼音均可</option></select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>正确答案</label>
+          <input class="form-input" value="你好" style="font-size:18px">
+        </div>
+        <div class="form-group">
+          <label class="form-label">备选答案</label>
+          <div class="tag-input">
+            <span class="tag-item">你好 <span class="close">×</span></span>
+            <span class="tag-item">您好 <span class="close">×</span></span>
+          </div>
+        </div>
+        <div class="callout free"><span class="icon">✅</span><div>音频预置 + 文本匹配判分，<strong>零AI成本</strong>。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 11. 手写识别 (AI) ==================== -->
+<div class="section" id="handwrite">
+  <div class="type-desc">
+    <strong>手写识别题 (Handwriting Recognition)</strong> — 用户在Canvas上手写汉字，系统识别并判分。
+    <span class="badge ai">需实时AI</span> 每次手写提交需调用OCR/手写识别API。
+    <strong style="color:var(--error)">高级用户专属功能</strong>
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 手写识别界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header" style="background:var(--error)">
+              <span class="back">←</span>
+              <h3>手写练习 <span style="font-size:11px;background:rgba(255,255,255,.2);padding:2px 6px;border-radius:4px">PRO</span></h3>
+              <span class="progress">Q1/5</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">请手写以下汉字 Write the character by hand</div>
+              <div style="text-align:center;font-size:14px;margin-bottom:8px">
+                <span style="font-size:18px;color:var(--primary)">shuǐ</span> — water
+              </div>
+
+              <div class="write-canvas" style="width:240px;height:240px;position:relative">
+                <span style="font-size:140px;color:rgba(0,0,0,.04);position:absolute">水</span>
+                <span style="font-size:12px;color:rgba(0,0,0,.25);position:absolute;bottom:8px">👆 在此区域手写</span>
+              </div>
+
+              <div style="display:flex;gap:8px;justify-content:center;margin:12px 0">
+                <span class="btn btn-sm">⟲ 清除</span>
+                <span class="btn btn-sm">💡 显示笔顺</span>
+              </div>
+
+              <div style="text-align:center;padding:12px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">提交识别 🤖</span>
+              </div>
+
+              <div class="callout cost">
+                <span class="icon">⚡</span>
+                <div style="font-size:12px">每次提交调用手写识别AI · 扣除1次高级额度</div>
+              </div>
+
+              <hr class="divider">
+              <div style="background:#f6ffed;border-radius:8px;padding:10px;font-size:13px">
+                <div style="color:var(--success);font-weight:500">🤖 AI识别结果</div>
+                <div style="font-size:24px;margin:4px 0">水 <span style="color:var(--success)">✓ 识别正确</span></div>
+                <div style="font-size:12px;color:rgba(0,0,0,.45)">置信度: 96% · 笔顺评估: 良好</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 手写识别题配置</div>
+      <div class="card-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="required">*</span>目标汉字</label>
+            <input class="form-input" value="水" style="font-size:24px;text-align:center">
+          </div>
+          <div class="form-group">
+            <label class="form-label">拼音提示</label>
+            <input class="form-input" value="shuǐ">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">英文释义提示</label>
+          <input class="form-input" value="water">
+        </div>
+        <div class="form-group">
+          <label class="form-label">辅助线/提示</label>
+          <div class="form-row">
+            <div><label style="font-size:12px"><input type="checkbox" checked> 显示米字格</label></div>
+            <div><label style="font-size:12px"><input type="checkbox"> 显示底纹字(降低难度)</label></div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">识别置信度阈值</label>
+            <input class="form-input" type="number" value="80" placeholder="0-100">
+          </div>
+          <div class="form-group">
+            <label class="form-label">是否评估笔顺</label>
+            <div style="padding-top:8px"><span class="switch on"></span></div>
+          </div>
+        </div>
+        <div class="callout cost">
+          <span class="icon">⚡</span>
+          <div>
+            <strong>AI成本分析</strong><br>
+            · 手写识别API调用: 每次提交 ~$0.002-0.01<br>
+            · 笔顺评估(可选): 前端Canvas对比(免费) 或 AI评估(额外调用)<br>
+            · <strong>降本策略</strong>: 笔顺用前端DTW对比，仅最终字形用AI识别
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 12. 跟读评分 (AI) ==================== -->
+<div class="section" id="speak">
+  <div class="type-desc">
+    <strong>跟读评分 (Speaking/Pronunciation)</strong> — 用户跟读，AI评估发音准确度、声调、流利度。
+    <span class="badge ai">需实时AI</span> 每次录音提交需调用语音评估API。
+    <strong style="color:var(--error)">高级用户专属功能</strong>
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 跟读评分界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header" style="background:var(--error)">
+              <span class="back">←</span>
+              <h3>发音练习 <span style="font-size:11px;background:rgba(255,255,255,.2);padding:2px 6px;border-radius:4px">PRO</span></h3>
+              <span class="progress">Q2/8</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">听示范发音，然后跟读<br>Listen to the example, then repeat</div>
+
+              <div style="text-align:center;padding:16px 0">
+                <div style="font-size:32px;font-weight:500">你好吗？</div>
+                <div style="font-size:16px;color:var(--primary);margin:4px 0">Nǐ hǎo ma?</div>
+                <div style="font-size:14px;color:rgba(0,0,0,.45)">How are you?</div>
+                <div style="margin:12px 0"><span class="audio-btn">🔊 听示范</span></div>
+              </div>
+
+              <div class="mic-btn recording">🎤</div>
+              <div style="text-align:center;font-size:12px;color:var(--error)">● 正在录音...</div>
+
+              <hr class="divider">
+
+              <div style="background:#f6ffed;border-radius:12px;padding:16px;margin:12px 0">
+                <div style="text-align:center;margin-bottom:12px">
+                  <div style="font-size:48px;font-weight:600;color:var(--success)">87</div>
+                  <div style="font-size:13px;color:rgba(0,0,0,.45)">总分 / 100</div>
+                </div>
+                <div style="display:flex;gap:8px">
+                  <div style="flex:1;text-align:center;padding:8px;background:rgba(255,255,255,.8);border-radius:6px">
+                    <div style="font-size:18px;font-weight:500;color:var(--success)">92</div>
+                    <div style="font-size:11px;color:rgba(0,0,0,.45)">准确度</div>
+                  </div>
+                  <div style="flex:1;text-align:center;padding:8px;background:rgba(255,255,255,.8);border-radius:6px">
+                    <div style="font-size:18px;font-weight:500;color:var(--warning)">78</div>
+                    <div style="font-size:11px;color:rgba(0,0,0,.45)">声调</div>
+                  </div>
+                  <div style="flex:1;text-align:center;padding:8px;background:rgba(255,255,255,.8);border-radius:6px">
+                    <div style="font-size:18px;font-weight:500;color:var(--success)">90</div>
+                    <div style="font-size:11px;color:rgba(0,0,0,.45)">流利度</div>
+                  </div>
+                </div>
+                <div style="margin-top:12px;font-size:12px;color:rgba(0,0,0,.65)">
+                  💡 建议：注意「好」(hǎo) 的第三声下沉后回升。
+                </div>
+              </div>
+
+              <div class="callout cost">
+                <span class="icon">⚡</span>
+                <div style="font-size:12px">已使用高级额度 · 剩余 47/50 次</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 跟读评分题配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>跟读文本</label>
+          <input class="form-input" value="你好吗？" style="font-size:18px">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">拼音</label>
+            <input class="form-input" value="Nǐ hǎo ma?">
+          </div>
+          <div class="form-group">
+            <label class="form-label">英文翻译</label>
+            <input class="form-input" value="How are you?">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>示范音频</label>
+          <div class="upload-area" style="padding:12px"><div>🎧 上传标准示范音频</div></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">跟读类型</label>
+          <select class="form-select">
+            <option>单词跟读</option>
+            <option selected>短句跟读</option>
+            <option>段落跟读</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">评分维度权重</label>
+          <table class="mini-table">
+            <thead><tr><th>维度</th><th>权重</th><th>说明</th></tr></thead>
+            <tbody>
+              <tr><td>准确度 Accuracy</td><td><input class="form-input" type="number" value="40" style="width:60px">%</td><td style="font-size:11px;color:rgba(0,0,0,.45)">音素是否正确</td></tr>
+              <tr><td>声调 Tone</td><td><input class="form-input" type="number" value="35" style="width:60px">%</td><td style="font-size:11px;color:rgba(0,0,0,.45)">四声是否准确</td></tr>
+              <tr><td>流利度 Fluency</td><td><input class="form-input" type="number" value="25" style="width:60px">%</td><td style="font-size:11px;color:rgba(0,0,0,.45)">语速和停顿</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">及格分数</label>
+            <input class="form-input" type="number" value="60">
+          </div>
+          <div class="form-group">
+            <label class="form-label">最大录音时长(秒)</label>
+            <input class="form-input" type="number" value="10">
+          </div>
+        </div>
+        <div class="callout cost">
+          <span class="icon">⚡</span>
+          <div>
+            <strong>AI成本分析</strong><br>
+            · 语音评估API: 每次调用 ~$0.004-0.02 (Azure Speech / Google STT + 自定义评分)<br>
+            · 声调分析: 需额外音频处理管道<br>
+            · <strong>降本策略</strong>: 免费用户只能听和跟读(不评分)，高级用户才调AI评分
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 13. 口语表达 (AI) ==================== -->
+<div class="section" id="freeSpeak">
+  <div class="type-desc">
+    <strong>口语表达 (Free Speaking)</strong> — 开放式口语题，AI理解用户说的内容并评分。如：用中文描述一张图片。
+    <span class="badge ai">需实时AI</span> STT + LLM理解 + 评分，成本最高的题型之一。
+    <strong style="color:var(--error)">高级用户专属功能</strong>
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 口语表达界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header" style="background:var(--error)">
+              <span class="back">←</span>
+              <h3>口语表达 <span style="font-size:11px;background:rgba(255,255,255,.2);padding:2px 6px;border-radius:4px">PRO</span></h3>
+              <span class="progress">Q1/3</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">请用中文回答以下问题<br>Please answer in Chinese</div>
+
+              <div style="background:#f5f5f5;border-radius:12px;padding:20px;text-align:center;margin:12px 0">
+                <div style="font-size:18px;font-weight:500">你今天早上吃了什么？</div>
+                <div style="font-size:14px;color:rgba(0,0,0,.45);margin-top:4px">What did you eat this morning?</div>
+              </div>
+
+              <div class="mic-btn">🎤</div>
+              <div style="text-align:center;font-size:12px;color:rgba(0,0,0,.45)">按住说话</div>
+
+              <hr class="divider">
+
+              <div style="background:#e6f4ff;border-radius:12px;padding:16px;margin:12px 0">
+                <div style="font-size:12px;color:var(--primary);font-weight:500">🤖 AI转写与评分</div>
+                <div style="margin-top:8px;font-size:15px">「我今天早上吃了面包和鸡蛋。」</div>
+                <div style="margin-top:12px;display:flex;gap:8px">
+                  <div style="flex:1;text-align:center;padding:6px;background:rgba(255,255,255,.8);border-radius:6px">
+                    <div style="font-size:16px;font-weight:500;color:var(--success)">85</div>
+                    <div style="font-size:10px;color:rgba(0,0,0,.45)">内容相关性</div>
+                  </div>
+                  <div style="flex:1;text-align:center;padding:6px;background:rgba(255,255,255,.8);border-radius:6px">
+                    <div style="font-size:16px;font-weight:500;color:var(--success)">90</div>
+                    <div style="font-size:10px;color:rgba(0,0,0,.45)">语法正确性</div>
+                  </div>
+                  <div style="flex:1;text-align:center;padding:6px;background:rgba(255,255,255,.8);border-radius:6px">
+                    <div style="font-size:16px;font-weight:500;color:var(--warning)">75</div>
+                    <div style="font-size:10px;color:rgba(0,0,0,.45)">发音准确度</div>
+                  </div>
+                </div>
+                <div style="margin-top:8px;font-size:12px;color:rgba(0,0,0,.65)">💡 表达很好！可以尝试加入更多细节，如「我还喝了一杯牛奶」。</div>
+              </div>
+
+              <div class="callout cost">
+                <span class="icon">⚡</span>
+                <div style="font-size:12px">本次调用: STT转写 + LLM评分 · 扣除2次高级额度</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 口语表达题配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>题目(中)</label>
+          <textarea class="form-textarea" style="font-size:16px">你今天早上吃了什么？</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">英文翻译</label>
+          <input class="form-input" value="What did you eat this morning?">
+        </div>
+        <div class="form-group">
+          <label class="form-label">参考答案示例 <span class="hint">供AI评分时参考，不展示给用户</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <div class="content"><input class="form-input" value="我今天早上吃了面包和鸡蛋。"></div>
+            </div>
+            <div class="list-builder-item">
+              <div class="content"><input class="form-input" value="我早上喝了一杯牛奶，吃了米饭。"></div>
+            </div>
+            <div class="list-builder-add">+ 添加参考答案</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">评分维度</label>
+          <table class="mini-table">
+            <thead><tr><th>维度</th><th>权重</th><th>AI评估要点</th></tr></thead>
+            <tbody>
+              <tr><td>内容相关性</td><td><input class="form-input" type="number" value="30" style="width:60px">%</td><td style="font-size:11px">是否回答了问题</td></tr>
+              <tr><td>语法正确性</td><td><input class="form-input" type="number" value="30" style="width:60px">%</td><td style="font-size:11px">语法是否正确</td></tr>
+              <tr><td>发音准确度</td><td><input class="form-input" type="number" value="25" style="width:60px">%</td><td style="font-size:11px">发音和声调</td></tr>
+              <tr><td>表达丰富度</td><td><input class="form-input" type="number" value="15" style="width:60px">%</td><td style="font-size:11px">词汇量和句式多样性</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-group">
+          <label class="form-label">AI评分Prompt <span class="hint">给AI的评分指令模板</span></label>
+          <textarea class="form-textarea" style="min-height:100px;font-family:monospace;font-size:12px">你是中文口语评分助手。用户的口语回答如下：{user_speech_text}
+题目是：{question_text}
+请从内容相关性、语法正确性、表达丰富度三个维度评分(0-100)，并给出简短建议。
+HSK等级：{hsk_level}。以JSON格式返回。</textarea>
+        </div>
+        <div class="callout cost">
+          <span class="icon">⚡</span>
+          <div>
+            <strong>AI成本分析 (最高成本题型)</strong><br>
+            · STT语音转文字: ~$0.006/15秒<br>
+            · LLM评分(GPT/Claude): ~$0.003-0.01/次<br>
+            · 语音评估(可选): ~$0.004/次<br>
+            · 单次总成本: ~$0.01-0.03<br>
+            · <strong>降本策略</strong>: 仅高级用户可用，每日限额
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 14. 写作题 (AI) ==================== -->
+<div class="section" id="freeWrite">
+  <div class="type-desc">
+    <strong>写作题 (Free Writing)</strong> — 用户按要求写一段中文文字，AI评估内容、语法、用词。
+    <span class="badge ai">需实时AI</span> 每次提交需LLM评分。
+    <strong style="color:var(--error)">高级用户专属功能</strong>
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="tag app">应用端 App</span> 写作题界面</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header" style="background:var(--error)">
+              <span class="back">←</span>
+              <h3>写作练习 <span style="font-size:11px;background:rgba(255,255,255,.2);padding:2px 6px;border-radius:4px">PRO</span></h3>
+              <span class="progress">Q1/2</span>
+            </div>
+            <div class="app-content">
+              <div class="q-instruction">请根据题目要求写一段中文<br>Write a paragraph in Chinese based on the prompt</div>
+
+              <div style="background:#f5f5f5;border-radius:12px;padding:16px;margin:12px 0">
+                <div style="font-size:16px;font-weight:500">请介绍你的家庭。(50-100字)</div>
+                <div style="font-size:13px;color:rgba(0,0,0,.45);margin-top:4px">Introduce your family. (50-100 characters)</div>
+              </div>
+
+              <textarea style="width:100%;padding:12px;border:2px solid var(--primary);border-radius:10px;font-size:16px;min-height:120px;outline:none;resize:none;line-height:1.8" placeholder="在这里写...">我的家里有四口人：爸爸、妈妈、姐姐和我。爸爸是医生，妈妈是老师。姐姐在大学学习。我们经常一起吃晚饭，周末会去公园散步。我很爱我的家人。</textarea>
+
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:rgba(0,0,0,.45);margin:4px 0">
+                <span>已输入 68 字</span>
+                <span>要求 50-100 字</span>
+              </div>
+
+              <div style="text-align:center;padding:12px 0">
+                <span class="btn btn-primary" style="width:100%;justify-content:center">提交AI批改 🤖</span>
+              </div>
+
+              <hr class="divider">
+
+              <div style="background:#e6f4ff;border-radius:12px;padding:16px;margin:12px 0">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+                  <span style="font-size:14px;font-weight:500;color:var(--primary)">🤖 AI批改结果</span>
+                  <span style="font-size:28px;font-weight:600;color:var(--success)">82分</span>
+                </div>
+                <div style="font-size:13px;line-height:1.8">
+                  <div><span style="color:var(--success)">✅ 优点</span>：内容完整，家庭成员介绍清晰，使用了正确的量词「口」。</div>
+                  <div style="margin-top:4px"><span style="color:var(--warning)">⚠️ 建议</span>：可以加入更多形容词丰富描写，如「我有一个幸福的家庭」。</div>
+                  <div style="margin-top:4px"><span style="color:var(--error)">❌ 修正</span>：无明显语法错误。</div>
+                </div>
+              </div>
+
+              <div class="callout cost">
+                <span class="icon">⚡</span>
+                <div style="font-size:12px">本次调用: LLM批改 · 扣除2次高级额度</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="tag admin">管理端</span> 写作题配置</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label class="form-label"><span class="required">*</span>写作题目(中)</label>
+          <textarea class="form-textarea" style="font-size:16px">请介绍你的家庭。</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">英文翻译</label>
+          <input class="form-input" value="Introduce your family.">
+        </div>
+        <div class="form-row triple">
+          <div class="form-group">
+            <label class="form-label">最少字数</label>
+            <input class="form-input" type="number" value="50">
+          </div>
+          <div class="form-group">
+            <label class="form-label">最多字数</label>
+            <input class="form-input" type="number" value="100">
+          </div>
+          <div class="form-group">
+            <label class="form-label">HSK等级</label>
+            <select class="form-select"><option>HSK 1</option><option>HSK 2</option><option selected>HSK 3</option></select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">写作要求/约束 <span class="hint">可选，增加题目限定</span></label>
+          <div class="tag-input">
+            <span class="tag-item">包含家庭成员 <span class="close">×</span></span>
+            <span class="tag-item">包含职业 <span class="close">×</span></span>
+            <span class="tag-item">包含日常活动 <span class="close">×</span></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">评分Prompt模板</label>
+          <textarea class="form-textarea" style="min-height:120px;font-family:monospace;font-size:12px">你是中文写作批改助手。
+
+题目：{question_text}
+要求字数：{min_chars}-{max_chars}
+HSK等级：{hsk_level}
+用户作文：{user_text}
+
+请从以下维度评分(0-100)并给出详细反馈：
+1. 内容完整性：是否回答了题目要求
+2. 语法正确性：有无语法错误
+3. 词汇运用：用词是否恰当丰富
+4. 结构逻辑：文章结构是否清晰
+
+以JSON格式返回：{scores, feedback_positive, feedback_suggestion, feedback_correction}</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">参考范文 <span class="hint">供AI对标评分</span></label>
+          <textarea class="form-textarea">我有一个幸福的家庭。家里有四口人：爸爸、妈妈、哥哥和我。爸爸在公司工作，妈妈是护士。哥哥今年上大学。每个周末，我们全家会一起做饭、看电影。我非常爱我的家人。</textarea>
+        </div>
+        <div class="callout cost">
+          <span class="icon">⚡</span>
+          <div>
+            <strong>AI成本分析</strong><br>
+            · LLM评分(GPT-4o-mini/Claude Haiku): ~$0.002-0.008/次<br>
+            · <strong>降本策略</strong>: 用小模型评分，仅高级用户可用，每日限额
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end content -->
+
+<script>
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.target).classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
