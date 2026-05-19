@@ -138,7 +138,7 @@ C03-prototype/
 
 ```html
 <link rel="stylesheet" href="../../docs/<system-id>/B02-experience-design/prototype-style/app.css">
-<script defer src="../../docs/<system-id>/B02-experience-design/prototype-style/app.js"></script>
+<script src="../../docs/<system-id>/B02-experience-design/prototype-style/app.js"></script>
 ```
 
 > 绝不拷贝样式文件。`<system-id>` 替换为实际系统 ID。
@@ -164,7 +164,7 @@ C03-prototype/
 
 ```html
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
+<html lang="zh-CN" data-mode="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -188,7 +188,7 @@ C03-prototype/
   </main>
   <div class="modal-overlay" id="modal-delete" role="dialog" aria-modal="true"></div>
 
-  <script defer src="../../docs/app/B02-experience-design/prototype-style/app.js"></script>
+  <script src="../../docs/app/B02-experience-design/prototype-style/app.js"></script>
   <script>
     fetch('_shared/proto-nav.html')
       .then(r => r.text())
