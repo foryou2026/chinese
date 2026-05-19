@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>填空题 · 4种知识点变体</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 返回题型列表</a>
+  <h1>填空题 (Fill in the Blank)</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="badge blue">4种变体</span>
+</div>
+
+<div class="sub-tabs" style="padding:12px 24px;background:#fff;border-bottom:1px solid var(--border);position:sticky;top:60px;z-index:99">
+  <div class="sub-tab active" onclick="showPanel('pinyin')">拼音填空</div>
+  <div class="sub-tab" onclick="showPanel('char')">汉字填空</div>
+  <div class="sub-tab" onclick="showPanel('word')">词语填空</div>
+  <div class="sub-tab" onclick="showPanel('grammar')">语法填空</div>
+</div>
+
+<div class="content">
+
+<!-- ===== 拼音填空 ===== -->
+<div data-panel="pinyin" class="active">
+  <div class="type-desc">
+    <strong>填空题 × 拼音</strong> — 给汉字，输入对应拼音(含声调)。
+    管理端特有：<strong>汉字题干 + 拼音答案 + 声调容错设置(是否接受数字声调)</strong>。应用端显示大号汉字，下方输入拼音。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 拼音填空</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>拼音填空</h3><span class="progress">Q2/10</span></div>
+            <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">写出汉字的拼音 Write the pinyin</div>
+              <div style="text-align:center;padding:24px 0">
+                <div style="font-size:80px;font-weight:300;color:#333">谢</div>
+                <div style="margin:8px 0"><span class="audio-btn">🔊 听发音</span></div>
+              </div>
+              <!-- 拼音填空特征：拼音专用输入框 -->
+              <div style="text-align:center;margin:16px 0">
+                <input class="fill-blank wide" value="xiè" placeholder="输入拼音" style="font-size:24px;width:180px">
+              </div>
+              <div style="text-align:center;margin:8px 0">
+                <div class="text-sm text-muted">支持格式: xiè 或 xie4</div>
+                <!-- 声调快捷按钮 -->
+                <div style="display:flex;gap:6px;justify-content:center;margin-top:8px">
+                  <span class="btn btn-sm">ā á ǎ à</span>
+                  <span class="btn btn-sm">ē é ě è</span>
+                  <span class="btn btn-sm">ī í ǐ ì</span>
+                  <span class="btn btn-sm">ū ú ǔ ù</span>
+                  <span class="btn btn-sm">ǖ ǘ ǚ ǜ</span>
+                </div>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 拼音填空 · 配置</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>知识点=拼音时，题干为汉字，答案为拼音字符串，新增<strong>声调格式容错</strong>和<strong>声调快捷键盘</strong>开关。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>题干汉字</label>
+            <input class="form-input lg" value="谢" style="text-align:center">
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>正确拼音</label>
+            <input class="form-input lg" value="xiè">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">音频</label>
+          <div class="upload-area sm">📁 上传</div>
+        </div>
+        <!-- 拼音填空特有 -->
+        <div class="form-group">
+          <label class="form-label">拼音容错规则</label>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <label class="text-sm"><input type="checkbox" checked> 接受数字声调 (xie4 = xiè)</label>
+            <label class="text-sm"><input type="checkbox" checked> 忽略大小写</label>
+            <label class="text-sm"><input type="checkbox"> 接受无声调 (xie = xiè) — 降低难度</label>
+            <label class="text-sm"><input type="checkbox" checked> v 替代 ü (lv = lǜ)</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">备选答案 <span class="hint">多音字的其他读音</span></label>
+          <div class="tag-input">
+            <span class="tag-item">xiè (主答案) <span class="close">×</span></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">声调辅助键盘</label>
+          <div><span class="switch on"></span> <span class="text-sm text-muted">在输入框下显示声调符号快捷按钮</span></div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 汉字填空 ===== -->
+<div data-panel="char">
+  <div class="type-desc">
+    <strong>填空题 × 汉字</strong> — 给拼音或语境，输入对应汉字。
+    管理端特有：<strong>拼音题干 + 汉字答案 + 输入法模式(拼音输入/手写/从候选选择)</strong>。应用端显示拼音+释义为提示。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 汉字填空</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>汉字填空</h3><span class="progress">Q4/10</span></div>
+            <div class="app-content">
+              <div class="q-instruction">根据拼音写出汉字 Write the character</div>
+              <!-- 汉字填空：拼音+释义为提示 -->
+              <div style="text-align:center;padding:20px 0">
+                <div style="font-size:32px;color:var(--primary)">péngyou</div>
+                <div style="font-size:16px;color:rgba(0,0,0,.45);margin-top:4px">friend</div>
+                <div style="margin-top:8px"><span class="audio-btn">🔊</span></div>
+              </div>
+              <div style="text-align:center;margin:16px 0">
+                <input class="fill-blank wide" value="朋友" placeholder="写汉字" style="font-size:28px;width:200px">
+              </div>
+              <!-- 汉字填空特有：输入模式切换 -->
+              <div style="display:flex;gap:8px;justify-content:center;margin:12px 0">
+                <span class="btn btn-sm" style="background:var(--primary);color:#fff;border-color:var(--primary)">⌨️ 拼音输入</span>
+                <span class="btn btn-sm">✍️ 手写输入</span>
+                <span class="btn btn-sm">📋 候选选择</span>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 汉字填空 · 配置</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>知识点=汉字时，题干为拼音+释义，答案为汉字，新增<strong>输入法模式选择</strong>和<strong>繁简容错</strong>。</div></div>
+        <div class="form-row t3">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>拼音(题干)</label>
+            <input class="form-input" value="péngyou">
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>释义(EN)</label>
+            <input class="form-input" value="friend">
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>正确汉字</label>
+            <input class="form-input lg" value="朋友" style="text-align:center">
+          </div>
+        </div>
+        <!-- 汉字填空特有 -->
+        <div class="form-group">
+          <label class="form-label">输入方式</label>
+          <select class="form-select">
+            <option selected>拼音键盘输入(用户打拼音选字)</option>
+            <option>直接手写(Canvas → 前端匹配)</option>
+            <option>候选字选择(降低难度)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">汉字容错</label>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <label class="text-sm"><input type="checkbox" checked> 接受繁体 (朋友 = 朋友)</label>
+            <label class="text-sm"><input type="checkbox"> 接受同音替代字</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">备选答案</label>
+          <div class="tag-input">
+            <span class="tag-item">朋友 <span class="close">×</span></span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 词语填空 ===== -->
+<div data-panel="word">
+  <div class="type-desc">
+    <strong>填空题 × 词语</strong> — 句子中留空，输入正确词语。
+    管理端特有：<strong>语境句模板 + 多答案池(含近义词) + 候选提示词配置</strong>。应用端显示上下文语境句+空位。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 词语填空</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>词汇填空</h3><span class="progress">Q6/12</span></div>
+            <div class="app-content">
+              <div class="q-instruction">在空白处填入合适的词语 Fill in the blank</div>
+              <!-- 词语填空：语境句+空位 -->
+              <div class="highlight-box gray" style="padding:16px;text-align:center">
+                <div style="font-size:20px;line-height:2">
+                  他每天早上都去公园 <input class="fill-blank wide" placeholder="______" style="font-size:20px"> 。
+                </div>
+                <div class="text-sm text-muted mt-8">He goes to the park every morning to ______.</div>
+              </div>
+              <!-- 词语填空特有：候选提示词 -->
+              <div style="margin:16px 0">
+                <div class="text-sm text-muted mb-8">💡 候选词:</div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap">
+                  <span class="drag-chip">跑步</span>
+                  <span class="drag-chip">游泳</span>
+                  <span class="drag-chip">看书</span>
+                  <span class="drag-chip">唱歌</span>
+                </div>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+              <hr class="divider">
+              <div class="highlight-box green">
+                <div style="font-weight:500;color:var(--success)">✅ 正确答案: 跑步</div>
+                <div class="mt-8 text-sm">也可接受: 锻炼、运动<br><span class="text-muted">Also accepted: 锻炼 (exercise), 运动 (workout)</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 词语填空 · 配置</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>知识点=词语时，需配置<strong>语境句+空位</strong>，答案为<strong>多词答案池</strong>(接受近义词)，可选<strong>候选提示词</strong>降低难度。</div></div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>语境句 <span class="hint">{blank} 标记空位</span></label>
+          <textarea class="form-textarea" style="font-size:16px">他每天早上都去公园 {blank} 。</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">英文翻译</label>
+          <input class="form-input" value="He goes to the park every morning to ______.">
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>答案池 <span class="hint">所有可接受的答案，第一个为主答案</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="form-input" value="跑步" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success);white-space:nowrap">主答案</span></div></div>
+            <div class="list-builder-item"><div class="content"><input class="form-input" value="锻炼"></div></div>
+            <div class="list-builder-item"><div class="content"><input class="form-input" value="运动"></div></div>
+            <div class="list-builder-add">+ 添加备选答案</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">候选提示词 <span class="hint">展示给用户的候选，降低难度</span></label>
+          <div><span class="switch on"></span> <span class="text-sm text-muted">开启候选提示</span></div>
+          <div class="tag-input mt-8">
+            <span class="tag-item">跑步 <span class="close">×</span></span>
+            <span class="tag-item">游泳 <span class="close">×</span></span>
+            <span class="tag-item">看书 <span class="close">×</span></span>
+            <span class="tag-item">唱歌 <span class="close">×</span></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">匹配模式</label>
+          <select class="form-select">
+            <option selected>精确匹配答案池</option>
+            <option>宽松匹配(忽略标点空格)</option>
+          </select>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI扩充答案池</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 语法填空 ===== -->
+<div data-panel="grammar">
+  <div class="type-desc">
+    <strong>填空题 × 语法</strong> — 在句子中填入正确的语法词(了/过/着/把/被/的/得/地等)。
+    管理端特有：<strong>语法点选择器 + 句型模板 + 语法词答案(固定范围)</strong>。应用端高亮语法空位，提示考察的语法点。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 语法填空</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>语法填空</h3><span class="progress">Q3/8</span></div>
+            <div class="app-content">
+              <div class="q-instruction">填入正确的语法词 Fill in the grammar word</div>
+              <!-- 语法填空特有：语法点提示 -->
+              <div class="highlight-box blue" style="text-align:center;padding:10px">
+                <span class="text-sm" style="color:var(--primary)">📖 考查: 「了/过/着」时态助词</span>
+              </div>
+              <div class="highlight-box gray" style="padding:16px;text-align:center;margin:12px 0">
+                <div style="font-size:20px;line-height:2">
+                  我昨天去 <input class="fill-blank" value="了" placeholder="__" style="font-size:20px;width:50px"> 北京。
+                </div>
+                <div class="text-sm text-muted mt-8">I went to Beijing yesterday.</div>
+              </div>
+              <!-- 语法填空特有：可选的语法词提示 -->
+              <div style="margin:12px 0">
+                <div class="text-sm text-muted mb-8">可用语法词:</div>
+                <div style="display:flex;gap:8px;justify-content:center">
+                  <span class="drag-chip" style="font-size:18px;padding:10px 20px">了</span>
+                  <span class="drag-chip" style="font-size:18px;padding:10px 20px">过</span>
+                  <span class="drag-chip" style="font-size:18px;padding:10px 20px">着</span>
+                </div>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+              <hr class="divider">
+              <div class="highlight-box green">
+                <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+                <div class="mt-8 text-sm">
+                  <strong>「了」</strong>用于表示动作已经完成（过去时）。「昨天」是过去时间标志，所以用「了」。<br>
+                  <span class="text-muted">"了" indicates completed action. "昨天" (yesterday) signals past tense.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 语法填空 · 配置</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>知识点=语法时，新增<strong>语法点选择器</strong>和<strong>语法词范围</strong>配置。答案限定在特定语法词中，解析需说明语法规则。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>考查语法点</label>
+            <select class="form-select">
+              <option selected>时态助词(了/过/着)</option>
+              <option>结构助词(的/得/地)</option>
+              <option>介词(把/被/在/从)</option>
+              <option>连词(虽然...但是/因为...所以)</option>
+              <option>量词搭配</option>
+              <option>自定义</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">语法词范围 <span class="hint">本题涉及的语法词</span></label>
+            <div class="tag-input">
+              <span class="tag-item">了 <span class="close">×</span></span>
+              <span class="tag-item">过 <span class="close">×</span></span>
+              <span class="tag-item">着 <span class="close">×</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>语境句</label>
+          <textarea class="form-textarea" style="font-size:16px">我昨天去 {blank} 北京。</textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">英文翻译</label>
+            <input class="form-input" value="I went to Beijing yesterday.">
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>正确语法词</label>
+            <input class="form-input" value="了" style="font-size:18px;text-align:center;width:80px">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">展示语法词提示</label>
+          <div><span class="switch on"></span> <span class="text-sm text-muted">在应用端显示可选语法词(降低难度)</span></div>
+        </div>
+        <!-- 语法填空特有：语法解析 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>语法解析 <span class="hint">必填，语法题的教学核心</span></label>
+          <div class="form-row">
+            <textarea class="form-textarea">「了」用于表示动作已经完成（过去时）。「昨天」是过去时间标志，所以用「了」。
+· 「过」表示曾经的经历(我去过北京)
+· 「着」表示持续状态(他看着书)</textarea>
+            <textarea class="form-textarea">"了" indicates completed action. "昨天" (yesterday) signals past tense.
+· "过" = past experience (I have been to Beijing)
+· "着" = ongoing state (He is reading)</textarea>
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成语法填空</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+function showPanel(name) {
+  document.querySelectorAll('[data-panel]').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('[data-panel="'+name+'"]').classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>

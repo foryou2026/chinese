@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 6种知识点变体</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 返回题型列表</a>
+  <h1>选择题 (Multiple Choice)</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="badge blue">6种变体</span>
+</div>
+
+<div class="sub-tabs" style="padding:12px 24px;background:#fff;border-bottom:1px solid var(--border);position:sticky;top:60px;z-index:99">
+  <div class="sub-tab active" onclick="showPanel('pinyin')">拼音辨识</div>
+  <div class="sub-tab" onclick="showPanel('char')">汉字选择</div>
+  <div class="sub-tab" onclick="showPanel('word')">词义理解</div>
+  <div class="sub-tab" onclick="showPanel('grammar')">语法判断</div>
+  <div class="sub-tab" onclick="showPanel('idiom')">成语释义</div>
+  <div class="sub-tab" onclick="showPanel('listen')">听力选择</div>
+</div>
+
+<div class="content">
+
+<!-- ===== 变体1: 拼音辨识 ===== -->
+<div data-panel="pinyin" class="active">
+  <div class="type-desc">
+    <strong>选择题 × 拼音</strong> — 给汉字/词语，选正确拼音。重点测试声调辨识。
+    管理端需配置：<strong>汉字+多个易混淆拼音选项(声调干扰)</strong>。应用端显示大号汉字+拼音选项。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 拼音辨识选择题</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>拼音测试</h3><span class="progress">Q3/15</span></div>
+            <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">选择正确的拼音 Select the correct pinyin</div>
+              <!-- 大号汉字展示是拼音题的特征 -->
+              <div style="text-align:center;padding:20px 0">
+                <div style="font-size:72px;font-weight:300;color:#333">学</div>
+                <div style="font-size:13px;color:rgba(0,0,0,.45)">character · choose its pinyin</div>
+                <div style="margin-top:8px"><span class="audio-btn">🔊 听发音</span></div>
+              </div>
+              <!-- 拼音题的选项是拼音字符串，重点在声调差异 -->
+              <div class="option-list">
+                <div class="option-item"><span class="letter">A</span><span style="font-size:18px">xué</span></div>
+                <div class="option-item selected"><span class="letter">B</span><span style="font-size:18px">xué</span></div>
+                <div class="option-item"><span class="letter">C</span><span style="font-size:18px">xuě</span></div>
+                <div class="option-item"><span class="letter">D</span><span style="font-size:18px">xuè</span></div>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+              <hr class="divider">
+              <div class="highlight-box green">
+                <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+                <div class="mt-8">「学」读 xué (第二声)，注意与「雪」(xuě, 第三声) 区分。<br>
+                <span class="text-muted">"学" is xué (2nd tone). Don't confuse with "雪" (xuě, 3rd tone).</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 拼音辨识 · 配置表单</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>关联知识点=<strong>拼音</strong>时，题干切换为「汉字展示」模式，选项切换为「拼音输入」模式，自动启用<strong>声调干扰项生成</strong>。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联知识点</label>
+            <select class="form-select"><option selected>拼音</option><option>汉字</option><option>词语</option><option>语法</option><option>成语</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>题目子类型</label>
+            <select class="form-select">
+              <option selected>汉字→选拼音</option>
+              <option>听音→选拼音</option>
+              <option>拼音→选汉字(归汉字类)</option>
+            </select>
+          </div>
+        </div>
+        <!-- 拼音题特有：汉字题干 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>题干汉字 <span class="hint">展示给用户的目标汉字/词语</span></label>
+          <input class="form-input lg" value="学" placeholder="输入单字或词语">
+        </div>
+        <div class="form-group">
+          <label class="form-label">题干音频 <span class="hint">拼音题建议配音频辅助</span></label>
+          <div class="upload-area sm">📁 上传 或 TTS生成</div>
+        </div>
+        <!-- 拼音题特有：拼音选项 + 声调干扰 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>拼音选项 <span class="hint">勾选正确答案；干扰项应为同音异调</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <input type="radio" name="c" checked style="margin-top:6px">
+              <div class="content flex gap-8" style="display:flex;gap:8px;align-items:center">
+                <span style="width:20px;font-weight:500;color:var(--success)">A</span>
+                <input class="form-input" value="xué" style="flex:1;border-color:var(--success)">
+                <span class="text-xs" style="color:var(--success)">✓ 正确</span>
+              </div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="c" style="margin-top:6px">
+              <div class="content flex gap-8" style="display:flex;gap:8px;align-items:center">
+                <span style="width:20px;font-weight:500">B</span>
+                <input class="form-input" value="xuě" style="flex:1">
+                <span class="text-xs text-muted">三声干扰</span>
+              </div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="c" style="margin-top:6px">
+              <div class="content flex gap-8" style="display:flex;gap:8px;align-items:center">
+                <span style="width:20px;font-weight:500">C</span>
+                <input class="form-input" value="xuè" style="flex:1">
+                <span class="text-xs text-muted">四声干扰</span>
+              </div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="c" style="margin-top:6px">
+              <div class="content flex gap-8" style="display:flex;gap:8px;align-items:center">
+                <span style="width:20px;font-weight:500">D</span>
+                <input class="form-input" value="xüé" style="flex:1">
+                <span class="text-xs text-muted">拼写干扰</span>
+              </div>
+            </div>
+            <div class="list-builder-add">+ 添加选项</div>
+          </div>
+        </div>
+        <!-- 拼音题特有：干扰策略 -->
+        <div class="form-group">
+          <label class="form-label">干扰项生成策略 <span class="hint">AI批量出题时使用</span></label>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <label class="text-sm"><input type="checkbox" checked> 同音异调(声调替换)</label>
+            <label class="text-sm"><input type="checkbox" checked> 近音混淆(zh/z, sh/s, ch/c)</label>
+            <label class="text-sm"><input type="checkbox"> 前后鼻音(an/ang, en/eng)</label>
+            <label class="text-sm"><input type="checkbox"> ü/u混淆</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">答案解析</label>
+          <div class="form-row">
+            <textarea class="form-textarea">「学」读 xué (第二声)，注意与「雪」(xuě) 区分。</textarea>
+            <textarea class="form-textarea">"学" is xué (2nd tone). Don't confuse with "雪" (xuě).</textarea>
+          </div>
+        </div>
+        <div class="form-row t3">
+          <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
+          <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+          <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成拼音选择题</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 变体2: 汉字选择 ===== -->
+<div data-panel="char">
+  <div class="type-desc">
+    <strong>选择题 × 汉字</strong> — 给拼音/释义/音频，选正确汉字。重点测试汉字辨识(形近字干扰)。
+    管理端特有：<strong>拼音/释义题干 + 汉字选项 + 形近字干扰策略</strong>。应用端以拼音或释义为题干，选项为大号汉字。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 汉字选择题</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>汉字测试</h3><span class="progress">Q5/15</span></div>
+            <div class="progress-bar"><div class="fill" style="width:33%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">选择正确的汉字 Select the correct character</div>
+              <!-- 汉字题：题干是拼音+释义，不是汉字 -->
+              <div style="text-align:center;padding:20px 0">
+                <div style="font-size:32px;color:var(--primary);font-weight:400">mā</div>
+                <div style="font-size:16px;color:rgba(0,0,0,.65);margin-top:4px">mother</div>
+                <div style="margin-top:8px"><span class="audio-btn">🔊 听发音</span></div>
+              </div>
+              <!-- 汉字题选项：大号汉字网格，含形近字 -->
+              <div class="option-grid">
+                <div class="option-item"><span style="font-size:32px">马</span><br><span class="text-xs text-muted">mǎ</span></div>
+                <div class="option-item selected"><span style="font-size:32px">妈</span><br><span class="text-xs text-muted">mā</span></div>
+                <div class="option-item"><span style="font-size:32px">吗</span><br><span class="text-xs text-muted">ma</span></div>
+                <div class="option-item"><span style="font-size:32px">骂</span><br><span class="text-xs text-muted">mà</span></div>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+              <hr class="divider">
+              <div class="highlight-box green">
+                <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+                <div class="mt-8">「妈」(mā) = 女字旁 + 马，部首「女」提示含义与女性有关。<br>
+                <span class="text-muted">妈 = 女 (woman) + 马 (horse/phonetic). The radical hints at the meaning.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 汉字选择 · 配置表单</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>关联知识点=<strong>汉字</strong>时，题干切换为「拼音+释义」模式，选项切换为「汉字展示」模式，自动启用<strong>形近字干扰项</strong>配置。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联知识点</label>
+            <select class="form-select"><option>拼音</option><option selected>汉字</option><option>词语</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>题目子类型</label>
+            <select class="form-select">
+              <option selected>拼音+释义→选汉字</option>
+              <option>音频→选汉字</option>
+              <option>图片→选汉字</option>
+            </select>
+          </div>
+        </div>
+        <!-- 汉字题特有：拼音+释义题干 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>目标汉字 <span class="hint">正确答案</span></label>
+          <input class="form-input lg" value="妈" style="text-align:center">
+        </div>
+        <div class="form-row t3">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>拼音(题干展示)</label>
+            <input class="form-input" value="mā">
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>释义-中</label>
+            <input class="form-input" value="妈妈">
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>释义-EN</label>
+            <input class="form-input" value="mother">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">音频</label>
+          <div class="upload-area sm">📁 上传</div>
+        </div>
+        <!-- 汉字题特有：形近字干扰 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>干扰汉字 <span class="hint">应为形近字或同音字</span></label>
+          <table class="mini-table">
+            <thead><tr><th>汉字</th><th>拼音</th><th>干扰类型</th><th>释义</th><th></th></tr></thead>
+            <tbody>
+              <tr>
+                <td><input class="form-input" value="马" style="width:50px;text-align:center"></td>
+                <td><input class="form-input" value="mǎ" style="width:60px"></td>
+                <td><select class="form-select" style="width:100px"><option selected>形近字</option><option>同音字</option><option>声调混淆</option></select></td>
+                <td><input class="form-input" value="horse" style="width:80px"></td>
+                <td><span class="btn btn-sm">🗑</span></td>
+              </tr>
+              <tr>
+                <td><input class="form-input" value="吗" style="width:50px;text-align:center"></td>
+                <td><input class="form-input" value="ma" style="width:60px"></td>
+                <td><select class="form-select" style="width:100px"><option selected>形近字</option></select></td>
+                <td><input class="form-input" value="(particle)" style="width:80px"></td>
+                <td><span class="btn btn-sm">🗑</span></td>
+              </tr>
+              <tr>
+                <td><input class="form-input" value="骂" style="width:50px;text-align:center"></td>
+                <td><input class="form-input" value="mà" style="width:60px"></td>
+                <td><select class="form-select" style="width:100px"><option>形近字</option><option selected>声调混淆</option></select></td>
+                <td><input class="form-input" value="scold" style="width:80px"></td>
+                <td><span class="btn btn-sm">🗑</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="text-align:center;padding:8px;color:var(--primary);cursor:pointer;font-size:13px">+ 添加干扰项</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">干扰项生成策略</label>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <label class="text-sm"><input type="checkbox" checked> 形近字(相似部件)</label>
+            <label class="text-sm"><input type="checkbox" checked> 同音异字</label>
+            <label class="text-sm"><input type="checkbox"> 同部首字</label>
+          </div>
+        </div>
+        <!-- 汉字题特有：展示配置 -->
+        <div class="form-group">
+          <label class="form-label">应用端选项展示</label>
+          <div class="form-row">
+            <div><label class="text-sm"><input type="checkbox" checked> 显示拼音辅助</label></div>
+            <div><label class="text-sm"><input type="checkbox"> 显示笔画数提示</label></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">答案解析</label>
+          <div class="form-row">
+            <textarea class="form-textarea">「妈」(mā) = 女字旁 + 马。部首「女」提示含义与女性有关。</textarea>
+            <textarea class="form-textarea">妈 = 女 (woman) + 马 (horse/phonetic).</textarea>
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成汉字选择题</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 变体3: 词义理解 ===== -->
+<div data-panel="word">
+  <div class="type-desc">
+    <strong>选择题 × 词语</strong> — 给句子语境或释义，选正确词语(或给词语选释义)。重点测试词汇理解和语境运用。
+    管理端特有：<strong>句子语境(含空位) + 词语选项 + 近义词干扰</strong>。应用端显示带下划线空位的句子。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 词义选择题</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>词汇测试</h3><span class="progress">Q8/20</span></div>
+            <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">选择最合适的词语填入句子 Choose the best word</div>
+              <!-- 词语题特征：题干是带空位的语境句 -->
+              <div class="highlight-box gray" style="padding:16px;margin:12px 0">
+                <div style="font-size:18px;line-height:2;text-align:center">
+                  今天天气很好，我们去公园 <span style="border-bottom:2px solid var(--primary);padding:0 12px;color:var(--primary)">______</span> 吧。
+                </div>
+                <div style="text-align:center;font-size:13px;color:rgba(0,0,0,.45);margin-top:4px">
+                  The weather is nice today, let's go to the park and ______.
+                </div>
+              </div>
+              <!-- 词语选项：带拼音和释义辅助 -->
+              <div class="option-list">
+                <div class="option-item">
+                  <span class="letter">A</span>
+                  <div><div style="font-size:16px">学习</div><div class="text-xs text-muted">xuéxí · study</div></div>
+                </div>
+                <div class="option-item selected">
+                  <span class="letter">B</span>
+                  <div><div style="font-size:16px">散步</div><div class="text-xs text-muted">sànbù · take a walk</div></div>
+                </div>
+                <div class="option-item">
+                  <span class="letter">C</span>
+                  <div><div style="font-size:16px">睡觉</div><div class="text-xs text-muted">shuìjiào · sleep</div></div>
+                </div>
+                <div class="option-item">
+                  <span class="letter">D</span>
+                  <div><div style="font-size:16px">工作</div><div class="text-xs text-muted">gōngzuò · work</div></div>
+                </div>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 词义理解 · 配置表单</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>关联知识点=<strong>词语</strong>时，题干切换为「语境句+空位」模式，选项切换为「词语(含拼音+释义)」模式。需配置<strong>语境句</strong>和<strong>近义词干扰</strong>。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联知识点</label>
+            <select class="form-select"><option>拼音</option><option>汉字</option><option selected>词语</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>题目子类型</label>
+            <select class="form-select">
+              <option selected>语境填词(给句子选词)</option>
+              <option>词义选择(给词选释义)</option>
+              <option>同义词辨析</option>
+            </select>
+          </div>
+        </div>
+        <!-- 词语题特有：语境句+空位 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>语境句 <span class="hint">用 {blank} 标记空位</span></label>
+          <textarea class="form-textarea" style="font-size:16px">今天天气很好，我们去公园 {blank} 吧。</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">英文翻译</label>
+          <input class="form-input" value="The weather is nice today, let's go to the park and ______.">
+        </div>
+        <!-- 词语题特有：词语选项含拼音+释义 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>词语选项 <span class="hint">每个选项需配拼音和中英释义</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <input type="radio" name="wc" style="margin-top:6px">
+              <div class="content">
+                <div style="display:flex;gap:6px">
+                  <input class="form-input" value="学习" style="width:70px">
+                  <input class="form-input" value="xuéxí" style="width:70px">
+                  <input class="form-input" value="study" style="flex:1">
+                </div>
+              </div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="wc" checked style="margin-top:6px">
+              <div class="content">
+                <div style="display:flex;gap:6px">
+                  <input class="form-input" value="散步" style="width:70px;border-color:var(--success)">
+                  <input class="form-input" value="sànbù" style="width:70px">
+                  <input class="form-input" value="take a walk" style="flex:1">
+                  <span class="text-xs" style="color:var(--success);white-space:nowrap">✓ 正确</span>
+                </div>
+              </div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="wc" style="margin-top:6px">
+              <div class="content">
+                <div style="display:flex;gap:6px">
+                  <input class="form-input" value="睡觉" style="width:70px">
+                  <input class="form-input" value="shuìjiào" style="width:70px">
+                  <input class="form-input" value="sleep" style="flex:1">
+                </div>
+              </div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="wc" style="margin-top:6px">
+              <div class="content">
+                <div style="display:flex;gap:6px">
+                  <input class="form-input" value="工作" style="width:70px">
+                  <input class="form-input" value="gōngzuò" style="width:70px">
+                  <input class="form-input" value="work" style="flex:1">
+                </div>
+              </div>
+            </div>
+            <div class="list-builder-add">+ 添加选项</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">应用端选项展示级别</label>
+          <select class="form-select">
+            <option>仅汉字(高难度)</option>
+            <option selected>汉字+拼音+释义(标准)</option>
+            <option>汉字+拼音(中难度)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">干扰项策略 <span class="hint">AI批量生成时</span></label>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <label class="text-sm"><input type="checkbox" checked> 近义词(意思接近但语境不合)</label>
+            <label class="text-sm"><input type="checkbox" checked> 同主题词(同类但不搭配)</label>
+            <label class="text-sm"><input type="checkbox"> 反义词</label>
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 变体4: 语法判断 ===== -->
+<div data-panel="grammar">
+  <div class="type-desc">
+    <strong>选择题 × 语法</strong> — 给语法规则/句型，选择语法正确的句子。重点测试语法结构理解。
+    管理端特有：<strong>语法点标注 + 完整句子选项 + 语法错误类型标注</strong>。应用端选项为整句，关键语法点高亮。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 语法选择题</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>语法测试</h3><span class="progress">Q4/12</span></div>
+            <div class="progress-bar"><div class="fill" style="width:33%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">选择语法正确的句子 Select the grammatically correct sentence</div>
+              <!-- 语法题特征：题干是语法点说明 -->
+              <div class="highlight-box blue" style="text-align:center;margin:12px 0">
+                <div style="font-size:13px;color:var(--primary);font-weight:500">📖 考查语法点</div>
+                <div style="font-size:18px;margin-top:4px"><strong>「把」字句</strong></div>
+                <div class="text-sm text-muted">Subject + 把 + Object + Verb + Complement</div>
+              </div>
+              <!-- 语法题选项：完整句子，语法点高亮 -->
+              <div class="option-list">
+                <div class="option-item" style="flex-direction:column;align-items:flex-start;gap:4px">
+                  <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">A</span><span style="font-size:15px">我<strong style="color:var(--error)">把</strong>书放在桌子上了。</span></div>
+                </div>
+                <div class="option-item selected" style="flex-direction:column;align-items:flex-start;gap:4px">
+                  <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">B</span><span style="font-size:15px">我<strong style="color:var(--error)">把</strong>书放在桌子上了。</span></div>
+                </div>
+                <div class="option-item" style="flex-direction:column;align-items:flex-start;gap:4px">
+                  <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">C</span><span style="font-size:15px">我<strong style="color:var(--error)">把</strong>放书在桌子上了。</span></div>
+                  <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 语序错误: 动词应在宾语后</div>
+                </div>
+                <div class="option-item" style="flex-direction:column;align-items:flex-start;gap:4px">
+                  <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">D</span><span style="font-size:15px">我书<strong style="color:var(--error)">把</strong>放在桌子上了。</span></div>
+                  <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 把字位置错误</div>
+                </div>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 语法判断 · 配置表单</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>关联知识点=<strong>语法</strong>时，新增「语法点」选择器和「错误类型标注」。选项为整句，需标注每个错误选项的<strong>具体语法错误</strong>供解析使用。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联知识点</label>
+            <select class="form-select"><option>拼音</option><option>汉字</option><option>词语</option><option selected>语法</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联语法点</label>
+            <select class="form-select">
+              <option selected>把字句</option>
+              <option>被字句</option>
+              <option>比较句(比/没有)</option>
+              <option>了/过/着 时态</option>
+              <option>量词搭配</option>
+              <option>自定义...</option>
+            </select>
+          </div>
+        </div>
+        <!-- 语法题特有：语法点说明 -->
+        <div class="form-group">
+          <label class="form-label">语法点说明(题干展示)</label>
+          <div class="form-row">
+            <input class="form-input" value="「把」字句" placeholder="中文">
+            <input class="form-input" value="The 把 (bǎ) construction" placeholder="English">
+          </div>
+        </div>
+        <!-- 语法题特有：句子选项+错误标注 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>句子选项 <span class="hint">勾选正确句子，标注错误原因</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <input type="radio" name="gc" checked style="margin-top:6px">
+              <div class="content">
+                <input class="form-input" value="我把书放在桌子上了。" style="margin-bottom:4px;border-color:var(--success)">
+                <span class="text-xs" style="color:var(--success)">✓ 语法正确</span>
+              </div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="gc" style="margin-top:6px">
+              <div class="content">
+                <input class="form-input" value="我把放书在桌子上了。" style="margin-bottom:4px">
+                <div class="form-row">
+                  <select class="form-select" style="width:120px">
+                    <option selected>语序错误</option>
+                    <option>缺少成分</option>
+                    <option>多余成分</option>
+                    <option>搭配错误</option>
+                  </select>
+                  <input class="form-input" value="动词应在宾语后" placeholder="具体错误描述">
+                </div>
+              </div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="gc" style="margin-top:6px">
+              <div class="content">
+                <input class="form-input" value="我书把放在桌子上了。" style="margin-bottom:4px">
+                <div class="form-row">
+                  <select class="form-select" style="width:120px"><option selected>语序错误</option></select>
+                  <input class="form-input" value="把字位置错误" placeholder="具体错误描述">
+                </div>
+              </div>
+            </div>
+            <div class="list-builder-add">+ 添加句子选项</div>
+          </div>
+        </div>
+        <!-- 语法题特有：应用端语法高亮 -->
+        <div class="form-group">
+          <label class="form-label">语法点高亮配置</label>
+          <div class="form-row">
+            <div>
+              <label class="form-label text-sm">高亮关键词</label>
+              <input class="form-input" value="把" placeholder="在选项中高亮的语法词">
+            </div>
+            <div>
+              <label class="form-label text-sm">高亮颜色</label>
+              <input type="color" value="#ff4d4f" style="width:40px;height:32px">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">答题后显示错误标注</label>
+          <div><span class="switch on"></span> <span class="text-sm text-muted">答题后在错误选项下方显示错误类型和说明</span></div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI生成语法选择题</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 变体5: 成语释义 ===== -->
+<div data-panel="idiom">
+  <div class="type-desc">
+    <strong>选择题 × 成语</strong> — 给成语，选正确含义(或给含义选成语)。
+    管理端特有：<strong>成语+典故引用 + 含义选项(含近义成语干扰)</strong>。应用端以四字格突出显示成语。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 成语选择题</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>成语测试</h3><span class="progress">Q2/10</span></div>
+            <div class="app-content">
+              <div class="q-instruction">选择成语的正确含义 Select the correct meaning</div>
+              <!-- 成语题特征：四字格突出 -->
+              <div style="text-align:center;padding:20px 0">
+                <div style="display:flex;justify-content:center;gap:6px">
+                  <div style="width:50px;height:50px;border:2px solid var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--primary);background:#e6f4ff">画</div>
+                  <div style="width:50px;height:50px;border:2px solid var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--primary);background:#e6f4ff">蛇</div>
+                  <div style="width:50px;height:50px;border:2px solid var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--primary);background:#e6f4ff">添</div>
+                  <div style="width:50px;height:50px;border:2px solid var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--primary);background:#e6f4ff">足</div>
+                </div>
+                <div style="font-size:14px;color:var(--primary);margin-top:8px">huà shé tiān zú</div>
+              </div>
+              <!-- 成语题选项：含义描述 -->
+              <div class="option-list">
+                <div class="option-item"><span class="letter">A</span><span>形容画技非常高超</span></div>
+                <div class="option-item selected"><span class="letter">B</span><span>比喻做了多余的事，反而弄巧成拙</span></div>
+                <div class="option-item"><span class="letter">C</span><span>形容做事很快</span></div>
+                <div class="option-item"><span class="letter">D</span><span>比喻互相帮助完成任务</span></div>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 成语释义 · 配置表单</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>关联知识点=<strong>成语</strong>时，题干切换为「四字成语」展示模式，选项切换为「含义解释」模式。可关联已有成语库数据。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联知识点</label>
+            <select class="form-select"><option>词语</option><option>语法</option><option selected>成语</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>题目子类型</label>
+            <select class="form-select">
+              <option selected>给成语→选含义</option>
+              <option>给含义→选成语</option>
+              <option>给语境→选成语填空</option>
+            </select>
+          </div>
+        </div>
+        <!-- 成语题特有：关联成语库 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>成语 <span class="hint">可从成语库选择或手动输入</span></label>
+          <div style="display:flex;gap:8px">
+            <input class="form-input lg" value="画蛇添足" style="text-align:center;flex:1">
+            <span class="btn">📚 从成语库选择</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">拼音</label>
+          <input class="form-input" value="huà shé tiān zú">
+        </div>
+        <!-- 成语题特有：含义选项 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>含义选项</label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <input type="radio" name="ic" style="margin-top:6px">
+              <div class="content"><input class="form-input" value="形容画技非常高超"><div class="text-xs text-muted mt-8">干扰类型: 字面理解误导</div></div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="ic" checked style="margin-top:6px">
+              <div class="content"><input class="form-input" value="比喻做了多余的事，反而弄巧成拙" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓ 正确</span></div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="ic" style="margin-top:6px">
+              <div class="content"><input class="form-input" value="形容做事很快"><div class="text-xs text-muted mt-8">干扰类型: 无关含义</div></div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="ic" style="margin-top:6px">
+              <div class="content"><input class="form-input" value="比喻互相帮助完成任务"><div class="text-xs text-muted mt-8">干扰类型: 近义成语含义</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">干扰策略</label>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <label class="text-sm"><input type="checkbox" checked> 字面理解误导</label>
+            <label class="text-sm"><input type="checkbox" checked> 近义成语混淆</label>
+            <label class="text-sm"><input type="checkbox"> 反义成语</label>
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 变体6: 听力选择 ===== -->
+<div data-panel="listen">
+  <div class="type-desc">
+    <strong>选择题 × 听力</strong> — 播放音频，根据听到的内容选择答案。
+    管理端特有：<strong>音频上传为必填 + 播放次数限制 + 选项可以是文字/图片</strong>。应用端核心是音频播放器+选项。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 听力选择题</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>听力测试</h3><span class="progress">Q3/10</span></div>
+            <div class="app-content">
+              <div class="q-instruction">听录音，选择正确答案 Listen and choose</div>
+              <!-- 听力题特征：大号音频播放器居中 -->
+              <div style="text-align:center;padding:24px 0">
+                <div class="audio-btn big">🔊 点击播放</div>
+                <div style="margin-top:8px">
+                  <span class="text-sm text-muted">剩余播放次数: 2/3</span>
+                </div>
+                <div style="margin-top:8px;display:flex;gap:8px;justify-content:center">
+                  <span class="btn btn-sm">🐢 慢速</span>
+                  <span class="btn btn-sm">🔁 重播</span>
+                </div>
+              </div>
+              <div style="font-size:14px;margin-bottom:12px">他们在讨论什么？<br><span class="text-sm text-muted">What are they discussing?</span></div>
+              <div class="option-list">
+                <div class="option-item"><span class="letter">A</span><span>去哪里吃饭</span></div>
+                <div class="option-item selected"><span class="letter">B</span><span>周末的计划</span></div>
+                <div class="option-item"><span class="letter">C</span><span>昨天的考试</span></div>
+                <div class="option-item"><span class="letter">D</span><span>买什么东西</span></div>
+              </div>
+              <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 听力选择 · 配置表单</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>听力类选择题，<strong>音频变为必填项</strong>，新增「播放次数限制」「慢速音频」配置。题干可以是音频后的追问文字。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联知识点</label>
+            <select class="form-select"><option>拼音</option><option>词语</option><option selected>听力理解</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>听力子类型</label>
+            <select class="form-select">
+              <option>听单词选词</option>
+              <option>听句子选义</option>
+              <option selected>听对话答题</option>
+            </select>
+          </div>
+        </div>
+        <!-- 听力题必填：音频 -->
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>正常语速音频 <span class="hint" style="color:var(--error)">听力题必填</span></label>
+          <div class="upload-area">🎧 上传听力音频 MP3/WAV (必填)</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">慢速音频 <span class="hint">可选，供用户降速重听</span></label>
+          <div class="upload-area sm">🐢 上传慢速版本</div>
+        </div>
+        <div class="form-row t3">
+          <div class="form-group">
+            <label class="form-label">最大播放次数</label>
+            <input class="form-input" type="number" value="3">
+          </div>
+          <div class="form-group">
+            <label class="form-label">音频时长(秒)</label>
+            <input class="form-input" type="number" value="15">
+          </div>
+          <div class="form-group">
+            <label class="form-label">自动播放</label>
+            <div style="padding-top:6px"><span class="switch on"></span></div>
+          </div>
+        </div>
+        <!-- 听力题：音频脚本(内部) -->
+        <div class="form-group">
+          <label class="form-label">音频脚本 <span class="hint">内部记录，不展示给用户</span></label>
+          <textarea class="form-textarea">A: 这个周末你有什么计划？
+B: 我想去爬山，你呢？
+A: 我也想去，我们一起吧！</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">追问题干 <span class="hint">音频播放后展示的问题</span></label>
+          <div class="form-row">
+            <input class="form-input" value="他们在讨论什么？">
+            <input class="form-input" value="What are they discussing?">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>选项 <span class="hint">同标准选择题</span></label>
+          <div class="list-builder">
+            <div class="list-builder-item">
+              <input type="radio" name="lc" style="margin-top:6px">
+              <div class="content"><input class="form-input" value="去哪里吃饭"></div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="lc" checked style="margin-top:6px">
+              <div class="content"><input class="form-input" value="周末的计划" style="border-color:var(--success)"></div>
+              <span class="text-xs" style="color:var(--success)">✓</span>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="lc" style="margin-top:6px">
+              <div class="content"><input class="form-input" value="昨天的考试"></div>
+            </div>
+            <div class="list-builder-item">
+              <input type="radio" name="lc" style="margin-top:6px">
+              <div class="content"><input class="form-input" value="买什么东西"></div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end content -->
+
+<script>
+function showPanel(name) {
+  document.querySelectorAll('[data-panel]').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('[data-panel="'+name+'"]').classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>

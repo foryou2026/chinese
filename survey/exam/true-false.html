@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>判断题 · 3种知识点变体</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 返回题型列表</a>
+  <h1>判断题 (True / False)</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="badge blue">3种变体</span>
+</div>
+
+<div class="sub-tabs" style="padding:12px 24px;background:#fff;border-bottom:1px solid var(--border);position:sticky;top:60px;z-index:99">
+  <div class="sub-tab active" onclick="showPanel('tf-pinyin')">拼音判断</div>
+  <div class="sub-tab" onclick="showPanel('tf-word')">词义判断</div>
+  <div class="sub-tab" onclick="showPanel('tf-grammar')">语法判断</div>
+</div>
+
+<div class="content">
+
+<!-- ===== 变体1: 拼音判断 ===== -->
+<div data-panel="tf-pinyin" class="active">
+  <div class="type-desc">
+    <strong>判断题 × 拼音</strong> — 给出汉字和一个拼音标注，判断拼音是否正确。快速检验声调/拼写是否掌握。
+    管理端配置：<strong>汉字 + 展示拼音(可能错误) + 正确拼音 + 错误类型标注</strong>。应用端显示大号汉字+拼音配对+对错二选一。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 拼音判断题</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>拼音判断</h3><span class="progress">Q6/20</span></div>
+            <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">判断拼音标注是否正确 Is this pinyin correct?</div>
+              <!-- 拼音判断：大号汉字+拼音 配对展示 -->
+              <div style="text-align:center;padding:24px 0">
+                <div style="font-size:64px;font-weight:300;color:#333">谢</div>
+                <div style="font-size:28px;color:var(--primary);margin-top:8px;font-weight:400">xiè</div>
+                <div style="margin-top:8px"><span class="audio-btn">🔊 听发音</span></div>
+              </div>
+              <!-- 对/错二选一 -->
+              <div style="display:flex;gap:12px;margin:16px 0">
+                <div style="flex:1;padding:20px;border:2px solid #b7eb8f;background:#f6ffed;border-radius:12px;text-align:center;cursor:pointer">
+                  <div style="font-size:32px">✓</div>
+                  <div style="font-size:14px;font-weight:500;color:var(--success);margin-top:4px">正确 Correct</div>
+                </div>
+                <div style="flex:1;padding:20px;border:2px solid #f0f0f0;border-radius:12px;text-align:center;cursor:pointer">
+                  <div style="font-size:32px">✗</div>
+                  <div style="font-size:14px;font-weight:500;color:rgba(0,0,0,.45);margin-top:4px">错误 Wrong</div>
+                </div>
+              </div>
+              <div style="padding:8px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+              <hr class="divider">
+              <div class="highlight-box green">
+                <div style="font-weight:500;color:var(--success)">✅ 判断正确！</div>
+                <div class="mt-8">「谢」的拼音确实是 xiè (第四声)。<br>
+                <span class="text-muted">"谢" is indeed xiè (4th tone), meaning "thank".</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 拼音判断 · 配置表单</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>拼音判断题的核心是<strong>汉字+拼音配对</strong>。管理端需设置「展示拼音」(可能错误)和「正确拼音」。当展示拼音=错误时，需标注<strong>错误类型</strong>用于解析。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联知识点</label>
+            <select class="form-select"><option selected>拼音</option><option>汉字</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>正确答案</label>
+            <select class="form-select">
+              <option selected>正确(展示拼音=正确拼音)</option>
+              <option>错误(展示拼音≠正确拼音)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>目标汉字</label>
+          <input class="form-input lg" value="谢" placeholder="输入汉字" style="text-align:center">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>展示拼音 <span class="hint">显示给用户判断的</span></label>
+            <input class="form-input" value="xiè" style="font-size:18px">
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>正确拼音 <span class="hint">实际正确答案</span></label>
+            <input class="form-input" value="xiè" style="font-size:18px">
+          </div>
+        </div>
+        <!-- 当答案为"错误"时显示 -->
+        <div class="form-group">
+          <label class="form-label">错误类型 <span class="hint">当答案=错误时填写</span></label>
+          <select class="form-select">
+            <option>不适用(答案为正确)</option>
+            <option>声调错误(如 xié→xiè)</option>
+            <option>声母错误(如 shè→xiè)</option>
+            <option>韵母错误(如 xuè→xiè)</option>
+            <option>整体拼写错误</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">配音音频</label>
+          <div class="upload-area sm">📁 上传 或 TTS生成</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">答案解析</label>
+          <div class="form-row">
+            <textarea class="form-textarea">「谢」的拼音是 xiè (第四声)。</textarea>
+            <textarea class="form-textarea">"谢" is xiè (4th tone), meaning "thank".</textarea>
+          </div>
+        </div>
+        <div class="form-row t3">
+          <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
+          <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="1"></div>
+          <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="10"></div>
+        </div>
+        <div class="callout free"><span class="icon">💡</span><div>拼音判断题适合快速批量出题。AI可自动生成大量「正确/错误」配对，每题只需<strong>汉字+两个拼音</strong>，数据量极小。</div></div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成(建议50题/批)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 变体2: 词义判断 ===== -->
+<div data-panel="tf-word">
+  <div class="type-desc">
+    <strong>判断题 × 词义</strong> — 给出词语和一个释义/翻译，判断释义是否正确。比拼音判断难度更高，需要理解词义。
+    管理端配置：<strong>词语 + 展示释义(可能错误) + 正确释义 + 混淆来源</strong>。应用端显示词语+释义配对+对错二选一。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 词义判断题</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>词义判断</h3><span class="progress">Q3/15</span></div>
+            <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">判断词语和释义是否匹配 Does the word match the meaning?</div>
+              <!-- 词义判断：词语+释义 配对展示 -->
+              <div style="text-align:center;padding:20px 0">
+                <div style="font-size:36px;font-weight:500;color:#333">高兴</div>
+                <div style="font-size:14px;color:var(--primary);margin-top:4px">gāoxìng</div>
+                <div style="margin-top:12px;padding:12px 20px;background:#fafafa;border-radius:8px;display:inline-block">
+                  <div style="font-size:13px;color:rgba(0,0,0,.45)">释义 Meaning:</div>
+                  <div style="font-size:20px;margin-top:4px;font-weight:500">angry 😠</div>
+                </div>
+              </div>
+              <!-- 对/错 -->
+              <div style="display:flex;gap:12px;margin:16px 0">
+                <div style="flex:1;padding:20px;border:2px solid #f0f0f0;border-radius:12px;text-align:center;cursor:pointer">
+                  <div style="font-size:32px">✓</div>
+                  <div style="font-size:14px;font-weight:500;color:rgba(0,0,0,.45);margin-top:4px">正确 Correct</div>
+                </div>
+                <div style="flex:1;padding:20px;border:2px solid #ffccc7;background:#fff2f0;border-radius:12px;text-align:center;cursor:pointer">
+                  <div style="font-size:32px">✗</div>
+                  <div style="font-size:14px;font-weight:500;color:var(--error);margin-top:4px">错误 Wrong</div>
+                </div>
+              </div>
+              <div style="padding:8px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+              <hr class="divider">
+              <div class="highlight-box green">
+                <div style="font-weight:500;color:var(--success)">✅ 判断正确！这个配对是错误的。</div>
+                <div class="mt-8">
+                  「高兴」(gāoxìng) = <strong>happy</strong>，不是 angry。<br>
+                  angry = 「<strong>生气</strong>」(shēngqì)。<br>
+                  <span class="text-muted">「高兴」and「生气」are antonyms. 高兴=happy, 生气=angry.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 词义判断 · 配置表单</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>词义判断题的核心是<strong>词语+释义配对</strong>。当答案=错误时，展示释义应来自容易混淆的词(反义词/近义词/形近词释义)，需标注<strong>混淆来源</strong>。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联知识点</label>
+            <select class="form-select"><option>汉字</option><option selected>词语</option><option>成语</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>正确答案</label>
+            <select class="form-select">
+              <option>正确(展示释义=正确释义)</option>
+              <option selected>错误(展示释义=混淆词释义)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>目标词语</label>
+          <div class="form-row t3">
+            <input class="form-input lg" value="高兴" style="text-align:center">
+            <input class="form-input" value="gāoxìng" placeholder="拼音">
+            <input class="form-input" value="happy" placeholder="正确释义EN">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>展示释义(给用户看的) <span class="hint">当答案=错误时，填混淆词的释义</span></label>
+          <input class="form-input" value="angry" style="font-size:18px" placeholder="展示给用户判断的释义">
+        </div>
+        <!-- 错误配对时的混淆信息 -->
+        <div class="form-group">
+          <label class="form-label">混淆来源 <span class="hint">当答案=错误时，说明错误释义来自哪个词</span></label>
+          <div class="form-row t3">
+            <div>
+              <label class="form-label text-sm">混淆词</label>
+              <input class="form-input" value="生气" placeholder="释义实际属于的词">
+            </div>
+            <div>
+              <label class="form-label text-sm">混淆词拼音</label>
+              <input class="form-input" value="shēngqì">
+            </div>
+            <div>
+              <label class="form-label text-sm">混淆类型</label>
+              <select class="form-select">
+                <option selected>反义词</option>
+                <option>近义词</option>
+                <option>形近词</option>
+                <option>同音词</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">释义展示语言</label>
+          <select class="form-select">
+            <option selected>英文(适合初级)</option>
+            <option>中文释义(适合高级)</option>
+            <option>中英双语</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">答案解析</label>
+          <div class="form-row">
+            <textarea class="form-textarea">「高兴」= happy，不是 angry。angry = 「生气」。两者是反义词。</textarea>
+            <textarea class="form-textarea">"高兴" = happy, not angry. angry = "生气". They are antonyms.</textarea>
+          </div>
+        </div>
+        <div class="form-row t3">
+          <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option></select></div>
+          <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="1"></div>
+          <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="12"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">AI批量生成策略</label>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <label class="text-sm"><input type="checkbox" checked> 反义词释义互换</label>
+            <label class="text-sm"><input type="checkbox" checked> 近义词释义互换</label>
+            <label class="text-sm"><input type="checkbox"> 同类词释义互换(如:水果之间、颜色之间)</label>
+            <label class="text-sm"><input type="checkbox"> 正确/错误比例 1:1</label>
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成(建议50题/批)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 变体3: 语法判断 ===== -->
+<div data-panel="tf-grammar">
+  <div class="type-desc">
+    <strong>判断题 × 语法</strong> — 给出一个句子，判断句子语法是否正确。最高难度判断题，测试语法规则内化程度。
+    管理端配置：<strong>展示句子(可能有语法错误) + 正确句子 + 语法错误类型 + 关联语法点</strong>。应用端显示完整句子+语法高亮+对错判断。
+  </div>
+  <div class="split">
+    <div class="card">
+      <div class="card-header"><span class="badge blue">应用端</span> 语法判断题</div>
+      <div class="card-body">
+        <div class="phone-frame">
+          <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+          <div class="phone-screen">
+            <div class="app-header"><span class="back">←</span><h3>语法判断</h3><span class="progress">Q4/12</span></div>
+            <div class="progress-bar"><div class="fill" style="width:33%"></div></div>
+            <div class="app-content">
+              <div class="q-instruction">判断这个句子的语法是否正确 Is this sentence grammatically correct?</div>
+              <!-- 语法点提示 -->
+              <div class="highlight-box blue" style="text-align:center;margin:8px 0">
+                <span class="text-sm" style="color:var(--primary)">📖 考查: <strong>量词搭配</strong></span>
+              </div>
+              <!-- 语法判断：完整句子展示，语法关键词高亮 -->
+              <div style="padding:20px 0;text-align:center">
+                <div style="font-size:22px;line-height:1.8;padding:16px;background:#fafafa;border-radius:12px">
+                  我买了三<strong style="color:var(--error);text-decoration:underline">个</strong>书。
+                </div>
+                <div style="font-size:13px;color:rgba(0,0,0,.45);margin-top:8px">
+                  I bought three [measure word] books.
+                </div>
+              </div>
+              <!-- 对/错 -->
+              <div style="display:flex;gap:12px;margin:12px 0">
+                <div style="flex:1;padding:20px;border:2px solid #f0f0f0;border-radius:12px;text-align:center;cursor:pointer">
+                  <div style="font-size:32px">✓</div>
+                  <div style="font-size:14px;font-weight:500;color:rgba(0,0,0,.45);margin-top:4px">语法正确</div>
+                </div>
+                <div style="flex:1;padding:20px;border:2px solid #ffccc7;background:#fff2f0;border-radius:12px;text-align:center;cursor:pointer">
+                  <div style="font-size:32px">✗</div>
+                  <div style="font-size:14px;font-weight:500;color:var(--error);margin-top:4px">语法错误</div>
+                </div>
+              </div>
+              <div style="padding:8px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+              <hr class="divider">
+              <div class="highlight-box green">
+                <div style="font-weight:500;color:var(--success)">✅ 判断正确！这个句子有语法错误。</div>
+                <div class="mt-8">
+                  <div style="text-decoration:line-through;color:var(--error)">我买了三<u>个</u>书。 ✗</div>
+                  <div style="color:var(--success);margin-top:4px">我买了三<strong>本</strong>书。 ✓</div>
+                  <div class="text-sm text-muted mt-8">
+                    「书」的量词是「本」不是「个」。<br>
+                    The measure word for books is "本" (běn), not "个" (gè).<br>
+                    常见搭配: 一本书、两本杂志、三本词典
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="badge green">管理端</span> 语法判断 · 配置表单</div>
+      <div class="card-body">
+        <div class="callout info"><span class="icon">📌</span><div>语法判断题是判断题中最复杂的变体。需关联<strong>语法点</strong>，配置<strong>展示句子</strong>(可能含语法错误)和<strong>正确句子</strong>，并标注<strong>错误类型和位置</strong>。</div></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联知识点</label>
+            <select class="form-select"><option>词语</option><option selected>语法句型</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span class="req">*</span>关联语法点</label>
+            <select class="form-select">
+              <option selected>量词搭配</option>
+              <option>把字句</option>
+              <option>被字句</option>
+              <option>比较句</option>
+              <option>了/过/着</option>
+              <option>的/地/得</option>
+              <option>自定义...</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>正确答案</label>
+          <select class="form-select">
+            <option>语法正确(展示句子无错误)</option>
+            <option selected>语法错误(展示句子有语法错)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>展示句子 <span class="hint">显示给用户判断的句子(可能含错)</span></label>
+          <textarea class="form-textarea" style="font-size:18px">我买了三个书。</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="req">*</span>正确句子 <span class="hint">语法正确的版本</span></label>
+          <textarea class="form-textarea" style="font-size:18px">我买了三本书。</textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">英文翻译</label>
+          <input class="form-input" value="I bought three books.">
+        </div>
+        <!-- 错误标注(答案=错误时) -->
+        <div class="form-group">
+          <label class="form-label">语法错误标注 <span class="hint">当答案=错误时填写</span></label>
+          <div class="form-row">
+            <div>
+              <label class="form-label text-sm">错误词/部分</label>
+              <input class="form-input" value="个" placeholder="句子中出错的词">
+            </div>
+            <div>
+              <label class="form-label text-sm">应改为</label>
+              <input class="form-input" value="本" placeholder="正确的词">
+            </div>
+          </div>
+          <div class="form-row mt-8">
+            <div>
+              <label class="form-label text-sm">错误类型</label>
+              <select class="form-select">
+                <option selected>量词使用错误</option>
+                <option>语序错误</option>
+                <option>缺少成分</option>
+                <option>多余成分</option>
+                <option>搭配错误</option>
+                <option>时态错误</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label text-sm">高亮颜色</label>
+              <input type="color" value="#ff4d4f" style="width:40px;height:32px">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">答案解析</label>
+          <div class="form-row">
+            <textarea class="form-textarea">「书」的量词是「本」不是「个」。常见搭配: 一本书、两本杂志。</textarea>
+            <textarea class="form-textarea">The measure word for books is "本" (běn), not "个" (gè).</textarea>
+          </div>
+        </div>
+        <!-- 应用端展示配置 -->
+        <div class="form-group">
+          <label class="form-label">应用端展示配置</label>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <label class="text-sm"><input type="checkbox" checked> 显示语法点提示标签</label>
+            <label class="text-sm"><input type="checkbox" checked> 高亮语法关键词</label>
+            <label class="text-sm"><input type="checkbox" checked> 答题后显示正确句对比</label>
+            <label class="text-sm"><input type="checkbox"> 显示英文翻译</label>
+          </div>
+        </div>
+        <div class="form-row t3">
+          <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option>HSK 1</option><option selected>HSK 2</option><option>HSK 3</option></select></div>
+          <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
+          <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">AI批量生成策略</label>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <label class="text-sm"><input type="checkbox" checked> 量词替换错误(个↔本/张/条等)</label>
+            <label class="text-sm"><input type="checkbox" checked> 语序颠倒</label>
+            <label class="text-sm"><input type="checkbox"> 助词混淆(的/地/得)</label>
+            <label class="text-sm"><input type="checkbox"> 正确/错误比例 1:1</label>
+          </div>
+        </div>
+        <div class="btn-group">
+          <span class="btn btn-primary">💾 保存</span>
+          <span class="btn">👁 预览</span>
+          <span class="btn">🤖 AI批量生成语法判断题</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end content -->
+
+<script>
+function showPanel(name) {
+  document.querySelectorAll('[data-panel]').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('[data-panel="'+name+'"]').classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
