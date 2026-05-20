@@ -216,7 +216,7 @@
 ## 文件结构规划
 
 ```
-survey/course/
+course/
 ├── index.html                ← 导航索引(10种知识类型)
 ├── pinyin/                   ← 拼音 · 3种L2
 │   ├── index.html
