@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light">
+<html lang="zh-CN" data-mode="light" data-accent="ink" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>auth 模块导航 · admin 原型</title>
+  <title>auth 模块 · 功能导航 · admin</title>
   <link rel="stylesheet" href="../../../B02-experience-design/app/prototype-style/app.css">
   <style>
-    body { min-height:100dvh; background:var(--color-bg-secondary); padding:var(--space-6); }
-    .nav-card { background:var(--color-bg-primary); border-radius:var(--radius-lg); padding:var(--space-5); box-shadow:var(--shadow-sm); border:1px solid var(--color-border); max-width:480px; }
-    .nav-card h3 { font-size:var(--text-lg); margin-bottom:var(--space-3); }
-    .nav-card-links { display:flex; flex-direction:column; gap:var(--space-2); }
-    .nav-card-links a { font-size:var(--text-sm); color:var(--color-primary-500); text-decoration:none; }
-    .nav-card-links a:hover { text-decoration:underline; }
+    body { min-height:100dvh; display:flex; flex-direction:column; }
+    .page-wrapper { position:relative; z-index:1; flex:1; padding:var(--space-6); max-width:960px; margin:0 auto; width:100%; }
+    .back-link { display:inline-flex; align-items:center; gap:var(--space-1); font-size:var(--text-sm); color:var(--text-muted); text-decoration:none; margin-bottom:var(--space-6); }
+    .back-link:hover { color:var(--color-brand-default); }
+    .page-title { margin-bottom:var(--space-8); }
+    .page-title h1 { font-size:var(--text-2xl); margin-bottom:var(--space-2); }
+    .page-title p { font-size:var(--text-base); color:var(--text-secondary); }
+    .feature-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:var(--space-5); }
+    .feature-card {
+      display:block; padding:var(--space-6); text-decoration:none; color:inherit;
+      transition: var(--transition-all);
+    }
+    .feature-card:hover { color:inherit; }
+    .feature-card h3 { font-size:var(--text-lg); margin-bottom:var(--space-2); }
+    .feature-card p { font-size:var(--text-sm); color:var(--text-secondary); line-height:var(--leading-normal); margin-bottom:var(--space-4); }
+    .feature-card .enter-link { font-size:var(--text-sm); color:var(--color-brand-default); font-weight:var(--weight-medium); }
   </style>
 </head>
 <body>
-  <a href="../index.html" style="font-size:var(--text-sm);color:var(--color-text-secondary);text-decoration:none">← admin 系统导航</a>
-  <h1 style="font-size:var(--text-2xl);margin:var(--space-4) 0 var(--space-2)">auth 模块</h1>
-  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-6)">账号认证与密码管理</p>
+  <div class="mesh-gradient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
-  <div class="nav-card">
-    <h3>account-entry 账号入口</h3>
-    <div class="nav-card-links">
-      <a href="account-entry/index.html">→ 功能导航</a>
-      <a href="../P-admin-auth-001.html">→ 登录页</a>
-      <a href="../P-admin-auth-002.html">→ 忘记密码</a>
-      <a href="../P-admin-auth-003.html">→ 重置密码</a>
-      <a href="../P-admin-auth-004.html">→ 后台壳</a>
+  <div class="page-wrapper">
+    <a href="../index.html" class="back-link">← admin 系统</a>
+
+    <div class="page-title">
+      <h1>auth 账号认证</h1>
+      <p>选择功能查看原型页面</p>
+    </div>
+
+    <div class="feature-grid">
+      <a href="account-entry/index.html" class="glass-card feature-card">
+        <h3>account-entry 账号入口</h3>
+        <p>登录、忘记密码、验证码校验、重置密码、登录态修改密码、退出登录、会话过期处理</p>
+        <span class="enter-link">查看原型页面 →</span>
+      </a>
     </div>
   </div>
 

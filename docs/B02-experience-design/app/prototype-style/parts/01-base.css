@@ -201,6 +201,36 @@ body {
   }
 }
 
+/* ============== 原型页面自动毛玻璃（兼容层） ============== */
+
+.auth-card,
+.nav-card,
+.system-card,
+.admin-topbar,
+.page-header,
+.user-card,
+.settings-group,
+.bottom-bar,
+.dashboard-placeholder,
+.admin-sidebar,
+.avatar-menu {
+  -webkit-backdrop-filter: var(--glass-blur);
+          backdrop-filter: var(--glass-blur);
+  border-color: var(--glass-border);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-inset),
+    0 4px 24px -1px var(--glass-shadow);
+}
+
+.auth-card {
+  background: var(--glass-bg-card);
+}
+
+.page-item {
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+}
+
 /* ============== 排版 ============== */
 
 h1, h2, h3, h4, h5, h6 {

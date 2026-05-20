@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light">
+<html lang="zh-CN" data-mode="light" data-accent="ink" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,44 +11,47 @@
   <title>设置 · app 原型</title>
   <link rel="stylesheet" href="../../B02-experience-design/app/prototype-style/app.css">
   <style>
-    body { display:flex; flex-direction:column; min-height:100dvh; background:var(--color-bg-secondary); }
-    .app-content { flex:1; padding-bottom:68px; }
-    .page-header { height:56px; display:flex; align-items:center; padding:0 var(--space-4); background:var(--color-bg-primary); border-bottom:1px solid var(--color-border); }
-    .page-header h1 { font-size:var(--text-lg); font-weight:var(--font-semibold); }
+    body { display:flex; flex-direction:column; min-height:100dvh; }
+    .app-content { position:relative; z-index:1; flex:1; padding-bottom:68px; }
+    .page-header { height:56px; display:flex; align-items:center; padding:0 var(--space-4); position:sticky; top:0; z-index:var(--z-sticky); background:var(--glass-bg-card); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border-bottom:1px solid var(--glass-border); }
+    .page-header h1 { font-size:var(--text-lg); font-weight:var(--weight-semibold); }
 
-    /* 用户卡片 */
-    .user-card { display:flex; align-items:center; gap:var(--space-4); padding:var(--space-5) var(--space-4); background:var(--color-bg-primary); margin-bottom:var(--space-3); }
-    .user-avatar { width:56px; height:56px; border-radius:var(--radius-full); background:var(--color-primary-100); display:flex; align-items:center; justify-content:center; font-size:var(--text-xl); font-weight:var(--font-bold); color:var(--color-primary-600); flex-shrink:0; }
-    .user-info h2 { font-size:var(--text-base); font-weight:var(--font-semibold); }
-    .user-info p { font-size:var(--text-sm); color:var(--color-text-secondary); margin-top:var(--space-0-5); }
-    .user-info .badge { display:inline-block; font-size:var(--text-xs); padding:var(--space-0-5) var(--space-2); border-radius:var(--radius-full); background:var(--color-primary-50); color:var(--color-primary-600); margin-top:var(--space-1); }
+    .settings-layout { max-width:640px; margin:0 auto; padding:var(--space-5) var(--space-4); }
 
-    /* 设置列表 */
-    .settings-group { background:var(--color-bg-primary); margin-bottom:var(--space-3); }
-    .settings-group-title { padding:var(--space-3) var(--space-4); font-size:var(--text-xs); font-weight:var(--font-semibold); color:var(--color-text-tertiary); text-transform:uppercase; letter-spacing:0.05em; }
-    .settings-item { display:flex; align-items:center; justify-content:space-between; height:52px; padding:0 var(--space-4); border-top:1px solid var(--color-border); cursor:pointer; transition:background var(--motion-fast) var(--ease-default); text-decoration:none; color:var(--color-text-primary); }
+    .user-card { display:flex; align-items:center; gap:var(--space-4); padding:var(--space-5); margin-bottom:var(--space-5); }
+    .user-avatar { width:56px; height:56px; border-radius:var(--radius-pill); background:var(--color-brand-50); display:flex; align-items:center; justify-content:center; font-size:var(--text-xl); font-weight:var(--weight-bold); color:var(--color-brand-default); flex-shrink:0; }
+    .user-info h2 { font-size:var(--text-base); font-weight:var(--weight-semibold); }
+    .user-info p { font-size:var(--text-sm); color:var(--text-secondary); margin-top:var(--space-0-5); }
+    .user-info .badge { display:inline-block; font-size:var(--text-xs); padding:var(--space-0-5) var(--space-2); border-radius:var(--radius-pill); background:var(--color-brand-50); color:var(--color-brand-default); margin-top:var(--space-1); }
+
+    .settings-group { margin-bottom:var(--space-4); overflow:hidden; }
+    .settings-group-title { padding:var(--space-2) var(--space-1); font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; }
+    .settings-item { display:flex; align-items:center; justify-content:space-between; height:52px; padding:0 var(--space-4); border-top:1px solid var(--glass-border); cursor:pointer; transition:background var(--motion-fast); text-decoration:none; color:var(--text-primary); }
     .settings-item:first-child { border-top:none; }
-    .settings-item:hover { background:var(--color-bg-secondary); }
+    .settings-item:hover { background:var(--glass-bg); }
     .settings-item-label { font-size:var(--text-sm); }
-    .settings-item-arrow { color:var(--color-text-tertiary); font-size:var(--text-sm); }
+    .settings-item-arrow { color:var(--text-muted); font-size:var(--text-sm); }
 
-    /* 退出按钮 */
-    .logout-btn { display:block; width:calc(100% - var(--space-8)); margin:var(--space-6) auto; text-align:center; font-size:var(--text-sm); font-weight:var(--font-medium); color:var(--color-error); background:none; border:1px solid var(--color-error); border-radius:var(--radius-lg); height:48px; cursor:pointer; transition:background var(--motion-fast) var(--ease-default); }
-    .logout-btn:hover { background:var(--color-error-light); }
+    .logout-btn { display:block; width:100%; max-width:320px; margin:var(--space-6) auto 0; text-align:center; font-size:var(--text-sm); font-weight:var(--weight-medium); color:var(--color-danger-500); background:none; border:1px solid var(--color-danger-500); border-radius:var(--radius-lg); height:48px; cursor:pointer; transition:background var(--motion-fast); }
+    .logout-btn:hover { background:var(--color-danger-50); }
 
-    /* 底部导航 */
-    .bottom-bar { position:fixed; bottom:0; left:0; right:0; height:64px; background:var(--color-bg-primary); border-top:1px solid var(--color-border); display:flex; align-items:center; justify-content:space-around; z-index:var(--z-fixed); }
-    .bottom-bar-item { display:flex; flex-direction:column; align-items:center; gap:var(--space-0-5); font-size:var(--text-xs); color:var(--color-text-tertiary); text-decoration:none; padding:var(--space-1) var(--space-3); cursor:pointer; }
-    .bottom-bar-item.active { color:var(--color-primary-500); }
+    .bottom-bar { position:fixed; bottom:0; left:0; right:0; height:64px; background:var(--glass-bg-card); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border-top:1px solid var(--glass-border); display:flex; align-items:center; justify-content:space-around; z-index:var(--z-sticky); }
+    .bottom-bar-item { display:flex; flex-direction:column; align-items:center; gap:var(--space-0-5); font-size:var(--text-xs); color:var(--text-muted); text-decoration:none; padding:var(--space-1) var(--space-3); cursor:pointer; }
+    .bottom-bar-item.active { color:var(--color-brand-default); }
     .bottom-bar-icon { font-size:var(--text-lg); }
 
-    /* 演示按钮 */
-    .demo-section { padding:var(--space-4); }
-    .demo-section p { font-size:var(--text-xs); color:var(--color-text-tertiary); margin-bottom:var(--space-3); text-align:center; }
+    .demo-section { padding:var(--space-4) 0; max-width:320px; margin:var(--space-4) auto 0; }
+    .demo-section p { font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--space-3); text-align:center; }
     .demo-btns { display:flex; gap:var(--space-2); justify-content:center; flex-wrap:wrap; }
   </style>
 </head>
 <body>
+  <div class="mesh-gradient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
   <div id="proto-nav-bar"></div>
 
   <div class="app-content">
@@ -56,49 +59,45 @@
       <h1>我的</h1>
     </header>
 
-    <!-- 用户卡片 -->
-    <div class="user-card">
-      <div class="user-avatar" id="user-avatar">U</div>
-      <div class="user-info">
-        <h2 id="user-name">用户</h2>
-        <p id="user-email">user@example.com</p>
-        <span class="badge" id="auth-badge">邮箱登录</span>
+    <div class="settings-layout">
+      <div class="user-card glass-card">
+        <div class="user-avatar" id="user-avatar">U</div>
+        <div class="user-info">
+          <h2 id="user-name">用户</h2>
+          <p id="user-email">user@example.com</p>
+          <span class="badge" id="auth-badge">邮箱登录</span>
+        </div>
       </div>
-    </div>
 
-    <!-- 账号安全 -->
-    <div class="settings-group">
       <div class="settings-group-title">账号安全</div>
-      <a href="P-app-auth-005.html" class="settings-item">
-        <span class="settings-item-label" id="pwd-label">修改密码</span>
-        <span class="settings-item-arrow">›</span>
-      </a>
-    </div>
-
-    <!-- 关于 -->
-    <div class="settings-group">
-      <div class="settings-group-title">关于</div>
-      <div class="settings-item" style="cursor:default">
-        <span class="settings-item-label">版本</span>
-        <span style="font-size:var(--text-sm);color:var(--color-text-tertiary)">1.0.0</span>
+      <div class="settings-group glass-card">
+        <a href="P-app-auth-005.html" class="settings-item">
+          <span class="settings-item-label" id="pwd-label">修改密码</span>
+          <span class="settings-item-arrow">›</span>
+        </a>
       </div>
-    </div>
 
-    <!-- 退出 -->
-    <button class="logout-btn" id="logout-btn">退出登录</button>
+      <div class="settings-group-title">关于</div>
+      <div class="settings-group glass-card">
+        <div class="settings-item" style="cursor:default">
+          <span class="settings-item-label">版本</span>
+          <span style="font-size:var(--text-sm);color:var(--text-muted)">1.0.0</span>
+        </div>
+      </div>
 
-    <!-- 演示区 -->
-    <div class="demo-section">
-      <p>原型演示操作</p>
-      <div class="demo-btns">
-        <button class="proto-btn proto-btn-ghost proto-btn-sm" id="demo-session-expired">模拟会话过期</button>
-        <button class="proto-btn proto-btn-ghost proto-btn-sm" id="demo-switch-google">切换为 Google 用户</button>
-        <button class="proto-btn proto-btn-ghost proto-btn-sm" id="demo-switch-email">切换为邮箱用户</button>
+      <button class="logout-btn" id="logout-btn">退出登录</button>
+
+      <div class="demo-section">
+        <p>原型演示操作</p>
+        <div class="demo-btns">
+          <button class="proto-btn proto-btn-ghost proto-btn-sm" id="demo-session-expired">模拟会话过期</button>
+          <button class="proto-btn proto-btn-ghost proto-btn-sm" id="demo-switch-google">切换 Google 用户</button>
+          <button class="proto-btn proto-btn-ghost proto-btn-sm" id="demo-switch-email">切换邮箱用户</button>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- 底部导航 -->
   <nav class="bottom-bar" role="navigation" aria-label="底部导航">
     <div class="bottom-bar-item"><span class="bottom-bar-icon">🏠</span>首页</div>
     <div class="bottom-bar-item"><span class="bottom-bar-icon">📖</span>学习</div>
@@ -107,14 +106,16 @@
 
   <script src="../../B02-experience-design/app/prototype-style/app.js"></script>
   <script>
-    fetch('_shared/proto-nav.html').then(function(r){return r.text()}).then(function(html){
-      document.getElementById('proto-nav-bar').innerHTML = html;
-      var pid = document.querySelector('meta[name="page-id"]').content;
-      var cur = document.querySelector('#proto-nav-bar [data-page="' + pid + '"]');
-      if(cur) cur.style.cssText = 'font-size:var(--text-sm);padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);background:var(--color-primary-50);color:var(--color-primary-600);text-decoration:none;font-weight:var(--font-medium);white-space:nowrap';
-      var themeBtn = document.querySelector('[data-action="toggle-theme"]');
-      if(themeBtn) themeBtn.addEventListener('click', function(){ var m = document.documentElement.getAttribute('data-mode'); proto.switchTheme(m==='dark'?'light':'dark'); });
-    });
+    fetch('_shared/proto-nav.html')
+      .then(function(r){return r.text()})
+      .then(function(html){
+        document.getElementById('proto-nav-bar').innerHTML = html;
+        var pid = document.querySelector('meta[name="page-id"]').content;
+        var cur = document.querySelector('#proto-nav-bar [data-page="' + pid + '"]');
+        if(cur) cur.style.cssText = 'font-size:var(--text-sm);padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);background:var(--color-brand-50);color:var(--color-brand-default);text-decoration:none;font-weight:var(--weight-medium)';
+        var themeBtn = document.querySelector('[data-action="toggle-theme"]');
+        if(themeBtn) themeBtn.addEventListener('click', function(){ var m = document.documentElement.getAttribute('data-mode'); proto.switchTheme(m==='dark'?'light':'dark'); });
+      });
     if(typeof proto !== 'undefined') proto.bootstrap();
 
     function updateUI() {
@@ -126,24 +127,23 @@
 
       if(authType === 'google') {
         document.getElementById('auth-badge').textContent = 'Google 登录';
-        document.getElementById('auth-badge').style.background = 'var(--color-info-light)';
-        document.getElementById('auth-badge').style.color = 'var(--color-info)';
+        document.getElementById('auth-badge').style.background = 'var(--color-info-50)';
+        document.getElementById('auth-badge').style.color = 'var(--color-info-500)';
         document.getElementById('pwd-label').textContent = '设置密码';
       } else {
         document.getElementById('auth-badge').textContent = '邮箱登录';
-        document.getElementById('auth-badge').style.background = 'var(--color-primary-50)';
-        document.getElementById('auth-badge').style.color = 'var(--color-primary-600)';
+        document.getElementById('auth-badge').style.background = 'var(--color-brand-50)';
+        document.getElementById('auth-badge').style.color = 'var(--color-brand-default)';
         document.getElementById('pwd-label').textContent = '修改密码';
       }
     }
     updateUI();
 
-    /* 退出登录 */
     document.getElementById('logout-btn').addEventListener('click', function() {
       proto.modal({
         size:'sm',
         title:'退出登录',
-        body:'<p style="font-size:var(--text-sm);color:var(--color-text-secondary)">确定要退出登录吗？</p>',
+        body:'<p style="font-size:var(--text-sm);color:var(--text-secondary)">确定要退出登录吗？</p>',
         confirmLabel:'确认退出',
         cancelLabel:'取消',
         onConfirm:function(){
@@ -156,12 +156,11 @@
       });
     });
 
-    /* 会话过期模拟 */
     document.getElementById('demo-session-expired').addEventListener('click', function() {
       proto.modal({
         size:'sm',
         title:'登录已过期',
-        body:'<p style="font-size:var(--text-sm);color:var(--color-text-secondary)">你的登录状态已过期，请重新登录。</p>',
+        body:'<p style="font-size:var(--text-sm);color:var(--text-secondary)">你的登录状态已过期，请重新登录。</p>',
         confirmLabel:'重新登录',
         cancelLabel:'',
         onConfirm:function(){
@@ -170,18 +169,17 @@
         }
       });
       setTimeout(function(){
-        var cancelBtns = document.querySelectorAll('.proto-modal-cancel');
-        cancelBtns.forEach(function(b){ b.style.display='none'; });
+        document.querySelectorAll('.proto-modal-cancel').forEach(function(b){ b.style.display='none'; });
       }, 50);
     });
 
-    /* 切换用户类型演示 */
     document.getElementById('demo-switch-google').addEventListener('click', function() {
       sessionStorage.setItem('app-auth-type','google');
       sessionStorage.setItem('app-email','googleuser@gmail.com');
       updateUI();
       proto.toast({type:'info',message:'已切换为 Google 用户视角'});
     });
+
     document.getElementById('demo-switch-email').addEventListener('click', function() {
       sessionStorage.setItem('app-auth-type','email');
       sessionStorage.setItem('app-email','user@example.com');

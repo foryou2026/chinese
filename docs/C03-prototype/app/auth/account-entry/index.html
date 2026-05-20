@@ -1,54 +1,66 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light">
+<html lang="zh-CN" data-mode="light" data-accent="ink" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>account-entry 功能导航 · app 原型</title>
+  <title>account-entry · 原型页面 · app</title>
   <link rel="stylesheet" href="../../../../B02-experience-design/app/prototype-style/app.css">
   <style>
-    body { min-height:100dvh; background:var(--color-bg-secondary); padding:var(--space-6); }
-    .page-list { display:flex; flex-direction:column; gap:var(--space-3); max-width:480px; }
-    .page-item { display:flex; align-items:center; justify-content:space-between; background:var(--color-bg-primary); border-radius:var(--radius-md); padding:var(--space-3) var(--space-4); border:1px solid var(--color-border); text-decoration:none; transition:box-shadow var(--motion-fast) var(--ease-default); }
-    .page-item:hover { box-shadow:var(--shadow-sm); }
-    .page-item-name { font-size:var(--text-sm); font-weight:var(--font-medium); color:var(--color-text-primary); }
-    .page-item-id { font-size:var(--text-xs); color:var(--color-text-tertiary); }
-    .page-item-arrow { color:var(--color-text-tertiary); }
+    body { min-height:100dvh; display:flex; flex-direction:column; }
+    .page-wrapper { position:relative; z-index:1; flex:1; padding:var(--space-6); max-width:640px; margin:0 auto; width:100%; }
+    .back-link { display:inline-flex; align-items:center; gap:var(--space-1); font-size:var(--text-sm); color:var(--text-muted); text-decoration:none; margin-bottom:var(--space-6); }
+    .back-link:hover { color:var(--color-brand-default); }
+    .page-title { margin-bottom:var(--space-6); }
+    .page-title h1 { font-size:var(--text-xl); margin-bottom:var(--space-2); }
+    .page-title p { font-size:var(--text-sm); color:var(--text-secondary); }
+    .page-list { display:flex; flex-direction:column; gap:var(--space-3); }
+    .page-item { display:flex; align-items:center; justify-content:space-between; padding:var(--space-4) var(--space-5); text-decoration:none; color:inherit; transition:var(--transition-all); }
+    .page-item:hover { color:inherit; }
+    .page-item-name { font-size:var(--text-sm); font-weight:var(--weight-medium); }
+    .page-item-id { font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--space-1); }
+    .page-item-arrow { color:var(--text-muted); }
   </style>
 </head>
 <body>
-  <a href="../index.html" style="font-size:var(--text-sm);color:var(--color-text-secondary);text-decoration:none">← auth 模块</a>
-  <h1 style="font-size:var(--text-2xl);margin:var(--space-4) 0 var(--space-2)">account-entry</h1>
-  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-6)">账号入口：注册 / 登录 / Google登录 / 找回密码 / 重置密码 / 修改密码 / 退出</p>
+  <div class="mesh-gradient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
-  <div class="page-list">
-    <a href="../../P-app-auth-001.html" class="page-item">
-      <div><div class="page-item-name">登录页（邮箱 + Google）</div><div class="page-item-id">P-app-auth-001</div></div>
-      <span class="page-item-arrow">→</span>
-    </a>
-    <a href="../../P-app-auth-002.html" class="page-item">
-      <div><div class="page-item-name">注册页（邮箱 + Google）</div><div class="page-item-id">P-app-auth-002</div></div>
-      <span class="page-item-arrow">→</span>
-    </a>
-    <a href="../../P-app-auth-003.html" class="page-item">
-      <div><div class="page-item-name">忘记密码</div><div class="page-item-id">P-app-auth-003</div></div>
-      <span class="page-item-arrow">→</span>
-    </a>
-    <a href="../../P-app-auth-004.html" class="page-item">
-      <div><div class="page-item-name">重置密码</div><div class="page-item-id">P-app-auth-004</div></div>
-      <span class="page-item-arrow">→</span>
-    </a>
-    <a href="../../P-app-auth-004.html?expired=true" class="page-item">
-      <div><div class="page-item-name">重置密码（链接失效）</div><div class="page-item-id">P-app-auth-004?expired=true</div></div>
-      <span class="page-item-arrow">→</span>
-    </a>
-    <a href="../../P-app-auth-005.html" class="page-item">
-      <div><div class="page-item-name">修改密码 / 设置密码</div><div class="page-item-id">P-app-auth-005</div></div>
-      <span class="page-item-arrow">→</span>
-    </a>
-    <a href="../../P-app-auth-006.html" class="page-item">
-      <div><div class="page-item-name">设置页（退出 / 会话过期）</div><div class="page-item-id">P-app-auth-006</div></div>
-      <span class="page-item-arrow">→</span>
-    </a>
+  <div class="page-wrapper">
+    <a href="../index.html" class="back-link">← auth 模块</a>
+    <div class="page-title">
+      <h1>account-entry 账号入口</h1>
+      <p>注册 / 登录 / Google登录 / 忘记密码 / 重置密码 / 修改密码 / 退出</p>
+    </div>
+
+    <div class="page-list">
+      <a href="../../P-app-auth-001.html" class="glass-card page-item">
+        <div><div class="page-item-name">登录页（邮箱 + Google）</div><div class="page-item-id">P-app-auth-001</div></div>
+        <span class="page-item-arrow">→</span>
+      </a>
+      <a href="../../P-app-auth-002.html" class="glass-card page-item">
+        <div><div class="page-item-name">注册页（含邮箱验证码）</div><div class="page-item-id">P-app-auth-002</div></div>
+        <span class="page-item-arrow">→</span>
+      </a>
+      <a href="../../P-app-auth-003.html" class="glass-card page-item">
+        <div><div class="page-item-name">忘记密码（发送验证码）</div><div class="page-item-id">P-app-auth-003</div></div>
+        <span class="page-item-arrow">→</span>
+      </a>
+      <a href="../../P-app-auth-004.html" class="glass-card page-item">
+        <div><div class="page-item-name">重置密码（验证码校验 + 新密码）</div><div class="page-item-id">P-app-auth-004</div></div>
+        <span class="page-item-arrow">→</span>
+      </a>
+      <a href="../../P-app-auth-005.html" class="glass-card page-item">
+        <div><div class="page-item-name">修改密码 / 设置密码</div><div class="page-item-id">P-app-auth-005</div></div>
+        <span class="page-item-arrow">→</span>
+      </a>
+      <a href="../../P-app-auth-006.html" class="glass-card page-item">
+        <div><div class="page-item-name">设置页（退出 / 会话过期）</div><div class="page-item-id">P-app-auth-006</div></div>
+        <span class="page-item-arrow">→</span>
+      </a>
+    </div>
   </div>
 
   <script src="../../../../B02-experience-design/app/prototype-style/app.js"></script>

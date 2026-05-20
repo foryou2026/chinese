@@ -1,52 +1,80 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light">
+<html lang="zh-CN" data-mode="light" data-accent="ink" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>admin 系统原型导航</title>
+  <title>admin 系统 · 模块导航</title>
   <link rel="stylesheet" href="../../B02-experience-design/app/prototype-style/app.css">
   <style>
-    body { min-height:100dvh; background:var(--color-bg-secondary); padding:var(--space-6); }
-    .nav-header { display:flex; align-items:center; gap:var(--space-3); margin-bottom:var(--space-6); }
-    .nav-header h1 { font-size:var(--text-2xl); }
-    .card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:var(--space-4); }
-    .nav-card { background:var(--color-bg-primary); border-radius:var(--radius-lg); padding:var(--space-5); box-shadow:var(--shadow-sm); border:1px solid var(--color-border); transition:box-shadow var(--motion-fast) var(--ease-default); }
-    .nav-card:hover { box-shadow:var(--shadow-md); }
-    .nav-card h3 { font-size:var(--text-lg); margin-bottom:var(--space-2); }
-    .nav-card p { font-size:var(--text-sm); color:var(--color-text-secondary); margin-bottom:var(--space-4); }
-    .nav-card-links { display:flex; flex-direction:column; gap:var(--space-2); }
-    .nav-card-links a { font-size:var(--text-sm); color:var(--color-primary-500); text-decoration:none; display:flex; align-items:center; gap:var(--space-1); }
-    .nav-card-links a:hover { text-decoration:underline; }
+    body { min-height:100dvh; display:flex; flex-direction:column; }
+    .page-wrapper { position:relative; z-index:1; flex:1; padding:var(--space-6); max-width:960px; margin:0 auto; width:100%; }
+    .back-link { display:inline-flex; align-items:center; gap:var(--space-1); font-size:var(--text-sm); color:var(--text-muted); text-decoration:none; margin-bottom:var(--space-6); }
+    .back-link:hover { color:var(--color-brand-default); }
+    .page-title { margin-bottom:var(--space-8); }
+    .page-title h1 { font-size:var(--text-2xl); margin-bottom:var(--space-2); }
+    .page-title p { font-size:var(--text-base); color:var(--text-secondary); }
+    .module-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:var(--space-5); }
+    .module-card {
+      display:block; padding:var(--space-6); text-decoration:none; color:inherit;
+      transition: var(--transition-all);
+    }
+    .module-card:hover { color:inherit; }
+    .module-card .module-icon {
+      width:44px; height:44px; border-radius:var(--radius-md);
+      display:flex; align-items:center; justify-content:center;
+      font-size:var(--text-lg); color:var(--color-brand-default);
+      background:var(--color-brand-50); margin-bottom:var(--space-4);
+    }
+    .module-card h3 { font-size:var(--text-lg); margin-bottom:var(--space-2); }
+    .module-card p { font-size:var(--text-sm); color:var(--text-secondary); line-height:var(--leading-normal); }
+    .toolbar { margin-top:var(--space-8); display:flex; gap:var(--space-3); }
   </style>
 </head>
 <body>
-  <div class="nav-header">
-    <a href="../index.html" style="font-size:var(--text-sm);color:var(--color-text-secondary);text-decoration:none">← 项目总览</a>
+  <div class="mesh-gradient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
   </div>
-  <h1 style="font-size:var(--text-2xl);margin-bottom:var(--space-2)">admin 管理系统</h1>
-  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-6)">原型页面导航</p>
 
-  <h2 style="font-size:var(--text-lg);margin-bottom:var(--space-4)">模块</h2>
-  <div class="card-grid">
-    <div class="nav-card">
-      <h3>auth 账号入口</h3>
-      <p>登录认证、密码管理、会话管理</p>
-      <div class="nav-card-links">
-        <a href="auth/account-entry/index.html">→ 功能导航</a>
-        <a href="P-admin-auth-001.html">→ 登录页</a>
-        <a href="P-admin-auth-002.html">→ 忘记密码</a>
-        <a href="P-admin-auth-003.html">→ 重置密码</a>
-        <a href="P-admin-auth-003.html?expired=true">→ 重置密码（链接失效）</a>
-        <a href="P-admin-auth-004.html">→ 后台壳（修改密码/退出/过期）</a>
+  <div class="page-wrapper">
+    <a href="../index.html" class="back-link">← 项目总览</a>
+
+    <div class="page-title">
+      <h1>admin 管理系统</h1>
+      <p>选择模块查看功能清单</p>
+    </div>
+
+    <div class="module-grid">
+      <a href="auth/index.html" class="glass-card module-card">
+        <div class="module-icon">🔐</div>
+        <h3>auth 账号认证</h3>
+        <p>登录认证、密码管理、会话管理等账号安全相关功能</p>
+      </a>
+    </div>
+
+    <div class="toolbar">
+      <div class="proto-mode-switcher">
+        <button class="proto-mode-option" data-mode-val="light" aria-label="浅色" onclick="proto.switchTheme('light');updateModeUI()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <button class="proto-mode-option" data-mode-val="dark" aria-label="深色" onclick="proto.switchTheme('dark');updateModeUI()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
       </div>
     </div>
   </div>
 
-  <div style="margin-top:var(--space-6);display:flex;gap:var(--space-3)">
-    <button onclick="var m=document.documentElement.getAttribute('data-mode');document.documentElement.setAttribute('data-mode',m==='dark'?'light':'dark')" class="proto-btn proto-btn-ghost proto-btn-sm">明/暗切换</button>
-  </div>
-
   <script src="../../B02-experience-design/app/prototype-style/app.js"></script>
-  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+  <script>
+    if(typeof proto !== 'undefined') proto.bootstrap();
+    function updateModeUI(){
+      var mode = document.documentElement.getAttribute('data-mode');
+      document.querySelectorAll('.proto-mode-option').forEach(function(b){
+        b.setAttribute('aria-checked', b.getAttribute('data-mode-val') === mode ? 'true' : 'false');
+      });
+    }
+    updateModeUI();
+  </script>
 </body>
 </html>

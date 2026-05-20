@@ -1,42 +1,98 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light">
+<html lang="zh-CN" data-mode="light" data-accent="ink" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>项目原型总览</title>
   <link rel="stylesheet" href="../B02-experience-design/app/prototype-style/app.css">
   <style>
-    body { min-height:100dvh; background:var(--color-bg-secondary); padding:var(--space-6); }
-    .card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:var(--space-4); max-width:800px; }
-    .system-card { background:var(--color-bg-primary); border-radius:var(--radius-xl); padding:var(--space-6); box-shadow:var(--shadow-sm); border:1px solid var(--color-border); text-decoration:none; display:block; transition:box-shadow var(--motion-fast) var(--ease-default); }
-    .system-card:hover { box-shadow:var(--shadow-lg); text-decoration:none; }
-    .system-card h2 { font-size:var(--text-xl); margin-bottom:var(--space-2); color:var(--color-text-primary); }
-    .system-card p { font-size:var(--text-sm); color:var(--color-text-secondary); }
-    .system-card .badge { display:inline-block; font-size:var(--text-xs); padding:var(--space-0-5) var(--space-2); border-radius:var(--radius-full); background:var(--color-primary-50); color:var(--color-primary-600); margin-top:var(--space-3); }
+    body { min-height:100dvh; display:flex; flex-direction:column; }
+    .page-wrapper { position:relative; z-index:1; flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:var(--space-6); }
+    .page-title { text-align:center; margin-bottom:var(--space-8); }
+    .page-title h1 { font-size:var(--text-2xl); margin-bottom:var(--space-2); }
+    .page-title p { font-size:var(--text-base); color:var(--text-secondary); }
+    .system-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:var(--space-6); width:100%; max-width:960px; }
+    .system-card {
+      display:flex; flex-direction:column; justify-content:space-between;
+      min-height:260px; padding:var(--space-8);
+      text-decoration:none; color:inherit;
+      transition: var(--transition-all);
+    }
+    .system-card:hover { color:inherit; }
+    .system-card .card-icon {
+      width:56px; height:56px; border-radius:var(--radius-lg);
+      display:flex; align-items:center; justify-content:center;
+      font-size:var(--text-xl); font-weight:var(--weight-bold); color:var(--color-brand-on);
+      background:linear-gradient(135deg, var(--color-brand-default), var(--color-brand-400));
+      margin-bottom:var(--space-5);
+    }
+    .system-card h2 { font-size:var(--text-xl); margin-bottom:var(--space-2); }
+    .system-card p { font-size:var(--text-base); color:var(--text-secondary); line-height:var(--leading-normal); }
+    .system-card .badge {
+      display:inline-block; font-size:var(--text-xs); padding:var(--space-1) var(--space-3);
+      border-radius:var(--radius-pill); margin-top:var(--space-5);
+      background:var(--color-brand-50); color:var(--color-brand-default);
+    }
+    .toolbar { margin-top:var(--space-8); }
   </style>
 </head>
 <body>
-  <h1 style="font-size:var(--text-3xl);margin-bottom:var(--space-2)">原型总览</h1>
-  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-8)">选择系统进入原型导航</p>
-
-  <div class="card-grid">
-    <a href="admin/index.html" class="system-card">
-      <h2>admin 管理系统</h2>
-      <p>内部运营管理后台</p>
-      <span class="badge">邮箱 + 密码登录</span>
-    </a>
-    <a href="app/index.html" class="system-card">
-      <h2>app 用户系统</h2>
-      <p>终端用户语言学习应用</p>
-      <span class="badge">邮箱 + Google 登录</span>
-    </a>
+  <div class="mesh-gradient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
   </div>
 
-  <div style="margin-top:var(--space-6)">
-    <button onclick="var m=document.documentElement.getAttribute('data-mode');document.documentElement.setAttribute('data-mode',m==='dark'?'light':'dark')" class="proto-btn proto-btn-ghost proto-btn-sm">明/暗切换</button>
+  <div class="page-wrapper">
+    <div class="page-title">
+      <h1>原型总览</h1>
+      <p>选择系统进入模块导航</p>
+    </div>
+
+    <div class="system-grid">
+      <a href="admin/index.html" class="glass-card system-card">
+        <div>
+          <div class="card-icon">A</div>
+          <h2>admin 管理系统</h2>
+          <p>内部运营管理后台，面向管理员和超级管理员的安全运营平台</p>
+        </div>
+        <span class="badge">邮箱 + 密码登录</span>
+      </a>
+      <a href="app/index.html" class="glass-card system-card">
+        <div>
+          <div class="card-icon">中</div>
+          <h2>app 用户系统</h2>
+          <p>终端用户语言学习应用，为全球中文学习者提供沉浸式学习体验</p>
+        </div>
+        <span class="badge">邮箱 + Google 登录</span>
+      </a>
+    </div>
+
+    <div class="toolbar">
+      <div class="proto-mode-switcher">
+        <button class="proto-mode-option" aria-checked="true" data-mode-val="light" aria-label="浅色" onclick="proto.switchTheme('light');updateModeUI()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <button class="proto-mode-option" data-mode-val="dark" aria-label="深色" onclick="proto.switchTheme('dark');updateModeUI()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="proto-mode-option" data-mode-val="auto" aria-label="跟随系统" onclick="proto.switchTheme('auto');updateModeUI()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 
   <script src="../B02-experience-design/app/prototype-style/app.js"></script>
-  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+  <script>
+    if(typeof proto !== 'undefined') proto.bootstrap();
+    function updateModeUI(){
+      var mode = document.documentElement.getAttribute('data-mode');
+      document.querySelectorAll('.proto-mode-option').forEach(function(b){
+        b.setAttribute('aria-checked', b.getAttribute('data-mode-val') === mode ? 'true' : 'false');
+      });
+    }
+    updateModeUI();
+  </script>
 </body>
 </html>

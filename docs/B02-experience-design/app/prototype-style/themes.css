@@ -133,6 +133,22 @@
   --border-color: rgba(255, 255, 255, 0.10);
   --focus-ring: 0 0 0 4px var(--color-brand-ring);
 
+  /* 兼容别名覆盖 */
+  --color-bg-primary:    var(--glass-bg-card);
+  --color-bg-secondary:  var(--page-bg);
+  --color-text-primary:  var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-muted);
+  --color-border:        var(--glass-border);
+  --color-error:         var(--color-danger-700);
+  --color-error-light:   var(--color-danger-50);
+  --color-success:       var(--color-success-700);
+  --color-success-light: var(--color-success-50);
+  --color-warning:       var(--color-warning-700);
+  --color-warning-light: var(--color-warning-50);
+  --color-info:          var(--color-info-700);
+  --color-info-light:    var(--color-info-50);
+
   /* 状态色暗模式适配 */
   --color-success-50:  rgba(74, 111, 90, 0.18);
   --color-success-100: rgba(74, 111, 90, 0.28);
@@ -190,5 +206,20 @@
     --color-brand-ring:    rgba(168, 192, 212, 0.28);
     --border-color: rgba(255, 255, 255, 0.10);
     --focus-ring: 0 0 0 4px var(--color-brand-ring);
+
+    --color-bg-primary:    var(--glass-bg-card);
+    --color-bg-secondary:  var(--page-bg);
+    --color-text-primary:  var(--text-primary);
+    --color-text-secondary: var(--text-secondary);
+    --color-text-tertiary: var(--text-muted);
+    --color-border:        var(--glass-border);
+    --color-error:         var(--color-danger-700);
+    --color-error-light:   var(--color-danger-50);
+    --color-success:       var(--color-success-700);
+    --color-success-light: var(--color-success-50);
+    --color-warning:       var(--color-warning-700);
+    --color-warning-light: var(--color-warning-50);
+    --color-info:          var(--color-info-700);
+    --color-info-light:    var(--color-info-50);
   }
 }

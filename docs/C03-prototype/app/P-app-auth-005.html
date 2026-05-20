@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light">
+<html lang="zh-CN" data-mode="light" data-accent="ink" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,29 +7,40 @@
   <meta name="system-id" content="app">
   <meta name="module-id" content="auth">
   <meta name="feature-id" content="account-entry">
-  <meta name="related-r-ids" content="R-auth-007,R-auth-010,R-auth-014">
+  <meta name="related-r-ids" content="R-auth-007,R-auth-009,R-auth-010,R-auth-014">
   <title>修改密码 · app 原型</title>
   <link rel="stylesheet" href="../../B02-experience-design/app/prototype-style/app.css">
   <style>
-    body { display:flex; flex-direction:column; min-height:100dvh; background:var(--color-bg-secondary); }
-    .page-header { display:flex; align-items:center; gap:var(--space-3); height:56px; padding:0 var(--space-4); background:var(--color-bg-primary); border-bottom:1px solid var(--color-border); position:sticky; top:0; z-index:var(--z-sticky); }
-    .page-header button { background:none; border:none; font-size:var(--text-base); color:var(--color-text-secondary); cursor:pointer; padding:var(--space-1); }
-    .page-header h1 { font-size:var(--text-lg); font-weight:var(--font-semibold); flex:1; }
-    .form-container { padding:var(--space-5) var(--space-4); max-width:480px; margin:0 auto; width:100%; }
+    body { display:flex; flex-direction:column; min-height:100dvh; }
+    .page-header { display:flex; align-items:center; gap:var(--space-3); height:56px; padding:0 var(--space-4); position:sticky; top:0; z-index:var(--z-sticky); background:var(--glass-bg-card); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border-bottom:1px solid var(--glass-border); }
+    .page-header button { background:none; border:none; font-size:var(--text-base); color:var(--text-secondary); cursor:pointer; padding:var(--space-1); }
+    .page-header h1 { font-size:var(--text-lg); font-weight:var(--weight-semibold); flex:1; }
+    .form-container { position:relative; z-index:1; padding:var(--space-5) var(--space-4); max-width:480px; margin:0 auto; width:100%; }
     .password-wrapper { position:relative; }
-    .password-toggle { position:absolute; right:var(--space-3); top:50%; transform:translateY(-50%); background:none; border:none; color:var(--color-text-tertiary); cursor:pointer; padding:var(--space-1); font-size:var(--text-sm); }
-    .strength-bar { height:4px; border-radius:var(--radius-full); background:var(--color-neutral-200); margin-top:var(--space-1); overflow:hidden; }
-    .strength-fill { height:100%; border-radius:var(--radius-full); transition:width var(--motion-normal) var(--ease-default), background var(--motion-normal) var(--ease-default); width:0; }
-    .strength-text { font-size:var(--text-xs); margin-top:var(--space-0-5); color:var(--color-text-tertiary); }
+    .password-toggle { position:absolute; right:var(--space-3); top:50%; transform:translateY(-50%); background:none; border:none; color:var(--text-muted); cursor:pointer; padding:var(--space-1); font-size:var(--text-sm); }
+    .strength-bar { height:4px; border-radius:var(--radius-pill); background:var(--color-neutral-200); margin-top:var(--space-1); overflow:hidden; }
+    .strength-fill { height:100%; border-radius:var(--radius-pill); transition:width var(--motion-base), background var(--motion-base); width:0; }
+    .strength-text { font-size:var(--text-xs); margin-top:2px; color:var(--text-muted); }
     .form-alert { display:none; padding:var(--space-3) var(--space-4); border-radius:var(--radius-md); margin-bottom:var(--space-4); font-size:var(--text-sm); border-left:4px solid; }
-    .form-alert.is-error { display:block; background:var(--color-error-light); border-left-color:var(--color-error); color:var(--color-error); }
-    .info-card { background:var(--color-info-light); border-radius:var(--radius-md); padding:var(--space-3) var(--space-4); margin-bottom:var(--space-5); font-size:var(--text-sm); color:var(--color-info); border-left:4px solid var(--color-info); }
+    .form-alert.is-error { display:block; background:var(--color-danger-50); border-left-color:var(--color-danger-500); color:var(--color-danger-500); }
+    .info-card { background:var(--glass-bg); -webkit-backdrop-filter:var(--glass-blur-sm); backdrop-filter:var(--glass-blur-sm); border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:var(--space-3) var(--space-4); margin-bottom:var(--space-5); font-size:var(--text-sm); color:var(--color-info-500); border-left:4px solid var(--color-info-500); }
+    .info-note { font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--space-4); padding:var(--space-3); border-radius:var(--radius-sm); background:var(--glass-bg); border:1px solid var(--glass-border); }
+    .scenario-dropdown { position:fixed; z-index:var(--z-dropdown); background:var(--glass-bg-elevated); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border:1px solid var(--glass-border); border-radius:var(--radius-md); box-shadow:var(--shadow-lg); padding:var(--space-1) 0; min-width:220px; display:none; }
+    .scenario-dropdown.is-open { display:block; }
+    .scenario-item { padding:var(--space-2) var(--space-4); font-size:var(--text-sm); cursor:pointer; transition:background var(--motion-fast); color:var(--text-primary); }
+    .scenario-item:hover { background:var(--glass-bg); }
+    .scenario-item small { display:block; font-size:var(--text-xs); color:var(--text-muted); margin-top:2px; }
   </style>
 </head>
 <body>
+  <div class="mesh-gradient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
   <div id="proto-nav-bar"></div>
 
-  <!-- 页面头部 -->
   <header class="page-header">
     <button onclick="window.location.href='P-app-auth-006.html'" aria-label="返回">←</button>
     <h1 id="page-title">修改密码</h1>
@@ -42,8 +53,7 @@
 
     <div class="form-alert" id="change-alert" role="alert"></div>
 
-    <form id="change-form" novalidate>
-      <!-- 旧密码：仅邮箱用户 -->
+    <form id="change-form" class="glass-card" style="padding:var(--space-6)" novalidate>
       <div class="proto-field" id="old-pwd-field">
         <label for="old-pwd" class="proto-label proto-label-required">旧密码</label>
         <div class="password-wrapper">
@@ -70,6 +80,10 @@
         <span class="proto-error-msg" id="confirm-pwd-error" style="display:none"></span>
       </div>
 
+      <div class="info-note">
+        修改密码后其他已登录设备将自动下线。每个账号最多同时登录 2 台设备。
+      </div>
+
       <button type="submit" id="submit-btn" class="proto-btn proto-btn-primary proto-btn-lg" style="width:100%;margin-top:var(--space-5)">
         <span class="proto-btn-label">确认修改</span>
         <span class="proto-spinner proto-spinner-sm proto-spinner-inverse" style="display:none"></span>
@@ -77,16 +91,34 @@
     </form>
   </div>
 
+  <!-- 场景选择 -->
+  <div class="scenario-dropdown" id="change-scenario-dd">
+    <div class="scenario-item" data-scenario="success">
+      ✅ 修改成功
+      <small>密码已更新，其他设备下线</small>
+    </div>
+    <div class="scenario-item" data-scenario="wrong-old">
+      ❌ 旧密码错误
+      <small>显示错误提示</small>
+    </div>
+    <div class="scenario-item" data-scenario="same-pwd">
+      ⚠️ 新旧密码相同
+      <small>新密码不能与旧密码相同</small>
+    </div>
+  </div>
+
   <script src="../../B02-experience-design/app/prototype-style/app.js"></script>
   <script>
-    fetch('_shared/proto-nav.html').then(function(r){return r.text()}).then(function(html){
-      document.getElementById('proto-nav-bar').innerHTML = html;
-      var pid = document.querySelector('meta[name="page-id"]').content;
-      var cur = document.querySelector('#proto-nav-bar [data-page="' + pid + '"]');
-      if(cur) cur.style.cssText = 'font-size:var(--text-sm);padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);background:var(--color-primary-50);color:var(--color-primary-600);text-decoration:none;font-weight:var(--font-medium);white-space:nowrap';
-      var themeBtn = document.querySelector('[data-action="toggle-theme"]');
-      if(themeBtn) themeBtn.addEventListener('click', function(){ var m = document.documentElement.getAttribute('data-mode'); proto.switchTheme(m==='dark'?'light':'dark'); });
-    });
+    fetch('_shared/proto-nav.html')
+      .then(function(r){return r.text()})
+      .then(function(html){
+        document.getElementById('proto-nav-bar').innerHTML = html;
+        var pid = document.querySelector('meta[name="page-id"]').content;
+        var cur = document.querySelector('#proto-nav-bar [data-page="' + pid + '"]');
+        if(cur) cur.style.cssText = 'font-size:var(--text-sm);padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);background:var(--color-brand-50);color:var(--color-brand-default);text-decoration:none;font-weight:var(--weight-medium)';
+        var themeBtn = document.querySelector('[data-action="toggle-theme"]');
+        if(themeBtn) themeBtn.addEventListener('click', function(){ var m = document.documentElement.getAttribute('data-mode'); proto.switchTheme(m==='dark'?'light':'dark'); });
+      });
     if(typeof proto !== 'undefined') proto.bootstrap();
 
     var isGoogle = sessionStorage.getItem('app-auth-type') === 'google';
@@ -112,68 +144,96 @@
     var changeForm = document.getElementById('change-form');
     var submitBtn = document.getElementById('submit-btn');
     var changeAlert = document.getElementById('change-alert');
+    var changeScenarioDD = document.getElementById('change-scenario-dd');
 
-    function checkStrength(v){
-      var score=0; if(v.length>=8)score++; if(/[a-zA-Z]/.test(v))score++; if(/[0-9]/.test(v))score++; if(/[^a-zA-Z0-9]/.test(v))score++; if(v.length>=12)score++;
-      var map=[{w:'0%',bg:'var(--color-neutral-200)',t:''},{w:'25%',bg:'var(--color-error)',t:'弱'},{w:'50%',bg:'var(--color-warning)',t:'一般'},{w:'75%',bg:'var(--color-info)',t:'较强'},{w:'100%',bg:'var(--color-success)',t:'强'},{w:'100%',bg:'var(--color-success)',t:'非常强'}];
-      var s=map[score]; strengthFill.style.width=s.w; strengthFill.style.background=s.bg; strengthText.textContent=s.t; strengthText.style.color=s.bg;
+    function checkStrength(v) {
+      var score = 0;
+      if(v.length >= 8) score++;
+      if(/[a-zA-Z]/.test(v)) score++;
+      if(/[0-9]/.test(v)) score++;
+      if(/[^a-zA-Z0-9]/.test(v)) score++;
+      if(v.length >= 12) score++;
+      var map = [
+        {w:'0%',bg:'var(--color-neutral-200)',t:''},
+        {w:'25%',bg:'var(--color-danger-500)',t:'弱'},
+        {w:'50%',bg:'var(--color-warning-500)',t:'一般'},
+        {w:'75%',bg:'var(--color-info-500)',t:'较强'},
+        {w:'100%',bg:'var(--color-success-700)',t:'强'},
+        {w:'100%',bg:'var(--color-success-700)',t:'非常强'}
+      ];
+      var s = map[score];
+      strengthFill.style.width = s.w; strengthFill.style.background = s.bg;
+      strengthText.textContent = s.t; strengthText.style.color = s.bg;
     }
 
-    newPwd.addEventListener('input', function(){ checkStrength(newPwd.value); newPwdError.style.display='none'; newPwd.removeAttribute('aria-invalid'); changeAlert.className='form-alert'; });
-    newPwd.addEventListener('blur', function(){
-      var v=newPwd.value;
-      if(!v){newPwdError.textContent='请输入新密码';newPwdError.style.display='block';newPwd.setAttribute('aria-invalid','true');}
-      else if(v.length<8||!/[a-zA-Z]/.test(v)||!/[0-9]/.test(v)){newPwdError.textContent='密码至少 8 位，包含字母和数字';newPwdError.style.display='block';newPwd.setAttribute('aria-invalid','true');}
+    newPwd.addEventListener('input', function() { checkStrength(newPwd.value); newPwdError.style.display='none'; changeAlert.className='form-alert'; });
+    newPwd.addEventListener('blur', function() {
+      var v = newPwd.value;
+      if(!v) { newPwdError.textContent='请输入新密码'; newPwdError.style.display='block'; }
+      else if(v.length<8||!/[a-zA-Z]/.test(v)||!/[0-9]/.test(v)) { newPwdError.textContent='密码至少 8 位，包含字母和数字'; newPwdError.style.display='block'; }
     });
 
-    confirmPwd.addEventListener('blur', function(){
-      if(confirmPwd.value!==newPwd.value){confirmPwdError.textContent='两次输入的密码不一致';confirmPwdError.style.display='block';confirmPwd.setAttribute('aria-invalid','true');}
-      else{confirmPwdError.style.display='none';confirmPwd.removeAttribute('aria-invalid');}
+    confirmPwd.addEventListener('blur', function() {
+      if(confirmPwd.value !== newPwd.value) { confirmPwdError.textContent='两次输入的密码不一致'; confirmPwdError.style.display='block'; }
+      else { confirmPwdError.style.display='none'; }
     });
-    confirmPwd.addEventListener('input', function(){confirmPwdError.style.display='none';confirmPwd.removeAttribute('aria-invalid');});
+    confirmPwd.addEventListener('input', function(){ confirmPwdError.style.display='none'; });
 
-    changeForm.addEventListener('submit', function(e){
+    changeForm.addEventListener('submit', function(e) {
       e.preventDefault();
       changeAlert.className = 'form-alert';
       var valid = true;
 
       if(!isGoogle) {
-        if(!oldPwd.value){ oldPwdError.textContent='请输入旧密码'; oldPwdError.style.display='block'; oldPwd.setAttribute('aria-invalid','true'); valid=false; }
-        else { oldPwdError.style.display='none'; oldPwd.removeAttribute('aria-invalid'); }
+        if(!oldPwd.value) { oldPwdError.textContent='请输入旧密码'; oldPwdError.style.display='block'; valid=false; }
+        else { oldPwdError.style.display='none'; }
       }
 
       var v = newPwd.value;
-      if(!v||v.length<8||!/[a-zA-Z]/.test(v)||!/[0-9]/.test(v)){newPwdError.textContent='密码至少 8 位，包含字母和数字';newPwdError.style.display='block';newPwd.setAttribute('aria-invalid','true');valid=false;}
-
-      if(confirmPwd.value!==newPwd.value){confirmPwdError.textContent='两次输入的密码不一致';confirmPwdError.style.display='block';confirmPwd.setAttribute('aria-invalid','true');valid=false;}
-
+      if(!v||v.length<8||!/[a-zA-Z]/.test(v)||!/[0-9]/.test(v)) { newPwdError.textContent='密码至少 8 位，包含字母和数字'; newPwdError.style.display='block'; valid=false; }
+      if(confirmPwd.value !== newPwd.value) { confirmPwdError.textContent='两次输入的密码不一致'; confirmPwdError.style.display='block'; valid=false; }
       if(!valid) return;
 
-      submitBtn.setAttribute('aria-busy','true');
-      submitBtn.querySelector('.proto-btn-label').style.visibility='hidden';
-      submitBtn.querySelector('.proto-spinner').style.display='inline-block';
+      var rect = submitBtn.getBoundingClientRect();
+      changeScenarioDD.style.top = (rect.bottom + 8) + 'px';
+      changeScenarioDD.style.left = rect.left + 'px';
+      changeScenarioDD.style.width = rect.width + 'px';
+      changeScenarioDD.classList.add('is-open');
+    });
 
-      setTimeout(function(){
-        submitBtn.removeAttribute('aria-busy');
-        submitBtn.querySelector('.proto-btn-label').style.visibility='visible';
-        submitBtn.querySelector('.proto-spinner').style.display='none';
+    document.querySelectorAll('#change-scenario-dd .scenario-item').forEach(function(item) {
+      item.addEventListener('click', function() {
+        changeScenarioDD.classList.remove('is-open');
+        var scenario = item.getAttribute('data-scenario');
 
-        if(!isGoogle && oldPwd.value !== 'user1234'){
-          changeAlert.textContent = '旧密码错误';
-          changeAlert.className = 'form-alert is-error';
-          return;
-        }
+        submitBtn.setAttribute('aria-busy','true');
+        submitBtn.querySelector('.proto-btn-label').style.visibility='hidden';
+        submitBtn.querySelector('.proto-spinner').style.display='inline-block';
 
-        if(!isGoogle && newPwd.value === oldPwd.value){
-          changeAlert.textContent = '新密码不能与旧密码相同';
-          changeAlert.className = 'form-alert is-error';
-          return;
-        }
+        setTimeout(function() {
+          submitBtn.removeAttribute('aria-busy');
+          submitBtn.querySelector('.proto-btn-label').style.visibility='visible';
+          submitBtn.querySelector('.proto-spinner').style.display='none';
 
-        proto.toast({type:'success', message: isGoogle ? '密码已设置成功' : '密码修改成功'});
-        if(isGoogle) sessionStorage.setItem('app-auth-type','email');
-        setTimeout(function(){ window.location.href = 'P-app-auth-006.html'; }, 600);
-      }, 800);
+          if(scenario === 'success') {
+            if(isGoogle) sessionStorage.setItem('app-auth-type','email');
+            proto.toast({type:'success', message: isGoogle ? '密码已设置成功，其他设备已下线' : '密码修改成功，其他设备已下线'});
+            setTimeout(function(){ window.location.href = 'P-app-auth-006.html'; }, 600);
+          } else if(scenario === 'wrong-old') {
+            changeAlert.textContent = '旧密码错误';
+            changeAlert.className = 'form-alert is-error';
+          } else if(scenario === 'same-pwd') {
+            changeAlert.textContent = '新密码不能与旧密码相同';
+            changeAlert.className = 'form-alert is-error';
+          }
+        }, 800);
+      });
+    });
+
+    document.addEventListener('click', function(e) {
+      if(!changeScenarioDD.contains(e.target) && e.target !== submitBtn) {
+        changeScenarioDD.classList.remove('is-open');
+      }
     });
   </script>
 </body>

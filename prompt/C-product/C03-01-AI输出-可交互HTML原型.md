@@ -63,6 +63,51 @@ C03-prototype/
 
 ---
 
+## Axure 式场景交互规范
+
+### 核心思想
+
+借鉴 Axure RP 的条件交互（Conditional Actions）思维：**每个操作按钮在提交时，如果存在多种可能结果，必须弹出场景选择下拉，让审阅者自主选择要走哪条分支。** 这样同一个页面能完整覆盖成功/失败/边界情况，无需猜测。
+
+### 场景下拉实现规则
+
+1. **触发时机**：表单通过客户端校验后，不直接执行结果，而是在按钮正下方弹出 `.scenario-dropdown`
+2. **定位**：`position:fixed`，通过 `getBoundingClientRect()` 获取按钮坐标，紧贴按钮底部
+3. **选项格式**：每项包含图标 + 标题 + 说明（`<small>` 标签描述该场景的表现）
+4. **选中后执行**：关闭下拉 → 显示 loading → 模拟延迟(600-800ms) → 呈现对应结果
+5. **点击外部关闭**：`document.addEventListener('click')` 检测点击区域
+
+### 何时需要场景下拉
+
+| 场景 | 示例选项 |
+|------|----------|
+| 登录 | 成功 / 密码错误 / 账号锁定 / 无权限 |
+| 注册 | 邮箱可用 / 邮箱已注册 |
+| 验证码校验 | 正确 / 错误 / 已过期 |
+| 密码重置 | 成功 / 服务器错误 |
+| 修改密码 | 成功 / 旧密码错误 / 新旧相同 |
+| 任何表单提交 | 成功 / 校验失败 / 服务器错误 |
+
+**不需要场景下拉的情况**：纯客户端操作（主题切换、tab 切换、弹框打开/关闭）。
+
+### 多步骤表单规则
+
+1. **同一页面完成所有步骤**：使用 `display:none` 切换步骤区块，不跳转多个页面
+2. **步骤指示器**：顶部圆形编号 + 连接线，`.active` / `.done` / `.pending` 三态
+3. **允许返回**：用户可点击"返回上一步"回到前一步骤修改信息
+4. **唯一例外**：步骤之间功能差异极大（如忘记密码的"输入验证码"与"设置新密码"属于不同功能块），可分为两个页面，但必须通过步骤指示器保持视觉连续性
+
+### C01-C03 一致性校验
+
+画完原型后，必须反向对照 C01（需求规格）和 C02（交互流程）：
+
+1. C02 中定义的每个交互流程，原型中是否都有对应的操作路径？
+2. C02 中定义的每种结果场景，原型的场景下拉是否都已覆盖？
+3. C01 中定义的业务规则（如"最多同时登录 2 台设备"），原型的提示文案是否一致？
+4. 如发现 C01/C02 遗漏或与实际体验矛盾，应同步修正 C01/C02 文档
+
+---
+
 ## 高保真交互标准
 
 ### 页面导航与返回
@@ -165,7 +210,7 @@ C03-prototype/
 
 ```html
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light">
+<html lang="zh-CN" data-mode="light" data-accent="ink" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -176,54 +221,50 @@ C03-prototype/
   <meta name="related-r-ids" content="R-course-001,R-course-002">
   <title>课程列表 · app 原型</title>
 
-  <link rel="stylesheet" href="../../docs/B02-experience-design/app/prototype-style/app.css">
+  <link rel="stylesheet" href="../../B02-experience-design/app/prototype-style/app.css">
   <style>
-    .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:100; align-items:center; justify-content:center; }
-    .modal-overlay.is-open { display:flex; }
+    body { display:flex; flex-direction:column; min-height:100dvh; }
+    /* 场景选择下拉（需要时添加） */
+    .scenario-dropdown { position:fixed; z-index:var(--z-dropdown); background:var(--glass-bg-elevated); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border:1px solid var(--glass-border); border-radius:var(--radius-md); box-shadow:var(--shadow-lg); padding:var(--space-1) 0; min-width:200px; display:none; }
+    .scenario-dropdown.is-open { display:block; }
+    .scenario-item { padding:var(--space-2) var(--space-4); font-size:var(--text-sm); cursor:pointer; transition:background var(--motion-fast); color:var(--text-primary); }
+    .scenario-item:hover { background:var(--glass-bg); }
+    .scenario-item small { display:block; font-size:var(--text-xs); color:var(--text-muted); margin-top:2px; }
   </style>
 </head>
 <body>
-  <div id="proto-nav-bar"></div>
-  <main style="flex:1;padding:var(--space-5)">
-    <!-- 按 C02 04-pages.md 区块清单组织 -->
-  </main>
-  <div class="modal-overlay" id="modal-delete" role="dialog" aria-modal="true"></div>
+  <!-- 毛玻璃网格渐变背景 -->
+  <div class="mesh-gradient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
-  <script src="../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+  <div id="proto-nav-bar"></div>
+  <main style="position:relative;z-index:1;flex:1;padding:var(--space-5)">
+    <!-- 使用 glass-card 类获得毛玻璃卡片效果 -->
+    <div class="glass-card" style="padding:var(--space-6)">
+      <!-- 按 C02 04-pages.md 区块清单组织 -->
+    </div>
+  </main>
+
+  <script src="../../B02-experience-design/app/prototype-style/app.js"></script>
   <script>
     fetch('_shared/proto-nav.html')
-      .then(r => r.text())
-      .then(html => {
+      .then(function(r){return r.text()})
+      .then(function(html){
         document.getElementById('proto-nav-bar').innerHTML = html;
-        const pid = document.querySelector('meta[name="page-id"]').content;
-        const cur = document.querySelector('#proto-nav-bar [data-page="' + pid + '"]');
-        if (cur) cur.classList.add('nav-active');
+        var pid = document.querySelector('meta[name="page-id"]').content;
+        var cur = document.querySelector('#proto-nav-bar [data-page="' + pid + '"]');
+        if(cur) cur.style.cssText = 'font-size:var(--text-sm);padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);background:var(--color-brand-50);color:var(--color-brand-default);text-decoration:none;font-weight:var(--weight-medium)';
+        var themeBtn = document.querySelector('[data-action="toggle-theme"]');
+        if(themeBtn) themeBtn.addEventListener('click', function(){
+          var m = document.documentElement.getAttribute('data-mode');
+          proto.switchTheme(m === 'dark' ? 'light' : 'dark');
+        });
       });
 
-    const ProtoModal = {
-      open(id) { document.getElementById(id).classList.add('is-open'); },
-      close(id) { document.getElementById(id).classList.remove('is-open'); }
-    };
-    document.querySelectorAll('.modal-overlay').forEach(o => {
-      o.addEventListener('click', e => { if (e.target === o) o.classList.remove('is-open'); });
-    });
-
-    const ProtoToast = {
-      show(msg, type='success') {
-        const el = document.createElement('div');
-        el.textContent = msg;
-        Object.assign(el.style, {
-          position:'fixed',top:'16px',right:'16px',zIndex:'9999',
-          padding:'8px 16px',borderRadius:'6px',color:'#fff',fontSize:'14px',
-          background: type==='success' ? 'var(--color-success,#18a058)' : 'var(--color-danger,#d03050)',
-          boxShadow:'0 2px 8px rgba(0,0,0,.18)',transition:'opacity .3s'
-        });
-        document.body.appendChild(el);
-        setTimeout(() => { el.style.opacity='0'; setTimeout(() => el.remove(),300); },2200);
-      }
-    };
-
-    if (typeof proto !== 'undefined') proto.bootstrap();
+    if(typeof proto !== 'undefined') proto.bootstrap();
   </script>
 </body>
 </html>
@@ -234,14 +275,15 @@ C03-prototype/
 ## `_shared/proto-nav.html`
 
 ```html
-<nav class="topnav" role="navigation" aria-label="原型导航"
+<nav class="topnav glass-bar" role="navigation" aria-label="原型导航"
   style="display:flex;align-items:center;gap:var(--space-3);padding:0 var(--space-4);height:56px;position:sticky;top:0;z-index:50">
-  <ul style="display:flex;gap:var(--space-2);list-style:none;margin:0;padding:0;flex:1">
-    <li><a href="P-app-auth-001.html" data-page="P-app-auth-001" class="nav-link">登录</a></li>
+  <span style="font-weight:var(--weight-semibold);font-size:var(--text-lg);color:var(--color-brand-default)">系统名</span>
+  <ul style="display:flex;gap:var(--space-2);list-style:none;margin:0;padding:0;flex:1;overflow-x:auto">
+    <li><a href="P-app-auth-001.html" data-page="P-app-auth-001" class="nav-link" style="font-size:var(--text-sm);padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);color:var(--text-secondary);text-decoration:none;white-space:nowrap">登录</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:var(--space-2)">
-    <button data-action="toggle-theme" class="btn btn--ghost btn--sm">明/暗</button>
-    <a href="index.html" class="btn btn--primary btn--sm">原型导航</a>
+    <button data-action="toggle-theme" class="proto-btn proto-btn-ghost proto-btn-sm">明/暗</button>
+    <a href="index.html" class="proto-btn proto-btn-primary proto-btn-sm" style="text-decoration:none">原型导航</a>
   </div>
 </nav>
 ```
@@ -252,10 +294,12 @@ C03-prototype/
 
 ## 目录页规范
 
-- **项目总览 `index.html`**：卡片列出所有系统
-- **系统导航 `<system>/index.html`**：卡片列出所有模块，头部有 `← 项目总览`
-- **模块导航 `<system>/<module>/index.html`**：列出该模块所有功能入口页面链接
-- **功能导航 `<system>/<module>/<feature>/index.html`**：列出该功能关联的所有页面链接
+- **项目总览 `index.html`**：大卡片列出所有系统（系统数量少时占满屏幕，自适应布局）
+- **系统导航 `<system>/index.html`**：卡片列出所有模块，**仅显示模块名称和简短描述**，不展示功能细节。头部有 `← 项目总览`
+- **模块导航 `<system>/<module>/index.html`**：卡片列出该模块所有功能入口，**仅显示功能名称和描述**。头部有 `← 系统名`
+- **功能导航 `<system>/<module>/<feature>/index.html`**：列出该功能关联的所有原型页面链接。头部有 `← 模块名`
+
+所有目录页使用 `glass-card` 毛玻璃卡片 + `mesh-gradient-bg` 背景。
 
 ---
 

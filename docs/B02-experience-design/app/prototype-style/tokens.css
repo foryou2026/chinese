@@ -177,6 +177,33 @@
   --easing-in-out: cubic-bezier(.4,0,.2,1);
   --transition-all: all 300ms ease-out;
 
+  /* —— 兼容别名（原型页面引用） ————————— */
+  --color-bg-primary:    var(--glass-bg-card);
+  --color-bg-secondary:  var(--page-bg);
+  --color-text-primary:  var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-muted);
+  --color-primary-50:    var(--color-brand-50);
+  --color-primary-100:   var(--color-brand-100);
+  --color-primary-500:   var(--color-brand-default);
+  --color-primary-600:   var(--color-brand-600);
+  --color-border:        var(--glass-border);
+  --color-error:         var(--color-danger-500);
+  --color-error-light:   var(--color-danger-50);
+  --color-success:       var(--color-success-700);
+  --color-success-light: var(--color-success-50);
+  --color-warning:       var(--color-warning-500);
+  --color-warning-light: var(--color-warning-50);
+  --color-info:          var(--color-info-500);
+  --color-info-light:    var(--color-info-50);
+  --font-semibold:       var(--weight-semibold);
+  --font-medium:         var(--weight-medium);
+  --font-bold:           var(--weight-bold);
+  --motion-normal:       var(--motion-base);
+  --ease-default:        var(--easing-out);
+  --radius-full:         var(--radius-pill);
+  --z-fixed:             var(--z-sticky);
+
   /* —— 层级 ————————————————————————————— */
   --z-base:     0;
   --z-sticky:   100;
