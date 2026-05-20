@@ -14,11 +14,21 @@
 | 规则 | 说明 |
 |------|------|
 | 焦点环 | 仅 `:focus-visible` 显示（键盘导航），鼠标/触控不显示 |
-| 样式 | 2px solid var(--color-ring)，offset 2px |
+| 样式 | `box-shadow: var(--focus-ring)` = `0 0 0 4px var(--color-brand-ring)` |
+| outline | `outline: none`（用 box-shadow 代替，不影响布局） |
+| border-radius | `border-radius: inherit`（焦点环跟随元素圆角） |
 | Tab 顺序 | 跟随 DOM 顺序，不使用 tabindex >0 |
 | 焦点陷阱 | Modal / Drawer 内焦点循环，不外泄 |
 | 焦点恢复 | 弹层关闭后焦点回到触发元素 |
 | Skip Link | 页面首元素为"跳到主内容"链接，默认隐藏，Tab 聚焦时显示 |
+
+```css
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: inherit;
+}
+```
 
 ---
 
@@ -52,10 +62,10 @@
 | 场景 | 行为 |
 |------|------|
 | 主内容 | 原生平滑滚动 `scroll-behavior: smooth` |
-| 锚点跳转 | 平滑滚动到目标位置，偏移 TopBar 高度 |
-| 弹层打开 | body overflow: hidden，防止背景滚动 |
+| 锚点跳转 | 平滑滚动到目标位置，偏移 TopBar 高度（56px） |
+| 弹层打开 | body `overflow: hidden`，防止背景滚动 |
 | 弹层关闭 | 恢复 body 滚动位置 |
-| 移动端弹性滚动 | -webkit-overflow-scrolling: touch |
+| 移动端弹性滚动 | `-webkit-overflow-scrolling: touch` |
 | 表格水平滚动 | 自定义滚动条样式（6px，圆角） |
 | 无限滚动 | 距底部 200px 触发加载，loading 指示器 |
 
@@ -66,7 +76,7 @@
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
   background: var(--color-neutral-300);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-pill);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-neutral-400);
@@ -93,17 +103,39 @@
 
 | 元素 | 反馈 |
 |------|------|
-| 按钮 | active: scale(0.97) + 色值加深，var(--motion-fast) |
-| 列表项 | active: 背景变为 neutral-100 |
-| 卡片 | active: scale(0.98)，var(--motion-fast) |
-| 图标按钮 | active: 背景圆形 neutral-200 |
+| 按钮 | `active: scale(0.97)` + 色值加深，`var(--motion-fast)` |
+| 列表项 | `active: background var(--color-neutral-100)` |
+| 卡片（.glass） | `active: scale(0.98)`，`var(--motion-fast)` |
+| 图标按钮 | `active: background var(--glass-3)` |
 
 ```css
 @media (hover: none) {
   .interactive:active {
     transform: scale(0.97);
-    transition: transform var(--motion-fast) var(--ease-default);
+    transition: transform var(--motion-fast);
   }
+}
+```
+
+---
+
+## 动效令牌
+
+| 令牌 | 值 | 场景 |
+|------|-----|------|
+| `--motion-fast` | `120ms cubic-bezier(.2,.8,.2,1)` | 按钮按下、焦点、微交互 |
+| `--motion-base` | `200ms cubic-bezier(.2,.8,.2,1)` | 弹出/收起、Tab 切换、导航栏显隐 |
+| `--motion-slow` | `320ms cubic-bezier(.2,.8,.2,1)` | Modal/Drawer 进入、页面过渡 |
+| `--easing-out` | `cubic-bezier(.2,.8,.2,1)` | 弹出类 |
+| `--easing-in-out` | `cubic-bezier(.4,0,.2,1)` | 持续类 |
+
+## hover 微浮起（桌面端通用）
+
+```css
+.glass-hoverable:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--glass-shadow-lg);
+  transition: all var(--motion-fast);
 }
 ```
 
@@ -115,8 +147,8 @@
 |------|------|
 | 文件上传 | dropzone 拖拽（见 12-file-upload.md） |
 | 列表排序 | 可选功能，左侧拖拽手柄（6 点图标） |
-| 拖拽指示 | 元素半透明(opacity 0.7) + 阴影 var(--shadow-lg) |
-| 放置指示 | 目标位置 2px var(--color-primary-500) 水平线 |
+| 拖拽指示 | 元素半透明(opacity 0.7) + `box-shadow: var(--glass-shadow-lg)` |
+| 放置指示 | 目标位置 2px `var(--color-brand-500)` 水平线 |
 
 ---
 

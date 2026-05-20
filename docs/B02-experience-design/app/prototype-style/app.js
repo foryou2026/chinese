@@ -1,30 +1,51 @@
 /**
  * app.js — window.proto
  * 纯 vanilla JS，零依赖
+ * 支持三轴切换：mode × accent × density
  */
 (function () {
   'use strict';
 
-  var STORAGE_KEY_MODE = 'proto-mode';
+  var STORAGE_KEY_MODE    = 'proto-mode';
+  var STORAGE_KEY_ACCENT  = 'proto-accent';
   var STORAGE_KEY_DENSITY = 'proto-density';
   var html = document.documentElement;
+
+  var VALID_MODES    = ['light', 'dark', 'auto'];
+  var VALID_ACCENTS  = ['ink', 'cinnabar', 'jade', 'gold', 'graphite'];
+  var VALID_DENSITIES = ['default', 'compact', 'elder'];
 
   var proto = {};
 
   /* ---- bootstrap ---- */
   proto.bootstrap = function () {
-    var savedMode = localStorage.getItem(STORAGE_KEY_MODE) || 'auto';
+    var savedMode    = localStorage.getItem(STORAGE_KEY_MODE)    || 'auto';
+    var savedAccent  = localStorage.getItem(STORAGE_KEY_ACCENT)  || 'ink';
     var savedDensity = localStorage.getItem(STORAGE_KEY_DENSITY) || 'default';
     html.setAttribute('data-mode', savedMode);
+    html.setAttribute('data-accent', savedAccent);
     html.setAttribute('data-density', savedDensity);
-    html.setAttribute('data-accent', 'accent-1');
   };
 
-  /* ---- switchTheme ---- */
+  /* ---- switchTheme (mode) ---- */
   proto.switchTheme = function (mode) {
-    if (['light', 'dark', 'auto'].indexOf(mode) === -1) return;
+    if (VALID_MODES.indexOf(mode) === -1) return;
     html.setAttribute('data-mode', mode);
     localStorage.setItem(STORAGE_KEY_MODE, mode);
+  };
+
+  /* ---- switchAccent ---- */
+  proto.switchAccent = function (accent) {
+    if (VALID_ACCENTS.indexOf(accent) === -1) return;
+    html.setAttribute('data-accent', accent);
+    localStorage.setItem(STORAGE_KEY_ACCENT, accent);
+  };
+
+  /* ---- switchDensity ---- */
+  proto.switchDensity = function (density) {
+    if (VALID_DENSITIES.indexOf(density) === -1) return;
+    html.setAttribute('data-density', density);
+    localStorage.setItem(STORAGE_KEY_DENSITY, density);
   };
 
   /* ---- toast ---- */
@@ -104,8 +125,8 @@
     var body = opts.body || '';
     var onConfirm = opts.onConfirm || null;
     var onCancel = opts.onCancel || null;
-    var confirmLabel = opts.confirmLabel || 'OK';
-    var cancelLabel = opts.cancelLabel || 'Cancel';
+    var confirmLabel = opts.confirmLabel || '确认';
+    var cancelLabel = opts.cancelLabel || '取消';
 
     var backdrop = document.createElement('div');
     backdrop.className = 'proto-backdrop';
@@ -118,12 +139,12 @@
     modal.innerHTML =
       '<div class="proto-modal-header">' +
         '<h3>' + title + '</h3>' +
-        '<button class="proto-btn proto-btn-ghost proto-btn-icon proto-btn-sm" aria-label="close">&times;</button>' +
+        '<button class="proto-btn-icon proto-btn-sm" aria-label="close">&times;</button>' +
       '</div>' +
       '<div class="proto-modal-body">' + body + '</div>' +
       '<div class="proto-modal-footer">' +
-        '<button class="proto-btn proto-btn-secondary proto-btn-md proto-modal-cancel">' + cancelLabel + '</button>' +
-        '<button class="proto-btn proto-btn-primary proto-btn-md proto-modal-confirm">' + confirmLabel + '</button>' +
+        '<button class="proto-btn-secondary proto-btn-md proto-modal-cancel">' + cancelLabel + '</button>' +
+        '<button class="proto-btn-primary proto-btn-md proto-modal-confirm">' + confirmLabel + '</button>' +
       '</div>';
 
     document.body.appendChild(backdrop);

@@ -22,20 +22,28 @@
 | inline | 水平布局，标签在左 | admin 筛选条件栏 |
 | step | 分步表单，配合 Stepper | 引导式注册 |
 
+## 表面材质
+
+| 属性 | 值 |
+|------|-----|
+| 表单容器 | `.glass` 毛玻璃面板，或嵌入页面（透明背景） |
+| 窄容器 | `.container-form` max-width 640px |
+| 圆角 | `var(--radius-lg)` |
+
 ## 布局
 
 ### standard
 
 ```
-[Label]          ← var(--text-sm), var(--font-medium), var(--color-text-primary)
-[Input]          ← 全宽
+[Label]          ← var(--font-display), var(--text-sm), var(--weight-medium), letter-spacing: 1px
+[Input]          ← 全宽，暖米白半透背景
 [helper/error]   ← var(--text-xs)
                  ← 字段间距 var(--space-4)
 [Label]
 [Input]
 [helper/error]
 
-[Submit Button]  ← 右对齐或全宽（移动端全宽）
+[Submit Button]  ← .proto-btn-primary，右对齐或全宽（移动端全宽）
 ```
 
 ### inline（admin）
@@ -61,15 +69,16 @@
 | 属性 | 值 |
 |------|-----|
 | 位置 | 字段下方，紧贴输入框 |
-| 字号 | var(--text-xs) |
-| 颜色 | var(--color-error) |
-| 图标 | 可选，error 图标 16px |
-| 输入框边框 | 2px var(--color-error) |
-| 标签颜色 | var(--color-error) |
+| 字号 | `var(--text-xs)` |
+| 颜色 | `var(--color-danger-500)` |
+| 图标 | 可选，danger 图标 16px |
+| 输入框边框 | `1px solid var(--color-danger-500)` |
+| 输入框光环 | `box-shadow: 0 0 0 4px var(--color-danger-50)` |
+| 标签颜色 | `var(--color-danger-500)` |
 
 ### 全局错误（非字段级）
 
-- 表单顶部 Alert 组件（error 变体）
+- 表单顶部 Alert 组件（danger 变体，`.glass` + 左侧 4px 朱砂色条）
 - 显示服务器返回的错误信息
 
 ## 状态
@@ -78,16 +87,16 @@
 |------|------|
 | 默认 | 所有字段可编辑 |
 | hover | 各字段独立 hover |
-| focus | 当前字段高亮 |
+| focus | 当前字段高亮（`var(--focus-ring)`） |
 | active | 同 focus |
-| disabled | 全表单灰化，提交按钮 disabled |
+| disabled | 全表单灰化（`opacity: 0.45`），提交按钮 disabled |
 | loading（提交中） | 提交按钮 loading，所有字段 readonly |
-| error（校验失败） | 错误字段标红 + 下方错误消息 |
+| error（校验失败） | 错误字段朱砂标红 + 下方错误消息 |
 | readonly | 所有字段 readonly 态 |
 
 ## 必填标记
 
-- Label 后追加红色 `*`（var(--color-error)）
+- Label 后追加红色 `*`（`var(--color-danger-500)`）
 - 可选字段不加标记（默认理解为必填）
 - 如果大多数字段可选，改为可选字段标注"（选填）"
 
@@ -98,7 +107,7 @@
 | Tab | 按字段顺序移动焦点 |
 | Enter | 单行 Input 中触发提交；Textarea 中换行 |
 | Esc | 关闭打开的下拉/日期面板 |
-| 提交成功 | Toast 提示 + 根据场景重置或跳转 |
+| 提交成功 | Toast 提示（success 翠玉） + 根据场景重置或跳转 |
 | 提交失败 | 滚动到第一个错误字段 + 聚焦 |
 
 ## a11y

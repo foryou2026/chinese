@@ -28,9 +28,9 @@
 
 ```
 ┌─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┐
-│                                   │
+│                                   │  ← .glass 毛玻璃面板
 │     [upload icon: 40px]           │
-│     [拖拽文件到此处或点击上传]      │
+│     [拖拽文件到此处或点击上传]      │  ← var(--font-display)
 │     [支持 JPG/PNG, 最大 5MB]      │
 │                                   │
 └─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┘
@@ -38,24 +38,23 @@
 
 | 属性 | 值 |
 |------|-----|
-| 边框 | 2px dashed var(--color-border) |
-| 圆角 | var(--radius-lg) |
+| 边框 | `2px dashed var(--color-neutral-300)` |
+| 材质 | `var(--glass-3)` + `backdrop-filter: var(--glass-blur-sm)` |
+| 圆角 | `var(--radius-lg)` |
 | min-height | 120px |
-| 背景 | var(--color-bg-secondary) |
-| 图标 | var(--color-neutral-400), 40px |
-| 主文字 | var(--text-sm), var(--color-text-primary) |
-| 辅助文字 | var(--text-xs), var(--color-text-tertiary) |
+| 图标 | `var(--color-neutral-400)`, 40px |
+| 主文字 | `var(--text-sm)`, `var(--color-neutral-700)`, `var(--font-display)` |
+| 辅助文字 | `var(--text-xs)`, `var(--color-neutral-400)` |
 
 ### 状态
 
 | 状态 | 表现 |
 |------|------|
-| 默认 | dashed 边框，neutral 配色 |
-| hover | 边框色 var(--color-primary-400)，背景 var(--color-primary-50) |
-| focus | 焦点环 |
-| drag-over | 边框色 var(--color-primary-500)，背景 var(--color-primary-50)，图标动画上移 4px |
-| disabled | opacity 0.5, pointer-events: none |
-| loading | 无（上传进度在文件列表中显示） |
+| 默认 | dashed 边框，毛玻璃背景 |
+| hover | 边框色 `var(--color-brand-400)`，背景 `var(--color-brand-50)` |
+| focus | `var(--focus-ring)` |
+| drag-over | 边框色 `var(--color-brand-default)`，背景 `var(--color-brand-50)`，图标动画上移 4px |
+| disabled | `opacity: 0.45`, `pointer-events: none` |
 
 ## 文件列表项
 
@@ -63,7 +62,7 @@
 
 ```
 ┌──────────────────────────────────┐
-│ [type-icon] [filename] [size]  [X] │
+│ [type-icon] [filename] [size]  [X] │  ← var(--glass-3) 背景
 │             [progress bar]         │
 └──────────────────────────────────┘
 ```
@@ -73,10 +72,10 @@
 | 状态 | 表现 |
 |------|------|
 | 排队中 | 灰色进度条，"等待上传" |
-| 上传中 | primary 色进度条 + 百分比 |
-| 成功 | success 图标，文件名可点击预览 |
-| 失败 | error 图标 + 红色文件名 + "重试"链接 |
-| 删除 hover | X 按钮变 var(--color-error) |
+| 上传中 | brand 色渐变进度条 + 百分比（`tabular-nums`） |
+| 成功 | `var(--color-success-500)` 翠玉图标，文件名可点击预览 |
+| 失败 | `var(--color-danger-500)` 朱砂图标 + 红色文件名 + "重试"链接 |
+| 删除 hover | X 按钮变 `var(--color-danger-500)` |
 
 ## Avatar 变体
 
@@ -84,9 +83,9 @@
 |------|-----|
 | 尺寸 | 96px 圆形 |
 | 默认 | 显示当前头像或 fallback |
-| hover | 半透明遮罩 + 相机图标 |
+| hover | `var(--glass-3)` 遮罩 + 相机图标 |
 | 点击 | 打开文件选择器（仅图片） |
-| 上传中 | 圆形 ProgressBar 环绕 |
+| 上传中 | 圆形 ProgressBar 环绕（brand 渐变） |
 
 ## 行为
 
@@ -95,7 +94,7 @@
 | 拖拽 | 文件拖入区域高亮，释放开始上传 |
 | 点击 | 打开系统文件选择器 |
 | 键盘 | Tab 聚焦 + Enter/Space 打开 |
-| 文件校验 | 上传前校验类型/大小，不合规时 Toast 提示 |
+| 文件校验 | 上传前校验类型/大小，不合规时 Toast 提示（danger） |
 | 多文件 | 支持多选，逐个上传，显示队列进度 |
 | 取消 | 上传中可取消单个文件 |
 

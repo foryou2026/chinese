@@ -21,34 +21,45 @@
 | 变体 | 说明 | 示例语境 |
 |------|------|---------|
 | underline | 底部 2px 指示线 | 页面级 Tab 切换 |
-| pill | 胶囊背景色 | 筛选项切换、小型分类 |
-| segment | 分段控制器（SegmentedControl） | 列表/卡片视图切换 |
+| pill | 毛玻璃胶囊背景 | 筛选项切换、小型分类 |
+| segment | 分段控制器（SegmentedControl），毛玻璃滑块 | 列表/卡片视图切换 |
 
 ### 尺寸
 
 | 尺寸 | 高度 | 字号 | padding-x |
 |------|------|------|-----------|
-| sm | 36px | var(--text-sm) | 12px |
-| md | 44px | var(--text-base) | 16px |
+| sm | 36px | `var(--text-sm)` | 12px |
+| md | 44px | `var(--text-base)` | 16px |
 
 ### 状态（underline 变体）
 
 | 状态 | 文字 | 底线 | 背景 |
 |------|------|------|------|
-| 默认 | var(--color-text-secondary) | 无 | transparent |
-| hover | var(--color-text-primary) | 无 | var(--color-neutral-50) |
-| focus | — | — | 焦点环 |
-| active（当前） | var(--color-primary-500) | 2px var(--color-primary-500) | transparent |
-| disabled | var(--color-neutral-400) | 无 | transparent |
+| 默认 | `var(--color-neutral-500)` | 无 | transparent |
+| hover | `var(--color-neutral-700)` | 无 | `var(--glass-3)` |
+| focus | — | — | `var(--focus-ring)` |
+| active（当前） | `var(--color-brand-default)` | `2px var(--color-brand-default)` | transparent |
+| disabled | `var(--color-neutral-400)` | 无 | transparent |
 
 ### 状态（pill 变体）
 
 | 状态 | 文字 | 背景 |
 |------|------|------|
-| 默认 | var(--color-text-secondary) | transparent |
-| hover | var(--color-text-primary) | var(--color-neutral-100) |
-| active（当前） | white | var(--color-primary-500) |
-| disabled | var(--color-neutral-400) | transparent |
+| 默认 | `var(--color-neutral-500)` | transparent |
+| hover | `var(--color-neutral-700)` | `var(--glass-3)` |
+| active（当前） | `var(--color-brand-on)` | `var(--color-brand-default)` |
+| disabled | `var(--color-neutral-400)` | transparent |
+
+### 状态（segment 变体）
+
+| 属性 | 值 |
+|------|-----|
+| 容器背景 | `var(--glass-3)` |
+| 容器圆角 | `var(--radius-md)` |
+| 滑块材质 | `var(--glass-2)` + `backdrop-filter: var(--glass-blur-sm)` + `var(--glass-border)` |
+| 当前项文字 | `var(--color-neutral-800)` |
+| 非当前项文字 | `var(--color-neutral-500)` |
+| 滑块过渡 | `var(--motion-base)` `var(--easing-out)` |
 
 ### 行为
 
@@ -56,8 +67,8 @@
 |------|------|
 | 左右方向键 | 切换 Tab 焦点 |
 | Enter/Space | 激活 Tab |
-| 底线动画 | 滑动跟随，var(--motion-normal) var(--ease-default) |
-| 移动端 | 可横向滚动，overflow-x: auto |
+| 底线动画 | 滑动跟随，`var(--motion-base)` `var(--easing-out)` |
+| 移动端 | 可横向滚动，`overflow-x: auto` |
 | 懒加载 | Tab 内容首次激活时加载 |
 
 ---
@@ -76,24 +87,31 @@
 | single | 同时仅展开一项 |
 | multiple | 可同时展开多项 |
 
+### 材质
+
+| 属性 | 值 |
+|------|-----|
+| 容器 | `.glass` 毛玻璃面板（可选），或嵌入已有面板（透明） |
+| 分隔线 | `1px solid var(--color-neutral-200)` |
+
 ### 状态
 
 | 状态 | 标题区背景 | 箭头 | 内容 |
 |------|-----------|------|------|
 | 默认（折叠） | transparent | 右箭头 → | 隐藏 |
-| hover | var(--color-neutral-50) | — | — |
-| focus | 焦点环 | — | — |
+| hover | `var(--glass-3)` | — | — |
+| focus | `var(--focus-ring)` | — | — |
 | active（展开） | transparent | 下箭头 ↓ | 显示 |
-| disabled | transparent | var(--color-neutral-300) | — |
+| disabled | transparent | `var(--color-neutral-300)` | — |
 
 | 属性 | 值 |
 |------|-----|
 | 标题高度 | 48px |
-| 标题 padding | 0 16px |
-| 内容 padding | 16px |
-| 分隔线 | 1px var(--color-border) |
-| 展开动画 | height auto，var(--motion-normal) var(--ease-default) |
-| 箭头旋转 | var(--motion-fast) |
+| 标题 padding | `0 var(--space-4)` |
+| 标题字体 | `var(--font-display)` |
+| 内容 padding | `var(--space-4)` |
+| 展开动画 | height auto，`var(--motion-base)` `var(--easing-out)` |
+| 箭头旋转 | `var(--motion-fast)` |
 
 ---
 
@@ -116,21 +134,22 @@
 
 | 状态 | 圆圈 | 连接线 | 标签 |
 |------|------|--------|------|
-| 待完成 | 1px var(--color-border)，数字灰色 | var(--color-neutral-200) | var(--color-text-secondary) |
-| 当前 | var(--color-primary-500) 填充，白色数字 | 左侧 var(--color-primary-500) | var(--color-text-primary), var(--font-semibold) |
-| 已完成 | var(--color-primary-500) 填充，白色 check | var(--color-primary-500) | var(--color-text-primary) |
-| 错误 | var(--color-error) 填充，白色 X | var(--color-error) | var(--color-error) |
+| 待完成 | `1px var(--color-neutral-300)`，数字灰色 | `var(--color-neutral-200)` | `var(--color-neutral-500)` |
+| 当前 | `var(--color-brand-default)` 填充，`var(--color-brand-on)` 数字 | 左侧 `var(--color-brand-default)` | `var(--color-neutral-800)`, `var(--weight-semibold)` |
+| 已完成 | `var(--color-brand-default)` 填充，白色 check | `var(--color-brand-default)` | `var(--color-neutral-700)` |
+| 错误 | `var(--color-danger-500)` 填充，白色 X | `var(--color-danger-500)` | `var(--color-danger-500)` |
 
 | 属性 | 值 |
 |------|-----|
 | 圆圈直径 | 32px |
 | 连接线高度 | 2px |
-| 标签字号 | var(--text-sm) |
+| 标签字号 | `var(--text-sm)` |
+| 标签字体 | `var(--font-display)` |
 
 ### a11y
 
-- role="list" + role="listitem"
-- 当前步骤 aria-current="step"
+- `role="list"` + `role="listitem"`
+- 当前步骤 `aria-current="step"`
 - 已完成步骤可点击回退
 
 ---

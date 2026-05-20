@@ -29,32 +29,33 @@
 | 属性 | 值 |
 |------|-----|
 | 页码按钮尺寸 | 36px x 36px |
-| 字号 | var(--text-sm) |
-| 间距 | 4px |
-| 圆角 | var(--radius-md) |
+| 字号 | `var(--text-sm)` |
+| 数字字体 | `tabular-nums` |
+| 间距 | `var(--space-1)` |
+| 圆角 | `var(--radius-md)` |
 
 ### 页码按钮状态
 
 | 状态 | 背景 | 文字 | 边框 |
 |------|------|------|------|
-| 默认 | transparent | var(--color-text-secondary) | 无 |
-| hover | var(--color-neutral-100) | var(--color-text-primary) | 无 |
-| focus | 焦点环 | — | — |
-| active（当前页） | var(--color-primary-500) | white | 无 |
-| disabled（上一页/下一页） | transparent | var(--color-neutral-300) | 无 |
+| 默认 | transparent | `var(--color-neutral-500)` | 无 |
+| hover | `var(--glass-3)` | `var(--color-neutral-700)` | 无 |
+| focus | `var(--focus-ring)` | — | — |
+| active（当前页） | `var(--color-brand-default)` | `var(--color-brand-on)` | 无 |
+| disabled（上一页/下一页） | transparent | `var(--color-neutral-300)` | 无 |
 
 ### 省略号
 
 - 页码过多时中间显示 `...`
-- hover 显示跳转输入框（Popover）
+- hover 显示跳转输入框（Popover，`.glass-strong`）
 
 ### load-more 变体
 
 | 状态 | 表现 |
 |------|------|
-| 默认 | secondary 按钮 "加载更多" |
+| 默认 | `.proto-btn-secondary` "加载更多" |
 | loading | 按钮 loading 态 |
-| 无更多 | 文字 "已全部加载"，var(--color-text-tertiary) |
+| 无更多 | 文字 "已全部加载"，`var(--color-neutral-400)` |
 
 ### 行为
 
@@ -76,12 +77,12 @@
 
 | 属性 | 值 |
 |------|-----|
-| 字号 | var(--text-sm) |
-| 分隔符 | `/` 或 `>`，var(--color-neutral-400) |
+| 字号 | `var(--text-sm)` |
+| 分隔符 | `/` 或 `>`，`var(--color-neutral-400)` |
 | 间距 | 8px |
-| 当前项 | var(--color-text-primary), var(--font-medium) |
-| 历史项 | var(--color-primary-500)，hover 下划线 |
-| 溢出 | 中间项折叠为 `...`，点击展开 Dropdown |
+| 当前项 | `var(--color-neutral-700)`, `var(--weight-medium)` |
+| 历史项 | `var(--color-brand-500)`，hover 下划线 |
+| 溢出 | 中间项折叠为 `...`，点击展开 Dropdown（`.glass-strong`） |
 
 ### 状态
 
@@ -89,8 +90,7 @@
 |------|------|
 | 默认 | 正常展示 |
 | hover（历史项） | 下划线 |
-| focus | 焦点环 |
-| disabled | 无（Breadcrumb 不会有 disabled 态） |
+| focus | `var(--focus-ring)` |
 | loading | 末尾项 Skeleton |
 
 ### a11y

@@ -15,106 +15,105 @@
 
 | 形容词 | 可验证含义 | 反例 |
 |-------|----------|------|
-| 触觉灵敏 | 所有可交互元素 active 态 <100ms 触发；按钮按下缩放 scale(0.97) | 点击无反馈的静态按钮 |
-| 游戏驱动 | 核心流程包含 XP/streak/等级中至少 2 种；正确答案触发庆祝微动画 | 纯文字学习报告 |
-| 移动原生 | 底部 Tab Bar 导航；核心功能≤2 次触控到达；全宽布局无两侧留白 | PC 后台系统 responsive 缩放 |
-| 温暖中性 | neutral 色 hue 210-230、saturation 8-12%；非纯灰、非冷蓝 | 纯灰 #808080 或冷蓝 #64748b(sat=0) |
-| 沉浸暗黑 | dark mode 背景 #0f172a（偏蓝灰），非纯黑；层级用 opacity 区分 | 纯黑 #000000 OLED 方案 |
-| 双色活力 | 主色 cyan #06b6d4 + 强调色 orange #f97316 双色调；不混用第三主色 | 彩虹多色或单色灰阶 |
-| 圆润亲和 | 卡片/按钮 border-radius 12px；输入框 8px；不超过 16px（避免儿童化） | 直角 0px 或胶囊 9999px 满屏 |
-| 呼吸留白 | 卡片间距≥16px；段落间距≥12px；单屏可交互元素≤7 个 | 信息密集电商列表页 |
+| 温润如瓷 | 中性色使用暖墨灰阶 #1F1A14~#FFFBF0（非纯灰/冷灰），页面背景为宣纸渐变 | 纯灰 #808080 或冷蓝 #64748b |
+| 薄玻璃覆 | 所有面板/卡片/弹层必须使用 `backdrop-filter: blur(22~34px)` 毛玻璃 + 顶部 1px 高光 | 传统实色 box-shadow 卡片 |
+| 墨青主调 | 主色锚定宋瓷墨青 #1B3A5C（HSL 212, 53%, 23%），5 套主题色可切换 | 科技蓝 #3B82F6 或纯黑 |
+| 信息密实 | 默认表格行高 44px、表单字号 17px、卡片 padding 20~24px；不为留白牺牲一屏信息量 | 大留白极简 SaaS |
+| 触觉灵敏 | 所有可交互元素 hover/active 态 ≤120ms 触发，按钮浮起 translateY(-1px) | 点击无反馈的静态元素 |
+| 五色可换 | brand 色通过 `data-accent` 整体切换（ink/cinnabar/jade/gold/graphite），所有 UI 自动跟随 | 写死 hex 的单一配色 |
+| 三密可调 | `data-density` 支持 default/compact/elder 三档密度，字号/间距/按钮高度响应式切换 | 固定单一密度 |
+| 墨夜双模 | dark mode 为独立设计（墨夜渐变 #0B1626→#14304F），非简单反色；毛玻璃参数全套覆盖 | 纯黑 #000 OLED 或反色补丁 |
 
 ---
 
-## 主色族
+## 主色族（Brand · 5 主题色族）
 
-| 角色 | 色值 | 用途 |
-|------|------|------|
-| primary-500（主色） | #06b6d4 | 主按钮、链接、选中态、导航高亮 |
-| primary-400 | #22d3ee | hover 态、图表强调 |
-| primary-600 | #0891b2 | active 态、深色背景上的主色 |
-| primary-100 | #cffafe | 浅色标签背景、选中行背景 |
-| accent-500（强调色） | #f97316 | CTA 按钮、奖励/XP 标识、通知角标 |
-| accent-400 | #fb923c | hover 态 |
-| accent-600 | #ea580c | active 态 |
+| 主题色 | 锚定值 | 色相描述 | 文化含义 |
+|--------|--------|---------|---------|
+| ink（默认） | #1B3A5C | 宋瓷墨青 | 汝窑天青釉 |
+| cinnabar | #B14545 | 朱砂红 | 万历朱砂印 |
+| jade | #4A6F5A | 翠玉绿 | 翡翠玉器 |
+| gold | #B8923A | 鎏金黄 | 鎏金铜器 |
+| graphite | #443B30 | 古墨棕 | 宋墨松烟 |
+
+> 按钮/链接/焦点环/Tag 只用 `--color-brand-*`，禁止直接引用具体色族。
 
 ---
 
-## 中性色族
+## 中性色族（暖墨灰阶，accent 无关）
 
 | 级别 | 色值 | 用途 |
 |------|------|------|
-| neutral-50 | #f8fafc | 页面背景（light） |
-| neutral-100 | #f1f5f9 | 卡片背景（light） |
-| neutral-200 | #e2e8f0 | 分隔线、边框 |
-| neutral-300 | #cbd5e1 | 禁用态边框 |
-| neutral-400 | #94a3b8 | placeholder 文字 |
-| neutral-500 | #64748b | 次要文字 |
-| neutral-600 | #475569 | 正文文字（light） |
-| neutral-700 | #334155 | 标题文字（light）/ 卡片背景（dark） |
-| neutral-800 | #1e293b | 深色背景层 |
-| neutral-900 | #0f172a | dark mode 主背景 |
-| neutral-950 | #020617 | dark mode 最深层 |
-
-> 中性色基于 Tailwind Slate 色阶（hue ~215, saturation ~10%），带暖灰偏移。
+| neutral-0 | #FFFBF0 | 暖白纸 · 文字落在 brand 上 |
+| neutral-50 | #F8F2E0 | 浅米 · 页面背景起始 |
+| neutral-100 | #F0E8D2 | 淡米 |
+| neutral-200 | #E5DCC7 | 描边/分隔线 |
+| neutral-300 | #C5BBA8 | 禁用态边框 |
+| neutral-400 | #9C9080 | placeholder 文字 |
+| neutral-500 | #6F6452 | 茶灰 · 辅助文字 |
+| neutral-600 | #56493A | 次要文字 |
+| neutral-700 | #3D3327 | 副文 · 标题 |
+| neutral-800 | #2A2218 | 深色层 |
+| neutral-900 | #1F1A14 | 暖墨 · 正文 |
+| neutral-950 | #100D0A | 最深 |
 
 ---
 
 ## 字体族
 
-| 角色 | 字体栈 | 理由 |
+| 角色 | 字体栈 | 用途 |
 |------|--------|------|
-| 西文/越南语/印尼语 | Inter, system-ui, sans-serif | 支持越南语变音符，Google Fonts 免费 |
-| 泰语 | Noto Sans Thai, system-ui, sans-serif | Google Fonts 免费，覆盖泰语全字符 |
-| 中文 | "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif | 沿用 B01 系统字体栈 |
-| 等宽 | "JetBrains Mono", "Fira Code", monospace | 代码/数字场景 |
-| 数字 | font-variant-numeric: tabular-nums | 对齐 XP/分数等数值 |
+| 行楷（brush） | Ma Shan Zheng, STKaiti, cursive | 仅限品牌名/Hero H1/印鉴 |
+| 宋体（display） | ZCOOL XiaoWei, Source Han Serif SC, Noto Serif SC, serif | 标题/按钮文字 |
+| 黑体（sans） | Noto Sans SC, PingFang SC, Microsoft YaHei, system-ui, sans-serif | 正文/表单 |
+| 等宽（mono） | JetBrains Mono, SF Mono, Consolas, monospace | 代码/数字场景 |
 
 | 字重 | 值 | 用途 |
 |------|-----|------|
-| normal | 400 | 正文 |
-| medium | 500 | 次标题、按钮文字 |
-| semibold | 600 | 标题、强调 |
-| bold | 700 | 大标题、数值突出 |
+| regular | 400 | 正文 |
+| medium | 500 | 次标题 |
+| semibold | 600 | 标题、按钮 |
+| bold | 700 | 大标题、数值 |
+
+> 数字统一 `font-variant-numeric: tabular-nums`。
 
 ---
 
 ## 圆角
 
-| 场景 | 值 | 理由 |
-|------|-----|------|
-| 按钮/输入框 | 8px | 亲和但不幼稚 |
-| 卡片/弹窗 | 12px | 圆润卡片感，对齐 REF-2 Duolingo |
-| 标签/徽章 | 16px | 胶囊形，视觉区分 |
-| 头像 | 9999px（圆形） | 行业惯例 |
-| 底部弹出面板 | 顶部 16px，底部 0 | 对齐 REF-3 Grab bottom sheet |
+| 场景 | Token | 值 | 理由 |
+|------|-------|-----|------|
+| 按钮/输入/Tag | --radius-md | 12px | 温润，对齐宋瓷器型 |
+| 卡片/面板 | --radius-lg | 18px | 大圆角玻璃感 |
+| 强卡片/模态 | --radius-xl | 26px | 强浮起层级感 |
+| 抽屉/Hero | --radius-2xl | 34px | 最外层容器 |
+| 印鉴/头像 | --radius-pill | 999px | 圆形 |
 
 ---
 
-## 阴影
+## 阴影（毛玻璃体系）
 
 | 级别 | 值 | 用途 |
 |------|-----|------|
-| sm | 0 1px 2px 0 rgb(0 0 0 / 0.05) | 卡片默认 |
-| md | 0 4px 6px -1px rgb(0 0 0 / 0.1) | 卡片 hover / 下拉菜单 |
-| lg | 0 10px 15px -3px rgb(0 0 0 / 0.1) | 弹窗 / 抽屉 |
+| shadow-sm | 0 2px 8px rgba(14,31,56,0.08) | 微浮起 |
+| shadow-md | 0 6px 18px rgba(14,31,56,0.12) | 标准卡片 |
+| shadow-lg | 0 14px 38px rgba(14,31,56,0.18) | 弹层/模态 |
+| glass-shadow | 6px 24px + inset 1px 高光 | 毛玻璃面板默认 |
+| glass-shadow-lg | 14px 38px + inset 1px 高光 | 毛玻璃面板 hover |
 
-> 暗色模式下阴影替换为边框（1px neutral-700），阴影不可见。
+> 暗色模式下阴影改为深墨 rgba(0,0,0,0.40~0.48)，inset 高光改为月白蓝。
 
 ---
 
 ## 密度
 
-| 维度 | 值 |
-|------|-----|
-| 间距基准 | 4px |
-| 卡片间距 | 16px |
-| 按钮高度 sm/md/lg | 32px / 40px / 48px |
-| 输入框高度 | 44px |
-| 表格行高 | 48px |
-| 最小字号 | 12px |
-| 表格密度 | 标准（行高 48px，移动触控友好） |
-| 表单密度 | 标准（字段间距 16px） |
+| 维度 | default | compact | elder |
+|------|---------|---------|-------|
+| 正文字号 | 17px | 15px | 20px |
+| 按钮高度 | 44px | 34px | 64px |
+| 表格行高 | 44px | 36px | 64px |
+| 卡片 padding | 20-24px | 12-16px | 28-36px |
+| 间距基准 | 4px | 4px | 4px |
 
 ---
 
@@ -122,11 +121,10 @@
 
 | 类型 | 时长 | 缓动 |
 |------|------|------|
-| hover/focus 状态切换 | 100ms | ease-out |
-| 展开/收起 | 150ms | ease-in-out |
-| 弹窗进入/退出 | 200ms | ease-out / ease-in |
-| 页面转场 | 300ms（红线上限） | ease-in-out |
-| 庆祝动画（撒花/星星） | 200ms 触发 + CSS animation | spring(0.175, 0.885, 0.32, 1.275) |
+| hover/focus | 120ms | cubic-bezier(.2,.8,.2,1) |
+| 展开/收起 | 200ms | cubic-bezier(.2,.8,.2,1) |
+| 模态进出 | 320ms | cubic-bezier(.2,.8,.2,1) |
+| 按钮浮起 | 200ms | cubic-bezier(.2,.8,.2,1) |
 
 > 必须支持 `prefers-reduced-motion: reduce`：所有动效降级为 0ms。
 
@@ -137,13 +135,12 @@
 | 项目 | 决定 |
 |------|------|
 | 是否必须 | 必须 |
-| 基底色 | #0f172a（slate-900，偏蓝灰） |
-| 层级 | 背景 → 卡片 → 弹窗，用 neutral-800/700 逐级提亮 |
-| 文字 | 主文字 #f8fafc，次要 #94a3b8 |
-| 主色调整 | primary-400 (#22d3ee) 替代 primary-500 提升对比度 |
-| 阴影 | 关闭，用 1px border neutral-700 替代 |
+| 基底 | 墨夜渐变 #0B1626→#14304F→#0E1F38 |
+| 中性色 | 灰阶反转（暗底浅字） |
+| 毛玻璃 | glass 参数全套覆盖（rgba(20,48,79,...) 基底） |
+| brand 色 | 暗模式提亮一档（default→brand-400） |
+| 宣纸纹理 | 关闭（opacity: 0） |
 | 切换方式 | `<html data-mode="light|dark|auto">`，auto 跟随系统 |
-| 默认 | auto（跟随系统偏好） |
 
 ---
 

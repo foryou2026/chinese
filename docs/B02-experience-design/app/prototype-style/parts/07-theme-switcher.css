@@ -1,42 +1,108 @@
-/* 07-theme-switcher.css — 主题切换按钮 */
+/* 07-theme-switcher.css — 模式 + 主题色 + 密度 切换（foryoutech 风格） */
 
-.proto-theme-switcher {
+/* ============== 模式切换（light/dark/auto） ============== */
+
+.proto-mode-switcher {
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
   padding: var(--space-1);
-  background: var(--color-bg-tertiary);
-  border-radius: var(--radius-full);
-  border: none;
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-pill);
 }
 
-.proto-theme-switcher-option {
+.proto-mode-option {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-full);
+  width: 32px; height: 32px;
+  border-radius: var(--radius-pill);
   border: none;
   background: transparent;
-  color: var(--color-text-tertiary);
+  color: var(--text-muted);
   cursor: pointer;
-  transition:
-    background var(--motion-fast) var(--ease-default),
-    color var(--motion-fast) var(--ease-default);
+  transition: background var(--motion-fast), color var(--motion-fast);
 }
 
-.proto-theme-switcher-option:hover {
-  color: var(--color-text-primary);
-}
+.proto-mode-option:hover { color: var(--text-primary); }
 
-.proto-theme-switcher-option[aria-checked="true"] {
-  background: var(--color-bg-primary);
-  color: var(--color-text-primary);
+.proto-mode-option[aria-checked="true"] {
+  background: var(--glass-bg-card);
+  color: var(--color-brand-default);
   box-shadow: var(--shadow-sm);
 }
 
-.proto-theme-switcher-option svg {
-  width: 16px;
-  height: 16px;
+.proto-mode-option svg { width: 16px; height: 16px; }
+
+/* ============== 主题色切换（5 accent） ============== */
+
+.proto-accent-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2);
+}
+
+.proto-accent-dot {
+  width: 24px; height: 24px;
+  border-radius: var(--radius-pill);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--motion-fast);
+  position: relative;
+}
+
+.proto-accent-dot:hover { transform: scale(1.15); }
+
+.proto-accent-dot[aria-checked="true"] {
+  border-color: var(--text-primary);
+  box-shadow: 0 0 0 2px var(--color-neutral-0);
+}
+
+/* 5 种主题色预览色块 */
+.proto-accent-dot[data-accent="ink"]       { background: #1B3A5C; }
+.proto-accent-dot[data-accent="cinnabar"]  { background: #B14545; }
+.proto-accent-dot[data-accent="jade"]      { background: #4A6F5A; }
+.proto-accent-dot[data-accent="gold"]      { background: #B8923A; }
+.proto-accent-dot[data-accent="graphite"]  { background: #443B30; }
+
+/* ============== 密度切换 ============== */
+
+.proto-density-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-pill);
+}
+
+.proto-density-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+  transition: background var(--motion-fast), color var(--motion-fast);
+}
+
+.proto-density-option:hover { color: var(--text-primary); }
+
+.proto-density-option[aria-checked="true"] {
+  background: var(--glass-bg-card);
+  color: var(--color-brand-default);
+  box-shadow: var(--shadow-sm);
 }

@@ -14,12 +14,13 @@
 | 属性 | 值 |
 |------|-----|
 | 高度 | 56px |
-| 背景 | var(--color-bg-primary) |
-| 底部边框 | 1px solid var(--color-border) |
-| 内边距 | 0 var(--space-6) |
-| position | sticky top: 0 |
-| z-index | var(--z-sticky) |
-| 左侧 | Logo + 系统名称 |
+| 材质 | `.glass-bar` — `background: var(--glass-2); backdrop-filter: var(--glass-blur)` |
+| 底部高光 | `border-bottom: var(--glass-border)` |
+| 顶部高光 | `::before` — `inset 0 1px 0 rgba(255,250,235,.65)` |
+| 内边距 | `0 var(--container-pad)` |
+| position | `sticky; top: 0` |
+| z-index | `var(--z-sticky)` |
+| 左侧 | Logo（`.seal` 印鉴 + `--font-brush` 品牌名） |
 | 中部 | 导航链接（admin 桌面）/ 空（app） |
 | 右侧 | 语言切换 + 用户头像 |
 
@@ -27,8 +28,8 @@
 
 | 状态 | 表现 |
 |------|------|
-| 默认 | 底部 1px 边框 |
-| 滚动后 | 增加 var(--shadow-sm) |
+| 默认 | 毛玻璃面板 + 底部玻璃边框 |
+| 滚动后 | 增加 `box-shadow: var(--shadow-sm)` |
 
 ---
 
@@ -36,27 +37,28 @@
 
 | 属性 | 值 |
 |------|-----|
-| 高度 | 56px + env(safe-area-inset-bottom) |
-| 背景 | var(--color-bg-primary) |
-| 顶部边框 | 1px solid var(--color-border) |
+| 高度 | 56px + `env(safe-area-inset-bottom)` |
+| 材质 | `.glass-bar` — 毛玻璃面板 |
+| 顶部高光 | `border-top: var(--glass-border)` |
 | Tab 数量 | 5 |
 | 图标尺寸 | 24px |
-| 标签字号 | var(--text-xs) |
-| position | fixed bottom: 0 |
-| z-index | var(--z-fixed) |
+| 标签字号 | `var(--text-xs)` |
+| 标签字体 | `var(--font-display)` |
+| position | `fixed; bottom: 0` |
+| z-index | `var(--z-sticky)` |
 
 ### Tab Item 状态
 
 | 状态 | 图标颜色 | 标签颜色 | 背景 |
 |------|---------|---------|------|
-| 默认 | var(--color-neutral-400) | var(--color-neutral-400) | 透明 |
-| hover | var(--color-neutral-600) | var(--color-neutral-600) | 透明 |
-| active（当前页） | var(--color-primary-500) | var(--color-primary-500) | 透明 |
-| pressed | var(--color-primary-600) | var(--color-primary-600) | var(--color-primary-50) |
+| 默认 | `var(--color-neutral-400)` | `var(--color-neutral-400)` | 透明 |
+| hover | `var(--color-neutral-600)` | `var(--color-neutral-600)` | 透明 |
+| active（当前页） | `var(--color-brand-default)` | `var(--color-brand-default)` | 透明 |
+| pressed | `var(--color-brand-active)` | `var(--color-brand-active)` | `var(--color-brand-50)` |
 
 ### 滚动行为
 
-向下滚动隐藏（translateY(100%)），向上滚动显示。过渡 var(--motion-normal) var(--ease-default)。
+向下滚动隐藏（`translateY(100%)`），向上滚动显示。过渡 `var(--motion-base)` `var(--easing-out)`。
 
 ---
 
@@ -66,25 +68,25 @@
 |------|-----|
 | 展开宽度 | 240px |
 | 折叠宽度 | 64px |
-| 背景 | var(--color-bg-primary) |
-| 右侧边框 | 1px solid var(--color-border) |
-| position | fixed left: 0 |
+| 材质 | `.glass-bar` — 毛玻璃面板 |
+| 右侧高光 | `border-right: var(--glass-border)` |
+| position | `fixed; left: 0` |
 | 高度 | 100vh |
-| z-index | var(--z-fixed) |
+| z-index | `var(--z-sticky)` |
 
 ### 菜单项状态
 
 | 状态 | 背景 | 文字颜色 | 左侧指示器 |
 |------|------|---------|-----------|
-| 默认 | 透明 | var(--color-text-secondary) | 无 |
-| hover | var(--color-neutral-100) | var(--color-text-primary) | 无 |
-| active（当前页） | var(--color-primary-50) | var(--color-primary-600) | 3px var(--color-primary-500) |
-| focus | 焦点环 2px var(--color-ring) | — | — |
-| disabled | 透明 | var(--color-neutral-300) | 无 |
+| 默认 | 透明 | `var(--color-neutral-500)` | 无 |
+| hover | `var(--glass-3)` | `var(--color-neutral-700)` | 无 |
+| active（当前页） | `var(--color-brand-50)` | `var(--color-brand-default)` | 3px `var(--color-brand-500)` |
+| focus | `var(--focus-ring)` | — | — |
+| disabled | 透明 | `var(--color-neutral-300)` | 无 |
 
 ### 折叠/展开
 
-过渡 var(--motion-normal) var(--ease-default)。折叠后仅显示图标，hover 显示 tooltip。
+过渡 `var(--motion-base)` `var(--easing-out)`。折叠后仅显示图标，hover 显示 tooltip（`.glass-dark`）。
 
 ---
 
@@ -92,10 +94,10 @@
 
 | 属性 | 值 |
 |------|-----|
-| 字号 | var(--text-sm) |
-| 分隔符 | `/`，颜色 var(--color-neutral-400) |
-| 当前项 | var(--color-text-primary)，font-weight var(--font-medium) |
-| 历史项 | var(--color-primary-500)，可点击 |
+| 字号 | `var(--text-sm)` |
+| 分隔符 | `/`，颜色 `var(--color-neutral-400)` |
+| 当前项 | `var(--color-neutral-700)`，`font-weight: var(--weight-medium)` |
+| 历史项 | `var(--color-brand-500)`，可点击 |
 | hover | 下划线 |
 
 ---
@@ -107,8 +109,9 @@
 | 触发 | TopBar 左侧汉堡图标 |
 | 宽度 | 280px |
 | 方向 | 从左滑入 |
-| 遮罩 | rgba(0,0,0,0.5) |
-| 动画 | var(--motion-slow) var(--ease-out) |
+| 材质 | `.glass-strong` — 强毛玻璃面板 + `--glass-blur-lg` |
+| 遮罩 | `rgba(14, 31, 56, 0.45)` + `backdrop-filter: blur(4px)` |
+| 动画 | `var(--motion-slow)` `var(--easing-out)` |
 | 关闭 | 点击遮罩 / 滑动 / X 按钮 |
 
 ---

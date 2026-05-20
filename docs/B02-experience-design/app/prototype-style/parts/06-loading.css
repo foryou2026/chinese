@@ -1,6 +1,7 @@
-/* 06-loading.css — Skeleton/Spinner/ProgressBar/Empty */
+/* 06-loading.css — Skeleton/Spinner/ProgressBar/Empty（foryoutech 风格） */
 
-/* Skeleton */
+/* ============== Skeleton ============== */
+
 .proto-skeleton {
   background: var(--color-neutral-200);
   border-radius: var(--radius-sm);
@@ -15,11 +16,25 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 251, 240, 0.4) 50%,
     transparent 100%
   );
   background-size: 200% 100%;
   animation: proto-shimmer 1.5s infinite;
+}
+
+[data-mode="dark"] .proto-skeleton {
+  background: var(--color-neutral-200);
+}
+
+[data-mode="dark"] .proto-skeleton::after {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(168, 192, 212, 0.12) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
 }
 
 @keyframes proto-shimmer {
@@ -27,38 +42,24 @@
   100% { background-position: 200% 0; }
 }
 
-.proto-skeleton-text {
-  height: 16px;
-  border-radius: var(--radius-sm);
-  width: 100%;
-}
+.proto-skeleton-text { height: 16px; width: 100%; }
+.proto-skeleton-title { height: 24px; width: 60%; }
 
-.proto-skeleton-title {
-  height: 24px;
-  border-radius: var(--radius-sm);
-  width: 60%;
-}
-
-.proto-skeleton-avatar {
-  border-radius: var(--radius-full);
-}
-
+.proto-skeleton-avatar { border-radius: var(--radius-pill); }
 .proto-skeleton-avatar-sm { width: 32px; height: 32px; }
 .proto-skeleton-avatar-md { width: 40px; height: 40px; }
 .proto-skeleton-avatar-lg { width: 64px; height: 64px; }
 
-.proto-skeleton-image {
-  border-radius: var(--radius-md);
-  aspect-ratio: 16 / 9;
-}
+.proto-skeleton-image { border-radius: var(--radius-md); aspect-ratio: 16/9; }
 
-/* Spinner */
+/* ============== Spinner ============== */
+
 .proto-spinner {
   display: inline-block;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-pill);
   border-style: solid;
   border-color: var(--color-neutral-200);
-  border-top-color: var(--color-primary-500);
+  border-top-color: var(--color-brand-default);
   animation: proto-spin 0.8s linear infinite;
 }
 
@@ -71,14 +72,15 @@
 .proto-spinner-lg { width: 40px; height: 40px; border-width: 4px; }
 
 .proto-spinner-inverse {
-  border-color: rgba(255, 255, 255, 0.3);
-  border-top-color: white;
+  border-color: rgba(255, 251, 240, 0.3);
+  border-top-color: var(--color-neutral-0);
 }
 
-/* ProgressBar */
+/* ============== ProgressBar ============== */
+
 .proto-progress {
   width: 100%;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-pill);
   background: var(--color-neutral-200);
   overflow: hidden;
 }
@@ -89,27 +91,25 @@
 
 .proto-progress-fill {
   height: 100%;
-  border-radius: var(--radius-full);
-  background: var(--color-primary-500);
-  transition: width var(--motion-normal) var(--ease-default);
-}
-
-.proto-progress-fill-accent {
-  background: var(--color-accent-500);
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--color-brand-default), var(--color-brand-hover));
+  transition: width var(--motion-base);
 }
 
 .proto-progress-fill-success {
-  background: var(--color-success);
+  background: linear-gradient(90deg, var(--color-success-500), var(--color-success-700));
 }
-
-.proto-progress-fill-error {
-  background: var(--color-error);
+.proto-progress-fill-warning {
+  background: linear-gradient(90deg, var(--color-warning-500), var(--color-warning-700));
+}
+.proto-progress-fill-danger {
+  background: linear-gradient(90deg, var(--color-danger-500), var(--color-danger-700));
 }
 
 /* Indeterminate */
 .proto-progress-indeterminate .proto-progress-fill {
   width: 40%;
-  animation: proto-indeterminate 2s infinite var(--ease-default);
+  animation: proto-indeterminate 2s infinite;
 }
 
 @keyframes proto-indeterminate {
@@ -117,7 +117,8 @@
   100% { transform: translateX(350%); }
 }
 
-/* Empty */
+/* ============== Empty — 毛玻璃空态 ============== */
+
 .proto-empty {
   display: flex;
   flex-direction: column;
@@ -127,22 +128,26 @@
   min-height: 200px;
   padding: var(--space-8);
   gap: var(--space-3);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
 }
 
 .proto-empty-icon {
-  width: 48px;
-  height: 48px;
+  width: 48px; height: 48px;
   color: var(--color-neutral-300);
 }
 
 .proto-empty-title {
   font-size: var(--text-base);
-  font-weight: var(--font-semibold);
-  color: var(--color-text-primary);
+  font-weight: var(--weight-semibold);
+  color: var(--text-primary);
 }
 
 .proto-empty-description {
   font-size: var(--text-sm);
-  color: var(--color-text-secondary);
+  color: var(--text-muted);
   max-width: 320px;
 }

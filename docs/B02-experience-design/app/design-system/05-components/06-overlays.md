@@ -9,6 +9,16 @@
 
 ---
 
+## 遮罩层（通用）
+
+| 属性 | 值 |
+|------|-----|
+| 背景 | `rgba(14, 31, 56, 0.45)` (墨夜半透) |
+| 模糊 | `backdrop-filter: blur(4px)` |
+| z-index | `var(--z-modal)` - 1 |
+
+---
+
 ## Modal
 
 ### 用途与禁忌
@@ -25,37 +35,44 @@
 | lg | 680px | 详情预览 |
 | fullscreen | 100vw（移动端） | 移动端表单 |
 
+### 材质
+
+| 属性 | 值 |
+|------|-----|
+| 背景 | `var(--glass-2)` |
+| 模糊 | `backdrop-filter: var(--glass-blur-lg)` |
+| 边框 | `var(--glass-border-strong)` |
+| 顶部高光 | `::before` — `inset 0 1px 0 rgba(255,250,235,.65)` |
+| 圆角 | `var(--radius-xl)`（移动端 fullscreen 时顶部圆角，底部 0） |
+| 阴影 | `var(--glass-shadow-lg)` |
+| z-index | `var(--z-modal)` |
+| body 滚动 | 锁定 |
+
 ### 状态
 
 | 状态 | 表现 |
 |------|------|
-| 默认 | 居中显示，遮罩 rgba(0,0,0,0.5) |
-| 进入 | 从 scale(0.95) opacity(0) → scale(1) opacity(1)，var(--motion-slow) var(--ease-out) |
-| 退出 | 反向，var(--motion-fast) var(--ease-in) |
-| loading | 内容区 Skeleton，按钮 disabled |
-| error | 内容区显示 Alert(error) |
+| 默认 | 居中显示，遮罩 + 毛玻璃面板 |
+| 进入 | 从 `scale(0.95) opacity(0)` → `scale(1) opacity(1)`，`var(--motion-slow)` `var(--easing-out)` |
+| 退出 | 反向，`var(--motion-fast)` |
+| loading | 内容区 Skeleton（`.glass-3` shimmer），按钮 disabled |
+| error | 内容区显示 Alert（danger 变体） |
 
 ### Anatomy
 
 ```
-[Backdrop]
+[Backdrop 墨夜半透 + blur]
 ┌───────────────────────┐
-│ [Title]         [X]   │ ← 标题栏，高度 56px
+│ ░░ 1px inset 高光 ░░░ │
+│ [Title]         [X]   │ ← 标题栏 56px，var(--font-display)
 ├───────────────────────┤
 │                       │
 │    [Content]          │ ← 可滚动，max-height 70vh
 │                       │
 ├───────────────────────┤
-│       [Cancel] [OK]   │ ← 底部操作栏，高度 64px
+│      [取消] [确认]     │ ← 底部操作栏 64px
 └───────────────────────┘
 ```
-
-| 属性 | 值 |
-|------|-----|
-| 圆角 | var(--radius-xl)（移动端 fullscreen 时顶部 var(--radius-xl)，底部 0） |
-| 阴影 | var(--shadow-xl) |
-| z-index | var(--z-modal)，backdrop var(--z-modal-backdrop) |
-| body 滚动 | 锁定 |
 
 ### 行为
 
@@ -79,23 +96,29 @@
 | left | 从左滑入 | 280px | admin 移动端导航 |
 | bottom | 从下滑入 | 自适应（max 80vh） | app 移动端操作面板 |
 
+### 材质
+
+同 Modal：`var(--glass-2)` + `var(--glass-blur-lg)` + `var(--glass-border-strong)`。
+
+开口侧有圆角 `var(--radius-xl)`，贴边侧圆角为 0。
+
 ### 状态
 
 | 状态 | 表现 |
 |------|------|
 | 默认 | 遮罩 + 面板滑入 |
-| 进入 | translateX(100%) → translateX(0)，var(--motion-slow) var(--ease-out) |
-| 退出 | 反向，var(--motion-fast) |
+| 进入 | `translateX(100%)` → `translateX(0)`，`var(--motion-slow)` `var(--easing-out)` |
+| 退出 | 反向，`var(--motion-fast)` |
 | loading | 内容 Skeleton |
 
 ### Bottom Drawer（app 移动端核心交互）
 
 | 属性 | 值 |
 |------|-----|
-| 拖拽手柄 | 顶部 36px 宽灰色条，可拖拽 |
+| 拖拽手柄 | 顶部 36px 宽 `var(--color-neutral-300)` 条，可拖拽 |
 | 吸附点 | 30% / 60% / 90% 屏幕高度 |
 | 向下拖拽超阈值 | 关闭 |
-| 圆角 | 顶部 var(--radius-xl) |
+| 顶部圆角 | `var(--radius-xl)` |
 
 ---
 
@@ -108,12 +131,14 @@
 | 属性 | 值 |
 |------|-----|
 | 触发 | 点击 |
+| 材质 | `var(--glass-2)` + `backdrop-filter: var(--glass-blur)` |
+| 边框 | `var(--glass-border-strong)` |
 | 定位 | 相对触发元素，自动翻转 |
-| 圆角 | var(--radius-lg) |
-| 阴影 | var(--shadow-lg) |
-| z-index | var(--z-popover) |
+| 圆角 | `var(--radius-lg)` |
+| 阴影 | `var(--glass-shadow-lg)` |
+| z-index | `var(--z-popover)` |
 | 关闭 | 点击外部 / Esc |
-| 动画 | scale(0.95) opacity(0) → scale(1) opacity(1)，var(--motion-fast) |
+| 动画 | `scale(0.95) opacity(0)` → `scale(1) opacity(1)`，`var(--motion-fast)` |
 
 ---
 
@@ -126,15 +151,15 @@ hover/focus 触发的纯文字提示，不承载交互元素。
 | 属性 | 值 |
 |------|-----|
 | 触发 | hover(300ms 延迟) + focus |
-| 背景 | var(--color-neutral-900)（light）/ var(--color-neutral-200)（dark） |
-| 文字 | white（light）/ var(--color-neutral-900)（dark） |
-| 字号 | var(--text-xs) |
-| padding | 4px 8px |
-| 圆角 | var(--radius-sm) |
+| 材质 | `.glass-dark` — `background: var(--glass-dark); backdrop-filter: var(--glass-blur-sm)` |
+| 文字 | `var(--color-neutral-0)` (暖白) |
+| 字号 | `var(--text-xs)` |
+| padding | `var(--space-1)` `var(--space-2)` |
+| 圆角 | `var(--radius-sm)` |
 | max-width | 200px |
-| z-index | var(--z-tooltip) |
+| z-index | `var(--z-tooltip)` |
 | 箭头 | 6px 三角形指向触发元素 |
-| 动画 | opacity 0→1，var(--motion-fast) |
+| 动画 | `opacity 0→1`，`var(--motion-fast)` |
 
 ### 位置
 
@@ -151,30 +176,32 @@ top（默认）/ bottom / left / right，空间不足自动翻转。
 | 属性 | 值 |
 |------|-----|
 | 触发 | 点击按钮/图标 |
+| 材质 | `var(--glass-2)` + `backdrop-filter: var(--glass-blur-lg)` |
+| 边框 | `var(--glass-border-strong)` |
 | min-width | 160px |
 | max-height | 320px（可滚动） |
-| 圆角 | var(--radius-lg) |
-| 阴影 | var(--shadow-lg) |
-| z-index | var(--z-dropdown) |
+| 圆角 | `var(--radius-lg)` |
+| 阴影 | `var(--glass-shadow-lg)` |
+| z-index | `var(--z-dropdown)` |
 
 ### 菜单项
 
 | 状态 | 背景 | 文字 |
 |------|------|------|
-| 默认 | transparent | var(--color-text-primary) |
-| hover | var(--color-neutral-100) | var(--color-text-primary) |
-| focus | 焦点环 | — |
-| active | var(--color-neutral-200) | — |
-| disabled | transparent | var(--color-neutral-400) |
-| destructive | transparent | var(--color-error) |
-| destructive hover | var(--color-error-light) | var(--color-error) |
+| 默认 | transparent | `var(--color-neutral-700)` |
+| hover | `var(--glass-3)` | `var(--color-neutral-800)` |
+| focus | `var(--focus-ring)` | — |
+| active | `var(--glass-1)` | `var(--color-neutral-900)` |
+| disabled | transparent | `var(--color-neutral-400)` |
+| destructive | transparent | `var(--color-danger-500)` |
+| destructive hover | `var(--color-danger-50)` | `var(--color-danger-700)` |
 
 | 属性 | 值 |
 |------|-----|
 | 项高度 | 40px |
-| padding | 0 12px |
+| padding | `0 var(--space-3)` |
 | 图标 | 可选，左侧 20px，间距 8px |
-| 分隔线 | 1px var(--color-border)，margin 4px 0 |
+| 分隔线 | `1px solid var(--color-neutral-200)`，margin `var(--space-1)` 0 |
 
 ### 行为
 
@@ -192,11 +219,11 @@ top（默认）/ bottom / left / right，空间不足自动翻转。
 
 | 组件 | role | 关键 aria |
 |------|------|----------|
-| Modal | dialog | aria-modal="true", aria-labelledby(title) |
-| Drawer | dialog | aria-modal="true", aria-labelledby(title) |
-| Popover | — | aria-expanded on trigger |
-| Tooltip | tooltip | aria-describedby on trigger |
-| Dropdown | menu | aria-expanded, menuitem on items |
+| Modal | dialog | `aria-modal="true"`, `aria-labelledby`(title) |
+| Drawer | dialog | `aria-modal="true"`, `aria-labelledby`(title) |
+| Popover | — | `aria-expanded` on trigger |
+| Tooltip | tooltip | `aria-describedby` on trigger |
+| Dropdown | menu | `aria-expanded`, `menuitem` on items |
 
 ---
 

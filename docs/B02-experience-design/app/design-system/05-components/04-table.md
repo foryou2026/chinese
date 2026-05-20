@@ -28,43 +28,54 @@
 |------|---------|---------|
 | 行高 | 48px | 40px |
 | 表头高度 | 44px | 40px |
-| 单元格 padding | 12px 16px | 8px 12px |
-| 字号 | var(--text-sm) | var(--text-sm) |
+| 单元格 padding | `var(--space-3)` `var(--space-4)` | `var(--space-2)` `var(--space-3)` |
+| 字号 | `var(--text-sm)` | `var(--text-sm)` |
+
+## 表面材质
+
+| 属性 | 值 |
+|------|-----|
+| 整体容器 | `.glass` — 毛玻璃面板包裹 |
+| 圆角 | `var(--radius-lg)` |
+| 边框 | `var(--glass-border)` |
+| 阴影 | `var(--glass-shadow)` |
+| 数字对齐 | `font-variant-numeric: tabular-nums` |
 
 ## 状态
 
 | 状态 | 表现 |
 |------|------|
-| 默认 | 白色背景，底部 1px 分隔线 |
-| hover（行） | var(--color-neutral-50) 背景 |
-| focus（行） | 焦点环围绕整行 |
-| active（行选中） | var(--color-primary-50) 背景 + 左侧 3px var(--color-primary-500) 指示器 |
-| disabled（行） | opacity 0.5，pointer-events: none |
-| loading | Skeleton 行（3-5 行占位） |
+| 默认 | 毛玻璃面板背景，底部 `1px solid var(--color-neutral-200)` 分隔线 |
+| hover（行） | `var(--glass-3)` 背景 |
+| focus（行） | `var(--focus-ring)` 围绕整行 |
+| active（行选中） | `var(--color-brand-50)` 背景 + 左侧 3px `var(--color-brand-default)` 指示器 |
+| disabled（行） | `opacity: 0.45`, `pointer-events: none` |
+| loading | Skeleton 行（3-5 行占位，`.glass-3` 背景 shimmer） |
 | empty | 空态组件居中（见 09-loading.md Empty） |
-| error | Alert Banner 替代表格内容 |
+| error | Alert Banner（danger 变体）替代表格内容 |
 
 ## 表头
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | var(--color-neutral-50) |
-| 字重 | var(--font-medium) |
-| 颜色 | var(--color-text-secondary) |
-| position | sticky top: 0（表头固定） |
+| 背景 | `var(--glass-3)` |
+| 字重 | `var(--weight-medium)` |
+| 字体 | `var(--font-display)` |
+| 颜色 | `var(--color-neutral-500)` |
+| position | `sticky; top: 0`（表头固定） |
 
 ## 排序
 
 | 状态 | 图标 |
 |------|------|
-| 未排序 | 上下双箭头，var(--color-neutral-300) |
-| 升序 | 上箭头，var(--color-primary-500) |
-| 降序 | 下箭头，var(--color-primary-500) |
+| 未排序 | 上下双箭头，`var(--color-neutral-300)` |
+| 升序 | 上箭头，`var(--color-brand-default)` |
+| 降序 | 下箭头，`var(--color-brand-default)` |
 
 ## 筛选
 
-- 表头列筛选图标（漏斗），点击弹出 Popover
-- 激活筛选时图标变为 var(--color-primary-500)
+- 表头列筛选图标（漏斗），点击弹出 Popover（`.glass-strong`）
+- 激活筛选时图标变为 `var(--color-brand-default)`
 - 筛选器内支持 Input / Select / DatePicker
 
 ## 分页
@@ -77,7 +88,7 @@
 |------|------|
 | ≥lg | 标准表格 |
 | md | 隐藏次要列，横向滚动 |
-| <md | 卡片列表替代（每行数据一张卡片） |
+| <md | 卡片列表替代（每行数据一张 `.glass` 卡片） |
 
 ## 行为
 

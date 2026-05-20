@@ -1,6 +1,7 @@
-/* 05-feedback.css — Toast/Alert/Banner */
+/* 05-feedback.css — 毛玻璃 Toast/Alert/Banner（foryoutech 风格） */
 
-/* Toast */
+/* ============== Toast ============== */
+
 .proto-toast-container {
   position: fixed;
   z-index: var(--z-toast);
@@ -10,7 +11,6 @@
   pointer-events: none;
 }
 
-/* 桌面端右上角 */
 @media (min-width: 640px) {
   .proto-toast-container {
     top: var(--space-4);
@@ -19,7 +19,6 @@
   }
 }
 
-/* 移动端顶部居中 */
 @media (max-width: 639px) {
   .proto-toast-container {
     top: var(--space-4);
@@ -36,144 +35,119 @@
   min-width: 280px;
   max-width: 420px;
   padding: var(--space-3) var(--space-4);
-  background: var(--color-bg-primary);
-  border: 1px solid var(--color-border);
+  background: var(--glass-bg-elevated);
+  -webkit-backdrop-filter: var(--glass-blur-lg);
+          backdrop-filter: var(--glass-blur-lg);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-inset),
+    0 8px 40px -4px var(--glass-shadow-elevated);
   pointer-events: auto;
   opacity: 0;
   transform: translateY(-8px);
-  transition:
-    opacity var(--motion-slow) var(--ease-out),
-    transform var(--motion-slow) var(--ease-out);
+  transition: opacity var(--motion-slow), transform var(--motion-slow);
 }
-
-.proto-toast[data-open] {
-  opacity: 1;
-  transform: translateY(0);
-}
+.proto-toast[data-open] { opacity: 1; transform: translateY(0); }
 
 .proto-toast-icon {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: 20px; height: 20px;
   margin-top: 2px;
 }
 
-.proto-toast-success .proto-toast-icon { color: var(--color-success); }
-.proto-toast-error .proto-toast-icon { color: var(--color-error); }
-.proto-toast-warning .proto-toast-icon { color: var(--color-warning); }
-.proto-toast-info .proto-toast-icon { color: var(--color-info); }
+.proto-toast-success .proto-toast-icon { color: var(--color-success-500); }
+.proto-toast-error .proto-toast-icon   { color: var(--color-danger-500); }
+.proto-toast-warning .proto-toast-icon { color: var(--color-warning-500); }
+.proto-toast-info .proto-toast-icon    { color: var(--color-info-500); }
+
+/* 左侧状态色条 */
+.proto-toast-success { border-left: 3px solid var(--color-success-500); }
+.proto-toast-error   { border-left: 3px solid var(--color-danger-500); }
+.proto-toast-warning { border-left: 3px solid var(--color-warning-500); }
+.proto-toast-info    { border-left: 3px solid var(--color-info-500); }
 
 .proto-toast-content {
   flex: 1;
   font-size: var(--text-sm);
-  line-height: var(--text-sm-lh);
-  color: var(--color-text-primary);
+  line-height: var(--lh-sm);
+  color: var(--text-primary);
 }
 
 .proto-toast-action {
-  color: var(--color-primary-500);
+  color: var(--color-brand-default);
   font-size: var(--text-sm);
-  font-weight: var(--font-medium);
+  font-weight: var(--weight-medium);
   cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
+  background: none; border: none; padding: 0;
 }
-
-.proto-toast-action:hover {
-  text-decoration: underline;
-}
+.proto-toast-action:hover { text-decoration: underline; }
 
 .proto-toast-close {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  color: var(--color-neutral-400);
+  width: 20px; height: 20px;
+  color: var(--text-muted);
   cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
+  background: none; border: none; padding: 0;
 }
+.proto-toast-close:hover { color: var(--text-secondary); }
 
-.proto-toast-close:hover {
-  color: var(--color-neutral-600);
-}
+/* ============== Alert — 毛玻璃+左色条 ============== */
 
-/* Alert */
 .proto-alert {
   display: flex;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-md);
   border-left: 4px solid;
   position: relative;
 }
 
-.proto-alert-success {
-  background: var(--color-success-light);
-  border-left-color: var(--color-success);
-}
-
-.proto-alert-error {
-  background: var(--color-error-light);
-  border-left-color: var(--color-error);
-}
-
-.proto-alert-warning {
-  background: var(--color-warning-light);
-  border-left-color: var(--color-warning);
-}
-
-.proto-alert-info {
-  background: var(--color-info-light);
-  border-left-color: var(--color-info);
-}
+.proto-alert-success { border-left-color: var(--color-success-500); }
+.proto-alert-error   { border-left-color: var(--color-danger-500); }
+.proto-alert-warning { border-left-color: var(--color-warning-500); }
+.proto-alert-info    { border-left-color: var(--color-info-500); }
 
 .proto-alert-icon {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: 20px; height: 20px;
   margin-top: 2px;
 }
+.proto-alert-success .proto-alert-icon { color: var(--color-success-500); }
+.proto-alert-error .proto-alert-icon   { color: var(--color-danger-500); }
+.proto-alert-warning .proto-alert-icon { color: var(--color-warning-500); }
+.proto-alert-info .proto-alert-icon    { color: var(--color-info-500); }
 
-.proto-alert-success .proto-alert-icon { color: var(--color-success); }
-.proto-alert-error .proto-alert-icon { color: var(--color-error); }
-.proto-alert-warning .proto-alert-icon { color: var(--color-warning); }
-.proto-alert-info .proto-alert-icon { color: var(--color-info); }
-
-.proto-alert-body {
-  flex: 1;
-}
+.proto-alert-body { flex: 1; }
 
 .proto-alert-title {
   font-size: var(--text-sm);
-  font-weight: var(--font-semibold);
-  color: var(--color-text-primary);
+  font-weight: var(--weight-semibold);
+  color: var(--text-primary);
   margin-bottom: var(--space-1);
 }
 
 .proto-alert-description {
   font-size: var(--text-sm);
-  line-height: var(--text-sm-lh);
-  color: var(--color-text-secondary);
+  line-height: var(--lh-sm);
+  color: var(--text-secondary);
 }
 
 .proto-alert-close {
   position: absolute;
-  top: var(--space-3);
-  right: var(--space-3);
-  width: 20px;
-  height: 20px;
-  color: var(--color-neutral-400);
+  top: var(--space-3); right: var(--space-3);
+  width: 20px; height: 20px;
+  color: var(--text-muted);
   cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
+  background: none; border: none; padding: 0;
 }
 
-/* Banner */
+/* ============== Banner — 毛玻璃 ============== */
+
 .proto-banner {
   display: flex;
   align-items: center;
@@ -183,34 +157,35 @@
   width: 100%;
   padding: 0 var(--space-4);
   font-size: var(--text-sm);
-  font-weight: var(--font-medium);
-  color: white;
+  font-weight: var(--weight-medium);
   z-index: var(--z-toast);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
 }
 
-.proto-banner-info { background: var(--color-primary-500); }
-.proto-banner-warning { background: var(--color-warning); color: var(--color-neutral-900); }
-.proto-banner-error { background: var(--color-error); }
+.proto-banner-info {
+  background: linear-gradient(90deg, var(--color-brand-default), var(--color-brand-active));
+  color: var(--color-brand-on);
+}
+.proto-banner-warning {
+  background: rgba(184, 146, 58, 0.18);
+  color: var(--color-warning-700);
+  border-bottom: 1px solid rgba(184, 146, 58, 0.32);
+}
+.proto-banner-error {
+  background: rgba(177, 69, 69, 0.18);
+  color: var(--color-danger-700);
+  border-bottom: 1px solid rgba(177, 69, 69, 0.32);
+}
 
 .proto-banner-action {
-  color: inherit;
-  text-decoration: underline;
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-size: inherit;
-  font-weight: inherit;
+  color: inherit; text-decoration: underline;
+  cursor: pointer; background: none; border: none;
+  font-size: inherit; font-weight: inherit;
 }
 
 .proto-banner-close {
-  color: inherit;
-  opacity: 0.8;
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
+  color: inherit; opacity: 0.8;
+  cursor: pointer; background: none; border: none; padding: 0;
 }
-
-.proto-banner-close:hover {
-  opacity: 1;
-}
+.proto-banner-close:hover { opacity: 1; }

@@ -19,35 +19,35 @@
 
 | 尺寸 | 直径 | 字号(fallback) | 场景 |
 |------|------|---------------|------|
-| xs | 24px | var(--text-xs) | 评论列表、行内提及 |
-| sm | 32px | var(--text-sm) | 导航栏、消息列表 |
-| md | 40px | var(--text-base) | 用户卡片、设置页 |
-| lg | 64px | var(--text-xl) | 个人主页 |
-| xl | 96px | var(--text-3xl) | 编辑头像 |
+| xs | 24px | `var(--text-xs)` | 评论列表、行内提及 |
+| sm | 32px | `var(--text-sm)` | 导航栏、消息列表 |
+| md | 40px | `var(--text-base)` | 用户卡片、设置页 |
+| lg | 64px | `var(--text-xl)` | 个人主页 |
+| xl | 96px | `var(--text-2xl)` | 编辑头像 |
 
 ### 样式
 
 | 属性 | 值 |
 |------|-----|
-| 圆角 | var(--radius-full)（圆形） |
-| 边框 | 2px white（在深色背景上） |
-| fallback（无图） | 首字母大写，背景 var(--color-primary-100)，文字 var(--color-primary-600) |
+| 圆角 | `var(--radius-pill)` （圆形） |
+| 边框 | `2px var(--color-neutral-0)` （暖白，在深色背景上） |
+| fallback（无图） | 首字母大写，背景 `var(--color-brand-100)`，文字 `var(--color-brand-600)` |
 | 加载失败 | 同 fallback |
-| 在线状态 | 右下角绿色圆点（10px），2px 白色边框 |
+| 在线状态 | 右下角 `var(--color-success-500)` 圆点（10px），2px 白色边框 |
 
 ### 状态
 
 | 状态 | 表现 |
 |------|------|
 | 默认 | 显示图片或 fallback |
-| hover | 可选，叠加半透明遮罩 + 编辑图标 |
-| loading | Skeleton 圆形 |
+| hover | 可选，叠加 `var(--glass-3)` 遮罩 + 编辑图标 |
+| loading | Skeleton 圆形（`var(--glass-3)` + shimmer） |
 
 ### Avatar Group
 
 - 重叠排列，每个头像左偏移 -8px
 - 最多显示 5 个，超出显示 "+N"
-- "+N" 使用 neutral-200 背景，neutral-600 文字
+- "+N" 使用 `var(--color-neutral-200)` 背景，`var(--color-neutral-600)` 文字
 
 ---
 
@@ -70,9 +70,9 @@
 | 属性 | dot | count |
 |------|-----|-------|
 | 尺寸 | 8px 圆 | min-width 20px, height 20px |
-| 背景 | var(--color-error) | var(--color-error) |
-| 文字 | 无 | white, var(--text-xs), var(--font-semibold) |
-| 圆角 | var(--radius-full) | var(--radius-full) |
+| 背景 | `var(--color-danger-500)` (朱砂) | `var(--color-danger-500)` |
+| 文字 | 无 | white, `var(--text-xs)`, `var(--weight-semibold)` |
+| 圆角 | `var(--radius-pill)` | `var(--radius-pill)` |
 | padding | 0 | 0 6px |
 | 位置 | 右上角，偏移 -4px | 右上角，偏移 -8px |
 
@@ -82,8 +82,8 @@
 |------|------|
 | 默认 | 显示 |
 | 0 值 | 隐藏（不显示 "0"） |
-| 进入 | scale(0→1) var(--motion-fast) var(--ease-spring) |
-| 退出 | scale(1→0) var(--motion-fast) |
+| 进入 | `scale(0→1)` `var(--motion-fast)` `var(--easing-out)` |
+| 退出 | `scale(1→0)` `var(--motion-fast)` |
 
 ---
 
@@ -104,25 +104,25 @@
 
 | 颜色 | 背景(filled) | 文字 | 边框(outline) |
 |------|-------------|------|--------------|
-| primary | var(--color-primary-100) | var(--color-primary-700) | var(--color-primary-300) |
-| accent | var(--color-accent-100) | var(--color-accent-700) | var(--color-accent-300) |
-| neutral | var(--color-neutral-100) | var(--color-neutral-600) | var(--color-neutral-300) |
-| success | var(--color-success-light) | #065f46 | — |
-| warning | var(--color-warning-light) | #92400e | — |
-| error | var(--color-error-light) | #991b1b | — |
+| brand | `var(--color-brand-100)` | `var(--color-brand-700)` | `var(--color-brand-300)` |
+| neutral | `var(--color-neutral-100)` | `var(--color-neutral-600)` | `var(--color-neutral-300)` |
+| success 翠玉 | `var(--color-success-50)` | `var(--color-success-700)` | — |
+| warning 鎏金 | `var(--color-warning-50)` | `var(--color-warning-700)` | — |
+| danger 朱砂 | `var(--color-danger-50)` | `var(--color-danger-700)` | — |
+| info 青花 | `var(--color-info-50)` | `var(--color-info-700)` | — |
 
 ### 尺寸
 
 | 尺寸 | 高度 | padding-x | 字号 |
 |------|------|-----------|------|
-| sm | 22px | 8px | var(--text-xs) |
-| md | 28px | 10px | var(--text-sm) |
+| sm | 22px | 8px | `var(--text-xs)` |
+| md | 28px | 10px | `var(--text-sm)` |
 
 ### 样式
 
 | 属性 | 值 |
 |------|-----|
-| 圆角 | var(--radius-xl) |
+| 圆角 | `var(--radius-xl)` |
 | 可删除 | 可选，右侧 X 按钮（16px），hover 变深 |
 | 图标 | 可选，左侧 14px |
 
@@ -146,20 +146,20 @@
 
 | 状态 | 背景 | 文字 | 边框 |
 |------|------|------|------|
-| 默认（未选） | transparent | var(--color-text-secondary) | 1px var(--color-border) |
-| hover（未选） | var(--color-neutral-50) | var(--color-text-primary) | 1px var(--color-border-strong) |
-| 选中 | var(--color-primary-50) | var(--color-primary-600) | 1px var(--color-primary-300) |
-| hover（选中） | var(--color-primary-100) | var(--color-primary-700) | 1px var(--color-primary-400) |
-| focus | 焦点环 | — | — |
-| disabled | var(--color-neutral-50) | var(--color-neutral-400) | 1px var(--color-neutral-200) |
+| 默认（未选） | transparent | `var(--color-neutral-500)` | `1px solid var(--color-neutral-200)` |
+| hover（未选） | `var(--glass-3)` | `var(--color-neutral-700)` | `1px solid var(--color-neutral-300)` |
+| 选中 | `var(--color-brand-50)` | `var(--color-brand-default)` | `1px solid var(--color-brand-300)` |
+| hover（选中） | `var(--color-brand-100)` | `var(--color-brand-hover)` | `1px solid var(--color-brand-400)` |
+| focus | `var(--focus-ring)` | — | — |
+| disabled | `var(--color-neutral-50)` | `var(--color-neutral-400)` | `1px solid var(--color-neutral-200)` |
 
 | 属性 | 值 |
 |------|-----|
 | 高度 | 32px |
-| padding | 0 12px |
-| 圆角 | var(--radius-full) |
+| padding | `0 var(--space-3)` |
+| 圆角 | `var(--radius-pill)` |
 | 选中图标 | 左侧 check 16px（选中态追加） |
-| 过渡 | var(--motion-fast) |
+| 过渡 | `var(--motion-fast)` |
 
 ---
 

@@ -1,162 +1,160 @@
-/* 02-buttons.css — Button / IconButton 6态+异常态 */
+/* 02-buttons.css — 毛玻璃按钮体系（foryoutech 风格）*/
 
-.proto-btn {
+/* 共用按钮基底 */
+.proto-btn,
+[class*="proto-btn-"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-2);
-  font-family: var(--font-sans);
-  font-weight: var(--font-medium);
+  gap: 0.5rem;
   border: none;
   cursor: pointer;
-  border-radius: var(--radius-md);
-  transition:
-    background var(--motion-fast) var(--ease-default),
-    color var(--motion-fast) var(--ease-default),
-    transform var(--motion-fast) var(--ease-default),
-    box-shadow var(--motion-fast) var(--ease-default);
-  user-select: none;
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  transition: var(--transition-all);
   white-space: nowrap;
   text-decoration: none;
-  position: relative;
-  overflow: hidden;
 }
 
-/* 尺寸 */
-.proto-btn-sm {
-  height: 32px;
-  padding: 0 var(--space-3);
-  font-size: var(--text-sm);
-}
-
-.proto-btn-md {
-  height: 40px;
-  padding: 0 var(--space-4);
-  font-size: var(--text-sm);
-}
-
-.proto-btn-lg {
-  height: 48px;
-  padding: 0 var(--space-6);
-  font-size: var(--text-base);
-  border-radius: var(--radius-lg);
-}
-
-/* Primary 变体 */
-.proto-btn-primary {
-  background: var(--color-primary-500);
-  color: var(--color-text-inverse);
-}
-
-.proto-btn-primary:hover {
-  background: var(--color-primary-600);
-}
-
-.proto-btn-primary:active {
-  background: var(--color-primary-700);
-  transform: scale(0.97);
-}
-
-/* Accent 变体 */
-.proto-btn-accent {
-  background: var(--color-accent-500);
-  color: var(--color-text-inverse);
-}
-
-.proto-btn-accent:hover {
-  background: var(--color-accent-600);
-}
-
-.proto-btn-accent:active {
-  background: var(--color-accent-700);
-  transform: scale(0.97);
-}
-
-/* Secondary 变体 */
-.proto-btn-secondary {
-  background: transparent;
-  color: var(--color-primary-500);
-  border: 1px solid var(--color-primary-500);
-}
-
-.proto-btn-secondary:hover {
-  background: var(--color-primary-50);
-  color: var(--color-primary-600);
-  border-color: var(--color-primary-600);
-}
-
-.proto-btn-secondary:active {
-  background: var(--color-primary-100);
-  color: var(--color-primary-700);
-  transform: scale(0.97);
-}
-
-/* Ghost 变体 */
-.proto-btn-ghost {
-  background: transparent;
-  color: var(--color-primary-500);
-}
-
-.proto-btn-ghost:hover {
-  background: var(--color-neutral-100);
-  color: var(--color-primary-600);
-}
-
-.proto-btn-ghost:active {
-  background: var(--color-neutral-200);
-  color: var(--color-primary-700);
-}
-
-/* Destructive 变体 */
-.proto-btn-destructive {
-  background: var(--color-error);
-  color: var(--color-text-inverse);
-}
-
-.proto-btn-destructive:hover {
-  background: #dc2626;
-}
-
-.proto-btn-destructive:active {
-  background: #b91c1c;
-  transform: scale(0.97);
-}
-
-/* Disabled 态（所有变体） */
 .proto-btn:disabled,
-.proto-btn[aria-disabled="true"] {
-  background: var(--color-neutral-200);
-  color: var(--color-neutral-400);
-  border-color: transparent;
+[class*="proto-btn-"]:disabled {
+  opacity: 0.45;
   cursor: not-allowed;
-  pointer-events: none;
-  transform: none;
+  transform: none !important;
 }
 
-/* Loading 态 */
-.proto-btn[aria-busy="true"] {
-  pointer-events: none;
-  opacity: 0.7;
+/* ---- 尺寸 ---- */
+.proto-btn-sm  { height: 32px; padding: 0 12px; font-size: var(--text-sm); border-radius: var(--radius-pill); }
+.proto-btn-md  { height: 40px; padding: 0 16px; font-size: var(--text-sm); border-radius: var(--radius-pill); }
+.proto-btn-lg  { height: 48px; padding: 0 24px; font-size: var(--text-base); border-radius: var(--radius-pill); }
+
+/* ---- Primary CTA（foryoutech btn-primary） ---- */
+.proto-btn-primary {
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-pill);
+  font-weight: var(--weight-semibold);
+  background: linear-gradient(135deg, var(--color-brand-700), var(--color-brand-500));
+  color: var(--color-brand-on);
+  box-shadow: 0 4px 14px -2px var(--color-brand-ring);
+}
+.proto-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px -2px var(--color-brand-ring);
+  filter: brightness(1.05);
+}
+.proto-btn-primary:active { transform: translateY(0); }
+
+/* ---- Glass 按钮（foryoutech btn-glass） ---- */
+.proto-btn-glass,
+.proto-btn-secondary {
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-pill);
+  font-weight: var(--weight-medium);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+}
+.proto-btn-glass:hover,
+.proto-btn-secondary:hover {
+  transform: translateY(-1px);
+  background: var(--glass-bg-card);
+  box-shadow: 0 4px 16px -2px var(--glass-shadow);
 }
 
-.proto-btn[aria-busy="true"] .proto-btn-label {
-  visibility: hidden;
+/* ---- Ghost 按钮（foryoutech btn-ghost） ---- */
+.proto-btn-ghost {
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-pill);
+  font-weight: var(--weight-medium);
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+}
+.proto-btn-ghost:hover {
+  transform: translateY(-1px);
+  background: var(--glass-bg);
+  border-color: var(--glass-border);
+  color: var(--text-primary);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
-.proto-btn[aria-busy="true"] .proto-spinner {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* ---- Destructive（朱砂渐变） ---- */
+.proto-btn-destructive {
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-pill);
+  font-weight: var(--weight-semibold);
+  background: linear-gradient(135deg, var(--color-danger-700), var(--color-danger-500));
+  color: #fff;
+  box-shadow: 0 4px 14px -2px rgba(177, 69, 69, 0.35);
 }
+.proto-btn-destructive:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+  box-shadow: 0 6px 20px -2px rgba(177, 69, 69, 0.45);
+}
+.proto-btn-destructive:active { transform: translateY(0); }
 
-/* IconButton */
+/* ---- Success（翠玉渐变） ---- */
+.proto-btn-success {
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-pill);
+  font-weight: var(--weight-semibold);
+  background: linear-gradient(135deg, var(--color-success-700), var(--color-success-500));
+  color: #fff;
+  box-shadow: 0 4px 14px -2px rgba(74, 111, 90, 0.35);
+}
+.proto-btn-success:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+.proto-btn-success:active { transform: translateY(0); }
+
+/* ---- Icon-only ---- */
 .proto-btn-icon {
-  padding: 0;
-  aspect-ratio: 1;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-all);
+  box-shadow: inset 0 1px 0 0 var(--glass-inset);
+}
+.proto-btn-icon:hover {
+  background: var(--glass-bg-card);
+  color: var(--text-primary);
+  transform: translateY(-1px);
 }
 
-.proto-btn-icon.proto-btn-sm { width: 32px; }
-.proto-btn-icon.proto-btn-md { width: 40px; }
-.proto-btn-icon.proto-btn-lg { width: 48px; }
+/* ---- Link ---- */
+.proto-btn-link {
+  background: none;
+  border: none;
+  color: var(--color-brand-default);
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+}
+.proto-btn-link:hover { color: var(--color-brand-hover); text-decoration: underline; }
+
+/* ---- Loading 态 ---- */
+[aria-busy="true"] { pointer-events: none; opacity: 0.7; }
+
+.proto-spinner {
+  display: inline-block;
+  width: 16px; height: 16px;
+  border: 2px solid var(--color-brand-default);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: proto-spin 0.8s linear infinite;
+}
+.proto-spinner-sm { width: 14px; height: 14px; border-width: 2px; }
+.proto-spinner-inverse { border-color: rgba(255,255,255,0.4); border-top-color: #fff; }
+
+@keyframes proto-spin { to { transform: rotate(360deg); } }
