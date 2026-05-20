@@ -7,16 +7,16 @@
 > **模块**：全局
 > **功能**：全局
 > **上游依赖**：01-tech-stack
-> **冻结状态**：未冻结
+> **冻结状态**：✅ 已冻结
 
 ---
 
 ## 1. 系统清单
 
-| system-id | 显示名 | 用户群 | 鉴权方式 | 部署形态 | 域名/路径 |
+| system-id | 显示名 | 用户群 | 鉴权方式 | 部署形态 | 域名策略 |
 |-----------|--------|--------|---------|---------|----------|
-| app | 用户系统 | 终端用户 | 邮箱登录 + Google 登录 | Docker (web-app:3000) | `/` |
-| admin | 管理系统 | 内部运营 | 邮箱登录 | Docker (admin-app:3001) | `/admin` |
+| app | 用户系统 | 终端用户 | 邮箱登录 + Google 登录 | Docker (web-app:3000) | 主域名 |
+| admin | 管理系统 | 内部运营 | 邮箱登录 | Docker (admin-app:3001) | 独立子域名（不可预测命名）+ IP/VPN 访问限制 |
 
 ## 2. 产出目录映射
 
@@ -32,9 +32,10 @@
 | 维度 | 策略 |
 |------|------|
 | 前端代码库 | 单仓双 app：`system/apps/web-app`（app）、`system/apps/admin-app`（admin） |
-| 用户体系 | 各系统独立，不共享用户池 |
+| 用户体系 | 共用 Supabase Auth 实例，通过 JWT `app_metadata.role` 区分系统权限；admin 角色需手动授予 |
 | API 路由前缀 | app: `/api/v1/app/*`，admin: `/api/v1/admin/*` |
-| 鉴权域 | 共用 Supabase Auth 实例，通过 JWT `role` 字段区分系统权限 |
+| 域名隔离 | admin 使用独立子域名（不可预测命名，如 `xk9m-admin.example.com`），禁止使用路径 `/admin` 区分（防止 Cookie 作用域污染和扫描器探测） |
+| 访问限制 | admin 子域名配合 IP 白名单或 VPN 访问限制，Nginx 层拦截非授权来源 |
 | 部署 | 同一 Docker Compose，不同容器和端口 |
 
 ## 4. 跨系统业务关联

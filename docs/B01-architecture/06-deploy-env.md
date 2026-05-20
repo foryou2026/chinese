@@ -7,7 +7,7 @@
 > **模块**：全局
 > **功能**：全局
 > **上游依赖**：01-tech-stack
-> **冻结状态**：未冻结
+> **冻结状态**：✅ 已冻结
 
 ---
 
@@ -35,7 +35,7 @@ Docker Compose 唯一部署方式。
 | Supabase API | 54321 | Supabase REST/Auth API |
 | PostgreSQL | 54322 | 直连数据库 |
 | Redis | 6379 | 缓存与队列 |
-| Nginx | 80 | 反向代理网关 |
+| Nginx | 80/443 | 反向代理网关，按域名分流 app/admin |
 
 ## 环境变量清单
 
@@ -55,6 +55,8 @@ Docker Compose 唯一部署方式。
 | `GOOGLE_SMTP_PASS` | 否 | — | Google 邮件应用密码 |
 | `VOLCENGINE_ACCESS_KEY` | 否 | — | 火山引擎 Access Key |
 | `VOLCENGINE_SECRET_KEY` | 否 | — | 火山引擎 Secret Key |
+| `ADMIN_DOMAIN` | 是 | — | admin 系统独立子域名（不可预测命名，禁止使用路径区分） |
+| `APP_DOMAIN` | 是 | — | app 系统主域名 |
 
 > 环境变量通过 `.env` 文件注入 Docker Compose。`.env` 不入 Git，提供 `.env.example` 模板。
 
@@ -70,6 +72,16 @@ services:
   redis:          # 缓存与队列
   # Supabase 相关容器由 supabase 自托管方案提供
 ```
+
+## Nginx 域名路由策略
+
+| 域名 | 转发目标 | 说明 |
+|------|---------|------|
+| `${APP_DOMAIN}` | web-app:3000 | 用户系统主域名 |
+| `${ADMIN_DOMAIN}` | admin-app:3001 | admin 独立子域名，不可预测命名 |
+| 两个域名 `/api/v1/*` | api-server:8000 | 统一后端 API |
+
+> admin 子域名禁止使用路径 `/admin` 区分，原因：Cookie 作用域污染 + 扫描器探测风险。admin 子域名应配合 IP 白名单或 VPN 进行访问限制。
 
 | 规则 | 说明 |
 |------|------|
