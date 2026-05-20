@@ -1,0 +1,42 @@
+/* 07-theme-switcher.css — 主题切换按钮 */
+
+.proto-theme-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-full);
+  border: none;
+}
+
+.proto-theme-switcher-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: transparent;
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  transition:
+    background var(--motion-fast) var(--ease-default),
+    color var(--motion-fast) var(--ease-default);
+}
+
+.proto-theme-switcher-option:hover {
+  color: var(--color-text-primary);
+}
+
+.proto-theme-switcher-option[aria-checked="true"] {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.proto-theme-switcher-option svg {
+  width: 16px;
+  height: 16px;
+}

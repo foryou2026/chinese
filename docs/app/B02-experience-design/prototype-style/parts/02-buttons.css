@@ -1,0 +1,162 @@
+/* 02-buttons.css — Button / IconButton 6态+异常态 */
+
+.proto-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-sans);
+  font-weight: var(--font-medium);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  transition:
+    background var(--motion-fast) var(--ease-default),
+    color var(--motion-fast) var(--ease-default),
+    transform var(--motion-fast) var(--ease-default),
+    box-shadow var(--motion-fast) var(--ease-default);
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 尺寸 */
+.proto-btn-sm {
+  height: 32px;
+  padding: 0 var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.proto-btn-md {
+  height: 40px;
+  padding: 0 var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.proto-btn-lg {
+  height: 48px;
+  padding: 0 var(--space-6);
+  font-size: var(--text-base);
+  border-radius: var(--radius-lg);
+}
+
+/* Primary 变体 */
+.proto-btn-primary {
+  background: var(--color-primary-500);
+  color: var(--color-text-inverse);
+}
+
+.proto-btn-primary:hover {
+  background: var(--color-primary-600);
+}
+
+.proto-btn-primary:active {
+  background: var(--color-primary-700);
+  transform: scale(0.97);
+}
+
+/* Accent 变体 */
+.proto-btn-accent {
+  background: var(--color-accent-500);
+  color: var(--color-text-inverse);
+}
+
+.proto-btn-accent:hover {
+  background: var(--color-accent-600);
+}
+
+.proto-btn-accent:active {
+  background: var(--color-accent-700);
+  transform: scale(0.97);
+}
+
+/* Secondary 变体 */
+.proto-btn-secondary {
+  background: transparent;
+  color: var(--color-primary-500);
+  border: 1px solid var(--color-primary-500);
+}
+
+.proto-btn-secondary:hover {
+  background: var(--color-primary-50);
+  color: var(--color-primary-600);
+  border-color: var(--color-primary-600);
+}
+
+.proto-btn-secondary:active {
+  background: var(--color-primary-100);
+  color: var(--color-primary-700);
+  transform: scale(0.97);
+}
+
+/* Ghost 变体 */
+.proto-btn-ghost {
+  background: transparent;
+  color: var(--color-primary-500);
+}
+
+.proto-btn-ghost:hover {
+  background: var(--color-neutral-100);
+  color: var(--color-primary-600);
+}
+
+.proto-btn-ghost:active {
+  background: var(--color-neutral-200);
+  color: var(--color-primary-700);
+}
+
+/* Destructive 变体 */
+.proto-btn-destructive {
+  background: var(--color-error);
+  color: var(--color-text-inverse);
+}
+
+.proto-btn-destructive:hover {
+  background: #dc2626;
+}
+
+.proto-btn-destructive:active {
+  background: #b91c1c;
+  transform: scale(0.97);
+}
+
+/* Disabled 态（所有变体） */
+.proto-btn:disabled,
+.proto-btn[aria-disabled="true"] {
+  background: var(--color-neutral-200);
+  color: var(--color-neutral-400);
+  border-color: transparent;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+}
+
+/* Loading 态 */
+.proto-btn[aria-busy="true"] {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.proto-btn[aria-busy="true"] .proto-btn-label {
+  visibility: hidden;
+}
+
+.proto-btn[aria-busy="true"] .proto-spinner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IconButton */
+.proto-btn-icon {
+  padding: 0;
+  aspect-ratio: 1;
+}
+
+.proto-btn-icon.proto-btn-sm { width: 32px; }
+.proto-btn-icon.proto-btn-md { width: 40px; }
+.proto-btn-icon.proto-btn-lg { width: 48px; }
