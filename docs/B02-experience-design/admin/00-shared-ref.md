@@ -6,7 +6,7 @@
 > **系统**：admin
 > **模块**：全局
 > **功能**：全局
-> **上游依赖**：docs/app/B02-experience-design/
+> **上游依赖**：docs/B02-experience-design/app/
 > **冻结状态**：未冻结
 
 ---
@@ -15,7 +15,7 @@
 
 admin 系统与 app 系统共用同一套设计风格和设计系统。
 
-所有体验定调、Token、组件规范、原型样式包均以 `docs/app/B02-experience-design/` 为唯一源。
+所有体验定调、Token、组件规范、原型样式包均以 `docs/B02-experience-design/app/` 为唯一源。
 
 admin 不复制、不重复定义任何设计规范。
 
@@ -33,9 +33,9 @@ admin 不复制、不重复定义任何设计规范。
 
 ## 引用路径
 
-- 体验定调：`docs/app/B02-experience-design/01-direction.md` ~ `06-experience-principles.md`
-- 设计系统：`docs/app/B02-experience-design/design-system/`
-- 原型样式包：`docs/app/B02-experience-design/prototype-style/`
+- 体验定调：`docs/B02-experience-design/app/01-direction.md` ~ `06-experience-principles.md`
+- 设计系统：`docs/B02-experience-design/app/design-system/`
+- 原型样式包：`docs/B02-experience-design/app/prototype-style/`
 
 ---
 

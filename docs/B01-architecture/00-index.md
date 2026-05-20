@@ -25,7 +25,7 @@
 | 04 | api-conventions | URL/响应/错误码/分页 |
 | 05 | coding-standards | 代码风格、分层、错误处理 |
 | 06 | deploy-env | Docker、端口、环境变量 |
-| 07 | i18n-responsive | i18n、断点、移动适配 |
+| 07 | i18n-responsive/ | i18n（核心/UI文案/业务内容/Agent规则）、格式化、字体、断点 |
 | 08 | systems | 系统清单与隔离策略 |
 | 09 | auth-infra | 鉴权技术栈 |
 | 99 | open-questions | 未决问题 |

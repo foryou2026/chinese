@@ -15,23 +15,25 @@
 
 ```
 docs/
-  B01-architecture/                          # 共享
-  _shared/
-    D01-data/<module>/<feature>/             # 共享
-  app/
-    B02-experience-design/
-    C01-requirements/
+  B01-architecture/                          # 共享（无系统子目录）
+  B02-experience-design/
+    app/                                     # 按系统
+    admin/
+  C01-requirements/
+    app/                                     # 按系统
       permissions/
       <module>/<feature>/
-    C02-ia-interaction/<module>/<feature>/
-    D02-api/<module>/<feature>/
-  admin/
-    B02-experience-design/
-    C01-requirements/
+    admin/
       permissions/
       <module>/<feature>/
-    C02-ia-interaction/<module>/<feature>/
-    D02-api/<module>/<feature>/
+  C02-ia-interaction/
+    app/<module>/<feature>/                  # 按系统
+    admin/<module>/<feature>/
+  D01-data/
+    common/<module>/<feature>/               # 共享（系统名 = common）
+  D02-api/
+    app/<module>/<feature>/                  # 按系统
+    admin/<module>/<feature>/
 
 C03-prototype/
   index.html

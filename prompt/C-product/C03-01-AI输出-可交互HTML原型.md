@@ -133,13 +133,13 @@ C03-prototype/
 
 ## 样式引用
 
-样式包位于 `docs/<system-id>/B02-experience-design/prototype-style/`。
+样式包位于 `docs/B02-experience-design/<system-id>/prototype-style/`。
 
 页面（`C03-prototype/<system-id>/<page-id>.html`）引用路径：
 
 ```html
-<link rel="stylesheet" href="../../docs/<system-id>/B02-experience-design/prototype-style/app.css">
-<script src="../../docs/<system-id>/B02-experience-design/prototype-style/app.js"></script>
+<link rel="stylesheet" href="../../docs/B02-experience-design/<system-id>/prototype-style/app.css">
+<script src="../../docs/B02-experience-design/<system-id>/prototype-style/app.js"></script>
 ```
 
 > 绝不拷贝样式文件。`<system-id>` 替换为实际系统 ID。
@@ -176,7 +176,7 @@ C03-prototype/
   <meta name="related-r-ids" content="R-course-001,R-course-002">
   <title>课程列表 · app 原型</title>
 
-  <link rel="stylesheet" href="../../docs/app/B02-experience-design/prototype-style/app.css">
+  <link rel="stylesheet" href="../../docs/B02-experience-design/app/prototype-style/app.css">
   <style>
     .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:100; align-items:center; justify-content:center; }
     .modal-overlay.is-open { display:flex; }
@@ -189,7 +189,7 @@ C03-prototype/
   </main>
   <div class="modal-overlay" id="modal-delete" role="dialog" aria-modal="true"></div>
 
-  <script src="../../docs/app/B02-experience-design/prototype-style/app.js"></script>
+  <script src="../../docs/B02-experience-design/app/prototype-style/app.js"></script>
   <script>
     fetch('_shared/proto-nav.html')
       .then(r => r.text())

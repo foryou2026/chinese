@@ -22,10 +22,10 @@
 
 | system-id | B02 体验设计 | C01 需求 | C02 交互 | C03 原型 | D02 接口 |
 |-----------|-------------|---------|---------|---------|---------|
-| app | docs/app/B02-experience-design/ | docs/app/C01-requirements/ | docs/app/C02-ia-interaction/ | C03-prototype/app/ | docs/app/D02-api/ |
-| admin | docs/admin/B02-experience-design/ | docs/admin/C01-requirements/ | docs/admin/C02-ia-interaction/ | C03-prototype/admin/ | docs/admin/D02-api/ |
+| app | docs/B02-experience-design/app/ | docs/C01-requirements/app/ | docs/C02-ia-interaction/app/ | C03-prototype/app/ | docs/D02-api/app/ |
+| admin | docs/B02-experience-design/admin/ | docs/C01-requirements/admin/ | docs/C02-ia-interaction/admin/ | C03-prototype/admin/ | docs/D02-api/admin/ |
 
-> 共享产出：`docs/B01-architecture/`、`docs/_shared/D01-data/`
+> 共享产出：`docs/B01-architecture/`、`docs/D01-data/common/`
 
 ## 3. 隔离策略
 
