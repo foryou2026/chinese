@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-id" content="P-admin-auth-004">
+  <meta name="system-id" content="admin">
+  <meta name="module-id" content="auth">
+  <meta name="feature-id" content="account-entry">
+  <meta name="related-r-ids" content="R-auth-005,R-auth-006,R-auth-007,R-auth-009">
+  <title>后台壳 · admin 原型</title>
+  <link rel="stylesheet" href="../../docs/B02-experience-design/app/prototype-style/app.css">
+  <style>
+    body { display:flex; flex-direction:column; min-height:100dvh; }
+    .admin-topbar { display:flex; align-items:center; height:56px; padding:0 var(--space-4); background:var(--color-bg-primary); border-bottom:1px solid var(--color-border); position:sticky; top:0; z-index:var(--z-sticky); }
+    .admin-topbar-logo { font-weight:var(--font-semibold); font-size:var(--text-lg); color:var(--color-primary-500); margin-right:auto; }
+    .admin-layout { display:flex; flex:1; }
+    .admin-sidebar { width:220px; background:var(--color-bg-primary); border-right:1px solid var(--color-border); padding:var(--space-4) 0; flex-shrink:0; }
+    .sidebar-item { display:flex; align-items:center; gap:var(--space-2); height:40px; padding:0 var(--space-4); font-size:var(--text-sm); color:var(--color-text-secondary); cursor:pointer; transition:background var(--motion-fast) var(--ease-default); }
+    .sidebar-item:hover { background:var(--color-bg-secondary); }
+    .sidebar-item.active { background:var(--color-primary-50); color:var(--color-primary-600); font-weight:var(--font-medium); }
+    .admin-content { flex:1; padding:var(--space-6); background:var(--color-bg-secondary); }
+    .dashboard-placeholder { background:var(--color-bg-primary); border-radius:var(--radius-lg); padding:var(--space-8); text-align:center; box-shadow:var(--shadow-sm); }
+    .dashboard-placeholder h2 { font-size:var(--text-xl); margin-bottom:var(--space-2); }
+    .dashboard-placeholder p { font-size:var(--text-sm); color:var(--color-text-secondary); }
+
+    /* 头像区域 */
+    .avatar-area { position:relative; }
+    .avatar-btn { display:flex; align-items:center; gap:var(--space-2); background:none; border:none; cursor:pointer; padding:var(--space-1) var(--space-2); border-radius:var(--radius-md); transition:background var(--motion-fast) var(--ease-default); }
+    .avatar-btn:hover { background:var(--color-bg-secondary); }
+    .avatar-circle { width:32px; height:32px; border-radius:var(--radius-full); background:var(--color-primary-100); color:var(--color-primary-600); display:flex; align-items:center; justify-content:center; font-size:var(--text-sm); font-weight:var(--font-semibold); }
+    .avatar-name { font-size:var(--text-sm); color:var(--color-text-primary); }
+    .avatar-chevron { font-size:var(--text-xs); color:var(--color-text-tertiary); transition:transform var(--motion-fast) var(--ease-default); }
+    .avatar-menu { position:absolute; right:0; top:calc(100% + var(--space-1)); min-width:160px; background:var(--color-bg-primary); border:1px solid var(--color-border); border-radius:var(--radius-lg); box-shadow:var(--shadow-lg); padding:var(--space-1) 0; display:none; z-index:var(--z-dropdown); }
+    .avatar-menu.is-open { display:block; }
+    .avatar-menu-item { display:flex; align-items:center; gap:var(--space-2); height:40px; padding:0 var(--space-3); font-size:var(--text-sm); color:var(--color-text-primary); cursor:pointer; transition:background var(--motion-fast) var(--ease-default); border:none; background:none; width:100%; text-align:left; }
+    .avatar-menu-item:hover { background:var(--color-neutral-100); }
+    .avatar-menu-sep { height:1px; background:var(--color-border); margin:var(--space-1) 0; }
+    .avatar-menu-item.destructive { color:var(--color-error); }
+    .avatar-menu-item.destructive:hover { background:var(--color-error-light); }
+
+    /* 修改密码弹框内部 */
+    .change-pwd-form .proto-field + .proto-field { margin-top:var(--space-4); }
+    .password-wrapper { position:relative; }
+    .password-toggle { position:absolute; right:var(--space-3); top:50%; transform:translateY(-50%); background:none; border:none; color:var(--color-text-tertiary); cursor:pointer; padding:var(--space-1); font-size:var(--text-sm); }
+    .password-toggle:hover { color:var(--color-text-secondary); }
+    .strength-bar { height:4px; border-radius:var(--radius-full); background:var(--color-neutral-200); margin-top:var(--space-1); overflow:hidden; }
+    .strength-fill { height:100%; border-radius:var(--radius-full); transition:width var(--motion-normal) var(--ease-default), background var(--motion-normal) var(--ease-default); width:0; }
+    .strength-text { font-size:var(--text-xs); margin-top:var(--space-0-5); color:var(--color-text-tertiary); }
+
+    /* 移动端 */
+    @media (max-width: 768px) {
+      .admin-sidebar { display:none; }
+      .admin-content { padding:var(--space-4); }
+    }
+  </style>
+</head>
+<body>
+  <!-- 管理后台顶栏 -->
+  <header class="admin-topbar">
+    <span class="admin-topbar-logo">管理后台</span>
+
+    <!-- 原型快捷导航 -->
+    <div style="display:flex;align-items:center;gap:var(--space-2);margin-right:var(--space-4)">
+      <button data-action="toggle-theme" class="proto-btn proto-btn-ghost proto-btn-sm" id="theme-toggle">明/暗</button>
+      <a href="index.html" class="proto-btn proto-btn-ghost proto-btn-sm" style="text-decoration:none;font-size:var(--text-xs)">原型导航</a>
+    </div>
+
+    <!-- 头像下拉 -->
+    <div class="avatar-area" id="avatar-area">
+      <button class="avatar-btn" id="avatar-btn" aria-expanded="false" aria-haspopup="true">
+        <div class="avatar-circle">A</div>
+        <span class="avatar-name">管理员</span>
+        <span class="avatar-chevron" id="avatar-chevron">▼</span>
+      </button>
+      <div class="avatar-menu" id="avatar-menu" role="menu">
+        <div style="padding:var(--space-2) var(--space-3);font-size:var(--text-xs);color:var(--color-text-tertiary)" id="menu-email">admin@example.com</div>
+        <div class="avatar-menu-sep"></div>
+        <button class="avatar-menu-item" role="menuitem" id="menu-change-pwd">修改密码</button>
+        <div class="avatar-menu-sep"></div>
+        <button class="avatar-menu-item destructive" role="menuitem" id="menu-logout">退出登录</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <!-- 侧边栏 -->
+    <aside class="admin-sidebar">
+      <div class="sidebar-item active">Dashboard</div>
+      <div class="sidebar-item" style="color:var(--color-text-tertiary)">用户管理（占位）</div>
+      <div class="sidebar-item" style="color:var(--color-text-tertiary)">内容管理（占位）</div>
+      <div class="sidebar-item" style="color:var(--color-text-tertiary)">系统设置（占位）</div>
+    </aside>
+
+    <!-- 内容区 -->
+    <main class="admin-content">
+      <div class="dashboard-placeholder">
+        <h2>Dashboard</h2>
+        <p>此为后台壳页面，用于演示登录态下的修改密码、退出登录、会话过期功能</p>
+        <div style="margin-top:var(--space-6);display:flex;gap:var(--space-3);justify-content:center;flex-wrap:wrap">
+          <button class="proto-btn proto-btn-secondary proto-btn-md" id="demo-change-pwd">演示：修改密码</button>
+          <button class="proto-btn proto-btn-secondary proto-btn-md" id="demo-logout">演示：退出登录</button>
+          <button class="proto-btn proto-btn-secondary proto-btn-md" id="demo-session-expired">演示：会话过期</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+  <script>
+    if(typeof proto !== 'undefined') proto.bootstrap();
+
+    var themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', function(){
+      var m = document.documentElement.getAttribute('data-mode');
+      proto.switchTheme(m === 'dark' ? 'light' : 'dark');
+    });
+
+    /* 头像下拉菜单 */
+    var avatarBtn = document.getElementById('avatar-btn');
+    var avatarMenu = document.getElementById('avatar-menu');
+    var avatarChevron = document.getElementById('avatar-chevron');
+
+    avatarBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var open = avatarMenu.classList.toggle('is-open');
+      avatarBtn.setAttribute('aria-expanded', open);
+      avatarChevron.style.transform = open ? 'rotate(180deg)' : '';
+    });
+
+    document.addEventListener('click', function(e) {
+      if(!document.getElementById('avatar-area').contains(e.target)) {
+        avatarMenu.classList.remove('is-open');
+        avatarBtn.setAttribute('aria-expanded', 'false');
+        avatarChevron.style.transform = '';
+      }
+    });
+
+    /* 修改密码 */
+    function openChangePwd() {
+      avatarMenu.classList.remove('is-open');
+      proto.modal({
+        size: 'md',
+        title: '修改密码',
+        body:
+          '<div class="change-pwd-form">' +
+            '<div id="cpwd-alert" style="display:none;padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);margin-bottom:var(--space-4);font-size:var(--text-sm);border-left:4px solid var(--color-error);background:var(--color-error-light);color:var(--color-error)"></div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label proto-label-required" for="cpwd-old">旧密码</label>' +
+              '<div class="password-wrapper">' +
+                '<input type="password" id="cpwd-old" class="proto-input" placeholder="请输入当前密码" style="padding-right:var(--space-10)">' +
+                '<button type="button" class="password-toggle" onclick="var i=document.getElementById(\'cpwd-old\');i.type=i.type===\'password\'?\'text\':\'password\';this.textContent=i.type===\'password\'?\'👁\':\'🔒\'" aria-label="切换可见">👁</button>' +
+              '</div>' +
+              '<span class="proto-error-msg" id="cpwd-old-error" style="display:none"></span>' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label proto-label-required" for="cpwd-new">新密码</label>' +
+              '<div class="password-wrapper">' +
+                '<input type="password" id="cpwd-new" class="proto-input" placeholder="至少 8 位，包含字母和数字" style="padding-right:var(--space-10)">' +
+                '<button type="button" class="password-toggle" onclick="var i=document.getElementById(\'cpwd-new\');i.type=i.type===\'password\'?\'text\':\'password\';this.textContent=i.type===\'password\'?\'👁\':\'🔒\'" aria-label="切换可见">👁</button>' +
+              '</div>' +
+              '<div class="strength-bar"><div class="strength-fill" id="cpwd-strength-fill"></div></div>' +
+              '<span class="strength-text" id="cpwd-strength-text"></span>' +
+              '<span class="proto-error-msg" id="cpwd-new-error" style="display:none"></span>' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label proto-label-required" for="cpwd-confirm">确认新密码</label>' +
+              '<input type="password" id="cpwd-confirm" class="proto-input" placeholder="再次输入新密码">' +
+              '<span class="proto-error-msg" id="cpwd-confirm-error" style="display:none"></span>' +
+            '</div>' +
+          '</div>',
+        confirmLabel: '确认修改',
+        cancelLabel: '取消',
+        onConfirm: function() { handleChangePwd(); }
+      });
+
+      setTimeout(function() {
+        var newInput = document.getElementById('cpwd-new');
+        if(newInput) {
+          newInput.addEventListener('input', function() {
+            var v = newInput.value;
+            var score = 0;
+            if(v.length >= 8) score++;
+            if(/[a-zA-Z]/.test(v)) score++;
+            if(/[0-9]/.test(v)) score++;
+            if(/[^a-zA-Z0-9]/.test(v)) score++;
+            if(v.length >= 12) score++;
+            var map = [
+              {w:'0%',bg:'var(--color-neutral-200)',t:''},
+              {w:'25%',bg:'var(--color-error)',t:'弱'},
+              {w:'50%',bg:'var(--color-warning)',t:'一般'},
+              {w:'75%',bg:'var(--color-info)',t:'较强'},
+              {w:'100%',bg:'var(--color-success)',t:'强'},
+              {w:'100%',bg:'var(--color-success)',t:'非常强'}
+            ];
+            var s = map[score];
+            var fill = document.getElementById('cpwd-strength-fill');
+            var text = document.getElementById('cpwd-strength-text');
+            if(fill) { fill.style.width = s.w; fill.style.background = s.bg; }
+            if(text) { text.textContent = s.t; text.style.color = s.bg; }
+          });
+        }
+      }, 100);
+    }
+
+    function handleChangePwd() {
+      var old = document.getElementById('cpwd-old');
+      var newP = document.getElementById('cpwd-new');
+      var confirm = document.getElementById('cpwd-confirm');
+      var alert = document.getElementById('cpwd-alert');
+
+      if(!old || !newP || !confirm) return;
+
+      var oldV = old.value, newV = newP.value, confV = confirm.value;
+      var valid = true;
+
+      if(!oldV) { var e = document.getElementById('cpwd-old-error'); if(e){e.textContent='请输入旧密码';e.style.display='block';} valid=false; }
+      if(!newV || newV.length < 8 || !/[a-zA-Z]/.test(newV) || !/[0-9]/.test(newV)) { var e2 = document.getElementById('cpwd-new-error'); if(e2){e2.textContent='密码至少 8 位，包含字母和数字';e2.style.display='block';} valid=false; }
+      if(newV !== confV) { var e3 = document.getElementById('cpwd-confirm-error'); if(e3){e3.textContent='两次输入的密码不一致';e3.style.display='block';} valid=false; }
+
+      if(!valid) return;
+
+      if(oldV !== 'admin123') {
+        if(alert) { alert.textContent = '旧密码错误'; alert.style.display = 'block'; }
+        return;
+      }
+
+      if(newV === oldV) {
+        if(alert) { alert.textContent = '新密码不能与旧密码相同'; alert.style.display = 'block'; }
+        return;
+      }
+
+      proto.toast({ type:'success', message:'密码修改成功' });
+    }
+
+    document.getElementById('menu-change-pwd').addEventListener('click', openChangePwd);
+    document.getElementById('demo-change-pwd').addEventListener('click', openChangePwd);
+
+    /* 退出登录 */
+    function doLogout() {
+      avatarMenu.classList.remove('is-open');
+      proto.modal({
+        size: 'sm',
+        title: '退出登录',
+        body: '<p style="font-size:var(--text-sm);color:var(--color-text-secondary)">确定要退出登录吗？</p>',
+        confirmLabel: '确认退出',
+        cancelLabel: '取消',
+        onConfirm: function() {
+          sessionStorage.removeItem('admin-logged-in');
+          sessionStorage.removeItem('admin-email');
+          proto.toast({ type:'success', message:'已退出登录' });
+          setTimeout(function(){ window.location.href = 'P-admin-auth-001.html'; }, 600);
+        }
+      });
+    }
+
+    document.getElementById('menu-logout').addEventListener('click', doLogout);
+    document.getElementById('demo-logout').addEventListener('click', doLogout);
+
+    /* 会话过期模拟 */
+    document.getElementById('demo-session-expired').addEventListener('click', function() {
+      proto.modal({
+        size: 'sm',
+        title: '登录已过期',
+        body: '<p style="font-size:var(--text-sm);color:var(--color-text-secondary)">您的登录状态已过期，请重新登录以继续操作。</p>',
+        confirmLabel: '重新登录',
+        cancelLabel: '',
+        onConfirm: function() {
+          sessionStorage.removeItem('admin-logged-in');
+          window.location.href = 'P-admin-auth-001.html';
+        }
+      });
+      setTimeout(function() {
+        var cancelBtns = document.querySelectorAll('.proto-modal-cancel');
+        cancelBtns.forEach(function(b){ b.style.display = 'none'; });
+      }, 50);
+    });
+
+    /* 显示登录邮箱 */
+    var savedEmail = sessionStorage.getItem('admin-email');
+    if(savedEmail) {
+      var menuEmail = document.getElementById('menu-email');
+      if(menuEmail) menuEmail.textContent = savedEmail;
+    }
+  </script>
+</body>
+</html>

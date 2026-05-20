@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>项目原型总览</title>
+  <link rel="stylesheet" href="../docs/B02-experience-design/app/prototype-style/app.css">
+  <style>
+    body { min-height:100dvh; background:var(--color-bg-secondary); padding:var(--space-6); }
+    .card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:var(--space-4); max-width:800px; }
+    .system-card { background:var(--color-bg-primary); border-radius:var(--radius-xl); padding:var(--space-6); box-shadow:var(--shadow-sm); border:1px solid var(--color-border); text-decoration:none; display:block; transition:box-shadow var(--motion-fast) var(--ease-default); }
+    .system-card:hover { box-shadow:var(--shadow-lg); text-decoration:none; }
+    .system-card h2 { font-size:var(--text-xl); margin-bottom:var(--space-2); color:var(--color-text-primary); }
+    .system-card p { font-size:var(--text-sm); color:var(--color-text-secondary); }
+    .system-card .badge { display:inline-block; font-size:var(--text-xs); padding:var(--space-0-5) var(--space-2); border-radius:var(--radius-full); background:var(--color-primary-50); color:var(--color-primary-600); margin-top:var(--space-3); }
+  </style>
+</head>
+<body>
+  <h1 style="font-size:var(--text-3xl);margin-bottom:var(--space-2)">原型总览</h1>
+  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-8)">选择系统进入原型导航</p>
+
+  <div class="card-grid">
+    <a href="admin/index.html" class="system-card">
+      <h2>admin 管理系统</h2>
+      <p>内部运营管理后台</p>
+      <span class="badge">邮箱 + 密码登录</span>
+    </a>
+    <a href="app/index.html" class="system-card">
+      <h2>app 用户系统</h2>
+      <p>终端用户语言学习应用</p>
+      <span class="badge">邮箱 + Google 登录</span>
+    </a>
+  </div>
+
+  <div style="margin-top:var(--space-6)">
+    <button onclick="var m=document.documentElement.getAttribute('data-mode');document.documentElement.setAttribute('data-mode',m==='dark'?'light':'dark')" class="proto-btn proto-btn-ghost proto-btn-sm">明/暗切换</button>
+  </div>
+
+  <script src="../docs/B02-experience-design/app/prototype-style/app.js"></script>
+  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+</body>
+</html>

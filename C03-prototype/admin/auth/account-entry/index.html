@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>account-entry 功能导航 · admin 原型</title>
+  <link rel="stylesheet" href="../../../../docs/B02-experience-design/app/prototype-style/app.css">
+  <style>
+    body { min-height:100dvh; background:var(--color-bg-secondary); padding:var(--space-6); }
+    .page-list { display:flex; flex-direction:column; gap:var(--space-3); max-width:480px; }
+    .page-item { display:flex; align-items:center; justify-content:space-between; background:var(--color-bg-primary); border-radius:var(--radius-md); padding:var(--space-3) var(--space-4); border:1px solid var(--color-border); text-decoration:none; transition:box-shadow var(--motion-fast) var(--ease-default); }
+    .page-item:hover { box-shadow:var(--shadow-sm); }
+    .page-item-name { font-size:var(--text-sm); font-weight:var(--font-medium); color:var(--color-text-primary); }
+    .page-item-id { font-size:var(--text-xs); color:var(--color-text-tertiary); }
+    .page-item-arrow { color:var(--color-text-tertiary); }
+  </style>
+</head>
+<body>
+  <a href="../index.html" style="font-size:var(--text-sm);color:var(--color-text-secondary);text-decoration:none">← auth 模块</a>
+  <h1 style="font-size:var(--text-2xl);margin:var(--space-4) 0 var(--space-2)">account-entry</h1>
+  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-6)">账号入口：登录 / 找回密码 / 重置密码 / 修改密码 / 退出</p>
+
+  <div class="page-list">
+    <a href="../../P-admin-auth-001.html" class="page-item">
+      <div><div class="page-item-name">登录页</div><div class="page-item-id">P-admin-auth-001</div></div>
+      <span class="page-item-arrow">→</span>
+    </a>
+    <a href="../../P-admin-auth-002.html" class="page-item">
+      <div><div class="page-item-name">忘记密码</div><div class="page-item-id">P-admin-auth-002</div></div>
+      <span class="page-item-arrow">→</span>
+    </a>
+    <a href="../../P-admin-auth-003.html" class="page-item">
+      <div><div class="page-item-name">重置密码</div><div class="page-item-id">P-admin-auth-003</div></div>
+      <span class="page-item-arrow">→</span>
+    </a>
+    <a href="../../P-admin-auth-003.html?expired=true" class="page-item">
+      <div><div class="page-item-name">重置密码（链接失效）</div><div class="page-item-id">P-admin-auth-003?expired=true</div></div>
+      <span class="page-item-arrow">→</span>
+    </a>
+    <a href="../../P-admin-auth-004.html" class="page-item">
+      <div><div class="page-item-name">后台壳（修改密码 / 退出 / 会话过期）</div><div class="page-item-id">P-admin-auth-004</div></div>
+      <span class="page-item-arrow">→</span>
+    </a>
+  </div>
+
+  <script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>auth 模块导航 · admin 原型</title>
+  <link rel="stylesheet" href="../../../docs/B02-experience-design/app/prototype-style/app.css">
+  <style>
+    body { min-height:100dvh; background:var(--color-bg-secondary); padding:var(--space-6); }
+    .nav-card { background:var(--color-bg-primary); border-radius:var(--radius-lg); padding:var(--space-5); box-shadow:var(--shadow-sm); border:1px solid var(--color-border); max-width:480px; }
+    .nav-card h3 { font-size:var(--text-lg); margin-bottom:var(--space-3); }
+    .nav-card-links { display:flex; flex-direction:column; gap:var(--space-2); }
+    .nav-card-links a { font-size:var(--text-sm); color:var(--color-primary-500); text-decoration:none; }
+    .nav-card-links a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <a href="../index.html" style="font-size:var(--text-sm);color:var(--color-text-secondary);text-decoration:none">← admin 系统导航</a>
+  <h1 style="font-size:var(--text-2xl);margin:var(--space-4) 0 var(--space-2)">auth 模块</h1>
+  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-6)">账号认证与密码管理</p>
+
+  <div class="nav-card">
+    <h3>account-entry 账号入口</h3>
+    <div class="nav-card-links">
+      <a href="account-entry/index.html">→ 功能导航</a>
+      <a href="../P-admin-auth-001.html">→ 登录页</a>
+      <a href="../P-admin-auth-002.html">→ 忘记密码</a>
+      <a href="../P-admin-auth-003.html">→ 重置密码</a>
+      <a href="../P-admin-auth-004.html">→ 后台壳</a>
+    </div>
+  </div>
+
+  <script src="../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+</body>
+</html>

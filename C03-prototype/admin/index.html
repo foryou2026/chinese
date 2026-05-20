@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>admin 系统原型导航</title>
+  <link rel="stylesheet" href="../../docs/B02-experience-design/app/prototype-style/app.css">
+  <style>
+    body { min-height:100dvh; background:var(--color-bg-secondary); padding:var(--space-6); }
+    .nav-header { display:flex; align-items:center; gap:var(--space-3); margin-bottom:var(--space-6); }
+    .nav-header h1 { font-size:var(--text-2xl); }
+    .card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:var(--space-4); }
+    .nav-card { background:var(--color-bg-primary); border-radius:var(--radius-lg); padding:var(--space-5); box-shadow:var(--shadow-sm); border:1px solid var(--color-border); transition:box-shadow var(--motion-fast) var(--ease-default); }
+    .nav-card:hover { box-shadow:var(--shadow-md); }
+    .nav-card h3 { font-size:var(--text-lg); margin-bottom:var(--space-2); }
+    .nav-card p { font-size:var(--text-sm); color:var(--color-text-secondary); margin-bottom:var(--space-4); }
+    .nav-card-links { display:flex; flex-direction:column; gap:var(--space-2); }
+    .nav-card-links a { font-size:var(--text-sm); color:var(--color-primary-500); text-decoration:none; display:flex; align-items:center; gap:var(--space-1); }
+    .nav-card-links a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div class="nav-header">
+    <a href="../index.html" style="font-size:var(--text-sm);color:var(--color-text-secondary);text-decoration:none">← 项目总览</a>
+  </div>
+  <h1 style="font-size:var(--text-2xl);margin-bottom:var(--space-2)">admin 管理系统</h1>
+  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-6)">原型页面导航</p>
+
+  <h2 style="font-size:var(--text-lg);margin-bottom:var(--space-4)">模块</h2>
+  <div class="card-grid">
+    <div class="nav-card">
+      <h3>auth 账号入口</h3>
+      <p>登录认证、密码管理、会话管理</p>
+      <div class="nav-card-links">
+        <a href="auth/account-entry/index.html">→ 功能导航</a>
+        <a href="P-admin-auth-001.html">→ 登录页</a>
+        <a href="P-admin-auth-002.html">→ 忘记密码</a>
+        <a href="P-admin-auth-003.html">→ 重置密码</a>
+        <a href="P-admin-auth-003.html?expired=true">→ 重置密码（链接失效）</a>
+        <a href="P-admin-auth-004.html">→ 后台壳（修改密码/退出/过期）</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:var(--space-6);display:flex;gap:var(--space-3)">
+    <button onclick="var m=document.documentElement.getAttribute('data-mode');document.documentElement.setAttribute('data-mode',m==='dark'?'light':'dark')" class="proto-btn proto-btn-ghost proto-btn-sm">明/暗切换</button>
+  </div>
+
+  <script src="../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+</body>
+</html>

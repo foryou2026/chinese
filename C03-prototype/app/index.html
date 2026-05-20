@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>app 系统原型导航</title>
+  <link rel="stylesheet" href="../../docs/B02-experience-design/app/prototype-style/app.css">
+  <style>
+    body { min-height:100dvh; background:var(--color-bg-secondary); padding:var(--space-6); }
+    .card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:var(--space-4); }
+    .nav-card { background:var(--color-bg-primary); border-radius:var(--radius-lg); padding:var(--space-5); box-shadow:var(--shadow-sm); border:1px solid var(--color-border); transition:box-shadow var(--motion-fast) var(--ease-default); }
+    .nav-card:hover { box-shadow:var(--shadow-md); }
+    .nav-card h3 { font-size:var(--text-lg); margin-bottom:var(--space-2); }
+    .nav-card p { font-size:var(--text-sm); color:var(--color-text-secondary); margin-bottom:var(--space-4); }
+    .nav-card-links { display:flex; flex-direction:column; gap:var(--space-2); }
+    .nav-card-links a { font-size:var(--text-sm); color:var(--color-primary-500); text-decoration:none; }
+    .nav-card-links a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <a href="../index.html" style="font-size:var(--text-sm);color:var(--color-text-secondary);text-decoration:none">← 项目总览</a>
+  <h1 style="font-size:var(--text-2xl);margin:var(--space-4) 0 var(--space-2)">app 用户系统</h1>
+  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-6)">原型页面导航</p>
+
+  <h2 style="font-size:var(--text-lg);margin-bottom:var(--space-4)">模块</h2>
+  <div class="card-grid">
+    <div class="nav-card">
+      <h3>auth 账号入口</h3>
+      <p>注册、登录（邮箱+Google）、密码管理、设置</p>
+      <div class="nav-card-links">
+        <a href="auth/account-entry/index.html">→ 功能导航</a>
+        <a href="P-app-auth-001.html">→ 登录页（邮箱+Google）</a>
+        <a href="P-app-auth-002.html">→ 注册页</a>
+        <a href="P-app-auth-003.html">→ 忘记密码</a>
+        <a href="P-app-auth-004.html">→ 重置密码</a>
+        <a href="P-app-auth-004.html?expired=true">→ 重置密码（链接失效）</a>
+        <a href="P-app-auth-005.html">→ 修改/设置密码</a>
+        <a href="P-app-auth-006.html">→ 设置页（退出/会话过期）</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:var(--space-6)">
+    <button onclick="var m=document.documentElement.getAttribute('data-mode');document.documentElement.setAttribute('data-mode',m==='dark'?'light':'dark')" class="proto-btn proto-btn-ghost proto-btn-sm">明/暗切换</button>
+  </div>
+
+  <script src="../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+</body>
+</html>

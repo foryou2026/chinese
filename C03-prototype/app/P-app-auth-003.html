@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-id" content="P-app-auth-003">
+  <meta name="system-id" content="app">
+  <meta name="module-id" content="auth">
+  <meta name="feature-id" content="account-entry">
+  <meta name="related-r-ids" content="R-auth-005,R-auth-011">
+  <title>忘记密码 · app 原型</title>
+  <link rel="stylesheet" href="../../docs/B02-experience-design/app/prototype-style/app.css">
+  <style>
+    body { display:flex; flex-direction:column; min-height:100dvh; background:var(--color-bg-secondary); }
+    .auth-container { flex:1; display:flex; align-items:center; justify-content:center; padding:var(--space-4); }
+    .auth-card { width:100%; max-width:400px; background:var(--color-bg-primary); border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); padding:var(--space-6) var(--space-5); }
+    .back-link { display:inline-flex; align-items:center; gap:var(--space-1); font-size:var(--text-sm); color:var(--color-text-secondary); text-decoration:none; margin-bottom:var(--space-4); }
+    .back-link:hover { color:var(--color-primary-500); }
+    .auth-header { margin-bottom:var(--space-5); }
+    .auth-header h1 { font-size:var(--text-xl); margin-bottom:var(--space-2); }
+    .auth-header p { font-size:var(--text-sm); color:var(--color-text-secondary); }
+    .success-view { display:none; text-align:center; }
+    .success-icon { width:64px; height:64px; border-radius:var(--radius-full); background:var(--color-success-light); display:inline-flex; align-items:center; justify-content:center; font-size:var(--text-2xl); margin-bottom:var(--space-4); }
+    .success-view h2 { font-size:var(--text-lg); margin-bottom:var(--space-2); }
+    .success-view p { font-size:var(--text-sm); color:var(--color-text-secondary); margin-bottom:var(--space-5); }
+  </style>
+</head>
+<body>
+  <div id="proto-nav-bar"></div>
+  <div class="auth-container">
+    <div class="auth-card">
+      <a href="P-app-auth-001.html" class="back-link">← 返回登录</a>
+      <div id="form-view">
+        <div class="auth-header">
+          <h1>忘记密码</h1>
+          <p>请输入你的注册邮箱，我们将发送密码重置链接</p>
+        </div>
+        <form id="forgot-form" novalidate>
+          <div class="proto-field">
+            <label for="email" class="proto-label proto-label-required">邮箱</label>
+            <input type="email" id="email" class="proto-input" placeholder="请输入注册邮箱" autocomplete="email" required>
+            <span class="proto-error-msg" id="email-error" style="display:none"></span>
+          </div>
+          <button type="submit" id="send-btn" class="proto-btn proto-btn-primary proto-btn-lg" style="width:100%;margin-top:var(--space-5)">
+            <span class="proto-btn-label">发送重置链接</span>
+            <span class="proto-spinner proto-spinner-sm proto-spinner-inverse" style="display:none"></span>
+          </button>
+        </form>
+      </div>
+      <div class="success-view" id="success-view">
+        <div class="success-icon">✓</div>
+        <h2>邮件已发送</h2>
+        <p>请查收你的邮箱并点击重置链接<br>链接 15 分钟内有效</p>
+        <p style="font-size:var(--text-xs);color:var(--color-text-tertiary);margin-bottom:var(--space-4)">发送至：<strong id="sent-email"></strong></p>
+        <button id="resend-btn" class="proto-btn proto-btn-secondary proto-btn-md" disabled>重新发送 (<span id="countdown">60</span>s)</button>
+        <div style="margin-top:var(--space-4)"><a href="P-app-auth-001.html" style="font-size:var(--text-sm);color:var(--color-primary-500);text-decoration:none">返回登录</a></div>
+      </div>
+    </div>
+  </div>
+  <script src="../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+  <script>
+    fetch('_shared/proto-nav.html').then(function(r){return r.text()}).then(function(html){
+      document.getElementById('proto-nav-bar').innerHTML = html;
+      var pid = document.querySelector('meta[name="page-id"]').content;
+      var cur = document.querySelector('#proto-nav-bar [data-page="' + pid + '"]');
+      if(cur) cur.style.cssText = 'font-size:var(--text-sm);padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);background:var(--color-primary-50);color:var(--color-primary-600);text-decoration:none;font-weight:var(--font-medium);white-space:nowrap';
+      var themeBtn = document.querySelector('[data-action="toggle-theme"]');
+      if(themeBtn) themeBtn.addEventListener('click', function(){ var m = document.documentElement.getAttribute('data-mode'); proto.switchTheme(m==='dark'?'light':'dark'); });
+    });
+    if(typeof proto !== 'undefined') proto.bootstrap();
+
+    var emailInput = document.getElementById('email');
+    var emailError = document.getElementById('email-error');
+    var forgotForm = document.getElementById('forgot-form');
+    var sendBtn = document.getElementById('send-btn');
+    var formView = document.getElementById('form-view');
+    var successView = document.getElementById('success-view');
+    var sentEmail = document.getElementById('sent-email');
+    var resendBtn = document.getElementById('resend-btn');
+    var countdownEl = document.getElementById('countdown');
+
+    function validateEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+    emailInput.addEventListener('blur', function(){
+      var v = emailInput.value.trim();
+      if(!v){ emailError.textContent='请输入邮箱'; emailError.style.display='block'; emailInput.setAttribute('aria-invalid','true'); }
+      else if(!validateEmail(v)){ emailError.textContent='请输入有效的邮箱地址'; emailError.style.display='block'; emailInput.setAttribute('aria-invalid','true'); }
+      else { emailError.style.display='none'; emailInput.removeAttribute('aria-invalid'); }
+    });
+    emailInput.addEventListener('input', function(){ emailError.style.display='none'; emailInput.removeAttribute('aria-invalid'); });
+
+    function startCountdown(){
+      var sec = 60;
+      resendBtn.disabled = true;
+      resendBtn.innerHTML = '重新发送 (<span id="countdown">' + sec + '</span>s)';
+      countdownEl = document.getElementById('countdown');
+      var timer = setInterval(function(){
+        sec--;
+        countdownEl.textContent = sec;
+        if(sec <= 0){ clearInterval(timer); resendBtn.disabled = false; resendBtn.textContent = '重新发送'; }
+      }, 1000);
+    }
+
+    forgotForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var email = emailInput.value.trim();
+      if(!email){ emailError.textContent='请输入邮箱'; emailError.style.display='block'; emailInput.setAttribute('aria-invalid','true'); return; }
+      if(!validateEmail(email)){ emailError.textContent='请输入有效的邮箱地址'; emailError.style.display='block'; emailInput.setAttribute('aria-invalid','true'); return; }
+
+      sendBtn.setAttribute('aria-busy','true');
+      sendBtn.querySelector('.proto-btn-label').style.visibility='hidden';
+      sendBtn.querySelector('.proto-spinner').style.display='inline-block';
+
+      setTimeout(function(){
+        sendBtn.removeAttribute('aria-busy');
+        sendBtn.querySelector('.proto-btn-label').style.visibility='visible';
+        sendBtn.querySelector('.proto-spinner').style.display='none';
+        sentEmail.textContent = email;
+        formView.style.display = 'none';
+        successView.style.display = 'block';
+        startCountdown();
+      }, 800);
+    });
+
+    resendBtn.addEventListener('click', function(){
+      if(resendBtn.disabled) return;
+      proto.toast({type:'success',message:'重置邮件已重新发送'});
+      startCountdown();
+    });
+  </script>
+</body>
+</html>

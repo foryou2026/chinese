@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-id" content="P-app-auth-001">
+  <meta name="system-id" content="app">
+  <meta name="module-id" content="auth">
+  <meta name="feature-id" content="account-entry">
+  <meta name="related-r-ids" content="R-auth-002,R-auth-003,R-auth-004,R-auth-011,R-auth-013">
+  <title>登录 · app 原型</title>
+  <link rel="stylesheet" href="../../docs/B02-experience-design/app/prototype-style/app.css">
+  <style>
+    body { display:flex; flex-direction:column; min-height:100dvh; background:var(--color-bg-secondary); }
+    .auth-container { flex:1; display:flex; align-items:center; justify-content:center; padding:var(--space-4); }
+    .auth-card { width:100%; max-width:400px; background:var(--color-bg-primary); border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); padding:var(--space-6) var(--space-5); }
+    .auth-brand { text-align:center; margin-bottom:var(--space-5); }
+    .auth-brand-icon { width:56px; height:56px; background:var(--color-primary-500); border-radius:var(--radius-lg); display:inline-flex; align-items:center; justify-content:center; color:white; font-size:var(--text-2xl); font-weight:var(--font-bold); }
+    .auth-brand h1 { font-size:var(--text-xl); margin-top:var(--space-3); }
+    .auth-brand p { font-size:var(--text-sm); color:var(--color-text-tertiary); margin-top:var(--space-1); }
+    .password-wrapper { position:relative; }
+    .password-toggle { position:absolute; right:var(--space-3); top:50%; transform:translateY(-50%); background:none; border:none; color:var(--color-text-tertiary); cursor:pointer; padding:var(--space-1); font-size:var(--text-sm); }
+    .password-toggle:hover { color:var(--color-text-secondary); }
+    .form-alert { display:none; padding:var(--space-3) var(--space-4); border-radius:var(--radius-md); margin-bottom:var(--space-4); font-size:var(--text-sm); border-left:4px solid; }
+    .form-alert.is-error { display:flex; background:var(--color-error-light); border-left-color:var(--color-error); color:var(--color-error); }
+    .divider { display:flex; align-items:center; gap:var(--space-3); margin:var(--space-5) 0; }
+    .divider::before, .divider::after { content:''; flex:1; height:1px; background:var(--color-border); }
+    .divider span { font-size:var(--text-xs); color:var(--color-text-tertiary); }
+    .google-btn { display:flex; align-items:center; justify-content:center; gap:var(--space-2); width:100%; height:48px; background:var(--color-bg-primary); border:1px solid var(--color-border); border-radius:var(--radius-lg); font-size:var(--text-sm); font-weight:var(--font-medium); color:var(--color-text-primary); cursor:pointer; transition:background var(--motion-fast) var(--ease-default), box-shadow var(--motion-fast) var(--ease-default); }
+    .google-btn:hover { background:var(--color-bg-secondary); box-shadow:var(--shadow-sm); }
+    .google-btn:active { transform:scale(0.98); }
+    .google-btn svg { width:20px; height:20px; }
+    .auth-switch { text-align:center; margin-top:var(--space-5); font-size:var(--text-sm); color:var(--color-text-secondary); }
+    .auth-switch a { color:var(--color-primary-500); text-decoration:none; font-weight:var(--font-medium); }
+    .auth-switch a:hover { text-decoration:underline; }
+    .forgot-link { text-align:right; margin-top:var(--space-2); }
+    .forgot-link a { font-size:var(--text-sm); color:var(--color-primary-500); text-decoration:none; }
+    .forgot-link a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div id="proto-nav-bar"></div>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-brand">
+        <div class="auth-brand-icon">中</div>
+        <h1>欢迎回来</h1>
+        <p>登录你的学习账号</p>
+      </div>
+
+      <div class="form-alert" id="login-alert" role="alert"></div>
+
+      <form id="login-form" novalidate>
+        <div class="proto-field">
+          <label for="email" class="proto-label proto-label-required">邮箱</label>
+          <input type="email" id="email" class="proto-input" placeholder="请输入邮箱" autocomplete="email" required>
+          <span class="proto-error-msg" id="email-error" style="display:none"></span>
+        </div>
+
+        <div class="proto-field">
+          <label for="password" class="proto-label proto-label-required">密码</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" class="proto-input" placeholder="请输入密码" autocomplete="current-password" required style="padding-right:var(--space-10)">
+            <button type="button" class="password-toggle" id="toggle-pwd" aria-label="切换密码可见">👁</button>
+          </div>
+          <span class="proto-error-msg" id="password-error" style="display:none"></span>
+        </div>
+
+        <div class="forgot-link"><a href="P-app-auth-003.html">忘记密码？</a></div>
+
+        <button type="submit" id="login-btn" class="proto-btn proto-btn-primary proto-btn-lg" style="width:100%;margin-top:var(--space-4)">
+          <span class="proto-btn-label">登录</span>
+          <span class="proto-spinner proto-spinner-sm proto-spinner-inverse" style="display:none"></span>
+        </button>
+      </form>
+
+      <div class="divider"><span>或</span></div>
+
+      <button class="google-btn" id="google-btn">
+        <svg viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        使用 Google 账号登录
+      </button>
+
+      <div class="auth-switch">
+        还没有账号？<a href="P-app-auth-002.html">注册</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+  <script>
+    fetch('_shared/proto-nav.html')
+      .then(function(r){return r.text()})
+      .then(function(html){
+        document.getElementById('proto-nav-bar').innerHTML = html;
+        var pid = document.querySelector('meta[name="page-id"]').content;
+        var cur = document.querySelector('#proto-nav-bar [data-page="' + pid + '"]');
+        if(cur) cur.style.cssText = 'font-size:var(--text-sm);padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);background:var(--color-primary-50);color:var(--color-primary-600);text-decoration:none;font-weight:var(--font-medium);white-space:nowrap';
+        var themeBtn = document.querySelector('[data-action="toggle-theme"]');
+        if(themeBtn) themeBtn.addEventListener('click', function(){
+          var m = document.documentElement.getAttribute('data-mode');
+          proto.switchTheme(m === 'dark' ? 'light' : 'dark');
+        });
+      });
+    if(typeof proto !== 'undefined') proto.bootstrap();
+
+    var emailInput = document.getElementById('email');
+    var passwordInput = document.getElementById('password');
+    var loginBtn = document.getElementById('login-btn');
+    var loginForm = document.getElementById('login-form');
+    var loginAlert = document.getElementById('login-alert');
+    var togglePwd = document.getElementById('toggle-pwd');
+    var emailError = document.getElementById('email-error');
+    var passwordError = document.getElementById('password-error');
+    var googleBtn = document.getElementById('google-btn');
+
+    var failCount = parseInt(sessionStorage.getItem('app-login-fails') || '0');
+    var lockedUntil = parseInt(sessionStorage.getItem('app-locked-until') || '0');
+
+    function validateEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+    function showFieldErr(el, msg) { el.textContent = msg; el.style.display = 'block'; }
+    function hideFieldErr(el) { el.style.display = 'none'; }
+    function showAlert(msg) { loginAlert.textContent = msg; loginAlert.className = 'form-alert is-error'; }
+    function hideAlert() { loginAlert.className = 'form-alert'; }
+
+    emailInput.addEventListener('blur', function() {
+      var v = emailInput.value.trim();
+      if(!v) { showFieldErr(emailError, '请输入邮箱'); emailInput.setAttribute('aria-invalid','true'); }
+      else if(!validateEmail(v)) { showFieldErr(emailError, '请输入有效的邮箱地址'); emailInput.setAttribute('aria-invalid','true'); }
+      else { hideFieldErr(emailError); emailInput.removeAttribute('aria-invalid'); }
+    });
+    emailInput.addEventListener('input', function() { hideFieldErr(emailError); emailInput.removeAttribute('aria-invalid'); hideAlert(); });
+    passwordInput.addEventListener('input', function() { hideFieldErr(passwordError); passwordInput.removeAttribute('aria-invalid'); hideAlert(); });
+
+    togglePwd.addEventListener('click', function() {
+      var isPwd = passwordInput.type === 'password';
+      passwordInput.type = isPwd ? 'text' : 'password';
+      togglePwd.textContent = isPwd ? '🔒' : '👁';
+    });
+
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      hideAlert();
+      var now = Date.now();
+      if(now < lockedUntil) { showAlert('账号已锁定，请 ' + Math.ceil((lockedUntil-now)/60000) + ' 分钟后重试'); return; }
+
+      var email = emailInput.value.trim(), pwd = passwordInput.value;
+      var valid = true;
+      if(!email) { showFieldErr(emailError, '请输入邮箱'); emailInput.setAttribute('aria-invalid','true'); valid = false; }
+      else if(!validateEmail(email)) { showFieldErr(emailError, '请输入有效的邮箱地址'); emailInput.setAttribute('aria-invalid','true'); valid = false; }
+      if(!pwd) { showFieldErr(passwordError, '请输入密码'); passwordInput.setAttribute('aria-invalid','true'); valid = false; }
+      if(!valid) return;
+
+      loginBtn.setAttribute('aria-busy','true');
+      loginBtn.querySelector('.proto-btn-label').style.visibility = 'hidden';
+      loginBtn.querySelector('.proto-spinner').style.display = 'inline-block';
+      emailInput.disabled = true; passwordInput.disabled = true;
+
+      setTimeout(function() {
+        loginBtn.removeAttribute('aria-busy');
+        loginBtn.querySelector('.proto-btn-label').style.visibility = 'visible';
+        loginBtn.querySelector('.proto-spinner').style.display = 'none';
+        emailInput.disabled = false; passwordInput.disabled = false;
+
+        if(email === 'user@example.com' && pwd === 'user1234') {
+          sessionStorage.setItem('app-login-fails', '0');
+          sessionStorage.setItem('app-logged-in', 'true');
+          sessionStorage.setItem('app-email', email);
+          sessionStorage.setItem('app-auth-type', 'email');
+          proto.toast({ type:'success', message:'登录成功' });
+          setTimeout(function(){ window.location.href = 'P-app-auth-006.html'; }, 600);
+        } else {
+          failCount++;
+          sessionStorage.setItem('app-login-fails', failCount.toString());
+          if(failCount >= 5) {
+            lockedUntil = Date.now() + 30*60*1000;
+            sessionStorage.setItem('app-locked-until', lockedUntil.toString());
+            showAlert('登录失败次数过多，账号已锁定 30 分钟');
+          } else {
+            showAlert('邮箱或密码错误（已失败 ' + failCount + '/5 次）');
+          }
+        }
+      }, 800);
+    });
+
+    googleBtn.addEventListener('click', function() {
+      googleBtn.disabled = true;
+      googleBtn.style.opacity = '0.7';
+      proto.toast({ type:'info', message:'正在连接 Google...' });
+
+      setTimeout(function() {
+        proto.modal({
+          size:'sm',
+          title:'Google 账号授权（Mock）',
+          body:'<div style="text-align:center;padding:var(--space-4)"><p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-4)">模拟 Google OAuth 授权流程</p><div style="display:flex;align-items:center;gap:var(--space-3);padding:var(--space-3);border:1px solid var(--color-border);border-radius:var(--radius-md)"><div style="width:40px;height:40px;border-radius:var(--radius-full);background:var(--color-primary-100);display:flex;align-items:center;justify-content:center;font-size:var(--text-sm);font-weight:var(--font-semibold);color:var(--color-primary-600)">G</div><div style="text-align:left"><div style="font-size:var(--text-sm);font-weight:var(--font-medium)">Google User</div><div style="font-size:var(--text-xs);color:var(--color-text-tertiary)">googleuser@gmail.com</div></div></div></div>',
+          confirmLabel:'授权登录',
+          cancelLabel:'取消',
+          onConfirm:function(){
+            sessionStorage.setItem('app-logged-in','true');
+            sessionStorage.setItem('app-email','googleuser@gmail.com');
+            sessionStorage.setItem('app-auth-type','google');
+            proto.toast({type:'success',message:'Google 登录成功'});
+            setTimeout(function(){ window.location.href = 'P-app-auth-006.html'; },600);
+          },
+          onCancel:function(){
+            googleBtn.disabled = false;
+            googleBtn.style.opacity = '1';
+          }
+        });
+      }, 500);
+    });
+  </script>
+</body>
+</html>
