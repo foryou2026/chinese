@@ -27,30 +27,20 @@ docs/
       permissions/
       <module>/<feature>/
   C02-ia-interaction/
-    app/<module>/<feature>/                  # 按系统
-    admin/<module>/<feature>/
+    <system-id>/<module>/<feature>/          # 按系统
+  C03-prototype/                               # 入口
+    index.html                                 # 
+    <system-id>/                               # 按系统
+      index.html
+      <module-id>/
+        index.html
+        <feature-id>/
+          index.html  
+      <page-id>.html
   D01-data/
     common/<module>/<feature>/               # 共享（系统名 = common）
   D02-api/
-    app/<module>/<feature>/                  # 按系统
-    admin/<module>/<feature>/
-
-C03-prototype/
-  index.html
-  app/
-    index.html
-    <module-id>/
-      index.html
-      <feature-id>/
-        index.html
-    <page-id>.html
-  admin/
-    index.html
-    <module-id>/
-      index.html
-      <feature-id>/
-        index.html
-    <page-id>.html
+    <system-id>/<module>/<feature>/          # 按系统
 ```
 
 ## 源代码目录树
@@ -63,7 +53,6 @@ C03-prototype/
   docker-compose.yml
   .env.example
   docs/                              # 规范产出
-  C03-prototype/                     # HTML 原型
   system/                            # 全部源代码
     package.json                     # npm workspaces 根
     tsconfig.base.json               # 共享 TS 配置
