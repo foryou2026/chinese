@@ -3,12 +3,12 @@
 > 页面 ID：`P-admin-<module>-<seq3>`。布局/操作/场景/文案由 C03 原型体现，本文件仅补充原型无法表达的规范。
 
 ## 页面总览
-| page-id | 名称 | 类型 | 角色 | M-ID | 关键 R-ID | SM-ID | 增量标记 |
-|---------|------|------|------|------|----------|-------|---------|
-| P-admin-auth-001 | 登录页 | form | 公开 | M-auth-001 | R-auth-001, R-auth-002, R-auth-008 | SM-auth-001 | [本轮新增] |
-| P-admin-auth-002 | 忘记密码页 | form | 公开 | M-auth-001 | R-auth-003 | 无 | [本轮新增] |
-| P-admin-auth-003 | 重置密码页 | form | 公开 | M-auth-001 | R-auth-004, R-auth-009 | SM-auth-001 | [本轮新增] |
-| P-admin-auth-004 | 后台壳（修改密码/退出/会话过期） | dashboard | ROLE-ADMIN | M-auth-001 | R-auth-005~007 | SM-auth-001 | [本轮新增] |
+| page-id | 名称 | 类型 | 角色 | M-ID | 关键 R-ID | SM-ID |
+|---------|------|------|------|------|----------|-------|
+| P-admin-auth-001 | 登录页 | form | 公开 | M-auth-001 | R-auth-001, R-auth-002, R-auth-008 | SM-auth-001 |
+| P-admin-auth-002 | 忘记密码页 | form | 公开 | M-auth-001 | R-auth-003 | 无 |
+| P-admin-auth-003 | 重置密码页 | form | 公开 | M-auth-001 | R-auth-004, R-auth-009 | SM-auth-001 |
+| P-admin-auth-004 | 后台壳（修改密码/退出/会话过期） | dashboard | ROLE-ADMIN | M-auth-001 | R-auth-005~007 | SM-auth-001 |
 
 ---
 

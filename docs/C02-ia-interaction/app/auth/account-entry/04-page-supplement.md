@@ -3,14 +3,14 @@
 > 页面 ID：`P-app-<module>-<seq3>`。布局/操作/场景/文案由 C03 原型体现，本文件仅补充原型无法表达的规范。
 
 ## 页面总览
-| page-id | 名称 | 类型 | 角色 | M-ID | 关键 R-ID | SM-ID | 增量标记 |
-|---------|------|------|------|------|----------|-------|---------|
-| P-app-auth-001 | 登录页 | form | 公开 | M-auth-001 | R-auth-002~004, R-auth-013 | SM-auth-001 | [本轮新增] |
-| P-app-auth-002 | 注册页 | form | 公开 | M-auth-001 | R-auth-001, R-auth-003, R-auth-015 | SM-auth-001 | [本轮新增] |
-| P-app-auth-003 | 忘记密码页 | form | 公开 | M-auth-001 | R-auth-005 | 无 | [本轮新增] |
-| P-app-auth-004 | 重置密码页 | form | 公开 | M-auth-001 | R-auth-006 | SM-auth-001 | [本轮新增] |
-| P-app-auth-005 | 修改/设置密码页 | form | ROLE-USER | M-auth-001 | R-auth-007, R-auth-014 | 无 | [本轮新增] |
-| P-app-auth-006 | 设置页 | list | ROLE-USER | M-auth-001 | R-auth-007~009 | SM-auth-001 | [本轮新增] |
+| page-id | 名称 | 类型 | 角色 | M-ID | 关键 R-ID | SM-ID |
+|---------|------|------|------|------|----------|-------|
+| P-app-auth-001 | 登录页 | form | 公开 | M-auth-001 | R-auth-002~004, R-auth-013 | SM-auth-001 |
+| P-app-auth-002 | 注册页 | form | 公开 | M-auth-001 | R-auth-001, R-auth-003, R-auth-015 | SM-auth-001 |
+| P-app-auth-003 | 忘记密码页 | form | 公开 | M-auth-001 | R-auth-005 | 无 |
+| P-app-auth-004 | 重置密码页 | form | 公开 | M-auth-001 | R-auth-006 | SM-auth-001 |
+| P-app-auth-005 | 修改/设置密码页 | form | ROLE-USER | M-auth-001 | R-auth-007, R-auth-014 | 无 |
+| P-app-auth-006 | 设置页 | list | ROLE-USER | M-auth-001 | R-auth-007~009 | SM-auth-001 |
 
 ---
 

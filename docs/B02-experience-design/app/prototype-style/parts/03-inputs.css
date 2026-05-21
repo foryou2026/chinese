@@ -73,7 +73,7 @@
 .proto-input[aria-invalid="true"],
 .proto-textarea[aria-invalid="true"] {
   border-color: var(--color-danger-500);
-  box-shadow: 0 0 0 4px rgba(177, 69, 69, 0.15);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-danger-500) 15%, transparent);
 }
 
 /* ---- Textarea ---- */

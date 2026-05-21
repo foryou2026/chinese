@@ -149,18 +149,22 @@
   --color-info:          var(--color-info-700);
   --color-info-light:    var(--color-info-50);
 
-  /* 状态色暗模式适配 */
+  /* 状态色暗模式适配（50/100 背景 + 500 文字/图标提亮 + 700 高对比文字） */
   --color-success-50:  rgba(74, 111, 90, 0.18);
   --color-success-100: rgba(74, 111, 90, 0.28);
+  --color-success-500: #71A085;
   --color-success-700: #C9DCD2;
   --color-warning-50:  rgba(184, 146, 58, 0.18);
   --color-warning-100: rgba(184, 146, 58, 0.28);
+  --color-warning-500: #D4B870;
   --color-warning-700: #E8D5A8;
   --color-danger-50:   rgba(177, 69, 69, 0.18);
   --color-danger-100:  rgba(177, 69, 69, 0.28);
+  --color-danger-500:  #E07070;
   --color-danger-700:  #EAC0B8;
   --color-info-50:     rgba(46, 92, 138, 0.18);
   --color-info-100:    rgba(46, 92, 138, 0.28);
+  --color-info-500:    #7EA0BF;
   --color-info-700:    #CFDDE8;
 }
 
@@ -221,5 +225,23 @@
     --color-warning-light: var(--color-warning-50);
     --color-info:          var(--color-info-700);
     --color-info-light:    var(--color-info-50);
+
+    /* 状态色暗模式适配 */
+    --color-success-50:  rgba(74, 111, 90, 0.18);
+    --color-success-100: rgba(74, 111, 90, 0.28);
+    --color-success-500: #71A085;
+    --color-success-700: #C9DCD2;
+    --color-warning-50:  rgba(184, 146, 58, 0.18);
+    --color-warning-100: rgba(184, 146, 58, 0.28);
+    --color-warning-500: #D4B870;
+    --color-warning-700: #E8D5A8;
+    --color-danger-50:   rgba(177, 69, 69, 0.18);
+    --color-danger-100:  rgba(177, 69, 69, 0.28);
+    --color-danger-500:  #E07070;
+    --color-danger-700:  #EAC0B8;
+    --color-info-50:     rgba(46, 92, 138, 0.18);
+    --color-info-100:    rgba(46, 92, 138, 0.28);
+    --color-info-500:    #7EA0BF;
+    --color-info-700:    #CFDDE8;
   }
 }

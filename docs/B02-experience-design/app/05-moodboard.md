@@ -139,6 +139,7 @@
 | 中性色 | 灰阶反转（暗底浅字） |
 | 毛玻璃 | glass 参数全套覆盖（rgba(20,48,79,...) 基底） |
 | brand 色 | 暗模式提亮一档（default→brand-400） |
+| 状态色 | 500 阶暗模式提亮（danger→#E07070, info→#7EA0BF, success→#71A085, warning→#D4B870），700 阶反转为浅色文字 |
 | 宣纸纹理 | 关闭（opacity: 0） |
 | 切换方式 | `<html data-mode="light|dark|auto">`，auto 跟随系统 |
 
