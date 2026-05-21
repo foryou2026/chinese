@@ -52,9 +52,8 @@
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `var(--bg-page)` — 宣纸→月白瓷三段渐变 `#F8F2E0 → #F2EBD3 → #E8EFF5` |
-| 光晕 | `var(--bg-page-glow)` — 鎏金+墨青两处径向光晕 |
-| 纸纹 | `body::after` noise 图层，`opacity: var(--paper-grain-opacity)` = 0.06 |
+| 基底 | `var(--page-bg)` — 微蓝白 #FAFBFF（light）/ 深空黑 #09090B（dark） |
+| 极光 | `.mesh-gradient-bg` — 3 个 blob 径向渐变（薰衣草+玫瑰粉+薄荷青），缓慢飘移动画 |
 
 ## 页面结构 — app 系统
 
@@ -63,7 +62,7 @@
 │    TopBar 毛玻璃 (桌面 ≥lg)   │  ← .glass-bar
 ├─────────────────────────────┤
 │                             │
-│   Content Area（宣纸渐变底）   │
+│   Content Area（极光渐变底）  │
 │   (全宽, 可滚动, 卡片=.glass) │
 │                             │
 ├─────────────────────────────┤
@@ -79,7 +78,7 @@
 │ Side │──────────────────────│
 │ Bar  │                      │
 │      │  Content (.container) │
-│(.glass│  (宣纸渐变底, 可滚动)  │
+│(.glass│  (极光渐变底, 可滚动)  │
 │ -bar)│                      │
 └──────┴──────────────────────┘
 ```
@@ -116,10 +115,10 @@
 
 | 层级 | 材质 | 用途 |
 |------|------|------|
-| 底层 | 宣纸渐变 `var(--bg-page)` | body 背景 |
-| 面板层 | `.glass` / `.glass-strong` | 卡片、内容区 |
+| 底层 | 极光渐变 mesh gradient | body 背景 |
+| 面板层 | `.glass` / `.glass-card` | 卡片、内容区 |
 | 导航层 | `.glass-bar` | TopBar / BottomBar / SideBar |
-| 弹出层 | `.glass-strong` + `--glass-blur-lg` | Modal / Drawer / Dropdown |
+| 弹出层 | `.glass-elevated` | Modal / Drawer / Dropdown |
 | 暗浮层 | `.glass-dark` | Tooltip |
 
 > 毛玻璃为唯一表面语言（P1 原则），不使用纯白/纯灰实色背景。

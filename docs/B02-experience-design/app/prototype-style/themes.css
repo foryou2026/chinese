@@ -1,214 +1,203 @@
 /* themes.css — 5 套 accent 覆盖 + 暗色模式 + auto 跟随系统 */
-/* 风格参照 foryoutech: Mesh Gradient + Glassmorphism */
+/* 风格：Prismatic Glass */
 
 /* ===================== 1. accents ===================== */
 
-[data-accent="ink"] {
-  --color-brand-50:  #E8EFF5; --color-brand-100: #CFDDE8;
-  --color-brand-200: #A8C0D4; --color-brand-300: #7EA0BF;
-  --color-brand-400: #5481A8; --color-brand-500: #2E5C8A;
-  --color-brand-600: #244A72; --color-brand-700: #1B3A5C;
-  --color-brand-800: #142A44; --color-brand-900: #0E1F38;
-  --color-brand-default: var(--color-brand-700);
-  --color-brand-hover:   var(--color-brand-600);
-  --color-brand-active:  var(--color-brand-800);
-  --color-brand-on:      #FFFBF0;
-  --color-brand-ring:    rgba(46, 92, 138, 0.35);
-  --input-focus-glow:    rgba(46, 92, 138, 0.35);
+[data-accent="indigo"] {
+  --color-brand-50:  #EEF2FF; --color-brand-100: #E0E7FF;
+  --color-brand-200: #C7D2FE; --color-brand-300: #A5B4FC;
+  --color-brand-400: #818CF8; --color-brand-500: #6366F1;
+  --color-brand-600: #4F46E5; --color-brand-700: #4338CA;
+  --color-brand-800: #3730A3; --color-brand-900: #312E81;
+  --color-brand-default: var(--color-brand-600);
+  --color-brand-hover:   var(--color-brand-500);
+  --color-brand-active:  var(--color-brand-700);
+  --color-brand-on:      #FFFFFF;
+  --color-brand-ring:    rgba(99, 102, 241, 0.30);
+  --input-focus-glow:    rgba(99, 102, 241, 0.30);
 }
 
-[data-accent="cinnabar"] {
-  --color-brand-50:  #F8E5E1; --color-brand-100: #EFC8C0;
-  --color-brand-200: #E2A095; --color-brand-300: #D17A6C;
-  --color-brand-400: #C25C50; --color-brand-500: #B14545;
-  --color-brand-600: #983939; --color-brand-700: #8A2F2F;
-  --color-brand-800: #6E2424; --color-brand-900: #501818;
+[data-accent="rose"] {
+  --color-brand-50:  #FFF1F2; --color-brand-100: #FFE4E6;
+  --color-brand-200: #FECDD3; --color-brand-300: #FDA4AF;
+  --color-brand-400: #FB7185; --color-brand-500: #F43F5E;
+  --color-brand-600: #E11D48; --color-brand-700: #BE123C;
+  --color-brand-800: #9F1239; --color-brand-900: #881337;
   --color-brand-default: var(--color-brand-500);
   --color-brand-hover:   var(--color-brand-400);
-  --color-brand-active:  var(--color-brand-700);
-  --color-brand-on:      #FFFBF0;
-  --color-brand-ring:    rgba(177, 69, 69, 0.35);
-  --input-focus-glow:    rgba(177, 69, 69, 0.35);
+  --color-brand-active:  var(--color-brand-600);
+  --color-brand-on:      #FFFFFF;
+  --color-brand-ring:    rgba(244, 63, 94, 0.30);
+  --input-focus-glow:    rgba(244, 63, 94, 0.30);
 }
 
-[data-accent="jade"] {
-  --color-brand-50:  #E5EFE9; --color-brand-100: #C9DCD2;
-  --color-brand-200: #97BAA7; --color-brand-300: #719B85;
-  --color-brand-400: #588168; --color-brand-500: #4A6F5A;
-  --color-brand-600: #3B5A48; --color-brand-700: #2F5640;
-  --color-brand-800: #234232; --color-brand-900: #182F22;
+[data-accent="emerald"] {
+  --color-brand-50:  #ECFDF5; --color-brand-100: #D1FAE5;
+  --color-brand-200: #A7F3D0; --color-brand-300: #6EE7B7;
+  --color-brand-400: #34D399; --color-brand-500: #10B981;
+  --color-brand-600: #059669; --color-brand-700: #047857;
+  --color-brand-800: #065F46; --color-brand-900: #064E3B;
   --color-brand-default: var(--color-brand-600);
   --color-brand-hover:   var(--color-brand-500);
   --color-brand-active:  var(--color-brand-700);
-  --color-brand-on:      #FFFBF0;
-  --color-brand-ring:    rgba(74, 111, 90, 0.35);
-  --input-focus-glow:    rgba(74, 111, 90, 0.35);
+  --color-brand-on:      #FFFFFF;
+  --color-brand-ring:    rgba(16, 185, 129, 0.30);
+  --input-focus-glow:    rgba(16, 185, 129, 0.30);
 }
 
-[data-accent="gold"] {
-  --color-brand-50:  #F4ECD8; --color-brand-100: #E8D5A8;
-  --color-brand-200: #D4B870; --color-brand-300: #C49E48;
-  --color-brand-400: #B8923A; --color-brand-500: #A07F30;
-  --color-brand-600: #8C6E2A; --color-brand-700: #6B5022;
-  --color-brand-800: #503C1A; --color-brand-900: #382812;
-  --color-brand-default: var(--color-brand-700);
-  --color-brand-hover:   var(--color-brand-600);
-  --color-brand-active:  var(--color-brand-800);
-  --color-brand-on:      #FFFBF0;
-  --color-brand-ring:    rgba(184, 146, 58, 0.35);
-  --input-focus-glow:    rgba(184, 146, 58, 0.35);
-}
-
-[data-accent="graphite"] {
-  --color-brand-50:  #EDE9E2; --color-brand-100: #D5CDC0;
-  --color-brand-200: #B0A593; --color-brand-300: #8B7E6B;
-  --color-brand-400: #6E624F; --color-brand-500: #564B3B;
-  --color-brand-600: #443B30; --color-brand-700: #352D24;
-  --color-brand-800: #251F19; --color-brand-900: #15110D;
+[data-accent="amber"] {
+  --color-brand-50:  #FFFBEB; --color-brand-100: #FEF3C7;
+  --color-brand-200: #FDE68A; --color-brand-300: #FCD34D;
+  --color-brand-400: #FBBF24; --color-brand-500: #F59E0B;
+  --color-brand-600: #D97706; --color-brand-700: #B45309;
+  --color-brand-800: #92400E; --color-brand-900: #78350F;
   --color-brand-default: var(--color-brand-600);
   --color-brand-hover:   var(--color-brand-500);
   --color-brand-active:  var(--color-brand-700);
-  --color-brand-on:      #FFFBF0;
-  --color-brand-ring:    rgba(68, 59, 48, 0.35);
-  --input-focus-glow:    rgba(68, 59, 48, 0.35);
+  --color-brand-on:      #FFFFFF;
+  --color-brand-ring:    rgba(245, 158, 11, 0.30);
+  --input-focus-glow:    rgba(245, 158, 11, 0.30);
 }
 
-/* ===================== 2. dark mode (foryoutech style) ===================== */
+[data-accent="violet"] {
+  --color-brand-50:  #F5F3FF; --color-brand-100: #EDE9FE;
+  --color-brand-200: #DDD6FE; --color-brand-300: #C4B5FD;
+  --color-brand-400: #A78BFA; --color-brand-500: #8B5CF6;
+  --color-brand-600: #7C3AED; --color-brand-700: #6D28D9;
+  --color-brand-800: #5B21B6; --color-brand-900: #4C1D95;
+  --color-brand-default: var(--color-brand-600);
+  --color-brand-hover:   var(--color-brand-500);
+  --color-brand-active:  var(--color-brand-700);
+  --color-brand-on:      #FFFFFF;
+  --color-brand-ring:    rgba(139, 92, 246, 0.30);
+  --input-focus-glow:    rgba(139, 92, 246, 0.30);
+}
+
+/* ===================== 2. dark mode ===================== */
 
 [data-mode="dark"] {
-  /* 页面基底背景色 */
-  --page-bg: #0a0a0a;
+  --page-bg: #09090B;
 
-  /* 渐变网格 Blob — Dark 模式 */
-  --mesh-color-1: #e11d48;   /* rose-600 暖玫瑰 */
-  --mesh-color-2: #0284c7;   /* sky-600 天蓝 */
-  --mesh-color-3: #d97706;   /* amber-600 琥珀 */
-  --mesh-opacity-1: 0.12;
-  --mesh-opacity-2: 0.05;
-  --mesh-opacity-3: 0.14;
+  --mesh-color-1: #7C3AED;   /* violet-600 */
+  --mesh-color-2: #0E7490;   /* cyan-700 */
+  --mesh-color-3: #BE185D;   /* pink-700 */
+  --mesh-opacity-1: 0.10;
+  --mesh-opacity-2: 0.06;
+  --mesh-opacity-3: 0.08;
 
-  /* 毛玻璃面板 — Dark 模式 */
-  --glass-bg:          rgba(255, 255, 255, 0.04);
-  --glass-bg-card:     rgba(255, 255, 255, 0.06);
-  --glass-bg-elevated: rgba(255, 255, 255, 0.08);
-  --glass-border:      rgba(255, 255, 255, 0.10);
-  --glass-inset:       rgba(255, 255, 255, 0.06);
+  --glass-bg:          rgba(255, 255, 255, 0.03);
+  --glass-bg-card:     rgba(255, 255, 255, 0.05);
+  --glass-bg-elevated: rgba(255, 255, 255, 0.07);
+  --glass-border:      rgba(255, 255, 255, 0.08);
+  --glass-inset:       rgba(255, 255, 255, 0.05);
   --glass-shadow:      rgba(0, 0, 0, 0.40);
   --glass-shadow-elevated: rgba(0, 0, 0, 0.60);
 
-  /* 输入框 Focus 光晕 */
-  --input-focus-glow: rgba(46, 92, 138, 0.25);
+  --input-focus-glow: rgba(99, 102, 241, 0.25);
 
-  /* 文字色彩 */
-  --text-primary:   #f1f5f9;
-  --text-secondary: #cbd5e1;
-  --text-muted:     #64748b;
+  --text-primary:   #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --text-muted:     #71717A;
 
-  /* 中性灰阶反转 */
-  --color-neutral-0:   #0a0a0a;
-  --color-neutral-50:  #141414;
-  --color-neutral-100: #1e1e1e;
-  --color-neutral-200: #2a2a2a;
-  --color-neutral-300: #3f3f3f;
-  --color-neutral-400: #6b7587;
-  --color-neutral-500: #94a3b8;
-  --color-neutral-600: #cbd5e1;
-  --color-neutral-700: #e2e8f0;
-  --color-neutral-800: #f1f5f9;
-  --color-neutral-900: #f8fafc;
-  --color-neutral-950: #ffffff;
+  --color-neutral-0:   #09090B;
+  --color-neutral-50:  #18181B;
+  --color-neutral-100: #27272A;
+  --color-neutral-200: #3F3F46;
+  --color-neutral-300: #52525B;
+  --color-neutral-400: #71717A;
+  --color-neutral-500: #A1A1AA;
+  --color-neutral-600: #D4D4D8;
+  --color-neutral-700: #E4E4E7;
+  --color-neutral-800: #F4F4F5;
+  --color-neutral-900: #FAFAFA;
+  --color-neutral-950: #FFFFFF;
 
-  /* 阴影 */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.32);
   --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.40);
   --shadow-lg: 0 14px 38px rgba(0, 0, 0, 0.48);
 
-  /* 品牌色暗模式提亮 */
   --color-brand-default: var(--color-brand-400);
   --color-brand-hover:   var(--color-brand-300);
   --color-brand-active:  var(--color-brand-500);
-  --color-brand-ring:    rgba(168, 192, 212, 0.28);
+  --color-brand-ring:    rgba(129, 140, 248, 0.28);
 
-  /* 描边 / 焦点环 */
-  --border-color: rgba(255, 255, 255, 0.10);
+  --border-color: rgba(255, 255, 255, 0.08);
   --focus-ring: 0 0 0 4px var(--color-brand-ring);
 
-  /* 兼容别名覆盖 */
   --color-bg-primary:    var(--glass-bg-card);
   --color-bg-secondary:  var(--page-bg);
   --color-text-primary:  var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-tertiary: var(--text-muted);
   --color-border:        var(--glass-border);
-  --color-error:         var(--color-danger-700);
+  --color-error:         #FCA5A5;
   --color-error-light:   var(--color-danger-50);
-  --color-success:       var(--color-success-700);
+  --color-success:       #6EE7B7;
   --color-success-light: var(--color-success-50);
-  --color-warning:       var(--color-warning-700);
+  --color-warning:       #FDE68A;
   --color-warning-light: var(--color-warning-50);
-  --color-info:          var(--color-info-700);
+  --color-info:          #93C5FD;
   --color-info-light:    var(--color-info-50);
 
-  /* 状态色暗模式适配（50/100 背景 + 500 文字/图标提亮 + 700 高对比文字） */
-  --color-success-50:  rgba(74, 111, 90, 0.18);
-  --color-success-100: rgba(74, 111, 90, 0.28);
-  --color-success-500: #71A085;
-  --color-success-700: #C9DCD2;
-  --color-warning-50:  rgba(184, 146, 58, 0.18);
-  --color-warning-100: rgba(184, 146, 58, 0.28);
-  --color-warning-500: #D4B870;
-  --color-warning-700: #E8D5A8;
-  --color-danger-50:   rgba(177, 69, 69, 0.18);
-  --color-danger-100:  rgba(177, 69, 69, 0.28);
-  --color-danger-500:  #E07070;
-  --color-danger-700:  #EAC0B8;
-  --color-info-50:     rgba(46, 92, 138, 0.18);
-  --color-info-100:    rgba(46, 92, 138, 0.28);
-  --color-info-500:    #7EA0BF;
-  --color-info-700:    #CFDDE8;
+  --color-success-50:  rgba(16, 185, 129, 0.12);
+  --color-success-100: rgba(16, 185, 129, 0.20);
+  --color-success-500: #34D399;
+  --color-success-700: #A7F3D0;
+  --color-warning-50:  rgba(245, 158, 11, 0.12);
+  --color-warning-100: rgba(245, 158, 11, 0.20);
+  --color-warning-500: #FBBF24;
+  --color-warning-700: #FDE68A;
+  --color-danger-50:   rgba(239, 68, 68, 0.12);
+  --color-danger-100:  rgba(239, 68, 68, 0.20);
+  --color-danger-500:  #FCA5A5;
+  --color-danger-700:  #FEE2E2;
+  --color-info-50:     rgba(59, 130, 246, 0.12);
+  --color-info-100:    rgba(59, 130, 246, 0.20);
+  --color-info-500:    #93C5FD;
+  --color-info-700:    #DBEAFE;
 }
 
 /* ===================== 3. auto = follow system ===================== */
 @media (prefers-color-scheme: dark) {
   [data-mode="auto"] {
-    --page-bg: #0a0a0a;
-    --mesh-color-1: #e11d48;
-    --mesh-color-2: #0284c7;
-    --mesh-color-3: #d97706;
-    --mesh-opacity-1: 0.12;
-    --mesh-opacity-2: 0.05;
-    --mesh-opacity-3: 0.14;
-    --glass-bg:          rgba(255, 255, 255, 0.04);
-    --glass-bg-card:     rgba(255, 255, 255, 0.06);
-    --glass-bg-elevated: rgba(255, 255, 255, 0.08);
-    --glass-border:      rgba(255, 255, 255, 0.10);
-    --glass-inset:       rgba(255, 255, 255, 0.06);
+    --page-bg: #09090B;
+    --mesh-color-1: #7C3AED;
+    --mesh-color-2: #0E7490;
+    --mesh-color-3: #BE185D;
+    --mesh-opacity-1: 0.10;
+    --mesh-opacity-2: 0.06;
+    --mesh-opacity-3: 0.08;
+    --glass-bg:          rgba(255, 255, 255, 0.03);
+    --glass-bg-card:     rgba(255, 255, 255, 0.05);
+    --glass-bg-elevated: rgba(255, 255, 255, 0.07);
+    --glass-border:      rgba(255, 255, 255, 0.08);
+    --glass-inset:       rgba(255, 255, 255, 0.05);
     --glass-shadow:      rgba(0, 0, 0, 0.40);
     --glass-shadow-elevated: rgba(0, 0, 0, 0.60);
-    --input-focus-glow: rgba(46, 92, 138, 0.25);
-    --text-primary:   #f1f5f9;
-    --text-secondary: #cbd5e1;
-    --text-muted:     #64748b;
-    --color-neutral-0:   #0a0a0a;
-    --color-neutral-50:  #141414;
-    --color-neutral-100: #1e1e1e;
-    --color-neutral-200: #2a2a2a;
-    --color-neutral-300: #3f3f3f;
-    --color-neutral-400: #6b7587;
-    --color-neutral-500: #94a3b8;
-    --color-neutral-600: #cbd5e1;
-    --color-neutral-700: #e2e8f0;
-    --color-neutral-800: #f1f5f9;
-    --color-neutral-900: #f8fafc;
-    --color-neutral-950: #ffffff;
+    --input-focus-glow: rgba(99, 102, 241, 0.25);
+    --text-primary:   #FAFAFA;
+    --text-secondary: #A1A1AA;
+    --text-muted:     #71717A;
+    --color-neutral-0:   #09090B;
+    --color-neutral-50:  #18181B;
+    --color-neutral-100: #27272A;
+    --color-neutral-200: #3F3F46;
+    --color-neutral-300: #52525B;
+    --color-neutral-400: #71717A;
+    --color-neutral-500: #A1A1AA;
+    --color-neutral-600: #D4D4D8;
+    --color-neutral-700: #E4E4E7;
+    --color-neutral-800: #F4F4F5;
+    --color-neutral-900: #FAFAFA;
+    --color-neutral-950: #FFFFFF;
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.32);
     --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.40);
     --shadow-lg: 0 14px 38px rgba(0, 0, 0, 0.48);
     --color-brand-default: var(--color-brand-400);
     --color-brand-hover:   var(--color-brand-300);
     --color-brand-active:  var(--color-brand-500);
-    --color-brand-ring:    rgba(168, 192, 212, 0.28);
-    --border-color: rgba(255, 255, 255, 0.10);
+    --color-brand-ring:    rgba(129, 140, 248, 0.28);
+    --border-color: rgba(255, 255, 255, 0.08);
     --focus-ring: 0 0 0 4px var(--color-brand-ring);
 
     --color-bg-primary:    var(--glass-bg-card);
@@ -217,31 +206,30 @@
     --color-text-secondary: var(--text-secondary);
     --color-text-tertiary: var(--text-muted);
     --color-border:        var(--glass-border);
-    --color-error:         var(--color-danger-700);
+    --color-error:         #FCA5A5;
     --color-error-light:   var(--color-danger-50);
-    --color-success:       var(--color-success-700);
+    --color-success:       #6EE7B7;
     --color-success-light: var(--color-success-50);
-    --color-warning:       var(--color-warning-700);
+    --color-warning:       #FDE68A;
     --color-warning-light: var(--color-warning-50);
-    --color-info:          var(--color-info-700);
+    --color-info:          #93C5FD;
     --color-info-light:    var(--color-info-50);
 
-    /* 状态色暗模式适配 */
-    --color-success-50:  rgba(74, 111, 90, 0.18);
-    --color-success-100: rgba(74, 111, 90, 0.28);
-    --color-success-500: #71A085;
-    --color-success-700: #C9DCD2;
-    --color-warning-50:  rgba(184, 146, 58, 0.18);
-    --color-warning-100: rgba(184, 146, 58, 0.28);
-    --color-warning-500: #D4B870;
-    --color-warning-700: #E8D5A8;
-    --color-danger-50:   rgba(177, 69, 69, 0.18);
-    --color-danger-100:  rgba(177, 69, 69, 0.28);
-    --color-danger-500:  #E07070;
-    --color-danger-700:  #EAC0B8;
-    --color-info-50:     rgba(46, 92, 138, 0.18);
-    --color-info-100:    rgba(46, 92, 138, 0.28);
-    --color-info-500:    #7EA0BF;
-    --color-info-700:    #CFDDE8;
+    --color-success-50:  rgba(16, 185, 129, 0.12);
+    --color-success-100: rgba(16, 185, 129, 0.20);
+    --color-success-500: #34D399;
+    --color-success-700: #A7F3D0;
+    --color-warning-50:  rgba(245, 158, 11, 0.12);
+    --color-warning-100: rgba(245, 158, 11, 0.20);
+    --color-warning-500: #FBBF24;
+    --color-warning-700: #FDE68A;
+    --color-danger-50:   rgba(239, 68, 68, 0.12);
+    --color-danger-100:  rgba(239, 68, 68, 0.20);
+    --color-danger-500:  #FCA5A5;
+    --color-danger-700:  #FEE2E2;
+    --color-info-50:     rgba(59, 130, 246, 0.12);
+    --color-info-100:    rgba(59, 130, 246, 0.20);
+    --color-info-500:    #93C5FD;
+    --color-info-700:    #DBEAFE;
   }
 }

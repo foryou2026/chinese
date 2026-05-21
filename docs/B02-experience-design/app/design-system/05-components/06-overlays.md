@@ -13,7 +13,7 @@
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `rgba(14, 31, 56, 0.45)` (墨夜半透) |
+| 背景 | `rgba(9, 9, 11, 0.50)` (深空黑半透) |
 | 模糊 | `backdrop-filter: blur(4px)` |
 | z-index | `var(--z-modal)` - 1 |
 
@@ -42,7 +42,7 @@
 | 背景 | `var(--glass-2)` |
 | 模糊 | `backdrop-filter: var(--glass-blur-lg)` |
 | 边框 | `var(--glass-border-strong)` |
-| 顶部高光 | `::before` — `inset 0 1px 0 rgba(255,250,235,.65)` |
+| 顶部高光 | `::before` — `inset 0 1px 0 rgba(255,255,255,.90)` |
 | 圆角 | `var(--radius-xl)`（移动端 fullscreen 时顶部圆角，底部 0） |
 | 阴影 | `var(--glass-shadow-lg)` |
 | z-index | `var(--z-modal)` |
@@ -61,7 +61,7 @@
 ### Anatomy
 
 ```
-[Backdrop 墨夜半透 + blur]
+[Backdrop 深空黑半透 + blur]
 ┌───────────────────────┐
 │ ░░ 1px inset 高光 ░░░ │
 │ [Title]         [X]   │ ← 标题栏 56px，var(--font-display)
@@ -152,7 +152,7 @@ hover/focus 触发的纯文字提示，不承载交互元素。
 |------|-----|
 | 触发 | hover(300ms 延迟) + focus |
 | 材质 | `.glass-dark` — `background: var(--glass-dark); backdrop-filter: var(--glass-blur-sm)` |
-| 文字 | `var(--color-neutral-0)` (暖白) |
+| 文字 | `var(--color-neutral-0)` (纯白) |
 | 字号 | `var(--text-xs)` |
 | padding | `var(--space-1)` `var(--space-2)` |
 | 圆角 | `var(--radius-sm)` |

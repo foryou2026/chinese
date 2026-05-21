@@ -1,4 +1,4 @@
-/* 07-theme-switcher.css — 模式 + 主题色 + 密度 切换（foryoutech 风格） */
+/* 07-theme-switcher.css — 模式 + 主题色 + 密度 切换 */
 
 /* ============== 模式切换（light/dark/auto） ============== */
 
@@ -51,23 +51,22 @@
   border-radius: var(--radius-pill);
   border: 2px solid transparent;
   cursor: pointer;
-  transition: var(--motion-fast);
+  transition: transform var(--motion-fast), box-shadow var(--motion-fast);
   position: relative;
 }
 
-.proto-accent-dot:hover { transform: scale(1.15); }
+.proto-accent-dot:hover { transform: scale(1.2); }
 
 .proto-accent-dot[aria-checked="true"] {
   border-color: var(--text-primary);
   box-shadow: 0 0 0 2px var(--color-neutral-0);
 }
 
-/* 5 种主题色预览色块 */
-.proto-accent-dot[data-accent="ink"]       { background: #1B3A5C; }
-.proto-accent-dot[data-accent="cinnabar"]  { background: #B14545; }
-.proto-accent-dot[data-accent="jade"]      { background: #4A6F5A; }
-.proto-accent-dot[data-accent="gold"]      { background: #B8923A; }
-.proto-accent-dot[data-accent="graphite"]  { background: #443B30; }
+.proto-accent-dot[data-accent="indigo"]  { background: #6366F1; }
+.proto-accent-dot[data-accent="rose"]    { background: #F43F5E; }
+.proto-accent-dot[data-accent="emerald"] { background: #10B981; }
+.proto-accent-dot[data-accent="amber"]   { background: #F59E0B; }
+.proto-accent-dot[data-accent="violet"]  { background: #8B5CF6; }
 
 /* ============== 密度切换 ============== */
 

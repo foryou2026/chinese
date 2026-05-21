@@ -72,8 +72,8 @@
 
 | 属性 | Light | Dark |
 |------|-------|------|
-| 背景 | `var(--glass-3)` (暖米白半透) | `var(--glass-3)` (墨青半透) |
-| shimmer | 左→右暖白渐变扫过 | 左→右冷白渐变扫过 |
+| 背景 | `var(--glass-3)` (毛玻璃白半透) | `var(--glass-3)` (毛玻璃暗半透) |
+| shimmer | 左→右柔白渐变扫过 | 左→右冷白渐变扫过 |
 | 动画 | 1.5s infinite | 1.5s infinite |
 | 圆角 | 跟随目标组件圆角 | — |
 
@@ -86,8 +86,8 @@
 }
 ```
 
-Light: `linear-gradient(90deg, transparent 0%, rgba(255,251,240,0.5) 50%, transparent 100%)`
-Dark: `linear-gradient(90deg, transparent 0%, rgba(168,192,212,0.15) 50%, transparent 100%)`
+Light: `linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.5) 50%, transparent 100%)`
+Dark: `linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 50%, transparent 100%)`
 
 ### 使用原则
 
@@ -164,7 +164,7 @@ Dark: `linear-gradient(90deg, transparent 0%, rgba(168,192,212,0.15) 50%, transp
 |------|------|
 | 0% | 仅轨道，无填充 |
 | 1-99% | 填充条宽度对应百分比 |
-| 100% | 满条 + 可选变色为 success 翠玉 |
+| 100% | 满条 + 可选变色为 success emerald |
 | error | 填充条变为 `var(--color-danger-500)` |
 
 ### a11y

@@ -103,7 +103,7 @@
 
 | 元素 | 反馈 |
 |------|------|
-| 按钮 | `active: scale(0.97)` + 色值加深，`var(--motion-fast)` |
+| 按钮 | `active: scale(0.98)` + 色值加深，`var(--motion-fast)` |
 | 列表项 | `active: background var(--color-neutral-100)` |
 | 卡片（.glass） | `active: scale(0.98)`，`var(--motion-fast)` |
 | 图标按钮 | `active: background var(--glass-3)` |
@@ -111,7 +111,7 @@
 ```css
 @media (hover: none) {
   .interactive:active {
-    transform: scale(0.97);
+    transform: scale(0.98);
     transition: transform var(--motion-fast);
   }
 }
@@ -123,10 +123,10 @@
 
 | 令牌 | 值 | 场景 |
 |------|-----|------|
-| `--motion-fast` | `120ms cubic-bezier(.2,.8,.2,1)` | 按钮按下、焦点、微交互 |
-| `--motion-base` | `200ms cubic-bezier(.2,.8,.2,1)` | 弹出/收起、Tab 切换、导航栏显隐 |
-| `--motion-slow` | `320ms cubic-bezier(.2,.8,.2,1)` | Modal/Drawer 进入、页面过渡 |
-| `--easing-out` | `cubic-bezier(.2,.8,.2,1)` | 弹出类 |
+| `--motion-fast` | `120ms cubic-bezier(.16,1,.3,1)` | 按钮按下、焦点、微交互 |
+| `--motion-base` | `200ms cubic-bezier(.16,1,.3,1)` | 弹出/收起、Tab 切换、导航栏显隐 |
+| `--motion-slow` | `320ms cubic-bezier(.16,1,.3,1)` | Modal/Drawer 进入、页面过渡 |
+| `--easing-out` | `cubic-bezier(.16,1,.3,1)` | 弹出类（弹簧感） |
 | `--easing-in-out` | `cubic-bezier(.4,0,.2,1)` | 持续类 |
 
 ## hover 微浮起（桌面端通用）

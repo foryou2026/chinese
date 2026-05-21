@@ -18,12 +18,12 @@
 
 | 变体 | 说明 | CSS class | 示例语境 |
 |------|------|-----------|---------|
-| primary | 墨青渐变 + 毛玻璃高光 | `.proto-btn-primary` | 提交表单、开始学习 |
+| primary | 品牌渐变 + 毛玻璃高光 | `.proto-btn-primary` | 提交表单、开始学习 |
 | secondary | 强毛玻璃 + 品牌色边框 | `.proto-btn-secondary` | 取消、返回、次要操作 |
 | ghost | 透明→hover 毛玻璃 | `.proto-btn-ghost` | 工具栏操作、更多选项 |
 | glass | 标准毛玻璃面板 | `.proto-btn-glass` | 卡片内操作、筛选 |
-| destructive | 朱砂渐变 + 毛玻璃 | `.proto-btn-destructive` | 删除、注销 |
-| success | 翠玉渐变 + 毛玻璃 | `.proto-btn-success` | 确认、完成 |
+| destructive | 危险红渐变 + 毛玻璃 | `.proto-btn-destructive` | 删除、注销 |
+| success | 成功绿渐变 + 毛玻璃 | `.proto-btn-success` | 确认、完成 |
 | icon-only | 毛玻璃方块 | `.proto-btn-icon` | 关闭、搜索、设置 |
 | link | 品牌色文字链接 | `.proto-btn-link` | 内联操作 |
 
@@ -43,21 +43,21 @@
 |------|-----|
 | 字体 | `var(--font-display)` |
 | 字重 | `var(--weight-medium)` |
-| 字间距 | `letter-spacing: 1px` |
+| 字间距 | `letter-spacing: -0.01em` |
 | 过渡 | `var(--motion-fast)` |
 | hover 微浮起 | `transform: translateY(-1px)` |
-| 按下缩放 | `transform: scale(0.97)` |
+| 按下缩放 | `transform: scale(0.98)` |
 
 ## 状态
 
-### primary 变体（墨青渐变）
+### primary 变体（品牌渐变）
 
 | 状态 | 背景 | 文字 | 其他 |
 |------|------|------|------|
 | 默认 | `linear-gradient(135deg, var(--color-brand-700), var(--color-brand-600))` + `backdrop-filter: blur(8px)` | `var(--color-brand-on)` | 顶部 inset 高光 |
 | hover | 渐变提亮至 brand-600→brand-500 | `var(--color-brand-on)` | `translateY(-1px)` + `var(--glass-shadow)` |
 | focus | 同默认 | — | `var(--focus-ring)` |
-| active | brand-800→brand-700 | `var(--color-brand-on)` | `scale(0.97)` |
+| active | brand-800→brand-700 | `var(--color-brand-on)` | `scale(0.98)` |
 | disabled | `opacity: 0.45` | — | `cursor: not-allowed; pointer-events: none` |
 | loading | 同默认 opacity:0.7 | hidden | Spinner 替代文字 |
 
@@ -89,7 +89,7 @@
 | active | `var(--glass-2)` 加深 | `var(--color-neutral-900)` |
 | disabled | `opacity: 0.45` | — |
 
-### destructive 变体（朱砂渐变）
+### destructive 变体（危险红渐变）
 
 | 状态 | 背景 | 文字 |
 |------|------|------|
@@ -98,7 +98,7 @@
 | active | 加深 danger-700 | white |
 | disabled | `opacity: 0.45` | — |
 
-### success 变体（翠玉渐变）
+### success 变体（成功绿渐变）
 
 | 状态 | 背景 | 文字 |
 |------|------|------|

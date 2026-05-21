@@ -73,8 +73,8 @@
 |------|------|
 | 排队中 | 灰色进度条，"等待上传" |
 | 上传中 | brand 色渐变进度条 + 百分比（`tabular-nums`） |
-| 成功 | `var(--color-success-500)` 翠玉图标，文件名可点击预览 |
-| 失败 | `var(--color-danger-500)` 朱砂图标 + 红色文件名 + "重试"链接 |
+| 成功 | `var(--color-success-500)` emerald 图标，文件名可点击预览 |
+| 失败 | `var(--color-danger-500)` red 图标 + 红色文件名 + "重试"链接 |
 | 删除 hover | X 按钮变 `var(--color-danger-500)` |
 
 ## Avatar 变体

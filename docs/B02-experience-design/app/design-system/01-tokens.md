@@ -24,8 +24,8 @@
 --motion-{name}              动效
 --z-{layer}                  z-index 分层
 --font-{role}                字体栈
---glass-{name}               毛玻璃专用
---bg-page / --bg-page-glow   页面渐变背景
+--glass-*                    毛玻璃专用
+--page-bg / --mesh-*         页面渐变背景
 ```
 
 ---
@@ -34,14 +34,15 @@
 
 ```css
 :root {
-  --font-brush:   'Ma Shan Zheng', 'STKaiti', cursive;
-  --font-display: 'ZCOOL XiaoWei', 'Source Han Serif SC', 'Noto Serif SC', serif;
-  --font-sans:    'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
-  --font-mono:    'JetBrains Mono', 'SF Mono', Consolas, monospace;
+  --font-sans:    'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+  --font-hanzi:   'Noto Serif SC', 'Source Han Serif SC', serif;
+  --font-brush:   'LXGW WenKai', 'Ma Shan Zheng', cursive;
 }
 ```
 
-> `--font-brush` 仅限品牌名 / Hero H1 / 印鉴 `.seal`，正文/表单禁用。
+> `--font-brush` 仅限品牌 Logo。`--font-hanzi` 仅用于学习内容中的汉字展示。正文/表单全部使用 `--font-sans`。
 
 ---
 
@@ -51,12 +52,12 @@
 :root {
   --text-xs:      12px;    --lh-xs:      18px;
   --text-sm:      14px;    --lh-sm:      22px;
-  --text-base:    17px;    --lh-base:    28px;
-  --text-md:      19px;    --lh-md:      30px;
-  --text-lg:      24px;    --lh-lg:      34px;
-  --text-xl:      32px;    --lh-xl:      42px;
-  --text-2xl:     42px;    --lh-2xl:     54px;
-  --text-display: 54px;    --lh-display: 66px;
+  --text-base:    16px;    --lh-base:    26px;
+  --text-md:      18px;    --lh-md:      28px;
+  --text-lg:      22px;    --lh-lg:      32px;
+  --text-xl:      30px;    --lh-xl:      40px;
+  --text-2xl:     40px;    --lh-2xl:     52px;
+  --text-display: 52px;    --lh-display: 64px;
 }
 ```
 
@@ -99,31 +100,31 @@
   --radius-xs:   4px;
   --radius-sm:   8px;
   --radius-md:  12px;   /* 按钮/输入/Tag 默认 */
-  --radius-lg:  18px;   /* 卡片 */
-  --radius-xl:  26px;   /* 强卡片/模态 */
-  --radius-2xl: 34px;   /* 抽屉/Hero 容器 */
-  --radius-pill: 999px;
+  --radius-lg:  16px;   /* 卡片 */
+  --radius-xl:  24px;   /* 强卡片/模态 */
+  --radius-2xl: 32px;   /* 抽屉/Hero 容器 */
+  --radius-pill: 9999px;
 }
 ```
 
 ---
 
-## 七、颜色 · 中性（暖墨灰阶，accent 无关）
+## 七、颜色 · 中性（冷灰阶，accent 无关）
 
 ```css
 :root {
-  --color-neutral-0:   #FFFBF0;   /* 暖白纸 */
-  --color-neutral-50:  #F8F2E0;
-  --color-neutral-100: #F0E8D2;
-  --color-neutral-200: #E5DCC7;
-  --color-neutral-300: #C5BBA8;
-  --color-neutral-400: #9C9080;
-  --color-neutral-500: #6F6452;   /* 茶灰·辅助文字 */
-  --color-neutral-600: #56493A;
-  --color-neutral-700: #3D3327;   /* 副文 */
-  --color-neutral-800: #2A2218;
-  --color-neutral-900: #1F1A14;   /* 暖墨·正文 */
-  --color-neutral-950: #100D0A;
+  --color-neutral-0:   #FFFFFF;
+  --color-neutral-50:  #F8FAFC;
+  --color-neutral-100: #F1F5F9;
+  --color-neutral-200: #E2E8F0;
+  --color-neutral-300: #CBD5E1;
+  --color-neutral-400: #94A3B8;
+  --color-neutral-500: #64748B;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1E293B;
+  --color-neutral-900: #0F172A;
+  --color-neutral-950: #020617;
 }
 ```
 
@@ -131,41 +132,41 @@
 
 ## 八、颜色 · Brand（5 主题色族）
 
-> 默认 `data-accent="ink"`。运行时切换 `<html data-accent="cinnabar|jade|gold|graphite">` 即整体换色。
+> 默认 `data-accent="indigo"`。运行时切换 `<html data-accent="rose|emerald|amber|violet">` 即整体换色。
 > 所有按钮/链接/焦点环/激活下划线/Tag 默认色必须使用 `--color-brand-*`，**禁止**直接引用具体色族。
 
-### 8.1 ink · 宋瓷墨青（默认）
+### 8.1 indigo · 靛蓝（默认）
 
 ```css
 :root {
-  --color-brand-50:  #E8EFF5;  --color-brand-100: #CFDDE8;
-  --color-brand-200: #A8C0D4;  --color-brand-300: #7EA0BF;
-  --color-brand-400: #5481A8;  --color-brand-500: #2E5C8A;
-  --color-brand-600: #244A72;  --color-brand-700: #1B3A5C;   /* 主锚定 */
-  --color-brand-800: #142A44;  --color-brand-900: #0E1F38;
-  --color-brand-default: var(--color-brand-700);
-  --color-brand-hover:   var(--color-brand-600);
-  --color-brand-active:  var(--color-brand-800);
-  --color-brand-on:      #FFFBF0;
-  --color-brand-ring:    rgba(46, 92, 138, 0.18);
+  --color-brand-50:  #EEF2FF;  --color-brand-100: #E0E7FF;
+  --color-brand-200: #C7D2FE;  --color-brand-300: #A5B4FC;
+  --color-brand-400: #818CF8;  --color-brand-500: #6366F1;
+  --color-brand-600: #4F46E5;  --color-brand-700: #4338CA;
+  --color-brand-800: #3730A3;  --color-brand-900: #312E81;
+  --color-brand-default: var(--color-brand-600);
+  --color-brand-hover:   var(--color-brand-500);
+  --color-brand-active:  var(--color-brand-700);
+  --color-brand-on:      #FFFFFF;
+  --color-brand-ring:    rgba(99, 102, 241, 0.30);
 }
 ```
 
-### 8.2 cinnabar · 朱砂
+### 8.2 rose · 玫瑰
 
-锚定 brand-500。详见 `themes.css`。
+锚定 brand-500 #F43F5E。详见 `themes.css`。
 
-### 8.3 jade · 翠玉
+### 8.3 emerald · 翡翠
 
-锚定 brand-600。详见 `themes.css`。
+锚定 brand-500 #10B981。详见 `themes.css`。
 
-### 8.4 gold · 鎏金
+### 8.4 amber · 琥珀
 
-锚定 brand-700。详见 `themes.css`。
+锚定 brand-500 #F59E0B。详见 `themes.css`。
 
-### 8.5 graphite · 古墨
+### 8.5 violet · 紫晶
 
-锚定 brand-600。详见 `themes.css`。
+锚定 brand-500 #8B5CF6。详见 `themes.css`。
 
 ---
 
@@ -173,54 +174,53 @@
 
 ```css
 :root {
-  /* success · 翠玉 */
-  --color-success-50:  #E5EFE9;  --color-success-100: #C9DCD2;
-  --color-success-200: #97BAA7;  --color-success-500: #4A6F5A;
-  --color-success-700: #2F5640;
-  /* warning · 鎏金 */
-  --color-warning-50:  #F4ECD8;  --color-warning-100: #E8D5A8;
-  --color-warning-200: #D4B870;  --color-warning-500: #B8923A;
-  --color-warning-700: #8C6E2A;
-  /* danger · 朱砂 */
-  --color-danger-50:  #F5E0DC;  --color-danger-100: #EAC0B8;
-  --color-danger-200: #D89488;  --color-danger-500: #B14545;
-  --color-danger-700: #8A2F2F;
-  /* info · 青花 */
-  --color-info-50:  #E8EFF5;  --color-info-100: #CFDDE8;
-  --color-info-500: #2E5C8A;  --color-info-700: #1B3A5C;
+  /* success · 翡翠 */
+  --color-success-50:  #ECFDF5;  --color-success-100: #D1FAE5;
+  --color-success-200: #A7F3D0;  --color-success-500: #10B981;
+  --color-success-700: #047857;
+  /* warning · 琥珀 */
+  --color-warning-50:  #FFFBEB;  --color-warning-100: #FEF3C7;
+  --color-warning-200: #FDE68A;  --color-warning-500: #F59E0B;
+  --color-warning-700: #B45309;
+  /* danger · 红 */
+  --color-danger-50:  #FEF2F2;  --color-danger-100: #FEE2E2;
+  --color-danger-200: #FECACA;  --color-danger-500: #EF4444;
+  --color-danger-700: #B91C1C;
+  /* info · 蓝 */
+  --color-info-50:  #EFF6FF;  --color-info-100: #DBEAFE;
+  --color-info-200: #BFDBFE;  --color-info-500: #3B82F6;
+  --color-info-700: #1D4ED8;
 }
 ```
 
 ---
 
-## 十、背景 · 渐变与毛玻璃
+## 十、背景 · 极光渐变与毛玻璃
 
 ```css
 :root {
-  /* 页面渐变（宣纸→月白瓷） */
-  --bg-page: linear-gradient(180deg, #F8F2E0 0%, #F2EBD3 38%, #E8EFF5 100%);
-  --bg-page-glow:
-    radial-gradient(60% 50% at 75% 12%, rgba(184,146,58,0.10), transparent 60%),
-    radial-gradient(45% 40% at 18% 92%, rgba(46,92,138,0.08), transparent 55%);
-  --paper-grain-opacity: 0.06;
+  /* 页面基底 */
+  --page-bg: #FAFBFF;
+
+  /* 极光渐变 Blob 颜色 */
+  --mesh-color-1: #C7D2FE;   /* 薰衣草 indigo-200 */
+  --mesh-color-2: #FBCFE8;   /* 玫瑰粉 pink-200 */
+  --mesh-color-3: #A5F3FC;   /* 薄荷青 cyan-200 */
+  --mesh-opacity-1: 0.60;
+  --mesh-opacity-2: 0.45;
+  --mesh-opacity-3: 0.50;
 
   /* 毛玻璃表面 */
-  --glass-1: rgba(255, 251, 240, 0.55);   /* 默认 */
-  --glass-2: rgba(255, 251, 240, 0.72);   /* 强卡 */
-  --glass-3: rgba(255, 251, 240, 0.42);   /* 极薄 */
-  --glass-tint:  rgba(207, 221, 232, 0.45); /* 月白瓷蓝 */
-  --glass-dark:  rgba(20, 48, 79, 0.78);   /* 反白·hero / TopBar */
-  --glass-blur:    saturate(170%) blur(22px);
-  --glass-blur-lg: saturate(170%) blur(34px);
-  --glass-blur-sm: saturate(170%) blur(16px);
-  --glass-border:        1px solid rgba(255, 250, 235, 0.78);
-  --glass-border-strong: 1px solid rgba(255, 250, 235, 0.92);
-  --glass-shadow:
-    0 6px 24px rgba(14, 31, 56, 0.14),
-    inset 0 1px 0 rgba(255, 250, 235, 0.65);
-  --glass-shadow-lg:
-    0 14px 38px rgba(14, 31, 56, 0.18),
-    inset 0 1px 0 rgba(255, 250, 235, 0.65);
+  --glass-bg:          rgba(255, 255, 255, 0.60);
+  --glass-bg-card:     rgba(255, 255, 255, 0.65);
+  --glass-bg-elevated: rgba(255, 255, 255, 0.75);
+  --glass-border:      rgba(255, 255, 255, 0.70);
+  --glass-inset:       rgba(255, 255, 255, 0.90);
+  --glass-shadow:      rgba(0, 0, 30, 0.06);
+  --glass-shadow-elevated: rgba(0, 0, 30, 0.10);
+  --glass-blur:        blur(24px) saturate(1.8);
+  --glass-blur-lg:     blur(36px) saturate(2.0);
+  --glass-blur-sm:     blur(16px) saturate(1.5);
 }
 ```
 
@@ -230,9 +230,9 @@
 
 ```css
 :root {
-  --shadow-sm: 0 2px 8px rgba(14, 31, 56, 0.08);
-  --shadow-md: 0 6px 18px rgba(14, 31, 56, 0.12);
-  --shadow-lg: 0 14px 38px rgba(14, 31, 56, 0.18);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 30, 0.06);
+  --shadow-md: 0 6px 18px rgba(0, 0, 30, 0.08);
+  --shadow-lg: 0 14px 38px rgba(0, 0, 30, 0.12);
 }
 ```
 
@@ -243,8 +243,7 @@
 ```css
 :root {
   --focus-ring: 0 0 0 4px var(--color-brand-ring);
-  --border-strong: 1px solid var(--color-neutral-300);
-  --border-subtle: 1px solid var(--color-neutral-200);
+  --border-color: rgba(200, 210, 225, 0.60);
 }
 ```
 
@@ -254,11 +253,12 @@
 
 ```css
 :root {
-  --motion-fast: 120ms cubic-bezier(.2,.8,.2,1);
-  --motion-base: 200ms cubic-bezier(.2,.8,.2,1);
-  --motion-slow: 320ms cubic-bezier(.2,.8,.2,1);
-  --easing-out:  cubic-bezier(.2,.8,.2,1);
+  --motion-fast: 150ms cubic-bezier(.16,1,.3,1);
+  --motion-base: 250ms cubic-bezier(.16,1,.3,1);
+  --motion-slow: 350ms cubic-bezier(.16,1,.3,1);
+  --easing-out:  cubic-bezier(.16,1,.3,1);
   --easing-in-out: cubic-bezier(.4,0,.2,1);
+  --transition-all: all 200ms cubic-bezier(.16,1,.3,1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -301,11 +301,11 @@
 ```css
 [data-density="default"] { /* 默认值，所有 token 不变 */ }
 [data-density="compact"] {
-  --text-base: 15px; --text-md: 16px;
+  --text-base: 14px; --text-md: 15px;
   --space-3: 8px; --space-4: 12px; --space-5: 16px; --space-6: 22px;
 }
 [data-density="elder"] {
-  --text-base: 20px; --text-md: 22px; --text-lg: 26px;
+  --text-base: 19px; --text-md: 21px; --text-lg: 24px;
   --space-3: 16px; --space-4: 22px; --space-5: 28px; --space-6: 36px;
 }
 ```
@@ -315,7 +315,7 @@
 ## 十七、Token 契约
 
 1. 任何业务 CSS / 组件 / 原型只能引用 `--color-brand-*` `--color-neutral-*` `--color-{success|warning|danger|info}-*` `--space-*` `--radius-*` `--shadow-*` `--motion-*` `--text-*` `--font-*` `--z-*` `--glass-*`。
-2. **禁止**引用具体色族（如 `--color-ink-700`）；后者为 token 内部实现，因主题切换而易主。
+2. **禁止**引用具体色族（如 `--color-indigo-700`）；后者为 token 内部实现，因主题切换而易主。
 3. 状态色 / 中性色 / 玻璃 / 间距 / 字体 不随 `data-accent` 改变。
 4. 仅 brand 色随 `data-accent` 切换；brand / 中性 / 玻璃 / 背景 随 `data-mode` 切换。
 

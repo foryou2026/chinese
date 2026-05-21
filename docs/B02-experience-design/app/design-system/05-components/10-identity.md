@@ -70,7 +70,7 @@
 | 属性 | dot | count |
 |------|-----|-------|
 | 尺寸 | 8px 圆 | min-width 20px, height 20px |
-| 背景 | `var(--color-danger-500)` (朱砂) | `var(--color-danger-500)` |
+| 背景 | `var(--color-danger-500)` (red) | `var(--color-danger-500)` |
 | 文字 | 无 | white, `var(--text-xs)`, `var(--weight-semibold)` |
 | 圆角 | `var(--radius-pill)` | `var(--radius-pill)` |
 | padding | 0 | 0 6px |
@@ -106,10 +106,10 @@
 |------|-------------|------|--------------|
 | brand | `var(--color-brand-100)` | `var(--color-brand-700)` | `var(--color-brand-300)` |
 | neutral | `var(--color-neutral-100)` | `var(--color-neutral-600)` | `var(--color-neutral-300)` |
-| success 翠玉 | `var(--color-success-50)` | `var(--color-success-700)` | — |
-| warning 鎏金 | `var(--color-warning-50)` | `var(--color-warning-700)` | — |
-| danger 朱砂 | `var(--color-danger-50)` | `var(--color-danger-700)` | — |
-| info 青花 | `var(--color-info-50)` | `var(--color-info-700)` | — |
+| success emerald | `var(--color-success-50)` | `var(--color-success-700)` | — |
+| warning amber | `var(--color-warning-50)` | `var(--color-warning-700)` | — |
+| danger red | `var(--color-danger-50)` | `var(--color-danger-700)` | — |
+| info blue | `var(--color-info-50)` | `var(--color-info-700)` | — |
 
 ### 尺寸
 

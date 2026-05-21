@@ -35,8 +35,8 @@
 ### standard
 
 ```
-[Label]          ← var(--font-display), var(--text-sm), var(--weight-medium), letter-spacing: 1px
-[Input]          ← 全宽，暖米白半透背景
+[Label]          ← var(--font-display), var(--text-sm), var(--weight-medium), letter-spacing: -0.01em
+[Input]          ← 全宽，毛玻璃白半透背景
 [helper/error]   ← var(--text-xs)
                  ← 字段间距 var(--space-4)
 [Label]
@@ -78,7 +78,7 @@
 
 ### 全局错误（非字段级）
 
-- 表单顶部 Alert 组件（danger 变体，`.glass` + 左侧 4px 朱砂色条）
+- 表单顶部 Alert 组件（danger 变体，`.glass` + 左侧 4px 危险红色条）
 - 显示服务器返回的错误信息
 
 ## 状态
@@ -91,7 +91,7 @@
 | active | 同 focus |
 | disabled | 全表单灰化（`opacity: 0.45`），提交按钮 disabled |
 | loading（提交中） | 提交按钮 loading，所有字段 readonly |
-| error（校验失败） | 错误字段朱砂标红 + 下方错误消息 |
+| error（校验失败） | 错误字段 danger 标红 + 下方错误消息 |
 | readonly | 所有字段 readonly 态 |
 
 ## 必填标记
@@ -107,7 +107,7 @@
 | Tab | 按字段顺序移动焦点 |
 | Enter | 单行 Input 中触发提交；Textarea 中换行 |
 | Esc | 关闭打开的下拉/日期面板 |
-| 提交成功 | Toast 提示（success 翠玉） + 根据场景重置或跳转 |
+| 提交成功 | Toast 提示（success emerald） + 根据场景重置或跳转 |
 | 提交失败 | 滚动到第一个错误字段 + 聚焦 |
 
 ## a11y

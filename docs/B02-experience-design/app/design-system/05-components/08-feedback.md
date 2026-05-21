@@ -20,10 +20,10 @@
 
 | 变体 | 左侧色条 | 图标色 |
 |------|---------|--------|
-| success 翠玉 | `var(--color-success-500)` | `var(--color-success-500)` |
-| danger 朱砂 | `var(--color-danger-500)` | `var(--color-danger-500)` |
-| warning 鎏金 | `var(--color-warning-500)` | `var(--color-warning-500)` |
-| info 青花 | `var(--color-info-500)` | `var(--color-info-500)` |
+| success emerald | `var(--color-success-500)` | `var(--color-success-500)` |
+| danger red | `var(--color-danger-500)` | `var(--color-danger-500)` |
+| warning amber | `var(--color-warning-500)` | `var(--color-warning-500)` |
+| info blue | `var(--color-info-500)` | `var(--color-info-500)` |
 
 ### 材质
 
@@ -83,10 +83,10 @@
 
 | 变体 | 左侧色条 | 背景 | 图标 |
 |------|---------|------|------|
-| success 翠玉 | `var(--color-success-500)` | `var(--glass-1)` | check-circle |
-| danger 朱砂 | `var(--color-danger-500)` | `var(--glass-1)` | x-circle |
-| warning 鎏金 | `var(--color-warning-500)` | `var(--glass-1)` | alert-triangle |
-| info 青花 | `var(--color-info-500)` | `var(--glass-1)` | info |
+| success emerald | `var(--color-success-500)` | `var(--glass-1)` | check-circle |
+| danger red | `var(--color-danger-500)` | `var(--glass-1)` | x-circle |
+| warning amber | `var(--color-warning-500)` | `var(--glass-1)` | alert-triangle |
+| info blue | `var(--color-info-500)` | `var(--glass-1)` | info |
 
 ### 材质
 

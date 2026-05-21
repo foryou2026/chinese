@@ -20,7 +20,7 @@
 | Form | 单列全宽 | 单列全宽 | 双列 | 双列 | 双列 |
 | 按钮组 | 纵向堆叠全宽 | 横向排列 | 横向排列 | 横向排列 | 横向排列 |
 | 容器内边距 | 24px | 24px | 28px | 36px | 48px~96px |
-| 毛玻璃 blur | 16px (减负) | 22px | 22px | 22px | 22px |
+| 毛玻璃 blur | 16px (减负) | 24px | 24px | 24px | 24px |
 
 ---
 
@@ -29,96 +29,66 @@
 | 轴 | 属性 | 取值 | 默认 |
 |----|------|------|------|
 | 模式 | `data-mode` | light / dark / auto | auto |
-| 主题色 | `data-accent` | ink / cinnabar / jade / gold / graphite | ink |
+| 主题色 | `data-accent` | indigo / rose / emerald / amber / violet | indigo |
 | 密度 | `data-density` | default / compact / elder | default |
 
 > 三轴均在 `<html>` 元素上设置，JS 初始化时从 localStorage 读取或使用默认值。
-> 任意组合皆有效，运行时切换。详见 `prototype-style/app.js` 中 `window.proto`。
 
 ---
 
-## 暗黑模式 — 宣纸→墨夜映射
+## 暗黑模式 — 极光→深邃映射
 
 ### 页面背景
 
 | 属性 | Light | Dark |
 |------|-------|------|
-| `--bg-page` | `#F8F2E0 → #F2EBD3 → #E8EFF5` (宣纸→月白瓷) | `#0B1626 → #102040 → #14304F` (墨夜渐变) |
-| `--bg-page-glow` | 鎏金+墨青微光 | 同源降透至 40% |
-| `--paper-grain-opacity` | 0.06 | 0.03 (暗底减弱纸纹) |
+| `--page-bg` | #FAFBFF (微蓝白) | #09090B (深空黑 zinc-950) |
+| mesh blob | 薰衣草+玫瑰粉+薄荷青，高 opacity | 紫晶+青+玫红，低 opacity |
 
 ### 中性灰阶反转
 
 | Token | Light | Dark |
 |-------|-------|------|
-| `--color-neutral-0` | #FFFBF0 (暖白) | #0B1020 (墨底) |
-| `--color-neutral-50` | #F8F2E0 | #14243C |
-| `--color-neutral-100` | #F0E8D2 | #1B3050 |
-| `--color-neutral-200` | #E5DCC7 | #243C60 |
-| `--color-neutral-300` | #C5BBA8 | #3A5070 |
-| `--color-neutral-400` | #9C9080 | #6A809A |
-| `--color-neutral-500` | #6F6452 | #90A0B0 |
-| `--color-neutral-600` | #56493A | #B0C0D0 |
-| `--color-neutral-700` | #3D3327 | #D0DCE8 |
-| `--color-neutral-800` | #2A2218 | #E0E8F0 |
-| `--color-neutral-900` | #1F1A14 | #F0F4F8 |
-| `--color-neutral-950` | #100D0A | #F8FAFB |
+| `--color-neutral-0` | #FFFFFF | #09090B |
+| `--color-neutral-50` | #F8FAFC | #18181B |
+| `--color-neutral-100` | #F1F5F9 | #27272A |
+| `--color-neutral-200` | #E2E8F0 | #3F3F46 |
+| `--color-neutral-300` | #CBD5E1 | #52525B |
+| `--color-neutral-400` | #94A3B8 | #71717A |
+| `--color-neutral-500` | #64748B | #A1A1AA |
+| `--color-neutral-600` | #475569 | #D4D4D8 |
+| `--color-neutral-700` | #334155 | #E4E4E7 |
+| `--color-neutral-800` | #1E293B | #F4F4F5 |
+| `--color-neutral-900` | #0F172A | #FAFAFA |
+| `--color-neutral-950` | #020617 | #FFFFFF |
 
 ### 品牌色调整
 
 | Token | Light | Dark | 原因 |
 |-------|-------|------|------|
-| `--color-brand-default` | brand-700 | brand-400 | 暗底提升对比度 |
-| `--color-brand-hover` | brand-600 | brand-300 | 同上 |
-| `--color-brand-active` | brand-800 | brand-500 | 同上 |
-| `--color-brand-on` | neutral-0 | neutral-950 | 反色文字 |
-| `--color-brand-ring` | `rgba(46,92,138,.18)` | `rgba(168,192,212,.25)` | 暗底提亮环 |
+| `--color-brand-default` | brand-600 | brand-400 | 暗底提升对比度 |
+| `--color-brand-hover` | brand-500 | brand-300 | 同上 |
+| `--color-brand-active` | brand-700 | brand-500 | 同上 |
+| `--color-brand-ring` | 0.30 alpha | 0.28 alpha | 暗底调整光晕 |
 
 ### 毛玻璃参数
 
 | Token | Light | Dark |
 |-------|-------|------|
-| `--glass-1` | `rgba(255,251,240, 0.55)` | `rgba(14, 36, 62, 0.55)` |
-| `--glass-2` | `rgba(255,251,240, 0.72)` | `rgba(14, 36, 62, 0.72)` |
-| `--glass-3` | `rgba(255,251,240, 0.42)` | `rgba(14, 36, 62, 0.42)` |
-| `--glass-tint` | `rgba(207,221,232, 0.45)` | `rgba(46, 92, 138, 0.30)` |
-| `--glass-dark` | `rgba(20, 48, 79, 0.78)` | `rgba(8, 20, 38, 0.85)` |
-| `--glass-border` | `rgba(255,250,235, 0.78)` | `rgba(168,192,212, 0.12)` |
-| `--glass-border-strong` | `rgba(255,250,235, 0.92)` | `rgba(168,192,212, 0.22)` |
-| `--glass-shadow` | `inset + 0.14 rgba` | 阴影降低至 0.06 + 暗调 inset |
+| `--glass-bg` | `rgba(255,255,255, 0.60)` | `rgba(255,255,255, 0.03)` |
+| `--glass-bg-card` | `rgba(255,255,255, 0.65)` | `rgba(255,255,255, 0.05)` |
+| `--glass-bg-elevated` | `rgba(255,255,255, 0.75)` | `rgba(255,255,255, 0.07)` |
+| `--glass-border` | `rgba(255,255,255, 0.70)` | `rgba(255,255,255, 0.08)` |
+| `--glass-inset` | `rgba(255,255,255, 0.90)` | `rgba(255,255,255, 0.05)` |
 
 ### 状态色
 
 | 状态 | Light 文字 | Dark 文字 | Light 背景 | Dark 背景 |
 |------|-----------|-----------|-----------|-----------|
-| success 翠玉 | #4A6F5A | #C9DCD2 | #E5EFE9 | `rgba(74,111,90, 0.18)` |
-| warning 鎏金 | #B8923A | #E8D5A8 | #F4ECD8 | `rgba(184,146,58, 0.18)` |
-| danger 朱砂 | #B14545 | #EAC0B8 | #F5E0DC | `rgba(177,69,69, 0.18)` |
-| info 青花 | #2E5C8A | #CFDDE8 | #E8EFF5 | `rgba(46,92,138, 0.18)` |
-
-> 暗色模式下文字用 -100 级（提亮），背景用 18% 透明度半透。
-
-### 阴影策略
-
-| Light | Dark |
-|-------|------|
-| `box-shadow: var(--shadow-*)` 墨色淡阴影 | 阴影 rgba 降至 0.06；`--glass-shadow` inset 高光改为暗调边光 |
-
----
-
-## CSS 实现
-
-完整暗色覆盖定义在 `prototype-style/themes.css` 中 `[data-mode="dark"]` 选择器内。
-
-auto 模式实现：
-
-```css
-@media (prefers-color-scheme: dark) {
-  [data-mode="auto"] {
-    /* 复制 [data-mode="dark"] 全部 token 覆盖 */
-  }
-}
-```
+| success | #10B981 | #34D399 | #ECFDF5 | `rgba(16,185,129, 0.12)` |
+| warning | #F59E0B | #FBBF24 | #FFFBEB | `rgba(245,158,11, 0.12)` |
+| danger | #EF4444 | #FCA5A5 | #FEF2F2 | `rgba(239,68,68, 0.12)` |
+| info | #3B82F6 | #93C5FD | #EFF6FF | `rgba(59,130,246, 0.12)` |
 
 ---
 
@@ -130,9 +100,9 @@ auto 模式实现：
 | `--space-4` | 16px | 12px | 22px |
 | `--space-5` | 20px | 16px | 28px |
 | `--space-6` | 24px | 22px | 36px |
-| `--text-base` | 17px | 15px | 20px |
-| `--text-md` | 19px | 16px | 22px |
-| `--text-lg` | 24px | 24px | 26px |
+| `--text-base` | 16px | 14px | 19px |
+| `--text-md` | 18px | 15px | 21px |
+| `--text-lg` | 22px | 22px | 24px |
 | `--container-pad` | 响应式阶梯 | 16px | 32px |
 
 ---
@@ -143,13 +113,13 @@ auto 模式实现：
 
 | accent | 色名 | 主色 -500 | 用途 |
 |--------|------|-----------|------|
-| ink | 墨青 | #2E5C8A | 默认，稳重知性 |
-| cinnabar | 朱砂 | #B14545 | 热烈，节庆 |
-| jade | 翠玉 | #4A6F5A | 清新，自然 |
-| gold | 鎏金 | #B8923A | 典雅，尊贵 |
-| graphite | 水墨 | #4A4A4A | 极简，专注 |
+| indigo | 靛蓝 | #6366F1 | 默认，智慧沉稳 |
+| rose | 玫瑰 | #F43F5E | 热情活力 |
+| emerald | 翡翠 | #10B981 | 自然清新 |
+| amber | 琥珀 | #F59E0B | 温暖能量 |
+| violet | 紫晶 | #8B5CF6 | 创意灵感 |
 
-每套 accent 在 `themes.css` 中覆盖 `--color-brand-50`~`--color-brand-900` 全色阶 + 语义别名（default/hover/active/on/ring）。
+每套 accent 在 `themes.css` 中覆盖 `--color-brand-50`~`--color-brand-900` 全色阶 + 语义别名。
 
 ---
 

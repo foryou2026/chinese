@@ -1,26 +1,26 @@
-/* 04-overlays.css — 毛玻璃 Modal/Drawer/Popover/Tooltip/Dropdown (foryoutech 风格) */
+/* 04-overlays.css — 棱光毛玻璃 Modal/Drawer/Popover/Tooltip/Dropdown */
 
 /* ============== Backdrop ============== */
 
 .proto-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  background: rgba(0, 0, 20, 0.40);
+  -webkit-backdrop-filter: blur(6px) saturate(1.4);
+          backdrop-filter: blur(6px) saturate(1.4);
   z-index: var(--z-modal);
   opacity: 0;
   transition: opacity var(--motion-slow);
 }
 .proto-backdrop[data-open] { opacity: 1; }
 
-/* ============== Modal — glass-elevated ============== */
+/* ============== Modal ============== */
 
 .proto-modal {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.95);
+  transform: translate(-50%, -50%) scale(0.96);
   z-index: var(--z-modal);
   background: var(--glass-bg-elevated);
   -webkit-backdrop-filter: var(--glass-blur-lg);
@@ -78,7 +78,7 @@
   flex-shrink: 0;
 }
 
-/* ============== Drawer — glass-elevated ============== */
+/* ============== Drawer ============== */
 
 .proto-drawer {
   position: fixed;
@@ -128,7 +128,7 @@
   margin: var(--space-3) auto;
 }
 
-/* ============== Dropdown — glass ============== */
+/* ============== Dropdown ============== */
 
 .proto-dropdown {
   position: absolute;
@@ -146,10 +146,10 @@
     0 8px 40px -4px var(--glass-shadow-elevated);
   padding: var(--space-1) 0;
   opacity: 0;
-  transform: scale(0.95);
+  transform: scale(0.96) translateY(-4px);
   transition: opacity var(--motion-fast), transform var(--motion-fast);
 }
-.proto-dropdown[data-open] { opacity: 1; transform: scale(1); }
+.proto-dropdown[data-open] { opacity: 1; transform: scale(1) translateY(0); }
 
 .proto-dropdown-item {
   display: flex;
@@ -161,6 +161,8 @@
   color: var(--text-primary);
   cursor: pointer;
   transition: background var(--motion-fast);
+  border-radius: var(--radius-sm);
+  margin: 0 var(--space-1);
 }
 
 .proto-dropdown-item:hover,
@@ -179,18 +181,18 @@
 .proto-dropdown-separator {
   height: 1px;
   background: var(--glass-border);
-  margin: var(--space-1) 0;
+  margin: var(--space-1) var(--space-2);
 }
 
-/* ============== Tooltip — dark glass ============== */
+/* ============== Tooltip ============== */
 
 .proto-tooltip {
   position: absolute;
   z-index: var(--z-tooltip);
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(15, 23, 42, 0.90);
   -webkit-backdrop-filter: var(--glass-blur-sm);
           backdrop-filter: var(--glass-blur-sm);
-  color: #f1f5f9;
+  color: #F8FAFC;
   font-size: var(--text-xs);
   line-height: var(--lh-xs);
   padding: var(--space-1) var(--space-2);

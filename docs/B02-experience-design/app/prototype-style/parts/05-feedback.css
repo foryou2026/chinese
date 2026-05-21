@@ -1,4 +1,4 @@
-/* 05-feedback.css — 毛玻璃 Toast/Alert/Banner（foryoutech 风格） */
+/* 05-feedback.css — 棱光毛玻璃 Toast/Alert/Banner */
 
 /* ============== Toast ============== */
 
@@ -45,10 +45,10 @@
     0 8px 40px -4px var(--glass-shadow-elevated);
   pointer-events: auto;
   opacity: 0;
-  transform: translateY(-8px);
+  transform: translateY(-8px) scale(0.98);
   transition: opacity var(--motion-slow), transform var(--motion-slow);
 }
-.proto-toast[data-open] { opacity: 1; transform: translateY(0); }
+.proto-toast[data-open] { opacity: 1; transform: translateY(0) scale(1); }
 
 .proto-toast-icon {
   flex-shrink: 0;
@@ -61,7 +61,6 @@
 .proto-toast-warning .proto-toast-icon { color: var(--color-warning-500); }
 .proto-toast-info .proto-toast-icon    { color: var(--color-info-500); }
 
-/* 左侧状态色条 */
 .proto-toast-success { border-left: 3px solid var(--color-success-500); }
 .proto-toast-error   { border-left: 3px solid var(--color-danger-500); }
 .proto-toast-warning { border-left: 3px solid var(--color-warning-500); }
@@ -89,10 +88,11 @@
   color: var(--text-muted);
   cursor: pointer;
   background: none; border: none; padding: 0;
+  transition: color var(--motion-fast);
 }
-.proto-toast-close:hover { color: var(--text-secondary); }
+.proto-toast-close:hover { color: var(--text-primary); }
 
-/* ============== Alert — 毛玻璃+左色条 ============== */
+/* ============== Alert ============== */
 
 .proto-alert {
   display: flex;
@@ -146,7 +146,7 @@
   background: none; border: none; padding: 0;
 }
 
-/* ============== Banner — 毛玻璃 ============== */
+/* ============== Banner ============== */
 
 .proto-banner {
   display: flex;
@@ -168,14 +168,14 @@
   color: var(--color-brand-on);
 }
 .proto-banner-warning {
-  background: rgba(184, 146, 58, 0.18);
+  background: rgba(245, 158, 11, 0.12);
   color: var(--color-warning-700);
-  border-bottom: 1px solid rgba(184, 146, 58, 0.32);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.20);
 }
 .proto-banner-error {
-  background: rgba(177, 69, 69, 0.18);
+  background: rgba(239, 68, 68, 0.12);
   color: var(--color-danger-700);
-  border-bottom: 1px solid rgba(177, 69, 69, 0.32);
+  border-bottom: 1px solid rgba(239, 68, 68, 0.20);
 }
 
 .proto-banner-action {

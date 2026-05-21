@@ -16,11 +16,11 @@
 | 高度 | 56px |
 | 材质 | `.glass-bar` — `background: var(--glass-2); backdrop-filter: var(--glass-blur)` |
 | 底部高光 | `border-bottom: var(--glass-border)` |
-| 顶部高光 | `::before` — `inset 0 1px 0 rgba(255,250,235,.65)` |
+| 顶部高光 | `::before` — `inset 0 1px 0 rgba(255,255,255,.90)` |
 | 内边距 | `0 var(--container-pad)` |
 | position | `sticky; top: 0` |
 | z-index | `var(--z-sticky)` |
-| 左侧 | Logo（`.seal` 印鉴 + `--font-brush` 品牌名） |
+| 左侧 | Logo（`.brand-mark` 品牌标识 + `--font-display` 品牌名） |
 | 中部 | 导航链接（admin 桌面）/ 空（app） |
 | 右侧 | 语言切换 + 用户头像 |
 
@@ -110,7 +110,7 @@
 | 宽度 | 280px |
 | 方向 | 从左滑入 |
 | 材质 | `.glass-strong` — 强毛玻璃面板 + `--glass-blur-lg` |
-| 遮罩 | `rgba(14, 31, 56, 0.45)` + `backdrop-filter: blur(4px)` |
+| 遮罩 | `rgba(9, 9, 11, 0.50)` + `backdrop-filter: blur(4px)` |
 | 动画 | `var(--motion-slow)` `var(--easing-out)` |
 | 关闭 | 点击遮罩 / 滑动 / X 按钮 |
 

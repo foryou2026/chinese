@@ -13,33 +13,33 @@
 
 ## REF-1：Linear（linear.app）
 
-- **链接**：https://linear.app
-- **借这一点**：键盘可达 100% 主流程；命令面板即时反馈；表格 `tabular-nums` 数字对齐；hover 浮起 1px
+- **借这一点**：键盘可达 100% 主流程；命令面板即时反馈；表格 `tabular-nums` 数字对齐；hover 浮起微动效；极致的信息密度与精致感的平衡
 - **不借**：纯暗色冷工程感；零装饰的"工具属性"
 
-## REF-2：Apple Human Interface Guidelines · Vision Pro Glass
+## REF-2：Arc Browser
 
-- **链接**：https://developer.apple.com/design/human-interface-guidelines
-- **借这一点**：玻璃面板的"近实远虚"层级感；`backdrop-filter` 的边缘高光（顶部 1px 暖白渐变）；玻璃投影的"墨色淡阴影"
-- **不借**：3D 空间感 / 深度推拉动效；圆角全 999px 的胶囊化
+- **借这一点**：多彩渐变主题色系统（用户可自选主题色）；大胆的色彩运用不失优雅；年轻、有活力的品牌调性；侧边栏的流畅动效
+- **不借**：过度圆角化；桌面端专属的空间布局
 
-## REF-3：宋代汝窑天青釉 · 故宫博物院藏品
+## REF-3：Apple Human Interface Guidelines · visionOS Glass
 
-- **链接**：故宫博物院 · 宋代汝窑天青釉
-- **借这一点**：主色 `#1B3A5C`（宋瓷墨青）的明度饱和度区间；釉面"半透+微反光"质感映射到毛玻璃材质；"开片纹"启发 1px 浅描边
-- **不借**：器物造型 / 3D 还原；古董色的褪色感
+- **借这一点**：玻璃面板的"近实远虚"层级感；`backdrop-filter` 的边缘高光（顶部 1px 暖白渐变）；分层玻璃的深度系统；色彩在玻璃上的折射效果
+- **不借**：3D 空间感 / 深度推拉动效；过大圆角
 
-## REF-4：明代宣德宣纸（暖米色背景）
+## REF-4：Stripe（stripe.com）
 
-- **链接**：宣纸制造工艺参考
-- **借这一点**：背景渐变 `#F8F2E0→#F2EBD3→#E8EFF5`（老宣纸→米色→月白瓷）；长时间阅读不疲劳
-- **不借**：宣纸褶皱纹理大量铺底（最多 6% opacity 的纤维纹）
+- **借这一点**：渐变网格背景的艺术级运用；品牌色从紫到蓝的高级渐变；暗色模式下的宝石光泽；极致的排版细节
+- **不借**：B2B 金融行业的严肃调性
 
-## REF-5：ForYouTech 官网（内部模板参考）
+## REF-5：Raycast
 
-- **链接**：内部模板 `/template/foryoutech`
-- **借这一点**：毛玻璃面板体系（glass/glass-strong/glass-dark）；按钮渐变+浮起交互；Light/Dark 双模 CSS 变量全覆盖架构
-- **不借**：具体品牌色（cyan+sky+amber）；药丸形按钮 9999px；Cherry Blossom 粒子动效
+- **借这一点**：暗色模式下的毛玻璃质感；微交互的弹性缓动（spring easing）；极快的视觉反馈（<120ms）；渐变色彩的按钮与高亮
+- **不借**：纯工具导向的功能密度
+
+## REF-6：Duolingo
+
+- **借这一点**：语言学习的游戏化反馈机制（XP、连胜）；鼓励性的微动效（正确答案的庆祝）；年轻化的用户体验
+- **不借**：过度卡通化的插画风格；过饱和的色彩
 
 ---
 
@@ -47,11 +47,11 @@
 
 | 借鉴维度 | 我们的具体值 | 来源 |
 |---------|------------|------|
-| 表格数字对齐 | `font-variant-numeric: tabular-nums` | Linear / Stripe |
-| 玻璃面板顶高光 | `inset 0 1px 0 rgba(255,250,235,.65)` | Apple visionOS |
-| 主色色相 | HSL(212, 53%, 23%) ≈ `#1B3A5C` | 宋瓷天青 |
-| 背景温度 | 暖米→冷月白渐变 | 宣纸 |
-| 焦点环 | `0 0 0 4px rgba(46,92,138,.18)` | Linear / Stripe |
+| 极光渐变背景 | 3 个 mesh blob + 缓慢飘移动画 | Stripe / Arc |
+| 玻璃面板顶高光 | `inset 0 1px 0 0 var(--glass-inset)` | Apple visionOS |
+| 主色色相 | HSL(239, 84%, 67%) ≈ `#6366F1` (靛蓝) | 现代 UI 趋势 |
+| Spring 缓动 | `cubic-bezier(.16,1,.3,1)` | Raycast / Apple |
+| 焦点环 | `0 0 0 4px rgba(99,102,241,.30)` | Linear |
 
 ---
 

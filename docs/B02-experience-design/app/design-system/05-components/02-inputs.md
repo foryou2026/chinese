@@ -39,7 +39,7 @@
 
 | 属性 | Light 模式 | Dark 模式 |
 |------|-----------|-----------|
-| 背景 | `rgba(255, 251, 240, 0.92)` (暖米白) | `rgba(20, 48, 79, 0.42)` (墨青半透) |
+| 背景 | `rgba(255, 255, 255, 0.65)` (毛玻璃白) | `rgba(255, 255, 255, 0.05)` (毛玻璃暗) |
 | 边框 | `var(--border-subtle)` = `1px solid var(--color-neutral-200)` | — |
 | 圆角 | `var(--radius-md)` (12px) | — |
 | 过渡 | `var(--motion-fast)` | — |
@@ -48,7 +48,7 @@
 
 | 状态 | 边框 | 背景 | 标签色 | 其他 |
 |------|------|------|--------|------|
-| 默认 | `var(--border-subtle)` | 暖米白半透 | `var(--color-neutral-500)` | — |
+| 默认 | `var(--border-subtle)` | 毛玻璃白半透 | `var(--color-neutral-500)` | — |
 | hover | `1px solid var(--color-neutral-300)` | — | — | — |
 | focus | `var(--focus-ring)` (`0 0 0 4px var(--color-brand-ring)`) | — | `var(--color-brand-default)` | 标签高亮 |
 | active | 同 focus | — | — | — |
@@ -60,15 +60,15 @@
 ### Anatomy
 
 ```
-[Label]  ← var(--font-display), var(--text-sm), letter-spacing: 1px
+[Label]  ← var(--font-display), var(--text-sm), letter-spacing: -0.01em
 ┌──────────────────────────────┐
-│ [prefix?] [input] [suffix?]  │  ← 暖米白半透背景 + 毛玻璃边框
+│ [prefix?] [input] [suffix?]  │  ← 毛玻璃白半透背景 + 玻璃边框
 └──────────────────────────────┘
 [helper text / error message]
 ```
 
 - Label 位于输入框上方，间距 `var(--space-2)` (8px)
-- Label 使用 `var(--font-display)`，`letter-spacing: 1px`
+- Label 使用 `var(--font-display)`，`letter-spacing: -0.01em`
 - Helper text / error 位于输入框下方，字号 `var(--text-xs)`，间距 `var(--space-1)`
 - Error message 颜色 `var(--color-danger-500)`
 
