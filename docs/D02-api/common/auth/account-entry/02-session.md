@@ -1,14 +1,14 @@
 # 会话管理
 
-## `GET /api/v1/app/auth/me` · 获取当前用户信息
+## `POST /api/v1/{sys}/auth/logout` · 退出登录
 
 **基础信息**
 
 | 项 | 值 |
 |----|-----|
-| API-ID | API-app-auth-me |
-| SM 转移 | 无 |
-| R-ID | R-auth-014 |
+| API-ID | API-common-auth-logout |
+| SM 转移 | app:SM-auth-001:TR-010, admin:SM-auth-001:TR-007 |
+| R-ID | app:R-auth-008, admin:R-auth-006 |
 | 角色 | Bearer JWT |
 | 行级权限 | auth.uid() = 自身 |
 | 幂等 | 是 |
@@ -25,10 +25,13 @@
 sequenceDiagram
   participant FE
   participant BE
+  participant SupaAuth as Supabase Auth
   participant DB
-  FE->>BE: GET /me (Bearer JWT)
-  BE->>DB: 查 user_profiles(id=user_id)
-  BE-->>FE: {code:0, data:{profile}}
+  FE->>BE: POST /{sys}/auth/logout (Bearer JWT)
+  BE->>DB: 当前 user_sessions is_active=false
+  BE->>SupaAuth: signOut(scope=local)
+  BE->>DB: 写 audit_logs(logout, system_id={sys})
+  BE-->>FE: {code:0}
 ```
 
 **业务规则**
@@ -38,18 +41,7 @@ sequenceDiagram
 **成功响应**
 
 ```json
-{
-  "code": 0,
-  "data": {
-    "id": "uuid",
-    "email": "user@example.com",
-    "display_name": null,
-    "avatar_url": null,
-    "auth_provider": "email",
-    "has_password": true
-  },
-  "msg": "ok"
-}
+{ "code": 0, "data": null, "msg": "ok" }
 ```
 
 **失败响应**
@@ -59,4 +51,5 @@ sequenceDiagram
 | 401 | 40101 | Token无效 | JWT验签失败 |
 
 **副作用**
-无
+- 当前 user_sessions.is_active=false
+- 写入 audit_logs(logout)
