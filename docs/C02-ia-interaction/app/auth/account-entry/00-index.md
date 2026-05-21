@@ -13,10 +13,9 @@
 | 01-feature-catalog.md | 功能模块清单 |
 | 02-flows.md | 业务流程图 |
 | 03-state-machines.md | 状态机 |
-| 04-pages.md | 页面清单与交互规范 |
-| 05-navigation.md | 导航结构与角色可见性 |
-| 06-coverage-matrix.md | R-ID 覆盖矩阵 |
-| 07-error-pages.md | 系统兜底页 |
+| 04-page-supplement.md | 页面补充规范（表单校验/a11y/角色差异，布局与交互由 C03 原型承载） |
+| 05-coverage-matrix.md | R-ID 覆盖矩阵 |
+| 06-error-pages.md | 系统兜底页 |
 | 99-open-questions.md | 待确认问题 |
 
 ## 增量融合 · 第 1 轮 · 功能「account-entry」
