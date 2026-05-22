@@ -62,11 +62,10 @@
   box-shadow: 0 0 0 2px var(--color-neutral-0);
 }
 
-.proto-accent-dot[data-accent="indigo"]  { background: #6366F1; }
-.proto-accent-dot[data-accent="rose"]    { background: #F43F5E; }
-.proto-accent-dot[data-accent="emerald"] { background: #10B981; }
-.proto-accent-dot[data-accent="amber"]   { background: #F59E0B; }
-.proto-accent-dot[data-accent="violet"]  { background: #8B5CF6; }
+.proto-accent-dot[data-accent="red"]    { background: #EA4335; }
+.proto-accent-dot[data-accent="yellow"] { background: #FBBC04; }
+.proto-accent-dot[data-accent="blue"]   { background: #4285F4; }
+.proto-accent-dot[data-accent="green"]  { background: #34A853; }
 
 /* ============== 密度切换 ============== */
 

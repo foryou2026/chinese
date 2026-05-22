@@ -23,11 +23,12 @@
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `var(--surface-elevated)` |
-| 边框 | 1px solid `var(--border-color)` |
-| 圆角 | `var(--radius-lg)` |
-| 阴影 | `var(--shadow-lg)` |
-| 遮罩 | `rgba(0,0,0,0.50)` |
+| 背景 | `var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-lg)` — 毛玻璃面板 |
+| 边框 | 1px solid `var(--glass-border)` |
+| 顶部高光 | `inset 0 1px 0 0 var(--glass-inset)` |
+| 圆角 | `var(--radius-xl)` |
+| 阴影 | `0 10px 30px var(--glass-shadow-elevated)` |
+| 遮罩 | `rgba(0,0,0,0.40)` + `backdrop-filter: blur(4px)` |
 
 ### 结构
 
@@ -54,9 +55,9 @@
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `var(--surface-elevated)` |
-| 边框 | 1px solid `var(--border-color)` |
-| 阴影 | `var(--shadow-lg)` |
+| 背景 | `var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-lg)` — 毛玻璃面板 |
+| 边框 | 1px solid `var(--glass-border)` |
+| 阴影 | `0 8px 24px var(--glass-shadow-elevated)` |
 
 ---
 
@@ -64,10 +65,11 @@
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `var(--surface-elevated)` |
-| 边框 | 1px solid `var(--border-color)` |
+| 背景 | `var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-lg)` — 毛玻璃面板 |
+| 边框 | 1px solid `var(--glass-border)` |
+| 顶部高光 | `inset 0 1px 0 0 var(--glass-inset)` |
 | 圆角 | `var(--radius-md)` |
-| 阴影 | `var(--shadow-lg)` |
+| 阴影 | `0 6px 20px var(--glass-shadow-elevated)` |
 | 菜单项高 | 36px |
 | 菜单项 hover | `var(--surface-hover)` |
 | 分隔线 | 1px solid `var(--border-color)` |
@@ -79,8 +81,8 @@
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `var(--color-neutral-900)` |
-| 文字 | white |
+| 背景 | `rgba(17, 24, 39, 0.92)` + `backdrop-filter: var(--glass-blur-sm)` — 暗色毛玻璃 |
+| 文字 | #F9FAFB |
 | 字号 | `var(--text-xs)` |
 | 圆角 | `var(--radius-sm)` |
 | padding | `var(--space-1) var(--space-2)` |
@@ -91,8 +93,9 @@
 
 ## 通用规则
 
-- 所有浮层使用实色背景，**禁止** backdrop-filter
-- 遮罩层不使用模糊效果
+- 所有浮层统一使用 `backdrop-filter` 毛玻璃材质，与 admin 整体 Frost 风格保持一致
+- 遮罩层使用 `backdrop-filter: blur(4px)` 轻度模糊
+- 提供 `@supports not (backdrop-filter)` 实色回退
 - Escape 关闭
 - 焦点锁定在 Modal/Drawer 内
 - 关闭后焦点回到触发元素

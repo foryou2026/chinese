@@ -51,11 +51,11 @@
 
 | 属性 | Light 模式 | Dark 模式 |
 |------|-----------|-----------|
-| 页面底色 | `var(--surface-page)` = #FFFFFF | #111827 |
-| 卡片/区块 | `var(--surface-primary)` = #F9FAFB + 1px `var(--border-color)` | #1F2937 + 1px #374151 |
-| 弹出层 | `var(--surface-elevated)` = #FFFFFF + `var(--shadow-md)` | #1F2937 + `var(--shadow-md)` |
+| 页面底色 | `var(--surface-page)` = #F3F4F6 + 微弱径向渐变 | #000000（纯黑） |
+| 卡片/区块 | `var(--glass-bg-card)` = rgba(255,255,255,0.78) + blur(20px) | rgba(255,255,255,0.06) + blur(20px) |
+| 弹出层 | `var(--glass-bg-elevated)` = rgba(255,255,255,0.88) + blur(24px) | rgba(255,255,255,0.10) + blur(24px) |
 
-> admin 不使用极光渐变背景和毛玻璃材质。所有表面为纯实色。
+> admin 使用克制的毛玻璃材质（blur ≤ 28px, saturate ≤ 1.5），所有卡片/导航/弹层统一毛玻璃表面。
 
 ## 页面结构
 

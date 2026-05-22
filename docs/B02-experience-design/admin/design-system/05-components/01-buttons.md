@@ -30,11 +30,11 @@
 
 | 尺寸 | 高度 | padding-x | 字号 | 图标尺寸 | 圆角 |
 |------|------|-----------|------|---------|------|
-| sm | 28px | 10px | `var(--text-xs)` 12px | 14px | `var(--radius-sm)` 6px |
-| md | 36px | 14px | `var(--text-sm)` 14px | 16px | `var(--radius-md)` 8px |
-| lg | 44px | 20px | `var(--text-sm)` 14px | 20px | `var(--radius-md)` 8px |
+| sm | 36px | 16px | `var(--text-sm)` 14px | 16px | `var(--radius-md)` 8px |
+| md | 44px | 20px | `var(--text-sm)` 14px | 18px | `var(--radius-md)` 8px |
+| lg | 52px | 28px | `var(--text-base)` 16px | 20px | `var(--radius-md)` 8px |
 
-> 移动端最小触控区域 44px，sm 按钮需确保包含 padding 后 >=44px。
+> 移动端最小触控区域 48px，sm 按钮需确保包含 padding 后 >=48px。
 
 ## 通用按钮属性
 
@@ -100,16 +100,16 @@
 
 | 状态 | 背景 | 图标颜色 |
 |------|------|---------|
-| 默认 | transparent | `var(--text-secondary)` |
-| hover | `var(--color-neutral-100)` | `var(--text-primary)` |
-| active | `var(--color-neutral-200)` | `var(--text-primary)` |
+| 默认 | `var(--glass-bg)` + `backdrop-filter: var(--glass-blur-sm)` | `var(--text-secondary)` |
+| hover | `var(--glass-bg-card)` | `var(--text-primary)` |
+| active | `var(--glass-bg-elevated)` | `var(--text-primary)` |
 | disabled | transparent, `opacity: 0.50` | -- |
 
 | 尺寸 | 宽高 | 图标 | 圆角 |
 |------|------|------|------|
-| sm | 28px x 28px | 14px | `var(--radius-sm)` |
-| md | 36px x 36px | 16px | `var(--radius-md)` |
-| lg | 44px x 44px | 20px | `var(--radius-md)` |
+| sm | 36px x 36px | 16px | `var(--radius-md)` |
+| md | 44px x 44px | 18px | `var(--radius-md)` |
+| lg | 52px x 52px | 20px | `var(--radius-md)` |
 
 ### link 变体（文字链接）
 

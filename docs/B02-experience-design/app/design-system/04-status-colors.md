@@ -70,7 +70,7 @@
 | 属性 | 值 |
 |------|-----|
 | 样式 | `box-shadow: 0 0 0 4px var(--color-brand-ring)` |
-| 颜色 | 随 accent 自动切换（indigo: rgba(99,102,241,.30), rose: rgba(244,63,94,.30), ...） |
+| 颜色 | 随 accent 自动切换（red: rgba(234,67,53,.30), blue: rgba(66,133,244,.30), ...） |
 | 可见条件 | 仅 `:focus-visible`（键盘导航） |
 | 对比度 | >= 3:1 |
 

@@ -14,8 +14,8 @@
 | 属性 | 值 |
 |------|-----|
 | 高度 | 48px |
-| 背景 | `var(--surface-page)` — 纯白实色（light）/ #111827（dark） |
-| 底部边框 | 1px solid `var(--border-color)` |
+| 背景 | `var(--glass-bg-card)` + `backdrop-filter: var(--glass-blur)` — 毛玻璃面板 |
+| 底部边框 | 1px solid `var(--glass-border)` |
 | 内边距 | 0 `var(--space-4)` |
 | position | `sticky; top: 0` |
 | z-index | `var(--z-sticky)` |
@@ -27,8 +27,8 @@
 
 | 状态 | 表现 |
 |------|------|
-| 默认 | 纯实色背景 + 底部 1px 边框 |
-| 滚动后 | 无变化（不添加额外阴影） |
+| 默认 | 毛玻璃面板 + 底部 1px 玻璃边框 |
+| 滚动后 | 增加 `box-shadow: var(--shadow-sm)` |
 
 ### 移动端（<lg）
 
@@ -46,8 +46,8 @@
 |------|-----|
 | 展开宽度 | 240px |
 | 折叠宽度 | 48px |
-| 背景 | `var(--surface-page)` — 纯实色 |
-| 右侧边框 | 1px solid `var(--border-color)` |
+| 背景 | `var(--glass-bg)` + `backdrop-filter: var(--glass-blur)` — 毛玻璃面板 |
+| 右侧边框 | 1px solid `var(--glass-border)` |
 | position | `fixed; left: 0` |
 | 高度 | 100vh |
 | z-index | `var(--z-sticky)` |
@@ -141,9 +141,9 @@
 | 触发 | TopBar 左侧汉堡图标 |
 | 宽度 | 280px |
 | 方向 | 从左滑入 |
-| 背景 | `var(--surface-page)` — 纯实色 |
-| 右侧边框 | 1px solid `var(--border-color)` |
-| 遮罩 | `rgba(0, 0, 0, 0.50)` — 纯黑半透，无模糊 |
+| 背景 | `var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-lg)` — 强毛玻璃面板 |
+| 右侧边框 | 1px solid `var(--glass-border)` |
+| 遮罩 | `rgba(0, 0, 0, 0.40)` + `backdrop-filter: blur(4px)` |
 | z-index | `var(--z-modal)` |
 | 动画 | `translateX(-100%)` -> `translateX(0)`，`var(--motion-base)` |
 | 关闭 | 点击遮罩 / X 按钮 |

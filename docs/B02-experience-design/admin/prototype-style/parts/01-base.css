@@ -40,8 +40,8 @@ body {
 
 [data-mode="dark"] .admin-page-bg {
   background:
-    radial-gradient(ellipse 80% 60% at 10% 0%, rgba(55,65,81,0.30) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 90% 100%, rgba(30,58,138,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 60% at 10% 0%, rgba(255,255,255,0.02) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 100%, rgba(59,130,246,0.04) 0%, transparent 50%),
     var(--page-bg);
 }
 

@@ -59,8 +59,8 @@
 
 | 属性 | 值 |
 |------|-----|
-| 基底 | `var(--page-bg)` — 微蓝白 #FAFBFF（light）/ 深灰 #111827（dark） |
-| 极光 | `.mesh-gradient-bg` — 3 个 blob 径向渐变（薰衣草+玫瑰粉+薄荷青），缓慢飘移动画 |
+| 基底 | `var(--page-bg)` — 微暖白（light，跟随 accent）/ 纯黑 #000000（dark，OLED 友好） |
+| 极光 | `.mesh-gradient-bg` — 3 个 blob 径向渐变（跟随 `data-accent` 主题色），缓慢飘移动画 |
 
 ## 页面结构 — app 系统
 

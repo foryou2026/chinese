@@ -12,7 +12,7 @@
   var html = document.documentElement;
 
   var VALID_MODES    = ['light', 'dark', 'auto'];
-  var VALID_ACCENTS  = ['indigo', 'rose', 'emerald', 'amber', 'violet'];
+  var VALID_ACCENTS  = ['red', 'yellow', 'blue', 'green'];
   var VALID_DENSITIES = ['default', 'compact', 'elder'];
 
   var proto = {};
@@ -20,7 +20,7 @@
   /* ---- bootstrap ---- */
   proto.bootstrap = function () {
     var savedMode    = localStorage.getItem(STORAGE_KEY_MODE)    || 'auto';
-    var savedAccent  = localStorage.getItem(STORAGE_KEY_ACCENT)  || 'indigo';
+    var savedAccent  = localStorage.getItem(STORAGE_KEY_ACCENT)  || 'red';
     var savedDensity = localStorage.getItem(STORAGE_KEY_DENSITY) || 'default';
     html.setAttribute('data-mode', savedMode);
     html.setAttribute('data-accent', savedAccent);

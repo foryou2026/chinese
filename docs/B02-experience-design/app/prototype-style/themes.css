@@ -1,89 +1,87 @@
-/* themes.css — 5 套 accent 覆盖 + 暗色模式 + auto 跟随系统 */
+/* themes.css — 4 套 Google 主色（红黄蓝绿）+ 暗色模式 + auto 跟随系统 */
 /* 风格：Quest Glass — 多邻国游戏化 + 毛玻璃增强 */
 
-/* ===================== 1. accents ===================== */
+/* ===================== 1. accents — Google 四色 ===================== */
 
-[data-accent="indigo"] {
-  --color-brand-50:  #EEF2FF; --color-brand-100: #E0E7FF;
-  --color-brand-200: #C7D2FE; --color-brand-300: #A5B4FC;
-  --color-brand-400: #818CF8; --color-brand-500: #6366F1;
-  --color-brand-600: #4F46E5; --color-brand-700: #4338CA;
-  --color-brand-800: #3730A3; --color-brand-900: #312E81;
-  --color-brand-default: var(--color-brand-600);
-  --color-brand-hover:   var(--color-brand-500);
-  --color-brand-active:  var(--color-brand-700);
-  --color-brand-on:      #FFFFFF;
-  --color-brand-ring:    rgba(99, 102, 241, 0.30);
-  --input-focus-glow:    rgba(99, 102, 241, 0.30);
-}
-
-[data-accent="rose"] {
-  --color-brand-50:  #FFF1F2; --color-brand-100: #FFE4E6;
-  --color-brand-200: #FECDD3; --color-brand-300: #FDA4AF;
-  --color-brand-400: #FB7185; --color-brand-500: #F43F5E;
-  --color-brand-600: #E11D48; --color-brand-700: #BE123C;
-  --color-brand-800: #9F1239; --color-brand-900: #881337;
+[data-accent="red"] {
+  --color-brand-50:  #FFEBEE; --color-brand-100: #FFCDD2;
+  --color-brand-200: #EF9A9A; --color-brand-300: #E57373;
+  --color-brand-400: #EF5350; --color-brand-500: #EA4335;
+  --color-brand-600: #E53935; --color-brand-700: #D32F2F;
+  --color-brand-800: #C62828; --color-brand-900: #B71C1C;
   --color-brand-default: var(--color-brand-500);
   --color-brand-hover:   var(--color-brand-400);
   --color-brand-active:  var(--color-brand-600);
   --color-brand-on:      #FFFFFF;
-  --color-brand-ring:    rgba(244, 63, 94, 0.30);
-  --input-focus-glow:    rgba(244, 63, 94, 0.30);
+  --color-brand-ring:    rgba(234, 67, 53, 0.30);
+  --input-focus-glow:    rgba(234, 67, 53, 0.30);
+  --mesh-color-1: #FFCDD2;
+  --mesh-color-2: #FFE0B2;
+  --mesh-color-3: #F8BBD0;
 }
 
-[data-accent="emerald"] {
-  --color-brand-50:  #ECFDF5; --color-brand-100: #D1FAE5;
-  --color-brand-200: #A7F3D0; --color-brand-300: #6EE7B7;
-  --color-brand-400: #34D399; --color-brand-500: #10B981;
-  --color-brand-600: #059669; --color-brand-700: #047857;
-  --color-brand-800: #065F46; --color-brand-900: #064E3B;
-  --color-brand-default: var(--color-brand-600);
-  --color-brand-hover:   var(--color-brand-500);
-  --color-brand-active:  var(--color-brand-700);
+[data-accent="yellow"] {
+  --color-brand-50:  #FFF8E1; --color-brand-100: #FFECB3;
+  --color-brand-200: #FFE082; --color-brand-300: #FFD54F;
+  --color-brand-400: #FFCA28; --color-brand-500: #FBBC04;
+  --color-brand-600: #F9A825; --color-brand-700: #F57F17;
+  --color-brand-800: #EF6C00; --color-brand-900: #E65100;
+  --color-brand-default: var(--color-brand-500);
+  --color-brand-hover:   var(--color-brand-400);
+  --color-brand-active:  var(--color-brand-600);
+  --color-brand-on:      #202124;
+  --color-brand-ring:    rgba(251, 188, 4, 0.30);
+  --input-focus-glow:    rgba(251, 188, 4, 0.30);
+  --mesh-color-1: #FFF9C4;
+  --mesh-color-2: #FFE0B2;
+  --mesh-color-3: #DCEDC8;
+}
+
+[data-accent="blue"] {
+  --color-brand-50:  #E8F0FE; --color-brand-100: #D2E3FC;
+  --color-brand-200: #AECBFA; --color-brand-300: #8AB4F8;
+  --color-brand-400: #669DF6; --color-brand-500: #4285F4;
+  --color-brand-600: #1A73E8; --color-brand-700: #1967D2;
+  --color-brand-800: #185ABC; --color-brand-900: #174EA6;
+  --color-brand-default: var(--color-brand-500);
+  --color-brand-hover:   var(--color-brand-400);
+  --color-brand-active:  var(--color-brand-600);
   --color-brand-on:      #FFFFFF;
-  --color-brand-ring:    rgba(16, 185, 129, 0.30);
-  --input-focus-glow:    rgba(16, 185, 129, 0.30);
+  --color-brand-ring:    rgba(66, 133, 244, 0.30);
+  --input-focus-glow:    rgba(66, 133, 244, 0.30);
+  --mesh-color-1: #D2E3FC;
+  --mesh-color-2: #E8EAF6;
+  --mesh-color-3: #B2EBF2;
 }
 
-[data-accent="amber"] {
-  --color-brand-50:  #FFFBEB; --color-brand-100: #FEF3C7;
-  --color-brand-200: #FDE68A; --color-brand-300: #FCD34D;
-  --color-brand-400: #FBBF24; --color-brand-500: #F59E0B;
-  --color-brand-600: #D97706; --color-brand-700: #B45309;
-  --color-brand-800: #92400E; --color-brand-900: #78350F;
-  --color-brand-default: var(--color-brand-600);
-  --color-brand-hover:   var(--color-brand-500);
-  --color-brand-active:  var(--color-brand-700);
+[data-accent="green"] {
+  --color-brand-50:  #E6F4EA; --color-brand-100: #CEEAD6;
+  --color-brand-200: #A8DAB5; --color-brand-300: #81C995;
+  --color-brand-400: #5BB974; --color-brand-500: #34A853;
+  --color-brand-600: #1E8E3E; --color-brand-700: #188038;
+  --color-brand-800: #137333; --color-brand-900: #0D652D;
+  --color-brand-default: var(--color-brand-500);
+  --color-brand-hover:   var(--color-brand-400);
+  --color-brand-active:  var(--color-brand-600);
   --color-brand-on:      #FFFFFF;
-  --color-brand-ring:    rgba(245, 158, 11, 0.30);
-  --input-focus-glow:    rgba(245, 158, 11, 0.30);
+  --color-brand-ring:    rgba(52, 168, 83, 0.30);
+  --input-focus-glow:    rgba(52, 168, 83, 0.30);
+  --mesh-color-1: #CEEAD6;
+  --mesh-color-2: #B2DFDB;
+  --mesh-color-3: #DCEDC8;
 }
 
-[data-accent="violet"] {
-  --color-brand-50:  #F5F3FF; --color-brand-100: #EDE9FE;
-  --color-brand-200: #DDD6FE; --color-brand-300: #C4B5FD;
-  --color-brand-400: #A78BFA; --color-brand-500: #8B5CF6;
-  --color-brand-600: #7C3AED; --color-brand-700: #6D28D9;
-  --color-brand-800: #5B21B6; --color-brand-900: #4C1D95;
-  --color-brand-default: var(--color-brand-600);
-  --color-brand-hover:   var(--color-brand-500);
-  --color-brand-active:  var(--color-brand-700);
-  --color-brand-on:      #FFFFFF;
-  --color-brand-ring:    rgba(139, 92, 246, 0.30);
-  --input-focus-glow:    rgba(139, 92, 246, 0.30);
-}
-
-/* ===================== 2. dark mode ===================== */
+/* ===================== 2. dark mode（纯黑底） ===================== */
 
 [data-mode="dark"] {
   --page-bg: #000000;
 
-  --mesh-color-1: #7C3AED;   /* violet-600 */
-  --mesh-color-2: #0E7490;   /* cyan-700 */
-  --mesh-color-3: #BE185D;   /* pink-700 */
-  --mesh-opacity-1: 0.14;
-  --mesh-opacity-2: 0.08;
-  --mesh-opacity-3: 0.10;
+  --mesh-color-1: #D32F2F;
+  --mesh-color-2: #C62828;
+  --mesh-color-3: #B71C1C;
+  --mesh-opacity-1: 0.08;
+  --mesh-opacity-2: 0.05;
+  --mesh-opacity-3: 0.06;
 
   --glass-bg:          rgba(255, 255, 255, 0.04);
   --glass-bg-card:     rgba(255, 255, 255, 0.06);
@@ -93,7 +91,7 @@
   --glass-shadow:      rgba(0, 0, 0, 0.50);
   --glass-shadow-elevated: rgba(0, 0, 0, 0.70);
 
-  --input-focus-glow: rgba(99, 102, 241, 0.25);
+  --input-focus-glow: rgba(234, 67, 53, 0.25);
 
   --text-primary:   #FAFAFA;
   --text-secondary: #A1A1AA;
@@ -119,7 +117,7 @@
   --color-brand-default: var(--color-brand-400);
   --color-brand-hover:   var(--color-brand-300);
   --color-brand-active:  var(--color-brand-500);
-  --color-brand-ring:    rgba(129, 140, 248, 0.28);
+  --color-brand-ring:    rgba(239, 83, 80, 0.28);
 
   --border-color: rgba(255, 255, 255, 0.10);
   --focus-ring: 0 0 0 4px var(--color-brand-ring);
@@ -157,47 +155,70 @@
   --color-info-700:    #DBEAFE;
 }
 
+/* dark mode 下各 accent 的 mesh 微光点缀 */
+[data-mode="dark"][data-accent="red"] {
+  --mesh-color-1: #D32F2F; --mesh-color-2: #C62828; --mesh-color-3: #B71C1C;
+  --color-brand-ring: rgba(239, 83, 80, 0.28);
+  --input-focus-glow: rgba(239, 83, 80, 0.25);
+}
+[data-mode="dark"][data-accent="yellow"] {
+  --mesh-color-1: #F57F17; --mesh-color-2: #EF6C00; --mesh-color-3: #E65100;
+  --color-brand-ring: rgba(255, 202, 40, 0.28);
+  --input-focus-glow: rgba(255, 202, 40, 0.25);
+  --color-brand-on: #202124;
+}
+[data-mode="dark"][data-accent="blue"] {
+  --mesh-color-1: #1967D2; --mesh-color-2: #185ABC; --mesh-color-3: #174EA6;
+  --color-brand-ring: rgba(102, 157, 246, 0.28);
+  --input-focus-glow: rgba(102, 157, 246, 0.25);
+}
+[data-mode="dark"][data-accent="green"] {
+  --mesh-color-1: #188038; --mesh-color-2: #137333; --mesh-color-3: #0D652D;
+  --color-brand-ring: rgba(91, 185, 116, 0.28);
+  --input-focus-glow: rgba(91, 185, 116, 0.25);
+}
+
 /* ===================== 3. auto = follow system ===================== */
 @media (prefers-color-scheme: dark) {
   [data-mode="auto"] {
-    --page-bg: #111827;
-    --mesh-color-1: #7C3AED;
-    --mesh-color-2: #0E7490;
-    --mesh-color-3: #BE185D;
-    --mesh-opacity-1: 0.10;
-    --mesh-opacity-2: 0.06;
-    --mesh-opacity-3: 0.08;
-    --glass-bg:          rgba(255, 255, 255, 0.03);
-    --glass-bg-card:     rgba(255, 255, 255, 0.05);
-    --glass-bg-elevated: rgba(255, 255, 255, 0.07);
-    --glass-border:      rgba(255, 255, 255, 0.08);
-    --glass-inset:       rgba(255, 255, 255, 0.05);
-    --glass-shadow:      rgba(0, 0, 0, 0.40);
-    --glass-shadow-elevated: rgba(0, 0, 0, 0.60);
-    --input-focus-glow: rgba(99, 102, 241, 0.25);
+    --page-bg: #000000;
+    --mesh-color-1: #D32F2F;
+    --mesh-color-2: #C62828;
+    --mesh-color-3: #B71C1C;
+    --mesh-opacity-1: 0.08;
+    --mesh-opacity-2: 0.05;
+    --mesh-opacity-3: 0.06;
+    --glass-bg:          rgba(255, 255, 255, 0.04);
+    --glass-bg-card:     rgba(255, 255, 255, 0.06);
+    --glass-bg-elevated: rgba(255, 255, 255, 0.09);
+    --glass-border:      rgba(255, 255, 255, 0.10);
+    --glass-inset:       rgba(255, 255, 255, 0.06);
+    --glass-shadow:      rgba(0, 0, 0, 0.50);
+    --glass-shadow-elevated: rgba(0, 0, 0, 0.70);
+    --input-focus-glow: rgba(234, 67, 53, 0.25);
     --text-primary:   #FAFAFA;
     --text-secondary: #A1A1AA;
     --text-muted:     #71717A;
-    --color-neutral-0:   #09090B;
-    --color-neutral-50:  #18181B;
-    --color-neutral-100: #27272A;
-    --color-neutral-200: #3F3F46;
-    --color-neutral-300: #52525B;
-    --color-neutral-400: #71717A;
+    --color-neutral-0:   #000000;
+    --color-neutral-50:  #0C0C0E;
+    --color-neutral-100: #1A1A1C;
+    --color-neutral-200: #2C2C2E;
+    --color-neutral-300: #3A3A3C;
+    --color-neutral-400: #636366;
     --color-neutral-500: #A1A1AA;
     --color-neutral-600: #D4D4D8;
     --color-neutral-700: #E4E4E7;
     --color-neutral-800: #F4F4F5;
     --color-neutral-900: #FAFAFA;
     --color-neutral-950: #FFFFFF;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.32);
-    --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.40);
-    --shadow-lg: 0 14px 38px rgba(0, 0, 0, 0.48);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.50);
+    --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.60);
+    --shadow-lg: 0 14px 38px rgba(0, 0, 0, 0.70);
     --color-brand-default: var(--color-brand-400);
     --color-brand-hover:   var(--color-brand-300);
     --color-brand-active:  var(--color-brand-500);
-    --color-brand-ring:    rgba(129, 140, 248, 0.28);
-    --border-color: rgba(255, 255, 255, 0.08);
+    --color-brand-ring:    rgba(239, 83, 80, 0.28);
+    --border-color: rgba(255, 255, 255, 0.10);
     --focus-ring: 0 0 0 4px var(--color-brand-ring);
 
     --color-bg-primary:    var(--glass-bg-card);

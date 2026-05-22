@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light" data-accent="indigo" data-density="default">
+<html lang="zh-CN" data-mode="light" data-accent="red" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -75,6 +75,33 @@
           <span class="settings-item-label" id="pwd-label">修改密码</span>
           <span class="settings-item-arrow">›</span>
         </a>
+      </div>
+
+      <div class="settings-group-title">外观</div>
+      <div class="settings-group glass-card">
+        <div class="settings-item" style="cursor:default;height:auto;padding:var(--space-4);flex-direction:column;align-items:flex-start;gap:var(--space-3)">
+          <span class="settings-item-label" style="font-weight:var(--weight-medium)">明暗模式</span>
+          <div class="proto-mode-switcher" id="mode-switcher">
+            <button class="proto-mode-option" data-mode="light" aria-checked="true" title="浅色">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="3.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.17 3.17l1.42 1.42M11.41 11.41l1.42 1.42M3.17 12.83l1.42-1.42M11.41 4.59l1.42-1.42"/></svg>
+            </button>
+            <button class="proto-mode-option" data-mode="dark" aria-checked="false" title="深色">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.5 8.5a5.5 5.5 0 0 1-6-6 5.5 5.5 0 1 0 6 6z"/></svg>
+            </button>
+            <button class="proto-mode-option" data-mode="auto" aria-checked="false" title="跟随系统">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="10" rx="2"/><path d="M8 3v10"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="settings-item" style="cursor:default;height:auto;padding:var(--space-4);flex-direction:column;align-items:flex-start;gap:var(--space-3);border-top:1px solid var(--glass-border)">
+          <span class="settings-item-label" style="font-weight:var(--weight-medium)">主题色</span>
+          <div class="proto-accent-switcher" id="accent-switcher">
+            <button class="proto-accent-dot" data-accent="red" aria-checked="true" title="红色"></button>
+            <button class="proto-accent-dot" data-accent="yellow" aria-checked="false" title="黄色"></button>
+            <button class="proto-accent-dot" data-accent="blue" aria-checked="false" title="蓝色"></button>
+            <button class="proto-accent-dot" data-accent="green" aria-checked="false" title="绿色"></button>
+          </div>
+        </div>
       </div>
 
       <div class="settings-group-title">关于</div>
@@ -186,6 +213,39 @@
       updateUI();
       proto.toast({type:'info',message:'已切换为邮箱用户视角'});
     });
+
+    // 明暗模式切换
+    var modeSwitcher = document.getElementById('mode-switcher');
+    if (modeSwitcher) {
+      var currentMode = document.documentElement.getAttribute('data-mode') || 'auto';
+      modeSwitcher.querySelectorAll('.proto-mode-option').forEach(function(btn) {
+        btn.setAttribute('aria-checked', btn.getAttribute('data-mode') === currentMode ? 'true' : 'false');
+        btn.addEventListener('click', function() {
+          var mode = this.getAttribute('data-mode');
+          proto.switchTheme(mode);
+          modeSwitcher.querySelectorAll('.proto-mode-option').forEach(function(b) { b.setAttribute('aria-checked', 'false'); });
+          this.setAttribute('aria-checked', 'true');
+          proto.toast({type:'success', message:'已切换为' + (mode === 'light' ? '浅色' : mode === 'dark' ? '深色' : '跟随系统') + '模式'});
+        });
+      });
+    }
+
+    // 主题色切换
+    var accentSwitcher = document.getElementById('accent-switcher');
+    if (accentSwitcher) {
+      var currentAccent = document.documentElement.getAttribute('data-accent') || 'red';
+      accentSwitcher.querySelectorAll('.proto-accent-dot').forEach(function(btn) {
+        btn.setAttribute('aria-checked', btn.getAttribute('data-accent') === currentAccent ? 'true' : 'false');
+        btn.addEventListener('click', function() {
+          var accent = this.getAttribute('data-accent');
+          proto.switchAccent(accent);
+          accentSwitcher.querySelectorAll('.proto-accent-dot').forEach(function(b) { b.setAttribute('aria-checked', 'false'); });
+          this.setAttribute('aria-checked', 'true');
+          var names = {red:'红色', yellow:'黄色', blue:'蓝色', green:'绿色'};
+          proto.toast({type:'success', message:'已切换为' + (names[accent] || accent) + '主题'});
+        });
+      });
+    }
   </script>
 </body>
 </html>

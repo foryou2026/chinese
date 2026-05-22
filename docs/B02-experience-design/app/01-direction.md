@@ -39,7 +39,7 @@
 |------|------|-----------|------|------|
 | A1 | 闯关路径驱动：用户进入 App 看到的是一条关卡路径（如地图/蜿蜒路线），而非平铺菜单列表 | 首页呈现关卡路径视图，每个节点有完成/进行中/锁定三态 | Duolingo 关卡路径 / HelloChinese 学习地图 | 纯列表式课程目录 |
 | A2 | 毛玻璃增强层次感：导航栏、学习卡片、弹层/模态全部使用 `backdrop-filter: blur + saturate` + 内顶高光 | 所有浮起容器使用 glass-card / glass-bar / glass-elevated | Apple visionOS 毛玻璃 | 传统实色卡片 |
-| A3 | 五色一键换肤：indigo/rose/emerald/amber/violet 5 套 brand 色，`data-accent` 切换 | 切换 accent 后全站按钮/链接/焦点环/进度条同步变色 | 多邻国主题色 / Arc Browser | 写死 hex 的单一配色 |
+| A3 | Google 四色一键换肤：red/yellow/blue/green 4 套高饱和度 brand 色，`data-accent` 切换 | 切换 accent 后全站按钮/链接/焦点环/进度条/极光点缀同步变色 | Google Material / Arc Browser | 写死 hex 的单一配色 |
 | A4 | 弹性微交互奖励：按钮按下有弹跳、答对有庆祝弹出、连胜有火焰动效、XP 有飘数字动画 | 关键交互点有 spring 缓动 + 视觉奖励 | Duolingo 正确庆祝 / 错误震动 | 无动效的静默 UI |
 | A5 | 移动端第一优先级：所有设计从手机屏幕开始，桌面端为扩展适配 | 核心流程在 375px 宽度下完整可用 | Duolingo 移动端 | 仅桌面端设计 |
 
@@ -54,7 +54,7 @@
 3. 按钮点击是否有弹跳/缩放的即时反馈？→ 否则不通过
 4. 导航栏和卡片是否有毛玻璃透明效果？→ 否则不通过
 5. 切换 `data-mode="dark"`，对比度是否 WCAG AA？→ 否则不通过
-6. 切换 `data-accent="rose"`，主按钮/进度条/焦点环是否同步换色？→ 否则不通过
+6. 切换 `data-accent="blue"`，主按钮/进度条/焦点环/极光点缀是否同步换色？→ 否则不通过
 7. 在 375px 宽度下核心流程是否完整可用？→ 否则不通过
 
 ---

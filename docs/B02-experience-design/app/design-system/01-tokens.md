@@ -140,43 +140,40 @@
 
 ---
 
-## 八、颜色 · Brand（5 主题色族）
+## 八、颜色 · Brand（Google 四色主题）
 
-> 默认 `data-accent="indigo"`。运行时切换 `<html data-accent="rose|emerald|amber|violet">` 即整体换色。
+> 默认 `data-accent="red"`。运行时切换 `<html data-accent="yellow|blue|green">` 即整体换色。
+> 采用 Google 品牌四原色（红黄蓝绿），高饱和度，视觉冲击力强。
 > 所有按钮/链接/焦点环/激活下划线/Tag 默认色必须使用 `--color-brand-*`，**禁止**直接引用具体色族。
 
-### 8.1 indigo · 靛蓝（默认）
+### 8.1 red · Google 红（默认）
 
 ```css
 :root {
-  --color-brand-50:  #EEF2FF;  --color-brand-100: #E0E7FF;
-  --color-brand-200: #C7D2FE;  --color-brand-300: #A5B4FC;
-  --color-brand-400: #818CF8;  --color-brand-500: #6366F1;
-  --color-brand-600: #4F46E5;  --color-brand-700: #4338CA;
-  --color-brand-800: #3730A3;  --color-brand-900: #312E81;
-  --color-brand-default: var(--color-brand-600);
-  --color-brand-hover:   var(--color-brand-500);
-  --color-brand-active:  var(--color-brand-700);
+  --color-brand-50:  #FFEBEE;  --color-brand-100: #FFCDD2;
+  --color-brand-200: #EF9A9A;  --color-brand-300: #E57373;
+  --color-brand-400: #EF5350;  --color-brand-500: #EA4335;
+  --color-brand-600: #E53935;  --color-brand-700: #D32F2F;
+  --color-brand-800: #C62828;  --color-brand-900: #B71C1C;
+  --color-brand-default: var(--color-brand-500);
+  --color-brand-hover:   var(--color-brand-400);
+  --color-brand-active:  var(--color-brand-600);
   --color-brand-on:      #FFFFFF;
-  --color-brand-ring:    rgba(99, 102, 241, 0.30);
+  --color-brand-ring:    rgba(234, 67, 53, 0.30);
 }
 ```
 
-### 8.2 rose · 玫瑰
+### 8.2 yellow · Google 黄
 
-锚定 brand-500 #F43F5E。详见 `themes.css`。
+锚定 brand-500 #FBBC04。`--color-brand-on` 为深色文字 `#202124`。详见 `themes.css`。
 
-### 8.3 emerald · 翡翠
+### 8.3 blue · Google 蓝
 
-锚定 brand-500 #10B981。详见 `themes.css`。
+锚定 brand-500 #4285F4。详见 `themes.css`。
 
-### 8.4 amber · 琥珀
+### 8.4 green · Google 绿
 
-锚定 brand-500 #F59E0B。详见 `themes.css`。
-
-### 8.5 violet · 紫晶
-
-锚定 brand-500 #8B5CF6。详见 `themes.css`。
+锚定 brand-500 #34A853。详见 `themes.css`。
 
 ---
 
@@ -224,18 +221,21 @@
 
 ## 十一、背景 · 极光渐变与毛玻璃
 
+> 极光 Mesh Gradient 的颜色会跟随当前 `data-accent` 主题色动态变化，形成与主色呼应的背景点缀。
+> 暗色模式下使用极低透明度的主色变体作微光点缀，保持纯黑底的高级感。
+
 ```css
 :root {
   /* 页面基底 */
-  --page-bg: #FAFBFF;
+  --page-bg: #FFFAFA;
 
-  /* 极光渐变 Blob 颜色 */
-  --mesh-color-1: #C7D2FE;   /* 薰衣草 indigo-200 */
-  --mesh-color-2: #FBCFE8;   /* 玫瑰粉 pink-200 */
-  --mesh-color-3: #A5F3FC;   /* 薄荷青 cyan-200 */
-  --mesh-opacity-1: 0.60;
-  --mesh-opacity-2: 0.45;
-  --mesh-opacity-3: 0.50;
+  /* 极光渐变 Blob 颜色（默认跟随 red 主题） */
+  --mesh-color-1: #FFCDD2;   /* 红色调 red-100 */
+  --mesh-color-2: #FFE0B2;   /* 暖橙调 */
+  --mesh-color-3: #F8BBD0;   /* 粉红调 */
+  --mesh-opacity-1: 0.55;
+  --mesh-opacity-2: 0.40;
+  --mesh-opacity-3: 0.45;
 
   /* 毛玻璃表面 */
   --glass-bg:          rgba(255, 255, 255, 0.60);
@@ -351,9 +351,9 @@
 ## 十八、Token 契约
 
 1. 任何业务 CSS / 组件 / 原型只能引用 `--color-brand-*` `--color-neutral-*` `--color-{success|warning|danger|info}-*` `--color-xp` `--color-streak` `--color-locked` `--space-*` `--radius-*` `--shadow-*` `--shadow-btn` `--motion-*` `--easing-*` `--text-*` `--font-*` `--z-*` `--glass-*`。
-2. **禁止**引用具体色族（如 `--color-indigo-700`）；后者为 token 内部实现，因主题切换而易主。
+2. **禁止**引用具体色族（如 `--color-red-700`）；后者为 token 内部实现，因主题切换而易主。
 3. 状态色 / 中性色 / 玻璃 / 间距 / 字体 / 游戏化色 不随 `data-accent` 改变。
-4. 仅 brand 色随 `data-accent` 切换；brand / 中性 / 玻璃 / 背景 随 `data-mode` 切换。
+4. 仅 brand 色 + mesh 极光点缀色 随 `data-accent` 切换；brand / 中性 / 玻璃 / 背景 随 `data-mode` 切换。
 5. `--shadow-btn` 的颜色值随按钮变体动态指定，但始终使用 `0 4px 0 0` 的尺寸规格。
 
 ---

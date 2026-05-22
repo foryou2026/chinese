@@ -28,7 +28,7 @@
 - 所有组件定义 6 态：默认 / hover / focus / active / disabled / loading
 - 异常态按组件需要定义：empty / error / readonly
 - 底座：shadcn/ui + Tailwind CSS v4
-- Token 对应：`01-tokens.md`（颜色用 `--color-brand-*` / `--color-neutral-*`，禁止直接引用色族如 `--color-indigo-*`）
+- Token 对应：`01-tokens.md`（颜色用 `--color-brand-*` / `--color-neutral-*`，禁止直接引用色族如 `--color-red-*`）
 - 表面材质：毛玻璃为唯一表面语言，卡片/面板用 `.glass-card` / `.glass-elevated`
 - 焦点环：`:focus-visible` -> `box-shadow: var(--focus-ring)`
 - 触控目标：最小 48px（移动端，Duolingo 标准）

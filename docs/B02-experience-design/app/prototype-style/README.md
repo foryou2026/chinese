@@ -37,7 +37,7 @@ BODY 末尾（顺序加载，禁 defer）：
 | 轴 | 取值 | DOM |
 |----|------|-----|
 | 模式 | light / dark / auto | `<html data-mode>` |
-| 主题色 | indigo / rose / emerald / amber / violet | `<html data-accent>` |
+| 主题色 | red / yellow / blue / green | `<html data-accent>` |
 | 密度 | default / compact / elder | `<html data-density>` |
 
 任意组合皆有效，运行时切换。
@@ -47,7 +47,7 @@ BODY 末尾（顺序加载，禁 defer）：
 | 文件 | 职责 |
 |------|------|
 | tokens.css | 与 design-system/01-tokens.md 逐字一致的 CSS 变量 |
-| themes.css | 5 套 accent 覆盖 + 暗色模式 + auto 跟随系统 |
+| themes.css | 4 套 Google 主色覆盖（红黄蓝绿）+ 暗色模式（纯黑）+ auto 跟随系统 |
 | parts/01-base.css | reset + 极光 mesh gradient 背景 + 毛玻璃面板 + 游戏化动效 + 排版 + 容器 |
 | parts/02-buttons.css | 3D 弹跳按钮 + Glass/Ghost/状态按钮 |
 | parts/03-inputs.css | 毛玻璃输入组件 6 态 + 异常态 |
@@ -62,7 +62,7 @@ BODY 末尾（顺序加载，禁 defer）：
 
 1. 严禁重定义 token（只在 tokens.css 和 themes.css 中定义）
 2. 严禁写死 hex/px（必须引用 CSS 变量）
-3. 严禁直接引用具体色族（如 `--color-indigo-700`）；只用 `--color-brand-*`
+3. 严禁直接引用具体色族（如 `--color-red-700`）；只用 `--color-brand-*`
 4. 严禁正文/表单使用楷体/宋体（`--font-brush` 仅限品牌 Logo）
 5. 可聚焦元素必须可见焦点环（:focus-visible → `--focus-ring`）
 6. 必须支持 prefers-reduced-motion: reduce

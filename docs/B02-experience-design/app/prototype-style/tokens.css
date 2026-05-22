@@ -1,5 +1,5 @@
 /* tokens.css — 与 design-system/01-tokens.md 逐字一致 */
-/* 默认 = data-accent="indigo" + data-mode="light" + data-density="default" */
+/* 默认 = data-accent="red" + data-mode="light" + data-density="default" */
 /* 风格：Quest Glass — 多邻国游戏化 + 毛玻璃增强 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap');
@@ -83,34 +83,34 @@
   --color-neutral-900: #0F172A;
   --color-neutral-950: #020617;
 
-  /* —— accent: indigo（靛蓝）默认 50~900 —————— */
-  --color-indigo-50:  #EEF2FF;
-  --color-indigo-100: #E0E7FF;
-  --color-indigo-200: #C7D2FE;
-  --color-indigo-300: #A5B4FC;
-  --color-indigo-400: #818CF8;
-  --color-indigo-500: #6366F1;
-  --color-indigo-600: #4F46E5;
-  --color-indigo-700: #4338CA;
-  --color-indigo-800: #3730A3;
-  --color-indigo-900: #312E81;
+  /* —— accent: red（Google 红）默认 50~900 —————— */
+  --color-red-50:  #FFEBEE;
+  --color-red-100: #FFCDD2;
+  --color-red-200: #EF9A9A;
+  --color-red-300: #E57373;
+  --color-red-400: #EF5350;
+  --color-red-500: #EA4335;
+  --color-red-600: #E53935;
+  --color-red-700: #D32F2F;
+  --color-red-800: #C62828;
+  --color-red-900: #B71C1C;
 
-  /* —— 当前 brand（默认 = indigo） —————————— */
-  --color-brand-50:  var(--color-indigo-50);
-  --color-brand-100: var(--color-indigo-100);
-  --color-brand-200: var(--color-indigo-200);
-  --color-brand-300: var(--color-indigo-300);
-  --color-brand-400: var(--color-indigo-400);
-  --color-brand-500: var(--color-indigo-500);
-  --color-brand-600: var(--color-indigo-600);
-  --color-brand-700: var(--color-indigo-700);
-  --color-brand-800: var(--color-indigo-800);
-  --color-brand-900: var(--color-indigo-900);
-  --color-brand-default: var(--color-brand-600);
-  --color-brand-hover:   var(--color-brand-500);
-  --color-brand-active:  var(--color-brand-700);
+  /* —— 当前 brand（默认 = red） —————————— */
+  --color-brand-50:  var(--color-red-50);
+  --color-brand-100: var(--color-red-100);
+  --color-brand-200: var(--color-red-200);
+  --color-brand-300: var(--color-red-300);
+  --color-brand-400: var(--color-red-400);
+  --color-brand-500: var(--color-red-500);
+  --color-brand-600: var(--color-red-600);
+  --color-brand-700: var(--color-red-700);
+  --color-brand-800: var(--color-red-800);
+  --color-brand-900: var(--color-red-900);
+  --color-brand-default: var(--color-brand-500);
+  --color-brand-hover:   var(--color-brand-400);
+  --color-brand-active:  var(--color-brand-600);
   --color-brand-on:      #FFFFFF;
-  --color-brand-ring:    rgba(99, 102, 241, 0.30);
+  --color-brand-ring:    rgba(234, 67, 53, 0.30);
 
   /* —— 状态色（与 accent 解耦） ——————————— */
   --color-success-50:  #ECFDF5;
@@ -135,14 +135,14 @@
   --color-info-700: #1D4ED8;
 
   /* —— 页面背景（Prismatic Mesh Gradient）————————— */
-  --page-bg: #FAFBFF;
+  --page-bg: #FFFAFA;
 
-  --mesh-color-1: #C7D2FE;   /* 薰衣草 indigo-200 */
-  --mesh-color-2: #FBCFE8;   /* 玫瑰粉 pink-200 */
-  --mesh-color-3: #A5F3FC;   /* 薄荷青 cyan-200 */
-  --mesh-opacity-1: 0.60;
-  --mesh-opacity-2: 0.45;
-  --mesh-opacity-3: 0.50;
+  --mesh-color-1: #FFCDD2;   /* 红色调 red-100 */
+  --mesh-color-2: #FFE0B2;   /* 暖橙调 */
+  --mesh-color-3: #F8BBD0;   /* 粉红调 */
+  --mesh-opacity-1: 0.55;
+  --mesh-opacity-2: 0.40;
+  --mesh-opacity-3: 0.45;
 
   /* —— 毛玻璃（Prismatic Glass 标准参数） —————————— */
   --glass-bg:          rgba(255, 255, 255, 0.60);
@@ -157,7 +157,7 @@
   --glass-blur-sm:     blur(16px) saturate(1.5);
 
   /* 输入框 Focus 光晕 */
-  --input-focus-glow: rgba(99, 102, 241, 0.30);
+  --input-focus-glow: rgba(234, 67, 53, 0.30);
 
   /* 文字色彩 */
   --text-primary:   #0F172A;
@@ -171,7 +171,7 @@
 
   /* —— 焦点环 / 描边 ————————————————————— */
   --focus-ring: 0 0 0 4px var(--color-brand-ring);
-  --border-color: rgba(200, 210, 225, 0.60);
+  --border-color: rgba(210, 200, 195, 0.60);
 
   /* —— 动效 ————————————————————————————— */
   --motion-fast: 150ms cubic-bezier(.16,1,.3,1);

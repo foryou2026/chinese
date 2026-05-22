@@ -33,7 +33,7 @@ shadcn/ui + Tailwind CSS v4
 | 轴 | 取值 | DOM 标记 |
 |----|------|---------|
 | 模式 | light / dark / auto | `<html data-mode="...">` |
-| 主题色 | indigo / rose / emerald / amber / violet | `<html data-accent="...">` |
+| 主题色 | red / yellow / blue / green | `<html data-accent="...">` |
 | 密度 | default / compact / elder | `<html data-density="...">` |
 
 ## 游戏化设计支柱

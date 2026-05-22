@@ -4,14 +4,14 @@
 /* ===================== dark mode ===================== */
 
 [data-mode="dark"] {
-  --page-bg: #111827;
+  --page-bg: #000000;
 
   /* 表面色 */
   --surface-page:     var(--page-bg);
-  --surface-primary:  #1F2937;
-  --surface-elevated: #1F2937;
-  --surface-hover:    #374151;
-  --surface-active:   #4B5563;
+  --surface-primary:  #0C0C0E;
+  --surface-elevated: #141416;
+  --surface-hover:    #1C1C1E;
+  --surface-active:   #2C2C2E;
 
   /* 毛玻璃 dark */
   --glass-bg:          rgba(255, 255, 255, 0.04);
@@ -19,46 +19,46 @@
   --glass-bg-elevated: rgba(255, 255, 255, 0.09);
   --glass-border:      rgba(255, 255, 255, 0.10);
   --glass-inset:       rgba(255, 255, 255, 0.04);
-  --glass-shadow:      rgba(0, 0, 0, 0.30);
-  --glass-shadow-elevated: rgba(0, 0, 0, 0.45);
+  --glass-shadow:      rgba(0, 0, 0, 0.40);
+  --glass-shadow-elevated: rgba(0, 0, 0, 0.60);
 
   /* 文字色 */
-  --text-primary:   #F9FAFB;
-  --text-secondary: #9CA3AF;
-  --text-muted:     #6B7280;
+  --text-primary:   #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --text-muted:     #636366;
 
   /* 边框 */
   --border-color:   rgba(255, 255, 255, 0.10);
   --border-hover:   rgba(255, 255, 255, 0.16);
 
-  /* 中性灰阶反转 */
-  --color-neutral-0:   #111827;
-  --color-neutral-50:  #1F2937;
-  --color-neutral-100: #374151;
-  --color-neutral-200: #4B5563;
-  --color-neutral-300: #6B7280;
-  --color-neutral-400: #9CA3AF;
-  --color-neutral-500: #D1D5DB;
-  --color-neutral-600: #E5E7EB;
-  --color-neutral-700: #F3F4F6;
-  --color-neutral-800: #F9FAFB;
-  --color-neutral-900: #FFFFFF;
+  /* 中性灰阶反转（zinc 系，匹配纯黑底） */
+  --color-neutral-0:   #000000;
+  --color-neutral-50:  #0C0C0E;
+  --color-neutral-100: #1A1A1C;
+  --color-neutral-200: #2C2C2E;
+  --color-neutral-300: #3A3A3C;
+  --color-neutral-400: #636366;
+  --color-neutral-500: #A1A1AA;
+  --color-neutral-600: #D4D4D8;
+  --color-neutral-700: #E4E4E7;
+  --color-neutral-800: #F4F4F5;
+  --color-neutral-900: #FAFAFA;
   --color-neutral-950: #FFFFFF;
 
   /* Primary 按钮（纯白） */
   --btn-primary-bg:      #FAFAFA;
-  --btn-primary-text:    #18181B;
-  --btn-primary-hover:   #E5E7EB;
-  --btn-primary-active:  #D1D5DB;
+  --btn-primary-text:    #000000;
+  --btn-primary-hover:   #E4E4E7;
+  --btn-primary-active:  #D4D4D8;
 
   /* Secondary 按钮 */
   --btn-secondary-bg:      rgba(255, 255, 255, 0.06);
-  --btn-secondary-text:    #D1D5DB;
+  --btn-secondary-text:    #D4D4D8;
   --btn-secondary-border:  rgba(255, 255, 255, 0.10);
   --btn-secondary-hover:   rgba(255, 255, 255, 0.10);
 
   /* Ghost 按钮 */
-  --btn-ghost-text:    #9CA3AF;
+  --btn-ghost-text:    #A1A1AA;
   --btn-ghost-hover:   rgba(255, 255, 255, 0.06);
 
   /* 链接/焦点色 */
@@ -118,45 +118,45 @@
 /* ===================== auto = follow system ===================== */
 @media (prefers-color-scheme: dark) {
   [data-mode="auto"] {
-    --page-bg: #111827;
-    --surface-page:     #111827;
-    --surface-primary:  #1F2937;
-    --surface-elevated: #1F2937;
-    --surface-hover:    #374151;
-    --surface-active:   #4B5563;
+    --page-bg: #000000;
+    --surface-page:     #000000;
+    --surface-primary:  #0C0C0E;
+    --surface-elevated: #141416;
+    --surface-hover:    #1C1C1E;
+    --surface-active:   #2C2C2E;
     --glass-bg:          rgba(255, 255, 255, 0.04);
     --glass-bg-card:     rgba(255, 255, 255, 0.06);
     --glass-bg-elevated: rgba(255, 255, 255, 0.09);
     --glass-border:      rgba(255, 255, 255, 0.10);
     --glass-inset:       rgba(255, 255, 255, 0.04);
-    --glass-shadow:      rgba(0, 0, 0, 0.30);
-    --glass-shadow-elevated: rgba(0, 0, 0, 0.45);
-    --text-primary:   #F9FAFB;
-    --text-secondary: #9CA3AF;
-    --text-muted:     #6B7280;
+    --glass-shadow:      rgba(0, 0, 0, 0.40);
+    --glass-shadow-elevated: rgba(0, 0, 0, 0.60);
+    --text-primary:   #FAFAFA;
+    --text-secondary: #A1A1AA;
+    --text-muted:     #636366;
     --border-color:   rgba(255, 255, 255, 0.10);
     --border-hover:   rgba(255, 255, 255, 0.16);
-    --color-neutral-0:   #111827;
-    --color-neutral-50:  #1F2937;
-    --color-neutral-100: #374151;
-    --color-neutral-200: #4B5563;
-    --color-neutral-300: #6B7280;
-    --color-neutral-400: #9CA3AF;
-    --color-neutral-500: #D1D5DB;
-    --color-neutral-600: #E5E7EB;
-    --color-neutral-700: #F3F4F6;
-    --color-neutral-800: #F9FAFB;
-    --color-neutral-900: #FFFFFF;
+    --color-neutral-0:   #000000;
+    --color-neutral-50:  #0C0C0E;
+    --color-neutral-100: #1A1A1C;
+    --color-neutral-200: #2C2C2E;
+    --color-neutral-300: #3A3A3C;
+    --color-neutral-400: #636366;
+    --color-neutral-500: #A1A1AA;
+    --color-neutral-600: #D4D4D8;
+    --color-neutral-700: #E4E4E7;
+    --color-neutral-800: #F4F4F5;
+    --color-neutral-900: #FAFAFA;
     --color-neutral-950: #FFFFFF;
     --btn-primary-bg:      #FAFAFA;
-    --btn-primary-text:    #18181B;
-    --btn-primary-hover:   #E5E7EB;
-    --btn-primary-active:  #D1D5DB;
+    --btn-primary-text:    #000000;
+    --btn-primary-hover:   #E4E4E7;
+    --btn-primary-active:  #D4D4D8;
     --btn-secondary-bg:      rgba(255, 255, 255, 0.06);
-    --btn-secondary-text:    #D1D5DB;
+    --btn-secondary-text:    #D4D4D8;
     --btn-secondary-border:  rgba(255, 255, 255, 0.10);
     --btn-secondary-hover:   rgba(255, 255, 255, 0.10);
-    --btn-ghost-text:    #9CA3AF;
+    --btn-ghost-text:    #A1A1AA;
     --btn-ghost-hover:   rgba(255, 255, 255, 0.06);
     --color-accent:    #60A5FA;
     --color-accent-hover: #93C5FD;
@@ -178,9 +178,9 @@
     --color-info-100:    rgba(59, 130, 246, 0.20);
     --color-info-500:    #93C5FD;
     --color-info-700:    #DBEAFE;
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.20);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.30);
-    --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.40);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.30);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.40);
+    --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.50);
     --focus-ring: 0 0 0 3px var(--color-accent-ring);
     --input-focus-glow: var(--color-accent-ring);
     --color-bg-primary:    var(--glass-bg-card);

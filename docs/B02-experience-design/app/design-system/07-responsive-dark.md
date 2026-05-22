@@ -29,38 +29,38 @@
 | 轴 | 属性 | 取值 | 默认 |
 |----|------|------|------|
 | 模式 | `data-mode` | light / dark / auto | auto |
-| 主题色 | `data-accent` | indigo / rose / emerald / amber / violet | indigo |
+| 主题色 | `data-accent` | red / yellow / blue / green | red |
 | 密度 | `data-density` | default / compact / elder | default |
 
 > 三轴均在 `<html>` 元素上设置，JS 初始化时从 localStorage 读取或使用默认值。
 
 ---
 
-## 暗黑模式 — 深灰映射
+## 暗黑模式 — 纯黑映射
 
 ### 页面背景
 
 | 属性 | Light | Dark |
 |------|-------|------|
-| `--page-bg` | #FAFBFF (微蓝白) | #111827 (深灰 gray-900) |
-| mesh blob | 薰衣草+玫瑰粉+薄荷青，高 opacity | 紫晶+青+玫红，低 opacity |
+| `--page-bg` | #FFFAFA (微暖白) | #000000（纯黑） |
+| mesh blob | 跟随主题色的暖调点缀，高 opacity | 跟随主题色的深色变体，极低 opacity 微光点缀 |
 
-> 暗黑模式基底色从原 #09090B（纯黑 zinc-950）调整为 #111827（深灰 gray-900），减少视觉压迫感，更适合长时间学习使用。
+> 暗色模式使用纯黑 #000000 基底，配合 OLED 屏幕的完美黑色呈现，营造高级感。极光 Mesh 使用极低透明度（0.05~0.08）的主题色微光点缀。
 
-### 中性灰阶反转
+### 中性灰阶反转（zinc 系，匹配纯黑底）
 
 | Token | Light | Dark |
 |-------|-------|------|
-| `--color-neutral-0` | #FFFFFF | #111827 |
-| `--color-neutral-50` | #F8FAFC | #1F2937 |
-| `--color-neutral-100` | #F1F5F9 | #374151 |
-| `--color-neutral-200` | #E2E8F0 | #4B5563 |
-| `--color-neutral-300` | #CBD5E1 | #6B7280 |
-| `--color-neutral-400` | #94A3B8 | #9CA3AF |
-| `--color-neutral-500` | #64748B | #D1D5DB |
-| `--color-neutral-600` | #475569 | #E5E7EB |
-| `--color-neutral-700` | #334155 | #F3F4F6 |
-| `--color-neutral-800` | #1E293B | #F9FAFB |
+| `--color-neutral-0` | #FFFFFF | #000000 |
+| `--color-neutral-50` | #F8FAFC | #0C0C0E |
+| `--color-neutral-100` | #F1F5F9 | #1A1A1C |
+| `--color-neutral-200` | #E2E8F0 | #2C2C2E |
+| `--color-neutral-300` | #CBD5E1 | #3A3A3C |
+| `--color-neutral-400` | #94A3B8 | #636366 |
+| `--color-neutral-500` | #64748B | #A1A1AA |
+| `--color-neutral-600` | #475569 | #D4D4D8 |
+| `--color-neutral-700` | #334155 | #E4E4E7 |
+| `--color-neutral-800` | #1E293B | #F4F4F5 |
 | `--color-neutral-900` | #0F172A | #FAFAFA |
 | `--color-neutral-950` | #020617 | #FFFFFF |
 
@@ -120,21 +120,21 @@
 
 ---
 
-## 五色主题
+## Google 四色主题
 
-通过 `[data-accent]` 切换品牌色族：
+通过 `[data-accent]` 切换品牌色族（Google 四原色，高饱和度）：
 
 | accent | 色名 | 主色 -500 | 用途 |
 |--------|------|-----------|------|
-| indigo | 靛蓝 | #6366F1 | 默认，智慧沉稳 |
-| rose | 玫瑰 | #F43F5E | 热情活力 |
-| emerald | 翡翠 | #10B981 | 自然清新 |
-| amber | 琥珀 | #F59E0B | 温暖能量 |
-| violet | 紫晶 | #8B5CF6 | 创意灵感 |
+| red | Google 红 | #EA4335 | **默认**，热情活力 |
+| yellow | Google 黄 | #FBBC04 | 温暖能量（`--color-brand-on` 为深色 #202124） |
+| blue | Google 蓝 | #4285F4 | 智慧沉稳 |
+| green | Google 绿 | #34A853 | 自然清新 |
 
-每套 accent 在 `themes.css` 中覆盖 `--color-brand-50`~`--color-brand-900` 全色阶 + 语义别名。
+每套 accent 在 `themes.css` 中覆盖 `--color-brand-50`~`--color-brand-900` 全色阶 + 语义别名 + `--mesh-color-*` 极光点缀色。
 
 > 注意：`--shadow-btn` 的颜色值在每套 accent 下自动跟随 `--color-brand-700`（light）/ `--color-brand-900`（dark）。
+> Yellow 主题的 `--color-brand-on` 使用深色文字（#202124）而非白色，确保对比度达标。
 
 ---
 

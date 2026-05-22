@@ -50,7 +50,7 @@
 | 关卡路径 UI | 蜿蜒关卡节点 + 完成/进行中/锁定三态 | Duolingo / HelloChinese |
 | 毛玻璃导航栏 | `.glass-bar` + `backdrop-filter: blur(20px) saturate(1.8)` | Apple visionOS |
 | 弹跳按钮 | `transform: scale(0.95)` → `scale(1.02)` + spring 缓动 | Duolingo / Raycast |
-| 五色主题 | `data-accent` 切换 5 套 brand 色 | Arc Browser |
+| 四色主题 | `data-accent` 切换 Google 四原色（红/黄/蓝/绿） | Google Material / Arc Browser |
 | XP 飘数字 | `+10 XP` 向上飘出 + 淡出 | Duolingo / Memrise |
 | 进度环/进度条 | SVG 圆环 + 品牌色填充 | Duolingo 日目标环 |
 

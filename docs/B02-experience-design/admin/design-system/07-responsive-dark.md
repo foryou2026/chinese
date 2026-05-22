@@ -42,24 +42,24 @@
 
 | 属性 | Light | Dark |
 |------|-------|------|
-| `--surface-page` | #FFFFFF | #111827 |
-| `--surface-primary` | #F9FAFB | #1F2937 |
-| `--surface-elevated` | #FFFFFF | #1F2937 |
+| `--surface-page` | #FFFFFF | #000000（纯黑） |
+| `--surface-primary` | #F9FAFB | #0C0C0E |
+| `--surface-elevated` | #FFFFFF | #141416 |
 
-### 中性灰阶反转
+### 中性灰阶反转（zinc 系，匹配纯黑底）
 
 | Token | Light | Dark |
 |-------|-------|------|
-| `--color-neutral-0` | #FFFFFF | #111827 |
-| `--color-neutral-50` | #F9FAFB | #1F2937 |
-| `--color-neutral-100` | #F3F4F6 | #374151 |
-| `--color-neutral-200` | #E5E7EB | #4B5563 |
-| `--color-neutral-300` | #D1D5DB | #6B7280 |
-| `--color-neutral-400` | #9CA3AF | #9CA3AF |
-| `--color-neutral-500` | #6B7280 | #D1D5DB |
-| `--color-neutral-600` | #4B5563 | #E5E7EB |
-| `--color-neutral-700` | #374151 | #F3F4F6 |
-| `--color-neutral-800` | #1F2937 | #F9FAFB |
+| `--color-neutral-0` | #FFFFFF | #000000 |
+| `--color-neutral-50` | #F9FAFB | #0C0C0E |
+| `--color-neutral-100` | #F3F4F6 | #1A1A1C |
+| `--color-neutral-200` | #E5E7EB | #2C2C2E |
+| `--color-neutral-300` | #D1D5DB | #3A3A3C |
+| `--color-neutral-400` | #9CA3AF | #636366 |
+| `--color-neutral-500` | #6B7280 | #A1A1AA |
+| `--color-neutral-600` | #4B5563 | #D4D4D8 |
+| `--color-neutral-700` | #374151 | #E4E4E7 |
+| `--color-neutral-800` | #1F2937 | #F4F4F5 |
 | `--color-neutral-900` | #111827 | #FAFAFA |
 | `--color-neutral-950` | #030712 | #FFFFFF |
 
@@ -68,14 +68,14 @@
 | Token | Light | Dark |
 |-------|-------|------|
 | `--btn-primary-bg` | #18181B | #FAFAFA |
-| `--btn-primary-bg-hover` | #27272A | #F4F4F5 |
-| `--btn-primary-bg-active` | #09090B | #E4E4E7 |
-| `--btn-primary-text` | #FAFAFA | #18181B |
-| `--btn-secondary-bg` | #FFFFFF | #1F2937 |
-| `--btn-secondary-bg-hover` | #F9FAFB | #374151 |
-| `--btn-secondary-bg-active` | #F3F4F6 | #4B5563 |
-| `--btn-secondary-text` | #374151 | #F3F4F6 |
-| `--btn-secondary-border` | #D1D5DB | #4B5563 |
+| `--btn-primary-bg-hover` | #27272A | #E4E4E7 |
+| `--btn-primary-bg-active` | #09090B | #D4D4D8 |
+| `--btn-primary-text` | #FAFAFA | #000000 |
+| `--btn-secondary-bg` | #FFFFFF | rgba(255,255,255,0.08) |
+| `--btn-secondary-bg-hover` | #F9FAFB | rgba(255,255,255,0.12) |
+| `--btn-secondary-bg-active` | #F3F4F6 | rgba(255,255,255,0.16) |
+| `--btn-secondary-text` | #374151 | #D4D4D8 |
+| `--btn-secondary-border` | #D1D5DB | rgba(255,255,255,0.12) |
 
 ### 链接与焦点色
 
@@ -89,18 +89,18 @@
 
 | Token | Light | Dark |
 |-------|-------|------|
-| `--border-color` | #E5E7EB | #374151 |
+| `--border-color` | #E5E7EB | rgba(255,255,255,0.08) |
 | `--text-primary` | #111827 | #FAFAFA |
-| `--text-secondary` | #6B7280 | #9CA3AF |
-| `--text-muted` | #9CA3AF | #6B7280 |
+| `--text-secondary` | #6B7280 | #A1A1AA |
+| `--text-muted` | #9CA3AF | #636366 |
 
 ### 阴影
 
 | Token | Light | Dark |
 |-------|-------|------|
-| `--shadow-sm` | `0 1px 2px rgba(0,0,0,0.05)` | `0 1px 2px rgba(0,0,0,0.30)` |
-| `--shadow-md` | `0 4px 6px rgba(0,0,0,0.07)` | `0 4px 6px rgba(0,0,0,0.40)` |
-| `--shadow-lg` | `0 10px 25px rgba(0,0,0,0.10)` | `0 10px 25px rgba(0,0,0,0.50)` |
+| `--shadow-sm` | `0 1px 2px rgba(0,0,0,0.05)` | `0 1px 2px rgba(0,0,0,0.40)` |
+| `--shadow-md` | `0 4px 6px rgba(0,0,0,0.07)` | `0 4px 6px rgba(0,0,0,0.50)` |
+| `--shadow-lg` | `0 10px 25px rgba(0,0,0,0.10)` | `0 10px 25px rgba(0,0,0,0.60)` |
 
 ### 状态色
 
