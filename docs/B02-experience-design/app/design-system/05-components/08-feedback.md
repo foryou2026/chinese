@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md, ../04-status-colors.md
 > **冻结状态**：未冻结
@@ -29,16 +29,16 @@
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `var(--glass-2)` |
+| 背景 | `var(--glass-bg-elevated)` |
 | 模糊 | `backdrop-filter: var(--glass-blur)` |
-| 边框 | `var(--glass-border)` |
+| 边框 | `1px solid var(--glass-border)` |
 | 左侧色条 | 3px 状态色 |
-| 顶部高光 | `::before` inset 1px |
+| 顶部高光 | `::before` — `inset 0 1px 0 0 var(--glass-inset)` |
 | min-width | 280px |
 | max-width | 420px |
 | padding | `var(--space-3)` `var(--space-4)` |
 | 圆角 | `var(--radius-lg)` |
-| 阴影 | `var(--glass-shadow-lg)` |
+| 阴影 | `0 8px 40px -4px var(--glass-shadow-elevated)` |
 
 ### 位置与行为
 
@@ -57,7 +57,7 @@
 
 ```
 ┌─┬────────────────────────────────┐
-│ │ [icon] [message]         [X]   │  ← .glass-2 + backdrop-filter
+│ │ [icon] [message]         [X]   │  ← var(--glass-bg-elevated) + backdrop-filter
 │ │        [action link?]          │
 └─┴────────────────────────────────┘
 ↑ 3px 状态色条
@@ -83,24 +83,24 @@
 
 | 变体 | 左侧色条 | 背景 | 图标 |
 |------|---------|------|------|
-| success emerald | `var(--color-success-500)` | `var(--glass-1)` | check-circle |
-| danger red | `var(--color-danger-500)` | `var(--glass-1)` | x-circle |
-| warning amber | `var(--color-warning-500)` | `var(--glass-1)` | alert-triangle |
-| info blue | `var(--color-info-500)` | `var(--glass-1)` | info |
+| success emerald | `var(--color-success-500)` | `var(--glass-bg)` | check-circle |
+| danger red | `var(--color-danger-500)` | `var(--glass-bg)` | x-circle |
+| warning amber | `var(--color-warning-500)` | `var(--glass-bg)` | alert-triangle |
+| info blue | `var(--color-info-500)` | `var(--glass-bg)` | info |
 
 ### 材质
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `var(--glass-1)` + `backdrop-filter: var(--glass-blur-sm)` |
-| 边框 | `var(--glass-border)` |
+| 背景 | `var(--glass-bg)` + `backdrop-filter: var(--glass-blur-sm)` |
+| 边框 | `1px solid var(--glass-border)` |
 | 左侧色条 | 4px 状态色 |
 
 ### Anatomy
 
 ```
 ┌─┬──────────────────────────┐
-│ │ [icon] [title?]    [X?]  │  ← .glass-1 + backdrop-filter
+│ │ [icon] [title?]    [X?]  │  ← var(--glass-bg) + backdrop-filter
 │ │ [description]             │
 │ │ [action button?]          │
 └─┴──────────────────────────┘

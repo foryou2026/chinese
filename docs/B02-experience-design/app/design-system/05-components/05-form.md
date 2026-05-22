@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md, 02-inputs.md, 03-selection.md
 > **冻结状态**：未冻结
@@ -19,14 +19,14 @@
 | 变体 | 说明 | 示例语境 |
 |------|------|---------|
 | standard | 垂直布局，标签在上 | 注册、个人设置 |
-| inline | 水平布局，标签在左 | admin 筛选条件栏 |
+| inline | 水平布局，标签在左 | 筛选条件栏 |
 | step | 分步表单，配合 Stepper | 引导式注册 |
 
 ## 表面材质
 
 | 属性 | 值 |
 |------|-----|
-| 表单容器 | `.glass` 毛玻璃面板，或嵌入页面（透明背景） |
+| 表单容器 | `.glass` 毛玻璃面板（`var(--glass-bg)` + `backdrop-filter: var(--glass-blur)`），或嵌入页面（透明背景） |
 | 窄容器 | `.container-form` max-width 640px |
 | 圆角 | `var(--radius-lg)` |
 
@@ -36,7 +36,7 @@
 
 ```
 [Label]          ← var(--font-display), var(--text-sm), var(--weight-medium), letter-spacing: -0.01em
-[Input]          ← 全宽，毛玻璃白半透背景
+[Input]          ← 全宽，毛玻璃白半透背景 var(--glass-bg) + backdrop-filter: var(--glass-blur)
 [helper/error]   ← var(--text-xs)
                  ← 字段间距 var(--space-4)
 [Label]
@@ -46,7 +46,7 @@
 [Submit Button]  ← .proto-btn-primary，右对齐或全宽（移动端全宽）
 ```
 
-### inline（admin）
+### inline
 
 ```
 [Label    ] [Input          ] [Label    ] [Input          ]
@@ -73,12 +73,12 @@
 | 颜色 | `var(--color-danger-500)` |
 | 图标 | 可选，danger 图标 16px |
 | 输入框边框 | `1px solid var(--color-danger-500)` |
-| 输入框光环 | `box-shadow: 0 0 0 4px var(--color-danger-50)` |
+| 输入框光环 | `box-shadow: 0 0 0 4px rgba(239,68,68,0.15)` |
 | 标签颜色 | `var(--color-danger-500)` |
 
 ### 全局错误（非字段级）
 
-- 表单顶部 Alert 组件（danger 变体，`.glass` + 左侧 4px 危险红色条）
+- 表单顶部 Alert 组件（danger 变体，`.glass` 毛玻璃面板 + 左侧 4px 危险红色条）
 - 显示服务器返回的错误信息
 
 ## 状态
@@ -87,7 +87,7 @@
 |------|------|
 | 默认 | 所有字段可编辑 |
 | hover | 各字段独立 hover |
-| focus | 当前字段高亮（`var(--focus-ring)`） |
+| focus | 当前字段高亮（`var(--focus-ring)` + `0 0 0 4px var(--input-focus-glow)` 品牌色发光光晕） |
 | active | 同 focus |
 | disabled | 全表单灰化（`opacity: 0.45`），提交按钮 disabled |
 | loading（提交中） | 提交按钮 loading，所有字段 readonly |

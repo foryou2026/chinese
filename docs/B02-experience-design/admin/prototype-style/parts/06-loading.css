@@ -1,0 +1,102 @@
+/* 06-loading.css — admin 加载态（毛玻璃增强） */
+
+/* ---- Skeleton ---- */
+.proto-skeleton {
+  background: var(--glass-bg-card);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border-radius: var(--radius-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.proto-skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+[data-mode="dark"] .proto-skeleton::after {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+  background-size: 200% 100%;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.proto-skeleton-text { height: 14px; width: 100%; }
+.proto-skeleton-title { height: 20px; width: 60%; }
+.proto-skeleton-avatar { border-radius: var(--radius-pill); }
+.proto-skeleton-avatar-sm { width: 32px; height: 32px; }
+.proto-skeleton-avatar-md { width: 40px; height: 40px; }
+
+/* ---- ProgressBar ---- */
+.proto-progress {
+  height: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--glass-bg-card);
+  overflow: hidden;
+}
+
+.proto-progress-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--btn-primary-bg);
+  transition: width var(--motion-base);
+}
+
+.proto-progress-sm { height: 2px; }
+.proto-progress-lg { height: 8px; }
+
+.proto-progress-success .proto-progress-fill { background: var(--color-success-500); }
+.proto-progress-danger  .proto-progress-fill { background: var(--color-danger-500); }
+
+.proto-progress-indeterminate .proto-progress-fill {
+  width: 30%;
+  animation: progress-indeterminate 1.5s ease-in-out infinite;
+}
+
+@keyframes progress-indeterminate {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+
+/* ---- Empty State ---- */
+.proto-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 200px;
+  padding: var(--space-10) var(--space-6);
+  gap: var(--space-3);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  color: var(--text-muted);
+}
+
+.proto-empty-icon {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-3);
+  opacity: 0.5;
+}
+
+.proto-empty-title {
+  font-size: var(--text-md);
+  font-weight: var(--weight-medium);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-1);
+}
+
+.proto-empty-desc {
+  font-size: var(--text-sm);
+}

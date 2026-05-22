@@ -1,4 +1,4 @@
-/* 02-buttons.css — 棱光毛玻璃按钮体系 */
+/* 02-buttons.css — 游戏化毛玻璃按钮体系（多邻国风 3D + 弹跳） */
 
 /* 共用按钮基底 */
 .proto-btn,
@@ -32,27 +32,32 @@
 .proto-btn-md  { height: 40px; padding: 0 18px; font-size: var(--text-sm); border-radius: var(--radius-pill); }
 .proto-btn-lg  { height: 48px; padding: 0 28px; font-size: var(--text-base); border-radius: var(--radius-pill); }
 
-/* ---- Primary CTA（品牌渐变 + 发光阴影） ---- */
+/* ---- Primary CTA（多邻国风 3D 弹跳按钮） ---- */
 .proto-btn-primary {
   padding: 0.75rem 2rem;
   border-radius: var(--radius-pill);
   font-weight: var(--weight-semibold);
-  background: linear-gradient(135deg, var(--color-brand-600), var(--color-brand-500));
+  background: var(--color-brand-default);
   color: var(--color-brand-on);
   box-shadow:
-    0 4px 14px -2px var(--color-brand-ring),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+    0 4px 0 0 var(--color-brand-700),
+    0 6px 16px -2px var(--color-brand-ring);
+  transition: transform 100ms var(--easing-spring), box-shadow 100ms var(--easing-spring), filter 100ms ease;
 }
 .proto-btn-primary:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   box-shadow:
-    0 8px 24px -4px var(--color-brand-ring),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.20);
-  filter: brightness(1.08);
+    0 5px 0 0 var(--color-brand-700),
+    0 8px 20px -2px var(--color-brand-ring);
+  filter: brightness(1.06);
 }
 .proto-btn-primary:active {
-  transform: translateY(0) scale(0.98);
-  filter: brightness(0.95);
+  transform: translateY(3px);
+  box-shadow:
+    0 1px 0 0 var(--color-brand-700),
+    0 2px 8px -2px var(--color-brand-ring);
+  filter: brightness(0.96);
+  transition-duration: 50ms;
 }
 
 /* ---- Glass 按钮 ---- */

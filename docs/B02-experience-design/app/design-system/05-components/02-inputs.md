@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md, ../04-status-colors.md
 > **冻结状态**：未冻结
@@ -39,48 +39,48 @@
 
 | 属性 | Light 模式 | Dark 模式 |
 |------|-----------|-----------|
-| 背景 | `rgba(255, 255, 255, 0.65)` (毛玻璃白) | `rgba(255, 255, 255, 0.05)` (毛玻璃暗) |
-| 边框 | `var(--border-subtle)` = `1px solid var(--color-neutral-200)` | — |
-| 圆角 | `var(--radius-md)` (12px) | — |
-| 过渡 | `var(--motion-fast)` | — |
+| 背景 | `var(--glass-bg)` — 毛玻璃白半透 | `var(--glass-bg)` — 毛玻璃暗半透 |
+| 模糊 | `backdrop-filter: blur(12px) saturate(1.4)` | 同左 |
+| 边框 | `1px solid var(--glass-border)` | 同左 |
+| 内层高光 | `inset 0 1px 0 0 var(--glass-inset)` | 同左 |
+| 圆角 | `var(--radius-md)` 12px | 同左 |
+| 过渡 | `var(--transition-all)` | 同左 |
 
 ### 状态
 
-| 状态 | 边框 | 背景 | 标签色 | 其他 |
-|------|------|------|--------|------|
-| 默认 | `var(--border-subtle)` | 毛玻璃白半透 | `var(--color-neutral-500)` | — |
-| hover | `1px solid var(--color-neutral-300)` | — | — | — |
-| focus | `var(--focus-ring)` (`0 0 0 4px var(--color-brand-ring)`) | — | `var(--color-brand-default)` | 标签高亮 |
-| active | 同 focus | — | — | — |
-| disabled | `1px solid var(--color-neutral-200)` | `var(--color-neutral-50)` | `var(--color-neutral-400)` | `cursor: not-allowed` |
-| loading | 同默认 | — | — | 右侧 spinner |
-| error | `1px solid var(--color-danger-500)` | — | `var(--color-danger-500)` | `box-shadow: 0 0 0 4px var(--color-danger-50)` |
-| readonly | 无边框 | `var(--color-neutral-50)` | `var(--color-neutral-500)` | `cursor: default` |
+| 状态 | 边框 | 背景 | 其他 |
+|------|------|------|------|
+| 默认 | `var(--glass-border)` | `var(--glass-bg)` | inset 高光 |
+| hover | `var(--color-neutral-300)` | `var(--glass-bg-card)` | — |
+| focus | `var(--color-brand-default)` | `var(--glass-bg-card)` | `0 0 0 4px var(--input-focus-glow)` 品牌色发光光晕 |
+| error | `var(--color-danger-500)` | 同默认 | `0 0 0 4px rgba(239,68,68,0.15)` |
+| disabled | `var(--glass-border)` | `var(--color-neutral-100)` | `opacity: 0.5; cursor: not-allowed` |
+| readonly | transparent | `var(--color-neutral-50)` | `cursor: default` |
 
 ### Anatomy
 
 ```
-[Label]  ← var(--font-display), var(--text-sm), letter-spacing: -0.01em
+[Label]  ← var(--font-sans), var(--text-sm), var(--weight-medium)
 ┌──────────────────────────────┐
-│ [prefix?] [input] [suffix?]  │  ← 毛玻璃白半透背景 + 玻璃边框
+│ [prefix?] [input] [suffix?]  │  ← 毛玻璃白半透背景 + 玻璃边框 + inset 高光
 └──────────────────────────────┘
 [helper text / error message]
 ```
 
-- Label 位于输入框上方，间距 `var(--space-2)` (8px)
-- Label 使用 `var(--font-display)`，`letter-spacing: -0.01em`
-- Helper text / error 位于输入框下方，字号 `var(--text-xs)`，间距 `var(--space-1)`
+- Label 位于输入框上方，间距 `var(--space-1)` (4px)
+- Helper text / error 位于输入框下方，字号 `var(--text-xs)`
 - Error message 颜色 `var(--color-danger-500)`
 
 ---
 
 ## Textarea
 
-继承 Input 所有状态和样式，差异：
+继承 Input 所有材质和状态，差异：
 
 | 属性 | 值 |
 |------|-----|
 | 最小高度 | 88px（2 行） |
+| padding | `var(--space-3)` |
 | resize | vertical |
 | 最大高度 | 200px（超出滚动） |
 | 字符计数 | 右下角显示 `当前/最大`，`var(--text-xs)` |
@@ -110,13 +110,14 @@
 
 | 属性 | 值 |
 |------|-----|
-| 材质 | `.glass-strong` — `background: var(--glass-2); backdrop-filter: var(--glass-blur-lg)` |
-| 边框 | `var(--glass-border-strong)` |
+| 材质 | `var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-lg)` |
+| 边框 | `1px solid var(--glass-border)` |
+| 内层高光 | `inset 0 1px 0 0 var(--glass-inset)` |
 | 最大高度 | 240px（可滚动） |
 | 圆角 | `var(--radius-lg)` |
-| 阴影 | `var(--glass-shadow-lg)` |
+| 阴影 | `0 8px 40px -4px var(--glass-shadow-elevated)` |
 | 选项高度 | 40px |
-| 选项 hover | `var(--glass-3)` |
+| 选项 hover | `var(--glass-bg-card)` |
 | z-index | `var(--z-dropdown)` |
 
 ---
@@ -147,7 +148,8 @@
 
 | 属性 | 值 |
 |------|-----|
-| 材质 | `.glass-strong` — 毛玻璃面板 |
+| 材质 | `var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-lg)` |
+| 边框 | `1px solid var(--glass-border)` |
 | 单元格尺寸 | 36px x 36px |
 | 今日标记 | 底部圆点，`var(--color-brand-default)` |
 | 选中日 | 圆形背景 `var(--color-brand-default)`，文字 `var(--color-brand-on)` |

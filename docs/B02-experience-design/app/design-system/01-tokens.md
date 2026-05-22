@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：05-moodboard.md
 > **冻结状态**：未冻结
@@ -21,11 +21,16 @@
 --space-{n}                  间距
 --radius-{name}              圆角
 --shadow-{level}             阴影
+--shadow-btn                 按钮底部 3D 阴影（游戏化专属）
 --motion-{name}              动效
+--easing-{name}              缓动曲线
 --z-{layer}                  z-index 分层
 --font-{role}                字体栈
 --glass-*                    毛玻璃专用
 --page-bg / --mesh-*         页面渐变背景
+--color-xp                   经验值色（琥珀）
+--color-streak               连续天数色（橙）
+--color-locked               锁定节点色（冷灰）
 ```
 
 ---
@@ -73,8 +78,11 @@
   --weight-medium:   500;
   --weight-semibold: 600;
   --weight-bold:     700;
+  --weight-extrabold: 800;
 }
 ```
+
+> `--weight-extrabold` 用于游戏化标题、XP 数值、关卡编号等需要超粗视觉冲击的场景。
 
 ---
 
@@ -101,11 +109,13 @@
   --radius-sm:   8px;
   --radius-md:  12px;   /* 按钮/输入/Tag 默认 */
   --radius-lg:  16px;   /* 卡片 */
-  --radius-xl:  24px;   /* 强卡片/模态 */
-  --radius-2xl: 32px;   /* 抽屉/Hero 容器 */
-  --radius-pill: 9999px;
+  --radius-xl:  20px;   /* 强卡片/模态（Duolingo 风格大圆角） */
+  --radius-2xl: 24px;   /* 抽屉/Hero 容器 */
+  --radius-pill: 9999px; /* 胶囊形——游戏化主 CTA 按钮默认 */
 }
 ```
+
+> Duolingo 风格的主 CTA 按钮统一使用 `--radius-pill` 胶囊圆角。卡片与模态使用 `--radius-xl`（20px）或 `--radius-2xl`（24px）。
 
 ---
 
@@ -195,7 +205,24 @@
 
 ---
 
-## 十、背景 · 极光渐变与毛玻璃
+## 十、颜色 · 游戏化专属
+
+```css
+:root {
+  /* XP 经验值 — 琥珀金 */
+  --color-xp:       #F59E0B;
+  /* Streak 连续天数 — 火焰橙 */
+  --color-streak:   #F97316;
+  /* 锁定节点 — 冷灰 */
+  --color-locked:   #94A3B8;
+}
+```
+
+> 这三个颜色不随 `data-accent` 变化，是游戏化 UI 的固定语义色。
+
+---
+
+## 十一、背景 · 极光渐变与毛玻璃
 
 ```css
 :root {
@@ -226,19 +253,25 @@
 
 ---
 
-## 十一、阴影
+## 十二、阴影
 
 ```css
 :root {
   --shadow-sm: 0 2px 8px rgba(0, 0, 30, 0.06);
   --shadow-md: 0 6px 18px rgba(0, 0, 30, 0.08);
   --shadow-lg: 0 14px 38px rgba(0, 0, 30, 0.12);
+
+  /* 游戏化 3D 按钮底部阴影 — Duolingo 风格 */
+  --shadow-btn: 0 4px 0 0 var(--color-brand-700);
 }
 ```
 
+> `--shadow-btn` 为 Duolingo 风格 3D 按钮专属。按下时阴影减小至 `0 2px 0 0`，同时按钮向下位移 2px，模拟物理按压感。
+> 不同变体的 `--shadow-btn` 颜色跟随按钮色系（如 destructive 用 `--color-danger-700`，success 用 `--color-success-700`）。
+
 ---
 
-## 十二、焦点环 / 描边
+## 十三、焦点环 / 描边
 
 ```css
 :root {
@@ -249,7 +282,7 @@
 
 ---
 
-## 十三、动效
+## 十四、动效
 
 ```css
 :root {
@@ -258,6 +291,7 @@
   --motion-slow: 350ms cubic-bezier(.16,1,.3,1);
   --easing-out:  cubic-bezier(.16,1,.3,1);
   --easing-in-out: cubic-bezier(.4,0,.2,1);
+  --easing-spring: cubic-bezier(.34,1.56,.64,1);
   --transition-all: all 200ms cubic-bezier(.16,1,.3,1);
 }
 
@@ -266,9 +300,11 @@
 }
 ```
 
+> `--easing-spring` 为弹簧过冲缓动，专用于游戏化按钮按压回弹、正确答案弹跳、XP 数值飞出等需要"弹性"手感的场景。
+
 ---
 
-## 十四、z-index
+## 十五、z-index
 
 ```css
 :root {
@@ -284,7 +320,7 @@
 
 ---
 
-## 十五、断点
+## 十六、断点
 
 ```css
 --bp-sm:   480px;
@@ -296,7 +332,7 @@
 
 ---
 
-## 十六、密度切换
+## 十七、密度切换
 
 ```css
 [data-density="default"] { /* 默认值，所有 token 不变 */ }
@@ -312,12 +348,13 @@
 
 ---
 
-## 十七、Token 契约
+## 十八、Token 契约
 
-1. 任何业务 CSS / 组件 / 原型只能引用 `--color-brand-*` `--color-neutral-*` `--color-{success|warning|danger|info}-*` `--space-*` `--radius-*` `--shadow-*` `--motion-*` `--text-*` `--font-*` `--z-*` `--glass-*`。
+1. 任何业务 CSS / 组件 / 原型只能引用 `--color-brand-*` `--color-neutral-*` `--color-{success|warning|danger|info}-*` `--color-xp` `--color-streak` `--color-locked` `--space-*` `--radius-*` `--shadow-*` `--shadow-btn` `--motion-*` `--easing-*` `--text-*` `--font-*` `--z-*` `--glass-*`。
 2. **禁止**引用具体色族（如 `--color-indigo-700`）；后者为 token 内部实现，因主题切换而易主。
-3. 状态色 / 中性色 / 玻璃 / 间距 / 字体 不随 `data-accent` 改变。
+3. 状态色 / 中性色 / 玻璃 / 间距 / 字体 / 游戏化色 不随 `data-accent` 改变。
 4. 仅 brand 色随 `data-accent` 切换；brand / 中性 / 玻璃 / 背景 随 `data-mode` 切换。
+5. `--shadow-btn` 的颜色值随按钮变体动态指定，但始终使用 `0 4px 0 0` 的尺寸规格。
 
 ---
 

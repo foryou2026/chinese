@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md, ../04-status-colors.md
 > **冻结状态**：未冻结
@@ -44,7 +44,7 @@
 
 ### 动画
 
-选中/取消：`scale(0 → 1)` + check 路径绘制，`var(--motion-fast)`。
+选中/取消：`scale(0 → 1)` + check 路径绘制 + 弹簧缓动 `var(--easing-spring)`，`var(--motion-fast)`。
 
 ---
 
@@ -76,6 +76,10 @@
 | 水平排列 | 2-3 项且标签短 |
 | 间距 | 选项间 `var(--space-3)` |
 
+### 动画
+
+内圈出现：`scale(0 → 1)` + `var(--easing-spring)`，弹簧回弹效果。
+
 ---
 
 ## Switch
@@ -102,7 +106,7 @@
 
 ### 动画
 
-滑块移动：`var(--motion-fast)` `var(--easing-out)`。
+滑块移动：`var(--motion-fast)` `var(--easing-spring)` 弹簧回弹。
 
 ### 行为
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light" data-accent="indigo" data-density="default">
+<html lang="zh-CN" data-mode="light" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>项目原型总览</title>
-  <link rel="stylesheet" href="../B02-experience-design/app/prototype-style/app.css">
+  <link rel="stylesheet" href="../B02-experience-design/admin/prototype-style/app.css">
   <style>
     body { min-height:100dvh; display:flex; flex-direction:column; }
     .page-wrapper { position:relative; z-index:1; flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:var(--space-6); }
@@ -22,8 +22,8 @@
     .system-card .card-icon {
       width:56px; height:56px; border-radius:var(--radius-lg);
       display:flex; align-items:center; justify-content:center;
-      font-size:var(--text-xl); font-weight:var(--weight-bold); color:var(--color-brand-on);
-      background:linear-gradient(135deg, var(--color-brand-default), var(--color-brand-400));
+      font-size:var(--text-xl); font-weight:var(--weight-bold); color:var(--btn-primary-text);
+      background:var(--btn-primary-bg);
       margin-bottom:var(--space-5);
     }
     .system-card h2 { font-size:var(--text-xl); margin-bottom:var(--space-2); }
@@ -31,17 +31,13 @@
     .system-card .badge {
       display:inline-block; font-size:var(--text-xs); padding:var(--space-1) var(--space-3);
       border-radius:var(--radius-pill); margin-top:var(--space-5);
-      background:var(--color-brand-50); color:var(--color-brand-default);
+      background:var(--glass-bg); color:var(--text-secondary);
     }
     .toolbar { margin-top:var(--space-8); }
   </style>
 </head>
 <body>
-  <div class="mesh-gradient-bg" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
+  <div class="admin-page-bg" aria-hidden="true"></div>
 
   <div class="page-wrapper">
     <div class="page-title">
@@ -50,7 +46,7 @@
     </div>
 
     <div class="system-grid">
-      <a href="admin/index.html" class="glass-card system-card">
+      <a href="admin/index.html" class="admin-card system-card">
         <div>
           <div class="card-icon">A</div>
           <h2>admin 管理系统</h2>
@@ -58,7 +54,7 @@
         </div>
         <span class="badge">邮箱 + 密码登录</span>
       </a>
-      <a href="app/index.html" class="glass-card system-card">
+      <a href="app/index.html" class="admin-card system-card">
         <div>
           <div class="card-icon">中</div>
           <h2>app 用户系统</h2>
@@ -76,14 +72,11 @@
         <button class="proto-mode-option" data-mode-val="dark" aria-label="深色" onclick="proto.switchTheme('dark');updateModeUI()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <button class="proto-mode-option" data-mode-val="auto" aria-label="跟随系统" onclick="proto.switchTheme('auto');updateModeUI()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </button>
       </div>
     </div>
   </div>
 
-  <script src="../B02-experience-design/app/prototype-style/app.js"></script>
+  <script src="../B02-experience-design/admin/prototype-style/app.js"></script>
   <script>
     if(typeof proto !== 'undefined') proto.bootstrap();
     function updateModeUI(){

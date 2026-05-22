@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md, ../04-status-colors.md
 > **冻结状态**：未冻结
@@ -11,7 +11,7 @@
 
 ## 用途与禁忌
 
-- 用途：文件/图片上传（头像、作业、admin 素材管理）
+- 用途：文件/图片上传（头像、作业）
 - 禁忌：不用于纯文本输入（用 Textarea）
 
 ## 变体
@@ -39,7 +39,7 @@
 | 属性 | 值 |
 |------|-----|
 | 边框 | `2px dashed var(--color-neutral-300)` |
-| 材质 | `var(--glass-3)` + `backdrop-filter: var(--glass-blur-sm)` |
+| 材质 | `var(--glass-bg-card)` + `backdrop-filter: var(--glass-blur-sm)` |
 | 圆角 | `var(--radius-lg)` |
 | min-height | 120px |
 | 图标 | `var(--color-neutral-400)`, 40px |
@@ -62,7 +62,7 @@
 
 ```
 ┌──────────────────────────────────┐
-│ [type-icon] [filename] [size]  [X] │  ← var(--glass-3) 背景
+│ [type-icon] [filename] [size]  [X] │  ← var(--glass-bg-card) 背景
 │             [progress bar]         │
 └──────────────────────────────────┘
 ```
@@ -83,7 +83,7 @@
 |------|-----|
 | 尺寸 | 96px 圆形 |
 | 默认 | 显示当前头像或 fallback |
-| hover | `var(--glass-3)` 遮罩 + 相机图标 |
+| hover | `var(--glass-bg-card)` 遮罩 + 相机图标 |
 | 点击 | 打开文件选择器（仅图片） |
 | 上传中 | 圆形 ProgressBar 环绕（brand 渐变） |
 

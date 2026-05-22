@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light" data-accent="indigo" data-density="default">
+<html lang="zh-CN" data-mode="light" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,16 +9,16 @@
   <meta name="feature-id" content="account-entry">
   <meta name="related-r-ids" content="R-auth-005,R-auth-006,R-auth-007,R-auth-009">
   <title>后台壳 · admin 原型</title>
-  <link rel="stylesheet" href="../../B02-experience-design/app/prototype-style/app.css">
+  <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
   <style>
     body { display:flex; flex-direction:column; min-height:100dvh; }
-    .admin-topbar { display:flex; align-items:center; height:56px; padding:0 var(--space-4); position:sticky; top:0; z-index:var(--z-sticky); background:var(--glass-bg-card); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border-bottom:1px solid var(--glass-border); }
-    .admin-topbar-logo { font-weight:var(--weight-semibold); font-size:var(--text-lg); color:var(--color-brand-default); margin-right:auto; }
+    .admin-topbar { display:flex; align-items:center; height:var(--topbar-height); padding:0 var(--space-4); position:sticky; top:0; z-index:var(--z-sticky); background:var(--glass-bg); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border-bottom:1px solid var(--glass-border); }
+    .admin-topbar-logo { font-weight:var(--weight-semibold); font-size:var(--text-md); color:var(--text-primary); margin-right:auto; }
     .admin-layout { display:flex; flex:1; position:relative; z-index:1; }
-    .admin-sidebar { width:220px; background:var(--glass-bg); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border-right:1px solid var(--glass-border); padding:var(--space-4) 0; flex-shrink:0; }
+    .admin-sidebar { width:var(--sidebar-width); background:var(--glass-bg-card); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border-right:1px solid var(--glass-border); padding:var(--space-4) 0; flex-shrink:0; }
     .sidebar-item { display:flex; align-items:center; gap:var(--space-2); height:40px; padding:0 var(--space-4); font-size:var(--text-sm); color:var(--text-secondary); cursor:pointer; transition:background var(--motion-fast); }
     .sidebar-item:hover { background:var(--glass-bg); }
-    .sidebar-item.active { background:var(--color-brand-50); color:var(--color-brand-default); font-weight:var(--weight-medium); }
+    .sidebar-item.active { background:var(--glass-bg-card); color:var(--text-primary); font-weight:var(--weight-medium); }
     .admin-content { flex:1; padding:var(--space-6); }
     .dashboard-placeholder { padding:var(--space-8); text-align:center; }
     .dashboard-placeholder h2 { font-size:var(--text-xl); margin-bottom:var(--space-2); }
@@ -26,10 +26,10 @@
     .avatar-area { position:relative; }
     .avatar-btn { display:flex; align-items:center; gap:var(--space-2); background:none; border:none; cursor:pointer; padding:var(--space-1) var(--space-2); border-radius:var(--radius-md); transition:background var(--motion-fast); }
     .avatar-btn:hover { background:var(--glass-bg); }
-    .avatar-circle { width:32px; height:32px; border-radius:var(--radius-pill); background:var(--color-brand-50); color:var(--color-brand-default); display:flex; align-items:center; justify-content:center; font-size:var(--text-sm); font-weight:var(--weight-semibold); }
+    .avatar-circle { width:32px; height:32px; border-radius:var(--radius-pill); background:var(--color-neutral-200); color:var(--text-primary); display:flex; align-items:center; justify-content:center; font-size:var(--text-sm); font-weight:var(--weight-semibold); }
     .avatar-name { font-size:var(--text-sm); color:var(--text-primary); }
     .avatar-chevron { font-size:var(--text-xs); color:var(--text-muted); transition:transform var(--motion-fast); }
-    .avatar-menu { position:absolute; right:0; top:calc(100% + var(--space-1)); min-width:180px; background:var(--glass-bg-elevated); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border:1px solid var(--glass-border); border-radius:var(--radius-lg); box-shadow:var(--shadow-lg); padding:var(--space-1) 0; display:none; z-index:var(--z-dropdown); }
+    .avatar-menu { position:absolute; right:0; top:calc(100% + var(--space-1)); min-width:180px; background:var(--glass-bg-elevated); -webkit-backdrop-filter:var(--glass-blur-lg); backdrop-filter:var(--glass-blur-lg); border:1px solid var(--glass-border); border-radius:var(--radius-lg); box-shadow:inset 0 1px 0 0 var(--glass-inset), 0 6px 20px var(--glass-shadow-elevated); padding:var(--space-1) 0; display:none; z-index:var(--z-dropdown); }
     .avatar-menu.is-open { display:block; }
     .avatar-menu-item { display:flex; align-items:center; gap:var(--space-2); height:40px; padding:0 var(--space-3); font-size:var(--text-sm); color:var(--text-primary); cursor:pointer; transition:background var(--motion-fast); border:none; background:none; width:100%; text-align:left; }
     .avatar-menu-item:hover { background:var(--glass-bg); }
@@ -46,12 +46,7 @@
   </style>
 </head>
 <body>
-  <div class="mesh-gradient-bg" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
+  <div class="admin-page-bg" aria-hidden="true"></div>
   <header class="admin-topbar">
     <span class="admin-topbar-logo">管理后台</span>
     <div style="display:flex;align-items:center;gap:var(--space-2);margin-right:var(--space-4)">
@@ -83,7 +78,7 @@
     </aside>
 
     <main class="admin-content">
-      <div class="dashboard-placeholder glass-card">
+      <div class="dashboard-placeholder admin-card">
         <h2>Dashboard</h2>
         <p>此为后台壳页面，用于演示登录态下的修改密码、退出登录、会话过期功能</p>
         <div style="margin-top:var(--space-6);display:flex;gap:var(--space-3);justify-content:center;flex-wrap:wrap">
@@ -95,7 +90,7 @@
     </main>
   </div>
 
-  <script src="../../B02-experience-design/app/prototype-style/app.js"></script>
+  <script src="../../B02-experience-design/admin/prototype-style/app.js"></script>
   <script>
     if(typeof proto !== 'undefined') proto.bootstrap();
 

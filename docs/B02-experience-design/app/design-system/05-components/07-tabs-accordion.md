@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md
 > **冻结状态**：未冻结
@@ -36,7 +36,7 @@
 | 状态 | 文字 | 底线 | 背景 |
 |------|------|------|------|
 | 默认 | `var(--color-neutral-500)` | 无 | transparent |
-| hover | `var(--color-neutral-700)` | 无 | `var(--glass-3)` |
+| hover | `var(--color-neutral-700)` | 无 | `var(--glass-bg-card)` |
 | focus | — | — | `var(--focus-ring)` |
 | active（当前） | `var(--color-brand-default)` | `2px var(--color-brand-default)` | transparent |
 | disabled | `var(--color-neutral-400)` | 无 | transparent |
@@ -46,7 +46,7 @@
 | 状态 | 文字 | 背景 |
 |------|------|------|
 | 默认 | `var(--color-neutral-500)` | transparent |
-| hover | `var(--color-neutral-700)` | `var(--glass-3)` |
+| hover | `var(--color-neutral-700)` | `var(--glass-bg-card)` |
 | active（当前） | `var(--color-brand-on)` | `var(--color-brand-default)` |
 | disabled | `var(--color-neutral-400)` | transparent |
 
@@ -54,9 +54,9 @@
 
 | 属性 | 值 |
 |------|-----|
-| 容器背景 | `var(--glass-3)` |
+| 容器背景 | `var(--glass-bg-card)` |
 | 容器圆角 | `var(--radius-md)` |
-| 滑块材质 | `var(--glass-2)` + `backdrop-filter: var(--glass-blur-sm)` + `var(--glass-border)` |
+| 滑块材质 | `var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-sm)` + `1px solid var(--glass-border)` |
 | 当前项文字 | `var(--color-neutral-800)` |
 | 非当前项文字 | `var(--color-neutral-500)` |
 | 滑块过渡 | `var(--motion-base)` `var(--easing-out)` |
@@ -91,7 +91,7 @@
 
 | 属性 | 值 |
 |------|-----|
-| 容器 | `.glass` 毛玻璃面板（可选），或嵌入已有面板（透明） |
+| 容器 | `.glass` 毛玻璃面板（`var(--glass-bg)` + `backdrop-filter: var(--glass-blur)`），或嵌入已有面板（透明） |
 | 分隔线 | `1px solid var(--color-neutral-200)` |
 
 ### 状态
@@ -99,7 +99,7 @@
 | 状态 | 标题区背景 | 箭头 | 内容 |
 |------|-----------|------|------|
 | 默认（折叠） | transparent | 右箭头 → | 隐藏 |
-| hover | `var(--glass-3)` | — | — |
+| hover | `var(--glass-bg-card)` | — | — |
 | focus | `var(--focus-ring)` | — | — |
 | active（展开） | transparent | 下箭头 ↓ | 显示 |
 | disabled | transparent | `var(--color-neutral-300)` | — |

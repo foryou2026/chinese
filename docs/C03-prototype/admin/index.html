@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light" data-accent="indigo" data-density="default">
+<html lang="zh-CN" data-mode="light" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>admin 系统 · 模块导航</title>
-  <link rel="stylesheet" href="../../B02-experience-design/app/prototype-style/app.css">
+  <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
   <style>
     body { min-height:100dvh; display:flex; flex-direction:column; }
     .page-wrapper { position:relative; z-index:1; flex:1; padding:var(--space-6); max-width:960px; margin:0 auto; width:100%; }
@@ -31,12 +31,7 @@
   </style>
 </head>
 <body>
-  <div class="mesh-gradient-bg" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
+  <div class="admin-page-bg" aria-hidden="true"></div>
   <div class="page-wrapper">
     <a href="../index.html" class="back-link">← 项目总览</a>
 
@@ -46,7 +41,7 @@
     </div>
 
     <div class="module-grid">
-      <a href="auth/index.html" class="glass-card module-card">
+      <a href="auth/index.html" class="admin-card module-card">
         <div class="module-icon">🔐</div>
         <h3>auth 账号认证</h3>
         <p>登录认证、密码管理、会话管理等账号安全相关功能</p>
@@ -65,7 +60,7 @@
     </div>
   </div>
 
-  <script src="../../B02-experience-design/app/prototype-style/app.js"></script>
+  <script src="../../B02-experience-design/admin/prototype-style/app.js"></script>
   <script>
     if(typeof proto !== 'undefined') proto.bootstrap();
     function updateModeUI(){

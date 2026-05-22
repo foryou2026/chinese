@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md, ../04-status-colors.md
 > **冻结状态**：未冻结
@@ -11,15 +11,15 @@
 
 ## 用途与禁忌
 
-- 用途：展示结构化列表数据（admin 为主，app 少量使用如学习记录/排行榜）
+- 用途：展示结构化列表数据（学习记录、排行榜、词汇表）
 - 禁忌：不用于展示非结构化内容（用 Card List）；移动端优先用卡片列表替代
 
 ## 变体
 
 | 变体 | 说明 | 示例语境 |
 |------|------|---------|
-| default | 标准表格 | admin 用户列表、课程管理 |
-| compact | 紧凑行高 40px | admin 日志列表 |
+| default | 标准表格 | 学习记录、词汇列表 |
+| compact | 紧凑行高 40px | 排行榜 |
 | striped | 斑马纹交替背景 | 长列表提升可读性 |
 
 ## 尺寸
@@ -35,10 +35,11 @@
 
 | 属性 | 值 |
 |------|-----|
-| 整体容器 | `.glass` — 毛玻璃面板包裹 |
+| 整体容器 | `.glass` — `var(--glass-bg)` + `backdrop-filter: var(--glass-blur)` 毛玻璃面板包裹 |
+| 边框 | `1px solid var(--glass-border)` |
+| 内层高光 | `inset 0 1px 0 0 var(--glass-inset)` |
 | 圆角 | `var(--radius-lg)` |
-| 边框 | `var(--glass-border)` |
-| 阴影 | `var(--glass-shadow)` |
+| 阴影 | `0 6px 18px var(--glass-shadow)` |
 | 数字对齐 | `font-variant-numeric: tabular-nums` |
 
 ## 状态
@@ -46,11 +47,11 @@
 | 状态 | 表现 |
 |------|------|
 | 默认 | 毛玻璃面板背景，底部 `1px solid var(--color-neutral-200)` 分隔线 |
-| hover（行） | `var(--glass-3)` 背景 |
+| hover（行） | `var(--glass-bg-card)` 背景 |
 | focus（行） | `var(--focus-ring)` 围绕整行 |
 | active（行选中） | `var(--color-brand-50)` 背景 + 左侧 3px `var(--color-brand-default)` 指示器 |
 | disabled（行） | `opacity: 0.45`, `pointer-events: none` |
-| loading | Skeleton 行（3-5 行占位，`.glass-3` 背景 shimmer） |
+| loading | Skeleton 行（3-5 行占位，`var(--glass-bg-card)` 背景 shimmer） |
 | empty | 空态组件居中（见 09-loading.md Empty） |
 | error | Alert Banner（danger 变体）替代表格内容 |
 
@@ -58,7 +59,7 @@
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `var(--glass-3)` |
+| 背景 | `var(--glass-bg-card)` |
 | 字重 | `var(--weight-medium)` |
 | 字体 | `var(--font-display)` |
 | 颜色 | `var(--color-neutral-500)` |
@@ -74,7 +75,7 @@
 
 ## 筛选
 
-- 表头列筛选图标（漏斗），点击弹出 Popover（`.glass-strong`）
+- 表头列筛选图标（漏斗），点击弹出 Popover（`var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-lg)`）
 - 激活筛选时图标变为 `var(--color-brand-default)`
 - 筛选器内支持 Input / Select / DatePicker
 

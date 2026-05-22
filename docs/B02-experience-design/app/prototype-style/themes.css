@@ -1,5 +1,5 @@
 /* themes.css — 5 套 accent 覆盖 + 暗色模式 + auto 跟随系统 */
-/* 风格：Prismatic Glass */
+/* 风格：Quest Glass — 多邻国游戏化 + 毛玻璃增强 */
 
 /* ===================== 1. accents ===================== */
 
@@ -76,22 +76,22 @@
 /* ===================== 2. dark mode ===================== */
 
 [data-mode="dark"] {
-  --page-bg: #09090B;
+  --page-bg: #000000;
 
   --mesh-color-1: #7C3AED;   /* violet-600 */
   --mesh-color-2: #0E7490;   /* cyan-700 */
   --mesh-color-3: #BE185D;   /* pink-700 */
-  --mesh-opacity-1: 0.10;
-  --mesh-opacity-2: 0.06;
-  --mesh-opacity-3: 0.08;
+  --mesh-opacity-1: 0.14;
+  --mesh-opacity-2: 0.08;
+  --mesh-opacity-3: 0.10;
 
-  --glass-bg:          rgba(255, 255, 255, 0.03);
-  --glass-bg-card:     rgba(255, 255, 255, 0.05);
-  --glass-bg-elevated: rgba(255, 255, 255, 0.07);
-  --glass-border:      rgba(255, 255, 255, 0.08);
-  --glass-inset:       rgba(255, 255, 255, 0.05);
-  --glass-shadow:      rgba(0, 0, 0, 0.40);
-  --glass-shadow-elevated: rgba(0, 0, 0, 0.60);
+  --glass-bg:          rgba(255, 255, 255, 0.04);
+  --glass-bg-card:     rgba(255, 255, 255, 0.06);
+  --glass-bg-elevated: rgba(255, 255, 255, 0.09);
+  --glass-border:      rgba(255, 255, 255, 0.10);
+  --glass-inset:       rgba(255, 255, 255, 0.06);
+  --glass-shadow:      rgba(0, 0, 0, 0.50);
+  --glass-shadow-elevated: rgba(0, 0, 0, 0.70);
 
   --input-focus-glow: rgba(99, 102, 241, 0.25);
 
@@ -99,12 +99,12 @@
   --text-secondary: #A1A1AA;
   --text-muted:     #71717A;
 
-  --color-neutral-0:   #09090B;
-  --color-neutral-50:  #18181B;
-  --color-neutral-100: #27272A;
-  --color-neutral-200: #3F3F46;
-  --color-neutral-300: #52525B;
-  --color-neutral-400: #71717A;
+  --color-neutral-0:   #000000;
+  --color-neutral-50:  #0C0C0E;
+  --color-neutral-100: #1A1A1C;
+  --color-neutral-200: #2C2C2E;
+  --color-neutral-300: #3A3A3C;
+  --color-neutral-400: #636366;
   --color-neutral-500: #A1A1AA;
   --color-neutral-600: #D4D4D8;
   --color-neutral-700: #E4E4E7;
@@ -112,16 +112,16 @@
   --color-neutral-900: #FAFAFA;
   --color-neutral-950: #FFFFFF;
 
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.32);
-  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.40);
-  --shadow-lg: 0 14px 38px rgba(0, 0, 0, 0.48);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.50);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.60);
+  --shadow-lg: 0 14px 38px rgba(0, 0, 0, 0.70);
 
   --color-brand-default: var(--color-brand-400);
   --color-brand-hover:   var(--color-brand-300);
   --color-brand-active:  var(--color-brand-500);
   --color-brand-ring:    rgba(129, 140, 248, 0.28);
 
-  --border-color: rgba(255, 255, 255, 0.08);
+  --border-color: rgba(255, 255, 255, 0.10);
   --focus-ring: 0 0 0 4px var(--color-brand-ring);
 
   --color-bg-primary:    var(--glass-bg-card);
@@ -160,7 +160,7 @@
 /* ===================== 3. auto = follow system ===================== */
 @media (prefers-color-scheme: dark) {
   [data-mode="auto"] {
-    --page-bg: #09090B;
+    --page-bg: #111827;
     --mesh-color-1: #7C3AED;
     --mesh-color-2: #0E7490;
     --mesh-color-3: #BE185D;

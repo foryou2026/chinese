@@ -1,0 +1,79 @@
+/* 07-theme-switcher.css — admin 毛玻璃模式切换器 */
+
+.proto-mode-switcher {
+  display: inline-flex;
+  gap: 2px;
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 2px;
+}
+
+.proto-mode-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition-all);
+}
+
+.proto-mode-option svg {
+  width: 16px;
+  height: 16px;
+}
+
+.proto-mode-option:hover {
+  color: var(--text-primary);
+  background: var(--glass-bg-card);
+}
+
+.proto-mode-option[aria-checked="true"] {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+/* ---- 密度切换器 ---- */
+.proto-density-switcher {
+  display: inline-flex;
+  gap: 2px;
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 2px;
+}
+
+.proto-density-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-2);
+  height: 28px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+  transition: var(--transition-all);
+}
+
+.proto-density-option:hover {
+  color: var(--text-primary);
+  background: var(--glass-bg-card);
+}
+
+.proto-density-option[aria-checked="true"] {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}

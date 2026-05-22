@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-mode="light" data-accent="indigo" data-density="default">
+<html lang="zh-CN" data-mode="light" data-density="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
   <meta name="feature-id" content="account-entry">
   <meta name="related-r-ids" content="R-auth-003,R-auth-010">
   <title>忘记密码 · admin 原型</title>
-  <link rel="stylesheet" href="../../B02-experience-design/app/prototype-style/app.css">
+  <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
   <style>
     body { display:flex; flex-direction:column; min-height:100dvh; }
     .auth-container { position:relative; z-index:1; flex:1; display:flex; align-items:center; justify-content:center; padding:var(--space-4); }
@@ -29,26 +29,16 @@
     .step.active { background:var(--color-brand-default); color:var(--color-brand-on); }
     .step.done { background:var(--color-success-100); color:var(--color-success-700); }
     .step.pending { background:var(--glass-bg); color:var(--text-muted); border:1px solid var(--glass-border); }
-    .step-line { flex:1; height:2px; background:var(--glass-border); }
+    .step-line { flex:1; height:2px; background:var(--border-color); }
     .step-line.done { background:var(--color-success-700); }
-    .scenario-dropdown { position:fixed; z-index:var(--z-dropdown); background:var(--glass-bg-elevated); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border:1px solid var(--glass-border); border-radius:var(--radius-md); box-shadow:var(--shadow-lg); padding:var(--space-1) 0; min-width:220px; display:none; }
-    .scenario-dropdown.is-open { display:block; }
-    .scenario-item { padding:var(--space-2) var(--space-4); font-size:var(--text-sm); cursor:pointer; transition:background var(--motion-fast); color:var(--text-primary); }
-    .scenario-item:hover { background:var(--glass-bg); }
-    .scenario-item small { display:block; font-size:var(--text-xs); color:var(--text-muted); margin-top:2px; }
   </style>
 </head>
 <body>
-  <div class="mesh-gradient-bg" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
+  <div class="admin-page-bg" aria-hidden="true"></div>
   <div id="proto-nav-bar"></div>
 
   <div class="auth-container">
-    <div class="auth-card glass-card">
+    <div class="auth-card admin-card">
       <a href="P-admin-auth-001.html" class="back-link">← 返回登录</a>
 
       <!-- 步骤 1：输入邮箱发送验证码 -->
@@ -135,7 +125,7 @@
     </div>
   </div>
 
-  <script src="../../B02-experience-design/app/prototype-style/app.js"></script>
+  <script src="../../B02-experience-design/admin/prototype-style/app.js"></script>
   <script>
     fetch('_shared/proto-nav.html')
       .then(function(r){return r.text()})

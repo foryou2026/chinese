@@ -1,0 +1,206 @@
+/* 04-overlays.css — admin 毛玻璃弹层 Modal/Drawer/Dropdown/Tooltip */
+
+/* ---- Backdrop ---- */
+.proto-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.40);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  z-index: var(--z-modal);
+  opacity: 0;
+  transition: opacity var(--motion-base);
+}
+.proto-backdrop[data-open] {
+  opacity: 1;
+}
+
+/* ---- Modal ---- */
+.proto-modal {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0.96);
+  z-index: calc(var(--z-modal) + 1);
+  background: var(--glass-bg-elevated);
+  -webkit-backdrop-filter: var(--glass-blur-lg);
+          backdrop-filter: var(--glass-blur-lg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-inset),
+    0 10px 30px var(--glass-shadow-elevated);
+  width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity var(--motion-base), transform var(--motion-base);
+}
+.proto-modal[data-open] {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.proto-modal-sm { max-width: 400px; }
+.proto-modal-md { max-width: 520px; }
+.proto-modal-lg { max-width: 720px; }
+
+.proto-modal-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--glass-border);
+  flex-shrink: 0;
+}
+.proto-modal-header h3 {
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
+  margin: 0;
+}
+
+.proto-modal-body {
+  padding: var(--space-5);
+  overflow-y: auto;
+  flex: 1;
+}
+
+.proto-modal-footer {
+  display: flex; justify-content: flex-end; gap: var(--space-2);
+  padding: var(--space-4) var(--space-5);
+  border-top: 1px solid var(--glass-border);
+  flex-shrink: 0;
+}
+
+/* ---- Drawer ---- */
+.proto-drawer {
+  position: fixed;
+  z-index: calc(var(--z-modal) + 1);
+  background: var(--glass-bg-elevated);
+  -webkit-backdrop-filter: var(--glass-blur-lg);
+          backdrop-filter: var(--glass-blur-lg);
+  border: 1px solid var(--glass-border);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-inset),
+    0 8px 24px var(--glass-shadow-elevated);
+  transition: transform var(--motion-base);
+}
+
+.proto-drawer-right {
+  top: 0; right: 0; bottom: 0;
+  width: 360px; max-width: 90vw;
+  transform: translateX(100%);
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+}
+.proto-drawer-right[data-open] { transform: translateX(0); }
+
+.proto-drawer-left {
+  top: 0; left: 0; bottom: 0;
+  width: 280px; max-width: 85vw;
+  transform: translateX(-100%);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+}
+.proto-drawer-left[data-open] { transform: translateX(0); }
+
+.proto-drawer-bottom {
+  left: 0; right: 0; bottom: 0;
+  max-height: 90vh;
+  transform: translateY(100%);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+.proto-drawer-bottom[data-open] { transform: translateY(0); }
+
+.proto-drawer-handle {
+  width: 32px; height: 4px;
+  background: var(--border-color);
+  border-radius: var(--radius-pill);
+  margin: var(--space-2) auto var(--space-4);
+}
+
+/* ---- Dropdown ---- */
+.proto-dropdown {
+  background: var(--glass-bg-elevated);
+  -webkit-backdrop-filter: var(--glass-blur-lg);
+          backdrop-filter: var(--glass-blur-lg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-inset),
+    0 6px 20px var(--glass-shadow-elevated);
+  padding: var(--space-1) 0;
+  z-index: var(--z-dropdown);
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.1s ease, transform 0.1s ease;
+}
+.proto-dropdown[data-open] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.proto-dropdown-item {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: background 0.1s ease;
+  border-radius: var(--radius-sm);
+  margin: 0 var(--space-1);
+}
+.proto-dropdown-item:hover { background: var(--glass-bg); }
+.proto-dropdown-item-destructive { color: var(--color-danger-500); }
+.proto-dropdown-item-destructive:hover { background: var(--color-danger-50); }
+
+.proto-dropdown-separator {
+  height: 1px;
+  background: var(--glass-border);
+  margin: var(--space-1) 0;
+}
+
+/* ---- Tooltip ---- */
+.proto-tooltip {
+  position: absolute;
+  background: rgba(17, 24, 39, 0.92);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  color: #F9FAFB;
+  font-size: var(--text-xs);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  z-index: var(--z-tooltip);
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+.proto-tooltip[data-open] { opacity: 1; }
+
+/* ---- 场景下拉（原型专用） ---- */
+.scenario-dropdown {
+  position: fixed;
+  z-index: var(--z-dropdown);
+  background: var(--glass-bg-elevated);
+  -webkit-backdrop-filter: var(--glass-blur-lg);
+          backdrop-filter: var(--glass-blur-lg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-inset),
+    0 6px 20px var(--glass-shadow-elevated);
+  padding: var(--space-1) 0;
+  min-width: 200px;
+  display: none;
+}
+.scenario-dropdown.is-open { display: block; }
+.scenario-item {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: background 0.1s ease;
+  color: var(--text-primary);
+}
+.scenario-item:hover { background: var(--glass-bg); }
+.scenario-item small {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-top: 2px;
+}

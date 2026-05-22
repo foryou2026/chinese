@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md
 > **冻结状态**：未冻结
@@ -27,7 +27,7 @@
 
 | 属性 | 值 |
 |------|-----|
-| 容器 | `.glass` 毛玻璃面板 + `backdrop-filter: var(--glass-blur-sm)` |
+| 容器 | `.glass` 毛玻璃面板 — `var(--glass-bg)` + `backdrop-filter: var(--glass-blur-sm)` |
 | 圆角 | `var(--radius-lg)` |
 
 ### Anatomy
@@ -72,7 +72,7 @@
 
 | 属性 | Light | Dark |
 |------|-------|------|
-| 背景 | `var(--glass-3)` (毛玻璃白半透) | `var(--glass-3)` (毛玻璃暗半透) |
+| 背景 | `var(--glass-bg-card)` (毛玻璃白半透) | `var(--glass-bg-card)` (毛玻璃暗半透) |
 | shimmer | 左→右柔白渐变扫过 | 左→右冷白渐变扫过 |
 | 动画 | 1.5s infinite | 1.5s infinite |
 | 圆角 | 跟随目标组件圆角 | — |

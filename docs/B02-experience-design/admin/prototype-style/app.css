@@ -1,0 +1,11 @@
+/* app.css — admin 汇总入口 */
+
+@import "./tokens.css";
+@import "./themes.css";
+@import "./parts/01-base.css";
+@import "./parts/02-buttons.css";
+@import "./parts/03-inputs.css";
+@import "./parts/04-overlays.css";
+@import "./parts/05-feedback.css";
+@import "./parts/06-loading.css";
+@import "./parts/07-theme-switcher.css";

@@ -1,0 +1,235 @@
+/* tokens.css — admin 管理后台设计 Token */
+/* 风格：Minimal Ink + Frost — 飞书/Notion 极简专业 + 克制毛玻璃 */
+/* 默认 = data-mode="light" + data-density="default" */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root,
+[data-mode="light"] {
+  /* —— 字体 ———————————————————————————— */
+  --font-sans:    'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+
+  /* 字号 */
+  --text-xs:      12px;
+  --text-sm:      13px;
+  --text-base:    14px;
+  --text-md:      16px;
+  --text-lg:      20px;
+  --text-xl:      24px;
+  --text-2xl:     30px;
+  --text-display: 36px;
+
+  /* 行高 */
+  --lh-xs:      18px;
+  --lh-sm:      20px;
+  --lh-base:    22px;
+  --lh-md:      26px;
+  --lh-lg:      30px;
+  --lh-xl:      34px;
+  --lh-2xl:     40px;
+  --lh-display: 46px;
+
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --leading-tight:  1.25;
+  --leading-normal: 1.5;
+  --leading-loose:  1.75;
+
+  /* —— 间距（4px 基线） ———————————————— */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-7:  32px;
+  --space-8:  40px;
+  --space-9:  48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 96px;
+
+  /* —— 圆角 ————————————————————————————— */
+  --radius-none: 0;
+  --radius-xs:   2px;
+  --radius-sm:   6px;
+  --radius-md:   8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --radius-pill: 9999px;
+
+  /* —— 中性灰阶（gray 系） ——————————— */
+  --color-neutral-0:   #FFFFFF;
+  --color-neutral-50:  #F9FAFB;
+  --color-neutral-100: #F3F4F6;
+  --color-neutral-200: #E5E7EB;
+  --color-neutral-300: #D1D5DB;
+  --color-neutral-400: #9CA3AF;
+  --color-neutral-500: #6B7280;
+  --color-neutral-600: #4B5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1F2937;
+  --color-neutral-900: #111827;
+  --color-neutral-950: #030712;
+
+  /* —— 页面背景（微妙渐变，让毛玻璃可感知） ————— */
+  --page-bg: #F3F4F6;
+
+  /* —— 表面色（实色回退 / 兼容） ——————————— */
+  --surface-page:     var(--page-bg);
+  --surface-primary:  #F9FAFB;
+  --surface-elevated: #FFFFFF;
+  --surface-hover:    #F3F4F6;
+  --surface-active:   #E5E7EB;
+
+  /* —— 毛玻璃（Frost — 克制、专业、低饱和） ————— */
+  --glass-bg:          rgba(255, 255, 255, 0.72);
+  --glass-bg-card:     rgba(255, 255, 255, 0.78);
+  --glass-bg-elevated: rgba(255, 255, 255, 0.88);
+  --glass-border:      rgba(229, 231, 235, 0.80);
+  --glass-inset:       rgba(255, 255, 255, 0.70);
+  --glass-shadow:      rgba(0, 0, 0, 0.04);
+  --glass-shadow-elevated: rgba(0, 0, 0, 0.08);
+  --glass-blur:        blur(20px) saturate(1.4);
+  --glass-blur-lg:     blur(28px) saturate(1.5);
+  --glass-blur-sm:     blur(12px) saturate(1.2);
+
+  /* —— 文字色 ——————————————————————————— */
+  --text-primary:   #111827;
+  --text-secondary: #6B7280;
+  --text-muted:     #9CA3AF;
+
+  /* —— 边框 ————————————————————————————— */
+  --border-color:   #E5E7EB;
+  --border-hover:   #D1D5DB;
+
+  /* —— Primary 按钮（纯黑） ——————————— */
+  --btn-primary-bg:      #18181B;
+  --btn-primary-text:    #FAFAFA;
+  --btn-primary-hover:   #27272A;
+  --btn-primary-active:  #09090B;
+
+  /* —— Secondary 按钮 ——————————————— */
+  --btn-secondary-bg:      rgba(255, 255, 255, 0.80);
+  --btn-secondary-text:    #374151;
+  --btn-secondary-border:  rgba(229, 231, 235, 0.80);
+  --btn-secondary-hover:   rgba(255, 255, 255, 0.92);
+
+  /* —— Ghost 按钮 ——————————————————— */
+  --btn-ghost-text:    #6B7280;
+  --btn-ghost-hover:   rgba(243, 244, 246, 0.80);
+
+  /* —— 链接/焦点色（蓝） ——————————————— */
+  --color-accent:    #3B82F6;
+  --color-accent-hover: #2563EB;
+  --color-accent-50: #EFF6FF;
+  --color-accent-ring: rgba(59, 130, 246, 0.30);
+
+  /* —— 状态色 ——————————————————————————— */
+  --color-success-50:  #ECFDF5;
+  --color-success-100: #D1FAE5;
+  --color-success-500: #059669;
+  --color-success-700: #047857;
+  --color-danger-50:  #FEF2F2;
+  --color-danger-100: #FEE2E2;
+  --color-danger-500: #DC2626;
+  --color-danger-700: #B91C1C;
+  --color-warning-50:  #FFFBEB;
+  --color-warning-100: #FEF3C7;
+  --color-warning-500: #D97706;
+  --color-warning-700: #B45309;
+  --color-info-50:  #EFF6FF;
+  --color-info-100: #DBEAFE;
+  --color-info-500: #2563EB;
+  --color-info-700: #1D4ED8;
+
+  /* —— 阴影 ————————————————————————————— */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* —— 焦点环 ——————————————————————————— */
+  --focus-ring: 0 0 0 3px var(--color-accent-ring);
+  --input-focus-glow: var(--color-accent-ring);
+
+  /* —— 动效 ————————————————————————————— */
+  --motion-fast: 100ms ease;
+  --motion-base: 200ms ease-out;
+  --motion-slow: 200ms ease-out;
+  --easing-out:  ease-out;
+  --transition-all: all 150ms ease;
+
+  /* —— 兼容别名 ————————— */
+  --color-bg-primary:    var(--glass-bg-card);
+  --color-bg-secondary:  var(--page-bg);
+  --color-text-primary:  var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-muted);
+  --color-border:        var(--glass-border);
+  --color-error:         var(--color-danger-500);
+  --color-error-light:   var(--color-danger-50);
+  --color-success:       var(--color-success-500);
+  --color-success-light: var(--color-success-50);
+  --color-warning:       var(--color-warning-500);
+  --color-warning-light: var(--color-warning-50);
+  --color-info:          var(--color-info-500);
+  --color-info-light:    var(--color-info-50);
+  --color-brand-default: var(--btn-primary-bg);
+  --color-brand-50:      var(--color-accent-50);
+  --color-brand-on:      var(--btn-primary-text);
+  --color-brand-ring:    var(--color-accent-ring);
+  --font-semibold:       var(--weight-semibold);
+  --font-medium:         var(--weight-medium);
+  --font-bold:           var(--weight-bold);
+  --motion-normal:       var(--motion-base);
+  --ease-default:        var(--easing-out);
+  --radius-full:         var(--radius-pill);
+  --z-fixed:             var(--z-sticky);
+
+  /* —— 层级 ————————————————————————————— */
+  --z-base:     0;
+  --z-sticky:   100;
+  --z-dropdown: 1000;
+  --z-popover:  1100;
+  --z-modal:    1200;
+  --z-toast:    1300;
+  --z-tooltip:  1400;
+
+  /* —— 断点 ————————————————————————————— */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1536px;
+
+  /* —— 容器 ————————————————————————————— */
+  --container-max: none;
+  --container-pad: 24px;
+
+  /* —— 侧边栏 ——————————————————————————— */
+  --sidebar-width: 240px;
+  --sidebar-collapsed: 48px;
+  --topbar-height: 48px;
+}
+
+/* —— 容器两侧 padding 响应式阶梯 ——————————————— */
+@media (min-width: 768px)  { :root { --container-pad: 24px; } }
+@media (min-width: 1024px) { :root { --container-pad: 32px; } }
+@media (min-width: 1280px) { :root { --container-pad: 40px; } }
+@media (min-width: 1536px) { :root { --container-pad: 48px; } }
+
+/* ===================== 密度切换 ===================== */
+[data-density="compact"] {
+  --space-3: 8px;  --space-4: 12px;  --space-5: 16px;  --space-6: 20px;
+  --text-base: 13px; --text-md: 14px;
+  --container-pad: 16px;
+}
+
+/* tabular-nums 工具 */
+.tabular { font-variant-numeric: tabular-nums; }

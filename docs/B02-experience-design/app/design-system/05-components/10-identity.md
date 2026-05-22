@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md
 > **冻结状态**：未冻结
@@ -40,8 +40,8 @@
 | 状态 | 表现 |
 |------|------|
 | 默认 | 显示图片或 fallback |
-| hover | 可选，叠加 `var(--glass-3)` 遮罩 + 编辑图标 |
-| loading | Skeleton 圆形（`var(--glass-3)` + shimmer） |
+| hover | 可选，叠加 `var(--glass-bg-card)` 遮罩 + 编辑图标 |
+| loading | Skeleton 圆形（`var(--glass-bg-card)` + shimmer） |
 
 ### Avatar Group
 
@@ -82,7 +82,7 @@
 |------|------|
 | 默认 | 显示 |
 | 0 值 | 隐藏（不显示 "0"） |
-| 进入 | `scale(0→1)` `var(--motion-fast)` `var(--easing-out)` |
+| 进入 | `scale(0→1)` `var(--motion-fast)` `var(--easing-spring)` |
 | 退出 | `scale(1→0)` `var(--motion-fast)` |
 
 ---
@@ -147,7 +147,7 @@
 | 状态 | 背景 | 文字 | 边框 |
 |------|------|------|------|
 | 默认（未选） | transparent | `var(--color-neutral-500)` | `1px solid var(--color-neutral-200)` |
-| hover（未选） | `var(--glass-3)` | `var(--color-neutral-700)` | `1px solid var(--color-neutral-300)` |
+| hover（未选） | `var(--glass-bg-card)` | `var(--color-neutral-700)` | `1px solid var(--color-neutral-300)` |
 | 选中 | `var(--color-brand-50)` | `var(--color-brand-default)` | `1px solid var(--color-brand-300)` |
 | hover（选中） | `var(--color-brand-100)` | `var(--color-brand-hover)` | `1px solid var(--color-brand-400)` |
 | focus | `var(--focus-ring)` | — | — |

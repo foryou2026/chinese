@@ -2,7 +2,7 @@
 
 > **阶段**：B02-XS 体验设计
 > **角色**：设计系统工程师
-> **归属**：按系统（app + admin 共享）
+> **归属**：app（用户学习系统专属）
 > **系统**：app
 > **上游依赖**：../01-tokens.md
 > **冻结状态**：未冻结
@@ -39,12 +39,12 @@
 
 | 属性 | 值 |
 |------|-----|
-| 背景 | `var(--glass-2)` |
+| 背景 | `var(--glass-bg-elevated)` |
 | 模糊 | `backdrop-filter: var(--glass-blur-lg)` |
-| 边框 | `var(--glass-border-strong)` |
-| 顶部高光 | `::before` — `inset 0 1px 0 rgba(255,255,255,.90)` |
+| 边框 | `1px solid var(--glass-border)` |
+| 顶部高光 | `::before` — `inset 0 1px 0 0 var(--glass-inset)` |
 | 圆角 | `var(--radius-xl)`（移动端 fullscreen 时顶部圆角，底部 0） |
-| 阴影 | `var(--glass-shadow-lg)` |
+| 阴影 | `0 8px 40px -4px var(--glass-shadow-elevated)` |
 | z-index | `var(--z-modal)` |
 | body 滚动 | 锁定 |
 
@@ -55,7 +55,7 @@
 | 默认 | 居中显示，遮罩 + 毛玻璃面板 |
 | 进入 | 从 `scale(0.95) opacity(0)` → `scale(1) opacity(1)`，`var(--motion-slow)` `var(--easing-out)` |
 | 退出 | 反向，`var(--motion-fast)` |
-| loading | 内容区 Skeleton（`.glass-3` shimmer），按钮 disabled |
+| loading | 内容区 Skeleton（`var(--glass-bg-card)` shimmer），按钮 disabled |
 | error | 内容区显示 Alert（danger 变体） |
 
 ### Anatomy
@@ -63,14 +63,14 @@
 ```
 [Backdrop 深空黑半透 + blur]
 ┌───────────────────────┐
-│ ░░ 1px inset 高光 ░░░ │
-│ [Title]         [X]   │ ← 标题栏 56px，var(--font-display)
+│ ░░ 1px inset 高光 ░░░ │  ← var(--glass-inset)
+│ [Title]         [X]   │  ← 标题栏 56px，var(--font-display)
 ├───────────────────────┤
 │                       │
-│    [Content]          │ ← 可滚动，max-height 70vh
+│    [Content]          │  ← 可滚动，max-height 70vh
 │                       │
 ├───────────────────────┤
-│      [取消] [确认]     │ ← 底部操作栏 64px
+│      [取消] [确认]     │  ← 底部操作栏 64px
 └───────────────────────┘
 ```
 
@@ -93,12 +93,12 @@
 | 变体 | 方向 | 宽度/高度 | 示例语境 |
 |------|------|----------|---------|
 | right | 从右滑入 | 400px（桌面）/ 100vw（移动） | 详情面板、编辑表单 |
-| left | 从左滑入 | 280px | admin 移动端导航 |
+| left | 从左滑入 | 280px | 移动端导航 |
 | bottom | 从下滑入 | 自适应（max 80vh） | app 移动端操作面板 |
 
 ### 材质
 
-同 Modal：`var(--glass-2)` + `var(--glass-blur-lg)` + `var(--glass-border-strong)`。
+同 Modal：`var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-lg)` + `1px solid var(--glass-border)`。
 
 开口侧有圆角 `var(--radius-xl)`，贴边侧圆角为 0。
 
@@ -131,11 +131,12 @@
 | 属性 | 值 |
 |------|-----|
 | 触发 | 点击 |
-| 材质 | `var(--glass-2)` + `backdrop-filter: var(--glass-blur)` |
-| 边框 | `var(--glass-border-strong)` |
+| 材质 | `var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur)` |
+| 边框 | `1px solid var(--glass-border)` |
+| 内层高光 | `inset 0 1px 0 0 var(--glass-inset)` |
 | 定位 | 相对触发元素，自动翻转 |
 | 圆角 | `var(--radius-lg)` |
-| 阴影 | `var(--glass-shadow-lg)` |
+| 阴影 | `0 8px 40px -4px var(--glass-shadow-elevated)` |
 | z-index | `var(--z-popover)` |
 | 关闭 | 点击外部 / Esc |
 | 动画 | `scale(0.95) opacity(0)` → `scale(1) opacity(1)`，`var(--motion-fast)` |
@@ -151,7 +152,7 @@ hover/focus 触发的纯文字提示，不承载交互元素。
 | 属性 | 值 |
 |------|-----|
 | 触发 | hover(300ms 延迟) + focus |
-| 材质 | `.glass-dark` — `background: var(--glass-dark); backdrop-filter: var(--glass-blur-sm)` |
+| 材质 | `.glass-dark` — `background: rgba(15, 23, 42, 0.88); backdrop-filter: var(--glass-blur-sm)` |
 | 文字 | `var(--color-neutral-0)` (纯白) |
 | 字号 | `var(--text-xs)` |
 | padding | `var(--space-1)` `var(--space-2)` |
@@ -176,12 +177,13 @@ top（默认）/ bottom / left / right，空间不足自动翻转。
 | 属性 | 值 |
 |------|-----|
 | 触发 | 点击按钮/图标 |
-| 材质 | `var(--glass-2)` + `backdrop-filter: var(--glass-blur-lg)` |
-| 边框 | `var(--glass-border-strong)` |
+| 材质 | `var(--glass-bg-elevated)` + `backdrop-filter: var(--glass-blur-lg)` |
+| 边框 | `1px solid var(--glass-border)` |
+| 内层高光 | `inset 0 1px 0 0 var(--glass-inset)` |
 | min-width | 160px |
 | max-height | 320px（可滚动） |
 | 圆角 | `var(--radius-lg)` |
-| 阴影 | `var(--glass-shadow-lg)` |
+| 阴影 | `0 8px 40px -4px var(--glass-shadow-elevated)` |
 | z-index | `var(--z-dropdown)` |
 
 ### 菜单项
@@ -189,9 +191,9 @@ top（默认）/ bottom / left / right，空间不足自动翻转。
 | 状态 | 背景 | 文字 |
 |------|------|------|
 | 默认 | transparent | `var(--color-neutral-700)` |
-| hover | `var(--glass-3)` | `var(--color-neutral-800)` |
+| hover | `var(--glass-bg-card)` | `var(--color-neutral-800)` |
 | focus | `var(--focus-ring)` | — |
-| active | `var(--glass-1)` | `var(--color-neutral-900)` |
+| active | `var(--glass-bg)` | `var(--color-neutral-900)` |
 | disabled | transparent | `var(--color-neutral-400)` |
 | destructive | transparent | `var(--color-danger-500)` |
 | destructive hover | `var(--color-danger-50)` | `var(--color-danger-700)` |

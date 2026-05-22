@@ -1,0 +1,173 @@
+/* 02-buttons.css — admin 极简按钮体系（亮黑/暗白 + 毛玻璃辅助按钮） */
+
+/* 共用按钮基底 */
+.proto-btn,
+[class*="proto-btn-"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  letter-spacing: -0.01em;
+  transition: var(--transition-all);
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+}
+
+.proto-btn:disabled,
+[class*="proto-btn-"]:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* ---- 尺寸 ---- */
+.proto-btn-sm  { height: 32px; padding: 0 12px; font-size: var(--text-sm); border-radius: var(--radius-md); }
+.proto-btn-md  { height: 36px; padding: 0 16px; font-size: var(--text-sm); border-radius: var(--radius-md); }
+.proto-btn-lg  { height: 40px; padding: 0 20px; font-size: var(--text-base); border-radius: var(--radius-md); }
+
+/* ---- Primary（纯黑/纯白） ---- */
+.proto-btn-primary {
+  padding: 0 20px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-medium);
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: 1px solid transparent;
+}
+.proto-btn-primary:hover {
+  background: var(--btn-primary-hover);
+}
+.proto-btn-primary:active {
+  background: var(--btn-primary-active);
+  transform: scale(0.98);
+}
+
+/* ---- Secondary（毛玻璃边框） ---- */
+.proto-btn-secondary,
+.proto-btn-glass {
+  padding: 0 20px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-medium);
+  background: var(--btn-secondary-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  color: var(--btn-secondary-text);
+  border: 1px solid var(--btn-secondary-border);
+  box-shadow: inset 0 1px 0 0 var(--glass-inset);
+}
+.proto-btn-secondary:hover,
+.proto-btn-glass:hover {
+  background: var(--btn-secondary-hover);
+}
+.proto-btn-secondary:active,
+.proto-btn-glass:active {
+  transform: scale(0.98);
+}
+
+/* ---- Ghost ---- */
+.proto-btn-ghost {
+  padding: 0 12px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-medium);
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--btn-ghost-text);
+}
+.proto-btn-ghost:hover {
+  background: var(--btn-ghost-hover);
+  color: var(--text-primary);
+}
+.proto-btn-ghost:active {
+  transform: scale(0.98);
+}
+
+/* ---- Destructive ---- */
+.proto-btn-destructive {
+  padding: 0 20px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-medium);
+  background: var(--color-danger-500);
+  color: #FFFFFF;
+  border: 1px solid transparent;
+}
+.proto-btn-destructive:hover {
+  opacity: 0.90;
+}
+.proto-btn-destructive:active {
+  transform: scale(0.98);
+}
+
+/* ---- Success ---- */
+.proto-btn-success {
+  padding: 0 20px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-medium);
+  background: var(--color-success-500);
+  color: #FFFFFF;
+  border: 1px solid transparent;
+}
+.proto-btn-success:hover {
+  opacity: 0.90;
+}
+.proto-btn-success:active {
+  transform: scale(0.98);
+}
+
+/* ---- Icon-only（毛玻璃） ---- */
+.proto-btn-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: var(--radius-md);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+          backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-all);
+  box-shadow: inset 0 1px 0 0 var(--glass-inset);
+}
+.proto-btn-icon:hover {
+  background: var(--glass-bg-card);
+  color: var(--text-primary);
+}
+
+/* ---- Link ---- */
+.proto-btn-link {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  transition: color var(--motion-fast);
+}
+.proto-btn-link:hover { color: var(--color-accent-hover); text-decoration: underline; }
+
+/* ---- Loading 态 ---- */
+[aria-busy="true"] { pointer-events: none; opacity: 0.7; }
+
+.proto-spinner {
+  display: inline-block;
+  width: 16px; height: 16px;
+  border: 2px solid var(--border-color);
+  border-top-color: var(--text-primary);
+  border-radius: 50%;
+  animation: proto-spin 0.7s linear infinite;
+}
+.proto-spinner-sm { width: 14px; height: 14px; border-width: 2px; }
+.proto-spinner-inverse { border-color: rgba(255,255,255,0.3); border-top-color: #fff; }
+
+[data-mode="dark"] .proto-spinner-inverse { border-color: rgba(0,0,0,0.3); border-top-color: #18181B; }
+
+@keyframes proto-spin { to { transform: rotate(360deg); } }
