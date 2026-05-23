@@ -1,0 +1,71 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "名词、代词或名词性短语作主语",
+        "grammarType": "句子成分",
+        "categoryType": "主语",
+        "grammarDetail": "",
+        "cases": "电影很好看。\r\n她是老师。\r\n这本书多少钱？"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "名词、代词、数词或数量短语作谓语",
+        "grammarType": "句子成分",
+        "categoryType": "谓语",
+        "grammarDetail": "",
+        "cases": "明天星期三。\r\n那个饭店怎么样？\r\n我今年十二，我哥哥十五。\r\n这本书二十八块。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "动词或动词性短语、形容词或形容词性短语作谓语",
+        "grammarType": "句子成分",
+        "categoryType": "谓语",
+        "grammarDetail": "",
+        "cases": "老师来了。\r\n哥哥去学校了。\r\n我的房间不大。\r\n这个菜很好吃。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "名词、代词或名词性短语作宾语",
+        "grammarType": "句子成分",
+        "categoryType": "宾语",
+        "grammarDetail": "",
+        "cases": "我喝茶。\r\n明天我去找你。\r\n我吃了二十个饺子。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "名词性词语、形容词性短语、数量短语作定语",
+        "grammarType": "句子成分",
+        "categoryType": "定语",
+        "grammarDetail": "",
+        "cases": "她不会唱中文歌。\r\n我的中文老师是中国人。\r\n我想买便宜的手机。\r\n桌子下边有一只小狗。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "副词、形容词作状语\r\n表示时间、处所的词语作状语",
+        "grammarType": "句子成分",
+        "categoryType": "状语",
+        "grammarDetail": "",
+        "cases": "他们都是中国学生。\r\n你多吃一点儿。\r\n我们十二点下课。\r\n我妈妈在医院工作。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "动词+动量补语",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "数量补语1",
+        "cases": "休息一下吧。\r\n请问一下，医院在哪儿？\r\n我想看一下那件衣服。\r\n请写一下你的名字。"
+      }
+    ],
+    "total": 7,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

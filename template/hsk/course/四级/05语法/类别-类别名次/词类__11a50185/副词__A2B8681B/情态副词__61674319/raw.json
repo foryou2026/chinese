@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "content": "也许、恐怕",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "情态副词",
+        "cases": "你可以加一点儿糖，味道也许不错。\r\n现在不愿意花时间练习写汉字，你将来也许会后悔的。\r\n我感觉头疼，还有点儿咳嗽，恐怕是感冒了。\r\n年底是公司最忙的时候，你想休假恐怕不行。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "虽然……，可是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "转折复句",
+        "cases": "房间虽然不大，可是很干净。\r\n虽然天气很冷，可是他还是坚持每天锻炼。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "a27938c8688011f0b11400163e03dd53",
+      "content": "“是”字句1",
+      "children": []
+    },
+    {
+      "id": "a2793b3e688011f0b11400163e03dd53",
+      "content": "“有”字句1",
+      "children": []
+    },
+    {
+      "id": "a2793d74688011f0b11400163e03dd53",
+      "content": "存现句1",
+      "children": []
+    },
+    {
+      "id": "a2793fcd688011f0b11400163e03dd53",
+      "content": "连动句1",
+      "children": []
+    },
+    {
+      "id": "a2794239688011f0b11400163e03dd53",
+      "content": "双宾语句1",
+      "children": []
+    }
+  ],
+  "ok": true
+}

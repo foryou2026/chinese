@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "分析和评论经贸问题",
+        "level2Content": "能听懂、读懂关于市场动态、经济政策、经济热点和发展趋势、消费热点和发展趋势等相关经济问题的介绍、分析和评论。如：看懂中国政府发布的有关经济体制改革新政策的文件。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "分析和评论经贸问题",
+        "level2Content": "能根据给定主题或材料以口头或书面形式对市场动态、经济政策、经济热点和发展趋势、消费热点和发展趋势等相关经济问题有条理地发表自己的看法。如：根据所给材料对研究和种植杂交水稻的意义展开讨论。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "分析和评论经贸问题",
+        "level2Content": "能将有关经济问题的口头或书面材料准确、流畅地译成中文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

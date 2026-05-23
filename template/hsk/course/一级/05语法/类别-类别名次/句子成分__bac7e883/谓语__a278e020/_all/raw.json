@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "名词、代词、数词或数量短语作谓语",
+        "grammarType": "句子成分",
+        "categoryType": "谓语",
+        "grammarDetail": "",
+        "cases": "明天星期三。\r\n那个饭店怎么样？\r\n我今年十二，我哥哥十五。\r\n这本书二十八块。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "动词或动词性短语、形容词或形容词性短语作谓语",
+        "grammarType": "句子成分",
+        "categoryType": "谓语",
+        "grammarDetail": "",
+        "cases": "老师来了。\r\n哥哥去学校了。\r\n我的房间不大。\r\n这个菜很好吃。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

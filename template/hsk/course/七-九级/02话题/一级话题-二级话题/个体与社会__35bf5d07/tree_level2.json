@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "A0E7EB116092F7B3C0ED08CCA3BDE43E",
+      "content": "人际交往",
+      "children": []
+    },
+    {
+      "id": "211D40E460CE3113835542CBC00DAF80",
+      "content": "形象服饰",
+      "children": []
+    },
+    {
+      "id": "3C66017DB1DCDB297CD2243F3F0EFC2D",
+      "content": "饮食餐饮",
+      "children": []
+    },
+    {
+      "id": "E1F956D672A0987868CC63001AE9D88C",
+      "content": "建筑与社区",
+      "children": []
+    },
+    {
+      "id": "436DEC539E9BBE1291AE99F6832E9ACC",
+      "content": "休闲娱乐",
+      "children": []
+    },
+    {
+      "id": "D478D91848AFD652F93AF74DC7144FDD",
+      "content": "学业职业",
+      "children": []
+    }
+  ],
+  "ok": true
+}

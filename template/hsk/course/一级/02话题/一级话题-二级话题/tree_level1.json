@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "339f7830685711f0b11400163e03dd53",
+      "content": "基本信息",
+      "children": []
+    },
+    {
+      "id": "6e02e42b685711f0b11400163e03dd53",
+      "content": "日常生活",
+      "children": []
+    },
+    {
+      "id": "6e3af215685711f0b11400163e03dd53",
+      "content": "教育情况",
+      "children": []
+    },
+    {
+      "id": "6eae492b685711f0b11400163e03dd53",
+      "content": "职场生活",
+      "children": []
+    },
+    {
+      "id": "6eed382b685711f0b11400163e03dd53",
+      "content": "文化与传统",
+      "children": []
+    }
+  ],
+  "ok": true
+}

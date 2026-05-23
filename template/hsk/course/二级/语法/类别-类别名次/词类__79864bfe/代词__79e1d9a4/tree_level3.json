@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "7acfdf9a688c11f0b11400163e03dd53",
+      "content": "疑问代词",
+      "children": []
+    },
+    {
+      "id": "7ad9073d688c11f0b11400163e03dd53",
+      "content": "人称代词",
+      "children": []
+    },
+    {
+      "id": "7ae25685688c11f0b11400163e03dd53",
+      "content": "指示代词",
+      "children": []
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,43 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "国家与社会",
+        "level2Content": "健康与医疗",
+        "level3Content": "疾病诊疗与公共卫生"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "国家与社会",
+        "level2Content": "健康与医疗",
+        "level3Content": "心理健康与心理治疗"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "国家与社会",
+        "level2Content": "健康与医疗",
+        "level3Content": "医学技术创新与伦理"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "国家与社会",
+        "level2Content": "健康与医疗",
+        "level3Content": "中医和西医"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

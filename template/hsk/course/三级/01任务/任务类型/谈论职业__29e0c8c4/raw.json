@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论职业",
+        "level2Content": "能听懂日常交谈中同事、朋友、家人等关于工作经历、职业评价等职业情况的一般性问题，或同事、朋友等关于上述情况的一般性介绍。如：工作变动、职业意愿、职业选择、职业地位、对职业的总体评价等。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论职业",
+        "level2Content": "能在日常交谈中询问同事、同学、朋友、家人等上述关于职业的一般性情况，能回答同事、同学、朋友、家人等关于上述职业情况的一般性问题。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论职业",
+        "level2Content": "能简单介绍自己或家人的上述职业情况，表达看法。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论职业",
+        "level2Content": "能看懂关于上述职业情况的简单小短文。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论职业",
+        "level2Content": "能写出一两句话，简单介绍自己或家人的职业信息或某一段职业经历。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

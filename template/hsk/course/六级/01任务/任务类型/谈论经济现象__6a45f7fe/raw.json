@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论经济现象",
+        "level2Content": "能听懂日常交谈、新闻报道中介绍的有关商贸活动、投资理财、财务与消费、经济发展等经济现象的主要内容。如：某个商品的生产与销售、商务谈判、贸易活动等；银行业务、股票、基金、储蓄等情况；消费现状、消费趋势、消费维权、债务状况、经济纠纷等情况；经济现状、经济危机、未来机遇等情况。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论经济现象",
+        "level2Content": "能流畅地向他人介绍自己所了解的有关上述经济现象的主要内容，与他人交流，发表看法。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论经济现象",
+        "level2Content": "能看懂关于上述经济现象的一般新闻、介绍性文章。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论经济现象",
+        "level2Content": "能写文章介绍自己了解的与某种经济现象相关的新闻、事件，表达自己的看法。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

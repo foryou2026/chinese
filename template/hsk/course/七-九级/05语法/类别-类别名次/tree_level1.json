@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "4a18266b688611f0b11400163e03dd53",
+      "content": "语素",
+      "children": []
+    },
+    {
+      "id": "4a49c769688611f0b11400163e03dd53",
+      "content": "词类",
+      "children": []
+    },
+    {
+      "id": "4a7d1db4688611f0b11400163e03dd53",
+      "content": "短语",
+      "children": []
+    },
+    {
+      "id": "4ab52b29688611f0b11400163e03dd53",
+      "content": "固定格式",
+      "children": []
+    },
+    {
+      "id": "4ae9ecb2688611f0b11400163e03dd53",
+      "content": "句子的类型",
+      "children": []
+    },
+    {
+      "id": "4b1ba343688611f0b11400163e03dd53",
+      "content": "语段（句群）",
+      "children": []
+    }
+  ],
+  "ok": true
+}

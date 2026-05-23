@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论校园生活",
+        "level2Content": "能在校园宣讲会、访校等场景中听懂老师、同学关于校园活动和学校情况等复杂情况的介绍。如：校园活动策划、校园活动组织安排、校园公益活动、学校庆典、学术活动；学校招生报考、学生日常管理等。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论校园生活",
+        "level2Content": "能流畅地就上述校园生活情况进行介绍，跟同学、校友进行交流。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论校园生活",
+        "level2Content": "能在校园网页、校园宣传单等上面看懂关于上述校园活动和学校管理方面的介绍。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论校园生活",
+        "level2Content": "能写文章推荐自己的学校，介绍校园活动、学校管理方面的内容。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

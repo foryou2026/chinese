@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "介绍中国传统风俗",
+        "level2Content": "能听懂朋友、同学、老师等关于节日、地区差异等中国风俗传统的一般性问题，或朋友、同学、老师等关于上述中国风俗传统的一般性介绍。如：中秋节习俗、春节习俗，南北方生活、文化差异等。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "介绍中国传统风俗",
+        "level2Content": "能向朋友、同学、老师等询问上述中国风俗传统的一般性情况，能回答关于上述中国风俗传统的一般性问题。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "介绍中国传统风俗",
+        "level2Content": "能向他人简单介绍上述中国风俗传统的内容。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "介绍中国传统风俗",
+        "level2Content": "能看懂介绍上述中国风俗传统的简单小短文。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "D94071B65126B3F800CF0ED7281BA258",
+      "content": "引出时间、处所",
+      "children": []
+    },
+    {
+      "id": "28A1E5018F451F19A741B46A77BCCBF7",
+      "content": "引出对象",
+      "children": []
+    },
+    {
+      "id": "2406BAE58388A1DD33583612DFE79195",
+      "content": "引出凭借、依据",
+      "children": []
+    }
+  ],
+  "ok": true
+}

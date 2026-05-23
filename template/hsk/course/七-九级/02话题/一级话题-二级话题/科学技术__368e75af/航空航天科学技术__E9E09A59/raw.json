@@ -1,0 +1,29 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "航空航天科学技术",
+        "level3Content": "航天航空科技"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "航空航天科学技术",
+        "level3Content": "航空航天技术应用"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

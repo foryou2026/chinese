@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "DC07DF3A3C7ED730BE32B09AC2231570",
+      "content": "学习情况",
+      "children": []
+    },
+    {
+      "id": "B39DE8F5EDBF4B8CB7B9DBBC2010BE29",
+      "content": "校园生活",
+      "children": []
+    },
+    {
+      "id": "4F0E5AFD6F58F289B9E8593E3C2A99AC",
+      "content": "教育问题",
+      "children": []
+    }
+  ],
+  "ok": true
+}

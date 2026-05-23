@@ -1,0 +1,255 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "“怎样+动词”的特指问句",
+        "grammarType": "句子的类型",
+        "categoryType": "句类",
+        "grammarDetail": "疑问句",
+        "cases": "怎样才能学好汉语呢？\r\n中国人是怎样过新年的？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "用反问句表示强调：不是……吗？",
+        "grammarType": "句子的类型",
+        "categoryType": "句类",
+        "grammarDetail": "反问句1",
+        "cases": "你不是写完作业了吗？\r\n考试不是下个星期一吗？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+把+宾语+动词+在/到+处所",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句1",
+        "cases": "你把箱子放在这儿吧。\r\n我们把桌子搬到教室外边了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+把+宾语1+动词（+给）+宾语2",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句1",
+        "cases": "我们把礼物送给老师了。\r\n他把那本书借给我了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+把+宾语+动词+结果补语/趋向补语/状态补语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句1",
+        "cases": "我已经把晚饭准备好了。\r\n咱们把这些桌子搬进去吧。\r\n妈妈把衣服洗得干干净净。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+被+宾语+动词+其他成分",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "被动句1",
+        "cases": "我的词典被朋友借走了。\r\n冰箱里的水果被谁吃了？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+被+动词+其他成分",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "被动句1",
+        "cases": "桌子上的作业被拿走了。\r\n病人已经被送到医院了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "“着”表示动作的伴随：动词1+着+动词2",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "连动句2",
+        "cases": "老师总是笑着回答大家的问题。\r\n我喜欢听着音乐做运动。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "A比B+更/还+形容词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "比较句2",
+        "cases": "她的汉语比我更好。\r\n今天比昨天还冷。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "A跟B一样",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "比较句2",
+        "cases": "我的爱好跟他一样。\r\n他买的新手机跟我的一样。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "A跟B一样+形容词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "比较句2",
+        "cases": "坐地铁跟坐公交车一样方便。\r\n这个房间跟那个房间一样大。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "A不比B+形容词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "比较句2",
+        "cases": "这张画不比那张好看。\r\n我的汉语水平不比他高。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "A比B+多/少/早/晚+动词+数量短语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "比较句2",
+        "cases": "我比他早到十分钟。\r\n哥哥比弟弟多吃了三个饺子。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "表示出现：处所词+动词+趋向补语/结果补语+动态助词（了）+数量短语+人/物",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "存现句3",
+        "cases": "前边开过来一辆出租车。   \r\n楼上搬来了一家人。\r\n校门外走进来几个学生。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "表示消失：处所词+动词+结果补语+动态助词（了）+数量短语+人/物",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "存现句3",
+        "cases": "树上飞走了三只小鸟。                    \r\n他家里跑丢了一只羊。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "强调说话人的看法或态度",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“是……的”句2",
+        "cases": "这个问题其实是很简单的。\r\n多写多练对学习汉字是很有帮助的。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+动词+宾语+动词+补语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "重动句",
+        "cases": "我们昨天打篮球打了一个下午。\r\n你今天上课上得怎么样？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "先……，再/然后……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "承接复句",
+        "cases": "你先去买门票，再来这里找我。\r\n我想先吃饭，然后回房间休息。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "或者……，或者……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "选择复句",
+        "cases": "每周末，我们或者踢足球，或者打篮球。\r\n春节的时候，人们或者回家过节，或者出门旅游。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "一会儿……，一会儿……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "他一会儿进来，一会儿出去，忙得很。\r\n最近的天气一会儿冷，一会儿热。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "又……，又……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "这件衣服又便宜又好看。\r\n那个又高又漂亮的女孩儿是谁？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "一边……，一边……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "他一边工作，一边学习中文。\r\n我喜欢一边跑步，一边听音乐。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "不但……，而且……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "递进复句",
+        "cases": "不但我学习中文，而且我的弟弟也学习中文。\r\n我哥哥不但会打篮球，而且打得很好。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "虽然……，可是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "转折复句",
+        "cases": "房间虽然不大，可是很干净。\r\n虽然天气很冷，可是他还是坚持每天锻炼。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "如果……，就……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "如果明天不下雨，我们就去爬山。\r\n如果你需要帮忙，就给我打电话。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "……的话，就……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "你有时间的话，就一起去吧。\r\n你觉得满意的话，咱们就买。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "只有……，才……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "只有努力学习，才能得到好成绩。\r\n只有多听、多说、多看，你的中文水平才能提高。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "只要……，就……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "只要你坚持学习，就一定能学好。\r\n只要你同意，我们就这么决定了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "为了……，……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "目的复句",
+        "cases": "为了考上大学，她每天努力学习。\r\n为了早点儿到家，我打算坐飞机。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "……了……（就）……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "紧缩复句",
+        "cases": "他吃了药就好多了。\r\n我打算下了课就去图书馆。"
+      }
+    ],
+    "total": 30,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

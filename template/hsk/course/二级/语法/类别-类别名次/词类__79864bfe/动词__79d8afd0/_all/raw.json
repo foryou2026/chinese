@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "AA、A一A、A了A、ABAB",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "动词重叠",
+        "cases": "那本书能给我看看吗？\r\n请大家说一说自己的爱好。\r\n我尝了尝，觉得很好吃。\r\n喝杯茶，休息休息吧。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "可能",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "能愿动词",
+        "cases": "她可能回家了。\r\n小猫可能在房间里。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "帮忙、游泳、跳舞、跑步",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "离合词",
+        "cases": "你能帮我一个忙吗？\r\n晚上一起去游游泳，运动一下吧。\r\n星期六的晚上，我喜欢和朋友们一起唱唱歌，跳跳舞。\r\n有时间你可以去外面跑跑步。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

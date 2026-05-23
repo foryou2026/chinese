@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能听懂日常生活中对方关于业务处理、困难求助等较复杂情况的询问和介绍。如：办理海关通行、邮寄配送、保险业务、生活缴费等业务时工作人员的话语；需要法律、媒体、警务、生活等方面的帮助时相关人员的话语。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能在遇到上述有关业务处理、困难求助的较复杂情况时，较流畅地说明自己的情况，进行询问，表达求助、办事的意愿，协商解决。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能较流畅地讲述上述日常生活中有关业务处理、困难求助的经历。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能看懂有关上述业务处理、困难求助经历的一般性文章，或办事过程中的一些一般规定、告知等。如：生活缴费单、保险业务基本情况介绍等。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能写出短文讲述自己的上述经历，介绍一些相关情况等。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

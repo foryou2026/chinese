@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "content": "首先……，其次……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "承接复句",
+        "cases": "选择职业的时候，应该首先了解自己的性格、能力，其次再考虑工资、收入等方面的问题。\r\n我学汉语首先是因为对中国文化感兴趣，其次是为了获得更多的工作机会。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "首先……，然后……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "承接复句",
+        "cases": "首先要找到一个合适的目标，然后坚持学习，这样才能学好中文。\r\n校长首先对同学们表示欢迎，然后介绍了学校的一些基本情况。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "……，于是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "承接复句",
+        "cases": "人们喜欢一边喝咖啡，一边聊天儿，于是城市里的咖啡馆越来越多。\r\n大家不断地鼓励我，于是我决定报名参加这个比赛。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

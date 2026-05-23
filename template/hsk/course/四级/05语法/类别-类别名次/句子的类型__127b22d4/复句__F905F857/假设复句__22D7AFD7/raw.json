@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "content": "……，否则……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "你下了飞机记得给妈妈打个电话，否则她会一直担心你。\r\n课后一定要经常复习，否则很快就会忘记。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "要是……，就……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "你要是想取得成功，就必须坚持到底。\r\n要是人人都能节约用水，地球的环境就能得到更好的保护。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "要是……，（就）……，否则……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "要是你打算假期去旅游，就提前上网订票，否则到时候就买不到了。\r\n要是你不常穿，最好就不要买，否则买了也是浪费。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

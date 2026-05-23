@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论情感话题",
+        "level2Content": "能听懂日常交谈中家人、朋友等关于情感及感悟的有一定复杂度的问题，或讲述有一定复杂度的关于情感及感悟的经历、看法。如：爱情、友情、亲情、理想等。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论情感话题",
+        "level2Content": "能询问家人、朋友等情感及感悟相关的有一定复杂度的问题；能回答家人、朋友等关于情感及感悟的有一定复杂度的问题。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论情感话题",
+        "level2Content": "能比较流利地讲述自己关于爱情、友情、亲情、理想相关的经历、看法。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论情感话题",
+        "level2Content": "能读懂关于上述爱情、友情、亲情、理想话题的一般性短文。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论情感话题",
+        "level2Content": "能写出一段话简单讲述自己的爱情、友情、亲情、理想相关的经历、看法。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

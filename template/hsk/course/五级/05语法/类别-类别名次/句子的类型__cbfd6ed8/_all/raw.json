@@ -1,0 +1,191 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "content": "表示存在、具有：主语+有+着+宾语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“有”字句3",
+        "cases": "尽管是兄弟，但是他们心里有着很深的矛盾。\r\n两国之间有着长期友好的关系。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "表示附着：主语+动词+有+宾语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“有”字句3",
+        "cases": "门关着，墙上挂有“暂停营业”的牌子。\r\n这本书的第一页写有作者的名字。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "主语+把+宾语+一+动词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句3",
+        "cases": "孩子把书包一扔，坐在地上哭了起来。\r\n经理把任务一说，员工们就开始干活了。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "主语+把+宾语1+动词+宾语2",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句3",
+        "cases": "他把存款都买车了。\r\n我把父母给的生活费借朋友了。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "前后两个动词性词语具有因果、转折、条件关系",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "连动句3",
+        "cases": "她丈夫生病住院了。（因果）\r\n王经理开会忘了带会议资料。（转折）\r\n面对快速变化的形势，我们应该尽快制定方案应对风险。（条件）"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "A+形容词+B+数量补语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "比较句4",
+        "cases": "他高我一头。\r\n姐姐重我两公斤。\r\n哥哥早我两年上学。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "主语+被/叫/让+宾语+给+动词+其他成分",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "被动句3",
+        "cases": "我新买的衣服被他给洗坏了。\r\n她的帽子叫风给吹跑了。\r\n对不起，这些资料让我给搞乱了。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "……，便……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "承接复句",
+        "cases": "领导还没讲完，他便提前离开了。\r\n他看我心情不好，便陪我聊了半天。\r\n我写完作业便和朋友一起出去玩儿了。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "或是……，或是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "选择复句",
+        "cases": "晚餐我或是吃面条儿，或是喝粥。\r\n假期他或是去海边度假，或是去爬山。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "一旦……，就……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "一旦养成坏习惯，就很难改变。\r\n孩子一旦发烧，就赶快送去医院。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "假如……，（就）……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "假如他们也同意，我们就按照计划开展工作。\r\n假如有一天你当了校长，你会制定什么规则？"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "万一……，（就）……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "万一他不配合，我们就要想其他办法。\r\n万一失败了，你考虑过后果吗？"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "……，要不然/不然……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "公司需要敢想敢干的年轻人，要不然就很难有发展。\r\n还好我反应快，不然孩子就摔倒了。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "……，因而……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "因果复句",
+        "cases": "她上课坚持认真听讲，因而成绩始终非常优秀。\r\n我和他认识很多年了，因而很了解他的性格。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "……，可见……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "因果复句",
+        "cases": "这个项目完成得如此顺利，可见团队的合作非常有效。\r\n他每天都在图书馆学习，可见他对考试非常重视。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "哪怕……，也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "让步复句",
+        "cases": "哪怕时间再紧张，也要按时完成任务。\r\n哪怕租金继续提高，也仍然有很多人愿意住在这里。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "不但不/不但没有……，反而……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "递进复句",
+        "cases": "他不但不改正错误，反而继续犯更大的错误。\r\n你这样做不但没有解决问题，反而增加了新问题。\r\n火不但没有灭，反而越来越大了。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "不是……，还/还是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "递进复句",
+        "cases": "不是光有目标就可以，还要行动起来。\r\n这个问题不是我一个人就能解决的，还是需要大家积极配合。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "……，为的是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "目的复句",
+        "cases": "他每天早起锻炼，为的是保持健康。\r\n她每天都练习中文，为的是将来能够来中国留学。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "没有……就没有……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "紧缩复句",
+        "cases": "没有老师的努力付出就没有我们今天的成绩。\r\n没有汗水就没有收获。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "不……不……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "紧缩复句",
+        "cases": "不尝不知道，这种水果的味道果然很独特。\r\n毛病虽然不大，但还是应该修理一下，不修不安全。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "再……也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "紧缩复句",
+        "cases": "这首歌再听多少遍也不会烦。\r\n困难再大也要坚持下去。"
+      }
+    ],
+    "total": 22,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

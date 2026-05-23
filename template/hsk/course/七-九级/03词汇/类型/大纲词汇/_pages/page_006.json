@@ -1,0 +1,3984 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "type": 1,
+        "word": "揽",
+        "pinyin": "lǎn",
+        "cixing": "动",
+        "sort": 7879,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "缆车",
+        "pinyin": "lǎnchē",
+        "cixing": "名",
+        "sort": 7880,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "懒得",
+        "pinyin": "lǎnde",
+        "cixing": "动",
+        "sort": 7881,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "懒惰",
+        "pinyin": "lǎnduò",
+        "cixing": "形",
+        "sort": 7882,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "滥用",
+        "pinyin": "lànyòng",
+        "cixing": "动",
+        "sort": 7883,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "狼狈",
+        "pinyin": "lángbèi",
+        "cixing": "形",
+        "sort": 7884,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "狼吞虎咽",
+        "pinyin": "lángtūn-hǔyàn",
+        "sort": 7885,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "朗诵",
+        "pinyin": "lǎngsòng",
+        "cixing": "动",
+        "sort": 7886,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "捞",
+        "pinyin": "lāo",
+        "cixing": "动",
+        "sort": 7887,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "唠叨",
+        "pinyin": "láodao",
+        "cixing": "动",
+        "sort": 7888,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "牢固",
+        "pinyin": "láogù",
+        "cixing": "形",
+        "sort": 7889,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "牢记",
+        "pinyin": "láojì",
+        "cixing": "动",
+        "sort": 7890,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "劳驾",
+        "pinyin": "láojià",
+        "cixing": "动",
+        "sort": 7891,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "牢牢",
+        "pinyin": "láoláo",
+        "cixing": "副",
+        "sort": 7892,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "劳累",
+        "pinyin": "láolèi",
+        "cixing": "形",
+        "sort": 7893,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "牢骚",
+        "pinyin": "láosāo",
+        "cixing": "名",
+        "sort": 7894,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "劳务",
+        "pinyin": "láowù",
+        "cixing": "名",
+        "sort": 7895,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "老伴儿",
+        "pinyin": "lǎobànr",
+        "cixing": "名",
+        "sort": 7896,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "老大",
+        "pinyin": "lǎodà",
+        "cixing": "形、副",
+        "sort": 7897,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "老化",
+        "pinyin": "lǎohuà",
+        "cixing": "动",
+        "sort": 7898,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "老人家",
+        "pinyin": "lǎorenjia",
+        "cixing": "名",
+        "sort": 7899,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "老乡",
+        "pinyin": "lǎoxiāng",
+        "cixing": "名",
+        "sort": 7900,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "老字号",
+        "pinyin": "lǎozìhao",
+        "cixing": "名",
+        "sort": 7901,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "涝",
+        "pinyin": "lào",
+        "cixing": "形",
+        "sort": 7902,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "乐此不疲",
+        "pinyin": "lècǐ-bùpí",
+        "cixing": "",
+        "sort": 7903,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "乐意",
+        "pinyin": "lèyì",
+        "cixing": "动、形",
+        "sort": 7904,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "乐园",
+        "pinyin": "lèyuán",
+        "cixing": "名",
+        "sort": 7905,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "勒",
+        "pinyin": "lēi",
+        "cixing": "动",
+        "sort": 7906,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "雷达",
+        "pinyin": "léidá",
+        "cixing": "名",
+        "sort": 7907,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "雷同",
+        "pinyin": "léitóng",
+        "cixing": "形",
+        "sort": 7908,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "累赘",
+        "pinyin": "léizhui",
+        "cixing": "形、动、名",
+        "sort": 7909,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "累计",
+        "pinyin": "lěijì",
+        "cixing": "动",
+        "sort": 7910,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "累积",
+        "pinyin": "lěijī",
+        "cixing": "动",
+        "sort": 7911,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "棱角",
+        "pinyin": "léngjiǎo",
+        "cixing": "名",
+        "sort": 7912,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冷淡",
+        "pinyin": "lěngdàn",
+        "cixing": "形、动",
+        "sort": 7913,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冷冻",
+        "pinyin": "lěngdòng",
+        "cixing": "动",
+        "sort": 7914,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冷酷",
+        "pinyin": "lěngkù",
+        "cixing": "形",
+        "sort": 7915,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冷落",
+        "pinyin": "lěngluò",
+        "cixing": "形、动",
+        "sort": 7916,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冷门",
+        "pinyin": "lěngmén",
+        "cixing": "名",
+        "sort": 7917,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冷漠",
+        "pinyin": "lěngmò",
+        "cixing": "形",
+        "sort": 7918,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冷气",
+        "pinyin": "lěngqì",
+        "cixing": "名",
+        "sort": 7919,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冷却",
+        "pinyin": "lěngquè",
+        "cixing": "动",
+        "sort": 7920,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冷战",
+        "pinyin": "lěngzhàn",
+        "cixing": "名",
+        "sort": 7921,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "愣",
+        "pinyin": "lèng",
+        "cixing": "动、形、副",
+        "sort": 7922,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "黎明",
+        "pinyin": "límíng",
+        "cixing": "名",
+        "sort": 7923,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "离谱儿",
+        "pinyin": "lípǔr",
+        "cixing": "形",
+        "sort": 7924,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "离奇",
+        "pinyin": "líqí",
+        "cixing": "形",
+        "sort": 7925,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "理睬",
+        "pinyin": "lǐcǎi",
+        "cixing": "动",
+        "sort": 7926,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "里程碑",
+        "pinyin": "lǐchéngbēi",
+        "cixing": "名",
+        "sort": 7927,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "礼服",
+        "pinyin": "lǐfú",
+        "cixing": "名",
+        "sort": 7928,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "理会",
+        "pinyin": "lǐhuì",
+        "cixing": "动",
+        "sort": 7929,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "礼节",
+        "pinyin": "lǐjié",
+        "cixing": "名",
+        "sort": 7930,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "礼品",
+        "pinyin": "lǐpǐn",
+        "cixing": "名",
+        "sort": 7931,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "礼尚往来",
+        "pinyin": "lǐshàngwǎnglái",
+        "sort": 7932,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "理事",
+        "pinyin": "lǐshì",
+        "cixing": "动、名",
+        "sort": 7933,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "理所当然",
+        "pinyin": "lǐsuǒdāngrán",
+        "sort": 7934,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "礼堂",
+        "pinyin": "lǐtáng",
+        "cixing": "名",
+        "sort": 7935,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "礼仪",
+        "pinyin": "lǐyí",
+        "cixing": "名",
+        "sort": 7936,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "鲤鱼",
+        "pinyin": "lǐyú",
+        "cixing": "名",
+        "sort": 7937,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "理智",
+        "pinyin": "lǐzhì",
+        "cixing": "名、形",
+        "sort": 7938,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "理直气壮",
+        "pinyin": "lǐzhí-qìzhuàng",
+        "sort": 7939,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "立案",
+        "pinyin": "lì’àn",
+        "cixing": "动",
+        "sort": 7940,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "利弊",
+        "pinyin": "lìbì",
+        "cixing": "名",
+        "sort": 7941,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "力不从心",
+        "pinyin": "lìbùcóngxīn",
+        "sort": 7942,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "历程",
+        "pinyin": "lìchéng",
+        "cixing": "名",
+        "sort": 7943,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "历代",
+        "pinyin": "lìdài",
+        "cixing": "名",
+        "sort": 7944,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "立法",
+        "pinyin": "lìfǎ",
+        "cixing": "动",
+        "sort": 7945,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "立方",
+        "pinyin": "lìfāng",
+        "cixing": "名、量",
+        "sort": 7946,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "立方米",
+        "pinyin": "lìfāngmǐ",
+        "cixing": "量",
+        "sort": 7947,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "立功",
+        "pinyin": "lìgōng",
+        "cixing": "动",
+        "sort": 7948,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "利害",
+        "pinyin": "lìhài",
+        "cixing": "名",
+        "sort": 7949,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "立交桥",
+        "pinyin": "lìjiāoqiáo",
+        "cixing": "名",
+        "sort": 7950,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "历届",
+        "pinyin": "lìjiè",
+        "cixing": "形",
+        "sort": 7951,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "历来",
+        "pinyin": "lìlái",
+        "cixing": "副",
+        "sort": 7952,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "莅临",
+        "pinyin": "lìlín",
+        "cixing": "动",
+        "sort": 7953,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "利率",
+        "pinyin": "lìlǜ",
+        "cixing": "名",
+        "sort": 7954,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "力求",
+        "pinyin": "lìqiú",
+        "cixing": "动",
+        "sort": 7955,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "历时",
+        "pinyin": "lìshí",
+        "cixing": "动、形",
+        "sort": 7956,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "利索",
+        "pinyin": "lìsuo",
+        "cixing": "形",
+        "sort": 7957,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "力所能及",
+        "pinyin": "lìsuǒnéngjí",
+        "sort": 7958,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "立体",
+        "pinyin": "lìtǐ",
+        "cixing": "形、名",
+        "sort": 7959,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "力争",
+        "pinyin": "lìzhēng",
+        "cixing": "动",
+        "sort": 7960,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "励志",
+        "pinyin": "lìzhì",
+        "cixing": "动",
+        "sort": 7961,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "立足",
+        "pinyin": "lìzú",
+        "cixing": "动",
+        "sort": 7962,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "连贯",
+        "pinyin": "liánguàn",
+        "cixing": "动",
+        "sort": 7963,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "联欢",
+        "pinyin": "liánhuān",
+        "cixing": "动",
+        "sort": 7964,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "廉价",
+        "pinyin": "liánjià",
+        "cixing": "形",
+        "sort": 7965,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "廉洁",
+        "pinyin": "liánjié",
+        "cixing": "形",
+        "sort": 7966,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "连连",
+        "pinyin": "liánlián",
+        "cixing": "副",
+        "sort": 7967,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "联络",
+        "pinyin": "liánluò",
+        "cixing": "动",
+        "sort": 7968,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "联盟",
+        "pinyin": "liánméng",
+        "cixing": "名",
+        "sort": 7969,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "连绵",
+        "pinyin": "liánmián",
+        "cixing": "动",
+        "sort": 7970,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "连年",
+        "pinyin": "liánnián",
+        "cixing": "动",
+        "sort": 7971,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "连任",
+        "pinyin": "liánrèn",
+        "cixing": "动",
+        "sort": 7972,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "联赛",
+        "pinyin": "liánsài",
+        "cixing": "名",
+        "sort": 7973,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "联手",
+        "pinyin": "liánshǒu",
+        "cixing": "动",
+        "sort": 7974,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "连锁",
+        "pinyin": "liánsuǒ",
+        "cixing": "形",
+        "sort": 7975,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "连同",
+        "pinyin": "liántóng",
+        "cixing": "连",
+        "sort": 7976,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "怜惜",
+        "pinyin": "liánxī",
+        "cixing": "动",
+        "sort": 7977,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "连夜",
+        "pinyin": "liányè",
+        "cixing": "副、动",
+        "sort": 7978,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "廉正",
+        "pinyin": "liánzhèng",
+        "cixing": "形",
+        "sort": 7979,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "帘子",
+        "pinyin": "liánzi",
+        "cixing": "名",
+        "sort": 7980,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "莲子",
+        "pinyin": "liánzǐ",
+        "cixing": "名",
+        "sort": 7981,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "脸颊",
+        "pinyin": "liǎnjiá",
+        "cixing": "名",
+        "sort": 7982,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "炼",
+        "pinyin": "liàn",
+        "cixing": "动",
+        "sort": 7983,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "恋恋不舍",
+        "pinyin": "liànliàn-bùshě",
+        "sort": 7984,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "良",
+        "pinyin": "liáng",
+        "cixing": "副",
+        "sort": 7985,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "凉爽",
+        "pinyin": "liángshuǎng",
+        "cixing": "形",
+        "sort": 7986,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "良心",
+        "pinyin": "liángxīn",
+        "cixing": "名",
+        "sort": 7987,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "良性",
+        "pinyin": "liángxìng",
+        "cixing": "形",
+        "sort": 7988,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "两口子",
+        "pinyin": "liǎngkǒuzi",
+        "cixing": "名",
+        "sort": 7989,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "两栖",
+        "pinyin": "liǎngqī",
+        "cixing": "动",
+        "sort": 7990,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "两手",
+        "pinyin": "liǎngshǒu",
+        "cixing": "名",
+        "sort": 7991,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "两下子",
+        "pinyin": "liǎngxiàzi",
+        "cixing": "数量、名",
+        "sort": 7992,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "两翼",
+        "pinyin": "liǎngyì",
+        "cixing": "名",
+        "sort": 7993,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "亮点",
+        "pinyin": "liàngdiǎn",
+        "cixing": "名",
+        "sort": 7994,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "量化",
+        "pinyin": "liànghuà",
+        "cixing": "动",
+        "sort": 7995,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谅解",
+        "pinyin": "liàngjiě",
+        "cixing": "动",
+        "sort": 7996,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "亮丽",
+        "pinyin": "liànglì",
+        "cixing": "形",
+        "sort": 7997,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "亮相",
+        "pinyin": "liàngxiàng",
+        "cixing": "动",
+        "sort": 7998,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "潦草",
+        "pinyin": "liáocǎo",
+        "cixing": "形",
+        "sort": 7999,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "疗法",
+        "pinyin": "liáofǎ",
+        "cixing": "名",
+        "sort": 8000,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "辽阔",
+        "pinyin": "liáokuò",
+        "cixing": "形",
+        "sort": 8001,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "寥寥无几",
+        "pinyin": "liáoliáo-wújǐ",
+        "sort": 8002,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "疗效",
+        "pinyin": "liáoxiào",
+        "cixing": "名",
+        "sort": 8003,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "疗养",
+        "pinyin": "liáoyǎng",
+        "cixing": "动",
+        "sort": 8004,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "了结",
+        "pinyin": "liǎojié",
+        "cixing": "动",
+        "sort": 8005,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "料理",
+        "pinyin": "liàolǐ",
+        "cixing": "动、名",
+        "sort": 8006,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "咧嘴",
+        "pinyin": "liězuǐ",
+        "cixing": "动",
+        "sort": 8007,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "裂",
+        "pinyin": "liè",
+        "cixing": "动",
+        "sort": 8008,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "裂缝",
+        "pinyin": "lièfèng",
+        "cixing": "动、名",
+        "sort": 8009,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "裂痕",
+        "pinyin": "lièhén",
+        "cixing": "名",
+        "sort": 8010,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "列举",
+        "pinyin": "lièjǔ",
+        "cixing": "动",
+        "sort": 8011,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "猎人",
+        "pinyin": "lièrén",
+        "cixing": "名",
+        "sort": 8012,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "烈日",
+        "pinyin": "lièrì",
+        "cixing": "名",
+        "sort": 8013,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "劣势",
+        "pinyin": "lièshì",
+        "cixing": "名",
+        "sort": 8014,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "烈士",
+        "pinyin": "lièshì",
+        "cixing": "名",
+        "sort": 8015,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "猎物",
+        "pinyin": "lièwù",
+        "cixing": "名",
+        "sort": 8016,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "劣质",
+        "pinyin": "lièzhì",
+        "cixing": "形",
+        "sort": 8017,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "拎",
+        "pinyin": "līn",
+        "cixing": "动",
+        "sort": 8018,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "临",
+        "pinyin": "lín",
+        "cixing": "动、介",
+        "sort": 8019,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "临床",
+        "pinyin": "línchuáng",
+        "cixing": "动",
+        "sort": 8020,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "临街",
+        "pinyin": "línjiē",
+        "cixing": "动",
+        "sort": 8021,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "临近",
+        "pinyin": "línjìn",
+        "cixing": "动",
+        "sort": 8022,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "吝啬",
+        "pinyin": "lìnsè",
+        "cixing": "形",
+        "sort": 8023,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "灵",
+        "pinyin": "líng",
+        "cixing": "形、名",
+        "sort": 8024,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "灵感",
+        "pinyin": "línggǎn",
+        "cixing": "名",
+        "sort": 8025,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "灵魂",
+        "pinyin": "línghún",
+        "cixing": "名",
+        "sort": 8026,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "零件",
+        "pinyin": "língjiàn",
+        "cixing": "名",
+        "sort": 8027,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "灵机一动",
+        "pinyin": "língjī-yídòng",
+        "sort": 8028,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "灵敏",
+        "pinyin": "língmǐn",
+        "cixing": "形",
+        "sort": 8029,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "灵巧",
+        "pinyin": "língqiǎo",
+        "cixing": "形",
+        "sort": 8030,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "零售",
+        "pinyin": "língshòu",
+        "cixing": "动",
+        "sort": 8031,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "零碎",
+        "pinyin": "língsuì",
+        "cixing": "形、名",
+        "sort": 8032,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "聆听",
+        "pinyin": "língtīng",
+        "cixing": "动",
+        "sort": 8033,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "灵通",
+        "pinyin": "língtōng",
+        "cixing": "形",
+        "sort": 8034,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "零星",
+        "pinyin": "língxīng",
+        "cixing": "形",
+        "sort": 8035,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领队",
+        "pinyin": "lǐngduì",
+        "cixing": "动、名",
+        "sort": 8036,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领会",
+        "pinyin": "lǐnghuì",
+        "cixing": "动",
+        "sort": 8037,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领军",
+        "pinyin": "lǐngjūn",
+        "cixing": "动",
+        "sort": 8038,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领略",
+        "pinyin": "lǐnglüè",
+        "cixing": "动",
+        "sort": 8039,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领事",
+        "pinyin": "lǐngshì",
+        "cixing": "名",
+        "sort": 8040,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领事馆",
+        "pinyin": "lǐngshìguǎn",
+        "cixing": "名",
+        "sort": 8041,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领土",
+        "pinyin": "lǐngtǔ",
+        "cixing": "名",
+        "sort": 8042,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领悟",
+        "pinyin": "lǐngwù",
+        "cixing": "动",
+        "sort": 8043,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领袖",
+        "pinyin": "lǐngxiù",
+        "cixing": "名",
+        "sort": 8044,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "领养",
+        "pinyin": "lǐngyǎng",
+        "cixing": "动",
+        "sort": 8045,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "溜",
+        "pinyin": "liū",
+        "cixing": "动",
+        "sort": 8046,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "溜达",
+        "pinyin": "liūda",
+        "cixing": "动",
+        "sort": 8047,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流畅",
+        "pinyin": "liúchàng",
+        "cixing": "形",
+        "sort": 8048,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流浪",
+        "pinyin": "liúlàng",
+        "cixing": "动",
+        "sort": 8049,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "留恋",
+        "pinyin": "liúliàn",
+        "cixing": "动",
+        "sort": 8050,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流露",
+        "pinyin": "liúlù",
+        "cixing": "动",
+        "sort": 8051,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流氓",
+        "pinyin": "liúmáng",
+        "cixing": "名",
+        "sort": 8052,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "留念",
+        "pinyin": "liúniàn",
+        "cixing": "动",
+        "sort": 8053,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流派",
+        "pinyin": "liúpài",
+        "cixing": "名",
+        "sort": 8054,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "留神",
+        "pinyin": "liúshén",
+        "cixing": "动",
+        "sort": 8055,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流逝",
+        "pinyin": "liúshì",
+        "cixing": "动",
+        "sort": 8056,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流失",
+        "pinyin": "liúshī",
+        "cixing": "动",
+        "sort": 8057,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流水",
+        "pinyin": "liúshuǐ",
+        "cixing": "名",
+        "sort": 8058,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流淌",
+        "pinyin": "liútǎng",
+        "cixing": "动",
+        "sort": 8059,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流向",
+        "pinyin": "liúxiàng",
+        "cixing": "名",
+        "sort": 8060,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "留心",
+        "pinyin": "liúxīn",
+        "cixing": "动",
+        "sort": 8061,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流血",
+        "pinyin": "liúxuè",
+        "cixing": "动",
+        "sort": 8062,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "留意",
+        "pinyin": "liúyì",
+        "cixing": "动",
+        "sort": 8063,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流域",
+        "pinyin": "liúyù",
+        "cixing": "名",
+        "sort": 8064,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "流转",
+        "pinyin": "liúzhuǎn",
+        "cixing": "动",
+        "sort": 8065,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "柳树",
+        "pinyin": "liǔshù",
+        "cixing": "名",
+        "sort": 8066,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "遛",
+        "pinyin": "liù",
+        "cixing": "动",
+        "sort": 8067,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "聋",
+        "pinyin": "lóng",
+        "cixing": "形",
+        "sort": 8068,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "龙头",
+        "pinyin": "lóngtóu",
+        "cixing": "名",
+        "sort": 8069,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "隆重",
+        "pinyin": "lóngzhòng",
+        "cixing": "形",
+        "sort": 8070,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "笼子",
+        "pinyin": "lóngzi",
+        "cixing": "名",
+        "sort": 8071,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "垄断",
+        "pinyin": "lǒngduàn",
+        "cixing": "动",
+        "sort": 8072,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "笼统",
+        "pinyin": "lǒngtǒng",
+        "cixing": "形",
+        "sort": 8073,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "笼罩",
+        "pinyin": "lǒngzhào",
+        "cixing": "动",
+        "sort": 8074,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "搂",
+        "pinyin": "lǒu",
+        "cixing": "动",
+        "sort": 8075,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "露面",
+        "pinyin": "lòumiàn",
+        "cixing": "动",
+        "sort": 8076,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "炉子",
+        "pinyin": "lúzi",
+        "cixing": "名",
+        "sort": 8077,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "鲁莽",
+        "pinyin": "lǔmǎng",
+        "cixing": "形",
+        "sort": 8078,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "卤味",
+        "pinyin": "lǔwèi",
+        "cixing": "名",
+        "sort": 8079,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "鹿",
+        "pinyin": "lù",
+        "cixing": "名",
+        "sort": 8080,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "露2",
+        "pinyin": "lù",
+        "cixing": "名",
+        "sort": 8081,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "路段",
+        "pinyin": "lùduàn",
+        "cixing": "名",
+        "sort": 8082,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "路径",
+        "pinyin": "lùjìng",
+        "cixing": "名",
+        "sort": 8083,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "陆军",
+        "pinyin": "lùjūn",
+        "cixing": "名",
+        "sort": 8084,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "露天",
+        "pinyin": "lùtiān",
+        "cixing": "名、形",
+        "sort": 8085,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "路途",
+        "pinyin": "lùtú",
+        "cixing": "名",
+        "sort": 8086,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "露营",
+        "pinyin": "lùyíng",
+        "cixing": "动",
+        "sort": 8087,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "路子",
+        "pinyin": "lùzi",
+        "cixing": "名",
+        "sort": 8088,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "屡",
+        "pinyin": "lǚ",
+        "cixing": "副",
+        "sort": 8089,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "缕",
+        "pinyin": "lǚ",
+        "cixing": "量",
+        "sort": 8090,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "屡次",
+        "pinyin": "lǚcì",
+        "cixing": "副",
+        "sort": 8091,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "屡屡",
+        "pinyin": "lǚlǚ",
+        "cixing": "副",
+        "sort": 8092,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "绿地",
+        "pinyin": "lǜdì",
+        "cixing": "名",
+        "sort": 8093,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "绿洲",
+        "pinyin": "lǜzhōu",
+        "cixing": "名",
+        "sort": 8094,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "孪生",
+        "pinyin": "luánshēng",
+        "cixing": "形",
+        "sort": 8095,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "卵",
+        "pinyin": "luǎn",
+        "cixing": "名",
+        "sort": 8096,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "乱七八糟",
+        "pinyin": "luànqībāzāo",
+        "sort": 8097,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "略",
+        "pinyin": "lüè",
+        "cixing": "形、动、副",
+        "sort": 8098,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "掠夺",
+        "pinyin": "lüèduó",
+        "cixing": "动",
+        "sort": 8099,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "略微",
+        "pinyin": "lüèwēi",
+        "cixing": "副",
+        "sort": 8100,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "抡",
+        "pinyin": "lūn",
+        "cixing": "动",
+        "sort": 8101,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "轮换",
+        "pinyin": "lúnhuàn",
+        "cixing": "动",
+        "sort": 8102,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "轮廓",
+        "pinyin": "lúnkuò",
+        "cixing": "名",
+        "sort": 8103,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "伦理",
+        "pinyin": "lúnlǐ",
+        "cixing": "名",
+        "sort": 8104,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "轮胎",
+        "pinyin": "lúntāi",
+        "cixing": "名",
+        "sort": 8105,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "论述",
+        "pinyin": "lùnshù",
+        "cixing": "动",
+        "sort": 8106,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "论证",
+        "pinyin": "lùnzhèng",
+        "cixing": "动、名",
+        "sort": 8107,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "啰唆",
+        "pinyin": "luōsuo",
+        "cixing": "形、动",
+        "sort": 8108,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "萝卜",
+        "pinyin": "luóbo",
+        "cixing": "名",
+        "sort": 8109,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "螺丝",
+        "pinyin": "luósī",
+        "cixing": "名",
+        "sort": 8110,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "裸",
+        "pinyin": "luǒ",
+        "cixing": "动",
+        "sort": 8111,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "裸露",
+        "pinyin": "luǒlù",
+        "cixing": "动",
+        "sort": 8112,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "裸体",
+        "pinyin": "luǒtǐ",
+        "cixing": "动、名",
+        "sort": 8113,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "落差",
+        "pinyin": "luòchā",
+        "cixing": "名",
+        "sort": 8114,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "落成",
+        "pinyin": "luòchéng",
+        "cixing": "动",
+        "sort": 8115,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "落户",
+        "pinyin": "luòhù",
+        "cixing": "动",
+        "sort": 8116,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "落实",
+        "pinyin": "luòshí",
+        "cixing": "动",
+        "sort": 8117,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "络绎不绝",
+        "pinyin": "luòyì-bùjué",
+        "sort": 8118,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "麻1",
+        "pinyin": "má",
+        "cixing": "形",
+        "sort": 8119,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "麻2",
+        "pinyin": "má",
+        "cixing": "名",
+        "sort": 8120,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "麻痹",
+        "pinyin": "mábì",
+        "cixing": "动、形",
+        "sort": 8121,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "麻将",
+        "pinyin": "májiàng",
+        "cixing": "名",
+        "sort": 8122,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "麻辣",
+        "pinyin": "málà",
+        "cixing": "形",
+        "sort": 8123,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "麻木",
+        "pinyin": "mámù",
+        "cixing": "形",
+        "sort": 8124,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "麻醉",
+        "pinyin": "mázuì",
+        "cixing": "动",
+        "sort": 8125,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "码1",
+        "pinyin": "mǎ",
+        "cixing": "量",
+        "sort": 8126,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "码2",
+        "pinyin": "mǎ",
+        "cixing": "动",
+        "sort": 8127,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "马后炮",
+        "pinyin": "mǎhòupào",
+        "cixing": "名",
+        "sort": 8128,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "马力",
+        "pinyin": "mǎlì",
+        "cixing": "量",
+        "sort": 8129,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "马桶",
+        "pinyin": "mǎtǒng",
+        "cixing": "名",
+        "sort": 8130,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "埋藏",
+        "pinyin": "máicáng",
+        "cixing": "动",
+        "sort": 8131,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "埋伏",
+        "pinyin": "máifú",
+        "cixing": "动",
+        "sort": 8132,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "埋没",
+        "pinyin": "máimò",
+        "cixing": "动",
+        "sort": 8133,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "埋头苦干",
+        "pinyin": "máitóu-kǔgàn",
+        "sort": 8134,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "埋葬",
+        "pinyin": "máizàng",
+        "cixing": "动",
+        "sort": 8135,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "脉搏",
+        "pinyin": "màibó",
+        "cixing": "名",
+        "sort": 8136,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "脉络",
+        "pinyin": "màiluò",
+        "cixing": "名",
+        "sort": 8137,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "瞒",
+        "pinyin": "mán",
+        "cixing": "动",
+        "sort": 8138,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "埋怨",
+        "pinyin": "mányuàn",
+        "cixing": "动",
+        "sort": 8139,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "满怀",
+        "pinyin": "mǎnhuái",
+        "cixing": "动、名",
+        "sort": 8140,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "漫",
+        "pinyin": "màn",
+        "cixing": "动",
+        "sort": 8141,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "慢性",
+        "pinyin": "mànxìng",
+        "cixing": "形",
+        "sort": 8142,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "蔓延",
+        "pinyin": "mànyán",
+        "cixing": "动",
+        "sort": 8143,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "漫游",
+        "pinyin": "mànyóu",
+        "cixing": "动",
+        "sort": 8144,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "忙活",
+        "pinyin": "mánghuo",
+        "cixing": "动",
+        "sort": 8145,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "忙乱",
+        "pinyin": "mángluàn",
+        "cixing": "形",
+        "sort": 8146,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "茫茫",
+        "pinyin": "mángmáng",
+        "cixing": "形",
+        "sort": 8147,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "盲目",
+        "pinyin": "mángmù",
+        "cixing": "形",
+        "sort": 8148,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "茫然",
+        "pinyin": "mángrán",
+        "cixing": "形",
+        "sort": 8149,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "矛头",
+        "pinyin": "máotóu",
+        "cixing": "名",
+        "sort": 8150,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冒充",
+        "pinyin": "màochōng",
+        "cixing": "动",
+        "sort": 8151,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冒犯",
+        "pinyin": "màofàn",
+        "cixing": "动",
+        "sort": 8152,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "冒昧",
+        "pinyin": "màomèi",
+        "cixing": "形",
+        "sort": 8153,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "茂密",
+        "pinyin": "màomì",
+        "cixing": "形",
+        "sort": 8154,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "茂盛",
+        "pinyin": "màoshèng",
+        "cixing": "形",
+        "sort": 8155,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "枚",
+        "pinyin": "méi",
+        "cixing": "量",
+        "sort": 8156,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "媒介",
+        "pinyin": "méijiè",
+        "cixing": "名",
+        "sort": 8157,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "没劲",
+        "pinyin": "méijìn",
+        "cixing": "动、形",
+        "sort": 8158,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "眉开眼笑",
+        "pinyin": "méikāi-yǎnxiào",
+        "sort": 8159,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "煤气",
+        "pinyin": "méiqì",
+        "cixing": "名",
+        "sort": 8160,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "煤炭",
+        "pinyin": "méitàn",
+        "cixing": "名",
+        "sort": 8161,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "没完没了",
+        "pinyin": "méiwán-méiliǎo",
+        "sort": 8162,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "没辙",
+        "pinyin": "méizhé",
+        "cixing": "动",
+        "sort": 8163,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "没准儿",
+        "pinyin": "méizhǔnr",
+        "cixing": "动",
+        "sort": 8164,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "美德",
+        "pinyin": "měidé",
+        "cixing": "名",
+        "sort": 8165,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "美化",
+        "pinyin": "měihuà",
+        "cixing": "动",
+        "sort": 8166,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "美满",
+        "pinyin": "měimǎn",
+        "cixing": "形",
+        "sort": 8167,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "美妙",
+        "pinyin": "měimiào",
+        "cixing": "形",
+        "sort": 8168,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "美容",
+        "pinyin": "měiróng",
+        "cixing": "动",
+        "sort": 8169,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "美学",
+        "pinyin": "měixué",
+        "cixing": "名",
+        "sort": 8170,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "美誉",
+        "pinyin": "měiyù",
+        "cixing": "名",
+        "sort": 8171,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "美中不足",
+        "pinyin": "měizhōng-bùzú",
+        "sort": 8172,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "美滋滋",
+        "pinyin": "měizīzī",
+        "cixing": "形",
+        "sort": 8173,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "闷",
+        "pinyin": "mēn",
+        "cixing": "形、动",
+        "sort": 8174,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "闷热",
+        "pinyin": "mēnrè",
+        "cixing": "形",
+        "sort": 8175,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "门槛",
+        "pinyin": "ménkǎn",
+        "cixing": "名",
+        "sort": 8176,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "门路",
+        "pinyin": "ménlu",
+        "cixing": "名",
+        "sort": 8177,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "闷",
+        "pinyin": "mèn",
+        "cixing": "形",
+        "sort": 8178,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "蒙",
+        "pinyin": "mēng",
+        "cixing": "动",
+        "sort": 8179,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "蒙",
+        "pinyin": "méng",
+        "cixing": "动",
+        "sort": 8180,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "萌发",
+        "pinyin": "méngfā",
+        "cixing": "动",
+        "sort": 8181,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "朦胧",
+        "pinyin": "ménglóng",
+        "cixing": "形",
+        "sort": 8182,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "萌芽",
+        "pinyin": "méngyá",
+        "cixing": "动、名",
+        "sort": 8183,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "盟友",
+        "pinyin": "méngyǒu",
+        "cixing": "名",
+        "sort": 8184,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "猛",
+        "pinyin": "měng",
+        "cixing": "形",
+        "sort": 8185,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "猛烈",
+        "pinyin": "měngliè",
+        "cixing": "形",
+        "sort": 8186,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "猛然",
+        "pinyin": "měngrán",
+        "cixing": "副",
+        "sort": 8187,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "梦幻",
+        "pinyin": "mènghuàn",
+        "cixing": "名",
+        "sort": 8188,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "梦寐以求",
+        "pinyin": "mèngmèiyǐqiú",
+        "sort": 8189,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "眯",
+        "pinyin": "mī",
+        "cixing": "动",
+        "sort": 8190,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谜",
+        "pinyin": "mí",
+        "cixing": "名",
+        "sort": 8191,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谜底",
+        "pinyin": "mídǐ",
+        "cixing": "名",
+        "sort": 8192,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "迷惑",
+        "pinyin": "míhuò",
+        "cixing": "形、动",
+        "sort": 8193,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "迷恋",
+        "pinyin": "míliàn",
+        "cixing": "动",
+        "sort": 8194,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "弥漫",
+        "pinyin": "mímàn",
+        "cixing": "动",
+        "sort": 8195,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "迷失",
+        "pinyin": "míshī",
+        "cixing": "动",
+        "sort": 8196,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谜团",
+        "pinyin": "mítuán",
+        "cixing": "名",
+        "sort": 8197,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "迷信",
+        "pinyin": "míxìn",
+        "cixing": "动",
+        "sort": 8198,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谜语",
+        "pinyin": "míyǔ",
+        "cixing": "名",
+        "sort": 8199,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "密布",
+        "pinyin": "mìbù",
+        "cixing": "动",
+        "sort": 8200,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "秘方",
+        "pinyin": "mìfāng",
+        "cixing": "名",
+        "sort": 8201,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "密封",
+        "pinyin": "mìfēng",
+        "cixing": "动",
+        "sort": 8202,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "秘诀",
+        "pinyin": "mìjué",
+        "cixing": "名",
+        "sort": 8203,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "蜜月",
+        "pinyin": "mìyuè",
+        "cixing": "名",
+        "sort": 8204,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "棉花",
+        "pinyin": "miánhuā",
+        "cixing": "名",
+        "sort": 8205,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "免不了",
+        "pinyin": "miǎnbuliǎo",
+        "cixing": "动",
+        "sort": 8206,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "免除",
+        "pinyin": "miǎnchú",
+        "cixing": "动",
+        "sort": 8207,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "免得",
+        "pinyin": "miǎnde",
+        "cixing": "连",
+        "sort": 8208,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "缅怀",
+        "pinyin": "miǎnhuái",
+        "cixing": "动",
+        "sort": 8209,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "勉励",
+        "pinyin": "miǎnlì",
+        "cixing": "动",
+        "sort": 8210,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "腼腆",
+        "pinyin": "miǎntiǎn",
+        "cixing": "形",
+        "sort": 8211,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "免职",
+        "pinyin": "miǎnzhí",
+        "cixing": "动",
+        "sort": 8212,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "面红耳赤",
+        "pinyin": "miànhóng-ěrchì",
+        "sort": 8213,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "面孔",
+        "pinyin": "miànkǒng",
+        "cixing": "名",
+        "sort": 8214,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "面貌",
+        "pinyin": "miànmào",
+        "cixing": "名",
+        "sort": 8215,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "面面俱到",
+        "pinyin": "miànmiàn-jùdào",
+        "sort": 8216,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "面目全非",
+        "pinyin": "miànmù-quánfēi",
+        "sort": 8217,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "苗",
+        "pinyin": "miáo",
+        "cixing": "名",
+        "sort": 8218,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "苗条",
+        "pinyin": "miáotiao",
+        "cixing": "形",
+        "sort": 8219,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "苗头",
+        "pinyin": "miáotou",
+        "cixing": "名",
+        "sort": 8220,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "瞄准",
+        "pinyin": "miáozhǔn",
+        "cixing": "动",
+        "sort": 8221,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "藐视",
+        "pinyin": "miǎoshì",
+        "cixing": "动",
+        "sort": 8222,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "渺小",
+        "pinyin": "miǎoxiǎo",
+        "cixing": "形",
+        "sort": 8223,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "庙",
+        "pinyin": "miào",
+        "cixing": "名",
+        "sort": 8224,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "庙会",
+        "pinyin": "miàohuì",
+        "cixing": "名",
+        "sort": 8225,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "灭绝",
+        "pinyin": "mièjué",
+        "cixing": "动",
+        "sort": 8226,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "蔑视",
+        "pinyin": "mièshì",
+        "cixing": "动",
+        "sort": 8227,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "灭亡",
+        "pinyin": "mièwáng",
+        "cixing": "动",
+        "sort": 8228,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "民办",
+        "pinyin": "mínbàn",
+        "cixing": "形",
+        "sort": 8229,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "民居",
+        "pinyin": "mínjū",
+        "cixing": "名",
+        "sort": 8230,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "民生",
+        "pinyin": "mínshēng",
+        "cixing": "名",
+        "sort": 8231,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "民事",
+        "pinyin": "mínshì",
+        "cixing": "形",
+        "sort": 8232,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "民意",
+        "pinyin": "mínyì",
+        "cixing": "名",
+        "sort": 8233,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "民营",
+        "pinyin": "mínyíng",
+        "cixing": "形",
+        "sort": 8234,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "民用",
+        "pinyin": "mínyòng",
+        "cixing": "形",
+        "sort": 8235,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "敏捷",
+        "pinyin": "mǐnjié",
+        "cixing": "形",
+        "sort": 8236,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "敏锐",
+        "pinyin": "mǐnruì",
+        "cixing": "形",
+        "sort": 8237,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "鸣",
+        "pinyin": "míng",
+        "cixing": "动",
+        "sort": 8238,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "名次",
+        "pinyin": "míngcì",
+        "cixing": "名",
+        "sort": 8239,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "名副其实",
+        "pinyin": "míngfùqíshí",
+        "sort": 8240,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "名贵",
+        "pinyin": "míngguì",
+        "cixing": "形",
+        "sort": 8241,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "铭记",
+        "pinyin": "míngjì",
+        "cixing": "动",
+        "sort": 8242,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "明朗",
+        "pinyin": "mínglǎng",
+        "cixing": "形",
+        "sort": 8243,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "名利",
+        "pinyin": "mínglì",
+        "cixing": "名",
+        "sort": 8244,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "明媚",
+        "pinyin": "míngmèi",
+        "cixing": "形",
+        "sort": 8245,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "名声",
+        "pinyin": "míngshēng",
+        "cixing": "名",
+        "sort": 8246,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "名言",
+        "pinyin": "míngyán",
+        "cixing": "名",
+        "sort": 8247,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "名义",
+        "pinyin": "míngyì",
+        "cixing": "名",
+        "sort": 8248,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "名誉",
+        "pinyin": "míngyù",
+        "cixing": "名、形",
+        "sort": 8249,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "明智",
+        "pinyin": "míngzhì",
+        "cixing": "形",
+        "sort": 8250,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "名著",
+        "pinyin": "míngzhù",
+        "cixing": "名",
+        "sort": 8251,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "命2",
+        "pinyin": "mìng",
+        "cixing": "动",
+        "sort": 8252,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "摸索",
+        "pinyin": "mōsuǒ",
+        "cixing": "动",
+        "sort": 8253,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "膜",
+        "pinyin": "mó",
+        "cixing": "名",
+        "sort": 8254,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "磨",
+        "pinyin": "mó",
+        "cixing": "动",
+        "sort": 8255,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "摩擦",
+        "pinyin": "mócā",
+        "cixing": "动、名",
+        "sort": 8256,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "魔法",
+        "pinyin": "mófǎ",
+        "cixing": "名",
+        "sort": 8257,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "模范",
+        "pinyin": "mófàn",
+        "cixing": "名、形",
+        "sort": 8258,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "蘑菇",
+        "pinyin": "mógu",
+        "cixing": "名",
+        "sort": 8259,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "魔鬼",
+        "pinyin": "móguǐ",
+        "cixing": "名",
+        "sort": 8260,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "磨合",
+        "pinyin": "móhé",
+        "cixing": "动",
+        "sort": 8261,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "魔力",
+        "pinyin": "mólì",
+        "cixing": "名",
+        "sort": 8262,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "磨炼",
+        "pinyin": "móliàn",
+        "cixing": "动",
+        "sort": 8263,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "磨难",
+        "pinyin": "mónàn",
+        "cixing": "名",
+        "sort": 8264,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "魔术",
+        "pinyin": "móshù",
+        "cixing": "名",
+        "sort": 8265,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "磨损",
+        "pinyin": "mósǔn",
+        "cixing": "动",
+        "sort": 8266,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "抹",
+        "pinyin": "mǒ",
+        "cixing": "动、量",
+        "sort": 8267,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "抹杀",
+        "pinyin": "mǒshā",
+        "cixing": "动",
+        "sort": 8268,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "墨",
+        "pinyin": "mò",
+        "cixing": "名",
+        "sort": 8269,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "莫大",
+        "pinyin": "mòdà",
+        "cixing": "形",
+        "sort": 8270,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "莫非",
+        "pinyin": "mòfēi",
+        "cixing": "副",
+        "sort": 8271,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "茉莉",
+        "pinyin": "mòlì",
+        "cixing": "名",
+        "sort": 8272,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "没落",
+        "pinyin": "mòluò",
+        "cixing": "动",
+        "sort": 8273,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "莫名其妙",
+        "pinyin": "mòmíngqímiào",
+        "sort": 8274,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "默默无闻",
+        "pinyin": "mòmò-wúwén",
+        "sort": 8275,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "默契",
+        "pinyin": "mòqì",
+        "cixing": "形、名",
+        "sort": 8276,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "漠然",
+        "pinyin": "mòrán",
+        "cixing": "形",
+        "sort": 8277,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "末日",
+        "pinyin": "mòrì",
+        "cixing": "名",
+        "sort": 8278,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "没收",
+        "pinyin": "mòshōu",
+        "cixing": "动",
+        "sort": 8279,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "墨水",
+        "pinyin": "mòshuǐ",
+        "cixing": "名",
+        "sort": 8280,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谋害",
+        "pinyin": "móuhài",
+        "cixing": "动",
+        "sort": 8281,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谋划",
+        "pinyin": "móuhuà",
+        "cixing": "动",
+        "sort": 8282,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谋求",
+        "pinyin": "móuqiú",
+        "cixing": "动",
+        "sort": 8283,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谋取",
+        "pinyin": "móuqǔ",
+        "cixing": "动",
+        "sort": 8284,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "谋生",
+        "pinyin": "móushēng",
+        "cixing": "动",
+        "sort": 8285,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "亩",
+        "pinyin": "mǔ",
+        "cixing": "量",
+        "sort": 8286,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "牡丹",
+        "pinyin": "mǔdan",
+        "cixing": "名",
+        "sort": 8287,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "拇指",
+        "pinyin": "mǔzhǐ",
+        "cixing": "名",
+        "sort": 8288,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "墓",
+        "pinyin": "mù",
+        "cixing": "名",
+        "sort": 8289,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "幕",
+        "pinyin": "mù",
+        "cixing": "量",
+        "sort": 8290,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "墓碑",
+        "pinyin": "mùbēi",
+        "cixing": "名",
+        "sort": 8291,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "目不转睛",
+        "pinyin": "mùbùzhuǎnjīng",
+        "sort": 8292,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "牧场",
+        "pinyin": "mùchǎng",
+        "cixing": "名",
+        "sort": 8293,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "目瞪口呆",
+        "pinyin": "mùdèng-kǒudāi",
+        "sort": 8294,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "墓地",
+        "pinyin": "mùdì",
+        "cixing": "名",
+        "sort": 8295,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "目睹",
+        "pinyin": "mùdǔ",
+        "cixing": "动",
+        "sort": 8296,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "幕后",
+        "pinyin": "mùhòu",
+        "cixing": "名",
+        "sort": 8297,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "木匠",
+        "pinyin": "mùjiàng",
+        "cixing": "名",
+        "sort": 8298,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "募捐",
+        "pinyin": "mùjuān",
+        "cixing": "动",
+        "sort": 8299,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "牧民",
+        "pinyin": "mùmín",
+        "cixing": "名",
+        "sort": 8300,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "木偶",
+        "pinyin": "mù’ǒu",
+        "cixing": "名",
+        "sort": 8301,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "沐浴",
+        "pinyin": "mùyù",
+        "cixing": "动",
+        "sort": 8302,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "目中无人",
+        "pinyin": "mùzhōng-wúrén",
+        "cixing": "",
+        "sort": 8303,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "拿手",
+        "pinyin": "náshǒu",
+        "cixing": "形",
+        "sort": 8304,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "呐喊",
+        "pinyin": "nàhǎn",
+        "cixing": "动",
+        "sort": 8305,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "纳闷儿",
+        "pinyin": "nàmènr",
+        "cixing": "动",
+        "sort": 8306,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "纳入",
+        "pinyin": "nàrù",
+        "cixing": "动",
+        "sort": 8307,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "纳税",
+        "pinyin": "nàshuì",
+        "cixing": "动",
+        "sort": 8308,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "纳税人",
+        "pinyin": "nàshuìrén",
+        "cixing": "名",
+        "sort": 8309,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "乃",
+        "pinyin": "nǎi",
+        "cixing": "副",
+        "sort": 8310,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "奶酪",
+        "pinyin": "nǎilào",
+        "cixing": "名",
+        "sort": 8311,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "乃至",
+        "pinyin": "nǎizhì",
+        "cixing": "连",
+        "sort": 8312,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "耐",
+        "pinyin": "nài",
+        "cixing": "动",
+        "sort": 8313,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "耐人寻味",
+        "pinyin": "nàirénxúnwèi",
+        "sort": 8314,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "耐用",
+        "pinyin": "nàiyòng",
+        "cixing": "形",
+        "sort": 8315,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "难处",
+        "pinyin": "nánchù",
+        "cixing": "名",
+        "sort": 8316,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "难得一见",
+        "pinyin": "nándé yí jiàn",
+        "sort": 8317,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "男方",
+        "pinyin": "nánfāng",
+        "cixing": "名",
+        "sort": 8318,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "南瓜",
+        "pinyin": "nánguā",
+        "cixing": "名",
+        "sort": 8319,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "难怪",
+        "pinyin": "nánguài",
+        "cixing": "动、副",
+        "sort": 8320,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "难关",
+        "pinyin": "nánguān",
+        "cixing": "名",
+        "sort": 8321,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "难堪",
+        "pinyin": "nánkān",
+        "cixing": "动、形",
+        "sort": 8322,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "难能可贵",
+        "pinyin": "nánnéng-kěguì",
+        "sort": 8323,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "难为情",
+        "pinyin": "nánwéiqíng",
+        "cixing": "形",
+        "sort": 8324,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "难以置信",
+        "pinyin": "nányǐ-zhìxìn",
+        "sort": 8325,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "南辕北辙",
+        "pinyin": "nányuán-běizhé",
+        "sort": 8326,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "挠",
+        "pinyin": "náo",
+        "cixing": "动",
+        "sort": 8327,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "脑海",
+        "pinyin": "nǎohǎi",
+        "cixing": "名",
+        "sort": 8328,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "恼火",
+        "pinyin": "nǎohuǒ",
+        "cixing": "形",
+        "sort": 8329,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "恼羞成怒",
+        "pinyin": "nǎoxiū-chéngnù",
+        "sort": 8330,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "闹事",
+        "pinyin": "nàoshì",
+        "cixing": "动",
+        "sort": 8331,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "内存",
+        "pinyin": "nèicún",
+        "cixing": "名",
+        "sort": 8332,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "内地",
+        "pinyin": "nèidì",
+        "cixing": "名",
+        "sort": 8333,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "内行",
+        "pinyin": "nèiháng",
+        "cixing": "形、名",
+        "sort": 8334,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "内幕",
+        "pinyin": "nèimù",
+        "cixing": "名",
+        "sort": 8335,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "内向",
+        "pinyin": "nèixiàng",
+        "cixing": "形",
+        "sort": 8336,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "内需",
+        "pinyin": "nèixū",
+        "cixing": "名",
+        "sort": 8337,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "内在",
+        "pinyin": "nèizài",
+        "cixing": "形",
+        "sort": 8338,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "内脏",
+        "pinyin": "nèizàng",
+        "cixing": "名",
+        "sort": 8339,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "嫩",
+        "pinyin": "nèn",
+        "cixing": "形",
+        "sort": 8340,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "能耗",
+        "pinyin": "nénghào",
+        "cixing": "名",
+        "sort": 8341,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "能耐",
+        "pinyin": "néngnai",
+        "cixing": "名、形",
+        "sort": 8342,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "能人",
+        "pinyin": "néngrén",
+        "cixing": "名",
+        "sort": 8343,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "泥泞",
+        "pinyin": "nínìng",
+        "cixing": "形",
+        "sort": 8344,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "泥潭",
+        "pinyin": "nítán",
+        "cixing": "名",
+        "sort": 8345,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "泥土",
+        "pinyin": "nítǔ",
+        "cixing": "名",
+        "sort": 8346,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "拟",
+        "pinyin": "nǐ",
+        "cixing": "动",
+        "sort": 8347,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "拟定",
+        "pinyin": "nǐdìng",
+        "cixing": "动",
+        "sort": 8348,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "逆",
+        "pinyin": "nì",
+        "cixing": "动",
+        "sort": 8349,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "逆境",
+        "pinyin": "nìjìng",
+        "cixing": "名",
+        "sort": 8350,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "匿名",
+        "pinyin": "nìmíng",
+        "cixing": "动",
+        "sort": 8351,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "溺水",
+        "pinyin": "nìshuǐ",
+        "cixing": "动",
+        "sort": 8352,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "逆行",
+        "pinyin": "nìxíng",
+        "cixing": "动",
+        "sort": 8353,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "黏",
+        "pinyin": "nián",
+        "cixing": "形",
+        "sort": 8354,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "年报",
+        "pinyin": "niánbào",
+        "cixing": "名",
+        "sort": 8355,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "年画",
+        "pinyin": "niánhuà",
+        "cixing": "名",
+        "sort": 8356,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "年均",
+        "pinyin": "niánjūn",
+        "cixing": "动",
+        "sort": 8357,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "年轮",
+        "pinyin": "niánlún",
+        "cixing": "名",
+        "sort": 8358,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "年迈",
+        "pinyin": "niánmài",
+        "cixing": "形",
+        "sort": 8359,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "年限",
+        "pinyin": "niánxiàn",
+        "cixing": "名",
+        "sort": 8360,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "年薪",
+        "pinyin": "niánxīn",
+        "cixing": "名",
+        "sort": 8361,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "撵",
+        "pinyin": "niǎn",
+        "cixing": "动",
+        "sort": 8362,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "念念不忘",
+        "pinyin": "niànniàn-búwàng",
+        "sort": 8363,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "念头",
+        "pinyin": "niàntou",
+        "cixing": "名",
+        "sort": 8364,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "娘",
+        "pinyin": "niáng",
+        "cixing": "名",
+        "sort": 8365,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "酿造",
+        "pinyin": "niàngzào",
+        "cixing": "动",
+        "sort": 8366,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "鸟巢",
+        "pinyin": "niǎocháo",
+        "cixing": "名",
+        "sort": 8367,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "尿",
+        "pinyin": "niào",
+        "cixing": "名、动",
+        "sort": 8368,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "捏",
+        "pinyin": "niē",
+        "cixing": "动",
+        "sort": 8369,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "拧",
+        "pinyin": "níng",
+        "cixing": "动",
+        "sort": 8370,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "凝固",
+        "pinyin": "nínggù",
+        "cixing": "动",
+        "sort": 8371,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "凝结",
+        "pinyin": "níngjié",
+        "cixing": "动",
+        "sort": 8372,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "宁静",
+        "pinyin": "níngjìng",
+        "cixing": "形",
+        "sort": 8373,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "凝聚",
+        "pinyin": "níngjù",
+        "cixing": "动",
+        "sort": 8374,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "凝视",
+        "pinyin": "níngshì",
+        "cixing": "动",
+        "sort": 8375,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "拧",
+        "pinyin": "nǐng",
+        "cixing": "动",
+        "sort": 8376,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "宁可",
+        "pinyin": "nìngkě",
+        "cixing": "副",
+        "sort": 8377,
+        "levelName": "七-九级"
+      },
+      {
+        "type": 1,
+        "word": "宁愿",
+        "pinyin": "nìngyuàn",
+        "cixing": "副",
+        "sort": 8378,
+        "levelName": "七-九级"
+      }
+    ],
+    "total": 5622,
+    "size": 500,
+    "current": 6,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 12
+  },
+  "ok": true
+}

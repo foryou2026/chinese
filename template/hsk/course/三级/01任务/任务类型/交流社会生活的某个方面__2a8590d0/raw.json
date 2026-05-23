@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流社会生活的某个方面",
+        "level2Content": "能听懂日常交谈中朋友、家人等关于现代生活、城市发展等社会生活某方面的一般性问题，或朋友、家人等对上述社会生活某方面的一般性介绍。如：高铁等现代交通方式、新的支付方式及影响，现代城市发展中的道路、设施等概况。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流社会生活的某个方面",
+        "level2Content": "能在日常交谈中询问朋友、家人等关于上述现代生活、城市发展等社会生活的某个方面的一般性问题；能回答朋友、家人等关于上述社会生活的某个方面的一般性问题。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流社会生活的某个方面",
+        "level2Content": "能向朋友、家人等简单介绍上述社会生活某个方面的相关内容。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流社会生活的某个方面",
+        "level2Content": "能看懂介绍上述社会生活某个方面的简单小短文。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流社会生活的某个方面",
+        "level2Content": "能写出一两句话，简单介绍对上述社会生活某个方面的了解或经历。如：坐高铁出行，用手机支付等。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

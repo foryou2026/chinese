@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "B19AF8CFE1CD60BAAF0AB53BA83487CA",
+      "content": "经济现象",
+      "children": []
+    },
+    {
+      "id": "886FD72B7B91F8B47D4003185C1CE340",
+      "content": "社会现象",
+      "children": []
+    },
+    {
+      "id": "50A6E09E7BF4A10A788AB3AF6078D3E1",
+      "content": "文艺",
+      "children": []
+    },
+    {
+      "id": "1AA57FD5195BD77035CF360CC6322FDE",
+      "content": "体育",
+      "children": []
+    },
+    {
+      "id": "CD9A47F5A6907734E24AFF01E8B3E868",
+      "content": "中外交流",
+      "children": []
+    }
+  ],
+  "ok": true
+}

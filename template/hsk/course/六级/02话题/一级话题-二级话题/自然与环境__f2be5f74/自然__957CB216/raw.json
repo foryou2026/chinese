@@ -1,0 +1,57 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "地理分区"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "地形地貌"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "自然现象"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "动植物"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "自然资源"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "自然规律"
+      }
+    ],
+    "total": 6,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

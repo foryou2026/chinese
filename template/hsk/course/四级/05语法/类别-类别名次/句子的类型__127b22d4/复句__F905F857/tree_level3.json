@@ -1,0 +1,61 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "CD4464727EA26E914BDEFB8D1CE4D2C5",
+      "content": "并列复句",
+      "children": []
+    },
+    {
+      "id": "1380747982812EA87C755CFB5B896B7A",
+      "content": "承接复句",
+      "children": []
+    },
+    {
+      "id": "FABDF62F4F1477C02EAD10EEF7543B35",
+      "content": "递进复句",
+      "children": []
+    },
+    {
+      "id": "5D1A60C77232623B8F65877C5986A0EA",
+      "content": "选择复句",
+      "children": []
+    },
+    {
+      "id": "35DB1A918DFFEFCB1D4E709B677EE865",
+      "content": "转折复句",
+      "children": []
+    },
+    {
+      "id": "22D7AFD775BA32A156359E43981934CA",
+      "content": "假设复句",
+      "children": []
+    },
+    {
+      "id": "B8388BE57F4A6AEB42D5CF59C8AFBB85",
+      "content": "条件复句",
+      "children": []
+    },
+    {
+      "id": "9ABD2A41034927B5C5249C67F3A6D2B1",
+      "content": "因果复句",
+      "children": []
+    },
+    {
+      "id": "CBAC5A7CC52227F682182EE53503EB81",
+      "content": "目的复句",
+      "children": []
+    },
+    {
+      "id": "AB0222FDEC6051A39E7136B7D01F4F11",
+      "content": "让步复句",
+      "children": []
+    },
+    {
+      "id": "9119C666A534328CFA5FA0821F7AD06A",
+      "content": "紧缩复句",
+      "children": []
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "表示出现：处所词+动词+趋向补语/结果补语+动态助词（了）+数量短语+人/物",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "存现句3",
+        "cases": "前边开过来一辆出租车。   \r\n楼上搬来了一家人。\r\n校门外走进来几个学生。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "表示消失：处所词+动词+结果补语+动态助词（了）+数量短语+人/物",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "存现句3",
+        "cases": "树上飞走了三只小鸟。                    \r\n他家里跑丢了一只羊。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

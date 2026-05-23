@@ -1,0 +1,155 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "人际交往",
+        "level3Content": "人际关系"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "人际交往",
+        "level3Content": "中国人际交往中的品行观念和评价"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "形象服饰",
+        "level3Content": "不同文化和场合符合礼仪的形象"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "形象服饰",
+        "level3Content": "服饰搭配与风格"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "形象服饰",
+        "level3Content": "中式服装特点与审美"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "饮食餐饮",
+        "level3Content": "具有代表性的中国饮食观念、烹饪方法"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "饮食餐饮",
+        "level3Content": "多样化的地域饮食特色"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "饮食餐饮",
+        "level3Content": "各种餐饮形态的特点和代表品种"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "饮食餐饮",
+        "level3Content": "中国餐桌文化及含义"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "建筑与社区",
+        "level3Content": "建筑与社区文化"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "建筑与社区",
+        "level3Content": "社区空间、设施的规划与建设"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "建筑与社区",
+        "level3Content": "建筑功能设计与建设"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "建筑与社区",
+        "level3Content": "房屋买卖与租赁"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "休闲娱乐",
+        "level3Content": "旅游度假"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "休闲娱乐",
+        "level3Content": "运动健身"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "休闲娱乐",
+        "level3Content": "文化娱乐"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "休闲娱乐",
+        "level3Content": "购物休闲"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "学业职业",
+        "level3Content": "专业学习"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "学业职业",
+        "level3Content": "学业发展与生涯规划"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "个体与社会",
+        "level2Content": "学业职业",
+        "level3Content": "职业发展"
+      }
+    ],
+    "total": 20,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

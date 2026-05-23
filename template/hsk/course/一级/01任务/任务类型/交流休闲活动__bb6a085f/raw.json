@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "交流休闲活动",
+        "level2Content": "能听懂他人关于日常休闲活动的简单问题，或关于某人喜好的日常休闲活动的简单信息介绍。如：看书、唱歌、看电视等。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "交流休闲活动",
+        "level2Content": "能询问家人、朋友、同学等喜好的日常休闲活动；能回答关于自己、家人或朋友日常休闲活动的喜好、安排等简单问题。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "交流休闲活动",
+        "level2Content": "能简单介绍自己对日常休闲活动的喜好、安排等。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "交流休闲活动",
+        "level2Content": "能看懂关于日常休闲活动的简单信息，如：活动的时间和地点等。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

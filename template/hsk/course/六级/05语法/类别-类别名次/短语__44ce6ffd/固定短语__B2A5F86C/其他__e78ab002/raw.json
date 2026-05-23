@@ -1,0 +1,47 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "content": "好（不）容易",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "其他",
+        "cases": "我好不容易才获得这次面试机会，一定不会轻易放弃。\n假期好不容易可以休息一下，你怎么还要去公司加班？"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "那倒（也）是",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "其他",
+        "cases": "假如去那家公司工作能为你提供更多的发展空间，那倒也是个不错的选择。\n要是你能从失败中吸取教训，那倒也是件值得高兴的事。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "算了",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "其他",
+        "cases": "这些旧衣服扔掉算了，反正也不会再穿了。\n雪下得这么大，估计不会有客人来了，干脆早点儿关门算了。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "得了",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "其他",
+        "cases": "得了，别再想了，结果不可能改变了。\n你这么喜欢这本书，干脆送给你得了。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

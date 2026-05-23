@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论环境问题",
+        "level2Content": "能听懂有关城市与乡村环境、环境保护等环境问题的一般性报道，或人们谈论的环境问题相关内容。如：人类活动影响；人居环境、城市乡村环境变化；污染与环境治理。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论环境问题",
+        "level2Content": "能向他人较流畅地介绍自己所了解的有关上述环境问题的主要内容，能与他人交流，发表看法。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论环境问题",
+        "level2Content": "能看懂关于上述环境问题的一般新闻、介绍性文章。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论环境问题",
+        "level2Content": "能写出短文介绍自己了解的上述环境问题的情况，发表看法。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

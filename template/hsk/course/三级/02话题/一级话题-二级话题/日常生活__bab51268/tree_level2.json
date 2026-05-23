@@ -1,0 +1,56 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "2C76654787FEA1401358C9C915D76BC3",
+      "content": "个人情况",
+      "children": []
+    },
+    {
+      "id": "2C76654787FEA1401358C9C915D76BC2",
+      "content": "日常事务",
+      "children": []
+    },
+    {
+      "id": "889551B9071892A5159F928C105C9EB0",
+      "content": "交往",
+      "children": []
+    },
+    {
+      "id": "8617F48E3F9B75D09D10755EDD77108D",
+      "content": "饮食",
+      "children": []
+    },
+    {
+      "id": "8FF327AED6B22837F0A4A20AF2262B9D",
+      "content": "交通出行",
+      "children": []
+    },
+    {
+      "id": "37127E427A944F425348683244CC3A74",
+      "content": "购物",
+      "children": []
+    },
+    {
+      "id": "D3C127CF7DEE9B152D8D7EBDE1FF9C6D",
+      "content": "医疗健康",
+      "children": []
+    },
+    {
+      "id": "C5F8F9205F917AC3CEDAE0D5B2A346D3",
+      "content": "休闲",
+      "children": []
+    },
+    {
+      "id": "3add350b7564342943daed3f3827b1f7",
+      "content": "社区",
+      "children": []
+    },
+    {
+      "id": "a5ba07bf3d3faa9d5d7ea6d5e847134b",
+      "content": "家庭生活",
+      "children": []
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "过",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "动态助词",
+        "cases": "你学过中文吗？\r\n我没去过北京。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "着",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "动态助词",
+        "cases": "他穿着一条黑色的裤子。\r\n教室的门开着。\r\n他们唱着歌，跳着舞，非常高兴。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

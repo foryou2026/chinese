@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "defac925685a11f0b11400163e03dd53",
+      "content": "交往",
+      "children": []
+    },
+    {
+      "id": "df2ed2c6685a11f0b11400163e03dd53",
+      "content": "饮食",
+      "children": []
+    },
+    {
+      "id": "df62a8e6685a11f0b11400163e03dd53",
+      "content": "交通出行",
+      "children": []
+    },
+    {
+      "id": "df964eb2685a11f0b11400163e03dd53",
+      "content": "购物",
+      "children": []
+    },
+    {
+      "id": "dfca2282685a11f0b11400163e03dd53",
+      "content": "医疗健康",
+      "children": []
+    },
+    {
+      "id": "dffd3f36685a11f0b11400163e03dd53",
+      "content": "休闲",
+      "children": []
+    }
+  ],
+  "ok": true
+}

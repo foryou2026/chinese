@@ -1,0 +1,71 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "type": 1,
+        "word": "总是",
+        "pinyin": "zǒngshì",
+        "cixing": "副",
+        "sort": 994,
+        "levelName": "三级"
+      },
+      {
+        "type": 1,
+        "word": "嘴",
+        "pinyin": "zuǐ",
+        "cixing": "名",
+        "sort": 995,
+        "levelName": "三级"
+      },
+      {
+        "type": 1,
+        "word": "最好",
+        "pinyin": "zuìhǎo",
+        "cixing": "副",
+        "sort": 996,
+        "levelName": "三级"
+      },
+      {
+        "type": 1,
+        "word": "最后",
+        "pinyin": "zuìhòu",
+        "cixing": "名",
+        "sort": 997,
+        "levelName": "三级"
+      },
+      {
+        "type": 1,
+        "word": "最近",
+        "pinyin": "zuìjìn",
+        "cixing": "名",
+        "sort": 998,
+        "levelName": "三级"
+      },
+      {
+        "type": 1,
+        "word": "做客",
+        "pinyin": "zuòkè",
+        "cixing": "动",
+        "sort": 999,
+        "levelName": "三级"
+      },
+      {
+        "type": 1,
+        "word": "作业",
+        "pinyin": "zuòyè",
+        "cixing": "名",
+        "sort": 1000,
+        "levelName": "三级"
+      }
+    ],
+    "total": 507,
+    "size": 500,
+    "current": 2,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 2
+  },
+  "ok": true
+}

@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "传统习俗",
+        "level3Content": "节日"
+      },
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "饮食文化",
+        "level3Content": "中餐印象"
+      },
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "姓氏文化",
+        "level3Content": "主要姓氏、正式称谓等"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

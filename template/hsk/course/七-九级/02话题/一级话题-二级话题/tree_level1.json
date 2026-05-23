@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "35bf5d07686911f0b11400163e03dd53",
+      "content": "个体与社会",
+      "children": []
+    },
+    {
+      "id": "35f38d86686911f0b11400163e03dd53",
+      "content": "国家与社会",
+      "children": []
+    },
+    {
+      "id": "36267aea686911f0b11400163e03dd53",
+      "content": "文化与传统",
+      "children": []
+    },
+    {
+      "id": "365a21ea686911f0b11400163e03dd53",
+      "content": "自然与环境",
+      "children": []
+    },
+    {
+      "id": "368e75af686911f0b11400163e03dd53",
+      "content": "科学技术",
+      "children": []
+    }
+  ],
+  "ok": true
+}

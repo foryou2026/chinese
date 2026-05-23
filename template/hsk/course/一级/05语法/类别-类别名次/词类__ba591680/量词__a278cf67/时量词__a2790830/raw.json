@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "日、号、岁、点、分、年、天",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "时量词",
+        "cases": "今天几月几日（号）？\r\n她今年几岁？\r\n现在八点二十分。\r\n一年有十二个月。\r\n你一天学习几个汉字？"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

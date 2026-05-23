@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "欣赏和评论文艺作品",
+        "level2Content": "能听懂、读懂中文影视、戏剧以及现当代散文、诗歌、小说等文艺作品中的片段，并深入理解其语言艺术和文化内涵，能听懂、看懂对艺术作品、文艺节目等的通俗性分析和评论。如：能听懂中国当代电影中具有相对独立性的人物对话片段。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "欣赏和评论文艺作品",
+        "level2Content": "能根据给定主题或材料以口头或书面形式比较深入地分析某部文艺作品的片段，有条理地阐释自己的观点。如：结合时代背景阐释某部小说中的人物描写片段对于人物形象塑造的意义。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "欣赏和评论文艺作品",
+        "level2Content": "能将文艺作品片段准确、流畅地译成中文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

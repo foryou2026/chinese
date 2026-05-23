@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "83327A4E9C26DDEA15B0FBA6AF808CFA",
+      "content": "日常事务",
+      "children": []
+    },
+    {
+      "id": "1F6CC08578CEEADE10AB0918C58AC863",
+      "content": "饮食",
+      "children": []
+    },
+    {
+      "id": "0525FA87B468CC6DEABF03594DF9860E",
+      "content": "交通出行",
+      "children": []
+    },
+    {
+      "id": "D00C72E6027FFD756CAB50923BB25CDC",
+      "content": "医疗健康",
+      "children": []
+    },
+    {
+      "id": "FD31E259747744FAB2E8905648D91B29",
+      "content": "社区",
+      "children": []
+    }
+  ],
+  "ok": true
+}

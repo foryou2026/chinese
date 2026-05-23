@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "—们、—边",
+        "grammarType": "语素",
+        "categoryType": "后缀",
+        "grammarDetail": "",
+        "cases": "同学们，你们好！\r\n学校里边有超市。\r\n外边正在下雨呢。\r\n电影院在医院的后边。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

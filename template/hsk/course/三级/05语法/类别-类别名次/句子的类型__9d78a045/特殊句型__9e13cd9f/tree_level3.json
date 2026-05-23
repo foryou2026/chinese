@@ -1,0 +1,41 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "9f69e697688f11f0b11400163e03dd53",
+      "content": "“把”字句1",
+      "children": []
+    },
+    {
+      "id": "9f7272f4688f11f0b11400163e03dd53",
+      "content": "被动句1",
+      "children": []
+    },
+    {
+      "id": "9f7aff7f688f11f0b11400163e03dd53",
+      "content": "连动句2",
+      "children": []
+    },
+    {
+      "id": "9f838967688f11f0b11400163e03dd53",
+      "content": "比较句2",
+      "children": []
+    },
+    {
+      "id": "9f8c139e688f11f0b11400163e03dd53",
+      "content": "存现句3",
+      "children": []
+    },
+    {
+      "id": "9f949fe2688f11f0b11400163e03dd53",
+      "content": "“是……的”句2",
+      "children": []
+    },
+    {
+      "id": "9f9d29ec688f11f0b11400163e03dd53",
+      "content": "重动句",
+      "children": []
+    }
+  ],
+  "ok": true
+}

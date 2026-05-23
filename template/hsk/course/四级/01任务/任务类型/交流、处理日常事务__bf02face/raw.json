@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能听懂日常生活中有关业务处理、困难求助的有一定复杂度的话语。如：办理快递收发、证件办理、申请会员时工作人员的询问和介绍等；需要法律咨询、警务求助、翻译咨询、广播寻人等帮助时工作人员的询问和介绍等。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能在遇到上述有关业务处理、困难求助情况时，比较流利地说明自己的情况，进行询问，表达沟通、求助、办事的意愿。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能比较流利地讲述上述日常生活中有关业务处理、困难求助的经历。如：事情的起因、经过、结果。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能读懂有关上述业务处理、困难求助经历的一般性短文，或办事过程中的一些表格、通知。如：快递通知单、业务办理须知等。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "交流、处理日常事务",
+        "level2Content": "能写出一段话简单讲述自己的上述办事、求助经历，或简单的服务反馈与评价或求助信。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

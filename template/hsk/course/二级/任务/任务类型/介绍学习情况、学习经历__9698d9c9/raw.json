@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "介绍学习情况、学习经历",
+        "level2Content": "能听懂同学、老师或家人等询问学习基本情况、学习经历的简单问题，或同学、朋友等关于上述情况的简单介绍。如：学习时间安排、学得怎么样、常用学习用品，课上做什么、怎么考试、学习方法，就读的学校、就读时间、所处学段等。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "介绍学习情况、学习经历",
+        "level2Content": "能询问同学或朋友等关于平时学习、学习经历的简单情况；能回答关于上述学习相关情况的简单问题。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "介绍学习情况、学习经历",
+        "level2Content": "能向老师、同学、家人等简单介绍自己的上述学习相关情况。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "介绍学习情况、学习经历",
+        "level2Content": "能看懂学习计划中上述相关情况的基本信息。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

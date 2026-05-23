@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "（是）……，还是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "选择复句",
+        "cases": "你（是）喝茶，还是喝咖啡？\r\n你（是）喜欢白色的，还是黑色的？"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

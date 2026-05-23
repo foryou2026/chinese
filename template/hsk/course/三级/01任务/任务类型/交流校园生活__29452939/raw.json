@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流校园生活",
+        "level2Content": "能听懂同学、朋友、老师、家人等关于校园活动、学校等情况的一般性询问或介绍。如：校园活动安排、校园新闻、运动会、学校环境等。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流校园生活",
+        "level2Content": "能询问同学或朋友等上述校园生活的一般性情况；能回答朋友、家人等关于上述校园生活情况的一般性问题。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流校园生活",
+        "level2Content": "能简单介绍自己的校园生活情况。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流校园生活",
+        "level2Content": "能看懂同学、朋友等关于上述校园生活情况的邮件或关于校园生活介绍的简单小短文。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流校园生活",
+        "level2Content": "能写出一两句话，简单介绍自己校园生活、学校情况的某个方面。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

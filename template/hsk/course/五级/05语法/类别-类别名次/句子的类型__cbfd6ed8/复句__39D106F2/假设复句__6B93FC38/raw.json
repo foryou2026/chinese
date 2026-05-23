@@ -1,0 +1,47 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "content": "一旦……，就……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "一旦养成坏习惯，就很难改变。\r\n孩子一旦发烧，就赶快送去医院。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "假如……，（就）……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "假如他们也同意，我们就按照计划开展工作。\r\n假如有一天你当了校长，你会制定什么规则？"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "万一……，（就）……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "万一他不配合，我们就要想其他办法。\r\n万一失败了，你考虑过后果吗？"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "……，要不然/不然……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "公司需要敢想敢干的年轻人，要不然就很难有发展。\r\n还好我反应快，不然孩子就摔倒了。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

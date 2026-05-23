@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "9EDD44C6C8A3A2DDAEB605A96D3589BF",
+      "content": "文学艺术",
+      "children": []
+    },
+    {
+      "id": "8D4ED0972BFA01AF208F62C87FA9E667",
+      "content": "历史",
+      "children": []
+    },
+    {
+      "id": "38E6B9FE730B76492C17010B3867BE1F",
+      "content": "哲学思想",
+      "children": []
+    },
+    {
+      "id": "BF70DD4D24FBC501EC94F1827A19E289",
+      "content": "习俗礼俗",
+      "children": []
+    },
+    {
+      "id": "A4CE85614521A373CA92678C950C5BF1",
+      "content": "文化遗产",
+      "children": []
+    }
+  ],
+  "ok": true
+}

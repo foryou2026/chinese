@@ -1,0 +1,4013 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "type": 1,
+        "word": "含",
+        "pinyin": "hán",
+        "cixing": "动",
+        "sort": 2463,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "含量",
+        "pinyin": "hánliàng",
+        "cixing": "名",
+        "sort": 2464,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "含有",
+        "pinyin": "hányǒu",
+        "cixing": "动",
+        "sort": 2465,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "汗水",
+        "pinyin": "hànshuǐ",
+        "cixing": "名",
+        "sort": 2466,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "行",
+        "pinyin": "háng",
+        "cixing": "名、量",
+        "sort": 2467,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "行业",
+        "pinyin": "hángyè",
+        "cixing": "名",
+        "sort": 2468,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "好评",
+        "pinyin": "hǎopíng",
+        "cixing": "名",
+        "sort": 2469,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "好运",
+        "pinyin": "hǎoyùn",
+        "cixing": "名",
+        "sort": 2470,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "好转",
+        "pinyin": "hǎozhuǎn",
+        "cixing": "动",
+        "sort": 2471,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "好",
+        "pinyin": "hào",
+        "cixing": "动",
+        "sort": 2472,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "好奇",
+        "pinyin": "hàoqí",
+        "cixing": "形",
+        "sort": 2473,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "合",
+        "pinyin": "hé",
+        "cixing": "动",
+        "sort": 2474,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "合法",
+        "pinyin": "héfǎ",
+        "cixing": "形",
+        "sort": 2475,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "盒饭",
+        "pinyin": "héfàn",
+        "cixing": "名",
+        "sort": 2476,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "合理",
+        "pinyin": "hélǐ",
+        "cixing": "形",
+        "sort": 2477,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "河流",
+        "pinyin": "héliú",
+        "cixing": "名",
+        "sort": 2478,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "合同",
+        "pinyin": "hétóng",
+        "cixing": "名",
+        "sort": 2479,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "合影",
+        "pinyin": "héyǐng",
+        "cixing": "动、名",
+        "sort": 2480,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "合作",
+        "pinyin": "hézuò",
+        "cixing": "动",
+        "sort": 2481,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "黑",
+        "pinyin": "hēi",
+        "cixing": "形",
+        "sort": 2482,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "红",
+        "pinyin": "hóng",
+        "cixing": "形",
+        "sort": 2483,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "猴子",
+        "pinyin": "hóuzi",
+        "cixing": "名",
+        "sort": 2484,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "厚度",
+        "pinyin": "hòudù",
+        "cixing": "名",
+        "sort": 2485,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "后果",
+        "pinyin": "hòuguǒ",
+        "cixing": "名",
+        "sort": 2486,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "忽视",
+        "pinyin": "hūshì",
+        "cixing": "动",
+        "sort": 2487,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "呼吸",
+        "pinyin": "hūxī",
+        "cixing": "动",
+        "sort": 2488,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "湖",
+        "pinyin": "hú",
+        "cixing": "名",
+        "sort": 2489,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "蝴蝶",
+        "pinyin": "húdié",
+        "cixing": "名",
+        "sort": 2490,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "胡同",
+        "pinyin": "hútòng",
+        "cixing": "名",
+        "sort": 2491,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "互动",
+        "pinyin": "hùdòng",
+        "cixing": "动",
+        "sort": 2492,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "户外",
+        "pinyin": "hùwài",
+        "cixing": "名",
+        "sort": 2493,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "花费",
+        "pinyin": "huāfèi",
+        "cixing": "动",
+        "sort": 2494,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "滑",
+        "pinyin": "huá",
+        "cixing": "形、动",
+        "sort": 2495,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "划",
+        "pinyin": "huá",
+        "cixing": "动",
+        "sort": 2496,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "化",
+        "pinyin": "huà",
+        "cixing": "后缀、（动）",
+        "sort": 2497,
+        "levelName": "五级（六级）"
+      },
+      {
+        "type": 1,
+        "word": "话费",
+        "pinyin": "huàfèi",
+        "cixing": "名",
+        "sort": 2498,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "画面",
+        "pinyin": "huàmiàn",
+        "cixing": "名",
+        "sort": 2499,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "话题",
+        "pinyin": "huàtí",
+        "cixing": "名",
+        "sort": 2500,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "化学",
+        "pinyin": "huàxué",
+        "cixing": "名",
+        "sort": 2501,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "环节",
+        "pinyin": "huánjié",
+        "cixing": "名",
+        "sort": 2502,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "缓解",
+        "pinyin": "huǎnjiě",
+        "cixing": "动",
+        "sort": 2503,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "缓慢",
+        "pinyin": "huǎnmàn",
+        "cixing": "形",
+        "sort": 2504,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "黄瓜",
+        "pinyin": "huángguā",
+        "cixing": "名",
+        "sort": 2505,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "黄金",
+        "pinyin": "huángjīn",
+        "cixing": "名",
+        "sort": 2506,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "灰",
+        "pinyin": "huī",
+        "cixing": "名、形",
+        "sort": 2507,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "挥",
+        "pinyin": "huī",
+        "cixing": "动",
+        "sort": 2508,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "恢复",
+        "pinyin": "huīfù",
+        "cixing": "动",
+        "sort": 2509,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "灰色",
+        "pinyin": "huīsè",
+        "cixing": "名、形",
+        "sort": 2510,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "回收",
+        "pinyin": "huíshōu",
+        "cixing": "动",
+        "sort": 2511,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "汇率",
+        "pinyin": "huìlǜ",
+        "cixing": "名",
+        "sort": 2512,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "婚礼",
+        "pinyin": "hūnlǐ",
+        "cixing": "名",
+        "sort": 2513,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "伙",
+        "pinyin": "huǒ",
+        "cixing": "量",
+        "sort": 2514,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "伙伴",
+        "pinyin": "huǒbàn",
+        "cixing": "名",
+        "sort": 2515,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "火锅",
+        "pinyin": "huǒguō",
+        "cixing": "名",
+        "sort": 2516,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "或是",
+        "pinyin": "huòshì",
+        "cixing": "副、连",
+        "sort": 2517,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "货物",
+        "pinyin": "huòwù",
+        "cixing": "名",
+        "sort": 2518,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "或许",
+        "pinyin": "huòxǔ",
+        "cixing": "副",
+        "sort": 2519,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "机构",
+        "pinyin": "jīgòu",
+        "cixing": "名",
+        "sort": 2520,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "激烈",
+        "pinyin": "jīliè",
+        "cixing": "形",
+        "sort": 2521,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "机器",
+        "pinyin": "jīqì",
+        "cixing": "名",
+        "sort": 2522,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "机器人",
+        "pinyin": "jīqìrén",
+        "cixing": "名",
+        "sort": 2523,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "肌肉",
+        "pinyin": "jīròu",
+        "cixing": "名",
+        "sort": 2524,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "及",
+        "pinyin": "jí",
+        "cixing": "连",
+        "sort": 2525,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "级",
+        "pinyin": "jí",
+        "cixing": "名、量",
+        "sort": 2526,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "集",
+        "pinyin": "jí",
+        "cixing": "名、量",
+        "sort": 2527,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "疾病",
+        "pinyin": "jíbìng",
+        "cixing": "名",
+        "sort": 2528,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "及格",
+        "pinyin": "jígé",
+        "cixing": "动",
+        "sort": 2529,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "集合",
+        "pinyin": "jíhé",
+        "cixing": "动",
+        "sort": 2530,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "即将",
+        "pinyin": "jíjiāng",
+        "cixing": "副",
+        "sort": 2531,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "急忙",
+        "pinyin": "jímáng",
+        "cixing": "副",
+        "sort": 2532,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "极其",
+        "pinyin": "jíqí",
+        "cixing": "副",
+        "sort": 2533,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "集体",
+        "pinyin": "jítǐ",
+        "cixing": "名",
+        "sort": 2534,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "急需",
+        "pinyin": "jíxū",
+        "cixing": "动",
+        "sort": 2535,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "急诊",
+        "pinyin": "jízhěn",
+        "cixing": "动、名",
+        "sort": 2536,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "集中",
+        "pinyin": "jízhōng",
+        "cixing": "动、形",
+        "sort": 2537,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "挤",
+        "pinyin": "jǐ",
+        "cixing": "动、形",
+        "sort": 2538,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "系",
+        "pinyin": "jì",
+        "cixing": "动",
+        "sort": 2539,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "季度",
+        "pinyin": "jìdù",
+        "cixing": "名",
+        "sort": 2540,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "记录",
+        "pinyin": "jìlù",
+        "cixing": "动、名",
+        "sort": 2541,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "纪录",
+        "pinyin": "jìlù",
+        "cixing": "名",
+        "sort": 2542,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "纪录片",
+        "pinyin": "jìlùpiàn",
+        "cixing": "名",
+        "sort": 2543,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "技能",
+        "pinyin": "jìnéng",
+        "cixing": "名",
+        "sort": 2544,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "纪念",
+        "pinyin": "jìniàn",
+        "cixing": "动、名",
+        "sort": 2545,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "纪念日",
+        "pinyin": "jìniànrì",
+        "cixing": "名",
+        "sort": 2546,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "计算",
+        "pinyin": "jìsuàn",
+        "cixing": "动",
+        "sort": 2547,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "计算机",
+        "pinyin": "jìsuànjī",
+        "cixing": "名",
+        "sort": 2548,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "记忆",
+        "pinyin": "jìyì",
+        "cixing": "动、名",
+        "sort": 2549,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "记载",
+        "pinyin": "jìzǎi",
+        "cixing": "动",
+        "sort": 2550,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "嘉宾",
+        "pinyin": "jiābīn",
+        "cixing": "名",
+        "sort": 2551,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "家电",
+        "pinyin": "jiādiàn",
+        "cixing": "名",
+        "sort": 2552,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "加工",
+        "pinyin": "jiāgōng",
+        "cixing": "动",
+        "sort": 2553,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "加热",
+        "pinyin": "jiārè",
+        "cixing": "动",
+        "sort": 2554,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "加深",
+        "pinyin": "jiāshēn",
+        "cixing": "动",
+        "sort": 2555,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "加速",
+        "pinyin": "jiāsù",
+        "cixing": "动",
+        "sort": 2556,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "家务",
+        "pinyin": "jiāwù",
+        "cixing": "名",
+        "sort": 2557,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "甲",
+        "pinyin": "jiǎ",
+        "cixing": "名",
+        "sort": 2558,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "假如",
+        "pinyin": "jiǎrú",
+        "cixing": "连",
+        "sort": 2559,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "架",
+        "pinyin": "jià",
+        "cixing": "名、动、量",
+        "sort": 2560,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "驾驶",
+        "pinyin": "jiàshǐ",
+        "cixing": "动",
+        "sort": 2561,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "驾照",
+        "pinyin": "jiàzhào",
+        "cixing": "名",
+        "sort": 2562,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "价值",
+        "pinyin": "jiàzhí",
+        "cixing": "名",
+        "sort": 2563,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "艰苦",
+        "pinyin": "jiānkǔ",
+        "cixing": "形",
+        "sort": 2564,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "坚强",
+        "pinyin": "jiānqiáng",
+        "cixing": "形",
+        "sort": 2565,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "捡",
+        "pinyin": "jiǎn",
+        "cixing": "动",
+        "sort": 2566,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "剪",
+        "pinyin": "jiǎn",
+        "cixing": "动",
+        "sort": 2567,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "剪刀",
+        "pinyin": "jiǎndāo",
+        "cixing": "名",
+        "sort": 2568,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "减肥",
+        "pinyin": "jiǎnféi",
+        "cixing": "动",
+        "sort": 2569,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "简历",
+        "pinyin": "jiǎnlì",
+        "cixing": "名",
+        "sort": 2570,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "简直",
+        "pinyin": "jiǎnzhí",
+        "cixing": "副",
+        "sort": 2571,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "建",
+        "pinyin": "jiàn",
+        "cixing": "动",
+        "sort": 2572,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "键",
+        "pinyin": "jiàn",
+        "cixing": "名",
+        "sort": 2573,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "渐渐",
+        "pinyin": "jiànjiàn",
+        "cixing": "副",
+        "sort": 2574,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "建立",
+        "pinyin": "jiànlì",
+        "cixing": "动",
+        "sort": 2575,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "键盘",
+        "pinyin": "jiànpán",
+        "cixing": "名",
+        "sort": 2576,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "建设",
+        "pinyin": "jiànshè",
+        "cixing": "动",
+        "sort": 2577,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "建造",
+        "pinyin": "jiànzào",
+        "cixing": "动",
+        "sort": 2578,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "建筑",
+        "pinyin": "jiànzhù",
+        "cixing": "动、名",
+        "sort": 2579,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "将近",
+        "pinyin": "jiāngjìn",
+        "cixing": "副",
+        "sort": 2580,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "讲话",
+        "pinyin": "jiǎnghuà",
+        "cixing": "名",
+        "sort": 2581,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "讲究",
+        "pinyin": "jiǎngjiu",
+        "cixing": "动、形",
+        "sort": 2582,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "奖励",
+        "pinyin": "jiǎnglì",
+        "cixing": "动",
+        "sort": 2583,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "讲述",
+        "pinyin": "jiǎngshù",
+        "cixing": "动",
+        "sort": 2584,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "讲座",
+        "pinyin": "jiǎngzuò",
+        "cixing": "名",
+        "sort": 2585,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "降水",
+        "pinyin": "jiàngshuǐ",
+        "cixing": "动",
+        "sort": 2586,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "浇",
+        "pinyin": "jiāo",
+        "cixing": "动",
+        "sort": 2587,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "交换",
+        "pinyin": "jiāohuàn",
+        "cixing": "动",
+        "sort": 2588,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "交往",
+        "pinyin": "jiāowǎng",
+        "cixing": "动",
+        "sort": 2589,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "交易",
+        "pinyin": "jiāoyì",
+        "cixing": "动、名",
+        "sort": 2590,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "脚步",
+        "pinyin": "jiǎobù",
+        "cixing": "名",
+        "sort": 2591,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "角度",
+        "pinyin": "jiǎodù",
+        "cixing": "名",
+        "sort": 2592,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "较",
+        "pinyin": "jiào",
+        "cixing": "介、副",
+        "sort": 2593,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "教材",
+        "pinyin": "jiàocái",
+        "cixing": "名",
+        "sort": 2594,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "接触",
+        "pinyin": "jiēchù",
+        "cixing": "动",
+        "sort": 2595,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "接待",
+        "pinyin": "jiēdài",
+        "cixing": "动",
+        "sort": 2596,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "阶段",
+        "pinyin": "jiēduàn",
+        "cixing": "名",
+        "sort": 2597,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "接近",
+        "pinyin": "jiējìn",
+        "cixing": "动",
+        "sort": 2598,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "接收",
+        "pinyin": "jiēshōu",
+        "cixing": "动",
+        "sort": 2599,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "结",
+        "pinyin": "jié",
+        "cixing": "动、名",
+        "sort": 2600,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "结构",
+        "pinyin": "jiégòu",
+        "cixing": "名",
+        "sort": 2601,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "结合",
+        "pinyin": "jiéhé",
+        "cixing": "动",
+        "sort": 2602,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "结论",
+        "pinyin": "jiélùn",
+        "cixing": "名",
+        "sort": 2603,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "节省",
+        "pinyin": "jiéshěng",
+        "cixing": "动",
+        "sort": 2604,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "届",
+        "pinyin": "jiè",
+        "cixing": "量",
+        "sort": 2605,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "今日",
+        "pinyin": "jīnrì",
+        "cixing": "名",
+        "sort": 2606,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "紧",
+        "pinyin": "jǐn",
+        "cixing": "形、动",
+        "sort": 2607,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "紧急",
+        "pinyin": "jǐnjí",
+        "cixing": "形",
+        "sort": 2608,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "尽快",
+        "pinyin": "jǐnkuài",
+        "cixing": "副",
+        "sort": 2609,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "尽量",
+        "pinyin": "jǐnliàng",
+        "cixing": "副",
+        "sort": 2610,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "紧密",
+        "pinyin": "jǐnmì",
+        "cixing": "形",
+        "sort": 2611,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "谨慎",
+        "pinyin": "jǐnshèn",
+        "cixing": "形",
+        "sort": 2612,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "进步",
+        "pinyin": "jìnbù",
+        "cixing": "动、形",
+        "sort": 2613,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "近代",
+        "pinyin": "jìndài",
+        "cixing": "名",
+        "sort": 2614,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "进口",
+        "pinyin": "jìnkǒu",
+        "cixing": "动",
+        "sort": 2615,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "尽力",
+        "pinyin": "jìnlì",
+        "cixing": "动",
+        "sort": 2616,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "近年来",
+        "pinyin": "jìnnián lái",
+        "sort": 2617,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "近期",
+        "pinyin": "jìnqī",
+        "cixing": "名",
+        "sort": 2618,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "近日",
+        "pinyin": "jìnrì",
+        "cixing": "名",
+        "sort": 2619,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "进一步",
+        "pinyin": "jìnyíbù",
+        "cixing": "副",
+        "sort": 2620,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "经典",
+        "pinyin": "jīngdiǎn",
+        "cixing": "名、形",
+        "sort": 2621,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "精力",
+        "pinyin": "jīnglì",
+        "cixing": "名",
+        "sort": 2622,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "精神",
+        "pinyin": "jīngshen",
+        "cixing": "名、形",
+        "sort": 2623,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "惊喜",
+        "pinyin": "jīngxǐ",
+        "cixing": "形",
+        "sort": 2624,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "经营",
+        "pinyin": "jīngyíng",
+        "cixing": "动",
+        "sort": 2625,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "静",
+        "pinyin": "jìng",
+        "cixing": "形、动",
+        "sort": 2626,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "酒吧",
+        "pinyin": "jiǔbā",
+        "cixing": "名",
+        "sort": 2627,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "久远",
+        "pinyin": "jiǔyuǎn",
+        "cixing": "形",
+        "sort": 2628,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "救",
+        "pinyin": "jiù",
+        "cixing": "动",
+        "sort": 2629,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "救护车",
+        "pinyin": "jiùhùchē",
+        "cixing": "名",
+        "sort": 2630,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "就业",
+        "pinyin": "jiùyè",
+        "cixing": "动",
+        "sort": 2631,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "居民",
+        "pinyin": "jūmín",
+        "cixing": "名",
+        "sort": 2632,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "居然",
+        "pinyin": "jūrán",
+        "cixing": "副",
+        "sort": 2633,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "居住",
+        "pinyin": "jūzhù",
+        "cixing": "动",
+        "sort": 2634,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "橘子",
+        "pinyin": "júzi",
+        "cixing": "名",
+        "sort": 2635,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "据",
+        "pinyin": "jù",
+        "cixing": "介",
+        "sort": 2636,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "距",
+        "pinyin": "jù",
+        "cixing": "动",
+        "sort": 2637,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "具备",
+        "pinyin": "jùbèi",
+        "cixing": "动",
+        "sort": 2638,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "剧场",
+        "pinyin": "jùchǎng",
+        "cixing": "名",
+        "sort": 2639,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "巨大",
+        "pinyin": "jùdà",
+        "cixing": "形",
+        "sort": 2640,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "据说",
+        "pinyin": "jùshuō",
+        "cixing": "动",
+        "sort": 2641,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "具体",
+        "pinyin": "jùtǐ",
+        "cixing": "形、动",
+        "sort": 2642,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "具有",
+        "pinyin": "jùyǒu",
+        "cixing": "动",
+        "sort": 2643,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "捐",
+        "pinyin": "juān",
+        "cixing": "动",
+        "sort": 2644,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "绝对",
+        "pinyin": "juéduì",
+        "cixing": "形、副",
+        "sort": 2645,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "决赛",
+        "pinyin": "juésài",
+        "cixing": "动、名",
+        "sort": 2646,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "角色",
+        "pinyin": "juésè",
+        "cixing": "名",
+        "sort": 2647,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "决心",
+        "pinyin": "juéxīn",
+        "cixing": "名、动",
+        "sort": 2648,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "开发",
+        "pinyin": "kāifā",
+        "cixing": "动",
+        "sort": 2649,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "开放",
+        "pinyin": "kāifàng",
+        "cixing": "动、形",
+        "sort": 2650,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "开幕",
+        "pinyin": "kāimù",
+        "cixing": "动",
+        "sort": 2651,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "开幕式",
+        "pinyin": "kāimùshì",
+        "cixing": "名",
+        "sort": 2652,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "开水",
+        "pinyin": "kāishuǐ",
+        "cixing": "名",
+        "sort": 2653,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "开通",
+        "pinyin": "kāitōng",
+        "cixing": "动",
+        "sort": 2654,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "开业",
+        "pinyin": "kāiyè",
+        "cixing": "动",
+        "sort": 2655,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "开展",
+        "pinyin": "kāizhǎn",
+        "cixing": "动",
+        "sort": 2656,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "看",
+        "pinyin": "kān",
+        "cixing": "动",
+        "sort": 2657,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "看望",
+        "pinyin": "kànwàng",
+        "cixing": "动",
+        "sort": 2658,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "看作",
+        "pinyin": "kànzuò",
+        "cixing": "动",
+        "sort": 2659,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "靠",
+        "pinyin": "kào",
+        "cixing": "动",
+        "sort": 2660,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "靠近",
+        "pinyin": "kàojìn",
+        "cixing": "动",
+        "sort": 2661,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "颗",
+        "pinyin": "kē",
+        "cixing": "量",
+        "sort": 2662,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "科研",
+        "pinyin": "kēyán",
+        "cixing": "动",
+        "sort": 2663,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "可见",
+        "pinyin": "kějiàn",
+        "cixing": "连",
+        "sort": 2664,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "可靠",
+        "pinyin": "kěkào",
+        "cixing": "形",
+        "sort": 2665,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "可怕",
+        "pinyin": "kěpà",
+        "cixing": "形",
+        "sort": 2666,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "克服",
+        "pinyin": "kèfú",
+        "cixing": "动",
+        "sort": 2667,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "客服",
+        "pinyin": "kèfú",
+        "cixing": "形",
+        "sort": 2668,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "客观",
+        "pinyin": "kèguān",
+        "cixing": "形",
+        "sort": 2669,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "客户",
+        "pinyin": "kèhù",
+        "cixing": "名",
+        "sort": 2670,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "空间",
+        "pinyin": "kōngjiān",
+        "cixing": "名",
+        "sort": 2671,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "空中",
+        "pinyin": "kōngzhōng",
+        "cixing": "名、形",
+        "sort": 2672,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "控制",
+        "pinyin": "kòngzhì",
+        "cixing": "动",
+        "sort": 2673,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "口袋",
+        "pinyin": "kǒudai",
+        "cixing": "名",
+        "sort": 2674,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "口味",
+        "pinyin": "kǒuwèi",
+        "cixing": "名",
+        "sort": 2675,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "库",
+        "pinyin": "kù",
+        "cixing": "名",
+        "sort": 2676,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "宽",
+        "pinyin": "kuān",
+        "cixing": "形、名、（动）",
+        "sort": 2677,
+        "levelName": "五级（六级）"
+      },
+      {
+        "type": 1,
+        "word": "宽度",
+        "pinyin": "kuāndù",
+        "cixing": "名",
+        "sort": 2678,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "亏",
+        "pinyin": "kuī",
+        "cixing": "动",
+        "sort": 2679,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "昆虫",
+        "pinyin": "kūnchóng",
+        "cixing": "名",
+        "sort": 2680,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "扩大",
+        "pinyin": "kuòdà",
+        "cixing": "动",
+        "sort": 2681,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "来源",
+        "pinyin": "láiyuán",
+        "cixing": "名、动",
+        "sort": 2682,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "劳动",
+        "pinyin": "láodòng",
+        "cixing": "名、动",
+        "sort": 2683,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "老百姓",
+        "pinyin": "lǎobǎixìng",
+        "cixing": "名",
+        "sort": 2684,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "老板",
+        "pinyin": "lǎobǎn",
+        "cixing": "名",
+        "sort": 2685,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "老公",
+        "pinyin": "lǎogōng",
+        "cixing": "名",
+        "sort": 2686,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "姥姥",
+        "pinyin": "lǎolao",
+        "cixing": "名",
+        "sort": 2687,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "老婆",
+        "pinyin": "lǎopo",
+        "cixing": "名",
+        "sort": 2688,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "姥爷",
+        "pinyin": "lǎoye",
+        "cixing": "名",
+        "sort": 2689,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "乐观",
+        "pinyin": "lèguān",
+        "cixing": "形",
+        "sort": 2690,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "乐趣",
+        "pinyin": "lèqù",
+        "cixing": "名",
+        "sort": 2691,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "泪",
+        "pinyin": "lèi",
+        "cixing": "名",
+        "sort": 2692,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "类",
+        "pinyin": "lèi",
+        "cixing": "名、量",
+        "sort": 2693,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "泪水",
+        "pinyin": "lèishuǐ",
+        "cixing": "名",
+        "sort": 2694,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "类似",
+        "pinyin": "lèisì",
+        "cixing": "动",
+        "sort": 2695,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "类型",
+        "pinyin": "lèixíng",
+        "cixing": "名",
+        "sort": 2696,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "梨",
+        "pinyin": "lí",
+        "cixing": "名",
+        "sort": 2697,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "离婚",
+        "pinyin": "líhūn",
+        "cixing": "动",
+        "sort": 2698,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "厘米",
+        "pinyin": "límǐ",
+        "cixing": "量",
+        "sort": 2699,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "离职",
+        "pinyin": "lízhí",
+        "cixing": "动",
+        "sort": 2700,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "理论",
+        "pinyin": "lǐlùn",
+        "cixing": "名、动",
+        "sort": 2701,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "里头",
+        "pinyin": "lǐtou",
+        "cixing": "名",
+        "sort": 2702,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "理由",
+        "pinyin": "lǐyóu",
+        "cixing": "名",
+        "sort": 2703,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "力",
+        "pinyin": "lì",
+        "cixing": "名、后缀",
+        "sort": 2704,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "立即",
+        "pinyin": "lìjí",
+        "cixing": "副",
+        "sort": 2705,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "立刻",
+        "pinyin": "lìkè",
+        "cixing": "副",
+        "sort": 2706,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "力量",
+        "pinyin": "lìliàng",
+        "cixing": "名",
+        "sort": 2707,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "利润",
+        "pinyin": "lìrùn",
+        "cixing": "名",
+        "sort": 2708,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "利益",
+        "pinyin": "lìyì",
+        "cixing": "名",
+        "sort": 2709,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "利用",
+        "pinyin": "lìyòng",
+        "cixing": "动",
+        "sort": 2710,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "联合",
+        "pinyin": "liánhé",
+        "cixing": "动、形",
+        "sort": 2711,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "连接",
+        "pinyin": "liánjiē",
+        "cixing": "动",
+        "sort": 2712,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "连忙",
+        "pinyin": "liánmáng",
+        "cixing": "副",
+        "sort": 2713,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "连续",
+        "pinyin": "liánxù",
+        "cixing": "动",
+        "sort": 2714,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "脸色",
+        "pinyin": "liǎnsè",
+        "cixing": "名",
+        "sort": 2715,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "恋爱",
+        "pinyin": "liàn’ài",
+        "cixing": "动、名",
+        "sort": 2716,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "良好",
+        "pinyin": "liánghǎo",
+        "cixing": "形",
+        "sort": 2717,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "粮食",
+        "pinyin": "liángshi",
+        "cixing": "名",
+        "sort": 2718,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "量",
+        "pinyin": "liàng",
+        "cixing": "名",
+        "sort": 2719,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "了不起",
+        "pinyin": "liǎobuqǐ",
+        "cixing": "形",
+        "sort": 2720,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "列车",
+        "pinyin": "lièchē",
+        "cixing": "名",
+        "sort": 2721,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "临时",
+        "pinyin": "línshí",
+        "cixing": "副、形",
+        "sort": 2722,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "铃",
+        "pinyin": "líng",
+        "cixing": "名",
+        "sort": 2723,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "灵活",
+        "pinyin": "línghuó",
+        "cixing": "形",
+        "sort": 2724,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "领",
+        "pinyin": "lǐng",
+        "cixing": "名、动",
+        "sort": 2725,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "领带",
+        "pinyin": "lǐngdài",
+        "cixing": "名",
+        "sort": 2726,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "领导",
+        "pinyin": "lǐngdǎo",
+        "cixing": "动、名",
+        "sort": 2727,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "领取",
+        "pinyin": "lǐngqǔ",
+        "cixing": "动",
+        "sort": 2728,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "领先",
+        "pinyin": "lǐngxiān",
+        "cixing": "动",
+        "sort": 2729,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "领域",
+        "pinyin": "lǐngyù",
+        "cixing": "名",
+        "sort": 2730,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "令",
+        "pinyin": "lìng",
+        "cixing": "动、名",
+        "sort": 2731,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "流传",
+        "pinyin": "liúchuán",
+        "cixing": "动",
+        "sort": 2732,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "流感",
+        "pinyin": "liúgǎn",
+        "cixing": "名",
+        "sort": 2733,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "浏览",
+        "pinyin": "liúlǎn",
+        "cixing": "动",
+        "sort": 2734,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "留言",
+        "pinyin": "liúyán",
+        "cixing": "动、名",
+        "sort": 2735,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "龙",
+        "pinyin": "lóng",
+        "cixing": "名",
+        "sort": 2736,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "漏",
+        "pinyin": "lòu",
+        "cixing": "动",
+        "sort": 2737,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "录",
+        "pinyin": "lù",
+        "cixing": "动",
+        "sort": 2738,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "陆地",
+        "pinyin": "lùdì",
+        "cixing": "名",
+        "sort": 2739,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "录取",
+        "pinyin": "lùqǔ",
+        "cixing": "动",
+        "sort": 2740,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "路人",
+        "pinyin": "lùrén",
+        "cixing": "名",
+        "sort": 2741,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "路线",
+        "pinyin": "lùxiàn",
+        "cixing": "名",
+        "sort": 2742,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "陆续",
+        "pinyin": "lùxù",
+        "cixing": "副",
+        "sort": 2743,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "录音",
+        "pinyin": "lùyīn",
+        "cixing": "动、名",
+        "sort": 2744,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "旅行社",
+        "pinyin": "lǚxíngshè",
+        "cixing": "名",
+        "sort": 2745,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "论文",
+        "pinyin": "lùnwén",
+        "cixing": "名",
+        "sort": 2746,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "逻辑",
+        "pinyin": "luójí",
+        "cixing": "名",
+        "sort": 2747,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "骂",
+        "pinyin": "mà",
+        "cixing": "动",
+        "sort": 2748,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "买卖",
+        "pinyin": "mǎimai",
+        "cixing": "名",
+        "sort": 2749,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "满足",
+        "pinyin": "mǎnzú",
+        "cixing": "动",
+        "sort": 2750,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "忙碌",
+        "pinyin": "mánglù",
+        "cixing": "形",
+        "sort": 2751,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "毛笔",
+        "pinyin": "máobǐ",
+        "cixing": "名",
+        "sort": 2752,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "毛病",
+        "pinyin": "máobìng",
+        "cixing": "名",
+        "sort": 2753,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "矛盾",
+        "pinyin": "máodùn",
+        "cixing": "名、动、形",
+        "sort": 2754,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "没法儿",
+        "pinyin": "méifǎr",
+        "cixing": "动",
+        "sort": 2755,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "玫瑰",
+        "pinyin": "méigui",
+        "cixing": "名",
+        "sort": 2756,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "媒体",
+        "pinyin": "méitǐ",
+        "cixing": "名",
+        "sort": 2757,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "美术",
+        "pinyin": "měishù",
+        "cixing": "名",
+        "sort": 2758,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "美味",
+        "pinyin": "měiwèi",
+        "cixing": "名",
+        "sort": 2759,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "魅力",
+        "pinyin": "mèilì",
+        "cixing": "名",
+        "sort": 2760,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "门诊",
+        "pinyin": "ménzhěn",
+        "cixing": "动",
+        "sort": 2761,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "迷",
+        "pinyin": "mí",
+        "cixing": "动",
+        "sort": 2762,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "迷路",
+        "pinyin": "mílù",
+        "cixing": "动",
+        "sort": 2763,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "秘密",
+        "pinyin": "mìmì",
+        "cixing": "形、名",
+        "sort": 2764,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "密切",
+        "pinyin": "mìqiè",
+        "cixing": "形、动",
+        "sort": 2765,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "秘书",
+        "pinyin": "mìshū",
+        "cixing": "名",
+        "sort": 2766,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "面2",
+        "pinyin": "miàn",
+        "cixing": "名",
+        "sort": 2767,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "面积",
+        "pinyin": "miànjī",
+        "cixing": "名",
+        "sort": 2768,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "面临",
+        "pinyin": "miànlín",
+        "cixing": "动",
+        "sort": 2769,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "面向",
+        "pinyin": "miànxiàng",
+        "cixing": "动",
+        "sort": 2770,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "描述",
+        "pinyin": "miáoshù",
+        "cixing": "动",
+        "sort": 2771,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "敏感",
+        "pinyin": "mǐngǎn",
+        "cixing": "形",
+        "sort": 2772,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "名称",
+        "pinyin": "míngchēng",
+        "cixing": "名",
+        "sort": 2773,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "名牌",
+        "pinyin": "míngpái",
+        "cixing": "名",
+        "sort": 2774,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "名片",
+        "pinyin": "míngpiàn",
+        "cixing": "名",
+        "sort": 2775,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "明确",
+        "pinyin": "míngquè",
+        "cixing": "形、动",
+        "sort": 2776,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "明显",
+        "pinyin": "míngxiǎn",
+        "cixing": "形",
+        "sort": 2777,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "明星",
+        "pinyin": "míngxīng",
+        "cixing": "名",
+        "sort": 2778,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "命1",
+        "pinyin": "mìng",
+        "cixing": "名",
+        "sort": 2779,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "命运",
+        "pinyin": "mìngyùn",
+        "cixing": "名",
+        "sort": 2780,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "摸",
+        "pinyin": "mō",
+        "cixing": "动",
+        "sort": 2781,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "模糊",
+        "pinyin": "móhu",
+        "cixing": "形、动",
+        "sort": 2782,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "模式",
+        "pinyin": "móshì",
+        "cixing": "名",
+        "sort": 2783,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "陌生",
+        "pinyin": "mòshēng",
+        "cixing": "形",
+        "sort": 2784,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "某",
+        "pinyin": "mǒu",
+        "cixing": "代",
+        "sort": 2785,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "目光",
+        "pinyin": "mùguāng",
+        "cixing": "名",
+        "sort": 2786,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "木头",
+        "pinyin": "mùtou",
+        "cixing": "名",
+        "sort": 2787,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "哪怕",
+        "pinyin": "nǎpà",
+        "cixing": "连",
+        "sort": 2788,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "难得",
+        "pinyin": "nándé",
+        "cixing": "形",
+        "sort": 2789,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "难度",
+        "pinyin": "nándù",
+        "cixing": "名",
+        "sort": 2790,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "难以",
+        "pinyin": "nányǐ",
+        "cixing": "动",
+        "sort": 2791,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "男子",
+        "pinyin": "nánzǐ",
+        "cixing": "名",
+        "sort": 2792,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "闹",
+        "pinyin": "nào",
+        "cixing": "形、动",
+        "sort": 2793,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "闹钟",
+        "pinyin": "nàozhōng",
+        "cixing": "名",
+        "sort": 2794,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "内部",
+        "pinyin": "nèibù",
+        "cixing": "名",
+        "sort": 2795,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "能干",
+        "pinyin": "nénggàn",
+        "cixing": "形",
+        "sort": 2796,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "年初",
+        "pinyin": "niánchū",
+        "cixing": "名",
+        "sort": 2797,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "年代",
+        "pinyin": "niándài",
+        "cixing": "名",
+        "sort": 2798,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "年纪",
+        "pinyin": "niánjì",
+        "cixing": "名",
+        "sort": 2799,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "年夜饭",
+        "pinyin": "niányèfàn",
+        "cixing": "名",
+        "sort": 2800,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "念",
+        "pinyin": "niàn",
+        "cixing": "动",
+        "sort": 2801,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "牛仔裤",
+        "pinyin": "niúzǎikù",
+        "cixing": "名",
+        "sort": 2802,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "浓",
+        "pinyin": "nóng",
+        "cixing": "形",
+        "sort": 2803,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "农民",
+        "pinyin": "nóngmín",
+        "cixing": "名",
+        "sort": 2804,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "农业",
+        "pinyin": "nóngyè",
+        "cixing": "名",
+        "sort": 2805,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "女子",
+        "pinyin": "nǚzǐ",
+        "cixing": "名",
+        "sort": 2806,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "哦",
+        "pinyin": "ò",
+        "cixing": "叹",
+        "sort": 2807,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "欧洲",
+        "pinyin": "Ōuzhōu",
+        "cixing": "名",
+        "sort": 2808,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "偶然",
+        "pinyin": "ǒurán",
+        "cixing": "形",
+        "sort": 2809,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "拍摄",
+        "pinyin": "pāishè",
+        "cixing": "动",
+        "sort": 2810,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "排列",
+        "pinyin": "páiliè",
+        "cixing": "动",
+        "sort": 2811,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "派",
+        "pinyin": "pài",
+        "cixing": "动、（名、量）",
+        "sort": 2812,
+        "levelName": "五级（七-九级）"
+      },
+      {
+        "type": 1,
+        "word": "派出所",
+        "pinyin": "pàichūsuǒ",
+        "cixing": "名",
+        "sort": 2813,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "跑道",
+        "pinyin": "pǎodào",
+        "cixing": "名",
+        "sort": 2814,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "赔",
+        "pinyin": "péi",
+        "cixing": "动",
+        "sort": 2815,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "陪伴",
+        "pinyin": "péibàn",
+        "cixing": "动",
+        "sort": 2816,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "培训",
+        "pinyin": "péixùn",
+        "cixing": "动",
+        "sort": 2817,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "培养",
+        "pinyin": "péiyǎng",
+        "cixing": "动",
+        "sort": 2818,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "配",
+        "pinyin": "pèi",
+        "cixing": "动、形",
+        "sort": 2819,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "配合",
+        "pinyin": "pèihé",
+        "cixing": "动",
+        "sort": 2820,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "配送",
+        "pinyin": "pèisòng",
+        "cixing": "动",
+        "sort": 2821,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "盆",
+        "pinyin": "pén",
+        "cixing": "名",
+        "sort": 2822,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "碰",
+        "pinyin": "pèng",
+        "cixing": "动",
+        "sort": 2823,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "碰见",
+        "pinyin": "pèngjiàn",
+        "cixing": "动",
+        "sort": 2824,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "批1",
+        "pinyin": "pī",
+        "cixing": "量",
+        "sort": 2825,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "批2",
+        "pinyin": "pī",
+        "cixing": "动",
+        "sort": 2826,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "批准",
+        "pinyin": "pīzhǔn",
+        "cixing": "动",
+        "sort": 2827,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "匹",
+        "pinyin": "pǐ",
+        "cixing": "量",
+        "sort": 2828,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "骗",
+        "pinyin": "piàn",
+        "cixing": "动",
+        "sort": 2829,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "拼",
+        "pinyin": "pīn",
+        "cixing": "动",
+        "sort": 2830,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "拼音",
+        "pinyin": "pīnyīn",
+        "cixing": "动",
+        "sort": 2831,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "品",
+        "pinyin": "pǐn",
+        "cixing": "后缀、（动）",
+        "sort": 2832,
+        "levelName": "五级（七-九级）"
+      },
+      {
+        "type": 1,
+        "word": "品牌",
+        "pinyin": "pǐnpái",
+        "cixing": "名",
+        "sort": 2833,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "品质",
+        "pinyin": "pǐnzhì",
+        "cixing": "名",
+        "sort": 2834,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "品种",
+        "pinyin": "pǐnzhǒng",
+        "cixing": "名",
+        "sort": 2835,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "聘请",
+        "pinyin": "pìnqǐng",
+        "cixing": "动",
+        "sort": 2836,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "平",
+        "pinyin": "píng",
+        "cixing": "形、（动）",
+        "sort": 2837,
+        "levelName": "五级（七-九级）"
+      },
+      {
+        "type": 1,
+        "word": "评",
+        "pinyin": "píng",
+        "cixing": "动",
+        "sort": 2838,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "凭",
+        "pinyin": "píng",
+        "cixing": "动、介",
+        "sort": 2839,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "平安",
+        "pinyin": "píng’ān",
+        "cixing": "形",
+        "sort": 2840,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "平衡",
+        "pinyin": "pínghéng",
+        "cixing": "形、动",
+        "sort": 2841,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "评价",
+        "pinyin": "píngjià",
+        "cixing": "动、名",
+        "sort": 2842,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "凭借",
+        "pinyin": "píngjiè",
+        "cixing": "动",
+        "sort": 2843,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "平静",
+        "pinyin": "píngjìng",
+        "cixing": "形",
+        "sort": 2844,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "平均",
+        "pinyin": "píngjūn",
+        "cixing": "动、形",
+        "sort": 2845,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "屏幕",
+        "pinyin": "píngmù",
+        "cixing": "名",
+        "sort": 2846,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "平台",
+        "pinyin": "píngtái",
+        "cixing": "名",
+        "sort": 2847,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "破坏",
+        "pinyin": "pòhuài",
+        "cixing": "动",
+        "sort": 2848,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "普及",
+        "pinyin": "pǔjí",
+        "cixing": "动",
+        "sort": 2849,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "期待",
+        "pinyin": "qīdài",
+        "cixing": "动",
+        "sort": 2850,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "期间",
+        "pinyin": "qījiān",
+        "cixing": "名",
+        "sort": 2851,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "齐",
+        "pinyin": "qí",
+        "cixing": "形、（动、副）",
+        "sort": 2852,
+        "levelName": "五级（六级）"
+      },
+      {
+        "type": 1,
+        "word": "其",
+        "pinyin": "qí",
+        "cixing": "代",
+        "sort": 2853,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "奇迹",
+        "pinyin": "qíjì",
+        "cixing": "名",
+        "sort": 2854,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "其余",
+        "pinyin": "qíyú",
+        "cixing": "代",
+        "sort": 2855,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "企业",
+        "pinyin": "qǐyè",
+        "cixing": "名",
+        "sort": 2856,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "气球",
+        "pinyin": "qìqiú",
+        "cixing": "名",
+        "sort": 2857,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "汽油",
+        "pinyin": "qìyóu",
+        "cixing": "名",
+        "sort": 2858,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "签1",
+        "pinyin": "qiān",
+        "cixing": "动",
+        "sort": 2859,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "签订",
+        "pinyin": "qiāndìng",
+        "cixing": "动",
+        "sort": 2860,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "签名",
+        "pinyin": "qiānmíng",
+        "cixing": "动、名",
+        "sort": 2861,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "签字",
+        "pinyin": "qiānzì",
+        "cixing": "动、名",
+        "sort": 2862,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "前进",
+        "pinyin": "qiánjìn",
+        "cixing": "动",
+        "sort": 2863,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "前来",
+        "pinyin": "qiánlái",
+        "cixing": "动",
+        "sort": 2864,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "前途",
+        "pinyin": "qiántú",
+        "cixing": "名",
+        "sort": 2865,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "前往",
+        "pinyin": "qiánwǎng",
+        "cixing": "动",
+        "sort": 2866,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "浅",
+        "pinyin": "qiǎn",
+        "cixing": "形",
+        "sort": 2867,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "欠",
+        "pinyin": "qiàn",
+        "cixing": "动",
+        "sort": 2868,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "墙",
+        "pinyin": "qiáng",
+        "cixing": "名",
+        "sort": 2869,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "强大",
+        "pinyin": "qiángdà",
+        "cixing": "形",
+        "sort": 2870,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "强调",
+        "pinyin": "qiángdiào",
+        "cixing": "动",
+        "sort": 2871,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "强度",
+        "pinyin": "qiángdù",
+        "cixing": "名",
+        "sort": 2872,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "强烈",
+        "pinyin": "qiángliè",
+        "cixing": "形",
+        "sort": 2873,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "抢",
+        "pinyin": "qiǎng",
+        "cixing": "动",
+        "sort": 2874,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "抢救",
+        "pinyin": "qiǎngjiù",
+        "cixing": "动",
+        "sort": 2875,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "悄悄",
+        "pinyin": "qiāoqiāo",
+        "cixing": "副",
+        "sort": 2876,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "切",
+        "pinyin": "qiē",
+        "cixing": "动",
+        "sort": 2877,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "亲",
+        "pinyin": "qīn",
+        "cixing": "形、动",
+        "sort": 2878,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "亲爱",
+        "pinyin": "qīn’ài",
+        "cixing": "形",
+        "sort": 2879,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "亲朋好友",
+        "pinyin": "qīnpéng-hǎoyǒu",
+        "sort": 2880,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "亲切",
+        "pinyin": "qīnqiè",
+        "cixing": "形",
+        "sort": 2881,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "亲情",
+        "pinyin": "qīnqíng",
+        "cixing": "名",
+        "sort": 2882,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "亲人",
+        "pinyin": "qīnrén",
+        "cixing": "名",
+        "sort": 2883,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "亲自",
+        "pinyin": "qīnzì",
+        "cixing": "副",
+        "sort": 2884,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "勤奋",
+        "pinyin": "qínfèn",
+        "cixing": "形",
+        "sort": 2885,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "青",
+        "pinyin": "qīng",
+        "cixing": "形",
+        "sort": 2886,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "轻易",
+        "pinyin": "qīngyì",
+        "cixing": "形、副",
+        "sort": 2887,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "轻重",
+        "pinyin": "qīngzhòng",
+        "cixing": "名",
+        "sort": 2888,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "情感",
+        "pinyin": "qínggǎn",
+        "cixing": "名",
+        "sort": 2889,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "情景",
+        "pinyin": "qíngjǐng",
+        "cixing": "名",
+        "sort": 2890,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "情绪",
+        "pinyin": "qíngxù",
+        "cixing": "名",
+        "sort": 2891,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "请教",
+        "pinyin": "qǐngjiào",
+        "cixing": "动",
+        "sort": 2892,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "请求",
+        "pinyin": "qǐngqiú",
+        "cixing": "动、名",
+        "sort": 2893,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "穷",
+        "pinyin": "qióng",
+        "cixing": "形",
+        "sort": 2894,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "趋势",
+        "pinyin": "qūshì",
+        "cixing": "名",
+        "sort": 2895,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "区域",
+        "pinyin": "qūyù",
+        "cixing": "名",
+        "sort": 2896,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "去世",
+        "pinyin": "qùshì",
+        "cixing": "动",
+        "sort": 2897,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "权",
+        "pinyin": "quán",
+        "cixing": "名、（副）",
+        "sort": 2898,
+        "levelName": "五级（七-九级）"
+      },
+      {
+        "type": 1,
+        "word": "权利",
+        "pinyin": "quánlì",
+        "cixing": "名",
+        "sort": 2899,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "全力",
+        "pinyin": "quánlì",
+        "cixing": "名、副",
+        "sort": 2900,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "全面",
+        "pinyin": "quánmiàn",
+        "cixing": "形",
+        "sort": 2901,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "全体",
+        "pinyin": "quántǐ",
+        "cixing": "名",
+        "sort": 2902,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "全新",
+        "pinyin": "quánxīn",
+        "cixing": "形",
+        "sort": 2903,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "劝",
+        "pinyin": "quàn",
+        "cixing": "动",
+        "sort": 2904,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "缺乏",
+        "pinyin": "quēfá",
+        "cixing": "动",
+        "sort": 2905,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "确保",
+        "pinyin": "quèbǎo",
+        "cixing": "动",
+        "sort": 2906,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "确定",
+        "pinyin": "quèdìng",
+        "cixing": "形、动",
+        "sort": 2907,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "确认",
+        "pinyin": "quèrèn",
+        "cixing": "动",
+        "sort": 2908,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "群",
+        "pinyin": "qún",
+        "cixing": "量、名",
+        "sort": 2909,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "群体",
+        "pinyin": "qúntǐ",
+        "cixing": "名",
+        "sort": 2910,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "燃烧",
+        "pinyin": "ránshāo",
+        "cixing": "动",
+        "sort": 2911,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "绕",
+        "pinyin": "rào",
+        "cixing": "动",
+        "sort": 2912,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "热爱",
+        "pinyin": "rè’ài",
+        "cixing": "动",
+        "sort": 2913,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "热量",
+        "pinyin": "rèliàng",
+        "cixing": "名",
+        "sort": 2914,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "热烈",
+        "pinyin": "rèliè",
+        "cixing": "形",
+        "sort": 2915,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "热心",
+        "pinyin": "rèxīn",
+        "cixing": "形",
+        "sort": 2916,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人才",
+        "pinyin": "réncái",
+        "cixing": "名",
+        "sort": 2917,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人工",
+        "pinyin": "réngōng",
+        "cixing": "形、名",
+        "sort": 2918,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人际",
+        "pinyin": "rénjì",
+        "cixing": "形",
+        "sort": 2919,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人口",
+        "pinyin": "rénkǒu",
+        "cixing": "名",
+        "sort": 2920,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人类",
+        "pinyin": "rénlèi",
+        "cixing": "名",
+        "sort": 2921,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人力",
+        "pinyin": "rénlì",
+        "cixing": "名",
+        "sort": 2922,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人民",
+        "pinyin": "rénmín",
+        "cixing": "名",
+        "sort": 2923,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人民币",
+        "pinyin": "rénmínbì",
+        "cixing": "名",
+        "sort": 2924,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人群",
+        "pinyin": "rénqún",
+        "cixing": "名",
+        "sort": 2925,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人体",
+        "pinyin": "réntǐ",
+        "cixing": "名",
+        "sort": 2926,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "人物",
+        "pinyin": "rénwù",
+        "cixing": "名",
+        "sort": 2927,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "忍",
+        "pinyin": "rěn",
+        "cixing": "动",
+        "sort": 2928,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "认",
+        "pinyin": "rèn",
+        "cixing": "动",
+        "sort": 2929,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "日历",
+        "pinyin": "rìlì",
+        "cixing": "名",
+        "sort": 2930,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "日用品",
+        "pinyin": "rìyòngpǐn",
+        "cixing": "名",
+        "sort": 2931,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "如",
+        "pinyin": "rú",
+        "cixing": "动、连",
+        "sort": 2932,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "如此",
+        "pinyin": "rúcǐ",
+        "cixing": "代",
+        "sort": 2933,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "如何",
+        "pinyin": "rúhé",
+        "cixing": "代",
+        "sort": 2934,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "如今",
+        "pinyin": "rújīn",
+        "cixing": "名",
+        "sort": 2935,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "如同",
+        "pinyin": "rútóng",
+        "cixing": "动",
+        "sort": 2936,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "如下",
+        "pinyin": "rúxià",
+        "cixing": "动",
+        "sort": 2937,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "软",
+        "pinyin": "ruǎn",
+        "cixing": "形",
+        "sort": 2938,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "软件",
+        "pinyin": "ruǎnjiàn",
+        "cixing": "名",
+        "sort": 2939,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "弱",
+        "pinyin": "ruò",
+        "cixing": "形",
+        "sort": 2940,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "洒",
+        "pinyin": "sǎ",
+        "cixing": "动",
+        "sort": 2941,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "赛场",
+        "pinyin": "sàichǎng",
+        "cixing": "名",
+        "sort": 2942,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "色彩",
+        "pinyin": "sècǎi",
+        "cixing": "名",
+        "sort": 2943,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "沙漠",
+        "pinyin": "shāmò",
+        "cixing": "名",
+        "sort": 2944,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "沙子",
+        "pinyin": "shāzi",
+        "cixing": "名",
+        "sort": 2945,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "傻",
+        "pinyin": "shǎ",
+        "cixing": "形",
+        "sort": 2946,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "晒",
+        "pinyin": "shài",
+        "cixing": "动",
+        "sort": 2947,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "删",
+        "pinyin": "shān",
+        "cixing": "动",
+        "sort": 2948,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "扇",
+        "pinyin": "shān",
+        "cixing": "动",
+        "sort": 2949,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "删除",
+        "pinyin": "shānchú",
+        "cixing": "动",
+        "sort": 2950,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "山区",
+        "pinyin": "shānqū",
+        "cixing": "名",
+        "sort": 2951,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "擅长",
+        "pinyin": "shàncháng",
+        "cixing": "动",
+        "sort": 2952,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "善良",
+        "pinyin": "shànliáng",
+        "cixing": "形",
+        "sort": 2953,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "善于",
+        "pinyin": "shànyú",
+        "cixing": "动",
+        "sort": 2954,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "扇子",
+        "pinyin": "shànzi",
+        "cixing": "名",
+        "sort": 2955,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "伤",
+        "pinyin": "shāng",
+        "cixing": "名、动",
+        "sort": 2956,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "伤害",
+        "pinyin": "shānghài",
+        "cixing": "动",
+        "sort": 2957,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "商家",
+        "pinyin": "shāngjiā",
+        "cixing": "名",
+        "sort": 2958,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "商人",
+        "pinyin": "shāngrén",
+        "cixing": "名",
+        "sort": 2959,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "商务",
+        "pinyin": "shāngwù",
+        "cixing": "名",
+        "sort": 2960,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "商业",
+        "pinyin": "shāngyè",
+        "cixing": "名",
+        "sort": 2961,
+        "levelName": "五级"
+      },
+      {
+        "type": 1,
+        "word": "赏",
+        "pinyin": "shǎng",
+        "cixing": "动",
+        "sort": 2962,
+        "levelName": "五级"
+      }
+    ],
+    "total": 1638,
+    "size": 500,
+    "current": 2,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 4
+  },
+  "ok": true
+}

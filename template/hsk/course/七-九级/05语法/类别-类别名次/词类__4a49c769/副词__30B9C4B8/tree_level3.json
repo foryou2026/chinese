@@ -1,0 +1,46 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "25042AD03401EC7AADC9337AD7803F45",
+      "content": "程度副词",
+      "children": []
+    },
+    {
+      "id": "D8C70CF18BAF82728830A4DC143D4FD8",
+      "content": "范围副词",
+      "children": []
+    },
+    {
+      "id": "04F187A3105213B36675CA9D2EFA7F92",
+      "content": "时间副词",
+      "children": []
+    },
+    {
+      "id": "821CE6BD1CDEEAD7BE79CDE5A7F64AEE",
+      "content": "频率副词",
+      "children": []
+    },
+    {
+      "id": "627DB75F14622C5D8A1DC862AC0D94DA",
+      "content": "方式副词",
+      "children": []
+    },
+    {
+      "id": "1EB3D239B10380321ED6B6B57BD5F4DC",
+      "content": "否定副词",
+      "children": []
+    },
+    {
+      "id": "CB6BEC940C659B84F7B98F28F64A367B",
+      "content": "语气副词",
+      "children": []
+    },
+    {
+      "id": "28897157FAD68F9E25BC0516741F43C0",
+      "content": "判断副词",
+      "children": []
+    }
+  ],
+  "ok": true
+}

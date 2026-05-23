@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "开展和完成通识性课程及基础性专业课程学习",
+        "level2Content": "能听懂通识性课程及基础性专业课程的课堂讲授及相关讲座等，能快速阅读并准确理解教学材料和阅读文献中的相关内容。如：听懂关于航空航天技术发展历史的讲座（片段），把握讲座要点和整体结构，准确记录关键内容，并提出自己的问题和看法。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "开展和完成通识性课程及基础性专业课程学习",
+        "level2Content": "能根据给定主题或材料就通识性课程及基础性专业课程中的相关内容在课堂或小组讨论中发言，撰写札记、读书报告、研究综述等。如：在阅读相关资料的基础上就如何理解“后现代主义”做课堂发言。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "开展和完成通识性课程及基础性专业课程学习",
+        "level2Content": "能将有关人文社科领域通识性话题的口头或书面材料准确、流畅地译成中文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

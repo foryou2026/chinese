@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论教育情况和问题",
+        "level2Content": "能听懂日常交谈中对方关于家庭教育、学校教育、社会教育、职业教育等方面较复杂情况的询问、介绍和看法。如：教育观念、教育方式、教育问题等。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论教育情况和问题",
+        "level2Content": "能向他人较流畅地介绍自己所经历或了解的家庭教育、学校教育、社会教育、职业教育等方面的情况，表达自己对教育问题的看法。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论教育情况和问题",
+        "level2Content": "能看懂关于上述教育情况和问题的一般性文章。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论教育情况和问题",
+        "level2Content": "能写出短文介绍有关上述教育情况和问题的经历和自己的看法。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

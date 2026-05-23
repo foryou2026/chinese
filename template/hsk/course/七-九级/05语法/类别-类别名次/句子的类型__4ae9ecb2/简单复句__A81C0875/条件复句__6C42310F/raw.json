@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "content": "无论……与否，都……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "条件复句",
+        "cases": "无论你同意与否，他都会按自己的计划去处理这件事的。\r\n所有的工作人员，无论工作成绩优异与否，都是能领到高额奖金的。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "content": "凡……（者），均（可）……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "条件复句",
+        "cases": "此次比赛设有一、二、三等奖及优秀奖。凡获奖者均颁发荣誉证书。\r\n凡来我市进行技术合作的单位，均可根据自身的资金、设备、专长等条件，进行多领域、多层次的合作。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

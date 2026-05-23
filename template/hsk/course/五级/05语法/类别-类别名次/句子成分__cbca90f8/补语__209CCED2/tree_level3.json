@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "50D323B011DE4AB451CA444CB05EBCEC",
+      "content": "可能补语2",
+      "children": []
+    },
+    {
+      "id": "0D70EFC16B025FBD5BCB12FAC9AB2DA9",
+      "content": "程度补语2",
+      "children": []
+    },
+    {
+      "id": "A71795E2E736E9A2FE486BF3FB930B05",
+      "content": "趋向补语3",
+      "children": []
+    },
+    {
+      "id": "310C6F0EA5880CBF2064898DAA23F773",
+      "content": "状态补语2",
+      "children": []
+    }
+  ],
+  "ok": true
+}

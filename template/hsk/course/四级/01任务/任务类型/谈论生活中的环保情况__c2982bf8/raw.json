@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论生活中的环保情况",
+        "level2Content": "能听懂日常交谈中对方询问环境状况、环保情况有一定复杂度的问题，或对方就生活中环境状况、环保情况有一定复杂度的介绍。如：环境的一般情况、污染情况、环保做法、观念、相关法规等。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论生活中的环保情况",
+        "level2Content": "能询问他人生活中有关上述环境状况、环保情况等有一定复杂度的问题；能就自己所知回答上述生活中环境状况、环保情况有一定复杂度的问题。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论生活中的环保情况",
+        "level2Content": "能大致介绍自己了解的生活中的环境状况、环保情况、环保故事。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论生活中的环保情况",
+        "level2Content": "能看懂生活中的一些环境状况和环保情况的一般性介绍、环保故事、环保宣传提示等。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论生活中的环保情况",
+        "level2Content": "能写出一段话简单叙述自己对生活中环保情况的了解。如：一个环保公益活动，一次环保经历，一些环保做法等。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

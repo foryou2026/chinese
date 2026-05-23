@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论自然情况",
+        "level2Content": "能听懂日常交谈中朋友、家人等关于气候、季节、动植物、自然风景等情况的一般性问题，或朋友、家人等对上述情况的一般性介绍。如：一个地区气候的总体特征，常见的气候现象，季节情况，大熊猫、树木等常见的动植物，自然风景。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论自然情况",
+        "level2Content": "能在日常交谈中询问朋友、家人等上述一般性自然情况；能回答朋友、家人等关于上述自然情况的一般性问题。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论自然情况",
+        "level2Content": "能简单介绍上述内容相关的自然情况，如：自己喜欢的季节，动植物，最近的天气情况、喜欢的风景等。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论自然情况",
+        "level2Content": "能看懂关于介绍上述自然情况的简单小短文。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论自然情况",
+        "level2Content": "能写出一两句话，简单介绍跟上述自然情况相关的内容。如：最近的天气、喜欢的季节等。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

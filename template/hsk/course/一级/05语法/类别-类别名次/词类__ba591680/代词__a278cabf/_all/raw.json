@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "多、多少、几、哪、哪儿、哪里、哪些、什么、谁、怎么、怎么样",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "你弟弟多大？\r\n这件衣服多少钱？\r\n现在几点？\r\n她是哪国人？\r\n你去哪儿？\r\n你住在哪里？\r\n哪些是汉语书？\r\n那是什么？\r\n那个人是谁？\r\n你怎么去学校？\r\n明天天气怎么样？"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "我、你、您、他、她、我们、你们、他们、她们、它、它们、大家",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "人称代词",
+        "cases": "我是学生。\r\n你是哪国人？\r\n老师，您好！\r\n他会开车吗？\r\n她是不是老师？\r\n我们都是大学生。\r\n你们是学生吗？\r\n他们去哪儿了？\r\n她们都是我的朋友。\r\n你看，它正在吃饭呢。\r\n这些小狗真漂亮，它们叫什么名字？\r\n大家都喜欢学习汉语。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "这、那、这儿、那儿、这里、那里、这些、那些、有的、这个、那个、有些",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "指示代词",
+        "cases": "这是谁的书？\r\n那个手机多少钱？\r\n我在这儿学习中文。\r\n那儿有一家书店。\r\n这里是我的家。\r\n那里有一家饭店。\r\n这些是老师的书。\r\n我不认识那些人。\r\n到了饭店，大家有的想吃米饭，有的想吃面条。\r\n这个杯子多少钱？\r\n她在那个房间。\r\n有些学生不在学校住。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

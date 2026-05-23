@@ -1,0 +1,765 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "word": "巴",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "保",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "抱",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "背",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "标",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "并",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "部",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "餐",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "产",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "厂",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "晨",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "程",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "吹",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "此",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "村",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "达",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "刀",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "导",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "倒",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "低",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "掉",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "度",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "断",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "队",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "烦",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "反",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "份",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "否",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "父",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "改",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "敢",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "各",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "够",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "挂",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "观",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "管",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "广",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "喊",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "忽",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "虎",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "划",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "基",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "及",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "计",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "技",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "际",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "济",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "寄",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "建",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "江",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "将",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "金",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "京",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "究",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "举",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "科",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "克",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "况",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "困",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "拉",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "利",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "例",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "俩",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "连",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "联",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "量",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "另",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "流",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "论",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "麻",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "美",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "民",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "内",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "农",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "弄",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "排",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "牌",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "篇",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "品",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "普",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "强",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "青",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "取",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "确",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "任",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "扔",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "入",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "社",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "深",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "省",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "食",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "使",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "示",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "式",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "输",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "熟",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "术",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "顺",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "随",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "台",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "态",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "谈",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "汤",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "堂",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "讨",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "套",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "庭",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "停",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "通",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "痛",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "土",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "推",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "味",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "温",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "无",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "误",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "线",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "象",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "性",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "兄",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "许",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "血",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "压",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "亚",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "研",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "验",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "夜",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "印",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "永",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "由",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "油",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "与",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "原",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "约",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "云",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "增",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "章",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "之",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "支",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "止",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "指",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "至",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "志",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "众",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "专",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "转",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "装",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "资",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "组",
+        "type": "2"
+      },
+      {
+        "examLevelId": "HSK4",
+        "word": "座",
+        "type": "2"
+      }
+    ],
+    "total": 150,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

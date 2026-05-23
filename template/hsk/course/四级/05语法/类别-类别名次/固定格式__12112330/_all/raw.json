@@ -1,0 +1,159 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "content": "一+量词+比+一+量词",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "他的表演一次比一次精彩。\r\n最近天气一天比一天暖和。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "在……方面",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "在教育孩子方面，张老师有丰富的经验。\r\n在生活方面，他还不太习惯。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "够……的",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "这个房间真够大的，估计能住七八个人。\r\n你男朋友真够浪漫的，每天都给你送一枝花。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "拿……来说",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "中国各地的生活习惯各不相同，拿吃饭来说，南方人一般喜欢吃米饭，而北方人爱吃面条、馒头等面食。\r\n科技改变了人类的生活，拿交通来说，高铁的出现使人们的日常出行更快、更方便了。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "再也不/没……",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "我保证今后再也不迟到了。\r\n大学毕业以后，我再也没见过他。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "怎么都/也+不/没……",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "他们跑了好几家医院，怎么也没查出孩子生病的原因。\r\n尽管每天细心照顾，可阳台上的花怎么都不开。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "为了……而……",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "为了梦想而努力的人值得我们学习。\r\n我们减少使用塑料袋，是为了保护环境而改变习惯。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "动词+一X是一X",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "虽然日子过得很难，但也不能过一天是一天。\r\n要学的内容实在太多了，学一点儿是一点儿吧。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "（没）有什么（好）X的",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "想好了就直接做，有什么好害怕的。\r\n只是一次考试没考好，没有什么好难过的。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "X是X，Y是Y",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "他是他，我是我，我们的意见不一样。\r\n工作是工作，家庭是家庭，不要用工作的方式解决家里的问题。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "X也得X，不X也得X",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "这场会议很重要，你去也得去，不去也得去。\r\n结果改变不了了，你接受也得接受，不接受也得接受。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "X就是了",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "别浪费时间了，有什么想法说就是了。\r\n你不要生气，下次別答应他就是了。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "还X呢",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "还国际公司呢，服务质量这么差。\r\n还中文专业的呢，中文说得还不如我。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "你X你的吧",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "我不饿，你吃你的吧，不用等我。\r\n没有什么重要的事，你忙你的吧。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "让/叫你X你就X",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "老师让你多练你就多练，肯定没坏处。\r\n叫你拿着你就拿着，不用跟我客气。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "说什么/怎么（着）也得X",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "他受伤了，我说什么也得去看看他。\r\n快要迟到了，说什么也得走了。\r\n这么有用的技术，我怎么（着）也得学。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "X就X（点儿）吧",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "买就买（点儿）吧，也不太贵。\r\n慢就慢（点儿）吧，能做完就行。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "X是X",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "我们讨论是讨论了，可是大家各有各的想法。\r\n留学生活累是累，不过我们学到了很多知识。"
+      }
+    ],
+    "total": 18,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

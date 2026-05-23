@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "content": "故意、互相、相互",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "方式副词",
+        "cases": "真对不起，我不是故意的，你千万别生气。\r\n他故意提高声音，好让大家都能听见。\r\n我想练习中文，咱们互相学习，互相帮助，怎么样？\r\n大家都是同学，应该互相关心，互相照顾。\r\n国家之间应该相互尊重，相互交流，共同发展。\r\n随着信息技术的发展，不同语言的相互影响越来越普遍。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

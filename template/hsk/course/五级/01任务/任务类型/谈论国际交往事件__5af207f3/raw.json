@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论国际交往事件",
+        "level2Content": "能在日常生活中听懂他人对国际友好交往事件的较复杂的介绍或相关报道，如：友好交往故事、国际友好访问、国际合作案例。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论国际交往事件",
+        "level2Content": "能向他人较流畅地介绍自己所了解的有关国际友好交往事件，能与他人交流。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论国际交往事件",
+        "level2Content": "能看懂有关上述国际友好交往事件的一般性报道、故事。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论国际交往事件",
+        "level2Content": "能写出短文介绍自己了解的国际友好交往故事。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

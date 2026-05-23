@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "569C5CF23C30CEFD031DCA935D71D85D",
+      "content": "并列复句",
+      "children": []
+    },
+    {
+      "id": "4B49EF8D6697E2A99F4667FA37785773",
+      "content": "选择复句",
+      "children": []
+    },
+    {
+      "id": "553C07F9C4238F51FFE451B9BF32EEB3",
+      "content": "转折复句",
+      "children": []
+    },
+    {
+      "id": "B86040A04A09F48F4079B83C6E936EE3",
+      "content": "条件复句",
+      "children": []
+    },
+    {
+      "id": "59C03704B15411E6881E61F12673D1B2",
+      "content": "让步复句",
+      "children": []
+    },
+    {
+      "id": "E0925B093958A689E60E54C4ED1D763F",
+      "content": "目的复句",
+      "children": []
+    }
+  ],
+  "ok": true
+}

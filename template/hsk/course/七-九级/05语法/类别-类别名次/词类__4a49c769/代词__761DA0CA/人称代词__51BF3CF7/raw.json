@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "content": "我",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "人称代词",
+        "cases": "我校教育质量上乘，办学几十年间为国家培养、输送了大批优秀人才。\r\n我公司始终秉持“以客户为中心”的理念，致力于为客户提供最优质的服务。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

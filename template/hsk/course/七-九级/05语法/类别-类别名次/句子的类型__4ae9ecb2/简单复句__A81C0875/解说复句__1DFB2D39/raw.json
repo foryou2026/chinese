@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "content": "所谓……，就是……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "解说复句",
+        "cases": "所谓绒面涂料，就是视觉效果一流，又不会引发眩晕，触感柔软而有弹性的新型装饰材料。\r\n企业管理者要为企业的发展提供催化剂。所谓催化剂，就是能为企业发展提供助力的一切行为，包括设立清晰目标、调动员工自主性和创造性，以及提供充分的资源等。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

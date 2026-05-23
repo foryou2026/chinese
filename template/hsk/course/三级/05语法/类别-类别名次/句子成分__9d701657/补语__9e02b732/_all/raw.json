@@ -1,0 +1,79 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "动词+到/住/走/上",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "结果补语2",
+        "cases": "火车票你买到了没有？\r\n老师说的话我都记住了。\r\n我的自行车让朋友骑走了。\r\n下班的时候，别忘了关上电脑。        "
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "趋向补语的引申用法：表示结果意义：动词+出/起/下",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "趋向补语2",
+        "cases": "我们终于想出了一个好办法。               \r\n你想起她的名字了没有？                \r\n请在这儿写下您的电话。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "趋向补语的引申用法：表示动作行为的开始：动词+上/起来",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "趋向补语2",
+        "cases": "饿了一天，我们终于吃上饭了。\r\n儿子刚到家就玩上了电脑游戏。\r\n他们一见面就聊起来了。\r\n妈妈一出门，孩子就哭起来了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "趋向补语的引申用法：表示动作行为的持续：动词+下去/下来",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "趋向补语2",
+        "cases": "虽然学习汉语不容易，但是我一定会坚持下去。\r\n在老师的帮助下，我一定可以学下去。\r\n在过去的一年里，我把每天练习汉字的习惯坚持下来了。\r\n这三天玩下来太累了，我得好好休息休息。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "动词+得/不+动词/形容词",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "可能补语1",
+        "cases": "老师说的话你听得懂吗？\r\n黑板上的字太小，我看不清楚。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "形容词+得很",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "程度补语1",
+        "cases": "这里的环境好得很。\r\n这儿从早到晚都有风，凉快得很。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "形容词/动词+极了/坏了",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "程度补语1",
+        "cases": "看见考试成绩的时候，我高兴极了。\r\n爬山回来，大家都累坏了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "表示动作结束到某个时间点的间隔时间",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "数量补语3",
+        "cases": "开学已经两个星期了。\r\n这件事已经过去五年了。"
+      }
+    ],
+    "total": 8,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

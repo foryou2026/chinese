@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论社会现象",
+        "level2Content": "能听懂日常交谈中、新闻中介绍民生发展、新兴事物、社会观念、基础设施建设等社会现象的主要内容。如：就业失业问题、人口问题，社会变迁情况；人们的生活观念、工作观念、社交观念、消费观念等；交通设施、建筑工程、公共娱乐设施等基础设施建设。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论社会现象",
+        "level2Content": "能向他人较流畅地介绍自己所了解的有关上述社会现象的主要内容，能与他人交流，发表看法。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论社会现象",
+        "level2Content": "能看懂关于上述社会现象新闻报道的主要内容、一般性文章。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论社会现象",
+        "level2Content": "能写出短文介绍自己了解的某种社会现象的主要内容，表达自己的看法。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "content": "便、一旦",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "关联副词",
+        "cases": "会议一结束，我便赶回公司了。\r\n这个学生很聪明，一教便懂。\r\n一旦确定了目标，就不要放弃。\r\n这次机会非常难得，一旦错过了，你会后悔的。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

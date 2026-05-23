@@ -1,0 +1,71 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "content": "表示存在、具有：主语+有+着+宾语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“有”字句3",
+        "cases": "尽管是兄弟，但是他们心里有着很深的矛盾。\r\n两国之间有着长期友好的关系。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "表示附着：主语+动词+有+宾语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“有”字句3",
+        "cases": "门关着，墙上挂有“暂停营业”的牌子。\r\n这本书的第一页写有作者的名字。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "主语+把+宾语+一+动词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句3",
+        "cases": "孩子把书包一扔，坐在地上哭了起来。\r\n经理把任务一说，员工们就开始干活了。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "主语+把+宾语1+动词+宾语2",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句3",
+        "cases": "他把存款都买车了。\r\n我把父母给的生活费借朋友了。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "前后两个动词性词语具有因果、转折、条件关系",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "连动句3",
+        "cases": "她丈夫生病住院了。（因果）\r\n王经理开会忘了带会议资料。（转折）\r\n面对快速变化的形势，我们应该尽快制定方案应对风险。（条件）"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "A+形容词+B+数量补语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "比较句4",
+        "cases": "他高我一头。\r\n姐姐重我两公斤。\r\n哥哥早我两年上学。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "主语+被/叫/让+宾语+给+动词+其他成分",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "被动句3",
+        "cases": "我新买的衣服被他给洗坏了。\r\n她的帽子叫风给吹跑了。\r\n对不起，这些资料让我给搞乱了。"
+      }
+    ],
+    "total": 7,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

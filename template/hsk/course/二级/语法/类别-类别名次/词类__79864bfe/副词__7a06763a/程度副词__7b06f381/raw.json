@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "多、好、最",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "程度副词",
+        "cases": "这只小狗多可爱啊！\r\n这个教室好大啊！\r\n我最喜欢打篮球。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

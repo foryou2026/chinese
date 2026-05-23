@@ -1,0 +1,63 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "非常、很、太、真、有（一）点儿",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "程度副词",
+        "cases": "我非常喜欢学中文。\r\n这里的水果很便宜。\r\n房间里太热了。\r\n这儿的菜真好吃。\r\n今天天气有点儿冷。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "都1",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "范围副词",
+        "cases": "我们都学习汉语。\r\n他们都是中国学生。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "在、正在",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "时间副词",
+        "cases": "他们在做什么？\r\n学生们正在上课。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "再1",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "频率副词",
+        "cases": "我想再买一本。\r\n我再问一个问题，可以吗？"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "还1、也",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "关联副词",
+        "cases": "我想吃面条儿，还想吃包子。\r\n我有两个姐姐，还有一个哥哥。\r\n他是学生，我也是学生。\r\n我学习汉语，我弟弟也学习汉语。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "不、没（有）、不要",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "否定副词",
+        "cases": "她不是老师。\r\n我没看电视。\r\n她去超市了，我没有去。\r\n请大家不要说话。"
+      }
+    ],
+    "total": 6,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

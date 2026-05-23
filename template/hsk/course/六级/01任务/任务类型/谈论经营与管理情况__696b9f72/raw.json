@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论经营与管理情况",
+        "level2Content": "能听懂企业管理者、同事等关于人员管理、企业发展等经营与管理情况的介绍。如：求职、职务、职位、考核、福利待遇等情况；企业创办情况、企业文化、企业机遇前景等。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论经营与管理情况",
+        "level2Content": "能流畅地向他人介绍自己所了解的有关上述企业经营与管理情况，跟同事交流自己的看法。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论经营与管理情况",
+        "level2Content": "能看懂有关上述情况的一般性文章或企业公告、新闻等。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论经营与管理情况",
+        "level2Content": "能写文章介绍一家企业，或表达自己对经营管理的看法。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

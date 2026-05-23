@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "a278eb9a688011f0b11400163e03dd53",
+      "content": "句型",
+      "children": []
+    },
+    {
+      "id": "a278ee1e688011f0b11400163e03dd53",
+      "content": "句类",
+      "children": []
+    },
+    {
+      "id": "a278f042688011f0b11400163e03dd53",
+      "content": "特殊句型",
+      "children": []
+    },
+    {
+      "id": "a278f26a688011f0b11400163e03dd53",
+      "content": "复句",
+      "children": []
+    }
+  ],
+  "ok": true
+}

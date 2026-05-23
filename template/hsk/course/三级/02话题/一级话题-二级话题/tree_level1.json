@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "bab51268686711f0b11400163e03dd53",
+      "content": "日常生活",
+      "children": []
+    },
+    {
+      "id": "baea9091686711f0b11400163e03dd53",
+      "content": "教育情况",
+      "children": []
+    },
+    {
+      "id": "bb336a02686711f0b11400163e03dd53",
+      "content": "职场生活",
+      "children": []
+    },
+    {
+      "id": "bb68275b686711f0b11400163e03dd53",
+      "content": "自然与环境",
+      "children": []
+    },
+    {
+      "id": "bb9c7c7e686711f0b11400163e03dd53",
+      "content": "当代社会",
+      "children": []
+    },
+    {
+      "id": "bbcf0a24686711f0b11400163e03dd53",
+      "content": "文化与传统",
+      "children": []
+    }
+  ],
+  "ok": true
+}

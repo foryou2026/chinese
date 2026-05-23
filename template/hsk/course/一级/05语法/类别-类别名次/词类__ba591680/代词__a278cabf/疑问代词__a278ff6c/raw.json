@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "多、多少、几、哪、哪儿、哪里、哪些、什么、谁、怎么、怎么样",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "你弟弟多大？\r\n这件衣服多少钱？\r\n现在几点？\r\n她是哪国人？\r\n你去哪儿？\r\n你住在哪里？\r\n哪些是汉语书？\r\n那是什么？\r\n那个人是谁？\r\n你怎么去学校？\r\n明天天气怎么样？"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

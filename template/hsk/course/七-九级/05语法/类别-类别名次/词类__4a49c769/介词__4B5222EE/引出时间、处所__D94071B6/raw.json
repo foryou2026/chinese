@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "content": "打",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出时间、处所",
+        "cases": "打这天起，小赵替父亲担起了全家的重担。\r\n他悄声说这可是件宝贝，打皇宫里流出来的。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

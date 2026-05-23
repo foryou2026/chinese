@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "93A36AD0405C8C0B2E0BA0F1309DD293",
+      "content": "“把”字句2",
+      "children": []
+    },
+    {
+      "id": "ED3AAF8447C7DE258A7838FB7C5356CA",
+      "content": "被动句2",
+      "children": []
+    },
+    {
+      "id": "B38BD559BC372B97249512EF2951E898",
+      "content": "兼语句2",
+      "children": []
+    },
+    {
+      "id": "34BEBE0169DB0C339DC45E6733134734",
+      "content": "比较句3",
+      "children": []
+    },
+    {
+      "id": "F18D8FB5F7A1786C14870318078F4ACA",
+      "content": "双重否定句",
+      "children": []
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "呢4、吧2、的2、啊1",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "语气助词",
+        "cases": "她怎么不在家呢？\r\n明天你想去哪儿呢？\r\n这是你的手机吧？\r\n这么晚了，超市已经关门了吧？\r\n我是去年九月来中国的。\r\n我们是在北京认识的。\r\n他们是坐飞机去上海的。\r\n今天的晚饭是我做的。\r\n你汉语说得真好啊！"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

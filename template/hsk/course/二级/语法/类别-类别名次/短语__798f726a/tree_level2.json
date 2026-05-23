@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "7a2b194d688c11f0b11400163e03dd53",
+      "content": "结构类型",
+      "children": []
+    },
+    {
+      "id": "7a343f70688c11f0b11400163e03dd53",
+      "content": "功能类型",
+      "children": []
+    },
+    {
+      "id": "7a3d63b6688c11f0b11400163e03dd53",
+      "content": "固定短语",
+      "children": []
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,167 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "type": 1,
+        "word": "自习",
+        "pinyin": "zìxí",
+        "cixing": "动",
+        "sort": 1982,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "自信",
+        "pinyin": "zìxìn",
+        "cixing": "动、名、形",
+        "sort": 1983,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "自学",
+        "pinyin": "zìxué",
+        "cixing": "动",
+        "sort": 1984,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "总结",
+        "pinyin": "zǒngjié",
+        "cixing": "动、名",
+        "sort": 1985,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "租",
+        "pinyin": "zū",
+        "cixing": "动",
+        "sort": 1986,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "组",
+        "pinyin": "zǔ",
+        "cixing": "名、（动、量）",
+        "sort": 1987,
+        "levelName": "四级（五级）"
+      },
+      {
+        "type": 1,
+        "word": "最终",
+        "pinyin": "zuìzhōng",
+        "cixing": "名",
+        "sort": 1988,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "尊重",
+        "pinyin": "zūnzhòng",
+        "cixing": "动、形",
+        "sort": 1989,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "左右",
+        "pinyin": "zuǒyòu",
+        "cixing": "名、（动）",
+        "sort": 1990,
+        "levelName": "四级（七-九级）"
+      },
+      {
+        "type": 1,
+        "word": "座",
+        "pinyin": "zuò",
+        "cixing": "名、量",
+        "sort": 1991,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "做法",
+        "pinyin": "zuòfǎ",
+        "cixing": "名",
+        "sort": 1992,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "作家",
+        "pinyin": "zuòjiā",
+        "cixing": "名",
+        "sort": 1993,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "做梦",
+        "pinyin": "zuòmèng",
+        "cixing": "动",
+        "sort": 1994,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "作品",
+        "pinyin": "zuòpǐn",
+        "cixing": "名",
+        "sort": 1995,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "作为1",
+        "pinyin": "zuòwéi",
+        "cixing": "动、介",
+        "sort": 1996,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "座位",
+        "pinyin": "zuòwèi",
+        "cixing": "名",
+        "sort": 1997,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "作文",
+        "pinyin": "zuòwén",
+        "cixing": "动、名",
+        "sort": 1998,
+        "levelName": "四级"
+      },
+      {
+        "type": 1,
+        "word": "作用",
+        "pinyin": "zuòyòng",
+        "cixing": "名、（动）",
+        "sort": 1999,
+        "levelName": "四级（六级）"
+      },
+      {
+        "type": 1,
+        "word": "作者",
+        "pinyin": "zuòzhě",
+        "cixing": "名",
+        "sort": 2000,
+        "levelName": "四级"
+      }
+    ],
+    "total": 1019,
+    "size": 500,
+    "current": 3,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 3
+  },
+  "ok": true
+}

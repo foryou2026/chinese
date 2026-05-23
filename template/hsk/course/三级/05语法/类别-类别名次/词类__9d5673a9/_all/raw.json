@@ -1,0 +1,247 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "东、南、西、北、北方、东方、南方、西方、中间",
+        "grammarType": "词类",
+        "categoryType": "名词",
+        "grammarDetail": "方位名词",
+        "cases": "我听说北方的冬天很冷。\r\n中国的北方和南方我都去过。\r\n你们两个人中间的那个人是谁？\r\n东方人和西方人的生活习惯不太一样。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "需要、该、应该、愿意、得",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "能愿动词",
+        "cases": "从这儿过去，大概需要多长时间？\r\n医生说我感冒了，需要吃药。\r\n已经十一点了，你该睡觉了。\r\n你学了一天了，该休息休息了。\r\n我们应该多练习说中文。\r\n我要去动物园，应该怎么坐车呢？\r\n你愿意帮我学习汉语吗？\r\n我很愿意参加这次汉语比赛。\r\n要上课了，咱们得快点儿走。\r\n我明天有考试，今天得认真复习。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "动宾式离合词：放假、见面、结婚、洗澡",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "离合词",
+        "cases": "我放了假就准备去旅游。\r\n我们已经很长时间没见过面了。\r\n结了婚以后，你还打算工作吗？\r\n你先去洗个澡，休息一会儿。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "动补式离合词：打开、看见、离开、完成、分开",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "离合词",
+        "cases": "我打不开这瓶水，你能帮帮我吗？\r\n黑板上的字你看得见吗？\r\n他已经离不开这个地方了。\r\n今天的作业我可能完不成了。\r\n我的中文越来越好，跟老师的帮助是分不开的。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "怎样",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "怎样才能学好中文呢？\r\n他是怎样一个人？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "疑问代词的非疑问用法：任指用法：①疑问代词+都……    ②疑问代词+疑问代词",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "这次旅行谁都可以参加。\r\n我最近感冒了，哪儿都没去。\r\n谁感兴趣谁就去参加。\r\n你想吃什么就点什么吧。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "疑问代词的非疑问用法：不定指用法",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "我好像在哪儿见过她。\r\n你先吃点儿什么再走吧。\r\n我下周搬家，想请谁来帮帮忙。\r\n咱们哪天一起去踢足球吧。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "别人、咱们",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "人称代词",
+        "cases": "我不太清楚，你问问别人吧。\r\n别人能学好，我也一定能学好。\r\n咱们明天一起去动物园，怎么样？\r\n要迟到了，咱们快走吧。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "别的、其他",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "指示代词",
+        "cases": "除了北京，你还去过别的城市吗？\r\n我喜欢学习别的国家的语言和文化。\r\n其他同学都回国了，只有我还在中国。\r\n除了看足球比赛，你还有其他爱好吗？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "专用名量词：把、双、张、种、层、封、页、辆、节、所、班、段、头、句公斤、斤、角、毛、刻、米",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "名量词",
+        "cases": "下雨了，记得带一把伞。\r\n我在网上买了两双鞋。\r\n桌子上放着几张照片。\r\n这里有多少种水果？\r\n我们的教室在四层。\r\n我想给我的爸爸妈妈写一封信。\r\n请大家打开书，第五页。\r\n那辆黑色的自行车是我的。\r\n我每周都有一节中文课。\r\n这个城市一共有三所大学。\r\n咱们坐下一班地铁走吧。\r\n请大家用这些词写一段话。\r\n爷爷家里养了十几头牛。\r\n这句话是什么意思？\r\n苹果多少钱一斤/公斤？\r\n这些一共八块五角（毛）钱。\r\n现在八点一刻。\r\n我哥哥身高一米八五。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "借用名量词：碗、盘",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "名量词",
+        "cases": "我要一碗面条和一碗米饭。\r\n中午我在食堂吃了一盘饺子。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "口、回、遍、声",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "动量词",
+        "cases": "他喝了一口茶，然后开始工作。\r\n我已经说过好几回了，但他还是不记得。\r\n对不起，我没听懂，请再说一遍。\r\n她跟我说了一声“谢谢”就走了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "个个、张张",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "量词重叠",
+        "cases": "这些苹果个个都很大。\r\n他画的画，张张都很漂亮。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "比较、还3、更、特别、挺、有些、越、极",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "程度副词",
+        "cases": "这本书的内容比较简单，我读得很快。\r\n外面太热了，屋子里还凉快一些。\r\n搬家以后，我们的生活更方便了。\r\n我弟弟特别喜欢看足球比赛。\r\n多穿点儿衣服，外面挺冷的。\r\n孩子这么晚还没回来，妈妈心里有些着急。\r\n冬天快要到了，天气越来越冷了。\r\n我对中国历史极有兴趣。\r\n他工作特别忙，周末极少休息。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "就3、一块儿、一共、只、到处、只是",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "范围副词",
+        "cases": "我就要两斤苹果，不要别的。\r\n办公室里就张老师一个人。\r\n你跟我一块儿去图书馆，好吗？\r\n我们经常一块儿踢足球。\r\n你们班一共有多少留学生？\r\n这些水果一共多少钱？\r\n我只有一个哥哥，没有弟弟妹妹。\r\n她只说了自己的名字，没说别的。\r\n公园里到处都是锻炼身体的老人。\r\n她只是笑了笑，一句话也没说。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "才1、马上、先、一会儿、刚、刚刚、一直",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "时间副词",
+        "cases": "他才到家，还没有吃饭呢。\r\n我才搬来北京，还不太习惯这里的生活\r\n请等一下，我马上来。\r\n接了电话，她马上就跑出去了。\r\n你先走吧，我还有工作要做。\r\n我想先洗个澡，然后再写作业。\r\n最近天气变化很快，一会儿阴，一会儿晴。\r\n他刚开始学汉语，说得还不太好。\r\n报纸是早上刚送来的。\r\n刚刚还是晴天，怎么突然下雨了？\r\n他不在，刚刚出去。\r\n我一直都住在北京。\r\n别出去了，外面一直在下雨。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "总、总是、又、常常",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "频率副词",
+        "cases": "一到冬天，孩子就总生病。\r\n上学的时候，我总是让爸爸开车送我。\r\n那个电影太有意思了，我昨天又看了一遍。\r\n下课以后，我常常去体育馆打篮球。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "一边",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "关联副词",
+        "cases": "孩子们高兴地一边唱歌一边跳舞。\r\n我想找一个工作，一边工作一边学习。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "大概、必须、差不多、一定、好像、几乎",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "情态副词",
+        "cases": "他大概已经回家了。\r\n你们学校大概有多少留学生？\r\n我必须做完才能下班。\r\n老师要求我们必须每天复习。\r\n我学习中文差不多三年了。\r\n我跟哥哥差不多高。\r\n放心，我一定不会迟到。\r\n我明天不一定有时间。\r\n她好像没有明白我的意思。\r\n我好像在哪里见过她。\r\n他几乎每天都去图书馆学习。\r\n他太忙了，几乎没有时间休息。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "当然、其实、终于、才2、才3、就4",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "语气副词",
+        "cases": "我当然愿意帮助你。\r\n当然没问题，欢迎你参加。\r\n这个问题其实不难。\r\n我以为他回国了，其实他一直在中国。\r\n经过一年多的努力，工作终于完成了。\r\n考试终于都结束了，我太开心了。\r\n课文有点儿难，我读了三遍才2明白。\r\n这些旧书才3卖了二十多块钱。\r\n她今天六点半就起床了。\r\n这个句子不难，我听一遍就懂了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "不必、不用",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "否定副词",
+        "cases": "你可以用手机买票，不必去车站，非常方便。\r\n不用担心，我们帮你一起准备。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "为1、向1、关于",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出对象",
+        "cases": "生日快乐，这是我为你做的蛋糕。\r\n大家为这次比赛做了很多准备。\r\n如果你不能去上课，应该向老师请假。\r\n老师让我们向她学习。\r\n关于这个问题，我们还需要认真讨论。\r\n关于比赛的时间，我明天一定告诉大家。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "向2",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出方向、路径",
+        "cases": "他向门口走去，好像准备离开。\r\n老师让大家看向前边。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "为了、为2",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出目的、原因",
+        "cases": "为了身体健康，我们应该坚持锻炼。\r\n妈妈经常为了工作睡得很晚。\r\n大家都为我的好成绩感到高兴。\r\n同学们都在为下个星期的考试做准备。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "把、被",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出施事、受事",
+        "cases": "你把箱子放在这儿吧。\r\n我的自行车被朋友借走了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "根据",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出凭借、依据",
+        "cases": "大家可以根据兴趣选择自己喜欢的运动。\r\n根据要求，我们必须参加明天的会议。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "或、或者",
+        "grammarType": "词类",
+        "categoryType": "连词",
+        "grammarDetail": "连接词或者短语",
+        "cases": "我喝茶或/或者咖啡都可以。\r\n我们可以打车或/或者坐地铁去。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "只有、只要、不但、而且、如果、可1、可是、然后",
+        "grammarType": "词类",
+        "categoryType": "连词",
+        "grammarDetail": "连接分句或句子",
+        "cases": "只有大家一起想办法，才能解决这个问题。\r\n只要你想学，就一定能学好。\r\n我不但学习了中文，而且认识了很多新朋友。\r\n如果你有时间，我想请你参加我的生日晚会。\r\n她特别想来中国看看，可一直没有合适的机会。\r\n我很早就到了机场，可是没想到飞机晚点了。\r\n你先去那边买票，然后过来找我。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "的话",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "其他助词",
+        "cases": "你喜欢的话，就送给你吧。\r\n如果明天下雨的话，我们就不去爬山了。"
+      }
+    ],
+    "total": 29,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论交通出行",
+        "level2Content": "能听懂日常交谈中家人、朋友、同学等关于交通出行的、有一定复杂度的问题，或者家人、朋友、同学等关于交通出行情况的、有一定复杂度的介绍。如：出行经历感受、交通客运情况等。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论交通出行",
+        "level2Content": "能向朋友、家人、同学等询问上述交通出行的情况；能回答朋友、家人、同学等提出的关于上述交通出行的有一定复杂度的问题。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论交通出行",
+        "level2Content": "能比较流利地介绍自己的出行情况。如：选择交通方式、行程计划、酒店预订等准备情况，出行过程中的经历、感受，需要了解的驾驶、路况、客运服务能力、路线等情况。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论交通出行",
+        "level2Content": "能看懂关于上述交通出行内容的一般性介绍或短文故事。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "谈论交通出行",
+        "level2Content": "能写出一段话简单分享自己的出行经历和感受。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

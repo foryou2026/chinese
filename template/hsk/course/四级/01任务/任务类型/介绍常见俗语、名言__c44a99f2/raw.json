@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "介绍常见俗语、名言",
+        "level2Content": "能听懂日常交谈中别人介绍的某些中文常见俗语、名言。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "介绍常见俗语、名言",
+        "level2Content": "能大致介绍一些中文常见俗语、名言及其主要含义。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "介绍常见俗语、名言",
+        "level2Content": "能看懂介绍、解读某些中文常见俗语、名言的小短文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

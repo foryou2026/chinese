@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "“怎样+动词”的特指问句",
+        "grammarType": "句子的类型",
+        "categoryType": "句类",
+        "grammarDetail": "疑问句",
+        "cases": "怎样才能学好汉语呢？\r\n中国人是怎样过新年的？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "用反问句表示强调：不是……吗？",
+        "grammarType": "句子的类型",
+        "categoryType": "句类",
+        "grammarDetail": "反问句1",
+        "cases": "你不是写完作业了吗？\r\n考试不是下个星期一吗？"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

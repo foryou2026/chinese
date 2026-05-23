@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "老—",
+        "grammarType": "语素",
+        "categoryType": "前缀",
+        "grammarDetail": "",
+        "cases": "这家饭店的经理老李是我的朋友。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "—家、—子、—员",
+        "grammarType": "语素",
+        "categoryType": "后缀",
+        "grammarDetail": "",
+        "cases": "你听说过这个画家吗？\r\n屋子有点儿小，可是很干净。\r\n她以前是一名羽毛球运动员。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

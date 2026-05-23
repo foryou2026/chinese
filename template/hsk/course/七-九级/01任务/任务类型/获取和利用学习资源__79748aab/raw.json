@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "获取和利用学习资源",
+        "level2Content": "能听懂、读懂有关学习资源及其获取途径和方式等的说明。如：理解关于不同搜索引擎的算法如何影响搜索结果的说明，以实现精准搜索。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "获取和利用学习资源",
+        "level2Content": "能根据给定主题或材料以口头或书面形式与他人联系以有效获取学习资源，能详细、清楚、流畅地说明学习资源的获取途径、使用效果等，如：通过邮件联系某学者或机构，请求获取某个数据库的使用权限并说明使用目的，在后续使用过程中反馈使用效果。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "获取和利用学习资源",
+        "level2Content": "能将有关学习资源的信息准确、流畅地译成中文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "一、二/两、三、四、五、六、七、八、九、零、十、百、半、千",
+        "grammarType": "词类",
+        "categoryType": "数词",
+        "grammarDetail": "",
+        "cases": "一个、两百、五十八、一百零六、两千三百五十、九点半、半个小时"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

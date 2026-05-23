@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "content": "或……，或……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "选择复句",
+        "cases": "这一辈子，或饱经挫折，或一帆风顺。受挫折的，心性会得到磨炼，总是处于顺境的，往往思想单纯。\r\n那个工人，或是生病了，或是家里头有事，反正今天来不了了。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "content": "宁可/宁愿……，也不……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "选择复句",
+        "cases": "今年上半年，门店营业额有二百五十万元之多，但利润仅一万多元，公司经理说：“我们宁可利润少一些，也不能忘掉服务消费者的宗旨。”\r\n这批有志于交响乐艺术的音乐家始终以发展中国高水平的交响乐为己任。他们宁愿生活艰苦些，也不愿放弃自己热爱的事业。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "content": "与其……，宁愿/宁可……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "选择复句",
+        "cases": "与其在这里胡思乱想，我宁愿当面去问个清楚。\r\n与其跟这些毫无责任心的人一组，我宁可一个人做这个小组作业。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

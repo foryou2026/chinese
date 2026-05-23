@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论文艺形式、常识、作品",
+        "level2Content": "能听懂日常交谈中对方对文艺形式、文艺常识、文艺创作者及其作品、文艺活动的较复杂的介绍。如：小说、诗歌、摄影、戏剧、影视剧、数字游戏等文艺形式及作品；文学常识、艺术常识、戏剧常识、电影常识；诗人、导演、戏剧创作者及其作品；读书会、摄影展、电影节等。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论文艺形式、常识、作品",
+        "level2Content": "能向他人较流畅地介绍自己所了解的某个文艺形式、文艺常识、文艺作品的主要内容，能与他人交流，发表看法。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论文艺形式、常识、作品",
+        "level2Content": "能看懂介绍上述文艺形式、文艺常识、文艺作品的一般性文章。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "谈论文艺形式、常识、作品",
+        "level2Content": "能写出短文介绍自己了解的某个文艺活动、文艺作品。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

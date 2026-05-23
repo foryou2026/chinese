@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "怎样",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "怎样才能学好中文呢？\r\n他是怎样一个人？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "疑问代词的非疑问用法：任指用法：①疑问代词+都……    ②疑问代词+疑问代词",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "这次旅行谁都可以参加。\r\n我最近感冒了，哪儿都没去。\r\n谁感兴趣谁就去参加。\r\n你想吃什么就点什么吧。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "疑问代词的非疑问用法：不定指用法",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "我好像在哪儿见过她。\r\n你先吃点儿什么再走吧。\r\n我下周搬家，想请谁来帮帮忙。\r\n咱们哪天一起去踢足球吧。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

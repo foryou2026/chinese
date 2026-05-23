@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "content": "净、一同、大都",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "范围副词",
+        "cases": "我们净忙着说话，甚至忘了给客人倒茶。\r\n那位老师的书房里净是外文书。\r\n我明天在大厅等你，咱们一同出发。\r\n人们聚集在广场上，一同迎接新年的到来。\r\n公园里散步的老年人大都是附近的居民。\r\n假期时，这里的人们大都选择去海边度假。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

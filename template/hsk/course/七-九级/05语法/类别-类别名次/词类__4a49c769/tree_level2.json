@@ -1,0 +1,41 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "3F1730E5AE7A72539E3A3CFA07B90FA7",
+      "content": "动词",
+      "children": []
+    },
+    {
+      "id": "761DA0CA9B811D5F1C5E8BAF0571660E",
+      "content": "代词",
+      "children": []
+    },
+    {
+      "id": "280E8AD93A668F242CD3F58B54CEF2B7",
+      "content": "量词",
+      "children": []
+    },
+    {
+      "id": "30B9C4B8F57CCC8E4A0E67DA6AFA4DDF",
+      "content": "副词",
+      "children": []
+    },
+    {
+      "id": "4B5222EE5318A4A8C49DC7904D8A720A",
+      "content": "介词",
+      "children": []
+    },
+    {
+      "id": "F9F5066FA15CE227B227C222B6EBE642",
+      "content": "连词",
+      "children": []
+    },
+    {
+      "id": "45693F5318A29DB78874ADC3F02F7FFD",
+      "content": "助词",
+      "children": []
+    }
+  ],
+  "ok": true
+}

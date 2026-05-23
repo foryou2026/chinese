@@ -1,0 +1,95 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "受事主语",
+        "grammarType": "句子成分",
+        "categoryType": "主语",
+        "grammarDetail": "",
+        "cases": "水果都吃完了。                                               \r\n那本书我看过了。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "名词性短语作谓语",
+        "grammarType": "句子成分",
+        "categoryType": "谓语",
+        "grammarDetail": "",
+        "cases": "她高个子、大眼睛，很漂亮。\r\n王老师上海人，四十多岁。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "动词或动词性短语、主谓短语作定语",
+        "grammarType": "句子成分",
+        "categoryType": "定语",
+        "grammarDetail": "",
+        "cases": "那个唱歌的女孩儿是谁？\r\n这就是儿子我学习汉语的学校。\r\n我还不知道电影开始的时间。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "动词+错/懂/好/会/完",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "结果补语1",
+        "cases": "这个字你写错了。\r\n老师的话你听懂了吗？\r\n衣服已经洗好了。\r\n我学会游泳了。\r\n题太多了，我没做完。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "简单趋向补语的趋向意义用法：动词+来/去",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "趋向补语1",
+        "cases": "你上来吧，我在楼上等你。\r\n太晚了，你快回去吧。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "简单趋向补语的趋向意义用法：动词+上/下/进/出/过/回",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "趋向补语1",
+        "cases": "飞机飞上天了。\r\n弟弟跑下楼了。\r\n老师走进办公室了。\r\n他从包里拿出一本书。\r\n我们一起走回学校吧。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "复合趋向补语的趋向意义用法：动词+出来/出去/过来/过去/回来/回去/进来/进去/起来/上来/上去/下来/下去",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "趋向补语1",
+        "cases": "车开过来了，大家快上车。\r\n她在那边等着呢，咱们走过去吧。\r\n他从书包里拿出来一本中文书。\r\n妈妈从超市买回来一些水果。\r\n王老师我走进教室来了。\r\n咱们的车能开进学校去吗？\r\n你可以站起来吗？\r\n他们怎么还没有走上来？\r\n你在楼上等我，我给你送上去。\r\n他们从山上走下来了。\r\n这些东西你帮我拿下去吧。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "动词+得+形容词性短语",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "状态补语1",
+        "cases": "大家玩儿得很高兴。\r\n他篮球打得很好。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "表示动作持续的时间",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "数量补语2",
+        "cases": "我学了两年中文了。\r\n我等了她一个多小时。\r\n他们昨天看了一晚上的电视。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "形容词+数量补语",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "数量补语2",
+        "cases": "坐地铁比坐公交车快一些。\r\n我哥哥比我大两岁。"
+      }
+    ],
+    "total": 10,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

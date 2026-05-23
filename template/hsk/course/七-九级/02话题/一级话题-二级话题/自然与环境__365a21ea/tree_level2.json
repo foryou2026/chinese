@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "F89E3CBCA33A91E19FB1A20FEB7CC940",
+      "content": "宇宙环境",
+      "children": []
+    },
+    {
+      "id": "938D5D37A12EEF11D621B5F59023B822",
+      "content": "地质环境",
+      "children": []
+    },
+    {
+      "id": "17D622EC20C32D7D02704F1DD7FAFE7A",
+      "content": "大气环境",
+      "children": []
+    },
+    {
+      "id": "2BD9FF7A64A128CAEF8AEBDCA6259348",
+      "content": "水环境",
+      "children": []
+    },
+    {
+      "id": "189D27E430D4A9D8D9FD3BA6CDFCC372",
+      "content": "土地环境",
+      "children": []
+    },
+    {
+      "id": "1DBE6B1DC875E2D085C9E4900760525A",
+      "content": "生物环境",
+      "children": []
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "介绍中国古代科技",
+        "level2Content": "能在文化类课程、讲座、日常交谈等场景中听懂中国朋友、老师、演讲者等介绍的中国古代科技成就、古代科学观念、古代科学家事迹的主要内容。如：天文成就、建筑成就、数学成就、古代四大发明等；古人的科学观念；古代科学家的事迹等。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "介绍中国古代科技",
+        "level2Content": "能流畅地向他人介绍自己所了解的一些中国古代科技成就、古代科学观念、古代科学家事迹的内容，就自己的理解与他人交流看法。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "介绍中国古代科技",
+        "level2Content": "能看懂介绍中国古代科技成就、古代科学观念、古代科学家事迹的通识性文章。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "介绍中国古代科技",
+        "level2Content": "能写文章介绍某种中国某种古代科技成就，表达自己的看法。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

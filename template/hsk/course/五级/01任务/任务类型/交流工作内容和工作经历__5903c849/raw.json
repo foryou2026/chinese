@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "交流工作内容和工作经历",
+        "level2Content": "能听懂日常交谈中同事关于工作内容和工作经历等较复杂情况的询问或介绍。如：工作中的项目、业务、方案、进度等情况；实习、辞职、离职、失业、退休等工作经历。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "交流工作内容和工作经历",
+        "level2Content": "能向他人较流畅地介绍自己所了解的上述工作内容和相关工作经历，能跟对方交流看法。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "交流工作内容和工作经历",
+        "level2Content": "能看懂关于上述工作内容和工作经历的一般性文章、工作简报。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "交流工作内容和工作经历",
+        "level2Content": "能写出短文介绍自己或他人的工作内容和工作经历，表达自己的看法。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

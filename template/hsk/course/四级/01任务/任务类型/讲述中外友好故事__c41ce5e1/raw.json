@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "讲述中外友好故事",
+        "level2Content": "能在日常交谈时听懂对方讲述的有一定复杂度的中外友好往来的故事及其产生的影响。如：友好城市、友好学校、跨国友谊、留学经历、中文比赛经历等。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "讲述中外友好故事",
+        "level2Content": "能大致介绍某个中外友好往来的故事及其产生的影响，并说出感受。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "讲述中外友好故事",
+        "level2Content": "能看懂中外友好往来的小故事。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "讲述中外友好故事",
+        "level2Content": "能写出一段话简单介绍中外友好交往小故事。如：我和我的中国朋友，我的留学经历等。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

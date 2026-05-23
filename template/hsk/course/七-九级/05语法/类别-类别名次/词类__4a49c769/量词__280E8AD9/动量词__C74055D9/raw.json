@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "content": "通",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "动量词",
+        "cases": "了解了我的饮食习惯以后，那位医生将我好一通批评，说我没有管住嘴。\r\n因为他的失误，公司利益受到了重大损失，老板把他狠狠训了一通。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

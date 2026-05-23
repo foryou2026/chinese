@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "理解相关法规和维护个人合法权益",
+        "level2Content": "能听懂、读懂生活中各类合同、协议，以及关于人身安全、财产安全、个人权益等方面的相关法规，理解产生纠纷各方的相关诉求。如：能全面、准确理解房屋租赁合同中的具体内容以及对租户利益的影响。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "理解相关法规和维护个人合法权益",
+        "level2Content": "能根据给定主题或材料以口头或书面形式有条理地说明关于某个纠纷中责任归属的看法，能有理有据地就自身权益与利益相关方进行交涉，充分表达自身感受，提出权益诉求。如：在维权平台上陈述网购纠纷的具体情况，有理有据地提出相关诉求。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "理解相关法规和维护个人合法权益",
+        "level2Content": "能为纠纷双方担任口头或书面翻译，准确、清楚地传达双方的观点和诉求。能将解决问题和处理纠纷中所需的口头或书面材料准确、流畅地译成中文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "往",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出方向、路径",
+        "cases": "你从这儿往前走。\r\n从这儿往下看，真漂亮啊！"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "从2",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出方向、路径",
+        "cases": "这路公交车不从学校门口过。\r\n前门没开，咱们从后门进去吧。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

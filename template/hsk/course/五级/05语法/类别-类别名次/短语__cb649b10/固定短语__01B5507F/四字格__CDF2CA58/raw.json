@@ -1,0 +1,47 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "content": "A来A去",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "四字格",
+        "cases": "我们争来争去，还是没找到最佳方案。\r\n他工作很忙，经常在国内外飞来飞去。\r\n我想来想去，决定先不告诉她这个坏消息。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "A着A着",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "四字格",
+        "cases": "我今天太困了，写着写着作业就睡着了。\r\n他走着走着，突然发现自己迷路了。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "没A没B",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "四字格",
+        "cases": "你这样没日没夜地工作，身体早晚会出问题的。\r\n这孩子说话没大没小，父母必须要好好教育。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "content": "说A就A",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "四字格",
+        "cases": "越来越多的年轻人选择说走就走的旅行。\r\n他总是说干就干，从不浪费时间。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

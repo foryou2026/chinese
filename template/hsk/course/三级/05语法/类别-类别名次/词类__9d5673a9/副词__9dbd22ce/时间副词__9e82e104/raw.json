@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "才1、马上、先、一会儿、刚、刚刚、一直",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "时间副词",
+        "cases": "他才到家，还没有吃饭呢。\r\n我才搬来北京，还不太习惯这里的生活\r\n请等一下，我马上来。\r\n接了电话，她马上就跑出去了。\r\n你先走吧，我还有工作要做。\r\n我想先洗个澡，然后再写作业。\r\n最近天气变化很快，一会儿阴，一会儿晴。\r\n他刚开始学汉语，说得还不太好。\r\n报纸是早上刚送来的。\r\n刚刚还是晴天，怎么突然下雨了？\r\n他不在，刚刚出去。\r\n我一直都住在北京。\r\n别出去了，外面一直在下雨。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

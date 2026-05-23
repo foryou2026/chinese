@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "content": "A这A那",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "四字格",
+        "cases": "小孩子总是喜欢拉着父母问这问那。\r\n既然决定了就大胆去做吧，不要总是想这想那。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "左A右B",
+        "grammarType": "短语",
+        "categoryType": "固定短语",
+        "grammarDetail": "四字格",
+        "cases": "天还没亮，他就醒了，躺在床上左思右想，怎么也睡不着。\r\n她在商场里左挑右选，始终没买到一件满意的衣服。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

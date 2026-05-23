@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "a2791fd5688011f0b11400163e03dd53",
+      "content": "结构助词",
+      "children": []
+    },
+    {
+      "id": "a27921f5688011f0b11400163e03dd53",
+      "content": "动态助词",
+      "children": []
+    },
+    {
+      "id": "a279243e688011f0b11400163e03dd53",
+      "content": "语气助词",
+      "children": []
+    }
+  ],
+  "ok": true
+}

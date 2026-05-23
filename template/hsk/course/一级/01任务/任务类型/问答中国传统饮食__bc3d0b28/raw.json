@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "问答中国传统饮食",
+        "level2Content": "能听懂他人询问关于中国传统饮食的简单问题，或关于中国传统饮食习惯的简单介绍。如：中国人喜欢吃什么、喝什么等。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "问答中国传统饮食",
+        "level2Content": "能询问关于中国传统饮食的简单情况，或简单介绍中国人的传统饮食习惯、表达自己或家人对中国传统饮食的喜好等。如：中国人喜欢吃包子、饺子、面条、喝茶，自己或家人是否喜欢等。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "问答中国传统饮食",
+        "level2Content": "能看懂菜单上关于中国传统饮食的简单信息，如：包子、饺子、面条、茶等。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

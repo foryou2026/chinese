@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "7bbe3af2688c11f0b11400163e03dd53",
+      "content": "名词性短语",
+      "children": []
+    },
+    {
+      "id": "7bc75def688c11f0b11400163e03dd53",
+      "content": "动词性短语",
+      "children": []
+    },
+    {
+      "id": "7bd08a41688c11f0b11400163e03dd53",
+      "content": "形容词性短语",
+      "children": []
+    }
+  ],
+  "ok": true
+}

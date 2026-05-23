@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "或、或者",
+        "grammarType": "词类",
+        "categoryType": "连词",
+        "grammarDetail": "连接词或者短语",
+        "cases": "我喝茶或/或者咖啡都可以。\r\n我们可以打车或/或者坐地铁去。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

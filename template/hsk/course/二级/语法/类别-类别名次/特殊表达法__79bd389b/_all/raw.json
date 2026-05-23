@@ -1,0 +1,47 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "序数表示法2：数词+量词",
+        "grammarType": "特殊表达法",
+        "categoryType": "数的表达法",
+        "grammarDetail": "",
+        "cases": "我的房间在三楼。\r\n你可以坐304路公交车。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "概数表达法1：用“几”表示概数",
+        "grammarType": "特殊表达法",
+        "categoryType": "数的表达法",
+        "grammarDetail": "",
+        "cases": "这几件衣服你帮我洗一下。\r\n我们学校有几百名外国学生。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "概数表达法1：数词+多+量词",
+        "grammarType": "特殊表达法",
+        "categoryType": "数的表达法",
+        "grammarDetail": "",
+        "cases": "教室里有二十多个学生。\r\n那个手机五千多块钱。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "概数表达法1：数词+量词+多",
+        "grammarType": "特殊表达法",
+        "categoryType": "数的表达法",
+        "grammarDetail": "",
+        "cases": "我来中国已经三年多了。\r\n王老师的儿子今年六岁多了。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

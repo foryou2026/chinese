@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+把+宾语+动词+在/到+处所",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句1",
+        "cases": "你把箱子放在这儿吧。\r\n我们把桌子搬到教室外边了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+把+宾语1+动词（+给）+宾语2",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句1",
+        "cases": "我们把礼物送给老师了。\r\n他把那本书借给我了。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+把+宾语+动词+结果补语/趋向补语/状态补语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句1",
+        "cases": "我已经把晚饭准备好了。\r\n咱们把这些桌子搬进去吧。\r\n妈妈把衣服洗得干干净净。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "了解人力资源政策和处理人事关系",
+        "level2Content": "能听懂、读懂有关人力资源政策、岗位职责、绩效考核等方面材料的具体内容，理解上级领导关于人事安排和调整的指示、下级员工关于工作待遇的诉求等。如：读懂公司的聘任合同，并对合同中的关键信息有透彻的理解。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "了解人力资源政策和处理人事关系",
+        "level2Content": "能根据给定主题或材料以口头或书面形式详细、清楚、流畅地说明人力资源政策和规定，或就个人人事关系、职业发展等问题清楚、得体地向主管部门表达自己的诉求。如：撰写一份进修申请书，详细说明希望进修的理由和具体计划。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "了解人力资源政策和处理人事关系",
+        "level2Content": "能将管理人员或员工有关人事关系的通知、要求、诉求，有关人事关系的书面材料等准确、流畅地译成中文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

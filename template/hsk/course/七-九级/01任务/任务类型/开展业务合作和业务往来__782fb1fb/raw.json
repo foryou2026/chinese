@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "开展业务合作和业务往来",
+        "level2Content": "能听懂、读懂合作方或业务相关方的合作意愿、合作中的问题及提出的具体条件和要求。如：听懂对方委婉表达的有关利益分成和责任分担的要求。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "开展业务合作和业务往来",
+        "level2Content": "能根据给定主题或材料以口头或书面形式清楚、得体地表达合作意愿，详细、清楚、流畅、得体地回复合作方或业务相关方的问题，明确具体条件、要求和双方责任等。如：与物流公司就有关货物运输的方式、期限、质量保证和风险承担方式进行确认。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "开展业务合作和业务往来",
+        "level2Content": "能在合作洽谈中担任口译，能将合作洽谈所需的书面材料准确、流畅地译成中文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

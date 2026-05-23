@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "不用关联词语的复句",
+        "cases": "这是我哥哥，他学习中文。\r\n我有一个姐姐，没有妹妹。\r\n她今天生病了，不能上课。\r\n上午去，下午去？你说。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "……，也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "我喜欢唱歌，我弟弟也喜欢唱歌。\r\n这家饭店的饺子很好吃，也很便宜。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "……，还……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "这个房间很大，还很漂亮。\r\n我会说英语，还会说汉语。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

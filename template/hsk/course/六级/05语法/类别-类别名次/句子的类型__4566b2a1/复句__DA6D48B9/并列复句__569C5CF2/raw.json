@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "content": "一时……一时……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "最近产品价格不太稳定，一时上升一时下降。\r\n这段时间天气变化快，一时冷一时热。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

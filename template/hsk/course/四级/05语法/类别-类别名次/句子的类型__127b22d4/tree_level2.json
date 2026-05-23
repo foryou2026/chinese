@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "D477E15D6A29604CDF7B139BD2D24D89",
+      "content": "句类",
+      "children": []
+    },
+    {
+      "id": "03815C357CB19271E74AFC9638ADC845",
+      "content": "特殊句型",
+      "children": []
+    },
+    {
+      "id": "F905F857A984A7356AFCDABB71DC3D61",
+      "content": "复句",
+      "children": []
+    }
+  ],
+  "ok": true
+}

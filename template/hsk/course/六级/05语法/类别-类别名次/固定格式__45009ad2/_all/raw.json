@@ -1,0 +1,119 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "content": "A一+量词，B一+量词",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "我们左一句、右一句地安慰，她才终于不哭了。\r\n大家你一言，我一语，很快就商量出了解决的办法。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "东一A，西一A",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "房间里的衣服东一件，西一件，扔得哪儿都是。\r\n最近他东一本，西一本地看了不少书。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "到……为止",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "到目前为止，双方已经达成了初步的合作。\r\n他把产品设计改了很多遍，一直到客户满意为止。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "X到Y头上来了",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "我把你当作好朋友，没想到你竟然骗到我头上来了。\r\n问题不是我造成的，怎么怪到我头上来了？"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "不X不……，一X……",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "不学不知道，一学才知道汉字如此有魅力。\r\n这茶不尝不知道，一尝就喜欢上了。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "好你个X",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "好你个老张，原来是你在背后说我坏话！\r\n好你个骗子，赶紧把钱还给我，否则我就报警。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "早（也）不X，晚（也）不X",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "早不来，晚不来，我正要出门你来了。\r\n早也不下雨，晚也不下雨，比赛刚一开始就下起来了。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "看/瞧+把+宾语（施事）+X得",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "瞧把他兴奋得，简直像个孩子一样。\r\n看把你笑得，腰都直不起来了。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "放着X不Y",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "你为什么放着自己的车不开，跑去借别人的车？\r\n他放着孩子不管，整天跑出去玩儿。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "X了就X了，（没）有……",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "他已经是大人了，走了就走了，有什么好担心的？\r\n东西丢了就丢了，没有什么好可惜的。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "这/那也不X，那/这也不Y",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "这也不好吃，那也不好吃，你干脆饿着吧。\r\n那也不喜欢，这也不满意，你到底想找什么样的工作？"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "X归X，Y归Y",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "打归打，骂归骂，父母永远是最疼你的人。\r\n计划归计划，行动归行动，二者并不完全一样。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "看你X的/瞧他X的",
+        "grammarType": "固定格式",
+        "categoryType": "",
+        "grammarDetail": "",
+        "cases": "我跟你开玩笑呢！看你吓的！\r\n不就是得了奖学金吗？瞧他得意的！"
+      }
+    ],
+    "total": 13,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

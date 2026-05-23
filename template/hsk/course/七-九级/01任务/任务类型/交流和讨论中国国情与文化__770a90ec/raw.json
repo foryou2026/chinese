@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "交流和讨论中国国情与文化",
+        "level2Content": "能听懂、读懂有关中国古今各地区各重要领域相关情况的详细介绍，对某一人物、事物或现象的具体描述，对社会文化现象的分析和评论。如：阅读一篇介绍中国某少数民族建筑特色和生活习俗的短文。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "交流和讨论中国国情与文化",
+        "level2Content": "能根据给定主题或材料以口头或书面形式对中国古今重要思想、人物、事物、事件、现象等进行有深度的分析，能就中国社会经济和文化各领域的历史、现状及未来发展发表自己的观点。如：结合当代世界性问题分析《论语》中有关观点的现代意义。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "交流和讨论中国国情与文化",
+        "level2Content": "能将有关中国国情与文化的口头或书面材料准确、流畅地译成中文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

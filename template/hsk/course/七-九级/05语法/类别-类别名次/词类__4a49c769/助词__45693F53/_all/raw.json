@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "content": "罢了、也罢、矣",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "语气助词",
+        "cases": "他很谦虚地将自己的成功归结为运气好罢了。\r\n那些我们一度以为难以承受的挫折，终将会变成人生宝贵的经历，只是时间的问题罢了。\r\n这件事你答应也好，不答应也罢，我都铁了心要去做。\r\n那些为迎合市场而推出的快餐读物，不看也罢。\r\n朋友在精不在多，人生得一知己足矣。\r\n作为一个摄影爱好者，我对这位国际知名的摄影大师仰慕久矣。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

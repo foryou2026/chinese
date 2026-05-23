@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "32E94F3A571E410790A6C2C4477DA56C",
+      "content": "语言文字",
+      "children": []
+    },
+    {
+      "id": "075B73A66E3096669A0B7E4A1FFCA957",
+      "content": "民俗传统",
+      "children": []
+    },
+    {
+      "id": "e7ce87237e2201a624d535aaa25001a2",
+      "content": "人文景观",
+      "children": []
+    },
+    {
+      "id": "BE72FE83EDDA3DC228A84334C48431A5",
+      "content": "传统思想与艺术",
+      "children": []
+    },
+    {
+      "id": "7AB5B6217CC702DBD1B639981E0565C0",
+      "content": "历史",
+      "children": []
+    },
+    {
+      "id": "7DE5E4ACBC675974B8EAFCA7CC8656C3",
+      "content": "古代科技",
+      "children": []
+    }
+  ],
+  "ok": true
+}

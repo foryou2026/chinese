@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍科技产品",
+        "level2Content": "能听懂日常交谈中对方对生活相关的科技产品开发与应用的一般性介绍。如：对机器人、网络直播技术，某些智能产品的介绍。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍科技产品",
+        "level2Content": "能向他人较流畅地介绍自己所了解的有关上述科技产品开发与应用的主要内容，并与他人交流，发表看法。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍科技产品",
+        "level2Content": "能看懂关于上述科技产品开发与应用的一般新闻、介绍性文章。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍科技产品",
+        "level2Content": "能写出短文介绍自己了解的某些日常生活相关的科技产品的情况。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "为什么",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "他昨天为什么没来上课？\r\n你为什么想学中文？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "自己",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "人称代词",
+        "cases": "下午我有事，你自己去，可以吗？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "那么、那样、这么、这样、每",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "指示代词",
+        "cases": "他为什么学得那么好？\r\n那样的事情经常有。\r\n这么多人，我们明天再来吧。\r\n这个字这样写，对吗？\r\n你每天怎么去学校？"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,95 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "表示说明或特征",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "“是”字句2",
+        "cases": "那件衣服是新的。\r\n这个手机是坏的，不能用。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "表示达到",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "“有”字句2",
+        "cases": "王老师有三十岁吗？\r\n这些水果有一百块钱吗？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "处所+动词+着(+数量短语)+名词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "存现句2",
+        "cases": "门口站着一个人。\r\n教室里坐着十几个学生。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "A比B+形容词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "比较句1",
+        "cases": "姐姐比我高。\r\n公交车比地铁便宜。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "A比B+形容词+数量补语/程度补语",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "比较句1",
+        "cases": "哥哥比我大两岁。\r\n咖啡比奶茶贵一点儿。\r\n今天比昨天冷多了。\r\n姐姐的个子比妹妹高得多。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "A有/没有B（+这么/那么）+形容词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "比较句1",
+        "cases": "你有他高吗？\r\n今天没有昨天（那么）冷。\r\n我的汉语没有你（这么）好。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "A比B+动词+得+形容词/A+动词+得+比+B+形容词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "比较句1",
+        "cases": "她比我说得好。\r\n我跑得比弟弟快。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "强调时间、地点、方式、动作者",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "“是……的”句1",
+        "cases": "我是去年九月来中国的。\r\n我们是在北京认识的。\r\n他们是坐飞机去上海的。\r\n今天的晚饭是我做的。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "表使令：主语+请/叫/让……+宾语1+动词+宾语2",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "兼语句1",
+        "cases": "妈妈叫我去超市买水果。\r\n我想请老师教我中文。\r\n老师让我们介绍一下自己的爱好。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "主语+动词+给+宾语1+宾语2",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句式",
+        "grammarDetail": "双宾语句2",
+        "cases": "爸爸送给我一个新手机。\r\n他卖给我一本中文书。"
+      }
+    ],
+    "total": 10,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

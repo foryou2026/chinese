@@ -1,0 +1,95 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "content": "主语（非生物体）+把+宾语+动词+其他成分",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句4",
+        "cases": "阳光把大地染成了红色。\r\n音乐声把游客都吸引过去了。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "主语+把+宾语（施事）+动词+其他成分",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "“把”字句4",
+        "cases": "孩子把妈妈气得睡不着觉。\r\n她讲述的故事把大家感动哭了。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "一时……一时……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "最近产品价格不太稳定，一时上升一时下降。\r\n这段时间天气变化快，一时冷一时热。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "要么……，要么……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "选择复句",
+        "cases": "我平常要么点外卖，要么自己做，很少去食堂吃。\r\n那家饭馆的菜要么太咸，要么太辣，我都不爱吃。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "虽……，但/可/却/也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "转折复句",
+        "cases": "比赛虽未取得胜利，但我们收获了宝贵的经验。\r\n这道题虽有难度，可做出来的同学不在少数。\r\n文章虽短，读后却使人充满力量。\r\n她心里虽不喜欢，也坚持来上班了。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "凡是……，都……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "凡是有机会，他都会积极争取。\r\n凡是错误的行为，我们都应该纠正。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "除非……，才……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "除非你亲自邀请，他才有可能同意参加。\r\n除非是紧急情况，我才会向他求助。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "除非……，否则/不然……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "除非他承认错误并向我道歉，否则我不会原谅他。\r\n除非你说清楚是什么事情，不然我不可能同意帮忙。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "就算……，也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "让步复句",
+        "cases": "就算再累，我也要坚持完成任务。\r\n就算他做错了，你也要注意教育方法。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "……，以便……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "目的复句",
+        "cases": "请留下您的联系方式，以便日后联系。\r\n当地政府计划调整地铁的发车时间，以便更多的乘客能够乘坐公共交通。"
+      }
+    ],
+    "total": 10,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

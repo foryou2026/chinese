@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论体育项目及赛事",
+        "level2Content": "能在日常交谈时听懂他人对运动项目情况、赛事情况、体育名人事迹的介绍或体育新闻的相关报道，如：滑雪、滑冰、体操、田径、跳水、台球、棒球等项目特点，某项赛事的筹备情况、赛场情况、场地情况等、体育名人及背后故事等。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论体育项目及赛事",
+        "level2Content": "能流畅地向他人介绍自己所了解的运动项目情况、赛事情况、体育名人事迹，与他人交流。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论体育项目及赛事",
+        "level2Content": "能看懂介绍上述运动项目情况、赛事情况、体育名人事迹的一般性文章。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "children": [],
+        "level1Content": "谈论体育项目及赛事",
+        "level2Content": "能写文章介绍某种运动项目情况、赛事情况、体育名人事迹等，表达自己的感悟或评价。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

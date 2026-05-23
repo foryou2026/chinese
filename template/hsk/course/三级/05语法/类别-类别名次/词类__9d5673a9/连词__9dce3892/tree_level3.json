@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "9ee12f59688f11f0b11400163e03dd53",
+      "content": "连接词或者短语",
+      "children": []
+    },
+    {
+      "id": "9ee9b883688f11f0b11400163e03dd53",
+      "content": "连接分句或句子",
+      "children": []
+    }
+  ],
+  "ok": true
+}

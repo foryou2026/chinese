@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "交流学校情况、课后活动",
+        "level2Content": "能听懂家人、同学、朋友等询问学校情况、课后活动的简单问题，或关于学校学习和课后活动信息的简单介绍。如：学校、老师、同学的基本信息，课后安排等。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "交流学校情况、课后活动",
+        "level2Content": "能询问同学、朋友关于学校情况和课后活动的简单信息；能回答家人、朋友等关于学校和课后活动信息的简单问题。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "交流学校情况、课后活动",
+        "level2Content": "能简单介绍自己的学校情况和课后活动信息。如：老师、同学、学校、课后安排等。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "children": [],
+        "level1Content": "交流学校情况、课后活动",
+        "level2Content": "能看懂课表、学生信息表等材料中有关上述学习或课后活动的简单信息。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

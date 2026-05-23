@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "专用名量词：本、个、家、口、块、件、只、元",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "名量词",
+        "cases": "这本书是中文书。\r\n我吃了两个包子。\r\n前边有一家书店。\r\n你家有几口人？\r\n我有十块钱。\r\n这只小猫真漂亮。\r\n这件衣服三百元。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "借用名量词：杯",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "名量词",
+        "cases": "喝杯茶吧。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "日、号、岁、点、分、年、天",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "时量词",
+        "cases": "今天几月几日（号）？\r\n她今年几岁？\r\n现在八点二十分。\r\n一年有十二个月。\r\n你一天学习几个汉字？"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

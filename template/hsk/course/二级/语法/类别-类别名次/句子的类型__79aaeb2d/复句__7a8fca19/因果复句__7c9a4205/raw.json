@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "因为……，所以……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "因果复句",
+        "cases": "因为机票太贵了，所以我准备坐火车去。\r\n因为我爸爸在中国工作，所以我来这儿学习中文。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

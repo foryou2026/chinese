@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "为了、为2",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出目的、原因",
+        "cases": "为了身体健康，我们应该坚持锻炼。\r\n妈妈经常为了工作睡得很晚。\r\n大家都为我的好成绩感到高兴。\r\n同学们都在为下个星期的考试做准备。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

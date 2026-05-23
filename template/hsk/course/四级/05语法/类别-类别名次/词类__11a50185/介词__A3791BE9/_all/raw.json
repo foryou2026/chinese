@@ -1,0 +1,55 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "content": "自、当、由1、随着、等1",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出时间、处所",
+        "cases": "自1978年以来，中国发生了很大的变化。\r\n我们自北京出发，开车往南走，来到了上海。\r\n当遇到困难时，先冷静地想一想。\r\n当听到放假的消息时，同学们都非常高兴。\r\n各位乘客，由北京飞往上海的航班就要起飞了。\r\n学校决定由下个月开始每周增加一节中文课。\r\n随着生活水平的提高，人们对食品健康的要求越来越高。\r\n随着春天的到来，天气一天比一天暖和了。\r\n等我写完作业，咱们一起去踢足球。\r\n等我们赶到车站，火车已经开走了。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "将、由2、叫、让",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出施事、受事",
+        "cases": "离开教室时，请将垃圾带走，并将门窗关好。\r\n根据规定，禁止将食物带入图书馆。\r\n这些商品的质量问题应该由工厂负责。\r\n我只是提供一些建议，到底怎么做由你决定。\r\n我刚才放在桌上的那些文件叫谁拿走了？\r\n我本来想去图书馆借书，可是学生证让我弄丢了。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "由于1",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出原因",
+        "cases": "由于上次失败的经历，她对自己失去了信心。\r\n由于工作的原因，我一年内搬了好几次家。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "对于、与1",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出对象",
+        "cases": "对于任何一种语言，文字的出现都是十分重要的。\r\n对于学习成绩优秀的同学，学校每年都会提供奖学金。\r\n你放心，我们会与你共同解决这个问题。\r\n这件事我没与任何人交流过。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "作为、按、按照",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出凭借、依据",
+        "cases": "作为生活在中国的外国人，我很想了解中国人的生活习惯。\r\n作为首都，北京的发展比一般的城市更快，工作机会更多。\r\n你应该按医生说的方法坚持锻炼。\r\n这里租房子比较方便，房租可以按月付，也可以按天付。\r\n按照北方人的习惯，过年一般要吃饺子。\r\n我们已经按照计划完成了全部工作。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

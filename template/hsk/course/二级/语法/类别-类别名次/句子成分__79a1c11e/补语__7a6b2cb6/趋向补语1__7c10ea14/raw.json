@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "简单趋向补语的趋向意义用法：动词+来/去",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "趋向补语1",
+        "cases": "你上来吧，我在楼上等你。\r\n太晚了，你快回去吧。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "简单趋向补语的趋向意义用法：动词+上/下/进/出/过/回",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "趋向补语1",
+        "cases": "飞机飞上天了。\r\n弟弟跑下楼了。\r\n老师走进办公室了。\r\n他从包里拿出一本书。\r\n我们一起走回学校吧。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "复合趋向补语的趋向意义用法：动词+出来/出去/过来/过去/回来/回去/进来/进去/起来/上来/上去/下来/下去",
+        "grammarType": "句子成分",
+        "categoryType": "补语",
+        "grammarDetail": "趋向补语1",
+        "cases": "车开过来了，大家快上车。\r\n她在那边等着呢，咱们走过去吧。\r\n他从书包里拿出来一本中文书。\r\n妈妈从超市买回来一些水果。\r\n王老师我走进教室来了。\r\n咱们的车能开进学校去吗？\r\n你可以站起来吗？\r\n他们怎么还没有走上来？\r\n你在楼上等我，我给你送上去。\r\n他们从山上走下来了。\r\n这些东西你帮我拿下去吧。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

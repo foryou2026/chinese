@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "content": "敢",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "能愿动词",
+        "cases": "我刚学会开车，不敢开得很快。\r\n你敢不敢跟我比一比，谁的力气大？"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

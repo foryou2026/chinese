@@ -1,0 +1,92 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "信息科学技术",
+        "level3Content": "计算机科学"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "信息科学技术",
+        "level3Content": "网络通信技术"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "信息科学技术",
+        "level3Content": "大数据与数据分析"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "信息科学技术",
+        "level3Content": "人工智能与机器学习"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "航空航天科学技术",
+        "level3Content": "航天航空科技"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "航空航天科学技术",
+        "level3Content": "航空航天技术应用"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "生物科学技术",
+        "level3Content": "生物科技与农业"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "生物科学技术",
+        "level3Content": "生物科技与环保"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "生物科学技术",
+        "level3Content": "生物科技与医疗"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "其他新兴科学技术",
+        "level3Content": "先进材料与制造"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "科学技术",
+        "level2Content": "其他新兴科学技术",
+        "level3Content": "可再生能源技术"
+      }
+    ],
+    "total": 11,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

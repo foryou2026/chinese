@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "9eb6754f688f11f0b11400163e03dd53",
+      "content": "引出对象",
+      "children": []
+    },
+    {
+      "id": "9ebf0158688f11f0b11400163e03dd53",
+      "content": "引出方向、路径",
+      "children": []
+    },
+    {
+      "id": "9ec78a8a688f11f0b11400163e03dd53",
+      "content": "引出目的、原因",
+      "children": []
+    },
+    {
+      "id": "9ed018e4688f11f0b11400163e03dd53",
+      "content": "引出施事、受事",
+      "children": []
+    },
+    {
+      "id": "9ed8a460688f11f0b11400163e03dd53",
+      "content": "引出凭借、依据",
+      "children": []
+    }
+  ],
+  "ok": true
+}

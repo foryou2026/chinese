@@ -1,0 +1,127 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "概况",
+        "level3Content": "首都、主要省市"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "概况",
+        "level3Content": "少数民族"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "经济现象",
+        "level3Content": "流行产品"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "经济现象",
+        "level3Content": "新商业形态"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "经济现象",
+        "level3Content": "经济状况"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "社会现象",
+        "level3Content": "生活观念"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "社会现象",
+        "level3Content": "网络生活"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "社会现象",
+        "level3Content": "基础设施"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "社会现象",
+        "level3Content": "流行事物"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "文艺",
+        "level3Content": "文艺形式"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "文艺",
+        "level3Content": "文艺活动"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "文艺",
+        "level3Content": "创作者及其作品"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "体育",
+        "level3Content": "运动项目"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "体育",
+        "level3Content": "体育比赛"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "体育",
+        "level3Content": "体育名人、体育故事"
+      },
+      {
+        "examLevelId": "HSK4",
+        "children": [],
+        "level1Content": "当代社会",
+        "level2Content": "中外交流",
+        "level3Content": "友好往来"
+      }
+    ],
+    "total": 16,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

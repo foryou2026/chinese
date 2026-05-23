@@ -1,0 +1,99 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "语言文字",
+        "level3Content": "俗语、成语、名言名句等"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "语言文字",
+        "level3Content": "语言现象"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "民俗传统",
+        "level3Content": "地方饮食及差异等"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "民俗传统",
+        "level3Content": "传统节日与习俗"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "民俗传统",
+        "level3Content": "民间传说"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "民俗传统",
+        "level3Content": "古代生活"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "人文景观",
+        "level3Content": "名胜古迹、传统民居、建筑等"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "传统思想与艺术",
+        "level3Content": "哲学思想"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "传统思想与艺术",
+        "level3Content": "传统艺术"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "历史",
+        "level3Content": "历史人物、历史事件"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "古代科技",
+        "level3Content": "古代科技成就"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "文化与传统",
+        "level2Content": "古代科技",
+        "level3Content": "古人科学观念、古代科学家事迹"
+      }
+    ],
+    "total": 12,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "需要、该、应该、愿意、得",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "能愿动词",
+        "cases": "从这儿过去，大概需要多长时间？\r\n医生说我感冒了，需要吃药。\r\n已经十一点了，你该睡觉了。\r\n你学了一天了，该休息休息了。\r\n我们应该多练习说中文。\r\n我要去动物园，应该怎么坐车呢？\r\n你愿意帮我学习汉语吗？\r\n我很愿意参加这次汉语比赛。\r\n要上课了，咱们得快点儿走。\r\n我明天有考试，今天得认真复习。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "动宾式离合词：放假、见面、结婚、洗澡",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "离合词",
+        "cases": "我放了假就准备去旅游。\r\n我们已经很长时间没见过面了。\r\n结了婚以后，你还打算工作吗？\r\n你先去洗个澡，休息一会儿。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "动补式离合词：打开、看见、离开、完成、分开",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "离合词",
+        "cases": "我打不开这瓶水，你能帮帮我吗？\r\n黑板上的字你看得见吗？\r\n他已经离不开这个地方了。\r\n今天的作业我可能完不成了。\r\n我的中文越来越好，跟老师的帮助是分不开的。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

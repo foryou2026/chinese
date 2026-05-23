@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论生活习惯、家庭关系和家庭事务",
+        "level2Content": "能听懂家人、朋友等关于生活习惯、家庭关系、家庭事务处理情况等家庭生活方面的一般性问题，或对家庭生活话题的一般性介绍。如：个人和家庭生活习惯，家中如何照顾老人，如何育儿，搬家事宜，家务分配等情况。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论生活习惯、家庭关系和家庭事务",
+        "level2Content": "能询问家人、朋友等上述话题的一般性内容；能回答家人、朋友等关于上述话题的一般性问题。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论生活习惯、家庭关系和家庭事务",
+        "level2Content": "能简单介绍自己及家人的生活习惯、家庭关系、家庭事务处理情况。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论生活习惯、家庭关系和家庭事务",
+        "level2Content": "能看懂描述生活习惯、家庭关系、家庭事务情况的简单小短文。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论生活习惯、家庭关系和家庭事务",
+        "level2Content": "能写出一两句话，简单介绍自己及家人的生活习惯、家庭关系、家庭事务处理情况。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,71 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "多、好、最",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "程度副词",
+        "cases": "这只小狗多可爱啊！\r\n这个教室好大啊！\r\n我最喜欢打篮球。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "一起",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "范围副词",
+        "cases": "晚上我们一起吃饭吧。\r\n一起去看电影，怎么样？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "还2、已经、有时（候）、快、快要、正",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "时间副词",
+        "cases": "他还没有起床呢。\r\n张老师已经下班了。\r\n我有时（候）去超市买东西。\r\n下雨了，快回家吧。\r\n新年快要到了。\r\n我出来的时候，他正睡觉呢。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "常、经常",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "频率副词",
+        "cases": "我不常坐地铁。\r\n你经常上网买东西吗？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "别",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "否定副词",
+        "cases": "下雨了，别出去了。\r\n别忘了，明天有考试。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "再2、就1",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "关联副词",
+        "cases": "我先休息一会儿再工作。\r\n你洗完手再吃水果。\r\n因为身体不舒服，我就没去上课。\r\n他一到北京就去了长城。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "都2、就2、还是1",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "语气副词",
+        "cases": "都十二点了，快睡觉吧。\r\n车站就在那个饭馆旁边。\r\n就买这件白色的吧。\r\n外边很冷，还是多穿一点儿吧。"
+      }
+    ],
+    "total": 7,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

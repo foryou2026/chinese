@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "7c07c191688c11f0b11400163e03dd53",
+      "content": "结果补语1",
+      "children": []
+    },
+    {
+      "id": "7c10ea14688c11f0b11400163e03dd53",
+      "content": "趋向补语1",
+      "children": []
+    },
+    {
+      "id": "7c1a12b0688c11f0b11400163e03dd53",
+      "content": "状态补语1",
+      "children": []
+    },
+    {
+      "id": "7c2338f0688c11f0b11400163e03dd53",
+      "content": "数量补语2",
+      "children": []
+    }
+  ],
+  "ok": true
+}

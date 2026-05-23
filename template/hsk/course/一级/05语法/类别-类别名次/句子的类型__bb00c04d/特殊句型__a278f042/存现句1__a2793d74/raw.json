@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "所处+是+名词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "存现句1",
+        "cases": "前边是不是电影院？\r\n超市后边是一家饭店。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "处所+有+数量短语+名词",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "存现句1",
+        "cases": "学校外边有一家书店。\r\n桌子上有一本中文书。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

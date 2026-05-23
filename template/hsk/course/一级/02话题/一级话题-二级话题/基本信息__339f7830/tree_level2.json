@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "df9e3e2a685711f0b11400163e03dd53",
+      "content": "个人信息",
+      "children": []
+    },
+    {
+      "id": "dfd25433685711f0b11400163e03dd53",
+      "content": "事件信息",
+      "children": []
+    },
+    {
+      "id": "e00fa07b685711f0b11400163e03dd53",
+      "content": "物品信息",
+      "children": []
+    },
+    {
+      "id": "e04472e0685711f0b11400163e03dd53",
+      "content": "环境信息",
+      "children": []
+    }
+  ],
+  "ok": true
+}

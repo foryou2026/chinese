@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "看病、睡觉、说话、上课、下课、上班、下班、生病",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "离合词",
+        "cases": "他去医院看病了。\r\n我想睡一觉，休息一下（儿）。\r\n上课不要说话。\r\n今天我上中文课。\r\n我下了课要去食堂。\r\n下了班你做什么？\r\n她昨天生病了。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

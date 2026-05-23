@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "只有……，才……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "只有努力学习，才能得到好成绩。\r\n只有多听、多说、多看，你的中文水平才能提高。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "只要……，就……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "只要你坚持学习，就一定能学好。\r\n只要你同意，我们就这么决定了。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

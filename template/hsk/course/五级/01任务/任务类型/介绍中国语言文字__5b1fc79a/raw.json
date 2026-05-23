@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍中国语言文字",
+        "level2Content": "能听懂日常交谈、活动讲座中朋友、演讲者等关于某些中国民间俗语、成语、名言名句、汉语语言现象介绍的主要内容。如：俗语含义、俗语故事等，中文的语音特点、词汇特点、语法特点、汉字特点等。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍中国语言文字",
+        "level2Content": "能较流畅地介绍一些常见的中国民间俗语、成语、名言名句、语言现象。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍中国语言文字",
+        "level2Content": "能看懂介绍、解读某些常见的中国民间俗语、成语、名言名句、语言现象的一般性文章。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍中国语言文字",
+        "level2Content": "能写出短文介绍自己了解的某个俗语或成语，或自己对中国语言文字特点的理解。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

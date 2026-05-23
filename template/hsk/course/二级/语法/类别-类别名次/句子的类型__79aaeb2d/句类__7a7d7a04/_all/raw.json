@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "用“还是”连接的选择问句",
+        "grammarType": "句子的类型",
+        "categoryType": "句类",
+        "grammarDetail": "疑问句",
+        "cases": "是我自己去，还是你跟我一起去？\r\n你喜欢打篮球，还是喜欢踢足球？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "用“别”的祈使句",
+        "grammarType": "句子的类型",
+        "categoryType": "句类",
+        "grammarDetail": "祈使句",
+        "cases": "下雨了，别出去了。\r\n别忘了，明天有考试。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

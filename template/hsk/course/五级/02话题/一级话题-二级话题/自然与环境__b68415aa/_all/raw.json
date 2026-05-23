@@ -1,0 +1,64 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "自然资源"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "地形地貌"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "自然现象、自然规律"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "自然",
+        "level3Content": "动植物"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "环境",
+        "level3Content": "生态平衡"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "环境",
+        "level3Content": "城市与乡村"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "自然与环境",
+        "level2Content": "环境",
+        "level3Content": "环境保护"
+      }
+    ],
+    "total": 7,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

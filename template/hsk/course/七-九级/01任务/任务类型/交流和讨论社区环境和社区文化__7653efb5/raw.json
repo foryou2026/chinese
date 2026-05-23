@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "交流和讨论社区环境和社区文化",
+        "level2Content": "能听懂、读懂对社区的房屋属性、公共空间、住宅设施、社区文化等方面的介绍或评论。如：看懂有关社区制度等方面的文件。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "交流和讨论社区环境和社区文化",
+        "level2Content": "能根据给定主题或材料以口头或者书面形式详细、清楚、流畅地描述和说明社区的房屋属性、公共空间、住宅设施，以及社区组织、社区制度等社区文化。如：分析某一社区的人群构成和文化特征，并发表自己的看法。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "children": [],
+        "level1Content": "交流和讨论社区环境和社区文化",
+        "level2Content": "能将有关社区文化的口头或书面材料准确、流畅地译成中文。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

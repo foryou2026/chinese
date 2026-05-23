@@ -1,0 +1,22 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "基本信息",
+        "level2Content": "事件信息",
+        "level3Content": "事件、人物、时间、方式、地址、原因、变化、状态等"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

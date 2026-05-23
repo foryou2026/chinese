@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "content": "为（了）……起见，……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "目的复句",
+        "cases": "超强台风将在浦东登陆，为安全起见，长三角地区部分列车会临时停运。\r\n医生说他手术恢复得很好，但为了保险起见，还是需要留院观察一段时间。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "content": "……，以……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "目的复句",
+        "cases": "在广泛听取各方意见之后，工信部决定实施宽带提速计划，以实现上网速度与国际平均水平接轨。\r\n世界卫生组织呼吁成员国加强合作，完善监督机制，保证有充裕的资金，以帮助广大发展中国家。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

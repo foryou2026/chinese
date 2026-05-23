@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+被+宾语+动词+其他成分",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "被动句1",
+        "cases": "我的词典被朋友借走了。\r\n冰箱里的水果被谁吃了？"
+      },
+      {
+        "examLevelId": "HSK3",
+        "content": "主语+被+动词+其他成分",
+        "grammarType": "句子的类型",
+        "categoryType": "特殊句型",
+        "grammarDetail": "被动句1",
+        "cases": "桌子上的作业被拿走了。\r\n病人已经被送到医院了。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

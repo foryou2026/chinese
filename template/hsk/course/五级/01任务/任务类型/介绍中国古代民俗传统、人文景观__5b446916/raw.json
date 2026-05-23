@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍中国古代民俗传统、人文景观",
+        "level2Content": "能在文化体验活动、文化类课程、讲座等场景中听懂中国朋友、老师、演讲者等介绍的关于中国民俗传统、人文景观的主要内容。如：地方饮食、地域饮食差异；端午节、重阳节等传统节日与习俗；民间传说；古代人的日常生活；名胜古迹等。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍中国古代民俗传统、人文景观",
+        "level2Content": "能较流畅地介绍有关上述中国古代民俗传统的一些主要内容，能与他人交流自己的理解和感受。"
+      },
+      {
+        "examLevelId": "HSK5",
+        "children": [],
+        "level1Content": "介绍中国古代民俗传统、人文景观",
+        "level2Content": "能看懂介绍上述中国古代传统民俗文化的一般性文章的主要内容。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

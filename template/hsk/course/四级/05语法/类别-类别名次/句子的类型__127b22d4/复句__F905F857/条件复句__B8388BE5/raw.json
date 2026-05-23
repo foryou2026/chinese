@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "content": "不管……，都/也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "不管在什么地方，说话、办事都要有礼貌。\r\n不管别人怎么说，我也不会改变主意。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "无论……，都/也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "无论在多么紧张的情况下，他都表现得非常冷静。\r\n无论遇到多大的困难，我们也不应该随便放弃。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

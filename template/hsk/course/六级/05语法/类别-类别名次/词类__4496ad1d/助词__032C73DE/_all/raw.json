@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK6",
+        "content": "所",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "结构助词",
+        "cases": "这部电影是根据人们所熟悉的故事改编的。\r\n你所了解的情况只是一小部分。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "啦、嘛",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "语气助词",
+        "cases": "我昨天就已经把作业交给老师啦！\r\n这些文件对于公司至关重要，你可千万别弄丢啦！\r\n我只是开个玩笑，你不要太认真嘛。\r\n要是觉得累了，就走慢一点儿嘛。"
+      },
+      {
+        "examLevelId": "HSK6",
+        "content": "也好",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "其他助词",
+        "cases": "孩子们假期不回来也好，我可以好好休息休息了。\r\n手机也好，电脑也好，长时间使用都会造成眼睛疲劳。"
+      }
+    ],
+    "total": 3,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "介绍某个地方的环境和环保",
+        "level2Content": "能听懂日常交谈中朋友、家人等关于某个地方环境状况、环境保护的一般性问题，或朋友、家人等对上述情况的一般性介绍。如：所处的地理位置、特点、环保做法和看法等。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "介绍某个地方的环境和环保",
+        "level2Content": "能在日常交谈中询问朋友、家人等关于某个地方环境状况和环保的问题；能回答朋友、家人等关于上述情况的问题。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "介绍某个地方的环境和环保",
+        "level2Content": "能向朋友、家人等简单介绍某个地方环境状况和环保的一般性内容。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "介绍某个地方的环境和环保",
+        "level2Content": "能看懂介绍某个地方上述相关内容的简单小短文。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "介绍某个地方的环境和环保",
+        "level2Content": "能写出一两句话，简单介绍某个地方的上述环境状况和环保内容。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

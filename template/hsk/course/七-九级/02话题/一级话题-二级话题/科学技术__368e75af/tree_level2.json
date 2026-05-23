@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "8A8133CEB52BC1345222D8BC272FF1CA",
+      "content": "信息科学技术",
+      "children": []
+    },
+    {
+      "id": "E9E09A592EE30244A0C7A6B0D3AEDD3D",
+      "content": "航空航天科学技术",
+      "children": []
+    },
+    {
+      "id": "E0BD96FFF8DC34653D4422E67F13A607",
+      "content": "生物科学技术",
+      "children": []
+    },
+    {
+      "id": "FC44535546122A23A0C8E623C7E2D3CD",
+      "content": "其他新兴科学技术",
+      "children": []
+    }
+  ],
+  "ok": true
+}

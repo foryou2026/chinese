@@ -1,0 +1,215 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK1",
+        "content": "上、下、里、外、前、后",
+        "grammarType": "词类",
+        "categoryType": "名词",
+        "grammarDetail": "方位名词",
+        "cases": "桌子上有几本书？\r\n书店里的人很多。\r\n他们都在国外。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "会、能",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "能愿动词",
+        "cases": "我会说中文。\r\n他不会开车。\r\n你明天能不能去？\r\n她生病了，不能来上课。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "想、要",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "能愿动词",
+        "cases": "我想买一些水果。\r\n你想喝茶吗？\r\n他们要去书店。\r\n我要学习汉语。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "可以",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "能愿动词",
+        "cases": "这儿不可以吃东西。\r\n我可以问一个问题吗？"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "看病、睡觉、说话、上课、下课、上班、下班、生病",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "离合词",
+        "cases": "他去医院看病了。\r\n我想睡一觉，休息一下（儿）。\r\n上课不要说话。\r\n今天我上中文课。\r\n我下了课要去食堂。\r\n下了班你做什么？\r\n她昨天生病了。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "多、多少、几、哪、哪儿、哪里、哪些、什么、谁、怎么、怎么样",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "你弟弟多大？\r\n这件衣服多少钱？\r\n现在几点？\r\n她是哪国人？\r\n你去哪儿？\r\n你住在哪里？\r\n哪些是汉语书？\r\n那是什么？\r\n那个人是谁？\r\n你怎么去学校？\r\n明天天气怎么样？"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "我、你、您、他、她、我们、你们、他们、她们、它、它们、大家",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "人称代词",
+        "cases": "我是学生。\r\n你是哪国人？\r\n老师，您好！\r\n他会开车吗？\r\n她是不是老师？\r\n我们都是大学生。\r\n你们是学生吗？\r\n他们去哪儿了？\r\n她们都是我的朋友。\r\n你看，它正在吃饭呢。\r\n这些小狗真漂亮，它们叫什么名字？\r\n大家都喜欢学习汉语。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "这、那、这儿、那儿、这里、那里、这些、那些、有的、这个、那个、有些",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "指示代词",
+        "cases": "这是谁的书？\r\n那个手机多少钱？\r\n我在这儿学习中文。\r\n那儿有一家书店。\r\n这里是我的家。\r\n那里有一家饭店。\r\n这些是老师的书。\r\n我不认识那些人。\r\n到了饭店，大家有的想吃米饭，有的想吃面条。\r\n这个杯子多少钱？\r\n她在那个房间。\r\n有些学生不在学校住。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "一、二/两、三、四、五、六、七、八、九、零、十、百、半、千",
+        "grammarType": "词类",
+        "categoryType": "数词",
+        "grammarDetail": "",
+        "cases": "一个、两百、五十八、一百零六、两千三百五十、九点半、半个小时"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "专用名量词：本、个、家、口、块、件、只、元",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "名量词",
+        "cases": "这本书是中文书。\r\n我吃了两个包子。\r\n前边有一家书店。\r\n你家有几口人？\r\n我有十块钱。\r\n这只小猫真漂亮。\r\n这件衣服三百元。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "借用名量词：杯",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "名量词",
+        "cases": "喝杯茶吧。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "日、号、岁、点、分、年、天",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "时量词",
+        "cases": "今天几月几日（号）？\r\n她今年几岁？\r\n现在八点二十分。\r\n一年有十二个月。\r\n你一天学习几个汉字？"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "非常、很、太、真、有（一）点儿",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "程度副词",
+        "cases": "我非常喜欢学中文。\r\n这里的水果很便宜。\r\n房间里太热了。\r\n这儿的菜真好吃。\r\n今天天气有点儿冷。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "都1",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "范围副词",
+        "cases": "我们都学习汉语。\r\n他们都是中国学生。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "在、正在",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "时间副词",
+        "cases": "他们在做什么？\r\n学生们正在上课。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "再1",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "频率副词",
+        "cases": "我想再买一本。\r\n我再问一个问题，可以吗？"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "还1、也",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "关联副词",
+        "cases": "我想吃面条儿，还想吃包子。\r\n我有两个姐姐，还有一个哥哥。\r\n他是学生，我也是学生。\r\n我学习汉语，我弟弟也学习汉语。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "不、没（有）、不要",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "否定副词",
+        "cases": "她不是老师。\r\n我没看电视。\r\n她去超市了，我没有去。\r\n请大家不要说话。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "在",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出时间、处所",
+        "cases": "我想在中国工作。\r\n你在哪儿学习中文？"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "和1、对",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出对象",
+        "cases": "我没和她一起去超市。\r\n我对老师说“谢谢”。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "和2",
+        "grammarType": "词类",
+        "categoryType": "连词",
+        "grammarDetail": "连接词语或短语",
+        "cases": "我和姐姐都喜欢唱歌。\r\n今天和明天都下雨。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "的1",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "结构助词",
+        "cases": "这是你的手机吗？\r\n她是我的好朋友。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "了1",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "动态助词",
+        "cases": "今天我们学了十个汉字。\r\n我买了一些苹果。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "吧1、了2 、吗、呢1、呢2、呢3",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "语气助词",
+        "cases": "我们走吧。\r\n八点了，起床吧。\r\n她病了，在家休息呢。\r\n他是中国人吗？\r\n这个电影好看吗？\r\n她正在学习呢1。\r\n我是中国人，你呢2？\r\nA：你的手机呢3？\r\nB：我的手机在房间里。"
+      },
+      {
+        "examLevelId": "HSK1",
+        "content": "喂",
+        "grammarType": "词类",
+        "categoryType": "叹词",
+        "grammarDetail": "",
+        "cases": "喂，请问，李老师在吗？\r\n喂，你去哪儿？"
+      }
+    ],
+    "total": 25,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

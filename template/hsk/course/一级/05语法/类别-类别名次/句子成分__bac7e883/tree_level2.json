@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "a278ddff688011f0b11400163e03dd53",
+      "content": "主语",
+      "children": []
+    },
+    {
+      "id": "a278e020688011f0b11400163e03dd53",
+      "content": "谓语",
+      "children": []
+    },
+    {
+      "id": "a278e246688011f0b11400163e03dd53",
+      "content": "宾语",
+      "children": []
+    },
+    {
+      "id": "a278e4c2688011f0b11400163e03dd53",
+      "content": "定语",
+      "children": []
+    },
+    {
+      "id": "a278e6e0688011f0b11400163e03dd53",
+      "content": "状语",
+      "children": []
+    },
+    {
+      "id": "a278e908688011f0b11400163e03dd53",
+      "content": "补语",
+      "children": []
+    }
+  ],
+  "ok": true
+}

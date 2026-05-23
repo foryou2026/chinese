@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论居住情况",
+        "level2Content": "能听懂聚会、新家入住等场景中家人、朋友等关于居住情况的一般性问题，或关于居住情况的一般性介绍，如：小区情况、房屋情况、家居用品、房间布置等。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论居住情况",
+        "level2Content": "能询问家人、朋友等上述居住情况相关的一般性情况，能回答关于居住情况的一般性问题。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论居住情况",
+        "level2Content": "能简单介绍自己的居住情况。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论居住情况",
+        "level2Content": "能看懂介绍居住情况的简单小短文。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "谈论居住情况",
+        "level2Content": "能写出一两句话，简单介绍自己居住的情况。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

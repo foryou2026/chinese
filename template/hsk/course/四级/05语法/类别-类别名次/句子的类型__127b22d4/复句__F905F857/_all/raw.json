@@ -1,0 +1,231 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK4",
+        "content": "不是……，而是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "他不是不想帮忙，而是确实没时间。\r\n我不是不爱喝咖啡，而是担心晚上睡不着。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "既……，又/也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "这个牌子的奶茶既好喝，又健康。\r\n我每天骑自行车上学，这样既能锻炼身体，也对环境保护有帮助。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "一方面……，另一方面……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "并列复句",
+        "cases": "参加文化活动一方面可以增长知识，另一方面可以认识新的朋友。\r\n想要解决大城市堵车的问题，一方面要提高公共交通服务质量，另一方面要让人们养成绿色出行的习惯。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "首先……，其次……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "承接复句",
+        "cases": "选择职业的时候，应该首先了解自己的性格、能力，其次再考虑工资、收入等方面的问题。\r\n我学汉语首先是因为对中国文化感兴趣，其次是为了获得更多的工作机会。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "首先……，然后……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "承接复句",
+        "cases": "首先要找到一个合适的目标，然后坚持学习，这样才能学好中文。\r\n校长首先对同学们表示欢迎，然后介绍了学校的一些基本情况。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "……，于是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "承接复句",
+        "cases": "人们喜欢一边喝咖啡，一边聊天儿，于是城市里的咖啡馆越来越多。\r\n大家不断地鼓励我，于是我决定报名参加这个比赛。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "……,甚至……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "递进复句",
+        "cases": "为了锻炼身体，我一有空就去健身房，甚至专门请了一个健身教练。\r\n收到大学的入学通知，我高兴极了，甚至觉得自己是世界上最幸福的人。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "不仅/不光……，还/而且……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "递进复句",
+        "cases": "我们学习生词，不仅要理解词语的意思，而且应该知道怎么使用。\r\n这里不光有美丽的风景，还有各种少见的动物、植物。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "……，并且……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "递进复句",
+        "cases": "经过四年的努力，他终于顺利毕业，并且有了一家自己的公司。\r\n随着经济的发展，人们的生活水平提高了，并且对健康和生活质量的要求也越来越高。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "连……也/都……，……更……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "递进复句",
+        "cases": "我有时候连老师说的话也听不懂，听广播就更难了。\r\n受伤以后，他连走路都困难，踢足球更不可能了。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "不是……，就是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "选择复句",
+        "cases": "毕业以后，同学们不是留在中国继续学习，就是回国工作。\r\n周末他不是在游泳馆游泳，就是在篮球场打篮球。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "尽管……，但是/可是……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "转折复句",
+        "cases": "尽管收入不高，但是我对这份工作很满意。\r\n尽管已经很晚了，可是她仍然在学习。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "……，然而……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "转折复句",
+        "cases": "我知道那部电影很有意思，然而太忙了，一直没时间看。\r\n她以为能轻松通过考试，然而成绩却不太好。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "……，不过……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "转折复句",
+        "cases": "我很想参加你的生日晚会，不过我明天有考试，得好好复习。\r\n他只学了三个月中文，不过已经说得不错了。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "……X是X，就是/不过……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "转折复句",
+        "cases": "这些衣服便宜是便宜，就是感觉质量不太好。\r\n小张这个人聪明是聪明，不过有时候比较懒。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "……，否则……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "你下了飞机记得给妈妈打个电话，否则她会一直担心你。\r\n课后一定要经常复习，否则很快就会忘记。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "要是……，就……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "你要是想取得成功，就必须坚持到底。\r\n要是人人都能节约用水，地球的环境就能得到更好的保护。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "要是……，（就）……，否则……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "假设复句",
+        "cases": "要是你打算假期去旅游，就提前上网订票，否则到时候就买不到了。\r\n要是你不常穿，最好就不要买，否则买了也是浪费。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "不管……，都/也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "不管在什么地方，说话、办事都要有礼貌。\r\n不管别人怎么说，我也不会改变主意。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "无论……，都/也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "条件复句",
+        "cases": "无论在多么紧张的情况下，他都表现得非常冷静。\r\n无论遇到多大的困难，我们也不应该随便放弃。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "既然……，就……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "因果复句",
+        "cases": "既然你这么喜欢小孩儿，毕业以后就当老师吧。\r\n既然来了，就进屋喝杯茶吧。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "（由于）……，因此……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "因果复句",
+        "cases": "由于您没带护照，因此不能办理银行卡。\r\n我对京剧很感兴趣，因此报名参加了这次活动。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "……，好……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "目的复句",
+        "cases": "我每天都给父母打电话，好让他们放心。\r\n我们应该多鼓励他，好让他有信心。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "即使……，也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "让步复句",
+        "cases": "你即使干到明天早上，恐怕也干不完。\r\n即使工作再忙，也要常回家看看父母。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "就是……，也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "让步复句",
+        "cases": "我今天晚上就是不睡觉，也必须解决这个问题。\r\n你就是不同意，我也不会改变自己的决定。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "无标记",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "紧缩复句",
+        "cases": "你着急你先走吧。\r\n站得高看得远。\r\n他同意我不同意。"
+      },
+      {
+        "examLevelId": "HSK4",
+        "content": "不……也……",
+        "grammarType": "句子的类型",
+        "categoryType": "复句",
+        "grammarDetail": "紧缩复句",
+        "cases": "今晚我不睡觉也要把作业写完。\r\n你不喜欢做也得做。"
+      }
+    ],
+    "total": 27,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

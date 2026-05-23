@@ -1,0 +1,56 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "79cf8764688c11f0b11400163e03dd53",
+      "content": "名词",
+      "children": []
+    },
+    {
+      "id": "79d8afd0688c11f0b11400163e03dd53",
+      "content": "动词",
+      "children": []
+    },
+    {
+      "id": "79e1d9a4688c11f0b11400163e03dd53",
+      "content": "代词",
+      "children": []
+    },
+    {
+      "id": "79eb0330688c11f0b11400163e03dd53",
+      "content": "形容词",
+      "children": []
+    },
+    {
+      "id": "79f42ff4688c11f0b11400163e03dd53",
+      "content": "数词",
+      "children": []
+    },
+    {
+      "id": "79fd508c688c11f0b11400163e03dd53",
+      "content": "量词",
+      "children": []
+    },
+    {
+      "id": "7a06763a688c11f0b11400163e03dd53",
+      "content": "副词",
+      "children": []
+    },
+    {
+      "id": "7a0f9ed0688c11f0b11400163e03dd53",
+      "content": "介词",
+      "children": []
+    },
+    {
+      "id": "7a18c806688c11f0b11400163e03dd53",
+      "content": "连词",
+      "children": []
+    },
+    {
+      "id": "7a21f035688c11f0b11400163e03dd53",
+      "content": "助词",
+      "children": []
+    }
+  ],
+  "ok": true
+}

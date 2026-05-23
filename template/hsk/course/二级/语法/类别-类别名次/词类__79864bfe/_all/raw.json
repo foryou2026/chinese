@@ -1,0 +1,271 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "content": "左、右",
+        "grammarType": "词类",
+        "categoryType": "名词",
+        "grammarDetail": "方位名词",
+        "cases": "左边那件多少钱？\r\n你右边那个人是谁？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "AA、A一A、A了A、ABAB",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "动词重叠",
+        "cases": "那本书能给我看看吗？\r\n请大家说一说自己的爱好。\r\n我尝了尝，觉得很好吃。\r\n喝杯茶，休息休息吧。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "可能",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "能愿动词",
+        "cases": "她可能回家了。\r\n小猫可能在房间里。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "帮忙、游泳、跳舞、跑步",
+        "grammarType": "词类",
+        "categoryType": "动词",
+        "grammarDetail": "离合词",
+        "cases": "你能帮我一个忙吗？\r\n晚上一起去游游泳，运动一下吧。\r\n星期六的晚上，我喜欢和朋友们一起唱唱歌，跳跳舞。\r\n有时间你可以去外面跑跑步。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "为什么",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "疑问代词",
+        "cases": "他昨天为什么没来上课？\r\n你为什么想学中文？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "自己",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "人称代词",
+        "cases": "下午我有事，你自己去，可以吗？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "那么、那样、这么、这样、每",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "指示代词",
+        "cases": "他为什么学得那么好？\r\n那样的事情经常有。\r\n这么多人，我们明天再来吧。\r\n这个字这样写，对吗？\r\n你每天怎么去学校？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "AA、AABB",
+        "grammarType": "词类",
+        "categoryType": "形容词",
+        "grammarDetail": "形容词重叠",
+        "cases": "她高高的个子，大大的眼睛，非常漂亮。\r\n大家高高兴兴地回家了。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "万、好多、多",
+        "grammarType": "词类",
+        "categoryType": "数词",
+        "grammarDetail": "",
+        "cases": "两万三千、五万零八百、好多东西、好多人、二十多年、五十多人"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "专用名量词：条、位、间、名",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "名量词",
+        "cases": "一条裤子、一位老师、一间教室、一名学生"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "借用名量词：包",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "名量词",
+        "cases": "一包衣服、一包书"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "次",
+        "grammarType": "词类",
+        "categoryType": "量词",
+        "grammarDetail": "动量词",
+        "cases": "去一次、看一次"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "多、好、最",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "程度副词",
+        "cases": "这只小狗多可爱啊！\r\n这个教室好大啊！\r\n我最喜欢打篮球。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "一起",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "范围副词",
+        "cases": "晚上我们一起吃饭吧。\r\n一起去看电影，怎么样？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "还2、已经、有时（候）、快、快要、正",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "时间副词",
+        "cases": "他还没有起床呢。\r\n张老师已经下班了。\r\n我有时（候）去超市买东西。\r\n下雨了，快回家吧。\r\n新年快要到了。\r\n我出来的时候，他正睡觉呢。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "常、经常",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "频率副词",
+        "cases": "我不常坐地铁。\r\n你经常上网买东西吗？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "别",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "否定副词",
+        "cases": "下雨了，别出去了。\r\n别忘了，明天有考试。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "再2、就1",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "关联副词",
+        "cases": "我先休息一会儿再工作。\r\n你洗完手再吃水果。\r\n因为身体不舒服，我就没去上课。\r\n他一到北京就去了长城。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "都2、就2、还是1",
+        "grammarType": "词类",
+        "categoryType": "副词",
+        "grammarDetail": "语气副词",
+        "cases": "都十二点了，快睡觉吧。\r\n车站就在那个饭馆旁边。\r\n就买这件白色的吧。\r\n外边很冷，还是多穿一点儿吧。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "从1",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出时间、处所",
+        "cases": "我们从八点到十二点上课。\r\n你从哪儿来？"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "往",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出方向、路径",
+        "cases": "你从这儿往前走。\r\n从这儿往下看，真漂亮啊！"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "从2",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出方向、路径",
+        "cases": "这路公交车不从学校门口过。\r\n前门没开，咱们从后门进去吧。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "给",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出对象",
+        "cases": "我经常给爸爸妈妈打电话。\r\n我给老师买了一杯咖啡。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "比",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出对象",
+        "cases": "今天比昨天热。\r\n我觉得红色的比黑色的好看。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "跟1",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出对象",
+        "cases": "跟我说说你的爱好吧。\r\n我跟他见过一次。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "因为1",
+        "grammarType": "词类",
+        "categoryType": "介词",
+        "grammarDetail": "引出原因",
+        "cases": "因为中国电影，我开始学习中文。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "跟2",
+        "grammarType": "词类",
+        "categoryType": "连词",
+        "grammarDetail": "连接词或短语",
+        "cases": "爸爸跟妈妈都不在家。\r\n我跟哥哥都在中国上学。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "但、但是、那、虽然、还是2、因为2、所以",
+        "grammarType": "词类",
+        "categoryType": "连词",
+        "grammarDetail": "连接分句或者句子",
+        "cases": "这家饭馆的菜很好吃，但/但是有点儿贵。\r\n你不舒服，那就别去了。\r\n手机虽然不大，但/但是能帮我们做很多事。\r\n你想喝茶还是喝咖啡？\r\n因为我最近每天看手机，所以眼睛有点儿不舒服。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "得、地",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "结构助词",
+        "cases": "他汉语说得很好。\r\n大家正在高兴地唱歌。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "过",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "动态助词",
+        "cases": "你学过中文吗？\r\n我没去过北京。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "着",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "动态助词",
+        "cases": "他穿着一条黑色的裤子。\r\n教室的门开着。\r\n他们唱着歌，跳着舞，非常高兴。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "content": "呢4、吧2、的2、啊1",
+        "grammarType": "词类",
+        "categoryType": "助词",
+        "grammarDetail": "语气助词",
+        "cases": "她怎么不在家呢？\r\n明天你想去哪儿呢？\r\n这是你的手机吧？\r\n这么晚了，超市已经关门了吧？\r\n我是去年九月来中国的。\r\n我们是在北京认识的。\r\n他们是坐飞机去上海的。\r\n今天的晚饭是我做的。\r\n你汉语说得真好啊！"
+      }
+    ],
+    "total": 32,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

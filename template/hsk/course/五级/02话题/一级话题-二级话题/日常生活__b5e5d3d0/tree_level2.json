@@ -1,0 +1,46 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": "567061AE763A7FFE635F4688CAC7B574",
+      "content": "日常事务",
+      "children": []
+    },
+    {
+      "id": "1213DE4BB73FCBEC977FE3B3F35DB33E",
+      "content": "饮食",
+      "children": []
+    },
+    {
+      "id": "8563DD09183F464ABEF7F5BD4ED9299A",
+      "content": "交通出行",
+      "children": []
+    },
+    {
+      "id": "5B232FF17DEA2AEE7772CD987A557435",
+      "content": "购物",
+      "children": []
+    },
+    {
+      "id": "0E10E93C4231F30EB0A51FE17CCD0A8E",
+      "content": "医疗健康",
+      "children": []
+    },
+    {
+      "id": "4A49B4000DFBB1FECB86365C8C7BCFD8",
+      "content": "休闲",
+      "children": []
+    },
+    {
+      "id": "2E517CAF0851513E96ED3621C9BDCE53",
+      "content": "社区",
+      "children": []
+    },
+    {
+      "id": "57B61F7AC34678E5BD71829AB2F19068",
+      "content": "家庭生活",
+      "children": []
+    }
+  ],
+  "ok": true
+}

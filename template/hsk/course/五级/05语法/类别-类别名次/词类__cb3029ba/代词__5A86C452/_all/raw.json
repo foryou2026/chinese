@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK5",
+        "content": "彼此、如此、本",
+        "grammarType": "词类",
+        "categoryType": "代词",
+        "grammarDetail": "指示代词",
+        "cases": "在日常交流中，我们应该尊重彼此。\r\n他们已经认识很久了，对彼此的习惯非常了解。\r\n这里的夏天异常炎热，年年如此。\r\n很多人都没有想到乡村的变化如此巨大。\r\n本规定自明日起正式实施。\r\n本次列车开往北京西站。"
+      }
+    ],
+    "total": 1,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK7-9",
+        "content": "（因）……，故……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "因果复句",
+        "cases": "富有智慧者看得透，故不争；胸襟豁达者想得开，故不斗。\r\n肺肉瘤样癌是一种罕见的肺癌，因其症状、体征缺乏特异性，常需术后活检才能确诊，故明确诊断较难。"
+      },
+      {
+        "examLevelId": "HSK7-9",
+        "content": "……，以至（于）……",
+        "grammarType": "句子的类型",
+        "categoryType": "简单复句",
+        "grammarDetail": "因果复句",
+        "cases": "自从这种靶向药物问世之后，它的治疗癌症的功能被推崇到了极点，以至它在黑市上的价格被炒到了百万以上。\r\n当下的素质教育实践呈现出明显的形式化特征，以至于一些学校将活动课的数量作为衡量素质教育实施的指标，反而加重了学生负担。"
+      }
+    ],
+    "total": 2,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

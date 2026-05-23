@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "问答日常饮食",
+        "level2Content": "能听懂日常交流中对方关于饮食习惯、就餐情况的简单问题，或对上述情况的简单介绍，如：饮食喜好、日常用餐规律、餐厅喜好、饮食评价、做饭水平等。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "问答日常饮食",
+        "level2Content": "能询问他人关于日常饮食习惯、就餐的简单情况；能回答他人关于上述信息的简单问题。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "问答日常饮食",
+        "level2Content": "能简单介绍自己的饮食习惯、就餐情况、做饭水平等。"
+      },
+      {
+        "examLevelId": "HSK2",
+        "children": [],
+        "level1Content": "问答日常饮食",
+        "level2Content": "能借助图片看懂一些菜单上的简单信息以及关于饮食喜好、就餐情况的简单信息。"
+      }
+    ],
+    "total": 4,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}

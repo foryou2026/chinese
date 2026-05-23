@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data": {
+    "records": [
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流文艺活动信息",
+        "level2Content": "能听懂朋友、家人等询问或介绍某个文艺活动的一般性信息，如：一次表演、某个节目、一次比赛的主要内容、演出人员、是否受欢迎等。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流文艺活动信息",
+        "level2Content": "能询问朋友、家人等某个文艺活动的上述一般性信息；能回答朋友、家人等询问文艺活动上述信息的一般性问题。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流文艺活动信息",
+        "level2Content": "能向朋友、家人等简单介绍某个文艺活动。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流文艺活动信息",
+        "level2Content": "能看懂演出、比赛等文艺活动海报中的主要信息，或介绍日常文艺活动的简单小短文。"
+      },
+      {
+        "examLevelId": "HSK3",
+        "children": [],
+        "level1Content": "交流文艺活动信息",
+        "level2Content": "能写出一两句话，简单介绍某次文艺活动的基本信息。"
+      }
+    ],
+    "total": 5,
+    "size": 500,
+    "current": 1,
+    "orders": [],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "pages": 1
+  },
+  "ok": true
+}
