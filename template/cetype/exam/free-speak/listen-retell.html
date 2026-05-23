@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>口语表达 · 复述 · 听后复述</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 口语表达 · 全部变体</a>
+  <h1>#4 听后复述</h1>
+  <span class="badge solid-red">需AI</span><span class="badge orange">~$0.01-0.03/次</span>
+  <span class="subtitle">口语表达 × 复述 × 听后复述</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>口语表达 × 听后复述</strong> — 听一段话后，用自己的语言复述主要内容。HSK 4-6级口语核心题型。与"听后重复"的区别：允许改述，不要求逐字重复，考察语义理解+口头表达能力。<br><span class="field-map">应用端: <strong>音频播放(段落级)</strong> + <strong>录音</strong> + <strong>AI语义评分</strong></span></div>
+<div class="shared-tpl">共用模板: 录音控制器 + 音频播放器 + AI评分反馈 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听后复述</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header pro"><span class="back">←</span><h3>口语表达</h3><span class="progress">Q1/2</span></div>
+          <div class="progress-bar"><div class="fill" style="width:50%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听完后，用自己的话复述内容 Listen and retell</div>
+            <div style="text-align:center;padding:20px 0">
+              <div class="audio-btn big">🔊 点击播放</div>
+              <div class="text-sm text-muted mt-8">段落音频 · 约30秒</div>
+              <div class="text-sm text-muted">播放次数: 1/1</div>
+            </div>
+            <div style="text-align:center;padding:8px;background:#e6f7ff;border:1px solid #91d5ff;border-radius:8px;margin:12px 0">
+              <div style="font-size:12px;color:var(--primary)">听完后请用自己的话复述，不需要逐字重复。</div>
+              <div style="font-size:11px;color:#999;margin-top:2px">Retell in your own words after listening</div>
+            </div>
+            <div style="text-align:center;padding:12px 0">
+              <div style="font-size:13px;font-weight:600;color:#666;margin-bottom:8px">⏱ 录音时长: 0:00 / 1:30</div>
+              <div class="mic-btn">🎤</div>
+              <div class="text-sm text-muted" style="margin-top:8px">点击开始录音 (最长1.5分钟)</div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">提交 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 听后复述 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="口语表达" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="复述" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="听后复述" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout cost"><span class="icon">💰</span><div>付费题型: STT转录+LLM语义理解+内容覆盖度评分，<strong>~$0.03/次</strong>。段落级音频，AI需理解原文并评估复述质量。</div></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>段落音频</label><div class="upload-area">🎧 上传音频 (必填, 段落级)</div></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>音频脚本(AI评分用，不展示给考生)</label><textarea class="form-textarea" style="min-height:80px">弟弟，我今天要给爷爷寄点儿茶叶，已经跟快递员约好了上门取件，不过一会儿我要出去一趟。要是快递员来了，你直接把东西给他就行。</textarea></div>
+      <div class="form-group"><label class="form-label">关键要点(AI评分参考)</label>
+        <div class="tag-input">
+          <span class="tag-item">给爷爷寄茶叶 <span class="close">×</span></span>
+          <span class="tag-item">约了快递员 <span class="close">×</span></span>
+          <span class="tag-item">自己要出去 <span class="close">×</span></span>
+          <span class="tag-item">让弟弟交给快递员 <span class="close">×</span></span>
+        </div></div>
+      <div class="form-group"><label class="form-label">音频播放次数</label><input class="form-input" type="number" value="1" style="width:80px"></div>
+      <div class="form-group"><label class="form-label">录音时长限制(秒)</label><select class="form-select" style="width:150px"><option>40秒 (HSK 4级)</option><option selected>90秒 (HSK 5-6级)</option></select></div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label"><span class="req">*</span>AI评分Prompt模板</label><textarea class="form-textarea" style="min-height:80px">请评估考生的复述质量。原文脚本如下：{script}。关键要点：{key_points}。评分维度：内容覆盖度(是否涵盖主要信息)、表达流利度、语言准确性、逻辑连贯性。</textarea></div>
+      <div class="form-group"><label class="form-label">评分维度+权重</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="内容覆盖度"><input class="form-input" type="number" value="40" style="width:60px"><span class="text-xs">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="表达流利度"><input class="form-input" type="number" value="25" style="width:60px"><span class="text-xs">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="语言准确性"><input class="form-input" type="number" value="20" style="width:60px"><span class="text-xs">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="逻辑连贯性"><input class="form-input" type="number" value="15" style="width:60px"><span class="text-xs">%</span></div></div></div>
+        </div></div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option>HSK 3</option><option selected>HSK 4</option><option>HSK 5</option><option>HSK 6</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="15"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="120"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option>中等</option><option selected>困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>

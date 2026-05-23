@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>看图选词 · 句子 · 读文选图</title><link rel="stylesheet" href="../../styles.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 看图选词 · 全部变体</a>
+  <h1>#5 读文选图</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">看图选词 × 句子 × 读文选图</span>
+</div>
+<div class="content">
+<div class="type-desc"><strong>看图选词 × 读文选图</strong> — 阅读带拼音的句子，从多张图片中选择与句意匹配的图片。HSK 1-2级核心阅读题型，与"图选描述句"方向相反。<br><span class="field-map">应用端: <strong>拼音句展示</strong> + <strong>图片网格选项</strong> + <strong>答案反馈</strong></span></div>
+<div class="shared-tpl">共用模板: 大号汉字展示 + 答案解析区 + 元数据区</div>
+<div class="split">
+  <div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 读文选图</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>看图选词</h3><span class="progress">Q2/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">读句子，选择对应的图片 Read and match</div>
+            <div class="highlight-box gray" style="padding:16px;margin:12px 0;text-align:center">
+              <div style="font-size:12px;color:#999;letter-spacing:2px">Wǒ hěn xǐhuan zhè běn shū.</div>
+              <div style="font-size:20px;font-weight:600;margin-top:4px">我 很 喜欢 这 本 书。</div>
+              <div style="font-size:12px;color:#666;margin-top:4px">I really like this book.</div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:8px 0">
+              <div style="border:2px solid var(--primary);border-radius:12px;padding:6px;text-align:center;background:rgba(24,144,255,.05)">
+                <div style="height:70px;background:#f5f5f5;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px">📖</div>
+                <div class="text-sm" style="margin-top:4px;font-weight:600;color:var(--primary)">A ✓</div>
+              </div>
+              <div style="border:2px solid #eee;border-radius:12px;padding:6px;text-align:center">
+                <div style="height:70px;background:#f5f5f5;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px">🏀</div>
+                <div class="text-sm" style="margin-top:4px;font-weight:600">B</div>
+              </div>
+              <div style="border:2px solid #eee;border-radius:12px;padding:6px;text-align:center">
+                <div style="height:70px;background:#f5f5f5;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px">🍎</div>
+                <div class="text-sm" style="margin-top:4px;font-weight:600">C</div>
+              </div>
+              <div style="border:2px solid #eee;border-radius:12px;padding:6px;text-align:center">
+                <div style="height:70px;background:#f5f5f5;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px">🎵</div>
+                <div class="text-sm" style="margin-top:4px;font-weight:600">D</div>
+              </div>
+              <div style="border:2px solid #eee;border-radius:12px;padding:6px;text-align:center">
+                <div style="height:70px;background:#f5f5f5;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px">🐱</div>
+                <div class="text-sm" style="margin-top:4px;font-weight:600">E</div>
+              </div>
+              <div style="border:2px solid #eee;border-radius:12px;padding:6px;text-align:center">
+                <div style="height:70px;background:#f5f5f5;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px">☀️</div>
+                <div class="text-sm" style="margin-top:4px;font-weight:600">F</div>
+              </div>
+            </div>
+            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="badge green">管理端</span> 读文选图 · 配置表单</div>
+    <div class="card-body">
+      <div class="form-row t3">
+        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="看图选词" disabled></div>
+        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="句子" disabled></div>
+        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="读文选图" disabled></div>
+      </div>
+      <hr class="divider">
+      <div class="callout info"><span class="icon">📌</span><div>HSK 1-2级核心阅读题型。展示带拼音句子，从6张图片中选匹配的。一组图片可对应多道题(共享图片组模式)。</div></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>句子(中文)</label><input class="form-input" value="我很喜欢这本书。"></div>
+      <div class="form-group"><label class="form-label"><span class="req">*</span>拼音</label><input class="form-input" value="Wǒ hěn xǐhuan zhè běn shū."></div>
+      <div class="form-group"><label class="form-label">英文翻译</label><input class="form-input" value="I really like this book."></div>
+      <div class="form-group"><label class="form-label">可选发音</label><div class="upload-area">🎧 上传音频 (可选)</div></div>
+      <hr class="divider">
+      <div class="form-group"><label class="form-label"><span class="req">*</span>图片选项(4-6张)</label>
+        <div class="list-builder">
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="c1" checked><span style="font-weight:600;color:var(--success)">A ✓</span><div class="upload-area" style="flex:1;padding:4px;font-size:11px;border-color:var(--success)">📷 书本图片</div><input class="form-input" placeholder="Alt文本" value="一本打开的书" style="width:120px"></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="c1"><span style="font-weight:600">B</span><div class="upload-area" style="flex:1;padding:4px;font-size:11px">📷 上传图片B</div><input class="form-input" placeholder="Alt文本" style="width:120px"></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="c1"><span style="font-weight:600">C</span><div class="upload-area" style="flex:1;padding:4px;font-size:11px">📷 上传图片C</div><input class="form-input" placeholder="Alt文本" style="width:120px"></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="c1"><span style="font-weight:600">D</span><div class="upload-area" style="flex:1;padding:4px;font-size:11px">📷 上传图片D</div><input class="form-input" placeholder="Alt文本" style="width:120px"></div></div>
+        </div></div>
+      <div class="form-group"><label class="form-label">图片组模式</label><select class="form-select"><option>独立模式 (每题独立图片组)</option><option selected>共享模式 (一组6张图对应5道题, HSK标准)</option></select></div>
+      <hr class="divider">
+      <div class="form-group">
+        <label class="form-label">答案解析</label>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">句子说「我很喜欢这本书」，关键词「书」对应图片A。</textarea></div>
+          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"I really like this book." Key word "书" (book) matches picture A.</textarea></div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="form-row t4">
+        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option></select></div>
+        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
+        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
+        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option><option>中等</option><option>困难</option></select></div>
+      </div>
+      <div class="btn-group">
+        <span class="btn btn-primary">💾 保存</span>
+        <span class="btn">👁 预览</span>
+        <span class="btn">🤖 AI批量生成</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body></html>
