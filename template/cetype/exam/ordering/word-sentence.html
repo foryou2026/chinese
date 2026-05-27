@@ -45,7 +45,7 @@
               <span class="drag-chip placed">喜欢</span>
             </div>
             <div class="text-sm text-muted" style="text-align:center">I really like eating Chinese food.</div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！我很喜欢吃中国菜。</div>
@@ -60,51 +60,51 @@
     <div class="card-header"><span class="badge green">管理端</span> 词语排句 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="排序题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="词序" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="词语排句" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="排序题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="词序" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="词语排句" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>词语排句</strong>。输入正确句子后系统自动打散。可添加<strong>干扰词</strong>增加难度。</div></div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>正确句子</label>
-        <textarea class="form-textarea" style="font-size:16px">我很喜欢吃中国菜。</textarea>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>正确句子</label>
+        <textarea class="proto-textarea" style="font-size:16px">我很喜欢吃中国菜。</textarea>
       </div>
-      <div class="form-group">
-        <label class="form-label">英文翻译</label>
-        <input class="form-input" value="I really like eating Chinese food.">
+      <div class="proto-field">
+        <label class="proto-label">英文翻译</label>
+        <input class="proto-input" value="I really like eating Chinese food.">
       </div>
-      <div class="form-group">
-        <label class="form-label">打散粒度</label>
-        <select class="form-select"><option selected>逐词打散</option><option>逐短语打散(保留固定搭配)</option></select>
+      <div class="proto-field">
+        <label class="proto-label">打散粒度</label>
+        <select class="proto-select"><option selected>逐词打散</option><option>逐短语打散(保留固定搭配)</option></select>
       </div>
-      <div class="form-group">
-        <label class="form-label">干扰词 <span class="hint">额外加入的不属于句子的词，增加难度</span></label>
+      <div class="proto-field">
+        <label class="proto-label">干扰词 <span class="hint">额外加入的不属于句子的词，增加难度</span></label>
         <div class="tag-input"><span class="tag-item">在 <span class="close">×</span></span></div>
       </div>
-      <div class="form-group">
-        <label class="form-label">标点处理</label>
-        <select class="form-select"><option selected>自动补全句末标点</option><option>标点也作为卡片参与排序</option></select>
+      <div class="proto-field">
+        <label class="proto-label">标点处理</label>
+        <select class="proto-select"><option selected>自动补全句末标点</option><option>标点也作为卡片参与排序</option></select>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">正确语序: 我+很+喜欢+吃+中国菜。遵循SVO结构: 主语(我)+程度副词(很)+动词(喜欢)+动词(吃)+宾语(中国菜)。干扰词「在」不属于此句。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">Correct order: 我+很+喜欢+吃+中国菜. SVO structure: Subject(我)+Adverb(很)+Verb(喜欢)+Verb(吃)+Object(中国菜). Distractor "在" doesn't belong.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">正确语序: 我+很+喜欢+吃+中国菜。遵循SVO结构: 主语(我)+程度副词(很)+动词(喜欢)+动词(吃)+宾语(中国菜)。干扰词「在」不属于此句。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">Correct order: 我+很+喜欢+吃+中国菜. SVO structure: Subject(我)+Adverb(很)+Verb(喜欢)+Verb(吃)+Object(中国菜). Distractor "在" doesn't belong.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="45"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="4"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="45"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

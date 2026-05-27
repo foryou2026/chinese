@@ -37,7 +37,7 @@
             <div style="text-align:center;margin:8px 0"><div class="text-sm" style="color:var(--warning)">⏱ 准备时间: 15秒</div></div>
             <div class="mic-btn">🎤</div>
             <div class="text-sm text-muted" style="text-align:center">准备好后点击录音 (60秒内)</div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">提交 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">提交 ✓</span></div>
           </div>
         </div>
       </div>
@@ -47,31 +47,31 @@
     <div class="card-header"><span class="badge green">管理端</span> 话题独白 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="口语表达" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="描述" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="话题独白" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="口语表达" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="描述" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="话题独白" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout cost"><span class="icon">💰</span><div>付费题型: STT+LLM评分。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>话题描述(中文)</label><input class="form-input" value="我最喜欢的食物" style="font-size:16px"></div>
-      <div class="form-group"><label class="form-label">话题描述(EN)</label><input class="form-input" value="My Favorite Food"></div>
-      <div class="form-group"><label class="form-label">引导语</label><input class="form-input" value="请说说你最喜欢吃什么，为什么喜欢。"></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>话题描述(中文)</label><input class="proto-input" value="我最喜欢的食物" style="font-size:16px"></div>
+      <div class="proto-field"><label class="proto-label">话题描述(EN)</label><input class="proto-input" value="My Favorite Food"></div>
+      <div class="proto-field"><label class="proto-label">引导语</label><input class="proto-input" value="请说说你最喜欢吃什么，为什么喜欢。"></div>
       <div class="form-row">
-        <div class="form-group"><label class="form-label">准备时间(秒)</label><input class="form-input" type="number" value="15" style="width:80px"></div>
-        <div class="form-group"><label class="form-label">录音时长限制(秒)</label><input class="form-input" type="number" value="60" style="width:80px"></div>
+        <div class="proto-field"><label class="proto-label">准备时间(秒)</label><input class="proto-input" type="number" value="15" style="width:80px"></div>
+        <div class="proto-field"><label class="proto-label">录音时长限制(秒)</label><input class="proto-input" type="number" value="60" style="width:80px"></div>
       </div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>AI评分Prompt</label><textarea class="form-textarea" style="min-height:60px">评估用户关于"最喜欢的食物"的口语表达。评分: 内容完整性、逻辑性、词汇、语法、发音。</textarea></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>AI评分Prompt</label><textarea class="proto-textarea" style="min-height:60px">评估用户关于"最喜欢的食物"的口语表达。评分: 内容完整性、逻辑性、词汇、语法、发音。</textarea></div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option >HSK 2</option><option selected>HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="10"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="90"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option >中等</option><option selected>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option >HSK 2</option><option selected>HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="10"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="90"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option >中等</option><option selected>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

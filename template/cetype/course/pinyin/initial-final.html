@@ -62,47 +62,47 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>知识类型=<strong>拼音</strong>，学习形式=<strong>声韵母学习</strong>。核心配置：音素类型、IPA、发音技巧、声调音频组。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 知识类型</label><input class="form-input" value="拼音" disabled></div>
-        <div class="form-group"><label class="form-label">L2 学习形式</label><input class="form-input" value="声韵母学习" disabled></div>
-        <div class="form-group"><label class="form-label">课程编号</label><input class="form-input" value="PY-INIT-001" placeholder="自动生成"></div>
+        <div class="proto-field"><label class="proto-label">L1 知识类型</label><input class="proto-input" value="拼音" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 学习形式</label><input class="proto-input" value="声韵母学习" disabled></div>
+        <div class="proto-field"><label class="proto-label">课程编号</label><input class="proto-input" value="PY-INIT-001" placeholder="自动生成"></div>
       </div>
       <hr class="divider">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label"><span class="req">*</span>拼音类型</label><select class="form-select"><option selected>声母 (Initial)</option><option>韵母 (Final)</option><option>整体认读 (Whole Syllable)</option></select></div>
-        <div class="form-group"><label class="form-label"><span class="req">*</span>拼音值</label><input class="form-input lg" value="b" style="text-align:center;font-size:24px"></div>
-        <div class="form-group"><label class="form-label">IPA 国际音标</label><input class="form-input" value="/p/"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>拼音类型</label><select class="proto-select"><option selected>声母 (Initial)</option><option>韵母 (Final)</option><option>整体认读 (Whole Syllable)</option></select></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>拼音值</label><input class="proto-input lg" value="b" style="text-align:center;font-size:24px"></div>
+        <div class="proto-field"><label class="proto-label">IPA 国际音标</label><input class="proto-input" value="/p/"></div>
       </div>
-      <div class="form-group"><label class="form-label">所属分组</label><select class="form-select"><option selected>双唇音</option><option>唇齿音</option><option>舌尖前音</option><option>舌尖中音</option><option>舌尖后音</option><option>舌面音</option><option>舌根音</option></select></div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>发音音频</label>
+      <div class="proto-field"><label class="proto-label">所属分组</label><select class="proto-select"><option selected>双唇音</option><option>唇齿音</option><option>舌尖前音</option><option>舌尖中音</option><option>舌尖后音</option><option>舌面音</option><option>舌根音</option></select></div>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>发音音频</label>
         <div class="upload-area sm">📁 上传 MP3/WAV 或 TTS 批量生成</div>
       </div>
-      <div class="form-group">
-        <label class="form-label">发音技巧说明 <span class="hint">中英双语，对应应用端绿色提示区</span></label>
+      <div class="proto-field">
+        <label class="proto-label">发音技巧说明 <span class="hint">中英双语，对应应用端绿色提示区</span></label>
         <div class="form-row">
-          <textarea class="form-textarea">双唇紧闭，突然放开，气流不振动声带。</textarea>
-          <textarea class="form-textarea">Press lips together, release suddenly. Unaspirated.</textarea>
+          <textarea class="proto-textarea">双唇紧闭，突然放开，气流不振动声带。</textarea>
+          <textarea class="proto-textarea">Press lips together, release suddenly. Unaspirated.</textarea>
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">声调音频组 <span class="hint">每个声调各上传一个音频，对应应用端声调练习区</span></label>
+      <div class="proto-field">
+        <label class="proto-label">声调音频组 <span class="hint">每个声调各上传一个音频，对应应用端声调练习区</span></label>
         <table class="mini-table"><thead><tr><th>声调</th><th>音节</th><th>音频</th><th>示例汉字</th><th>释义(EN)</th></tr></thead>
         <tbody>
-          <tr><td>一声</td><td>bā</td><td><span class="btn btn-sm">📁 上传</span></td><td><input class="form-input" value="八" style="width:60px"></td><td><input class="form-input" value="eight" style="width:80px"></td></tr>
-          <tr><td>二声</td><td>bá</td><td><span class="btn btn-sm">📁 上传</span></td><td><input class="form-input" value="拔" style="width:60px"></td><td><input class="form-input" value="pull" style="width:80px"></td></tr>
-          <tr><td>三声</td><td>bǎ</td><td><span class="btn btn-sm">📁 上传</span></td><td><input class="form-input" value="把" style="width:60px"></td><td><input class="form-input" value="hold" style="width:80px"></td></tr>
-          <tr><td>四声</td><td>bà</td><td><span class="btn btn-sm">📁 上传</span></td><td><input class="form-input" value="爸" style="width:60px"></td><td><input class="form-input" value="father" style="width:80px"></td></tr>
+          <tr><td>一声</td><td>bā</td><td><span class="proto-btn-sm">📁 上传</span></td><td><input class="proto-input" value="八" style="width:60px"></td><td><input class="proto-input" value="eight" style="width:80px"></td></tr>
+          <tr><td>二声</td><td>bá</td><td><span class="proto-btn-sm">📁 上传</span></td><td><input class="proto-input" value="拔" style="width:60px"></td><td><input class="proto-input" value="pull" style="width:80px"></td></tr>
+          <tr><td>三声</td><td>bǎ</td><td><span class="proto-btn-sm">📁 上传</span></td><td><input class="proto-input" value="把" style="width:60px"></td><td><input class="proto-input" value="hold" style="width:80px"></td></tr>
+          <tr><td>四声</td><td>bà</td><td><span class="proto-btn-sm">📁 上传</span></td><td><input class="proto-input" value="爸" style="width:60px"></td><td><input class="proto-input" value="father" style="width:80px"></td></tr>
         </tbody></table>
       </div>
-      <div class="form-group">
-        <label class="form-label">关联韵母组合 <span class="hint">该声母可拼读的韵母</span></label>
+      <div class="proto-field">
+        <label class="proto-label">关联韵母组合 <span class="hint">该声母可拼读的韵母</span></label>
         <div class="tag-input"><span class="tag-item">a <span class="close">×</span></span><span class="tag-item">o <span class="close">×</span></span><span class="tag-item">ai <span class="close">×</span></span><span class="tag-item">ei <span class="close">×</span></span><span class="tag-item">ao <span class="close">×</span></span><span class="tag-item">an <span class="close">×</span></span><span class="tag-item">en <span class="close">×</span></span><span class="tag-item">ang <span class="close">×</span></span></div>
       </div>
       <div class="form-row">
-        <div class="form-group"><label class="form-label">排序权重</label><input class="form-input" type="number" value="1"></div>
+        <div class="proto-field"><label class="proto-label">排序权重</label><input class="proto-input" type="number" value="1"></div>
       </div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">📥 批量导入拼音表</span></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">📥 批量导入拼音表</span></div>
     </div>
   </div>
 </div>

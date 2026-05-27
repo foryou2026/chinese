@@ -36,7 +36,7 @@
               <div class="drag-chip" style="width:100%;text-align:left;display:flex;gap:8px;align-items:center"><span style="background:var(--primary);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0">B</span>你好，请问需要什么？</div>
               <div class="drag-chip" style="width:100%;text-align:left;display:flex;gap:8px;align-items:center"><span style="background:var(--error);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0">A</span>谢谢！</div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
           </div>
         </div>
       </div>
@@ -46,49 +46,49 @@
     <div class="card-header"><span class="badge green">管理端</span> 对话排序 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="排序题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="句序" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="对话排序" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="排序题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="句序" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="对话排序" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>对话排序</strong>。配置正确对话序列和角色信息，系统自动打散。</div></div>
-      <div class="form-group">
-        <label class="form-label">场景说明</label>
-        <input class="form-input" value="在餐厅点餐">
+      <div class="proto-field">
+        <label class="proto-label">场景说明</label>
+        <input class="proto-input" value="在餐厅点餐">
       </div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>正确对话序列</label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>正确对话序列</label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="form-select" style="width:60px"><option>A</option><option selected>B</option></select><input class="form-input" value="你好，请问需要什么？"></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="form-select" style="width:60px"><option selected>A</option><option>B</option></select><input class="form-input" value="你好，我要一杯咖啡。"></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="form-select" style="width:60px"><option>A</option><option selected>B</option></select><input class="form-input" value="好的，请稍等。"></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="form-select" style="width:60px"><option selected>A</option><option>B</option></select><input class="form-input" value="谢谢！"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="proto-select" style="width:60px"><option>A</option><option selected>B</option></select><input class="proto-input" value="你好，请问需要什么？"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="proto-select" style="width:60px"><option selected>A</option><option>B</option></select><input class="proto-input" value="你好，我要一杯咖啡。"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="proto-select" style="width:60px"><option>A</option><option selected>B</option></select><input class="proto-input" value="好的，请稍等。"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><select class="proto-select" style="width:60px"><option selected>A</option><option>B</option></select><input class="proto-input" value="谢谢！"></div></div></div>
           <div class="list-builder-add">+ 添加对话轮</div>
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group"><label class="form-label">角色A名称</label><input class="form-input" value="顾客"></div>
-        <div class="form-group"><label class="form-label">角色B名称</label><input class="form-input" value="服务员"></div>
+        <div class="proto-field"><label class="proto-label">角色A名称</label><input class="proto-input" value="顾客"></div>
+        <div class="proto-field"><label class="proto-label">角色B名称</label><input class="proto-input" value="服务员"></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">对话逻辑: ①B招呼"请问需要什么？" → ②A点餐"我要一杯咖啡" → ③B回应"好的，请稍等" → ④A致谢"谢谢！"。遵循服务场景的自然对话顺序。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">Dialog logic: ①B greets → ②A orders coffee → ③B acknowledges → ④A thanks. Follows natural service scenario conversation flow.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">对话逻辑: ①B招呼"请问需要什么？" → ②A点餐"我要一杯咖啡" → ③B回应"好的，请稍等" → ④A致谢"谢谢！"。遵循服务场景的自然对话顺序。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">Dialog logic: ①B greets → ②A orders coffee → ③B acknowledges → ④A thanks. Follows natural service scenario conversation flow.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="4"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="60"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

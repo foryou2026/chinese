@@ -39,7 +39,7 @@
               <div style="width:100px;height:60px;border:2px solid var(--success);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;background:#f6ffed">✓ 对</div>
               <div style="width:100px;height:60px;border:2px solid var(--border);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">✗ 错</div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box red" style="padding:12px">
               <div style="font-weight:500;color:var(--error)">✗ 错误！</div>
@@ -54,41 +54,41 @@
     <div class="card-header"><span class="badge green">管理端</span> 声调正误 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="判断题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="拼音" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="声调正误" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="判断题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="拼音" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="声调正误" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>声调正误</strong>。与拼音正误类似，但专门考察声调。标注拼音的声母韵母正确，声调可能错。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label"><span class="req">*</span>汉字</label><input class="form-input lg" value="买" style="text-align:center"></div>
-        <div class="form-group"><label class="form-label"><span class="req">*</span>标注拼音</label><input class="form-input lg" value="mài"></div>
-        <div class="form-group"><label class="form-label">正确拼音</label><input class="form-input" value="mǎi"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>汉字</label><input class="proto-input lg" value="买" style="text-align:center"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>标注拼音</label><input class="proto-input lg" value="mài"></div>
+        <div class="proto-field"><label class="proto-label">正确拼音</label><input class="proto-input" value="mǎi"></div>
       </div>
-            <div class="form-group">
-        <label class="form-label"><span class="req">*</span>正确判断</label>
-        <select class="form-select" style="width:120px"><option>对 ✓</option><option selected>错 ✗</option></select>
+            <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>正确判断</label>
+        <select class="proto-select" style="width:120px"><option>对 ✓</option><option selected>错 ✗</option></select>
       </div>
-      <div class="form-group"><label class="form-label">错误说明</label><textarea class="form-textarea">「买」是第三声 mǎi，不是第四声。mǎi=买 vs mài=卖。</textarea></div>
+      <div class="proto-field"><label class="proto-label">错误说明</label><textarea class="proto-textarea">「买」是第三声 mǎi，不是第四声。mǎi=买 vs mài=卖。</textarea></div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「买」正确读音 mǎi (第三声)，标注为 mài (第四声) 是错误的。注意区分: mǎi=买(buy) vs mài=卖(sell)，声调不同含义完全不同。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"买" correct tone: mǎi (3rd tone). Labeled as mài (4th tone) is wrong. Key distinction: mǎi=buy vs mài=sell — different tones, completely different meanings.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「买」正确读音 mǎi (第三声)，标注为 mài (第四声) 是错误的。注意区分: mǎi=买(buy) vs mài=卖(sell)，声调不同含义完全不同。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">"买" correct tone: mǎi (3rd tone). Labeled as mài (4th tone) is wrong. Key distinction: mǎi=buy vs mài=sell — different tones, completely different meanings.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="20"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

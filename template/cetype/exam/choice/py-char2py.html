@@ -54,7 +54,7 @@
               <div class="option-item"><span class="letter">C</span><span style="font-size:18px">xuě</span></div>
               <div class="option-item"><span class="letter">D</span><span style="font-size:18px">xuè</span></div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
             <hr class="divider">
             <!-- 元素5: 答案解析 → 管理端: 答案解析(中英) -->
             <div class="highlight-box green">
@@ -73,37 +73,37 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题型=选择题, 知识类型=拼音, 题目类型=<strong>汉字选拼音</strong>。题干为汉字展示，选项为拼音字符串，核心干扰维度是<strong>声调差异</strong>。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="选择题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="拼音" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="汉字选拼音" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="选择题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="拼音" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="汉字选拼音" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>题干汉字 <span class="hint">展示给用户的目标汉字/词语，应用端以72px大号居中显示</span></label>
-        <input class="form-input lg" value="学" placeholder="输入单字或词语" style="text-align:center">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>题干汉字 <span class="hint">展示给用户的目标汉字/词语，应用端以72px大号居中显示</span></label>
+        <input class="proto-input lg" value="学" placeholder="输入单字或词语" style="text-align:center">
       </div>
-      <div class="form-group">
-        <label class="form-label">题干音频 <span class="hint">对应应用端的「🔊 听发音」按钮，留空则不显示该按钮</span></label>
+      <div class="proto-field">
+        <label class="proto-label">题干音频 <span class="hint">对应应用端的「🔊 听发音」按钮，留空则不显示该按钮</span></label>
         <div class="upload-area sm">📁 上传音频 或 点击「TTS生成」自动合成</div>
-        <div style="margin-top:6px"><span class="btn btn-sm">🤖 TTS生成</span></div>
+        <div style="margin-top:6px"><span class="proto-btn-sm">🤖 TTS生成</span></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>拼音选项 <span class="hint">勾选正确答案，干扰项应为同音异调/近音混淆</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>拼音选项 <span class="hint">勾选正确答案，干扰项应为同音异调/近音混淆</span></label>
         <div class="list-builder">
           <div class="list-builder-item">
             <input type="radio" name="py1" style="margin-top:6px">
             <div class="content" style="display:flex;gap:8px;align-items:center">
               <span style="width:20px;font-weight:500">A</span>
-              <input class="form-input" value="xuē" style="flex:1">
-              <select class="form-select" style="width:100px"><option selected>声调干扰</option><option>近音混淆</option><option>拼写干扰</option></select>
+              <input class="proto-input" value="xuē" style="flex:1">
+              <select class="proto-select" style="width:100px"><option selected>声调干扰</option><option>近音混淆</option><option>拼写干扰</option></select>
             </div>
           </div>
           <div class="list-builder-item">
             <input type="radio" name="py1" checked style="margin-top:6px">
             <div class="content" style="display:flex;gap:8px;align-items:center">
               <span style="width:20px;font-weight:500;color:var(--success)">B</span>
-              <input class="form-input" value="xué" style="flex:1;border-color:var(--success)">
+              <input class="proto-input" value="xué" style="flex:1;border-color:var(--success)">
               <span class="text-xs" style="color:var(--success)">✓ 正确答案</span>
             </div>
           </div>
@@ -111,23 +111,23 @@
             <input type="radio" name="py1" style="margin-top:6px">
             <div class="content" style="display:flex;gap:8px;align-items:center">
               <span style="width:20px;font-weight:500">C</span>
-              <input class="form-input" value="xuě" style="flex:1">
-              <select class="form-select" style="width:100px"><option selected>声调干扰</option></select>
+              <input class="proto-input" value="xuě" style="flex:1">
+              <select class="proto-select" style="width:100px"><option selected>声调干扰</option></select>
             </div>
           </div>
           <div class="list-builder-item">
             <input type="radio" name="py1" style="margin-top:6px">
             <div class="content" style="display:flex;gap:8px;align-items:center">
               <span style="width:20px;font-weight:500">D</span>
-              <input class="form-input" value="xuè" style="flex:1">
-              <select class="form-select" style="width:100px"><option selected>声调干扰</option></select>
+              <input class="proto-input" value="xuè" style="flex:1">
+              <select class="proto-select" style="width:100px"><option selected>声调干扰</option></select>
             </div>
           </div>
           <div class="list-builder-add">+ 添加选项</div>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">干扰项生成策略 <span class="hint">AI批量出题时使用</span></label>
+      <div class="proto-field">
+        <label class="proto-label">干扰项生成策略 <span class="hint">AI批量出题时使用</span></label>
         <div style="display:flex;flex-wrap:wrap;gap:8px">
           <label class="text-sm"><input type="checkbox" checked> 同音异调(声调替换)</label>
           <label class="text-sm"><input type="checkbox" checked> 近音混淆(zh/z, sh/s, ch/c)</label>
@@ -136,24 +136,24 @@
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析 <span class="hint">对应应用端答题后的解析区域</span></label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析 <span class="hint">对应应用端答题后的解析区域</span></label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「学」读 xué (第二声)，注意与「雪」(xuě) 区分。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"学" is xué (2nd tone). Don't confuse with "雪" (xuě).</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「学」读 xué (第二声)，注意与「雪」(xuě) 区分。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">"学" is xué (2nd tone). Don't confuse with "雪" (xuě).</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK等级</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option><option>HSK 4</option><option>HSK 5</option><option>HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK等级</label><select class="proto-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option><option>HSK 4</option><option>HSK 5</option><option>HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="20"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

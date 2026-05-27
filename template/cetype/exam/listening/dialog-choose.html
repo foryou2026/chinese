@@ -29,14 +29,14 @@
           <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
           <div class="app-content">
             <div class="q-instruction">听对话，回答问题 Listen to dialog and answer</div>
-            <div style="text-align:center;padding:16px 0"><div class="audio-btn big">🔊 播放对话</div><div style="margin-top:8px;display:flex;gap:8px;justify-content:center"><span class="btn btn-sm">🐢 慢速</span><span class="btn btn-sm">🔁 重播</span></div></div>
+            <div style="text-align:center;padding:16px 0"><div class="audio-btn big">🔊 播放对话</div><div style="margin-top:8px;display:flex;gap:8px;justify-content:center"><span class="proto-btn-sm">🐢 慢速</span><span class="proto-btn-sm">🔁 重播</span></div></div>
             <div class="highlight-box gray" style="padding:12px;margin:8px 0"><div class="text-sm" style="font-weight:500">第1题 / 共2题:</div><div style="margin-top:4px">他们在讨论什么？</div></div>
             <div class="option-list">
               <div class="option-item"><span class="letter">A</span>天气</div>
               <div class="option-item selected"><span class="letter">B</span>周末计划</div>
               <div class="option-item"><span class="letter">C</span>工作</div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">下一题 →</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">下一题 →</span></div>
           </div>
         </div>
       </div>
@@ -46,43 +46,43 @@
     <div class="card-header"><span class="badge green">管理端</span> 短对话选择 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="听力题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="对话" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="短对话选择" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="听力题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="对话" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="短对话选择" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>短对话选择</strong>。一段对话音频+多道选择题(复合题)。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>对话音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
-      <div class="form-group"><label class="form-label">慢速音频</label><div class="upload-area sm">🐢 慢速版</div></div>
-      <div class="form-group"><label class="form-label">对话脚本(内部)</label><textarea class="form-textarea">A: 这个周末你有什么计划？
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>对话音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="proto-field"><label class="proto-label">慢速音频</label><div class="upload-area sm">🐢 慢速版</div></div>
+      <div class="proto-field"><label class="proto-label">对话脚本(内部)</label><textarea class="proto-textarea">A: 这个周末你有什么计划？
 B: 我想去爬山，你呢？
 A: 我要在家休息。</textarea></div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label"><span class="req">*</span>子题列表 <span class="hint">每道子题独立配置</span></label>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>子题列表 <span class="hint">每道子题独立配置</span></label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content"><div class="text-sm" style="font-weight:500;margin-bottom:4px">子题1:</div><input class="form-input" value="他们在讨论什么？" style="margin-bottom:4px"><div class="text-xs text-muted">选项: A.天气 B.周末计划✓ C.工作</div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="text-sm" style="font-weight:500;margin-bottom:4px">子题2:</div><input class="form-input" value="女生周末想做什么？" style="margin-bottom:4px"><div class="text-xs text-muted">选项: A.在家休息 B.去爬山✓ C.去旅行</div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="text-sm" style="font-weight:500;margin-bottom:4px">子题1:</div><input class="proto-input" value="他们在讨论什么？" style="margin-bottom:4px"><div class="text-xs text-muted">选项: A.天气 B.周末计划✓ C.工作</div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="text-sm" style="font-weight:500;margin-bottom:4px">子题2:</div><input class="proto-input" value="女生周末想做什么？" style="margin-bottom:4px"><div class="text-xs text-muted">选项: A.在家休息 B.去爬山✓ C.去旅行</div></div></div>
           <div class="list-builder-add">+ 添加子题</div>
         </div></div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">子题1: 对话关键词「周末」「计划」「爬山」，讨论的是周末计划。子题2: 女生(B)说「想去爬山」，答案为B。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">Q1: Keywords "weekend", "plan", "hiking" → discussing weekend plans. Q2: Speaker B says "want to go hiking" → answer B.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">子题1: 对话关键词「周末」「计划」「爬山」，讨论的是周末计划。子题2: 女生(B)说「想去爬山」，答案为B。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">Q1: Keywords "weekend", "plan", "hiking" → discussing weekend plans. Q2: Speaker B says "want to go hiking" → answer B.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="4"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="60"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

@@ -64,7 +64,7 @@
                 <span class="drag-chip" style="font-size:20px;padding:10px 18px">巴</span>
               </div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！女 + 子 = 好</div>
@@ -81,50 +81,50 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>偏旁补全</strong>。本L3独有配置：<strong>目标汉字拆解</strong>(已知部分+缺失部分)、<strong>候选部件</strong>、<strong>结构说明</strong>。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="汉字" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="偏旁补全" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="填空题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="偏旁补全" disabled></div>
       </div>
       <hr class="divider">
       <div class="form-row t3">
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>目标汉字</label>
-          <input class="form-input lg" value="好" style="text-align:center">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>目标汉字</label>
+          <input class="proto-input lg" value="好" style="text-align:center">
         </div>
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>拼音</label>
-          <input class="form-input" value="hǎo">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>拼音</label>
+          <input class="proto-input" value="hǎo">
         </div>
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>释义(EN)</label>
-          <input class="form-input" value="good; fine">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>释义(EN)</label>
+          <input class="proto-input" value="good; fine">
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>汉字拆解</label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>汉字拆解</label>
       </div>
       <div class="form-row t3">
-        <div class="form-group">
-          <label class="form-label">结构类型</label>
-          <select class="form-select">
+        <div class="proto-field">
+          <label class="proto-label">结构类型</label>
+          <select class="proto-select">
             <option selected>左右结构 (⿰)</option>
             <option>上下结构 (⿱)</option>
             <option>包围结构 (⿴/⿵/⿶)</option>
             <option>半包围 (⿷/⿸/⿹)</option>
           </select>
         </div>
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>已知部分(展示给用户)</label>
-          <input class="form-input lg" value="女" style="text-align:center">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>已知部分(展示给用户)</label>
+          <input class="proto-input lg" value="女" style="text-align:center">
         </div>
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>缺失部分(正确答案)</label>
-          <input class="form-input lg" value="子" style="text-align:center">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>缺失部分(正确答案)</label>
+          <input class="proto-input lg" value="子" style="text-align:center">
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">候选部件 <span class="hint">展示给用户的干扰选项(含正确答案)</span></label>
+      <div class="proto-field">
+        <label class="proto-label">候选部件 <span class="hint">展示给用户的干扰选项(含正确答案)</span></label>
         <div><span class="switch on"></span> <span class="text-sm text-muted">开启候选部件(降低难度)</span></div>
         <div class="tag-input mt-8">
           <span class="tag-item" style="border-color:var(--success)">子 (正确) <span class="close">×</span></span>
@@ -134,24 +134,24 @@
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">拆解说明 <span class="hint">答案解析中的汉字构造知识</span></label>
+      <div class="proto-field">
+        <label class="proto-label">拆解说明 <span class="hint">答案解析中的汉字构造知识</span></label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「好」= 女 + 子，会意字，古义为"女子在身旁，即美好"。左右结构。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"好" = 女(woman) + 子(child). Ideographic: a woman with a child = "good".</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「好」= 女 + 子，会意字，古义为"女子在身旁，即美好"。左右结构。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">"好" = 女(woman) + 子(child). Ideographic: a woman with a child = "good".</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="25"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="3"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="25"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

@@ -33,9 +33,9 @@
               <div style="font-size:16px;font-weight:500">📝 题目: 我的周末</div>
               <div class="text-sm mt-8">要求: 写80-120字，描述你通常周末做什么。</div>
             </div>
-            <textarea class="form-textarea" placeholder="在这里写作..." style="font-size:16px;min-height:200px;line-height:2">我的周末通常很忙。星期六早上我去超市买菜，然后在家做饭。下午我喜欢看书或者看电影。星期天我会去公园跑步。</textarea>
+            <textarea class="proto-textarea" placeholder="在这里写作..." style="font-size:16px;min-height:200px;line-height:2">我的周末通常很忙。星期六早上我去超市买菜，然后在家做饭。下午我喜欢看书或者看电影。星期天我会去公园跑步。</textarea>
             <div style="display:flex;justify-content:space-between;margin:8px 0"><span class="text-sm text-muted">字数: 58/80-120</span><span class="text-sm" style="color:var(--warning)">⚠ 未达到最低字数</span></div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">提交写作 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">提交写作 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green"><div style="font-weight:500;color:var(--success)">AI批改: 82分</div><div class="mt-8 text-sm">内容: 85 · 语法: 80 · 词汇: 78 · 结构: 85<br><span class="text-muted">建议: 可以增加更多细节描述感受。</span></div></div>
           </div>
@@ -47,40 +47,40 @@
     <div class="card-header"><span class="badge green">管理端</span> 命题写作 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="写作题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="命题" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="命题写作" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="写作题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="命题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="命题写作" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout cost"><span class="icon">💰</span><div>付费题型: LLM批改+反馈，<strong>~$0.008/次</strong>。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>题目(中文)</label><input class="form-input" value="我的周末" style="font-size:16px"></div>
-      <div class="form-group"><label class="form-label">题目(EN)</label><input class="form-input" value="My Weekend"></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>写作要求</label><input class="form-input" value="写80-120字，描述你通常周末做什么。"></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>题目(中文)</label><input class="proto-input" value="我的周末" style="font-size:16px"></div>
+      <div class="proto-field"><label class="proto-label">题目(EN)</label><input class="proto-input" value="My Weekend"></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>写作要求</label><input class="proto-input" value="写80-120字，描述你通常周末做什么。"></div>
       <div class="form-row">
-        <div class="form-group"><label class="form-label">最少字数</label><input class="form-input" type="number" value="80" style="width:80px"></div>
-        <div class="form-group"><label class="form-label">最多字数</label><input class="form-input" type="number" value="120" style="width:80px"></div>
+        <div class="proto-field"><label class="proto-label">最少字数</label><input class="proto-input" type="number" value="80" style="width:80px"></div>
+        <div class="proto-field"><label class="proto-label">最多字数</label><input class="proto-input" type="number" value="120" style="width:80px"></div>
       </div>
-      <div class="form-group"><label class="form-label">范文</label><textarea class="form-textarea" style="min-height:80px">我的周末通常很充实。星期六上午我会去超市买菜，回家做一顿美味的午饭。下午我喜欢坐在阳台上看书。星期天早上我去公园跑步锻炼，下午和朋友一起喝咖啡聊天。我觉得周末应该既休息又充实。</textarea></div>
+      <div class="proto-field"><label class="proto-label">范文</label><textarea class="proto-textarea" style="min-height:80px">我的周末通常很充实。星期六上午我会去超市买菜，回家做一顿美味的午饭。下午我喜欢坐在阳台上看书。星期天早上我去公园跑步锻炼，下午和朋友一起喝咖啡聊天。我觉得周末应该既休息又充实。</textarea></div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label"><span class="req">*</span>AI批改Prompt</label><textarea class="form-textarea" style="min-height:60px">批改关于"我的周末"的写作。评分维度: 内容完整性(是否描述了周末活动)、语法正确性、词汇丰富度、结构逻辑。给出具体修改建议。</textarea></div>
-      <div class="form-group"><label class="form-label">评分维度+权重</label>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>AI批改Prompt</label><textarea class="proto-textarea" style="min-height:60px">批改关于"我的周末"的写作。评分维度: 内容完整性(是否描述了周末活动)、语法正确性、词汇丰富度、结构逻辑。给出具体修改建议。</textarea></div>
+      <div class="proto-field"><label class="proto-label">评分维度+权重</label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="内容"><input class="form-input" type="number" value="30" style="width:60px"><span class="text-xs">%</span></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="语法"><input class="form-input" type="number" value="30" style="width:60px"><span class="text-xs">%</span></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="词汇"><input class="form-input" type="number" value="20" style="width:60px"><span class="text-xs">%</span></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="结构"><input class="form-input" type="number" value="20" style="width:60px"><span class="text-xs">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="内容"><input class="proto-input" type="number" value="30" style="width:60px"><span class="text-xs">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="语法"><input class="proto-input" type="number" value="30" style="width:60px"><span class="text-xs">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="词汇"><input class="proto-input" type="number" value="20" style="width:60px"><span class="text-xs">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="结构"><input class="proto-input" type="number" value="20" style="width:60px"><span class="text-xs">%</span></div></div></div>
         </div></div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option >HSK 2</option><option selected>HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="10"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="600"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option >中等</option><option selected>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option >HSK 2</option><option selected>HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="10"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="600"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option >中等</option><option selected>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

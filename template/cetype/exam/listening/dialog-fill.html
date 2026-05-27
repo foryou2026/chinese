@@ -38,7 +38,7 @@
                 <tr><td>地点</td><td><input class="fill-blank wide" placeholder="______" style="font-size:14px"></td></tr>
               </table>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
           </div>
         </div>
       </div>
@@ -48,45 +48,45 @@
     <div class="card-header"><span class="badge green">管理端</span> 短对话填空 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="听力题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="对话" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="短对话填空" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="听力题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="对话" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="短对话填空" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>短对话填空</strong>。对话音频+信息表格填空。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>对话音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
-      <div class="form-group"><label class="form-label">对话脚本</label><textarea class="form-textarea">A: 请问您贵姓？
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>对话音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="proto-field"><label class="proto-label">对话脚本</label><textarea class="proto-textarea">A: 请问您贵姓？
 B: 我姓王。
 A: 王先生，您预约的是几点？
 B: 下午三点，在会议室。</textarea></div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label"><span class="req">*</span>填空字段 <span class="hint">每字段支持多个可接受答案，用「/」分隔</span></label>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>填空字段 <span class="hint">每字段支持多个可接受答案，用「/」分隔</span></label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="姓名" style="width:80px"><input class="form-input" value="王/王先生/小王" style="border-color:var(--success);flex:1"></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="时间" style="width:80px"><input class="form-input" value="下午三点/3点/15:00" style="border-color:var(--success);flex:1"></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="地点" style="width:80px"><input class="form-input" value="会议室" style="border-color:var(--success);flex:1"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="姓名" style="width:80px"><input class="proto-input" value="王/王先生/小王" style="border-color:var(--success);flex:1"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="时间" style="width:80px"><input class="proto-input" value="下午三点/3点/15:00" style="border-color:var(--success);flex:1"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="地点" style="width:80px"><input class="proto-input" value="会议室" style="border-color:var(--success);flex:1"></div></div></div>
           <div class="list-builder-add">+ 添加字段</div>
         </div></div>
-      <div class="form-group"><label class="form-label">匹配策略</label><select class="form-select"><option selected>宽松匹配(忽略标点空格)</option><option>精确匹配答案池</option></select></div>
+      <div class="proto-field"><label class="proto-label">匹配策略</label><select class="proto-select"><option selected>宽松匹配(忽略标点空格)</option><option>精确匹配答案池</option></select></div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">姓名:「王/王先生」— 对话中B说"我姓王"。时间:「下午三点」— B说"预约的是下午三点"。地点:「会议室」— B说"在会议室"。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">Name: "王" — B says "my surname is Wang." Time: "3pm" — B says "appointment at 3pm." Place: "meeting room" — B says "in the meeting room."</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">姓名:「王/王先生」— 对话中B说"我姓王"。时间:「下午三点」— B说"预约的是下午三点"。地点:「会议室」— B说"在会议室"。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">Name: "王" — B says "my surname is Wang." Time: "3pm" — B says "appointment at 3pm." Place: "meeting room" — B says "in the meeting room."</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="4"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="60"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

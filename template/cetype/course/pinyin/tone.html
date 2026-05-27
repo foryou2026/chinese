@@ -69,33 +69,33 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>声调训练</strong>。核心配置：基础音节、四声音频组、声调例字对比。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 知识类型</label><input class="form-input" value="拼音" disabled></div>
-        <div class="form-group"><label class="form-label">L2 学习形式</label><input class="form-input" value="声调训练" disabled></div>
-        <div class="form-group"><label class="form-label"><span class="req">*</span>基础音节</label><input class="form-input lg" value="ma" style="text-align:center;font-size:20px"></div>
+        <div class="proto-field"><label class="proto-label">L1 知识类型</label><input class="proto-input" value="拼音" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 学习形式</label><input class="proto-input" value="声调训练" disabled></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>基础音节</label><input class="proto-input lg" value="ma" style="text-align:center;font-size:20px"></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>四声对比数据 <span class="hint">每声调的音频+例字+释义</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>四声对比数据 <span class="hint">每声调的音频+例字+释义</span></label>
         <table class="mini-table"><thead><tr><th>声调</th><th>带调音节</th><th>音频</th><th>例字</th><th>中文释义</th><th>English</th></tr></thead>
         <tbody>
-          <tr><td>一声 ˉ</td><td>mā</td><td><span class="btn btn-sm">📁</span></td><td><input class="form-input" value="妈" style="width:50px"></td><td><input class="form-input" value="母亲" style="width:60px"></td><td><input class="form-input" value="mother" style="width:70px"></td></tr>
-          <tr><td>二声 ´</td><td>má</td><td><span class="btn btn-sm">📁</span></td><td><input class="form-input" value="麻" style="width:50px"></td><td><input class="form-input" value="麻" style="width:60px"></td><td><input class="form-input" value="hemp" style="width:70px"></td></tr>
-          <tr><td>三声 ˇ</td><td>mǎ</td><td><span class="btn btn-sm">📁</span></td><td><input class="form-input" value="马" style="width:50px"></td><td><input class="form-input" value="马匹" style="width:60px"></td><td><input class="form-input" value="horse" style="width:70px"></td></tr>
-          <tr><td>四声 `</td><td>mà</td><td><span class="btn btn-sm">📁</span></td><td><input class="form-input" value="骂" style="width:50px"></td><td><input class="form-input" value="责骂" style="width:60px"></td><td><input class="form-input" value="scold" style="width:70px"></td></tr>
+          <tr><td>一声 ˉ</td><td>mā</td><td><span class="proto-btn-sm">📁</span></td><td><input class="proto-input" value="妈" style="width:50px"></td><td><input class="proto-input" value="母亲" style="width:60px"></td><td><input class="proto-input" value="mother" style="width:70px"></td></tr>
+          <tr><td>二声 ´</td><td>má</td><td><span class="proto-btn-sm">📁</span></td><td><input class="proto-input" value="麻" style="width:50px"></td><td><input class="proto-input" value="麻" style="width:60px"></td><td><input class="proto-input" value="hemp" style="width:70px"></td></tr>
+          <tr><td>三声 ˇ</td><td>mǎ</td><td><span class="proto-btn-sm">📁</span></td><td><input class="proto-input" value="马" style="width:50px"></td><td><input class="proto-input" value="马匹" style="width:60px"></td><td><input class="proto-input" value="horse" style="width:70px"></td></tr>
+          <tr><td>四声 `</td><td>mà</td><td><span class="proto-btn-sm">📁</span></td><td><input class="proto-input" value="骂" style="width:50px"></td><td><input class="proto-input" value="责骂" style="width:60px"></td><td><input class="proto-input" value="scold" style="width:70px"></td></tr>
         </tbody></table>
       </div>
-      <div class="form-group">
-        <label class="form-label">声调曲线图 <span class="hint">可选，SVG格式</span></label>
+      <div class="proto-field">
+        <label class="proto-label">声调曲线图 <span class="hint">可选，SVG格式</span></label>
         <div class="upload-area sm">📁 上传声调曲线SVG(可选，系统有默认)</div>
       </div>
-      <div class="form-group"><label class="form-label">声调说明 <span class="hint">中英双语</span></label>
+      <div class="proto-field"><label class="proto-label">声调说明 <span class="hint">中英双语</span></label>
         <div class="form-row">
-          <textarea class="form-textarea">一声(高平)：保持高音不变；二声(升调)：从中音升到高音；三声(降升)：先降后升；四声(降调)：从高音急降。</textarea>
-          <textarea class="form-textarea">1st tone (high level): keep high pitch; 2nd (rising): mid to high; 3rd (dip): fall then rise; 4th (falling): high to low sharply.</textarea>
+          <textarea class="proto-textarea">一声(高平)：保持高音不变；二声(升调)：从中音升到高音；三声(降升)：先降后升；四声(降调)：从高音急降。</textarea>
+          <textarea class="proto-textarea">1st tone (high level): keep high pitch; 2nd (rising): mid to high; 3rd (dip): fall then rise; 4th (falling): high to low sharply.</textarea>
         </div>
       </div>
-      <div class="form-row"><div class="form-group"><label class="form-label">排序</label><input class="form-input" type="number" value="1"></div></div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">📥 批量导入声调组</span></div>
+      <div class="form-row"><div class="proto-field"><label class="proto-label">排序</label><input class="proto-input" type="number" value="1"></div></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">📥 批量导入声调组</span></div>
     </div>
   </div>
 </div>

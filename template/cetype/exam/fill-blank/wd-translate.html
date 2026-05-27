@@ -48,7 +48,7 @@
                 我 <input class="fill-blank wide" placeholder="______" style="font-size:20px"> 中国菜。
               </div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确答案: 很喜欢</div>
@@ -65,59 +65,59 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>翻译填词</strong>。与「语境补词」差异：新增<strong>完整英文句</strong>和<strong>高亮目标英文</strong>配置，英文句是核心线索。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="词语" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="翻译填词" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="填空题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="词语" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="翻译填词" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>英文完整句</label>
-        <input class="form-input" value="I really like Chinese food.">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>英文完整句</label>
+        <input class="proto-input" value="I really like Chinese food.">
       </div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>高亮英文部分 <span class="hint">对应空位的英文词/短语，应用端会高亮显示</span></label>
-        <input class="form-input" value="really like" style="border-color:var(--primary)">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>高亮英文部分 <span class="hint">对应空位的英文词/短语，应用端会高亮显示</span></label>
+        <input class="proto-input" value="really like" style="border-color:var(--primary)">
       </div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>中文句(含空位) <span class="hint">{blank} 标记空位</span></label>
-        <textarea class="form-textarea" style="font-size:16px">我 {blank} 中国菜。</textarea>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>中文句(含空位) <span class="hint">{blank} 标记空位</span></label>
+        <textarea class="proto-textarea" style="font-size:16px">我 {blank} 中国菜。</textarea>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>答案池</label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>答案池</label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="form-input" value="很喜欢" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success);white-space:nowrap">主答案</span></div></div>
-          <div class="list-builder-item"><div class="content"><input class="form-input" value="非常喜欢"></div></div>
-          <div class="list-builder-item"><div class="content"><input class="form-input" value="特别喜欢"></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="proto-input" value="很喜欢" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success);white-space:nowrap">主答案</span></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="非常喜欢"></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="特别喜欢"></div></div>
           <div class="list-builder-add">+ 添加备选答案</div>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">匹配模式</label>
-        <select class="form-select">
+      <div class="proto-field">
+        <label class="proto-label">匹配模式</label>
+        <select class="proto-select">
           <option selected>精确匹配答案池</option>
           <option>宽松匹配(忽略标点空格)</option>
         </select>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「很喜欢」= really like。「很」是程度副词，修饰「喜欢」。近义表达：非常喜欢、特别喜欢。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"很喜欢" = really like. "很" is a degree adverb modifying "喜欢". Similar: 非常喜欢, 特别喜欢.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「很喜欢」= really like。「很」是程度副词，修饰「喜欢」。近义表达：非常喜欢、特别喜欢。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">"很喜欢" = really like. "很" is a degree adverb modifying "喜欢". Similar: 非常喜欢, 特别喜欢.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 2</option><option>HSK 3</option><option>HSK 4</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 2</option><option>HSK 3</option><option>HSK 4</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="3"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="30"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

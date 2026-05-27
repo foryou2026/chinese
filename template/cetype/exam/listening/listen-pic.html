@@ -48,7 +48,7 @@
                 <div class="text-sm" style="margin-top:4px;font-weight:600">D</div>
               </div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
           </div>
         </div>
       </div>
@@ -58,44 +58,44 @@
     <div class="card-header"><span class="badge green">管理端</span> 听音选图 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="听力题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="单句" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="听音选图" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="听力题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="单句" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="听音选图" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>HSK 1-3级核心听力题型。播放句子/对话音频，考生从4-6张图片中选择匹配的图片。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
-      <div class="form-group"><label class="form-label">音频脚本(内部)</label><input class="form-input" value="我每天坐公交车去上班。"></div>
-      <div class="form-group"><label class="form-label">慢速音频</label><div class="upload-area">🎧 上传慢速版</div></div>
-      <div class="form-group"><label class="form-label">播放次数限制</label><input class="form-input" type="number" value="3" style="width:80px"></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="proto-field"><label class="proto-label">音频脚本(内部)</label><input class="proto-input" value="我每天坐公交车去上班。"></div>
+      <div class="proto-field"><label class="proto-label">慢速音频</label><div class="upload-area">🎧 上传慢速版</div></div>
+      <div class="proto-field"><label class="proto-label">播放次数限制</label><input class="proto-input" type="number" value="3" style="width:80px"></div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label"><span class="req">*</span>图片选项</label>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>图片选项</label>
         <div class="list-builder">
           <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="c1"><span style="font-weight:600">A</span><div class="upload-area" style="flex:1;padding:4px;font-size:11px">📷 上传图片A</div></div></div>
           <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="c1"><span style="font-weight:600">B</span><div class="upload-area" style="flex:1;padding:4px;font-size:11px">📷 上传图片B</div></div></div>
           <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="c1" checked><span style="font-weight:600;color:var(--success)">C ✓</span><div class="upload-area" style="flex:1;padding:4px;font-size:11px;border-color:var(--success)">📷 公交车图片</div></div></div>
           <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="c1"><span style="font-weight:600">D</span><div class="upload-area" style="flex:1;padding:4px;font-size:11px">📷 上传图片D</div></div></div>
         </div></div>
-      <div class="form-group"><label class="form-label">图片组模式</label><select class="form-select"><option selected>独立模式 (每题独立图片)</option><option>共享模式 (一组图片对应多道题)</option></select></div>
+      <div class="proto-field"><label class="proto-label">图片组模式</label><select class="proto-select"><option selected>独立模式 (每题独立图片)</option><option>共享模式 (一组图片对应多道题)</option></select></div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">音频说「我每天坐公交车去上班」，关键词「公交车」对应图片C。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">Audio says "I take the bus to work every day." Key word "公交车" (bus) matches picture C.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">音频说「我每天坐公交车去上班」，关键词「公交车」对应图片C。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">Audio says "I take the bus to work every day." Key word "公交车" (bus) matches picture C.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option><option>中等</option><option>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="4"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="30"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option selected>简单</option><option>中等</option><option>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

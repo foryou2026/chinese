@@ -53,7 +53,7 @@
                 <span class="drag-chip">唱歌</span>
               </div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确答案: 跑步</div>
@@ -69,31 +69,31 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>语境补词</strong>。核心配置：<strong>语境句+空位标记</strong>、<strong>多词答案池(含近义词)</strong>、<strong>候选提示词</strong>开关。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="词语" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="语境补词" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="填空题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="词语" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="语境补词" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>语境句 <span class="hint">{blank} 标记空位</span></label>
-        <textarea class="form-textarea" style="font-size:16px">他每天早上都去公园 {blank} 。</textarea>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>语境句 <span class="hint">{blank} 标记空位</span></label>
+        <textarea class="proto-textarea" style="font-size:16px">他每天早上都去公园 {blank} 。</textarea>
       </div>
-      <div class="form-group">
-        <label class="form-label">英文翻译</label>
-        <input class="form-input" value="He goes to the park every morning to ______.">
+      <div class="proto-field">
+        <label class="proto-label">英文翻译</label>
+        <input class="proto-input" value="He goes to the park every morning to ______.">
       </div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>答案池 <span class="hint">所有可接受的答案，第一个为主答案</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>答案池 <span class="hint">所有可接受的答案，第一个为主答案</span></label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="form-input" value="跑步" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success);white-space:nowrap">主答案</span></div></div>
-          <div class="list-builder-item"><div class="content"><input class="form-input" value="锻炼"></div></div>
-          <div class="list-builder-item"><div class="content"><input class="form-input" value="运动"></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="proto-input" value="跑步" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success);white-space:nowrap">主答案</span></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="锻炼"></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="运动"></div></div>
           <div class="list-builder-add">+ 添加备选答案</div>
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">候选提示词 <span class="hint">对应应用端「💡 候选词」区域</span></label>
+      <div class="proto-field">
+        <label class="proto-label">候选提示词 <span class="hint">对应应用端「💡 候选词」区域</span></label>
         <div><span class="switch on"></span> <span class="text-sm text-muted">开启候选提示(降低难度)</span></div>
         <div class="tag-input mt-8">
           <span class="tag-item">跑步 <span class="close">×</span></span>
@@ -102,36 +102,36 @@
           <span class="tag-item">唱歌 <span class="close">×</span></span>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">输入联想</label>
+      <div class="proto-field">
+        <label class="proto-label">输入联想</label>
         <div><span class="switch on"></span> <span class="text-sm text-muted">打字时自动联想候选词</span></div>
       </div>
-      <div class="form-group">
-        <label class="form-label">匹配模式</label>
-        <select class="form-select">
+      <div class="proto-field">
+        <label class="proto-label">匹配模式</label>
+        <select class="proto-select">
           <option selected>精确匹配答案池</option>
           <option>宽松匹配(忽略标点空格)</option>
         </select>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「跑步」是最常见的搭配，「去公园跑步」是固定用法。也可说「锻炼」「运动」。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"跑步" (jogging) is the most common collocation. "锻炼" and "运动" are also acceptable.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「跑步」是最常见的搭配，「去公园跑步」是固定用法。也可说「锻炼」「运动」。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">"跑步" (jogging) is the most common collocation. "锻炼" and "运动" are also acceptable.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 2</option><option>HSK 3</option><option>HSK 4</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 2</option><option>HSK 3</option><option>HSK 4</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="3"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="30"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI扩充答案池</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI扩充答案池</span>
       </div>
     </div>
   </div>

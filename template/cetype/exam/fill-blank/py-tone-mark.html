@@ -68,7 +68,7 @@
                 <span class="label">轻声</span>
               </div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！第三声</div>
@@ -85,23 +85,23 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>声调标注</strong>。与「汉字写全拼」差异：无需用户拼写拼音，<strong>预填无调字母</strong>，只考声调判断。管理端需配置<strong>无调拼音</strong>和<strong>正确声调</strong>。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="拼音" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="声调标注" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="填空题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="拼音" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="声调标注" disabled></div>
       </div>
       <hr class="divider">
       <div class="form-row t3">
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>题干汉字</label>
-          <input class="form-input lg" value="马" style="text-align:center">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>题干汉字</label>
+          <input class="proto-input lg" value="马" style="text-align:center">
         </div>
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>无调拼音字母 <span class="hint">预填给用户看</span></label>
-          <input class="form-input lg" value="ma" style="text-align:center">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>无调拼音字母 <span class="hint">预填给用户看</span></label>
+          <input class="proto-input lg" value="ma" style="text-align:center">
         </div>
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>正确声调</label>
-          <select class="form-select" style="font-size:16px">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>正确声调</label>
+          <select class="proto-select" style="font-size:16px">
             <option>第一声 (ˉ)</option>
             <option>第二声 (ˊ)</option>
             <option selected>第三声 (ˇ)</option>
@@ -110,43 +110,43 @@
           </select>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">题干音频</label>
+      <div class="proto-field">
+        <label class="proto-label">题干音频</label>
         <div class="upload-area sm">📁 上传音频</div>
-        <div style="margin-top:6px"><span class="btn btn-sm">🤖 TTS生成</span></div>
+        <div style="margin-top:6px"><span class="proto-btn-sm">🤖 TTS生成</span></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">声调输入方式 <span class="hint">对应应用端的声调交互方式</span></label>
-        <select class="form-select">
+      <div class="proto-field">
+        <label class="proto-label">声调输入方式 <span class="hint">对应应用端的声调交互方式</span></label>
+        <select class="proto-select">
           <option selected>声调格选择(5个框: 1/2/3/4/轻)</option>
           <option>数字输入(用户输入1-4或0)</option>
           <option>符号输入(用户输入 ˉ ˊ ˇ ˋ)</option>
         </select>
       </div>
-      <div class="form-group">
-        <label class="form-label">显示轻声选项</label>
+      <div class="proto-field">
+        <label class="proto-label">显示轻声选项</label>
         <div><span class="switch on"></span> <span class="text-sm text-muted">包含轻声作为第5个选项</span></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「马」(mǎ) 是第三声，注意区分：mā(妈) má(麻) mǎ(马) mà(骂) ma(吗)。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"马" (mǎ) is 3rd tone. Compare: mā(mom) má(hemp) mǎ(horse) mà(scold) ma(question).</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「马」(mǎ) 是第三声，注意区分：mā(妈) má(麻) mǎ(马) mà(骂) ma(吗)。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">"马" (mǎ) is 3rd tone. Compare: mā(mom) má(hemp) mǎ(horse) mà(scold) ma(question).</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="15"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option><option>中等</option><option>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="15"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option selected>简单</option><option>中等</option><option>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

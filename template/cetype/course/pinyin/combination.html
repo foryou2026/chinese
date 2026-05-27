@@ -59,13 +59,13 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>拼读组合表</strong>。配置声母×韵母的有效组合+音频矩阵+特殊规则。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 知识类型</label><input class="form-input" value="拼音" disabled></div>
-        <div class="form-group"><label class="form-label">L2 学习形式</label><input class="form-input" value="拼读组合表" disabled></div>
-        <div class="form-group"><label class="form-label">默认声调</label><select class="form-select"><option selected>一声</option><option>二声</option><option>三声</option><option>四声</option></select></div>
+        <div class="proto-field"><label class="proto-label">L1 知识类型</label><input class="proto-input" value="拼音" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 学习形式</label><input class="proto-input" value="拼读组合表" disabled></div>
+        <div class="proto-field"><label class="proto-label">默认声调</label><select class="proto-select"><option selected>一声</option><option>二声</option><option>三声</option><option>四声</option></select></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>有效拼读组合 <span class="hint">勾选有效的声母+韵母组合</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>有效拼读组合 <span class="hint">勾选有效的声母+韵母组合</span></label>
         <div style="overflow-x:auto"><table class="mini-table"><thead><tr><th></th><th>a</th><th>o</th><th>e</th><th>i</th><th>u</th><th>ü</th></tr></thead>
         <tbody>
           <tr><td><strong>b</strong></td><td><input type="checkbox" checked></td><td><input type="checkbox" checked></td><td><input type="checkbox"></td><td><input type="checkbox" checked></td><td><input type="checkbox" checked></td><td><input type="checkbox"></td></tr>
@@ -74,20 +74,20 @@
         </tbody></table></div>
         <div class="text-sm text-muted mt-8">仅展示部分，完整表包含23声母×39韵母</div>
       </div>
-      <div class="form-group">
-        <label class="form-label">组合音频 <span class="hint">批量TTS或逐个上传</span></label>
-        <div class="btn-group"><span class="btn">🤖 TTS批量生成全部组合音频</span><span class="btn">📥 ZIP打包上传</span></div>
+      <div class="proto-field">
+        <label class="proto-label">组合音频 <span class="hint">批量TTS或逐个上传</span></label>
+        <div class="btn-group"><span class="proto-btn-secondary">🤖 TTS批量生成全部组合音频</span><span class="proto-btn-secondary">📥 ZIP打包上传</span></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">特殊拼读规则 <span class="hint">对应应用端规则提示</span></label>
+      <div class="proto-field">
+        <label class="proto-label">特殊拼读规则 <span class="hint">对应应用端规则提示</span></label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content"><input class="form-input" value="j/q/x + ü → 去掉两点写作 ju/qu/xu" style="margin-bottom:4px"><input class="form-input" value="When ü follows j/q/x, the dots are dropped." placeholder="English"></div><div class="actions"><span class="btn btn-sm">🗑</span></div></div>
-          <div class="list-builder-item"><div class="content"><input class="form-input" value="ü 单独成音节时写作 yu"><input class="form-input" value="ü alone is written as yu" placeholder="English"></div><div class="actions"><span class="btn btn-sm">🗑</span></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="j/q/x + ü → 去掉两点写作 ju/qu/xu" style="margin-bottom:4px"><input class="proto-input" value="When ü follows j/q/x, the dots are dropped." placeholder="English"></div><div class="actions"><span class="proto-btn-sm">🗑</span></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="ü 单独成音节时写作 yu"><input class="proto-input" value="ü alone is written as yu" placeholder="English"></div><div class="actions"><span class="proto-btn-sm">🗑</span></div></div>
           <div class="list-builder-add">+ 添加规则</div>
         </div>
       </div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span></div>
     </div>
   </div>
 </div>

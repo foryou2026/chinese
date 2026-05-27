@@ -41,7 +41,7 @@
             <div style="text-align:center;padding:24px 0">
               <div class="audio-btn big">🔊 点击播放</div>
               <div style="margin-top:8px"><span class="text-sm text-muted">剩余: 3/3</span></div>
-              <div style="margin-top:6px;display:flex;gap:8px;justify-content:center"><span class="btn btn-sm">🐢 慢速</span></div>
+              <div style="margin-top:6px;display:flex;gap:8px;justify-content:center"><span class="proto-btn-sm">🐢 慢速</span></div>
             </div>
             <div class="option-list">
               <div class="option-item"><span class="letter">A</span><span>teacher</span></div>
@@ -49,7 +49,7 @@
               <div class="option-item"><span class="letter">C</span><span>doctor</span></div>
               <div class="option-item"><span class="letter">D</span><span>friend</span></div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
@@ -65,37 +65,37 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>最简单的听力选择：<strong>词级短音频</strong> + <strong>含义/翻译选项</strong>。音频必填，选项为纯文本释义。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
-        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="听力理解" disabled></div>
-        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="听词选义" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="选择题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="听力理解" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3</label><input class="proto-input" value="听词选义" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label"><span class="req">*</span>音频(词级) <span class="hint" style="color:var(--error)">必填</span></label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>音频(词级) <span class="hint" style="color:var(--error)">必填</span></label><div class="upload-area">🎧 上传音频 (必填)</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">慢速音频</label><div class="upload-area sm">🐢 上传</div></div>
-        <div class="form-group"><label class="form-label">播放次数</label><input class="form-input" type="number" value="3"></div>
-        <div class="form-group"><label class="form-label">音频内容(内部)</label><input class="form-input" value="学生 xuéshēng"></div>
+        <div class="proto-field"><label class="proto-label">慢速音频</label><div class="upload-area sm">🐢 上传</div></div>
+        <div class="proto-field"><label class="proto-label">播放次数</label><input class="proto-input" type="number" value="3"></div>
+        <div class="proto-field"><label class="proto-label">音频内容(内部)</label><input class="proto-input" value="学生 xuéshēng"></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>含义选项</label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>含义选项</label>
         <div class="list-builder">
-          <div class="list-builder-item"><input type="radio" name="lw1"><div class="content"><input class="form-input" value="teacher"></div></div>
-          <div class="list-builder-item"><input type="radio" name="lw1" checked><div class="content"><input class="form-input" value="student" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓</span></div></div>
-          <div class="list-builder-item"><input type="radio" name="lw1"><div class="content"><input class="form-input" value="doctor"></div></div>
-          <div class="list-builder-item"><input type="radio" name="lw1"><div class="content"><input class="form-input" value="friend"></div></div>
+          <div class="list-builder-item"><input type="radio" name="lw1"><div class="content"><input class="proto-input" value="teacher"></div></div>
+          <div class="list-builder-item"><input type="radio" name="lw1" checked><div class="content"><input class="proto-input" value="student" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓</span></div></div>
+          <div class="list-builder-item"><input type="radio" name="lw1"><div class="content"><input class="proto-input" value="doctor"></div></div>
+          <div class="list-builder-item"><input type="radio" name="lw1"><div class="content"><input class="proto-input" value="friend"></div></div>
           <div class="list-builder-add">+ 添加</div>
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">「学生」(xuéshēng) = student。</textarea><textarea class="form-textarea">学生 (xuéshēng) = student.</textarea></div></div>
+      <div class="proto-field"><label class="proto-label">答案解析</label><div class="form-row"><textarea class="proto-textarea">「学生」(xuéshēng) = student。</textarea><textarea class="proto-textarea">学生 (xuéshēng) = student.</textarea></div></div>
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="20"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option selected>简单</option></select></div>
       </div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
 </div>

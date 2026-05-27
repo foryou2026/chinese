@@ -32,8 +32,8 @@
             <div class="highlight-box blue" style="padding:16px;margin:16px 0">
               <div style="font-size:15px;">She is a teacher.</div>
             </div>
-            <div style="margin:16px 0"><input class="form-input lg" placeholder="输入中文翻译..." value="她是老师。"></div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="margin:16px 0"><input class="proto-input lg" placeholder="输入中文翻译..." value="她是老师。"></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
           </div>
         </div>
       </div>
@@ -43,41 +43,41 @@
     <div class="card-header"><span class="badge green">管理端</span> 英中输入 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="翻译题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="英→中" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="英中输入" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="翻译题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="英→中" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="英中输入" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>英中输入</strong>。原句+输入框+多答案池匹配。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>英文原句</label><input class="form-input" value="She is a teacher." style="font-size:16px"></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>答案池 <span class="hint">所有可接受的中文翻译</span></label>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>英文原句</label><input class="proto-input" value="She is a teacher." style="font-size:16px"></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>答案池 <span class="hint">所有可接受的中文翻译</span></label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="form-input" value="她是老师。" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success);white-space:nowrap">主答案</span></div></div>
-          <div class="list-builder-item"><div class="content"><input class="form-input" value="她是一个老师。"></div></div>
-          <div class="list-builder-item"><div class="content"><input class="form-input" value="她是一位老师。"></div></div>
-          <div class="list-builder-item"><div class="content"><input class="form-input" value="她是个老师。"></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="proto-input" value="她是老师。" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success);white-space:nowrap">主答案</span></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="她是一个老师。"></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="她是一位老师。"></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="她是个老师。"></div></div>
           <div class="list-builder-add">+ 添加 / 🤖 AI扩充</div>
         </div></div>
-      <div class="form-group"><label class="form-label">匹配策略</label><select class="form-select"><option selected>精确匹配答案池</option><option>宽松匹配(忽略标点)</option><option>Levenshtein相似度(阈值)</option></select></div>
+      <div class="proto-field"><label class="proto-label">匹配策略</label><select class="proto-select"><option selected>精确匹配答案池</option><option>宽松匹配(忽略标点)</option><option>Levenshtein相似度(阈值)</option></select></div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「她是老师」= She is a teacher。「是」表示判断/等同。可加量词(一个/一位)修饰。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"她是老师" = She is a teacher. "是" indicates identity. Optional measure words: 一个/一位.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「她是老师」= She is a teacher。「是」表示判断/等同。可加量词(一个/一位)修饰。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">"她是老师" = She is a teacher. "是" indicates identity. Optional measure words: 一个/一位.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="5"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="5"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="60"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

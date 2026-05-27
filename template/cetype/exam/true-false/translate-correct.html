@@ -37,7 +37,7 @@
               <div style="width:100px;height:60px;border:2px solid var(--success);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;background:#f6ffed">✓ 对</div>
               <div style="width:100px;height:60px;border:2px solid var(--border);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">✗ 错</div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
           </div>
         </div>
       </div>
@@ -47,38 +47,38 @@
     <div class="card-header"><span class="badge green">管理端</span> 翻译正误 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="判断题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="词义" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="翻译正误" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="判断题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="词义" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="翻译正误" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>翻译正误</strong>。中英句对，判断翻译正误。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>中文句</label><input class="form-input" value="他昨天没有来上课。"></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>英文翻译(展示给用户)</label><input class="form-input" value="He didn't come to class yesterday."></div>
-      <div class="form-group"><label class="form-label">正确翻译 <span class="hint">若展示的翻译错误</span></label><input class="form-input" placeholder="标注正确则留空"></div>
-            <div class="form-group">
-        <label class="form-label"><span class="req">*</span>正确判断</label>
-        <select class="form-select" style="width:120px"><option selected>对 ✓</option><option>错 ✗</option></select>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>中文句</label><input class="proto-input" value="他昨天没有来上课。"></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>英文翻译(展示给用户)</label><input class="proto-input" value="He didn't come to class yesterday."></div>
+      <div class="proto-field"><label class="proto-label">正确翻译 <span class="hint">若展示的翻译错误</span></label><input class="proto-input" placeholder="标注正确则留空"></div>
+            <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>正确判断</label>
+        <select class="proto-select" style="width:120px"><option selected>对 ✓</option><option>错 ✗</option></select>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「他昨天没有来上课」翻译为"He didn't come to class yesterday."是正确的。关键词: 没有=didn't, 来=come, 上课=class/attend class。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">Chinese "他昨天没有来上课" correctly translates to "He didn't come to class yesterday." Key: 没有=didn't, 来=come, 上课=attend class.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「他昨天没有来上课」翻译为"He didn't come to class yesterday."是正确的。关键词: 没有=didn't, 来=come, 上课=class/attend class。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">Chinese "他昨天没有来上课" correctly translates to "He didn't come to class yesterday." Key: 没有=didn't, 来=come, 上课=attend class.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="20"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

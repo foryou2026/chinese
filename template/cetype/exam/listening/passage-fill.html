@@ -38,7 +38,7 @@
                 他觉得最难的是 <input class="fill-blank" placeholder="___" style="font-size:14px;width:80px"> 。
               </div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
           </div>
         </div>
       </div>
@@ -48,44 +48,44 @@
     <div class="card-header"><span class="badge green">管理端</span> 长段落填空 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="听力题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="段落" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="长段落填空" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="听力题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="段落" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="长段落填空" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>长段落填空</strong>。长音频+摘要/表格填空。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>段落音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
-      <div class="form-group"><label class="form-label">完整脚本</label><textarea class="form-textarea" style="min-height:100px">我叫大卫，来自美国。我在北京学了两年中文。我觉得中文最难的是声调。</textarea></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>段落音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="proto-field"><label class="proto-label">完整脚本</label><textarea class="proto-textarea" style="min-height:100px">我叫大卫，来自美国。我在北京学了两年中文。我觉得中文最难的是声调。</textarea></div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label"><span class="req">*</span>摘要模板 <span class="hint">{blank} 标记空位</span></label>
-        <textarea class="form-textarea">作者来自 {blank} ，他在北京学了 {blank} 年中文。他觉得最难的是 {blank} 。</textarea>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>摘要模板 <span class="hint">{blank} 标记空位</span></label>
+        <textarea class="proto-textarea">作者来自 {blank} ，他在北京学了 {blank} 年中文。他觉得最难的是 {blank} 。</textarea>
       </div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>填空答案(按空位顺序)</label>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>填空答案(按空位顺序)</label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content"><div class="form-row"><span class="text-sm">空位1:</span><input class="form-input" value="美国/美国人" style="border-color:var(--success)"></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><span class="text-sm">空位2:</span><input class="form-input" value="两/2/二" style="border-color:var(--success)"></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><span class="text-sm">空位3:</span><input class="form-input" value="声调/四声/shēngdiào" style="border-color:var(--success)"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><span class="text-sm">空位1:</span><input class="proto-input" value="美国/美国人" style="border-color:var(--success)"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><span class="text-sm">空位2:</span><input class="proto-input" value="两/2/二" style="border-color:var(--success)"></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><span class="text-sm">空位3:</span><input class="proto-input" value="声调/四声/shēngdiào" style="border-color:var(--success)"></div></div></div>
         </div></div>
-      <div class="form-group"><label class="form-label">匹配策略</label><select class="form-select"><option selected>宽松匹配(忽略标点空格)</option><option>精确匹配答案池</option></select></div>
+      <div class="proto-field"><label class="proto-label">匹配策略</label><select class="proto-select"><option selected>宽松匹配(忽略标点空格)</option><option>精确匹配答案池</option></select></div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">空位1:「美国」— 原文"来自美国"。空位2:「两」— 原文"学了两年"。空位3:「声调」— 原文"最难的是声调"。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">Blank 1: "美国" (America) — from "来自美国". Blank 2: "两" (two) — from "学了两年". Blank 3: "声调" (tones) — from "最难的是声调".</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">空位1:「美国」— 原文"来自美国"。空位2:「两」— 原文"学了两年"。空位3:「声调」— 原文"最难的是声调"。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">Blank 1: "美国" (America) — from "来自美国". Blank 2: "两" (two) — from "学了两年". Blank 3: "声调" (tones) — from "最难的是声调".</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="4"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="60"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option selected>HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="4"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="60"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

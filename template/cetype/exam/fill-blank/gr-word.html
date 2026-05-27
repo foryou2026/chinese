@@ -55,7 +55,7 @@
                 <span class="drag-chip" style="font-size:18px;padding:10px 20px">着</span>
               </div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
@@ -74,15 +74,15 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>语法词填写</strong>。核心配置：<strong>语法点选择器</strong>、<strong>语法词范围</strong>、<strong>语境句</strong>、<strong>语法解析(必填)</strong>。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="语法" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="语法词填写" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="填空题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="语法" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="语法词填写" disabled></div>
       </div>
       <hr class="divider">
       <div class="form-row">
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>考查语法点 <span class="hint">对应应用端「📖 考查」提示</span></label>
-          <select class="form-select">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>考查语法点 <span class="hint">对应应用端「📖 考查」提示</span></label>
+          <select class="proto-select">
             <option selected>时态助词(了/过/着)</option>
             <option>结构助词(的/得/地)</option>
             <option>介词(把/被/在/从)</option>
@@ -91,8 +91,8 @@
             <option>自定义</option>
           </select>
         </div>
-        <div class="form-group">
-          <label class="form-label">语法词范围 <span class="hint">对应应用端「可用语法词」区域</span></label>
+        <div class="proto-field">
+          <label class="proto-label">语法词范围 <span class="hint">对应应用端「可用语法词」区域</span></label>
           <div class="tag-input">
             <span class="tag-item">了 <span class="close">×</span></span>
             <span class="tag-item">过 <span class="close">×</span></span>
@@ -100,57 +100,57 @@
           </div>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>语境句 <span class="hint">{blank} 标记空位</span></label>
-        <textarea class="form-textarea" style="font-size:16px">我昨天去 {blank} 北京。</textarea>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>语境句 <span class="hint">{blank} 标记空位</span></label>
+        <textarea class="proto-textarea" style="font-size:16px">我昨天去 {blank} 北京。</textarea>
       </div>
       <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">英文翻译</label>
-          <input class="form-input" value="I went to Beijing yesterday.">
+        <div class="proto-field">
+          <label class="proto-label">英文翻译</label>
+          <input class="proto-input" value="I went to Beijing yesterday.">
         </div>
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>正确语法词</label>
-          <input class="form-input" value="了" style="font-size:18px;text-align:center;width:80px">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>正确语法词</label>
+          <input class="proto-input" value="了" style="font-size:18px;text-align:center;width:80px">
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">可接受变体</label>
+      <div class="proto-field">
+        <label class="proto-label">可接受变体</label>
         <div class="tag-input">
           <span class="tag-item">了 (主答案) <span class="close">×</span></span>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">展示语法词提示 <span class="hint">对应应用端「可用语法词」候选</span></label>
+      <div class="proto-field">
+        <label class="proto-label">展示语法词提示 <span class="hint">对应应用端「可用语法词」候选</span></label>
         <div><span class="switch on"></span> <span class="text-sm text-muted">显示可选语法词(降低难度)</span></div>
       </div>
-      <div class="form-group">
-        <label class="form-label">语法点提示卡 <span class="hint">对应应用端顶部蓝色提示</span></label>
+      <div class="proto-field">
+        <label class="proto-label">语法点提示卡 <span class="hint">对应应用端顶部蓝色提示</span></label>
         <div><span class="switch on"></span> <span class="text-sm text-muted">显示考查的语法点类别</span></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>语法解析 <span class="hint" style="color:var(--error)">语法题必填，教学核心</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>语法解析 <span class="hint" style="color:var(--error)">语法题必填，教学核心</span></label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「了」用于表示动作已经完成(过去时)。「昨天」是过去时间标志，所以用「了」。
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「了」用于表示动作已经完成(过去时)。「昨天」是过去时间标志，所以用「了」。
 · 「过」表示曾经的经历(我去过北京)
 · 「着」表示持续状态(他看着书)</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"了" indicates completed action. "昨天" (yesterday) signals past tense.
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">"了" indicates completed action. "昨天" (yesterday) signals past tense.
 · "过" = past experience (I have been to Beijing)
 · "着" = ongoing state (He is reading)</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 2</option><option>HSK 3</option><option>HSK 4</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="25"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 2</option><option>HSK 3</option><option>HSK 4</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="3"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="25"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成语法填空</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成语法填空</span>
       </div>
     </div>
   </div>

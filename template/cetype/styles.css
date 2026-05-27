@@ -220,3 +220,9 @@ body { font-family: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-seri
 [data-panel] { display: none; }
 [data-panel].active { display: block; }
 
+/* ---- Proto Bridge: cetype 页面壳专用桥接规则 ---- */
+.proto-label .req { color: var(--color-danger-500, #ff4d4f); margin-right: 4px; }
+.proto-label .hint { font-weight: 400; color: var(--text-muted, rgba(0,0,0,.45)); font-size: 12px; margin-left: 6px; }
+.proto-btn-block { width: 100%; justify-content: center; }
+.proto-field { margin-bottom: 18px; }
+

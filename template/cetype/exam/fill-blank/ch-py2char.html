@@ -47,11 +47,11 @@
               <input class="fill-blank wide" value="朋友" placeholder="写汉字" style="font-size:28px;width:200px">
             </div>
             <div style="display:flex;gap:8px;justify-content:center;margin:12px 0">
-              <span class="btn btn-sm" style="background:var(--primary);color:#fff;border-color:var(--primary)">⌨️ 拼音输入</span>
-              <span class="btn btn-sm">✍️ 手写输入</span>
-              <span class="btn btn-sm">📋 候选选择</span>
+              <span class="proto-btn-sm" style="background:var(--primary);color:#fff;border-color:var(--primary)">⌨️ 拼音输入</span>
+              <span class="proto-btn-sm">✍️ 手写输入</span>
+              <span class="proto-btn-sm">📋 候选选择</span>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
@@ -68,41 +68,41 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>拼音写汉字</strong>。题干为拼音+释义，答案为汉字。核心配置：<strong>输入方式</strong>和<strong>繁简/同音字容错</strong>。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="填空题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="汉字" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="拼音写汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="填空题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="拼音写汉字" disabled></div>
       </div>
       <hr class="divider">
       <div class="form-row t3">
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>拼音(题干) <span class="hint">应用端大号展示</span></label>
-          <input class="form-input lg" value="péngyou" style="text-align:center">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>拼音(题干) <span class="hint">应用端大号展示</span></label>
+          <input class="proto-input lg" value="péngyou" style="text-align:center">
         </div>
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>释义(EN) <span class="hint">拼音下方展示</span></label>
-          <input class="form-input" value="friend">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>释义(EN) <span class="hint">拼音下方展示</span></label>
+          <input class="proto-input" value="friend">
         </div>
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>正确汉字</label>
-          <input class="form-input lg" value="朋友" style="text-align:center">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>正确汉字</label>
+          <input class="proto-input lg" value="朋友" style="text-align:center">
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">题干音频</label>
+      <div class="proto-field">
+        <label class="proto-label">题干音频</label>
         <div class="upload-area sm">📁 上传音频</div>
-        <div style="margin-top:6px"><span class="btn btn-sm">🤖 TTS生成</span></div>
+        <div style="margin-top:6px"><span class="proto-btn-sm">🤖 TTS生成</span></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">输入方式 <span class="hint">对应应用端的输入模式切换按钮</span></label>
+      <div class="proto-field">
+        <label class="proto-label">输入方式 <span class="hint">对应应用端的输入模式切换按钮</span></label>
         <div style="display:flex;flex-direction:column;gap:6px">
           <label class="text-sm"><input type="checkbox" checked> ⌨️ 拼音键盘输入(用户打拼音选字)</label>
           <label class="text-sm"><input type="checkbox" checked> ✍️ 手写输入(Canvas前端匹配)</label>
           <label class="text-sm"><input type="checkbox" checked> 📋 候选字选择(降低难度)</label>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">候选字列表 <span class="hint">仅「候选选择」模式生效</span></label>
+      <div class="proto-field">
+        <label class="proto-label">候选字列表 <span class="hint">仅「候选选择」模式生效</span></label>
         <div class="tag-input">
           <span class="tag-item" style="border-color:var(--success)">朋友 <span class="close">×</span></span>
           <span class="tag-item">明友 <span class="close">×</span></span>
@@ -110,38 +110,38 @@
           <span class="tag-item">鹏友 <span class="close">×</span></span>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">汉字容错</label>
+      <div class="proto-field">
+        <label class="proto-label">汉字容错</label>
         <div style="display:flex;flex-direction:column;gap:6px">
           <label class="text-sm"><input type="checkbox" checked> 接受繁体字</label>
           <label class="text-sm"><input type="checkbox"> 接受同音替代字</label>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">备选答案</label>
+      <div class="proto-field">
+        <label class="proto-label">备选答案</label>
         <div class="tag-input">
           <span class="tag-item">朋友 <span class="close">×</span></span>
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">「朋友」(péngyou) — 由「朋」(同门)和「友」(志同道合者)组成。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">"朋友" means friend. "朋" = peers, "友" = companion.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">「朋友」(péngyou) — 由「朋」(同门)和「友」(志同道合者)组成。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">"朋友" means friend. "朋" = peers, "友" = companion.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option><option>HSK 2</option><option>HSK 3</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="3"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="30"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option>简单</option><option selected>中等</option><option>困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

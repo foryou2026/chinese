@@ -51,7 +51,7 @@
               <div class="option-item"><span style="font-size:32px">吗</span><br><span class="text-xs text-muted">ma · (particle)</span></div>
               <div class="option-item"><span style="font-size:32px">骂</span><br><span class="text-xs text-muted">mà · scold</span></div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
@@ -68,65 +68,65 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题干为<strong>拼音+释义</strong>展示，选项为<strong>汉字网格(大号)</strong>。核心干扰维度是<strong>形近字/同音字</strong>。每个干扰汉字需配拼音和释义(用于选项辅助显示)。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
-        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="汉字" disabled></div>
-        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="拼音选汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="选择题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3</label><input class="proto-input" value="拼音选汉字" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>目标汉字 <span class="hint">正确答案</span></label>
-        <input class="form-input lg" value="妈" style="text-align:center">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>目标汉字 <span class="hint">正确答案</span></label>
+        <input class="proto-input lg" value="妈" style="text-align:center">
       </div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label"><span class="req">*</span>拼音(题干)</label><input class="form-input" value="mā"></div>
-        <div class="form-group"><label class="form-label"><span class="req">*</span>中文释义</label><input class="form-input" value="母亲"></div>
-        <div class="form-group"><label class="form-label"><span class="req">*</span>英文释义</label><input class="form-input" value="mother"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>拼音(题干)</label><input class="proto-input" value="mā"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>中文释义</label><input class="proto-input" value="母亲"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>英文释义</label><input class="proto-input" value="mother"></div>
       </div>
-      <div class="form-group">
-        <label class="form-label">题干音频 <span class="hint">对应应用端「🔊 听发音」</span></label>
+      <div class="proto-field">
+        <label class="proto-label">题干音频 <span class="hint">对应应用端「🔊 听发音」</span></label>
         <div class="upload-area sm">📁 上传/TTS</div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>干扰汉字 <span class="hint">应为形近字或同音字，每个需配拼音+释义</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>干扰汉字 <span class="hint">应为形近字或同音字，每个需配拼音+释义</span></label>
         <table class="mini-table">
           <thead><tr><th>汉字</th><th>拼音</th><th>释义</th><th>干扰类型</th><th></th></tr></thead>
           <tbody>
             <tr>
-              <td><input class="form-input" value="马" style="width:50px;text-align:center"></td>
-              <td><input class="form-input" value="mǎ" style="width:60px"></td>
-              <td><input class="form-input" value="horse" style="width:80px"></td>
-              <td><select class="form-select" style="width:100px"><option selected>形近字</option><option>同音字</option><option>声调混淆</option></select></td>
-              <td><span class="btn btn-sm">🗑</span></td>
+              <td><input class="proto-input" value="马" style="width:50px;text-align:center"></td>
+              <td><input class="proto-input" value="mǎ" style="width:60px"></td>
+              <td><input class="proto-input" value="horse" style="width:80px"></td>
+              <td><select class="proto-select" style="width:100px"><option selected>形近字</option><option>同音字</option><option>声调混淆</option></select></td>
+              <td><span class="proto-btn-sm">🗑</span></td>
             </tr>
             <tr>
-              <td><input class="form-input" value="吗" style="width:50px;text-align:center"></td>
-              <td><input class="form-input" value="ma" style="width:60px"></td>
-              <td><input class="form-input" value="(particle)" style="width:80px"></td>
-              <td><select class="form-select" style="width:100px"><option selected>形近字</option></select></td>
-              <td><span class="btn btn-sm">🗑</span></td>
+              <td><input class="proto-input" value="吗" style="width:50px;text-align:center"></td>
+              <td><input class="proto-input" value="ma" style="width:60px"></td>
+              <td><input class="proto-input" value="(particle)" style="width:80px"></td>
+              <td><select class="proto-select" style="width:100px"><option selected>形近字</option></select></td>
+              <td><span class="proto-btn-sm">🗑</span></td>
             </tr>
             <tr>
-              <td><input class="form-input" value="骂" style="width:50px;text-align:center"></td>
-              <td><input class="form-input" value="mà" style="width:60px"></td>
-              <td><input class="form-input" value="scold" style="width:80px"></td>
-              <td><select class="form-select" style="width:100px"><option selected>声调混淆</option></select></td>
-              <td><span class="btn btn-sm">🗑</span></td>
+              <td><input class="proto-input" value="骂" style="width:50px;text-align:center"></td>
+              <td><input class="proto-input" value="mà" style="width:60px"></td>
+              <td><input class="proto-input" value="scold" style="width:80px"></td>
+              <td><select class="proto-select" style="width:100px"><option selected>声调混淆</option></select></td>
+              <td><span class="proto-btn-sm">🗑</span></td>
             </tr>
           </tbody>
         </table>
         <div style="text-align:center;padding:8px;color:var(--primary);cursor:pointer;font-size:13px">+ 添加干扰项</div>
       </div>
-      <div class="form-group">
-        <label class="form-label">干扰策略(AI批量生成)</label>
+      <div class="proto-field">
+        <label class="proto-label">干扰策略(AI批量生成)</label>
         <div style="display:flex;flex-wrap:wrap;gap:8px">
           <label class="text-sm"><input type="checkbox" checked> 形近字(相似部件)</label>
           <label class="text-sm"><input type="checkbox" checked> 同音异字</label>
           <label class="text-sm"><input type="checkbox"> 同部首字</label>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">选项辅助显示 <span class="hint">控制应用端汉字网格下方是否显示拼音/释义</span></label>
+      <div class="proto-field">
+        <label class="proto-label">选项辅助显示 <span class="hint">控制应用端汉字网格下方是否显示拼音/释义</span></label>
         <div style="display:flex;gap:12px">
           <label class="text-sm"><input type="checkbox" checked> 显示拼音</label>
           <label class="text-sm"><input type="checkbox" checked> 显示释义</label>
@@ -134,23 +134,23 @@
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <textarea class="form-textarea">「妈」(mā) = 女字旁+马。部首「女」提示含义与女性有关。</textarea>
-          <textarea class="form-textarea">妈 = 女 (woman) + 马 (horse/phonetic).</textarea>
+          <textarea class="proto-textarea">「妈」(mā) = 女字旁+马。部首「女」提示含义与女性有关。</textarea>
+          <textarea class="proto-textarea">妈 = 女 (woman) + 马 (horse/phonetic).</textarea>
         </div>
       </div>
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="20"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option selected>简单</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

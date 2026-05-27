@@ -35,7 +35,7 @@
               <div class="option-item"><span class="letter">B</span>你好，我要退房。</div>
               <div class="option-item"><span class="letter">C</span>麻烦给我菜单。</div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
           </div>
         </div>
       </div>
@@ -45,39 +45,39 @@
     <div class="card-header"><span class="badge green">管理端</span> 图选对话句 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="看图选词" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="句子" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="图选对话句" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="看图选词" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="句子" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="图选对话句" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>图选对话句</strong>。场景图+场景说明+对话句选项。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>场景图片</label><div class="upload-area">📷 上传场景图 (必填)</div></div>
-      <div class="form-group"><label class="form-label">场景说明</label><input class="form-input" value="在超市购物"></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>对话句选项</label>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>场景图片</label><div class="upload-area">📷 上传场景图 (必填)</div></div>
+      <div class="proto-field"><label class="proto-label">场景说明</label><input class="proto-input" value="在超市购物"></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>对话句选项</label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="pd" checked><input class="form-input" value="请问这个多少钱？" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓</span></div></div>
-          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="pd"><input class="form-input" value="你好，我要退房。"></div></div>
-          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="pd"><input class="form-input" value="麻烦给我菜单。"></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="pd" checked><input class="proto-input" value="请问这个多少钱？" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success)">✓</span></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="pd"><input class="proto-input" value="你好，我要退房。"></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px;align-items:center"><input type="radio" name="pd"><input class="proto-input" value="麻烦给我菜单。"></div></div>
         </div></div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">场景为超市购物，正确答案A「请问这个多少钱？」是购物场景的典型问句。B「退房」属于酒店场景，C「菜单」属于餐厅场景。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">Scene: shopping in a supermarket. Correct: A "请问这个多少钱？" (How much is this?). B "checking out of hotel" and C "asking for menu" belong to other scenarios.</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">场景为超市购物，正确答案A「请问这个多少钱？」是购物场景的典型问句。B「退房」属于酒店场景，C「菜单」属于餐厅场景。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">Scene: shopping in a supermarket. Correct: A "请问这个多少钱？" (How much is this?). B "checking out of hotel" and C "asking for menu" belong to other scenarios.</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option><option >HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option><option >中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option><option >HSK 2</option><option >HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="20"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option selected>简单</option><option >中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

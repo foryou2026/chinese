@@ -29,9 +29,9 @@
           <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
           <div class="app-content">
             <div class="q-instruction">听音频，写出你听到的句子 Listen and write</div>
-            <div style="text-align:center;padding:16px 0"><div class="audio-btn big">🔊 点击播放</div><div class="text-sm text-muted mt-8">剩余: 2/3次</div><div style="margin-top:8px"><span class="btn btn-sm">🐢 慢速</span></div></div>
-            <div style="text-align:center;margin:16px 0"><textarea class="form-textarea" placeholder="输入你听到的句子..." style="font-size:16px;min-height:80px"></textarea></div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认 ✓</span></div>
+            <div style="text-align:center;padding:16px 0"><div class="audio-btn big">🔊 点击播放</div><div class="text-sm text-muted mt-8">剩余: 2/3次</div><div style="margin-top:8px"><span class="proto-btn-sm">🐢 慢速</span></div></div>
+            <div style="text-align:center;margin:16px 0"><textarea class="proto-textarea" placeholder="输入你听到的句子..." style="font-size:16px;min-height:80px"></textarea></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
           </div>
         </div>
       </div>
@@ -41,38 +41,38 @@
     <div class="card-header"><span class="badge green">管理端</span> 听写短句 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1 题型</label><input class="form-input" value="听写题" disabled></div>
-        <div class="form-group"><label class="form-label">L2 知识类型</label><input class="form-input" value="句子" disabled></div>
-        <div class="form-group"><label class="form-label">L3 题目类型</label><input class="form-input" value="听写短句" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1 题型</label><input class="proto-input" value="听写题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2 知识类型</label><input class="proto-input" value="句子" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3 题目类型</label><input class="proto-input" value="听写短句" disabled></div>
       </div>
       <hr class="divider">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>听写短句</strong>。音频必填+正确文本+匹配规则。</div></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>句子音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
-      <div class="form-group"><label class="form-label">慢速音频</label><div class="upload-area sm">🐢 慢速版</div></div>
-      <div class="form-group"><label class="form-label">最大播放次数</label><input class="form-input" type="number" value="3" style="width:80px"></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>句子音频</label><div class="upload-area">🎧 上传音频 (必填)</div></div>
+      <div class="proto-field"><label class="proto-label">慢速音频</label><div class="upload-area sm">🐢 慢速版</div></div>
+      <div class="proto-field"><label class="proto-label">最大播放次数</label><input class="proto-input" type="number" value="3" style="width:80px"></div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label"><span class="req">*</span>正确句子</label><input class="form-input" value="我每天早上七点起床。" style="font-size:16px"></div>
-      <div class="form-group"><label class="form-label">匹配粒度</label><select class="form-select"><option selected>逐字匹配(每字独立评分)</option><option>逐词匹配</option><option>整句匹配</option></select></div>
-      <div class="form-group"><label class="form-label">标点要求</label><select class="form-select"><option selected>忽略标点</option><option>要求标点正确</option></select></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>正确句子</label><input class="proto-input" value="我每天早上七点起床。" style="font-size:16px"></div>
+      <div class="proto-field"><label class="proto-label">匹配粒度</label><select class="proto-select"><option selected>逐字匹配(每字独立评分)</option><option>逐词匹配</option><option>整句匹配</option></select></div>
+      <div class="proto-field"><label class="proto-label">标点要求</label><select class="proto-select"><option selected>忽略标点</option><option>要求标点正确</option></select></div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">正确句子:「我每天早上七点起床。」注意「每天」和「七点」的听辨。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">Correct: "我每天早上七点起床。" (I get up at 7am every morning.)</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">正确句子:「我每天早上七点起床。」注意「每天」和「七点」的听辨。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">Correct: "我每天早上七点起床。" (I get up at 7am every morning.)</textarea></div>
         </div>
       </div>
       <hr class="divider">
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option >HSK 1</option><option >HSK 2</option><option selected>HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="6"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="90"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option >HSK 1</option><option >HSK 2</option><option selected>HSK 3</option><option >HSK 4</option><option >HSK 5</option><option >HSK 6</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="6"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="90"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option >简单</option><option selected>中等</option><option >困难</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

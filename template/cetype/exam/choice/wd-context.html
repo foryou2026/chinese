@@ -52,7 +52,7 @@
               <div class="option-item"><span class="letter">C</span><div><div style="font-size:16px">睡觉</div><div class="text-xs text-muted">shuìjiào · sleep</div></div></div>
               <div class="option-item"><span class="letter">D</span><div><div style="font-size:16px">工作</div><div class="text-xs text-muted">gōngzuò · work</div></div></div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
           </div>
         </div>
       </div>
@@ -63,44 +63,44 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>本L3核心：需配置<strong>语境句+空位标记</strong>和<strong>带拼音+中英释义的词语选项</strong>。应用端选项的展示级别(是否显示拼音/释义)可控制。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
-        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="词语" disabled></div>
-        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="语境选词" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="选择题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="词语" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3</label><input class="proto-input" value="语境选词" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>语境句 <span class="hint">用 {blank} 标记空位，应用端渲染为下划线</span></label>
-        <textarea class="form-textarea" style="font-size:16px">今天天气很好，我们去公园 {blank} 吧。</textarea>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>语境句 <span class="hint">用 {blank} 标记空位，应用端渲染为下划线</span></label>
+        <textarea class="proto-textarea" style="font-size:16px">今天天气很好，我们去公园 {blank} 吧。</textarea>
       </div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>英文翻译 <span class="hint">应用端显示在语境句下方</span></label>
-        <input class="form-input" value="The weather is nice today, let's go to the park and ______.">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>英文翻译 <span class="hint">应用端显示在语境句下方</span></label>
+        <input class="proto-input" value="The weather is nice today, let's go to the park and ______.">
       </div>
-      <div class="form-group">
-        <label class="form-label">语境句音频 <span class="hint">可选，留空则不显示播放按钮</span></label>
+      <div class="proto-field">
+        <label class="proto-label">语境句音频 <span class="hint">可选，留空则不显示播放按钮</span></label>
         <div class="upload-area sm">📁 上传/TTS</div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>词语选项 <span class="hint">每个选项需配拼音+中英释义(对应应用端展示)</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>词语选项 <span class="hint">每个选项需配拼音+中英释义(对应应用端展示)</span></label>
         <div class="list-builder">
-          <div class="list-builder-item"><input type="radio" name="wd1" style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="form-input" value="学习" style="width:70px"><input class="form-input" value="xuéxí" style="width:70px"><input class="form-input" value="study" style="flex:1"></div></div></div>
-          <div class="list-builder-item"><input type="radio" name="wd1" checked style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="form-input" value="散步" style="width:70px;border-color:var(--success)"><input class="form-input" value="sànbù" style="width:70px"><input class="form-input" value="take a walk" style="flex:1"><span class="text-xs" style="color:var(--success);white-space:nowrap">✓ 正确</span></div></div></div>
-          <div class="list-builder-item"><input type="radio" name="wd1" style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="form-input" value="睡觉" style="width:70px"><input class="form-input" value="shuìjiào" style="width:70px"><input class="form-input" value="sleep" style="flex:1"></div></div></div>
-          <div class="list-builder-item"><input type="radio" name="wd1" style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="form-input" value="工作" style="width:70px"><input class="form-input" value="gōngzuò" style="width:70px"><input class="form-input" value="work" style="flex:1"></div></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd1" style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="proto-input" value="学习" style="width:70px"><input class="proto-input" value="xuéxí" style="width:70px"><input class="proto-input" value="study" style="flex:1"></div></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd1" checked style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="proto-input" value="散步" style="width:70px;border-color:var(--success)"><input class="proto-input" value="sànbù" style="width:70px"><input class="proto-input" value="take a walk" style="flex:1"><span class="text-xs" style="color:var(--success);white-space:nowrap">✓ 正确</span></div></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd1" style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="proto-input" value="睡觉" style="width:70px"><input class="proto-input" value="shuìjiào" style="width:70px"><input class="proto-input" value="sleep" style="flex:1"></div></div></div>
+          <div class="list-builder-item"><input type="radio" name="wd1" style="margin-top:6px"><div class="content"><div style="display:flex;gap:6px"><input class="proto-input" value="工作" style="width:70px"><input class="proto-input" value="gōngzuò" style="width:70px"><input class="proto-input" value="work" style="flex:1"></div></div></div>
           <div class="list-builder-add">+ 添加选项</div>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">选项展示级别 <span class="hint">控制应用端每个选项显示的信息量</span></label>
-        <select class="form-select">
+      <div class="proto-field">
+        <label class="proto-label">选项展示级别 <span class="hint">控制应用端每个选项显示的信息量</span></label>
+        <select class="proto-select">
           <option>仅汉字(高难度)</option>
           <option selected>汉字+拼音+释义(标准)</option>
           <option>汉字+拼音(中难度)</option>
         </select>
       </div>
-      <div class="form-group">
-        <label class="form-label">干扰策略</label>
+      <div class="proto-field">
+        <label class="proto-label">干扰策略</label>
         <div style="display:flex;flex-wrap:wrap;gap:8px">
           <label class="text-sm"><input type="checkbox" checked> 近义词(意思接近但语境不合)</label>
           <label class="text-sm"><input type="checkbox" checked> 同主题词(同类但不搭配)</label>
@@ -108,14 +108,14 @@
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">「散步」适合公园场景。「学习」「工作」与公园语境不搭。</textarea><textarea class="form-textarea">"散步" fits the park context. "学习" and "工作" don't match.</textarea></div></div>
+      <div class="proto-field"><label class="proto-label">答案解析</label><div class="form-row"><textarea class="proto-textarea">「散步」适合公园场景。「学习」「工作」与公园语境不搭。</textarea><textarea class="proto-textarea">"散步" fits the park context. "学习" and "工作" don't match.</textarea></div></div>
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 2</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 2</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="30"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option>简单</option><option selected>中等</option></select></div>
       </div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
 </div>

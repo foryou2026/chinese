@@ -51,19 +51,19 @@
     <div class="card-header"><span class="badge green">管理端</span> 角色扮演 · 配置表单</div>
     <div class="card-body">
       <div class="callout cost"><span class="icon">💰</span><div>付费功能: STT语音转录 + AI发音评分，<strong>~$0.01-0.03/次</strong>。仅高级用户可用。</div></div>
-      <div class="form-row t3"><div class="form-group"><label class="form-label">L1</label><input class="form-input" value="对话场景" disabled></div><div class="form-group"><label class="form-label">L2</label><input class="form-input" value="角色扮演" disabled></div><div class="form-group"><label class="form-label"><span class="req">*</span>基础对话</label><select class="form-select"><option selected>在餐厅点餐</option></select></div></div>
+      <div class="form-row t3"><div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="对话场景" disabled></div><div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="角色扮演" disabled></div><div class="proto-field"><label class="proto-label"><span class="req">*</span>基础对话</label><select class="proto-select"><option selected>在餐厅点餐</option></select></div></div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label"><span class="req">*</span>用户扮演角色</label><select class="form-select"><option>服务员(NPC)</option><option selected>顾客(用户)</option></select></div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>AI评分Prompt模板</label><textarea class="form-textarea" style="min-height:80px">请评估用户的口语表达。对比用户录音与标准文本，评分维度：发音准确度(声母韵母声调)、流利度(停顿节奏)、语调(自然度)。</textarea></div>
-      <div class="form-group"><label class="form-label">评分维度 + 权重</label>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>用户扮演角色</label><select class="proto-select"><option>服务员(NPC)</option><option selected>顾客(用户)</option></select></div>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>AI评分Prompt模板</label><textarea class="proto-textarea" style="min-height:80px">请评估用户的口语表达。对比用户录音与标准文本，评分维度：发音准确度(声母韵母声调)、流利度(停顿节奏)、语调(自然度)。</textarea></div>
+      <div class="proto-field"><label class="proto-label">评分维度 + 权重</label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="发音准确度"><input class="form-input" type="number" value="40" style="width:60px"><span class="text-sm">%</span></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="流利度"><input class="form-input" type="number" value="30" style="width:60px"><span class="text-sm">%</span></div></div></div>
-          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="form-input" value="语调自然度"><input class="form-input" type="number" value="30" style="width:60px"><span class="text-sm">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="发音准确度"><input class="proto-input" type="number" value="40" style="width:60px"><span class="text-sm">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="流利度"><input class="proto-input" type="number" value="30" style="width:60px"><span class="text-sm">%</span></div></div></div>
+          <div class="list-builder-item"><div class="content"><div class="form-row"><input class="proto-input" value="语调自然度"><input class="proto-input" type="number" value="30" style="width:60px"><span class="text-sm">%</span></div></div></div>
         </div>
       </div>
-      <div class="form-row"><div class="form-group"><label class="form-label">合格阈值</label><input class="form-input" type="number" value="70" style="width:80px"><span class="text-sm"> 分</span></div><div class="form-group"><label class="form-label">示范音频</label><div class="upload-area sm">📁 上传示范录音</div></div></div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span></div>
+      <div class="form-row"><div class="proto-field"><label class="proto-label">合格阈值</label><input class="proto-input" type="number" value="70" style="width:80px"><span class="text-sm"> 分</span></div><div class="proto-field"><label class="proto-label">示范音频</label><div class="upload-area sm">📁 上传示范录音</div></div></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span></div>
     </div>
   </div>
 </div>

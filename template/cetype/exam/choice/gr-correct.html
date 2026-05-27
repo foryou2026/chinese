@@ -62,7 +62,7 @@
                 <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 主语缺失</div>
               </div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
           </div>
         </div>
       </div>
@@ -73,86 +73,86 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>本L3核心：需配置<strong>语法点+说明</strong>、<strong>正确句子+错误句子</strong>、每个错误句的<strong>错误类型+具体说明</strong>(答题后展示)、<strong>高亮关键词+颜色</strong>。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
-        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="语法" disabled></div>
-        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="选正确句" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="选择题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="语法" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3</label><input class="proto-input" value="选正确句" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>关联语法点</label>
-        <select class="form-select"><option selected>把字句</option><option>被字句</option><option>比较句(比/没有)</option><option>了/过/着 时态</option><option>量词搭配</option><option>自定义...</option></select>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>关联语法点</label>
+        <select class="proto-select"><option selected>把字句</option><option>被字句</option><option>比较句(比/没有)</option><option>了/过/着 时态</option><option>量词搭配</option><option>自定义...</option></select>
       </div>
-      <div class="form-group">
-        <label class="form-label">语法点说明(题干卡片) <span class="hint">应用端蓝色卡片展示</span></label>
+      <div class="proto-field">
+        <label class="proto-label">语法点说明(题干卡片) <span class="hint">应用端蓝色卡片展示</span></label>
         <div class="form-row">
-          <input class="form-input" value="「把」字句" placeholder="中文名称">
-          <input class="form-input" value="S + 把 + O + V + Complement" placeholder="公式/英文">
+          <input class="proto-input" value="「把」字句" placeholder="中文名称">
+          <input class="proto-input" value="S + 把 + O + V + Complement" placeholder="公式/英文">
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>句子选项 <span class="hint">勾选正确句子；每个错误句必须标注<strong>错误类型+具体说明</strong></span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>句子选项 <span class="hint">勾选正确句子；每个错误句必须标注<strong>错误类型+具体说明</strong></span></label>
         <div class="list-builder">
           <div class="list-builder-item">
             <input type="radio" name="gr1" checked style="margin-top:6px">
             <div class="content">
-              <input class="form-input" value="我把书放在桌子上了。" style="border-color:var(--success);margin-bottom:4px">
+              <input class="proto-input" value="我把书放在桌子上了。" style="border-color:var(--success);margin-bottom:4px">
               <span class="text-xs" style="color:var(--success)">✓ 语法正确</span>
             </div>
           </div>
           <div class="list-builder-item">
             <input type="radio" name="gr1" style="margin-top:6px">
             <div class="content">
-              <input class="form-input" value="我把放书在桌子上了。" style="margin-bottom:4px">
+              <input class="proto-input" value="我把放书在桌子上了。" style="margin-bottom:4px">
               <div class="form-row">
-                <select class="form-select" style="width:120px"><option selected>语序错误</option><option>缺少成分</option><option>多余成分</option><option>搭配错误</option></select>
-                <input class="form-input" value="动词应在宾语后" placeholder="具体错误说明(答题后展示)">
+                <select class="proto-select" style="width:120px"><option selected>语序错误</option><option>缺少成分</option><option>多余成分</option><option>搭配错误</option></select>
+                <input class="proto-input" value="动词应在宾语后" placeholder="具体错误说明(答题后展示)">
               </div>
             </div>
           </div>
           <div class="list-builder-item">
             <input type="radio" name="gr1" style="margin-top:6px">
             <div class="content">
-              <input class="form-input" value="我书把放在桌子上了。" style="margin-bottom:4px">
+              <input class="proto-input" value="我书把放在桌子上了。" style="margin-bottom:4px">
               <div class="form-row">
-                <select class="form-select" style="width:120px"><option selected>语序错误</option></select>
-                <input class="form-input" value="把字位置错误">
+                <select class="proto-select" style="width:120px"><option selected>语序错误</option></select>
+                <input class="proto-input" value="把字位置错误">
               </div>
             </div>
           </div>
           <div class="list-builder-item">
             <input type="radio" name="gr1" style="margin-top:6px">
             <div class="content">
-              <input class="form-input" value="把我书放在桌子上了。" style="margin-bottom:4px">
+              <input class="proto-input" value="把我书放在桌子上了。" style="margin-bottom:4px">
               <div class="form-row">
-                <select class="form-select" style="width:120px"><option>语序错误</option><option selected>缺少成分</option></select>
-                <input class="form-input" value="主语缺失">
+                <select class="proto-select" style="width:120px"><option>语序错误</option><option selected>缺少成分</option></select>
+                <input class="proto-input" value="主语缺失">
               </div>
             </div>
           </div>
           <div class="list-builder-add">+ 添加句子</div>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">语法词高亮配置 <span class="hint">应用端选项中高亮的关键语法词</span></label>
+      <div class="proto-field">
+        <label class="proto-label">语法词高亮配置 <span class="hint">应用端选项中高亮的关键语法词</span></label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">高亮关键词</label><input class="form-input" value="把" placeholder="在选项中高亮的词"></div>
-          <div class="form-group"><label class="form-label text-sm">高亮颜色</label><div style="display:flex;gap:8px;align-items:center"><input type="color" value="#1677ff" style="width:40px;height:32px"><span class="text-xs text-muted">正确句用主色，错误句用红色</span></div></div>
+          <div class="proto-field"><label class="proto-label text-sm">高亮关键词</label><input class="proto-input" value="把" placeholder="在选项中高亮的词"></div>
+          <div class="proto-field"><label class="proto-label text-sm">高亮颜色</label><div style="display:flex;gap:8px;align-items:center"><input type="color" value="#1677ff" style="width:40px;height:32px"><span class="text-xs text-muted">正确句用主色，错误句用红色</span></div></div>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">答题后显示错误标注</label>
+      <div class="proto-field">
+        <label class="proto-label">答题后显示错误标注</label>
         <div><span class="switch on"></span> <span class="text-sm text-muted">开启后在错误选项下方显示❌标注</span></div>
       </div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">把字句结构: 主语+把+宾语+动词+补语。宾语必须放在「把」和动词之间。</textarea><textarea class="form-textarea">把 structure: S+把+O+V+C. The object must be between 把 and the verb.</textarea></div></div>
+      <div class="proto-field"><label class="proto-label">答案解析</label><div class="form-row"><textarea class="proto-textarea">把字句结构: 主语+把+宾语+动词+补语。宾语必须放在「把」和动词之间。</textarea><textarea class="proto-textarea">把 structure: S+把+O+V+C. The object must be between 把 and the verb.</textarea></div></div>
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option>HSK 2</option><option selected>HSK 3</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="3"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="30"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option>HSK 2</option><option selected>HSK 3</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="3"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="30"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option>简单</option><option selected>中等</option></select></div>
       </div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
 </div>

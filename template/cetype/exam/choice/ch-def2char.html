@@ -50,7 +50,7 @@
               <div class="option-item"><span style="font-size:36px">天</span></div>
               <div class="option-item"><span style="font-size:36px">犬</span></div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
@@ -67,54 +67,54 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>与「拼音选汉字」的管理端差异：<strong>题干无拼音字段</strong>，只有中英释义；选项默认<strong>不显示拼音辅助</strong>，干扰维度以<strong>形近字</strong>为主。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
-        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="汉字" disabled></div>
-        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="释义选汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="选择题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3</label><input class="proto-input" value="释义选汉字" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>目标汉字</label>
-        <input class="form-input lg" value="大" style="text-align:center">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>目标汉字</label>
+        <input class="proto-input lg" value="大" style="text-align:center">
       </div>
       <div class="form-row">
-        <div class="form-group"><label class="form-label"><span class="req">*</span>中文释义(题干)</label><input class="form-input" value="大 · 小的反义词"></div>
-        <div class="form-group"><label class="form-label"><span class="req">*</span>英文释义(题干)</label><input class="form-input" value="big; large — opposite of 小"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>中文释义(题干)</label><input class="proto-input" value="大 · 小的反义词"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>英文释义(题干)</label><input class="proto-input" value="big; large — opposite of 小"></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>干扰汉字 <span class="hint">应为形近字，本L3侧重纯视觉辨识</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>干扰汉字 <span class="hint">应为形近字，本L3侧重纯视觉辨识</span></label>
         <table class="mini-table">
           <thead><tr><th>汉字</th><th>干扰类型</th><th>形近说明</th><th></th></tr></thead>
           <tbody>
-            <tr><td><input class="form-input" value="太" style="width:50px;text-align:center"></td><td><select class="form-select" style="width:100px"><option selected>形近字</option></select></td><td><input class="form-input" value="多一点" style="width:120px"></td><td><span class="btn btn-sm">🗑</span></td></tr>
-            <tr><td><input class="form-input" value="天" style="width:50px;text-align:center"></td><td><select class="form-select" style="width:100px"><option selected>形近字</option></select></td><td><input class="form-input" value="上面一横" style="width:120px"></td><td><span class="btn btn-sm">🗑</span></td></tr>
-            <tr><td><input class="form-input" value="犬" style="width:50px;text-align:center"></td><td><select class="form-select" style="width:100px"><option selected>形近字</option></select></td><td><input class="form-input" value="多一撇" style="width:120px"></td><td><span class="btn btn-sm">🗑</span></td></tr>
+            <tr><td><input class="proto-input" value="太" style="width:50px;text-align:center"></td><td><select class="proto-select" style="width:100px"><option selected>形近字</option></select></td><td><input class="proto-input" value="多一点" style="width:120px"></td><td><span class="proto-btn-sm">🗑</span></td></tr>
+            <tr><td><input class="proto-input" value="天" style="width:50px;text-align:center"></td><td><select class="proto-select" style="width:100px"><option selected>形近字</option></select></td><td><input class="proto-input" value="上面一横" style="width:120px"></td><td><span class="proto-btn-sm">🗑</span></td></tr>
+            <tr><td><input class="proto-input" value="犬" style="width:50px;text-align:center"></td><td><select class="proto-select" style="width:100px"><option selected>形近字</option></select></td><td><input class="proto-input" value="多一撇" style="width:120px"></td><td><span class="proto-btn-sm">🗑</span></td></tr>
           </tbody>
         </table>
         <div style="text-align:center;padding:8px;color:var(--primary);cursor:pointer;font-size:13px">+ 添加干扰项</div>
       </div>
-      <div class="form-group">
-        <label class="form-label">选项辅助显示</label>
+      <div class="proto-field">
+        <label class="proto-label">选项辅助显示</label>
         <div style="display:flex;gap:12px">
           <label class="text-sm"><input type="checkbox"> 显示拼音(默认关闭, 本L3测试纯视觉)</label>
           <label class="text-sm"><input type="checkbox"> 显示释义</label>
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <textarea class="form-textarea">「大」(dà) — 注意区分「太」(多一点)、「天」(上面一横)、「犬」(多一撇)。</textarea>
-          <textarea class="form-textarea">"大" — distinguish from 太 (extra dot), 天 (top stroke), 犬 (extra stroke).</textarea>
+          <textarea class="proto-textarea">「大」(dà) — 注意区分「太」(多一点)、「天」(上面一横)、「犬」(多一撇)。</textarea>
+          <textarea class="proto-textarea">"大" — distinguish from 太 (extra dot), 天 (top stroke), 犬 (extra stroke).</textarea>
         </div>
       </div>
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option>简单</option><option selected>中等</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="20"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option>简单</option><option selected>中等</option></select></div>
       </div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
 </div>

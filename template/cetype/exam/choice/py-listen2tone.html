@@ -71,8 +71,8 @@
                 <div style="font-size:14px;color:var(--primary);margin-top:2px">mà</div>
               </div>
             </div>
-            <div style="text-align:center;margin-bottom:8px"><span class="btn btn-sm" style="font-size:11px;color:rgba(0,0,0,.45)">· 轻声</span></div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <div style="text-align:center;margin-bottom:8px"><span class="proto-btn-sm" style="font-size:11px;color:rgba(0,0,0,.45)">· 轻声</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！第三声 mǎ (马)</div>
@@ -89,35 +89,35 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>听音辨调</strong>。与其他拼音题的差异：选项固定为4个声调(+可选轻声)，不需要手动配置选项内容，只需指定<strong>无调拼音</strong>和<strong>正确声调</strong>。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
-        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="拼音" disabled></div>
-        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="听音辨调" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="选择题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="拼音" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3</label><input class="proto-input" value="听音辨调" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>音频 <span class="hint" style="color:var(--error)">必填，是唯一听觉题干</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>音频 <span class="hint" style="color:var(--error)">必填，是唯一听觉题干</span></label>
         <div class="upload-area">🎧 上传音频 (必填)</div>
       </div>
       <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">最大播放次数</label>
-          <input class="form-input" type="number" value="3">
+        <div class="proto-field">
+          <label class="proto-label">最大播放次数</label>
+          <input class="proto-input" type="number" value="3">
         </div>
-        <div class="form-group">
-          <label class="form-label">自动播放</label>
+        <div class="proto-field">
+          <label class="proto-label">自动播放</label>
           <div style="padding-top:6px"><span class="switch on"></span></div>
         </div>
       </div>
       <hr class="divider">
       <!-- 本L3独有: 无调拼音 + 正确声调 -->
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>无调拼音字母 <span class="hint">应用端大号展示的拼音(不带声调标记)</span></label>
-        <input class="form-input lg" value="ma" style="text-align:center;letter-spacing:4px" placeholder="如: ma, shi, lü">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>无调拼音字母 <span class="hint">应用端大号展示的拼音(不带声调标记)</span></label>
+        <input class="proto-input lg" value="ma" style="text-align:center;letter-spacing:4px" placeholder="如: ma, shi, lü">
       </div>
       <div class="form-row">
-        <div class="form-group">
-          <label class="form-label"><span class="req">*</span>正确声调</label>
-          <select class="form-select">
+        <div class="proto-field">
+          <label class="proto-label"><span class="req">*</span>正确声调</label>
+          <select class="proto-select">
             <option>第一声 (阴平 ˉ)</option>
             <option>第二声 (阳平 ˊ)</option>
             <option selected>第三声 (上声 ˇ)</option>
@@ -125,41 +125,41 @@
             <option>轻声</option>
           </select>
         </div>
-        <div class="form-group">
-          <label class="form-label">对应汉字 <span class="hint">解析时展示，如 mǎ→马</span></label>
-          <input class="form-input" value="马" placeholder="可选">
+        <div class="proto-field">
+          <label class="proto-label">对应汉字 <span class="hint">解析时展示，如 mǎ→马</span></label>
+          <input class="proto-input" value="马" placeholder="可选">
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">声调展示样式 <span class="hint">应用端选择器的展示方式</span></label>
-        <select class="form-select">
+      <div class="proto-field">
+        <label class="proto-label">声调展示样式 <span class="hint">应用端选择器的展示方式</span></label>
+        <select class="proto-select">
           <option selected>符号+声调号+标调拼音 (ˇ 第3声 mǎ)</option>
           <option>仅符号+声调号 (ˇ 第3声)</option>
           <option>仅数字 (1/2/3/4)</option>
         </select>
       </div>
-      <div class="form-group">
-        <label class="form-label">包含轻声选项</label>
+      <div class="proto-field">
+        <label class="proto-label">包含轻声选项</label>
         <div><span class="switch"></span> <span class="text-sm text-muted">开启后应用端增加「轻声」按钮</span></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label">答案解析</label>
+      <div class="proto-field">
+        <label class="proto-label">答案解析</label>
         <div class="form-row">
-          <div class="form-group"><label class="form-label text-sm">中文</label><textarea class="form-textarea">第三声的特征是先降后升(214调值)。</textarea></div>
-          <div class="form-group"><label class="form-label text-sm">English</label><textarea class="form-textarea">3rd tone dips down then rises (214 contour).</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">中文</label><textarea class="proto-textarea">第三声的特征是先降后升(214调值)。</textarea></div>
+          <div class="proto-field"><label class="proto-label text-sm">English</label><textarea class="proto-textarea">3rd tone dips down then rises (214 contour).</textarea></div>
         </div>
       </div>
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="1"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="15"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option><option>中等</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="1"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="15"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option selected>简单</option><option>中等</option></select></div>
       </div>
       <div class="btn-group">
-        <span class="btn btn-primary">💾 保存</span>
-        <span class="btn">👁 预览</span>
-        <span class="btn">🤖 AI批量生成</span>
+        <span class="proto-btn-primary">💾 保存</span>
+        <span class="proto-btn-secondary">👁 预览</span>
+        <span class="proto-btn-secondary">🤖 AI批量生成</span>
       </div>
     </div>
   </div>

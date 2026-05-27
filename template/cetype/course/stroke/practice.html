@@ -39,7 +39,7 @@
               <div style="width:48px;height:48px;border:2px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--border)">㇏</div>
             </div>
             <div style="text-align:center;margin:8px 0"><div class="text-sm">第 <strong>2</strong>/3 笔: <span style="color:var(--primary);font-weight:500">撇 piě</span></div></div>
-            <div style="display:flex;gap:8px;justify-content:center;margin:12px 0"><span class="btn btn-sm">↩ 撤销</span><span class="btn btn-sm">⟲ 重写</span><span class="btn btn-sm">▶ 播放动画</span></div>
+            <div style="display:flex;gap:8px;justify-content:center;margin:12px 0"><span class="proto-btn-sm">↩ 撤销</span><span class="proto-btn-sm">⟲ 重写</span><span class="proto-btn-sm">▶ 播放动画</span></div>
             <div class="highlight-box green" style="margin:12px 0"><div class="text-sm">📏 笔顺规则: 先横后竖，先撇后捺</div><div class="text-sm text-muted">Horizontal before vertical, left-falling before right-falling</div></div>
           </div>
         </div>
@@ -51,28 +51,28 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>笔顺描红</strong>。核心：笔画序列(类型+路径)+动画文件+判定阈值。<strong>描红判定纯前端Canvas+DTW，不调AI。</strong></div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="笔画笔顺" disabled></div>
-        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="笔顺描红" disabled></div>
-        <div class="form-group"><label class="form-label"><span class="req">*</span>目标汉字</label><input class="form-input lg" value="大" style="text-align:center;font-size:28px"></div>
+        <div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="笔画笔顺" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="笔顺描红" disabled></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>目标汉字</label><input class="proto-input lg" value="大" style="text-align:center;font-size:28px"></div>
       </div>
       <hr class="divider">
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">拼音</label><input class="form-input" value="dà"></div>
-        <div class="form-group"><label class="form-label">笔画数</label><input class="form-input" type="number" value="3"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>初级(1-5画)</option><option>中级(6-10画)</option><option>高级(11+画)</option></select></div>
+        <div class="proto-field"><label class="proto-label">拼音</label><input class="proto-input" value="dà"></div>
+        <div class="proto-field"><label class="proto-label">笔画数</label><input class="proto-input" type="number" value="3"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option selected>初级(1-5画)</option><option>中级(6-10画)</option><option>高级(11+画)</option></select></div>
       </div>
-      <div class="form-group"><label class="form-label"><span class="req">*</span>笔画序列 <span class="hint">每笔的类型和路径坐标</span></label>
+      <div class="proto-field"><label class="proto-label"><span class="req">*</span>笔画序列 <span class="hint">每笔的类型和路径坐标</span></label>
         <div class="list-builder">
-          <div class="list-builder-item"><span class="drag">1</span><div class="content" style="display:flex;gap:8px"><select class="form-select" style="width:80px"><option selected>横</option></select><input class="form-input" value="M30,45 L170,45" placeholder="SVG Path" style="flex:1"></div><div class="actions"><span class="btn btn-sm">🗑</span></div></div>
-          <div class="list-builder-item"><span class="drag">2</span><div class="content" style="display:flex;gap:8px"><select class="form-select" style="width:80px"><option selected>撇</option></select><input class="form-input" value="M100,10 L30,170" style="flex:1"></div><div class="actions"><span class="btn btn-sm">🗑</span></div></div>
-          <div class="list-builder-item"><span class="drag">3</span><div class="content" style="display:flex;gap:8px"><select class="form-select" style="width:80px"><option selected>捺</option></select><input class="form-input" value="M100,10 L170,170" style="flex:1"></div><div class="actions"><span class="btn btn-sm">🗑</span></div></div>
+          <div class="list-builder-item"><span class="drag">1</span><div class="content" style="display:flex;gap:8px"><select class="proto-select" style="width:80px"><option selected>横</option></select><input class="proto-input" value="M30,45 L170,45" placeholder="SVG Path" style="flex:1"></div><div class="actions"><span class="proto-btn-sm">🗑</span></div></div>
+          <div class="list-builder-item"><span class="drag">2</span><div class="content" style="display:flex;gap:8px"><select class="proto-select" style="width:80px"><option selected>撇</option></select><input class="proto-input" value="M100,10 L30,170" style="flex:1"></div><div class="actions"><span class="proto-btn-sm">🗑</span></div></div>
+          <div class="list-builder-item"><span class="drag">3</span><div class="content" style="display:flex;gap:8px"><select class="proto-select" style="width:80px"><option selected>捺</option></select><input class="proto-input" value="M100,10 L170,170" style="flex:1"></div><div class="actions"><span class="proto-btn-sm">🗑</span></div></div>
           <div class="list-builder-add">+ 添加笔画</div>
         </div>
       </div>
-      <div class="form-group"><label class="form-label">笔顺动画文件</label><div class="upload-area sm">🎬 上传 SVG/Lottie/GIF (推荐 Make Me a Hanzi 开源数据)</div></div>
-      <div class="form-group"><label class="form-label">关联笔顺规则</label><div class="tag-input"><span class="tag-item">先横后竖 <span class="close">×</span></span><span class="tag-item">先撇后捺 <span class="close">×</span></span></div></div>
-      <div class="form-group"><label class="form-label">DTW判定阈值 <span class="hint">相似度百分比，低于此值判定不通过</span></label><input class="form-input" type="number" value="80" style="width:80px"><span class="text-sm text-muted"> %</span></div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览动画</span><span class="btn">📥 从开源库批量导入</span></div>
+      <div class="proto-field"><label class="proto-label">笔顺动画文件</label><div class="upload-area sm">🎬 上传 SVG/Lottie/GIF (推荐 Make Me a Hanzi 开源数据)</div></div>
+      <div class="proto-field"><label class="proto-label">关联笔顺规则</label><div class="tag-input"><span class="tag-item">先横后竖 <span class="close">×</span></span><span class="tag-item">先撇后捺 <span class="close">×</span></span></div></div>
+      <div class="proto-field"><label class="proto-label">DTW判定阈值 <span class="hint">相似度百分比，低于此值判定不通过</span></label><input class="proto-input" type="number" value="80" style="width:80px"><span class="text-sm text-muted"> %</span></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览动画</span><span class="proto-btn-secondary">📥 从开源库批量导入</span></div>
     </div>
   </div>
 </div>

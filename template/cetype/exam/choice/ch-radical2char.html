@@ -51,7 +51,7 @@
               <div class="option-item"><span class="letter">C</span><span style="font-size:20px">树</span><span class="text-xs text-muted" style="margin-left:8px">shù · tree</span></div>
               <div class="option-item"><span class="letter">D</span><span style="font-size:20px">城</span><span class="text-xs text-muted" style="margin-left:8px">chéng · city</span></div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
             <hr class="divider">
             <div class="highlight-box green">
               <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
@@ -68,61 +68,61 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>本L3独有：题干为<strong>部首</strong>(非汉字/拼音/音频)。需配置部首名称、含义说明。干扰汉字应<strong>不含该部首</strong>但可能含其他易混淆部首。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
-        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="汉字" disabled></div>
-        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="部首选汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="选择题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3</label><input class="proto-input" value="部首选汉字" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>目标部首 <span class="hint">应用端以64px大号居中展示</span></label>
-        <input class="form-input lg" value="氵" style="text-align:center" placeholder="输入部首字符">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>目标部首 <span class="hint">应用端以64px大号居中展示</span></label>
+        <input class="proto-input lg" value="氵" style="text-align:center" placeholder="输入部首字符">
       </div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label"><span class="req">*</span>部首名称</label><input class="form-input" value="三点水"></div>
-        <div class="form-group"><label class="form-label"><span class="req">*</span>拼音</label><input class="form-input" value="sān diǎn shuǐ"></div>
-        <div class="form-group"><label class="form-label"><span class="req">*</span>English</label><input class="form-input" value="water radical"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>部首名称</label><input class="proto-input" value="三点水"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>拼音</label><input class="proto-input" value="sān diǎn shuǐ"></div>
+        <div class="proto-field"><label class="proto-label"><span class="req">*</span>English</label><input class="proto-input" value="water radical"></div>
       </div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>含义说明 <span class="hint">应用端展示在部首下方</span></label>
-        <input class="form-input" value="表示与水、液体有关">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>含义说明 <span class="hint">应用端展示在部首下方</span></label>
+        <input class="proto-input" value="表示与水、液体有关">
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>正确汉字(含该部首)</label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>正确汉字(含该部首)</label>
         <div class="form-row t3">
-          <div class="form-group"><label class="form-label text-sm">汉字</label><input class="form-input" value="河" style="text-align:center"></div>
-          <div class="form-group"><label class="form-label text-sm">拼音</label><input class="form-input" value="hé"></div>
-          <div class="form-group"><label class="form-label text-sm">释义</label><input class="form-input" value="river"></div>
+          <div class="proto-field"><label class="proto-label text-sm">汉字</label><input class="proto-input" value="河" style="text-align:center"></div>
+          <div class="proto-field"><label class="proto-label text-sm">拼音</label><input class="proto-input" value="hé"></div>
+          <div class="proto-field"><label class="proto-label text-sm">释义</label><input class="proto-input" value="river"></div>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>干扰汉字(不含该部首)</label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>干扰汉字(不含该部首)</label>
         <table class="mini-table">
           <thead><tr><th>汉字</th><th>拼音</th><th>释义</th><th>实际部首</th><th></th></tr></thead>
           <tbody>
-            <tr><td><input class="form-input" value="烤" style="width:50px;text-align:center"></td><td><input class="form-input" value="kǎo" style="width:50px"></td><td><input class="form-input" value="roast" style="width:60px"></td><td><input class="form-input" value="火" style="width:40px;text-align:center"></td><td><span class="btn btn-sm">🗑</span></td></tr>
-            <tr><td><input class="form-input" value="树" style="width:50px;text-align:center"></td><td><input class="form-input" value="shù" style="width:50px"></td><td><input class="form-input" value="tree" style="width:60px"></td><td><input class="form-input" value="木" style="width:40px;text-align:center"></td><td><span class="btn btn-sm">🗑</span></td></tr>
-            <tr><td><input class="form-input" value="城" style="width:50px;text-align:center"></td><td><input class="form-input" value="chéng" style="width:50px"></td><td><input class="form-input" value="city" style="width:60px"></td><td><input class="form-input" value="土" style="width:40px;text-align:center"></td><td><span class="btn btn-sm">🗑</span></td></tr>
+            <tr><td><input class="proto-input" value="烤" style="width:50px;text-align:center"></td><td><input class="proto-input" value="kǎo" style="width:50px"></td><td><input class="proto-input" value="roast" style="width:60px"></td><td><input class="proto-input" value="火" style="width:40px;text-align:center"></td><td><span class="proto-btn-sm">🗑</span></td></tr>
+            <tr><td><input class="proto-input" value="树" style="width:50px;text-align:center"></td><td><input class="proto-input" value="shù" style="width:50px"></td><td><input class="proto-input" value="tree" style="width:60px"></td><td><input class="proto-input" value="木" style="width:40px;text-align:center"></td><td><span class="proto-btn-sm">🗑</span></td></tr>
+            <tr><td><input class="proto-input" value="城" style="width:50px;text-align:center"></td><td><input class="proto-input" value="chéng" style="width:50px"></td><td><input class="proto-input" value="city" style="width:60px"></td><td><input class="proto-input" value="土" style="width:40px;text-align:center"></td><td><span class="proto-btn-sm">🗑</span></td></tr>
           </tbody>
         </table>
         <div style="text-align:center;padding:8px;color:var(--primary);cursor:pointer;font-size:13px">+ 添加</div>
       </div>
-      <div class="form-group">
-        <label class="form-label">选项辅助显示</label>
+      <div class="proto-field">
+        <label class="proto-label">选项辅助显示</label>
         <div style="display:flex;gap:12px">
           <label class="text-sm"><input type="checkbox" checked> 显示拼音</label>
           <label class="text-sm"><input type="checkbox" checked> 显示释义</label>
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">「河」= 氵(水)+可，三点水表示与水有关。</textarea><textarea class="form-textarea">河 = 氵(water) + 可. Water radical indicates river.</textarea></div></div>
+      <div class="proto-field"><label class="proto-label">答案解析</label><div class="form-row"><textarea class="proto-textarea">「河」= 氵(水)+可，三点水表示与水有关。</textarea><textarea class="proto-textarea">河 = 氵(water) + 可. Water radical indicates river.</textarea></div></div>
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="20"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option><option>中等</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="20"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option selected>简单</option><option>中等</option></select></div>
       </div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
 </div>

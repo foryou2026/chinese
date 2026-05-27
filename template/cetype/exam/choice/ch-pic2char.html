@@ -49,7 +49,7 @@
               <div class="option-item"><span style="font-size:32px">鸟</span></div>
               <div class="option-item"><span style="font-size:32px">鱼</span></div>
             </div>
-            <div style="padding:16px 0"><span class="btn btn-primary btn-block">确认答案 ✓</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
           </div>
         </div>
       </div>
@@ -60,52 +60,52 @@
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题干从文字/音频变为<strong>图片(必填)</strong>。干扰维度以<strong>同类别词</strong>为主(如同为动物/食物/交通等)。</div></div>
       <div class="form-row t3">
-        <div class="form-group"><label class="form-label">L1</label><input class="form-input" value="选择题" disabled></div>
-        <div class="form-group"><label class="form-label">L2</label><input class="form-input" value="汉字" disabled></div>
-        <div class="form-group"><label class="form-label">L3</label><input class="form-input" value="图片选汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L1</label><input class="proto-input" value="选择题" disabled></div>
+        <div class="proto-field"><label class="proto-label">L2</label><input class="proto-input" value="汉字" disabled></div>
+        <div class="proto-field"><label class="proto-label">L3</label><input class="proto-input" value="图片选汉字" disabled></div>
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>题干图片 <span class="hint" style="color:var(--error)">必填，是唯一视觉题干</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>题干图片 <span class="hint" style="color:var(--error)">必填，是唯一视觉题干</span></label>
         <div class="upload-area">🖼 上传图片 JPG/PNG/WebP (必填)<br><span class="text-xs text-muted">建议尺寸: 400×300px，清晰且语义明确</span></div>
       </div>
-      <div class="form-group">
-        <label class="form-label">图片描述(Alt) <span class="hint">无障碍和内部管理用</span></label>
-        <input class="form-input" value="一只橘色的猫" placeholder="描述图片内容">
+      <div class="proto-field">
+        <label class="proto-label">图片描述(Alt) <span class="hint">无障碍和内部管理用</span></label>
+        <input class="proto-input" value="一只橘色的猫" placeholder="描述图片内容">
       </div>
       <hr class="divider">
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>目标汉字(正确答案)</label>
-        <input class="form-input lg" value="猫" style="text-align:center">
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>目标汉字(正确答案)</label>
+        <input class="proto-input lg" value="猫" style="text-align:center">
       </div>
-      <div class="form-group">
-        <label class="form-label"><span class="req">*</span>干扰汉字 <span class="hint">应为同类别词(如同为动物)增加干扰难度</span></label>
+      <div class="proto-field">
+        <label class="proto-label"><span class="req">*</span>干扰汉字 <span class="hint">应为同类别词(如同为动物)增加干扰难度</span></label>
         <table class="mini-table">
           <thead><tr><th>汉字</th><th>拼音</th><th>释义</th><th>干扰类型</th><th></th></tr></thead>
           <tbody>
-            <tr><td><input class="form-input" value="狗" style="width:50px;text-align:center"></td><td><input class="form-input" value="gǒu" style="width:60px"></td><td><input class="form-input" value="dog" style="width:60px"></td><td><select class="form-select" style="width:100px"><option selected>同类别</option></select></td><td><span class="btn btn-sm">🗑</span></td></tr>
-            <tr><td><input class="form-input" value="鸟" style="width:50px;text-align:center"></td><td><input class="form-input" value="niǎo" style="width:60px"></td><td><input class="form-input" value="bird" style="width:60px"></td><td><select class="form-select" style="width:100px"><option selected>同类别</option></select></td><td><span class="btn btn-sm">🗑</span></td></tr>
-            <tr><td><input class="form-input" value="鱼" style="width:50px;text-align:center"></td><td><input class="form-input" value="yú" style="width:60px"></td><td><input class="form-input" value="fish" style="width:60px"></td><td><select class="form-select" style="width:100px"><option selected>同类别</option></select></td><td><span class="btn btn-sm">🗑</span></td></tr>
+            <tr><td><input class="proto-input" value="狗" style="width:50px;text-align:center"></td><td><input class="proto-input" value="gǒu" style="width:60px"></td><td><input class="proto-input" value="dog" style="width:60px"></td><td><select class="proto-select" style="width:100px"><option selected>同类别</option></select></td><td><span class="proto-btn-sm">🗑</span></td></tr>
+            <tr><td><input class="proto-input" value="鸟" style="width:50px;text-align:center"></td><td><input class="proto-input" value="niǎo" style="width:60px"></td><td><input class="proto-input" value="bird" style="width:60px"></td><td><select class="proto-select" style="width:100px"><option selected>同类别</option></select></td><td><span class="proto-btn-sm">🗑</span></td></tr>
+            <tr><td><input class="proto-input" value="鱼" style="width:50px;text-align:center"></td><td><input class="proto-input" value="yú" style="width:60px"></td><td><input class="proto-input" value="fish" style="width:60px"></td><td><select class="proto-select" style="width:100px"><option selected>同类别</option></select></td><td><span class="proto-btn-sm">🗑</span></td></tr>
           </tbody>
         </table>
         <div style="text-align:center;padding:8px;color:var(--primary);cursor:pointer;font-size:13px">+ 添加</div>
       </div>
-      <div class="form-group">
-        <label class="form-label">选项辅助显示</label>
+      <div class="proto-field">
+        <label class="proto-label">选项辅助显示</label>
         <div style="display:flex;gap:12px">
           <label class="text-sm"><input type="checkbox"> 显示拼音</label>
           <label class="text-sm"><input type="checkbox"> 显示释义</label>
         </div>
       </div>
       <hr class="divider">
-      <div class="form-group"><label class="form-label">答案解析</label><div class="form-row"><textarea class="form-textarea">图中是一只猫。「猫」(māo), 犭旁表示动物类。</textarea><textarea class="form-textarea">The picture shows a cat. 猫 (māo), with the animal radical 犭.</textarea></div></div>
+      <div class="proto-field"><label class="proto-label">答案解析</label><div class="form-row"><textarea class="proto-textarea">图中是一只猫。「猫」(māo), 犭旁表示动物类。</textarea><textarea class="proto-textarea">The picture shows a cat. 猫 (māo), with the animal radical 犭.</textarea></div></div>
       <div class="form-row t4">
-        <div class="form-group"><label class="form-label">HSK</label><select class="form-select"><option selected>HSK 1</option></select></div>
-        <div class="form-group"><label class="form-label">分值</label><input class="form-input" type="number" value="2"></div>
-        <div class="form-group"><label class="form-label">限时(秒)</label><input class="form-input" type="number" value="15"></div>
-        <div class="form-group"><label class="form-label">难度</label><select class="form-select"><option selected>简单</option></select></div>
+        <div class="proto-field"><label class="proto-label">HSK</label><select class="proto-select"><option selected>HSK 1</option></select></div>
+        <div class="proto-field"><label class="proto-label">分值</label><input class="proto-input" type="number" value="2"></div>
+        <div class="proto-field"><label class="proto-label">限时(秒)</label><input class="proto-input" type="number" value="15"></div>
+        <div class="proto-field"><label class="proto-label">难度</label><select class="proto-select"><option selected>简单</option></select></div>
       </div>
-      <div class="btn-group"><span class="btn btn-primary">💾 保存</span><span class="btn">👁 预览</span><span class="btn">🤖 AI批量生成</span></div>
+      <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
 </div>
