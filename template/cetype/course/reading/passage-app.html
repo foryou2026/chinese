@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>阅读理解 · 阅读 · 分级阅读</title><link rel="stylesheet" href="../../styles-app.css">
+<html lang="zh-CN" data-mode="light" data-accent="red" data-density="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阅读理解 · 阅读 · 分级阅读</title>
+<link rel="stylesheet" href="../../../../docs/B02-experience-design/app/prototype-style/app.css">
 <style>
-.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
-.shared-tpl::before { content:'\267b'; }
-.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
-.field-map strong { color:var(--primary); font-weight:500; }
-</style></head>
+.page-header{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--glass-border);display:flex;align-items:center;gap:var(--space-3);position:sticky;top:0;z-index:var(--z-sticky);flex-wrap:wrap;box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow)}
+.page-header h1{font-size:var(--text-lg);font-weight:var(--weight-semibold)}
+.page-header .subtitle{color:var(--text-muted);font-size:var(--text-sm)}
+.back-link{color:var(--color-brand-default);text-decoration:none;font-size:var(--text-sm);transition:color var(--motion-fast)}
+.back-link:hover{text-decoration:underline;color:var(--color-brand-hover)}
+.badge{display:inline-block;font-size:var(--text-xs);padding:2px 8px;border-radius:var(--radius-pill);font-weight:var(--weight-regular)}
+.badge.blue{background:var(--color-info-50);color:var(--color-info-500);border:1px solid var(--color-info-200)}
+.badge.solid-green{background:var(--color-success-500);color:#fff}
+.content{max-width:1440px;margin:0 auto;padding:var(--space-6);position:relative;z-index:1}
+.type-desc{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur-sm);backdrop-filter:var(--glass-blur-sm);border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-5);font-size:var(--text-sm);line-height:var(--leading-loose)}
+.type-desc strong{color:var(--color-brand-default)}
+.shared-tpl{background:var(--color-success-50);border:1px solid var(--color-success-200);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--color-success-700);margin:8px 0;display:inline-flex;align-items:center;gap:4px}
+.shared-tpl::before{content:'\267b'}
+.field-map{font-size:11px;color:var(--text-muted);margin-top:4px}
+.field-map strong{color:var(--color-brand-default);font-weight:var(--weight-medium)}
+.card{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border);border-radius:var(--radius-xl);box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow);overflow:hidden}
+.card-header{padding:14px 20px;border-bottom:1px solid var(--glass-border);font-weight:var(--weight-semibold);font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-body{padding:20px}
+.phone-frame{width:375px;max-width:100%;margin:0 auto;border:3px solid var(--color-neutral-800);border-radius:32px;overflow:hidden;background:var(--color-neutral-0);box-shadow:var(--shadow-lg)}
+.phone-frame .status-bar{background:var(--color-neutral-800);color:#fff;font-size:var(--text-xs);padding:6px 20px;display:flex;justify-content:space-between}
+.phone-screen{min-height:580px;overflow-y:auto}
+.app-header{background:linear-gradient(135deg,var(--color-brand-default),var(--color-brand-400));color:var(--color-brand-on);padding:14px 16px;display:flex;align-items:center;gap:var(--space-3)}
+.app-header .back{font-size:18px;cursor:pointer}
+.app-header h3{font-size:15px;font-weight:var(--weight-medium);flex:1}
+.app-header .progress{font-size:var(--text-xs);opacity:.8}
+.app-content{padding:var(--space-4)}
+.progress-bar{height:4px;background:var(--color-neutral-100);border-radius:2px;overflow:hidden}
+.progress-bar .fill{height:100%;background:var(--color-brand-default);border-radius:2px;transition:width var(--motion-base)}
+.audio-btn{display:inline-flex;align-items:center;gap:6px;background:var(--color-brand-50);color:var(--color-brand-default);border:1px solid var(--color-brand-200);border-radius:var(--radius-pill);padding:8px 16px;cursor:pointer;font-size:var(--text-sm);transition:var(--transition-all)}
+.audio-btn:hover{background:var(--color-brand-100)}
+.vocab-word{background:var(--color-warning-50);padding:2px 4px;border-radius:3px;border-bottom:2px solid var(--color-warning-500);cursor:pointer}
+</style>
+</head>
 <body>
+<div class="mesh-gradient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+
 <div class="page-header">
   <a href="index.html" class="back-link">← 阅读理解 · 全部学习形式</a>
   <h1>#18 分级阅读</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">阅读理解 × 阅读 × 分级阅读</span>
+  <a href="passage-admin.html" class="back-link" style="margin-left:auto;color:var(--color-warning-700)">Admin端 →</a>
+</div>
 
-  <a href="../../../course/reading/passage.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a></div>
 <div class="content">
-<div class="type-desc"><strong>阅读理解 × 分级阅读</strong> — 按HSK等级分级的短文，支持点词查义、生词高亮、全文朗读。<br><span class="field-map">应用端: <strong>文章标题+标签</strong> + <strong>正文(生词高亮)</strong> + <strong>点词弹窗</strong> + <strong>工具栏(朗读/拼音/生词表)</strong></span></div>
-<div class="shared-tpl">共用模板: 文章展示 + 生词标注 + 点词查义 + 工具栏</div>
-<div class="card">
+  <div class="type-desc"><strong>阅读理解 × 分级阅读</strong> — 按HSK等级分级的短文，支持点词查义、生词高亮、全文朗读。<br><span class="field-map">应用端: <strong>文章标题+标签</strong> + <strong>正文(生词高亮)</strong> + <strong>点词弹窗</strong> + <strong>工具栏(朗读/拼音/生词表)</strong></span></div>
+  <div class="shared-tpl">共用模板: 文章展示 + 生词标注 + 点词查义 + 工具栏</div>
+
+  <div class="card animate-slide-up">
     <div class="card-header"><span class="badge blue">应用端</span> 分级阅读</div>
     <div class="card-body">
       <div class="phone-frame">
@@ -28,24 +63,25 @@
           <div class="app-header"><span class="back">←</span><h3>分级阅读</h3><span class="progress">进度</span></div>
           <div class="progress-bar"><div class="fill" style="width:35%"></div></div>
           <div class="app-content">
-            <div style="font-size:16px;font-weight:500;margin-bottom:8px">🐈 小猫找朋友</div>
+            <div style="font-size:16px;font-weight:var(--weight-medium);margin-bottom:8px">🐈 小猫找朋友</div>
             <div style="display:flex;gap:6px;margin-bottom:12px">
-              <span style="background:#f6ffed;color:var(--success);padding:2px 8px;border-radius:4px;font-size:11px">HSK 3</span>
-              <span style="background:#f5f5f5;padding:2px 8px;border-radius:4px;font-size:11px">120字</span>
-              <span style="background:#e6f4ff;color:var(--primary);padding:2px 8px;border-radius:4px;font-size:11px">动物</span>
+              <span style="background:var(--color-success-50);color:var(--color-success-500);padding:2px 8px;border-radius:4px;font-size:11px">HSK 3</span>
+              <span style="background:var(--color-neutral-50);padding:2px 8px;border-radius:4px;font-size:11px">120字</span>
+              <span style="background:var(--color-info-50);color:var(--color-brand-default);padding:2px 8px;border-radius:4px;font-size:11px">动物</span>
             </div>
-            <div style="font-size:15px;line-height:2;padding:12px;background:#fafafa;border-radius:8px">
-              从前，有一只小猫，它很<span style="background:#fff7e6;padding:2px 4px;border-radius:3px;border-bottom:2px solid var(--warning);cursor:pointer">孤独</span>。每天，它在<span style="background:#fff7e6;padding:2px 4px;border-radius:3px;border-bottom:2px solid var(--warning);cursor:pointer">村子</span>里走来走去，想找一个朋友。<br><br>有一天，它遇到了一只小狗。小狗问它：「你为什么看起来不<span style="background:#fff7e6;padding:2px 4px;border-radius:3px;border-bottom:2px solid var(--warning);cursor:pointer">开心</span>？」小猫说：「因为我没有朋友。」小狗笑着说：「从今天开始，我就是你的朋友！」<br><br>从那以后，小猫和小狗每天一起<span style="background:#fff7e6;padding:2px 4px;border-radius:3px;border-bottom:2px solid var(--warning);cursor:pointer">玩耍</span>，它们成了最好的朋友。
+            <div style="font-size:15px;line-height:2;padding:12px;background:var(--color-neutral-50);border-radius:8px">
+              从前，有一只小猫，它很<span class="vocab-word">孤独</span>。每天，它在<span class="vocab-word">村子</span>里走来走去，想找一个朋友。<br><br>有一天，它遇到了一只小狗。小狗问它：「你为什么看起来不<span class="vocab-word">开心</span>？」小猫说：「因为我没有朋友。」小狗笑着说：「从今天开始，我就是你的朋友！」<br><br>从那以后，小猫和小狗每天一起<span class="vocab-word">玩耍</span>，它们成了最好的朋友。
             </div>
-            <div style="background:#e6f4ff;border-radius:8px;padding:10px;margin:12px 0"><div style="font-size:12px;color:var(--primary);font-weight:500">📝 点击高亮词 → 弹出释义</div><div style="display:flex;gap:12px;margin-top:6px;align-items:center"><div style="font-size:24px">孤独</div><div><div style="font-size:13px;color:var(--primary)">gūdú</div><div style="font-size:12px">adj. lonely</div></div><span class="audio-btn" style="font-size:11px;padding:3px 8px;margin-left:auto">🔊</span></div></div>
+            <div style="background:var(--color-info-50);border-radius:8px;padding:10px;margin:12px 0"><div style="font-size:12px;color:var(--color-brand-default);font-weight:var(--weight-medium)">📝 点击高亮词 → 弹出释义</div><div style="display:flex;gap:12px;margin-top:6px;align-items:center"><div style="font-size:24px">孤独</div><div><div style="font-size:13px;color:var(--color-brand-default)">gūdú</div><div style="font-size:12px">adj. lonely</div></div><span class="audio-btn" style="font-size:11px;padding:3px 8px;margin-left:auto">🔊</span></div></div>
             <div style="display:flex;gap:8px;margin:8px 0"><span class="proto-btn-sm" style="flex:1;justify-content:center">🔊 朗读</span><span class="proto-btn-sm" style="flex:1;justify-content:center">Aa 拼音</span><span class="proto-btn-sm" style="flex:1;justify-content:center">📋 生词</span></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>
-<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+
+<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+<script>proto.bootstrap();</script>
 </body>
 </html>

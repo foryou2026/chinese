@@ -1,25 +1,91 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>翻译题 · 中→英 · 中英输入</title><link rel="stylesheet" href="../../styles-app.css">
+<html lang="zh-CN" data-mode="light" data-accent="red" data-density="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>翻译题 · 中→英 · 中英输入</title>
+<link rel="stylesheet" href="../../../../docs/B02-experience-design/app/prototype-style/app.css">
 <style>
-.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
-.shared-tpl::before { content:'\267b'; }
-.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
-.field-map strong { color:var(--primary); font-weight:500; }
-</style></head>
+.page-header{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--glass-border);display:flex;align-items:center;gap:var(--space-3);position:sticky;top:0;z-index:var(--z-sticky);flex-wrap:wrap;box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow)}
+.page-header h1{font-size:var(--text-lg);font-weight:var(--weight-semibold)}
+.page-header .subtitle{color:var(--text-muted);font-size:var(--text-sm)}
+.back-link{color:var(--color-brand-default);text-decoration:none;font-size:var(--text-sm);transition:color var(--motion-fast)}
+.back-link:hover{text-decoration:underline;color:var(--color-brand-hover)}
+.badge{display:inline-block;font-size:var(--text-xs);padding:2px 8px;border-radius:var(--radius-pill);font-weight:var(--weight-regular)}
+.badge.blue{background:var(--color-info-50);color:var(--color-info-500);border:1px solid var(--color-info-200)}
+.badge.green{background:var(--color-success-50);color:var(--color-success-500);border:1px solid var(--color-success-200)}
+.badge.solid-green{background:var(--color-success-500);color:#fff}
+.badge.solid-red{background:var(--color-danger-500);color:#fff}
+.badge.red{background:var(--color-danger-50);color:var(--color-danger-500);border:1px solid var(--color-danger-200)}
+.badge.orange{background:var(--color-warning-50);color:var(--color-warning-700);border:1px solid var(--color-warning-200)}
+.content{max-width:1440px;margin:0 auto;padding:var(--space-6);position:relative;z-index:1}
+.type-desc{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur-sm);backdrop-filter:var(--glass-blur-sm);border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-5);font-size:var(--text-sm);line-height:var(--leading-loose)}
+.type-desc strong{color:var(--color-brand-default)}
+.shared-tpl{background:var(--color-success-50);border:1px solid var(--color-success-200);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--color-success-700);margin:8px 0;display:inline-flex;align-items:center;gap:4px}
+.shared-tpl::before{content:'\267b'}
+.field-map{font-size:11px;color:var(--text-muted);margin-top:4px}
+.field-map strong{color:var(--color-brand-default);font-weight:var(--weight-medium)}
+.card{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border);border-radius:var(--radius-xl);box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow);overflow:hidden}
+.card-header{padding:14px 20px;border-bottom:1px solid var(--glass-border);font-weight:var(--weight-semibold);font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-body{padding:20px}
+.phone-frame{width:375px;max-width:100%;margin:0 auto;border:3px solid var(--color-neutral-800);border-radius:32px;overflow:hidden;background:var(--color-neutral-0);box-shadow:var(--shadow-lg)}
+.phone-frame .status-bar{background:var(--color-neutral-800);color:#fff;font-size:var(--text-xs);padding:6px 20px;display:flex;justify-content:space-between}
+.phone-screen{min-height:580px;overflow-y:auto}
+.app-header{background:linear-gradient(135deg,var(--color-brand-default),var(--color-brand-400));color:var(--color-brand-on);padding:14px 16px;display:flex;align-items:center;gap:var(--space-3)}
+.app-header .back{font-size:18px;cursor:pointer}
+.app-header h3{font-size:15px;font-weight:var(--weight-medium);flex:1}
+.app-header .progress{font-size:var(--text-xs);opacity:.8}
+.app-content{padding:var(--space-4)}
+.progress-bar{height:4px;background:var(--color-neutral-100);border-radius:2px;overflow:hidden}
+.progress-bar .fill{height:100%;background:var(--color-brand-default);border-radius:2px;transition:width var(--motion-base)}
+.audio-btn{display:inline-flex;align-items:center;gap:6px;background:var(--color-brand-50);color:var(--color-brand-default);border:1px solid var(--color-brand-200);border-radius:var(--radius-pill);padding:8px 16px;cursor:pointer;font-size:var(--text-sm);transition:var(--transition-all)}
+.audio-btn:hover{background:var(--color-brand-100)}
+.q-instruction{text-align:center;padding:6px;background:var(--color-neutral-50);border-radius:8px;margin-bottom:12px;font-size:12px;color:var(--text-muted)}
+.option-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.option-item{background:var(--glass-bg-card);border:2px solid var(--color-neutral-200);border-radius:var(--radius-md);padding:16px;text-align:center;cursor:pointer;transition:var(--transition-all)}
+.option-item:hover{border-color:var(--color-brand-200);background:var(--color-brand-50)}
+.option-item.selected{border-color:var(--color-brand-default);background:var(--color-brand-50)}
+.option-list{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+.option-row{display:flex;align-items:center;gap:10px;padding:12px;border:2px solid var(--color-neutral-200);border-radius:var(--radius-md);cursor:pointer;transition:var(--transition-all)}
+.option-row:hover{border-color:var(--color-brand-200);background:var(--color-brand-50)}
+.option-row.selected{border-color:var(--color-brand-default);background:var(--color-brand-50)}
+.option-label{width:24px;height:24px;border-radius:50%;border:2px solid var(--color-neutral-300);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:var(--weight-medium);flex-shrink:0}
+.option-row.selected .option-label{border-color:var(--color-brand-default);background:var(--color-brand-default);color:#fff}
+.divider{border:none;border-top:1px solid var(--color-neutral-200);margin:var(--space-4) 0}
+.highlight-box{padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);margin:12px 0}
+.highlight-box.green{background:var(--color-success-50);border:1px solid var(--color-success-200)}
+.highlight-box.blue{background:var(--color-info-50);border:1px solid var(--color-info-200)}
+.highlight-box.red{background:var(--color-danger-50);border:1px solid var(--color-danger-200)}
+.sentence-line{padding:10px 0;border-bottom:1px solid var(--color-neutral-100)}
+.sentence-line .cn{font-size:16px;line-height:var(--leading-loose)}
+.sentence-line .en{font-size:var(--text-sm);color:var(--text-muted);margin-top:2px}
+.drag-item{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--glass-bg-card);border:1px solid var(--color-neutral-200);border-radius:var(--radius-sm);margin-bottom:6px;cursor:grab;transition:var(--transition-all)}
+.drag-item:hover{border-color:var(--color-brand-200)}
+.drag-handle{color:var(--color-neutral-400);cursor:grab}
+.match-pair{display:flex;gap:8px;margin-bottom:8px}
+.match-left,.match-right{flex:1;padding:10px;border:2px solid var(--color-neutral-200);border-radius:var(--radius-sm);text-align:center;cursor:pointer;transition:var(--transition-all)}
+.match-left:hover,.match-right:hover{border-color:var(--color-brand-200)}
+.match-left.active,.match-right.active{border-color:var(--color-brand-default);background:var(--color-brand-50)}
+.match-connected{border-color:var(--color-success-500)!important;background:var(--color-success-50)!important}
+.writing-area{border:2px dashed var(--color-neutral-300);border-radius:var(--radius-md);min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:var(--text-sm);cursor:pointer;transition:var(--transition-all);margin:12px 0}
+.writing-area:hover{border-color:var(--color-brand-default)}
+.mic-btn{width:64px;height:64px;border-radius:50%;background:var(--color-danger-500);color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;margin:16px auto;cursor:pointer;box-shadow:var(--shadow-md);transition:var(--transition-all)}
+.mic-btn:hover{transform:scale(1.05)}
+</style>
+</head>
 <body>
+<div class="mesh-gradient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+
 <div class="page-header">
   <a href="index.html" class="back-link">← 翻译题 · 全部变体</a>
   <h1>#4 中英输入</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">翻译题 × 中→英 × 中英输入</span>
-
-  <a href="../../../exam/translate/cn-en-input.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a></div>
+  <a href="cn-en-input-admin.html" class="back-link" style="margin-left:auto;color:var(--color-warning-700)">Admin端 →</a></div>
 <div class="content">
 <div class="type-desc"><strong>翻译题 × 中→英 × 中英输入</strong> — 输入式翻译，用户直接输入译文，答案池匹配判分。<br><span class="field-map">应用端: <strong>原句展示</strong> + <strong>输入框</strong></span></div>
 <div class="shared-tpl">共用模板: 文本输入框 + 答案解析区 + 元数据区</div>
-<div class="card">
+<div class="card animate-slide-up">
     <div class="card-header"><span class="badge blue">应用端</span> 中英输入</div>
     <div class="card-body">
       <div class="phone-frame">
@@ -41,5 +107,8 @@
   </div>
 
 </div>
-<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
-</body></html>
+
+<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+<script>proto.bootstrap();</script>
+</body>
+</html>

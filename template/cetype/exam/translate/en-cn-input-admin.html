@@ -1,25 +1,75 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>翻译题 · 英→中 · 英中输入</title><link rel="stylesheet" href="../../styles-admin.css">
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>翻译题 · 英→中 · 英中输入 · 管理端</title>
+<link rel="stylesheet" href="../../../../docs/B02-experience-design/admin/prototype-style/app.css">
 <style>
-.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
-.shared-tpl::before { content:'\267b'; }
-.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
-.field-map strong { color:var(--primary); font-weight:500; }
-</style></head>
+.page-header{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--glass-border);display:flex;align-items:center;gap:var(--space-3);position:sticky;top:0;z-index:var(--z-sticky);flex-wrap:wrap;box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow)}
+.page-header h1{font-size:var(--text-lg);font-weight:var(--weight-semibold)}
+.page-header .subtitle{color:var(--text-muted);font-size:var(--text-sm)}
+.back-link{color:var(--color-brand-default);text-decoration:none;font-size:var(--text-sm);transition:color var(--motion-fast)}
+.back-link:hover{text-decoration:underline;color:var(--color-brand-hover)}
+.badge{display:inline-block;font-size:var(--text-xs);padding:2px 8px;border-radius:var(--radius-pill);font-weight:var(--weight-regular)}
+.badge.blue{background:var(--color-info-50);color:var(--color-info-500);border:1px solid var(--color-info-200)}
+.badge.green{background:var(--color-success-50);color:var(--color-success-500);border:1px solid var(--color-success-200)}
+.badge.solid-green{background:var(--color-success-500);color:#fff}
+.badge.solid-red{background:var(--color-danger-500);color:#fff}
+.badge.red{background:var(--color-danger-50);color:var(--color-danger-500);border:1px solid var(--color-danger-200)}
+.badge.orange{background:var(--color-warning-50);color:var(--color-warning-700);border:1px solid var(--color-warning-200)}
+.content{max-width:1440px;margin:0 auto;padding:var(--space-6);position:relative;z-index:1}
+.type-desc{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur-sm);backdrop-filter:var(--glass-blur-sm);border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-5);font-size:var(--text-sm);line-height:var(--leading-loose)}
+.type-desc strong{color:var(--color-brand-default)}
+.shared-tpl{background:var(--color-success-50);border:1px solid var(--color-success-200);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--color-success-700);margin:8px 0;display:inline-flex;align-items:center;gap:4px}
+.shared-tpl::before{content:'\267b'}
+.field-map{font-size:11px;color:var(--text-muted);margin-top:4px}
+.field-map strong{color:var(--color-brand-default);font-weight:var(--weight-medium)}
+.card{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border);border-radius:var(--radius-xl);box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow);overflow:hidden}
+.card-header{padding:14px 20px;border-bottom:1px solid var(--glass-border);font-weight:var(--weight-semibold);font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-body{padding:20px}
+.callout{padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);margin:var(--space-3) 0;font-size:var(--text-sm);display:flex;gap:8px;line-height:var(--leading-normal)}
+.callout.info{background:var(--color-info-50);border:1px solid var(--color-info-200)}
+.callout.cost{background:var(--color-warning-50);border:1px solid var(--color-warning-200)}
+.callout .icon{font-size:16px;flex-shrink:0}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3)}
+.form-row.t3{grid-template-columns:1fr 1fr 1fr}
+.form-row.t4{grid-template-columns:1fr 1fr 1fr 1fr}
+.divider{border:none;border-top:1px solid var(--color-neutral-200);margin:var(--space-4) 0}
+.upload-area{border:2px dashed var(--border-color);border-radius:var(--radius-sm);padding:var(--space-4);text-align:center;color:var(--text-muted);cursor:pointer;transition:var(--transition-all)}
+.upload-area:hover{border-color:var(--color-brand-default);color:var(--color-brand-default)}
+.upload-area.sm{padding:10px}
+.list-builder{border:1px solid var(--color-neutral-200);border-radius:var(--radius-sm)}
+.list-builder-item{display:flex;align-items:flex-start;gap:8px;padding:10px 12px;border-bottom:1px solid var(--color-neutral-100)}
+.list-builder-item:last-child{border-bottom:none}
+.list-builder-item .drag{color:var(--color-neutral-400);cursor:grab;padding-top:4px}
+.list-builder-item .content{flex:1}
+.list-builder-add{padding:8px;text-align:center;color:var(--color-brand-default);cursor:pointer;border-top:1px dashed var(--color-neutral-200);font-size:var(--text-sm)}
+.btn-group{display:flex;gap:8px;margin-top:var(--space-4);flex-wrap:wrap}
+.proto-label .req{color:var(--color-danger-500);margin-right:4px}
+.proto-label .hint{font-weight:var(--weight-regular);color:var(--text-muted);font-size:var(--text-xs);margin-left:6px}
+.proto-field{margin-bottom:18px}
+.mini-table{width:100%;border-collapse:collapse;font-size:var(--text-sm)}
+.mini-table th{text-align:left;padding:6px 8px;background:var(--color-neutral-50);border-bottom:1px solid var(--color-neutral-200);font-weight:var(--weight-medium);font-size:var(--text-xs);color:var(--text-muted)}
+.mini-table td{padding:6px 8px;border-bottom:1px solid var(--color-neutral-100)}
+.tag-input{display:flex;flex-wrap:wrap;gap:6px;padding:8px;border:1px solid var(--color-neutral-200);border-radius:var(--radius-sm);min-height:36px}
+.tag-item{background:var(--color-brand-50);color:var(--color-brand-default);border:1px solid var(--color-brand-200);padding:2px 8px;border-radius:var(--radius-pill);font-size:var(--text-xs);display:inline-flex;align-items:center;gap:4px}
+.tag-item .close{cursor:pointer;opacity:.6}
+</style>
+</head>
 <body>
+<div class="mesh-gradient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+
 <div class="page-header">
   <a href="index.html" class="back-link">← 翻译题 · 全部变体</a>
   <h1>#2 英中输入</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">翻译题 × 英→中 × 英中输入</span>
-
-  <a href="../../app/exam/translate/en-cn-input.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
+  <a href="en-cn-input-app.html" class="back-link" style="margin-left:auto;color:var(--color-success-500)">App端 →</a></div>
 <div class="content">
 <div class="type-desc"><strong>翻译题 × 英→中 × 英中输入</strong> — 输入式翻译，用户直接输入译文，答案池匹配判分。<br><span class="field-map">应用端: <strong>原句展示</strong> + <strong>输入框</strong></span></div>
 <div class="shared-tpl">共用模板: 文本输入框 + 答案解析区 + 元数据区</div>
-<div class="card">
+<div class="card animate-slide-up">
     <div class="card-header"><span class="badge green">管理端</span> 英中输入 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
@@ -32,7 +82,7 @@
       <div class="proto-field"><label class="proto-label"><span class="req">*</span>英文原句</label><input class="proto-input" value="She is a teacher." style="font-size:16px"></div>
       <div class="proto-field"><label class="proto-label"><span class="req">*</span>答案池 <span class="hint">所有可接受的中文翻译</span></label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="proto-input" value="她是老师。" style="border-color:var(--success)"><span class="text-xs" style="color:var(--success);white-space:nowrap">主答案</span></div></div>
+          <div class="list-builder-item"><div class="content" style="display:flex;gap:8px"><input class="proto-input" value="她是老师。" style="border-color:var(--color-success-500)"><span class="text-xs" style="color:var(--color-success-500);white-space:nowrap">主答案</span></div></div>
           <div class="list-builder-item"><div class="content"><input class="proto-input" value="她是一个老师。"></div></div>
           <div class="list-builder-item"><div class="content"><input class="proto-input" value="她是一位老师。"></div></div>
           <div class="list-builder-item"><div class="content"><input class="proto-input" value="她是个老师。"></div></div>
@@ -63,5 +113,8 @@
   </div>
 
 </div>
+
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
-</body></html>
+<script>proto.bootstrap();</script>
+</body>
+</html>

@@ -1,25 +1,62 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>语法句型 · 句型 · 句型模板</title><link rel="stylesheet" href="../../styles-admin.css">
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>语法句型 · 句型 · 句型模板 · 管理端</title>
+<link rel="stylesheet" href="../../../../docs/B02-experience-design/admin/prototype-style/app.css">
 <style>
-.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
-.shared-tpl::before { content:'\267b'; }
-.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
-.field-map strong { color:var(--primary); font-weight:500; }
-</style></head>
+.page-header{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--glass-border);display:flex;align-items:center;gap:var(--space-3);position:sticky;top:0;z-index:var(--z-sticky);flex-wrap:wrap;box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow)}
+.page-header h1{font-size:var(--text-lg);font-weight:var(--weight-semibold)}
+.page-header .subtitle{color:var(--text-muted);font-size:var(--text-sm)}
+.back-link{color:var(--color-brand-default);text-decoration:none;font-size:var(--text-sm);transition:color var(--motion-fast)}
+.back-link:hover{text-decoration:underline;color:var(--color-brand-hover)}
+.badge{display:inline-block;font-size:var(--text-xs);padding:2px 8px;border-radius:var(--radius-pill);font-weight:var(--weight-regular)}
+.badge.green{background:var(--color-success-50);color:var(--color-success-500);border:1px solid var(--color-success-200)}
+.badge.solid-green{background:var(--color-success-500);color:#fff}
+.content{max-width:1440px;margin:0 auto;padding:var(--space-6);position:relative;z-index:1}
+.type-desc{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur-sm);backdrop-filter:var(--glass-blur-sm);border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-5);font-size:var(--text-sm);line-height:var(--leading-loose)}
+.type-desc strong{color:var(--color-brand-default)}
+.shared-tpl{background:var(--color-success-50);border:1px solid var(--color-success-200);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--color-success-700);margin:8px 0;display:inline-flex;align-items:center;gap:4px}
+.shared-tpl::before{content:'\267b'}
+.field-map{font-size:11px;color:var(--text-muted);margin-top:4px}
+.field-map strong{color:var(--color-brand-default);font-weight:var(--weight-medium)}
+.card{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border);border-radius:var(--radius-xl);box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow);overflow:hidden}
+.card-header{padding:14px 20px;border-bottom:1px solid var(--glass-border);font-weight:var(--weight-semibold);font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-body{padding:20px}
+.callout{padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);margin:var(--space-3) 0;font-size:var(--text-sm);display:flex;gap:8px;line-height:var(--leading-normal)}
+.callout.info{background:var(--color-info-50);border:1px solid var(--color-info-200)}
+.callout .icon{font-size:16px;flex-shrink:0}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3)}
+.form-row.t3{grid-template-columns:1fr 1fr 1fr}
+.divider{border:none;border-top:1px solid var(--color-neutral-200);margin:var(--space-4) 0}
+.list-builder{border:1px solid var(--color-neutral-200);border-radius:var(--radius-sm)}
+.list-builder-item{display:flex;align-items:flex-start;gap:8px;padding:10px 12px;border-bottom:1px solid var(--color-neutral-100)}
+.list-builder-item:last-child{border-bottom:none}
+.list-builder-item .content{flex:1}
+.list-builder-add{padding:8px;text-align:center;color:var(--color-brand-default);cursor:pointer;border-top:1px dashed var(--color-neutral-200);font-size:var(--text-sm)}
+.btn-group{display:flex;gap:8px;margin-top:var(--space-4);flex-wrap:wrap}
+.proto-label .req{color:var(--color-danger-500);margin-right:4px}
+.proto-label .hint{font-weight:var(--weight-regular);color:var(--text-muted);font-size:var(--text-xs);margin-left:6px}
+.proto-field{margin-bottom:18px}
+</style>
+</head>
 <body>
+<div class="mesh-gradient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+
 <div class="page-header">
   <a href="index.html" class="back-link">← 语法句型 · 全部学习形式</a>
   <h1>#14 句型模板</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">语法句型 × 句型 × 句型模板</span>
+  <a href="pattern-app.html" class="back-link" style="margin-left:auto;color:var(--color-success-500)">App端 →</a>
+</div>
 
-  <a href="../../app/course/grammar/pattern.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
 <div class="content">
-<div class="type-desc"><strong>语法句型 × 句型模板</strong> — 语法模板+变量槽位+色彩标注+多例句。如「Subject + 把 + Object + Verb + Result」。<br><span class="field-map">应用端: <strong>句型名称</strong> + <strong>色彩模板</strong> + <strong>用法说明</strong> + <strong>例句(各成分高亮)</strong> + <strong>颜色图例</strong></span></div>
-<div class="shared-tpl">共用模板: 句型模板展示 + 用法说明 + 例句池 + 颜色配置</div>
-<div class="card">
+  <div class="type-desc"><strong>语法句型 × 句型模板</strong> — 语法模板+变量槽位+色彩标注+多例句。如「Subject + 把 + Object + Verb + Result」。<br><span class="field-map">应用端: <strong>句型名称</strong> + <strong>色彩模板</strong> + <strong>用法说明</strong> + <strong>例句(各成分高亮)</strong> + <strong>颜色图例</strong></span></div>
+  <div class="shared-tpl">共用模板: 句型模板展示 + 用法说明 + 例句池 + 颜色配置</div>
+
+  <div class="card animate-slide-up">
     <div class="card-header"><span class="badge green">管理端</span> 句型模板 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>句型模板</strong>。核心：模板+槽位+配色+例句池。</div></div>
@@ -29,17 +66,17 @@
       <div class="proto-field"><label class="proto-label"><span class="req">*</span>句型模板 <span class="hint">{变量名}标记可替换槽位</span></label><input class="proto-input" value="{主语} + 把 + {宾语} + {动词} + {结果}" style="font-size:16px"></div>
       <div class="proto-field"><label class="proto-label">槽位配色</label>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#52c41a" style="width:30px;height:24px"><span class="text-sm">主语</span></div>
-          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#ff4d4f" style="width:30px;height:24px"><span class="text-sm">把</span></div>
-          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#722ed1" style="width:30px;height:24px"><span class="text-sm">宾语</span></div>
-          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#d46b08" style="width:30px;height:24px"><span class="text-sm">动词</span></div>
-          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#08979c" style="width:30px;height:24px"><span class="text-sm">结果</span></div>
+          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#52c41a" style="width:30px;height:24px"><span style="font-size:var(--text-sm)">主语</span></div>
+          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#ff4d4f" style="width:30px;height:24px"><span style="font-size:var(--text-sm)">把</span></div>
+          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#722ed1" style="width:30px;height:24px"><span style="font-size:var(--text-sm)">宾语</span></div>
+          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#d46b08" style="width:30px;height:24px"><span style="font-size:var(--text-sm)">动词</span></div>
+          <div style="display:flex;align-items:center;gap:4px"><input type="color" value="#08979c" style="width:30px;height:24px"><span style="font-size:var(--text-sm)">结果</span></div>
         </div>
       </div>
       <div class="proto-field"><label class="proto-label"><span class="req">*</span>用法说明</label><div class="form-row"><textarea class="proto-textarea">「把」字句用于强调对某物做了什么动作及结果。</textarea><textarea class="proto-textarea">The 把 construction emphasizes what is done to an object and the result.</textarea></div></div>
       <div class="proto-field"><label class="proto-label">例句池 <span class="hint">每条标注各槽位对应词</span></label>
         <div class="list-builder">
-          <div class="list-builder-item"><div class="content"><input class="proto-input" value="我把书放在桌子上了。" style="margin-bottom:4px"><div style="display:flex;gap:4px;flex-wrap:wrap;font-size:11px"><span style="background:#f6ffed;padding:2px 6px;border-radius:3px">主语:我</span><span style="background:#fff2f0;padding:2px 6px;border-radius:3px">把:把</span><span style="background:#f9f0ff;padding:2px 6px;border-radius:3px">宾语:书</span><span style="background:#fff7e6;padding:2px 6px;border-radius:3px">动词:放在</span><span style="background:#e6fffb;padding:2px 6px;border-radius:3px">结果:桌子上</span></div><input class="proto-input" value="I put the book on the table." style="margin-top:4px"></div><div class="actions"><span class="proto-btn-sm">🗑</span></div></div>
+          <div class="list-builder-item"><div class="content"><input class="proto-input" value="我把书放在桌子上了。" style="margin-bottom:4px"><div style="display:flex;gap:4px;flex-wrap:wrap;font-size:11px"><span style="background:var(--color-success-50);padding:2px 6px;border-radius:3px">主语:我</span><span style="background:var(--color-danger-50);padding:2px 6px;border-radius:3px">把:把</span><span style="background:#f9f0ff;padding:2px 6px;border-radius:3px">宾语:书</span><span style="background:var(--color-warning-50);padding:2px 6px;border-radius:3px">动词:放在</span><span style="background:#e6fffb;padding:2px 6px;border-radius:3px">结果:桌子上</span></div><input class="proto-input" value="I put the book on the table." style="margin-top:4px"></div><div class="actions"><span class="proto-btn-sm">🗑</span></div></div>
           <div class="list-builder-add">+ 添加例句</div>
         </div>
       </div>
@@ -47,8 +84,9 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span></div>
     </div>
   </div>
-
 </div>
+
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
+<script>proto.bootstrap();</script>
 </body>
 </html>

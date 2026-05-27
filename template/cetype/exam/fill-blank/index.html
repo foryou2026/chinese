@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-mode="light" data-density="default">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>填空题 · 4种知识类型 · 10种变体</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../../../docs/B02-experience-design/admin/prototype-style/app.css">
+<style>
+.page-header{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--glass-border);display:flex;align-items:center;gap:var(--space-3);position:sticky;top:0;z-index:var(--z-sticky);flex-wrap:wrap;box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow)}
+.page-header h1{font-size:var(--text-lg);font-weight:var(--weight-semibold)}
+.page-header .subtitle{color:var(--text-muted);font-size:var(--text-sm)}
+.back-link{color:var(--color-brand-default);text-decoration:none;font-size:var(--text-sm);transition:color var(--motion-fast)}
+.back-link:hover{text-decoration:underline;color:var(--color-brand-hover)}
+.badge{display:inline-block;font-size:var(--text-xs);padding:2px 8px;border-radius:var(--radius-pill);font-weight:var(--weight-regular)}
+.badge.blue{background:var(--color-info-50);color:var(--color-info-500);border:1px solid var(--color-info-200)}
+.badge.green{background:var(--color-success-50);color:var(--color-success-500);border:1px solid var(--color-success-200)}
+.badge.solid-green{background:var(--color-success-500);color:#fff}
+.badge.solid-red{background:var(--color-danger-500);color:#fff}
+.badge.red{background:var(--color-danger-50);color:var(--color-danger-500);border:1px solid var(--color-danger-200)}
+.badge.orange{background:var(--color-warning-50);color:var(--color-warning-700);border:1px solid var(--color-warning-200)}
+.content{max-width:1440px;margin:0 auto;padding:var(--space-6);position:relative;z-index:1}
+.callout{padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);margin:var(--space-3) 0;font-size:var(--text-sm);display:flex;gap:8px;line-height:var(--leading-normal)}
+.callout.info{background:var(--color-info-50);border:1px solid var(--color-info-200)}
+.callout .icon{font-size:16px;flex-shrink:0}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-4)}
+.index-card{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border);border-radius:var(--radius-xl);box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow);padding:20px;transition:transform 200ms var(--easing-out),box-shadow 200ms var(--easing-out);text-decoration:none;color:inherit;display:block}
+.index-card:hover{box-shadow:inset 0 1px 0 0 var(--glass-inset),0 8px 32px -4px var(--glass-shadow-elevated);transform:translateY(-2px)}
+.index-card .title{font-size:16px;font-weight:var(--weight-semibold);margin-bottom:6px}
+.index-card .desc{font-size:var(--text-sm);color:var(--text-muted);line-height:var(--leading-normal)}
+.index-card .meta{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
+.link-pair{display:flex;gap:8px;margin-top:10px;font-size:var(--text-sm)}
+.link-pair a{padding:4px 12px;border-radius:var(--radius-pill);text-decoration:none;font-weight:var(--weight-medium);transition:var(--transition-all)}
+.link-pair .app-link{background:var(--color-brand-50);color:var(--color-brand-default);border:1px solid var(--color-brand-200)}
+.link-pair .app-link:hover{background:var(--color-brand-100)}
+.link-pair .admin-link{background:var(--color-neutral-50);color:var(--text-secondary);border:1px solid var(--color-neutral-300)}
+.link-pair .admin-link:hover{background:var(--color-neutral-100)}
+</style>
 </head>
 <body>
+<div class="mesh-gradient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
 
 <div class="page-header">
   <a href="../index.html" class="back-link">← 返回题型列表</a>
@@ -21,64 +52,114 @@
     <div>填空题按4种知识类型(拼音/汉字/词语/语法)细分出10种L3题目变体。点击进入查看每种变体的<strong>应用端原型</strong>和<strong>管理端配置表单</strong>。</div>
   </div>
 
-  <h2 style="font-size:16px;margin:24px 0 12px">拼音 <span style="font-size:12px;color:rgba(0,0,0,.45)">(3种)</span></h2>
+  <h2 style="font-size:16px;margin:24px 0 12px">拼音 <span style="font-size:12px;color:var(--text-muted)">(3种)</span></h2>
   <div class="index-grid">
-    <a class="index-card" href="py-char2fullpy.html">
+    <div class="index-card">
       <div class="title">#1 汉字写全拼</div>
       <div class="desc">展示汉字，用户输入完整拼音(含声调)。核心测试拼音拼写与声调</div>
-    </a>
-    <a class="index-card" href="py-listen2py.html">
+    
+      <div class="link-pair">
+        <a href="py-char2fullpy-app.html" class="app-link">📱 App端</a>
+        <a href="py-char2fullpy-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
+    <div class="index-card">
       <div class="title">#2 听音写拼音</div>
       <div class="desc">播放音频，用户听写拼音。纯听辨+拼写能力</div>
-    </a>
-    <a class="index-card" href="py-tone-mark.html">
+    
+      <div class="link-pair">
+        <a href="py-listen2py-app.html" class="app-link">📱 App端</a>
+        <a href="py-listen2py-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
+    <div class="index-card">
       <div class="title">#3 声调标注</div>
       <div class="desc">展示汉字+无调拼音，用户标注正确声调。专项声调训练</div>
-    </a>
+    
+      <div class="link-pair">
+        <a href="py-tone-mark-app.html" class="app-link">📱 App端</a>
+        <a href="py-tone-mark-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
   </div>
 
-  <h2 style="font-size:16px;margin:24px 0 12px">汉字 <span style="font-size:12px;color:rgba(0,0,0,.45)">(3种)</span></h2>
+  <h2 style="font-size:16px;margin:24px 0 12px">汉字 <span style="font-size:12px;color:var(--text-muted)">(3种)</span></h2>
   <div class="index-grid">
-    <a class="index-card" href="ch-py2char.html">
+    <div class="index-card">
       <div class="title">#4 拼音写汉字</div>
       <div class="desc">展示拼音+释义，用户输入汉字。支持键盘/手写输入模式</div>
-    </a>
-    <a class="index-card" href="ch-def2char.html">
+    
+      <div class="link-pair">
+        <a href="ch-py2char-app.html" class="app-link">📱 App端</a>
+        <a href="ch-py2char-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
+    <div class="index-card">
       <div class="title">#5 释义写汉字</div>
       <div class="desc">展示中英释义(无拼音)，用户输入汉字。高难度模式</div>
-    </a>
-    <a class="index-card" href="ch-radical.html">
+    
+      <div class="link-pair">
+        <a href="ch-def2char-app.html" class="app-link">📱 App端</a>
+        <a href="ch-def2char-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
+    <div class="index-card">
       <div class="title">#6 偏旁补全</div>
       <div class="desc">展示部分汉字+部首提示，用户补全缺失部分。拆解组合训练</div>
-    </a>
+    
+      <div class="link-pair">
+        <a href="ch-radical-app.html" class="app-link">📱 App端</a>
+        <a href="ch-radical-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
   </div>
 
-  <h2 style="font-size:16px;margin:24px 0 12px">词语 <span style="font-size:12px;color:rgba(0,0,0,.45)">(2种)</span></h2>
+  <h2 style="font-size:16px;margin:24px 0 12px">词语 <span style="font-size:12px;color:var(--text-muted)">(2种)</span></h2>
   <div class="index-grid">
-    <a class="index-card" href="wd-context.html">
+    <div class="index-card">
       <div class="title">#7 语境补词</div>
       <div class="desc">带空位的语境句，用户输入合适词语。支持输入联想+答案池</div>
-    </a>
-    <a class="index-card" href="wd-translate.html">
+    
+      <div class="link-pair">
+        <a href="wd-context-app.html" class="app-link">📱 App端</a>
+        <a href="wd-context-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
+    <div class="index-card">
       <div class="title">#8 翻译填词</div>
       <div class="desc">英文句+中文句(空位)，用户对照翻译填词</div>
-    </a>
+    
+      <div class="link-pair">
+        <a href="wd-translate-app.html" class="app-link">📱 App端</a>
+        <a href="wd-translate-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
   </div>
 
-  <h2 style="font-size:16px;margin:24px 0 12px">语法 <span style="font-size:12px;color:rgba(0,0,0,.45)">(2种)</span></h2>
+  <h2 style="font-size:16px;margin:24px 0 12px">语法 <span style="font-size:12px;color:var(--text-muted)">(2种)</span></h2>
   <div class="index-grid">
-    <a class="index-card" href="gr-word.html">
+    <div class="index-card">
       <div class="title">#9 语法词填写</div>
       <div class="desc">句子空位填语法词(了/过/着/把/被等)。配合语法点解析</div>
-    </a>
-    <a class="index-card" href="gr-measure.html">
+    
+      <div class="link-pair">
+        <a href="gr-word-app.html" class="app-link">📱 App端</a>
+        <a href="gr-word-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
+    <div class="index-card">
       <div class="title">#10 量词填写</div>
       <div class="desc">"一___书"格式，填入正确量词。量词搭配专项训练</div>
-    </a>
+    
+      <div class="link-pair">
+        <a href="gr-measure-app.html" class="app-link">📱 App端</a>
+        <a href="gr-measure-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
   </div>
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
+<script>proto.bootstrap();</script>
 </body>
 </html>
