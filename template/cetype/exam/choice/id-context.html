@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 成语 · 语境选成语</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,41 +21,15 @@
   <span class="subtitle">选择题 × 成语 × 语境选成语</span>
 </div>
 
+
+  <a href="../../app/exam/choice/id-context.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 成语 × 语境选成语</strong> — 给出带空位的语境句，从4个成语选项中选出最合适填入的。测试成语的实际运用能力。<br>
   <span class="field-map">应用端核心元素: <strong>语境句+下划线空位</strong> + <strong>成语选项(四字+拼音)</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 语境句+空位 + 标准选项列表 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 语境选成语</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>成语测试</h3><span class="progress">Q8/10</span></div>
-          <div class="app-content">
-            <div class="q-instruction">选择最合适的成语填入句子 Choose the best idiom</div>
-            <div class="highlight-box gray" style="padding:16px;margin:12px 0">
-              <div style="font-size:16px;line-height:2;text-align:center">
-                他做事总是 <span style="border-bottom:2px solid var(--primary);padding:0 8px;color:var(--primary)">________</span>，从来不马虎。
-              </div>
-              <div style="text-align:center;font-size:13px;color:rgba(0,0,0,.45);margin-top:4px">He always does things ________, never carelessly.</div>
-            </div>
-            <div class="option-list">
-              <div class="option-item selected"><span class="letter">A</span><div><span style="font-size:15px;letter-spacing:1px">一丝不苟</span><span class="text-xs text-muted" style="margin-left:6px">yīsībùgǒu</span></div></div>
-              <div class="option-item"><span class="letter">B</span><div><span style="font-size:15px;letter-spacing:1px">自以为是</span><span class="text-xs text-muted" style="margin-left:6px">zìyǐwéishì</span></div></div>
-              <div class="option-item"><span class="letter">C</span><div><span style="font-size:15px;letter-spacing:1px">半途而废</span><span class="text-xs text-muted" style="margin-left:6px">bàntúérfèi</span></div></div>
-              <div class="option-item"><span class="letter">D</span><div><span style="font-size:15px;letter-spacing:1px">粗心大意</span><span class="text-xs text-muted" style="margin-left:6px">cūxīndàyì</span></div></div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 语境选成语 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>结合「语境选词」和「成语」两种模式：题干为<strong>语境句+空位</strong>，选项为<strong>成语</strong>。需配置语境句和每个成语选项。</div></div>
@@ -93,11 +67,10 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span></div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

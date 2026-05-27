@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>填空题 · 汉字 · 偏旁补全</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -26,57 +26,15 @@
   <span class="subtitle">填空题 × 汉字 × 偏旁补全</span>
 </div>
 
+
+  <a href="../../app/exam/fill-blank/ch-radical.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>填空题 × 汉字 × 偏旁补全</strong> — 展示汉字的已知部分(如偏旁)和缺失部分的占位，用户补全组成完整汉字。独有交互：<strong>拆解式展示(左右/上下结构拆开)</strong>，训练汉字结构认知。<br>
   <span class="field-map">应用端核心元素: <strong>已知部首展示</strong> + <strong>缺失部分占位框</strong> + <strong>拼音/释义提示</strong> + <strong>输入/选择缺失部分</strong> + <strong>合成动画</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 答案解析区 + 元数据区 (拆解展示和合成动画为本L3独有)</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 偏旁补全</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>偏旁补全</h3><span class="progress">Q3/8</span></div>
-          <div class="progress-bar"><div class="fill" style="width:38%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">补全缺失的部分，组成完整汉字 Complete the character</div>
-            <div style="text-align:center;padding:8px 0">
-              <div class="text-sm" style="color:var(--primary)">提示: hǎo — good; fine</div>
-            </div>
-            <div class="char-compose">
-              <div class="char-part known">女</div>
-              <div style="font-size:24px;color:rgba(0,0,0,.25)">+</div>
-              <div class="char-part blank">
-                <input class="fill-blank" value="" placeholder="?" style="font-size:36px;width:50px;border:none;background:transparent;text-align:center">
-              </div>
-              <div style="font-size:24px;color:rgba(0,0,0,.25)">=</div>
-              <div class="char-part" style="font-size:48px;color:rgba(0,0,0,.15)">好</div>
-            </div>
-            <div style="margin:12px 0">
-              <div class="text-sm text-muted mb-8">候选部件:</div>
-              <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
-                <span class="drag-chip" style="font-size:20px;padding:10px 18px">子</span>
-                <span class="drag-chip" style="font-size:20px;padding:10px 18px">马</span>
-                <span class="drag-chip" style="font-size:20px;padding:10px 18px">也</span>
-                <span class="drag-chip" style="font-size:20px;padding:10px 18px">巴</span>
-              </div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
-            <hr class="divider">
-            <div class="highlight-box green">
-              <div style="font-weight:500;color:var(--success)">✅ 正确！女 + 子 = 好</div>
-              <div class="mt-8 text-sm">「好」= 女 + 子，会意字，古义为"女子在身旁，即美好"。左右结构。<br>
-              <span class="text-muted">"好" = 女(woman) + 子(child). Ideographic: a woman with a child = "good".</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 偏旁补全 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>偏旁补全</strong>。本L3独有配置：<strong>目标汉字拆解</strong>(已知部分+缺失部分)、<strong>候选部件</strong>、<strong>结构说明</strong>。</div></div>
@@ -155,10 +113,9 @@
       </div>
     </div>
   </div>
-</div>
+
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

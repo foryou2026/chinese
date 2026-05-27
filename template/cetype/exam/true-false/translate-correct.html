@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>判断题 · 词义 · 翻译正误</title><link rel="stylesheet" href="../../styles.css">
+<title>判断题 · 词义 · 翻译正误</title><link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -14,36 +14,12 @@
   <h1>#4 翻译正误</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">判断题 × 词义 × 翻译正误</span>
-</div>
+
+  <a href="../../app/exam/true-false/translate-correct.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
 <div class="content">
 <div class="type-desc"><strong>判断题 × 词义 × 翻译正误</strong> — 中文句+英文翻译，判断翻译是否正确。<br><span class="field-map">应用端: <strong>命题展示</strong> + <strong>✓/✗ 判断按钮</strong> + <strong>答案反馈</strong></span></div>
 <div class="shared-tpl">共用模板: 对/错按钮 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 翻译正误</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>判断题</h3><span class="progress">Q3/10</span></div>
-          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">判断翻译是否正确 Is the translation correct?</div>
-            <div class="highlight-box gray" style="padding:16px;margin:16px 0">
-              <div style="font-size:16px;margin-bottom:8px"><strong>中文:</strong> 他昨天没有来上课。</div>
-              <div style="font-size:15px;color:rgba(0,0,0,.65)"><strong>English:</strong> He didn't come to class yesterday.</div>
-            </div>
-            <div style="display:flex;gap:16px;justify-content:center;margin:20px 0">
-              <div style="width:100px;height:60px;border:2px solid var(--success);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;background:#f6ffed">✓ 对</div>
-              <div style="width:100px;height:60px;border:2px solid var(--border);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">✗ 错</div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 翻译正误 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
@@ -82,8 +58,7 @@
       </div>
     </div>
   </div>
+
 </div>
-</div>
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body></html>

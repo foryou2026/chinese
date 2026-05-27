@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>拼音 · 声调 · 声调训练</title><link rel="stylesheet" href="../../styles.css">
+<title>拼音 · 声调 · 声调训练</title><link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -14,57 +14,12 @@
   <h1>#2 声调训练</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">拼音 × 声调 × 声调训练</span>
-</div>
+
+  <a href="../../app/course/pinyin/tone.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
 <div class="content">
 <div class="type-desc"><strong>拼音 × 声调训练</strong> — 四声对比可视化+声调曲线图+听辨练习。汉语声调是外国学习者最大难点之一。<br><span class="field-map">应用端: <strong>声调曲线图</strong> + <strong>四声对比盒子</strong> + <strong>逐声调音频</strong> + <strong>例词对比</strong></span></div>
 <div class="shared-tpl">共用模板: 声调可视化 + 音频播放 + 例词区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 声调训练</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>声调训练</h3><span class="progress">进度</span></div>
-          <div class="progress-bar"><div class="fill" style="width:35%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">听辨声调 · 四声对比 Listen & Compare Tones</div>
-            <div style="text-align:center;padding:12px 0">
-              <div style="font-size:24px;color:var(--primary);font-weight:500">mā / má / mǎ / mà</div>
-              <div class="text-sm text-muted mt-8">基础音节: ma</div>
-            </div>
-            <div style="background:#f5f5f5;border-radius:12px;padding:16px;margin:12px 0">
-              <div style="display:flex;justify-content:space-between;align-items:flex-end;height:60px;padding:0 8px">
-                <div style="text-align:center"><div style="width:40px;height:3px;background:var(--primary);transform:rotate(0deg);margin-bottom:4px"></div><span style="font-size:10px;color:rgba(0,0,0,.45)">一声 ˉ<br>高平</span></div>
-                <div style="text-align:center"><div style="width:40px;height:3px;background:var(--success);transform:rotate(-30deg);margin-bottom:4px"></div><span style="font-size:10px;color:rgba(0,0,0,.45)">二声 ´<br>升调</span></div>
-                <div style="text-align:center"><div style="width:40px;height:3px;background:var(--warning);transform:rotate(0deg);margin-bottom:4px">∨</div><span style="font-size:10px;color:rgba(0,0,0,.45)">三声 ˇ<br>降升</span></div>
-                <div style="text-align:center"><div style="width:40px;height:3px;background:var(--error);transform:rotate(30deg);margin-bottom:4px"></div><span style="font-size:10px;color:rgba(0,0,0,.45)">四声 `<br>降调</span></div>
-              </div>
-            </div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0">
-              <div style="border:2px solid var(--primary);border-radius:8px;padding:12px;text-align:center;background:#e6f4ff">
-                <div style="font-size:28px">妈</div><div style="font-size:14px;color:var(--primary)">mā · 一声</div><div class="text-sm text-muted">mother</div>
-                <div style="margin-top:6px"><span class="audio-btn" style="font-size:11px;padding:3px 8px">🔊</span></div>
-              </div>
-              <div style="border:2px solid var(--success);border-radius:8px;padding:12px;text-align:center">
-                <div style="font-size:28px">麻</div><div style="font-size:14px;color:var(--success)">má · 二声</div><div class="text-sm text-muted">hemp</div>
-                <div style="margin-top:6px"><span class="audio-btn" style="font-size:11px;padding:3px 8px">🔊</span></div>
-              </div>
-              <div style="border:2px solid var(--warning);border-radius:8px;padding:12px;text-align:center">
-                <div style="font-size:28px">马</div><div style="font-size:14px;color:var(--warning)">mǎ · 三声</div><div class="text-sm text-muted">horse</div>
-                <div style="margin-top:6px"><span class="audio-btn" style="font-size:11px;padding:3px 8px">🔊</span></div>
-              </div>
-              <div style="border:2px solid var(--error);border-radius:8px;padding:12px;text-align:center">
-                <div style="font-size:28px">骂</div><div style="font-size:14px;color:var(--error)">mà · 四声</div><div class="text-sm text-muted">scold</div>
-                <div style="margin-top:6px"><span class="audio-btn" style="font-size:11px;padding:3px 8px">🔊</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 声调训练 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>声调训练</strong>。核心配置：基础音节、四声音频组、声调例字对比。</div></div>
@@ -98,9 +53,8 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">📥 批量导入声调组</span></div>
     </div>
   </div>
+
 </div>
-</div>
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

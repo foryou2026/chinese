@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>配对题 · 翻译 · 中文句↔英文句</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,47 +21,15 @@
   <span class="subtitle">配对题 × 翻译 × 中文句↔英文句</span>
 </div>
 
+
+  <a href="../../app/exam/matching/cn-en-sentence.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>配对题 × 翻译 × 中文句↔英文句</strong> — 左列中文短句，右列英文翻译，连线匹配。测试句级翻译理解能力，干扰项为语义相近的英文句。<br>
   <span class="field-map">应用端核心元素: <strong>左列中文短句</strong> + <strong>右列英文翻译</strong> + <strong>连线交互</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 配对连线交互 + 匹配反馈 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 中文句↔英文句</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>配对练习</h3><span class="progress">Q2/5</span></div>
-          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">将中文句与英文翻译配对 Match sentences</div>
-            <div class="match-grid" style="margin:16px 0">
-              <div class="match-item" style="font-size:13px;text-align:left;padding:10px">你好吗？</div>
-              <div class="match-line">——</div>
-              <div class="match-item" style="font-size:12px;text-align:left;padding:10px">How are you?</div>
-
-              <div class="match-item" style="font-size:13px;text-align:left;padding:10px">我很好。</div>
-              <div class="match-line" style="color:transparent">——</div>
-              <div class="match-item" style="font-size:12px;text-align:left;padding:10px">I'm fine.</div>
-
-              <div class="match-item" style="font-size:13px;text-align:left;padding:10px">谢谢你！</div>
-              <div class="match-line" style="color:transparent">——</div>
-              <div class="match-item" style="font-size:12px;text-align:left;padding:10px">Thank you!</div>
-
-              <div class="match-item" style="font-size:13px;text-align:left;padding:10px">对不起。</div>
-              <div class="match-line" style="color:transparent">——</div>
-              <div class="match-item" style="font-size:12px;text-align:left;padding:10px">I'm sorry.</div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">提交全部配对 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 中文句↔英文句 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
@@ -107,10 +75,9 @@
       </div>
     </div>
   </div>
-</div>
+
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

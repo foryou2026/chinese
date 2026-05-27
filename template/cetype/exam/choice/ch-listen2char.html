@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 汉字 · 听音选汉字</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,43 +21,15 @@
   <span class="subtitle">选择题 × 汉字 × 听音选汉字</span>
 </div>
 
+
+  <a href="../../app/exam/choice/ch-listen2char.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 汉字 × 听音选汉字</strong> — 播放发音，从4个汉字中选出对应的字。纯听觉→视觉映射，无文字提示。<br>
   <span class="field-map">应用端核心元素: <strong>音频播放器(大号)</strong> + <strong>播放控制</strong> + <strong>汉字网格选项</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 音频播放器 + 汉字网格选项 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 听音选汉字</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>汉字测试</h3><span class="progress">Q8/15</span></div>
-          <div class="progress-bar"><div class="fill" style="width:53%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">听发音，选择对应的汉字 Listen and select the character</div>
-            <div style="text-align:center;padding:20px 0">
-              <div class="audio-btn big">🔊 点击播放</div>
-              <div style="margin-top:8px"><span class="text-sm text-muted">剩余: 2/3</span></div>
-              <div style="margin-top:8px;display:flex;gap:8px;justify-content:center">
-                <span class="proto-btn-sm">🐢 慢速</span><span class="proto-btn-sm">🔁 重播</span>
-              </div>
-            </div>
-            <div class="option-grid">
-              <div class="option-item"><span style="font-size:32px">买</span></div>
-              <div class="option-item"><span style="font-size:32px">卖</span></div>
-              <div class="option-item selected"><span style="font-size:32px">麦</span></div>
-              <div class="option-item"><span style="font-size:32px">迈</span></div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 听音选汉字 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>与「拼音选汉字」差异：题干从文字变为<strong>音频(必填)</strong>，选项仍为汉字网格。干扰维度以<strong>同音/近音字</strong>为主。</div></div>
@@ -115,11 +87,10 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

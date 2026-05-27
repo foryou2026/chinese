@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>跟读评分 · 单词 · 听后重复</title><link rel="stylesheet" href="../../styles-app.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 跟读评分 · 全部变体</a>
+  <h1>#5 听后重复</h1>
+  <span class="badge solid-red">需AI</span><span class="badge orange">~$0.004-0.02/次</span>
+  <span class="subtitle">跟读评分 × 句子 × 听后重复</span>
+
+  <a href="../../../exam/speaking/listen-repeat.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a></div>
+<div class="content">
+<div class="type-desc"><strong>跟读评分 × 听后重复</strong> — 只听音频(不显示文字)，考生原样重复。HSK 3级口语核心题型。与普通跟读的区别：<strong>不展示文字</strong>，同时考察听力理解+发音+记忆力。<br><span class="field-map">应用端: <strong>音频播放器(无文字)</strong> + <strong>录音</strong> + <strong>语音比对评分</strong></span></div>
+<div class="shared-tpl">共用模板: 录音控制器 + 音频播放器 + 元数据区</div>
+<div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听后重复</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header pro"><span class="back">←</span><h3>跟读评分</h3><span class="progress">Q3/8</span></div>
+          <div class="progress-bar"><div class="fill" style="width:37%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听句子，然后重复 Listen and repeat</div>
+            <div style="text-align:center;padding:24px 0">
+              <div class="audio-btn big">🔊 点击播放</div>
+              <div class="text-sm text-muted mt-8">播放次数: 1/2</div>
+            </div>
+            <div style="text-align:center;padding:8px;background:#fff7e6;border:1px solid #ffd591;border-radius:8px;margin:12px 0">
+              <div style="font-size:12px;color:#fa8c16">仅听音频，不显示文字。听完后请重复。</div>
+              <div style="font-size:11px;color:#999;margin-top:2px">Audio only — no text shown</div>
+            </div>
+            <div style="text-align:center;padding:12px 0">
+              <div style="font-size:13px;font-weight:600;color:#666;margin-bottom:8px">⏱ 录音倒计时: 10秒</div>
+              <div class="mic-btn">🎤</div>
+              <div class="text-sm text-muted" style="margin-top:8px">点击开始录音</div>
+            </div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">提交 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+</body></html>

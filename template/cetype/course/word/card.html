@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>词语 · 词卡 · 词卡学习</title><link rel="stylesheet" href="../../styles.css">
+<title>词语 · 词卡 · 词卡学习</title><link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -14,41 +14,12 @@
   <h1>#10 词卡学习</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">词语 × 词卡 × 词卡学习</span>
-</div>
+
+  <a href="../../app/course/word/card.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
 <div class="content">
 <div class="type-desc"><strong>词语 × 词卡学习</strong> — 词语学习的核心单元，包含词性、释义、例句、音频、关联词。<br><span class="field-map">应用端: <strong>大号词语</strong> + <strong>拼音+释义</strong> + <strong>词性/HSK/主题标签</strong> + <strong>例句(ruby)</strong> + <strong>关联词</strong></span></div>
 <div class="shared-tpl">共用模板: 词语卡片 + 例句区 + 关联词区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 词卡学习</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>词卡学习</h3><span class="progress">进度</span></div>
-          <div class="progress-bar"><div class="fill" style="width:35%"></div></div>
-          <div class="app-content">
-            <div style="border:2px solid var(--primary);border-radius:12px;padding:20px;text-align:center;margin:8px 0">
-              <div style="font-size:36px;font-weight:500">苹果</div>
-              <div style="font-size:18px;color:var(--primary);margin:8px 0">píngguǒ</div>
-              <div style="font-size:16px;color:rgba(0,0,0,.65)">apple</div>
-              <div style="margin-top:12px"><span class="audio-btn">🔊 播放</span></div>
-            </div>
-            <div style="display:flex;gap:8px;margin:12px 0">
-              <div style="flex:1;background:#f5f5f5;border-radius:6px;padding:6px;text-align:center;font-size:12px"><div style="color:var(--primary);font-weight:500">名词 n.</div></div>
-              <div style="flex:1;background:#f5f5f5;border-radius:6px;padding:6px;text-align:center;font-size:12px"><div style="color:#d46b08;font-weight:500">HSK 1</div></div>
-              <div style="flex:1;background:#f5f5f5;border-radius:6px;padding:6px;text-align:center;font-size:12px"><div style="color:var(--success);font-weight:500">食物</div></div>
-            </div>
-            <div style="font-weight:500;margin:12px 0 8px">例句</div>
-            <div class="sentence-line"><div class="cn"><ruby>我<rt>wǒ</rt></ruby><ruby>喜欢<rt>xǐhuan</rt></ruby><ruby>吃<rt>chī</rt></ruby><ruby>苹果<rt>píngguǒ</rt></ruby>。</div><div class="en">I like to eat apples.</div><div style="margin-top:4px"><span class="audio-btn" style="font-size:11px;padding:3px 8px">🔊</span></div></div>
-            <div style="font-weight:500;margin:12px 0 8px">相关词</div>
-            <div style="display:flex;gap:8px;flex-wrap:wrap"><span style="padding:6px 12px;border:1px solid var(--border);border-radius:16px;font-size:13px">🍊 橘子</span><span style="padding:6px 12px;border:1px solid var(--border);border-radius:16px;font-size:13px">🍇 葡萄</span><span style="padding:6px 12px;border:1px solid var(--border);border-radius:16px;font-size:13px">🍌 香蕉</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 词卡学习 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>词卡学习</strong>。完整词语属性配置。</div></div>
@@ -71,9 +42,8 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">📥 CSV批量导入</span></div>
     </div>
   </div>
+
 </div>
-</div>
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 汉字 · 部首选汉字</title>
+<link rel="stylesheet" href="../../styles-app.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#8 部首选汉字</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 汉字 × 部首选汉字</span>
+</div>
+
+
+  <a href="../../../exam/choice/ch-radical2char.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a>
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 汉字 × 部首选汉字</strong> — 展示一个偏旁部首及其含义，从4个汉字中选出包含该部首的字。测试汉字结构认知。<br>
+  <span class="field-map">应用端核心元素: <strong>大号部首展示</strong> + <strong>部首名称/含义说明</strong> + <strong>汉字选项列表(非网格)</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 部首选汉字</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>部首测试</h3><span class="progress">Q4/12</span></div>
+          <div class="progress-bar"><div class="fill" style="width:33%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">选择包含该部首的汉字 Choose the character with this radical</div>
+            <!-- 部首展示区 -->
+            <div style="text-align:center;padding:20px 0">
+              <div style="font-size:64px;color:var(--primary);font-weight:300">氵</div>
+              <div style="font-size:16px;font-weight:500;margin-top:4px">三点水</div>
+              <div style="font-size:13px;color:rgba(0,0,0,.45)">sān diǎn shuǐ · water radical</div>
+              <div style="font-size:12px;color:rgba(0,0,0,.35);margin-top:4px">表示与水、液体有关</div>
+            </div>
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span><span style="font-size:20px">烤</span><span class="text-xs text-muted" style="margin-left:8px">kǎo · roast</span></div>
+              <div class="option-item selected"><span class="letter">B</span><span style="font-size:20px">河</span><span class="text-xs text-muted" style="margin-left:8px">hé · river</span></div>
+              <div class="option-item"><span class="letter">C</span><span style="font-size:20px">树</span><span class="text-xs text-muted" style="margin-left:8px">shù · tree</span></div>
+              <div class="option-item"><span class="letter">D</span><span style="font-size:20px">城</span><span class="text-xs text-muted" style="margin-left:8px">chéng · city</span></div>
+            </div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+              <div class="mt-8">「河」= 氵(水) + 可，三点水表示与水有关。<br>
+              <span class="text-muted">河 = 氵(water) + 可. The water radical indicates river/water.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 拼音 · 汉字选拼音</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,54 +21,15 @@
   <span class="subtitle">选择题 × 拼音 × 汉字选拼音</span>
 </div>
 
+
+  <a href="../../app/exam/choice/py-char2py.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 拼音 × 汉字选拼音</strong> — 展示一个汉字/词语，从4个拼音选项中选出正确读音。重点测试声调辨识。<br>
   <span class="field-map">应用端核心元素: <strong>大号汉字</strong> + <strong>发音按钮(可选)</strong> + <strong>拼音选项列表</strong> → 管理端须逐一配置</span>
 </div>
 <div class="shared-tpl">共用模板: 标准选项列表 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <!-- 应用端 -->
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 汉字选拼音</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>拼音测试</h3><span class="progress">Q3/15</span></div>
-          <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
-          <div class="app-content">
-            <!-- 元素1: 指示语 → 管理端: 自动生成,不需配置 -->
-            <div class="q-instruction">选择正确的拼音 Select the correct pinyin</div>
-            <!-- 元素2: 大号汉字题干 → 管理端: 题干汉字输入框 -->
-            <div style="text-align:center;padding:20px 0">
-              <div style="font-size:72px;font-weight:300;color:#333">学</div>
-              <div style="font-size:13px;color:rgba(0,0,0,.45)">character · choose its pinyin</div>
-              <!-- 元素3: 发音按钮 → 管理端: 题干音频上传/TTS -->
-              <div style="margin-top:8px"><span class="audio-btn">🔊 听发音</span></div>
-            </div>
-            <!-- 元素4: 拼音选项列表 → 管理端: 拼音选项配置 -->
-            <div class="option-list">
-              <div class="option-item"><span class="letter">A</span><span style="font-size:18px">xuē</span></div>
-              <div class="option-item selected"><span class="letter">B</span><span style="font-size:18px">xué</span></div>
-              <div class="option-item"><span class="letter">C</span><span style="font-size:18px">xuě</span></div>
-              <div class="option-item"><span class="letter">D</span><span style="font-size:18px">xuè</span></div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-            <hr class="divider">
-            <!-- 元素5: 答案解析 → 管理端: 答案解析(中英) -->
-            <div class="highlight-box green">
-              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
-              <div class="mt-8">「学」读 xué (第二声)，注意与「雪」(xuě, 第三声) 区分。<br>
-              <span class="text-muted">"学" is xué (2nd tone). Don't confuse with "雪" (xuě, 3rd tone).</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- 管理端 -->
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 汉字选拼音 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题型=选择题, 知识类型=拼音, 题目类型=<strong>汉字选拼音</strong>。题干为汉字展示，选项为拼音字符串，核心干扰维度是<strong>声调差异</strong>。</div></div>
@@ -157,11 +118,10 @@
       </div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

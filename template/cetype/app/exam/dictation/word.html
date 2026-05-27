@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>听写题 · 单词 · 听写词语</title><link rel="stylesheet" href="../../styles-app.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 听写题 · 全部变体</a>
+  <h1>#2 听写词语</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">听写题 × 单词 × 听写词语</span>
+
+  <a href="../../../exam/dictation/word.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a></div>
+<div class="content">
+<div class="type-desc"><strong>听写题 × 单词 × 听写词语</strong> — 播放词语级音频，用户听写输入。判分基于文本匹配。<br><span class="field-map">应用端: <strong>音频播放器</strong> + <strong>汉字输入框(可手写)</strong> + <strong>逐字反馈</strong></span></div>
+<div class="shared-tpl">共用模板: 音频播放器 + 文本输入 + 答案解析区 + 元数据区</div>
+<div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听写词语</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>听写题</h3><span class="progress">Q3/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听音频，写出你听到的词语 Listen and write</div>
+            <div style="text-align:center;padding:16px 0"><div class="audio-btn big">🔊 点击播放</div><div class="text-sm text-muted mt-8">剩余: 2/3次</div><div style="margin-top:8px"><span class="proto-btn-sm">🐢 慢速</span></div></div>
+            <div style="text-align:center;margin:16px 0"><input class="proto-input lg" placeholder="输入词语" value="" style="text-align:center;font-size:24px;width:200px"></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+</body></html>

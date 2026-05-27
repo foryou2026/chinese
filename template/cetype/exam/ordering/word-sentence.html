@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>排序题 · 词序 · 词语排句</title><link rel="stylesheet" href="../../styles.css">
+<title>排序题 · 词序 · 词语排句</title><link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -14,49 +14,12 @@
   <h1>#1 词语排句</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">排序题 × 词序 × 词语排句</span>
-</div>
+
+  <a href="../../app/exam/ordering/word-sentence.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
 <div class="content">
 <div class="type-desc"><strong>排序题 × 词序 × 词语排句</strong> — 将打散的词语卡片拖拽排列成正确的句子。初级语序训练，考察基本句法结构(SVO等)。<br><span class="field-map">应用端: <strong>打散词语卡片(可拖拽)</strong> + <strong>答案区(放置栏)</strong> + <strong>干扰词(可选)</strong></span></div>
 <div class="shared-tpl">共用模板: 拖拽排序交互 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 词语排句</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>排序题</h3><span class="progress">Q3/10</span></div>
-          <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">将词语排列成正确的句子 Arrange into a sentence</div>
-            <div style="margin:16px 0">
-              <div class="text-sm text-muted mb-8">拖拽到下方组成句子:</div>
-              <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
-                <span class="drag-chip">喜欢</span>
-                <span class="drag-chip">我</span>
-                <span class="drag-chip">中国菜</span>
-                <span class="drag-chip">很</span>
-                <span class="drag-chip ghost">吃</span>
-              </div>
-            </div>
-            <div class="drag-area" style="min-height:50px;margin:12px 0">
-              <span class="drag-chip placed">我</span>
-              <span class="drag-chip placed">很</span>
-              <span class="drag-chip placed">喜欢</span>
-            </div>
-            <div class="text-sm text-muted" style="text-align:center">I really like eating Chinese food.</div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
-            <hr class="divider">
-            <div class="highlight-box green">
-              <div style="font-weight:500;color:var(--success)">✅ 正确！我很喜欢吃中国菜。</div>
-              <div class="mt-8 text-sm">语序: 主语(我) + 程度副词(很) + 动词(喜欢) + 动词(吃) + 宾语(中国菜)<br><span class="text-muted">SVO structure with degree adverb.</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 词语排句 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
@@ -108,8 +71,7 @@
       </div>
     </div>
   </div>
+
 </div>
-</div>
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body></html>

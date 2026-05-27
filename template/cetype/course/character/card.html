@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>汉字 · 字卡 · 字卡学习</title><link rel="stylesheet" href="../../styles.css">
+<title>汉字 · 字卡 · 字卡学习</title><link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -14,45 +14,12 @@
   <h1>#8 字卡学习</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">汉字 × 字卡 × 字卡学习</span>
-</div>
+
+  <a href="../../app/course/character/card.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
 <div class="content">
 <div class="type-desc"><strong>汉字 × 字卡学习</strong> — 每个汉字一张完整卡片，包含字形、拼音、声调、释义、部首、笔画数、常见组词、例句。<br><span class="field-map">应用端: <strong>大号汉字</strong> + <strong>拼音+释义</strong> + <strong>部首/笔画/HSK信息卡</strong> + <strong>音频</strong> + <strong>组词</strong> + <strong>例句(ruby标注)</strong></span></div>
 <div class="shared-tpl">共用模板: 汉字卡片 + 属性区 + 组词区 + 例句区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 字卡学习</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>字卡学习</h3><span class="progress">进度</span></div>
-          <div class="progress-bar"><div class="fill" style="width:35%"></div></div>
-          <div class="app-content">
-            <div style="text-align:center;padding:16px 0">
-              <div style="font-size:20px;color:var(--primary);font-weight:400">shuǐ</div>
-              <div style="font-size:72px;color:#333;font-weight:300;line-height:1.2">水</div>
-              <div style="font-size:16px;color:rgba(0,0,0,.45);margin-top:4px">water</div>
-              <div style="display:flex;justify-content:center;gap:12px;margin:12px 0">
-                <span class="audio-btn">🔊 发音</span>
-                <span class="proto-btn-sm" style="border-radius:20px">✍️ 笔顺</span>
-              </div>
-            </div>
-            <div style="display:flex;gap:8px;margin:12px 0">
-              <div style="flex:1;background:#f6ffed;border-radius:8px;padding:8px;text-align:center"><div style="font-size:11px;color:var(--success)">部首</div><div style="font-size:22px;margin:2px 0">水</div><div style="font-size:10px;color:rgba(0,0,0,.45)">水部</div></div>
-              <div style="flex:1;background:#e6f4ff;border-radius:8px;padding:8px;text-align:center"><div style="font-size:11px;color:var(--primary)">笔画</div><div style="font-size:22px;margin:2px 0">4</div><div style="font-size:10px;color:rgba(0,0,0,.45)">画</div></div>
-              <div style="flex:1;background:#fff7e6;border-radius:8px;padding:8px;text-align:center"><div style="font-size:11px;color:#d46b08">等级</div><div style="font-size:22px;margin:2px 0">1</div><div style="font-size:10px;color:rgba(0,0,0,.45)">HSK</div></div>
-            </div>
-            <div style="font-weight:500;margin:12px 0 8px">常见组词</div>
-            <div class="word-card"><span class="word-chars">水果</span><span class="word-pinyin">shuǐguǒ</span><span class="word-meaning" style="margin-left:8px">fruit</span></div>
-            <div class="word-card"><span class="word-chars">喝水</span><span class="word-pinyin">hēshuǐ</span><span class="word-meaning" style="margin-left:8px">drink water</span></div>
-            <div style="font-weight:500;margin:12px 0 8px">例句</div>
-            <div class="sentence-line"><div class="cn">我想<ruby>喝<rt>hē</rt></ruby><ruby>水<rt>shuǐ</rt></ruby>。</div><div class="en">I want to drink water.</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 字卡学习 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>字卡学习</strong>。完整汉字属性配置。</div></div>
@@ -87,9 +54,8 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">📥 CSV批量导入</span></div>
     </div>
   </div>
+
 </div>
-</div>
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

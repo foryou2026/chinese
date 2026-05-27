@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 听力理解 · 听句选义</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,44 +21,15 @@
   <span class="subtitle">选择题 × 听力理解 × 听句选义</span>
 </div>
 
+
+  <a href="../../app/exam/choice/ls-sentence.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 听力 × 听句选义</strong> — 播放一句话，然后显示追问问题，从4个选项中选答案。中等长度音频+追问式。<br>
   <span class="field-map">应用端核心元素: <strong>句级音频播放器</strong> + <strong>追问问题(中英)</strong> + <strong>选项</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 音频播放器 + 标准选项列表 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 听句选义</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>听力测试</h3><span class="progress">Q5/10</span></div>
-          <div class="progress-bar"><div class="fill" style="width:50%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">听句子，回答问题 Listen and answer</div>
-            <div style="text-align:center;padding:20px 0">
-              <div class="audio-btn big">🔊 点击播放</div>
-              <div style="margin-top:8px"><span class="text-sm text-muted">剩余: 2/3</span></div>
-              <div style="margin-top:6px;display:flex;gap:8px;justify-content:center"><span class="proto-btn-sm">🐢 慢速</span><span class="proto-btn-sm">🔁 重播</span></div>
-            </div>
-            <!-- 追问问题 -->
-            <div style="font-size:15px;font-weight:500;margin:12px 0">说话人想做什么？</div>
-            <div style="font-size:13px;color:rgba(0,0,0,.45);margin-bottom:12px">What does the speaker want to do?</div>
-            <div class="option-list">
-              <div class="option-item"><span class="letter">A</span><span>去买东西</span></div>
-              <div class="option-item selected"><span class="letter">B</span><span>去看电影</span></div>
-              <div class="option-item"><span class="letter">C</span><span>回家休息</span></div>
-              <div class="option-item"><span class="letter">D</span><span>去图书馆</span></div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 听句选义 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>与「听词选义」差异：音频为<strong>句子级</strong>，新增<strong>追问问题</strong>字段(中英)和<strong>音频脚本</strong>(内部管理用)。</div></div>
@@ -110,11 +81,10 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

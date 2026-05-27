@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 听力理解 · 听对话答题</title>
+<link rel="stylesheet" href="../../styles-app.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#22 听对话答题</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 听力理解 × 听对话答题</span>
+</div>
+
+
+  <a href="../../../exam/choice/ls-dialog.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a>
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 听力 × 听对话答题</strong> — 播放一段对话(多人多轮)，然后回答追问问题。最长音频，带进度条和完整播放控制。<br>
+  <span class="field-map">应用端核心元素: <strong>长音频播放器(带进度条)</strong> + <strong>播放控制(慢速/重播/剩余次数)</strong> + <strong>追问问题</strong> + <strong>选项</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 音频播放器(增强版) + 标准选项列表 + 答案解析区 + 元数据区</div>
+<div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听对话答题</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>听力测试</h3><span class="progress">Q8/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:80%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听对话，回答问题 Listen to the dialogue</div>
+            <!-- 增强音频播放器: 进度条+时长 -->
+            <div style="text-align:center;padding:16px 0">
+              <div class="audio-btn big">🔊 点击播放</div>
+              <div style="margin:10px 24px;height:4px;background:#f0f0f0;border-radius:2px;position:relative">
+                <div style="width:40%;height:100%;background:var(--primary);border-radius:2px"></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:0 24px;font-size:11px;color:rgba(0,0,0,.35)"><span>0:06</span><span>0:15</span></div>
+              <div style="margin-top:6px"><span class="text-sm text-muted">剩余播放次数: 1/2</span></div>
+              <div style="margin-top:6px;display:flex;gap:8px;justify-content:center"><span class="proto-btn-sm">🐢 慢速</span><span class="proto-btn-sm">🔁 重播</span></div>
+            </div>
+            <div style="font-size:15px;font-weight:500;margin:8px 0">他们在讨论什么？</div>
+            <div style="font-size:13px;color:rgba(0,0,0,.45);margin-bottom:12px">What are they discussing?</div>
+            <div class="option-list">
+              <div class="option-item"><span class="letter">A</span><span>去哪里吃饭</span></div>
+              <div class="option-item selected"><span class="letter">B</span><span>周末的计划</span></div>
+              <div class="option-item"><span class="letter">C</span><span>昨天的考试</span></div>
+              <div class="option-item"><span class="letter">D</span><span>买什么东西</span></div>
+            </div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+</body>
+</html>

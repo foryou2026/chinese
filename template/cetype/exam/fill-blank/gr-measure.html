@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>填空题 · 语法 · 量词填写</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,53 +21,15 @@
   <span class="subtitle">填空题 × 语法 × 量词填写</span>
 </div>
 
+
+  <a href="../../app/exam/fill-blank/gr-measure.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>填空题 × 语法 × 量词填写</strong> — "一___书" 格式，用户填入正确的量词。与「语法词填写」的区别：<strong>专项量词训练</strong>，空位固定在数字和名词之间，答案限定在量词词库中。<br>
   <span class="field-map">应用端核心元素: <strong>"数字 + 空位 + 名词" 格式展示</strong> + <strong>名词图片(可选)</strong> + <strong>量词输入框</strong> + <strong>量词类别提示(可选)</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 填空输入框 + 答案解析区 + 元数据区 (量词格式展示为本L3独有)</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 量词填写</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>量词练习</h3><span class="progress">Q4/10</span></div>
-          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">填入正确的量词 Fill in the measure word</div>
-            <div style="text-align:center;padding:8px 0">
-              <div style="width:100px;height:80px;background:#f0f0f0;border-radius:8px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:40px">📖</div>
-            </div>
-            <div style="text-align:center;padding:16px 0">
-              <div style="font-size:28px;display:flex;align-items:baseline;justify-content:center;gap:4px">
-                <span>一</span>
-                <input class="fill-blank" value="" placeholder="__" style="font-size:28px;width:60px">
-                <span>书</span>
-              </div>
-              <div class="text-sm text-muted mt-8">one ___ book</div>
-            </div>
-            <div class="highlight-box blue" style="text-align:center;padding:8px;margin:8px 0">
-              <span class="text-sm" style="color:var(--primary)">💡 提示: 本题考查扁平/薄片类物品的量词</span>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
-            <hr class="divider">
-            <div class="highlight-box green">
-              <div style="font-weight:500;color:var(--success)">✅ 正确答案: 本</div>
-              <div class="mt-8 text-sm">
-                一<strong>本</strong>书 — 「本」用于书本、杂志等装订成册的物品。<br>
-                <span class="text-muted">一本书 = one book. "本" is used for bound items (books, magazines).</span><br>
-                <span class="text-sm" style="color:var(--primary)">常见搭配: 一本书 / 一本杂志 / 一本笔记本</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 量词填写 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题目类型=<strong>量词填写</strong>。本L3独有配置：<strong>数量词+名词组合</strong>、<strong>量词类别</strong>、<strong>名词图片</strong>、<strong>常见搭配展示</strong>。</div></div>
@@ -155,10 +117,9 @@
       </div>
     </div>
   </div>
-</div>
+
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 语法 · 错句辨别</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,46 +21,15 @@
   <span class="subtitle">选择题 × 语法 × 错句辨别</span>
 </div>
 
+
+  <a href="../../app/exam/choice/gr-error.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 语法 × 错句辨别</strong> — 给出4个句子，选出其中语法<strong>错误</strong>的一句（注意：方向与「选正确句」相反）。答题后标注错误原因。<br>
   <span class="field-map">应用端核心元素: <strong>反向提示(选错误的)</strong> + <strong>整句选项</strong> + <strong>答题后错误原因标注</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 标准选项列表(整句) + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 错句辨别</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>语法测试</h3><span class="progress">Q9/12</span></div>
-          <div class="progress-bar"><div class="fill" style="width:75%"></div></div>
-          <div class="app-content">
-            <!-- 反向提示: 高亮警告色 -->
-            <div class="q-instruction" style="color:var(--error);font-weight:500">⚠ 选出语法<strong>错误</strong>的句子 Find the INCORRECT sentence</div>
-            <div class="option-list" style="margin-top:16px">
-              <div class="option-item" style="flex-direction:column;align-items:flex-start">
-                <div style="display:flex;align-items:center;gap:8px"><span class="letter">A</span><span style="font-size:14px">我比他高。</span></div>
-              </div>
-              <div class="option-item" style="flex-direction:column;align-items:flex-start">
-                <div style="display:flex;align-items:center;gap:8px"><span class="letter">B</span><span style="font-size:14px">这个比那个贵。</span></div>
-              </div>
-              <div class="option-item selected" style="flex-direction:column;align-items:flex-start;border-color:var(--error);background:#fff2f0">
-                <div style="display:flex;align-items:center;gap:8px"><span class="letter" style="border-color:var(--error);color:var(--error)">C</span><span style="font-size:14px">他比我很高。</span></div>
-                <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 比较句中不能用「很」修饰，应去掉「很」</div>
-              </div>
-              <div class="option-item" style="flex-direction:column;align-items:flex-start">
-                <div style="display:flex;align-items:center;gap:8px"><span class="letter">D</span><span style="font-size:14px">今天没有昨天冷。</span></div>
-              </div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 错句辨别 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>与「选正确句」<strong>方向相反</strong>：正确答案是<strong>错误的句子</strong>。需配置多个正确句+一个错误句，并标注错误原因。应用端指示语自动变为红色警示风格。</div></div>
@@ -110,11 +79,10 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>阅读理解 · 阅读 · 分级阅读</title><link rel="stylesheet" href="../../styles.css">
+<title>阅读理解 · 阅读 · 分级阅读</title><link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -14,37 +14,12 @@
   <h1>#18 分级阅读</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">阅读理解 × 阅读 × 分级阅读</span>
-</div>
+
+  <a href="../../app/course/reading/passage.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
 <div class="content">
 <div class="type-desc"><strong>阅读理解 × 分级阅读</strong> — 按HSK等级分级的短文，支持点词查义、生词高亮、全文朗读。<br><span class="field-map">应用端: <strong>文章标题+标签</strong> + <strong>正文(生词高亮)</strong> + <strong>点词弹窗</strong> + <strong>工具栏(朗读/拼音/生词表)</strong></span></div>
 <div class="shared-tpl">共用模板: 文章展示 + 生词标注 + 点词查义 + 工具栏</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 分级阅读</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>分级阅读</h3><span class="progress">进度</span></div>
-          <div class="progress-bar"><div class="fill" style="width:35%"></div></div>
-          <div class="app-content">
-            <div style="font-size:16px;font-weight:500;margin-bottom:8px">🐈 小猫找朋友</div>
-            <div style="display:flex;gap:6px;margin-bottom:12px">
-              <span style="background:#f6ffed;color:var(--success);padding:2px 8px;border-radius:4px;font-size:11px">HSK 3</span>
-              <span style="background:#f5f5f5;padding:2px 8px;border-radius:4px;font-size:11px">120字</span>
-              <span style="background:#e6f4ff;color:var(--primary);padding:2px 8px;border-radius:4px;font-size:11px">动物</span>
-            </div>
-            <div style="font-size:15px;line-height:2;padding:12px;background:#fafafa;border-radius:8px">
-              从前，有一只小猫，它很<span style="background:#fff7e6;padding:2px 4px;border-radius:3px;border-bottom:2px solid var(--warning);cursor:pointer">孤独</span>。每天，它在<span style="background:#fff7e6;padding:2px 4px;border-radius:3px;border-bottom:2px solid var(--warning);cursor:pointer">村子</span>里走来走去，想找一个朋友。<br><br>有一天，它遇到了一只小狗。小狗问它：「你为什么看起来不<span style="background:#fff7e6;padding:2px 4px;border-radius:3px;border-bottom:2px solid var(--warning);cursor:pointer">开心</span>？」小猫说：「因为我没有朋友。」小狗笑着说：「从今天开始，我就是你的朋友！」<br><br>从那以后，小猫和小狗每天一起<span style="background:#fff7e6;padding:2px 4px;border-radius:3px;border-bottom:2px solid var(--warning);cursor:pointer">玩耍</span>，它们成了最好的朋友。
-            </div>
-            <div style="background:#e6f4ff;border-radius:8px;padding:10px;margin:12px 0"><div style="font-size:12px;color:var(--primary);font-weight:500">📝 点击高亮词 → 弹出释义</div><div style="display:flex;gap:12px;margin-top:6px;align-items:center"><div style="font-size:24px">孤独</div><div><div style="font-size:13px;color:var(--primary)">gūdú</div><div style="font-size:12px">adj. lonely</div></div><span class="audio-btn" style="font-size:11px;padding:3px 8px;margin-left:auto">🔊</span></div></div>
-            <div style="display:flex;gap:8px;margin:8px 0"><span class="proto-btn-sm" style="flex:1;justify-content:center">🔊 朗读</span><span class="proto-btn-sm" style="flex:1;justify-content:center">Aa 拼音</span><span class="proto-btn-sm" style="flex:1;justify-content:center">📋 生词</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 分级阅读 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>分级阅读</strong>。核心：文章正文+生词标注+音频+分级。</div></div>
@@ -74,9 +49,8 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI生成配套理解题</span></div>
     </div>
   </div>
+
 </div>
-</div>
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

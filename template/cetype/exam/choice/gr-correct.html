@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 语法 · 选正确句</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,54 +21,15 @@
   <span class="subtitle">选择题 × 语法 × 选正确句</span>
 </div>
 
+
+  <a href="../../app/exam/choice/gr-correct.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 语法 × 选正确句</strong> — 给出语法点说明，从4个句子中选出语法正确的。错误选项在答题后显示错误标注。<br>
   <span class="field-map">应用端核心元素: <strong>语法点卡片</strong> + <strong>整句选项(语法词高亮)</strong> + <strong>答题后错误标注</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 标准选项列表(变体:整句+高亮) + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 选正确句</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>语法测试</h3><span class="progress">Q4/12</span></div>
-          <div class="progress-bar"><div class="fill" style="width:33%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">选择语法正确的句子 Select the correct sentence</div>
-            <!-- 语法点卡片 -->
-            <div class="highlight-box blue" style="text-align:center;margin:12px 0">
-              <div style="font-size:13px;color:var(--primary);font-weight:500">📖 考查语法点</div>
-              <div style="font-size:18px;margin-top:4px"><strong>「把」字句</strong></div>
-              <div class="text-sm text-muted">S + 把 + O + V + Complement</div>
-            </div>
-            <!-- 整句选项(语法词高亮) -->
-            <div class="option-list">
-              <div class="option-item selected" style="flex-direction:column;align-items:flex-start">
-                <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">A</span><span style="font-size:15px">我<strong style="color:var(--primary)">把</strong>书放在桌子上了。</span></div>
-              </div>
-              <div class="option-item" style="flex-direction:column;align-items:flex-start">
-                <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">B</span><span style="font-size:15px">我<strong style="color:var(--error)">把</strong>放书在桌子上了。</span></div>
-                <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 语序错误: 动词应在宾语后</div>
-              </div>
-              <div class="option-item" style="flex-direction:column;align-items:flex-start">
-                <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">C</span><span style="font-size:15px">我书<strong style="color:var(--error)">把</strong>放在桌子上了。</span></div>
-                <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 把字位置错误</div>
-              </div>
-              <div class="option-item" style="flex-direction:column;align-items:flex-start">
-                <div style="display:flex;align-items:center;gap:8px;width:100%"><span class="letter">D</span><span style="font-size:15px"><strong style="color:var(--error)">把</strong>我书放在桌子上了。</span></div>
-                <div style="margin-left:40px;font-size:11px;color:var(--error)">❌ 主语缺失</div>
-              </div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 选正确句 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>本L3核心：需配置<strong>语法点+说明</strong>、<strong>正确句子+错误句子</strong>、每个错误句的<strong>错误类型+具体说明</strong>(答题后展示)、<strong>高亮关键词+颜色</strong>。</div></div>
@@ -155,11 +116,10 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

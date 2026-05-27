@@ -1,0 +1,3 @@
+/* styles-app.css — app 端独立引用 */
+@import "../../../docs/B02-experience-design/app/prototype-style/app.css";
+@import "../styles-base.css";

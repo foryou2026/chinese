@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 词语 · 释义选词</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,42 +21,15 @@
   <span class="subtitle">选择题 × 词语 × 释义选词</span>
 </div>
 
+
+  <a href="../../app/exam/choice/wd-def2word.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 词语 × 释义选词</strong> — 展示中英释义描述，从4个词语选项中选出对应的词。方向：义→词，与「词义选择」互逆。<br>
   <span class="field-map">应用端核心元素: <strong>释义描述区(中英)</strong> + <strong>词语选项(大号+拼音)</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 标准选项列表 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 释义选词</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>词汇测试</h3><span class="progress">Q6/15</span></div>
-          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">根据释义选择词语 Choose the word by meaning</div>
-            <!-- 差异: 题干是释义而非词语 -->
-            <div style="text-align:center;padding:20px 0">
-              <div style="font-size:18px;color:#333;font-weight:500">表示很高兴、心情好</div>
-              <div style="font-size:14px;color:rgba(0,0,0,.55);margin-top:6px">very happy; in a good mood</div>
-            </div>
-            <!-- 词语选项(带拼音) -->
-            <div class="option-list">
-              <div class="option-item"><span class="letter">A</span><div><span style="font-size:18px">难过</span><span class="text-xs text-muted" style="margin-left:8px">nánguò</span></div></div>
-              <div class="option-item selected"><span class="letter">B</span><div><span style="font-size:18px">开心</span><span class="text-xs text-muted" style="margin-left:8px">kāixīn</span></div></div>
-              <div class="option-item"><span class="letter">C</span><div><span style="font-size:18px">生气</span><span class="text-xs text-muted" style="margin-left:8px">shēngqì</span></div></div>
-              <div class="option-item"><span class="letter">D</span><div><span style="font-size:18px">紧张</span><span class="text-xs text-muted" style="margin-left:8px">jǐnzhāng</span></div></div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 释义选词 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>方向=<strong>给义选词</strong>(与「词义选择」互逆)。题干为释义文本，选项为词语。干扰以<strong>同类情绪词/同主题词</strong>为主。</div></div>
@@ -96,11 +69,10 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

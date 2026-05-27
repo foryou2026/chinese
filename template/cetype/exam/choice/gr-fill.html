@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 语法 · 语法词填选</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,42 +21,15 @@
   <span class="subtitle">选择题 × 语法 × 语法词填选</span>
 </div>
 
+
+  <a href="../../app/exam/choice/gr-fill.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 语法 × 语法词填选</strong> — 给出带空位的句子，从语法词选项(了/过/着/把/被等)中选出正确的。类似填空但以选择形式作答。<br>
   <span class="field-map">应用端核心元素: <strong>语境句+空位</strong> + <strong>语法词选项(小型卡片)</strong> + <strong>每项带语法解释(可选)</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 语境句+空位 + 标准选项列表 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 语法词填选</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>语法测试</h3><span class="progress">Q6/12</span></div>
-          <div class="progress-bar"><div class="fill" style="width:50%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">选择正确的语法词填入空格 Fill in the grammar word</div>
-            <div class="highlight-box gray" style="padding:16px;margin:12px 0">
-              <div style="font-size:18px;line-height:2;text-align:center">
-                我去<span style="border-bottom:2px solid var(--primary);padding:0 6px;color:var(--primary)">__</span>中国两次。
-              </div>
-              <div style="text-align:center;font-size:13px;color:rgba(0,0,0,.45);margin-top:4px">I have been to China twice.</div>
-            </div>
-            <div class="option-list">
-              <div class="option-item"><span class="letter">A</span><span style="font-size:18px;font-weight:500">了</span><span class="text-xs text-muted" style="margin-left:8px">完成/变化</span></div>
-              <div class="option-item selected"><span class="letter">B</span><span style="font-size:18px;font-weight:500">过</span><span class="text-xs text-muted" style="margin-left:8px">经历/经验</span></div>
-              <div class="option-item"><span class="letter">C</span><span style="font-size:18px;font-weight:500">着</span><span class="text-xs text-muted" style="margin-left:8px">持续状态</span></div>
-              <div class="option-item"><span class="letter">D</span><span style="font-size:18px;font-weight:500">在</span><span class="text-xs text-muted" style="margin-left:8px">进行中</span></div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 语法词填选 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>选项为<strong>语法功能词</strong>(助词/介词等)，每项可配<strong>语法功能简述</strong>(应用端选项旁小字显示)。</div></div>
@@ -94,11 +67,10 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

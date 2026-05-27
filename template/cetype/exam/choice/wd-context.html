@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 词语 · 语境选词</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,44 +21,15 @@
   <span class="subtitle">选择题 × 词语 × 语境选词</span>
 </div>
 
+
+  <a href="../../app/exam/choice/wd-context.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 词语 × 语境选词</strong> — 给出一个带空位的语境句，从4个词语选项中选出最合适的。测试词汇的语境运用。<br>
   <span class="field-map">应用端核心元素: <strong>语境句+下划线空位(中英)</strong> + <strong>词语选项(拼音+释义可配)</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 语境句+空位 + 标准选项列表 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 语境选词</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>词汇测试</h3><span class="progress">Q8/20</span></div>
-          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">选择最合适的词语填入句子 Choose the best word</div>
-            <div class="highlight-box gray" style="padding:16px;margin:12px 0">
-              <div style="font-size:18px;line-height:2;text-align:center">
-                今天天气很好，我们去公园 <span style="border-bottom:2px solid var(--primary);padding:0 12px;color:var(--primary)">______</span> 吧。
-              </div>
-              <div style="text-align:center;font-size:13px;color:rgba(0,0,0,.45);margin-top:4px">
-                The weather is nice today, let's go to the park and ______.
-              </div>
-            </div>
-            <div class="option-list">
-              <div class="option-item"><span class="letter">A</span><div><div style="font-size:16px">学习</div><div class="text-xs text-muted">xuéxí · study</div></div></div>
-              <div class="option-item selected"><span class="letter">B</span><div><div style="font-size:16px">散步</div><div class="text-xs text-muted">sànbù · take a walk</div></div></div>
-              <div class="option-item"><span class="letter">C</span><div><div style="font-size:16px">睡觉</div><div class="text-xs text-muted">shuìjiào · sleep</div></div></div>
-              <div class="option-item"><span class="letter">D</span><div><div style="font-size:16px">工作</div><div class="text-xs text-muted">gōngzuò · work</div></div></div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 语境选词 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>本L3核心：需配置<strong>语境句+空位标记</strong>和<strong>带拼音+中英释义的词语选项</strong>。应用端选项的展示级别(是否显示拼音/释义)可控制。</div></div>
@@ -118,11 +89,10 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

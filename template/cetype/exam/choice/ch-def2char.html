@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>选择题 · 汉字 · 释义选汉字</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,48 +21,15 @@
   <span class="subtitle">选择题 × 汉字 × 释义选汉字</span>
 </div>
 
+
+  <a href="../../app/exam/choice/ch-def2char.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>选择题 × 汉字 × 释义选汉字</strong> — 只展示中英文释义(无拼音提示)，从汉字选项中选出正确答案。比「拼音选汉字」更难，因为没有读音提示。<br>
   <span class="field-map">应用端核心元素: <strong>中英释义(无拼音)</strong> + <strong>汉字网格选项(无拼音辅助)</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 汉字网格选项 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 释义选汉字</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>汉字测试</h3><span class="progress">Q3/12</span></div>
-          <div class="progress-bar"><div class="fill" style="width:25%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">根据释义选择汉字 Choose the character by meaning</div>
-            <!-- 差异: 只有释义，无拼音 -->
-            <div style="text-align:center;padding:20px 0">
-              <div style="font-size:20px;color:#333;font-weight:500">大 · 小的反义词</div>
-              <div style="font-size:16px;color:rgba(0,0,0,.55);margin-top:6px">big; large — opposite of 小</div>
-            </div>
-            <!-- 网格选项: 纯汉字，无拼音辅助 -->
-            <div class="option-grid">
-              <div class="option-item selected"><span style="font-size:36px">大</span></div>
-              <div class="option-item"><span style="font-size:36px">太</span></div>
-              <div class="option-item"><span style="font-size:36px">天</span></div>
-              <div class="option-item"><span style="font-size:36px">犬</span></div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
-            <hr class="divider">
-            <div class="highlight-box green">
-              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
-              <div class="mt-8">「大」(dà) — 注意区分「太」(tài, 多一点)、「天」(tiān, 上面一横)、「犬」(quǎn, 多一撇)。<br>
-              <span class="text-muted">"大" — distinguish from 太 (extra dot), 天 (top stroke), 犬 (extra stroke).</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 释义选汉字 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>与「拼音选汉字」的管理端差异：<strong>题干无拼音字段</strong>，只有中英释义；选项默认<strong>不显示拼音辅助</strong>，干扰维度以<strong>形近字</strong>为主。</div></div>
@@ -117,11 +84,10 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成</span></div>
     </div>
   </div>
-</div>
+
 
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>填空题 · 拼音 · 听音写拼音</title>
+<link rel="stylesheet" href="../../styles-app.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 填空题 · 全部变体</a>
+  <h1>#2 听音写拼音</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">填空题 × 拼音 × 听音写拼音</span>
+</div>
+
+
+  <a href="../../../exam/fill-blank/py-listen2py.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a>
+<div class="content">
+<div class="type-desc">
+  <strong>填空题 × 拼音 × 听音写拼音</strong> — 播放音频，用户听后输入拼音。与「汉字写全拼」的区别：<strong>无汉字提示，题干为纯音频</strong>，同时测试听辨能力和拼音拼写能力。<br>
+  <span class="field-map">应用端核心元素: <strong>音频播放器(大号)</strong> + <strong>播放次数/慢速控制</strong> + <strong>拼音输入框</strong> + <strong>声调辅助键盘</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 音频播放器 + 拼音输入框 + 声调辅助键盘 + 答案解析区 + 元数据区</div>
+<div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听音写拼音</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>拼音听写</h3><span class="progress">Q4/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听发音，写出拼音 Listen and write the pinyin</div>
+            <div style="text-align:center;padding:24px 0">
+              <div class="audio-btn big">🔊 点击播放</div>
+              <div style="margin-top:8px">
+                <span class="text-sm text-muted">剩余播放次数: 2/3</span>
+              </div>
+              <div style="margin-top:8px;display:flex;gap:8px;justify-content:center">
+                <span class="proto-btn-sm">🐢 慢速</span>
+                <span class="proto-btn-sm">🔁 重播</span>
+              </div>
+            </div>
+            <div style="text-align:center;margin:16px 0">
+              <input class="fill-blank wide" value="shuǐ" placeholder="输入拼音" style="font-size:24px;width:180px">
+            </div>
+            <div style="text-align:center;margin:8px 0">
+              <div class="text-sm text-muted">支持格式: shuǐ 或 shui3</div>
+              <div style="display:flex;gap:6px;justify-content:center;margin-top:8px;flex-wrap:wrap">
+                <span class="proto-btn-sm">ā á ǎ à</span>
+                <span class="proto-btn-sm">ē é ě è</span>
+                <span class="proto-btn-sm">ī í ǐ ì</span>
+                <span class="proto-btn-sm">ū ú ǔ ù</span>
+                <span class="proto-btn-sm">ǖ ǘ ǚ ǜ</span>
+              </div>
+            </div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+              <div class="mt-8 text-sm">你听到的是「水」(shuǐ, 第三声)。注意韵母 ui 的声调标在 i 上。<br>
+              <span class="text-muted">You heard "水" (shuǐ, 3rd tone). The tone mark goes on "i" in "ui".</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+</body>
+</html>

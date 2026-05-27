@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>填空题 · 拼音 · 汉字写全拼</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,53 +21,15 @@
   <span class="subtitle">填空题 × 拼音 × 汉字写全拼</span>
 </div>
 
+
+  <a href="../../app/exam/fill-blank/py-char2fullpy.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>填空题 × 拼音 × 汉字写全拼</strong> — 展示一个汉字/词语，用户输入完整拼音(含声调)。核心测试拼音拼写与声调标注能力。<br>
   <span class="field-map">应用端核心元素: <strong>大号汉字展示</strong> + <strong>发音按钮</strong> + <strong>拼音输入框</strong> + <strong>声调辅助键盘</strong> → 管理端须逐一配置</span>
 </div>
 <div class="shared-tpl">共用模板: 拼音输入框 + 声调辅助键盘 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 汉字写全拼</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>拼音填空</h3><span class="progress">Q2/10</span></div>
-          <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">写出汉字的拼音 Write the pinyin</div>
-            <div style="text-align:center;padding:24px 0">
-              <div style="font-size:80px;font-weight:300;color:#333">谢</div>
-              <div style="margin:8px 0"><span class="audio-btn">🔊 听发音</span></div>
-            </div>
-            <div style="text-align:center;margin:16px 0">
-              <input class="fill-blank wide" value="xiè" placeholder="输入拼音" style="font-size:24px;width:180px">
-            </div>
-            <div style="text-align:center;margin:8px 0">
-              <div class="text-sm text-muted">支持格式: xiè 或 xie4</div>
-              <div style="display:flex;gap:6px;justify-content:center;margin-top:8px;flex-wrap:wrap">
-                <span class="proto-btn-sm">ā á ǎ à</span>
-                <span class="proto-btn-sm">ē é ě è</span>
-                <span class="proto-btn-sm">ī í ǐ ì</span>
-                <span class="proto-btn-sm">ū ú ǔ ù</span>
-                <span class="proto-btn-sm">ǖ ǘ ǚ ǜ</span>
-              </div>
-            </div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
-            <hr class="divider">
-            <div class="highlight-box green">
-              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
-              <div class="mt-8 text-sm">「谢」读 xiè (第四声)，注意声母 x 不要写成 sh。<br>
-              <span class="text-muted">"谢" is xiè (4th tone). Note: initial is "x", not "sh".</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 汉字写全拼 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>题型=填空题, 知识类型=拼音, 题目类型=<strong>汉字写全拼</strong>。题干为汉字展示，答案为完整拼音字符串，核心配置是<strong>拼音容错规则</strong>和<strong>声调辅助键盘</strong>开关。</div></div>
@@ -134,10 +96,9 @@
       </div>
     </div>
   </div>
-</div>
+
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

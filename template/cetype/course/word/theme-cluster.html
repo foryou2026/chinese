@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>词语 · 主题 · 主题词群</title><link rel="stylesheet" href="../../styles.css">
+<title>词语 · 主题 · 主题词群</title><link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -14,37 +14,12 @@
   <h1>#11 主题词群</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">词语 × 主题 × 主题词群</span>
-</div>
+
+  <a href="../../app/course/word/theme-cluster.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
 <div class="content">
 <div class="type-desc"><strong>词语 × 主题词群</strong> — 按主题场景将相关词语分组展示，帮助学习者建立语义网络。<br><span class="field-map">应用端: <strong>主题标题</strong> + <strong>词语卡片簇</strong> + <strong>点击展开详情</strong> + <strong>词间关系(可选)</strong></span></div>
 <div class="shared-tpl">独有模板: 主题标题 + 词语簇展示 + 关系标注</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 主题词群</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>主题词群</h3><span class="progress">进度</span></div>
-          <div class="progress-bar"><div class="fill" style="width:35%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">主题词群 · 食物 🍎 Food Theme</div>
-            <div style="text-align:center;padding:12px 0"><div style="font-size:40px">🍎🍊🍇🍌🍉</div><div style="font-size:18px;font-weight:500;margin-top:8px">水果 Fruits</div><div class="text-sm text-muted">HSK 1-2 · 8个词语</div></div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0">
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍎 苹果</div><div style="font-size:12px;color:var(--primary)">píngguǒ</div><div style="font-size:11px;color:rgba(0,0,0,.45)">apple</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍊 橘子</div><div style="font-size:12px;color:var(--primary)">júzi</div><div style="font-size:11px;color:rgba(0,0,0,.45)">orange</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍇 葡萄</div><div style="font-size:12px;color:var(--primary)">pútao</div><div style="font-size:11px;color:rgba(0,0,0,.45)">grape</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍌 香蕉</div><div style="font-size:12px;color:var(--primary)">xiāngjiāo</div><div style="font-size:11px;color:rgba(0,0,0,.45)">banana</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍉 西瓜</div><div style="font-size:12px;color:var(--primary)">xīguā</div><div style="font-size:11px;color:rgba(0,0,0,.45)">watermelon</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍑 桃子</div><div style="font-size:12px;color:var(--primary)">táozi</div><div style="font-size:11px;color:rgba(0,0,0,.45)">peach</div></div>
-            </div>
-            <div class="highlight-box blue" style="margin:12px 0"><div class="text-sm" style="color:var(--primary)">👆 点击任意词语查看详细卡片</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 主题词群 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>主题词群</strong>。配置主题名称、词语列表(从词语库选择)、词间关系。</div></div>
@@ -69,9 +44,8 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span></div>
     </div>
   </div>
+
 </div>
-</div>
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>填空题 · 语法 · 语法词填写</title>
+<link rel="stylesheet" href="../../styles-app.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 填空题 · 全部变体</a>
+  <h1>#9 语法词填写</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">填空题 × 语法 × 语法词填写</span>
+</div>
+
+
+  <a href="../../../exam/fill-blank/gr-word.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a>
+<div class="content">
+<div class="type-desc">
+  <strong>填空题 × 语法 × 语法词填写</strong> — 句子空位填入语法词(了/过/着/把/被/的/得/地等)。与选择题·语法词填选的区别：<strong>无选项提供，纯输入</strong>，考察对语法词的主动运用能力。<br>
+  <span class="field-map">应用端核心元素: <strong>语法点提示(可选)</strong> + <strong>语境句+空位</strong> + <strong>英文翻译</strong> + <strong>语法词输入框</strong> + <strong>可选语法词提示</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 语境句展示 + 填空输入框 + 答案解析区 + 元数据区</div>
+<div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 语法词填写</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>语法填空</h3><span class="progress">Q3/8</span></div>
+          <div class="progress-bar"><div class="fill" style="width:38%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">填入正确的语法词 Fill in the grammar word</div>
+            <div class="highlight-box blue" style="text-align:center;padding:10px">
+              <span class="text-sm" style="color:var(--primary)">📖 考查: 「了/过/着」时态助词</span>
+            </div>
+            <div class="highlight-box gray" style="padding:16px;text-align:center;margin:12px 0">
+              <div style="font-size:20px;line-height:2">
+                我昨天去 <input class="fill-blank" value="了" placeholder="__" style="font-size:20px;width:50px"> 北京。
+              </div>
+              <div class="text-sm text-muted mt-8">I went to Beijing yesterday.</div>
+            </div>
+            <div style="margin:12px 0">
+              <div class="text-sm text-muted mb-8">可用语法词:</div>
+              <div style="display:flex;gap:8px;justify-content:center">
+                <span class="drag-chip" style="font-size:18px;padding:10px 20px">了</span>
+                <span class="drag-chip" style="font-size:18px;padding:10px 20px">过</span>
+                <span class="drag-chip" style="font-size:18px;padding:10px 20px">着</span>
+              </div>
+            </div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！</div>
+              <div class="mt-8 text-sm">
+                <strong>「了」</strong>用于表示动作已经完成(过去时)。「昨天」是过去时间标志，所以用「了」。<br>
+                <span class="text-muted">"了" indicates completed action. "昨天" (yesterday) signals past tense.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>笔画笔顺 · 描红 · 笔顺描红</title><link rel="stylesheet" href="../../styles-app.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style></head>
+<body>
+<div class="page-header">
+  <a href="index.html" class="back-link">← 笔画笔顺 · 全部学习形式</a>
+  <h1>#7 笔顺描红</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">笔画笔顺 × 描红 × 笔顺描红</span>
+
+  <a href="../../../course/stroke/practice.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a></div>
+<div class="content">
+<div class="type-desc"><strong>笔画笔顺 × 笔顺描红</strong> — Canvas描红练习，逐笔引导、动画回放、前端DTW算法判定。<strong>纯前端逻辑，不调AI。</strong><br><span class="field-map">应用端: <strong>Canvas描红区</strong> + <strong>底层引导字</strong> + <strong>逐笔进度</strong> + <strong>动画回放</strong> + <strong>笔顺规则</strong></span></div>
+<div class="shared-tpl">独有模板: Canvas描红区 + 笔画序列配置 + 判定阈值</div>
+<div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 笔顺描红</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>笔顺描红</h3><span class="progress">进度</span></div>
+          <div class="progress-bar"><div class="fill" style="width:35%"></div></div>
+          <div class="app-content">
+            <div style="text-align:center;padding:8px 0"><div style="font-size:14px;color:rgba(0,0,0,.45)">dà · big · 共3画</div></div>
+            <div style="width:220px;height:220px;border:2px solid var(--border);border-radius:12px;margin:12px auto;background:linear-gradient(rgba(0,0,0,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.05) 1px,transparent 1px);background-size:110px 110px;display:flex;align-items:center;justify-content:center;position:relative">
+              <span style="font-size:140px;color:rgba(0,0,0,.06);position:absolute">大</span>
+              <div style="position:absolute;bottom:8px;font-size:11px;color:var(--primary)">👆 沿虚线书写第2笔</div>
+            </div>
+            <div style="display:flex;justify-content:center;gap:8px;margin:12px 0">
+              <div style="width:48px;height:48px;border:2px solid var(--success);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--success)">一</div>
+              <div style="width:48px;height:48px;border:2px solid var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--primary);background:#e6f4ff">丿</div>
+              <div style="width:48px;height:48px;border:2px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--border)">㇏</div>
+            </div>
+            <div style="text-align:center;margin:8px 0"><div class="text-sm">第 <strong>2</strong>/3 笔: <span style="color:var(--primary);font-weight:500">撇 piě</span></div></div>
+            <div style="display:flex;gap:8px;justify-content:center;margin:12px 0"><span class="proto-btn-sm">↩ 撤销</span><span class="proto-btn-sm">⟲ 重写</span><span class="proto-btn-sm">▶ 播放动画</span></div>
+            <div class="highlight-box green" style="margin:12px 0"><div class="text-sm">📏 笔顺规则: 先横后竖，先撇后捺</div><div class="text-sm text-muted">Horizontal before vertical, left-falling before right-falling</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+</body>
+</html>

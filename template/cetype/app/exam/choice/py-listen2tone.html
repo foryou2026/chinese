@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题 · 拼音 · 听音辨调</title>
+<link rel="stylesheet" href="../../styles-app.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 选择题 · 全部变体</a>
+  <h1>#3 听音辨调</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">选择题 × 拼音 × 听音辨调</span>
+</div>
+
+
+  <a href="../../../exam/choice/py-listen2tone.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a>
+<div class="content">
+<div class="type-desc">
+  <strong>选择题 × 拼音 × 听音辨调</strong> — 播放发音，显示无声调的拼音字母，从4个声调中选出正确的。与前两种的区别：<strong>选项不是完整拼音，而是声调标记</strong>，更精准地测试声调感知。<br>
+  <span class="field-map">应用端核心元素: <strong>音频播放器</strong> + <strong>无调拼音展示</strong> + <strong>4声调选择器(非ABCD)</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 音频播放器 + 答案解析区 + 元数据区 (选项区为本L3独有的声调选择器)</div>
+<div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 听音辨调</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>声调测试</h3><span class="progress">Q7/20</span></div>
+          <div class="progress-bar"><div class="fill" style="width:35%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">听发音，选择正确的声调 Listen and choose the tone</div>
+            <!-- 音频播放器 -->
+            <div style="text-align:center;padding:16px 0">
+              <div class="audio-btn big">🔊 点击播放</div>
+              <div style="margin-top:6px"><span class="text-sm text-muted">剩余: 2/3</span></div>
+            </div>
+            <!-- 独有: 无调拼音大号展示 -->
+            <div style="text-align:center;padding:8px 0">
+              <div style="font-size:36px;color:#333;font-weight:300;letter-spacing:4px">ma</div>
+              <div style="font-size:12px;color:rgba(0,0,0,.45)">选择这个音节的声调</div>
+            </div>
+            <!-- 独有: 4声调选择器(替代ABCD选项) -->
+            <div class="tone-visual" style="margin:16px 0">
+              <div class="tone-box">
+                <div class="mark">ˉ</div>
+                <div class="label">第1声</div>
+                <div style="font-size:14px;color:var(--primary);margin-top:2px">mā</div>
+              </div>
+              <div class="tone-box">
+                <div class="mark">ˊ</div>
+                <div class="label">第2声</div>
+                <div style="font-size:14px;color:var(--primary);margin-top:2px">má</div>
+              </div>
+              <div class="tone-box active" style="border-color:var(--primary);background:#e6f4ff">
+                <div class="mark">ˇ</div>
+                <div class="label">第3声</div>
+                <div style="font-size:14px;color:var(--primary);margin-top:2px">mǎ</div>
+              </div>
+              <div class="tone-box">
+                <div class="mark">ˋ</div>
+                <div class="label">第4声</div>
+                <div style="font-size:14px;color:var(--primary);margin-top:2px">mà</div>
+              </div>
+            </div>
+            <div style="text-align:center;margin-bottom:8px"><span class="proto-btn-sm" style="font-size:11px;color:rgba(0,0,0,.45)">· 轻声</span></div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认答案 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确！第三声 mǎ (马)</div>
+              <div class="mt-8">第三声的特征是先降后升(214调值)。<br>
+              <span class="text-muted">3rd tone dips down then rises (214 contour).</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>配对题 · 字音 · 汉字↔拼音</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-admin.css">
 <style>
 .shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
 .shared-tpl::before { content:'\267b'; }
@@ -21,63 +21,15 @@
   <span class="subtitle">配对题 × 字音 × 汉字↔拼音</span>
 </div>
 
+
+  <a href="../../app/exam/matching/char-pinyin.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a>
 <div class="content">
 <div class="type-desc">
   <strong>配对题 × 字音 × 汉字↔拼音</strong> — 左列展示汉字，右列展示拼音(含干扰项)，用户点击/拖拽连线匹配。最基础的配对题型，考察音形对应。<br>
   <span class="field-map">应用端核心元素: <strong>左列汉字(大号)</strong> + <strong>右列拼音</strong> + <strong>连线/拖拽交互</strong> + <strong>匹配正确/错误反馈</strong></span>
 </div>
 <div class="shared-tpl">共用模板: 配对连线交互 + 匹配反馈动画 + 答案解析区 + 元数据区</div>
-<div class="split">
-  <div class="card">
-    <div class="card-header"><span class="badge blue">应用端</span> 汉字↔拼音</div>
-    <div class="card-body">
-      <div class="phone-frame">
-        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
-        <div class="phone-screen">
-          <div class="app-header"><span class="back">←</span><h3>配对练习</h3><span class="progress">Q2/5</span></div>
-          <div class="progress-bar"><div class="fill" style="width:40%"></div></div>
-          <div class="app-content">
-            <div class="q-instruction">将汉字与正确的拼音配对 Match characters with pinyin</div>
-            <div class="match-grid" style="margin:16px 0">
-              <div class="match-item matched" style="font-size:28px">学</div>
-              <div class="match-line">——</div>
-              <div class="match-item matched">xué</div>
-
-              <div class="match-item active" style="font-size:28px">书</div>
-              <div class="match-line">——</div>
-              <div class="match-item">huā</div>
-
-              <div class="match-item" style="font-size:28px">花</div>
-              <div class="match-line" style="color:transparent">——</div>
-              <div class="match-item">shū</div>
-
-              <div class="match-item" style="font-size:28px">月</div>
-              <div class="match-line" style="color:transparent">——</div>
-              <div class="match-item">yuè</div>
-
-              <div class="match-item" style="font-size:28px">大</div>
-              <div class="match-line" style="color:transparent">——</div>
-              <div class="match-item">dà</div>
-
-              <div style="grid-column:1/-1"></div>
-              <div style="grid-column:3;text-align:right"><span class="text-xs text-muted">⚠ 多1个干扰项</span></div>
-              <div style="grid-column:1/-1"></div>
-              <div style="grid-column:3"><div class="match-item" style="opacity:.5">rì</div></div>
-            </div>
-            <div class="text-sm text-muted" style="text-align:center">已配对 1/5 · 点击左右两项进行配对</div>
-            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">提交全部配对 ✓</span></div>
-            <hr class="divider">
-            <div class="highlight-box green">
-              <div style="font-weight:500;color:var(--success)">✅ 5/5 全部正确！</div>
-              <div class="mt-8 text-sm">学=xué 书=shū 花=huā 月=yuè 大=dà<br>
-              <span class="text-muted">干扰项 rì(日) 未被使用</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
+<div class="card">
     <div class="card-header"><span class="badge green">管理端</span> 汉字↔拼音 · 配置表单</div>
     <div class="card-body">
       <div class="form-row t3">
@@ -133,10 +85,9 @@
       </div>
     </div>
   </div>
-</div>
+
 </div>
 
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
 </body>
 </html>

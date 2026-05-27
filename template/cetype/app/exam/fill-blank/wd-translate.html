@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>填空题 · 词语 · 翻译填词</title>
+<link rel="stylesheet" href="../../styles-app.css">
+<style>
+.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
+.shared-tpl::before { content:'\267b'; }
+.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
+.field-map strong { color:var(--primary); font-weight:500; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← 填空题 · 全部变体</a>
+  <h1>#8 翻译填词</h1>
+  <span class="badge solid-green">零AI</span>
+  <span class="subtitle">填空题 × 词语 × 翻译填词</span>
+</div>
+
+
+  <a href="../../../exam/fill-blank/wd-translate.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a>
+<div class="content">
+<div class="type-desc">
+  <strong>填空题 × 词语 × 翻译填词</strong> — 展示完整英文句+中文句(带空位)，用户对照翻译填入中文词语。与「语境补词」的区别：<strong>英文句为完整对照线索</strong>，重点考察英→中词汇对应能力。<br>
+  <span class="field-map">应用端核心元素: <strong>完整英文句(上方)</strong> + <strong>中文句+空位(下方)</strong> + <strong>目标英文单词高亮</strong> + <strong>词语输入框</strong></span>
+</div>
+<div class="shared-tpl">共用模板: 填空输入框 + 答案解析区 + 元数据区</div>
+<div class="card">
+    <div class="card-header"><span class="badge blue">应用端</span> 翻译填词</div>
+    <div class="card-body">
+      <div class="phone-frame">
+        <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+        <div class="phone-screen">
+          <div class="app-header"><span class="back">←</span><h3>翻译填空</h3><span class="progress">Q5/10</span></div>
+          <div class="progress-bar"><div class="fill" style="width:50%"></div></div>
+          <div class="app-content">
+            <div class="q-instruction">根据英文翻译，在中文句中填入对应词语</div>
+            <div class="highlight-box blue" style="padding:16px">
+              <div style="font-size:14px;color:rgba(0,0,0,.45);margin-bottom:4px">English:</div>
+              <div style="font-size:17px;line-height:1.8">I <span style="background:#bae0ff;padding:2px 6px;border-radius:4px;font-weight:500">really like</span> Chinese food.</div>
+            </div>
+            <div class="highlight-box gray" style="padding:16px;margin-top:12px">
+              <div style="font-size:14px;color:rgba(0,0,0,.45);margin-bottom:4px">中文:</div>
+              <div style="font-size:20px;line-height:2">
+                我 <input class="fill-blank wide" placeholder="______" style="font-size:20px"> 中国菜。
+              </div>
+            </div>
+            <div style="padding:16px 0"><span class="proto-btn-primary proto-btn-block">确认 ✓</span></div>
+            <hr class="divider">
+            <div class="highlight-box green">
+              <div style="font-weight:500;color:var(--success)">✅ 正确答案: 很喜欢</div>
+              <div class="mt-8 text-sm">也可接受: 非常喜欢、特别喜欢<br>
+              <span class="text-muted">"really like" = 很喜欢. Also: 非常喜欢, 特别喜欢.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+</body>
+</html>
