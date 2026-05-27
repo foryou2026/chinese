@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>词语 Vocabulary · 全部学习形式</title><link rel="stylesheet" href="../../styles.css">
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>词语 Vocabulary · 全部学习形式</title>
+<link rel="stylesheet" href="../../../../docs/B02-experience-design/admin/prototype-style/app.css">
+<style>
+.page-header{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--glass-border);display:flex;align-items:center;gap:var(--space-3);position:sticky;top:0;z-index:var(--z-sticky);flex-wrap:wrap;box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow)}
+.page-header h1{font-size:var(--text-lg);font-weight:var(--weight-semibold)}
+.page-header .subtitle{color:var(--text-muted);font-size:var(--text-sm)}
+.back-link{color:var(--color-brand-default);text-decoration:none;font-size:var(--text-sm);transition:color var(--motion-fast)}
+.back-link:hover{text-decoration:underline;color:var(--color-brand-hover)}
+.content{max-width:1440px;margin:0 auto;padding:var(--space-6);position:relative;z-index:1}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:var(--space-4)}
+.index-card{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border);border-radius:var(--radius-xl);padding:var(--space-5);text-decoration:none;color:inherit;box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow);transition:transform var(--motion-normal),box-shadow var(--motion-normal);display:block}
+.index-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.index-card .title{font-size:var(--text-base);font-weight:var(--weight-semibold);margin-bottom:var(--space-2)}
+.index-card .desc{font-size:var(--text-sm);color:var(--text-muted);margin-bottom:var(--space-3);line-height:var(--leading-normal)}
+.index-card .meta{display:flex;align-items:center;gap:var(--space-2)}
+.badge{display:inline-block;font-size:var(--text-xs);padding:2px 8px;border-radius:var(--radius-pill);font-weight:var(--weight-regular)}
+.badge.green{background:var(--color-success-50);color:var(--color-success-500);border:1px solid var(--color-success-200)}
+.link-pair{display:flex;gap:var(--space-2);margin-top:var(--space-3)}
+.link-pair a{font-size:var(--text-xs);padding:4px 10px;border-radius:var(--radius-pill);text-decoration:none;font-weight:var(--weight-medium);transition:opacity var(--motion-fast)}
+.link-pair a:hover{opacity:.8}
+.link-pair .app-link{background:var(--color-info-50);color:var(--color-info-500);border:1px solid var(--color-info-200)}
+.link-pair .admin-link{background:var(--color-warning-50);color:var(--color-warning-700);border:1px solid var(--color-warning-200)}
+</style>
 </head>
 <body>
+<div class="mesh-gradient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+
 <div class="page-header">
   <a href="../index.html" class="back-link">← 课程知识点</a>
   <h1>词语 Vocabulary</h1>
@@ -11,19 +37,28 @@
 </div>
 <div class="content">
   <div class="index-grid">
-    <a class="index-card" href="card.html">
+    <div class="index-card animate-slide-up">
       <div class="title">#10 词卡学习</div>
       <div class="desc">单词卡片: 词+拼音+词性+释义+例句+关联词</div>
       <div class="meta"><span class="badge green">零AI</span></div>
-    </a>
-    <a class="index-card" href="theme-cluster.html">
+      <div class="link-pair">
+        <a href="card-app.html" class="app-link">📱 App端</a>
+        <a href="card-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
+    <div class="index-card animate-slide-up">
       <div class="title">#11 主题词群</div>
       <div class="desc">按主题场景分组: 思维导图式词汇簇</div>
       <div class="meta"><span class="badge green">零AI</span></div>
-    </a>
+      <div class="link-pair">
+        <a href="theme-cluster-app.html" class="app-link">📱 App端</a>
+        <a href="theme-cluster-admin.html" class="admin-link">⚙️ Admin端</a>
+      </div>
+    </div>
   </div>
 </div>
-<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
+<script>proto.bootstrap();</script>
 </body>
 </html>

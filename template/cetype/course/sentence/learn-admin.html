@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>短句 · 学习 · 短句学习</title><link rel="stylesheet" href="../../styles-admin.css">
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>短句 · 学习 · 短句学习 · 管理端</title>
+<link rel="stylesheet" href="../../../../docs/B02-experience-design/admin/prototype-style/app.css">
 <style>
-.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
-.shared-tpl::before { content:'\267b'; }
-.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
-.field-map strong { color:var(--primary); font-weight:500; }
-</style></head>
+.page-header{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--glass-border);display:flex;align-items:center;gap:var(--space-3);position:sticky;top:0;z-index:var(--z-sticky);flex-wrap:wrap;box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow)}
+.page-header h1{font-size:var(--text-lg);font-weight:var(--weight-semibold)}
+.page-header .subtitle{color:var(--text-muted);font-size:var(--text-sm)}
+.back-link{color:var(--color-brand-default);text-decoration:none;font-size:var(--text-sm);transition:color var(--motion-fast)}
+.back-link:hover{text-decoration:underline;color:var(--color-brand-hover)}
+.badge{display:inline-block;font-size:var(--text-xs);padding:2px 8px;border-radius:var(--radius-pill);font-weight:var(--weight-regular)}
+.badge.green{background:var(--color-success-50);color:var(--color-success-500);border:1px solid var(--color-success-200)}
+.badge.solid-green{background:var(--color-success-500);color:#fff}
+.content{max-width:1440px;margin:0 auto;padding:var(--space-6);position:relative;z-index:1}
+.type-desc{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur-sm);backdrop-filter:var(--glass-blur-sm);border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-5);font-size:var(--text-sm);line-height:var(--leading-loose)}
+.type-desc strong{color:var(--color-brand-default)}
+.shared-tpl{background:var(--color-success-50);border:1px solid var(--color-success-200);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--color-success-700);margin:8px 0;display:inline-flex;align-items:center;gap:4px}
+.shared-tpl::before{content:'\267b'}
+.field-map{font-size:11px;color:var(--text-muted);margin-top:4px}
+.field-map strong{color:var(--color-brand-default);font-weight:var(--weight-medium)}
+.card{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border);border-radius:var(--radius-xl);box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow);overflow:hidden}
+.card-header{padding:14px 20px;border-bottom:1px solid var(--glass-border);font-weight:var(--weight-semibold);font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-body{padding:20px}
+.callout{padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);margin:var(--space-3) 0;font-size:var(--text-sm);display:flex;gap:8px;line-height:var(--leading-normal)}
+.callout.info{background:var(--color-info-50);border:1px solid var(--color-info-200)}
+.callout .icon{font-size:16px;flex-shrink:0}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3)}
+.form-row.t3{grid-template-columns:1fr 1fr 1fr}
+.divider{border:none;border-top:1px solid var(--color-neutral-200);margin:var(--space-4) 0}
+.upload-area{border:2px dashed var(--border-color);border-radius:var(--radius-sm);padding:var(--space-4);text-align:center;color:var(--text-muted);cursor:pointer;transition:var(--transition-all)}
+.upload-area:hover{border-color:var(--color-brand-default);color:var(--color-brand-default)}
+.upload-area.sm{padding:10px}
+.mini-table{width:100%;border-collapse:collapse;font-size:var(--text-xs)}
+.mini-table th{background:var(--color-neutral-50);padding:8px;text-align:left;border-bottom:1px solid var(--color-neutral-200);font-weight:var(--weight-medium)}
+.mini-table td{padding:8px;border-bottom:1px solid var(--color-neutral-100);vertical-align:middle}
+.btn-group{display:flex;gap:8px;margin-top:var(--space-4);flex-wrap:wrap}
+.proto-label .req{color:var(--color-danger-500);margin-right:4px}
+.proto-label .hint{font-weight:var(--weight-regular);color:var(--text-muted);font-size:var(--text-xs);margin-left:6px}
+.proto-field{margin-bottom:18px}
+</style>
+</head>
 <body>
+<div class="mesh-gradient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+
 <div class="page-header">
   <a href="index.html" class="back-link">← 短句 · 全部学习形式</a>
   <h1>#13 短句学习</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">短句 × 学习 × 短句学习</span>
+  <a href="learn-app.html" class="back-link" style="margin-left:auto;color:var(--color-success-500)">App端 →</a>
+</div>
 
-  <a href="../../app/course/sentence/learn.html" class="back-link" style="margin-left:auto;color:#52c41a">App端 →</a></div>
 <div class="content">
-<div class="type-desc"><strong>短句 × 短句学习</strong> — 日常实用短句，逐词点击查看释义，语法要点标注，多语速音频。<br><span class="field-map">应用端: <strong>可点击句子</strong> + <strong>词义弹窗</strong> + <strong>拼音+翻译</strong> + <strong>多语速音频</strong> + <strong>语法要点</strong></span></div>
-<div class="shared-tpl">共用模板: 可点击句子 + 词义弹窗 + 音频区 + 语法标注 + 元数据区</div>
-<div class="card">
+  <div class="type-desc"><strong>短句 × 短句学习</strong> — 日常实用短句，逐词点击查看释义，语法要点标注，多语速音频。<br><span class="field-map">应用端: <strong>可点击句子</strong> + <strong>词义弹窗</strong> + <strong>拼音+翻译</strong> + <strong>多语速音频</strong> + <strong>语法要点</strong></span></div>
+  <div class="shared-tpl">共用模板: 可点击句子 + 词义弹窗 + 音频区 + 语法标注 + 元数据区</div>
+
+  <div class="card animate-slide-up">
     <div class="card-header"><span class="badge green">管理端</span> 短句学习 · 配置表单</div>
     <div class="card-body">
       <div class="callout info"><span class="icon">📌</span><div>学习形式=<strong>短句学习</strong>。核心：句子+分词标注表+语法要点+音频。</div></div>
@@ -30,9 +68,9 @@
       <div class="proto-field"><label class="proto-label"><span class="req">*</span>分词标注 <span class="hint">每个词的拼音、词性、释义，对应应用端点击弹窗</span></label>
         <table class="mini-table"><thead><tr><th>词</th><th>拼音</th><th>词性</th><th>中文释义</th><th>英文</th><th>类型</th></tr></thead>
         <tbody>
-          <tr><td><input class="proto-input" value="你" style="width:50px"></td><td><input class="proto-input" value="nǐ" style="width:50px"></td><td><select class="proto-select" style="width:60px"><option>代词</option></select></td><td><input class="proto-input" value="你" style="width:50px"></td><td><input class="proto-input" value="you" style="width:50px"></td><td><span style="color:var(--primary);font-size:12px">普通</span></td></tr>
-          <tr><td><input class="proto-input" value="叫" style="width:50px"></td><td><input class="proto-input" value="jiào" style="width:50px"></td><td><select class="proto-select" style="width:60px"><option>动词</option></select></td><td><input class="proto-input" value="叫做" style="width:50px"></td><td><input class="proto-input" value="called" style="width:50px"></td><td><span style="color:var(--primary);font-size:12px">普通</span></td></tr>
-          <tr><td><input class="proto-input" value="大卫" style="width:50px"></td><td><input class="proto-input" value="Dàwèi" style="width:50px"></td><td><select class="proto-select" style="width:60px"><option>专名</option></select></td><td><input class="proto-input" value="大卫" style="width:50px"></td><td><input class="proto-input" value="David" style="width:50px"></td><td><span style="color:var(--warning);font-size:12px">变量</span></td></tr>
+          <tr><td><input class="proto-input" value="你" style="width:50px"></td><td><input class="proto-input" value="nǐ" style="width:50px"></td><td><select class="proto-select" style="width:60px"><option>代词</option></select></td><td><input class="proto-input" value="你" style="width:50px"></td><td><input class="proto-input" value="you" style="width:50px"></td><td><span style="color:var(--color-brand-default);font-size:12px">普通</span></td></tr>
+          <tr><td><input class="proto-input" value="叫" style="width:50px"></td><td><input class="proto-input" value="jiào" style="width:50px"></td><td><select class="proto-select" style="width:60px"><option>动词</option></select></td><td><input class="proto-input" value="叫做" style="width:50px"></td><td><input class="proto-input" value="called" style="width:50px"></td><td><span style="color:var(--color-brand-default);font-size:12px">普通</span></td></tr>
+          <tr><td><input class="proto-input" value="大卫" style="width:50px"></td><td><input class="proto-input" value="Dàwèi" style="width:50px"></td><td><select class="proto-select" style="width:60px"><option>专名</option></select></td><td><input class="proto-input" value="大卫" style="width:50px"></td><td><input class="proto-input" value="David" style="width:50px"></td><td><span style="color:var(--color-warning-500);font-size:12px">变量</span></td></tr>
         </tbody></table>
       </div>
       <div class="proto-field"><label class="proto-label">音频组</label><div class="form-row"><div class="upload-area sm">📁 正常语速</div><div class="upload-area sm">📁 慢速</div></div></div>
@@ -41,8 +79,9 @@
       <div class="btn-group"><span class="proto-btn-primary">💾 保存</span><span class="proto-btn-secondary">👁 预览</span><span class="proto-btn-secondary">🤖 AI批量生成短句</span></div>
     </div>
   </div>
-
 </div>
+
 <script src="../../../../docs/B02-experience-design/admin/prototype-style/app.js"></script>
+<script>proto.bootstrap();</script>
 </body>
 </html>

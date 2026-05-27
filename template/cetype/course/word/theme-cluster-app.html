@@ -1,25 +1,62 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>词语 · 主题 · 主题词群</title><link rel="stylesheet" href="../../styles-app.css">
+<html lang="zh-CN" data-mode="light" data-accent="red" data-density="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>词语 · 主题 · 主题词群</title>
+<link rel="stylesheet" href="../../../../docs/B02-experience-design/app/prototype-style/app.css">
 <style>
-.shared-tpl { background:#f6ffed; border:1px solid #b7eb8f; border-radius:6px; padding:6px 10px; font-size:11px; color:#389e0d; margin:8px 0; display:inline-flex; align-items:center; gap:4px; }
-.shared-tpl::before { content:'\267b'; }
-.field-map { font-size:11px; color:rgba(0,0,0,.45); margin-top:4px; }
-.field-map strong { color:var(--primary); font-weight:500; }
-</style></head>
+.page-header{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--glass-border);display:flex;align-items:center;gap:var(--space-3);position:sticky;top:0;z-index:var(--z-sticky);flex-wrap:wrap;box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow)}
+.page-header h1{font-size:var(--text-lg);font-weight:var(--weight-semibold)}
+.page-header .subtitle{color:var(--text-muted);font-size:var(--text-sm)}
+.back-link{color:var(--color-brand-default);text-decoration:none;font-size:var(--text-sm);transition:color var(--motion-fast)}
+.back-link:hover{text-decoration:underline;color:var(--color-brand-hover)}
+.badge{display:inline-block;font-size:var(--text-xs);padding:2px 8px;border-radius:var(--radius-pill);font-weight:var(--weight-regular)}
+.badge.blue{background:var(--color-info-50);color:var(--color-info-500);border:1px solid var(--color-info-200)}
+.badge.solid-green{background:var(--color-success-500);color:#fff}
+.content{max-width:1440px;margin:0 auto;padding:var(--space-6);position:relative;z-index:1}
+.type-desc{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur-sm);backdrop-filter:var(--glass-blur-sm);border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-5);font-size:var(--text-sm);line-height:var(--leading-loose)}
+.type-desc strong{color:var(--color-brand-default)}
+.shared-tpl{background:var(--color-success-50);border:1px solid var(--color-success-200);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--color-success-700);margin:8px 0;display:inline-flex;align-items:center;gap:4px}
+.shared-tpl::before{content:'\267b'}
+.field-map{font-size:11px;color:var(--text-muted);margin-top:4px}
+.field-map strong{color:var(--color-brand-default);font-weight:var(--weight-medium)}
+.card{background:var(--glass-bg-card);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border);border-radius:var(--radius-xl);box-shadow:inset 0 1px 0 0 var(--glass-inset),0 4px 24px -1px var(--glass-shadow);overflow:hidden}
+.card-header{padding:14px 20px;border-bottom:1px solid var(--glass-border);font-weight:var(--weight-semibold);font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-body{padding:20px}
+.phone-frame{width:375px;max-width:100%;margin:0 auto;border:3px solid var(--color-neutral-800);border-radius:32px;overflow:hidden;background:var(--color-neutral-0);box-shadow:var(--shadow-lg)}
+.phone-frame .status-bar{background:var(--color-neutral-800);color:#fff;font-size:var(--text-xs);padding:6px 20px;display:flex;justify-content:space-between}
+.phone-screen{min-height:580px;overflow-y:auto}
+.app-header{background:linear-gradient(135deg,var(--color-brand-default),var(--color-brand-400));color:var(--color-brand-on);padding:14px 16px;display:flex;align-items:center;gap:var(--space-3)}
+.app-header .back{font-size:18px;cursor:pointer}
+.app-header h3{font-size:15px;font-weight:var(--weight-medium);flex:1}
+.app-header .progress{font-size:var(--text-xs);opacity:.8}
+.app-content{padding:var(--space-4)}
+.progress-bar{height:4px;background:var(--color-neutral-100);border-radius:2px;overflow:hidden}
+.progress-bar .fill{height:100%;background:var(--color-brand-default);border-radius:2px}
+.q-instruction{font-size:var(--text-sm);color:var(--text-muted);margin-bottom:var(--space-3)}
+.highlight-box{border-radius:var(--radius-sm);padding:var(--space-3);margin:8px 0}
+.highlight-box.blue{background:var(--color-info-50);border:1px solid var(--color-info-200)}
+.text-sm{font-size:var(--text-sm)}
+.text-muted{color:var(--text-muted)}
+</style>
+</head>
 <body>
+<div class="mesh-gradient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+
 <div class="page-header">
   <a href="index.html" class="back-link">← 词语 · 全部学习形式</a>
   <h1>#11 主题词群</h1>
   <span class="badge solid-green">零AI</span>
   <span class="subtitle">词语 × 主题 × 主题词群</span>
+  <a href="theme-cluster-admin.html" class="back-link" style="margin-left:auto;color:var(--color-warning-700)">Admin端 →</a>
+</div>
 
-  <a href="../../../course/word/theme-cluster.html" class="back-link" style="margin-left:auto;color:#d46b08">Admin端 →</a></div>
 <div class="content">
-<div class="type-desc"><strong>词语 × 主题词群</strong> — 按主题场景将相关词语分组展示，帮助学习者建立语义网络。<br><span class="field-map">应用端: <strong>主题标题</strong> + <strong>词语卡片簇</strong> + <strong>点击展开详情</strong> + <strong>词间关系(可选)</strong></span></div>
-<div class="shared-tpl">独有模板: 主题标题 + 词语簇展示 + 关系标注</div>
-<div class="card">
+  <div class="type-desc"><strong>词语 × 主题词群</strong> — 按主题场景将相关词语分组展示，帮助学习者建立语义网络。<br><span class="field-map">应用端: <strong>主题标题</strong> + <strong>词语卡片簇</strong> + <strong>点击展开详情</strong> + <strong>词间关系(可选)</strong></span></div>
+  <div class="shared-tpl">独有模板: 主题标题 + 词语簇展示 + 关系标注</div>
+
+  <div class="card animate-slide-up">
     <div class="card-header"><span class="badge blue">应用端</span> 主题词群</div>
     <div class="card-body">
       <div class="phone-frame">
@@ -29,23 +66,24 @@
           <div class="progress-bar"><div class="fill" style="width:35%"></div></div>
           <div class="app-content">
             <div class="q-instruction">主题词群 · 食物 🍎 Food Theme</div>
-            <div style="text-align:center;padding:12px 0"><div style="font-size:40px">🍎🍊🍇🍌🍉</div><div style="font-size:18px;font-weight:500;margin-top:8px">水果 Fruits</div><div class="text-sm text-muted">HSK 1-2 · 8个词语</div></div>
+            <div style="text-align:center;padding:12px 0"><div style="font-size:40px">🍎🍊🍇🍌🍉</div><div style="font-size:18px;font-weight:var(--weight-medium);margin-top:8px">水果 Fruits</div><div class="text-sm text-muted">HSK 1-2 · 8个词语</div></div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0">
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍎 苹果</div><div style="font-size:12px;color:var(--primary)">píngguǒ</div><div style="font-size:11px;color:rgba(0,0,0,.45)">apple</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍊 橘子</div><div style="font-size:12px;color:var(--primary)">júzi</div><div style="font-size:11px;color:rgba(0,0,0,.45)">orange</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍇 葡萄</div><div style="font-size:12px;color:var(--primary)">pútao</div><div style="font-size:11px;color:rgba(0,0,0,.45)">grape</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍌 香蕉</div><div style="font-size:12px;color:var(--primary)">xiāngjiāo</div><div style="font-size:11px;color:rgba(0,0,0,.45)">banana</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍉 西瓜</div><div style="font-size:12px;color:var(--primary)">xīguā</div><div style="font-size:11px;color:rgba(0,0,0,.45)">watermelon</div></div>
-              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍑 桃子</div><div style="font-size:12px;color:var(--primary)">táozi</div><div style="font-size:11px;color:rgba(0,0,0,.45)">peach</div></div>
+              <div style="border:1px solid var(--color-neutral-200);border-radius:var(--radius-md);padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍎 苹果</div><div style="font-size:12px;color:var(--color-brand-default)">píngguǒ</div><div style="font-size:11px;color:var(--text-muted)">apple</div></div>
+              <div style="border:1px solid var(--color-neutral-200);border-radius:var(--radius-md);padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍊 橘子</div><div style="font-size:12px;color:var(--color-brand-default)">júzi</div><div style="font-size:11px;color:var(--text-muted)">orange</div></div>
+              <div style="border:1px solid var(--color-neutral-200);border-radius:var(--radius-md);padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍇 葡萄</div><div style="font-size:12px;color:var(--color-brand-default)">pútao</div><div style="font-size:11px;color:var(--text-muted)">grape</div></div>
+              <div style="border:1px solid var(--color-neutral-200);border-radius:var(--radius-md);padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍌 香蕉</div><div style="font-size:12px;color:var(--color-brand-default)">xiāngjiāo</div><div style="font-size:11px;color:var(--text-muted)">banana</div></div>
+              <div style="border:1px solid var(--color-neutral-200);border-radius:var(--radius-md);padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍉 西瓜</div><div style="font-size:12px;color:var(--color-brand-default)">xīguā</div><div style="font-size:11px;color:var(--text-muted)">watermelon</div></div>
+              <div style="border:1px solid var(--color-neutral-200);border-radius:var(--radius-md);padding:10px;text-align:center;cursor:pointer"><div style="font-size:22px">🍑 桃子</div><div style="font-size:12px;color:var(--color-brand-default)">táozi</div><div style="font-size:11px;color:var(--text-muted)">peach</div></div>
             </div>
-            <div class="highlight-box blue" style="margin:12px 0"><div class="text-sm" style="color:var(--primary)">👆 点击任意词语查看详细卡片</div></div>
+            <div class="highlight-box blue" style="margin:12px 0"><div class="text-sm" style="color:var(--color-info-500)">👆 点击任意词语查看详细卡片</div></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>
-<script src="../../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+
+<script src="../../../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+<script>proto.bootstrap();</script>
 </body>
 </html>
