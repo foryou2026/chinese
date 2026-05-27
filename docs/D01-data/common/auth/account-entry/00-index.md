@@ -1,6 +1,6 @@
-# 数据规范 · account-entry · 总览
+# 数据规范 · account-entry · 共用总览
 
-> **归属**：共享
+> **适用系统**：app, admin
 > **关联 R-ID**：app: R-auth-001~016 / admin: R-auth-001~011
 > **不做**：状态机定义(C02)、路由/接口(D02)、页面(C03)
 > **特殊说明**：auth 模块大量复用 Supabase Auth 内置能力（用户表 `auth.users`、密码哈希、JWT 签发、Token 刷新、Google OAuth）。本文件仅定义 `public` 域下的扩展表，不触碰 `auth.*` 系统表。
