@@ -1,9 +1,0 @@
-/* ============================================
-   Zhiyu Prototype — Index / Navigation Pages
-   内容页已拆分为 app/ 和 admin 两套独立 HTML：
-   - app/ 引用 styles-app.css（app prototype-style）
-   - admin 引用 styles-admin.css（admin prototype-style）
-   本文件仅供 index 导航页使用
-   ============================================ */
-
-@import "./styles-base.css";
