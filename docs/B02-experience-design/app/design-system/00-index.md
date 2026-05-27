@@ -21,8 +21,9 @@
 | 03 | navigation | TopBar(桌面)/BottomBar(移动) 双导航 |
 | 04 | status-colors | 4 状态色（翡翠/琥珀/红/蓝）+ 焦点环 + 禁用态 |
 | 05 | components/ | 各组件规范（6 态+异常态+游戏化变体） |
-| 06 | interactions | 焦点/键盘/滚动/手势/弹簧动效/庆祝动画 |
+| 06 | interactions | 焦点/键盘/滚动/手势/弹簧动效/触控反馈 |
 | 07 | responsive-dark | 断点行为 + 暗黑映射 + 密度/主题切换 |
+| 08 | gamification | 游戏化动效全集：涟漪/星星爆发/抖动/XP飘字/纸屑/关卡完成/Combo/音效系统 |
 
 ## 组件库底座
 
@@ -50,3 +51,4 @@ shadcn/ui + Tailwind CSS v4
 ## 同源约束
 
 `prototype-style/tokens.css` 与本目录 `01-tokens.md` 中的 CSS 变量逐字一致。
+`prototype-style/parts/08-gamification.css` + `prototype-style/app.js` 游戏化 API 与 `08-gamification.md` 逐条一致。
