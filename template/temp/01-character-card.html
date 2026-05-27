@@ -32,6 +32,8 @@
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ===== 状态栏 ===== */
@@ -46,6 +48,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
+  flex-shrink: 0;
 }
 
 /* ===== 顶部导航 ===== */
@@ -53,43 +56,44 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px;
+  padding: 6px 16px;
   position: sticky;
   top: 36px;
   z-index: 40;
+  flex-shrink: 0;
 }
 .app-nav .back-btn {
-  width: 40px; height: 40px;
+  width: 36px; height: 36px;
   border-radius: var(--radius-pill);
   display: flex; align-items: center; justify-content: center;
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur-sm);
   border: 1px solid var(--glass-border);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   transition: transform 100ms var(--easing-spring);
   color: var(--text-primary);
 }
 .app-nav .back-btn:active { transform: scale(0.9); }
 .app-nav .nav-title {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--text-primary);
 }
 .app-nav .lives {
-  display: flex; align-items: center; gap: 4px;
-  font-size: 16px; font-weight: 700;
+  display: flex; align-items: center; gap: 3px;
+  font-size: 15px; font-weight: 700;
   color: #EF4444;
 }
 
 /* ===== 进度条 ===== */
 .progress-track {
-  margin: 0 20px 16px;
-  height: 12px;
+  margin: 0 20px 12px;
+  height: 10px;
   border-radius: var(--radius-pill);
   background: var(--color-neutral-200);
   overflow: hidden;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.04);
 }
 .progress-fill {
   height: 100%;
@@ -102,32 +106,73 @@
   content: '';
   position: absolute;
   top: 2px; right: 4px;
-  width: 20px; height: 4px;
-  background: rgba(255,255,255,0.5);
+  width: 16px; height: 3px;
+  background: rgba(255,255,255,0.45);
   border-radius: var(--radius-pill);
 }
 
-/* ===== 核心卡片区域 ===== */
-.card-area {
-  padding: 0 20px;
+/* ===== 吉祥物 ===== */
+.mascot-area {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
+}
+.mascot {
+  width: 48px; height: 48px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, var(--color-brand-50), var(--color-brand-100));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 3px 0 0 var(--color-brand-200);
+  animation: mascotBounce 2.5s ease-in-out infinite;
+}
+@keyframes mascotBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.mascot-speech {
+  background: var(--glass-bg-elevated);
+  backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-top: 6px;
+  position: relative;
+}
+.mascot-speech::before {
+  content: '';
+  position: absolute;
+  top: -5px; left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px; height: 10px;
+  background: var(--glass-bg-elevated);
+  border-left: 1px solid var(--glass-border);
+  border-top: 1px solid var(--glass-border);
+}
+
+/* ===== 学习卡 ===== */
+.card-area {
+  padding: 12px 20px 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .learn-card {
   width: 100%;
-  border-radius: var(--radius-2xl);
-  padding: 32px 24px;
+  border-radius: var(--radius-xl);
+  padding: 24px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
   background: var(--glass-bg-card);
   backdrop-filter: var(--glass-blur);
   border: 1px solid var(--glass-border);
-  box-shadow:
-    inset 0 1px 0 0 var(--glass-inset),
-    0 8px 32px -4px var(--glass-shadow);
+  box-shadow: inset 0 1px 0 0 var(--glass-inset);
   transition: transform 400ms var(--easing-spring);
 }
 .learn-card.flip-out {
@@ -142,135 +187,95 @@
   to { transform: translateX(0) rotate(0); opacity: 1; }
 }
 
-/* 卡通角色指引 */
-.mascot {
-  width: 60px; height: 60px;
-  border-radius: var(--radius-pill);
-  background: linear-gradient(135deg, var(--color-brand-100), var(--color-brand-200));
-  display: flex; align-items: center; justify-content: center;
-  font-size: 32px;
-  margin: 0 auto 12px;
-  box-shadow: 0 4px 0 0 var(--color-brand-300);
-  animation: mascotBounce 2s ease-in-out infinite;
-}
-@keyframes mascotBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-.mascot-speech {
-  background: var(--glass-bg-elevated);
-  backdrop-filter: var(--glass-blur-sm);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-lg);
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  margin-bottom: 20px;
-  position: relative;
-}
-.mascot-speech::before {
-  content: '';
-  position: absolute;
-  top: -6px; left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  width: 12px; height: 12px;
-  background: var(--glass-bg-elevated);
-  border-left: 1px solid var(--glass-border);
-  border-top: 1px solid var(--glass-border);
-}
-
 /* 汉字展示 */
 .hanzi-display {
   font-family: var(--font-hanzi);
-  font-size: 96px;
+  font-size: 88px;
   font-weight: 400;
   color: var(--text-primary);
   line-height: 1.1;
-  margin: 8px 0;
+  margin: 4px 0;
   transition: transform 200ms var(--easing-spring);
   cursor: pointer;
 }
-.hanzi-display:active {
-  transform: scale(1.08);
-}
+.hanzi-display:active { transform: scale(1.06); }
 .hanzi-display.pulse {
   animation: hanziPulse 300ms var(--easing-spring);
 }
 @keyframes hanziPulse {
   0% { transform: scale(1); }
-  50% { transform: scale(1.12); }
+  50% { transform: scale(1.1); }
   100% { transform: scale(1); }
 }
 
 .pinyin-display {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--color-brand-default);
-  margin-bottom: 4px;
-  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+  letter-spacing: 0.3px;
 }
-
 .meaning-display {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text-muted);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
-/* 音频按钮 */
+/* 操作按钮行 */
+.action-pills {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
 .audio-pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 8px 20px;
+  gap: 5px;
+  padding: 7px 16px;
   border-radius: var(--radius-pill);
   background: var(--color-brand-50);
   color: var(--color-brand-default);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  border: 2px solid var(--color-brand-200);
-  transition: transform 100ms var(--easing-spring), box-shadow 100ms ease;
+  border: 1.5px solid var(--color-brand-200);
+  transition: transform 100ms var(--easing-spring);
+  position: relative;
+  overflow: hidden;
 }
-.audio-pill:active {
-  transform: scale(0.95);
-}
+.audio-pill:active { transform: scale(0.95); }
 .audio-pill.playing {
   animation: audioPulse 600ms ease infinite;
 }
 @keyframes audioPulse {
   0%, 100% { box-shadow: 0 0 0 0 var(--color-brand-ring); }
-  50% { box-shadow: 0 0 0 8px transparent; }
+  50% { box-shadow: 0 0 0 6px transparent; }
 }
 
-/* ===== 属性小标签 ===== */
+/* ===== 属性标签 ===== */
 .attr-row {
   display: flex;
-  gap: 8px;
-  margin: 16px 20px;
+  gap: 6px;
+  margin: 10px 20px;
 }
 .attr-chip {
   flex: 1;
-  border-radius: var(--radius-xl);
-  padding: 12px 8px;
+  border-radius: var(--radius-lg);
+  padding: 10px 6px;
   text-align: center;
-  background: var(--glass-bg-card);
+  background: var(--glass-bg);
   backdrop-filter: var(--glass-blur-sm);
   border: 1px solid var(--glass-border);
-  box-shadow: inset 0 1px 0 0 var(--glass-inset);
-  transition: transform 200ms var(--easing-spring);
 }
-.attr-chip:active { transform: scale(0.96); }
-.attr-chip .chip-icon { font-size: 22px; margin-bottom: 2px; }
+.attr-chip .chip-icon { font-size: 18px; margin-bottom: 1px; }
 .attr-chip .chip-label {
-  font-size: 10px;
+  font-size: 9px;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 .attr-chip .chip-value {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text-primary);
 }
@@ -278,140 +283,119 @@
 /* ===== 组词列表 ===== */
 .vocab-section {
   padding: 0 20px;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 .vocab-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 .vocab-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
-  border-radius: var(--radius-lg);
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur-sm);
   border: 1px solid var(--glass-border);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   cursor: pointer;
-  transition: transform 150ms var(--easing-spring), box-shadow 150ms ease;
+  transition: transform 150ms var(--easing-spring);
+  position: relative;
+  overflow: hidden;
 }
-.vocab-item:active {
-  transform: scale(0.98) translateY(1px);
-}
+.vocab-item:active { transform: scale(0.98); }
 .vocab-item .v-char {
   font-family: var(--font-hanzi);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--text-primary);
-  min-width: 48px;
+  min-width: 44px;
 }
 .vocab-item .v-pinyin {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--color-brand-default);
   font-weight: 500;
 }
 .vocab-item .v-meaning {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--text-muted);
 }
 .vocab-item .v-speaker {
   margin-left: auto;
-  font-size: 18px;
-  opacity: 0.5;
+  font-size: 16px;
+  opacity: 0.4;
+}
+
+/* ===== 例句区 ===== */
+.example-section {
+  padding: 0 20px;
+  margin: 8px 0;
+}
+.example-card {
+  padding: 12px 14px;
+  border-radius: var(--radius-lg);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
+}
+.example-cn {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  line-height: 1.7;
+}
+.example-cn ruby rt {
+  font-size: 9px;
+  color: var(--color-brand-default);
+}
+.example-en {
+  font-size: 13px;
+  color: var(--text-muted);
 }
 
 /* ===== 底部操作栏 ===== */
 .bottom-action {
-  padding: 16px 20px 32px;
+  padding: 12px 20px 28px;
   margin-top: auto;
   position: sticky;
   bottom: 0;
   background: linear-gradient(transparent, var(--page-bg) 30%);
+  flex-shrink: 0;
 }
 .btn-continue {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 56px;
+  height: 52px;
   border-radius: var(--radius-pill);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   background: var(--color-brand-default);
   color: var(--color-brand-on);
   border: none;
   cursor: pointer;
-  box-shadow:
-    0 6px 0 0 var(--color-brand-700),
-    0 8px 20px -2px var(--color-brand-ring);
+  box-shadow: 0 4px 0 0 var(--color-brand-700);
   transition: transform 100ms var(--easing-spring), box-shadow 100ms var(--easing-spring);
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
+  position: relative;
+  overflow: hidden;
 }
 .btn-continue:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 8px 0 0 var(--color-brand-700),
-    0 10px 24px -2px var(--color-brand-ring);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 0 var(--color-brand-700);
 }
 .btn-continue:active {
-  transform: translateY(4px);
-  box-shadow:
-    0 2px 0 0 var(--color-brand-700),
-    0 3px 8px -2px var(--color-brand-ring);
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 0 var(--color-brand-800);
   transition-duration: 50ms;
-}
-
-/* ===== 例句区 ===== */
-.example-section {
-  padding: 0 20px;
-  margin: 12px 0;
-}
-.example-card {
-  padding: 16px;
-  border-radius: var(--radius-xl);
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur-sm);
-  border: 1px solid var(--glass-border);
-  box-shadow: inset 0 1px 0 0 var(--glass-inset);
-}
-.example-cn {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--text-primary);
-  margin-bottom: 6px;
-  line-height: 1.6;
-}
-.example-cn ruby rt {
-  font-size: 10px;
-  color: var(--color-brand-default);
-}
-.example-en {
-  font-size: 14px;
-  color: var(--text-muted);
-}
-
-/* ===== XP 飘字 ===== */
-.xp-float {
-  position: fixed;
-  font-size: 20px;
-  font-weight: 800;
-  color: var(--color-warning-500);
-  pointer-events: none;
-  z-index: 200;
-  animation: xpFloatUp 1000ms var(--easing-out) forwards;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-@keyframes xpFloatUp {
-  0% { opacity: 1; transform: translateY(0) scale(0.5); }
-  20% { transform: translateY(-10px) scale(1.2); }
-  100% { opacity: 0; transform: translateY(-60px) scale(0.8); }
 }
 
 /* ===== 主题切换浮动条 ===== */
@@ -422,51 +406,60 @@
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 8px 16px;
+  gap: 10px;
+  padding: 6px 14px;
   background: var(--glass-bg-elevated);
   backdrop-filter: var(--glass-blur);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-pill);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
   z-index: 1000;
 }
 .theme-dot {
-  width: 20px; height: 20px;
+  width: 18px; height: 18px;
   border-radius: 50%;
   border: 2px solid transparent;
   cursor: pointer;
   transition: transform 150ms var(--easing-spring), border-color 150ms ease;
 }
-.theme-dot:hover { transform: scale(1.3); }
+.theme-dot:hover { transform: scale(1.25); }
 .theme-dot.active { border-color: var(--text-primary); box-shadow: 0 0 0 2px var(--page-bg); }
 .theme-dot[data-c="red"] { background: #EA4335; }
 .theme-dot[data-c="yellow"] { background: #FBBC04; }
 .theme-dot[data-c="blue"] { background: #4285F4; }
 .theme-dot[data-c="green"] { background: #34A853; }
 .mode-toggle {
-  width: 32px; height: 32px;
+  width: 28px; height: 28px;
   border-radius: 50%;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   transition: transform 200ms var(--easing-spring);
 }
 .mode-toggle:active { transform: scale(0.88); }
 
 /* ===== 背景mesh ===== */
 .mesh-gradient-bg { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+
+/* ===== Combo 显示 ===== */
+.combo-indicator {
+  position: absolute;
+  top: 8px; right: 12px;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.combo-indicator.visible { opacity: 1; }
 </style>
 </head>
 <body>
 
 <!-- 极光背景 -->
 <div class="mesh-gradient-bg">
-  <div class="blob blob-1" style="width:60vw;height:60vw;background:radial-gradient(circle,var(--mesh-color-1),transparent 70%);opacity:var(--mesh-opacity-1);position:absolute;top:-15%;left:-10%;filter:blur(100px);border-radius:50%;animation:mesh-drift-1 22s ease-in-out infinite"></div>
-  <div class="blob blob-2" style="width:55vw;height:55vw;background:radial-gradient(circle,var(--mesh-color-2),transparent 70%);opacity:var(--mesh-opacity-2);position:absolute;top:30%;right:-15%;filter:blur(100px);border-radius:50%;animation:mesh-drift-2 25s ease-in-out infinite"></div>
-  <div class="blob blob-3" style="width:50vw;height:50vw;background:radial-gradient(circle,var(--mesh-color-3),transparent 70%);opacity:var(--mesh-opacity-3);position:absolute;bottom:-10%;left:20%;filter:blur(100px);border-radius:50%;animation:mesh-drift-3 20s ease-in-out infinite"></div>
+  <div style="width:60vw;height:60vw;background:radial-gradient(circle,var(--mesh-color-1),transparent 70%);opacity:var(--mesh-opacity-1);position:absolute;top:-15%;left:-10%;filter:blur(100px);border-radius:50%;animation:mesh-drift-1 22s ease-in-out infinite"></div>
+  <div style="width:55vw;height:55vw;background:radial-gradient(circle,var(--mesh-color-2),transparent 70%);opacity:var(--mesh-opacity-2);position:absolute;top:30%;right:-15%;filter:blur(100px);border-radius:50%;animation:mesh-drift-2 25s ease-in-out infinite"></div>
+  <div style="width:50vw;height:50vw;background:radial-gradient(circle,var(--mesh-color-3),transparent 70%);opacity:var(--mesh-opacity-3);position:absolute;bottom:-10%;left:20%;filter:blur(100px);border-radius:50%;animation:mesh-drift-3 20s ease-in-out infinite"></div>
 </div>
 
 <!-- 手机壳 -->
@@ -477,20 +470,20 @@
     <div class="status-bar">
       <span>9:41</span>
       <span style="display:flex;gap:4px;align-items:center;font-size:10px">
-        <span style="font-size:12px">5G</span>
-        <svg width="16" height="12" viewBox="0 0 16 12"><rect x="0" y="5" width="3" height="7" rx="1" fill="currentColor" opacity=".3"/><rect x="4.5" y="3" width="3" height="9" rx="1" fill="currentColor" opacity=".5"/><rect x="9" y="1" width="3" height="11" rx="1" fill="currentColor" opacity=".7"/><rect x="13.5" y="0" width="3" height="12" rx="1" fill="currentColor"/></svg>
-        <svg width="22" height="12" viewBox="0 0 22 12"><rect x="0" y="1" width="18" height="10" rx="2" stroke="currentColor" fill="none" stroke-width="1.2"/><rect x="19" y="3.5" width="2" height="5" rx="1" fill="currentColor" opacity=".4"/><rect x="1.5" y="2.5" width="12" height="7" rx="1" fill="var(--color-brand-default)"/></svg>
+        <span style="font-size:11px">5G</span>
+        <svg width="14" height="10" viewBox="0 0 16 12"><rect x="0" y="5" width="3" height="7" rx="1" fill="currentColor" opacity=".3"/><rect x="4.5" y="3" width="3" height="9" rx="1" fill="currentColor" opacity=".5"/><rect x="9" y="1" width="3" height="11" rx="1" fill="currentColor" opacity=".7"/><rect x="13.5" y="0" width="3" height="12" rx="1" fill="currentColor"/></svg>
+        <svg width="20" height="10" viewBox="0 0 22 12"><rect x="0" y="1" width="18" height="10" rx="2" stroke="currentColor" fill="none" stroke-width="1.2"/><rect x="19" y="3.5" width="2" height="5" rx="1" fill="currentColor" opacity=".4"/><rect x="1.5" y="2.5" width="12" height="7" rx="1" fill="var(--color-brand-default)"/></svg>
       </span>
     </div>
 
     <!-- 顶部导航 -->
     <div class="app-nav">
-      <div class="back-btn" onclick="this.style.transform='scale(0.85)';setTimeout(()=>this.style.transform='',150)">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      <div class="back-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
       </div>
       <span class="nav-title">Learn Characters</span>
       <div class="lives">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#EF4444"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#EF4444"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         <span>5</span>
       </div>
     </div>
@@ -500,25 +493,28 @@
       <div class="progress-fill" id="progressFill" style="width: 35%"></div>
     </div>
 
-    <!-- 卡通角色 + 提示 -->
-    <div class="card-area">
+    <!-- 吉祥物 + 提示 -->
+    <div class="mascot-area">
       <div class="mascot" id="mascot">🐼</div>
       <div class="mascot-speech" id="mascotSpeech">Tap the character to hear it!</div>
     </div>
 
     <!-- 学习卡 -->
-    <div class="card-area" style="margin-top:4px">
+    <div class="card-area">
       <div class="learn-card" id="learnCard">
+        <div class="combo-indicator" id="comboIndicator">
+          <span class="proto-combo"><span class="combo-fire">🔥</span> <span id="comboCount">3</span>x</span>
+        </div>
         <div class="pinyin-display" id="pinyin">shuǐ</div>
         <div class="hanzi-display" id="hanzi" onclick="playHanzi()">水</div>
         <div class="meaning-display" id="meaning">water; liquid</div>
-        <div style="display:flex;justify-content:center;gap:10px;margin-top:8px">
+        <div class="action-pills">
           <div class="audio-pill" id="audioBtn" onclick="playAudio()">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
             Listen
           </div>
           <div class="audio-pill" onclick="showStroke()" style="background:var(--color-neutral-50);border-color:var(--color-neutral-200);color:var(--text-secondary)">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
             Stroke
           </div>
         </div>
@@ -529,55 +525,46 @@
     <div class="attr-row">
       <div class="attr-chip">
         <div class="chip-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--color-success-500)"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-success-500)"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
         </div>
         <div class="chip-label">Radical</div>
-        <div class="chip-value">水</div>
+        <div class="chip-value" id="radical">水</div>
       </div>
       <div class="attr-chip">
         <div class="chip-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--color-info-500)"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-info-500)"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
         </div>
         <div class="chip-label">Strokes</div>
-        <div class="chip-value">4</div>
+        <div class="chip-value" id="strokes">4</div>
       </div>
       <div class="attr-chip">
         <div class="chip-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--color-warning-500)"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-warning-500)"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
         <div class="chip-label">HSK</div>
-        <div class="chip-value">1</div>
+        <div class="chip-value" id="hsk">1</div>
       </div>
     </div>
 
     <!-- 组词 -->
     <div class="vocab-section">
       <div class="vocab-title">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-brand-default)"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-brand-default)"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
         Common Words
       </div>
-      <div class="vocab-item" onclick="bounceItem(this)">
+      <div class="vocab-item" id="vocab0" onclick="bounceItem(this, 0)">
         <span class="v-char">水果</span>
-        <div>
-          <div class="v-pinyin">shuǐguǒ</div>
-          <div class="v-meaning">fruit</div>
-        </div>
+        <div><div class="v-pinyin">shuǐguǒ</div><div class="v-meaning">fruit</div></div>
         <span class="v-speaker">🔊</span>
       </div>
-      <div class="vocab-item" onclick="bounceItem(this)">
+      <div class="vocab-item" id="vocab1" onclick="bounceItem(this, 1)">
         <span class="v-char">喝水</span>
-        <div>
-          <div class="v-pinyin">hē shuǐ</div>
-          <div class="v-meaning">drink water</div>
-        </div>
+        <div><div class="v-pinyin">hē shuǐ</div><div class="v-meaning">drink water</div></div>
         <span class="v-speaker">🔊</span>
       </div>
-      <div class="vocab-item" onclick="bounceItem(this)">
+      <div class="vocab-item" id="vocab2" onclick="bounceItem(this, 2)">
         <span class="v-char">水平</span>
-        <div>
-          <div class="v-pinyin">shuǐpíng</div>
-          <div class="v-meaning">level; standard</div>
-        </div>
+        <div><div class="v-pinyin">shuǐpíng</div><div class="v-meaning">level; standard</div></div>
         <span class="v-speaker">🔊</span>
       </div>
     </div>
@@ -585,7 +572,7 @@
     <!-- 例句 -->
     <div class="example-section">
       <div class="vocab-title">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-brand-default)"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-brand-default)"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
         Example
       </div>
       <div class="example-card">
@@ -600,11 +587,10 @@
     <div class="bottom-action">
       <button class="btn-continue" id="continueBtn" onclick="nextCard()">
         CONTINUE
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-left:6px"><path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-left:5px"><path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
       </button>
     </div>
 
-    <div style="height:24px"></div>
   </div>
 </div>
 
@@ -614,7 +600,7 @@
   <div class="theme-dot" data-c="red" onclick="switchAccent('red',this)"></div>
   <div class="theme-dot" data-c="blue" onclick="switchAccent('blue',this)"></div>
   <div class="theme-dot" data-c="yellow" onclick="switchAccent('yellow',this)"></div>
-  <div style="width:1px;height:20px;background:var(--glass-border)"></div>
+  <div style="width:1px;height:18px;background:var(--glass-border)"></div>
   <div class="mode-toggle" onclick="toggleMode()">🌙</div>
 </div>
 
@@ -630,23 +616,29 @@ var cards = [
 ];
 var ci = 0;
 var progress = 35;
+var combo = 0;
 
 function playHanzi() {
   var el = document.getElementById('hanzi');
   el.classList.add('pulse');
   setTimeout(function(){ el.classList.remove('pulse'); }, 300);
-  showXP('+5 XP', el);
+  proto.sfx('tap');
+  proto.showXP('+5 XP', el);
+  combo++;
+  updateCombo();
 }
 
 function playAudio() {
   var btn = document.getElementById('audioBtn');
   btn.classList.add('playing');
+  proto.sfx('tap');
   setTimeout(function(){ btn.classList.remove('playing'); }, 800);
 }
 
 function showStroke() {
   var mascot = document.getElementById('mascot');
-  mascot.style.transform = 'scale(1.2) rotate(-10deg)';
+  mascot.style.transform = 'scale(1.15) rotate(-8deg)';
+  proto.sfx('card-flip');
   setTimeout(function(){ mascot.style.transform = ''; }, 300);
   document.getElementById('mascotSpeech').textContent = 'Watch the stroke order!';
 }
@@ -660,7 +652,13 @@ function nextCard() {
   progress = Math.min(100, progress + 15);
   document.getElementById('progressFill').style.width = progress + '%';
 
-  showXP('+10 XP', document.getElementById('continueBtn'));
+  proto.sfx('correct');
+  proto.showXP('+10 XP', document.getElementById('continueBtn'));
+  proto.starBurst(document.getElementById('continueBtn'));
+
+  if (progress >= 100) {
+    setTimeout(function(){ proto.levelComplete(); }, 400);
+  }
 
   setTimeout(function(){
     document.getElementById('hanzi').textContent = card.hanzi;
@@ -668,6 +666,9 @@ function nextCard() {
     document.getElementById('meaning').textContent = card.meaning;
     document.getElementById('mascot').textContent = card.mascot;
     document.getElementById('mascotSpeech').textContent = card.speech;
+    document.getElementById('radical').textContent = card.radical;
+    document.getElementById('strokes').textContent = card.strokes;
+    document.getElementById('hsk').textContent = card.hsk;
 
     el.classList.remove('flip-out');
     el.classList.add('flip-in');
@@ -675,20 +676,22 @@ function nextCard() {
   }, 350);
 }
 
-function bounceItem(el) {
-  el.style.transform = 'scale(0.96)';
+function bounceItem(el, idx) {
+  el.style.transform = 'scale(0.97)';
+  proto.sfx('tap');
   setTimeout(function(){ el.style.transform = ''; }, 150);
 }
 
-function showXP(text, anchor) {
-  var rect = anchor.getBoundingClientRect();
-  var xp = document.createElement('div');
-  xp.className = 'xp-float';
-  xp.textContent = text;
-  xp.style.left = rect.left + rect.width/2 - 30 + 'px';
-  xp.style.top = rect.top - 10 + 'px';
-  document.body.appendChild(xp);
-  setTimeout(function(){ xp.remove(); }, 1000);
+function updateCombo() {
+  var indicator = document.getElementById('comboIndicator');
+  var countEl = document.getElementById('comboCount');
+  if (combo >= 3) {
+    countEl.textContent = combo;
+    indicator.classList.add('visible');
+    proto.sfx('streak');
+  } else {
+    indicator.classList.remove('visible');
+  }
 }
 
 function switchAccent(c, el) {

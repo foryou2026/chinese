@@ -298,5 +298,131 @@
     trigger._protoDropdown = { close: close };
   };
 
+  /* ---- ripple（Ant Design 6 风格涟漪） ---- */
+  function initRipple() {
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('.proto-btn, [class*="proto-btn-"]');
+      if (!btn || btn.disabled || btn.getAttribute('aria-busy') === 'true') return;
+      var rect = btn.getBoundingClientRect();
+      var size = Math.max(rect.width, rect.height);
+      var ink = document.createElement('span');
+      ink.className = 'proto-ripple-ink';
+      ink.style.width = ink.style.height = size + 'px';
+      ink.style.left = (e.clientX - rect.left) + 'px';
+      ink.style.top = (e.clientY - rect.top) + 'px';
+      btn.appendChild(ink);
+      setTimeout(function () { ink.remove(); }, 450);
+    });
+  }
+  document.addEventListener('DOMContentLoaded', initRipple);
+
+  /* ---- sfx（音效播放） ---- */
+  proto.sfxEnabled = false;
+  var sfxCache = {};
+  var sfxLastTime = {};
+
+  proto.sfx = function (id, volume) {
+    if (!proto.sfxEnabled) return;
+    var now = Date.now();
+    if (sfxLastTime[id] && now - sfxLastTime[id] < 100) return;
+    sfxLastTime[id] = now;
+    if (!sfxCache[id]) {
+      sfxCache[id] = document.getElementById('sfx-' + id);
+    }
+    var el = sfxCache[id];
+    if (!el) return;
+    el.volume = volume || 0.5;
+    el.currentTime = 0;
+    el.play().catch(function () {});
+  };
+
+  /* ---- showXP（XP 飘字） ---- */
+  proto.showXP = function (text, anchor) {
+    var rect = anchor.getBoundingClientRect();
+    var el = document.createElement('div');
+    el.className = 'proto-xp-float';
+    el.textContent = text;
+    el.style.left = (rect.left + rect.width / 2 - 30) + 'px';
+    el.style.top = (rect.top - 10) + 'px';
+    document.body.appendChild(el);
+    proto.sfx('xp', 0.4);
+    setTimeout(function () { el.remove(); }, 950);
+  };
+
+  /* ---- starBurst（星星爆发） ---- */
+  proto.starBurst = function (anchor) {
+    var rect = anchor.getBoundingClientRect();
+    var cx = rect.left + rect.width / 2;
+    var cy = rect.top + rect.height / 2;
+    var container = document.createElement('div');
+    container.className = 'proto-star-burst';
+    container.style.left = cx + 'px';
+    container.style.top = cy + 'px';
+    for (var i = 0; i < 8; i++) {
+      var star = document.createElement('div');
+      star.className = 'star';
+      var angle = (i / 8) * 360;
+      var dist = 40 + Math.random() * 30;
+      var bx = Math.cos(angle * Math.PI / 180) * dist;
+      var by = Math.sin(angle * Math.PI / 180) * dist + 10;
+      star.style.setProperty('--burst-x', bx + 'px');
+      star.style.setProperty('--burst-y', by + 'px');
+      star.style.setProperty('--burst-r', (Math.random() * 360) + 'deg');
+      star.style.background = i % 2 === 0 ? 'var(--color-warning-500)' : 'var(--color-brand-default)';
+      star.style.borderRadius = '2px';
+      container.appendChild(star);
+    }
+    document.body.appendChild(container);
+    setTimeout(function () { container.remove(); }, 700);
+  };
+
+  /* ---- confetti（五彩纸屑） ---- */
+  proto.confetti = function () {
+    var colors = ['#EA4335', '#FBBC04', '#4285F4', '#34A853', '#FF6D01', '#AB47BC'];
+    for (var i = 0; i < 40; i++) {
+      var piece = document.createElement('div');
+      piece.className = 'proto-confetti-piece';
+      piece.style.left = (Math.random() * 100) + 'vw';
+      piece.style.top = -(Math.random() * 20 + 10) + 'px';
+      piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+      piece.style.setProperty('--confetti-r', (Math.random() * 720 - 360) + 'deg');
+      piece.style.setProperty('--confetti-dur', (800 + Math.random() * 600) + 'ms');
+      piece.style.animationDelay = (Math.random() * 200) + 'ms';
+      document.body.appendChild(piece);
+      (function (p) {
+        setTimeout(function () { p.remove(); }, 1600);
+      })(piece);
+    }
+  };
+
+  /* ---- shake（抖动） ---- */
+  proto.shake = function (el) {
+    el.classList.add('proto-shake');
+    el.addEventListener('animationend', function handler() {
+      el.classList.remove('proto-shake');
+      el.removeEventListener('animationend', handler);
+    });
+  };
+
+  /* ---- flashCorrect / flashWrong ---- */
+  proto.flashCorrect = function (el) {
+    el.classList.add('proto-flash-correct');
+    setTimeout(function () { el.classList.remove('proto-flash-correct'); }, 450);
+  };
+  proto.flashWrong = function (el) {
+    el.classList.add('proto-flash-wrong');
+    setTimeout(function () { el.classList.remove('proto-flash-wrong'); }, 350);
+  };
+
+  /* ---- levelComplete（关卡完成） ---- */
+  proto.levelComplete = function () {
+    var bg = document.createElement('div');
+    bg.className = 'proto-level-complete-bg';
+    document.body.appendChild(bg);
+    proto.sfx('complete', 0.7);
+    proto.confetti();
+    setTimeout(function () { bg.remove(); }, 900);
+  };
+
   window.proto = proto;
 })();

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light" data-accent="red" data-density="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>选择题 · 汉字选拼音 — App + Admin 双端原型</title>
+<style>
+/* ===== 页面布局（双栏展示） ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a2e;
+  padding: 24px;
+}
+.page-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #334155;
+}
+.page-title span { color: #94A3B8; font-weight: 400; font-size: 14px; display: block; margin-top: 4px; }
+.dual-panel {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+@media (max-width: 900px) { .dual-panel { grid-template-columns: 1fr; } }
+.panel-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #94A3B8;
+  margin-bottom: 12px;
+  display: flex; align-items: center; gap: 6px;
+}
+.panel-label .dot { width: 8px; height: 8px; border-radius: 50%; }
+.panel-label .dot-app { background: #4285F4; }
+.panel-label .dot-admin { background: #1E293B; }
+</style>
+
+<!-- App 端样式 -->
+<link id="appCSS" rel="stylesheet" href="../../docs/B02-experience-design/app/prototype-style/app.css">
+
+<style>
+/* ===== App 端手机壳 ===== */
+.phone-shell {
+  width: 375px; height: 720px;
+  border-radius: 44px;
+  border: 6px solid #1a1a2e;
+  overflow: hidden;
+  position: relative;
+  background: var(--page-bg, #FFFAFA);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.14);
+}
+.phone-shell::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 140px; height: 26px;
+  background: #1a1a2e;
+  border-radius: 0 0 16px 16px;
+  z-index: 100;
+}
+.phone-inner {
+  width: 100%; height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* App 状态栏 */
+.app-status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 22px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary, #0F172A);
+}
+
+/* App 顶部导航 */
+.app-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+}
+.app-back {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--glass-bg, rgba(255,255,255,0.6));
+  border: 1px solid var(--glass-border, rgba(255,255,255,0.7));
+  color: var(--text-primary, #0F172A);
+  font-size: 16px;
+}
+.app-top-title { font-size: 15px; font-weight: 600; }
+.app-progress-count { font-size: 12px; color: var(--text-muted, #64748B); font-weight: 500; }
+
+/* App 进度条 */
+.app-progress { margin: 0 18px 14px; height: 8px; border-radius: 999px; background: var(--color-neutral-200, #E2E8F0); overflow: hidden; }
+.app-progress-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--color-brand-default, #EA4335), var(--color-brand-300, #E57373)); width: 20%; }
+
+/* App 题目区 */
+.app-question-area { padding: 0 18px; flex: 1; }
+.app-instruction { font-size: 12px; color: var(--text-muted, #64748B); margin-bottom: 16px; }
+.app-stem {
+  text-align: center;
+  padding: 16px 0 20px;
+}
+.app-stem-char {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 72px;
+  font-weight: 400;
+  color: var(--text-primary, #0F172A);
+  line-height: 1.1;
+}
+.app-stem-hint { font-size: 12px; color: var(--text-muted, #64748B); margin-top: 4px; }
+.app-listen-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--color-brand-50, #FFEBEE);
+  color: var(--color-brand-default, #EA4335);
+  font-size: 12px;
+  font-weight: 600;
+  border: 1.5px solid var(--color-brand-200, #EF9A9A);
+  cursor: pointer;
+}
+
+/* App 选项 */
+.app-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.app-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-lg, 16px);
+  background: var(--glass-bg, rgba(255,255,255,0.6));
+  backdrop-filter: blur(16px);
+  border: 2px solid var(--glass-border, rgba(255,255,255,0.7));
+  cursor: pointer;
+  transition: all 150ms cubic-bezier(.16,1,.3,1);
+  position: relative;
+  overflow: hidden;
+}
+.app-option:active { transform: scale(0.98); }
+.app-option .letter {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--color-neutral-300, #CBD5E1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 600;
+  flex-shrink: 0;
+  transition: all 150ms ease;
+}
+.app-option .opt-text { font-size: 17px; font-weight: 500; }
+.app-option.selected {
+  border-color: var(--color-brand-default, #EA4335);
+  background: var(--color-brand-50, #FFEBEE);
+}
+.app-option.selected .letter {
+  border-color: var(--color-brand-default, #EA4335);
+  background: var(--color-brand-default, #EA4335);
+  color: #fff;
+}
+.app-option.correct {
+  border-color: var(--color-success-500, #10B981);
+  background: var(--color-success-50, #ECFDF5);
+}
+.app-option.correct .letter {
+  border-color: var(--color-success-500);
+  background: var(--color-success-500);
+  color: #fff;
+}
+.app-option.wrong {
+  border-color: var(--color-danger-500, #EF4444);
+  background: var(--color-danger-50, #FEF2F2);
+}
+
+/* App 提交按钮 */
+.app-submit {
+  width: 100%;
+  height: 48px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  background: var(--color-brand-default, #EA4335);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 0 0 var(--color-brand-700, #D32F2F);
+  transition: transform 100ms cubic-bezier(.34,1.56,.64,1), box-shadow 100ms cubic-bezier(.34,1.56,.64,1);
+  position: relative;
+  overflow: hidden;
+}
+.app-submit:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 0 var(--color-brand-800, #C62828);
+}
+.app-submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* App 解析区 */
+.app-result {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: var(--radius-lg, 16px);
+  font-size: 13px;
+  line-height: 1.6;
+  display: none;
+}
+.app-result.correct-result {
+  background: var(--color-success-50, #ECFDF5);
+  border: 1px solid var(--color-success-200, #A7F3D0);
+  display: block;
+}
+.app-result.wrong-result {
+  background: var(--color-danger-50, #FEF2F2);
+  border: 1px solid var(--color-danger-200, #FECACA);
+  display: block;
+}
+.app-result-title { font-weight: 600; margin-bottom: 4px; }
+
+/* ===== Admin 端 ===== */
+.admin-panel {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 24px;
+}
+.admin-title { font-size: 16px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.admin-badge { font-size: 11px; padding: 2px 8px; border-radius: 10px; background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+.admin-divider { border: none; border-top: 1px solid #f0f0f0; margin: 16px 0; }
+.admin-form-group { margin-bottom: 14px; }
+.admin-label { display: block; font-weight: 500; margin-bottom: 4px; font-size: 13px; color: #334155; }
+.admin-label .req { color: #EF4444; margin-right: 3px; }
+.admin-label .hint { font-weight: 400; color: #94A3B8; font-size: 11px; margin-left: 4px; }
+.admin-input { width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; outline: none; transition: border-color 200ms; }
+.admin-input:focus { border-color: #1E293B; box-shadow: 0 0 0 2px rgba(30,41,59,0.08); }
+.admin-input-lg { font-size: 24px; padding: 12px 16px; text-align: center; }
+.admin-select { width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; background: #fff; outline: none; }
+.admin-textarea { width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 13px; min-height: 60px; resize: vertical; outline: none; }
+.admin-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.admin-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.admin-row-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; }
+.admin-option-list { border: 1px solid #f0f0f0; border-radius: 8px; overflow: hidden; }
+.admin-option-item { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-bottom: 1px solid #f5f5f5; font-size: 13px; }
+.admin-option-item:last-child { border-bottom: none; }
+.admin-option-add { padding: 6px; text-align: center; color: #1E293B; cursor: pointer; font-size: 12px; border-top: 1px dashed #e2e8f0; }
+.admin-btn { display: inline-flex; align-items: center; gap: 5px; padding: 8px 16px; border-radius: 8px; font-size: 13px; cursor: pointer; border: 1px solid #e2e8f0; background: #fff; color: #334155; transition: all 200ms; }
+.admin-btn:hover { border-color: #1E293B; color: #1E293B; }
+.admin-btn-primary { background: #1E293B; color: #fff; border-color: #1E293B; }
+.admin-btn-primary:hover { background: #334155; }
+.admin-btn-group { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.admin-callout { padding: 10px 14px; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; font-size: 12px; color: #475569; line-height: 1.6; margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<div class="page-title">
+  选择题 · 拼音 · 汉字选拼音
+  <span>App 端（游戏化设计系统）+ Admin 端（极简管理系统）双端原型对照</span>
+</div>
+
+<div class="dual-panel">
+  <!-- ===== App 端 ===== -->
+  <div>
+    <div class="panel-label"><div class="dot dot-app"></div>App 端 — 用户答题</div>
+    <div class="phone-shell">
+      <div class="phone-inner">
+        <div class="app-status-bar"><span>9:41</span><span style="font-size:10px">5G 📶</span></div>
+        <div class="app-top">
+          <div class="app-back">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </div>
+          <span class="app-top-title">Pinyin Quiz</span>
+          <span class="app-progress-count">3 / 15</span>
+        </div>
+        <div class="app-progress"><div class="app-progress-fill"></div></div>
+
+        <div class="app-question-area">
+          <div class="app-instruction">Select the correct pinyin for this character</div>
+          <div class="app-stem">
+            <div class="app-stem-char">学</div>
+            <div class="app-stem-hint">character · choose its pinyin</div>
+            <div class="app-listen-btn" onclick="this.style.transform='scale(0.95)';setTimeout(()=>this.style.transform='',100)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+              Listen
+            </div>
+          </div>
+
+          <div class="app-options" id="appOptions">
+            <div class="app-option" data-val="xuē" onclick="selectOption(this)">
+              <span class="letter">A</span>
+              <span class="opt-text">xuē</span>
+            </div>
+            <div class="app-option" data-val="xué" onclick="selectOption(this)">
+              <span class="letter">B</span>
+              <span class="opt-text">xué</span>
+            </div>
+            <div class="app-option" data-val="xuě" onclick="selectOption(this)">
+              <span class="letter">C</span>
+              <span class="opt-text">xuě</span>
+            </div>
+            <div class="app-option" data-val="xuè" onclick="selectOption(this)">
+              <span class="letter">D</span>
+              <span class="opt-text">xuè</span>
+            </div>
+          </div>
+
+          <button class="app-submit" id="submitBtn" disabled onclick="submitAnswer()">Check Answer</button>
+
+          <div class="app-result" id="resultCorrect">
+            <div class="app-result-title" style="color:#059669">✓ Correct!</div>
+            <div>「学」reads xué (2nd tone). Don't confuse with「雪」(xuě, 3rd tone).</div>
+          </div>
+          <div class="app-result" id="resultWrong">
+            <div class="app-result-title" style="color:#DC2626">✗ Not quite</div>
+            <div>The correct answer is <strong>xué</strong> (2nd tone). Remember: 学 = study/learn.</div>
+          </div>
+        </div>
+
+        <div style="height:20px"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Admin 端 ===== -->
+  <div>
+    <div class="panel-label"><div class="dot dot-admin"></div>Admin 端 — 题目配置</div>
+    <div class="admin-panel">
+      <div class="admin-title">
+        汉字选拼音 · 配置表单
+        <span class="admin-badge">零AI成本</span>
+      </div>
+
+      <div class="admin-callout">
+        题型 = 选择题，知识类型 = 拼音，题目类型 = 汉字选拼音。题干为汉字展示，选项为拼音字符串，核心干扰维度是声调差异。
+      </div>
+
+      <div class="admin-row-3">
+        <div class="admin-form-group"><label class="admin-label">L1 题型</label><input class="admin-input" value="选择题" disabled></div>
+        <div class="admin-form-group"><label class="admin-label">L2 知识类型</label><input class="admin-input" value="拼音" disabled></div>
+        <div class="admin-form-group"><label class="admin-label">L3 题目类型</label><input class="admin-input" value="汉字选拼音" disabled></div>
+      </div>
+
+      <hr class="admin-divider">
+
+      <div class="admin-form-group">
+        <label class="admin-label"><span class="req">*</span>题干汉字 <span class="hint">应用端以 72px 大号居中显示</span></label>
+        <input class="admin-input admin-input-lg" value="学">
+      </div>
+
+      <div class="admin-form-group">
+        <label class="admin-label">题干音频 <span class="hint">留空则不显示听发音按钮</span></label>
+        <div style="display:flex;gap:8px;align-items:center">
+          <div style="flex:1;border:1.5px dashed #e2e8f0;border-radius:8px;padding:10px;text-align:center;color:#94A3B8;font-size:12px;cursor:pointer">上传音频文件</div>
+          <button class="admin-btn" style="white-space:nowrap">TTS 生成</button>
+        </div>
+      </div>
+
+      <hr class="admin-divider">
+
+      <div class="admin-form-group">
+        <label class="admin-label"><span class="req">*</span>拼音选项 <span class="hint">勾选正确答案</span></label>
+        <div class="admin-option-list">
+          <div class="admin-option-item">
+            <input type="radio" name="ans">
+            <span style="width:18px;font-weight:600">A</span>
+            <input class="admin-input" value="xuē" style="flex:1">
+            <select class="admin-select" style="width:90px"><option selected>声调干扰</option><option>近音混淆</option></select>
+          </div>
+          <div class="admin-option-item" style="background:#f0fdf4">
+            <input type="radio" name="ans" checked>
+            <span style="width:18px;font-weight:600;color:#16a34a">B</span>
+            <input class="admin-input" value="xué" style="flex:1;border-color:#86efac">
+            <span style="font-size:11px;color:#16a34a;white-space:nowrap">✓ 正确</span>
+          </div>
+          <div class="admin-option-item">
+            <input type="radio" name="ans">
+            <span style="width:18px;font-weight:600">C</span>
+            <input class="admin-input" value="xuě" style="flex:1">
+            <select class="admin-select" style="width:90px"><option selected>声调干扰</option></select>
+          </div>
+          <div class="admin-option-item">
+            <input type="radio" name="ans">
+            <span style="width:18px;font-weight:600">D</span>
+            <input class="admin-input" value="xuè" style="flex:1">
+            <select class="admin-select" style="width:90px"><option selected>声调干扰</option></select>
+          </div>
+          <div class="admin-option-add">+ 添加选项</div>
+        </div>
+      </div>
+
+      <hr class="admin-divider">
+
+      <div class="admin-form-group">
+        <label class="admin-label">答案解析</label>
+        <div class="admin-row">
+          <div><label class="admin-label" style="font-size:11px">中文</label><textarea class="admin-textarea">「学」读 xué (第二声)，注意与「雪」(xuě) 区分。</textarea></div>
+          <div><label class="admin-label" style="font-size:11px">English</label><textarea class="admin-textarea">"学" is xué (2nd tone). Don't confuse with "雪" (xuě).</textarea></div>
+        </div>
+      </div>
+
+      <hr class="admin-divider">
+
+      <div class="admin-row-4">
+        <div class="admin-form-group"><label class="admin-label">HSK</label><select class="admin-select"><option selected>HSK 1</option><option>HSK 2</option></select></div>
+        <div class="admin-form-group"><label class="admin-label">分值</label><input class="admin-input" type="number" value="2"></div>
+        <div class="admin-form-group"><label class="admin-label">限时(秒)</label><input class="admin-input" type="number" value="20"></div>
+        <div class="admin-form-group"><label class="admin-label">难度</label><select class="admin-select"><option>简单</option><option selected>中等</option></select></div>
+      </div>
+
+      <div class="admin-btn-group">
+        <button class="admin-btn admin-btn-primary">保存</button>
+        <button class="admin-btn">预览</button>
+        <button class="admin-btn">AI 批量生成</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../docs/B02-experience-design/app/prototype-style/app.js"></script>
+<script>
+proto.bootstrap();
+
+var correctAnswer = 'xué';
+var selected = null;
+var submitted = false;
+
+function selectOption(el) {
+  if (submitted) return;
+  document.querySelectorAll('.app-option').forEach(function(o){ o.classList.remove('selected'); });
+  el.classList.add('selected');
+  selected = el.getAttribute('data-val');
+  document.getElementById('submitBtn').disabled = false;
+}
+
+function submitAnswer() {
+  if (!selected || submitted) return;
+  submitted = true;
+  var isCorrect = selected === correctAnswer;
+  var options = document.querySelectorAll('.app-option');
+
+  options.forEach(function(o) {
+    if (o.getAttribute('data-val') === correctAnswer) {
+      o.classList.add('correct');
+    } else if (o.classList.contains('selected')) {
+      o.classList.add('wrong');
+      proto.shake(o);
+    }
+  });
+
+  if (isCorrect) {
+    document.getElementById('resultCorrect').classList.add('correct-result');
+    proto.starBurst(document.querySelector('.app-option.correct'));
+    proto.showXP('+10 XP', document.getElementById('submitBtn'));
+    proto.sfx('correct');
+  } else {
+    document.getElementById('resultWrong').classList.add('wrong-result');
+    proto.flashWrong(document.querySelector('.app-question-area'));
+    proto.sfx('wrong');
+  }
+
+  var btn = document.getElementById('submitBtn');
+  btn.textContent = 'Continue →';
+  btn.disabled = false;
+}
+</script>
+</body>
+</html>

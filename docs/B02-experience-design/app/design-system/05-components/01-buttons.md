@@ -181,12 +181,58 @@ Loading 态：
 | 双击 | 防抖，忽略第二次 |
 | 按下释放（game 变体） | 按下 `translateY(2px)` + 阴影缩短；释放后弹簧回弹 `var(--easing-spring)` |
 
+## 涟漪/波纹效果（Ant Design 6 风格）
+
+所有可点击按钮在点击时触发一次性涟漪扩散动画，提供清晰的操作确认感：
+
+| 属性 | 值 |
+|------|-----|
+| 触发 | `click` / `touchstart`（仅触发一次，不重复叠加） |
+| 形状 | 从点击坐标向外扩散的圆形波纹 |
+| 颜色 | 当前按钮主色 15% 透明度（game/primary: `var(--color-brand-ring)`，glass/ghost: `rgba(0,0,0,0.06)`） |
+| 持续时间 | 400ms |
+| 缓动 | `var(--easing-out)` |
+| 实现 | `::after` 伪元素 + CSS `@keyframes`，由 JS 在 click 时添加 `.ripple-active` class |
+| 溢出 | `overflow: hidden` 裁切在按钮边界内 |
+
+```css
+@keyframes btn-ripple {
+  0%   { transform: translate(-50%, -50%) scale(0); opacity: 0.4; }
+  100% { transform: translate(-50%, -50%) scale(4); opacity: 0; }
+}
+.ripple-active::after {
+  content: '';
+  position: absolute;
+  width: 100%; aspect-ratio: 1;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.15;
+  pointer-events: none;
+  animation: btn-ripple 400ms var(--easing-out) forwards;
+}
+```
+
+> game 变体的涟漪与 3D 按压同时触发，涟漪从按压点扩散，按压回弹 150ms 先于涟漪消失 400ms，体感连贯。
+
+## 阴影层级规范
+
+3D 按钮（game/destructive/success）的底部阴影应保持克制，避免与外发光阴影叠加导致视觉割裂：
+
+| 变体 | 底部阴影 | 外发光 | 总计阴影层数 |
+|------|---------|--------|------------|
+| game | `0 4px 0 0 brand-700` | 无（纯色底部阴影即可） | 1 层 |
+| primary | 无底部阴影 | `0 4px 14px -4px brand-ring` | 1 层 |
+| destructive/success | `0 4px 0 0 色阶-700` | 无 | 1 层 |
+| glass/secondary | 无底部阴影 | `inset 0 1px 0 0 glass-inset` | 1 层 |
+
+> **关键原则**：每个按钮最多 1 层视觉阴影。底部 3D 阴影与外发光二选一，不叠加。hover 时阴影可微增（+1px 底部 + translateY(-1px)），但不新增阴影层。
+
 ## 反例
 
-- 不使用 ripple 水波纹动画
 - 不使用纯实色填充（primary/glass 必须有 backdrop-filter 或渐变 + inset 高光）
 - game 变体**始终使用胶囊圆角** `--radius-pill`，不降级为 `--radius-md`
 - 移动端主 CTA 按钮高度不低于 48px
+- 不叠加底部 3D 阴影 + 外发光阴影（视觉割裂）
 
 ## a11y 验收点
 

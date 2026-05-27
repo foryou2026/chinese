@@ -1,0 +1,153 @@
+/* 08-gamification.css — 游戏化公共特效（多邻国风） */
+
+/* ---- 星星爆发（答题正确） ---- */
+@keyframes star-burst {
+  0%   { transform: translate(-50%, -50%) scale(0) rotate(0deg); opacity: 1; }
+  60%  { opacity: 1; }
+  100% { transform: translate(var(--burst-x), var(--burst-y)) scale(1) rotate(var(--burst-r)); opacity: 0; }
+}
+.proto-star-burst {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+}
+.proto-star-burst .star {
+  position: absolute;
+  width: 12px; height: 12px;
+  animation: star-burst 600ms var(--easing-out) forwards;
+}
+
+/* ---- 答题正确闪绿 ---- */
+@keyframes correct-flash {
+  0%   { background-color: var(--color-success-50); }
+  100% { background-color: transparent; }
+}
+.proto-flash-correct {
+  animation: correct-flash 400ms ease forwards;
+}
+
+/* ---- 答题错误抖动 ---- */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 50%, 90% { transform: translateX(-6px); }
+  30%, 70% { transform: translateX(6px); }
+}
+.proto-shake {
+  animation: shake 400ms var(--easing-out);
+}
+
+/* ---- 答题错误闪红 ---- */
+@keyframes wrong-flash {
+  0%   { background-color: var(--color-danger-50); }
+  100% { background-color: transparent; }
+}
+.proto-flash-wrong {
+  animation: wrong-flash 300ms ease forwards;
+}
+
+/* ---- XP 飘字 ---- */
+@keyframes xp-float-up {
+  0%   { opacity: 0; transform: translateY(0) scale(0.5); }
+  20%  { opacity: 1; transform: translateY(-8px) scale(1.2); }
+  40%  { opacity: 1; transform: translateY(-14px) scale(1); }
+  100% { opacity: 0; transform: translateY(-48px) scale(0.9); }
+}
+.proto-xp-float {
+  position: fixed;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-warning-500);
+  pointer-events: none;
+  z-index: 200;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  animation: xp-float-up 900ms var(--easing-out) forwards;
+}
+
+/* ---- 关卡完成 ---- */
+@keyframes level-complete-check {
+  0%   { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60%  { transform: scale(1.2) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+.proto-level-complete-icon {
+  animation: level-complete-check 600ms var(--easing-spring) forwards;
+}
+
+@keyframes level-complete-bg {
+  0%   { opacity: 0; }
+  30%  { opacity: 0.15; }
+  100% { opacity: 0; }
+}
+.proto-level-complete-bg {
+  position: fixed; inset: 0;
+  background: var(--color-success-500);
+  pointer-events: none;
+  z-index: 150;
+  animation: level-complete-bg 800ms ease forwards;
+}
+
+/* ---- 五彩纸屑 ---- */
+@keyframes confetti-fall {
+  0%   { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(var(--confetti-r)); opacity: 0.3; }
+}
+.proto-confetti-piece {
+  position: fixed;
+  width: 8px; height: 14px;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 200;
+  animation: confetti-fall var(--confetti-dur) ease-in forwards;
+}
+
+/* ---- Combo 连击计数器 ---- */
+@keyframes combo-pop {
+  0%   { transform: scale(0.6); opacity: 0; }
+  50%  { transform: scale(1.3); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.proto-combo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--color-warning-500);
+  animation: combo-pop 300ms var(--easing-spring);
+}
+.proto-combo .combo-fire {
+  font-size: 20px;
+  animation: combo-pop 300ms var(--easing-spring) 50ms backwards;
+}
+
+/* ---- 进度条高光扫过 ---- */
+@keyframes progress-shimmer {
+  0%   { left: -30%; }
+  100% { left: 130%; }
+}
+.proto-progress-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -30%;
+  width: 30%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+  animation: progress-shimmer 1.5s ease-in-out;
+}
+
+/* ---- 减弱动效 ---- */
+@media (prefers-reduced-motion: reduce) {
+  .proto-star-burst .star,
+  .proto-confetti-piece,
+  .proto-shake,
+  .proto-level-complete-icon,
+  .proto-level-complete-bg,
+  .proto-progress-shimmer::after {
+    animation: none !important;
+  }
+  .proto-xp-float {
+    animation-duration: 0.01ms !important;
+    opacity: 1;
+  }
+}

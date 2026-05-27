@@ -311,6 +311,79 @@ Duolingo 风格的弹簧过冲效果，用于关键交互元素：
 
 ---
 
+## 按钮涟漪效果（Ant Design 6 风格）
+
+所有按钮点击时触发涟漪扩散，详见 `05-components/01-buttons.md` 涟漪章节。
+
+---
+
+## 音效触发时机规范
+
+音效为可选增强层，默认静音，用户在设置中开启后生效。所有音效文件 ≤50KB（WebM/OGG 格式优先）。
+
+### 公共音效（design-system 级，所有页面复用）
+
+| 音效 ID | 触发场景 | 时长 | 音量 | 描述 |
+|---------|---------|------|------|------|
+| `sfx-correct` | 答题正确、操作成功 | ≤300ms | 0.6 | 清脆上扬音（类似多邻国 "ding"） |
+| `sfx-wrong` | 答题错误、校验失败 | ≤400ms | 0.5 | 低沉短促音，不刺耳 |
+| `sfx-tap` | 按钮点击（game/primary 变体） | ≤100ms | 0.3 | 微弱弹跳音，提供触觉反馈感 |
+| `sfx-complete` | 关卡完成、任务达成 | ≤800ms | 0.7 | 胜利号角 + 星星音效 |
+| `sfx-levelup` | 等级提升、成就解锁 | ≤1000ms | 0.8 | 渐强号角 + 纸屑音效 |
+| `sfx-xp` | 获得 XP | ≤200ms | 0.4 | 金币叮当音 |
+| `sfx-streak` | 连续答对（combo） | ≤300ms | 0.5 | 递进上扬音，音高随连击数递增 |
+| `sfx-card-flip` | 卡片翻转/切换 | ≤200ms | 0.3 | 轻柔纸牌翻转音 |
+
+### 音效播放规则
+
+1. **防抖**：同一音效 100ms 内不重复播放
+2. **优先级**：`sfx-complete` > `sfx-correct` > `sfx-tap`，高优先级打断低优先级
+3. **减弱模式**：`prefers-reduced-motion: reduce` 时，音效仍然播放（音效不属于动画）
+4. **静音**：用户关闭音效后，所有 sfx 静默，不影响 UI 动画
+
+### JS API 规范
+
+```javascript
+proto.sfx('correct');         // 播放音效
+proto.sfx('correct', 0.4);   // 指定音量
+proto.sfxEnabled = true;      // 开关
+```
+
+---
+
+## 游戏化交互场景目录
+
+根据用户端原型分析，以下为需要游戏化特效的完整场景目录：
+
+### 公共特效（写入 prototype-style，所有页面复用）
+
+| 场景 | 视觉特效 | 音效 | 触发时机 | 关联动画 |
+|------|---------|------|---------|---------|
+| 答题正确 | 星星爆发(Star Burst) + 选项边框变绿 | `sfx-correct` | 提交答案且正确时 | `06-interactions § 星星爆发` |
+| 答题错误 | 抖动(Shake) + 错误闪红 | `sfx-wrong` | 提交答案且错误时 | `06-interactions § 抖动/闪红` |
+| 获得 XP | XP 飘字(Float Up) | `sfx-xp` | 答对/完成动作后 | `06-interactions § XP 飞出` |
+| 关卡完成 | 完成动画(Level Complete) + 全屏绿闪 | `sfx-complete` | 最后一题完成时 | `06-interactions § 完成动画` |
+| 连续答对 | Combo 计数器弹跳 + 火焰图标 | `sfx-streak` | 连续 ≥3 次答对 | 弹簧 `var(--easing-spring)` |
+| 按钮点击 | 涟漪扩散 + 3D 按压回弹 | `sfx-tap` | 所有 game/primary 按钮 | `01-buttons § 涟漪` |
+| 卡片切换 | 滑出/弹入动画 | `sfx-card-flip` | 翻到下一张学习卡 | `transform + spring` |
+| 进度条推进 | 填充动画 + 高光扫过 | 无 | 每完成一步 | `width transition + shimmer` |
+| 成就解锁 | 五彩纸屑(Confetti) | `sfx-levelup` | 首次达成成就 | `06-interactions § 纸屑` |
+| 等级提升 | 五彩纸屑 + 大号等级数字弹簧缩放 | `sfx-levelup` | 升级时 | 同上 |
+
+### 非公共特效（直接写在对应 HTML 中，不提取到 design-system）
+
+| 场景 | 所属页面 | 说明 |
+|------|---------|------|
+| 汉字书写笔画动画 | `stroke/practice.html` | 笔画路径 SVG 动画，与笔顺数据强耦合 |
+| 拼音声调曲线动画 | `pinyin/tone.html` | 声调曲线 SVG path 绘制动画 |
+| 对话角色气泡动画 | `dialogue/roleplay.html` | 角色头像弹入 + 气泡渐显，与对话流程强耦合 |
+| 成语故事翻页效果 | `idiom/story-card.html` | 3D 翻书效果，单页特殊 |
+| 听力理解波形可视化 | `listening/*.html` | 音频波形实时渲染，与 AudioContext 耦合 |
+
+> 非公共特效的判定标准：与特定数据格式或业务逻辑强耦合，无法抽象为通用组件。
+
+---
+
 ## 99. 待确认问题
 
 无
