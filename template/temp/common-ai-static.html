@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>知语 · 公共能力静态原型</title>
+  <style>
+/* G2 设计 Token：黑 + 白 + 小红书红，玻璃态全局；light 默认 / dark 可切。 */
+:root {
+  /* Brand */
+  --zy-brand: #ff2442;
+  --zy-brand-soft: rgba(255, 36, 66, 0.12);
+  --zy-brand-strong: #ff0a30;
+
+  /* Surfaces (light) */
+  --zy-bg: #ffffff;
+  --zy-bg-elev: #fafafa;
+  --zy-bg-glass: rgba(255, 255, 255, 0.72);
+  --zy-fg: #111111;
+  --zy-fg-soft: #4b4b4b;
+  --zy-fg-mute: #8a8a8a;
+  --zy-border: rgba(17, 17, 17, 0.08);
+  --zy-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+
+  /* Glass */
+  --zy-glass-blur: 18px;
+  --zy-glass-saturate: 160%;
+
+  /* Radius */
+  --zy-radius-sm: 6px;
+  --zy-radius-md: 10px;
+  --zy-radius-lg: 16px;
+  --zy-radius-xl: 24px;
+
+  /* Spacing scale (4px) */
+  --zy-space-1: 4px;
+  --zy-space-2: 8px;
+  --zy-space-3: 12px;
+  --zy-space-4: 16px;
+  --zy-space-6: 24px;
+  --zy-space-8: 32px;
+
+  /* Type */
+  --zy-font-sans: 'Inter', 'PingFang SC', 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+[data-theme='dark'] {
+  --zy-brand: #ff3b5c;
+  --zy-brand-soft: rgba(255, 59, 92, 0.18);
+  --zy-brand-strong: #ff5876;
+  --zy-bg: #0b0b0d;
+  --zy-bg-elev: #141418;
+  --zy-bg-glass: rgba(20, 20, 24, 0.6);
+  --zy-fg: #fafafa;
+  --zy-fg-soft: #c9c9c9;
+  --zy-fg-mute: #8a8a8a;
+  --zy-border: rgba(255, 255, 255, 0.08);
+  --zy-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Glass utility */
+.zy-glass {
+  background: var(--zy-bg-glass);
+  border: 1px solid var(--zy-border);
+  backdrop-filter: blur(var(--zy-glass-blur)) saturate(var(--zy-glass-saturate));
+  -webkit-backdrop-filter: blur(var(--zy-glass-blur)) saturate(var(--zy-glass-saturate));
+  box-shadow: var(--zy-shadow);
+}
+@supports not (backdrop-filter: blur(2px)) {
+  .zy-glass {
+    background: var(--zy-bg-elev);
+  }
+}
+
+/* Layout: top nav both ends, full-width */
+.zy-topnav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--zy-space-6);
+}
+.zy-page {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  background: var(--zy-bg);
+  color: var(--zy-fg);
+}
+
+/* Buttons */
+.zy-btn {
+  font-family: var(--zy-font-sans);
+  font-weight: 500;
+  border-radius: var(--zy-radius-md);
+  padding: 0 var(--zy-space-4);
+  height: 40px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.05s ease, background 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+  line-height: 1;
+}
+.zy-btn:active { transform: translateY(1px); }
+.zy-btn-primary { background: var(--zy-brand); color: #fff; }
+.zy-btn-primary:hover { background: var(--zy-brand-strong); }
+.zy-btn-ghost { background: transparent; color: var(--zy-fg); border-color: var(--zy-border); }
+.zy-btn-ghost:hover { background: var(--zy-bg-elev); }
+.zy-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Input */
+.zy-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 var(--zy-space-3);
+  border-radius: var(--zy-radius-md);
+  border: 1px solid var(--zy-border);
+  background: var(--zy-bg);
+  color: var(--zy-fg);
+  font-family: var(--zy-font-sans);
+}
+.zy-input:focus { outline: 2px solid var(--zy-brand-soft); outline-offset: 1px; border-color: var(--zy-brand); }
+
+.zy-card {
+  border-radius: var(--zy-radius-lg);
+  padding: var(--zy-space-6);
+  background: var(--zy-bg-elev);
+  border: 1px solid var(--zy-border);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; padding: 0; }
+body { font-family: var(--zy-font-sans); background: var(--zy-bg); color: var(--zy-fg); }
+a { color: inherit; text-decoration: none; }
+
+/* Textarea */
+.zy-textarea { height: auto; min-height: 80px; padding: var(--zy-space-3); resize: vertical; line-height: 1.5; }
+.zy-select { padding-right: var(--zy-space-6); appearance: none; }
+
+/* Tag */
+.zy-tag {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 0 8px; height: 22px; font-size: 12px; line-height: 1;
+  border-radius: 999px; border: 1px solid var(--zy-border);
+  background: var(--zy-bg-elev); color: var(--zy-fg-soft);
+}
+.zy-tag-success { background: rgba(34, 197, 94, 0.12); color: #128a3e; border-color: rgba(34, 197, 94, 0.3); }
+.zy-tag-warn { background: rgba(245, 158, 11, 0.14); color: #b25a00; border-color: rgba(245, 158, 11, 0.3); }
+.zy-tag-danger { background: var(--zy-brand-soft); color: var(--zy-brand); border-color: var(--zy-brand-soft); }
+.zy-tag-info { background: rgba(59, 130, 246, 0.12); color: #1d4ed8; border-color: rgba(59, 130, 246, 0.3); }
+.zy-tag-brand { background: var(--zy-brand); color: #fff; border-color: var(--zy-brand); }
+
+/* Skeleton */
+@keyframes zy-skel { 0% { background-position: -200px 0; } 100% { background-position: 200px 0; } }
+.zy-skeleton, .zy-skeleton-card {
+  display: inline-block; background: linear-gradient(90deg, var(--zy-bg-elev) 0px, var(--zy-border) 60px, var(--zy-bg-elev) 120px);
+  background-size: 200px 100%; animation: zy-skel 1.2s linear infinite;
+}
+.zy-skeleton-card { width: 100%; border-radius: var(--zy-radius-lg); }
+
+/* Spinner */
+@keyframes zy-spin { to { transform: rotate(360deg); } }
+.zy-spinner {
+  display: inline-block; border: 2px solid var(--zy-border); border-top-color: var(--zy-brand);
+  border-radius: 50%; animation: zy-spin 0.7s linear infinite;
+}
+
+/* Pagination */
+.zy-pagination { display: inline-flex; gap: 4px; align-items: center; flex-wrap: wrap; }
+.zy-page-btn {
+  min-width: 32px; height: 32px; padding: 0 8px; border: 1px solid var(--zy-border);
+  background: var(--zy-bg); color: var(--zy-fg); border-radius: var(--zy-radius-sm); cursor: pointer;
+}
+.zy-page-btn:hover:not(:disabled) { border-color: var(--zy-brand); color: var(--zy-brand); }
+.zy-page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.zy-page-current { background: var(--zy-brand); color: #fff; border-color: var(--zy-brand); }
+.zy-page-current:hover { color: #fff; }
+.zy-page-gap { padding: 0 4px; color: var(--zy-fg-mute); }
+
+/* Tabs */
+.zy-tabs { display: inline-flex; gap: 4px; padding: 4px; background: var(--zy-bg-elev); border-radius: var(--zy-radius-md); border: 1px solid var(--zy-border); flex-wrap: wrap; }
+.zy-tab {
+  position: relative; padding: 4px 14px; height: 32px; border: 0; border-radius: var(--zy-radius-sm);
+  background: transparent; color: var(--zy-fg-soft); cursor: pointer; font-weight: 500;
+}
+.zy-tab:hover { color: var(--zy-fg); }
+.zy-tab-active { background: var(--zy-bg); color: var(--zy-fg); box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+.zy-tab-error { color: var(--zy-brand); }
+.zy-tab-dot { position: absolute; top: 6px; right: 6px; width: 6px; height: 6px; border-radius: 50%; background: var(--zy-brand); }
+
+/* Modal */
+.zy-modal-mask {
+  position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,0.45);
+  display: flex; align-items: center; justify-content: center; padding: 16px;
+  backdrop-filter: blur(4px);
+}
+.zy-modal { max-width: calc(100vw - 32px); max-height: calc(100vh - 32px); display: flex; flex-direction: column; border-radius: var(--zy-radius-lg); overflow: hidden; }
+.zy-modal-head, .zy-drawer-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--zy-border); }
+.zy-modal-title, .zy-drawer-title { font-size: 16px; font-weight: 600; }
+.zy-modal-close { background: transparent; border: 0; font-size: 22px; line-height: 1; cursor: pointer; color: var(--zy-fg-soft); padding: 0 6px; }
+.zy-modal-close:hover { color: var(--zy-fg); }
+.zy-modal-body { padding: 20px; overflow: auto; flex: 1; }
+.zy-modal-foot, .zy-drawer-foot { display: flex; gap: 8px; justify-content: flex-end; padding: 12px 20px; border-top: 1px solid var(--zy-border); }
+
+/* Drawer */
+.zy-drawer-mask { position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,0.45); }
+.zy-drawer {
+  position: absolute; top: 0; bottom: 0; max-width: 100vw; display: flex; flex-direction: column;
+  background: var(--zy-bg);
+}
+.zy-drawer-right { right: 0; }
+.zy-drawer-left { left: 0; }
+.zy-drawer-body { padding: 20px; overflow: auto; flex: 1; }
+
+/* Toast */
+.zy-toast-stack { position: fixed; top: 16px; right: 16px; z-index: 1000; display: flex; flex-direction: column; gap: 8px; pointer-events: none; }
+.zy-toast {
+  pointer-events: auto; min-width: 220px; max-width: 360px; padding: 10px 14px; border-radius: var(--zy-radius-md);
+  color: #fff; font-size: 14px; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+}
+.zy-toast-success { background: #16a34a; }
+.zy-toast-error { background: var(--zy-brand); }
+.zy-toast-info { background: #2563eb; }
+
+/* Form helpers */
+.zy-field { display: grid; gap: 6px; }
+.zy-label { font-size: 13px; color: var(--zy-fg-soft); font-weight: 500; }
+.zy-required { color: var(--zy-brand); margin-right: 2px; }
+.zy-error-text { color: var(--zy-brand); font-size: 12px; }
+.zy-input-error { border-color: var(--zy-brand) !important; }
+.zy-helper { color: var(--zy-fg-mute); font-size: 12px; }
+.zy-divider { height: 1px; background: var(--zy-border); margin: 12px 0; }
+
+/* Page frames / responsive grid */
+.zy-container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 16px; }
+@media (min-width: 768px) { .zy-container { padding: 24px; } }
+.zy-grid-12 {
+  display: grid; gap: 16px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 640px) { .zy-grid-12 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 768px) { .zy-grid-12 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .zy-grid-12 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.zy-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.zy-row-end { display: flex; align-items: center; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
+.zy-stack { display: grid; gap: 16px; }
+
+/* China cards */
+.zy-china-card { display: flex; flex-direction: column; gap: 6px; min-height: 140px; cursor: pointer; transition: transform 0.12s ease, box-shadow 0.12s ease; position: relative; }
+.zy-china-card:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.08); }
+.zy-china-card-locked { opacity: 0.95; }
+.zy-china-lock { position: absolute; top: 12px; right: 14px; font-size: 18px; color: var(--zy-fg-mute); }
+.zy-china-card-meta { display: flex; gap: 12px; align-items: center; color: var(--zy-fg-mute); font-size: 12px; margin-top: auto; }
+
+.zy-china-row { display: grid; gap: 4px; padding: 14px 16px; border-radius: var(--zy-radius-md); border: 1px solid var(--zy-border); background: var(--zy-bg-elev); cursor: pointer; }
+.zy-china-row:hover { border-color: var(--zy-brand); }
+
+.zy-pinyin { color: var(--zy-fg-mute); font-size: 13px; line-height: 1.4; letter-spacing: 0.02em; }
+.zy-zh { font-size: 18px; font-weight: 500; line-height: 1.5; }
+.zy-trans { color: var(--zy-fg-soft); font-size: 14px; line-height: 1.5; }
+
+.zy-em em { background: #fff3a8; color: inherit; font-style: normal; font-weight: 600; padding: 0 2px; border-radius: 3px; }
+[data-theme='dark'] .zy-em em { background: rgba(255,243,168,0.25); color: #ffd96a; }
+
+/* Sentence card */
+.zy-sentence-card { padding: 16px 18px; border-radius: var(--zy-radius-md); border: 1px solid var(--zy-border); background: var(--zy-bg-elev); display: grid; gap: 6px; position: relative; }
+.zy-sentence-card.zy-focus-flash { animation: zy-flash 1.5s ease-in-out 1; }
+/* Sentence card body: content + action buttons */
+.zy-sentence-card-body { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.zy-sentence-card-actions { display: flex; flex-direction: row; gap: 4px; flex-shrink: 0; align-items: flex-start; }
+/* Translations: 2 columns on desktop, 1 on mobile */
+.zy-sentence-trans { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 16px; margin-top: 6px; font-size: 12px; color: var(--zy-fg-soft); }
+@media (max-width: 600px) {
+  .zy-sentence-card-body { flex-direction: column; }
+  .zy-sentence-card-actions { margin-top: 8px; }
+  .zy-sentence-trans { grid-template-columns: 1fr; }
+}
+@keyframes zy-flash { 0%,100% { box-shadow: 0 0 0 0 var(--zy-brand-soft); } 30% { box-shadow: 0 0 0 6px var(--zy-brand-soft); } }
+.zy-seq { font-family: ui-monospace, SFMono-Regular, monospace; color: var(--zy-fg-mute); font-size: 12px; }
+.zy-icon-btn {
+  width: 36px; height: 36px; border-radius: var(--zy-radius-md); border: 1px solid var(--zy-border);
+  background: var(--zy-bg); cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+}
+.zy-icon-btn:hover:not(:disabled) { border-color: var(--zy-brand); color: var(--zy-brand); }
+.zy-icon-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.zy-icon-btn.zy-failed { color: var(--zy-brand); border-color: var(--zy-brand); }
+
+/* Drawer / Modal mobile */
+@media (max-width: 600px) {
+  .zy-drawer { width: 100% !important; }
+  .zy-modal { width: 100% !important; }
+}
+
+/* TopNav nav links */
+.zy-topnav-link {
+  color: var(--zy-fg-soft); font-size: 14px; font-weight: 500;
+  padding: 4px 10px; border-radius: var(--zy-radius-sm);
+  transition: color 0.15s, background 0.15s; white-space: nowrap;
+}
+.zy-topnav-link:hover { color: var(--zy-fg); background: var(--zy-brand-soft); }
+/* TanStack Router sets class="active" and data-status="active" on the active link */
+.zy-topnav-link.active,
+.zy-topnav-link[data-status='active'] {
+  color: var(--zy-brand); font-weight: 700;
+  background: var(--zy-brand-soft); border-radius: var(--zy-radius-sm);
+}
+
+/* Admin mobile responsive */
+@media (max-width: 600px) {
+  .zy-topnav {
+    height: auto; min-height: 52px; padding: 8px 12px;
+    flex-wrap: wrap; gap: 6px 12px;
+  }
+  .zy-admin-page { padding: 12px !important; }
+  .zy-admin-page .zy-input { min-width: 0 !important; }
+}
+
+/* Offline bar */
+.zy-offline-bar { position: sticky; top: 56px; z-index: 30; background: #b91c1c; color: #fff; text-align: center; padding: 6px 12px; font-size: 13px; }
+
+/* Empty / error states */
+.zy-state { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 48px 16px; text-align: center; color: var(--zy-fg-soft); }
+.zy-state-icon { font-size: 36px; }
+
+/* Reorder list */
+.zy-reorder-item { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid var(--zy-border); border-radius: var(--zy-radius-md); background: var(--zy-bg-elev); margin-bottom: 8px; cursor: grab; user-select: none; }
+.zy-reorder-item.dragging { opacity: 0.5; cursor: grabbing; }
+.zy-reorder-item.drop-target { border-color: var(--zy-brand); }
+.zy-reorder-handle { color: var(--zy-fg-mute); font-size: 16px; cursor: grab; }
+
+/* Toggle switch */
+.zy-switch {
+  position: relative; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; font-size: 13px;
+}
+.zy-switch input { display: none; }
+.zy-switch-track { width: 36px; height: 20px; background: var(--zy-border); border-radius: 999px; position: relative; transition: background 0.15s; }
+.zy-switch-track::after { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; background: #fff; border-radius: 50%; transition: transform 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+.zy-switch input:checked + .zy-switch-track { background: var(--zy-brand); }
+.zy-switch input:checked + .zy-switch-track::after { transform: translateX(16px); }
+
+/* Login page */
+.zy-fg-soft { color: var(--zy-fg-soft); }
+.zy-fg-mute { color: var(--zy-fg-mute); }
+.zy-link-strong { color: var(--zy-brand); font-weight: 600; }
+.zy-link-strong:hover { text-decoration: underline; }
+
+.zy-login-shell { position: relative; min-height: calc(100vh - 64px); display: flex; align-items: center; justify-content: center; padding: 24px 16px; overflow: hidden; }
+.zy-login-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.zy-blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: 0.55; }
+.zy-blob-1 { width: 360px; height: 360px; background: radial-gradient(circle at 30% 30%, var(--zy-brand), transparent 70%); top: -80px; left: -60px; }
+.zy-blob-2 { width: 320px; height: 320px; background: radial-gradient(circle at 60% 60%, #f8b4c0, transparent 70%); bottom: -100px; right: -40px; }
+.zy-blob-3 { width: 240px; height: 240px; background: radial-gradient(circle at 50% 50%, #ffd6a8, transparent 70%); top: 30%; right: 20%; opacity: 0.4; }
+[data-theme='dark'] .zy-blob { opacity: 0.35; }
+
+.zy-login-card { position: relative; z-index: 1; width: 100%; max-width: 440px; padding: 32px; border-radius: 18px; background: var(--zy-bg-elev); border: 1px solid var(--zy-border); box-shadow: 0 24px 48px rgba(0,0,0,0.10); backdrop-filter: blur(12px); }
+.zy-login-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+.zy-login-logo { width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg, var(--zy-brand), #f08aa3); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700; box-shadow: 0 6px 16px rgba(220, 60, 90, 0.25); }
+.zy-login-title { font-size: 20px; font-weight: 700; color: var(--zy-fg); }
+.zy-login-subtitle { font-size: 13px; color: var(--zy-fg-soft); margin-top: 2px; }
+.zy-login-form { display: grid; gap: 14px; margin-bottom: 16px; }
+.zy-login-divider { display: flex; align-items: center; gap: 12px; color: var(--zy-fg-mute); font-size: 12px; margin: 16px 0; }
+.zy-login-divider::before, .zy-login-divider::after { content: ''; flex: 1; height: 1px; background: var(--zy-border); }
+.zy-login-footer { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 14px; }
+.zy-login-extra { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; font-size: 12px; }
+
+/* Login: Google button + link mute */
+.zy-google-btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; height: 44px; border-radius: var(--zy-radius-md);
+  border: 1px solid var(--zy-border); background: var(--zy-bg);
+  color: var(--zy-fg); font-size: 14px; font-weight: 500; cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.zy-google-btn:hover:not(:disabled) { border-color: var(--zy-brand); background: var(--zy-bg-elev); }
+.zy-google-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.zy-link-mute {
+  background: transparent; border: 0; padding: 0; cursor: pointer;
+  color: var(--zy-fg-mute); font-size: 12px;
+}
+.zy-link-mute:hover { color: var(--zy-fg); }
+
+/* Course prototype alignment */
+.zy-page-title { margin: 0; font-size: 24px; line-height: 1.25; letter-spacing: 0; }
+.zy-page-sub { margin: 6px 0 0; color: var(--zy-fg-soft); font-size: 14px; line-height: 1.55; }
+.zy-section-title { margin: 0 0 12px; font-size: 16px; line-height: 1.3; }
+.zy-bread { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; color: var(--zy-fg-mute); font-size: 13px; margin-bottom: 16px; }
+.zy-bread .cur { color: var(--zy-fg); font-weight: 600; }
+.zy-bread .sep { color: var(--zy-fg-mute); }
+.zy-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.zy-pill {
+  height: 36px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--zy-border);
+  background: var(--zy-bg); color: var(--zy-fg-soft); cursor: pointer; font-family: inherit; font-weight: 500;
+}
+.zy-pill:hover { border-color: var(--zy-brand); color: var(--zy-brand); }
+.zy-pill.active, .zy-pill[aria-pressed='true'] { background: var(--zy-brand); color: #fff; border-color: var(--zy-brand); }
+.zy-progress { height: 8px; background: var(--zy-bg-elev); border: 1px solid var(--zy-border); border-radius: 999px; overflow: hidden; }
+.zy-progress > i { display: block; height: 100%; background: var(--zy-brand); border-radius: inherit; transition: width .2s ease; }
+.zy-chap-card {
+  position: relative; display: grid; gap: 8px; min-height: 142px; padding: 18px; border: 1px solid var(--zy-border);
+  border-radius: 8px; background: var(--zy-bg-elev); cursor: pointer; transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+}
+.zy-chap-card:hover { transform: translateY(-2px); border-color: var(--zy-brand); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+.zy-chap-card.locked { opacity: .62; cursor: default; }
+.zy-chap-card .emoji { font-size: 24px; }
+.zy-chap-card h3 { margin: 0; font-size: 16px; line-height: 1.35; }
+.zy-chap-card .sub { color: var(--zy-fg-soft); font-size: 13px; }
+.zy-chap-card .meta { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-top: auto; }
+.zy-chap-card .lock { position: absolute; top: 14px; right: 14px; color: var(--zy-fg-mute); }
+.zy-grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 720px) {
+  .zy-grid.cols-md-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .zy-grid.cols-md-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 960px) {
+  .zy-grid.cols-lg-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .zy-grid.cols-lg-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (min-width: 1180px) {
+  .zy-grid.cols-xl-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.zy-lesson-list { display: grid; gap: 8px; }
+.zy-lesson-row {
+  display: grid; grid-template-columns: 18px minmax(0, 1fr) auto; gap: 10px; align-items: center;
+  padding: 12px 14px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg);
+}
+.zy-lesson-row .status { color: var(--zy-fg-soft); font-size: 13px; }
+.zy-lesson-dot { width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--zy-border); background: var(--zy-bg-elev); }
+.zy-lesson-dot.passed { background: #22c55e; border-color: #22c55e; }
+.zy-lesson-dot.in_progress { background: var(--zy-brand); border-color: var(--zy-brand); }
+.zy-lesson-dot.locked { background: var(--zy-fg-mute); opacity: .5; }
+.kp-card {
+  max-width: 680px; margin: 0 auto; padding: 28px; border-radius: 8px; border: 1px solid var(--zy-border);
+  background: var(--zy-bg); box-shadow: var(--zy-shadow); text-align: center;
+}
+.kp-card .pinyin { color: var(--zy-brand); font-size: 18px; font-weight: 600; }
+.kp-card h1 { margin: 8px 0; font-size: 56px; line-height: 1.05; letter-spacing: 0; }
+.kp-card .trans { color: var(--zy-fg-soft); font-size: 18px; }
+.kp-card .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.kp-card .examples { text-align: left; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--zy-border); display: grid; gap: 12px; }
+.kp-card .ex { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 10px; align-items: start; }
+.kp-card .ex .pn { color: var(--zy-brand); font-size: 13px; }
+.kp-card .ex .zh { font-weight: 600; }
+.kp-card .ex .tr { color: var(--zy-fg-soft); font-size: 13px; }
+.qz-stem { font-size: 17px; line-height: 1.6; }
+.qz-options { display: grid; gap: 10px; margin-top: 16px; }
+.qz-opt {
+  display: flex; gap: 10px; align-items: center; padding: 12px 14px; border: 1px solid var(--zy-border);
+  border-radius: 8px; background: var(--zy-bg); cursor: pointer; text-align: left;
+}
+.qz-opt:hover { border-color: var(--zy-brand); }
+.qz-opt.selected { border-color: var(--zy-brand); background: var(--zy-brand-soft); }
+.qz-opt.correct { border-color: rgba(34,197,94,.45); background: rgba(34,197,94,.12); }
+.qz-opt.wrong { border-color: var(--zy-brand); background: var(--zy-brand-soft); }
+.qz-opt .key {
+  width: 26px; height: 26px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center;
+  background: var(--zy-bg-elev); border: 1px solid var(--zy-border); font-weight: 700;
+}
+.qz-feedback { margin-top: 14px; padding: 12px 14px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+.qz-feedback.ok { background: rgba(34,197,94,.12); color: #128a3e; }
+.qz-feedback.no { background: var(--zy-brand-soft); color: var(--zy-brand); }
+.zy-fab { position: fixed; right: 24px; bottom: 24px; display: grid; gap: 8px; z-index: 20; }
+.zy-fab-item {
+  display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--zy-border);
+  background: var(--zy-bg-glass); backdrop-filter: blur(var(--zy-glass-blur)); box-shadow: var(--zy-shadow);
+}
+.zy-fab-item .badge { min-width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; background: var(--zy-brand); color: #fff; font-size: 12px; }
+.zy-bottom-tabs { display: none; }
+.zy-table-wrap { width: 100%; overflow-x: auto; border: 1px solid var(--zy-border); border-radius: 8px; }
+.zy-table { width: 100%; border-collapse: collapse; background: var(--zy-bg); font-size: 14px; }
+.zy-table th, .zy-table td { padding: 12px 14px; border-bottom: 1px solid var(--zy-border); text-align: left; vertical-align: middle; white-space: nowrap; }
+.zy-table th { color: var(--zy-fg-soft); font-size: 12px; font-weight: 600; background: var(--zy-bg-elev); }
+.zy-table tr:last-child td { border-bottom: 0; }
+.zy-i18n-grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 10px; }
+@media (min-width: 720px) { .zy-i18n-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.zy-level-card { cursor: pointer; transition: transform .12s ease, border-color .12s ease; }
+.zy-level-card:hover { transform: translateY(-2px); border-color: var(--zy-brand); }
+.zy-level-card-title { font-size: 16px; font-weight: 700; }
+.heatmap { display: grid; grid-template-columns: repeat(15, 1fr); gap: 5px; }
+.heatmap i { aspect-ratio: 1; border-radius: 4px; background: var(--zy-bg-elev); border: 1px solid var(--zy-border); }
+.heatmap i.l1 { background: rgba(255,36,66,.15); }
+.heatmap i.l2 { background: rgba(255,36,66,.3); }
+.heatmap i.l3 { background: rgba(255,36,66,.55); }
+.heatmap i.l4 { background: var(--zy-brand); }
+.hl { background: #fff3a8; color: inherit; font-style: normal; font-weight: 700; padding: 0 2px; border-radius: 3px; }
+@media (max-width: 760px) {
+  .zy-fab { display: none; }
+  .zy-bottom-tabs {
+    position: sticky; bottom: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; margin: 24px -24px -24px;
+    background: var(--zy-bg-glass); border-top: 1px solid var(--zy-border); backdrop-filter: blur(var(--zy-glass-blur));
+  }
+  .zy-bottom-tab { display: grid; place-items: center; gap: 2px; padding: 8px 4px; font-size: 12px; color: var(--zy-fg-soft); }
+  .zy-bottom-tab.active { color: var(--zy-brand); font-weight: 700; }
+  .zy-lesson-row { grid-template-columns: 18px minmax(0, 1fr); }
+  .zy-lesson-row .status { grid-column: 2; }
+  .kp-card { padding: 22px 16px; }
+  .kp-card h1 { font-size: 44px; }
+}
+
+
+.ai-prototype { max-width: 1320px; }
+.ai-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid var(--zy-border);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255,36,66,.09), transparent 38%),
+    repeating-linear-gradient(90deg, transparent 0 18px, rgba(17,17,17,.025) 18px 19px),
+    var(--zy-bg-elev);
+}
+@media (min-width: 860px) { .ai-hero { grid-template-columns: minmax(0, 1fr) 320px; align-items: end; } }
+.ai-kicker { margin: 0 0 8px; color: var(--zy-brand); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.ai-hero h1 { margin: 0; font-size: clamp(28px, 4vw, 48px); line-height: 1.08; letter-spacing: 0; }
+.ai-hero p { max-width: 760px; margin: 12px 0 0; color: var(--zy-fg-soft); line-height: 1.7; }
+.ai-hero-panel { display: grid; gap: 6px; padding: 18px; border-radius: 8px; background: var(--zy-bg); border: 1px solid var(--zy-border); }
+.ai-hero-panel span { color: var(--zy-fg-mute); font-size: 12px; }
+.ai-hero-panel strong { font-size: 22px; }
+.ai-hero-panel code, .ai-version code, .ai-current-voice code { white-space: normal; overflow-wrap: anywhere; color: var(--zy-fg-soft); }
+.ai-panel-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0; }
+.ai-panel-tabs button { height: 38px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--zy-border); background: var(--zy-bg); color: var(--zy-fg-soft); cursor: pointer; font-weight: 700; }
+.ai-panel-tabs button.active { background: var(--zy-brand); border-color: var(--zy-brand); color: #fff; }
+.ai-grid-main { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 1040px) { .ai-grid-main { grid-template-columns: minmax(0, .92fr) minmax(420px, 1.08fr); } }
+.ai-section-title { margin-bottom: 16px; }
+.ai-section-title h2 { margin: 0; font-size: 17px; line-height: 1.3; }
+.ai-section-title p { margin: 5px 0 0; color: var(--zy-fg-soft); font-size: 13px; line-height: 1.55; }
+.ai-config-card { display: grid; gap: 14px; }
+.ai-current-voice { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 16px; align-items: center; padding: 16px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg); }
+@media (max-width: 540px) { .ai-current-voice { grid-template-columns: 1fr; } }
+.ai-current-voice strong { display: block; font-size: 22px; }
+.ai-current-voice p { margin: 5px 0; color: var(--zy-fg-soft); }
+.ai-mini-label { display: inline-block; margin-bottom: 4px; color: var(--zy-brand); font-size: 12px; font-weight: 800; }
+.ai-wave { height: 72px; display: flex; gap: 7px; align-items: center; justify-content: center; border-radius: 8px; background: var(--zy-brand-soft); overflow: hidden; }
+.ai-wave i { width: 7px; border-radius: 999px; background: var(--zy-brand); opacity: .9; }
+.ai-wave i:nth-child(1) { height: 22px; }
+.ai-wave i:nth-child(2) { height: 48px; }
+.ai-wave i:nth-child(3) { height: 34px; }
+.ai-wave i:nth-child(4) { height: 62px; }
+.ai-wave i:nth-child(5) { height: 28px; }
+.ai-wave i:nth-child(6) { height: 52px; }
+.ai-wave i:nth-child(7) { height: 18px; }
+.ai-form-grid { display: grid; gap: 12px; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .ai-form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.ai-provider-state { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; padding: 10px 12px; border-radius: 8px; background: var(--zy-bg); border: 1px solid var(--zy-border); color: var(--zy-fg-soft); font-size: 12px; }
+.ai-provider-state code { color: var(--zy-fg-mute); white-space: normal; overflow-wrap: anywhere; }
+.ai-test-result { margin-top: 12px; padding: 12px; border-radius: 8px; border: 1px solid var(--zy-border); background: var(--zy-bg); }
+.ai-test-result p { margin: 6px 0 0; line-height: 1.6; color: var(--zy-fg-soft); }
+.ai-slider-row { display: grid; gap: 10px; }
+.ai-meter { display: grid; gap: 6px; }
+.ai-meter div { display: flex; justify-content: space-between; color: var(--zy-fg-soft); font-size: 12px; }
+.ai-meter strong { color: var(--zy-fg); }
+.ai-meter i { height: 8px; border-radius: 999px; background: var(--zy-bg); border: 1px solid var(--zy-border); overflow: hidden; }
+.ai-meter b { display: block; height: 100%; background: var(--zy-brand); border-radius: inherit; }
+.ai-language-defaults { display: grid; gap: 8px; margin-top: 2px; }
+.ai-language-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, .9fr); gap: 10px; align-items: center; padding: 10px 12px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg); }
+.ai-language-row p { margin: 3px 0 0; color: var(--zy-fg-soft); font-size: 12px; }
+.ai-filter-block { display: grid; gap: 10px; margin-bottom: 12px; }
+.ai-segmented, .ai-language-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.ai-segmented button, .ai-language-pills button {
+  height: 32px; padding: 0 10px; border-radius: 8px; border: 1px solid var(--zy-border);
+  background: var(--zy-bg); color: var(--zy-fg-soft); cursor: pointer; font-weight: 700; font-size: 12px;
+}
+.ai-segmented button.active, .ai-language-pills button.active { background: var(--zy-brand); color: #fff; border-color: var(--zy-brand); }
+.ai-voice-list { display: grid; gap: 8px; }
+.ai-voice-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto minmax(74px, auto); gap: 10px; align-items: center; padding: 12px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg); }
+.ai-voice-row.selected { border-color: var(--zy-brand); box-shadow: inset 3px 0 0 var(--zy-brand); }
+.ai-voice-row p { margin: 3px 0 0; color: var(--zy-fg-soft); font-size: 12px; }
+.ai-test-actions { display: grid; gap: 8px; grid-template-columns: 1fr auto; margin-top: 10px; }
+@media (max-width: 520px) { .ai-test-actions { grid-template-columns: 1fr; } }
+.ai-audio-preview { display: flex; gap: 12px; align-items: center; margin-top: 12px; padding: 12px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg); }
+.ai-audio-preview p { margin: 3px 0 0; color: var(--zy-fg-soft); font-size: 12px; }
+.ai-play { width: 42px; height: 42px; border-radius: 999px; border: 0; background: var(--zy-brand); color: #fff; cursor: pointer; display: inline-grid; place-items: center; flex: 0 0 auto; }
+.ai-play.small { width: 34px; height: 34px; font-size: 12px; }
+.ai-metrics { display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 920px) { .ai-metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.ai-metric { padding: 16px; }
+.ai-metric span { color: var(--zy-fg-soft); font-size: 12px; }
+.ai-metric strong { display: block; margin-top: 4px; font-size: 28px; line-height: 1; }
+.ai-metric p { margin: 8px 0 0; color: var(--zy-fg-mute); font-size: 12px; }
+.ai-toolbar { display: grid; gap: 12px; grid-template-columns: 1fr; align-items: start; margin-bottom: 14px; }
+@media (min-width: 980px) { .ai-toolbar { grid-template-columns: minmax(0, 1fr) auto; } }
+.ai-toolbar-controls { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-start; }
+.ai-toolbar-controls .zy-select { width: auto; min-width: 180px; }
+.ai-article-list { display: grid; gap: 12px; }
+.ai-article-audio-card { display: grid; gap: 14px; padding: 16px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg); }
+.ai-article-head { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 900px) { .ai-article-head { grid-template-columns: minmax(0, 1fr) auto; } }
+.ai-article-head h3 { margin: 8px 0 4px; font-size: 18px; line-height: 1.35; }
+.ai-article-head p { margin: 0; color: var(--zy-fg-soft); font-size: 13px; line-height: 1.45; }
+.ai-article-actions { display: flex; gap: 8px; justify-content: flex-start; flex-wrap: wrap; }
+.ai-article-version-grid { display: grid; gap: 10px; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .ai-article-version-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1120px) { .ai-article-version-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.ai-article-version-card { display: grid; gap: 8px; padding: 12px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg-elev); }
+.ai-article-version-card p { margin: 0; color: var(--zy-fg-soft); font-size: 12px; }
+.ai-progress-line { height: 7px; border-radius: 999px; background: var(--zy-bg); border: 1px solid var(--zy-border); overflow: hidden; }
+.ai-progress-line i { display: block; height: 100%; border-radius: inherit; background: var(--zy-brand); }
+.ai-article-detail-head { display: grid; gap: 14px; align-items: start; grid-template-columns: 1fr; }
+@media (min-width: 980px) { .ai-article-detail-head { grid-template-columns: auto minmax(0, 1fr) auto; } }
+.ai-article-detail-head h2 { margin: 8px 0 4px; font-size: 22px; line-height: 1.25; }
+.ai-article-detail-head p { margin: 0; color: var(--zy-fg-soft); }
+.ai-version-strip { display: flex; gap: 8px; flex-wrap: wrap; }
+.ai-version-strip button { min-width: 190px; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--zy-border); background: var(--zy-bg); color: var(--zy-fg); cursor: pointer; text-align: left; }
+.ai-version-strip button.active { border-color: var(--zy-brand); box-shadow: inset 3px 0 0 var(--zy-brand); background: var(--zy-brand-soft); }
+.ai-version-strip strong { display: block; font-size: 14px; }
+.ai-version-strip span { display: block; margin-top: 3px; color: var(--zy-fg-soft); font-size: 12px; }
+.ai-version-table { display: grid; gap: 10px; }
+.ai-sentence-version { display: grid; gap: 12px; padding: 14px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg); }
+@media (min-width: 1040px) { .ai-sentence-version { grid-template-columns: minmax(320px, .85fr) minmax(420px, 1.15fr); } }
+.ai-sentence-copy { display: grid; gap: 6px; align-content: start; }
+.ai-sentence-copy strong { line-height: 1.55; }
+.ai-sentence-copy p { margin: 0; color: var(--zy-fg-soft); font-size: 12px; line-height: 1.5; }
+.ai-seq { font-family: ui-monospace, SFMono-Regular, monospace; color: var(--zy-fg-mute); font-weight: 700; }
+.ai-version-stack { display: grid; gap: 8px; }
+.ai-version { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 10px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg-elev); }
+.ai-version.active { border-color: rgba(34,197,94,.45); background: rgba(34,197,94,.08); }
+.ai-version.selected { border-color: rgba(34,197,94,.45); background: rgba(34,197,94,.08); }
+.ai-version p { margin: 2px 0 3px; color: var(--zy-fg-soft); font-size: 12px; }
+.ai-version-actions { display: flex; align-items: center; justify-content: flex-end; }
+.ai-empty-version { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px; border: 1px dashed var(--zy-border); border-radius: 8px; color: var(--zy-fg-soft); }
+.ai-other-files { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; color: var(--zy-fg-soft); font-size: 12px; }
+.ai-other-files span { font-weight: 700; color: var(--zy-fg); }
+.ai-other-files code { padding: 3px 6px; border-radius: 6px; background: var(--zy-bg); border: 1px solid var(--zy-border); color: var(--zy-fg-soft); }
+.ai-other-files em { color: var(--zy-fg-mute); font-style: normal; }
+.ai-translation-list { display: grid; gap: 10px; }
+.ai-translation-row { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 12px; padding: 12px; border: 1px solid var(--zy-border); border-radius: 8px; background: var(--zy-bg); }
+.ai-locale { height: 42px; border-radius: 8px; display: grid; place-items: center; background: var(--zy-brand-soft); color: var(--zy-brand); font-weight: 900; }
+.ai-translation-row p { margin: 8px 0 0; line-height: 1.65; }
+@media (max-width: 640px) {
+  .ai-hero { padding: 18px; }
+  .ai-toolbar-controls { display: grid; grid-template-columns: 1fr; }
+  .ai-toolbar-controls .zy-select, .ai-toolbar-controls .zy-btn { width: 100%; }
+  .ai-language-row { grid-template-columns: 1fr; }
+  .ai-voice-row { grid-template-columns: 1fr; align-items: start; }
+  .ai-version { grid-template-columns: auto minmax(0, 1fr); }
+  .ai-version-actions { grid-column: 1 / -1; justify-content: flex-start; }
+}
+
+.static-panel[hidden], [hidden] { display: none !important; }
+.static-toast { position: fixed; right: 16px; top: 72px; z-index: 1000; min-width: 220px; max-width: 360px; padding: 10px 14px; border-radius: var(--zy-radius-md); color: #fff; background: #16a34a; box-shadow: 0 4px 16px rgba(0,0,0,.16); opacity: 0; pointer-events: none; transform: translateY(-6px); transition: .16s ease; }
+.static-toast.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <header class="zy-topnav zy-glass">
+    <div style="display:flex;align-items:center;gap:16px;min-width:0;overflow:auto">
+      <a href="#" style="font-weight:700;font-size:18px;color:var(--zy-brand);white-space:nowrap">知语 · Admin</a>
+      <a href="#" class="zy-topnav-link">发现中国</a>
+      <a href="#" class="zy-topnav-link">内容导入</a>
+      <a href="#" class="zy-topnav-link">课程</a>
+      <a href="#" class="zy-topnav-link active">公共能力</a>
+      <a href="#" class="zy-topnav-link">用户管理</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px"><button class="zy-btn zy-btn-ghost">🌙</button><button class="zy-btn zy-btn-ghost">退出</button></div>
+  </header>
+  <main class="zy-page zy-admin-page" style="padding:0">
+    <div class="zy-container ai-prototype" data-testid="common-ai-prototype">
+      <div class="zy-bread"><a href="#">首页</a><span class="sep">›</span><span class="cur">公共能力原型</span></div>
+      <div class="ai-hero">
+        <div><p class="ai-kicker">AI Capability Console</p><h1>翻译与语音合成公共模块</h1><p>配置默认音色，按文章保存多个音色版本包，并在文章内查看每句音频明细。</p></div>
+        <div class="ai-hero-panel"><span>中文默认音色</span><strong>灿灿 2.0</strong><code>大模型合成 · BV700_V2_streaming</code></div>
+      </div>
+      <div class="ai-panel-tabs" role="tablist" aria-label="公共能力原型导航">
+        <button class="active" data-static-tab="providers">服务商配置</button>
+        <button data-static-tab="tts">语音配置</button>
+        <button data-static-tab="assets">文章音频版本</button>
+        <button data-static-tab="translation">翻译测试</button>
+      </div>
+      
+<div class="ai-grid-main static-panel" data-static-panel="providers">
+  <div class="zy-glass zy-card ai-config-card">
+    <div class="ai-section-title"><h2>阿里云机器翻译</h2><p>保存 AccessKey 后，翻译测试和后续批量翻译会从服务端调用阿里云 TranslateGeneral。</p></div>
+    <div class="ai-provider-state"><span class="zy-tag zy-tag-success">enabled</span><span>上次测试：success · 2026-05-17 09:56</span><code>TranslateGeneral ok</code></div>
+    <label class="zy-switch"><input type="checkbox" checked /><span class="zy-switch-track"></span><span>已启用</span></label>
+    <div class="ai-form-grid">
+      <div class="zy-field"><label class="zy-label">Endpoint</label><input class="zy-input" value="https://mt.aliyuncs.com" placeholder="公网：https://mt.aliyuncs.com；VPC：https://mt-vpc.cn-beijing.aliyuncs.com" /></div>
+      <div class="zy-field"><label class="zy-label">RegionId</label><input class="zy-input" value="cn-beijing"  /></div>
+      <div class="zy-field"><label class="zy-label">Scene</label><input class="zy-input" value="general"  /></div>
+      <div class="zy-field"><label class="zy-label">AccessKey ID</label><input class="zy-input" value="" placeholder="LTAI****7Qp2" /></div>
+      <div class="zy-field"><label class="zy-label">AccessKey Secret</label><input class="zy-input" value="" type="password" placeholder="留空不修改" /></div>
+    </div>
+    <div class="zy-row-end"><button class="zy-btn zy-btn-ghost" data-static-action="阿里云连接测试成功">测试连接</button><button class="zy-btn zy-btn-primary" data-static-action="阿里云机器翻译配置已保存">保存阿里云配置</button></div>
+  </div>
+  <div class="zy-glass zy-card ai-config-card">
+    <div class="ai-section-title"><h2>火山引擎语音合成</h2><p>保存 AppID 和 Access Token 后，管理端可直接测试文本转音频。</p></div>
+    <div class="ai-provider-state"><span class="zy-tag zy-tag-success">enabled</span><span>上次测试：success · 2026-05-17 09:56</span><code>volcano_tts ok</code></div>
+    <label class="zy-switch"><input type="checkbox" checked /><span class="zy-switch-track"></span><span>已启用</span></label>
+    <div class="ai-form-grid">
+      <div class="zy-field"><label class="zy-label">Endpoint</label><input class="zy-input" value="https://openspeech.bytedance.com/api/v1/tts"  /></div>
+      <div class="zy-field"><label class="zy-label">Cluster</label><input class="zy-input" value="volcano_tts"  /></div>
+      <div class="zy-field"><label class="zy-label">AppID</label><input class="zy-input" value="" placeholder="2459****" /></div>
+      <div class="zy-field"><label class="zy-label">Access Token</label><input class="zy-input" value="" type="password" placeholder="留空不修改" /></div>
+      <div class="zy-field"><label class="zy-label">默认 Voice Type</label><input class="zy-input" value="BV700_V2_streaming"  /></div>
+      <div class="zy-field"><label class="zy-label">Encoding</label><select class="zy-input zy-select" ><option>mp3</option><option>ogg_opus</option><option>wav</option><option>pcm</option></select></div>
+    </div>
+    <div class="zy-row-end"><button class="zy-btn zy-btn-ghost" data-static-action="火山语音合成连接测试成功">测试连接</button><button class="zy-btn zy-btn-primary" data-static-action="火山引擎语音合成配置已保存">保存火山配置</button></div>
+  </div>
+</div>
+      
+<div class="ai-grid-main static-panel" data-static-panel="tts" hidden>
+  <div class="zy-glass zy-card ai-config-card">
+    <div class="ai-section-title"><h2>按语言设置默认音色</h2><p>每个语言独立配置默认音色；播放无音频内容时，按内容语言选择对应默认 voice。</p></div>
+    <div class="ai-current-voice">
+      <div class="ai-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div><span class="ai-mini-label">中文 · 大模型合成</span><strong>灿灿 2.0</strong><p>讲故事 / 愉悦 / 专业</p><code>BV700_V2_streaming</code></div>
+    </div>
+    <div class="zy-field"><label class="zy-label">配置语言</label><select class="zy-input zy-select" ><option>中文</option><option>英语</option><option>日语</option><option>西班牙语</option><option>葡萄牙语</option><option>越南语</option><option>泰语</option><option>印尼语</option></select></div>
+    <div class="zy-field"><label class="zy-label">切换为</label><select class="zy-input zy-select" ><option>灿灿 2.0 · 大模型合成 · BV700_V2_streaming</option><option>擎苍 2.0 · 大模型合成 · BV701_V2_streaming</option><option>通用女声 · 传统语音合成 · BV001_streaming</option></select></div>
+    <div class="ai-form-grid"><div class="zy-field"><label class="zy-label">生效时间</label><input class="zy-input" value="2026-01-02 00:00" readonly /></div><div class="zy-field"><label class="zy-label">输出格式</label><select class="zy-input zy-select" ><option>MP3 · 24k</option><option>OGG Opus</option><option>PCM</option></select></div></div>
+    <div class="ai-slider-row"><div class="ai-meter"><div><span>语速</span><strong>1.00</strong></div><i><b style="width:52%"></b></i></div><div class="ai-meter"><div><span>音量</span><strong>1.10</strong></div><i><b style="width:68%"></b></i></div><div class="ai-meter"><div><span>音调</span><strong>1.00</strong></div><i><b style="width:50%"></b></i></div></div>
+    <div class="zy-row-end"><button class="zy-btn zy-btn-ghost" data-static-action="原型中仅模拟试听">试听</button><button class="zy-btn zy-btn-primary" data-static-action="中文默认音色已切换为 灿灿 2.0">保存默认配置</button></div>
+    <div class="ai-language-defaults">
+      <div class="ai-language-row"><div><strong>中文</strong><p>大模型合成 · 灿灿 2.0</p></div><select class="zy-input zy-select" ><option>灿灿 2.0</option><option>多语种课堂旁白</option></select></div><div class="ai-language-row"><div><strong>英语</strong><p>大模型合成 · Emma Story</p></div><select class="zy-input zy-select" ><option>Emma Story</option><option>多语种课堂旁白</option></select></div><div class="ai-language-row"><div><strong>日语</strong><p>大模型合成 · Sakura 教学</p></div><select class="zy-input zy-select" ><option>Sakura 教学</option><option>多语种课堂旁白</option></select></div><div class="ai-language-row"><div><strong>西班牙语</strong><p>大模型合成 · Carlos Español</p></div><select class="zy-input zy-select" ><option>Carlos Español</option><option>多语种课堂旁白</option></select></div><div class="ai-language-row"><div><strong>葡萄牙语</strong><p>传统语音合成 · Ana Português</p></div><select class="zy-input zy-select" ><option>Ana Português</option><option>多语种课堂旁白</option></select></div><div class="ai-language-row"><div><strong>越南语</strong><p>传统语音合成 · Linh 越南语</p></div><select class="zy-input zy-select" ><option>Linh 越南语</option><option>多语种课堂旁白</option></select></div><div class="ai-language-row"><div><strong>泰语</strong><p>传统语音合成 · Nok 泰语</p></div><select class="zy-input zy-select" ><option>Nok 泰语</option><option>多语种课堂旁白</option></select></div><div class="ai-language-row"><div><strong>印尼语</strong><p>传统语音合成 · Raka 印尼语</p></div><select class="zy-input zy-select" ><option>Raka 印尼语</option><option>多语种课堂旁白</option></select></div>
+    </div>
+  </div>
+  <div class="zy-stack">
+    <div class="zy-glass zy-card ">
+      <div class="ai-section-title"><h2>音色资源池</h2><p>先按大模型/传统合成分类，再按语言筛选；一个语言可以配置多个候选音色。</p></div>
+      <div class="ai-filter-block">
+        <div class="ai-segmented" data-filter-group="engine"><button class="active" data-filter="all">全部 13</button><button data-filter="large-model">大模型 6</button><button data-filter="classic">传统 7</button></div>
+        <div class="ai-language-pills" data-filter-group="language"><button class="active" data-filter="all">全部语言</button><button data-filter="zh">中文</button><button data-filter="en">英语</button><button data-filter="ja">日语</button><button data-filter="es">西班牙语</button><button data-filter="vi">越南语</button><button data-filter="th">泰语</button><button data-filter="id">印尼语</button><button data-filter="multi">多语种</button></div>
+      </div>
+      <div class="ai-voice-list">
+        <div class="ai-voice-row selected" data-engine="large-model" data-languages="zh"><div><strong>灿灿 2.0</strong><p>女声 · 自然讲述</p></div><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-success">active</span><code>中文</code></div>
+        <div class="ai-voice-row " data-engine="large-model" data-languages="zh"><div><strong>擎苍 2.0</strong><p>男声 · 纪录片旁白</p></div><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-success">active</span><code>中文</code></div>
+        <div class="ai-voice-row " data-engine="large-model" data-languages="zh en"><div><strong>品牌复刻音色</strong><p>第三方音色 · 待激活</p></div><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-warn">training</span><code>中文 / 英语</code></div>
+        <div class="ai-voice-row " data-engine="large-model" data-languages="en"><div><strong>Emma Story</strong><p>English · narrative</p></div><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-success">active</span><code>英语</code></div>
+        <div class="ai-voice-row " data-engine="large-model" data-languages="ja"><div><strong>Sakura 教学</strong><p>日本語 · レッスン</p></div><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-success">active</span><code>日语</code></div>
+        <div class="ai-voice-row " data-engine="classic" data-languages="zh"><div><strong>通用女声</strong><p>中文传统音色</p></div><span class="zy-tag zy-tag-info">传统语音合成</span><span class="zy-tag zy-tag-success">active</span><code>中文</code></div>
+        <div class="ai-voice-row " data-engine="classic" data-languages="vi"><div><strong>Linh 越南语</strong><p>Tiếng Việt · nữ</p></div><span class="zy-tag zy-tag-info">传统语音合成</span><span class="zy-tag zy-tag-success">active</span><code>越南语</code></div>
+        <div class="ai-voice-row " data-engine="classic" data-languages="th"><div><strong>Nok 泰语</strong><p>ภาษาไทย · female</p></div><span class="zy-tag zy-tag-info">传统语音合成</span><span class="zy-tag zy-tag-success">active</span><code>泰语</code></div>
+        <div class="ai-voice-row " data-engine="large-model" data-languages="multi zh en ja es"><div><strong>多语种课堂旁白</strong><p>多语种混读 · 实验</p></div><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-success">active</span><code>多语种 / 中文 / 英语 / 日语 / 西班牙语</code></div>
+      </div>
+    </div>
+    <div class="zy-glass zy-card ">
+      <div class="ai-section-title"><h2>测试生成</h2><p>用当前选择的音色生成测试音频，不写入业务数据。</p></div>
+      <textarea class="zy-input zy-textarea" rows="5">欢迎来到知语。今天我们学习女娲补天这个故事。</textarea>
+      <div class="ai-test-actions"><select class="zy-input zy-select" ><option>一句一句生成</option><option>全篇生成</option><option>两者都生成</option></select><button class="zy-btn zy-btn-primary" data-static-action="语音测试完成">生成测试</button></div>
+      <div class="ai-audio-preview"><button class="ai-play">▶</button><div><strong>test-cancan-v2.mp3</strong><p>2.8s · 灿灿 2.0 · mock</p></div></div>
+    </div>
+  </div>
+</div>
+      
+<div class="zy-stack static-panel" data-static-panel="assets" hidden>
+  <div class="ai-metrics">
+    <div class="zy-glass zy-card ai-metric"><span>文章数</span><strong style="">3</strong><p>发现中国文章</p></div>
+    <div class="zy-glass zy-card ai-metric"><span>音色版本包</span><strong style="">6</strong><p>3 个完整版本</p></div>
+    <div class="zy-glass zy-card ai-metric"><span>句子总量</span><strong style="">360</strong><p>按文章统计</p></div>
+    <div class="zy-glass zy-card ai-metric"><span>待补齐版本</span><strong style="color:var(--zy-brand)">3</strong><p>可进文章处理</p></div>
+  </div>
+  <div class="zy-glass zy-card ">
+    <div class="ai-toolbar"><div><div class="ai-section-title"><h2>文章音色版本</h2><p>先按文章查看。每篇文章可以同时保存多个音色版本，点进文章后查看句子明细。</p></div></div><div class="ai-toolbar-controls"><select class="zy-input zy-select" ><option>全部文章</option><option>有缺失版本</option><option>版本完整</option></select><select class="zy-input zy-select" ><option>中文音频</option><option>英语音频</option><option>多语种音频</option></select><button class="zy-btn zy-btn-ghost" data-static-action="版本状态已刷新">刷新状态</button></div></div>
+    <div class="ai-article-list">
+      <div class="ai-article-audio-card"><div class="ai-article-head"><div><div class="zy-row"><span class="ai-seq">12-01</span><span class="zy-tag zy-tag-default">#12 神话传说</span><span class="zy-tag zy-tag-info">120 句</span></div><h3>女娲补天</h3><p>nü wa bu tian</p></div><div class="ai-article-actions"><button class="zy-btn zy-btn-ghost" data-static-action="已生成文章音色版本，旧音色版本保留">生成中文默认音色版本</button><button class="zy-btn zy-btn-primary" data-open-detail>查看句子</button></div></div><div class="ai-article-version-grid">
+<div class="ai-article-version-card">
+  <div class="zy-row"><strong>灿灿 2.0</strong><span class="zy-tag zy-tag-warn">待补齐</span></div>
+  <div class="zy-row"><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-default">中文</span><span class="zy-tag zy-tag-default">按句 + 整篇</span><span class="zy-tag zy-tag-success">含整篇</span></div>
+  <div class="ai-progress-line"><i style="width:98%"></i></div><p>118/120 句 · 2026-01-02 10:32</p>
+</div>
+<div class="ai-article-version-card">
+  <div class="zy-row"><strong>擎苍 2.0</strong><span class="zy-tag zy-tag-success">完整</span></div>
+  <div class="zy-row"><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-default">中文</span><span class="zy-tag zy-tag-default">按句</span></div>
+  <div class="ai-progress-line"><i style="width:100%"></i></div><p>120/120 句 · 2026-01-01 14:30</p>
+</div>
+<div class="ai-article-version-card">
+  <div class="zy-row"><strong>通用女声</strong><span class="zy-tag zy-tag-success">完整</span></div>
+  <div class="zy-row"><span class="zy-tag zy-tag-info">传统语音合成</span><span class="zy-tag zy-tag-default">中文</span><span class="zy-tag zy-tag-default">按句</span></div>
+  <div class="ai-progress-line"><i style="width:100%"></i></div><p>120/120 句 · 2025-12-18 09:12</p>
+</div></div></div>
+      <div class="ai-article-audio-card"><div class="ai-article-head"><div><div class="zy-row"><span class="ai-seq">03-09</span><span class="zy-tag zy-tag-default">#03 名胜古迹</span><span class="zy-tag zy-tag-info">120 句</span></div><h3>兵马俑为什么能看见秦代历史？</h3><p>bing ma yong wei shen me neng kan jian Qin dai li shi</p></div><div class="ai-article-actions"><button class="zy-btn zy-btn-ghost" >生成中文默认音色版本</button><button class="zy-btn zy-btn-primary" data-open-detail>查看句子</button></div></div><div class="ai-article-version-grid">
+<div class="ai-article-version-card">
+  <div class="zy-row"><strong>灿灿 2.0</strong><span class="zy-tag zy-tag-success">完整</span></div>
+  <div class="zy-row"><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-default">中文</span><span class="zy-tag zy-tag-default">按句 + 整篇</span><span class="zy-tag zy-tag-success">含整篇</span></div>
+  <div class="ai-progress-line"><i style="width:100%"></i></div><p>120/120 句 · 2026-01-02 08:44</p>
+</div>
+<div class="ai-article-version-card">
+  <div class="zy-row"><strong>擎苍 2.0</strong><span class="zy-tag zy-tag-success">完整</span></div>
+  <div class="zy-row"><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-default">中文</span><span class="zy-tag zy-tag-default">按句</span></div>
+  <div class="ai-progress-line"><i style="width:100%"></i></div><p>120/120 句 · 2025-12-30 16:22</p>
+</div></div></div>
+      <div class="ai-article-audio-card"><div class="ai-article-head"><div><div class="zy-row"><span class="ai-seq">04-11</span><span class="zy-tag zy-tag-default">#04 节日民俗</span><span class="zy-tag zy-tag-info">120 句</span></div><h3>元宵节为什么要赏灯？</h3><p>yuan xiao jie wei shen me yao shang deng</p></div><div class="ai-article-actions"><button class="zy-btn zy-btn-ghost" >生成中文默认音色版本</button><button class="zy-btn zy-btn-primary" data-open-detail>查看句子</button></div></div><div class="ai-article-version-grid">
+<div class="ai-article-version-card">
+  <div class="zy-row"><strong>擎苍 2.0</strong><span class="zy-tag zy-tag-warn">待补齐</span></div>
+  <div class="zy-row"><span class="zy-tag zy-tag-brand">大模型合成</span><span class="zy-tag zy-tag-default">中文</span><span class="zy-tag zy-tag-default">按句</span></div>
+  <div class="ai-progress-line"><i style="width:97%"></i></div><p>116/120 句 · 2026-01-01 20:11</p>
+</div></div></div>
+    </div>
+  </div>
+  <div class="zy-glass zy-card ">
+    <div class="ai-article-detail-head"><button class="zy-btn zy-btn-ghost" data-back-list>← 返回文章列表</button><div><div class="zy-row"><span class="ai-seq">12-01</span><span class="zy-tag zy-tag-default">#12 神话传说</span><span class="zy-tag zy-tag-info">120 句</span></div><h2>女娲补天</h2><p>nü wa bu tian</p></div><div class="ai-toolbar-controls"><select class="zy-input zy-select" ><option>灿灿 2.0 · 按句 + 整篇</option><option>擎苍 2.0 · 按句</option><option>通用女声 · 按句</option></select><button class="zy-btn zy-btn-ghost" data-static-action="缺失句子已加入队列">补齐此版本缺失句子</button><button class="zy-btn zy-btn-primary" data-static-action="此音色版本正在重新生成">重新生成此音色版本</button></div></div>
+  </div>
+  <div class="ai-version-strip" id="versionStrip" hidden><button class="active"><strong>灿灿 2.0</strong><span>118/120 句 · 含整篇</span></button><button><strong>擎苍 2.0</strong><span>120/120 句 · 按句</span></button><button><strong>通用女声</strong><span>120/120 句 · 按句</span></button></div>
+  <div class="zy-glass zy-card ">
+    <div class="ai-section-title"><h2>句子音频明细</h2><p>当前显示所选文章音色版本的句子文件；同一句可以保留其他音色生成的文件。</p></div>
+    <div class="ai-version-table">
+      <div class="ai-sentence-version"><div class="ai-sentence-copy"><span class="ai-seq">#0001</span><span class="zy-tag zy-tag-success">ready</span><strong>女娲补天，是中国古代神话中关于天地修复和人类安宁的故事。</strong><p>Nü wa bu tian, shi Zhongguo gudai shenhua zhong guanyu tiandi xiufu he renlei anning de gushi.</p></div><div class="ai-version-stack"><div class="ai-version selected"><button class="ai-play small">▶</button><div><strong>灿灿 2.0</strong><p>2026-01-02 09:18 · 5.8s</p><code>china/12-01/0001/cancan-v2.mp3</code></div><span class="zy-tag zy-tag-success">ready</span></div><div class="ai-other-files"><span>本句其他音色文件</span><code>擎苍 2.0 · 6.1s</code></div></div></div>
+      <div class="ai-sentence-version"><div class="ai-sentence-copy"><span class="ai-seq">#0002</span><span class="zy-tag zy-tag-warn">missing</span><strong>传说中天空破裂，洪水和猛兽让人们失去安全的生活。</strong><p>Chuanshuo zhong tiankong polie, hongshui he mengshou rang renmen shiqu anquan de shenghuo.</p></div><div class="ai-version-stack"><div class="ai-empty-version"><span>此音色版本暂无本句音频</span><button class="zy-btn zy-btn-ghost" data-static-action="缺失句子已加入队列">生成缺失句子</button></div><div class="ai-other-files"><span>本句其他音色文件</span><code>擎苍 2.0 · 4.9s</code></div></div></div>
+      <div class="ai-sentence-version"><div class="ai-sentence-copy"><span class="ai-seq">#0003</span><span class="zy-tag zy-tag-warn">missing</span><strong>女娲炼出五色石，把破损的天空重新补好。</strong><p>Nü wa lian chu wuse shi, ba posun de tiankong chongxin bu hao.</p></div><div class="ai-version-stack"><div class="ai-empty-version"><span>此音色版本暂无本句音频</span><button class="zy-btn zy-btn-ghost" data-static-action="缺失句子已加入队列">生成缺失句子</button></div><div class="ai-other-files"><span>本句其他音色文件</span><em>暂无</em></div></div></div>
+      <div class="ai-sentence-version"><div class="ai-sentence-copy"><span class="ai-seq">#0004</span><span class="zy-tag zy-tag-danger">failed</span><strong>这个故事表达了古人面对灾难时，对秩序和希望的想象。</strong><p>Zhe ge gushi biaoda le guren miandui zainan shi, dui zhixu he xiwang de xiangxiang.</p></div><div class="ai-version-stack"><div class="ai-version"><button class="ai-play small">▶</button><div><strong>擎苍 2.0</strong><p>2026-01-01 14:34 · -</p><code>generate_failed</code></div><span class="zy-tag zy-tag-danger">failed</span></div><div class="ai-other-files"><span>本句其他音色文件</span><code>擎苍 2.0 · -</code></div></div></div>
+    </div>
+  </div>
+</div>
+      
+<div class="ai-grid-main static-panel" data-static-panel="translation" hidden>
+  <div class="zy-glass zy-card ">
+    <div class="ai-section-title"><h2>中文到多语言测试</h2><p>先生成英文基准稿，再从英文生成其他语言版本。</p></div>
+    <div class="zy-field"><label class="zy-label">中文源文案</label><textarea class="zy-input zy-textarea" rows="7" id="translationInput">女娲补天，是中国古代神话中关于天地修复和人类安宁的故事。</textarea></div>
+    <div class="ai-form-grid"><div class="zy-field"><label class="zy-label">Provider</label><select class="zy-input zy-select" ><option>阿里云 TranslateGeneral</option><option>Mock</option></select></div><div class="zy-field"><label class="zy-label">目标语言</label><input class="zy-input" value="en, vi, th, id" readonly /></div></div>
+    <button class="zy-btn zy-btn-primary" data-translation-test>生成翻译预览</button>
+    <div class="ai-test-result" id="translationResult"><strong>阿里云返回</strong><p>Nuwa Mends the Sky is an ancient Chinese myth about repairing heaven and restoring human peace.</p></div>
+  </div>
+  <div class="zy-glass zy-card ">
+    <div class="ai-section-title"><h2>翻译链路预览</h2><p>保存时记录 provider、request id、pivot hash。</p></div>
+    <div class="ai-translation-list">
+      <div class="ai-translation-row"><div class="ai-locale">EN</div><div><div class="zy-row"><span class="zy-tag zy-tag-brand">zh → en</span><span class="zy-helper">英文基准稿</span></div><p>Nuwa Mends the Sky is an ancient Chinese myth about repairing heaven and restoring human peace.</p></div></div>
+      <div class="ai-translation-row"><div class="ai-locale">VI</div><div><div class="zy-row"><span class="zy-tag zy-tag-success">en → vi</span><span class="zy-helper">由英文生成</span></div><p>Nữ Oa vá trời là một thần thoại cổ Trung Quốc về việc khôi phục bầu trời và sự yên ổn của con người.</p></div></div>
+      <div class="ai-translation-row"><div class="ai-locale">TH</div><div><div class="zy-row"><span class="zy-tag zy-tag-success">en → th</span><span class="zy-helper">由英文生成</span></div><p>หนี่วาซ่อมฟ้าเป็นตำนานจีนโบราณเกี่ยวกับการฟื้นฟูท้องฟ้าและความสงบของผู้คน</p></div></div>
+      <div class="ai-translation-row"><div class="ai-locale">ID</div><div><div class="zy-row"><span class="zy-tag zy-tag-success">en → id</span><span class="zy-helper">由英文生成</span></div><p>Nuwa Menambal Langit adalah mitos Tiongkok kuno tentang memulihkan langit dan ketenteraman manusia.</p></div></div>
+    </div>
+  </div>
+</div>
+    </div>
+  </main>
+  <div class="static-toast" id="staticToast">操作完成</div>
+  <script>
+    const toast = document.getElementById('staticToast');
+    function showToast(text) {
+      toast.textContent = text;
+      toast.classList.add('show');
+      clearTimeout(showToast.t);
+      showToast.t = setTimeout(() => toast.classList.remove('show'), 1600);
+    }
+    document.querySelectorAll('[data-static-tab]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-static-tab]').forEach((item) => item.classList.remove('active'));
+        document.querySelectorAll('[data-static-panel]').forEach((panel) => panel.hidden = true);
+        btn.classList.add('active');
+        document.querySelector('[data-static-panel="' + btn.dataset.staticTab + '"]').hidden = false;
+      });
+    });
+    const filterState = { engine: 'all', language: 'all' };
+    document.querySelectorAll('[data-filter-group]').forEach((group) => {
+      group.addEventListener('click', (event) => {
+        const btn = event.target.closest('button');
+        if (!btn) return;
+        group.querySelectorAll('button').forEach((item) => item.classList.remove('active'));
+        btn.classList.add('active');
+        filterState[group.dataset.filterGroup] = btn.dataset.filter;
+        document.querySelectorAll('.ai-voice-row').forEach((row) => {
+          const engineOk = filterState.engine === 'all' || row.dataset.engine === filterState.engine;
+          const langs = (row.dataset.languages || '').split(' ');
+          const langOk = filterState.language === 'all' || langs.includes(filterState.language) || langs.includes('multi');
+          row.style.display = engineOk && langOk ? 'grid' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('[data-static-action]').forEach((btn) => btn.addEventListener('click', () => showToast(btn.dataset.staticAction)));
+    const listCard = document.querySelector('.ai-article-list')?.closest('.zy-card');
+    const detailHead = document.querySelector('[data-back-list]')?.closest('.zy-card');
+    const versionStrip = document.getElementById('versionStrip');
+    const sentenceCard = document.querySelector('.ai-version-table')?.closest('.zy-card');
+    const detailCards = [detailHead, versionStrip, sentenceCard];
+    detailCards.forEach((item) => { if (item) item.hidden = true; });
+    document.querySelectorAll('[data-open-detail]').forEach((btn) => btn.addEventListener('click', () => {
+      if (listCard) listCard.hidden = true;
+      detailCards.forEach((item) => { if (item) item.hidden = false; });
+      document.querySelector('[data-back-list]').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }));
+    document.querySelector('[data-back-list]')?.addEventListener('click', () => {
+      if (listCard) listCard.hidden = false;
+      detailCards.forEach((item) => { if (item) item.hidden = true; });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    document.querySelector('[data-translation-test]')?.addEventListener('click', () => {
+      const source = document.getElementById('translationInput').value.trim();
+      document.querySelector('#translationResult p').textContent = source ? 'Nuwa Mends the Sky is an ancient Chinese myth about repairing heaven and restoring human peace.' : '请输入中文源文案。';
+      showToast('翻译测试完成');
+    });
+  </script>
+</body>
+</html>
