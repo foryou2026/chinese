@@ -133,7 +133,7 @@ erDiagram
 ## 5. 增量融合报告
 
 ### 5.1 本轮新增摘要
-新建 9 张表：i18n_languages, i18n_table_config, i18n_field_config, i18n_ui_entries, i18n_ui_translations, i18n_content_translations, i18n_translation_tasks, i18n_audio_config, i18n_audio_files。定义 3 个枚举类型。
+新建 9 张表：i18n_languages, i18n_table_config, i18n_field_config, i18n_ui_entries, i18n_ui_translations, i18n_content_translations, i18n_translation_tasks, i18n_audio_config, i18n_audio_files。定义 7 个枚举类型。
 
 ### 5.2 融合点 / 冲突点 / 已有变更
 - 与 auth 模块无数据耦合
