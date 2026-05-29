@@ -7,7 +7,6 @@
   <meta name="system-id" content="admin">
   <meta name="module-id" content="i18n">
   <meta name="feature-id" content="translation-hub">
-  <meta name="related-r-ids" content="R-i18n-050,R-i18n-052,R-i18n-053">
   <title>配音管理 · admin 原型</title>
   <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
   <style>
@@ -21,37 +20,72 @@
     .sidebar-item:hover { background:var(--glass-bg); color:var(--text-primary); }
     .sidebar-item.active { background:var(--color-brand-50); color:var(--color-brand-default); font-weight:var(--weight-medium); }
     .admin-content { flex:1; padding:var(--space-6); overflow-y:auto; }
-    .page-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-4); }
-    .page-header h1 { font-size:var(--text-xl); }
+
+    /* 全局开关 */
     .global-switch { display:flex; align-items:center; gap:var(--space-3); margin-bottom:var(--space-5); }
     .toggle-switch { position:relative; width:40px; height:22px; background:var(--color-neutral-300); border-radius:var(--radius-pill); cursor:pointer; transition:background var(--motion-fast); border:none; }
     .toggle-switch.on { background:var(--color-brand-default); }
     .toggle-switch::after { content:''; position:absolute; top:2px; left:2px; width:18px; height:18px; background:white; border-radius:50%; transition:transform var(--motion-fast); box-shadow:0 1px 3px rgba(0,0,0,0.2); }
     .toggle-switch.on::after { transform:translateX(18px); }
+
+    /* Tab 栏 */
     .tab-bar { display:flex; border-bottom:2px solid var(--border-color); margin-bottom:var(--space-4); }
     .tab-item { padding:var(--space-3) var(--space-4); font-size:var(--text-sm); color:var(--text-muted); cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-2px; transition:color var(--motion-fast); }
     .tab-item:hover { color:var(--text-primary); }
     .tab-item.active { color:var(--color-brand-default); border-bottom-color:var(--color-brand-default); font-weight:var(--weight-medium); }
     .tab-panel { display:none; }
     .tab-panel.active { display:block; }
-    .audio-table { width:100%; border-collapse:collapse; }
-    .audio-table th { text-align:left; font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); padding:var(--space-2) var(--space-3); border-bottom:2px solid var(--border-color); }
-    .audio-table td { padding:var(--space-3); font-size:var(--text-sm); border-bottom:1px solid var(--glass-border); vertical-align:middle; }
-    .audio-table tr:hover { background:var(--glass-bg); }
-    .table-name { font-family:var(--font-mono); font-size:var(--text-sm); }
+
+    /* 数据表格 */
+    .data-table { width:100%; border-collapse:collapse; }
+    .data-table th { text-align:left; font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); padding:var(--space-2) var(--space-3); border-bottom:2px solid var(--border-color); }
+    .data-table td { padding:var(--space-3); font-size:var(--text-sm); border-bottom:1px solid var(--glass-border); vertical-align:middle; }
+    .data-table tr:hover { background:var(--glass-bg); }
+    .table-name { font-weight:var(--weight-medium); font-family:var(--font-mono); font-size:var(--text-sm); }
     .field-name { font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); }
+    .config-badge { font-size:10px; padding:2px 8px; border-radius:var(--radius-pill); font-weight:var(--weight-medium); }
+    .config-badge.yes { background:var(--color-success-50); color:var(--color-success-700); }
+    .config-badge.no { background:var(--color-neutral-100); color:var(--text-muted); }
     .locale-tag { font-family:var(--font-mono); font-size:10px; padding:1px 6px; border-radius:var(--radius-sm); background:var(--glass-bg); color:var(--text-secondary); }
-    .audio-count { font-size:var(--text-xs); }
+
+    /* 状态点 */
     .status-dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:var(--space-1); vertical-align:middle; }
-    .status-dot.generating { background:var(--color-brand-default); animation:pulse 2s infinite; }
     .status-dot.completed { background:var(--color-success-700); }
+    .status-dot.generating { background:var(--color-brand-default); animation:pulse 2s infinite; }
     .status-dot.failed { background:var(--color-danger-500); }
     @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+
+    /* 播放按钮 */
     .play-btn { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; border:1px solid var(--border-color); background:var(--surface-page); cursor:pointer; font-size:12px; transition:background var(--motion-fast); }
     .play-btn:hover { background:var(--color-brand-50); }
+
     .duration { font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); }
+
+    /* 筛选栏 */
+    .filter-bar { display:flex; gap:var(--space-3); margin-bottom:var(--space-4); flex-wrap:wrap; align-items:center; }
+    .filter-select { padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); min-width:120px; }
+    .filter-input { padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); min-width:200px; }
+
+    /* 分页 */
     .page-footer { display:flex; align-items:center; justify-content:space-between; margin-top:var(--space-4); padding:var(--space-3) 0; }
     .page-footer-stats { font-size:var(--text-xs); color:var(--text-muted); }
+
+    /* 字段详情区（内联模拟） */
+    .field-detail { margin-top:var(--space-4); border:1px solid var(--border-color); border-radius:var(--radius-lg); padding:var(--space-4); background:var(--glass-bg); }
+    .field-detail-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-3); }
+    .field-detail-title { font-size:var(--text-sm); font-weight:var(--weight-semibold); }
+
+    /* 音色管理 */
+    .voice-config-form { display:flex; gap:var(--space-3); align-items:flex-end; flex-wrap:wrap; margin-bottom:var(--space-4); }
+    .voice-config-form .proto-field { display:flex; flex-direction:column; gap:var(--space-1); }
+    .voice-config-form .proto-label { font-size:var(--text-xs); font-weight:var(--weight-medium); color:var(--text-muted); }
+    .voice-config-form input, .voice-config-form select { padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); min-width:140px; }
+
+    .test-area { margin-top:var(--space-4); padding:var(--space-4); border:1px dashed var(--border-color); border-radius:var(--radius-lg); background:var(--glass-bg); }
+    .test-area textarea { width:100%; min-height:60px; padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); resize:vertical; box-sizing:border-box; font-family:inherit; }
+    .audio-preview { margin-top:var(--space-3); padding:var(--space-3); border-radius:var(--radius-md); background:var(--surface-page); border:1px solid var(--glass-border); display:flex; align-items:center; gap:var(--space-3); }
+    .audio-preview-placeholder { font-size:var(--text-xs); color:var(--text-muted); }
+
     @media (max-width: 768px) { .admin-sidebar { display:none; } }
   </style>
 </head>
@@ -67,185 +101,241 @@
 
   <div class="admin-layout">
     <aside class="admin-sidebar">
-      <div class="sidebar-section">国际化管理</div>
+      <div class="sidebar-section">翻译</div>
       <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
       <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
-      <a href="P-admin-i18n-003.html" class="sidebar-item">UI 文案翻译</a>
-      <a href="P-admin-i18n-004.html" class="sidebar-item">数据库内容翻译</a>
+      <a href="P-admin-i18n-003.html" class="sidebar-item">文案翻译</a>
+      <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
       <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
+      <a href="P-admin-i18n-009.html" class="sidebar-item">翻译接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
       <a href="P-admin-i18n-008.html" class="sidebar-item active">配音管理</a>
-      <a href="P-admin-i18n-009.html" class="sidebar-item">接口配置</a>
+      <a href="P-admin-i18n-010.html" class="sidebar-item">配音任务</a>
+      <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
     </aside>
 
     <main class="admin-content">
-      <div class="page-header">
-        <h1>配音管理</h1>
-      </div>
 
+      <!-- 全局开关 -->
       <div class="admin-card" style="padding:var(--space-4);margin-bottom:var(--space-5)">
         <div class="global-switch">
-          <button class="toggle-switch on" onclick="this.classList.toggle('on');proto.toast({type:'info',message:'配音模块状态已更新'})"></button>
+          <button class="toggle-switch on" onclick="this.classList.toggle('on');proto.toast({type:'info',message:this.classList.contains('on')?'配音模块已启用':'配音模块已关闭'})"></button>
           <div>
             <div style="font-size:var(--text-sm);font-weight:var(--weight-medium)">配音模块全局开关</div>
-            <div style="font-size:var(--text-xs);color:var(--text-muted);margin-top:2px">配音功能独立于翻译，需先完成翻译后才能生成配音</div>
+            <div style="font-size:var(--text-xs);color:var(--text-muted);margin-top:2px">配音功能独立于翻译，可单独启用或关闭</div>
           </div>
         </div>
       </div>
 
+      <!-- Tab 栏 -->
       <div class="tab-bar">
-        <div class="tab-item active" onclick="switchTab('config')">配音配置</div>
-        <div class="tab-item" onclick="switchTab('files')">配音文件</div>
+        <div class="tab-item active" onclick="switchTab('config',this)">配音配置</div>
+        <div class="tab-item" onclick="switchTab('files',this)">配音文件</div>
+        <div class="tab-item" onclick="switchTab('voice',this)">音色管理</div>
       </div>
 
-      <!-- 配音配置 Tab -->
+      <!-- ==================== Tab 1: 配音配置 ==================== -->
       <div class="tab-panel active" id="tab-config">
         <div class="admin-card" style="overflow-x:auto">
-          <table class="audio-table">
+          <table class="data-table">
             <thead>
               <tr>
                 <th>表名</th>
-                <th>字段名</th>
-                <th style="width:80px">语言</th>
-                <th style="width:120px">已配音数</th>
-                <th style="width:120px">操作</th>
+                <th style="width:120px">可配音字段数</th>
+                <th style="width:100px">状态</th>
+                <th style="width:200px">操作</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="table-name">courses</td>
-                <td class="field-name">description</td>
-                <td><span class="locale-tag">zh</span></td>
-                <td class="audio-count">18 / 24</td>
-                <td><button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'info',message:'配音生成任务已创建（6 条）'})">生成配音</button></td>
-              </tr>
-              <tr>
-                <td class="table-name">courses</td>
-                <td class="field-name">description</td>
-                <td><span class="locale-tag">en</span></td>
-                <td class="audio-count">12 / 24</td>
-                <td><button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'info',message:'配音生成任务已创建（12 条）'})">生成配音</button></td>
+                <td>2 个字段</td>
+                <td><span class="config-badge yes">已配置</span></td>
+                <td>
+                  <div style="display:flex;gap:var(--space-2);align-items:center">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="event.stopPropagation();proto.modal({size:'sm',title:'配置 courses 表配音',body:'<div class=proto-field><label class=proto-label>启用配音</label><div style=margin-top:var(--space-2)><label style=font-size:var(--text-sm)><input type=checkbox checked> 启用配音</label></div></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>默认源语言</label><select class=proto-input style=margin-top:var(--space-1)><option>中文 zh</option><option>英语 en</option></select></div>',confirmLabel:'保存',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'courses 配音配置已保存'})}})">配置</button>
+                    <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="showFieldDetail('courses',['description','title'])">进入字段</button>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td class="table-name">lessons</td>
-                <td class="field-name">title</td>
-                <td><span class="locale-tag">zh</span></td>
-                <td class="audio-count">45 / 60</td>
-                <td><button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'info',message:'配音生成任务已创建（15 条）'})">生成配音</button></td>
-              </tr>
-              <tr>
-                <td class="table-name">lessons</td>
-                <td class="field-name">title</td>
-                <td><span class="locale-tag">en</span></td>
-                <td class="audio-count">30 / 60</td>
-                <td><button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'info',message:'配音生成任务已创建（30 条）'})">生成配音</button></td>
+                <td>1 个字段</td>
+                <td><span class="config-badge yes">已配置</span></td>
+                <td>
+                  <div style="display:flex;gap:var(--space-2);align-items:center">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="event.stopPropagation();proto.modal({size:'sm',title:'配置 lessons 表配音',body:'<div class=proto-field><label class=proto-label>启用配音</label><div style=margin-top:var(--space-2)><label style=font-size:var(--text-sm)><input type=checkbox checked> 启用配音</label></div></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>默认源语言</label><select class=proto-input style=margin-top:var(--space-1)><option>中文 zh</option><option>英语 en</option></select></div>',confirmLabel:'保存',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'lessons 配音配置已保存'})}})">配置</button>
+                    <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="showFieldDetail('lessons',['title'])">进入字段</button>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td class="table-name">vocabulary</td>
-                <td class="field-name">meaning</td>
-                <td><span class="locale-tag">zh</span></td>
-                <td class="audio-count">200 / 320</td>
-                <td><button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'info',message:'配音生成任务已创建（120 条）'})">生成配音</button></td>
+                <td>—</td>
+                <td><span class="config-badge no">未配置</span></td>
+                <td>
+                  <div style="display:flex;gap:var(--space-2);align-items:center">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="event.stopPropagation();proto.modal({size:'sm',title:'配置 vocabulary 表配音',body:'<div class=proto-field><label class=proto-label>启用配音</label><div style=margin-top:var(--space-2)><label style=font-size:var(--text-sm)><input type=checkbox> 启用配音</label></div></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>默认源语言</label><select class=proto-input style=margin-top:var(--space-1)><option>中文 zh</option><option>英语 en</option></select></div>',confirmLabel:'保存',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'vocabulary 配音配置已保存'})}})">配置</button>
+                    <button class="proto-btn proto-btn-secondary proto-btn-sm" disabled style="opacity:0.4;cursor:not-allowed">进入字段</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-name">exercises</td>
+                <td>—</td>
+                <td><span class="config-badge no">未配置</span></td>
+                <td>
+                  <div style="display:flex;gap:var(--space-2);align-items:center">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="event.stopPropagation();proto.modal({size:'sm',title:'配置 exercises 表配音',body:'<div class=proto-field><label class=proto-label>启用配音</label><div style=margin-top:var(--space-2)><label style=font-size:var(--text-sm)><input type=checkbox> 启用配音</label></div></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>默认源语言</label><select class=proto-input style=margin-top:var(--space-1)><option>中文 zh</option><option>英语 en</option></select></div>',confirmLabel:'保存',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'exercises 配音配置已保存'})}})">配置</button>
+                    <button class="proto-btn proto-btn-secondary proto-btn-sm" disabled style="opacity:0.4;cursor:not-allowed">进入字段</button>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
+
+        <!-- 字段详情区域（内联模拟，默认隐藏） -->
+        <div class="field-detail" id="field-detail-area" style="display:none">
+          <div class="field-detail-header">
+            <div class="field-detail-title" id="field-detail-title">courses 表 - 可配音字段</div>
+            <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="document.getElementById('field-detail-area').style.display='none'">收起</button>
+          </div>
+          <table class="data-table" id="field-detail-table">
+            <thead>
+              <tr>
+                <th>字段名</th>
+                <th style="width:100px">启用配音</th>
+                <th style="width:100px">已配音记录</th>
+                <th style="width:150px">操作</th>
+              </tr>
+            </thead>
+            <tbody id="field-detail-tbody"></tbody>
+          </table>
+        </div>
       </div>
 
-      <!-- 配音文件 Tab -->
+      <!-- ==================== Tab 2: 配音文件 ==================== -->
       <div class="tab-panel" id="tab-files">
-        <div style="display:flex;gap:var(--space-3);margin-bottom:var(--space-4);flex-wrap:wrap">
-          <select style="padding:var(--space-2) var(--space-3);border:1px solid var(--border-color);border-radius:var(--radius-md);font-size:var(--text-sm);background:var(--surface-page);color:var(--text-primary);min-width:120px">
+        <div class="filter-bar">
+          <select class="filter-select">
             <option value="">全部表</option>
             <option>courses</option>
             <option>lessons</option>
             <option>vocabulary</option>
+            <option>exercises</option>
           </select>
-          <select style="padding:var(--space-2) var(--space-3);border:1px solid var(--border-color);border-radius:var(--radius-md);font-size:var(--text-sm);background:var(--surface-page);color:var(--text-primary);min-width:100px">
+          <select class="filter-select">
+            <option value="">全部字段</option>
+            <option>description</option>
+            <option>title</option>
+            <option>meaning</option>
+          </select>
+          <select class="filter-select">
             <option value="">全部语言</option>
             <option>zh</option>
             <option>en</option>
+            <option>ja</option>
           </select>
-          <select style="padding:var(--space-2) var(--space-3);border:1px solid var(--border-color);border-radius:var(--radius-md);font-size:var(--text-sm);background:var(--surface-page);color:var(--text-primary);min-width:100px">
+          <select class="filter-select">
             <option value="">全部状态</option>
             <option>已完成</option>
             <option>生成中</option>
             <option>失败</option>
           </select>
+          <input type="text" class="filter-input" placeholder="搜索中文原文…">
         </div>
 
         <div class="admin-card" style="overflow-x:auto">
-          <table class="audio-table">
+          <table class="data-table">
             <thead>
               <tr>
+                <th>表名</th>
+                <th>字段名</th>
                 <th>原文</th>
                 <th style="width:60px">语言</th>
                 <th style="width:60px">时长</th>
                 <th style="width:80px">状态</th>
-                <th style="width:180px">操作</th>
+                <th style="width:200px">操作</th>
               </tr>
             </thead>
             <tbody>
+              <!-- 行 1：已完成 -->
               <tr>
-                <td style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">这是一门面向初学者的中文入门课程</td>
+                <td class="table-name">courses</td>
+                <td class="field-name">description</td>
+                <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">这是一门面向初学者的中文入门课程</td>
                 <td><span class="locale-tag">zh</span></td>
                 <td class="duration">4.2s</td>
                 <td><span class="status-dot completed"></span>已完成</td>
                 <td>
                   <div style="display:flex;gap:var(--space-2);align-items:center">
-                    <button class="play-btn" onclick="proto.toast({type:'info',message:'播放音频…'})">▶</button>
-                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'重新生成中…'})">重新生成</button>
-                    <label class="proto-btn proto-btn-ghost proto-btn-sm" style="cursor:pointer"><input type="file" accept=".mp3,.wav" hidden onchange="proto.toast({type:'success',message:'音频已替换'})">上传替换</label>
+                    <button class="play-btn" onclick="proto.toast({type:'info',message:'正在播放音频…'})">&#9654;</button>
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'已提交重新生成任务'})">重新生成</button>
+                    <label class="proto-btn proto-btn-ghost proto-btn-sm" style="cursor:pointer"><input type="file" accept=".mp3,.wav" hidden onchange="proto.toast({type:'success',message:'音频文件已替换'})">上传替换</label>
                   </div>
                 </td>
               </tr>
+              <!-- 行 2：已完成 -->
               <tr>
-                <td style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">A beginner Chinese course covering pinyin</td>
+                <td class="table-name">courses</td>
+                <td class="field-name">title</td>
+                <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">中文入门</td>
                 <td><span class="locale-tag">en</span></td>
-                <td class="duration">3.8s</td>
+                <td class="duration">1.8s</td>
                 <td><span class="status-dot completed"></span>已完成</td>
                 <td>
                   <div style="display:flex;gap:var(--space-2);align-items:center">
-                    <button class="play-btn" onclick="proto.toast({type:'info',message:'播放音频…'})">▶</button>
-                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'重新生成中…'})">重新生成</button>
-                    <label class="proto-btn proto-btn-ghost proto-btn-sm" style="cursor:pointer"><input type="file" accept=".mp3,.wav" hidden onchange="proto.toast({type:'success',message:'音频已替换'})">上传替换</label>
+                    <button class="play-btn" onclick="proto.toast({type:'info',message:'正在播放音频…'})">&#9654;</button>
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'已提交重新生成任务'})">重新生成</button>
+                    <label class="proto-btn proto-btn-ghost proto-btn-sm" style="cursor:pointer"><input type="file" accept=".mp3,.wav" hidden onchange="proto.toast({type:'success',message:'音频文件已替换'})">上传替换</label>
                   </div>
                 </td>
               </tr>
+              <!-- 行 3：生成中 -->
               <tr>
-                <td style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">中级中文课程，重点提升阅读理解和写作能力</td>
+                <td class="table-name">lessons</td>
+                <td class="field-name">title</td>
+                <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">第一课：声调与拼音基础</td>
                 <td><span class="locale-tag">zh</span></td>
                 <td class="duration">—</td>
                 <td><span class="status-dot generating"></span>生成中</td>
                 <td>
                   <div style="display:flex;gap:var(--space-2);align-items:center">
-                    <button class="play-btn" disabled style="opacity:0.4;cursor:not-allowed">▶</button>
-                    <span style="font-size:var(--text-xs);color:var(--text-muted)">预计 10 秒</span>
+                    <button class="play-btn" disabled style="opacity:0.4;cursor:not-allowed">&#9654;</button>
+                    <span style="font-size:var(--text-xs);color:var(--text-muted)">预计 8 秒</span>
                   </div>
                 </td>
               </tr>
+              <!-- 行 4：失败 -->
               <tr>
-                <td style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">商务中文课程，专为职场人士设计</td>
-                <td><span class="locale-tag">zh</span></td>
+                <td class="table-name">courses</td>
+                <td class="field-name">description</td>
+                <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">商务中文高级课程，专为职场人士设计</td>
+                <td><span class="locale-tag">ja</span></td>
                 <td class="duration">—</td>
                 <td><span class="status-dot failed"></span><span style="color:var(--color-danger-500)">失败</span></td>
                 <td>
                   <div style="display:flex;gap:var(--space-2);align-items:center">
-                    <button class="play-btn" disabled style="opacity:0.4;cursor:not-allowed">▶</button>
-                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'重新生成中…'})">重新生成</button>
-                    <label class="proto-btn proto-btn-ghost proto-btn-sm" style="cursor:pointer"><input type="file" accept=".mp3,.wav" hidden onchange="proto.toast({type:'success',message:'音频已替换'})">上传替换</label>
+                    <button class="play-btn" disabled style="opacity:0.4;cursor:not-allowed">&#9654;</button>
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'已提交重新生成任务'})">重新生成</button>
+                    <label class="proto-btn proto-btn-ghost proto-btn-sm" style="cursor:pointer"><input type="file" accept=".mp3,.wav" hidden onchange="proto.toast({type:'success',message:'音频文件已替换'})">上传替换</label>
                   </div>
                 </td>
               </tr>
+              <!-- 行 5：已完成 -->
               <tr>
-                <td style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">HSK 1 级备考课程</td>
-                <td><span class="locale-tag">zh</span></td>
-                <td class="duration">2.1s</td>
+                <td class="table-name">lessons</td>
+                <td class="field-name">title</td>
+                <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">第二课：基本问候语</td>
+                <td><span class="locale-tag">en</span></td>
+                <td class="duration">2.5s</td>
                 <td><span class="status-dot completed"></span>已完成</td>
                 <td>
                   <div style="display:flex;gap:var(--space-2);align-items:center">
-                    <button class="play-btn" onclick="proto.toast({type:'info',message:'播放音频…'})">▶</button>
-                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'重新生成中…'})">重新生成</button>
-                    <label class="proto-btn proto-btn-ghost proto-btn-sm" style="cursor:pointer"><input type="file" accept=".mp3,.wav" hidden onchange="proto.toast({type:'success',message:'音频已替换'})">上传替换</label>
+                    <button class="play-btn" onclick="proto.toast({type:'info',message:'正在播放音频…'})">&#9654;</button>
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'已提交重新生成任务'})">重新生成</button>
+                    <label class="proto-btn proto-btn-ghost proto-btn-sm" style="cursor:pointer"><input type="file" accept=".mp3,.wav" hidden onchange="proto.toast({type:'success',message:'音频文件已替换'})">上传替换</label>
                   </div>
                 </td>
               </tr>
@@ -254,21 +344,206 @@
         </div>
 
         <div class="page-footer">
-          <span class="page-footer-stats">共 5 条 · 已完成 3 · 生成中 1 · 失败 1</span>
+          <span class="page-footer-stats">共 5 条 &middot; 已完成 3 &middot; 生成中 1 &middot; 失败 1</span>
           <span style="font-size:var(--text-xs);color:var(--text-muted)">第 1 页 / 共 1 页</span>
         </div>
       </div>
+
+      <!-- ==================== Tab 3: 音色管理 ==================== -->
+      <div class="tab-panel" id="tab-voice">
+
+        <!-- 添加语言音色配置 -->
+        <div class="admin-card" style="padding:var(--space-4);margin-bottom:var(--space-4)">
+          <div style="font-size:var(--text-sm);font-weight:var(--weight-semibold);margin-bottom:var(--space-3)">添加语言默认音色</div>
+          <div class="voice-config-form">
+            <div class="proto-field">
+              <label class="proto-label">配置语言</label>
+              <select id="voice-lang-select">
+                <option value="">选择语言…</option>
+                <option value="zh">中文 (zh)</option>
+                <option value="en">英语 (en)</option>
+                <option value="ja">日语 (ja)</option>
+                <option value="ko">韩语 (ko)</option>
+                <option value="es">西班牙语 (es)</option>
+              </select>
+            </div>
+            <div class="proto-field">
+              <label class="proto-label">音色名称</label>
+              <input type="text" placeholder="例如 Voice-A" id="voice-name-input">
+            </div>
+            <div class="proto-field">
+              <label class="proto-label">音色 ID / 编码</label>
+              <input type="text" placeholder="例如 voice-a-001" id="voice-id-input">
+            </div>
+            <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="addVoiceConfig()">添加</button>
+          </div>
+        </div>
+
+        <!-- 已配置的语言音色列表 -->
+        <div class="admin-card" style="overflow-x:auto;margin-bottom:var(--space-4)">
+          <div style="padding:var(--space-3) var(--space-3) 0;font-size:var(--text-sm);font-weight:var(--weight-semibold)">已配置的语言默认音色</div>
+          <table class="data-table" style="margin-top:var(--space-2)">
+            <thead>
+              <tr>
+                <th>语言</th>
+                <th>音色名称</th>
+                <th>音色 ID</th>
+                <th style="width:160px">操作</th>
+              </tr>
+            </thead>
+            <tbody id="voice-list-tbody">
+              <tr>
+                <td><span class="locale-tag">zh</span> 中文</td>
+                <td>Voice-A</td>
+                <td class="field-name">voice-a-001</td>
+                <td>
+                  <div style="display:flex;gap:var(--space-2)">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.modal({size:'sm',title:'编辑中文音色',body:'<div class=proto-field><label class=proto-label>音色名称</label><input class=proto-input value=Voice-A style=margin-top:var(--space-1)></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>音色 ID</label><input class=proto-input value=voice-a-001 style=margin-top:var(--space-1)></div>',confirmLabel:'保存',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'中文音色配置已更新'})}})">编辑</button>
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="proto.modal({size:'sm',title:'确认删除',body:'确定删除中文 (zh) 的默认音色配置吗？',confirmLabel:'删除',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'已删除中文音色配置'})}})">删除</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="locale-tag">en</span> 英语</td>
+                <td>Voice-B</td>
+                <td class="field-name">voice-b-002</td>
+                <td>
+                  <div style="display:flex;gap:var(--space-2)">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.modal({size:'sm',title:'编辑英语音色',body:'<div class=proto-field><label class=proto-label>音色名称</label><input class=proto-input value=Voice-B style=margin-top:var(--space-1)></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>音色 ID</label><input class=proto-input value=voice-b-002 style=margin-top:var(--space-1)></div>',confirmLabel:'保存',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'英语音色配置已更新'})}})">编辑</button>
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="proto.modal({size:'sm',title:'确认删除',body:'确定删除英语 (en) 的默认音色配置吗？',confirmLabel:'删除',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'已删除英语音色配置'})}})">删除</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="locale-tag">ja</span> 日语</td>
+                <td>Voice-C</td>
+                <td class="field-name">voice-c-003</td>
+                <td>
+                  <div style="display:flex;gap:var(--space-2)">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.modal({size:'sm',title:'编辑日语音色',body:'<div class=proto-field><label class=proto-label>音色名称</label><input class=proto-input value=Voice-C style=margin-top:var(--space-1)></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>音色 ID</label><input class=proto-input value=voice-c-003 style=margin-top:var(--space-1)></div>',confirmLabel:'保存',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'日语音色配置已更新'})}})">编辑</button>
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="proto.modal({size:'sm',title:'确认删除',body:'确定删除日语 (ja) 的默认音色配置吗？',confirmLabel:'删除',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'已删除日语音色配置'})}})">删除</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="locale-tag">ko</span> 韩语</td>
+                <td>Voice-D</td>
+                <td class="field-name">voice-d-004</td>
+                <td>
+                  <div style="display:flex;gap:var(--space-2)">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.modal({size:'sm',title:'编辑韩语音色',body:'<div class=proto-field><label class=proto-label>音色名称</label><input class=proto-input value=Voice-D style=margin-top:var(--space-1)></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>音色 ID</label><input class=proto-input value=voice-d-004 style=margin-top:var(--space-1)></div>',confirmLabel:'保存',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'韩语音色配置已更新'})}})">编辑</button>
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="proto.modal({size:'sm',title:'确认删除',body:'确定删除韩语 (ko) 的默认音色配置吗？',confirmLabel:'删除',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'已删除韩语音色配置'})}})">删除</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 音色试听测试区域 -->
+        <div class="admin-card" style="padding:var(--space-4)">
+          <div style="font-size:var(--text-sm);font-weight:var(--weight-semibold);margin-bottom:var(--space-3)">音色试听测试</div>
+          <div class="test-area">
+            <div style="display:flex;gap:var(--space-3);align-items:flex-end;margin-bottom:var(--space-3);flex-wrap:wrap">
+              <div class="proto-field" style="display:flex;flex-direction:column;gap:var(--space-1)">
+                <label class="proto-label" style="font-size:var(--text-xs);font-weight:var(--weight-medium);color:var(--text-muted)">选择语言</label>
+                <select class="filter-select" id="test-voice-lang" style="min-width:140px">
+                  <option value="zh">中文 (zh) - Voice-A</option>
+                  <option value="en">英语 (en) - Voice-B</option>
+                  <option value="ja">日语 (ja) - Voice-C</option>
+                  <option value="ko">韩语 (ko) - Voice-D</option>
+                </select>
+              </div>
+            </div>
+            <textarea id="test-text-input" placeholder="输入试听文本，例如：你好，欢迎来到中文学习平台。">你好，欢迎来到中文学习平台。</textarea>
+            <div style="display:flex;gap:var(--space-2);margin-top:var(--space-3)">
+              <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="generateTestAudio()">生成试听</button>
+              <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="document.getElementById('test-text-input').value='';proto.toast({type:'info',message:'已清空文本'})">清空</button>
+            </div>
+            <div class="audio-preview" id="audio-preview-area">
+              <span class="audio-preview-placeholder">点击"生成试听"后，音频预览将显示在此处</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
   </div>
 
   <script src="../../B02-experience-design/admin/prototype-style/app.js"></script>
   <script>
     if(typeof proto !== 'undefined') proto.bootstrap();
-    function switchTab(name) {
+
+    /* Tab 切换 */
+    function switchTab(name, el) {
       document.querySelectorAll('.tab-item').forEach(function(t){ t.classList.remove('active'); });
       document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
-      event.target.classList.add('active');
+      el.classList.add('active');
       document.getElementById('tab-' + name).classList.add('active');
+    }
+
+    /* 字段详情展示（内联模拟） */
+    function showFieldDetail(tableName, fields) {
+      var area = document.getElementById('field-detail-area');
+      var title = document.getElementById('field-detail-title');
+      var tbody = document.getElementById('field-detail-tbody');
+      title.textContent = tableName + ' 表 - 可配音字段';
+      tbody.innerHTML = '';
+      var sampleData = {
+        'courses': {
+          'description': { enabled: true, count: '18 / 24' },
+          'title': { enabled: true, count: '22 / 24' }
+        },
+        'lessons': {
+          'title': { enabled: true, count: '45 / 60' }
+        }
+      };
+      var tableData = sampleData[tableName] || {};
+      fields.forEach(function(f) {
+        var d = tableData[f] || { enabled: false, count: '0 / 0' };
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td class="field-name">' + f + '</td>' +
+          '<td><button class="toggle-switch' + (d.enabled ? ' on' : '') + '" style="width:36px;height:20px" onclick="this.classList.toggle(\'on\');proto.toast({type:\'info\',message:\'' + f + ' 配音状态已更新\'})"></button></td>' +
+          '<td style="font-size:var(--text-xs)">' + d.count + '</td>' +
+          '<td><button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:\'info\',message:\'已为 ' + tableName + '.' + f + ' 创建配音生成任务\'})">批量生成</button></td>';
+        tbody.appendChild(tr);
+      });
+      area.style.display = 'block';
+      area.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    /* 添加音色配置 */
+    function addVoiceConfig() {
+      var lang = document.getElementById('voice-lang-select').value;
+      var name = document.getElementById('voice-name-input').value.trim();
+      var vid = document.getElementById('voice-id-input').value.trim();
+      if (!lang) { proto.toast({ type: 'warning', message: '请选择语言' }); return; }
+      if (!name) { proto.toast({ type: 'warning', message: '请输入音色名称' }); return; }
+      if (!vid) { proto.toast({ type: 'warning', message: '请输入音色 ID' }); return; }
+      proto.toast({ type: 'success', message: lang + ' 语言默认音色已添加：' + name });
+      document.getElementById('voice-name-input').value = '';
+      document.getElementById('voice-id-input').value = '';
+    }
+
+    /* 生成试听音频（模拟） */
+    function generateTestAudio() {
+      var text = document.getElementById('test-text-input').value.trim();
+      if (!text) { proto.toast({ type: 'warning', message: '请输入试听文本' }); return; }
+      var preview = document.getElementById('audio-preview-area');
+      preview.innerHTML = '<span class="status-dot generating"></span><span style="font-size:var(--text-xs);color:var(--text-muted)">正在生成音频…</span>';
+      proto.toast({ type: 'info', message: '音频生成请求已发送' });
+      setTimeout(function() {
+        var lang = document.getElementById('test-voice-lang');
+        var langLabel = lang.options[lang.selectedIndex].text;
+        preview.innerHTML =
+          '<button class="play-btn" onclick="proto.toast({type:\'info\',message:\'正在播放试听音频…\'})">&#9654;</button>' +
+          '<div>' +
+            '<div style="font-size:var(--text-sm);font-weight:var(--weight-medium)">' + langLabel + '</div>' +
+            '<div style="font-size:var(--text-xs);color:var(--text-muted)">时长 2.4s &middot; 生成于刚刚</div>' +
+          '</div>' +
+          '<button class="proto-btn proto-btn-ghost proto-btn-sm" style="margin-left:auto" onclick="proto.toast({type:\'info\',message:\'已下载试听音频\'})">下载</button>';
+        proto.toast({ type: 'success', message: '试听音频已生成' });
+      }, 1500);
     }
   </script>
 </body>

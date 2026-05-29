@@ -102,7 +102,7 @@ Content-Type: application/json
 
 ### 业务逻辑
 1. 校验 is_system_default=true 的语言不可停用
-2. 启用语言时：为所有 UI 文案和已配置的翻译字段创建 pending 状态的翻译记录
+2. 启用语言时：为所有文案和已配置的翻译字段创建 pending 状态的翻译记录
 3. 停用语言时：保留翻译记录，仅标记为不活跃
 
 ### Response 200

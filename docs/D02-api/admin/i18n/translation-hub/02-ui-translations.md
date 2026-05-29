@@ -1,6 +1,8 @@
-# UI 文案翻译接口
+# 文案翻译接口
 
-## API-i18n-ui-sync 同步 UI 文案
+> **说明**：本文件覆盖 UI 文案翻译相关接口（R-i18n-010~016）。1.1.6 起"UI 文案翻译"统一简称为"文案翻译"。
+
+## API-i18n-ui-sync 同步文案
 
 ```
 POST /api/v1/admin/i18n/ui/sync
@@ -31,7 +33,7 @@ Authorization: Bearer {jwt}
 
 ---
 
-## API-i18n-ui-list UI 文案列表
+## API-i18n-ui-list 文案列表
 
 ```
 GET /api/v1/admin/i18n/ui/entries
@@ -125,7 +127,7 @@ Content-Type: application/json
 
 ---
 
-## API-i18n-ui-translate 触发 UI AI 翻译
+## API-i18n-ui-translate 触发文案 AI 翻译
 
 ```
 POST /api/v1/admin/i18n/ui/translate

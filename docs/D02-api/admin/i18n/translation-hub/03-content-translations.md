@@ -1,4 +1,6 @@
-# 数据库内容翻译接口
+# 内容翻译接口
+
+> **说明**：本文件覆盖数据库内容翻译相关接口（R-i18n-020~028）。1.1.6 起"数据库内容翻译"统一简称为"内容翻译"。配音配置已完全解耦，详见 [05-audio.md](./05-audio.md)。
 
 ## API-i18n-tables-list 数据表列表
 
@@ -51,8 +53,7 @@ Content-Type: application/json
 {
   "table_description": "课程表",
   "translation_enabled": true,
-  "default_source_locale": "zh",
-  "default_needs_audio": false
+  "default_source_locale": "zh"
 }
 ```
 
@@ -90,8 +91,7 @@ Authorization: Bearer {jwt}
   "data": {
     "table_config": {
       "translation_enabled": true,
-      "default_source_locale": "zh",
-      "default_needs_audio": false
+      "default_source_locale": "zh"
     },
     "fields": [
       {
@@ -99,7 +99,6 @@ Authorization: Bearer {jwt}
         "field_type": "text",
         "needs_translation": true,
         "source_locale": "zh",
-        "needs_audio": false,
         "is_manually_set": true,
         "is_translatable_type": true,
         "record_count": 50,
@@ -110,7 +109,6 @@ Authorization: Bearer {jwt}
         "field_type": "varchar",
         "needs_translation": false,
         "source_locale": "zh",
-        "needs_audio": false,
         "is_manually_set": true,
         "is_translatable_type": true,
         "record_count": 50,
@@ -121,7 +119,6 @@ Authorization: Bearer {jwt}
         "field_type": "timestamptz",
         "needs_translation": false,
         "source_locale": null,
-        "needs_audio": false,
         "is_manually_set": false,
         "is_translatable_type": false,
         "record_count": 50,
@@ -147,8 +144,7 @@ Content-Type: application/json
 ```json
 {
   "needs_translation": true,
-  "source_locale": "en",
-  "needs_audio": true
+  "source_locale": "en"
 }
 ```
 
@@ -205,8 +201,7 @@ Authorization: Bearer {jwt}
 {
   "data": {
     "field_config": {
-      "source_locale": "zh",
-      "needs_audio": false
+      "source_locale": "zh"
     },
     "items": [
       {
