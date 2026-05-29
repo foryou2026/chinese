@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>翻译中心 · 页面导航 · admin</title>
+  <link rel="stylesheet" href="../../../../B02-experience-design/admin/prototype-style/app.css">
+  <style>
+    body { min-height:100dvh; display:flex; flex-direction:column; }
+    .page-wrapper { position:relative; z-index:1; flex:1; padding:var(--space-6); max-width:960px; margin:0 auto; width:100%; }
+    .back-link { display:inline-flex; align-items:center; gap:var(--space-1); font-size:var(--text-sm); color:var(--text-muted); text-decoration:none; margin-bottom:var(--space-6); }
+    .back-link:hover { color:var(--color-brand-default); }
+    .page-title { margin-bottom:var(--space-8); }
+    .page-title h1 { font-size:var(--text-2xl); margin-bottom:var(--space-2); }
+    .page-title p { font-size:var(--text-base); color:var(--text-secondary); }
+    .page-list { display:grid; grid-template-columns:1fr; gap:var(--space-3); }
+    .page-item { display:flex; align-items:center; gap:var(--space-4); padding:var(--space-4) var(--space-5); text-decoration:none; color:inherit; transition:var(--transition-all); }
+    .page-item:hover { color:inherit; }
+    .page-id { font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); min-width:140px; }
+    .page-name { font-size:var(--text-sm); font-weight:var(--weight-medium); flex:1; }
+    .page-desc { font-size:var(--text-xs); color:var(--text-secondary); }
+  </style>
+</head>
+<body>
+  <div class="admin-page-bg" aria-hidden="true"></div>
+  <div class="page-wrapper">
+    <a href="../index.html" class="back-link">← i18n 模块</a>
+    <div class="page-title">
+      <h1>翻译中心 translation-hub</h1>
+      <p>9 个原型页面</p>
+    </div>
+    <div class="page-list">
+      <a href="../../P-admin-i18n-001.html" class="admin-card page-item"><span class="page-id">P-admin-i18n-001</span><span class="page-name">翻译总览仪表盘</span><span class="page-desc">各语言翻译覆盖率、快捷操作</span></a>
+      <a href="../../P-admin-i18n-002.html" class="admin-card page-item"><span class="page-id">P-admin-i18n-002</span><span class="page-name">语言管理</span><span class="page-desc">启用/停用/排序全球主流语言</span></a>
+      <a href="../../P-admin-i18n-003.html" class="admin-card page-item"><span class="page-id">P-admin-i18n-003</span><span class="page-name">UI 文案翻译</span><span class="page-desc">代码文案翻译管理与发布</span></a>
+      <a href="../../P-admin-i18n-004.html" class="admin-card page-item"><span class="page-id">P-admin-i18n-004</span><span class="page-name">数据表列表</span><span class="page-desc">数据库内容翻译 · 表级视图</span></a>
+      <a href="../../P-admin-i18n-005.html" class="admin-card page-item"><span class="page-id">P-admin-i18n-005</span><span class="page-name">表字段列表</span><span class="page-desc">数据库内容翻译 · 字段级视图</span></a>
+      <a href="../../P-admin-i18n-006.html" class="admin-card page-item"><span class="page-id">P-admin-i18n-006</span><span class="page-name">字段翻译详情</span><span class="page-desc">逐条翻译对照与编辑</span></a>
+      <a href="../../P-admin-i18n-007.html" class="admin-card page-item"><span class="page-id">P-admin-i18n-007</span><span class="page-name">翻译任务</span><span class="page-desc">AI 翻译批次进度与历史</span></a>
+      <a href="../../P-admin-i18n-008.html" class="admin-card page-item"><span class="page-id">P-admin-i18n-008</span><span class="page-name">配音管理</span><span class="page-desc">TTS 配音触发与文件管理</span></a>
+      <a href="../../P-admin-i18n-009.html" class="admin-card page-item"><span class="page-id">P-admin-i18n-009</span><span class="page-name">接口配置</span><span class="page-desc">翻译 API 与 TTS API 配置</span></a>
+    </div>
+  </div>
+  <script src="../../../../B02-experience-design/admin/prototype-style/app.js"></script>
+  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-id" content="P-admin-i18n-009">
+  <meta name="system-id" content="admin">
+  <meta name="module-id" content="i18n">
+  <meta name="feature-id" content="translation-hub">
+  <meta name="related-r-ids" content="R-i18n-051">
+  <title>接口配置 · admin 原型</title>
+  <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
+  <style>
+    body { display:flex; flex-direction:column; min-height:100dvh; }
+    .admin-topbar { display:flex; align-items:center; height:var(--topbar-height); padding:0 var(--space-4); position:sticky; top:0; z-index:var(--z-sticky); background:var(--glass-bg); backdrop-filter:var(--glass-blur); border-bottom:1px solid var(--glass-border); }
+    .admin-topbar-logo { font-weight:var(--weight-semibold); font-size:var(--text-md); color:var(--text-primary); margin-right:auto; }
+    .admin-layout { display:flex; flex:1; position:relative; z-index:1; }
+    .admin-sidebar { width:var(--sidebar-width); background:var(--glass-bg-card); backdrop-filter:var(--glass-blur); border-right:1px solid var(--glass-border); padding:var(--space-4) 0; flex-shrink:0; }
+    .sidebar-section { padding:var(--space-2) var(--space-4); font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; }
+    .sidebar-item { display:flex; align-items:center; gap:var(--space-2); height:36px; padding:0 var(--space-4); font-size:var(--text-sm); color:var(--text-secondary); cursor:pointer; transition:background var(--motion-fast); text-decoration:none; }
+    .sidebar-item:hover { background:var(--glass-bg); color:var(--text-primary); }
+    .sidebar-item.active { background:var(--color-brand-50); color:var(--color-brand-default); font-weight:var(--weight-medium); }
+    .admin-content { flex:1; padding:var(--space-6); overflow-y:auto; }
+    .page-header { margin-bottom:var(--space-6); }
+    .page-header h1 { font-size:var(--text-xl); }
+    .section-title { font-size:var(--text-md); font-weight:var(--weight-semibold); margin-bottom:var(--space-4); padding-bottom:var(--space-2); border-bottom:1px solid var(--border-color); }
+    .config-form { max-width:600px; }
+    .form-group { margin-bottom:var(--space-4); }
+    .form-label { display:block; font-size:var(--text-sm); font-weight:var(--weight-medium); color:var(--text-primary); margin-bottom:var(--space-1); }
+    .form-hint { font-size:var(--text-xs); color:var(--text-muted); margin-top:2px; }
+    .form-input { width:100%; padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); }
+    .form-input:focus { outline:none; border-color:var(--color-brand-default); box-shadow:0 0 0 2px var(--color-brand-50); }
+    .form-select { width:100%; padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); }
+    .password-wrapper { position:relative; }
+    .password-wrapper input { padding-right:40px; }
+    .password-toggle { position:absolute; right:var(--space-2); top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; font-size:var(--text-sm); color:var(--text-muted); padding:var(--space-1); }
+    .password-toggle:hover { color:var(--text-primary); }
+    .test-area { margin-top:var(--space-4); padding:var(--space-4); border:1px dashed var(--border-color); border-radius:var(--radius-md); }
+    .test-area-title { font-size:var(--text-sm); font-weight:var(--weight-medium); margin-bottom:var(--space-3); }
+    .test-result { margin-top:var(--space-3); padding:var(--space-3); background:var(--glass-bg); border-radius:var(--radius-md); font-size:var(--text-sm); display:none; }
+    .test-result.show { display:block; }
+    .test-result.success { border-left:3px solid var(--color-success-700); }
+    .test-result.error { border-left:3px solid var(--color-danger-500); }
+    .form-actions { display:flex; gap:var(--space-2); margin-top:var(--space-5); padding-top:var(--space-4); border-top:1px solid var(--glass-border); }
+    .tts-section { margin-top:var(--space-8); }
+    .tts-table { width:100%; border-collapse:collapse; }
+    .tts-table th { text-align:left; font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); padding:var(--space-2) var(--space-3); border-bottom:2px solid var(--border-color); }
+    .tts-table td { padding:var(--space-3); font-size:var(--text-sm); border-bottom:1px solid var(--glass-border); vertical-align:middle; }
+    .tts-table tr:hover { background:var(--glass-bg); }
+    .tts-table input, .tts-table select { padding:var(--space-1) var(--space-2); border:1px solid var(--border-color); border-radius:var(--radius-sm); font-size:var(--text-xs); background:var(--surface-page); color:var(--text-primary); }
+    .tts-table input[type="text"] { width:100%; min-width:120px; }
+    .tts-table input[type="password"] { width:100%; min-width:100px; }
+    .tts-table select { min-width:100px; }
+    @media (max-width: 768px) { .admin-sidebar { display:none; } }
+  </style>
+</head>
+<body>
+  <div class="admin-page-bg" aria-hidden="true"></div>
+  <header class="admin-topbar">
+    <span class="admin-topbar-logo">管理后台</span>
+    <div style="display:flex;align-items:center;gap:var(--space-2)">
+      <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.switchTheme(document.documentElement.getAttribute('data-mode')==='dark'?'light':'dark')">明/暗</button>
+      <a href="i18n/translation-hub/index.html" class="proto-btn proto-btn-ghost proto-btn-sm" style="text-decoration:none;font-size:var(--text-xs)">原型导航</a>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <div class="sidebar-section">国际化管理</div>
+      <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
+      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
+      <a href="P-admin-i18n-003.html" class="sidebar-item">UI 文案翻译</a>
+      <a href="P-admin-i18n-004.html" class="sidebar-item">数据库内容翻译</a>
+      <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
+      <a href="P-admin-i18n-008.html" class="sidebar-item">配音管理</a>
+      <a href="P-admin-i18n-009.html" class="sidebar-item active">接口配置</a>
+    </aside>
+
+    <main class="admin-content">
+      <div class="page-header">
+        <h1>接口配置</h1>
+      </div>
+
+      <!-- AI 翻译接口 -->
+      <h2 class="section-title">AI 翻译接口</h2>
+      <div class="admin-card" style="padding:var(--space-5)">
+        <div class="config-form">
+          <div class="form-group">
+            <label class="form-label">翻译 API 类型</label>
+            <select class="form-select" id="api-type" onchange="updateApiHint()">
+              <option value="openai">OpenAI (GPT-4o)</option>
+              <option value="claude" selected>Claude (Anthropic)</option>
+              <option value="deepl">DeepL</option>
+              <option value="custom">自定义</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">API 地址</label>
+            <input type="text" class="form-input" id="api-url" value="https://api.anthropic.com/v1/messages">
+            <div class="form-hint" id="api-hint">Anthropic Claude API 端点</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">API Key</label>
+            <div class="password-wrapper">
+              <input type="password" class="form-input" id="api-key" value="sk-ant-api03-xxxxxxxxxxxx">
+              <button class="password-toggle" onclick="togglePassword('api-key', this)">👁</button>
+            </div>
+            <div class="form-hint">密钥安全存储，加密后保存</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">默认翻译模型</label>
+            <input type="text" class="form-input" value="claude-sonnet-4-20250514" placeholder="模型 ID">
+            <div class="form-hint">用于 AI 翻译任务的模型标识符</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">翻译 Prompt 模板</label>
+            <textarea class="form-input" rows="3" style="resize:vertical;font-family:var(--font-mono);font-size:var(--text-xs)">将以下{source_lang}文本翻译为{target_lang}，保持原文风格和格式。仅输出翻译结果，不要添加解释。
+
+原文：{text}</textarea>
+            <div class="form-hint">支持变量：{source_lang}、{target_lang}、{text}</div>
+          </div>
+
+          <!-- 测试区域 -->
+          <div class="test-area">
+            <div class="test-area-title">接口测试</div>
+            <div style="display:flex;gap:var(--space-2);align-items:flex-end">
+              <div style="flex:1">
+                <label class="form-label" style="font-size:var(--text-xs)">测试文本</label>
+                <input type="text" class="form-input" id="test-text" value="这是一门中文入门课程" placeholder="输入中文测试文本">
+              </div>
+              <div style="width:100px">
+                <label class="form-label" style="font-size:var(--text-xs)">目标语言</label>
+                <select class="form-select" style="font-size:var(--text-xs)">
+                  <option>en</option>
+                  <option>vi</option>
+                </select>
+              </div>
+              <button class="proto-btn proto-btn-secondary proto-btn-sm" onclick="runTest()">测试</button>
+            </div>
+            <div class="test-result success show" id="test-result">
+              <div style="font-size:var(--text-xs);color:var(--color-success-700);margin-bottom:var(--space-1)">测试成功 · 耗时 1.2s</div>
+              <div style="font-size:var(--text-sm)">This is a beginner Chinese course.</div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'success',message:'翻译接口配置已保存'})">保存配置</button>
+            <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'已恢复默认配置'})">重置</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TTS 配音接口 -->
+      <div class="tts-section">
+        <h2 class="section-title">TTS 配音接口（按语言配置）</h2>
+        <div class="admin-card" style="overflow-x:auto">
+          <table class="tts-table">
+            <thead>
+              <tr>
+                <th style="width:120px">语言</th>
+                <th style="width:130px">TTS API 类型</th>
+                <th>API 地址</th>
+                <th style="width:140px">API Key</th>
+                <th style="width:120px">语音选择</th>
+                <th style="width:120px">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>中文</strong> <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-muted)">zh</span></td>
+                <td>
+                  <select onchange="proto.toast({type:'info',message:'TTS 类型已更新'})">
+                    <option>OpenAI TTS</option>
+                    <option>Google TTS</option>
+                    <option selected>Azure TTS</option>
+                    <option>ElevenLabs</option>
+                    <option>自定义</option>
+                  </select>
+                </td>
+                <td><input type="text" value="https://eastasia.tts.speech.microsoft.com/"></td>
+                <td><input type="password" value="xxxxxxxxxxxxxxxx"></td>
+                <td>
+                  <select>
+                    <option selected>zh-CN-XiaoxiaoNeural</option>
+                    <option>zh-CN-YunxiNeural</option>
+                    <option>zh-CN-YunjianNeural</option>
+                  </select>
+                </td>
+                <td>
+                  <div style="display:flex;gap:var(--space-1)">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'正在测试中文 TTS…'})">测试</button>
+                    <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'success',message:'已保存'})">保存</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>英语</strong> <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-muted)">en</span></td>
+                <td>
+                  <select>
+                    <option selected>OpenAI TTS</option>
+                    <option>Google TTS</option>
+                    <option>Azure TTS</option>
+                    <option>ElevenLabs</option>
+                    <option>自定义</option>
+                  </select>
+                </td>
+                <td><input type="text" value="https://api.openai.com/v1/audio/speech"></td>
+                <td><input type="password" value="sk-xxxxxxxxxxxxx"></td>
+                <td>
+                  <select>
+                    <option>alloy</option>
+                    <option selected>nova</option>
+                    <option>shimmer</option>
+                    <option>echo</option>
+                  </select>
+                </td>
+                <td>
+                  <div style="display:flex;gap:var(--space-1)">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'正在测试英语 TTS…'})">测试</button>
+                    <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'success',message:'已保存'})">保存</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>越南语</strong> <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-muted)">vi</span></td>
+                <td>
+                  <select>
+                    <option>OpenAI TTS</option>
+                    <option selected>Google TTS</option>
+                    <option>Azure TTS</option>
+                    <option>ElevenLabs</option>
+                    <option>自定义</option>
+                  </select>
+                </td>
+                <td><input type="text" value="https://texttospeech.googleapis.com/v1/text:synthesize"></td>
+                <td><input type="password" value="AIzaXXXXXXXXXXXX"></td>
+                <td>
+                  <select>
+                    <option selected>vi-VN-Standard-A</option>
+                    <option>vi-VN-Standard-B</option>
+                    <option>vi-VN-Wavenet-A</option>
+                  </select>
+                </td>
+                <td>
+                  <div style="display:flex;gap:var(--space-1)">
+                    <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.toast({type:'info',message:'正在测试越南语 TTS…'})">测试</button>
+                    <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'success',message:'已保存'})">保存</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../B02-experience-design/admin/prototype-style/app.js"></script>
+  <script>
+    if(typeof proto !== 'undefined') proto.bootstrap();
+
+    function togglePassword(id, btn) {
+      var input = document.getElementById(id);
+      if (input.type === 'password') {
+        input.type = 'text';
+        btn.textContent = '🔒';
+      } else {
+        input.type = 'password';
+        btn.textContent = '👁';
+      }
+    }
+
+    function updateApiHint() {
+      var type = document.getElementById('api-type').value;
+      var url = document.getElementById('api-url');
+      var hint = document.getElementById('api-hint');
+      var map = {
+        openai: { url:'https://api.openai.com/v1/chat/completions', hint:'OpenAI GPT API 端点' },
+        claude: { url:'https://api.anthropic.com/v1/messages', hint:'Anthropic Claude API 端点' },
+        deepl: { url:'https://api-free.deepl.com/v2/translate', hint:'DeepL 翻译 API 端点' },
+        custom: { url:'', hint:'输入自定义翻译 API 地址' }
+      };
+      if (map[type]) {
+        url.value = map[type].url;
+        hint.textContent = map[type].hint;
+      }
+    }
+
+    function runTest() {
+      var result = document.getElementById('test-result');
+      result.className = 'test-result';
+      result.innerHTML = '<div style="font-size:var(--text-xs);color:var(--text-muted)">测试中…</div>';
+      result.classList.add('show');
+      setTimeout(function(){
+        result.className = 'test-result success show';
+        result.innerHTML = '<div style="font-size:var(--text-xs);color:var(--color-success-700);margin-bottom:var(--space-1)">测试成功 · 耗时 1.2s</div><div style="font-size:var(--text-sm)">This is a beginner Chinese course.</div>';
+        proto.toast({type:'success', message:'翻译测试成功'});
+      }, 1500);
+    }
+  </script>
+</body>
+</html>

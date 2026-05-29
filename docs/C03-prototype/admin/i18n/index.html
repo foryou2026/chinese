@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>i18n 模块 · 功能导航 · admin</title>
+  <link rel="stylesheet" href="../../../B02-experience-design/admin/prototype-style/app.css">
+  <style>
+    body { min-height:100dvh; display:flex; flex-direction:column; }
+    .page-wrapper { position:relative; z-index:1; flex:1; padding:var(--space-6); max-width:960px; margin:0 auto; width:100%; }
+    .back-link { display:inline-flex; align-items:center; gap:var(--space-1); font-size:var(--text-sm); color:var(--text-muted); text-decoration:none; margin-bottom:var(--space-6); }
+    .back-link:hover { color:var(--color-brand-default); }
+    .page-title { margin-bottom:var(--space-8); }
+    .page-title h1 { font-size:var(--text-2xl); margin-bottom:var(--space-2); }
+    .page-title p { font-size:var(--text-base); color:var(--text-secondary); }
+    .feature-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:var(--space-5); }
+    .feature-card { display:block; padding:var(--space-6); text-decoration:none; color:inherit; transition:var(--transition-all); }
+    .feature-card:hover { color:inherit; }
+    .feature-card h3 { font-size:var(--text-lg); margin-bottom:var(--space-2); }
+    .feature-card p { font-size:var(--text-sm); color:var(--text-secondary); line-height:var(--leading-normal); margin-bottom:var(--space-4); }
+    .feature-card .enter-link { font-size:var(--text-sm); color:var(--color-brand-default); font-weight:var(--weight-medium); }
+  </style>
+</head>
+<body>
+  <div class="admin-page-bg" aria-hidden="true"></div>
+  <div class="page-wrapper">
+    <a href="../index.html" class="back-link">← admin 系统</a>
+    <div class="page-title">
+      <h1>i18n 国际化管理</h1>
+      <p>选择功能查看原型页面</p>
+    </div>
+    <div class="feature-grid">
+      <a href="translation-hub/index.html" class="admin-card feature-card">
+        <h3>translation-hub 翻译中心</h3>
+        <p>翻译总览仪表盘、语言管理、UI 文案翻译、数据库内容翻译、翻译任务管理、配音管理、接口配置</p>
+        <span class="enter-link">查看原型页面 →</span>
+      </a>
+    </div>
+  </div>
+  <script src="../../../B02-experience-design/admin/prototype-style/app.js"></script>
+  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+</body>
+</html>
