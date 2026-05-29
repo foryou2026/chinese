@@ -25,7 +25,7 @@
 | 04 | api-conventions | URL/响应/错误码/分页 |
 | 05 | coding-standards | 代码风格、分层、错误处理 |
 | 06 | deploy-env | Docker、端口、环境变量 |
-| 07 | i18n-responsive/ | i18n（核心/UI文案/业务内容/Agent规则）、格式化、字体、断点 |
+| 07 | i18n-responsive.md | i18n 总纲（两大支柱/翻译链/响应式/格式化/字体），详细规范见 C01-D02 i18n/translation-hub |
 | 08 | systems | 系统清单与隔离策略 |
 | 09 | auth-infra | 鉴权技术栈 |
 | 99 | open-questions | 未决问题 |
@@ -38,7 +38,7 @@
 4. Docker Compose 唯一部署方式
 5. Supabase Auth 统一鉴权，后端本地 JWT 验签
 6. RLS 强制启用，新表第一条语句即开启
-7. i18n 沿用 i18next + TS 资源文件方案，英文源文案
+7. i18n 沿用 i18next + TS 资源文件方案，中文源文案，AI 翻译链 zh→en→其他
 8. 三端响应式，全宽自适应，禁止两侧留白
 9. 单仓 npm workspace，严格 TypeScript
 10. API REST 风格，按系统拆路由前缀

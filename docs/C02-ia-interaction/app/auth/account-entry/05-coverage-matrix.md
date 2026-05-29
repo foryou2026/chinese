@@ -18,8 +18,10 @@
 | R-auth-014 | Google 用户密码管理 | M-auth-001 | P-app-auth-005 | FL-auth-006 | 无 |
 | R-auth-015 | 注册邮箱验证码 | M-auth-001 | P-app-auth-002 | FL-auth-002 | 无 |
 | R-auth-016 | 多设备登录限制 | M-auth-001 | P-app-auth-001 | 无 | SM-auth-001 |
+| R-auth-017 | 多语言切换 | M-auth-001 | P-app-auth-001~004, 006 | 无 | 无 |
+| R-auth-018 | 所有 UI 文案国际化 | M-auth-001 | P-app-auth-001~006 | 无 | 无 |
 
 ## 未覆盖检查
-- [x] 所有 R-ID 落点
+- [x] 所有 R-ID 落点（含新增 R-auth-017, R-auth-018）
 - [x] 所有 M-ID 承接 ≥1 个 R-ID
 - [x] 所有 page-id 有 ≥1 条场景验证
