@@ -83,22 +83,24 @@
 | 2 | 词汇 | 马(mǎ) 名 · horse | 词卡学习 |
 | 3 | 词汇 | 安全(ānquán) 形 · safe; safety | 词卡学习 |
 | 4 | 词汇 | 方便(fāngbiàn) 形 · convenient | 词卡学习 |
-| 5 | 词汇 | 班(bān) — (classifier for scheduled services)（量词义项） | 词卡学习 |
-| 6 | 词汇 | 外地(wàidì) 名 · other places; non-local | 词卡学习 |
-| 7 | 词汇 | 马上(mǎshàng) 副 · immediately; at once | 词卡学习 |
-| 8 | 词汇 | 先(xiān) 副 · first; beforehand | 词卡学习 |
-| 9 | 词汇 | 刚(gāng) 副 · just (now) | 词卡学习 |
-| 10 | 词汇 | 刚才(gāngcái) 名 · just now; a moment ago | 词卡学习 |
-| 11 | 词汇 | 刚刚(gānggāng) 副 · just now | 词卡学习 |
-| 12 | 词汇 | 后来(hòulái) 名 · later; afterwards | 词卡学习 |
-| 13 | 词汇 | 突然(tūrán) 形 · sudden; suddenly | 词卡学习 |
-| 14 | 词汇 | 向(xiàng) 动/介 · toward; to face | 词卡学习 |
-| 15 | 词汇 | 东(dōng) 名 · east | 词卡学习 |
-| 16 | 词汇 | 南(nán) 名 · south | 词卡学习 |
-| 17 | 词汇 | 西(xī) 名 · west | 词卡学习 |
-| 18 | 词汇 | 北(běi) 名 · north | 词卡学习 |
-| 19 | 词汇 | 东北(dōngběi) 名 · northeast | 词卡学习 |
-| 20 | 词汇 | 东南(dōngnán) 名 · southeast | 词卡学习 |
+| 5 | 词汇 | 带(dài) 动/名 · to bring; to carry; belt | 词卡学习 |
+| 6 | 词汇 | 到处(dàochù) 副 · everywhere | 词卡学习 |
+| 7 | 词汇 | 离开(líkāi) 动 · to leave; to depart | 词卡学习 |
+| 8 | 词汇 | 外地(wàidì) 名 · other places; non-local | 词卡学习 |
+| 9 | 词汇 | 马上(mǎshàng) 副 · immediately; at once | 词卡学习 |
+| 10 | 词汇 | 先(xiān) 副 · first; beforehand | 词卡学习 |
+| 11 | 词汇 | 刚(gāng) 副 · just (now) | 词卡学习 |
+| 12 | 词汇 | 刚才(gāngcái) 名 · just now; a moment ago | 词卡学习 |
+| 13 | 词汇 | 刚刚(gānggāng) 副 · just now | 词卡学习 |
+| 14 | 词汇 | 后来(hòulái) 名 · later; afterwards | 词卡学习 |
+| 15 | 词汇 | 突然(tūrán) 形 · sudden; suddenly | 词卡学习 |
+| 16 | 词汇 | 向(xiàng) 动/介 · toward; to face | 词卡学习 |
+| 17 | 词汇 | 东(dōng) 名 · east | 词卡学习 |
+| 18 | 词汇 | 南(nán) 名 · south | 词卡学习 |
+| 19 | 词汇 | 西(xī) 名 · west | 词卡学习 |
+| 20 | 词汇 | 北(běi) 名 · north | 词卡学习 |
+| 21 | 词汇 | 东北(dōngběi) 名 · northeast | 词卡学习 |
+| 22 | 词汇 | 东南(dōngnán) 名 · southeast | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点）
 

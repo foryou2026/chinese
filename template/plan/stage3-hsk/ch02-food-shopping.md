@@ -158,7 +158,8 @@
 | 17 | 词汇 | 把(bǎ) 量/介 · measure word (handles); ba-construction | 词卡学习 |
 | 18 | 词汇 | 刻(kè) 量 · quarter (hour) | 词卡学习 |
 | 19 | 词汇 | 米(mǐ) 量 · meter | 词卡学习 |
-| 20 | 词汇 | 不同(bù tóng) · different | 词卡学习 |
+| 20 | 词汇 | 分(fēn) 量/动/名 · to divide; part (HSK3扩展义) | 词卡学习 |
+| 21 | 词汇 | 点1(diǎn) 量/名 · a little; to order (food) (HSK3扩展义) | 词卡学习 |
 
 ### 主题词群
 

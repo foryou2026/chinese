@@ -31,7 +31,7 @@
 | 5 | 词汇 | 转正(zhuǎnzhèng) 动 · to become a regular employee | 词卡学习 |
 | 6 | 词汇 | 技能(jìnéng) 名 · skill | 词卡学习 |
 | 7 | 词汇 | 考核(kǎohé) 动/名 · to assess; assessment | 词卡学习 |
-| 8 | 词汇 | 合格(hégé) 形 · qualified; competent | 词卡学习 |
+| 8 | 词汇 | 过关(guòguān) 动 · to pass (inspection/test) | 词卡学习 |
 | 9 | 词汇 | 不合格(bù hégé) · unqualified; incompetent | 词卡学习 |
 | 10 | 词汇 | 上岗(shànggǎng) 动 · to take up a post | 词卡学习 |
 | 11 | 词汇 | 经验(jīngyàn) 名 · experience | 词卡学习 |
@@ -42,7 +42,7 @@
 | 16 | 词汇 | 示范(shìfàn) 动/名 · to demonstrate; demonstration | 词卡学习 |
 | 17 | 词汇 | 实操(shícāo) 名 · hands-on practice | 词卡学习 |
 | 18 | 词汇 | 理论(lǐlùn) 名 · theory | 词卡学习 |
-| 19 | 词汇 | 证书(zhèngshū) 名 · certificate | 词卡学习 |
+| 19 | 词汇 | 凭证(píngzhèng) 名 · credential; voucher | 词卡学习 |
 | 20 | 词汇 | 晋升(jìnshēng) 动 · to promote; promotion | 词卡学习 |
 | 21 | 词汇 | 淘汰(táotài) 动 · to eliminate; to phase out | 词卡学习 |
 | 22 | 词汇 | 储备(chǔbèi) 动/名 · to reserve; reserve | 词卡学习 |
@@ -93,7 +93,7 @@
 | 11 | 词汇 | 尊重(zūnzhòng) 动 · to respect | 词卡学习 |
 | 12 | 词汇 | 耐心(nàixīn) 形/名 · patient; patience | 词卡学习 |
 | 13 | 词汇 | 习惯(xíguàn) 名/动 · habit; to be used to | 词卡学习 |
-| 14 | 词汇 | 差异(chāyì) 名 · difference | 词卡学习 |
+| 14 | 词汇 | 偏差(piānchā) 名 · deviation; discrepancy | 词卡学习 |
 | 15 | 词汇 | 文化(wénhuà) 名 · culture | 词卡学习 |
 | 16 | 词汇 | 风俗(fēngsú) 名 · custom; tradition | 词卡学习 |
 | 17 | 词汇 | 信任(xìnrèn) 动/名 · to trust; trust | 词卡学习 |
@@ -147,7 +147,7 @@
 | 10 | 词汇 | 拖欠(tuōqiàn) 动 · to default on payment; to owe | 词卡学习 |
 | 11 | 词汇 | 罢工(bàgōng) 动/名 · to go on strike; strike | 词卡学习 |
 | 12 | 词汇 | 调解(tiáojiě) 动 · to mediate | 词卡学习 |
-| 13 | 词汇 | 合法(héfǎ) 形 · legal; lawful | 词卡学习 |
+| 13 | 词汇 | 合理(hélǐ) 形 · reasonable; rational | 词卡学习 |
 | 14 | 词汇 | 公平(gōngpíng) 形 · fair | 词卡学习 |
 | 15 | 词汇 | 歧视(qíshì) 动/名 · to discriminate; discrimination | 词卡学习 |
 | 16 | 词汇 | 待遇(dàiyù) 名 · treatment; pay and benefits | 词卡学习 |

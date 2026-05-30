@@ -149,7 +149,7 @@
 | 6 | 词汇 | 泳池(yǒngchí) 名 · swimming pool | 词卡学习 |
 | 7 | 词汇 | 健身房(jiànshēnfáng) 名 · gym; fitness center | 词卡学习 |
 | 8 | 词汇 | 花园(huāyuán) 名 · garden | 词卡学习 |
-| 9 | 词汇 | 超市(chāoshì) 名 · supermarket | 词卡学习 |
+| 9 | 词汇 | 杂货店(záhuòdiàn) 名 · general store; sundry shop | 词卡学习 |
 | 10 | 词汇 | 便利店(biànlìdiàn) 名 · convenience store | 词卡学习 |
 | 11 | 词汇 | 安静(ānjìng) 形 · quiet | 词卡学习 |
 | 12 | 词汇 | 热闹(rènao) 形 · lively; bustling | 词卡学习 |

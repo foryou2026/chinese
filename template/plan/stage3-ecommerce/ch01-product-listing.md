@@ -40,7 +40,7 @@
 | 14 | 词汇 | 尺寸(chǐcùn) 名 · size; dimension | 词卡学习 |
 | 15 | 词汇 | 重量(zhòngliàng) 名 · weight | 词卡学习 |
 | 16 | 词汇 | 材质(cáizhì) 名 · material; texture | 词卡学习 |
-| 17 | 词汇 | 颜色(yánsè) 名 · color | 词卡学习 |
+| 17 | 词汇 | 色号(sèhào) 名 · color code; shade number | 词卡学习 |
 | 18 | 词汇 | 图片(túpiàn) 名 · picture; image | 词卡学习 |
 | 19 | 词汇 | 主图(zhǔtú) 名 · main image | 词卡学习 |
 | 20 | 词汇 | 链接(liànjiē) 名/动 · link; to link | 词卡学习 |

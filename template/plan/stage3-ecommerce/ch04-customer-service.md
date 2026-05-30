@@ -38,7 +38,7 @@
 | 12 | 词汇 | 态度(tàidu) 名 · attitude | 词卡学习 |
 | 13 | 词汇 | 耐心(nàixīn) 形/名 · patient; patience | 词卡学习 |
 | 14 | 词汇 | 礼貌(lǐmào) 名/形 · polite; politeness | 词卡学习 |
-| 15 | 词汇 | 反馈(fǎnkuì) 动/名 · feedback; to give feedback | 词卡学习 |
+| 15 | 词汇 | 回应(huíyìng) 动/名 · response; to respond | 词卡学习 |
 | 16 | 词汇 | 响应(xiǎngyìng) 动/名 · to respond; response | 词卡学习 |
 | 17 | 词汇 | 工单(gōngdān) 名 · work order; ticket | 词卡学习 |
 | 18 | 词汇 | 分配(fēnpèi) 动 · to assign; to allocate | 词卡学习 |
@@ -83,8 +83,8 @@
 | 3 | 词汇 | 退款(tuìkuǎn) 动/名 · to refund; refund | 词卡学习 |
 | 4 | 词汇 | 退换(tuìhuàn) 动 · to return or exchange | 词卡学习 |
 | 5 | 词汇 | 申请(shēnqǐng) 动/名 · to apply; application | 词卡学习 |
-| 6 | 词汇 | 审核(shěnhé) 动 · to review; to audit | 词卡学习 |
-| 7 | 词汇 | 通过(tōngguò) 动/介 · to pass; to approve | 词卡学习 |
+| 6 | 词汇 | 受理(shòulǐ) 动 · to accept and process (a case) | 词卡学习 |
+| 7 | 词汇 | 核实(héshí) 动 · to verify; to confirm | 词卡学习 |
 | 8 | 词汇 | 拒绝(jùjué) 动 · to reject; to refuse | 词卡学习 |
 | 9 | 词汇 | 完整(wánzhěng) 形 · complete; intact | 词卡学习 |
 | 10 | 词汇 | 原装(yuánzhuāng) 形 · original packaging | 词卡学习 |
@@ -92,12 +92,12 @@
 | 12 | 词汇 | 运单(yùndān) 名 · shipping order; waybill | 词卡学习 |
 | 13 | 词汇 | 收到(shōudào) 动 · to receive | 词卡学习 |
 | 14 | 词汇 | 检查(jiǎnchá) 动 · to inspect; to check | 词卡学习 |
-| 15 | 词汇 | 质量(zhìliàng) 名 · quality | 词卡学习 |
+| 15 | 词汇 | 残次(cáncì) 形 · defective; substandard | 词卡学习 |
 | 16 | 词汇 | 瑕疵(xiácī) 名 · flaw; defect | 词卡学习 |
 | 17 | 词汇 | 色差(sèchā) 名 · color difference | 词卡学习 |
 | 18 | 词汇 | 尺码(chǐmǎ) 名 · size (clothing) | 词卡学习 |
 | 19 | 词汇 | 不符(bùfú) 形 · inconsistent; not matching | 词卡学习 |
-| 20 | 词汇 | 期限(qīxiàn) 名 · deadline; time limit | 词卡学习 |
+| 20 | 词汇 | 截止(jiézhǐ) 动 · to cut off; deadline | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点·电商例句）
 
@@ -144,7 +144,7 @@
 | 17 | 词汇 | 赔付(péifù) 动 · to compensate and pay | 词卡学习 |
 | 18 | 词汇 | 道歉(dàoqiàn) 动 · to apologize | 词卡学习 |
 | 19 | 词汇 | 安抚(ānfǔ) 动 · to appease; to pacify | 词卡学习 |
-| 20 | 词汇 | 改进(gǎijìn) 动 · to improve | 词卡学习 |
+| 20 | 词汇 | 完善(wánshàn) 动 · to perfect; to improve | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点·电商例句）
 
@@ -176,7 +176,7 @@
 | 2 | 词汇 | 好评(hǎopíng) 名 · positive review | 词卡学习 |
 | 3 | 词汇 | 中评(zhōngpíng) 名 · neutral review | 词卡学习 |
 | 4 | 词汇 | 星级(xīngjí) 名 · star rating | 词卡学习 |
-| 5 | 词汇 | 评分(píngfēn) 名/动 · rating; to rate | 词卡学习 |
+| 5 | 词汇 | 评级(píngjí) 名/动 · rating level; to grade | 词卡学习 |
 | 6 | 词汇 | 追评(zhuīpíng) 动 · to add a follow-up review | 词卡学习 |
 | 7 | 词汇 | 晒图(shàitú) 动 · to share photos (in review) | 词卡学习 |
 | 8 | 词汇 | 回评(huípíng) 动 · to reply to a review | 词卡学习 |
@@ -186,9 +186,9 @@
 | 12 | 词汇 | 承诺(chéngnuò) 动/名 · to promise; commitment | 词卡学习 |
 | 13 | 词汇 | 期望(qīwàng) 名/动 · expectation; to expect | 词卡学习 |
 | 14 | 词汇 | 体验(tǐyàn) 名/动 · experience; to experience | 词卡学习 |
-| 15 | 词汇 | 信誉(xìnyù) 名 · reputation; credibility | 词卡学习 |
-| 16 | 词汇 | 口碑(kǒubēi) 名 · word-of-mouth; reputation | 词卡学习 |
-| 17 | 词汇 | 复购(fùgòu) 动 · to repurchase | 词卡学习 |
+| 15 | 词汇 | 诚信(chéngxìn) 名 · integrity; good faith | 词卡学习 |
+| 16 | 词汇 | 美誉(měiyù) 名 · good reputation; acclaim | 词卡学习 |
+| 17 | 词汇 | 回购(huígòu) 动 · to buy back; to repurchase | 词卡学习 |
 | 18 | 词汇 | 忠实(zhōngshí) 形 · loyal; faithful | 词卡学习 |
 | 19 | 词汇 | 维护(wéihù) 动 · to maintain; to upkeep | 词卡学习 |
 | 20 | 词汇 | 关系(guānxì) 名 · relationship | 词卡学习 |

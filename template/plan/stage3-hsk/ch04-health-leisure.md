@@ -37,12 +37,14 @@
 | 12 | 词汇 | 必须(bìxū) 副 · must; have to | 词卡学习 |
 | 13 | 词汇 | 得(děi) 动 · must; to have to | 词卡学习 |
 | 14 | 词汇 | 不用(búyòng) 副 · need not; no need to | 词卡学习 |
-| 15 | 词汇 | 不必(búbì) — need not（话题词） | 词卡学习 |
-| 16 | 词汇 | 应该(yīnggāi) 动 · should; ought to | 词卡学习 |
-| 17 | 词汇 | 坚持(jiānchí) 动 · to persist; to insist | 词卡学习 |
-| 18 | 词汇 | 该(gāi) 动 · should; ought to | 词卡学习 |
-| 19 | 词汇 | 身边(shēnbiān) 名 · at one's side; nearby | 词卡学习 |
-| 20 | 词汇 | 心里(xīnlǐ) 名 · in one's heart/mind | 词卡学习 |
+| 15 | 词汇 | 急(jí) 形/动 · urgent; anxious; to worry | 词卡学习 |
+| 16 | 词汇 | 才1(cái) 副 · only then; just; only | 词卡学习 |
+| 17 | 词汇 | 越(yuè) 副 · more and more (越来越) | 词卡学习 |
+| 18 | 词汇 | 应该(yīnggāi) 动 · should; ought to | 词卡学习 |
+| 19 | 词汇 | 坚持(jiānchí) 动 · to persist; to insist | 词卡学习 |
+| 20 | 词汇 | 该1(gāi) 动 · should; ought to | 词卡学习 |
+| 21 | 词汇 | 身边(shēnbiān) 名 · at one's side; nearby | 词卡学习 |
+| 22 | 词汇 | 心里(xīnlǐ) 名 · in one's heart/mind | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点）
 

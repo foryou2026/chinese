@@ -180,7 +180,7 @@
 
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
-| 1 | 词汇 | 问题(wèntí) 名 · problem; issue | 词卡学习 |
+| 1 | 词汇 | 毛病(máobing) 名 · problem; defect; malfunction | 词卡学习 |
 | 2 | 词汇 | 原因(yuányīn) 名 · reason; cause | 词卡学习 |
 | 3 | 词汇 | 分析(fēnxī) 动/名 · to analyze; analysis | 词卡学习 |
 | 4 | 词汇 | 解决(jiějué) 动 · to solve; to resolve | 词卡学习 |

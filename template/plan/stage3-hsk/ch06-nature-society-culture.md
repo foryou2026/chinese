@@ -44,7 +44,6 @@
 | 19 | 词汇 | 动物园(dòngwùyuán) 名 · zoo | 词卡学习 |
 | 20 | 词汇 | 大熊猫(dàxióngmāo) 名 · giant panda | 词卡学习 |
 | 21 | 词汇 | 哭(kū) 动 · to cry | 词卡学习 |
-| 22 | 词汇 | 笑(xiào) — to laugh; to smile（已学词复现） | 词卡学习 |
 
 ### 主题词群
 
@@ -89,7 +88,7 @@
 | 8 | 词汇 | 西方(xīfāng) 名 · west; the West | 词卡学习 |
 | 9 | 词汇 | 关注(guānzhù) 动 · to pay attention to; to follow | 词卡学习 |
 | 10 | 词汇 | 直到(zhídào) 动 · until; up to | 词卡学习 |
-| 11 | 词汇 | 站(zhàn) 动 · to stand | 词卡学习 |
+| 11 | 词汇 | 站2(zhàn) 动 · to stand | 词卡学习 |
 | 12 | 词汇 | 起(qǐ) 动 · to get up; to start | 词卡学习 |
 | 13 | 词汇 | 加(jiā) 动 · to add; to increase | 词卡学习 |
 | 14 | 词汇 | 怎么办(zěnme bàn) · what to do | 词卡学习 |
@@ -143,11 +142,11 @@
 | 15 | 词汇 | 一边(yìbiān) 副 · simultaneously; at the same time | 词卡学习 |
 | 16 | 词汇 | 一块儿(yíkuàir) 名/副 · together | 词卡学习 |
 | 17 | 词汇 | 一共(yígòng) 副 · altogether; in total | 词卡学习 |
-| 18 | 词汇 | 的话(dehuà) 助 · if (particle) | 词卡学习 |
-| 19 | 词汇 | 只是(zhǐshì) 副/连 · merely; just; but | 词卡学习 |
-| 20 | 词汇 | 助词-的话(HSK3)（语法义项） | 词卡学习 |
-| 21 | 词汇 | 固定短语-一般来说(HSK3) · generally speaking | 词卡学习 |
-| 22 | 词汇 | 固定短语-不一会儿(HSK3) · in a little while | 词卡学习 |
+| 18 | 词汇 | 家(jiā) 名/量/后缀 · home; expert/specialist (HSK3扩展义) | 词卡学习 |
+| 19 | 词汇 | 更(gèng) 副 · even more; still more | 词卡学习 |
+| 20 | 词汇 | 被(bèi) 介 · passive marker (被动句) | 词卡学习 |
+| 21 | 词汇 | 的话(dehuà) 助 · if (particle) | 词卡学习 |
+| 22 | 词汇 | 只是(zhǐshì) 副/连 · merely; just; but | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点）
 
@@ -185,16 +184,15 @@
 | 8 | 词汇 | 节日(jiérì) 名 · festival; holiday | 词卡学习 |
 | 9 | 词汇 | 新年(xīnnián) 名 · New Year | 词卡学习 |
 | 10 | 词汇 | 过节(guòjié) 动 · to celebrate a festival | 词卡学习 |
-| 11 | 词汇 | 过去(guòqù) 名 · the past; in the past | 词卡学习 |
+| 11 | 词汇 | 过去2(guòqù) 名 · the past; in the past | 词卡学习 |
 | 12 | 词汇 | 结束(jiéshù) 动 · to end; to finish | 词卡学习 |
 | 13 | 词汇 | 放学(fàngxué) 动 · school is over | 词卡学习 |
 | 14 | 词汇 | 室(shì) 名 · room | 词卡学习 |
 | 15 | 词汇 | 试(shì) 动 · to try | 词卡学习 |
 | 16 | 词汇 | 宾馆(bīnguǎn) 名 · hotel | 词卡学习 |
 | 17 | 词汇 | 头(tóu) 名/量 · head; measure word for cattle | 词卡学习 |
-| 18 | 词汇 | 口(kǒu) — measure word for sips/bites（动量词义项） | 词卡学习 |
-| 19 | 词汇 | 子(zi) 后缀 · noun suffix | 词卡学习 |
-| 20 | 词汇 | 长(zhǎng) 动/后缀 · to grow; head (suffix) | 词卡学习 |
+| 18 | 词汇 | 子(zi) 后缀 · noun suffix | 词卡学习 |
+| 19 | 词汇 | 长(zhǎng) 动/后缀 · to grow; head (suffix) | 词卡学习 |
 
 ### 主题词群
 

@@ -40,11 +40,12 @@
 | 15 | 词汇 | 号码(hàomǎ) 名 · number (ID/phone) | 词卡学习 |
 | 16 | 词汇 | 名单(míngdān) 名 · name list | 词卡学习 |
 | 17 | 词汇 | 名人(míngrén) 名 · famous person | 词卡学习 |
-| 18 | 词汇 | 性格(xìnggé) — character; personality（话题词） | 词卡学习 |
-| 19 | 词汇 | 像(xiàng) 动 · to resemble; to be like | 词卡学习 |
-| 20 | 词汇 | 认得(rènde) 动 · to recognize | 词卡学习 |
-| 21 | 词汇 | 认为(rènwéi) 动 · to think; to consider | 词卡学习 |
-| 22 | 词汇 | 了解(liǎojiě) 动 · to understand; to know about | 词卡学习 |
+| 18 | 词汇 | 老(lǎo) 形/前缀/副 · old; prefix (老师); always | 词卡学习 |
+| 19 | 词汇 | 一会儿(yíhuìr) 数量/副 · a moment; a little while | 词卡学习 |
+| 20 | 词汇 | 像(xiàng) 动 · to resemble; to be like | 词卡学习 |
+| 21 | 词汇 | 认得(rènde) 动 · to recognize | 词卡学习 |
+| 22 | 词汇 | 认为(rènwéi) 动 · to think; to consider | 词卡学习 |
+| 23 | 词汇 | 了解(liǎojiě) 动 · to understand; to know about | 词卡学习 |
 
 ### 主题词群
 

@@ -203,7 +203,7 @@
 | 12 | 词汇 | 药箱(yàoxiāng) 名 · first aid kit; medicine cabinet | 词卡学习 |
 | 13 | 词汇 | 救护车(jiùhùchē) 名 · ambulance | 词卡学习 |
 | 14 | 词汇 | 医务室(yīwùshì) 名 · clinic; medical room | 词卡学习 |
-| 15 | 词汇 | 紧急(jǐnjí) 形 · urgent; emergency | 词卡学习 |
+| 15 | 词汇 | 应急(yìngjí) 形/动 · emergency; to respond urgently | 词卡学习 |
 | 16 | 词汇 | 撤离(chèlí) 动 · to withdraw; to evacuate | 词卡学习 |
 | 17 | 词汇 | 堵(dǔ) 动 · to block | 词卡学习 |
 | 18 | 词汇 | 堆放(duīfàng) 动 · to stack; to pile up | 词卡学习 |

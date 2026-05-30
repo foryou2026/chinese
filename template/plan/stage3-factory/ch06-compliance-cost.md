@@ -33,16 +33,16 @@
 | 7 | 词汇 | 回收(huíshōu) 动 · to recycle; to recover | 词卡学习 |
 | 8 | 词汇 | 污染(wūrǎn) 名/动 · pollution; to pollute | 词卡学习 |
 | 9 | 词汇 | 超标(chāobiāo) 动 · to exceed the standard | 词卡学习 |
-| 10 | 词汇 | 达标(dábiāo) 动 · to meet the standard | 词卡学习 |
+| 10 | 词汇 | 符合(fúhé) 动 · to conform to; to meet | 词卡学习 |
 | 11 | 词汇 | 法规(fǎguī) 名 · regulation; law | 词卡学习 |
 | 12 | 词汇 | 执行(zhíxíng) 动 · to execute; to implement | 词卡学习 |
-| 13 | 词汇 | 罚款(fákuǎn) 名/动 · fine; to fine | 词卡学习 |
+| 13 | 词汇 | 处罚(chǔfá) 动/名 · to penalize; penalty | 词卡学习 |
 | 14 | 词汇 | 停产(tíngchǎn) 动 · to cease production; shutdown | 词卡学习 |
 | 15 | 词汇 | 整改(zhěnggǎi) 动 · to rectify; to make corrections | 词卡学习 |
 | 16 | 词汇 | 检测(jiǎncè) 动 · to test; to detect | 词卡学习 |
 | 17 | 词汇 | 排污(páiwū) 动 · to discharge pollutants | 词卡学习 |
 | 18 | 词汇 | 净化(jìnghuà) 动 · to purify | 词卡学习 |
-| 19 | 词汇 | 设备(shèbèi) 名 · equipment (environmental) | 词卡学习 |
+| 19 | 词汇 | 器材(qìcái) 名 · equipment; apparatus | 词卡学习 |
 | 20 | 词汇 | 节能(jiénéng) 形/动 · energy-saving; to save energy | 词卡学习 |
 | 21 | 词汇 | 减排(jiǎnpái) 动 · to reduce emissions | 词卡学习 |
 | 22 | 词汇 | 合规(hégūi) 形/名 · compliant; in compliance | 词卡学习 |
@@ -84,23 +84,23 @@
 | 2 | 词汇 | 审核(shěnhé) 动/名 · to audit; audit | 词卡学习 |
 | 3 | 词汇 | 验厂(yànchǎng) 动/名 · factory audit/inspection | 词卡学习 |
 | 4 | 词汇 | 体系(tǐxì) 名 · system | 词卡学习 |
-| 5 | 词汇 | 标准(biāozhǔn) 名 · standard | 词卡学习 |
+| 5 | 词汇 | 规范(guīfàn) 名/动 · standard; specification | 词卡学习 |
 | 6 | 词汇 | 资质(zīzhì) 名 · qualification | 词卡学习 |
 | 7 | 词汇 | 文件(wénjiàn) 名 · document; file | 词卡学习 |
 | 8 | 词汇 | 档案(dàng'àn) 名 · file; archive | 词卡学习 |
-| 9 | 词汇 | 整改(zhěnggǎi) 动 · to rectify | 词卡学习 |
+| 9 | 词汇 | 整顿(zhěngdùn) 动 · to rectify; to overhaul | 词卡学习 |
 | 10 | 词汇 | 陪同(péitóng) 动 · to accompany | 词卡学习 |
 | 11 | 词汇 | 参观(cānguān) 动 · to visit; to tour | 词卡学习 |
 | 12 | 词汇 | 印象(yìnxiàng) 名 · impression | 词卡学习 |
 | 13 | 词汇 | 满意(mǎnyì) 形 · satisfied | 词卡学习 |
 | 14 | 词汇 | 通过(tōngguò) 动 · to pass (an audit) | 词卡学习 |
 | 15 | 词汇 | 不符合(bù fúhé) · non-conforming; non-compliant | 词卡学习 |
-| 16 | 词汇 | 改进(gǎijìn) 动 · to improve | 词卡学习 |
+| 16 | 词汇 | 优化(yōuhuà) 动 · to optimize; to improve | 词卡学习 |
 | 17 | 词汇 | 有效期(yǒuxiàoqī) 名 · validity period | 词卡学习 |
 | 18 | 词汇 | 续期(xùqī) 动 · to renew | 词卡学习 |
 | 19 | 词汇 | 客户(kèhù) 名 · client; customer | 词卡学习 |
 | 20 | 词汇 | 要求(yāoqiú) 名/动 · requirement; to require | 词卡学习 |
-| 21 | 词汇 | 准备(zhǔnbèi) 动/名 · to prepare; preparation | 词卡学习 |
+| 21 | 词汇 | 筹备(chóubèi) 动 · to prepare; to arrange | 词卡学习 |
 | 22 | 词汇 | 迎检(yíngjiǎn) 动 · to prepare for inspection | 词卡学习 |
 
 ### 主题词群
@@ -183,7 +183,7 @@
 
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
-| 1 | 词汇 | 合同(hétong) 名 · contract | 词卡学习 |
+| 1 | 词汇 | 契约(qìyuē) 名 · contract; pact | 词卡学习 |
 | 2 | 词汇 | 谈判(tánpàn) 动/名 · to negotiate; negotiation | 词卡学习 |
 | 3 | 词汇 | 条款(tiáokuǎn) 名 · clause; terms | 词卡学习 |
 | 4 | 词汇 | 签订(qiāndìng) 动 · to sign (a contract) | 词卡学习 |
@@ -192,11 +192,11 @@
 | 7 | 词汇 | 索赔(suǒpéi) 动 · to claim compensation | 词卡学习 |
 | 8 | 词汇 | 甲方(jiǎfāng) 名 · Party A (client) | 词卡学习 |
 | 9 | 词汇 | 乙方(yǐfāng) 名 · Party B (contractor) | 词卡学习 |
-| 10 | 词汇 | 报价(bàojià) 名/动 · quotation; to quote | 词卡学习 |
+| 10 | 词汇 | 估价(gūjià) 动/名 · to estimate price; valuation | 词卡学习 |
 | 11 | 词汇 | 单价(dānjià) 名 · unit price | 词卡学习 |
 | 12 | 词汇 | 起订量(qǐdìngliàng) 名 · minimum order quantity (MOQ) | 词卡学习 |
 | 13 | 词汇 | 交付(jiāofù) 动 · to deliver; to hand over | 词卡学习 |
-| 14 | 词汇 | 验收(yànshōu) 动 · to inspect and accept | 词卡学习 |
+| 14 | 词汇 | 核查(héchá) 动 · to verify; to audit | 词卡学习 |
 | 15 | 词汇 | 尾款(wěikuǎn) 名 · final payment; balance | 词卡学习 |
 | 16 | 词汇 | 定金(dìngjīn) 名 · deposit; down payment | 词卡学习 |
 | 17 | 词汇 | 双方(shuāngfāng) 名 · both parties | 词卡学习 |

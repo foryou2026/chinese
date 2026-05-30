@@ -175,7 +175,7 @@
 | 1 | 词汇 | 报关(bàoguān) 动 · to declare at customs | 词卡学习 |
 | 2 | 词汇 | 海关(hǎiguān) 名 · customs | 词卡学习 |
 | 3 | 词汇 | 进口(jìnkǒu) 动/名 · to import; import | 词卡学习 |
-| 4 | 词汇 | 出口(chūkǒu) 动/名 · to export; export | 词卡学习 |
+| 4 | 词汇 | 清点(qīngdiǎn) 动 · to count; to take inventory | 词卡学习 |
 | 5 | 词汇 | 关税(guānshuì) 名 · customs duty; tariff | 词卡学习 |
 | 6 | 词汇 | 申报(shēnbào) 动 · to declare (at customs) | 词卡学习 |
 | 7 | 词汇 | 单据(dānjù) 名 · document; receipt | 词卡学习 |

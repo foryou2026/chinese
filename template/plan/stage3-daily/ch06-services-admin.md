@@ -38,12 +38,12 @@
 | 12 | 词汇 | 复印(fùyìn) 动 · to photocopy | 词卡学习 |
 | 13 | 词汇 | 证件照(zhèngjiànzhào) 名 · ID photo | 词卡学习 |
 | 14 | 词汇 | 有效期(yǒuxiàoqī) 名 · validity period | 词卡学习 |
-| 15 | 词汇 | 过期(guòqī) 动 · to expire | 词卡学习 |
+| 15 | 词汇 | 失效(shīxiào) 动 · to expire; to become invalid | 词卡学习 |
 | 16 | 词汇 | 罚款(fákuǎn) 名/动 · fine; to fine | 词卡学习 |
 | 17 | 词汇 | 盖章(gàizhāng) 动 · to stamp; to seal | 词卡学习 |
 | 18 | 词汇 | 批准(pīzhǔn) 动 · to approve | 词卡学习 |
 | 19 | 词汇 | 手续(shǒuxù) 名 · procedure; formality | 词卡学习 |
-| 20 | 词汇 | 排队(páiduì) 动 · to queue; to line up | 词卡学习 |
+| 20 | 词汇 | 等候(děnghòu) 动 · to wait (in line) | 词卡学习 |
 | 21 | 词汇 | 窗口(chuāngkǒu) 名 · service window; counter | 词卡学习 |
 | 22 | 词汇 | 代办(dàibàn) 动 · to handle on behalf of; agency service | 词卡学习 |
 
@@ -85,7 +85,7 @@
 | 3 | 词汇 | 账户(zhànghù) 名 · account | 词卡学习 |
 | 4 | 词汇 | 存款(cúnkuǎn) 名/动 · deposit; to deposit money | 词卡学习 |
 | 5 | 词汇 | 取款(qǔkuǎn) 动 · to withdraw money | 词卡学习 |
-| 6 | 词汇 | 转账(zhuǎnzhàng) 动 · to transfer money | 词卡学习 |
+| 6 | 词汇 | 换汇(huànhuì) 动 · to exchange currency | 词卡学习 |
 | 7 | 词汇 | 汇款(huìkuǎn) 动/名 · to remit money; remittance | 词卡学习 |
 | 8 | 词汇 | 手续费(shǒuxùfèi) 名 · service charge; handling fee | 词卡学习 |
 | 9 | 词汇 | 密码(mìmǎ) 名 · password; PIN | 词卡学习 |
@@ -95,13 +95,13 @@
 | 13 | 词汇 | 套餐(tàocān) 名 · plan; package | 词卡学习 |
 | 14 | 词汇 | 流量(liúliàng) 名 · data (mobile) | 词卡学习 |
 | 15 | 词汇 | 充值(chōngzhí) 动 · to top up; to recharge | 词卡学习 |
-| 16 | 词汇 | 信号(xìnhào) 名 · signal | 词卡学习 |
-| 17 | 词汇 | 网络(wǎngluò) 名 · network; internet | 词卡学习 |
+| 16 | 词汇 | 宽带(kuāndài) 名 · broadband; internet access | 词卡学习 |
+| 17 | 词汇 | 话费(huàfèi) 名 · phone bill; phone credit | 词卡学习 |
 | 18 | 词汇 | WiFi(WiFi) 名 · WiFi | 词卡学习 |
 | 19 | 词汇 | 注册(zhùcè) 动 · to register | 词卡学习 |
 | 20 | 词汇 | 绑定(bǎngdìng) 动 · to bind; to link | 词卡学习 |
 | 21 | 词汇 | 支付(zhīfù) 动/名 · to pay; payment | 词卡学习 |
-| 22 | 词汇 | 扫码(sǎomǎ) 动 · to scan a QR code | 词卡学习 |
+| 22 | 词汇 | 二维码(èrwéimǎ) 名 · QR code | 词卡学习 |
 
 ### 主题词群
 
@@ -147,11 +147,11 @@
 | 9 | 词汇 | 称重(chēngzhòng) 动 · to weigh | 词卡学习 |
 | 10 | 词汇 | 签收(qiānshōu) 动 · to sign for (a delivery) | 词卡学习 |
 | 11 | 词汇 | 网购(wǎnggòu) 动/名 · online shopping | 词卡学习 |
-| 12 | 词汇 | 下单(xiàdān) 动 · to place an order | 词卡学习 |
+| 12 | 词汇 | 预约(yùyuē) 动 · to make an appointment; to book | 词卡学习 |
 | 13 | 词汇 | 发货(fāhuò) 动 · to ship goods | 词卡学习 |
 | 14 | 词汇 | 到货(dàohuò) 动 · goods arrived; delivery received | 词卡学习 |
 | 15 | 词汇 | 退货(tuìhuò) 动 · to return goods | 词卡学习 |
-| 16 | 词汇 | 评价(píngjià) 名/动 · review; to evaluate | 词卡学习 |
+| 16 | 词汇 | 点评(diǎnpíng) 动/名 · to comment; review | 词卡学习 |
 | 17 | 词汇 | 物流(wùliú) 名 · logistics | 词卡学习 |
 | 18 | 词汇 | 取件(qǔjiàn) 动 · to pick up a parcel | 词卡学习 |
 | 19 | 词汇 | 快递柜(kuàidìguì) 名 · parcel locker | 词卡学习 |
@@ -189,20 +189,20 @@
 | 4 | 词汇 | 大使馆(dàshǐguǎn) 名 · embassy | 词卡学习 |
 | 5 | 词汇 | 领事馆(lǐngshìguǎn) 名 · consulate | 词卡学习 |
 | 6 | 词汇 | 求救电话(qiújiù diànhuà) 名 · emergency phone number | 词卡学习 |
-| 7 | 词汇 | 保险(bǎoxiǎn) 名 · insurance | 词卡学习 |
+| 7 | 词汇 | 保障(bǎozhàng) 名/动 · guarantee; to safeguard | 词卡学习 |
 | 8 | 词汇 | 理赔(lǐpéi) 动/名 · to process a claim; claim settlement | 词卡学习 |
 | 9 | 词汇 | 丢失(diūshī) 动 · to lose | 词卡学习 |
 | 10 | 词汇 | 被盗(bèidào) 动 · to be stolen | 词卡学习 |
 | 11 | 词汇 | 挂失(guàshī) 动 · to report a loss | 词卡学习 |
 | 12 | 词汇 | 补办(bǔbàn) 动 · to reissue; to replace | 词卡学习 |
 | 13 | 词汇 | 翻译(fānyì) 名/动 · translator; to translate | 词卡学习 |
-| 14 | 词汇 | 中介(zhōngjiè) 名 · agent; intermediary | 词卡学习 |
-| 15 | 词汇 | 物业(wùyè) 名 · property management | 词卡学习 |
-| 16 | 词汇 | 维修(wéixiū) 动 · to repair; to maintain | 词卡学习 |
-| 17 | 词汇 | 投诉(tóusù) 动/名 · to complain; complaint | 词卡学习 |
+| 14 | 词汇 | 柜台(guìtái) 名 · counter; service desk | 词卡学习 |
+| 15 | 词汇 | 门卫(ménwèi) 名 · doorman; gate guard | 词卡学习 |
+| 16 | 词汇 | 修理(xiūlǐ) 动 · to repair; to fix | 词卡学习 |
+| 17 | 词汇 | 申诉(shēnsù) 动 · to appeal; to file a complaint | 词卡学习 |
 | 18 | 词汇 | 解决(jiějué) 动 · to solve; to resolve | 词卡学习 |
 | 19 | 词汇 | 安全(ānquán) 形/名 · safe; safety | 词卡学习 |
-| 20 | 词汇 | 注意(zhùyì) 动 · to pay attention; to be careful | 词卡学习 |
+| 20 | 词汇 | 留意(liúyì) 动 · to pay attention; to notice | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点·日常例句）
 

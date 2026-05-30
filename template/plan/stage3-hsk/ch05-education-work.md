@@ -142,7 +142,7 @@
 | 2 | 词汇 | 同事(tóngshì) 名 · colleague; coworker | 词卡学习 |
 | 3 | 词汇 | 经理(jīnglǐ) 名 · manager | 词卡学习 |
 | 4 | 词汇 | 会议(huìyì) 名 · meeting; conference | 词卡学习 |
-| 5 | 词汇 | 会(huì) 名 · meeting; gathering | 词卡学习 |
+| 5 | 词汇 | 会2(huì) 名 · meeting; gathering | 词卡学习 |
 | 6 | 词汇 | 开会(kāihuì) 动 · to hold/attend a meeting | 词卡学习 |
 | 7 | 词汇 | 邮件(yóujiàn) 名 · email; mail | 词卡学习 |
 | 8 | 词汇 | 邮箱(yóuxiāng) 名 · mailbox; email address | 词卡学习 |
@@ -156,10 +156,13 @@
 | 16 | 词汇 | 发展(fāzhǎn) 动 · to develop; development | 词卡学习 |
 | 17 | 词汇 | 接(jiē) 动 · to receive; to pick up | 词卡学习 |
 | 18 | 词汇 | 节(jié) 量/名 · measure word for class periods; section | 词卡学习 |
-| 19 | 词汇 | 所(suǒ) — measure word for institutions（量词义项） | 词卡学习 |
-| 20 | 词汇 | 段(duàn) 量 · measure word for paragraphs/sections | 词卡学习 |
-| 21 | 词汇 | 页(yè) 量 · page | 词卡学习 |
-| 22 | 词汇 | 张(zhāng) 动/量 · to open; measure word for flat objects | 词卡学习 |
+| 19 | 词汇 | 为(wèi) 介 · for; for the sake of | 词卡学习 |
+| 20 | 词汇 | 为了(wèile) 介 · in order to; for the purpose of | 词卡学习 |
+| 21 | 词汇 | 分开(fēnkāi) 动 · to separate; to part | 词卡学习 |
+| 22 | 词汇 | 除了(chúle) 介 · except; besides | 词卡学习 |
+| 23 | 词汇 | 段(duàn) 量 · measure word for paragraphs/sections | 词卡学习 |
+| 24 | 词汇 | 页(yè) 量 · page | 词卡学习 |
+| 25 | 词汇 | 张(zhāng) 动/量 · to open; measure word for flat objects | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点）
 

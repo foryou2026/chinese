@@ -36,14 +36,14 @@
 | 10 | 词汇 | 脚本(jiǎoběn) 名 · script | 词卡学习 |
 | 11 | 词汇 | 预热(yùrè) 动 · to warm up; pre-promotion | 词卡学习 |
 | 12 | 词汇 | 排练(páiliàn) 动 · to rehearse | 词卡学习 |
-| 13 | 词汇 | 展示(zhǎnshì) 动 · to display; to showcase | 词卡学习 |
+| 13 | 词汇 | 演示(yǎnshì) 动 · to demonstrate; to demo | 词卡学习 |
 | 14 | 词汇 | 观众(guānzhòng) 名 · audience; viewers | 词卡学习 |
 | 15 | 词汇 | 人气(rénqì) 名 · popularity | 词卡学习 |
 | 16 | 词汇 | 弹幕(dànmù) 名 · bullet comments (live overlay) | 词卡学习 |
 | 17 | 词汇 | 互动(hùdòng) 动/名 · to interact; interaction | 词卡学习 |
 | 18 | 词汇 | 点赞(diǎnzàn) 动 · to like; to give a thumbs up | 词卡学习 |
-| 19 | 词汇 | 关注(guānzhù) 动 · to follow (social media) | 词卡学习 |
-| 20 | 词汇 | 分享(fēnxiǎng) 动 · to share | 词卡学习 |
+| 19 | 词汇 | 订阅(dìngyuè) 动 · to subscribe; to follow | 词卡学习 |
+| 20 | 词汇 | 传播(chuánbō) 动 · to spread; to disseminate | 词卡学习 |
 | 21 | 词汇 | 福利(fúlì) 名 · perk; giveaway; benefit | 词卡学习 |
 | 22 | 词汇 | 倒计时(dàojìshí) 名 · countdown | 词卡学习 |
 
@@ -81,18 +81,18 @@
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
 | 1 | 词汇 | 讲解(jiǎngjiě) 动 · to explain; to present | 词卡学习 |
-| 2 | 词汇 | 卖点(màidiǎn) 名 · selling point | 词卡学习 |
+| 2 | 词汇 | 特色(tèsè) 名 · feature; characteristic | 词卡学习 |
 | 3 | 词汇 | 亮点(liàngdiǎn) 名 · highlight | 词卡学习 |
 | 4 | 词汇 | 试用(shìyòng) 动 · to try out; to trial | 词卡学习 |
 | 5 | 词汇 | 试穿(shìchuān) 动 · to try on (clothes) | 词卡学习 |
 | 6 | 词汇 | 上身(shàngshēn) 动 · to wear; to model | 词卡学习 |
-| 7 | 词汇 | 效果(xiàoguǒ) 名 · effect; result | 词卡学习 |
-| 8 | 词汇 | 对比(duìbǐ) 动/名 · to compare; comparison | 词卡学习 |
+| 7 | 词汇 | 成效(chéngxiào) 名 · effectiveness; result | 词卡学习 |
+| 8 | 词汇 | 评测(píngcè) 名/动 · evaluation; to evaluate | 词卡学习 |
 | 9 | 词汇 | 实拍(shípāi) 动/名 · live shot; unedited photo | 词卡学习 |
 | 10 | 词汇 | 细节(xìjié) 名 · detail | 词卡学习 |
 | 11 | 词汇 | 手感(shǒugǎn) 名 · texture; feel (to the touch) | 词卡学习 |
 | 12 | 词汇 | 真实(zhēnshí) 形 · real; authentic | 词卡学习 |
-| 13 | 词汇 | 推荐(tuījiàn) 动 · to recommend | 词卡学习 |
+| 13 | 词汇 | 推介(tuījiè) 动 · to promote; to introduce | 词卡学习 |
 | 14 | 词汇 | 种草(zhǒngcǎo) 动 · to spark purchase desire | 词卡学习 |
 | 15 | 词汇 | 拔草(bácǎo) 动 · to fulfill a purchase desire | 词卡学习 |
 | 16 | 词汇 | 抢(qiǎng) 动 · to grab; to rush for | 词卡学习 |
@@ -127,7 +127,7 @@
 
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
-| 1 | 词汇 | 粉丝(fěnsī) 名 · fan; follower | 词卡学习 |
+| 1 | 词汇 | 用户(yònghù) 名 · user; customer | 词卡学习 |
 | 2 | 词汇 | 短视频(duǎnshìpín) 名 · short video | 词卡学习 |
 | 3 | 词汇 | 拍摄(pāishè) 动 · to film; to shoot | 词卡学习 |
 | 4 | 词汇 | 剪辑(jiǎnjí) 动/名 · to edit (video); editing | 词卡学习 |
@@ -145,10 +145,10 @@
 | 16 | 词汇 | 私信(sīxìn) 名/动 · direct message; to DM | 词卡学习 |
 | 17 | 词汇 | 评论(pínglùn) 名/动 · comment; to comment | 词卡学习 |
 | 18 | 词汇 | 转发(zhuǎnfā) 动 · to repost; to share | 词卡学习 |
-| 19 | 词汇 | 收藏(shōucáng) 动 · to bookmark; to save | 词卡学习 |
+| 19 | 词汇 | 加购(jiāgòu) 动 · to add to cart | 词卡学习 |
 | 20 | 词汇 | 热度(rèdù) 名 · trending level; buzz | 词卡学习 |
-| 21 | 词汇 | 引流(yǐnliú) 动 · to drive traffic | 词卡学习 |
-| 22 | 词汇 | 素材(sùcái) 名 · material; content assets | 词卡学习 |
+| 21 | 词汇 | 导流(dǎoliú) 动 · to direct traffic; to channel | 词卡学习 |
+| 22 | 词汇 | 台词(táicí) 名 · lines; script (dialogue) | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点·电商例句）
 
@@ -191,7 +191,7 @@
 | 13 | 词汇 | 内容(nèiróng) 名 · content | 词卡学习 |
 | 14 | 词汇 | 创意(chuàngyì) 名 · creativity; creative idea | 词卡学习 |
 | 15 | 词汇 | 策划(cèhuà) 动/名 · to plan; campaign planning | 词卡学习 |
-| 16 | 词汇 | 推广(tuīguǎng) 动 · to promote | 词卡学习 |
+| 16 | 词汇 | 宣传(xuānchuán) 动 · to publicize; to advertise | 词卡学习 |
 | 17 | 词汇 | 社交(shèjiāo) 名/形 · social; socializing | 词卡学习 |
 | 18 | 词汇 | 影响力(yǐngxiǎnglì) 名 · influence; impact | 词卡学习 |
 | 19 | 词汇 | 变现(biànxiàn) 动 · to monetize | 词卡学习 |

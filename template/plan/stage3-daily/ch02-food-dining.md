@@ -44,7 +44,7 @@
 | 18 | 词汇 | 芒果(mángguǒ) 名 · mango | 词卡学习 |
 | 19 | 词汇 | 称(chēng) 动 · to weigh | 词卡学习 |
 | 20 | 词汇 | 斤(jīn) 量 · catty (500g) | 词卡学习 |
-| 21 | 词汇 | 便宜(piányi) 形 · cheap; inexpensive | 词卡学习 |
+| 21 | 词汇 | 划算(huásuàn) 形 · cost-effective; a good deal | 词卡学习 |
 | 22 | 词汇 | 讲价(jiǎngjià) 动 · to bargain | 词卡学习 |
 
 ### 主题词群
@@ -127,10 +127,10 @@
 
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
-| 1 | 词汇 | 做饭(zuòfàn) 动 · to cook | 词卡学习 |
+| 1 | 词汇 | 下厨(xiàchú) 动 · to cook; to prepare meals | 词卡学习 |
 | 2 | 词汇 | 炒菜(chǎocài) 动 · to stir-fry | 词卡学习 |
 | 3 | 词汇 | 切(qiē) 动 · to cut; to chop | 词卡学习 |
-| 4 | 词汇 | 洗(xǐ) 动 · to wash | 词卡学习 |
+| 4 | 词汇 | 清洗(qīngxǐ) 动 · to wash; to clean (food) | 词卡学习 |
 | 5 | 词汇 | 泡(pào) 动 · to soak; to steep | 词卡学习 |
 | 6 | 词汇 | 腌(yān) 动 · to marinate; to pickle | 词卡学习 |
 | 7 | 词汇 | 锅(guō) 名 · pot; wok | 词卡学习 |
@@ -182,7 +182,7 @@
 | 6 | 词汇 | 评价(píngjià) 名/动 · review; to review | 词卡学习 |
 | 7 | 词汇 | 好评(hǎopíng) 名 · positive review | 词卡学习 |
 | 8 | 词汇 | 差评(chàpíng) 名 · negative review | 词卡学习 |
-| 9 | 词汇 | 奶茶(nǎichá) 名 · milk tea; bubble tea | 词卡学习 |
+| 9 | 词汇 | 冰沙(bīngshā) 名 · smoothie; icy blended drink | 词卡学习 |
 | 10 | 词汇 | 果汁(guǒzhī) 名 · juice | 词卡学习 |
 | 11 | 词汇 | 冰(bīng) 名/形 · ice; iced | 词卡学习 |
 | 12 | 词汇 | 常温(chángwēn) 名 · room temperature | 词卡学习 |

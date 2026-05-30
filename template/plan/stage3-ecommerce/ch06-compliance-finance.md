@@ -29,10 +29,10 @@
 | 3 | 词汇 | 合规(hégūi) 形/名 · compliant; compliance | 词卡学习 |
 | 4 | 词汇 | 执照(zhízhào) 名 · license | 词卡学习 |
 | 5 | 词汇 | 营业(yíngyè) 动/名 · to do business; business | 词卡学习 |
-| 6 | 词汇 | 注册(zhùcè) 动 · to register | 词卡学习 |
+| 6 | 词汇 | 登记(dēngjì) 动 · to register; to record | 词卡学习 |
 | 7 | 词汇 | 认证(rènzhèng) 动/名 · to certify; certification | 词卡学习 |
 | 8 | 词汇 | 资质(zīzhì) 名 · qualification | 词卡学习 |
-| 9 | 词汇 | 账号(zhànghào) 名 · account | 词卡学习 |
+| 9 | 词汇 | 账户(zhànghù) 名 · account (financial) | 词卡学习 |
 | 10 | 词汇 | 绑定(bǎngdìng) 动 · to bind; to link (account) | 词卡学习 |
 | 11 | 词汇 | 审批(shěnpī) 动 · to approve | 词卡学习 |
 | 12 | 词汇 | 法律(fǎlǜ) 名 · law | 词卡学习 |
@@ -85,7 +85,7 @@
 | 3 | 词汇 | 授权(shòuquán) 动/名 · to authorize; authorization | 词卡学习 |
 | 4 | 词汇 | 侵权(qīnquán) 动 · to infringe (rights) | 词卡学习 |
 | 5 | 词汇 | 仿冒(fǎngmào) 动/形 · to counterfeit | 词卡学习 |
-| 6 | 词汇 | 正品(zhèngpǐn) 名 · genuine product | 词卡学习 |
+| 6 | 词汇 | 牌照(páizhào) 名 · license; business permit | 词卡学习 |
 | 7 | 词汇 | 假货(jiǎhuò) 名 · counterfeit goods | 词卡学习 |
 | 8 | 词汇 | 防伪(fángwěi) 形 · anti-counterfeit | 词卡学习 |
 | 9 | 词汇 | 标准(biāozhǔn) 名/形 · standard | 词卡学习 |
@@ -176,13 +176,13 @@
 
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
-| 1 | 词汇 | 预算(yùsuàn) 名 · budget | 词卡学习 |
+| 1 | 词汇 | 支出(zhīchū) 名/动 · expenditure; to spend | 词卡学习 |
 | 2 | 词汇 | 核算(hésuàn) 动 · to calculate; to account | 词卡学习 |
 | 3 | 词汇 | 毛利(máolì) 名 · gross profit | 词卡学习 |
 | 4 | 词汇 | 净利(jìnglì) 名 · net profit | 词卡学习 |
 | 5 | 词汇 | 亏损(kuīsǔn) 名/动 · loss; to incur losses | 词卡学习 |
 | 6 | 词汇 | 账目(zhàngmù) 名 · accounts; ledger | 词卡学习 |
-| 7 | 词汇 | 报表(bàobiǎo) 名 · financial statement | 词卡学习 |
+| 7 | 词汇 | 台账(táizhàng) 名 · ledger; record book | 词卡学习 |
 | 8 | 词汇 | 年度(niándù) 名 · annual; fiscal year | 词卡学习 |
 | 9 | 词汇 | 季度(jìdù) 名 · quarter (fiscal) | 词卡学习 |
 | 10 | 词汇 | 月结(yuèjié) 名/动 · monthly settlement | 词卡学习 |

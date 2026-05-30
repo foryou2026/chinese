@@ -201,8 +201,8 @@
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
 | 33 | 词汇 | 个(gè) 量 · general measure word | 词卡学习 |
-| 34 | 词汇 | 本(běn) 量 · measure word for books | 词卡学习 |
-| 35 | 词汇 | 家(jiā) 量 · measure word for shops/companies | 词卡学习 |
+| 34 | 词汇 | 本1(běn) 量 · measure word for books | 词卡学习 |
+| 35 | 词汇 | 第(dì) 头 · ordinal prefix (第一、第二) | 词卡学习 |
 | 36 | 词汇 | 口(kǒu) 量 · measure word for family members | 词卡学习 |
 | 37 | 词汇 | 块(kuài) 量 · measure word for money (yuan) | 词卡学习 |
 | 38 | 词汇 | 件(jiàn) 量 · measure word for clothes/items | 词卡学习 |

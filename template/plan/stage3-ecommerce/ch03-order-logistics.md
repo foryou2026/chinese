@@ -25,7 +25,7 @@
 | 10 | 词汇 | 发货(fāhuò) 动 · to ship; to dispatch | 词卡学习 |
 | 11 | 词汇 | 地址(dìzhǐ) 名 · address | 词卡学习 |
 | 12 | 词汇 | 联系(liánxì) 动/名 · to contact | 词卡学习 |
-| 13 | 词汇 | 电话(diànhuà) 名 · phone number | 词卡学习 |
+| 13 | 词汇 | 热线(rèxiàn) 名 · hotline | 词卡学习 |
 | 14 | 词汇 | 催单(cuīdān) 动 · to urge order processing | 词卡学习 |
 | 15 | 词汇 | 超时(chāoshí) 动 · to exceed time limit | 词卡学习 |
 | 16 | 词汇 | 处理(chǔlǐ) 动 · to handle; to process | 词卡学习 |
@@ -176,7 +176,7 @@
 | 16 | 词汇 | 截图(jiétú) 动/名 · screenshot; to take a screenshot | 词卡学习 |
 | 17 | 词汇 | 拍照(pāizhào) 动 · to take a photo | 词卡学习 |
 | 18 | 词汇 | 记录(jìlù) 动/名 · to record; record | 词卡学习 |
-| 19 | 词汇 | 方案(fāng'àn) 名 · solution; plan | 词卡学习 |
+| 19 | 词汇 | 到货(dàohuò) 动 · goods arrived; delivery received | 词卡学习 |
 | 20 | 词汇 | 满意(mǎnyì) 动 · satisfied | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点·电商例句）

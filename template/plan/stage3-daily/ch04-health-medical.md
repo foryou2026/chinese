@@ -25,7 +25,7 @@
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
 | 1 | 词汇 | 诊所(zhěnsuǒ) 名 · clinic | 词卡学习 |
-| 2 | 词汇 | 医院(yīyuàn) 名 · hospital | 词卡学习 |
+| 2 | 词汇 | 医务室(yīwùshì) 名 · infirmary; clinic room | 词卡学习 |
 | 3 | 词汇 | 挂号(guàhào) 动 · to register (at hospital) | 词卡学习 |
 | 4 | 词汇 | 排队(páiduì) 动 · to queue; to line up | 词卡学习 |
 | 5 | 词汇 | 症状(zhèngzhuàng) 名 · symptom | 词卡学习 |
@@ -78,8 +78,8 @@
 
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
-| 1 | 词汇 | 药店(yàodiàn) 名 · pharmacy | 词卡学习 |
-| 2 | 词汇 | 药(yào) 名 · medicine; drug | 词卡学习 |
+| 1 | 词汇 | 药房(yàofáng) 名 · pharmacy (dispensary) | 词卡学习 |
+| 2 | 词汇 | 药片(yàopiàn) 名 · tablet; pill | 词卡学习 |
 | 3 | 词汇 | 感冒药(gǎnmàoyào) 名 · cold medicine | 词卡学习 |
 | 4 | 词汇 | 止痛药(zhǐtòngyào) 名 · painkiller | 词卡学习 |
 | 5 | 词汇 | 消炎药(xiāoyányào) 名 · anti-inflammatory | 词卡学习 |
@@ -126,7 +126,7 @@
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
 | 1 | 词汇 | 健身(jiànshēn) 动/名 · to work out; fitness | 词卡学习 |
-| 2 | 词汇 | 跑步(pǎobù) 动 · to jog; to run | 词卡学习 |
+| 2 | 词汇 | 晨跑(chénpǎo) 动 · to jog in the morning | 词卡学习 |
 | 3 | 词汇 | 瑜伽(yújiā) 名 · yoga | 词卡学习 |
 | 4 | 词汇 | 泰拳(tàiquán) 名 · Muay Thai; Thai boxing | 词卡学习 |
 | 5 | 词汇 | 锻炼(duànliàn) 动 · to exercise | 词卡学习 |

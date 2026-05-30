@@ -35,7 +35,7 @@
 | 9 | 词汇 | 氛围(fēnwéi) 名 · atmosphere; ambiance | 词卡学习 |
 | 10 | 词汇 | 干杯(gānbēi) 动 · to toast; cheers | 词卡学习 |
 | 11 | 词汇 | 啤酒(píjiǔ) 名 · beer | 词卡学习 |
-| 12 | 词汇 | 果汁(guǒzhī) 名 · juice | 词卡学习 |
+| 12 | 词汇 | 鲜榨(xiānzhà) 形 · freshly squeezed; fresh-pressed | 词卡学习 |
 | 13 | 词汇 | 烧烤(shāokǎo) 名/动 · barbecue; to grill | 词卡学习 |
 | 14 | 词汇 | 火锅(huǒguō) 名 · hotpot | 词卡学习 |
 | 15 | 词汇 | 合照(hézhào) 名/动 · group photo; to take a group photo | 词卡学习 |
@@ -80,26 +80,26 @@
 
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
-| 1 | 词汇 | 夜市(yèshì) 名 · night market | 词卡学习 |
+| 1 | 词汇 | 集市(jíshì) 名 · market; bazaar; fair | 词卡学习 |
 | 2 | 词汇 | 逛(guàng) 动 · to stroll; to browse | 词卡学习 |
-| 3 | 词汇 | 摊位(tānwèi) 名 · stall; booth | 词卡学习 |
+| 3 | 词汇 | 商贩(shāngfàn) 名 · vendor; street merchant | 词卡学习 |
 | 4 | 词汇 | 小吃(xiǎochī) 名 · snack; street food | 词卡学习 |
-| 5 | 词汇 | 椰子(yēzi) 名 · coconut | 词卡学习 |
-| 6 | 词汇 | 芒果(mángguǒ) 名 · mango | 词卡学习 |
-| 7 | 词汇 | 榴莲(liúlián) 名 · durian | 词卡学习 |
+| 5 | 词汇 | 热带(rèdài) 名 · tropics; tropical zone | 词卡学习 |
+| 6 | 词汇 | 特产(tèchǎn) 名 · specialty; local product | 词卡学习 |
+| 7 | 词汇 | 香料(xiāngliào) 名 · spice; seasoning | 词卡学习 |
 | 8 | 词汇 | 纪念品(jìniànpǐn) 名 · souvenir | 词卡学习 |
-| 9 | 词汇 | 砍价(kǎnjià) 动 · to bargain; to haggle | 词卡学习 |
+| 9 | 词汇 | 讨价(tǎojià) 动 · to bargain; to haggle | 词卡学习 |
 | 10 | 词汇 | 按摩(ànmó) 名/动 · massage; to massage | 词卡学习 |
 | 11 | 词汇 | 足疗(zúliáo) 名 · foot massage; reflexology | 词卡学习 |
 | 12 | 词汇 | 唱歌(chànggē) 动 · to sing | 词卡学习 |
-| 13 | 词汇 | 跳舞(tiàowǔ) 动 · to dance | 词卡学习 |
-| 14 | 词汇 | 拍照(pāizhào) 动 · to take photos | 词卡学习 |
+| 13 | 词汇 | 歌舞(gēwǔ) 名 · song and dance; performance | 词卡学习 |
+| 14 | 词汇 | 自拍(zìpāi) 动/名 · to take a selfie; selfie | 词卡学习 |
 | 15 | 词汇 | 直播(zhíbō) 名/动 · live stream; to live stream | 词卡学习 |
-| 16 | 词汇 | 电影(diànyǐng) 名 · movie; film | 词卡学习 |
-| 17 | 词汇 | 热闹(rènao) 形 · lively; bustling | 词卡学习 |
+| 16 | 词汇 | 影院(yǐngyuàn) 名 · cinema; movie theater | 词卡学习 |
+| 17 | 词汇 | 活跃(huóyuè) 形 · active; lively; vibrant | 词卡学习 |
 | 18 | 词汇 | 好玩(hǎowán) 形 · fun; amusing | 词卡学习 |
 | 19 | 词汇 | 打折(dǎzhé) 动 · to give a discount | 词卡学习 |
-| 20 | 词汇 | 便宜(piányi) 形 · cheap; inexpensive | 词卡学习 |
+| 20 | 词汇 | 实惠(shíhuì) 形 · affordable; economical | 词卡学习 |
 | 21 | 词汇 | 排挡(páidàng) 名 · open-air food stall | 词卡学习 |
 | 22 | 词汇 | 散步(sànbù) 动 · to take a walk; to stroll | 词卡学习 |
 
@@ -145,7 +145,7 @@
 | 8 | 词汇 | 放假(fàngjià) 动 · to have a holiday | 词卡学习 |
 | 9 | 词汇 | 传统(chuántǒng) 名/形 · tradition; traditional | 词卡学习 |
 | 10 | 词汇 | 习俗(xísú) 名 · custom; tradition | 词卡学习 |
-| 11 | 词汇 | 寺庙(sìmiào) 名 · temple | 词卡学习 |
+| 11 | 词汇 | 佛堂(fótáng) 名 · Buddhist hall; prayer room | 词卡学习 |
 | 12 | 词汇 | 佛教(Fójiào) 名 · Buddhism | 词卡学习 |
 | 13 | 词汇 | 拜佛(bàifó) 动 · to worship Buddha | 词卡学习 |
 | 14 | 词汇 | 烧香(shāoxiāng) 动 · to burn incense | 词卡学习 |
@@ -183,7 +183,7 @@
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
 | 1 | 词汇 | 兴趣(xìngqù) 名 · interest; hobby | 词卡学习 |
-| 2 | 词汇 | 爱好(àihào) 名 · hobby; interest | 词卡学习 |
+| 2 | 词汇 | 休闲(xiūxián) 名/动 · leisure; to relax | 词卡学习 |
 | 3 | 词汇 | 下棋(xiàqí) 动 · to play chess | 词卡学习 |
 | 4 | 词汇 | 钓鱼(diàoyú) 动 · to fish | 词卡学习 |
 | 5 | 词汇 | 打牌(dǎpái) 动 · to play cards | 词卡学习 |
@@ -198,7 +198,7 @@
 | 14 | 词汇 | 参加(cānjiā) 动 · to participate; to join | 词卡学习 |
 | 15 | 词汇 | 报名(bàomíng) 动 · to sign up; to register | 词卡学习 |
 | 16 | 词汇 | 兴趣班(xìngqùbān) 名 · hobby class; interest group | 词卡学习 |
-| 17 | 词汇 | 相处(xiāngchǔ) 动 · to get along | 词卡学习 |
+| 17 | 词汇 | 交往(jiāowǎng) 动 · to socialize; to interact | 词卡学习 |
 | 18 | 词汇 | 理解(lǐjiě) 动 · to understand | 词卡学习 |
 | 19 | 词汇 | 包容(bāoróng) 形/动 · tolerant; to be inclusive | 词卡学习 |
 | 20 | 词汇 | 温馨(wēnxīn) 形 · warm; cozy | 词卡学习 |

@@ -24,10 +24,10 @@
 
 | 序号 | 类型 | 内容 | 展现形式 |
 |------|------|------|---------|
-| 1 | 词汇 | 地铁(dìtiě) 名 · subway; metro | 词卡学习 |
+| 1 | 词汇 | 城铁(chéngtiě) 名 · city rail; urban railway (BTS/MRT) | 词卡学习 |
 | 2 | 词汇 | 轻轨(qīngguǐ) 名 · light rail; BTS (Bangkok) | 词卡学习 |
-| 3 | 词汇 | 公交车(gōngjiāochē) 名 · bus | 词卡学习 |
-| 4 | 词汇 | 出租车(chūzūchē) 名 · taxi | 词卡学习 |
+| 3 | 词汇 | 摩的(módī) 名 · motorcycle taxi | 词卡学习 |
+| 4 | 词汇 | 突突车(tūtūchē) 名 · tuk-tuk (three-wheeled taxi) | 词卡学习 |
 | 5 | 词汇 | 网约车(wǎngyuēchē) 名 · ride-hailing car (Grab/Bolt) | 词卡学习 |
 | 6 | 词汇 | 叫车(jiàochē) 动 · to call a car/taxi | 词卡学习 |
 | 7 | 词汇 | 司机(sījī) 名 · driver | 词卡学习 |
@@ -135,7 +135,7 @@
 | 4 | 词汇 | 岛(dǎo) 名 · island | 词卡学习 |
 | 5 | 词汇 | 瀑布(pùbù) 名 · waterfall | 词卡学习 |
 | 6 | 词汇 | 古城(gǔchéng) 名 · ancient city; old town | 词卡学习 |
-| 7 | 词汇 | 门票(ménpiào) 名 · admission ticket | 词卡学习 |
+| 7 | 词汇 | 入场费(rùchǎngfèi) 名 · admission fee; entry fee | 词卡学习 |
 | 8 | 词汇 | 游客(yóukè) 名 · tourist | 词卡学习 |
 | 9 | 词汇 | 导游(dǎoyóu) 名 · tour guide | 词卡学习 |
 | 10 | 词汇 | 拍照(pāizhào) 动 · to take a photo | 词卡学习 |
@@ -148,7 +148,7 @@
 | 17 | 词汇 | 值得(zhídé) 动 · to be worth | 词卡学习 |
 | 18 | 词汇 | 攻略(gōnglüè) 名 · travel guide; strategy | 词卡学习 |
 | 19 | 词汇 | 防晒(fángshài) 动/名 · sunscreen; sun protection | 词卡学习 |
-| 20 | 词汇 | 游泳(yóuyǒng) 动 · to swim | 词卡学习 |
+| 20 | 词汇 | 浮潜(fúqián) 动 · to snorkel | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点·日常例句）
 
@@ -180,7 +180,7 @@
 | 2 | 词汇 | 迷路(mílù) 动 · to get lost | 词卡学习 |
 | 3 | 词汇 | 附近(fùjìn) 名/形 · nearby; vicinity | 词卡学习 |
 | 4 | 词汇 | 对面(duìmiàn) 名 · opposite side | 词卡学习 |
-| 5 | 词汇 | 旁边(pángbiān) 名 · beside; next to | 词卡学习 |
+| 5 | 词汇 | 一旁(yīpáng) 名 · aside; to one side | 词卡学习 |
 | 6 | 词汇 | 前方(qiánfāng) 名 · ahead; in front | 词卡学习 |
 | 7 | 词汇 | 拐角(guǎijiǎo) 名 · corner | 词卡学习 |
 | 8 | 词汇 | 标志(biāozhì) 名 · sign; landmark | 词卡学习 |
@@ -191,11 +191,11 @@
 | 13 | 词汇 | 经过(jīngguò) 动 · to pass by | 词卡学习 |
 | 14 | 词汇 | 沿着(yánzhe) 介 · along | 词卡学习 |
 | 15 | 词汇 | 一直(yìzhí) 副 · straight; all the way | 词卡学习 |
-| 16 | 词汇 | 左边(zuǒbian) 名 · left side | 词卡学习 |
-| 17 | 词汇 | 右边(yòubian) 名 · right side | 词卡学习 |
+| 16 | 词汇 | 左侧(zuǒcè) 名 · left side | 词卡学习 |
+| 17 | 词汇 | 右侧(yòucè) 名 · right side | 词卡学习 |
 | 18 | 词汇 | 路口(lùkǒu) 名 · intersection | 词卡学习 |
-| 19 | 词汇 | 过(guò) 动 · to cross; to pass | 词卡学习 |
-| 20 | 词汇 | 认识(rènshi) 动 · to recognize; to know | 词卡学习 |
+| 19 | 词汇 | 路过(lùguò) 动 · to pass by; to walk past | 词卡学习 |
+| 20 | 词汇 | 结识(jiéshí) 动 · to get acquainted with | 词卡学习 |
 
 ### 知识点清单 — 语法（4个语法点·日常例句）
 
