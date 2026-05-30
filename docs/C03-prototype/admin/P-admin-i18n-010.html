@@ -66,15 +66,18 @@
     <aside class="admin-sidebar">
       <div class="sidebar-section">翻译</div>
       <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
-      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
       <a href="P-admin-i18n-003.html" class="sidebar-item">文案翻译</a>
       <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
       <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
       <a href="P-admin-i18n-009.html" class="sidebar-item">翻译接口</a>
       <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
+      <a href="P-admin-i18n-013.html" class="sidebar-item">配音总览</a>
       <a href="P-admin-i18n-008.html" class="sidebar-item">配音管理</a>
+      <a href="P-admin-i18n-016.html" class="sidebar-item">音色管理</a>
       <a href="P-admin-i18n-010.html" class="sidebar-item active">配音任务</a>
       <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">全局</div>
+      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
     </aside>
 
     <main class="admin-content">
@@ -90,6 +93,7 @@
               <th style="width:70px">任务 ID</th>
               <th>范围</th>
               <th style="width:120px">目标语言</th>
+              <th style="width:130px">音色模型</th>
               <th style="width:160px">进度</th>
               <th style="width:80px">状态</th>
               <th style="width:130px">创建时间</th>
@@ -101,13 +105,14 @@
             <!-- 执行中 -->
             <tr class="expandable" onclick="toggleDetail('detail-1')">
               <td class="task-id">#2001</td>
-              <td>courses.description</td>
+              <td>课程表 · description</td>
               <td>
                 <div class="locale-tags">
                   <span class="locale-tag">zh</span>
                   <span class="locale-tag">en</span>
                 </div>
               </td>
+              <td style="font-size:var(--text-xs)">Voice-A</td>
               <td>
                 <div class="progress-wrapper">
                   <div class="progress-bar-sm"><div class="progress-fill-sm" style="width:50%;background:var(--color-brand-default)"></div></div>
@@ -128,12 +133,13 @@
             <!-- 排队中 -->
             <tr class="expandable" onclick="toggleDetail('detail-2')">
               <td class="task-id">#2002</td>
-              <td>lessons.title</td>
+              <td>课时表 · title</td>
               <td>
                 <div class="locale-tags">
                   <span class="locale-tag">zh</span>
                 </div>
               </td>
+              <td style="font-size:var(--text-xs)">Voice-A</td>
               <td>
                 <div class="progress-wrapper">
                   <div class="progress-bar-sm"><div class="progress-fill-sm" style="width:0%;background:var(--color-neutral-300)"></div></div>
@@ -154,12 +160,13 @@
             <!-- 已完成 -->
             <tr class="expandable" onclick="toggleDetail('detail-3')">
               <td class="task-id">#2003</td>
-              <td>courses.title</td>
+              <td>课程表 · title</td>
               <td>
                 <div class="locale-tags">
                   <span class="locale-tag">en</span>
                 </div>
               </td>
+              <td style="font-size:var(--text-xs)">Voice-B</td>
               <td>
                 <div class="progress-wrapper">
                   <div class="progress-bar-sm"><div class="progress-fill-sm" style="width:100%;background:var(--color-success-700)"></div></div>
@@ -180,12 +187,13 @@
             <!-- 部分完成 -->
             <tr class="expandable" onclick="toggleDetail('detail-4')">
               <td class="task-id">#2004</td>
-              <td>vocabulary.meaning</td>
+              <td>词汇表 · meaning</td>
               <td>
                 <div class="locale-tags">
                   <span class="locale-tag">zh</span>
                 </div>
               </td>
+              <td style="font-size:var(--text-xs)">Voice-A</td>
               <td>
                 <div class="progress-wrapper">
                   <div class="progress-bar-sm"><div class="progress-fill-sm" style="width:90%;background:var(--color-warning-500)"></div></div>
@@ -213,12 +221,13 @@
             <!-- 已取消 -->
             <tr class="expandable" onclick="toggleDetail('detail-5')">
               <td class="task-id">#2005</td>
-              <td>courses.description</td>
+              <td>课程表 · description</td>
               <td>
                 <div class="locale-tags">
                   <span class="locale-tag">vi</span>
                 </div>
               </td>
+              <td style="font-size:var(--text-xs)">Voice-A</td>
               <td>
                 <div class="progress-wrapper">
                   <div class="progress-bar-sm"><div class="progress-fill-sm" style="width:42%;background:var(--color-neutral-300)"></div></div>

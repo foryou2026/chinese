@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-id" content="P-admin-i18n-016">
+  <meta name="system-id" content="admin">
+  <meta name="module-id" content="i18n">
+  <meta name="feature-id" content="translation-hub">
+  <meta name="related-r-ids" content="R-i18n-056,R-i18n-057,R-i18n-058">
+  <title>音色管理 · admin 原型</title>
+  <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
+  <style>
+    body { display:flex; flex-direction:column; min-height:100dvh; }
+    .admin-topbar { display:flex; align-items:center; height:var(--topbar-height); padding:0 var(--space-4); position:sticky; top:0; z-index:var(--z-sticky); background:var(--glass-bg); backdrop-filter:var(--glass-blur); border-bottom:1px solid var(--glass-border); }
+    .admin-topbar-logo { font-weight:var(--weight-semibold); font-size:var(--text-md); color:var(--text-primary); margin-right:auto; }
+    .admin-layout { display:flex; flex:1; position:relative; z-index:1; }
+    .admin-sidebar { width:var(--sidebar-width); background:var(--glass-bg-card); backdrop-filter:var(--glass-blur); border-right:1px solid var(--glass-border); padding:var(--space-4) 0; flex-shrink:0; }
+    .sidebar-section { padding:var(--space-2) var(--space-4); font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; }
+    .sidebar-item { display:flex; align-items:center; gap:var(--space-2); height:36px; padding:0 var(--space-4); font-size:var(--text-sm); color:var(--text-secondary); cursor:pointer; transition:background var(--motion-fast); text-decoration:none; }
+    .sidebar-item:hover { background:var(--glass-bg); color:var(--text-primary); }
+    .sidebar-item.active { background:var(--color-brand-50); color:var(--color-brand-default); font-weight:var(--weight-medium); }
+    .admin-content { flex:1; padding:var(--space-6); overflow-y:auto; }
+    .page-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-5); }
+    .page-header h1 { font-size:var(--text-xl); }
+
+    /* 分组表头 */
+    .group-header { display:flex; align-items:center; gap:var(--space-2); padding:var(--space-3) var(--space-4); background:var(--glass-bg); border-radius:var(--radius-md) var(--radius-md) 0 0; border:1px solid var(--glass-border); border-bottom:none; cursor:pointer; margin-top:var(--space-4); }
+    .group-header:first-of-type { margin-top:0; }
+    .group-header .group-name { font-weight:var(--weight-semibold); font-size:var(--text-sm); }
+    .group-header .group-count { font-size:var(--text-xs); color:var(--text-muted); }
+    .group-header .chevron { color:var(--text-muted); transition:transform var(--motion-fast); }
+
+    /* 音色表格 */
+    .voice-table { width:100%; border-collapse:collapse; border:1px solid var(--glass-border); border-top:none; }
+    .voice-table th { text-align:left; font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); padding:var(--space-2) var(--space-3); background:var(--glass-bg); border-bottom:1px solid var(--glass-border); }
+    .voice-table td { padding:var(--space-3); font-size:var(--text-sm); border-bottom:1px solid var(--glass-border); vertical-align:middle; }
+    .voice-table tr:hover { background:var(--glass-bg); }
+    .voice-params { font-family:var(--font-mono); font-size:10px; color:var(--text-secondary); }
+
+    /* 表单样式 */
+    .form-group { margin-bottom:var(--space-4); }
+    .form-label { display:block; font-size:var(--text-sm); font-weight:var(--weight-medium); color:var(--text-primary); margin-bottom:var(--space-1); }
+    .form-hint { font-size:var(--text-xs); color:var(--text-muted); margin-top:2px; }
+    .form-input { width:100%; padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); box-sizing:border-box; }
+    .form-input:focus { outline:none; border-color:var(--color-brand-default); box-shadow:0 0 0 2px var(--color-brand-50); }
+    .form-select { width:100%; padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); box-sizing:border-box; }
+    .code-editor { width:100%; padding:var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-family:var(--font-mono); font-size:var(--text-xs); line-height:1.6; background:var(--glass-bg); color:var(--text-primary); resize:vertical; box-sizing:border-box; tab-size:2; }
+    .code-editor:focus { outline:none; border-color:var(--color-brand-default); box-shadow:0 0 0 2px var(--color-brand-50); }
+
+    /* 试听测试区域 */
+    .test-card { margin-top:var(--space-6); }
+    .test-card-title { font-size:var(--text-md); font-weight:var(--weight-semibold); margin-bottom:var(--space-4); padding-bottom:var(--space-2); border-bottom:1px solid var(--border-color); }
+    .test-area { padding:var(--space-4); border:1px dashed var(--border-color); border-radius:var(--radius-md); background:var(--glass-bg); }
+    .test-area-title { font-size:var(--text-sm); font-weight:var(--weight-medium); margin-bottom:var(--space-3); }
+    .audio-preview { margin-top:var(--space-3); padding:var(--space-3); background:var(--surface-page); border-radius:var(--radius-md); display:none; }
+    .audio-preview.show { display:flex; align-items:center; gap:var(--space-3); }
+    .audio-play-btn { width:36px; height:36px; border-radius:50%; background:var(--color-brand-default); color:#fff; border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:var(--text-md); flex-shrink:0; transition:background var(--motion-fast); }
+    .audio-play-btn:hover { background:var(--color-brand-600); }
+    .audio-info { font-size:var(--text-xs); color:var(--text-muted); }
+    .audio-info strong { color:var(--text-secondary); font-weight:var(--weight-medium); }
+
+    .page-footer { display:flex; align-items:center; justify-content:space-between; margin-top:var(--space-4); padding:var(--space-3) 0; }
+    .page-footer-stats { font-size:var(--text-xs); color:var(--text-muted); }
+
+    @media (max-width: 768px) { .admin-sidebar { display:none; } }
+  </style>
+</head>
+<body>
+  <div class="admin-page-bg" aria-hidden="true"></div>
+  <header class="admin-topbar">
+    <span class="admin-topbar-logo">管理后台</span>
+    <div style="display:flex;align-items:center;gap:var(--space-2)">
+      <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.switchTheme(document.documentElement.getAttribute('data-mode')==='dark'?'light':'dark')">明/暗</button>
+      <a href="i18n/translation-hub/index.html" class="proto-btn proto-btn-ghost proto-btn-sm" style="text-decoration:none;font-size:var(--text-xs)">原型导航</a>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <div class="sidebar-section">翻译</div>
+      <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
+      <a href="P-admin-i18n-003.html" class="sidebar-item">文案翻译</a>
+      <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
+      <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
+      <a href="P-admin-i18n-009.html" class="sidebar-item">翻译接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
+      <a href="P-admin-i18n-013.html" class="sidebar-item">配音总览</a>
+      <a href="P-admin-i18n-008.html" class="sidebar-item">配音管理</a>
+      <a href="P-admin-i18n-016.html" class="sidebar-item active">音色管理</a>
+      <a href="P-admin-i18n-010.html" class="sidebar-item">配音任务</a>
+      <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">全局</div>
+      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
+    </aside>
+
+    <main class="admin-content">
+      <div class="page-header">
+        <h1>音色管理</h1>
+        <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="openAddVoiceModal()">新增音色</button>
+      </div>
+
+      <!-- Azure TTS 分组 -->
+      <div class="group-header" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'table':'none'">
+        <span class="chevron">&#9660;</span>
+        <span class="group-name">Azure TTS</span>
+        <span class="group-count">3 个音色</span>
+      </div>
+      <table class="voice-table">
+        <thead>
+          <tr>
+            <th style="width:150px">语言</th>
+            <th style="width:150px">供应商</th>
+            <th style="width:200px">音色名称</th>
+            <th style="width:200px">音色 ID</th>
+            <th>音色参数</th>
+            <th style="width:100px">输出格式</th>
+            <th style="width:150px">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>中文</td>
+            <td>Azure TTS</td>
+            <td>Xiaoxiao（活泼女声）</td>
+            <td style="font-family:var(--font-mono);font-size:var(--text-xs)">zh-CN-XiaoxiaoNeural</td>
+            <td class="voice-params">{"speed":1.0,"pitch":0}</td>
+            <td>mp3</td>
+            <td>
+              <div style="display:flex;gap:var(--space-1)">
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="previewVoice('zh-CN-XiaoxiaoNeural','Xiaoxiao（活泼女声）')">试听</button>
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="openEditVoiceModal('Xiaoxiao（活泼女声）','zh-CN-XiaoxiaoNeural','Azure TTS','中文','{&quot;speed&quot;:1.0,&quot;pitch&quot;:0}','mp3')">编辑</button>
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="confirmDelete('Xiaoxiao（活泼女声）')">删除</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>英语</td>
+            <td>Azure TTS</td>
+            <td>Jenny（标准女声）</td>
+            <td style="font-family:var(--font-mono);font-size:var(--text-xs)">en-US-JennyNeural</td>
+            <td class="voice-params">{"speed":1.0,"pitch":0}</td>
+            <td>mp3</td>
+            <td>
+              <div style="display:flex;gap:var(--space-1)">
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="previewVoice('en-US-JennyNeural','Jenny（标准女声）')">试听</button>
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="openEditVoiceModal('Jenny（标准女声）','en-US-JennyNeural','Azure TTS','英语','{&quot;speed&quot;:1.0,&quot;pitch&quot;:0}','mp3')">编辑</button>
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="confirmDelete('Jenny（标准女声）')">删除</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>越南语</td>
+            <td>Azure TTS</td>
+            <td>HoaiMy（标准女声）</td>
+            <td style="font-family:var(--font-mono);font-size:var(--text-xs)">vi-VN-HoaiMyNeural</td>
+            <td class="voice-params">{"speed":1.0}</td>
+            <td>mp3</td>
+            <td>
+              <div style="display:flex;gap:var(--space-1)">
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="previewVoice('vi-VN-HoaiMyNeural','HoaiMy（标准女声）')">试听</button>
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="openEditVoiceModal('HoaiMy（标准女声）','vi-VN-HoaiMyNeural','Azure TTS','越南语','{&quot;speed&quot;:1.0}','mp3')">编辑</button>
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="confirmDelete('HoaiMy（标准女声）')">删除</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ElevenLabs 分组 -->
+      <div class="group-header" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'table':'none'" style="margin-top:var(--space-4)">
+        <span class="chevron">&#9660;</span>
+        <span class="group-name">ElevenLabs</span>
+        <span class="group-count">1 个音色</span>
+      </div>
+      <table class="voice-table">
+        <thead>
+          <tr>
+            <th style="width:150px">语言</th>
+            <th style="width:150px">供应商</th>
+            <th style="width:200px">音色名称</th>
+            <th style="width:200px">音色 ID</th>
+            <th>音色参数</th>
+            <th style="width:100px">输出格式</th>
+            <th style="width:150px">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>英语</td>
+            <td>ElevenLabs</td>
+            <td>Rachel</td>
+            <td style="font-family:var(--font-mono);font-size:var(--text-xs)">rachel_v2</td>
+            <td class="voice-params">{"stability":0.5,"clarity":0.75}</td>
+            <td>mp3</td>
+            <td>
+              <div style="display:flex;gap:var(--space-1)">
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="previewVoice('rachel_v2','Rachel')">试听</button>
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="openEditVoiceModal('Rachel','rachel_v2','ElevenLabs','英语','{&quot;stability&quot;:0.5,&quot;clarity&quot;:0.75}','mp3')">编辑</button>
+                <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="confirmDelete('Rachel')">删除</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="page-footer">
+        <span class="page-footer-stats">共 4 个音色 · 2 个供应商</span>
+      </div>
+
+      <!-- 试听测试区域 -->
+      <div class="test-card">
+        <div class="test-card-title">试听测试</div>
+        <div class="admin-card" style="padding:var(--space-5)">
+          <div class="test-area">
+            <div class="test-area-title">输入文本并试听音色效果</div>
+            <div style="display:flex;gap:var(--space-2);align-items:flex-end;flex-wrap:wrap">
+              <div style="flex:1;min-width:200px">
+                <label class="form-label" style="font-size:var(--text-xs)">测试文本</label>
+                <textarea class="form-input" id="test-text" rows="2" style="resize:vertical" placeholder="输入需要转换为语音的文本内容">这是一门中文入门课程，适合零基础学习者。</textarea>
+              </div>
+              <div style="width:200px">
+                <label class="form-label" style="font-size:var(--text-xs)">选择音色</label>
+                <select class="form-select" id="test-voice" style="font-size:var(--text-xs)">
+                  <option value="zh-CN-XiaoxiaoNeural">Xiaoxiao（活泼女声）- Azure</option>
+                  <option value="en-US-JennyNeural">Jenny（标准女声）- Azure</option>
+                  <option value="vi-VN-HoaiMyNeural">HoaiMy（标准女声）- Azure</option>
+                  <option value="rachel_v2">Rachel - ElevenLabs</option>
+                </select>
+              </div>
+              <button class="proto-btn proto-btn-secondary proto-btn-sm" onclick="runPreviewTest()">生成试听</button>
+            </div>
+            <div class="audio-preview" id="audio-preview">
+              <button class="audio-play-btn" onclick="proto.toast({type:'info',message:'播放音频预览…'})">&#9654;</button>
+              <div class="audio-info">
+                <div><strong>tts-preview.mp3</strong></div>
+                <div>时长 3.2s &middot; 48 KB &middot; mp3 &middot; 24000 Hz</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../B02-experience-design/admin/prototype-style/app.js"></script>
+  <script>
+    if(typeof proto !== 'undefined') proto.bootstrap();
+
+    /* ---- 新增音色 Modal ---- */
+    function openAddVoiceModal() {
+      proto.modal({
+        size: 'md',
+        title: '新增音色',
+        body:
+          '<div style="display:flex;flex-direction:column;gap:var(--space-4)">' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">供应商</label>' +
+              '<select class="proto-input" style="margin-top:var(--space-1)">' +
+                '<option value="">请选择供应商…</option>' +
+                '<option value="azure">Azure TTS</option>' +
+                '<option value="elevenlabs">ElevenLabs</option>' +
+              '</select>' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">语言</label>' +
+              '<select class="proto-input" style="margin-top:var(--space-1)">' +
+                '<option value="">请选择语言…</option>' +
+                '<option value="zh">中文</option>' +
+                '<option value="en">英语</option>' +
+                '<option value="vi">越南语</option>' +
+              '</select>' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">音色名称</label>' +
+              '<input type="text" class="proto-input" style="margin-top:var(--space-1)" placeholder="例如：Xiaoxiao（活泼女声）">' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">音色 ID</label>' +
+              '<input type="text" class="proto-input" style="margin-top:var(--space-1)" placeholder="例如：zh-CN-XiaoxiaoNeural">' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">音色参数（JSON）</label>' +
+              '<textarea class="proto-input" style="margin-top:var(--space-1);font-family:var(--font-mono);font-size:var(--text-xs);min-height:80px" placeholder=\'{"speed":1.0,"pitch":0}\'></textarea>' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">输出格式</label>' +
+              '<select class="proto-input" style="margin-top:var(--space-1)">' +
+                '<option value="mp3">mp3</option>' +
+                '<option value="wav">wav</option>' +
+                '<option value="ogg">ogg</option>' +
+              '</select>' +
+            '</div>' +
+          '</div>',
+        confirmLabel: '添加',
+        cancelLabel: '取消',
+        onConfirm: function() {
+          proto.toast({ type: 'success', message: '音色已添加' });
+        }
+      });
+    }
+
+    /* ---- 编辑音色 Modal ---- */
+    function openEditVoiceModal(name, voiceId, provider, lang, params, format) {
+      proto.modal({
+        size: 'md',
+        title: '编辑音色 - ' + name,
+        body:
+          '<div style="display:flex;flex-direction:column;gap:var(--space-4)">' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">供应商</label>' +
+              '<select class="proto-input" style="margin-top:var(--space-1)">' +
+                '<option' + (provider === 'Azure TTS' ? ' selected' : '') + '>Azure TTS</option>' +
+                '<option' + (provider === 'ElevenLabs' ? ' selected' : '') + '>ElevenLabs</option>' +
+              '</select>' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">语言</label>' +
+              '<select class="proto-input" style="margin-top:var(--space-1)">' +
+                '<option' + (lang === '中文' ? ' selected' : '') + '>中文</option>' +
+                '<option' + (lang === '英语' ? ' selected' : '') + '>英语</option>' +
+                '<option' + (lang === '越南语' ? ' selected' : '') + '>越南语</option>' +
+              '</select>' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">音色名称</label>' +
+              '<input type="text" class="proto-input" style="margin-top:var(--space-1)" value="' + name + '">' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">音色 ID</label>' +
+              '<input type="text" class="proto-input" style="margin-top:var(--space-1)" value="' + voiceId + '">' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">音色参数（JSON）</label>' +
+              '<textarea class="proto-input" style="margin-top:var(--space-1);font-family:var(--font-mono);font-size:var(--text-xs);min-height:80px">' + params.replace(/&quot;/g, '"') + '</textarea>' +
+            '</div>' +
+            '<div class="proto-field">' +
+              '<label class="proto-label">输出格式</label>' +
+              '<select class="proto-input" style="margin-top:var(--space-1)">' +
+                '<option' + (format === 'mp3' ? ' selected' : '') + '>mp3</option>' +
+                '<option' + (format === 'wav' ? ' selected' : '') + '>wav</option>' +
+                '<option' + (format === 'ogg' ? ' selected' : '') + '>ogg</option>' +
+              '</select>' +
+            '</div>' +
+          '</div>',
+        confirmLabel: '保存',
+        cancelLabel: '取消',
+        onConfirm: function() {
+          proto.toast({ type: 'success', message: '音色 ' + name + ' 已更新' });
+        }
+      });
+    }
+
+    /* ---- 删除确认 ---- */
+    function confirmDelete(name) {
+      proto.modal({
+        size: 'sm',
+        title: '删除音色',
+        body: '<p style="font-size:var(--text-sm)">确定要删除音色 <strong>' + name + '</strong> 吗？</p>' +
+              '<p style="font-size:var(--text-xs);color:var(--text-muted);margin-top:var(--space-2)">系统将检查该音色是否正在被配音任务使用，若有关联任务将无法删除。</p>',
+        confirmLabel: '确认删除',
+        cancelLabel: '取消',
+        onConfirm: function() {
+          proto.toast({ type: 'success', message: '音色 ' + name + ' 已删除' });
+        }
+      });
+    }
+
+    /* ---- 试听（从表格行触发） ---- */
+    function previewVoice(voiceId, voiceName) {
+      // 选中对应音色
+      var sel = document.getElementById('test-voice');
+      for (var i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].value === voiceId) {
+          sel.selectedIndex = i;
+          break;
+        }
+      }
+      // 滚动到试听区域
+      document.querySelector('.test-card').scrollIntoView({ behavior: 'smooth' });
+      // 触发生成
+      proto.toast({ type: 'info', message: '正在生成 ' + voiceName + ' 试听…' });
+      setTimeout(function() {
+        var preview = document.getElementById('audio-preview');
+        preview.querySelector('.audio-info').innerHTML =
+          '<div><strong>tts-preview-' + voiceId + '.mp3</strong></div>' +
+          '<div>时长 3.2s &middot; 48 KB &middot; mp3 &middot; 24000 Hz</div>';
+        preview.classList.add('show');
+        proto.toast({ type: 'success', message: voiceName + ' 试听生成成功' });
+      }, 1500);
+    }
+
+    /* ---- 试听测试（从测试区域触发） ---- */
+    function runPreviewTest() {
+      var text = document.getElementById('test-text').value.trim();
+      if (!text) {
+        proto.toast({ type: 'warning', message: '请输入测试文本' });
+        return;
+      }
+      var sel = document.getElementById('test-voice');
+      var voiceId = sel.value;
+      var voiceName = sel.options[sel.selectedIndex].text;
+
+      var preview = document.getElementById('audio-preview');
+      preview.className = 'audio-preview';
+      proto.toast({ type: 'info', message: '正在生成试听…' });
+
+      setTimeout(function() {
+        preview.querySelector('.audio-info').innerHTML =
+          '<div><strong>tts-preview-' + voiceId + '.mp3</strong></div>' +
+          '<div>时长 3.2s &middot; 48 KB &middot; mp3 &middot; 24000 Hz</div>';
+        preview.classList.add('show');
+        proto.toast({ type: 'success', message: voiceName + ' 试听生成成功' });
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

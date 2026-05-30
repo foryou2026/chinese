@@ -7,6 +7,7 @@
   <meta name="system-id" content="admin">
   <meta name="module-id" content="i18n">
   <meta name="feature-id" content="translation-hub">
+  <meta name="related-r-ids" content="R-i18n-045">
   <title>翻译接口 · admin 原型</title>
   <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
   <style>
@@ -20,58 +21,37 @@
     .sidebar-item:hover { background:var(--glass-bg); color:var(--text-primary); }
     .sidebar-item.active { background:var(--color-brand-50); color:var(--color-brand-default); font-weight:var(--weight-medium); }
     .admin-content { flex:1; padding:var(--space-6); overflow-y:auto; }
-
-    /* 表单样式 */
-    .config-form { max-width:640px; }
-    .form-group { margin-bottom:var(--space-4); }
-    .form-label { display:flex; align-items:center; gap:var(--space-2); font-size:var(--text-sm); font-weight:var(--weight-medium); color:var(--text-primary); margin-bottom:var(--space-1); }
-    .form-hint { font-size:var(--text-xs); color:var(--text-muted); margin-top:2px; }
-    .form-input { width:100%; padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); box-sizing:border-box; }
-    .form-input:focus { outline:none; border-color:var(--color-brand-default); box-shadow:0 0 0 2px var(--color-brand-50); }
-    .form-select { width:100%; padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); box-sizing:border-box; }
-
-    /* 密码输入框 */
-    .password-wrapper { position:relative; }
-    .password-wrapper input { padding-right:40px; }
-    .password-toggle { position:absolute; right:var(--space-2); top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; font-size:var(--text-sm); color:var(--text-muted); padding:var(--space-1); }
-    .password-toggle:hover { color:var(--text-primary); }
-
-    /* 代码编辑器风格的 textarea */
-    .code-editor { width:100%; padding:var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-family:var(--font-mono); font-size:var(--text-xs); line-height:1.6; background:var(--glass-bg); color:var(--text-primary); resize:vertical; box-sizing:border-box; tab-size:2; }
-    .code-editor:focus { outline:none; border-color:var(--color-brand-default); box-shadow:0 0 0 2px var(--color-brand-50); }
-    .code-editor::placeholder { color:var(--text-muted); opacity:0.7; }
-
-    /* 翻译 Prompt textarea */
-    .prompt-editor { width:100%; padding:var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); line-height:1.6; background:var(--surface-page); color:var(--text-primary); resize:vertical; box-sizing:border-box; }
-    .prompt-editor:focus { outline:none; border-color:var(--color-brand-default); box-shadow:0 0 0 2px var(--color-brand-50); }
-    .prompt-editor::placeholder { color:var(--text-muted); opacity:0.7; }
-
-    /* 状态徽标 */
-    .status-badge { display:inline-flex; align-items:center; gap:4px; font-size:10px; padding:2px 10px; border-radius:var(--radius-pill); font-weight:var(--weight-medium); }
-    .status-badge .status-dot { display:inline-block; width:6px; height:6px; border-radius:50%; }
-    .status-badge.not-configured { background:var(--color-neutral-100); color:var(--text-muted); }
-    .status-badge.not-configured .status-dot { background:var(--color-neutral-400); }
-    .status-badge.connected { background:var(--color-success-50); color:var(--color-success-700); }
-    .status-badge.connected .status-dot { background:var(--color-success-700); }
-    .status-badge.failed { background:var(--color-danger-50); color:var(--color-danger-500); }
-    .status-badge.failed .status-dot { background:var(--color-danger-500); }
-
-    /* 测试区域 */
-    .test-area { margin-top:var(--space-5); padding:var(--space-4); border:1px dashed var(--border-color); border-radius:var(--radius-md); background:var(--glass-bg); }
-    .test-area-title { font-size:var(--text-sm); font-weight:var(--weight-semibold); margin-bottom:var(--space-3); color:var(--text-primary); }
-    .test-row { display:flex; gap:var(--space-2); align-items:flex-end; flex-wrap:wrap; }
-    .test-row > .test-field-text { flex:1; min-width:180px; }
-    .test-row > .test-field-lang { width:110px; }
-    .test-result { margin-top:var(--space-3); padding:var(--space-3); background:var(--surface-page); border-radius:var(--radius-md); font-size:var(--text-sm); display:none; }
-    .test-result.show { display:block; }
-    .test-result.success { border-left:3px solid var(--color-success-700); }
-    .test-result.error { border-left:3px solid var(--color-danger-500); }
-    .test-meta { display:flex; gap:var(--space-3); font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--space-2); }
-    .test-meta span { display:inline-flex; align-items:center; gap:2px; }
-
-    /* 操作按钮区 */
-    .form-actions { display:flex; gap:var(--space-2); margin-top:var(--space-5); padding-top:var(--space-4); border-top:1px solid var(--glass-border); }
-
+    .page-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-5); }
+    .page-header h1 { font-size:var(--text-xl); }
+    .provider-table { width:100%; border-collapse:collapse; }
+    .provider-table th { text-align:left; font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); padding:var(--space-2) var(--space-3); border-bottom:2px solid var(--border-color); }
+    .provider-table td { padding:var(--space-3); font-size:var(--text-sm); border-bottom:1px solid var(--glass-border); vertical-align:middle; }
+    .provider-table tr:hover { background:var(--glass-bg); }
+    .provider-name-link { color:var(--color-brand-default); text-decoration:none; font-weight:var(--weight-medium); cursor:pointer; }
+    .provider-name-link:hover { text-decoration:underline; }
+    .endpoint-text { font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .conn-badge { display:inline-flex; align-items:center; gap:var(--space-1); font-size:10px; padding:2px 8px; border-radius:var(--radius-pill); font-weight:var(--weight-medium); }
+    .conn-badge.connected { background:var(--color-success-50); color:var(--color-success-700); }
+    .conn-badge.failed { background:var(--color-danger-50); color:var(--color-danger-500); }
+    .conn-badge.unconfigured { background:var(--color-neutral-100); color:var(--text-muted); }
+    .conn-dot { width:6px; height:6px; border-radius:50%; }
+    .conn-dot.connected { background:var(--color-success-700); }
+    .conn-dot.failed { background:var(--color-danger-500); }
+    .conn-dot.unconfigured { background:var(--color-neutral-400); }
+    /* 开关样式 */
+    .toggle-switch { position:relative; display:inline-block; width:36px; height:20px; }
+    .toggle-switch input { opacity:0; width:0; height:0; }
+    .toggle-slider { position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background:var(--color-neutral-300); border-radius:var(--radius-pill); transition:background var(--motion-fast); }
+    .toggle-slider::before { content:''; position:absolute; width:16px; height:16px; left:2px; bottom:2px; background:#fff; border-radius:50%; transition:transform var(--motion-fast); }
+    .toggle-switch input:checked + .toggle-slider { background:var(--color-brand-default); }
+    .toggle-switch input:checked + .toggle-slider::before { transform:translateX(16px); }
+    .page-footer { display:flex; align-items:center; justify-content:space-between; margin-top:var(--space-4); padding:var(--space-3) 0; }
+    .page-footer-stats { font-size:var(--text-xs); color:var(--text-muted); }
+    /* 新增供应商模态框表单 */
+    .modal-form-group { margin-bottom:var(--space-3); }
+    .modal-form-group label { display:block; font-size:var(--text-sm); font-weight:var(--weight-medium); color:var(--text-primary); margin-bottom:var(--space-1); }
+    .modal-form-group input { width:100%; padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); box-sizing:border-box; }
+    .modal-form-group input:focus { outline:none; border-color:var(--color-brand-default); box-shadow:0 0 0 2px var(--color-brand-50); }
     @media (max-width: 768px) { .admin-sidebar { display:none; } }
   </style>
 </head>
@@ -89,259 +69,155 @@
     <aside class="admin-sidebar">
       <div class="sidebar-section">翻译</div>
       <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
-      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
       <a href="P-admin-i18n-003.html" class="sidebar-item">文案翻译</a>
       <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
       <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
       <a href="P-admin-i18n-009.html" class="sidebar-item active">翻译接口</a>
       <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
+      <a href="P-admin-i18n-013.html" class="sidebar-item">配音总览</a>
       <a href="P-admin-i18n-008.html" class="sidebar-item">配音管理</a>
+      <a href="P-admin-i18n-016.html" class="sidebar-item">音色管理</a>
       <a href="P-admin-i18n-010.html" class="sidebar-item">配音任务</a>
       <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">全局</div>
+      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
     </aside>
 
     <main class="admin-content">
-
-      <!-- 翻译服务商配置 -->
-      <div class="admin-card" style="padding:var(--space-5)">
-        <div class="config-form">
-
-          <!-- 服务商名称 + 状态 -->
-          <div class="form-group">
-            <div class="form-label">
-              服务商名称
-              <span class="status-badge not-configured" id="provider-status"><span class="status-dot"></span>未配置</span>
-            </div>
-            <input type="text" class="form-input" id="provider-name" placeholder="例如：My Translation Provider">
-            <div class="form-hint">为此翻译服务取一个易于识别的名称</div>
-          </div>
-
-          <!-- API Endpoint -->
-          <div class="form-group">
-            <label class="form-label">API Endpoint</label>
-            <input type="text" class="form-input" id="api-endpoint" placeholder="https://api.example.com/v1/chat/completions">
-            <div class="form-hint">翻译服务的请求地址</div>
-          </div>
-
-          <!-- API Key -->
-          <div class="form-group">
-            <label class="form-label">API Key</label>
-            <div class="password-wrapper">
-              <input type="password" class="form-input" id="api-key" placeholder="sk-xxxxxxxxxxxxxxxxxxxxxxxx">
-              <button class="password-toggle" onclick="togglePassword('api-key', this)">👁</button>
-            </div>
-            <div class="form-hint">密钥安全存储，加密后保存</div>
-          </div>
-
-          <!-- Model ID -->
-          <div class="form-group">
-            <label class="form-label">Model ID</label>
-            <input type="text" class="form-input" id="model-id" placeholder="e.g. gpt-4o, claude-sonnet-4-6">
-            <div class="form-hint">用于翻译任务的模型标识符</div>
-          </div>
-
-          <!-- 请求参数（JSON） -->
-          <div class="form-group">
-            <label class="form-label">请求参数（JSON）</label>
-            <textarea class="code-editor" id="request-params" rows="8" placeholder='{
-  "temperature": 0.3,
-  "max_tokens": 4096,
-  "top_p": 1
-}'></textarea>
-            <div class="form-hint">自定义传递给 API 的额外参数</div>
-          </div>
-
-          <!-- System Prompt / 翻译 Prompt -->
-          <div class="form-group">
-            <label class="form-label">翻译 Prompt</label>
-            <textarea class="prompt-editor" id="translation-prompt" rows="6" placeholder="将以下{source_lang}文本翻译为{target_lang}。
-保持原文风格和格式。仅输出翻译结果。
-
-{text}"></textarea>
-            <div class="form-hint">支持变量：{source_lang}、{target_lang}、{text}、{context}</div>
-          </div>
-
-          <!-- 测试区域 -->
-          <div class="test-area">
-            <div class="test-area-title">接口测试</div>
-            <div class="test-row">
-              <div class="test-field-text">
-                <label class="form-label" style="font-size:var(--text-xs)">测试文本</label>
-                <input type="text" class="form-input" id="test-text" placeholder="输入测试文本" value="这是一门中文入门课程">
-              </div>
-              <div class="test-field-lang">
-                <label class="form-label" style="font-size:var(--text-xs)">源语言</label>
-                <select class="form-select" id="test-source-lang" style="font-size:var(--text-xs)">
-                  <option value="zh" selected>中文 zh</option>
-                  <option value="en">英语 en</option>
-                  <option value="vi">越南语 vi</option>
-                  <option value="ja">日语 ja</option>
-                  <option value="ko">韩语 ko</option>
-                </select>
-              </div>
-              <div class="test-field-lang">
-                <label class="form-label" style="font-size:var(--text-xs)">目标语言</label>
-                <select class="form-select" id="test-target-lang" style="font-size:var(--text-xs)">
-                  <option value="en" selected>英语 en</option>
-                  <option value="vi">越南语 vi</option>
-                  <option value="zh">中文 zh</option>
-                  <option value="ja">日语 ja</option>
-                  <option value="ko">韩语 ko</option>
-                </select>
-              </div>
-              <div>
-                <button class="proto-btn proto-btn-secondary proto-btn-sm" onclick="runTest()" style="white-space:nowrap">测试翻译</button>
-              </div>
-            </div>
-            <div class="test-result" id="test-result"></div>
-          </div>
-
-          <!-- 保存 / 重置 -->
-          <div class="form-actions">
-            <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="saveConfig()">保存配置</button>
-            <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="resetConfig()">重置</button>
-          </div>
-
-        </div>
+      <div class="page-header">
+        <h1>翻译接口</h1>
+        <button class="proto-btn proto-btn-primary proto-btn-sm" id="btn-add-provider">新增供应商</button>
       </div>
 
+      <div class="admin-card" style="overflow-x:auto">
+        <table class="provider-table">
+          <thead>
+            <tr>
+              <th style="width:200px">供应商名称</th>
+              <th style="width:200px">API 端点</th>
+              <th style="width:80px">模型数量</th>
+              <th style="width:100px">连接状态</th>
+              <th style="width:80px">启用状态</th>
+              <th style="width:150px">最后测试</th>
+              <th style="width:120px">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Claude -->
+            <tr>
+              <td><a href="P-admin-i18n-012.html" class="provider-name-link">Claude</a></td>
+              <td><span class="endpoint-text" title="https://api.anthropic.com/v1/messages">https://api.anthropic.com/...</span></td>
+              <td style="text-align:center">2</td>
+              <td><span class="conn-badge connected"><span class="conn-dot connected"></span>已连接</span></td>
+              <td>
+                <label class="toggle-switch">
+                  <input type="checkbox" checked onchange="toggleProvider(this, 'Claude')">
+                  <span class="toggle-slider"></span>
+                </label>
+              </td>
+              <td style="font-size:var(--text-xs);color:var(--text-muted);white-space:nowrap">2026-05-29 14:30</td>
+              <td>
+                <div style="display:flex;gap:var(--space-1)">
+                  <a href="P-admin-i18n-012.html" class="proto-btn proto-btn-ghost proto-btn-sm" style="text-decoration:none">编辑</a>
+                  <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="confirmDelete('Claude')">删除</button>
+                </div>
+              </td>
+            </tr>
+            <!-- DeepL -->
+            <tr>
+              <td><a href="P-admin-i18n-012.html" class="provider-name-link">DeepL</a></td>
+              <td><span class="endpoint-text" title="https://api.deepl.com/v2/translate">https://api.deepl.com/...</span></td>
+              <td style="text-align:center">1</td>
+              <td><span class="conn-badge connected"><span class="conn-dot connected"></span>已连接</span></td>
+              <td>
+                <label class="toggle-switch">
+                  <input type="checkbox" checked onchange="toggleProvider(this, 'DeepL')">
+                  <span class="toggle-slider"></span>
+                </label>
+              </td>
+              <td style="font-size:var(--text-xs);color:var(--text-muted);white-space:nowrap">2026-05-29 10:00</td>
+              <td>
+                <div style="display:flex;gap:var(--space-1)">
+                  <a href="P-admin-i18n-012.html" class="proto-btn proto-btn-ghost proto-btn-sm" style="text-decoration:none">编辑</a>
+                  <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="confirmDelete('DeepL')">删除</button>
+                </div>
+              </td>
+            </tr>
+            <!-- OpenAI -->
+            <tr>
+              <td><a href="P-admin-i18n-012.html" class="provider-name-link">OpenAI</a></td>
+              <td><span class="endpoint-text" title="https://api.openai.com/v1/chat/completions">https://api.openai.com/...</span></td>
+              <td style="text-align:center">3</td>
+              <td><span class="conn-badge failed"><span class="conn-dot failed"></span>连接失败</span></td>
+              <td>
+                <label class="toggle-switch">
+                  <input type="checkbox" onchange="toggleProvider(this, 'OpenAI')">
+                  <span class="toggle-slider"></span>
+                </label>
+              </td>
+              <td style="font-size:var(--text-xs);color:var(--text-muted);white-space:nowrap">2026-05-28 16:00</td>
+              <td>
+                <div style="display:flex;gap:var(--space-1)">
+                  <a href="P-admin-i18n-012.html" class="proto-btn proto-btn-ghost proto-btn-sm" style="text-decoration:none">编辑</a>
+                  <button class="proto-btn proto-btn-ghost proto-btn-sm" style="color:var(--color-danger-500)" onclick="confirmDelete('OpenAI')">删除</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="page-footer">
+        <span class="page-footer-stats">共 3 个供应商 · 已连接 2 · 连接失败 1</span>
+      </div>
     </main>
   </div>
 
   <script src="../../B02-experience-design/admin/prototype-style/app.js"></script>
   <script>
-    if (typeof proto !== 'undefined') proto.bootstrap();
+    if(typeof proto !== 'undefined') proto.bootstrap();
 
-    /* ---- 密码显示/隐藏 ---- */
-    function togglePassword(id, btn) {
-      var input = document.getElementById(id);
-      if (input.type === 'password') {
-        input.type = 'text';
-        btn.textContent = '🔒';
-      } else {
-        input.type = 'password';
-        btn.textContent = '👁';
-      }
-    }
-
-    /* ---- 更新状态徽标 ---- */
-    function updateStatus(state) {
-      var badge = document.getElementById('provider-status');
-      var map = {
-        'not-configured': { cls: 'status-badge not-configured', text: '未配置' },
-        'connected':      { cls: 'status-badge connected',      text: '已连接' },
-        'failed':         { cls: 'status-badge failed',          text: '连接失败' }
-      };
-      var info = map[state] || map['not-configured'];
-      badge.className = info.cls;
-      badge.innerHTML = '<span class="status-dot"></span>' + info.text;
-    }
-
-    /* ---- 保存配置 ---- */
-    function saveConfig() {
-      var name = document.getElementById('provider-name').value.trim();
-      var endpoint = document.getElementById('api-endpoint').value.trim();
-      var key = document.getElementById('api-key').value.trim();
-
-      if (!name) {
-        proto.toast({ type: 'warning', message: '请填写服务商名称' });
-        return;
-      }
-      if (!endpoint) {
-        proto.toast({ type: 'warning', message: '请填写 API Endpoint' });
-        return;
-      }
-      if (!key) {
-        proto.toast({ type: 'warning', message: '请填写 API Key' });
-        return;
-      }
-
-      // 校验 JSON 格式
-      var paramsText = document.getElementById('request-params').value.trim();
-      if (paramsText) {
-        try {
-          JSON.parse(paramsText);
-        } catch (e) {
-          proto.toast({ type: 'danger', message: '请求参数 JSON 格式错误' });
-          return;
-        }
-      }
-
-      proto.toast({ type: 'success', message: '翻译接口配置已保存' });
-      updateStatus('connected');
-    }
-
-    /* ---- 重置配置 ---- */
-    function resetConfig() {
+    /* 新增供应商模态框 */
+    document.getElementById('btn-add-provider').addEventListener('click', function(){
       proto.modal({
-        title: '重置配置',
-        body: '确定要重置翻译接口配置？所有已填写的字段将被清空。',
-        confirmText: '确认重置',
-        cancelText: '取消',
-        onConfirm: function () {
-          document.getElementById('provider-name').value = '';
-          document.getElementById('api-endpoint').value = '';
-          document.getElementById('api-key').value = '';
-          document.getElementById('api-key').type = 'password';
-          document.getElementById('model-id').value = '';
-          document.getElementById('request-params').value = '';
-          document.getElementById('translation-prompt').value = '';
-          document.getElementById('test-result').className = 'test-result';
-          document.getElementById('test-result').innerHTML = '';
-          updateStatus('not-configured');
-          proto.toast({ type: 'info', message: '已恢复默认配置' });
+        size:'sm',
+        title:'新增供应商',
+        body:
+          '<div class="modal-form-group">' +
+            '<label>供应商名称</label>' +
+            '<input type="text" id="new-provider-name" placeholder="e.g. Google Translate">' +
+          '</div>' +
+          '<div class="modal-form-group">' +
+            '<label>API 端点</label>' +
+            '<input type="url" id="new-provider-endpoint" placeholder="https://api.example.com/v1/translate">' +
+          '</div>',
+        confirmLabel:'保存并配置',
+        cancelLabel:'取消',
+        onConfirm:function(){
+          proto.toast({type:'success', message:'供应商已创建，正在跳转到详情页…'});
+          setTimeout(function(){ window.location.href = 'P-admin-i18n-012.html'; }, 800);
         }
       });
+    });
+
+    /* 启用/禁用开关 */
+    function toggleProvider(el, name) {
+      var state = el.checked ? '已启用' : '已禁用';
+      proto.toast({type:'info', message: name + ' ' + state});
     }
 
-    /* ---- 翻译测试 ---- */
-    function runTest() {
-      var endpoint = document.getElementById('api-endpoint').value.trim();
-      var key = document.getElementById('api-key').value.trim();
-      var text = document.getElementById('test-text').value.trim();
-
-      if (!endpoint || !key) {
-        proto.toast({ type: 'warning', message: '请先填写 API Endpoint 和 API Key' });
-        return;
-      }
-      if (!text) {
-        proto.toast({ type: 'warning', message: '请输入测试文本' });
-        return;
-      }
-
-      var result = document.getElementById('test-result');
-      result.className = 'test-result show';
-      result.innerHTML = '<div style="font-size:var(--text-xs);color:var(--text-muted)">正在测试翻译…</div>';
-
-      // 模拟 API 调用
-      setTimeout(function () {
-        var sourceLang = document.getElementById('test-source-lang').value;
-        var targetLang = document.getElementById('test-target-lang').value;
-
-        // 模拟翻译结果
-        var mockResults = {
-          'zh-en': 'This is a beginner Chinese course.',
-          'zh-vi': 'Đây là một khóa học tiếng Trung cho người mới bắt đầu.',
-          'zh-ja': 'これは中国語入門コースです。',
-          'zh-ko': '이것은 중국어 입문 과정입니다.'
-        };
-        var mockKey = sourceLang + '-' + targetLang;
-        var translation = mockResults[mockKey] || 'Translation result for "' + text + '" (' + sourceLang + ' → ' + targetLang + ')';
-        var latency = (Math.random() * 1.5 + 0.5).toFixed(1);
-        var tokens = Math.floor(Math.random() * 80 + 30);
-
-        result.className = 'test-result success show';
-        result.innerHTML =
-          '<div style="font-size:var(--text-xs);color:var(--color-success-700);margin-bottom:var(--space-1)">测试成功</div>' +
-          '<div style="font-size:var(--text-sm)">' + translation + '</div>' +
-          '<div class="test-meta">' +
-            '<span>耗时 ' + latency + 's</span>' +
-            '<span>Token ' + tokens + '</span>' +
-          '</div>';
-
-        updateStatus('connected');
-        proto.toast({ type: 'success', message: '翻译测试成功' });
-      }, 1500);
+    /* 删除确认 */
+    function confirmDelete(name) {
+      proto.modal({
+        size:'sm',
+        title:'删除供应商',
+        body:'<p style="font-size:var(--text-sm)">确认删除供应商 <strong>' + name + '</strong>？此操作不可撤销，关联的模型配置也将一并删除。</p>',
+        confirmLabel:'确认删除',
+        cancelLabel:'取消',
+        onConfirm:function(){
+          proto.toast({type:'success', message: name + ' 已删除'});
+        }
+      });
     }
   </script>
 </body>

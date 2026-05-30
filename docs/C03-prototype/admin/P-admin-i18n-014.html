@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="page-id" content="P-admin-i18n-005">
+  <meta name="page-id" content="P-admin-i18n-014">
   <meta name="system-id" content="admin">
   <meta name="module-id" content="i18n">
-  <meta name="feature-id" content="translation-hub">
-  <meta name="related-r-ids" content="R-i18n-022,R-i18n-023,R-i18n-050">
-  <title>表字段列表 · admin 原型</title>
+  <meta name="feature-id" content="dubbing-hub">
+  <meta name="related-r-ids" content="R-i18n-052,R-i18n-053">
+  <title>配音字段列表 · admin 原型</title>
   <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
   <style>
     body { display:flex; flex-direction:column; min-height:100dvh; }
@@ -46,6 +46,11 @@
     .coverage-fill { height:100%; border-radius:var(--radius-pill); }
     .priority-card { margin-top:var(--space-5); padding:var(--space-4); font-size:var(--text-sm); color:var(--text-secondary); border-left:3px solid var(--color-brand-default); }
     .batch-bar { display:flex; gap:var(--space-2); margin-bottom:var(--space-4); }
+    .action-links { display:flex; gap:var(--space-3); align-items:center; }
+    .action-links a { font-size:var(--text-sm); color:var(--color-brand-default); text-decoration:none; white-space:nowrap; }
+    .action-links a:hover { text-decoration:underline; }
+    .action-links button { font-size:var(--text-sm); color:var(--color-brand-default); background:none; border:none; cursor:pointer; padding:0; white-space:nowrap; }
+    .action-links button:hover { text-decoration:underline; }
     @media (max-width: 768px) { .admin-sidebar { display:none; } }
   </style>
 </head>
@@ -64,12 +69,12 @@
       <div class="sidebar-section">翻译</div>
       <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
       <a href="P-admin-i18n-003.html" class="sidebar-item">文案翻译</a>
-      <a href="P-admin-i18n-004.html" class="sidebar-item active">内容翻译</a>
+      <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
       <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
       <a href="P-admin-i18n-009.html" class="sidebar-item">翻译接口</a>
       <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
       <a href="P-admin-i18n-013.html" class="sidebar-item">配音总览</a>
-      <a href="P-admin-i18n-008.html" class="sidebar-item">配音管理</a>
+      <a href="P-admin-i18n-008.html" class="sidebar-item active">配音管理</a>
       <a href="P-admin-i18n-016.html" class="sidebar-item">音色管理</a>
       <a href="P-admin-i18n-010.html" class="sidebar-item">配音任务</a>
       <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
@@ -79,27 +84,25 @@
 
     <main class="admin-content">
       <div class="breadcrumb">
-        <a href="P-admin-i18n-004.html">内容翻译</a>
+        <a href="P-admin-i18n-008.html">配音管理</a>
         <span>›</span>
         <span>courses（课程表）</span>
       </div>
 
       <div class="page-header">
-        <div style="font-size:var(--text-sm);color:var(--text-secondary)">courses（课程表）字段管理</div>
+        <div style="font-size:var(--text-sm);color:var(--text-secondary)">courses（课程表）配音字段管理</div>
         <div style="display:flex;gap:var(--space-2)">
-          <button class="proto-btn proto-btn-secondary proto-btn-sm" onclick="proto.toast({type:'info',message:'已全选可翻译字段'})">全选可翻译</button>
-          <button class="proto-btn proto-btn-secondary proto-btn-sm" onclick="proto.modal({size:'sm',title:'批量设置源语言',body:'<div class=proto-field><label class=proto-label>源语言</label><select class=proto-input style=margin-top:var(--space-1)><option>中文 zh</option><option>英语 en</option></select></div>',confirmLabel:'应用',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'批量设置已保存'})}})">批量设置源语言</button>
-          <button class="proto-btn proto-btn-secondary proto-btn-sm" onclick="proto.modal({size:'sm',title:'批量设置翻译模型',body:'<div class=proto-field><label class=proto-label>翻译模型</label><select class=proto-input style=margin-top:var(--space-1)><option>继承表级默认</option><option>Claude Sonnet</option><option>GPT-4o</option><option>DeepL</option></select></div>',confirmLabel:'应用',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'批量设置已保存'})}})">批量设置翻译模型</button>
+          <button class="proto-btn proto-btn-secondary proto-btn-sm" onclick="proto.modal({size:'sm',title:'批量设置音色模型',body:'<div class=proto-field><label class=proto-label>音色模型</label><select class=proto-input style=margin-top:var(--space-1)><option>继承表级默认</option><option>Voice-A</option><option>Voice-B</option><option>Voice-C</option></select></div>',confirmLabel:'应用',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'批量音色模型设置已保存'})}})">批量设置音色模型</button>
+          <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'success',message:'批量配音任务已创建，共 2 个字段'})">批量生成配音</button>
         </div>
       </div>
 
       <div class="admin-card" style="padding:var(--space-4);margin-bottom:var(--space-5)">
         <div class="summary-bar">
-          <div class="summary-item">翻译状态：<strong style="color:var(--color-success-700)">已配置</strong></div>
-          <div class="summary-item">默认源语言：<strong>中文 zh</strong></div>
-          <div class="summary-item">默认翻译模型：<strong>Claude Sonnet</strong></div>
+          <div class="summary-item">配音状态：<strong style="color:var(--color-success-700)">已配置</strong></div>
+          <div class="summary-item">默认音色模型：<strong>Voice-A</strong></div>
           <div class="summary-item">总字段数：<strong>8</strong></div>
-          <div class="summary-item">可翻译字段：<strong>3</strong></div>
+          <div class="summary-item">可配音字段：<strong>2</strong></div>
         </div>
       </div>
 
@@ -107,143 +110,120 @@
         <table class="field-table">
           <thead>
             <tr>
-              <th>字段名</th>
-              <th style="width:80px">类型</th>
-              <th style="width:100px">需要翻译</th>
-              <th style="width:110px">源语言</th>
-              <th style="width:140px">翻译模型</th>
-              <th style="width:160px">翻译覆盖率 (en)</th>
-              <th style="width:80px">记录数</th>
-              <th style="width:80px">操作</th>
+              <th style="width:200px">字段名</th>
+              <th style="width:100px">字段类型</th>
+              <th style="width:100px">需要配音</th>
+              <th style="width:150px">音色模型</th>
+              <th style="width:100px">已配音数</th>
+              <th style="width:150px">配音覆盖率</th>
+              <th style="width:120px">操作</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="field-name">title</td>
-              <td><span class="field-type">varchar</span></td>
-              <td><button class="toggle-switch on" onclick="this.classList.toggle('on');proto.toast({type:'info',message:'字段翻译配置已更新'})"></button><span class="override-mark" title="已手动设置，覆盖表级默认">⚙</span></td>
-              <td>
-                <select style="font-size:var(--text-xs);padding:2px 4px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--surface-page);color:var(--text-primary)" onchange="proto.toast({type:'info',message:'源语言已更新'})">
-                  <option selected>zh</option>
-                  <option>en</option>
-                  <option>vi</option>
-                </select>
-              </td>
-              <td>
-                <select style="font-size:var(--text-xs);padding:2px 4px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--surface-page);color:var(--text-primary)" onchange="proto.toast({type:'info',message:'翻译模型已更新'})">
-                  <option>继承表级</option>
-                  <option selected>Claude Sonnet</option>
-                  <option>GPT-4o</option>
-                  <option>DeepL</option>
-                </select><span class="override-mark" title="已手动设置翻译模型">⚙</span>
-              </td>
-              <td>
-                <span style="font-size:var(--text-xs);margin-right:var(--space-2)">85%</span>
-                <span class="coverage-bar"><span class="coverage-fill" style="width:85%;background:var(--color-success-700)"></span></span>
-              </td>
-              <td style="text-align:center">24</td>
-              <td><a href="P-admin-i18n-006.html" style="font-size:var(--text-sm);color:var(--color-brand-default);text-decoration:none">翻译 →</a></td>
-            </tr>
-            <tr>
               <td class="field-name">description</td>
               <td><span class="field-type">text</span></td>
-              <td><button class="toggle-switch on" onclick="this.classList.toggle('on');proto.toast({type:'info',message:'字段翻译配置已更新'})"></button><span class="override-mark" title="已手动设置，覆盖表级默认">⚙</span></td>
               <td>
-                <select style="font-size:var(--text-xs);padding:2px 4px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--surface-page);color:var(--text-primary)" onchange="proto.toast({type:'info',message:'源语言已更新'})">
-                  <option selected>zh</option>
-                  <option>en</option>
-                  <option>vi</option>
+                <button class="toggle-switch on" onclick="this.classList.toggle('on');proto.toast({type:'info',message:'字段配音配置已更新'})"></button><span class="override-mark" title="已手动设置，覆盖表级默认">&#9881;</span>
+              </td>
+              <td>
+                <select style="font-size:var(--text-xs);padding:2px 4px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--surface-page);color:var(--text-primary)" onchange="proto.toast({type:'info',message:'音色模型已更新'})">
+                  <option selected>Voice-A</option>
+                  <option>Voice-B</option>
+                  <option>Voice-C</option>
+                  <option>继承表级</option>
                 </select>
               </td>
+              <td style="font-family:var(--font-mono);font-size:var(--text-xs)">18/24</td>
               <td>
-                <select style="font-size:var(--text-xs);padding:2px 4px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--surface-page);color:var(--text-primary)" onchange="proto.toast({type:'info',message:'翻译模型已更新'})">
-                  <option selected>继承表级</option>
-                  <option>Claude Sonnet</option>
-                  <option>GPT-4o</option>
-                  <option>DeepL</option>
-                </select>
+                <span style="font-size:var(--text-xs);margin-right:var(--space-2)">75%</span>
+                <span class="coverage-bar"><span class="coverage-fill" style="width:75%;background:var(--color-warning-500)"></span></span>
               </td>
               <td>
-                <span style="font-size:var(--text-xs);margin-right:var(--space-2)">70%</span>
-                <span class="coverage-bar"><span class="coverage-fill" style="width:70%;background:var(--color-warning-500)"></span></span>
+                <div class="action-links">
+                  <a href="P-admin-i18n-015.html">进入详情 &rarr;</a>
+                  <button onclick="event.stopPropagation();proto.modal({size:'sm',title:'生成配音 — description',body:'<div class=proto-field><label class=proto-label>音色模型</label><select class=proto-input style=margin-top:var(--space-1)><option selected>Voice-A</option><option>Voice-B</option><option>Voice-C</option></select></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>范围</label><div style=margin-top:var(--space-2)><label style=font-size:var(--text-sm)><input type=radio name=scope checked> 仅待配音 (6条)</label><br><label style=font-size:var(--text-sm)><input type=radio name=scope> 全部重新生成 (24条)</label></div></div>',confirmLabel:'创建任务',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'配音任务已创建'})}})">生成配音</button>
+                </div>
               </td>
-              <td style="text-align:center">24</td>
-              <td><a href="P-admin-i18n-006.html" style="font-size:var(--text-sm);color:var(--color-brand-default);text-decoration:none">翻译 →</a></td>
             </tr>
             <tr>
-              <td class="field-name">english_meaning</td>
+              <td class="field-name">title</td>
               <td><span class="field-type">varchar</span></td>
-              <td><button class="toggle-switch on" onclick="this.classList.toggle('on');proto.toast({type:'info',message:'字段翻译配置已更新'})"></button><span class="override-mark" title="已手动设置，源语言=en">⚙</span></td>
               <td>
-                <select style="font-size:var(--text-xs);padding:2px 4px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--surface-page);color:var(--text-primary)" onchange="proto.toast({type:'info',message:'源语言已更新'})">
-                  <option>zh</option>
-                  <option selected>en</option>
-                  <option>vi</option>
-                </select>
+                <button class="toggle-switch on" onclick="this.classList.toggle('on');proto.toast({type:'info',message:'字段配音配置已更新'})"></button><span class="override-mark" title="已手动设置，覆盖表级默认">&#9881;</span>
               </td>
               <td>
-                <select style="font-size:var(--text-xs);padding:2px 4px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--surface-page);color:var(--text-primary)" onchange="proto.toast({type:'info',message:'翻译模型已更新'})">
+                <select style="font-size:var(--text-xs);padding:2px 4px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--surface-page);color:var(--text-primary)" onchange="proto.toast({type:'info',message:'音色模型已更新'})">
+                  <option>Voice-A</option>
+                  <option selected>Voice-B</option>
+                  <option>Voice-C</option>
                   <option>继承表级</option>
-                  <option>Claude Sonnet</option>
-                  <option selected>GPT-4o</option>
-                  <option>DeepL</option>
-                </select><span class="override-mark" title="已手动设置翻译模型">⚙</span>
+                </select><span class="override-mark" title="已手动设置音色模型">&#9881;</span>
+              </td>
+              <td style="font-family:var(--font-mono);font-size:var(--text-xs)">22/24</td>
+              <td>
+                <span style="font-size:var(--text-xs);margin-right:var(--space-2)">92%</span>
+                <span class="coverage-bar"><span class="coverage-fill" style="width:92%;background:var(--color-success-700)"></span></span>
               </td>
               <td>
-                <span style="font-size:var(--text-xs);margin-right:var(--space-2)">60%</span>
-                <span class="coverage-bar"><span class="coverage-fill" style="width:60%;background:var(--color-warning-500)"></span></span>
+                <div class="action-links">
+                  <a href="P-admin-i18n-015.html">进入详情 &rarr;</a>
+                  <button onclick="event.stopPropagation();proto.modal({size:'sm',title:'生成配音 — title',body:'<div class=proto-field><label class=proto-label>音色模型</label><select class=proto-input style=margin-top:var(--space-1)><option>Voice-A</option><option selected>Voice-B</option><option>Voice-C</option></select></div><div class=proto-field style=margin-top:var(--space-3)><label class=proto-label>范围</label><div style=margin-top:var(--space-2)><label style=font-size:var(--text-sm)><input type=radio name=scope checked> 仅待配音 (2条)</label><br><label style=font-size:var(--text-sm)><input type=radio name=scope> 全部重新生成 (24条)</label></div></div>',confirmLabel:'创建任务',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'配音任务已创建'})}})">生成配音</button>
+                </div>
               </td>
-              <td style="text-align:center">24</td>
-              <td><a href="P-admin-i18n-006.html" style="font-size:var(--text-sm);color:var(--color-brand-default);text-decoration:none">翻译 →</a></td>
             </tr>
             <tr class="disabled">
               <td class="field-name">id</td>
               <td><span class="field-type">uuid</span></td>
-              <td><button class="toggle-switch disabled" title="UUID 类型不支持翻译"></button></td>
+              <td><button class="toggle-switch disabled" title="UUID 类型不支持配音"></button></td>
               <td><span style="color:var(--text-muted)">—</span></td>
               <td><span style="color:var(--text-muted)">—</span></td>
               <td><span style="color:var(--text-muted)">—</span></td>
-              <td style="text-align:center">24</td>
               <td></td>
             </tr>
             <tr class="disabled">
               <td class="field-name">level</td>
               <td><span class="field-type">int4</span></td>
-              <td><button class="toggle-switch disabled" title="数值类型不支持翻译"></button></td>
+              <td><button class="toggle-switch disabled" title="数值类型不支持配音"></button></td>
               <td><span style="color:var(--text-muted)">—</span></td>
               <td><span style="color:var(--text-muted)">—</span></td>
               <td><span style="color:var(--text-muted)">—</span></td>
-              <td style="text-align:center">24</td>
-              <td></td>
-            </tr>
-            <tr class="disabled">
-              <td class="field-name">is_published</td>
-              <td><span class="field-type">bool</span></td>
-              <td><button class="toggle-switch disabled" title="布尔类型不支持翻译"></button></td>
-              <td><span style="color:var(--text-muted)">—</span></td>
-              <td><span style="color:var(--text-muted)">—</span></td>
-              <td><span style="color:var(--text-muted)">—</span></td>
-              <td style="text-align:center">24</td>
               <td></td>
             </tr>
             <tr class="disabled">
               <td class="field-name">created_at</td>
               <td><span class="field-type">timestamptz</span></td>
-              <td><button class="toggle-switch disabled" title="时间类型不支持翻译"></button></td>
+              <td><button class="toggle-switch disabled" title="时间类型不支持配音"></button></td>
               <td><span style="color:var(--text-muted)">—</span></td>
               <td><span style="color:var(--text-muted)">—</span></td>
               <td><span style="color:var(--text-muted)">—</span></td>
-              <td style="text-align:center">24</td>
+              <td></td>
+            </tr>
+            <tr class="disabled">
+              <td class="field-name">is_published</td>
+              <td><span class="field-type">bool</span></td>
+              <td><button class="toggle-switch disabled" title="布尔类型不支持配音"></button></td>
+              <td><span style="color:var(--text-muted)">—</span></td>
+              <td><span style="color:var(--text-muted)">—</span></td>
+              <td><span style="color:var(--text-muted)">—</span></td>
               <td></td>
             </tr>
             <tr class="disabled">
               <td class="field-name">sort_order</td>
               <td><span class="field-type">int4</span></td>
-              <td><button class="toggle-switch disabled" title="数值类型不支持翻译"></button></td>
+              <td><button class="toggle-switch disabled" title="数值类型不支持配音"></button></td>
               <td><span style="color:var(--text-muted)">—</span></td>
               <td><span style="color:var(--text-muted)">—</span></td>
               <td><span style="color:var(--text-muted)">—</span></td>
-              <td style="text-align:center">24</td>
+              <td></td>
+            </tr>
+            <tr class="disabled">
+              <td class="field-name">sort_order_2</td>
+              <td><span class="field-type">int4</span></td>
+              <td><button class="toggle-switch disabled" title="数值类型不支持配音"></button></td>
+              <td><span style="color:var(--text-muted)">—</span></td>
+              <td><span style="color:var(--text-muted)">—</span></td>
+              <td><span style="color:var(--text-muted)">—</span></td>
               <td></td>
             </tr>
           </tbody>
@@ -253,8 +233,8 @@
       <div class="admin-card priority-card">
         <strong>配置优先级说明</strong>
         <p style="margin-top:var(--space-2);line-height:1.6">
-          字段级配置 &gt; 表级配置。若字段未手动设置，则继承表级默认值。手动设置后的字段显示 <span style="color:var(--color-brand-default)">⚙</span> 标记。
-          当前表级默认：源语言 = zh，需要翻译 = 是。
+          字段级配置 &gt; 表级配置。若字段未手动设置音色模型，则继承表级默认值。手动设置后的字段显示 <span style="color:var(--color-brand-default)">&#9881;</span> 标记。
+          当前表级默认音色模型 = Voice-A。仅已启用翻译的文本类型字段（text / varchar）可启用配音。
         </p>
       </div>
     </main>

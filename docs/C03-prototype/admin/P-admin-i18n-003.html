@@ -43,9 +43,7 @@
     .trans-cell.empty { color:var(--text-muted); font-style:italic; }
     .status-tag { display:inline-block; font-size:10px; padding:1px 6px; border-radius:var(--radius-pill); font-weight:var(--weight-medium); }
     .status-tag.pending { background:var(--color-danger-50); color:var(--color-danger-500); }
-    .status-tag.translated { background:var(--color-warning-50); color:var(--color-warning-500); }
-    .status-tag.reviewed { background:var(--color-success-50); color:var(--color-success-700); }
-    .status-tag.outdated { background:var(--color-info-50); color:var(--color-info-500); }
+    .status-tag.translated { background:var(--color-success-50); color:var(--color-success-700); }
     .page-footer { display:flex; align-items:center; justify-content:space-between; margin-top:var(--space-4); padding:var(--space-3) 0; }
     .page-footer-stats { font-size:var(--text-xs); color:var(--text-muted); }
     @media (max-width: 768px) { .admin-sidebar { display:none; } .toolbar { flex-direction:column; align-items:stretch; } .toolbar-right { margin-left:0; } }
@@ -65,15 +63,18 @@
     <aside class="admin-sidebar">
       <div class="sidebar-section">翻译</div>
       <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
-      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
       <a href="P-admin-i18n-003.html" class="sidebar-item active">文案翻译</a>
       <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
       <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
       <a href="P-admin-i18n-009.html" class="sidebar-item">翻译接口</a>
       <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
+      <a href="P-admin-i18n-013.html" class="sidebar-item">配音总览</a>
       <a href="P-admin-i18n-008.html" class="sidebar-item">配音管理</a>
+      <a href="P-admin-i18n-016.html" class="sidebar-item">音色管理</a>
       <a href="P-admin-i18n-010.html" class="sidebar-item">配音任务</a>
       <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">全局</div>
+      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
     </aside>
 
     <main class="admin-content">
@@ -95,8 +96,12 @@
           <option value="">全部状态</option>
           <option value="pending">待翻译</option>
           <option value="translated">已翻译</option>
-          <option value="reviewed">已审核</option>
-          <option value="outdated">已过期</option>
+        </select>
+        <select id="sel-model" style="min-width:150px">
+          <option value="">翻译模型（默认）</option>
+          <option value="gpt-4o">GPT-4o</option>
+          <option value="gpt-4o-mini">GPT-4o-mini</option>
+          <option value="claude-sonnet">Claude Sonnet</option>
         </select>
         <input type="text" placeholder="搜索 key 或中文…">
         <div class="toolbar-right">
@@ -116,9 +121,9 @@
       <table class="copy-table">
         <thead><tr><th style="width:180px">Key</th><th>中文原文</th><th>英语翻译</th><th style="width:70px">状态</th></tr></thead>
         <tbody>
-          <tr><td class="key-path">common.save</td><td>保存</td><td class="trans-cell">Save</td><td><span class="status-tag reviewed">已审核</span></td></tr>
-          <tr><td class="key-path">common.cancel</td><td>取消</td><td class="trans-cell">Cancel</td><td><span class="status-tag reviewed">已审核</span></td></tr>
-          <tr><td class="key-path">common.confirm</td><td>确认</td><td class="trans-cell">Confirm</td><td><span class="status-tag reviewed">已审核</span></td></tr>
+          <tr><td class="key-path">common.save</td><td>保存</td><td class="trans-cell">Save</td><td><span class="status-tag translated">已翻译</span></td></tr>
+          <tr><td class="key-path">common.cancel</td><td>取消</td><td class="trans-cell">Cancel</td><td><span class="status-tag translated">已翻译</span></td></tr>
+          <tr><td class="key-path">common.confirm</td><td>确认</td><td class="trans-cell">Confirm</td><td><span class="status-tag translated">已翻译</span></td></tr>
           <tr><td class="key-path">common.loading</td><td>加载中…</td><td class="trans-cell">Loading…</td><td><span class="status-tag translated">已翻译</span></td></tr>
           <tr><td class="key-path">common.retry</td><td>重试</td><td class="trans-cell">Retry</td><td><span class="status-tag translated">已翻译</span></td></tr>
           <tr><td class="key-path">common.delete</td><td>删除</td><td class="trans-cell empty">点击翻译…</td><td><span class="status-tag pending">待翻译</span></td></tr>
@@ -134,19 +139,19 @@
       <table class="copy-table">
         <thead><tr><th style="width:180px">Key</th><th>中文原文</th><th>英语翻译</th><th style="width:70px">状态</th></tr></thead>
         <tbody>
-          <tr><td class="key-path">auth.login</td><td>登录</td><td class="trans-cell">Sign In</td><td><span class="status-tag reviewed">已审核</span></td></tr>
+          <tr><td class="key-path">auth.login</td><td>登录</td><td class="trans-cell">Sign In</td><td><span class="status-tag translated">已翻译</span></td></tr>
           <tr><td class="key-path">auth.register</td><td>注册</td><td class="trans-cell">Sign Up</td><td><span class="status-tag translated">已翻译</span></td></tr>
-          <tr><td class="key-path">auth.email</td><td>邮箱</td><td class="trans-cell">Email</td><td><span class="status-tag reviewed">已审核</span></td></tr>
-          <tr><td class="key-path">auth.password</td><td>密码</td><td class="trans-cell">Password</td><td><span class="status-tag reviewed">已审核</span></td></tr>
+          <tr><td class="key-path">auth.email</td><td>邮箱</td><td class="trans-cell">Email</td><td><span class="status-tag translated">已翻译</span></td></tr>
+          <tr><td class="key-path">auth.password</td><td>密码</td><td class="trans-cell">Password</td><td><span class="status-tag translated">已翻译</span></td></tr>
           <tr><td class="key-path">auth.forgot_password</td><td>忘记密码？</td><td class="trans-cell">Forgot password?</td><td><span class="status-tag translated">已翻译</span></td></tr>
           <tr><td class="key-path">auth.google_login</td><td>Google 登录</td><td class="trans-cell">Sign in with Google</td><td><span class="status-tag translated">已翻译</span></td></tr>
-          <tr><td class="key-path">auth.no_account</td><td>还没有账号？</td><td class="trans-cell">Don't have an account?</td><td><span class="status-tag outdated">已过期</span></td></tr>
+          <tr><td class="key-path">auth.no_account</td><td>还没有账号？</td><td class="trans-cell">Don't have an account?</td><td><span class="status-tag pending">待翻译</span></td></tr>
           <tr><td class="key-path">auth.logout</td><td>退出登录</td><td class="trans-cell empty">点击翻译…</td><td><span class="status-tag pending">待翻译</span></td></tr>
         </tbody>
       </table>
 
       <div class="page-footer">
-        <span class="page-footer-stats">共 14 条 · 已审核 6 · 已翻译 5 · 待翻译 2 · 已过期 1</span>
+        <span class="page-footer-stats">共 14 条 · 已翻译 11 · 待翻译 3</span>
         <span style="font-size:var(--text-xs);color:var(--text-muted)">第 1 页 / 共 1 页</span>
       </div>
     </main>
@@ -176,7 +181,7 @@
         cell.contentEditable = 'false';
         if(cell.textContent.trim()) {
           var statusTd = cell.parentElement.querySelector('.status-tag');
-          if(statusTd) { statusTd.className = 'status-tag reviewed'; statusTd.textContent = '已审核'; }
+          if(statusTd) { statusTd.className = 'status-tag translated'; statusTd.textContent = '已翻译'; }
           proto.toast({type:'success',message:'翻译已保存'});
         }
       });

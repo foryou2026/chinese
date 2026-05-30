@@ -40,6 +40,9 @@
     .drag-handle { cursor:grab; color:var(--text-muted); font-size:var(--text-sm); }
     .coverage-mini { display:inline-block; width:60px; height:4px; border-radius:var(--radius-pill); background:var(--color-neutral-200); overflow:hidden; vertical-align:middle; margin-left:var(--space-2); }
     .coverage-mini-fill { height:100%; border-radius:var(--radius-pill); }
+    .role-tag { font-size:10px; padding:2px 6px; border-radius:var(--radius-pill); font-weight:var(--weight-medium); }
+    .role-tag.default { background:var(--color-brand-50); color:var(--color-brand-default); }
+    .role-tag.pivot { background:var(--color-info-50); color:var(--color-info-500); }
     @media (max-width: 768px) { .admin-sidebar { display:none; } }
   </style>
 </head>
@@ -57,15 +60,18 @@
     <aside class="admin-sidebar">
       <div class="sidebar-section">翻译</div>
       <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
-      <a href="P-admin-i18n-002.html" class="sidebar-item active">语言管理</a>
       <a href="P-admin-i18n-003.html" class="sidebar-item">文案翻译</a>
       <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
       <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
       <a href="P-admin-i18n-009.html" class="sidebar-item">翻译接口</a>
       <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
+      <a href="P-admin-i18n-013.html" class="sidebar-item">配音总览</a>
       <a href="P-admin-i18n-008.html" class="sidebar-item">配音管理</a>
+      <a href="P-admin-i18n-016.html" class="sidebar-item">音色管理</a>
       <a href="P-admin-i18n-010.html" class="sidebar-item">配音任务</a>
       <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">全局</div>
+      <a href="P-admin-i18n-002.html" class="sidebar-item active">语言管理</a>
     </aside>
 
     <main class="admin-content">
@@ -73,17 +79,17 @@
         <input type="text" class="search-box" placeholder="搜索语言名称或代码…">
       </div>
 
-      <!-- 已启用语言 -->
       <div class="lang-group">
         <div class="lang-group-title">已启用（3）— 可拖拽排序</div>
         <table class="lang-table">
-          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">状态</th><th style="width:120px">覆盖率</th></tr></thead>
+          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">角色</th><th style="width:80px">状态</th><th style="width:120px">覆盖率</th></tr></thead>
           <tbody>
             <tr class="active-row">
               <td></td>
               <td><strong>中文</strong></td>
               <td>中文</td>
               <td><span class="locale-code">zh</span></td>
+              <td><span class="role-tag default">系统默认</span></td>
               <td><button class="toggle-switch on disabled" title="系统默认语言，不可停用"></button></td>
               <td><span style="font-size:var(--text-xs);color:var(--text-muted)">默认语言</span></td>
             </tr>
@@ -92,7 +98,8 @@
               <td><strong>英语</strong></td>
               <td>English</td>
               <td><span class="locale-code">en</span></td>
-              <td><button class="toggle-switch on" onclick="this.classList.toggle('on');proto.toast({type:'info',message:'语言状态已更新'})"></button></td>
+              <td><span class="role-tag pivot">枢纽语言</span></td>
+              <td><button class="toggle-switch on disabled" title="枢纽语言，不可停用"></button></td>
               <td>
                 <span style="font-size:var(--text-xs)">87%</span>
                 <span class="coverage-mini"><span class="coverage-mini-fill" style="width:87%;background:var(--color-success-700)"></span></span>
@@ -103,6 +110,7 @@
               <td><strong>越南语</strong></td>
               <td>Tiếng Việt</td>
               <td><span class="locale-code">vi</span></td>
+              <td></td>
               <td><button class="toggle-switch on" onclick="this.classList.toggle('on');proto.toast({type:'info',message:'语言状态已更新'})"></button></td>
               <td>
                 <span style="font-size:var(--text-xs)">48%</span>
@@ -113,115 +121,107 @@
         </table>
       </div>
 
-      <!-- 东亚 -->
       <div class="lang-group">
         <div class="lang-group-title">东亚</div>
         <table class="lang-table">
-          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
+          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">角色</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
           <tbody>
-            <tr><td></td><td>日语</td><td>日本語</td><td><span class="locale-code">ja</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'日语')"></button></td><td></td></tr>
-            <tr><td></td><td>韩语</td><td>한국어</td><td><span class="locale-code">ko</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'韩语')"></button></td><td></td></tr>
+            <tr><td></td><td>日语</td><td>日本語</td><td><span class="locale-code">ja</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'日语')"></button></td><td></td></tr>
+            <tr><td></td><td>韩语</td><td>한국어</td><td><span class="locale-code">ko</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'韩语')"></button></td><td></td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- 东南亚 -->
       <div class="lang-group">
         <div class="lang-group-title">东南亚</div>
         <table class="lang-table">
-          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
+          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">角色</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
           <tbody>
-            <tr><td></td><td>泰语</td><td>ไทย</td><td><span class="locale-code">th</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'泰语')"></button></td><td></td></tr>
-            <tr><td></td><td>印尼语</td><td>Bahasa Indonesia</td><td><span class="locale-code">id</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'印尼语')"></button></td><td></td></tr>
-            <tr><td></td><td>马来语</td><td>Bahasa Melayu</td><td><span class="locale-code">ms</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'马来语')"></button></td><td></td></tr>
-            <tr><td></td><td>菲律宾语</td><td>Filipino</td><td><span class="locale-code">fil</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'菲律宾语')"></button></td><td></td></tr>
+            <tr><td></td><td>泰语</td><td>ไทย</td><td><span class="locale-code">th</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'泰语')"></button></td><td></td></tr>
+            <tr><td></td><td>印尼语</td><td>Bahasa Indonesia</td><td><span class="locale-code">id</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'印尼语')"></button></td><td></td></tr>
+            <tr><td></td><td>马来语</td><td>Bahasa Melayu</td><td><span class="locale-code">ms</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'马来语')"></button></td><td></td></tr>
+            <tr><td></td><td>菲律宾语</td><td>Filipino</td><td><span class="locale-code">fil</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'菲律宾语')"></button></td><td></td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- 西欧 -->
       <div class="lang-group">
         <div class="lang-group-title">西欧</div>
         <table class="lang-table">
-          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
+          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">角色</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
           <tbody>
-            <tr><td></td><td>法语</td><td>Français</td><td><span class="locale-code">fr</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'法语')"></button></td><td></td></tr>
-            <tr><td></td><td>德语</td><td>Deutsch</td><td><span class="locale-code">de</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'德语')"></button></td><td></td></tr>
-            <tr><td></td><td>西班牙语</td><td>Español</td><td><span class="locale-code">es</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'西班牙语')"></button></td><td></td></tr>
-            <tr><td></td><td>葡萄牙语</td><td>Português</td><td><span class="locale-code">pt</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'葡萄牙语')"></button></td><td></td></tr>
-            <tr><td></td><td>意大利语</td><td>Italiano</td><td><span class="locale-code">it</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'意大利语')"></button></td><td></td></tr>
-            <tr><td></td><td>荷兰语</td><td>Nederlands</td><td><span class="locale-code">nl</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'荷兰语')"></button></td><td></td></tr>
+            <tr><td></td><td>法语</td><td>Français</td><td><span class="locale-code">fr</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'法语')"></button></td><td></td></tr>
+            <tr><td></td><td>德语</td><td>Deutsch</td><td><span class="locale-code">de</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'德语')"></button></td><td></td></tr>
+            <tr><td></td><td>西班牙语</td><td>Español</td><td><span class="locale-code">es</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'西班牙语')"></button></td><td></td></tr>
+            <tr><td></td><td>葡萄牙语</td><td>Português</td><td><span class="locale-code">pt</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'葡萄牙语')"></button></td><td></td></tr>
+            <tr><td></td><td>意大利语</td><td>Italiano</td><td><span class="locale-code">it</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'意大利语')"></button></td><td></td></tr>
+            <tr><td></td><td>荷兰语</td><td>Nederlands</td><td><span class="locale-code">nl</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'荷兰语')"></button></td><td></td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- 北欧 -->
       <div class="lang-group">
         <div class="lang-group-title">北欧</div>
         <table class="lang-table">
-          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
+          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">角色</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
           <tbody>
-            <tr><td></td><td>瑞典语</td><td>Svenska</td><td><span class="locale-code">sv</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'瑞典语')"></button></td><td></td></tr>
-            <tr><td></td><td>丹麦语</td><td>Dansk</td><td><span class="locale-code">da</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'丹麦语')"></button></td><td></td></tr>
-            <tr><td></td><td>挪威语</td><td>Norsk</td><td><span class="locale-code">no</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'挪威语')"></button></td><td></td></tr>
-            <tr><td></td><td>芬兰语</td><td>Suomi</td><td><span class="locale-code">fi</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'芬兰语')"></button></td><td></td></tr>
+            <tr><td></td><td>瑞典语</td><td>Svenska</td><td><span class="locale-code">sv</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'瑞典语')"></button></td><td></td></tr>
+            <tr><td></td><td>丹麦语</td><td>Dansk</td><td><span class="locale-code">da</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'丹麦语')"></button></td><td></td></tr>
+            <tr><td></td><td>挪威语</td><td>Norsk</td><td><span class="locale-code">no</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'挪威语')"></button></td><td></td></tr>
+            <tr><td></td><td>芬兰语</td><td>Suomi</td><td><span class="locale-code">fi</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'芬兰语')"></button></td><td></td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- 东欧 -->
       <div class="lang-group">
         <div class="lang-group-title">东欧</div>
         <table class="lang-table">
-          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
+          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">角色</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
           <tbody>
-            <tr><td></td><td>俄语</td><td>Русский</td><td><span class="locale-code">ru</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'俄语')"></button></td><td></td></tr>
-            <tr><td></td><td>波兰语</td><td>Polski</td><td><span class="locale-code">pl</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'波兰语')"></button></td><td></td></tr>
-            <tr><td></td><td>捷克语</td><td>Čeština</td><td><span class="locale-code">cs</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'捷克语')"></button></td><td></td></tr>
-            <tr><td></td><td>罗马尼亚语</td><td>Română</td><td><span class="locale-code">ro</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'罗马尼亚语')"></button></td><td></td></tr>
-            <tr><td></td><td>乌克兰语</td><td>Українська</td><td><span class="locale-code">uk</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'乌克兰语')"></button></td><td></td></tr>
-            <tr><td></td><td>匈牙利语</td><td>Magyar</td><td><span class="locale-code">hu</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'匈牙利语')"></button></td><td></td></tr>
+            <tr><td></td><td>俄语</td><td>Русский</td><td><span class="locale-code">ru</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'俄语')"></button></td><td></td></tr>
+            <tr><td></td><td>波兰语</td><td>Polski</td><td><span class="locale-code">pl</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'波兰语')"></button></td><td></td></tr>
+            <tr><td></td><td>捷克语</td><td>Čeština</td><td><span class="locale-code">cs</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'捷克语')"></button></td><td></td></tr>
+            <tr><td></td><td>罗马尼亚语</td><td>Română</td><td><span class="locale-code">ro</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'罗马尼亚语')"></button></td><td></td></tr>
+            <tr><td></td><td>乌克兰语</td><td>Українська</td><td><span class="locale-code">uk</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'乌克兰语')"></button></td><td></td></tr>
+            <tr><td></td><td>匈牙利语</td><td>Magyar</td><td><span class="locale-code">hu</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'匈牙利语')"></button></td><td></td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- 南亚 -->
       <div class="lang-group">
         <div class="lang-group-title">南亚</div>
         <table class="lang-table">
-          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
+          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">角色</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
           <tbody>
-            <tr><td></td><td>印地语</td><td>हिन्दी</td><td><span class="locale-code">hi</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'印地语')"></button></td><td></td></tr>
-            <tr><td></td><td>孟加拉语</td><td>বাংলা</td><td><span class="locale-code">bn</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'孟加拉语')"></button></td><td></td></tr>
-            <tr><td></td><td>乌尔都语</td><td>اردو</td><td><span class="locale-code">ur</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'乌尔都语')"></button></td><td></td></tr>
-            <tr><td></td><td>泰米尔语</td><td>தமிழ்</td><td><span class="locale-code">ta</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'泰米尔语')"></button></td><td></td></tr>
+            <tr><td></td><td>印地语</td><td>हिन्दी</td><td><span class="locale-code">hi</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'印地语')"></button></td><td></td></tr>
+            <tr><td></td><td>孟加拉语</td><td>বাংলা</td><td><span class="locale-code">bn</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'孟加拉语')"></button></td><td></td></tr>
+            <tr><td></td><td>乌尔都语</td><td>اردو</td><td><span class="locale-code">ur</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'乌尔都语')"></button></td><td></td></tr>
+            <tr><td></td><td>泰米尔语</td><td>தமிழ்</td><td><span class="locale-code">ta</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'泰米尔语')"></button></td><td></td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- 中东 / 非洲 -->
       <div class="lang-group">
         <div class="lang-group-title">中东 / 非洲</div>
         <table class="lang-table">
-          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
+          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">角色</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
           <tbody>
-            <tr><td></td><td>阿拉伯语</td><td>العربية</td><td><span class="locale-code">ar</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'阿拉伯语')"></button></td><td></td></tr>
-            <tr><td></td><td>土耳其语</td><td>Türkçe</td><td><span class="locale-code">tr</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'土耳其语')"></button></td><td></td></tr>
-            <tr><td></td><td>希伯来语</td><td>עברית</td><td><span class="locale-code">he</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'希伯来语')"></button></td><td></td></tr>
-            <tr><td></td><td>波斯语</td><td>فارسی</td><td><span class="locale-code">fa</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'波斯语')"></button></td><td></td></tr>
-            <tr><td></td><td>斯瓦希里语</td><td>Kiswahili</td><td><span class="locale-code">sw</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'斯瓦希里语')"></button></td><td></td></tr>
+            <tr><td></td><td>阿拉伯语</td><td>العربية</td><td><span class="locale-code">ar</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'阿拉伯语')"></button></td><td></td></tr>
+            <tr><td></td><td>土耳其语</td><td>Türkçe</td><td><span class="locale-code">tr</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'土耳其语')"></button></td><td></td></tr>
+            <tr><td></td><td>希伯来语</td><td>עברית</td><td><span class="locale-code">he</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'希伯来语')"></button></td><td></td></tr>
+            <tr><td></td><td>波斯语</td><td>فارسی</td><td><span class="locale-code">fa</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'波斯语')"></button></td><td></td></tr>
+            <tr><td></td><td>斯瓦希里语</td><td>Kiswahili</td><td><span class="locale-code">sw</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'斯瓦希里语')"></button></td><td></td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- 美洲变体 -->
       <div class="lang-group">
         <div class="lang-group-title">美洲变体</div>
         <table class="lang-table">
-          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
+          <thead><tr><th style="width:40px"></th><th>语言名称</th><th>原生名称</th><th style="width:80px">代码</th><th style="width:80px">角色</th><th style="width:80px">状态</th><th style="width:120px"></th></tr></thead>
           <tbody>
-            <tr><td></td><td>西班牙语（拉美）</td><td>Español (Latinoamérica)</td><td><span class="locale-code">es-419</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'西班牙语（拉美）')"></button></td><td></td></tr>
-            <tr><td></td><td>葡萄牙语（巴西）</td><td>Português (Brasil)</td><td><span class="locale-code">pt-BR</span></td><td><button class="toggle-switch" onclick="handleToggle(this,'葡萄牙语（巴西）')"></button></td><td></td></tr>
+            <tr><td></td><td>西班牙语（拉美）</td><td>Español (Latinoamérica)</td><td><span class="locale-code">es-419</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'西班牙语（拉美）')"></button></td><td></td></tr>
+            <tr><td></td><td>葡萄牙语（巴西）</td><td>Português (Brasil)</td><td><span class="locale-code">pt-BR</span></td><td></td><td><button class="toggle-switch" onclick="handleToggle(this,'葡萄牙语（巴西）')"></button></td><td></td></tr>
           </tbody>
         </table>
       </div>

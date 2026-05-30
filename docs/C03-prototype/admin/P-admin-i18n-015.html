@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-id" content="P-admin-i18n-015">
+  <meta name="system-id" content="admin">
+  <meta name="module-id" content="i18n">
+  <meta name="feature-id" content="dubbing-hub">
+  <meta name="related-r-ids" content="R-i18n-054,R-i18n-055">
+  <title>配音详情 · admin 原型</title>
+  <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
+  <style>
+    body { display:flex; flex-direction:column; min-height:100dvh; }
+    .admin-topbar { display:flex; align-items:center; height:var(--topbar-height); padding:0 var(--space-4); position:sticky; top:0; z-index:var(--z-sticky); background:var(--glass-bg); backdrop-filter:var(--glass-blur); border-bottom:1px solid var(--glass-border); }
+    .admin-topbar-logo { font-weight:var(--weight-semibold); font-size:var(--text-md); color:var(--text-primary); margin-right:auto; }
+    .admin-layout { display:flex; flex:1; position:relative; z-index:1; }
+    .admin-sidebar { width:var(--sidebar-width); background:var(--glass-bg-card); backdrop-filter:var(--glass-blur); border-right:1px solid var(--glass-border); padding:var(--space-4) 0; flex-shrink:0; }
+    .sidebar-section { padding:var(--space-2) var(--space-4); font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; }
+    .sidebar-item { display:flex; align-items:center; gap:var(--space-2); height:36px; padding:0 var(--space-4); font-size:var(--text-sm); color:var(--text-secondary); cursor:pointer; transition:background var(--motion-fast); text-decoration:none; }
+    .sidebar-item:hover { background:var(--glass-bg); color:var(--text-primary); }
+    .sidebar-item.active { background:var(--color-brand-50); color:var(--color-brand-default); font-weight:var(--weight-medium); }
+    .admin-content { flex:1; padding:var(--space-6); overflow-y:auto; }
+    .breadcrumb { display:flex; align-items:center; gap:var(--space-2); font-size:var(--text-sm); color:var(--text-muted); margin-bottom:var(--space-4); }
+    .breadcrumb a { color:var(--color-brand-default); text-decoration:none; }
+    .breadcrumb a:hover { text-decoration:underline; }
+    .summary-bar { display:flex; gap:var(--space-4); flex-wrap:wrap; margin-bottom:var(--space-4); }
+    .summary-item { display:flex; align-items:center; gap:var(--space-2); font-size:var(--text-sm); color:var(--text-secondary); }
+    .summary-item strong { color:var(--text-primary); }
+    .toolbar { display:flex; align-items:center; gap:var(--space-3); flex-wrap:wrap; margin-bottom:var(--space-4); }
+    .toolbar select, .toolbar input { padding:var(--space-2) var(--space-3); border:1px solid var(--border-color); border-radius:var(--radius-md); font-size:var(--text-sm); background:var(--surface-page); color:var(--text-primary); }
+    .toolbar select { min-width:120px; }
+    .toolbar input { width:200px; }
+    .toolbar-right { margin-left:auto; display:flex; gap:var(--space-2); }
+    .dub-table { width:100%; border-collapse:collapse; }
+    .dub-table th { text-align:left; font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); padding:var(--space-2) var(--space-3); border-bottom:2px solid var(--border-color); }
+    .dub-table td { padding:var(--space-3); font-size:var(--text-sm); border-bottom:1px solid var(--glass-border); vertical-align:middle; }
+    .dub-table tr:hover { background:var(--glass-bg); }
+    .record-id { font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); }
+    .text-content { color:var(--text-primary); line-height:1.5; }
+    .text-content.pending-text { color:var(--text-muted); font-style:italic; }
+    .locale-tag { font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); background:var(--glass-bg); padding:2px 6px; border-radius:var(--radius-sm); }
+    .duration { font-family:var(--font-mono); font-size:var(--text-xs); }
+
+    /* 状态点 */
+    .status-dot { display:inline-flex; align-items:center; gap:var(--space-1); font-size:var(--text-xs); font-weight:var(--weight-medium); white-space:nowrap; }
+    .status-dot::before { content:''; display:inline-block; width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .status-dot.done::before { background:var(--color-success-700); }
+    .status-dot.done { color:var(--color-success-700); }
+    .status-dot.pending::before { background:var(--color-neutral-400); }
+    .status-dot.pending { color:var(--text-muted); }
+    .status-dot.running::before { background:var(--color-brand-default); animation:pulse-dot 1.2s ease-in-out infinite; }
+    .status-dot.running { color:var(--color-brand-default); }
+    .status-dot.failed::before { background:var(--color-danger-500); }
+    .status-dot.failed { color:var(--color-danger-500); }
+    @keyframes pulse-dot { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+
+    /* 播放按钮 */
+    .play-btn { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; border:1px solid var(--border-color); background:var(--surface-page); color:var(--color-brand-default); cursor:pointer; font-size:12px; transition:all var(--motion-fast); flex-shrink:0; }
+    .play-btn:hover { background:var(--color-brand-50); border-color:var(--color-brand-default); }
+
+    /* 操作区 */
+    .action-group { display:flex; align-items:center; gap:var(--space-2); flex-wrap:nowrap; }
+    .action-group .action-link { font-size:var(--text-xs); color:var(--color-brand-default); background:none; border:none; cursor:pointer; padding:0; white-space:nowrap; text-decoration:none; }
+    .action-group .action-link:hover { text-decoration:underline; }
+    .action-group .action-link.danger { color:var(--color-danger-500); }
+    .estimate-text { font-size:var(--text-xs); color:var(--text-muted); font-style:italic; }
+
+    .page-footer { display:flex; align-items:center; justify-content:space-between; margin-top:var(--space-4); padding:var(--space-3) 0; }
+    .page-footer-stats { font-size:var(--text-xs); color:var(--text-muted); }
+    .model-priority { margin-top:var(--space-4); padding:var(--space-3) var(--space-4); font-size:var(--text-xs); color:var(--text-secondary); border-left:3px solid var(--color-brand-default); background:var(--glass-bg); border-radius:0 var(--radius-md) var(--radius-md) 0; }
+
+    /* 隐藏的文件上传 input */
+    .upload-input { display:none; }
+
+    @media (max-width: 768px) { .admin-sidebar { display:none; } .toolbar { flex-direction:column; align-items:stretch; } .toolbar-right { margin-left:0; } }
+  </style>
+</head>
+<body>
+  <div class="admin-page-bg" aria-hidden="true"></div>
+  <header class="admin-topbar">
+    <span class="admin-topbar-logo">管理后台</span>
+    <div style="display:flex;align-items:center;gap:var(--space-2)">
+      <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.switchTheme(document.documentElement.getAttribute('data-mode')==='dark'?'light':'dark')">明/暗</button>
+      <a href="i18n/translation-hub/index.html" class="proto-btn proto-btn-ghost proto-btn-sm" style="text-decoration:none;font-size:var(--text-xs)">原型导航</a>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <div class="sidebar-section">翻译</div>
+      <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
+      <a href="P-admin-i18n-003.html" class="sidebar-item">文案翻译</a>
+      <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
+      <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
+      <a href="P-admin-i18n-009.html" class="sidebar-item">翻译接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
+      <a href="P-admin-i18n-013.html" class="sidebar-item">配音总览</a>
+      <a href="P-admin-i18n-008.html" class="sidebar-item active">配音管理</a>
+      <a href="P-admin-i18n-016.html" class="sidebar-item">音色管理</a>
+      <a href="P-admin-i18n-010.html" class="sidebar-item">配音任务</a>
+      <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">全局</div>
+      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
+    </aside>
+
+    <main class="admin-content">
+      <div class="breadcrumb">
+        <a href="P-admin-i18n-008.html">配音管理</a>
+        <span>›</span>
+        <a href="P-admin-i18n-014.html">courses</a>
+        <span>›</span>
+        <span>description</span>
+      </div>
+
+      <div class="admin-card" style="padding:var(--space-4);margin-bottom:var(--space-4)">
+        <div class="summary-bar">
+          <div class="summary-item">字段名：<strong>description</strong></div>
+          <div class="summary-item">类型：<strong>text</strong></div>
+          <div class="summary-item">音色模型：<strong style="color:var(--color-brand-default)">Voice-A（实际生效）</strong></div>
+          <div class="summary-item">总记录数：<strong>24</strong></div>
+          <div class="summary-item">已配音：<strong style="color:var(--color-success-700)">18</strong></div>
+          <div class="summary-item">待配音：<strong style="color:var(--color-danger-500)">6</strong></div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <select onchange="proto.toast({type:'info',message:'目标语言已切换'})">
+          <option value="en" selected>英语 English</option>
+          <option value="vi">越南语 Ti&#7871;ng Vi&#7879;t</option>
+        </select>
+        <select title="语言级音色模型覆盖" onchange="proto.toast({type:'info',message:'语言级音色模型已切换'})">
+          <option value="" selected>音色模型（继承字段级）</option>
+          <option>Voice-A</option>
+          <option>Voice-B</option>
+          <option>Voice-C</option>
+        </select>
+        <select>
+          <option value="">全部状态</option>
+          <option value="pending">待配音</option>
+          <option value="done">已完成</option>
+          <option value="failed">失败</option>
+        </select>
+        <input type="text" placeholder="按原文内容搜索...">
+        <div class="toolbar-right">
+          <button class="proto-btn proto-btn-secondary proto-btn-sm" onclick="proto.toast({type:'info',message:'本页配音任务已创建'})">配音本页</button>
+          <button class="proto-btn proto-btn-primary proto-btn-sm" onclick="proto.toast({type:'success',message:'全量配音任务已创建，共 6 条待配音'})">配音全部待配音</button>
+        </div>
+      </div>
+
+      <div class="admin-card" style="overflow-x:auto">
+        <table class="dub-table">
+          <thead>
+            <tr>
+              <th style="width:100px">记录 ID</th>
+              <th>原文/翻译文本</th>
+              <th style="width:80px">语言</th>
+              <th style="width:80px">时长</th>
+              <th style="width:80px">状态</th>
+              <th style="width:180px">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 1. 已完成 -->
+            <tr>
+              <td class="record-id">a1b2c3d4</td>
+              <td class="text-content">A beginner Chinese course covering pinyin, basic vocabulary and daily conversation.</td>
+              <td><span class="locale-tag">en</span></td>
+              <td class="duration">4.2s</td>
+              <td><span class="status-dot done">已完成</span></td>
+              <td>
+                <div class="action-group">
+                  <button class="play-btn" title="播放" onclick="proto.toast({type:'info',message:'正在播放音频 a1b2c3d4...'})">&#9654;</button>
+                  <button class="action-link" onclick="proto.toast({type:'info',message:'重新生成任务已创建'})">重新生成</button>
+                  <button class="action-link" onclick="this.nextElementSibling.click()">上传替换</button>
+                  <input type="file" class="upload-input" accept="audio/*" onchange="proto.toast({type:'success',message:'音频文件已上传替换'})">
+                </div>
+              </td>
+            </tr>
+            <!-- 2. 已完成 -->
+            <tr>
+              <td class="record-id">e5f6a7b8</td>
+              <td class="text-content">Intermediate Chinese course focusing on reading comprehension and writing skills with complex grammar structures.</td>
+              <td><span class="locale-tag">en</span></td>
+              <td class="duration">3.8s</td>
+              <td><span class="status-dot done">已完成</span></td>
+              <td>
+                <div class="action-group">
+                  <button class="play-btn" title="播放" onclick="proto.toast({type:'info',message:'正在播放音频 e5f6a7b8...'})">&#9654;</button>
+                  <button class="action-link" onclick="proto.toast({type:'info',message:'重新生成任务已创建'})">重新生成</button>
+                  <button class="action-link" onclick="this.nextElementSibling.click()">上传替换</button>
+                  <input type="file" class="upload-input" accept="audio/*" onchange="proto.toast({type:'success',message:'音频文件已上传替换'})">
+                </div>
+              </td>
+            </tr>
+            <!-- 3. 待配音 -->
+            <tr>
+              <td class="record-id">c9d0e1f2</td>
+              <td class="text-content">Business Chinese course designed for professionals, covering business email, meeting and negotiation language.</td>
+              <td><span class="locale-tag">en</span></td>
+              <td class="duration" style="color:var(--text-muted)">—</td>
+              <td><span class="status-dot pending">待配音</span></td>
+              <td>
+                <div class="action-group">
+                  <button class="action-link" onclick="proto.toast({type:'info',message:'单条配音任务已创建'})">配音</button>
+                  <button class="action-link" onclick="proto.modal({size:'sm',title:'选择音色 — c9d0e1f2',body:'<div class=proto-field><label class=proto-label>音色模型</label><select class=proto-input style=margin-top:var(--space-1)><option selected>Voice-A（继承字段级）</option><option>Voice-B</option><option>Voice-C</option></select></div>',confirmLabel:'确认并配音',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'已选择音色并创建配音任务'})}})">选择音色</button>
+                </div>
+              </td>
+            </tr>
+            <!-- 4. 已完成 -->
+            <tr>
+              <td class="record-id">a3b4c5d6</td>
+              <td class="text-content">HSK Level 1 preparation course covering all knowledge points required by the HSK 1 exam syllabus.</td>
+              <td><span class="locale-tag">en</span></td>
+              <td class="duration">5.1s</td>
+              <td><span class="status-dot done">已完成</span></td>
+              <td>
+                <div class="action-group">
+                  <button class="play-btn" title="播放" onclick="proto.toast({type:'info',message:'正在播放音频 a3b4c5d6...'})">&#9654;</button>
+                  <button class="action-link" onclick="proto.toast({type:'info',message:'重新生成任务已创建'})">重新生成</button>
+                  <button class="action-link" onclick="this.nextElementSibling.click()">上传替换</button>
+                  <input type="file" class="upload-input" accept="audio/*" onchange="proto.toast({type:'success',message:'音频文件已上传替换'})">
+                </div>
+              </td>
+            </tr>
+            <!-- 5. 待配音 (无翻译文本) -->
+            <tr>
+              <td class="record-id">e7f8a9b0</td>
+              <td class="text-content pending-text">（待配音）</td>
+              <td><span class="locale-tag">en</span></td>
+              <td class="duration" style="color:var(--text-muted)">—</td>
+              <td><span class="status-dot pending">待配音</span></td>
+              <td>
+                <div class="action-group">
+                  <button class="action-link" onclick="proto.toast({type:'info',message:'单条配音任务已创建'})">配音</button>
+                  <button class="action-link" onclick="proto.modal({size:'sm',title:'选择音色 — e7f8a9b0',body:'<div class=proto-field><label class=proto-label>音色模型</label><select class=proto-input style=margin-top:var(--space-1)><option selected>Voice-A（继承字段级）</option><option>Voice-B</option><option>Voice-C</option></select></div>',confirmLabel:'确认并配音',cancelLabel:'取消',onConfirm:function(){proto.toast({type:'success',message:'已选择音色并创建配音任务'})}})">选择音色</button>
+                </div>
+              </td>
+            </tr>
+            <!-- 6. 生成中 (animated) -->
+            <tr>
+              <td class="record-id">c1d2e3f4</td>
+              <td class="text-content">Chinese idiom course exploring the essence of Chinese culture to enhance authentic language expression.</td>
+              <td><span class="locale-tag">en</span></td>
+              <td class="duration" style="color:var(--text-muted)">—</td>
+              <td><span class="status-dot running">生成中</span></td>
+              <td>
+                <div class="action-group">
+                  <span class="estimate-text">预计 8秒</span>
+                </div>
+              </td>
+            </tr>
+            <!-- 7. 失败 -->
+            <tr>
+              <td class="record-id">a5b6c7d8</td>
+              <td class="text-content">Children's Chinese enlightenment course using animation, songs and interactive games to inspire learning interest.</td>
+              <td><span class="locale-tag">en</span></td>
+              <td class="duration" style="color:var(--text-muted)">—</td>
+              <td><span class="status-dot failed">失败</span></td>
+              <td>
+                <div class="action-group">
+                  <button class="action-link danger" onclick="proto.toast({type:'info',message:'重新生成任务已创建'})">重新生成</button>
+                  <button class="action-link" onclick="this.nextElementSibling.click()">上传替换</button>
+                  <input type="file" class="upload-input" accept="audio/*" onchange="proto.toast({type:'success',message:'音频文件已上传替换'})">
+                </div>
+              </td>
+            </tr>
+            <!-- 8. 已完成 -->
+            <tr>
+              <td class="record-id">e9f0a1b2</td>
+              <td class="text-content">Chinese speaking class with extensive situational dialogue training to make your Chinese more fluent and natural.</td>
+              <td><span class="locale-tag">en</span></td>
+              <td class="duration">3.5s</td>
+              <td><span class="status-dot done">已完成</span></td>
+              <td>
+                <div class="action-group">
+                  <button class="play-btn" title="播放" onclick="proto.toast({type:'info',message:'正在播放音频 e9f0a1b2...'})">&#9654;</button>
+                  <button class="action-link" onclick="proto.toast({type:'info',message:'重新生成任务已创建'})">重新生成</button>
+                  <button class="action-link" onclick="this.nextElementSibling.click()">上传替换</button>
+                  <input type="file" class="upload-input" accept="audio/*" onchange="proto.toast({type:'success',message:'音频文件已上传替换'})">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="page-footer">
+        <span class="page-footer-stats">显示 1-8 / 共 24 条 · 已完成 4 · 待配音 2 · 生成中 1 · 失败 1</span>
+        <span style="font-size:var(--text-xs);color:var(--text-muted)">第 1 页 / 共 3 页</span>
+      </div>
+
+      <div class="model-priority">
+        <strong>音色模型优先级：</strong>语言级 &gt; 字段级 &gt; 表级默认。当前生效：<strong>Voice-A</strong>（字段级）
+      </div>
+    </main>
+  </div>
+
+  <script src="../../B02-experience-design/admin/prototype-style/app.js"></script>
+  <script>if(typeof proto !== 'undefined') proto.bootstrap();</script>
+</body>
+</html>

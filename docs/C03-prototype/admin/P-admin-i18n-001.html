@@ -63,15 +63,18 @@
     <aside class="admin-sidebar">
       <div class="sidebar-section">翻译</div>
       <a href="P-admin-i18n-001.html" class="sidebar-item active">翻译总览</a>
-      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
       <a href="P-admin-i18n-003.html" class="sidebar-item">文案翻译</a>
       <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
       <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
       <a href="P-admin-i18n-009.html" class="sidebar-item">翻译接口</a>
       <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
+      <a href="P-admin-i18n-013.html" class="sidebar-item">配音总览</a>
       <a href="P-admin-i18n-008.html" class="sidebar-item">配音管理</a>
+      <a href="P-admin-i18n-016.html" class="sidebar-item">音色管理</a>
       <a href="P-admin-i18n-010.html" class="sidebar-item">配音任务</a>
       <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">全局</div>
+      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
     </aside>
 
     <main class="admin-content">
@@ -82,22 +85,14 @@
         </div>
       </div>
 
-      <div class="stats-grid">
+      <div class="stats-grid" style="grid-template-columns:repeat(2, 1fr)">
         <div class="admin-card stat-card">
-          <div class="stat-num danger">20</div>
+          <div class="stat-num danger">28</div>
           <div class="stat-label">待翻译</div>
         </div>
         <div class="admin-card stat-card">
-          <div class="stat-num warning">85</div>
-          <div class="stat-label">已翻译(待审核)</div>
-        </div>
-        <div class="admin-card stat-card">
-          <div class="stat-num success">210</div>
-          <div class="stat-label">已审核</div>
-        </div>
-        <div class="admin-card stat-card">
-          <div class="stat-num info">8</div>
-          <div class="stat-label">已过期</div>
+          <div class="stat-num success">295</div>
+          <div class="stat-label">已翻译</div>
         </div>
       </div>
 
@@ -153,7 +148,7 @@
     document.getElementById('btn-global-translate').addEventListener('click', function(){
       proto.modal({
         size:'sm', title:'全局翻译',
-        body:'<p style="font-size:var(--text-sm);color:var(--text-secondary)">将翻译所有语言的所有待翻译和已过期条目（UI 文案 + 数据库内容），共计 <strong>28</strong> 条。</p>',
+        body:'<div class="proto-field" style="margin-bottom:var(--space-3)"><label class="proto-label">翻译模型</label><select class="proto-input" style="margin-top:var(--space-1);width:100%"><option value="">选择翻译模型…</option><option value="claude-sonnet">Claude Sonnet</option><option value="gpt-4o">GPT-4o</option><option value="deepl">DeepL</option></select></div><p style="font-size:var(--text-sm);color:var(--text-secondary)">将翻译所有语言的所有待翻译条目（UI 文案 + 数据库内容），共计 <strong>28</strong> 条。</p>',
         confirmLabel:'开始翻译', cancelLabel:'取消',
         onConfirm:function(){ proto.toast({type:'success',message:'翻译任务已创建，可在"翻译任务"页查看进度'}); }
       });

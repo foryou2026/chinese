@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="light" data-density="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-id" content="P-admin-i18n-013">
+  <meta name="system-id" content="admin">
+  <meta name="module-id" content="i18n">
+  <meta name="feature-id" content="dubbing-hub">
+  <meta name="related-r-ids" content="R-i18n-063">
+  <title>配音总览 · admin 原型</title>
+  <link rel="stylesheet" href="../../B02-experience-design/admin/prototype-style/app.css">
+  <style>
+    body { display:flex; flex-direction:column; min-height:100dvh; }
+    .admin-topbar { display:flex; align-items:center; height:var(--topbar-height); padding:0 var(--space-4); position:sticky; top:0; z-index:var(--z-sticky); background:var(--glass-bg); backdrop-filter:var(--glass-blur); border-bottom:1px solid var(--glass-border); }
+    .admin-topbar-logo { font-weight:var(--weight-semibold); font-size:var(--text-md); color:var(--text-primary); margin-right:auto; }
+    .admin-layout { display:flex; flex:1; position:relative; z-index:1; }
+    .admin-sidebar { width:var(--sidebar-width); background:var(--glass-bg-card); backdrop-filter:var(--glass-blur); border-right:1px solid var(--glass-border); padding:var(--space-4) 0; flex-shrink:0; overflow-y:auto; }
+    .sidebar-section { padding:var(--space-2) var(--space-4); font-size:var(--text-xs); font-weight:var(--weight-semibold); color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; }
+    .sidebar-item { display:flex; align-items:center; gap:var(--space-2); height:36px; padding:0 var(--space-4); font-size:var(--text-sm); color:var(--text-secondary); cursor:pointer; transition:background var(--motion-fast); text-decoration:none; }
+    .sidebar-item:hover { background:var(--glass-bg); color:var(--text-primary); }
+    .sidebar-item.active { background:var(--color-brand-50); color:var(--color-brand-default); font-weight:var(--weight-medium); }
+    .admin-content { flex:1; padding:var(--space-6); overflow-y:auto; }
+
+    /* 全局开关卡片 */
+    .global-toggle-card { display:flex; align-items:center; justify-content:space-between; padding:var(--space-4) var(--space-5); margin-bottom:var(--space-6); }
+    .global-toggle-label { font-size:var(--text-md); font-weight:var(--weight-semibold); }
+    .global-toggle-hint { font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--space-1); }
+    .toggle-switch { position:relative; display:inline-block; width:44px; height:24px; }
+    .toggle-switch input { opacity:0; width:0; height:0; }
+    .toggle-slider { position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background:var(--color-neutral-300); border-radius:var(--radius-pill); transition:var(--transition-all); }
+    .toggle-slider::before { content:''; position:absolute; height:18px; width:18px; left:3px; bottom:3px; background:#fff; border-radius:50%; transition:var(--transition-all); }
+    .toggle-switch input:checked + .toggle-slider { background:var(--color-success-700); }
+    .toggle-switch input:checked + .toggle-slider::before { transform:translateX(20px); }
+
+    /* 语言卡片网格 */
+    .lang-cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:var(--space-4); margin-bottom:var(--space-6); }
+    .lang-card { padding:var(--space-5); cursor:pointer; transition:var(--transition-all); }
+    .lang-card:hover { transform:translateY(-2px); }
+    .lang-card-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-4); }
+    .lang-card-name { font-weight:var(--weight-semibold); font-size:var(--text-md); }
+    .lang-card-badge { font-size:var(--text-xs); padding:2px 8px; border-radius:var(--radius-pill); background:var(--color-warning-50); color:var(--color-warning-500); font-weight:var(--weight-medium); }
+    .progress-row { display:flex; align-items:center; gap:var(--space-3); margin-bottom:var(--space-2); }
+    .progress-label { font-size:var(--text-xs); color:var(--text-muted); min-width:72px; }
+    .progress-bar { flex:1; height:6px; border-radius:var(--radius-pill); background:var(--color-neutral-200); overflow:hidden; }
+    .progress-fill { height:100%; border-radius:var(--radius-pill); transition:width 0.6s ease; }
+    .progress-fill.high { background:var(--color-success-700); }
+    .progress-fill.mid { background:var(--color-warning-500); }
+    .progress-fill.low { background:var(--color-danger-500); }
+    .progress-pct { font-size:var(--text-xs); color:var(--text-secondary); min-width:36px; text-align:right; }
+
+    /* 统计 + 操作区 */
+    .stats-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:var(--space-4); margin-bottom:var(--space-6); }
+    .stat-card { padding:var(--space-4); text-align:center; }
+    .stat-num { font-size:var(--text-2xl); font-weight:var(--weight-semibold); }
+    .stat-num.danger { color:var(--color-danger-500); }
+    .stat-num.success { color:var(--color-success-700); }
+    .stat-label { font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--space-1); }
+    .actions-bar { display:flex; gap:var(--space-3); flex-wrap:wrap; }
+
+    /* 禁用遮罩 */
+    .disabled-overlay { position:relative; }
+    .disabled-overlay.off::after { content:''; position:absolute; inset:0; background:var(--surface-page); opacity:0.6; border-radius:var(--radius-lg); pointer-events:none; z-index:2; }
+    .disabled-overlay.off { pointer-events:none; }
+
+    @media (max-width: 768px) { .admin-sidebar { display:none; } .stats-grid { grid-template-columns:repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <div class="admin-page-bg" aria-hidden="true"></div>
+  <header class="admin-topbar">
+    <span class="admin-topbar-logo">管理后台</span>
+    <div style="display:flex;align-items:center;gap:var(--space-2)">
+      <button class="proto-btn proto-btn-ghost proto-btn-sm" onclick="proto.switchTheme(document.documentElement.getAttribute('data-mode')==='dark'?'light':'dark')">明/暗</button>
+      <a href="i18n/translation-hub/index.html" class="proto-btn proto-btn-ghost proto-btn-sm" style="text-decoration:none;font-size:var(--text-xs)">原型导航</a>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <div class="sidebar-section">翻译</div>
+      <a href="P-admin-i18n-001.html" class="sidebar-item">翻译总览</a>
+      <a href="P-admin-i18n-003.html" class="sidebar-item">文案翻译</a>
+      <a href="P-admin-i18n-004.html" class="sidebar-item">内容翻译</a>
+      <a href="P-admin-i18n-007.html" class="sidebar-item">翻译任务</a>
+      <a href="P-admin-i18n-009.html" class="sidebar-item">翻译接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">配音</div>
+      <a href="P-admin-i18n-013.html" class="sidebar-item active">配音总览</a>
+      <a href="P-admin-i18n-008.html" class="sidebar-item">配音管理</a>
+      <a href="P-admin-i18n-016.html" class="sidebar-item">音色管理</a>
+      <a href="P-admin-i18n-010.html" class="sidebar-item">配音任务</a>
+      <a href="P-admin-i18n-011.html" class="sidebar-item">配音接口</a>
+      <div class="sidebar-section" style="margin-top:var(--space-2)">全局</div>
+      <a href="P-admin-i18n-002.html" class="sidebar-item">语言管理</a>
+    </aside>
+
+    <main class="admin-content">
+
+      <!-- Area 1: 全局开关 -->
+      <div class="admin-card global-toggle-card">
+        <div>
+          <div class="global-toggle-label">配音模块全局开关</div>
+          <div class="global-toggle-hint">关闭后所有配音功能将暂停，不影响已生成的音频文件</div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="global-dubbing-toggle" checked onchange="toggleDubbingModule(this.checked)">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- Area 3: 统计 + 操作（放在语言卡片上方） -->
+      <div id="area-stats" class="disabled-overlay">
+        <div class="stats-grid">
+          <div class="admin-card stat-card">
+            <div class="stat-num danger">43</div>
+            <div class="stat-label">待配音</div>
+          </div>
+          <div class="admin-card stat-card">
+            <div class="stat-num success">182</div>
+            <div class="stat-label">已配音</div>
+          </div>
+        </div>
+
+        <div class="actions-bar" style="margin-bottom:var(--space-6)">
+          <button class="proto-btn proto-btn-primary proto-btn-sm" id="btn-global-dubbing">全局配音</button>
+        </div>
+      </div>
+
+      <!-- Area 2: 语言概览卡片 -->
+      <div id="area-langs" class="disabled-overlay">
+        <div style="font-size:var(--text-sm);color:var(--text-muted);margin-bottom:var(--space-4)">各语言配音覆盖率</div>
+        <div class="lang-cards">
+          <!-- 英语 -->
+          <div class="admin-card lang-card" onclick="window.location.href='P-admin-i18n-008.html'">
+            <div class="lang-card-header">
+              <span class="lang-card-name">英语 English</span>
+              <span class="lang-card-badge">15 待配音</span>
+            </div>
+            <div class="progress-row">
+              <span class="progress-label">配音覆盖率</span>
+              <div class="progress-bar"><div class="progress-fill mid" style="width:68%"></div></div>
+              <span class="progress-pct">68%</span>
+            </div>
+          </div>
+
+          <!-- 越南语 -->
+          <div class="admin-card lang-card" onclick="window.location.href='P-admin-i18n-008.html'">
+            <div class="lang-card-header">
+              <span class="lang-card-name">越南语 Tiếng Việt</span>
+              <span class="lang-card-badge">28 待配音</span>
+            </div>
+            <div class="progress-row">
+              <span class="progress-label">配音覆盖率</span>
+              <div class="progress-bar"><div class="progress-fill low" style="width:32%"></div></div>
+              <span class="progress-pct">32%</span>
+            </div>
+          </div>
+
+          <!-- 启用更多语言 -->
+          <div class="admin-card lang-card" style="opacity:0.6;border:2px dashed var(--border-color)" onclick="window.location.href='P-admin-i18n-002.html'">
+            <div class="lang-card-header">
+              <span class="lang-card-name" style="color:var(--text-muted)">+ 启用更多语言</span>
+            </div>
+            <p style="font-size:var(--text-xs);color:var(--text-muted)">前往语言管理页面启用新语言</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="../../B02-experience-design/admin/prototype-style/app.js"></script>
+  <script>
+    if(typeof proto !== 'undefined') proto.bootstrap();
+
+    /* ---- 全局开关逻辑 ---- */
+    function toggleDubbingModule(enabled) {
+      var areaStats = document.getElementById('area-stats');
+      var areaLangs = document.getElementById('area-langs');
+      if (enabled) {
+        areaStats.classList.remove('off');
+        areaLangs.classList.remove('off');
+        proto.toast({ type: 'success', message: '配音模块已启用' });
+      } else {
+        areaStats.classList.add('off');
+        areaLangs.classList.add('off');
+        proto.toast({ type: 'info', message: '配音模块已关闭' });
+      }
+    }
+
+    /* ---- 全局配音按钮 ---- */
+    document.getElementById('btn-global-dubbing').addEventListener('click', function() {
+      proto.modal({
+        size: 'sm',
+        title: '全局配音',
+        body: '<div class="proto-field" style="margin-bottom:var(--space-3)">' +
+              '<label class="proto-label">音色模型</label>' +
+              '<select class="proto-input" style="margin-top:var(--space-1);width:100%">' +
+              '<option value="">选择音色模型…</option>' +
+              '<option value="azure-xiaoxiao">Azure - 晓晓 (zh-CN)</option>' +
+              '<option value="azure-jenny">Azure - Jenny (en-US)</option>' +
+              '<option value="elevenlabs-rachel">ElevenLabs - Rachel</option>' +
+              '<option value="elevenlabs-adam">ElevenLabs - Adam</option>' +
+              '</select></div>' +
+              '<p style="font-size:var(--text-sm);color:var(--text-secondary)">将对所有语言的待配音内容执行批量配音，共计 <strong>43</strong> 条。</p>',
+        confirmLabel: '开始配音',
+        cancelLabel: '取消',
+        onConfirm: function() {
+          proto.toast({ type: 'success', message: '配音任务已创建，可在"配音任务"页查看进度' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
