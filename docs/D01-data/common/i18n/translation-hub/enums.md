@@ -2,14 +2,12 @@
 
 ## translation_status_enum
 
-> 翻译条目状态（UI 文案 + 数据库内容共用）
+> 翻译条目状态（UI 文案 + 数据库内容共用）。仅两种状态，无审核和过期概念。
 
 | 值 | 含义 |
 |----|------|
 | `pending` | 待翻译 |
-| `translated` | AI 已翻译 |
-| `reviewed` | 已审核（人工确认） |
-| `outdated` | 已过期（源文变更） |
+| `translated` | 已翻译（AI 翻译完成或管理员手动编辑） |
 
 ## translation_task_type_enum
 
@@ -20,9 +18,9 @@
 | `ui` | UI 文案翻译 |
 | `content` | 数据库内容翻译 |
 
-## translation_task_status_enum
+## task_status_enum
 
-> 翻译任务执行状态
+> 任务执行状态（翻译任务和配音任务共用）
 
 | 值 | 含义 |
 |----|------|
@@ -56,18 +54,6 @@
 | `ltr` | 从左到右 |
 | `rtl` | 从右到左 |
 
-## tts_api_type_enum
-
-> TTS 接口类型
-
-| 值 | 含义 |
-|----|------|
-| `openai_tts` | OpenAI TTS |
-| `azure_tts` | Azure Cognitive Services TTS |
-| `google_tts` | Google Cloud TTS |
-| `elevenlabs` | ElevenLabs |
-| `custom` | 自定义接口 |
-
 ## audio_status_enum
 
 > 配音文件状态
@@ -78,3 +64,13 @@
 | `generating` | 生成中 |
 | `completed` | 已完成 |
 | `failed` | 生成失败 |
+
+## provider_test_status_enum
+
+> 供应商连接测试状态
+
+| 值 | 含义 |
+|----|------|
+| `untested` | 未测试 |
+| `success` | 测试成功 |
+| `failed` | 测试失败 |

@@ -2,33 +2,27 @@
 
 ## SM-i18n-001 翻译条目状态
 
-> 适用于 UI 文案翻译和数据库内容翻译，按（条目 × 语言）独立计算状态。
+> 适用于 UI 文案翻译和数据库内容翻译，按（条目 × 语言）独立计算状态。仅两种状态，无审核和过期概念。
 
 ```mermaid
 stateDiagram-v2
     [*] --> pending : 新增条目 / 新启用语言
-    pending --> translated : AI 翻译完成
-    pending --> reviewed : 管理员手动填写
-    translated --> reviewed : 管理员审核通过 / 手动编辑
-    translated --> outdated : 源文变更
-    reviewed --> outdated : 源文变更
-    outdated --> pending : 管理员确认需重新翻译
-    outdated --> translated : AI 重新翻译
-    outdated --> reviewed : 管理员手动更新
+    pending --> translated : AI 翻译完成 / 管理员手动填写
+    translated --> pending : 源文变更
+    translated --> translated : 管理员编辑已翻译内容（状态不变）
 ```
 
 ### 状态定义
 
 | 状态 | 含义 | 视觉标记 | 触发条件 |
 |------|------|---------|---------|
-| `pending` | 待翻译 | 🔴 红色 | 新建条目 / 新启用语言 / 手动重置 |
-| `translated` | AI 已翻译 | 🟡 黄色 | AI 翻译任务完成 |
-| `reviewed` | 已审核 | 🟢 绿色 | 管理员手动编辑或确认 |
-| `outdated` | 已过期 | 🟠 橙色 | 源文内容变更 |
+| `pending` | 待翻译 | 🔴 红色 | 新建条目 / 新启用语言 / 源文变更后自动回退 |
+| `translated` | 已翻译 | 🟢 绿色 | AI 翻译完成 / 管理员手动编辑 |
 
 ### 约束
 - 每个翻译条目的每种目标语言各自维护独立状态
-- 状态不可跳过（pending 不能直接到 outdated）
+- 管理员编辑已翻译内容时，状态保持 `translated` 不变
+- 源文变更时，状态自动回退为 `pending`（等价于旧设计中的 outdated，但直接回退为待翻译，无需人工确认）
 - 删除源记录时，对应翻译条目物理删除
 
 ## SM-i18n-002 翻译任务状态

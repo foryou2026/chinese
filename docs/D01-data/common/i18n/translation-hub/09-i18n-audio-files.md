@@ -2,7 +2,7 @@
 
 | 项 | 值 |
 |----|-----|
-| 关联 R-ID | R-i18n-052, R-i18n-053 |
+| 关联 R-ID | R-i18n-054, R-i18n-055 |
 | 业务定义 | 配音音频文件记录 |
 | 状态机 | 无 |
 
@@ -20,6 +20,7 @@
 | file_size_bytes | integer | 否 | null | 否 | 文件大小 | — |
 | audio_format | text | 是 | 'mp3' | 否 | 音频格式 | mp3/wav/ogg |
 | source | text | 是 | 'ai' | 否 | 来源 | 'ai'=TTS生成, 'manual'=手动上传 |
+| tts_model_id | uuid | 否 | null | 否 | 使用的音色模型 | 引用 i18n_tts_models(id) |
 | status | text | 是 | 'pending' | 否 | 状态 | 枚举:audio_status_enum |
 
 > - B01 通用字段 created_at/updated_at 按默认规则携带。
@@ -29,4 +30,8 @@
 
 ## 关系
 
-无物理外键。通过 (table_name, record_id, field_name) 逻辑关联 i18n_content_translations。
+| 目标表 | 基数 | 外键字段 | 删除策略 |
+|--------|------|----------|----------|
+| i18n_tts_models | N:1 | tts_model_id | SET NULL |
+
+无物理外键关联业务表。通过 (table_name, record_id, field_name) 逻辑关联 i18n_content_translations。

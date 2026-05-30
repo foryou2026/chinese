@@ -1,6 +1,9 @@
 # 文案翻译接口
 
-> **说明**：本文件覆盖 UI 文案翻译相关接口（R-i18n-010~016）。1.1.6 起"UI 文案翻译"统一简称为"文案翻译"。
+> **说明**：本文件覆盖 UI 文案翻译相关接口（R-i18n-010~017）。
+> 状态仅 pending / translated 两种。管理员手动编辑已翻译内容时，status 保持 translated 不变。
+
+---
 
 ## API-i18n-ui-sync 同步文案
 
@@ -14,7 +17,7 @@ Authorization: Bearer {jwt}
 2. 递归遍历所有 key，拼接为 `namespace.key.subkey` 格式
 3. 与 `i18n_ui_entries` 表比对：
    - 新 key → INSERT，状态 pending
-   - 已有 key 中文变化 → 更新 source_text_zh，关联翻译标记 outdated
+   - 已有 key 中文变化 → 更新 source_text_zh，关联翻译回退为 pending
    - 代码中删除的 key → is_deprecated=true
 4. 为新 key 的每个已启用语言创建翻译记录（status=pending）
 
@@ -46,7 +49,7 @@ Authorization: Bearer {jwt}
 |------|------|------|------|
 | locale | string | 否 | 目标语言，默认 en |
 | namespace | string | 否 | 业务域筛选 |
-| status | string | 否 | 翻译状态筛选 |
+| status | string | 否 | 翻译状态：pending / translated |
 | search | string | 否 | 按 key 或中文搜索 |
 | page | integer | 否 | 页码，默认 1 |
 | page_size | integer | 否 | 每页条数，默认 50 |
@@ -67,8 +70,9 @@ Authorization: Bearer {jwt}
           "id": "uuid",
           "locale": "en",
           "translated_text": "Sign In",
-          "status": "reviewed",
+          "status": "translated",
           "translated_by": "ai",
+          "translation_model_id": "uuid",
           "last_translated_at": "2026-05-29T10:00:00Z"
         }
       }
@@ -80,9 +84,7 @@ Authorization: Bearer {jwt}
     },
     "stats": {
       "pending": 15,
-      "translated": 80,
-      "reviewed": 20,
-      "outdated": 5
+      "translated": 105
     },
     "namespaces": ["common", "auth", "nav", "course"]
   }
@@ -109,7 +111,7 @@ Content-Type: application/json
 
 ### 业务逻辑
 1. 更新翻译内容
-2. status 变为 reviewed
+2. status 保持 translated（手动编辑不改变状态）
 3. translated_by 设为当前管理员 user_id
 4. 记录审计日志
 
@@ -120,7 +122,7 @@ Content-Type: application/json
   "data": {
     "id": "uuid",
     "translated_text": "Sign In",
-    "status": "reviewed"
+    "status": "translated"
   }
 }
 ```
@@ -142,7 +144,8 @@ Content-Type: application/json
   "scope": "all",
   "target_locales": ["en", "vi"],
   "namespace": null,
-  "status_filter": ["pending", "outdated"]
+  "status_filter": ["pending"],
+  "model_id": "uuid"
 }
 ```
 
@@ -151,16 +154,18 @@ Content-Type: application/json
 | scope | string | 是 | `all` / `namespace` / `selected` |
 | target_locales | string[] | 否 | 目标语言，空=所有已启用语言 |
 | namespace | string | 否 | scope=namespace 时必填 |
-| status_filter | string[] | 否 | 仅翻译指定状态，默认 pending+outdated |
+| status_filter | string[] | 否 | 仅翻译指定状态，默认 pending |
 | entry_ids | string[] | 否 | scope=selected 时的条目 ID 列表 |
+| model_id | uuid | 否 | 指定翻译模型，为空时按优先级解析默认模型 |
 
 ### 业务逻辑
-1. 检查是否有同范围的运行中任务（避免重复）
-2. 创建 i18n_translation_tasks 记录
-3. 异步执行翻译：
-   a. 先翻译 zh → en
+1. 校验翻译模型是否已配置（model_id 或系统默认模型），否则返回 40013
+2. 检查是否有同范围的运行中任务（避免重复）
+3. 创建 i18n_translation_tasks 记录（task_type=ui，携带 model_id）
+4. 异步执行翻译（枢纽语言链）：
+   a. 先翻译 zh → en（如英文翻译不存在）
    b. 再从 en 翻译到其他目标语言
-4. 每完成一条更新进度
+5. 每完成一条更新进度
 
 ### Response 202
 
@@ -169,8 +174,17 @@ Content-Type: application/json
   "data": {
     "task_id": "uuid",
     "total_items": 45,
-    "status": "queued"
+    "status": "queued",
+    "model_id": "uuid"
   }
+}
+```
+
+### Error 40013
+
+```json
+{
+  "error": { "code": 40013, "message": "请先配置翻译接口和模型" }
 }
 ```
 
@@ -193,7 +207,7 @@ Content-Type: application/json
 ```
 
 ### 业务逻辑
-1. 从 DB 读取所有 translated/reviewed 状态的翻译
+1. 从 DB 读取所有 translated 状态的翻译
 2. 按语言生成对应的 TS 资源文件（如 `en.ts`、`vi.ts`）
 3. 写入 `packages/shared-i18n/src/` 目录
 4. 返回变更概览

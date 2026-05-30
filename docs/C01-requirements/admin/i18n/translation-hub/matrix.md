@@ -5,6 +5,7 @@
 | 资源/操作 | ROLE-ADMIN | 数据范围 | 所属功能 |
 |-----------|-----------|---------|---------|
 | 翻译总览仪表盘 | 允许 | 全局 | i18n/translation-hub |
+| 配音总览仪表盘 | 允许 | 全局 | i18n/translation-hub |
 | 语言列表查看 | 允许 | 全局 | i18n/translation-hub |
 | 语言启用/停用 | 允许 | 全局 | i18n/translation-hub |
 | 语言排序 | 允许 | 全局 | i18n/translation-hub |
@@ -18,16 +19,20 @@
 | 内容翻译查看/编辑 | 允许 | 全局 | i18n/translation-hub |
 | 内容 AI 翻译触发 | 允许 | 全局 | i18n/translation-hub |
 | 翻译任务查看/取消 | 允许 | 全局 | i18n/translation-hub |
-| 翻译接口配置 | 允许 | 全局 | i18n/translation-hub |
+| 翻译供应商管理（CRUD） | 允许 | 全局 | i18n/translation-hub |
+| 翻译模型管理（CRUD） | 允许 | 全局 | i18n/translation-hub |
 | 翻译接口测试 | 允许 | 全局 | i18n/translation-hub |
 | 配音模块开关 | 允许 | 全局 | i18n/translation-hub |
+| 配音数据表列表查看 | 允许 | 全局 | i18n/translation-hub |
 | 表级配音配置 | 允许 | 全局 | i18n/translation-hub |
 | 字段级配音配置 | 允许 | 全局 | i18n/translation-hub |
-| 配音文件管理 | 允许 | 全局 | i18n/translation-hub |
-| 音色管理 | 允许 | 全局 | i18n/translation-hub |
+| 配音详情查看/管理 | 允许 | 全局 | i18n/translation-hub |
 | 配音触发 | 允许 | 全局 | i18n/translation-hub |
+| 音色管理（CRUD） | 允许 | 全局 | i18n/translation-hub |
+| 音色试听测试 | 允许 | 全局 | i18n/translation-hub |
 | 配音任务查看/取消 | 允许 | 全局 | i18n/translation-hub |
-| 配音接口配置 | 允许 | 全局 | i18n/translation-hub |
+| 配音供应商管理（CRUD） | 允许 | 全局 | i18n/translation-hub |
+| 配音音色模型管理（CRUD） | 允许 | 全局 | i18n/translation-hub |
 | 配音接口测试 | 允许 | 全局 | i18n/translation-hub |
 
 ### P2.2 授权校验机制
@@ -38,4 +43,4 @@
 ## P3. 本轮权限变更摘要
 | 变更类型 | 对象 | 说明 | 来源功能 |
 |---------|------|------|---------|
-| 新增矩阵 | i18n 管理相关 25 项操作 | 翻译 16 项 + 配音 9 项（完全解耦） | i18n/translation-hub |
+| 新增矩阵 | i18n 管理相关 30 项操作 | 翻译 18 项 + 配音 12 项（完全解耦） | i18n/translation-hub |

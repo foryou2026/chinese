@@ -17,14 +17,16 @@
 | locale | text | 是 | 无 | 否 | 目标语言 | 已启用的 locale_code |
 | source_text_hash | text | 否 | null | 否 | 源文哈希 | MD5，用于检测源文变更 |
 | translated_text | text | 否 | null | 否 | 翻译内容 | 翻译后填入 |
-| status | text | 是 | 'pending' | 否 | 翻译状态 | 枚举:translation_status_enum |
+| status | text | 是 | 'pending' | 否 | 翻译状态 | 枚举:translation_status_enum（仅 pending/translated） |
 | translated_by | text | 否 | null | 否 | 翻译来源 | 'ai' 或管理员 user_id |
+| translation_model_id | uuid | 否 | null | 否 | 使用的翻译模型 | 引用 i18n_translation_models(id) |
 | last_translated_at | timestamptz | 否 | null | 否 | 最后翻译时间 | — |
 
 > - B01 通用字段 created_at/updated_at 按默认规则携带。
 > - (table_name, record_id, field_name, locale) 联合唯一。
 > - 无物理外键关联业务表（通用框架设计，通过 table_name + record_id 逻辑关联）。
-> - source_text_hash 用于检测源文变更：业务表记录更新时，应用层比较当前字段值的 hash 与 source_text_hash，不一致则标记 status=outdated。
+> - source_text_hash 用于检测源文变更：源文变更后 status 自动回退为 pending。
+> - 管理员手动编辑已翻译内容时，status 保持 translated 不变。
 > - 业务表记录删除时，应用层需清理该记录的所有翻译条目。
 
 ## 关系
@@ -45,12 +47,48 @@ async function afterUpdate(tableName: string, recordId: string, changedFields: R
       const newHash = md5(String(changedFields[field]));
       await db.query(`
         UPDATE i18n_content_translations
-        SET status = 'outdated', updated_at = now()
+        SET status = 'pending', updated_at = now()
         WHERE table_name = $1 AND record_id = $2 AND field_name = $3
           AND source_text_hash != $4
       `, [tableName, recordId, field, newHash]);
     }
   }
+}
+```
+
+## 枢纽语言翻译链逻辑
+
+```typescript
+async function translateContent(
+  sourceText: string,
+  sourceLocale: string,
+  targetLocale: string,
+  modelId: string,
+  context: { tableName: string; recordId: string; fieldName: string }
+): Promise<string> {
+  if (sourceLocale === 'en') {
+    return await callTranslationAPI(sourceText, 'en', targetLocale, modelId);
+  }
+
+  if (targetLocale === 'en') {
+    return await callTranslationAPI(sourceText, sourceLocale, 'en', modelId);
+  }
+
+  const existingEnTranslation = await db.query(`
+    SELECT translated_text FROM i18n_content_translations
+    WHERE table_name = $1 AND record_id = $2 AND field_name = $3
+      AND locale = 'en' AND status = 'translated'
+  `, [context.tableName, context.recordId, context.fieldName]);
+
+  let enText: string;
+  if (existingEnTranslation?.translated_text) {
+    enText = existingEnTranslation.translated_text;
+  } else {
+    enText = await callTranslationAPI(sourceText, sourceLocale, 'en', modelId);
+    await saveTranslation(context, 'en', enText, modelId);
+  }
+
+  return await callTranslationAPI(enText, 'en', targetLocale, modelId);
 }
 ```
 
@@ -69,7 +107,7 @@ async function getTranslatedContent(
     const result = await db.query(`
       SELECT translated_text FROM i18n_content_translations
       WHERE table_name = $1 AND record_id = $2 AND field_name = $3
-        AND locale = $4 AND status IN ('translated', 'reviewed')
+        AND locale = $4 AND status = 'translated'
     `, [tableName, recordId, fieldName, l]);
     if (result?.translated_text) return result.translated_text;
   }
